@@ -1,0 +1,565 @@
+{
+  "schemaVersion": 1,
+  "mapId": 65,
+  "slug": "malchor-s-leap",
+  "name": "Malchor's Leap",
+  "regionName": "Ruins of Orr",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mithril Ore",
+      "category": "ore",
+      "material": "mithril",
+      "source": "tw"
+    },
+    {
+      "name": "Black Crocus",
+      "category": "plant",
+      "material": "winter_crocus",
+      "source": "lady"
+    },
+    {
+      "name": "Elder Wood Log",
+      "category": "wood",
+      "material": "elder_wood",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 822.3,
+      "y": 79.5,
+      "z": -526.5,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": 838.7,
+      "y": 80.6,
+      "z": -527.3,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 1087.0,
+      "y": 12.2,
+      "z": 76.7,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 1017.8,
+      "y": 30.9,
+      "z": -404.1,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Springer"
+    },
+    {
+      "x": 709.2,
+      "y": -5.7,
+      "z": -527.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKgCAAA=]"
+    },
+    {
+      "x": 1047.2,
+      "y": 0.7,
+      "z": 106.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 1037.6,
+      "y": -11.3,
+      "z": 354.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKsCAAA=]"
+    },
+    {
+      "x": 224.8,
+      "y": 101.3,
+      "z": 328.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 47.5,
+      "y": 108.7,
+      "z": 286.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKwCAAA=]"
+    },
+    {
+      "x": 40.7,
+      "y": 29.3,
+      "z": -57.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BK4CAAA=]"
+    },
+    {
+      "x": -141.5,
+      "y": 46.2,
+      "z": 88.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -231.2,
+      "y": 82.8,
+      "z": 117.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKwCAAA=]"
+    },
+    {
+      "x": -14.8,
+      "y": 39.5,
+      "z": -331.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKcCAAA=]"
+    },
+    {
+      "x": -215.2,
+      "y": 45.5,
+      "z": -404.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BCEDAAA=]"
+    },
+    {
+      "x": 1122.4,
+      "y": 16.1,
+      "z": 451.0,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -839.4,
+      "y": 9.0,
+      "z": 158.6,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 1121.1,
+      "y": 15.1,
+      "z": 452.9,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 788.3,
+      "y": 30.4,
+      "z": -273.2,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": 493.2,
+      "y": 45.7,
+      "z": -373.4,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": 481.2,
+      "y": 56.3,
+      "z": -391.1,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -313.8,
+      "y": 17.5,
+      "z": -175.7,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -202.9,
+      "y": 17.9,
+      "z": 173.1,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": 303.5,
+      "y": 29.3,
+      "z": -391.4,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 32.7,
+      "y": 29.9,
+      "z": 14.8,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 279.2,
+      "y": 52.2,
+      "z": 287.4,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 729.6,
+      "y": 8.2,
+      "z": -77.1,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 332.8,
+      "y": 28.9,
+      "z": -406.8,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -397.6,
+      "y": 24.4,
+      "z": -387.1,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 1033.5,
+      "y": 30.2,
+      "z": -366.6,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 941.6,
+      "y": 54.2,
+      "z": -453.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus",
+      "chatLink": "[&BKYCAAA=]"
+    },
+    {
+      "x": 1027.2,
+      "y": 30.4,
+      "z": -358.4,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 433.2,
+      "y": 43.5,
+      "z": -428.1,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus",
+      "chatLink": "[&BKcCAAA=]"
+    },
+    {
+      "x": -323.9,
+      "y": 50.9,
+      "z": -421.5,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -58.2,
+      "y": 37.6,
+      "z": -370.6,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus",
+      "chatLink": "[&BKcCAAA=]"
+    },
+    {
+      "x": -324.3,
+      "y": 51.2,
+      "z": -423.8,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -377.3,
+      "y": 22.2,
+      "z": -568.3,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus",
+      "chatLink": "[&BCEDAAA=]"
+    },
+    {
+      "x": 989.7,
+      "y": 56.2,
+      "z": -223.9,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 1008.6,
+      "y": 59.5,
+      "z": -206.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 379.0,
+      "y": 19.8,
+      "z": -402.8,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -276.8,
+      "y": 39.6,
+      "z": -355.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -104.4,
+      "y": 36.7,
+      "z": -376.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 434.6,
+      "y": 28.6,
+      "z": -152.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 356.8,
+      "y": 19.6,
+      "z": -342.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -147.2,
+      "y": 41.4,
+      "z": -418.1,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 1077.9,
+      "y": 29.3,
+      "z": 30.7,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 337.1,
+      "y": 21.6,
+      "z": -311.8,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -25.2,
+      "y": 37.3,
+      "z": -318.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -475.1,
+      "y": 13.6,
+      "z": -468.9,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -525.8,
+      "y": -28.3,
+      "z": 71.4,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -9.8,
+      "y": -41.7,
+      "z": 336.6,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 646.0,
+      "y": -27.6,
+      "z": 348.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 490.9,
+      "y": -12.6,
+      "z": 333.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 1068.3,
+      "y": -14.8,
+      "z": 245.1,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -570.7,
+      "y": -45.7,
+      "z": 2.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -468.6,
+      "y": -40.9,
+      "z": 191.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 767.6,
+      "y": -22.1,
+      "z": 362.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 1052.8,
+      "y": 36.8,
+      "z": -43.7,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 396.3,
+      "y": 33.9,
+      "z": -436.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 251.4,
+      "y": 51.6,
+      "z": 256.4,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -399.7,
+      "y": 40.8,
+      "z": -335.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 853.1,
+      "y": 63.6,
+      "z": -455.7,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 851.4,
+      "y": 63.5,
+      "z": -452.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 848.2,
+      "y": 64.1,
+      "z": -451.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 845.0,
+      "y": 65.1,
+      "z": -454.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 844.8,
+      "y": 65.4,
+      "z": -457.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    }
+  ]
+}

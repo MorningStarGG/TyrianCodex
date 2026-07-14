@@ -1,0 +1,658 @@
+{
+  "generatedAt": "2026-06-05T07:34:24+00:00",
+  "source": "GW2 API /v2/stories(+seasons) + /v2/achievements (Story Journal group); completion detected via the 'Journal: ... Completed' requirement pattern.",
+  "releases": {
+    "voe": {
+      "episodes": [
+        {
+          "name": "Visions of Eternity: Act 1",
+          "order": 37,
+          "description": "",
+          "achievementIds": [
+            8891,
+            8936,
+            9031,
+            9036,
+            9038
+          ]
+        },
+        {
+          "name": "Visions of Eternity: Act 2",
+          "order": 38,
+          "description": "",
+          "achievementIds": [
+            8940,
+            8955,
+            9017
+          ]
+        }
+      ]
+    },
+    "jw": {
+      "episodes": [
+        {
+          "name": "Janthir Wilds: Act 1",
+          "order": 42,
+          "description": "",
+          "achievementIds": [
+            8160,
+            8247,
+            8272,
+            8324,
+            8339,
+            8366
+          ]
+        },
+        {
+          "name": "Janthir Wilds: Act 2",
+          "order": 43,
+          "description": "",
+          "achievementIds": [
+            8163,
+            8226,
+            8240,
+            8290,
+            8368
+          ]
+        }
+      ]
+    },
+    "soto": {
+      "episodes": [
+        {
+          "name": "Secrets of the Obscure: Act 1",
+          "order": 48,
+          "description": "",
+          "achievementIds": [
+            7122,
+            7162,
+            7175,
+            7227,
+            7236
+          ]
+        },
+        {
+          "name": "Secrets of the Obscure: Act 2",
+          "order": 49,
+          "description": "",
+          "achievementIds": [
+            6997,
+            7010,
+            7089,
+            7091
+          ]
+        },
+        {
+          "name": "Secrets of the Obscure: Act 3",
+          "order": 50,
+          "description": "",
+          "achievementIds": [
+            7172,
+            7211,
+            7221
+          ]
+        }
+      ]
+    },
+    "eod": {
+      "episodes": [
+        {
+          "name": "What Lies Within",
+          "order": 51,
+          "description": "",
+          "achievementIds": [
+            6899,
+            6911,
+            6921,
+            6931
+          ]
+        },
+        {
+          "name": "End of Dragons: Interlude",
+          "order": 53,
+          "description": "",
+          "achievementIds": [
+            6949
+          ]
+        },
+        {
+          "name": "End of Dragons: Act 1",
+          "order": 54,
+          "description": "",
+          "achievementIds": [
+            6126,
+            6134,
+            6139,
+            6199
+          ]
+        },
+        {
+          "name": "End of Dragons: Act 2",
+          "order": 55,
+          "description": "",
+          "achievementIds": [
+            6259,
+            6323,
+            6419
+          ]
+        },
+        {
+          "name": "End of Dragons: Act 3",
+          "order": 56,
+          "description": "",
+          "achievementIds": [
+            6146,
+            6252,
+            6268
+          ]
+        },
+        {
+          "name": "End of Dragons: Act 4",
+          "order": 57,
+          "description": "",
+          "achievementIds": [
+            6156,
+            6500
+          ]
+        },
+        {
+          "name": "End of Dragons: Act 5",
+          "order": 58,
+          "description": "",
+          "achievementIds": [
+            6080,
+            6172,
+            6326
+          ]
+        }
+      ]
+    },
+    "lws5": {
+      "episodes": [
+        {
+          "name": "Champions",
+          "order": 59,
+          "description": "",
+          "achievementIds": [
+            5503,
+            5505,
+            5512,
+            5518,
+            5522,
+            5524,
+            5535,
+            5539,
+            5544,
+            5546
+          ]
+        },
+        {
+          "name": "Jormag Rising",
+          "order": 60,
+          "description": "",
+          "achievementIds": [
+            5353,
+            5366,
+            5379,
+            5380,
+            5417
+          ]
+        },
+        {
+          "name": "No Quarter",
+          "order": 61,
+          "description": "",
+          "achievementIds": [
+            5268,
+            5313,
+            5316,
+            5318,
+            5329
+          ]
+        },
+        {
+          "name": "Visions of the Past: Steel and Fire",
+          "order": 62,
+          "description": "",
+          "achievementIds": []
+        },
+        {
+          "name": "Shadow in the Ice",
+          "order": 63,
+          "description": "",
+          "achievementIds": [
+            5102,
+            5109,
+            5113,
+            5124,
+            5130
+          ]
+        },
+        {
+          "name": "Whisper in the Dark",
+          "order": 64,
+          "description": "",
+          "achievementIds": [
+            5031,
+            5050,
+            5053,
+            5063
+          ]
+        },
+        {
+          "name": "Prologue: Bound by Blood",
+          "order": 65,
+          "description": "",
+          "achievementIds": [
+            4899,
+            4914,
+            4957,
+            4974,
+            4988
+          ]
+        }
+      ]
+    },
+    "lws4": {
+      "episodes": [
+        {
+          "name": "War Eternal",
+          "order": 66,
+          "description": "",
+          "achievementIds": [
+            4673,
+            4747,
+            4753
+          ]
+        },
+        {
+          "name": "All or Nothing",
+          "order": 67,
+          "description": "",
+          "achievementIds": [
+            4493,
+            4497,
+            4513,
+            4588,
+            4618
+          ]
+        },
+        {
+          "name": "A Star to Guide Us",
+          "order": 68,
+          "description": "",
+          "achievementIds": [
+            4342,
+            4346,
+            4358,
+            4372,
+            4392
+          ]
+        },
+        {
+          "name": "Long Live the Lich",
+          "order": 69,
+          "description": "",
+          "achievementIds": [
+            4201,
+            4214,
+            4230,
+            4236,
+            4238,
+            4247,
+            4259,
+            4271
+          ]
+        },
+        {
+          "name": "A Bug in the System",
+          "order": 70,
+          "description": "",
+          "achievementIds": [
+            4091,
+            4092,
+            4114,
+            4115,
+            4146
+          ]
+        },
+        {
+          "name": "Daybreak",
+          "order": 71,
+          "description": "",
+          "achievementIds": [
+            3955,
+            3962,
+            3994,
+            3996,
+            4009,
+            4040
+          ]
+        }
+      ]
+    },
+    "pof": {
+      "episodes": [
+        {
+          "name": "Path of Fire: Act 1",
+          "order": 72,
+          "description": "",
+          "achievementIds": [
+            3622,
+            3730,
+            3808,
+            3816
+          ]
+        },
+        {
+          "name": "Path of Fire: Act 2",
+          "order": 73,
+          "description": "",
+          "achievementIds": [
+            3566,
+            3580,
+            3664,
+            3733
+          ]
+        },
+        {
+          "name": "Path of Fire: Act 3",
+          "order": 74,
+          "description": "",
+          "achievementIds": [
+            3581,
+            3588,
+            3672,
+            3673
+          ]
+        }
+      ]
+    },
+    "lws3": {
+      "episodes": [
+        {
+          "name": "One Path Ends",
+          "order": 75,
+          "description": "",
+          "achievementIds": [
+            3470,
+            3472,
+            3485,
+            3507,
+            3511
+          ]
+        },
+        {
+          "name": "Flashpoint",
+          "order": 76,
+          "description": "",
+          "achievementIds": [
+            3396,
+            3401,
+            3422,
+            3435,
+            3446
+          ]
+        },
+        {
+          "name": "The Head of the Snake",
+          "order": 77,
+          "description": "",
+          "achievementIds": [
+            3285,
+            3294,
+            3301,
+            3317,
+            3340,
+            3372
+          ]
+        },
+        {
+          "name": "A Crack in the Ice",
+          "order": 78,
+          "description": "",
+          "achievementIds": [
+            3182,
+            3193,
+            3207,
+            3210,
+            3216,
+            3224,
+            3227
+          ]
+        },
+        {
+          "name": "Rising Flames",
+          "order": 79,
+          "description": "",
+          "achievementIds": [
+            3105,
+            3107,
+            3130,
+            3136,
+            3138,
+            3145
+          ]
+        },
+        {
+          "name": "Out of the Shadows",
+          "order": 80,
+          "description": "",
+          "achievementIds": [
+            3042,
+            3054,
+            3056,
+            3059,
+            3065,
+            3074
+          ]
+        }
+      ]
+    },
+    "hot": {
+      "episodes": [
+        {
+          "name": "Heart of Thorns: Act 1",
+          "order": 81,
+          "description": "",
+          "achievementIds": [
+            2178,
+            2185,
+            2201,
+            2264,
+            2315,
+            2440
+          ]
+        },
+        {
+          "name": "Heart of Thorns: Act 2",
+          "order": 82,
+          "description": "",
+          "achievementIds": [
+            2320,
+            2501,
+            2527,
+            2627
+          ]
+        },
+        {
+          "name": "Heart of Thorns: Act 3",
+          "order": 83,
+          "description": "",
+          "achievementIds": [
+            2392,
+            2443,
+            2531,
+            2581
+          ]
+        },
+        {
+          "name": "Heart of Thorns: Act 4",
+          "order": 84,
+          "description": "",
+          "achievementIds": [
+            2472,
+            2577
+          ]
+        }
+      ]
+    },
+    "lws2": {
+      "episodes": [
+        {
+          "name": "Point of No Return",
+          "order": 85,
+          "description": "",
+          "achievementIds": [
+            2060
+          ]
+        },
+        {
+          "name": "Seeds of Truth",
+          "order": 86,
+          "description": "",
+          "achievementIds": [
+            1826
+          ]
+        },
+        {
+          "name": "Tangled Paths",
+          "order": 87,
+          "description": "",
+          "achievementIds": [
+            1822
+          ]
+        },
+        {
+          "name": "Echoes of the Past",
+          "order": 88,
+          "description": "",
+          "achievementIds": [
+            1783
+          ]
+        },
+        {
+          "name": "The Dragon's Reach, Part 2",
+          "order": 89,
+          "description": "",
+          "achievementIds": [
+            1700
+          ]
+        },
+        {
+          "name": "The Dragon's Reach, Part 1",
+          "order": 90,
+          "description": "",
+          "achievementIds": [
+            1674
+          ]
+        },
+        {
+          "name": "Entanglement",
+          "order": 91,
+          "description": "",
+          "achievementIds": [
+            1659
+          ]
+        },
+        {
+          "name": "Gates of Maguuma",
+          "order": 92,
+          "description": "",
+          "achievementIds": [
+            1641
+          ]
+        }
+      ]
+    },
+    "lws1": {
+      "episodes": [
+        {
+          "name": "The Battle for Lion's Arch",
+          "order": 93,
+          "description": "",
+          "achievementIds": []
+        },
+        {
+          "name": "Clockwork Chaos",
+          "order": 99,
+          "description": "",
+          "achievementIds": []
+        },
+        {
+          "name": "Sky Pirates",
+          "order": 100,
+          "description": "",
+          "achievementIds": []
+        },
+        {
+          "name": "Flame and Frost",
+          "order": 101,
+          "description": "",
+          "achievementIds": []
+        }
+      ]
+    },
+    "core": {
+      "episodes": [
+        {
+          "name": "Chapter 1",
+          "order": 1,
+          "cumulative": true,
+          "description": "Personal story chapter (manual - the API can't read Adventure Guide progress). Ticking a chapter also marks the earlier ones.",
+          "achievementIds": []
+        },
+        {
+          "name": "Chapter 2",
+          "order": 2,
+          "cumulative": true,
+          "description": "Personal story chapter (manual - the API can't read Adventure Guide progress). Ticking a chapter also marks the earlier ones.",
+          "achievementIds": []
+        },
+        {
+          "name": "Chapter 3",
+          "order": 3,
+          "cumulative": true,
+          "description": "Personal story chapter (manual - the API can't read Adventure Guide progress). Ticking a chapter also marks the earlier ones.",
+          "achievementIds": []
+        },
+        {
+          "name": "Chapter 4",
+          "order": 4,
+          "cumulative": true,
+          "description": "Personal story chapter (manual - the API can't read Adventure Guide progress). Ticking a chapter also marks the earlier ones.",
+          "achievementIds": []
+        },
+        {
+          "name": "Chapter 5",
+          "order": 5,
+          "cumulative": true,
+          "description": "Personal story chapter (manual - the API can't read Adventure Guide progress). Ticking a chapter also marks the earlier ones.",
+          "achievementIds": []
+        },
+        {
+          "name": "Chapter 6",
+          "order": 6,
+          "cumulative": true,
+          "description": "Personal story chapter (manual - the API can't read Adventure Guide progress). Ticking a chapter also marks the earlier ones.",
+          "achievementIds": []
+        },
+        {
+          "name": "Chapter 7",
+          "order": 7,
+          "cumulative": true,
+          "description": "Personal story chapter (manual - the API can't read Adventure Guide progress). Ticking a chapter also marks the earlier ones.",
+          "achievementIds": []
+        },
+        {
+          "name": "Chapter 8: Victory or Death",
+          "order": 8,
+          "description": "Personal story finale - auto-detected from 'Savior of Tyria' (account-wide).",
+          "achievementIds": [
+            83
+          ]
+        }
+      ]
+    }
+  }
+}

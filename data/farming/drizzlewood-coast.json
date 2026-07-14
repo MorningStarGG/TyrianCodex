@@ -1,0 +1,596 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1371,
+  "slug": "drizzlewood-coast",
+  "name": "Drizzlewood Coast",
+  "regionName": "Shiverpeak Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mixed",
+      "category": "plant",
+      "material": "plant_mixed",
+      "source": "lady"
+    },
+    {
+      "name": "Potato",
+      "category": "plant",
+      "material": "potato",
+      "source": "lady"
+    },
+    {
+      "name": "Coral",
+      "category": "seafood",
+      "material": "coral",
+      "source": "lady"
+    },
+    {
+      "name": "Seaweed",
+      "category": "seafood",
+      "material": "seaweed",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 244.2,
+      "y": 101.5,
+      "z": -808.6,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 245.6,
+      "y": 100.2,
+      "z": -800.4,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 253.0,
+      "y": 100.2,
+      "z": -801.4,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 261.4,
+      "y": 99.3,
+      "z": -802.4,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 269.2,
+      "y": 99.0,
+      "z": -804.2,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 268.4,
+      "y": 101.2,
+      "z": -813.7,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 260.2,
+      "y": 100.8,
+      "z": -811.7,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 251.9,
+      "y": 101.4,
+      "z": -809.3,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -312.4,
+      "y": 195.9,
+      "z": -648.2,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -323.2,
+      "y": 196.6,
+      "z": -637.5,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -339.6,
+      "y": 196.4,
+      "z": -631.0,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -366.4,
+      "y": 193.8,
+      "z": -627.9,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -375.9,
+      "y": 194.5,
+      "z": -639.0,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -348.0,
+      "y": 197.1,
+      "z": -650.4,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -542.5,
+      "y": 154.0,
+      "z": -187.7,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -548.1,
+      "y": 152.9,
+      "z": -183.0,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -551.4,
+      "y": 151.5,
+      "z": -175.5,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -550.0,
+      "y": 149.6,
+      "z": -169.1,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": -547.9,
+      "y": 155.8,
+      "z": -130.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -545.6,
+      "y": 156.9,
+      "z": -121.2,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -539.8,
+      "y": 154.6,
+      "z": -110.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -532.7,
+      "y": 152.6,
+      "z": -107.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 563.4,
+      "y": -0.7,
+      "z": -945.7,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 601.7,
+      "y": -2.5,
+      "z": -1058.1,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 582.7,
+      "y": -1.5,
+      "z": -1109.5,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 389.4,
+      "y": -2.6,
+      "z": -595.5,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 417.3,
+      "y": -2.4,
+      "z": -595.4,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 457.1,
+      "y": -6.6,
+      "z": -600.3,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 478.2,
+      "y": -4.5,
+      "z": -579.5,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 530.4,
+      "y": -19.5,
+      "z": -609.2,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 541.2,
+      "y": -4.5,
+      "z": -544.9,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 596.6,
+      "y": -0.9,
+      "z": -1030.3,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 465.2,
+      "y": -16.3,
+      "z": -626.2,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 532.7,
+      "y": -2.1,
+      "z": -574.0,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 476.7,
+      "y": -21.0,
+      "z": -685.6,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 564.7,
+      "y": -37.5,
+      "z": -691.0,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 606.4,
+      "y": -47.4,
+      "z": -669.6,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 597.4,
+      "y": -27.7,
+      "z": -583.5,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 605.5,
+      "y": -11.4,
+      "z": -224.9,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 587.2,
+      "y": -19.6,
+      "z": -158.0,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 630.0,
+      "y": -37.6,
+      "z": -96.0,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 584.9,
+      "y": -10.9,
+      "z": -44.5,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 618.0,
+      "y": -35.8,
+      "z": 35.1,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 546.3,
+      "y": -18.3,
+      "z": 85.6,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 513.0,
+      "y": -12.2,
+      "z": 44.8,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 405.1,
+      "y": -1.4,
+      "z": 21.9,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 586.5,
+      "y": -14.8,
+      "z": -857.7,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 580.3,
+      "y": -18.2,
+      "z": -784.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 544.8,
+      "y": -21.1,
+      "z": -787.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 529.7,
+      "y": -11.0,
+      "z": -751.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 610.8,
+      "y": -17.6,
+      "z": -374.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 420.5,
+      "y": -13.7,
+      "z": -47.7,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 372.7,
+      "y": -8.8,
+      "z": -170.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 260.2,
+      "y": -13.1,
+      "z": -89.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 193.0,
+      "y": -13.6,
+      "z": -134.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 88.8,
+      "y": -15.8,
+      "z": -145.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 38.9,
+      "y": -7.2,
+      "z": -217.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -70.7,
+      "y": -14.0,
+      "z": -205.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -232.1,
+      "y": -12.2,
+      "z": -42.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -360.3,
+      "y": -9.3,
+      "z": 51.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -385.8,
+      "y": -10.3,
+      "z": 260.7,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -287.9,
+      "y": -8.0,
+      "z": 124.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -188.1,
+      "y": -11.3,
+      "z": 73.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -154.3,
+      "y": -7.3,
+      "z": 17.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 236.2,
+      "y": -11.1,
+      "z": -43.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 264.8,
+      "y": -3.3,
+      "z": -2.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 559.1,
+      "y": -20.2,
+      "z": -841.1,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 357.1,
+      "y": -13.6,
+      "z": -110.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 344.9,
+      "y": -18.8,
+      "z": -36.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -182.7,
+      "y": -13.9,
+      "z": -123.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    }
+  ]
+}

@@ -1,0 +1,3350 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1550,
+  "slug": "lowland-shore",
+  "name": "Lowland Shore",
+  "regionName": "Janthir",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Route",
+      "category": "farmroute",
+      "material": "route",
+      "source": "hero"
+    },
+    {
+      "name": "Verdant Herbs",
+      "category": "plant",
+      "material": "verdant_herbs",
+      "source": "lady"
+    },
+    {
+      "name": "Lowland Pine Log & Honey Flower",
+      "category": "wood",
+      "material": "honeypine",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -124.2,
+      "y": 89.4,
+      "z": 191.0,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -293.0,
+      "y": 184.4,
+      "z": 398.6,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -292.0,
+      "y": 187.6,
+      "z": 386.2,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -173.7,
+      "y": 104.8,
+      "z": 429.8,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -252.0,
+      "y": 59.5,
+      "z": 363.7,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -674.8,
+      "y": -1.1,
+      "z": 25.3,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -728.0,
+      "y": 51.4,
+      "z": 131.3,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -875.6,
+      "y": 17.5,
+      "z": 409.8,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -821.1,
+      "y": 196.9,
+      "z": 78.9,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -913.1,
+      "y": 201.0,
+      "z": -37.3,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -855.0,
+      "y": 270.9,
+      "z": -248.7,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -930.9,
+      "y": 305.1,
+      "z": -172.8,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -531.8,
+      "y": 219.6,
+      "z": -426.8,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -175.5,
+      "y": 320.5,
+      "z": -653.4,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -183.6,
+      "y": 329.3,
+      "z": -598.6,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -114.9,
+      "y": 307.3,
+      "z": -427.9,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 53.5,
+      "y": 317.6,
+      "z": -289.2,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 145.3,
+      "y": 308.0,
+      "z": -263.4,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 233.9,
+      "y": 335.5,
+      "z": -618.9,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 259.1,
+      "y": 355.3,
+      "z": -607.7,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 327.3,
+      "y": 335.3,
+      "z": -483.7,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 974.0,
+      "y": 373.0,
+      "z": -162.0,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 981.9,
+      "y": 396.5,
+      "z": -106.2,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 979.7,
+      "y": 399.9,
+      "z": -102.8,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 718.0,
+      "y": 301.4,
+      "z": -314.6,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 328.4,
+      "y": 333.8,
+      "z": -192.9,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 275.3,
+      "y": 307.8,
+      "z": -178.5,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 296.0,
+      "y": 301.7,
+      "z": 35.6,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 162.3,
+      "y": 309.0,
+      "z": -43.4,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 674.9,
+      "y": 329.0,
+      "z": 28.5,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 1007.8,
+      "y": 351.7,
+      "z": 266.0,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 549.3,
+      "y": 132.0,
+      "z": 242.9,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 495.5,
+      "y": 146.5,
+      "z": 371.0,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 568.4,
+      "y": 4.7,
+      "z": 463.0,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 353.0,
+      "y": 141.1,
+      "z": 325.7,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 273.2,
+      "y": 107.6,
+      "z": 353.9,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 278.7,
+      "y": 95.3,
+      "z": 397.1,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 131.2,
+      "y": 176.7,
+      "z": 318.6,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 55.6,
+      "y": 9.2,
+      "z": 389.0,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 103.5,
+      "y": 128.2,
+      "z": 348.3,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 130.1,
+      "y": 197.2,
+      "z": 187.2,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 67.1,
+      "y": 151.0,
+      "z": 188.3,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 39.1,
+      "y": 236.2,
+      "z": -116.2,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -199.1,
+      "y": 227.8,
+      "z": -95.3,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -265.7,
+      "y": 51.8,
+      "z": -59.9,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -346.1,
+      "y": 98.8,
+      "z": -30.6,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 207.1,
+      "y": 324.8,
+      "z": -597.0,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": 188.1,
+      "y": 351.2,
+      "z": -587.4,
+      "material": "route",
+      "category": "farmroute"
+    },
+    {
+      "x": -492.3,
+      "y": 173.2,
+      "z": 334.1,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 366.8,
+      "y": 116.7,
+      "z": 434.8,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -312.1,
+      "y": 186.6,
+      "z": 290.5,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -380.9,
+      "y": 264.3,
+      "z": -223.1,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -485.9,
+      "y": 2.4,
+      "z": 64.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -580.3,
+      "y": 0.5,
+      "z": 27.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -682.2,
+      "y": 0.6,
+      "z": 408.3,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -679.5,
+      "y": 0.2,
+      "z": 520.8,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -836.7,
+      "y": 0.1,
+      "z": 436.8,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -902.5,
+      "y": -0.1,
+      "z": 293.4,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -962.2,
+      "y": 66.5,
+      "z": 135.2,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -844.1,
+      "y": 195.0,
+      "z": 81.4,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -901.4,
+      "y": 202.7,
+      "z": -46.5,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -863.1,
+      "y": 264.2,
+      "z": -282.5,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -794.5,
+      "y": 298.8,
+      "z": -479.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -651.3,
+      "y": 253.5,
+      "z": -422.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -720.9,
+      "y": 211.8,
+      "z": -184.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -523.3,
+      "y": 202.5,
+      "z": -267.2,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -498.7,
+      "y": 209.7,
+      "z": -328.8,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -451.1,
+      "y": 208.7,
+      "z": -369.6,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -455.8,
+      "y": 209.4,
+      "z": -374.2,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -175.4,
+      "y": 215.7,
+      "z": -381.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -90.5,
+      "y": 298.9,
+      "z": -583.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -39.8,
+      "y": 290.7,
+      "z": -506.2,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -117.0,
+      "y": 310.5,
+      "z": -445.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": 136.2,
+      "y": 311.4,
+      "z": -415.5,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": 197.6,
+      "y": 308.8,
+      "z": -499.6,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -7.0,
+      "y": 237.7,
+      "z": -125.4,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -134.1,
+      "y": 216.9,
+      "z": -142.3,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -562.9,
+      "y": 0.4,
+      "z": 130.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -547.9,
+      "y": 0.9,
+      "z": 190.3,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -805.1,
+      "y": 0.0,
+      "z": 525.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -806.5,
+      "y": 0.8,
+      "z": 350.2,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -946.3,
+      "y": -0.2,
+      "z": 222.8,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -1025.8,
+      "y": 213.6,
+      "z": -66.5,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -972.3,
+      "y": 218.9,
+      "z": -152.3,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -903.8,
+      "y": 267.5,
+      "z": -363.8,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -671.7,
+      "y": 278.5,
+      "z": -509.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -427.9,
+      "y": 203.5,
+      "z": -283.7,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -455.7,
+      "y": 208.5,
+      "z": -365.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -194.3,
+      "y": 311.2,
+      "z": -648.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": 24.3,
+      "y": 308.9,
+      "z": -338.5,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": 72.2,
+      "y": 301.6,
+      "z": -481.2,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": 304.7,
+      "y": 328.9,
+      "z": -558.6,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -635.8,
+      "y": 2.4,
+      "z": 268.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -951.3,
+      "y": 202.6,
+      "z": 70.6,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -627.0,
+      "y": 234.4,
+      "z": -307.5,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -505.7,
+      "y": 208.8,
+      "z": -419.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -460.4,
+      "y": 209.1,
+      "z": -369.6,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": 94.2,
+      "y": 151.8,
+      "z": -0.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -230.5,
+      "y": 214.7,
+      "z": -61.9,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -729.1,
+      "y": 1.3,
+      "z": 15.8,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -198.3,
+      "y": 241.8,
+      "z": -486.8,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -974.9,
+      "y": 232.8,
+      "z": -263.6,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -75.2,
+      "y": 294.9,
+      "z": -281.3,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -833.2,
+      "y": 218.7,
+      "z": -126.1,
+      "material": "honey_flower",
+      "category": "plant",
+      "icon": "honey_flower"
+    },
+    {
+      "x": -149.9,
+      "y": 108.0,
+      "z": 437.8,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -110.5,
+      "y": 135.6,
+      "z": 323.9,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -48.6,
+      "y": 106.4,
+      "z": 465.9,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 665.0,
+      "y": 273.6,
+      "z": -177.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 621.2,
+      "y": 255.2,
+      "z": -143.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 263.2,
+      "y": 213.3,
+      "z": 181.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 253.4,
+      "y": 213.8,
+      "z": 187.6,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 238.6,
+      "y": 213.8,
+      "z": 185.4,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 199.7,
+      "y": 213.1,
+      "z": 228.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 187.8,
+      "y": 213.5,
+      "z": 224.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 178.7,
+      "y": 213.4,
+      "z": 214.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 180.7,
+      "y": 213.4,
+      "z": 200.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 183.7,
+      "y": 214.0,
+      "z": 187.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 195.0,
+      "y": 213.4,
+      "z": 269.2,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 221.7,
+      "y": 213.4,
+      "z": 265.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 444.1,
+      "y": 321.7,
+      "z": -122.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 383.1,
+      "y": 328.9,
+      "z": -142.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 347.3,
+      "y": 333.6,
+      "z": -186.2,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 182.8,
+      "y": 214.0,
+      "z": 262.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 227.5,
+      "y": 213.8,
+      "z": 175.2,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 208.4,
+      "y": 213.1,
+      "z": 269.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -1054.6,
+      "y": -35.5,
+      "z": 237.9,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -1049.0,
+      "y": -66.8,
+      "z": 645.9,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -1024.9,
+      "y": -31.6,
+      "z": 401.1,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -1005.0,
+      "y": -35.4,
+      "z": 506.8,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -926.1,
+      "y": -17.7,
+      "z": 551.3,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -216.8,
+      "y": -41.6,
+      "z": 650.9,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -6.7,
+      "y": -10.0,
+      "z": 633.1,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 574.2,
+      "y": -11.6,
+      "z": 625.8,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -461.6,
+      "y": -47.0,
+      "z": 660.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -123.5,
+      "y": -24.7,
+      "z": 691.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 104.9,
+      "y": -35.2,
+      "z": 665.2,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 782.3,
+      "y": -18.0,
+      "z": 648.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -1034.3,
+      "y": -66.4,
+      "z": 584.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -998.3,
+      "y": -50.0,
+      "z": 631.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -965.5,
+      "y": -62.9,
+      "z": 672.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -961.1,
+      "y": -60.1,
+      "z": 622.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -881.3,
+      "y": -38.0,
+      "z": 608.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -875.5,
+      "y": -50.7,
+      "z": 666.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -797.6,
+      "y": -17.9,
+      "z": 601.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -791.1,
+      "y": -22.2,
+      "z": 654.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -740.9,
+      "y": -17.5,
+      "z": 666.1,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -693.4,
+      "y": -17.1,
+      "z": 607.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -650.9,
+      "y": -20.2,
+      "z": 619.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -646.4,
+      "y": -32.6,
+      "z": 692.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -638.5,
+      "y": -25.6,
+      "z": 652.1,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -526.5,
+      "y": -57.0,
+      "z": 665.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -509.1,
+      "y": -26.1,
+      "z": 638.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -467.0,
+      "y": -60.6,
+      "z": 703.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -402.4,
+      "y": -44.8,
+      "z": 665.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -318.0,
+      "y": -18.0,
+      "z": 609.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -115.0,
+      "y": -7.4,
+      "z": 623.7,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -59.8,
+      "y": -26.7,
+      "z": 702.2,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 28.8,
+      "y": -23.9,
+      "z": 687.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 74.7,
+      "y": -23.6,
+      "z": 599.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 330.1,
+      "y": -11.1,
+      "z": 617.2,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 357.9,
+      "y": -57.6,
+      "z": 688.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 442.2,
+      "y": -9.5,
+      "z": 621.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 447.3,
+      "y": -45.8,
+      "z": 684.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 548.3,
+      "y": -46.0,
+      "z": 706.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 675.6,
+      "y": -13.8,
+      "z": 670.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 874.7,
+      "y": -15.4,
+      "z": 665.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 896.7,
+      "y": -16.5,
+      "z": 587.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 947.9,
+      "y": -12.1,
+      "z": 609.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 959.1,
+      "y": -7.3,
+      "z": 528.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 994.5,
+      "y": -20.9,
+      "z": 669.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 1025.5,
+      "y": -10.0,
+      "z": 580.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -1066.4,
+      "y": 231.8,
+      "z": -239.9,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -293.9,
+      "y": 191.4,
+      "z": 378.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 423.7,
+      "y": 309.4,
+      "z": -269.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 465.1,
+      "y": 313.7,
+      "z": -297.3,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 532.5,
+      "y": 306.4,
+      "z": -301.4,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 994.7,
+      "y": 382.0,
+      "z": -213.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -1018.6,
+      "y": 217.0,
+      "z": 55.5,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 945.7,
+      "y": 380.0,
+      "z": -121.7,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -425.5,
+      "y": 213.0,
+      "z": 283.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 922.6,
+      "y": 373.3,
+      "z": -316.9,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -443.9,
+      "y": 209.8,
+      "z": 198.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -741.4,
+      "y": 376.1,
+      "z": -590.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 304.9,
+      "y": 328.9,
+      "z": -558.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 198.1,
+      "y": 308.9,
+      "z": -499.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 136.1,
+      "y": 311.2,
+      "z": -415.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 72.2,
+      "y": 301.5,
+      "z": -481.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 24.4,
+      "y": 308.9,
+      "z": -338.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -39.8,
+      "y": 290.8,
+      "z": -505.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -90.6,
+      "y": 299.1,
+      "z": -584.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -194.4,
+      "y": 311.3,
+      "z": -648.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -198.5,
+      "y": 241.8,
+      "z": -487.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -175.5,
+      "y": 215.9,
+      "z": -381.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -75.1,
+      "y": 294.9,
+      "z": -281.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -6.9,
+      "y": 237.7,
+      "z": -125.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -133.3,
+      "y": 216.8,
+      "z": -142.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -230.4,
+      "y": 214.7,
+      "z": -62.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -505.8,
+      "y": 208.9,
+      "z": -419.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -455.3,
+      "y": 209.4,
+      "z": -374.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -451.2,
+      "y": 208.7,
+      "z": -369.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -456.1,
+      "y": 208.4,
+      "z": -364.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -460.3,
+      "y": 209.1,
+      "z": -369.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -499.2,
+      "y": 209.9,
+      "z": -328.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -428.2,
+      "y": 203.4,
+      "z": -283.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -523.2,
+      "y": 202.5,
+      "z": -267.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -627.1,
+      "y": 234.3,
+      "z": -307.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -651.4,
+      "y": 253.5,
+      "z": -422.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -672.2,
+      "y": 278.5,
+      "z": -509.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -794.5,
+      "y": 298.8,
+      "z": -478.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -903.0,
+      "y": 267.6,
+      "z": -363.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -974.9,
+      "y": 232.8,
+      "z": -263.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -863.1,
+      "y": 264.2,
+      "z": -282.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -833.3,
+      "y": 218.7,
+      "z": -126.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -720.9,
+      "y": 211.8,
+      "z": -185.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -901.4,
+      "y": 202.6,
+      "z": -46.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -1025.8,
+      "y": 213.6,
+      "z": -66.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -951.4,
+      "y": 202.5,
+      "z": 70.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -843.9,
+      "y": 195.0,
+      "z": 81.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -728.6,
+      "y": 0.7,
+      "z": 15.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -580.2,
+      "y": 0.5,
+      "z": 27.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -486.1,
+      "y": 2.3,
+      "z": 64.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -562.8,
+      "y": 0.4,
+      "z": 131.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -548.2,
+      "y": 1.0,
+      "z": 190.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -635.4,
+      "y": 2.3,
+      "z": 268.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -682.4,
+      "y": 0.5,
+      "z": 407.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -679.7,
+      "y": 0.2,
+      "z": 521.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -836.8,
+      "y": 0.1,
+      "z": 436.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -806.8,
+      "y": 0.8,
+      "z": 350.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -902.4,
+      "y": -0.1,
+      "z": 293.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -946.2,
+      "y": -0.1,
+      "z": 223.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -962.1,
+      "y": 66.5,
+      "z": 135.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -117.0,
+      "y": 310.5,
+      "z": -445.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -804.8,
+      "y": -0.0,
+      "z": 525.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 94.0,
+      "y": 151.8,
+      "z": 0.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -972.6,
+      "y": 218.9,
+      "z": -152.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 152.7,
+      "y": 124.6,
+      "z": 120.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -655.2,
+      "y": 2.2,
+      "z": 541.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -240.9,
+      "y": 205.9,
+      "z": -351.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -97.5,
+      "y": 309.6,
+      "z": -381.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -609.5,
+      "y": 278.8,
+      "z": -504.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -717.6,
+      "y": 282.6,
+      "z": -305.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -860.8,
+      "y": 223.2,
+      "z": -112.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -937.1,
+      "y": 208.2,
+      "z": 9.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -299.5,
+      "y": 132.7,
+      "z": 62.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -258.1,
+      "y": 138.8,
+      "z": 191.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 539.9,
+      "y": 308.8,
+      "z": -339.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 635.4,
+      "y": 305.4,
+      "z": -337.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 796.2,
+      "y": 321.1,
+      "z": -250.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 709.7,
+      "y": 313.7,
+      "z": -31.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 857.8,
+      "y": 317.9,
+      "z": -32.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 960.1,
+      "y": 332.8,
+      "z": 175.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 739.0,
+      "y": 88.5,
+      "z": 359.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -155.5,
+      "y": 273.1,
+      "z": -537.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 396.7,
+      "y": 330.9,
+      "z": -357.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 986.2,
+      "y": 339.1,
+      "z": 269.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 170.0,
+      "y": 301.7,
+      "z": -20.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 178.3,
+      "y": 300.7,
+      "z": -100.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 86.4,
+      "y": 214.2,
+      "z": 304.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 391.7,
+      "y": 336.8,
+      "z": -514.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 221.0,
+      "y": 313.1,
+      "z": -548.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -78.5,
+      "y": 292.3,
+      "z": -561.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 2.3,
+      "y": 216.9,
+      "z": -196.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -191.2,
+      "y": 221.1,
+      "z": -113.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -10.3,
+      "y": 313.3,
+      "z": -298.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 69.0,
+      "y": 302.5,
+      "z": -379.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -249.4,
+      "y": 303.3,
+      "z": -630.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 343.4,
+      "y": 338.2,
+      "z": -622.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 300.0,
+      "y": 312.3,
+      "z": -487.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -380.2,
+      "y": 211.5,
+      "z": -362.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -524.1,
+      "y": 202.9,
+      "z": -290.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -663.4,
+      "y": 326.2,
+      "z": -605.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -749.1,
+      "y": 298.5,
+      "z": -495.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -846.2,
+      "y": 269.6,
+      "z": -354.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -1083.7,
+      "y": 210.9,
+      "z": -111.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -858.1,
+      "y": 208.0,
+      "z": -33.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -835.0,
+      "y": 4.3,
+      "z": 188.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -800.7,
+      "y": 56.3,
+      "z": 225.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -623.4,
+      "y": 1.7,
+      "z": 75.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -574.7,
+      "y": 15.1,
+      "z": 349.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -640.3,
+      "y": 2.0,
+      "z": 430.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -896.7,
+      "y": 1.5,
+      "z": 453.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -419.4,
+      "y": 3.9,
+      "z": 433.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -316.4,
+      "y": 0.3,
+      "z": 522.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -99.6,
+      "y": 16.1,
+      "z": 541.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -19.0,
+      "y": 149.7,
+      "z": 342.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 273.0,
+      "y": 250.0,
+      "z": -86.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 316.9,
+      "y": 308.8,
+      "z": 12.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 719.1,
+      "y": 92.7,
+      "z": 227.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 776.1,
+      "y": 98.3,
+      "z": 252.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 630.9,
+      "y": 90.4,
+      "z": 316.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 560.3,
+      "y": 62.4,
+      "z": 267.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 707.0,
+      "y": 326.4,
+      "z": -450.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 761.8,
+      "y": 344.1,
+      "z": -517.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 886.6,
+      "y": 362.7,
+      "z": -361.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 829.3,
+      "y": 326.1,
+      "z": -136.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 824.3,
+      "y": 332.7,
+      "z": 105.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 361.4,
+      "y": 322.9,
+      "z": -279.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 513.6,
+      "y": 309.2,
+      "z": -244.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 692.0,
+      "y": 292.8,
+      "z": -246.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 755.0,
+      "y": 310.0,
+      "z": -353.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -78.3,
+      "y": 216.3,
+      "z": -114.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -371.8,
+      "y": 152.4,
+      "z": 135.2,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 253.7,
+      "y": 213.5,
+      "z": 214.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 687.1,
+      "y": 324.6,
+      "z": 41.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -783.8,
+      "y": 207.1,
+      "z": 60.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -957.7,
+      "y": 1.8,
+      "z": 256.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -831.5,
+      "y": 2.9,
+      "z": 312.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -893.3,
+      "y": 20.3,
+      "z": 361.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -870.4,
+      "y": 260.4,
+      "z": -216.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -166.0,
+      "y": 77.4,
+      "z": 276.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -81.0,
+      "y": 107.4,
+      "z": 453.0,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 858.6,
+      "y": 360.8,
+      "z": -519.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 428.1,
+      "y": 310.9,
+      "z": -194.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 721.3,
+      "y": 305.3,
+      "z": -127.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 135.1,
+      "y": 212.5,
+      "z": 196.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 282.4,
+      "y": 109.8,
+      "z": 330.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 275.9,
+      "y": 327.9,
+      "z": -60.8,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 235.2,
+      "y": 214.0,
+      "z": 110.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -9.7,
+      "y": 310.0,
+      "z": -578.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 172.4,
+      "y": 310.6,
+      "z": -431.7,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 801.0,
+      "y": 327.7,
+      "z": -445.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 846.7,
+      "y": 122.1,
+      "z": 342.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 207.3,
+      "y": 336.4,
+      "z": -134.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 227.4,
+      "y": 309.4,
+      "z": -59.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 124.0,
+      "y": 83.6,
+      "z": 364.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -227.6,
+      "y": 0.7,
+      "z": 421.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -616.9,
+      "y": 5.6,
+      "z": -58.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -183.7,
+      "y": 228.6,
+      "z": -432.1,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 71.4,
+      "y": 154.1,
+      "z": -58.5,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 479.8,
+      "y": 321.5,
+      "z": -365.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 556.6,
+      "y": 423.1,
+      "z": -553.9,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 559.7,
+      "y": 423.1,
+      "z": -558.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 539.0,
+      "y": 218.3,
+      "z": 35.3,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": 553.6,
+      "y": 423.1,
+      "z": -558.6,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -715.9,
+      "y": 210.2,
+      "z": -55.4,
+      "material": "honeypine",
+      "category": "wood",
+      "icon": "honeypine"
+    },
+    {
+      "x": -299.0,
+      "y": 136.2,
+      "z": 63.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -257.9,
+      "y": 142.0,
+      "z": 192.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -639.6,
+      "y": 5.2,
+      "z": 430.3,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -858.2,
+      "y": 211.1,
+      "z": -32.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -936.9,
+      "y": 211.3,
+      "z": 10.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -241.2,
+      "y": 209.2,
+      "z": -350.7,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -10.5,
+      "y": 316.4,
+      "z": -299.3,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 220.9,
+      "y": 316.2,
+      "z": -548.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 540.9,
+      "y": 311.9,
+      "z": -339.9,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 636.1,
+      "y": 308.1,
+      "z": -336.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 722.0,
+      "y": 308.2,
+      "z": -126.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 961.4,
+      "y": 336.1,
+      "z": 175.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 560.3,
+      "y": 65.6,
+      "z": 267.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 282.1,
+      "y": 113.0,
+      "z": 331.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 253.4,
+      "y": 216.8,
+      "z": 215.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -78.7,
+      "y": 219.6,
+      "z": -113.9,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -623.2,
+      "y": 4.9,
+      "z": 76.9,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -831.8,
+      "y": 6.1,
+      "z": 312.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -957.3,
+      "y": 5.0,
+      "z": 256.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -1083.9,
+      "y": 214.1,
+      "z": -111.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -664.2,
+      "y": 329.2,
+      "z": -605.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -524.8,
+      "y": 206.2,
+      "z": -290.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 801.8,
+      "y": 330.9,
+      "z": -445.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 857.9,
+      "y": 363.7,
+      "z": -519.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 514.3,
+      "y": 312.4,
+      "z": -244.7,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 275.3,
+      "y": 330.8,
+      "z": -61.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 178.4,
+      "y": 303.8,
+      "z": -100.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 273.1,
+      "y": 253.2,
+      "z": -86.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 687.3,
+      "y": 327.5,
+      "z": 41.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 719.7,
+      "y": 96.0,
+      "z": 228.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -655.1,
+      "y": 5.5,
+      "z": 542.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -155.9,
+      "y": 276.4,
+      "z": -537.7,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 479.2,
+      "y": 324.7,
+      "z": -365.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 709.3,
+      "y": 317.0,
+      "z": -30.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -749.9,
+      "y": 302.9,
+      "z": -495.9,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -184.0,
+      "y": 232.6,
+      "z": -431.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -250.1,
+      "y": 307.7,
+      "z": -630.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 886.5,
+      "y": 366.9,
+      "z": -361.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 169.0,
+      "y": 306.1,
+      "z": -20.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 134.3,
+      "y": 217.0,
+      "z": 196.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 737.1,
+      "y": 92.9,
+      "z": 359.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 986.3,
+      "y": 343.4,
+      "z": 270.3,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 630.6,
+      "y": 94.7,
+      "z": 316.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -81.9,
+      "y": 110.6,
+      "z": 454.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -98.1,
+      "y": 312.7,
+      "z": -381.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 429.4,
+      "y": 313.7,
+      "z": -194.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 317.0,
+      "y": 311.8,
+      "z": 13.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 858.1,
+      "y": 321.0,
+      "z": -33.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -192.0,
+      "y": 224.5,
+      "z": -112.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 69.2,
+      "y": 306.7,
+      "z": -379.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 397.0,
+      "y": 335.6,
+      "z": -358.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 707.8,
+      "y": 331.0,
+      "z": -450.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 71.1,
+      "y": 158.5,
+      "z": -58.3,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -716.8,
+      "y": 285.7,
+      "z": -304.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 2.5,
+      "y": 220.1,
+      "z": -196.9,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -861.0,
+      "y": 227.6,
+      "z": -111.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -894.1,
+      "y": 23.6,
+      "z": 362.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 829.8,
+      "y": 329.1,
+      "z": -136.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -165.6,
+      "y": 81.8,
+      "z": 277.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -784.2,
+      "y": 211.5,
+      "z": 61.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -871.3,
+      "y": 264.8,
+      "z": -216.3,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 796.3,
+      "y": 325.5,
+      "z": -250.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 86.0,
+      "y": 218.6,
+      "z": 305.5,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -848.0,
+      "y": 272.7,
+      "z": -354.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -380.5,
+      "y": 214.6,
+      "z": -362.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -316.1,
+      "y": 4.6,
+      "z": 521.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 234.8,
+      "y": 217.2,
+      "z": 110.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -896.5,
+      "y": 5.8,
+      "z": 454.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -608.9,
+      "y": 281.4,
+      "z": -502.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 692.5,
+      "y": 297.0,
+      "z": -246.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 343.2,
+      "y": 342.9,
+      "z": -623.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 762.5,
+      "y": 348.7,
+      "z": -519.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -835.0,
+      "y": 9.1,
+      "z": 189.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -226.9,
+      "y": 5.1,
+      "z": 421.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 755.4,
+      "y": 314.5,
+      "z": -353.7,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 361.1,
+      "y": 327.4,
+      "z": -278.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -418.8,
+      "y": 8.4,
+      "z": 433.0,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 777.0,
+      "y": 102.7,
+      "z": 253.1,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -371.5,
+      "y": 156.8,
+      "z": 135.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -10.1,
+      "y": 314.5,
+      "z": -579.3,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -575.0,
+      "y": 19.4,
+      "z": 349.8,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 823.7,
+      "y": 337.3,
+      "z": 106.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 124.2,
+      "y": 88.2,
+      "z": 363.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -801.4,
+      "y": 60.4,
+      "z": 225.6,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": -616.1,
+      "y": 9.5,
+      "z": -58.2,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    },
+    {
+      "x": 227.8,
+      "y": 313.7,
+      "z": -58.4,
+      "material": "pine",
+      "category": "wood",
+      "icon": "pine"
+    }
+  ]
+}

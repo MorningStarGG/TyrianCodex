@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1452,
+  "slug": "the-echovald-wilds",
+  "name": "The Echovald Wilds",
+  "regionName": "Cantha",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Chunk of Petrified Echovald Resin",
+      "category": "misc",
+      "material": "echovald_resin",
+      "source": "mmm"
+    },
+    {
+      "name": "Elder Wood Log",
+      "category": "wood",
+      "material": "elder_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 201.2,
+      "y": 191.8,
+      "z": 582.8,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -98.0,
+      "y": 154.0,
+      "z": 552.6,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 244.0,
+      "y": 233.5,
+      "z": 459.8,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 162.3,
+      "y": 147.4,
+      "z": -112.7,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 237.4,
+      "y": 178.9,
+      "z": -132.1,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 398.0,
+      "y": 257.1,
+      "z": 84.1,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 797.9,
+      "y": 137.5,
+      "z": 86.7,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 907.8,
+      "y": 111.5,
+      "z": -17.4,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 878.2,
+      "y": 34.8,
+      "z": -269.3,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 647.7,
+      "y": 65.1,
+      "z": -258.7,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 567.9,
+      "y": 28.1,
+      "z": -354.7,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 386.5,
+      "y": 61.0,
+      "z": -373.5,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 110.7,
+      "y": 125.6,
+      "z": -270.3,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 49.7,
+      "y": 147.1,
+      "z": -338.2,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -531.5,
+      "y": 163.4,
+      "z": -244.3,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -393.0,
+      "y": 149.4,
+      "z": 15.8,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -400.9,
+      "y": 203.5,
+      "z": 411.9,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -256.2,
+      "y": 213.0,
+      "z": 370.4,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -443.1,
+      "y": 214.0,
+      "z": 303.4,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -103.2,
+      "y": 156.4,
+      "z": 607.6,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 342.5,
+      "y": 239.6,
+      "z": 57.5,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 754.7,
+      "y": 119.3,
+      "z": 13.9,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 1003.0,
+      "y": 95.8,
+      "z": -37.5,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 717.9,
+      "y": 76.8,
+      "z": -164.3,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 905.8,
+      "y": 5.9,
+      "z": -365.1,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -59.8,
+      "y": 166.5,
+      "z": -357.9,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -429.9,
+      "y": 155.2,
+      "z": 135.8,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -415.5,
+      "y": 218.4,
+      "z": 356.3,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -310.3,
+      "y": 212.3,
+      "z": 398.5,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 472.6,
+      "y": 58.8,
+      "z": -341.5,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -463.7,
+      "y": 149.6,
+      "z": 85.8,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 867.8,
+      "y": 103.8,
+      "z": -101.7,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -147.8,
+      "y": 160.8,
+      "z": 599.7,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -199.9,
+      "y": 195.9,
+      "z": 387.7,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 752.5,
+      "y": 142.7,
+      "z": 158.6,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 307.9,
+      "y": 217.9,
+      "z": 448.0,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 240.3,
+      "y": 186.8,
+      "z": -75.2,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 296.6,
+      "y": 225.1,
+      "z": 12.6,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 332.0,
+      "y": 64.0,
+      "z": -342.5,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": 193.7,
+      "y": 114.0,
+      "z": -250.3,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -25.2,
+      "y": 145.3,
+      "z": -313.3,
+      "material": "echovald_resin",
+      "category": "misc",
+      "icon": "echovald_resin"
+    },
+    {
+      "x": -401.6,
+      "y": 204.4,
+      "z": 411.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -524.6,
+      "y": 180.8,
+      "z": 353.9,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 866.2,
+      "y": 35.1,
+      "z": 617.3,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "schemaVersion": 1,
+  "mapId": 51,
+  "slug": "straits-of-devastation",
+  "name": "Straits of Devastation",
+  "regionName": "Ruins of Orr",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mithril Ore",
+      "category": "ore",
+      "material": "mithril",
+      "source": "tw"
+    },
+    {
+      "name": "Artichoke",
+      "category": "plant",
+      "material": "artichoke",
+      "source": "tw"
+    },
+    {
+      "name": "Asparagus",
+      "category": "plant",
+      "material": "asparagus",
+      "source": "lady"
+    },
+    {
+      "name": "Orrian Truffle",
+      "category": "plant",
+      "material": "truffle",
+      "source": "lady"
+    },
+    {
+      "name": "Verdant Herbs",
+      "category": "plant",
+      "material": "verdant_herbs",
+      "source": "lady"
+    },
+    {
+      "name": "Elder Wood Log",
+      "category": "wood",
+      "material": "elder_wood",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -331.1,
+      "y": 38.4,
+      "z": 48.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BPgCAAA=]"
+    },
+    {
+      "x": -125.8,
+      "y": 37.2,
+      "z": -571.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BPUCAAA=] OR [&BPsCAAA=]"
+    },
+    {
+      "x": -742.6,
+      "y": 28.5,
+      "z": -13.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BPsCAAA=]"
+    },
+    {
+      "x": -929.0,
+      "y": 57.6,
+      "z": -260.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKYCAAA=]"
+    },
+    {
+      "x": -652.8,
+      "y": -136.7,
+      "z": 663.9,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -654.2,
+      "y": -137.8,
+      "z": 665.5,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 820.2,
+      "y": 58.4,
+      "z": 692.9,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 822.5,
+      "y": 59.1,
+      "z": 692.8,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 822.7,
+      "y": 59.0,
+      "z": 691.4,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 821.4,
+      "y": 58.5,
+      "z": 688.2,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 820.1,
+      "y": 58.0,
+      "z": 686.0,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 819.8,
+      "y": 58.2,
+      "z": 689.5,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 761.8,
+      "y": 79.1,
+      "z": 756.7,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus",
+      "chatLink": "[&BOwCAAA=]"
+    },
+    {
+      "x": 460.5,
+      "y": 36.8,
+      "z": 721.0,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus",
+      "chatLink": "[&BOUGAAA=]"
+    },
+    {
+      "x": -870.0,
+      "y": 7.9,
+      "z": 220.8,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus",
+      "chatLink": "[&BNIEAAA=]"
+    },
+    {
+      "x": -430.0,
+      "y": 23.1,
+      "z": -566.3,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus",
+      "chatLink": "[&BPACAAA=]"
+    },
+    {
+      "x": 832.5,
+      "y": 14.9,
+      "z": 335.1,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 810.4,
+      "y": 33.3,
+      "z": 573.4,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 460.4,
+      "y": 36.9,
+      "z": 721.1,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 825.9,
+      "y": 32.9,
+      "z": -32.4,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -640.5,
+      "y": 7.1,
+      "z": 212.3,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -709.8,
+      "y": 16.3,
+      "z": 282.5,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -782.8,
+      "y": 13.3,
+      "z": 245.4,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -591.1,
+      "y": 32.0,
+      "z": -355.7,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -496.2,
+      "y": 15.4,
+      "z": -333.0,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 684.6,
+      "y": 5.3,
+      "z": -101.1,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 741.2,
+      "y": 26.2,
+      "z": 601.1,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 818.5,
+      "y": 50.8,
+      "z": 612.7,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 798.2,
+      "y": 53.5,
+      "z": 646.8,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 568.4,
+      "y": 48.1,
+      "z": 642.7,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 463.2,
+      "y": 30.1,
+      "z": 675.5,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -822.4,
+      "y": 26.7,
+      "z": -558.4,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -840.1,
+      "y": 1.5,
+      "z": 315.5,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 503.3,
+      "y": 21.6,
+      "z": 644.2,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -775.2,
+      "y": 1.7,
+      "z": 341.3,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 542.0,
+      "y": 17.9,
+      "z": 605.6,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 706.4,
+      "y": 53.9,
+      "z": 727.3,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 660.1,
+      "y": 22.6,
+      "z": 406.2,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -792.7,
+      "y": 27.8,
+      "z": -441.9,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -910.9,
+      "y": 7.1,
+      "z": -108.9,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -869.0,
+      "y": 54.8,
+      "z": -631.5,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle",
+      "chatLink": "[&BPsCAAA=]"
+    },
+    {
+      "x": -763.7,
+      "y": 27.9,
+      "z": -179.9,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle",
+      "chatLink": "[&BCEDAAA=]"
+    },
+    {
+      "x": -861.1,
+      "y": 8.6,
+      "z": 59.4,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -587.3,
+      "y": 16.8,
+      "z": -734.8,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -441.0,
+      "y": 13.0,
+      "z": -758.3,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -386.7,
+      "y": 13.9,
+      "z": -757.5,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -705.3,
+      "y": 41.7,
+      "z": -722.4,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -781.4,
+      "y": 30.7,
+      "z": -390.3,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -226.7,
+      "y": 37.3,
+      "z": -789.7,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -797.2,
+      "y": 39.2,
+      "z": -559.1,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -937.4,
+      "y": 8.8,
+      "z": -14.5,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 399.3,
+      "y": 4.3,
+      "z": 714.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 766.5,
+      "y": 14.5,
+      "z": 512.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 631.4,
+      "y": 18.3,
+      "z": 381.6,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 910.4,
+      "y": 47.9,
+      "z": 20.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 840.2,
+      "y": 41.6,
+      "z": -56.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 823.5,
+      "y": 15.6,
+      "z": 325.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 584.1,
+      "y": 13.0,
+      "z": 406.4,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 861.3,
+      "y": 19.8,
+      "z": 272.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 747.1,
+      "y": 15.7,
+      "z": 411.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -331.4,
+      "y": 22.4,
+      "z": -637.9,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -332.9,
+      "y": 22.4,
+      "z": -632.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -337.9,
+      "y": 22.4,
+      "z": -629.9,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -342.4,
+      "y": 22.4,
+      "z": -631.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -332.2,
+      "y": 22.4,
+      "z": -635.9,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    }
+  ]
+}

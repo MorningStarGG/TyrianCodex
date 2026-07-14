@@ -1,0 +1,966 @@
+{
+  "farming": [
+    {
+      "slug": "blazeridge-steppes",
+      "mapId": 20,
+      "name": "Blazeridge Steppes",
+      "regionName": "Ascalon",
+      "routeCount": 5,
+      "nodeCount": 142,
+      "byCategory": {
+        "misc": 5,
+        "ore": 4,
+        "plant": 78,
+        "wood": 55
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "diessa-plateau",
+      "mapId": 32,
+      "name": "Diessa Plateau",
+      "regionName": "Ascalon",
+      "routeCount": 5,
+      "nodeCount": 70,
+      "byCategory": {
+        "event": 1,
+        "misc": 2,
+        "ore": 3,
+        "plant": 13,
+        "wood": 51
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "fields-of-ruin",
+      "mapId": 21,
+      "name": "Fields of Ruin",
+      "regionName": "Ascalon",
+      "routeCount": 5,
+      "nodeCount": 74,
+      "byCategory": {
+        "ore": 5,
+        "plant": 23,
+        "wood": 46
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "fireheart-rise",
+      "mapId": 22,
+      "name": "Fireheart Rise",
+      "regionName": "Ascalon",
+      "routeCount": 6,
+      "nodeCount": 91,
+      "byCategory": {
+        "misc": 10,
+        "ore": 5,
+        "plant": 76
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "grothmar-valley",
+      "mapId": 1330,
+      "name": "Grothmar Valley",
+      "regionName": "Ascalon",
+      "routeCount": 3,
+      "nodeCount": 63,
+      "byCategory": {
+        "plant": 63
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "iron-marches",
+      "mapId": 25,
+      "name": "Iron Marches",
+      "regionName": "Ascalon",
+      "routeCount": 3,
+      "nodeCount": 63,
+      "byCategory": {
+        "misc": 5,
+        "ore": 3,
+        "plant": 55
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "plains-of-ashford",
+      "mapId": 19,
+      "name": "Plains of Ashford",
+      "regionName": "Ascalon",
+      "routeCount": 3,
+      "nodeCount": 27,
+      "byCategory": {
+        "event": 2,
+        "misc": 11,
+        "ore": 4,
+        "plant": 10
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "dragon-s-end",
+      "mapId": 1422,
+      "name": "Dragon's End",
+      "regionName": "Cantha",
+      "routeCount": 1,
+      "nodeCount": 25,
+      "byCategory": {
+        "ore": 25
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "new-kaineng-city",
+      "mapId": 1438,
+      "name": "New Kaineng City",
+      "regionName": "Cantha",
+      "routeCount": 0,
+      "nodeCount": 12,
+      "byCategory": {
+        "seafood": 12
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "seitung-province",
+      "mapId": 1442,
+      "name": "Seitung Province",
+      "regionName": "Cantha",
+      "routeCount": 3,
+      "nodeCount": 20,
+      "byCategory": {
+        "plant": 20
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "the-echovald-wilds",
+      "mapId": 1452,
+      "name": "The Echovald Wilds",
+      "regionName": "Cantha",
+      "routeCount": 2,
+      "nodeCount": 44,
+      "byCategory": {
+        "misc": 41,
+        "wood": 3
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "crystal-oasis",
+      "mapId": 1210,
+      "name": "Crystal Oasis",
+      "regionName": "Crystal Desert",
+      "routeCount": 6,
+      "nodeCount": 129,
+      "byCategory": {
+        "ore": 14,
+        "plant": 13,
+        "seafood": 75,
+        "wood": 27
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "desert-highlands",
+      "mapId": 1211,
+      "name": "Desert Highlands",
+      "regionName": "Crystal Desert",
+      "routeCount": 4,
+      "nodeCount": 62,
+      "byCategory": {
+        "ore": 11,
+        "plant": 4,
+        "seafood": 13,
+        "wood": 34
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "domain-of-istan",
+      "mapId": 1263,
+      "name": "Domain of Istan",
+      "regionName": "Crystal Desert",
+      "routeCount": 3,
+      "nodeCount": 123,
+      "byCategory": {
+        "ore": 94,
+        "plant": 7,
+        "seafood": 19,
+        "wood": 3
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "domain-of-kourna",
+      "mapId": 1288,
+      "name": "Domain of Kourna",
+      "regionName": "Crystal Desert",
+      "routeCount": 5,
+      "nodeCount": 260,
+      "byCategory": {
+        "misc": 77,
+        "ore": 7,
+        "plant": 90,
+        "seafood": 86
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "domain-of-vabbi",
+      "mapId": 1248,
+      "name": "Domain of Vabbi",
+      "regionName": "Crystal Desert",
+      "routeCount": 3,
+      "nodeCount": 20,
+      "byCategory": {
+        "ore": 15,
+        "plant": 2,
+        "wood": 3
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "dragonfall",
+      "mapId": 1317,
+      "name": "Dragonfall",
+      "regionName": "Crystal Desert",
+      "routeCount": 1,
+      "nodeCount": 123,
+      "byCategory": {
+        "misc": 123
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "elon-riverlands",
+      "mapId": 1228,
+      "name": "Elon Riverlands",
+      "regionName": "Crystal Desert",
+      "routeCount": 4,
+      "nodeCount": 27,
+      "byCategory": {
+        "misc": 8,
+        "ore": 2,
+        "plant": 4,
+        "seafood": 8,
+        "wood": 5
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "jahai-bluffs",
+      "mapId": 1301,
+      "name": "Jahai Bluffs",
+      "regionName": "Crystal Desert",
+      "routeCount": 3,
+      "nodeCount": 143,
+      "byCategory": {
+        "ore": 107,
+        "plant": 21,
+        "seafood": 15
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "sandswept-isles",
+      "mapId": 1271,
+      "name": "Sandswept Isles",
+      "regionName": "Crystal Desert",
+      "routeCount": 5,
+      "nodeCount": 106,
+      "byCategory": {
+        "misc": 20,
+        "ore": 70,
+        "plant": 16
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "the-desolation",
+      "mapId": 1226,
+      "name": "The Desolation",
+      "regionName": "Crystal Desert",
+      "routeCount": 4,
+      "nodeCount": 40,
+      "byCategory": {
+        "ore": 7,
+        "plant": 8,
+        "seafood": 14,
+        "wood": 11
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "auric-basin",
+      "mapId": 1043,
+      "name": "Auric Basin",
+      "regionName": "Heart of Maguuma",
+      "routeCount": 1,
+      "nodeCount": 38,
+      "byCategory": {
+        "plant": 9,
+        "seafood": 29
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "bloodstone-fen",
+      "mapId": 1165,
+      "name": "Bloodstone Fen",
+      "regionName": "Heart of Maguuma",
+      "routeCount": 5,
+      "nodeCount": 150,
+      "byCategory": {
+        "misc": 89,
+        "plant": 55,
+        "seafood": 6
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "dragon-s-stand",
+      "mapId": 1041,
+      "name": "Dragon's Stand",
+      "regionName": "Heart of Maguuma",
+      "routeCount": 3,
+      "nodeCount": 115,
+      "byCategory": {
+        "plant": 72,
+        "seafood": 43
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "tangled-depths",
+      "mapId": 1045,
+      "name": "Tangled Depths",
+      "regionName": "Heart of Maguuma",
+      "routeCount": 1,
+      "nodeCount": 44,
+      "byCategory": {
+        "plant": 32,
+        "seafood": 12
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "verdant-brink",
+      "mapId": 1052,
+      "name": "Verdant Brink",
+      "regionName": "Heart of Maguuma",
+      "routeCount": 2,
+      "nodeCount": 45,
+      "byCategory": {
+        "plant": 14,
+        "seafood": 31
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "bava-nisos",
+      "mapId": 1574,
+      "name": "Bava Nisos",
+      "regionName": "Janthir",
+      "routeCount": 0,
+      "nodeCount": 34,
+      "byCategory": {
+        "ore": 34
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "janthir-syntri",
+      "mapId": 1554,
+      "name": "Janthir Syntri",
+      "regionName": "Janthir",
+      "routeCount": 3,
+      "nodeCount": 497,
+      "byCategory": {
+        "farmroute": 47,
+        "misc": 107,
+        "ore": 154,
+        "plant": 122,
+        "special": 21,
+        "wood": 46
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "lowland-shore",
+      "mapId": 1550,
+      "name": "Lowland Shore",
+      "regionName": "Janthir",
+      "routeCount": 3,
+      "nodeCount": 421,
+      "byCategory": {
+        "farmroute": 48,
+        "ore": 4,
+        "plant": 73,
+        "seafood": 46,
+        "wood": 250
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "mistburned-barrens",
+      "mapId": 1575,
+      "name": "Mistburned Barrens",
+      "regionName": "Janthir",
+      "routeCount": 1,
+      "nodeCount": 336,
+      "byCategory": {
+        "misc": 17,
+        "ore": 195,
+        "plant": 16,
+        "special": 106,
+        "wood": 2
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "bloodtide-coast",
+      "mapId": 73,
+      "name": "Bloodtide Coast",
+      "regionName": "Kryta",
+      "routeCount": 3,
+      "nodeCount": 65,
+      "byCategory": {
+        "ore": 1,
+        "plant": 64
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "gendarran-fields",
+      "mapId": 24,
+      "name": "Gendarran Fields",
+      "regionName": "Kryta",
+      "routeCount": 4,
+      "nodeCount": 17,
+      "byCategory": {
+        "misc": 4,
+        "ore": 4,
+        "plant": 9
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "harathi-hinterlands",
+      "mapId": 17,
+      "name": "Harathi Hinterlands",
+      "regionName": "Kryta",
+      "routeCount": 4,
+      "nodeCount": 55,
+      "byCategory": {
+        "misc": 13,
+        "ore": 3,
+        "plant": 10,
+        "wood": 29
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "kessex-hills",
+      "mapId": 23,
+      "name": "Kessex Hills",
+      "regionName": "Kryta",
+      "routeCount": 3,
+      "nodeCount": 216,
+      "byCategory": {
+        "misc": 3,
+        "ore": 6,
+        "plant": 207
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "lake-doric",
+      "mapId": 1185,
+      "name": "Lake Doric",
+      "regionName": "Kryta",
+      "routeCount": 4,
+      "nodeCount": 215,
+      "byCategory": {
+        "ore": 80,
+        "plant": 135
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "lion-s-arch",
+      "mapId": 50,
+      "name": "Lion's Arch",
+      "regionName": "Kryta",
+      "routeCount": 0,
+      "nodeCount": 2,
+      "byCategory": {
+        "plant": 2
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "queensdale",
+      "mapId": 15,
+      "name": "Queensdale",
+      "regionName": "Kryta",
+      "routeCount": 3,
+      "nodeCount": 40,
+      "byCategory": {
+        "event": 2,
+        "misc": 13,
+        "ore": 7,
+        "plant": 18
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "southsun-cove",
+      "mapId": 873,
+      "name": "Southsun Cove",
+      "regionName": "Kryta",
+      "routeCount": 2,
+      "nodeCount": 22,
+      "byCategory": {
+        "misc": 7,
+        "plant": 15
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "dry-top",
+      "mapId": 988,
+      "name": "Dry Top",
+      "regionName": "Maguuma Wastes",
+      "routeCount": 3,
+      "nodeCount": 29,
+      "byCategory": {
+        "misc": 14,
+        "ore": 1,
+        "plant": 12,
+        "wood": 2
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "the-silverwastes",
+      "mapId": 1015,
+      "name": "The Silverwastes",
+      "regionName": "Maguuma Wastes",
+      "routeCount": 0,
+      "nodeCount": 5,
+      "byCategory": {
+        "ore": 1,
+        "wood": 4
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "draconis-mons",
+      "mapId": 1195,
+      "name": "Draconis Mons",
+      "regionName": "Ring of Fire",
+      "routeCount": 4,
+      "nodeCount": 524,
+      "byCategory": {
+        "misc": 306,
+        "plant": 218
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "ember-bay",
+      "mapId": 1175,
+      "name": "Ember Bay",
+      "regionName": "Ring of Fire",
+      "routeCount": 2,
+      "nodeCount": 53,
+      "byCategory": {
+        "plant": 3,
+        "seafood": 10,
+        "wood": 40
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "cursed-shore",
+      "mapId": 62,
+      "name": "Cursed Shore",
+      "regionName": "Ruins of Orr",
+      "routeCount": 3,
+      "nodeCount": 91,
+      "byCategory": {
+        "event": 5,
+        "misc": 7,
+        "ore": 3,
+        "plant": 59,
+        "seafood": 11,
+        "wood": 6
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "malchor-s-leap",
+      "mapId": 65,
+      "name": "Malchor's Leap",
+      "regionName": "Ruins of Orr",
+      "routeCount": 3,
+      "nodeCount": 65,
+      "byCategory": {
+        "event": 3,
+        "misc": 11,
+        "ore": 3,
+        "plant": 31,
+        "seafood": 8,
+        "wood": 9
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "siren-s-landing",
+      "mapId": 1203,
+      "name": "Siren's Landing",
+      "regionName": "Ruins of Orr",
+      "routeCount": 4,
+      "nodeCount": 120,
+      "byCategory": {
+        "misc": 55,
+        "ore": 3,
+        "plant": 26,
+        "seafood": 8,
+        "wood": 28
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "straits-of-devastation",
+      "mapId": 51,
+      "name": "Straits of Devastation",
+      "regionName": "Ruins of Orr",
+      "routeCount": 6,
+      "nodeCount": 65,
+      "byCategory": {
+        "misc": 4,
+        "ore": 2,
+        "plant": 54,
+        "wood": 5
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "bitterfrost-frontier",
+      "mapId": 1178,
+      "name": "Bitterfrost Frontier",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 2,
+      "nodeCount": 44,
+      "byCategory": {
+        "ore": 2,
+        "plant": 42
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "bjora-marches",
+      "mapId": 1343,
+      "name": "Bjora Marches",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 2,
+      "nodeCount": 244,
+      "byCategory": {
+        "ore": 183,
+        "plant": 57,
+        "wood": 4
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "dredgehaunt-cliffs",
+      "mapId": 26,
+      "name": "Dredgehaunt Cliffs",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 6,
+      "nodeCount": 191,
+      "byCategory": {
+        "misc": 1,
+        "ore": 4,
+        "plant": 29,
+        "wood": 157
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "drizzlewood-coast",
+      "mapId": 1371,
+      "name": "Drizzlewood Coast",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 4,
+      "nodeCount": 70,
+      "byCategory": {
+        "plant": 22,
+        "seafood": 48
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "eye-of-the-north",
+      "mapId": 1370,
+      "name": "Eye of the North",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 0,
+      "nodeCount": 2,
+      "byCategory": {
+        "event": 2
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "frostgorge-sound",
+      "mapId": 30,
+      "name": "Frostgorge Sound",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 2,
+      "nodeCount": 19,
+      "byCategory": {
+        "misc": 1,
+        "ore": 9,
+        "plant": 8,
+        "wood": 1
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "lornar-s-pass",
+      "mapId": 27,
+      "name": "Lornar's Pass",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 5,
+      "nodeCount": 31,
+      "byCategory": {
+        "misc": 4,
+        "ore": 5,
+        "plant": 22
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "snowden-drifts",
+      "mapId": 31,
+      "name": "Snowden Drifts",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 3,
+      "nodeCount": 18,
+      "byCategory": {
+        "event": 1,
+        "misc": 1,
+        "ore": 4,
+        "plant": 12
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "thunderhead-peaks",
+      "mapId": 1310,
+      "name": "Thunderhead Peaks",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 2,
+      "nodeCount": 77,
+      "byCategory": {
+        "misc": 69,
+        "seafood": 8
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "timberline-falls",
+      "mapId": 29,
+      "name": "Timberline Falls",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 4,
+      "nodeCount": 90,
+      "byCategory": {
+        "event": 1,
+        "misc": 3,
+        "ore": 2,
+        "plant": 9,
+        "wood": 75
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "wayfarer-foothills",
+      "mapId": 28,
+      "name": "Wayfarer Foothills",
+      "regionName": "Shiverpeak Mountains",
+      "routeCount": 1,
+      "nodeCount": 13,
+      "byCategory": {
+        "misc": 3,
+        "plant": 10
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "mount-maelstrom",
+      "mapId": 39,
+      "name": "Mount Maelstrom",
+      "regionName": "Steamspur Mountains",
+      "routeCount": 6,
+      "nodeCount": 124,
+      "byCategory": {
+        "misc": 1,
+        "ore": 4,
+        "plant": 56,
+        "wood": 63
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "sparkfly-fen",
+      "mapId": 53,
+      "name": "Sparkfly Fen",
+      "regionName": "Steamspur Mountains",
+      "routeCount": 3,
+      "nodeCount": 84,
+      "byCategory": {
+        "event": 2,
+        "misc": 7,
+        "ore": 4,
+        "plant": 9,
+        "wood": 62
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "brisban-wildlands",
+      "mapId": 54,
+      "name": "Brisban Wildlands",
+      "regionName": "Tarnished Coast",
+      "routeCount": 5,
+      "nodeCount": 23,
+      "byCategory": {
+        "event": 2,
+        "misc": 4,
+        "ore": 2,
+        "plant": 8,
+        "seafood": 7
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "caledon-forest",
+      "mapId": 34,
+      "name": "Caledon Forest",
+      "regionName": "Tarnished Coast",
+      "routeCount": 2,
+      "nodeCount": 14,
+      "byCategory": {
+        "event": 3,
+        "ore": 3,
+        "plant": 8
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "metrica-province",
+      "mapId": 35,
+      "name": "Metrica Province",
+      "regionName": "Tarnished Coast",
+      "routeCount": 2,
+      "nodeCount": 16,
+      "byCategory": {
+        "event": 1,
+        "misc": 5,
+        "plant": 10
+      },
+      "bundledZone": true
+    }
+  ],
+  "taxonomy": {
+    "copper": "Copper Ore",
+    "iron": "Iron Ore",
+    "silver": "Silver Ore",
+    "gold": "Gold Ore",
+    "platinum": "Platinum Ore",
+    "mithril": "Mithril Ore",
+    "orichalcum": "Orichalcum Ore",
+    "quartz": "Quartz Crystal",
+    "charged_titan": "Charged Titan Ore",
+    "rotted_amber": "Rotted Titan Amber",
+    "titan_heatstone": "Titan Heatstone",
+    "mursaat_obsidian": "Mursaat Obsidian Chunk",
+    "green_wood": "Green Wood Log",
+    "soft_wood": "Soft Wood Log",
+    "seasoned_wood": "Seasoned Wood Log",
+    "hard_wood": "Hard Wood Log",
+    "elder_wood": "Elder Wood Log",
+    "ancient_wood": "Ancient Wood Log",
+    "pine": "Lowland Pine Log",
+    "flax": "Flax",
+    "artichoke": "Artichoke",
+    "cabbage": "Head of Cabbage",
+    "lettuce": "Head of Lettuce",
+    "onion": "Onion",
+    "spinach": "Spinach",
+    "carrots": "Carrot",
+    "butternut": "Butternut Squash",
+    "cauliflower": "Cauliflower",
+    "potato": "Potato",
+    "grapes": "Grapes",
+    "strawberry": "Strawberry",
+    "pumpkin": "Sugar Pumpkin",
+    "varietal_mint": "Varietal Mint Seed",
+    "toxic_seedling": "Toxic Seedling",
+    "verdant_herbs": "Verdant Herbs",
+    "sawgill_mushroom": "Sawgill Mushroom",
+    "maguuma_lily": "Maguuma Lily",
+    "winter_crocus": "Black Crocus",
+    "truffle": "Orrian Truffle",
+    "asparagus": "Asparagus",
+    "saffron": "Saffron Thread",
+    "sage": "Sage Leaf",
+    "honey_flower": "Honey Flower",
+    "raspberry": "Raspberry",
+    "omnomberry": "Omnomberry",
+    "desert_herbs": "Cluster of Desert Herbs",
+    "kale": "Kale Leaf",
+    "toxic_spore_sample": "Pristine Toxic Spore Sample",
+    "passiflora": "Blooming Passiflora",
+    "clam": "Clam",
+    "mussels": "Mussels",
+    "seaweed": "Seaweed",
+    "coral": "Coral",
+    "obsidian_heatstone": "Mursaat Obsidian Chunk & Titan Heatstone",
+    "amber_ore": "Rotted Titan Amber & Charged Titan Ore",
+    "jade_shard": "Jade Shard",
+    "mistonium": "Lump of Mistonium",
+    "kralkatite": "Kralkatite Ore",
+    "difluorite": "Difluorite Crystal",
+    "eternal_ice": "Eternal Ice Shard",
+    "jadeite": "Chunk of Pure Jade",
+    "honeypine": "Lowland Pine Log & Honey Flower",
+    "petrified_wood": "Petrified Wood",
+    "winterberry": "Fresh Winterberry",
+    "orchid": "Fire Orchid Blossom",
+    "ruby": "Blood Ruby",
+    "pearl": "Orrian Pearl",
+    "mistborn": "Mistborn Mote",
+    "inscribed_shard": "Inscribed Shard",
+    "branded_mass": "Branded Mass",
+    "echovald_resin": "Chunk of Petrified Echovald Resin",
+    "empyreal": "Empyreal Fragment Run",
+    "lws3": "Living World S3",
+    "lws4": "Living World S4",
+    "lws5": "Living World S5",
+    "jw": "Janthir Wilds",
+    "eod": "End of Dragons",
+    "mixed": "Mixed",
+    "combo": "Combo",
+    "plant_mixed": "Mixed",
+    "candy_corn": "Candy Corn",
+    "rich_candy_corn": "Rich Candy Corn"
+  }
+}

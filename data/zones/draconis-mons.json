@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1195,
+    "name": "Draconis Mons",
+    "continentId": 1,
+    "regionId": 20,
+    "regionName": "Ring of Fire",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -46080,
+        -46080
+      ],
+      [
+        46080,
+        46080
+      ]
+    ],
+    "continentRect": [
+      [
+        34718,
+        39284
+      ],
+      [
+        38558,
+        43124
+      ]
+    ],
+    "sectorRect": [
+      [
+        35466,
+        40449.8
+      ],
+      [
+        37775,
+        42959.4
+      ]
+    ],
+    "labelCoord": [
+      36518,
+      41584
+    ],
+    "release": "lws3"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1195:waypoint:2493",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "waypoint",
+      "objectiveId": "2493",
+      "coord": [
+        36016,
+        41919
+      ],
+      "recommendedLevel": null,
+      "name": "Mariner Landing Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BL0JAAA=]",
+      "waypointChatLink": "[&BL0JAAA=]",
+      "trailIndex": 3,
+      "wikiText": "Mariner Landing is an area of Draconis Mons. It is the entry point to the zone, first reached after boarding a Pact submarine during the events of Arrival and Survival."
+    },
+    {
+      "stepId": "1195:vista:2496",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "vista",
+      "objectiveId": "2496",
+      "coord": [
+        36103,
+        41885
+      ],
+      "recommendedLevel": null,
+      "name": "Wind Rider Ledge (1)",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 31,
+      "wikiText": "The Wind Rider Ledge is an area in Draconis Mons. As the name suggests, the area is mostly populated by wind riders.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2512",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2512",
+      "coord": [
+        36560,
+        42421
+      ],
+      "recommendedLevel": null,
+      "name": "Scout's Clearing",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 451,
+      "wikiText": "The Scout's Clearing is a point of interest in the Savage Rise. Vigil forces are attempting to rescue members of their scouting party from the dangers of Draconis Mons.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:heart:381",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "heart",
+      "objectiveId": "381",
+      "coord": [
+        36551,
+        42395
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the scouting party.",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          36382,
+          42124
+        ],
+        [
+          36810,
+          41965
+        ],
+        [
+          37236,
+          42691
+        ],
+        [
+          36720,
+          42894
+        ],
+        [
+          36352,
+          42964
+        ],
+        [
+          36382,
+          42124
+        ]
+      ],
+      "trailIndex": 455,
+      "wikiText": "Rescue scouts from entangling vines. Secure the perimeter by investigating suspicious bushes or by hunting local predators.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:vista:2488",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "vista",
+      "objectiveId": "2488",
+      "coord": [
+        36805,
+        42411
+      ],
+      "recommendedLevel": null,
+      "name": "Savage Rise",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 495,
+      "wikiText": "Head south from Mariner's and up the hill into Savage Rise, vista is on a spike of rock near some cliffs. Oakheart essence can launch you to a nearby cliff and glide down to the vista.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2510",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2510",
+      "coord": [
+        36917,
+        42331
+      ],
+      "recommendedLevel": null,
+      "name": "Viraddi's Salvation",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 663,
+      "wikiText": "Viraddi's Salvation is a point of interest in the Savage Rise area of Draconis Mons. This small crevice is used by Scientist Viraddi as a place to hide from the dangerous creatures roaming the area.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2494",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2494",
+      "coord": [
+        36595,
+        42814
+      ],
+      "recommendedLevel": null,
+      "name": "Eternal Pool",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 763,
+      "wikiText": "The Eternal Pool is a point of interest in the Savage Rise. This shallow underground pool ringed with ancient, broken stone pillars is guarded by angered nature spirits.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:vista:2495",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "vista",
+      "objectiveId": "2495",
+      "coord": [
+        36194,
+        41875
+      ],
+      "recommendedLevel": null,
+      "name": "Wind Rider Ledge (2)",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1090,
+      "wikiText": "The Wind Rider Ledge is an area in Draconis Mons. As the name suggests, the area is mostly populated by wind riders.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:heart:380",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "heart",
+      "objectiveId": "380",
+      "coord": [
+        36111,
+        41541
+      ],
+      "recommendedLevel": 80,
+      "name": "Infiltrate the Inquest.",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          35955,
+          42014
+        ],
+        [
+          35839,
+          41813
+        ],
+        [
+          35888,
+          41637
+        ],
+        [
+          36011,
+          41514
+        ],
+        [
+          36142,
+          41470
+        ],
+        [
+          36188,
+          41519
+        ],
+        [
+          36243,
+          41814
+        ],
+        [
+          36121,
+          42022
+        ],
+        [
+          35955,
+          42014
+        ]
+      ],
+      "trailIndex": 1159,
+      "wikiText": "Defeat Inquest, collect datamagic cameras, and use keypads to sabotage Inquest devices.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2518",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2518",
+      "coord": [
+        36606,
+        41136
+      ],
+      "recommendedLevel": null,
+      "name": "Nu Vault",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1254,
+      "wikiText": "Nu Vault is a point of interest in the Ancient Hollow. It is one of four vaults in and around Draconis Mons built years ago by Asura who fled Rata Novus.",
+      "waypointChatLink": "[&BNUJAAA=]"
+    },
+    {
+      "stepId": "1195:heart:378",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "heart",
+      "objectiveId": "378",
+      "coord": [
+        36523,
+        41036
+      ],
+      "recommendedLevel": 80,
+      "name": "Assist the ancient golems.",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          36087,
+          40874
+        ],
+        [
+          36492,
+          40707
+        ],
+        [
+          36680,
+          40803
+        ],
+        [
+          36833,
+          41250
+        ],
+        [
+          36625,
+          41472
+        ],
+        [
+          36155,
+          41363
+        ],
+        [
+          36087,
+          40874
+        ]
+      ],
+      "trailIndex": 1265,
+      "wikiText": "Search for parts to repair broken golems. Investigate uncanny mushrooms, and eliminate spiders nesting in the area.",
+      "waypointChatLink": "[&BNUJAAA=]"
+    },
+    {
+      "stepId": "1195:vista:2498",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "vista",
+      "objectiveId": "2498",
+      "coord": [
+        36428,
+        41034
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Hollow (1)",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1278,
+      "wikiText": "The Ancient Hollow is an area of Draconis Mons. A large colony of jungle spiders inhabit this damp cave. Multiple golem remains can be found here, scattered about the place.",
+      "waypointChatLink": "[&BNUJAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2502",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2502",
+      "coord": [
+        36327,
+        40957
+      ],
+      "recommendedLevel": null,
+      "name": "Golem Graveyard",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1282,
+      "wikiText": "The Golem Graveyard is a point of interest in the Ancient Hollow. Remains from golems that were left to fend for themselves on Draconis Mons when their creators, the Asura from Rata Arcanum, including Zinn, died can be found here.",
+      "waypointChatLink": "[&BNUJAAA=]"
+    },
+    {
+      "stepId": "1195:waypoint:2517",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "waypoint",
+      "objectiveId": "2517",
+      "coord": [
+        36589,
+        41019
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Hollow Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNUJAAA=]",
+      "waypointChatLink": "[&BNUJAAA=]",
+      "trailIndex": 1305,
+      "wikiText": "The Ancient Hollow is an area of Draconis Mons. A large colony of jungle spiders inhabit this damp cave. Multiple golem remains can be found here, scattered about the place."
+    },
+    {
+      "stepId": "1195:poi:2505",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2505",
+      "coord": [
+        37613,
+        41664
+      ],
+      "recommendedLevel": null,
+      "name": "Peace Grounds",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1515,
+      "wikiText": "The Peace Grounds is a point of interest in the Savage Rise.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2501",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2501",
+      "coord": [
+        37399,
+        41914
+      ],
+      "recommendedLevel": null,
+      "name": "Druid's Grotto",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1815,
+      "wikiText": "Druid's Grotto is a point of interest in the Savage Rise. It is an underground grotto kept lush and verdant by the druids who protect Draconis Mons. The druid Kodama can be found inside.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:waypoint:2509",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "waypoint",
+      "objectiveId": "2509",
+      "coord": [
+        37310,
+        41714
+      ],
+      "recommendedLevel": null,
+      "name": "Heathen's Hold Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM0JAAA=]",
+      "waypointChatLink": "[&BM0JAAA=]",
+      "trailIndex": 1845,
+      "wikiText": "The Heathen's Hold is an area in Draconis Mons. A stronghold has been established here by Balthazar's Mercenaries in order to defend the approach to the Gate of Fire."
+    },
+    {
+      "stepId": "1195:heart:379",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "heart",
+      "objectiveId": "379",
+      "coord": [
+        37358,
+        41650
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the Prisoners",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          36899,
+          41506
+        ],
+        [
+          36762,
+          41182
+        ],
+        [
+          36762,
+          41073
+        ],
+        [
+          37255,
+          40966
+        ],
+        [
+          37255,
+          41461
+        ],
+        [
+          37183,
+          41619
+        ],
+        [
+          37048,
+          41594
+        ],
+        [
+          36899,
+          41506
+        ]
+      ],
+      "trailIndex": 1851,
+      "wikiText": "Free prisoners, defeat mercenaries, and light fires by using oil drums to make a trail from flammable material to lava.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:vista:2491",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "vista",
+      "objectiveId": "2491",
+      "coord": [
+        36899,
+        41192
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Hollow (2)",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1950,
+      "wikiText": "Bouncing mushrooms at the base of a giant root, to NW of waypoint, bounce two mushrooms and then climb up some rocks to the east and walk across the giant stone arch.",
+      "waypointChatLink": "[&BNUJAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

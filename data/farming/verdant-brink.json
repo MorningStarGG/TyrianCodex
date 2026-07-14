@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1052,
+  "slug": "verdant-brink",
+  "name": "Verdant Brink",
+  "regionName": "Heart of Maguuma",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Flax",
+      "category": "plant",
+      "material": "flax",
+      "source": "tw"
+    },
+    {
+      "name": "Mussels",
+      "category": "seafood",
+      "material": "mussels",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 727.4,
+      "y": 15.2,
+      "z": 408.3,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 729.1,
+      "y": 15.3,
+      "z": 410.0,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 725.4,
+      "y": 14.7,
+      "z": 409.9,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 721.5,
+      "y": 14.3,
+      "z": 413.3,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 723.3,
+      "y": 14.6,
+      "z": 415.0,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 716.7,
+      "y": 14.0,
+      "z": 414.4,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 721.3,
+      "y": 14.2,
+      "z": 410.3,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -477.8,
+      "y": 591.6,
+      "z": 276.7,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 359.3,
+      "y": 340.1,
+      "z": -18.7,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 459.2,
+      "y": 351.2,
+      "z": -99.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 598.5,
+      "y": 397.8,
+      "z": -334.2,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 527.4,
+      "y": 395.6,
+      "z": -345.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -746.8,
+      "y": 466.1,
+      "z": 5.7,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -706.0,
+      "y": 338.5,
+      "z": -117.4,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 823.4,
+      "y": 322.3,
+      "z": 36.8,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 856.3,
+      "y": 322.9,
+      "z": 43.9,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 866.9,
+      "y": 322.8,
+      "z": 33.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 943.1,
+      "y": 348.8,
+      "z": 121.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 893.6,
+      "y": 348.2,
+      "z": 87.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 865.7,
+      "y": 339.8,
+      "z": 239.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 806.2,
+      "y": 328.2,
+      "z": 207.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 80.9,
+      "y": 374.8,
+      "z": 9.8,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 142.6,
+      "y": 341.2,
+      "z": -197.3,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 137.3,
+      "y": 341.9,
+      "z": -226.3,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 96.0,
+      "y": 341.7,
+      "z": -250.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 67.1,
+      "y": 342.4,
+      "z": -253.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -659.4,
+      "y": 449.6,
+      "z": 168.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 967.8,
+      "y": 391.4,
+      "z": -3.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 948.5,
+      "y": 355.4,
+      "z": -0.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 62.8,
+      "y": 374.7,
+      "z": -4.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 934.6,
+      "y": 353.8,
+      "z": 267.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 454.0,
+      "y": 693.3,
+      "z": 231.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 915.0,
+      "y": 348.0,
+      "z": 109.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 895.4,
+      "y": 348.6,
+      "z": 244.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 837.6,
+      "y": 332.1,
+      "z": 223.8,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 750.2,
+      "y": 327.4,
+      "z": 152.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 925.5,
+      "y": 349.7,
+      "z": 286.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 118.8,
+      "y": 342.4,
+      "z": -240.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -609.5,
+      "y": 452.0,
+      "z": 157.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -585.3,
+      "y": 452.8,
+      "z": 148.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -637.9,
+      "y": 450.4,
+      "z": 162.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 900.0,
+      "y": 326.9,
+      "z": 27.9,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 937.4,
+      "y": 355.4,
+      "z": 7.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 140.8,
+      "y": 340.4,
+      "z": -165.3,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 775.0,
+      "y": 327.5,
+      "z": 183.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    }
+  ]
+}

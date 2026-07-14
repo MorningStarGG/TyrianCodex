@@ -1,0 +1,2413 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 29,
+    "name": "Timberline Falls",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 50,
+    "maxLevel": 60,
+    "mapRect": [
+      [
+        -27648,
+        -36864
+      ],
+      [
+        27648,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        51712,
+        34560
+      ],
+      [
+        54016,
+        37760
+      ]
+    ],
+    "sectorRect": [
+      [
+        51711.1,
+        34364.8
+      ],
+      [
+        54300.7,
+        37860.4
+      ]
+    ],
+    "labelCoord": [
+      52864,
+      36160
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "29:heart:76",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "76",
+      "coord": [
+        53277,
+        34780
+      ],
+      "recommendedLevel": 51,
+      "name": "Disrupt dredge mining operations for Order of Whispers operatives.",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53190,
+          35068
+        ],
+        [
+          53175,
+          34932
+        ],
+        [
+          53266,
+          34764
+        ],
+        [
+          53432,
+          34523
+        ],
+        [
+          53994,
+          34517
+        ],
+        [
+          54167,
+          34905
+        ],
+        [
+          54153,
+          35130
+        ],
+        [
+          54136,
+          35420
+        ],
+        [
+          54045,
+          35648
+        ],
+        [
+          53694,
+          35525
+        ],
+        [
+          53516,
+          35472
+        ],
+        [
+          53243,
+          35279
+        ],
+        [
+          53190,
+          35068
+        ]
+      ],
+      "trailIndex": 23,
+      "wikiText": "Wipe out dredge and creatures they disturb, destroy their unrefined ore, and fill in boreholes.",
+      "waypointChatLink": "[&BFMCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:595",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "595",
+      "coord": [
+        53185,
+        34786
+      ],
+      "recommendedLevel": null,
+      "name": "Iron Veil Waypoint",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFMCAAA=]",
+      "waypointChatLink": "[&BFMCAAA=]",
+      "trailIndex": 38,
+      "wikiText": "The Iron Veil is an area in the north of Timberline Falls. The only Sons of Svanir in the zone can be found underneath the frozen river, hinting at their goals of expansion across the Shiverpeak Mountains."
+    },
+    {
+      "stepId": "29:poi:578",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "578",
+      "coord": [
+        52934,
+        35056
+      ],
+      "recommendedLevel": null,
+      "name": "Balddistead",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 89,
+      "wikiText": "Balddistead is a norn lodge housing a group of skritt point of interest found in White Paper Hill in Timberline Falls.",
+      "waypointChatLink": "[&BFACAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:591",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "591",
+      "coord": [
+        53082,
+        35437
+      ],
+      "recommendedLevel": null,
+      "name": "White Paper Waypoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE8CAAA=]",
+      "waypointChatLink": "[&BE8CAAA=]",
+      "trailIndex": 155,
+      "wikiText": "White Paper Hill is an area in the north of Timberline Falls. Aggressive owl griffons can be seen actively hunting the other wildlife here."
+    },
+    {
+      "stepId": "29:poi:579",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "579",
+      "coord": [
+        53616,
+        35198
+      ],
+      "recommendedLevel": null,
+      "name": "Copperhammer Mines",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 281,
+      "wikiText": "The Copperhammer Mines is a dredge mine in the Molodets Excavation. The dredge there drill without caution and thus, has unearthed a large group of destroyers.",
+      "waypointChatLink": "[&BE4CAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:590",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "590",
+      "coord": [
+        53845,
+        35324
+      ],
+      "recommendedLevel": null,
+      "name": "Foundation 86 Waypoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE4CAAA=]",
+      "waypointChatLink": "[&BE4CAAA=]",
+      "trailIndex": 412,
+      "wikiText": "The Foundation Stones is a small area in the northeastern portion of Timberline Falls. It is home to an Order of Whispers camp, where the agents deal with dredge to the north and grawl to the south."
+    },
+    {
+      "stepId": "29:heart:77",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "77",
+      "coord": [
+        53557,
+        35727
+      ],
+      "recommendedLevel": 53,
+      "name": "Scatter the unusually aggressive grawl.",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54020,
+          35663
+        ],
+        [
+          53855,
+          35606
+        ],
+        [
+          53646,
+          35528
+        ],
+        [
+          53502,
+          35487
+        ],
+        [
+          53370,
+          35394
+        ],
+        [
+          53211,
+          35696
+        ],
+        [
+          53113,
+          35877
+        ],
+        [
+          53118,
+          35991
+        ],
+        [
+          53386,
+          36049
+        ],
+        [
+          53964,
+          36094
+        ],
+        [
+          54020,
+          35663
+        ]
+      ],
+      "trailIndex": 492,
+      "wikiText": "Break grawl cages, destroy food sacks, and thin their numbers.",
+      "waypointChatLink": "[&BE0CAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:589",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "589",
+      "coord": [
+        53439,
+        35899
+      ],
+      "recommendedLevel": null,
+      "name": "Ogduk Waypoint",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE0CAAA=]",
+      "waypointChatLink": "[&BE0CAAA=]",
+      "trailIndex": 519,
+      "wikiText": "Guilty Tears is an area located in the east of Timberline Falls. This verdant plain is home to a grawl tribe that is currently worshipping the rock formation known as The Great Oouo."
+    },
+    {
+      "stepId": "29:poi:573",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "573",
+      "coord": [
+        53755,
+        35979
+      ],
+      "recommendedLevel": null,
+      "name": "Whispering Falls",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 534,
+      "wikiText": "Whispering Falls is the headwater of the Nonmoa Lake.",
+      "waypointChatLink": "[&BE0CAAA=]"
+    },
+    {
+      "stepId": "29:hero:0-84",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "hero",
+      "objectiveId": "0-84",
+      "coord": [
+        53788,
+        35912
+      ],
+      "recommendedLevel": null,
+      "name": "Strange Energy Source",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 612,
+      "wikiText": "The Strange Energy Source is a hero challenge located at the The Great Oouo Point of Interest in the Guilty Tears area in Timberline Falls. It is located in a small asuran lab in the shape of a face.",
+      "waypointChatLink": "[&BE0CAAA=]"
+    },
+    {
+      "stepId": "29:poi:572",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "572",
+      "coord": [
+        53819,
+        35920
+      ],
+      "recommendedLevel": null,
+      "name": "The Great Oouo",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 615,
+      "wikiText": "The Great Oouo is a huge rock formation worshiped by the grawl that takes the shape of a face.",
+      "waypointChatLink": "[&BE0CAAA=]"
+    },
+    {
+      "stepId": "29:vista:1634",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "vista",
+      "objectiveId": "1634",
+      "coord": [
+        53534,
+        36291
+      ],
+      "recommendedLevel": null,
+      "name": "Naui Waters",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 737,
+      "wikiText": "Naui Waters is an area in the east of Timberline Falls.",
+      "waypointChatLink": "[&BEgCAAA=]"
+    },
+    {
+      "stepId": "29:poi:571",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "571",
+      "coord": [
+        53550,
+        36333
+      ],
+      "recommendedLevel": null,
+      "name": "Kiriel Rock",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 745,
+      "wikiText": "Kiriel Rock is a large rock inhabited by a large colony of crustaceans including Freshwater Crabs and crabs.",
+      "waypointChatLink": "[&BEgCAAA=]"
+    },
+    {
+      "stepId": "29:hero:0-81",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "hero",
+      "objectiveId": "0-81",
+      "coord": [
+        53635,
+        36478
+      ],
+      "recommendedLevel": null,
+      "name": "Cooroo",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 767,
+      "wikiText": "Cooroo is quaggan at Naui Waters. He is the initiator of the hero challenge Fight Cooroo's Crab.",
+      "waypointChatLink": "[&BEgCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:584",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "584",
+      "coord": [
+        53744,
+        36599
+      ],
+      "recommendedLevel": null,
+      "name": "Scale Strand Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEgCAAA=]",
+      "waypointChatLink": "[&BEgCAAA=]",
+      "trailIndex": 779,
+      "wikiText": "Scale Strand is an area in the southeast of Timberline Falls. Griffons and skale are constantly fighting for control of this shoreline."
+    },
+    {
+      "stepId": "29:heart:73",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "73",
+      "coord": [
+        53357,
+        36583
+      ],
+      "recommendedLevel": 59,
+      "name": "Help Ichtaca.",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53313,
+          36717
+        ],
+        [
+          53466,
+          36700
+        ],
+        [
+          53571,
+          36696
+        ],
+        [
+          53718,
+          36748
+        ],
+        [
+          53754,
+          36693
+        ],
+        [
+          53791,
+          36606
+        ],
+        [
+          53809,
+          36470
+        ],
+        [
+          53812,
+          36413
+        ],
+        [
+          53797,
+          36362
+        ],
+        [
+          53750,
+          36305
+        ],
+        [
+          53663,
+          36235
+        ],
+        [
+          53579,
+          36201
+        ],
+        [
+          53481,
+          36159
+        ],
+        [
+          53361,
+          36160
+        ],
+        [
+          53278,
+          36316
+        ],
+        [
+          53157,
+          36319
+        ],
+        [
+          53061,
+          36437
+        ],
+        [
+          53077,
+          36534
+        ],
+        [
+          53047,
+          36739
+        ],
+        [
+          53222,
+          36721
+        ],
+        [
+          53313,
+          36717
+        ]
+      ],
+      "trailIndex": 832,
+      "wikiText": "Develop alchemical weapons, defend ingredients from wildlife, and collect ingredients.",
+      "waypointChatLink": "[&BEoCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:586",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "586",
+      "coord": [
+        53209,
+        36484
+      ],
+      "recommendedLevel": null,
+      "name": "Eztlitl Grounds Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEoCAAA=]",
+      "waypointChatLink": "[&BEoCAAA=]",
+      "trailIndex": 858,
+      "wikiText": "Hunting Banks is an area near the center of Timberline Falls. The Eztlitl hylek tribe living here is often attacked by the nearby krait from the Sipedon Deeps."
+    },
+    {
+      "stepId": "29:waypoint:585",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "585",
+      "coord": [
+        52965,
+        36940
+      ],
+      "recommendedLevel": null,
+      "name": "Nonmoa Waypoint",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEkCAAA=]",
+      "waypointChatLink": "[&BEkCAAA=]",
+      "trailIndex": 916,
+      "wikiText": "Nonmoa Lake is an area in the southeast of Timberline Falls. The krait have a heavy presence in the area, launching attacks on the settlements of Eztlitl Grounds and Okarinoo from their spire, Sipedon Deeps."
+    },
+    {
+      "stepId": "29:poi:570",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "570",
+      "coord": [
+        53331,
+        37057
+      ],
+      "recommendedLevel": null,
+      "name": "Sipedon Deeps",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 967,
+      "wikiText": "Sipedon Deeps is a point of interest in Nonmoa Lake. It is a large spire home to krait that are attacking the nearby settlements.",
+      "waypointChatLink": "[&BEkCAAA=]"
+    },
+    {
+      "stepId": "29:vista:1635",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "vista",
+      "objectiveId": "1635",
+      "coord": [
+        53394,
+        37054
+      ],
+      "recommendedLevel": null,
+      "name": "Nonmoa Lake",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 978,
+      "wikiText": "Nonmoa Lake is an area in the southeast of Timberline Falls. The krait have a heavy presence in the area, launching attacks on the settlements of Eztlitl Grounds and Okarinoo from their spire, Sipedon Deeps.",
+      "waypointChatLink": "[&BEcCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:583",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "583",
+      "coord": [
+        53745,
+        37076
+      ],
+      "recommendedLevel": null,
+      "name": "Coil Waypoint",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEcCAAA=]",
+      "waypointChatLink": "[&BEcCAAA=]",
+      "trailIndex": 986,
+      "wikiText": "Nonmoa Lake is an area in the southeast of Timberline Falls. The krait have a heavy presence in the area, launching attacks on the settlements of Eztlitl Grounds and Okarinoo from their spire, Sipedon Deeps."
+    },
+    {
+      "stepId": "29:heart:74",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "74",
+      "coord": [
+        53660,
+        37159
+      ],
+      "recommendedLevel": 60,
+      "name": "Help the endangered quaggans.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53332,
+          37349
+        ],
+        [
+          53417,
+          37327
+        ],
+        [
+          53498,
+          37326
+        ],
+        [
+          53596,
+          37248
+        ],
+        [
+          53637,
+          37259
+        ],
+        [
+          53702,
+          37267
+        ],
+        [
+          53796,
+          37347
+        ],
+        [
+          53999,
+          37369
+        ],
+        [
+          54004,
+          37252
+        ],
+        [
+          54006,
+          37094
+        ],
+        [
+          53922,
+          36994
+        ],
+        [
+          53814,
+          36914
+        ],
+        [
+          53758,
+          36891
+        ],
+        [
+          53726,
+          36833
+        ],
+        [
+          53679,
+          36777
+        ],
+        [
+          53568,
+          36708
+        ],
+        [
+          53468,
+          36719
+        ],
+        [
+          53390,
+          36718
+        ],
+        [
+          53307,
+          36730
+        ],
+        [
+          53221,
+          36743
+        ],
+        [
+          53080,
+          36755
+        ],
+        [
+          53034,
+          36776
+        ],
+        [
+          52998,
+          36854
+        ],
+        [
+          52978,
+          36916
+        ],
+        [
+          52934,
+          37060
+        ],
+        [
+          52953,
+          37167
+        ],
+        [
+          53014,
+          37260
+        ],
+        [
+          53125,
+          37309
+        ],
+        [
+          53184,
+          37319
+        ],
+        [
+          53229,
+          37332
+        ],
+        [
+          53332,
+          37349
+        ]
+      ],
+      "trailIndex": 1006,
+      "wikiText": "Collect quaggan treasures, defeat krait, and free krait prisoners.",
+      "waypointChatLink": "[&BEcCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:582",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "582",
+      "coord": [
+        53427,
+        37497
+      ],
+      "recommendedLevel": null,
+      "name": "Okarinoo Waypoint",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEYCAAA=]",
+      "waypointChatLink": "[&BEYCAAA=]",
+      "trailIndex": 1024,
+      "wikiText": "Mellaggan's Grotto is an underwater cave located in the southeast of Timberline Falls. It holds a large quaggan village."
+    },
+    {
+      "stepId": "29:poi:568",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "568",
+      "coord": [
+        53371,
+        37550
+      ],
+      "recommendedLevel": null,
+      "name": "Okarinoo",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1031,
+      "wikiText": "Okarinoo is a quaggan village in Mellaggan's Grotto.",
+      "waypointChatLink": "[&BEYCAAA=]"
+    },
+    {
+      "stepId": "29:hero:0-83",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "hero",
+      "objectiveId": "0-83",
+      "coord": [
+        53191,
+        37688
+      ],
+      "recommendedLevel": null,
+      "name": "Bullablopp",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1042,
+      "wikiText": "Bullablopp is willing to recount the plights of the quaggans from the Unending Ocean to those who will listen.",
+      "waypointChatLink": "[&BEYCAAA=]"
+    },
+    {
+      "stepId": "29:poi:569",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "569",
+      "coord": [
+        53084,
+        37662
+      ],
+      "recommendedLevel": null,
+      "name": "Irenic Shoal",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1048,
+      "wikiText": "Irenic Shoal is a point of interest in Mellaggan's Grotto. This small underground basin is home to a small group of Gulper Fish.",
+      "waypointChatLink": "[&BEYCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:581",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "581",
+      "coord": [
+        52703,
+        37372
+      ],
+      "recommendedLevel": null,
+      "name": "Serpent Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEUCAAA=]",
+      "waypointChatLink": "[&BEUCAAA=]",
+      "trailIndex": 1139,
+      "wikiText": "Serpent Stones is an area in the south of Timberline Falls. Harpy roosts can be found on the cliffs."
+    },
+    {
+      "stepId": "29:poi:567",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "567",
+      "coord": [
+        52411,
+        37561
+      ],
+      "recommendedLevel": null,
+      "name": "Caer Evermore",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1191,
+      "wikiText": "Caer Evermore is a camp established by an alliance between the Durmand Priory and Vigil in the Malorean Wilds to combat the local Risen coming from Mount Maelstrom into the swamp.",
+      "waypointChatLink": "[&BEQCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:580",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "580",
+      "coord": [
+        52275,
+        37557
+      ],
+      "recommendedLevel": null,
+      "name": "Talus Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEQCAAA=]",
+      "waypointChatLink": "[&BEQCAAA=]",
+      "trailIndex": 1224,
+      "wikiText": "Malorean Wilds is a location in the southwest of Timberline Falls. This section of the swamp is used by the Pact to prevent the nearby Risen to pour in from Mount Maelstrom."
+    },
+    {
+      "stepId": "29:heart:78",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "78",
+      "coord": [
+        52250,
+        37333
+      ],
+      "recommendedLevel": 58,
+      "name": "Help Caer Evermore defeat the Risen in the region.",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52567,
+          37615
+        ],
+        [
+          52612,
+          37567
+        ],
+        [
+          52636,
+          37516
+        ],
+        [
+          52636,
+          37471
+        ],
+        [
+          52584,
+          37411
+        ],
+        [
+          52529,
+          37385
+        ],
+        [
+          52516,
+          37348
+        ],
+        [
+          52502,
+          37313
+        ],
+        [
+          52447,
+          37285
+        ],
+        [
+          52400,
+          37274
+        ],
+        [
+          52325,
+          37289
+        ],
+        [
+          52267,
+          37302
+        ],
+        [
+          52265,
+          37296
+        ],
+        [
+          52242,
+          37341
+        ],
+        [
+          52224,
+          37366
+        ],
+        [
+          52171,
+          37373
+        ],
+        [
+          52121,
+          37373
+        ],
+        [
+          52069,
+          37372
+        ],
+        [
+          52025,
+          37370
+        ],
+        [
+          51984,
+          37359
+        ],
+        [
+          51993,
+          37364
+        ],
+        [
+          51968,
+          37353
+        ],
+        [
+          51937,
+          37352
+        ],
+        [
+          51899,
+          37384
+        ],
+        [
+          51873,
+          37410
+        ],
+        [
+          51846,
+          37456
+        ],
+        [
+          51851,
+          37498
+        ],
+        [
+          51852,
+          37530
+        ],
+        [
+          51846,
+          37552
+        ],
+        [
+          51902,
+          37559
+        ],
+        [
+          51960,
+          37578
+        ],
+        [
+          52001,
+          37594
+        ],
+        [
+          52054,
+          37606
+        ],
+        [
+          52104,
+          37614
+        ],
+        [
+          52162,
+          37611
+        ],
+        [
+          52215,
+          37609
+        ],
+        [
+          52282,
+          37618
+        ],
+        [
+          52324,
+          37617
+        ],
+        [
+          52378,
+          37643
+        ],
+        [
+          52418,
+          37642
+        ],
+        [
+          52463,
+          37654
+        ],
+        [
+          52517,
+          37646
+        ],
+        [
+          52546,
+          37626
+        ],
+        [
+          52567,
+          37615
+        ]
+      ],
+      "trailIndex": 1256,
+      "wikiText": "Burn Risen corpses, test out experimental hylek potion on the Risen, and reduce the Risen presence in the region.",
+      "waypointChatLink": "[&BEQCAAA=]"
+    },
+    {
+      "stepId": "29:hero:0-205",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "hero",
+      "objectiveId": "0-205",
+      "coord": [
+        51757,
+        37001
+      ],
+      "recommendedLevel": null,
+      "name": "Ural's Delve",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1377,
+      "wikiText": "Ural's Delve is a spider-infested cave in the southwest of the Timberline Falls.",
+      "waypointChatLink": "[&BFQCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:596",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "596",
+      "coord": [
+        52238,
+        37073
+      ],
+      "recommendedLevel": null,
+      "name": "Rankor Ruins Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFQCAAA=]",
+      "waypointChatLink": "[&BFQCAAA=]",
+      "trailIndex": 1459,
+      "wikiText": "The Tyrant's Mount is an area in the southwest of the Timberline Falls. The ruins of an ancient Stone Summit stronghold can be found here."
+    },
+    {
+      "stepId": "29:heart:79",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "79",
+      "coord": [
+        52229,
+        36783
+      ],
+      "recommendedLevel": 57,
+      "name": "Help the Priory's excavation of the ruins.",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52217,
+          36742
+        ],
+        [
+          52246,
+          36744
+        ],
+        [
+          52275,
+          36746
+        ],
+        [
+          52310,
+          36742
+        ],
+        [
+          52373,
+          36762
+        ],
+        [
+          52384,
+          36811
+        ],
+        [
+          52386,
+          36848
+        ],
+        [
+          52362,
+          36898
+        ],
+        [
+          52353,
+          36926
+        ],
+        [
+          52351,
+          36953
+        ],
+        [
+          52348,
+          36983
+        ],
+        [
+          52337,
+          37036
+        ],
+        [
+          52334,
+          37073
+        ],
+        [
+          52336,
+          37112
+        ],
+        [
+          52332,
+          37147
+        ],
+        [
+          52308,
+          37191
+        ],
+        [
+          52267,
+          37206
+        ],
+        [
+          52239,
+          37210
+        ],
+        [
+          52194,
+          37218
+        ],
+        [
+          52146,
+          37222
+        ],
+        [
+          52094,
+          37232
+        ],
+        [
+          52046,
+          37236
+        ],
+        [
+          51992,
+          37236
+        ],
+        [
+          51946,
+          37217
+        ],
+        [
+          51856,
+          37185
+        ],
+        [
+          51796,
+          37148
+        ],
+        [
+          51726,
+          37076
+        ],
+        [
+          51711,
+          36970
+        ],
+        [
+          51748,
+          36863
+        ],
+        [
+          51825,
+          36825
+        ],
+        [
+          51899,
+          36797
+        ],
+        [
+          51953,
+          36795
+        ],
+        [
+          52049,
+          36781
+        ],
+        [
+          52159,
+          36779
+        ],
+        [
+          52198,
+          36749
+        ],
+        [
+          52217,
+          36742
+        ]
+      ],
+      "trailIndex": 1507,
+      "wikiText": "Protect and repair golems gathering artifacts and put any artifacts you find in storage crates.",
+      "waypointChatLink": "[&BEsCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:587",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "587",
+      "coord": [
+        52444,
+        36754
+      ],
+      "recommendedLevel": null,
+      "name": "Gyre Rapids Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEsCAAA=]",
+      "waypointChatLink": "[&BEsCAAA=]",
+      "trailIndex": 1543,
+      "wikiText": "Gyre Rapids is an area in the west of Timberline Falls. It is mostly notable for the Pact encampment of Concordia."
+    },
+    {
+      "stepId": "29:waypoint:597",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "597",
+      "coord": [
+        52216,
+        36528
+      ],
+      "recommendedLevel": null,
+      "name": "Concordia Waypoint",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFUCAAA=]",
+      "waypointChatLink": "[&BFUCAAA=]",
+      "trailIndex": 1584,
+      "wikiText": "Gyre Rapids is an area in the west of Timberline Falls. It is mostly notable for the Pact encampment of Concordia."
+    },
+    {
+      "stepId": "29:hero:0-82",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "hero",
+      "objectiveId": "0-82",
+      "coord": [
+        51869,
+        36456
+      ],
+      "recommendedLevel": null,
+      "name": "Ritual Tribal Paint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1641,
+      "wikiText": "Interacting with the Ritual Tribal Paint hidden deep inside Candle Chimney will provide Grawl Paint, an item granting one hero point.",
+      "waypointChatLink": "[&BFUCAAA=]"
+    },
+    {
+      "stepId": "29:heart:71",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "71",
+      "coord": [
+        52212,
+        36332
+      ],
+      "recommendedLevel": 56,
+      "name": "Help the alliance of the Vigil and Priory.",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52616,
+          36445
+        ],
+        [
+          52574,
+          36412
+        ],
+        [
+          52514,
+          36413
+        ],
+        [
+          52480,
+          36391
+        ],
+        [
+          52436,
+          36352
+        ],
+        [
+          52394,
+          36326
+        ],
+        [
+          52318,
+          36310
+        ],
+        [
+          52247,
+          36294
+        ],
+        [
+          52158,
+          36280
+        ],
+        [
+          52046,
+          36310
+        ],
+        [
+          51940,
+          36349
+        ],
+        [
+          51921,
+          36476
+        ],
+        [
+          51933,
+          36542
+        ],
+        [
+          51976,
+          36625
+        ],
+        [
+          52040,
+          36701
+        ],
+        [
+          52120,
+          36746
+        ],
+        [
+          52193,
+          36732
+        ],
+        [
+          52235,
+          36727
+        ],
+        [
+          52279,
+          36724
+        ],
+        [
+          52323,
+          36749
+        ],
+        [
+          52413,
+          36794
+        ],
+        [
+          52494,
+          36802
+        ],
+        [
+          52567,
+          36698
+        ],
+        [
+          52588,
+          36634
+        ],
+        [
+          52618,
+          36572
+        ],
+        [
+          52628,
+          36495
+        ],
+        [
+          52616,
+          36445
+        ]
+      ],
+      "trailIndex": 1716,
+      "wikiText": "Destroy grawl effigies and reduce the local grawl presence, clear out undead creatures, assist the outpost and patrols, and raise the flags of the Alliance.",
+      "waypointChatLink": "[&BFUCAAA=]"
+    },
+    {
+      "stepId": "29:vista:1638",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "vista",
+      "objectiveId": "1638",
+      "coord": [
+        52354,
+        36266
+      ],
+      "recommendedLevel": null,
+      "name": "Gyre Rapids",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1765,
+      "wikiText": "Gyre Rapids is an area in the west of Timberline Falls. It is mostly notable for the Pact encampment of Concordia.",
+      "waypointChatLink": "[&BFUCAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:1094",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "1094",
+      "coord": [
+        52878,
+        36203
+      ],
+      "recommendedLevel": null,
+      "name": "Stromkarl Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEYEAAA=]",
+      "waypointChatLink": "[&BEYEAAA=]",
+      "trailIndex": 1834,
+      "wikiText": "Stromkarl Heights is an area within Timberline Falls. The Vigil is trying to establish a safe route there but the ettins are giving them a hard time."
+    },
+    {
+      "stepId": "29:heart:70",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "70",
+      "coord": [
+        52835,
+        36193
+      ],
+      "recommendedLevel": 55,
+      "name": "Help make Stromkarl Heights safe for travelers.",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52437,
+          36302
+        ],
+        [
+          52443,
+          36346
+        ],
+        [
+          52459,
+          36394
+        ],
+        [
+          52502,
+          36458
+        ],
+        [
+          52560,
+          36457
+        ],
+        [
+          52607,
+          36472
+        ],
+        [
+          52632,
+          36537
+        ],
+        [
+          52637,
+          36603
+        ],
+        [
+          52607,
+          36666
+        ],
+        [
+          52586,
+          36708
+        ],
+        [
+          52602,
+          36762
+        ],
+        [
+          52616,
+          36817
+        ],
+        [
+          52643,
+          36856
+        ],
+        [
+          52705,
+          36872
+        ],
+        [
+          52775,
+          36873
+        ],
+        [
+          52827,
+          36874
+        ],
+        [
+          52870,
+          36852
+        ],
+        [
+          52901,
+          36814
+        ],
+        [
+          52918,
+          36770
+        ],
+        [
+          52926,
+          36714
+        ],
+        [
+          52925,
+          36624
+        ],
+        [
+          52934,
+          36538
+        ],
+        [
+          52954,
+          36450
+        ],
+        [
+          52967,
+          36325
+        ],
+        [
+          52949,
+          36210
+        ],
+        [
+          52814,
+          36152
+        ],
+        [
+          52707,
+          36183
+        ],
+        [
+          52620,
+          36184
+        ],
+        [
+          52549,
+          36222
+        ],
+        [
+          52473,
+          36265
+        ],
+        [
+          52437,
+          36302
+        ]
+      ],
+      "trailIndex": 1842,
+      "wikiText": "Fight off and set traps for ettins, help patrols and watches, and light the way for travelers with torches.",
+      "waypointChatLink": "[&BEYEAAA=]"
+    },
+    {
+      "stepId": "29:heart:80",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "80",
+      "coord": [
+        52713,
+        35988
+      ],
+      "recommendedLevel": 54,
+      "name": "Help Fionnghuala Scratch prepare their defenses.",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52920,
+          35220
+        ],
+        [
+          52843,
+          35233
+        ],
+        [
+          52790,
+          35261
+        ],
+        [
+          52771,
+          35280
+        ],
+        [
+          52706,
+          35291
+        ],
+        [
+          52683,
+          35335
+        ],
+        [
+          52625,
+          35443
+        ],
+        [
+          52562,
+          35486
+        ],
+        [
+          52517,
+          35561
+        ],
+        [
+          52440,
+          35609
+        ],
+        [
+          52417,
+          35658
+        ],
+        [
+          52405,
+          35723
+        ],
+        [
+          52409,
+          35785
+        ],
+        [
+          52444,
+          35864
+        ],
+        [
+          52460,
+          35943
+        ],
+        [
+          52447,
+          36015
+        ],
+        [
+          52417,
+          36070
+        ],
+        [
+          52396,
+          36103
+        ],
+        [
+          52412,
+          36149
+        ],
+        [
+          52450,
+          36192
+        ],
+        [
+          52506,
+          36201
+        ],
+        [
+          52598,
+          36194
+        ],
+        [
+          52689,
+          36178
+        ],
+        [
+          52820,
+          36160
+        ],
+        [
+          52883,
+          36094
+        ],
+        [
+          52915,
+          35995
+        ],
+        [
+          52893,
+          35888
+        ],
+        [
+          52867,
+          35790
+        ],
+        [
+          52883,
+          35706
+        ],
+        [
+          52937,
+          35573
+        ],
+        [
+          52962,
+          35488
+        ],
+        [
+          52929,
+          35364
+        ],
+        [
+          52923,
+          35270
+        ],
+        [
+          52920,
+          35220
+        ]
+      ],
+      "trailIndex": 1891,
+      "wikiText": "Help the skritt defend their home. Raise flags, fight off jotun, gather scrap metal bars, wake up lazy workers.",
+      "waypointChatLink": "[&BEYEAAA=]"
+    },
+    {
+      "stepId": "29:poi:574",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "574",
+      "coord": [
+        52715,
+        35758
+      ],
+      "recommendedLevel": null,
+      "name": "Stovepipe Pogue",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1937,
+      "wikiText": "Stovepipe Pogue is a point of interest in Fionnghuala Scratch. This large machine was built by the skritts to brew their own ale.",
+      "waypointChatLink": "[&BEYEAAA=]"
+    },
+    {
+      "stepId": "29:vista:1637",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "vista",
+      "objectiveId": "1637",
+      "coord": [
+        52754,
+        34817
+      ],
+      "recommendedLevel": null,
+      "name": "Gentle River",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2078,
+      "wikiText": "Gentle River is an area in the northwestern part of Timberline Falls. According to local fishermen, it is one of the best places in the Shiverpeak Mountains for fishing.",
+      "waypointChatLink": "[&BFACAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:592",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "592",
+      "coord": [
+        52594,
+        35193
+      ],
+      "recommendedLevel": null,
+      "name": "Gentle River Waypoint",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFACAAA=]",
+      "waypointChatLink": "[&BFACAAA=]",
+      "trailIndex": 2146,
+      "wikiText": "Gentle River is an area in the northwestern part of Timberline Falls. According to local fishermen, it is one of the best places in the Shiverpeak Mountains for fishing."
+    },
+    {
+      "stepId": "29:waypoint:594",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "594",
+      "coord": [
+        51954,
+        34728
+      ],
+      "recommendedLevel": null,
+      "name": "Krongar Waypoint",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFICAAA=]",
+      "waypointChatLink": "[&BFICAAA=]",
+      "trailIndex": 2238,
+      "wikiText": "Krongar Pass is an area located in the northwest of Timberline Falls. The norn settlement of Kyesjard is used to host local moots."
+    },
+    {
+      "stepId": "29:heart:75",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "75",
+      "coord": [
+        52142,
+        34960
+      ],
+      "recommendedLevel": 52,
+      "name": "Partake in the moot.",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52182,
+          34812
+        ],
+        [
+          52099,
+          34812
+        ],
+        [
+          52053,
+          34830
+        ],
+        [
+          52024,
+          34860
+        ],
+        [
+          51989,
+          34885
+        ],
+        [
+          51973,
+          34914
+        ],
+        [
+          51952,
+          34956
+        ],
+        [
+          51956,
+          35007
+        ],
+        [
+          51948,
+          35042
+        ],
+        [
+          51941,
+          35075
+        ],
+        [
+          51934,
+          35110
+        ],
+        [
+          51952,
+          35157
+        ],
+        [
+          51968,
+          35194
+        ],
+        [
+          52061,
+          35206
+        ],
+        [
+          52118,
+          35223
+        ],
+        [
+          52172,
+          35212
+        ],
+        [
+          52236,
+          35189
+        ],
+        [
+          52300,
+          35142
+        ],
+        [
+          52345,
+          35094
+        ],
+        [
+          52363,
+          34990
+        ],
+        [
+          52337,
+          34909
+        ],
+        [
+          52305,
+          34853
+        ],
+        [
+          52247,
+          34822
+        ],
+        [
+          52210,
+          34807
+        ],
+        [
+          52182,
+          34812
+        ]
+      ],
+      "trailIndex": 2278,
+      "wikiText": "Rouse passed-out partiers, sample beer and roasted meat on a stick, send slackers back to their posts.",
+      "waypointChatLink": "[&BFICAAA=]"
+    },
+    {
+      "stepId": "29:poi:577",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "577",
+      "coord": [
+        52128,
+        35028
+      ],
+      "recommendedLevel": null,
+      "name": "Kyesjard",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2289,
+      "wikiText": "Kyesjard is a norn lodge where many moots and fighting tournaments are held.",
+      "waypointChatLink": "[&BFICAAA=]"
+    },
+    {
+      "stepId": "29:vista:1633",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "vista",
+      "objectiveId": "1633",
+      "coord": [
+        52217,
+        35097
+      ],
+      "recommendedLevel": null,
+      "name": "Krongar Pass",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2305,
+      "wikiText": "Krongar Pass is an area located in the northwest of Timberline Falls. The norn settlement of Kyesjard is used to host local moots.",
+      "waypointChatLink": "[&BFACAAA=]"
+    },
+    {
+      "stepId": "29:poi:576",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "576",
+      "coord": [
+        52080,
+        35508
+      ],
+      "recommendedLevel": null,
+      "name": "Thistlereed Grove",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2362,
+      "wikiText": "Thistlereed Grove is a grove housing a small jotun camp.",
+      "waypointChatLink": "[&BFECAAA=]"
+    },
+    {
+      "stepId": "29:waypoint:593",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "593",
+      "coord": [
+        52242,
+        35598
+      ],
+      "recommendedLevel": null,
+      "name": "Thistlereed Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFECAAA=]",
+      "waypointChatLink": "[&BFECAAA=]",
+      "trailIndex": 2408,
+      "wikiText": "Gentle River is an area in the northwestern part of Timberline Falls. According to local fishermen, it is one of the best places in the Shiverpeak Mountains for fishing."
+    },
+    {
+      "stepId": "29:waypoint:588",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "waypoint",
+      "objectiveId": "588",
+      "coord": [
+        52162,
+        35949
+      ],
+      "recommendedLevel": null,
+      "name": "Valance Tutory Waypoint",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEwCAAA=]",
+      "waypointChatLink": "[&BEwCAAA=]",
+      "trailIndex": 2449,
+      "wikiText": "Fisher's Eye Bridges is an area within Timberline Falls. A large asuran krewe has build a lab in here, where they conduct various expermients, most notably on Earth Elementals."
+    },
+    {
+      "stepId": "29:vista:1636",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "vista",
+      "objectiveId": "1636",
+      "coord": [
+        52166,
+        36023
+      ],
+      "recommendedLevel": null,
+      "name": "Fisher's Eye Bridges",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2462,
+      "wikiText": "Fisher's Eye Bridges is an area within Timberline Falls. A large asuran krewe has build a lab in here, where they conduct various expermients, most notably on Earth Elementals.",
+      "waypointChatLink": "[&BEwCAAA=]"
+    },
+    {
+      "stepId": "29:heart:72",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "heart",
+      "objectiveId": "72",
+      "coord": [
+        52156,
+        36013
+      ],
+      "recommendedLevel": 55,
+      "name": "Help Goldenlight Hallow with their experiments.",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52230,
+          35792
+        ],
+        [
+          52185,
+          35790
+        ],
+        [
+          52112,
+          35801
+        ],
+        [
+          52055,
+          35813
+        ],
+        [
+          51990,
+          35830
+        ],
+        [
+          51907,
+          35866
+        ],
+        [
+          51847,
+          35928
+        ],
+        [
+          51831,
+          36002
+        ],
+        [
+          51823,
+          36084
+        ],
+        [
+          51862,
+          36213
+        ],
+        [
+          51955,
+          36254
+        ],
+        [
+          52058,
+          36247
+        ],
+        [
+          52154,
+          36221
+        ],
+        [
+          52242,
+          36200
+        ],
+        [
+          52329,
+          36187
+        ],
+        [
+          52396,
+          36170
+        ],
+        [
+          52432,
+          36088
+        ],
+        [
+          52442,
+          35983
+        ],
+        [
+          52416,
+          35884
+        ],
+        [
+          52366,
+          35820
+        ],
+        [
+          52305,
+          35784
+        ],
+        [
+          52263,
+          35791
+        ],
+        [
+          52230,
+          35792
+        ]
+      ],
+      "trailIndex": 2471,
+      "wikiText": "Help Bizz, Naff, and Tijja test out their experiments at Goldenlight Hallow lab.",
+      "waypointChatLink": "[&BEwCAAA=]"
+    },
+    {
+      "stepId": "29:poi:575",
+      "mapId": 29,
+      "zoneName": "Timberline Falls",
+      "type": "poi",
+      "objectiveId": "575",
+      "coord": [
+        51942,
+        35987
+      ],
+      "recommendedLevel": null,
+      "name": "Goldenlight Hallow",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2492,
+      "wikiText": "Goldenlight Hallow is a small cave at the back of the asuran lab in Fisher's Eye Bridges.",
+      "waypointChatLink": "[&BEwCAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

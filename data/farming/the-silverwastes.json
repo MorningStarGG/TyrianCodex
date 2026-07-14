@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1015,
+  "slug": "the-silverwastes",
+  "name": "The Silverwastes",
+  "regionName": "Maguuma Wastes",
+  "mode": "farming",
+  "routes": [],
+  "nodes": [
+    {
+      "x": 27.7,
+      "y": 405.9,
+      "z": 364.5,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 169.6,
+      "y": 396.6,
+      "z": 267.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 167.2,
+      "y": 413.7,
+      "z": 132.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -442.6,
+      "y": 430.5,
+      "z": 175.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -205.5,
+      "y": 418.4,
+      "z": -133.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    }
+  ]
+}

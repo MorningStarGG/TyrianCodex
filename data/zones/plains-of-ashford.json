@@ -1,0 +1,2361 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 19,
+    "name": "Plains of Ashford",
+    "continentId": 1,
+    "regionId": 2,
+    "regionName": "Ascalon",
+    "floor": 1,
+    "minLevel": 1,
+    "maxLevel": 15,
+    "mapRect": [
+      [
+        -49152,
+        -24576
+      ],
+      [
+        49152,
+        24576
+      ]
+    ],
+    "continentRect": [
+      [
+        57856,
+        29952
+      ],
+      [
+        61952,
+        32000
+      ]
+    ],
+    "sectorRect": [
+      [
+        57668.2,
+        29814.3
+      ],
+      [
+        62040.4,
+        32266.6
+      ]
+    ],
+    "labelCoord": [
+      59904,
+      30976
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "19:heart:348",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "348",
+      "coord": [
+        58094,
+        30516
+      ],
+      "recommendedLevel": 2,
+      "name": "Help Tolona Ironrustler with her farm.",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58118,
+          30525
+        ],
+        [
+          58135,
+          30474
+        ],
+        [
+          58132,
+          30438
+        ],
+        [
+          58103,
+          30368
+        ],
+        [
+          58008,
+          30307
+        ],
+        [
+          58003,
+          30408
+        ],
+        [
+          58008,
+          30527
+        ],
+        [
+          58000,
+          30619
+        ],
+        [
+          58047,
+          30643
+        ],
+        [
+          58118,
+          30525
+        ]
+      ],
+      "trailIndex": 14,
+      "wikiText": "Squish spiders and their eggs, clean up webs, flatten wurm mounds, and fill troughs with hay.",
+      "waypointChatLink": "[&BIABAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:384",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "384",
+      "coord": [
+        58138,
+        30590
+      ],
+      "recommendedLevel": null,
+      "name": "Smokestead Waypoint",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIABAAA=]",
+      "waypointChatLink": "[&BIABAAA=]",
+      "trailIndex": 29,
+      "wikiText": "The Village of Smokestead is a small charr settlement that borders the Black Citadel. It is used for the citadel's defense against threats in the Plains of Ashford, such as Ascalonian ghosts and the Flame Legion."
+    },
+    {
+      "stepId": "19:poi:917",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "917",
+      "coord": [
+        58200,
+        30966
+      ],
+      "recommendedLevel": null,
+      "name": "Three Legions Court",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 54,
+      "wikiText": "The Three Legions Court is a busy courtyard with a large marketplace where many barter for goods and services.",
+      "waypointChatLink": "[&BH8BAAA=]"
+    },
+    {
+      "stepId": "19:poi:343",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "343",
+      "coord": [
+        58534,
+        30530
+      ],
+      "recommendedLevel": null,
+      "name": "The Wrecking Yard",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 84,
+      "wikiText": "The Wrecking Yard is a point of interest within the Gunbreach Hills. Inside this fortified compound, the Iron Legion is busy repairing and recycling old machine parts and scrap metal.",
+      "waypointChatLink": "[&BJcDAAA=]"
+    },
+    {
+      "stepId": "19:heart:101",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "101",
+      "coord": [
+        58538,
+        30504
+      ],
+      "recommendedLevel": 3,
+      "name": "Help Scar Stripeclaw organize the wrecking yard.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58868,
+          30471
+        ],
+        [
+          58697,
+          30394
+        ],
+        [
+          58635,
+          30328
+        ],
+        [
+          58556,
+          30373
+        ],
+        [
+          58296,
+          30472
+        ],
+        [
+          58487,
+          30728
+        ],
+        [
+          58686,
+          30549
+        ],
+        [
+          58829,
+          30562
+        ],
+        [
+          58868,
+          30471
+        ]
+      ],
+      "trailIndex": 89,
+      "wikiText": "Kill rats, clean up gears and junk, chide lazy workers, and keep Flame Legion away from the wrecking yard.",
+      "waypointChatLink": "[&BJcDAAA=]"
+    },
+    {
+      "stepId": "19:heart:98",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "98",
+      "coord": [
+        58363,
+        30369
+      ],
+      "recommendedLevel": 2,
+      "name": "Help Crucibis Forgeweld run the armory.",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58136,
+          30328
+        ],
+        [
+          58222,
+          30484
+        ],
+        [
+          58302,
+          30464
+        ],
+        [
+          58400,
+          30432
+        ],
+        [
+          58461,
+          30408
+        ],
+        [
+          58573,
+          30365
+        ],
+        [
+          58651,
+          30320
+        ],
+        [
+          58673,
+          30191
+        ],
+        [
+          58632,
+          30069
+        ],
+        [
+          58270,
+          30244
+        ],
+        [
+          58136,
+          30328
+        ]
+      ],
+      "trailIndex": 120,
+      "wikiText": "Defeat Flame Legion, and deactivate unexploded mortar shells.",
+      "waypointChatLink": "[&BIEBAAA=]"
+    },
+    {
+      "stepId": "19:heart:347",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "347",
+      "coord": [
+        58056,
+        30165
+      ],
+      "recommendedLevel": 3,
+      "name": "Rid the training area of pests.",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57842,
+          30133
+        ],
+        [
+          58027,
+          30365
+        ],
+        [
+          58382,
+          30165
+        ],
+        [
+          58330,
+          30055
+        ],
+        [
+          58184,
+          29933
+        ],
+        [
+          57842,
+          30133
+        ]
+      ],
+      "trailIndex": 166,
+      "wikiText": "Defeat skritt, prevent the theft of cannonballs, fire cannons, and collect devourer eggs.",
+      "waypointChatLink": "[&BIEBAAA=]"
+    },
+    {
+      "stepId": "19:poi:916",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "916",
+      "coord": [
+        57973,
+        30048
+      ],
+      "recommendedLevel": null,
+      "name": "Mock's Niche",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 180,
+      "wikiText": "Mock's Niche is a point of interest within Tela Range. This destroyed tower is home to a small scratch of skritt that are constantly stealing the cannonball's supply of the shooting range nearby.",
+      "waypointChatLink": "[&BIEBAAA=]"
+    },
+    {
+      "stepId": "19:hero:0-13",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "hero",
+      "objectiveId": "0-13",
+      "coord": [
+        58093,
+        30128
+      ],
+      "recommendedLevel": null,
+      "name": "Centurion Titus Gearclaw",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 195,
+      "wikiText": "Centurion Titus Gearclaw is looking for a sparring partner in Tela Range. Best him in some friendly combat to complete his hero challenge.",
+      "waypointChatLink": "[&BIEBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:385",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "385",
+      "coord": [
+        58122,
+        30173
+      ],
+      "recommendedLevel": null,
+      "name": "Greysteel Armory Waypoint",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIEBAAA=]",
+      "waypointChatLink": "[&BIEBAAA=]",
+      "trailIndex": 201,
+      "wikiText": "Tela Range is an area located just north of the Village of Smokestead in the Plains of Ashford region."
+    },
+    {
+      "stepId": "19:heart:100",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "100",
+      "coord": [
+        58700,
+        30259
+      ],
+      "recommendedLevel": 4,
+      "name": "Help Strum Bassclash secure Lake Feritas.",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58878,
+          30453
+        ],
+        [
+          58933,
+          30382
+        ],
+        [
+          58890,
+          30044
+        ],
+        [
+          58671,
+          30020
+        ],
+        [
+          58614,
+          30062
+        ],
+        [
+          58651,
+          30192
+        ],
+        [
+          58628,
+          30324
+        ],
+        [
+          58722,
+          30388
+        ],
+        [
+          58878,
+          30453
+        ]
+      ],
+      "trailIndex": 266,
+      "wikiText": "Protect the fisher folk from the drakes, clean up tar, and fix broken traps around Lake Feritas.",
+      "waypointChatLink": "[&BJcDAAA=]"
+    },
+    {
+      "stepId": "19:vista:1372",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1372",
+      "coord": [
+        58848,
+        30261
+      ],
+      "recommendedLevel": null,
+      "name": "Lake Feritas",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 319,
+      "wikiText": "Take a short walk on a \"long plank\".",
+      "waypointChatLink": "[&BJcDAAA=]"
+    },
+    {
+      "stepId": "19:heart:102",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "102",
+      "coord": [
+        58946,
+        30254
+      ],
+      "recommendedLevel": 5,
+      "name": "Help Latera Painstorm fight the Flame Legion.",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58933,
+          30375
+        ],
+        [
+          58890,
+          30033
+        ],
+        [
+          58990,
+          29954
+        ],
+        [
+          59149,
+          29968
+        ],
+        [
+          59230,
+          30153
+        ],
+        [
+          59085,
+          30323
+        ],
+        [
+          59067,
+          30339
+        ],
+        [
+          59071,
+          30352
+        ],
+        [
+          59059,
+          30410
+        ],
+        [
+          59012,
+          30432
+        ],
+        [
+          58933,
+          30375
+        ]
+      ],
+      "trailIndex": 329,
+      "wikiText": "Kill Flame legion, and destroy their turrets, power sources, and magical devices.",
+      "waypointChatLink": "[&BJcDAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:919",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "919",
+      "coord": [
+        58845,
+        30602
+      ],
+      "recommendedLevel": null,
+      "name": "Feritas Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJcDAAA=]",
+      "waypointChatLink": "[&BJcDAAA=]",
+      "trailIndex": 374,
+      "wikiText": "The Old Duke's Estate lies in the western section of the Plains of Ashford. These ruins were once the famous vineyards and estates of Duke Barradin."
+    },
+    {
+      "stepId": "19:heart:104",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "104",
+      "coord": [
+        59194,
+        30667
+      ],
+      "recommendedLevel": 7,
+      "name": "Help the Blood Legion thin out nuisances.",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59086,
+          30680
+        ],
+        [
+          59088,
+          30963
+        ],
+        [
+          59198,
+          30966
+        ],
+        [
+          59244,
+          30915
+        ],
+        [
+          59290,
+          30800
+        ],
+        [
+          59511,
+          30798
+        ],
+        [
+          59459,
+          30678
+        ],
+        [
+          59427,
+          30597
+        ],
+        [
+          59433,
+          30466
+        ],
+        [
+          59465,
+          30356
+        ],
+        [
+          59573,
+          30195
+        ],
+        [
+          59450,
+          30181
+        ],
+        [
+          59178,
+          30195
+        ],
+        [
+          59065,
+          30407
+        ],
+        [
+          59086,
+          30680
+        ]
+      ],
+      "trailIndex": 411,
+      "wikiText": "Defeat ghosts, and squish spiders and their eggs north of Temperus Point.",
+      "waypointChatLink": "[&BIMBAAA=]"
+    },
+    {
+      "stepId": "19:poi:341",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "341",
+      "coord": [
+        59141,
+        30400
+      ],
+      "recommendedLevel": null,
+      "name": "Calhaan's Haunt",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 438,
+      "wikiText": "Calhaan's Haunt is a small grove of trees inside a box canyon framed by the ruins of the Great Northern Wall in Ascalon. Many ghosts can be found in and around this location. This place might be Captain Calhaan's resting place.",
+      "waypointChatLink": "[&BJcDAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:386",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "386",
+      "coord": [
+        59561,
+        30218
+      ],
+      "recommendedLevel": null,
+      "name": "Martyr's Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIIBAAA=]",
+      "waypointChatLink": "[&BIIBAAA=]",
+      "trailIndex": 483,
+      "wikiText": "The Toppled Wall is an area consisting of a part of the ruined Great Northern Wall within the Plains of Ashford. It lies to the west of the Ascalon City Ruins and has been infested with harpies nesting on the higher parts of the structure."
+    },
+    {
+      "stepId": "19:poi:349",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "349",
+      "coord": [
+        59826,
+        30344
+      ],
+      "recommendedLevel": null,
+      "name": "Deadgod's Lair",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 512,
+      "wikiText": "The Deadgod's Lair is a point of interest within the Martyr's Woods. This canyon houses an ancient statue to the Human God Balthazar. It has been overrun with grawl, worshiping the god as \"Badazar.\"",
+      "waypointChatLink": "[&BIIBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:921",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "921",
+      "coord": [
+        59896,
+        30719
+      ],
+      "recommendedLevel": null,
+      "name": "Spirit Hunter Camp Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJkDAAA=]",
+      "waypointChatLink": "[&BJkDAAA=]",
+      "trailIndex": 559,
+      "wikiText": "The Devast District is an area within the Plains of Ashford. This road is often used by the separatists to ambush charr patrols."
+    },
+    {
+      "stepId": "19:poi:918",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "918",
+      "coord": [
+        60023,
+        30433
+      ],
+      "recommendedLevel": null,
+      "name": "Shards of War",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 593,
+      "wikiText": "The Shards of War is a point of interest within Agnos Gorge. It is one of the few remaining large crystals from the Searing in Ascalon, and is the only one seen in the Plains of Ashford. An old commemorative plaque can be found at its base.",
+      "waypointChatLink": "[&BJkDAAA=]"
+    },
+    {
+      "stepId": "19:vista:1376",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1376",
+      "coord": [
+        60088,
+        30260
+      ],
+      "recommendedLevel": null,
+      "name": "The Toppled Wall",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 647,
+      "wikiText": "Entrance is middle of N Side. Jump goes over 2 pillars.",
+      "waypointChatLink": "[&BIYBAAA=]"
+    },
+    {
+      "stepId": "19:heart:105",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "105",
+      "coord": [
+        60154,
+        30258
+      ],
+      "recommendedLevel": 15,
+      "name": "Help Sagum Relicseeker with his research.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60150,
+          30604
+        ],
+        [
+          60110,
+          30406
+        ],
+        [
+          59953,
+          30381
+        ],
+        [
+          59936,
+          30319
+        ],
+        [
+          59863,
+          30275
+        ],
+        [
+          59802,
+          30283
+        ],
+        [
+          59724,
+          30295
+        ],
+        [
+          59657,
+          30266
+        ],
+        [
+          59633,
+          30206
+        ],
+        [
+          59690,
+          30193
+        ],
+        [
+          59736,
+          30188
+        ],
+        [
+          59801,
+          30186
+        ],
+        [
+          59854,
+          30171
+        ],
+        [
+          59917,
+          30160
+        ],
+        [
+          59990,
+          30067
+        ],
+        [
+          60224,
+          29966
+        ],
+        [
+          60496,
+          30041
+        ],
+        [
+          60497,
+          30360
+        ],
+        [
+          60530,
+          30582
+        ],
+        [
+          60384,
+          30711
+        ],
+        [
+          60195,
+          30742
+        ],
+        [
+          60150,
+          30604
+        ]
+      ],
+      "trailIndex": 654,
+      "wikiText": "Kill harpies along the wall, and help the Durmand Priory recover artifacts.",
+      "waypointChatLink": "[&BIYBAAA=]"
+    },
+    {
+      "stepId": "19:poi:348",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "348",
+      "coord": [
+        60276,
+        30428
+      ],
+      "recommendedLevel": null,
+      "name": "Ghostsummit",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 687,
+      "wikiText": "The Ghostsummit is a Durmand Priory camp located in Phasmatis Corridor. The Priory are attemping to uncover information about pre-Searing Ascalon, but are frustrated by frequent raids by nearby harpies.",
+      "waypointChatLink": "[&BIYBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:390",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "390",
+      "coord": [
+        60433,
+        30433
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalonian Catacombs Waypoint",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIYBAAA=]",
+      "waypointChatLink": "[&BIYBAAA=]",
+      "trailIndex": 707,
+      "wikiText": "Phasmatis Corridor is an area found within the Plains of Ashford. It is east of Agnos Gorge and southwest of the Ascalon City Ruins."
+    },
+    {
+      "stepId": "19:poi:338",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "338",
+      "coord": [
+        60564,
+        30713
+      ],
+      "recommendedLevel": null,
+      "name": "Swordcross Outpost",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 741,
+      "wikiText": "Swordcross Outpost is a small charr encampment built by Farzan Steelshaper's Iron Legion warband to serve as a forward base against the ghosts of the Ascalon City Ruins.",
+      "waypointChatLink": "[&BIYBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:968",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "968",
+      "coord": [
+        60923,
+        30688
+      ],
+      "recommendedLevel": null,
+      "name": "Phasmatis Waypoint",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMgDAAA=]",
+      "waypointChatLink": "[&BMgDAAA=]",
+      "trailIndex": 776,
+      "wikiText": "Phasmatis Corridor is an area found within the Plains of Ashford. It is east of Agnos Gorge and southwest of the Ascalon City Ruins."
+    },
+    {
+      "stepId": "19:poi:340",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "340",
+      "coord": [
+        60721,
+        30279
+      ],
+      "recommendedLevel": null,
+      "name": "The Viewing Hill",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 826,
+      "wikiText": "The Viewing Hill is a point of interest within the Ascalon City Ruins. This small hill overlooks the ruins.",
+      "waypointChatLink": "[&BIcBAAA=]"
+    },
+    {
+      "stepId": "19:vista:1381",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1381",
+      "coord": [
+        60864,
+        30205
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalon City Ruins",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 861,
+      "wikiText": "Clear the stairs to the WEST of the waypoint, then stay right at the first landing.",
+      "waypointChatLink": "[&BIcBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:391",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "391",
+      "coord": [
+        60987,
+        30152
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalon City Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIcBAAA=]",
+      "waypointChatLink": "[&BIcBAAA=]",
+      "trailIndex": 876,
+      "wikiText": "The Ascalon City Ruins are all that remains of Ascalon City, located near the center of Ascalon along the Great Northern Wall."
+    },
+    {
+      "stepId": "19:heart:112",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "112",
+      "coord": [
+        60996,
+        30111
+      ],
+      "recommendedLevel": 14,
+      "name": "Help Ghyrtratus Fiendmauler retake Ascalon City.",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61373,
+          30621
+        ],
+        [
+          61438,
+          30487
+        ],
+        [
+          61517,
+          30175
+        ],
+        [
+          61442,
+          30004
+        ],
+        [
+          60882,
+          30016
+        ],
+        [
+          60778,
+          30022
+        ],
+        [
+          60618,
+          29941
+        ],
+        [
+          60600,
+          30312
+        ],
+        [
+          60775,
+          30670
+        ],
+        [
+          61320,
+          30701
+        ],
+        [
+          61373,
+          30621
+        ]
+      ],
+      "trailIndex": 881,
+      "wikiText": "Wipe out the ghosts haunting Ascalon City and help the Blood Legion retake the city for the charr.",
+      "waypointChatLink": "[&BIcBAAA=]"
+    },
+    {
+      "stepId": "19:poi:339",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "339",
+      "coord": [
+        61233,
+        30126
+      ],
+      "recommendedLevel": null,
+      "name": "Foefire's Heart",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 908,
+      "wikiText": "The Foefire's Heart is the epicenter of the Foefire's effects, now remaining as a pillar of light taking the form of a giant flaming sword.",
+      "waypointChatLink": "[&BIcBAAA=]"
+    },
+    {
+      "stepId": "19:hero:0-32",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "hero",
+      "objectiveId": "0-32",
+      "coord": [
+        61425,
+        30034
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalonian Ruins",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 943,
+      "wikiText": "Ascalonian Ruins can be found deep into the ghost infested area. Several Veteran ghosts guard the way to it.",
+      "waypointChatLink": "[&BIcBAAA=]"
+    },
+    {
+      "stepId": "19:hero:0-14",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "hero",
+      "objectiveId": "0-14",
+      "coord": [
+        61198,
+        30422
+      ],
+      "recommendedLevel": null,
+      "name": "Ruins of Ascalon City",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 996,
+      "wikiText": "The submerged Ruins of Ascalon City rest deep in the lake. A Veteran Bog Skale might have taken to its stony remains, but the site's latent energies remain a tempting reward for adventurers in the area.",
+      "waypointChatLink": "[&BIcBAAA=]"
+    },
+    {
+      "stepId": "19:vista:1379",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1379",
+      "coord": [
+        61797,
+        30081
+      ],
+      "recommendedLevel": null,
+      "name": "Human's Lament",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1074,
+      "wikiText": "Through the cave south of the vista. And don't forget to \"pay the troll toll\".",
+      "waypointChatLink": "[&BIgBAAA=]"
+    },
+    {
+      "stepId": "19:poi:344",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "344",
+      "coord": [
+        61731,
+        30546
+      ],
+      "recommendedLevel": null,
+      "name": "Stonecrag Kraal",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1130,
+      "wikiText": "Stonecrag Kraal is the main gateway for the ogres to advance into the Plains of Ashford.",
+      "waypointChatLink": "[&BIgBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:392",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "392",
+      "coord": [
+        61513,
+        30819
+      ],
+      "recommendedLevel": null,
+      "name": "Watchcrag Tower Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIgBAAA=]",
+      "waypointChatLink": "[&BIgBAAA=]",
+      "trailIndex": 1168,
+      "wikiText": "Cadem Forest lies on the eastern edge of the Plains of Ashford, leading to the Blazeridge Steppes. It holds the ogres' furthest advances to the east at Stonecrag Kraal."
+    },
+    {
+      "stepId": "19:vista:1378",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1378",
+      "coord": [
+        61535,
+        30897
+      ],
+      "recommendedLevel": null,
+      "name": "Cadem Forest",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1182,
+      "wikiText": "Simple hike.",
+      "waypointChatLink": "[&BIgBAAA=]"
+    },
+    {
+      "stepId": "19:heart:111",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "111",
+      "coord": [
+        61415,
+        31056
+      ],
+      "recommendedLevel": 13,
+      "name": "Help Androchus thin out ogres.",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61961,
+          31137
+        ],
+        [
+          62015,
+          30556
+        ],
+        [
+          61977,
+          30420
+        ],
+        [
+          61822,
+          30348
+        ],
+        [
+          61680,
+          30354
+        ],
+        [
+          61436,
+          30483
+        ],
+        [
+          61270,
+          30833
+        ],
+        [
+          61268,
+          31114
+        ],
+        [
+          61961,
+          31137
+        ]
+      ],
+      "trailIndex": 1215,
+      "wikiText": "Kill ogres and their pets, and destroy their supplies, weapons, and homes.",
+      "waypointChatLink": "[&BIgBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:393",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "393",
+      "coord": [
+        61694,
+        31267
+      ],
+      "recommendedLevel": null,
+      "name": "Duskrend Overlook Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIkBAAA=]",
+      "waypointChatLink": "[&BIkBAAA=]",
+      "trailIndex": 1260,
+      "wikiText": "Cadem Forest lies on the eastern edge of the Plains of Ashford, leading to the Blazeridge Steppes. It holds the ogres' furthest advances to the east at Stonecrag Kraal."
+    },
+    {
+      "stepId": "19:heart:110",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "110",
+      "coord": [
+        61743,
+        31739
+      ],
+      "recommendedLevel": 12,
+      "name": "Help Researcher Irkz study skale poison.",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61244,
+          31770
+        ],
+        [
+          61376,
+          31774
+        ],
+        [
+          61460,
+          31794
+        ],
+        [
+          61552,
+          31849
+        ],
+        [
+          61582,
+          31872
+        ],
+        [
+          61659,
+          31966
+        ],
+        [
+          61970,
+          31813
+        ],
+        [
+          61822,
+          31519
+        ],
+        [
+          61695,
+          31478
+        ],
+        [
+          61298,
+          31470
+        ],
+        [
+          61260,
+          31601
+        ],
+        [
+          61244,
+          31770
+        ]
+      ],
+      "trailIndex": 1315,
+      "wikiText": "Set traps for skale; bring skale oil, eggs, and meal remains to Irkz; and help his researchers stay safe.",
+      "waypointChatLink": "[&BIkBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:967",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "967",
+      "coord": [
+        61162,
+        31718
+      ],
+      "recommendedLevel": null,
+      "name": "Loreclaw Waypoint",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMcDAAA=]",
+      "waypointChatLink": "[&BMcDAAA=]",
+      "trailIndex": 1357,
+      "wikiText": "The Loreclaw Expanse is the southeastern section of the Plains of Ashford and includes a Separatist camp in the area."
+    },
+    {
+      "stepId": "19:poi:915",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "915",
+      "coord": [
+        60858,
+        31871
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Keiran",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1391,
+      "wikiText": "Camp Keiran is a point of interest in the Loreclaw Expanse. This Separatist tent encampment serves as their base of operations in this area.",
+      "waypointChatLink": "[&BMcDAAA=]"
+    },
+    {
+      "stepId": "19:vista:1377",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1377",
+      "coord": [
+        60898,
+        31606
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalon Basin",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1442,
+      "wikiText": "The Ascalon Basin is a body of water just south of Ascalon City. An asura scientist is conducting research on the large population of brackish skale found on the eastern shores.",
+      "waypointChatLink": "[&BIoBAAA=]"
+    },
+    {
+      "stepId": "19:heart:108",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "108",
+      "coord": [
+        60620,
+        31721
+      ],
+      "recommendedLevel": 12,
+      "name": "Help Mei Hawkslayer disrupt separatist activity.",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60701,
+          31935
+        ],
+        [
+          61113,
+          31917
+        ],
+        [
+          61174,
+          31893
+        ],
+        [
+          61230,
+          31836
+        ],
+        [
+          61250,
+          31590
+        ],
+        [
+          61008,
+          31530
+        ],
+        [
+          60634,
+          31663
+        ],
+        [
+          60494,
+          31807
+        ],
+        [
+          60701,
+          31935
+        ]
+      ],
+      "trailIndex": 1477,
+      "wikiText": "Kill Separatists, destroy their mines, disrupt their plans, and rescue captured charr.",
+      "waypointChatLink": "[&BIoBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:394",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "394",
+      "coord": [
+        60860,
+        31342
+      ],
+      "recommendedLevel": null,
+      "name": "Irondock Shipyard Waypoint",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIoBAAA=]",
+      "waypointChatLink": "[&BIoBAAA=]",
+      "trailIndex": 1511,
+      "wikiText": "The Ascalon Basin is a body of water just south of Ascalon City. An asura scientist is conducting research on the large population of brackish skale found on the eastern shores."
+    },
+    {
+      "stepId": "19:heart:109",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "109",
+      "coord": [
+        60926,
+        31295
+      ],
+      "recommendedLevel": 11,
+      "name": "Assist Sesto Headsplitter with his work.",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61157,
+          31178
+        ],
+        [
+          61004,
+          31528
+        ],
+        [
+          60646,
+          31654
+        ],
+        [
+          60542,
+          31469
+        ],
+        [
+          60537,
+          31162
+        ],
+        [
+          60710,
+          30927
+        ],
+        [
+          61157,
+          31178
+        ]
+      ],
+      "trailIndex": 1519,
+      "wikiText": "Test out Sesto Headsplitter's weapons and help keep the experiments at Irondock operational.",
+      "waypointChatLink": "[&BIoBAAA=]"
+    },
+    {
+      "stepId": "19:vista:1380",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1380",
+      "coord": [
+        60492,
+        30834
+      ],
+      "recommendedLevel": null,
+      "name": "Devast District",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1642,
+      "wikiText": "The Devast District is an area within the Plains of Ashford. This road is often used by the separatists to ambush charr patrols.",
+      "waypointChatLink": "[&BIYBAAA=]"
+    },
+    {
+      "stepId": "19:heart:106",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "106",
+      "coord": [
+        60192,
+        31161
+      ],
+      "recommendedLevel": 10,
+      "name": "Help Gavros Spiritfoe thin out ghosts.",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59858,
+          30657
+        ],
+        [
+          60194,
+          30724
+        ],
+        [
+          60425,
+          30993
+        ],
+        [
+          60298,
+          31244
+        ],
+        [
+          60091,
+          31396
+        ],
+        [
+          59731,
+          31145
+        ],
+        [
+          59729,
+          30999
+        ],
+        [
+          59858,
+          30657
+        ]
+      ],
+      "trailIndex": 1683,
+      "wikiText": "Light torches to guide patrols, and thin the ghosts of Devast.",
+      "waypointChatLink": "[&BIQBAAA=]"
+    },
+    {
+      "stepId": "19:hero:0-30",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "hero",
+      "objectiveId": "0-30",
+      "coord": [
+        59961,
+        31203
+      ],
+      "recommendedLevel": null,
+      "name": "Ethereal Vanguard Monument",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1708,
+      "wikiText": "The Ethereal Vanguard Monument stands quiet beneath an outcropping in Devast District. Awakening its power summons Captain Mattox and three Ethereal Vanguard soldiers back to be battled.",
+      "waypointChatLink": "[&BIQBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:388",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "388",
+      "coord": [
+        59821,
+        31407
+      ],
+      "recommendedLevel": null,
+      "name": "Ashford Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIQBAAA=]",
+      "waypointChatLink": "[&BIQBAAA=]",
+      "trailIndex": 1763,
+      "wikiText": "The Ashford Forum is a charr settlement housing craft traders and a fighting pit used by both locals and explorers alike to hone their skills in combat."
+    },
+    {
+      "stepId": "19:hero:0-12",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "hero",
+      "objectiveId": "0-12",
+      "coord": [
+        59688,
+        31294
+      ],
+      "recommendedLevel": null,
+      "name": "Centurion Micka Thickblood",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1776,
+      "wikiText": "Centurion Micka Thickblood is a member of the Blood Legion that challenges players to a fight when they interact with her. Defeat her to earn a hero point.",
+      "waypointChatLink": "[&BIQBAAA=]"
+    },
+    {
+      "stepId": "19:vista:1374",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1374",
+      "coord": [
+        59460,
+        31814
+      ],
+      "recommendedLevel": null,
+      "name": "Lake Adorea",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1869,
+      "wikiText": "Look for the plank crossing the cliff face to the east of the vista. The start point is EAST of that plank.",
+      "waypointChatLink": "[&BIUBAAA=]"
+    },
+    {
+      "stepId": "19:hero:0-40",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "hero",
+      "objectiveId": "0-40",
+      "coord": [
+        59274,
+        31978
+      ],
+      "recommendedLevel": null,
+      "name": "Effigy Core",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1900,
+      "wikiText": "An Effigy Core is left within a guarded cave near Lake Adorea to draw adventurers to help test a new Veteran Prototype Effigy.",
+      "waypointChatLink": "[&BIUBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:389",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "389",
+      "coord": [
+        59367,
+        31492
+      ],
+      "recommendedLevel": null,
+      "name": "Adorea Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIUBAAA=]",
+      "waypointChatLink": "[&BIUBAAA=]",
+      "trailIndex": 1925,
+      "wikiText": "Lake Adorea is a lake used as a nesting ground by Salamander Drakes in the Plains of Ashford, with ruins under water."
+    },
+    {
+      "stepId": "19:heart:107",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "107",
+      "coord": [
+        59480,
+        31240
+      ],
+      "recommendedLevel": 9,
+      "name": "Help Paenula train troops.",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59263,
+          31613
+        ],
+        [
+          59282,
+          31529
+        ],
+        [
+          59268,
+          31381
+        ],
+        [
+          59485,
+          31012
+        ],
+        [
+          59741,
+          31238
+        ],
+        [
+          60105,
+          31429
+        ],
+        [
+          60171,
+          31519
+        ],
+        [
+          60160,
+          31656
+        ],
+        [
+          59871,
+          31805
+        ],
+        [
+          59746,
+          31875
+        ],
+        [
+          59643,
+          31888
+        ],
+        [
+          59511,
+          31800
+        ],
+        [
+          59433,
+          31768
+        ],
+        [
+          59384,
+          31734
+        ],
+        [
+          59263,
+          31613
+        ]
+      ],
+      "trailIndex": 1951,
+      "wikiText": "Use Paenula's rifle to capture minotaurs and drakes, then spar with them in the fighting pit.",
+      "waypointChatLink": "[&BIUBAAA=]"
+    },
+    {
+      "stepId": "19:poi:342",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "342",
+      "coord": [
+        59350,
+        31090
+      ],
+      "recommendedLevel": null,
+      "name": "Victory Cenotaph",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1987,
+      "wikiText": "The Victory Cenotaph is a point of interest within the Charr's Triumph. A statue depicting Pyre Fierceshot is central to this landmark.",
+      "waypointChatLink": "[&BIMBAAA=]"
+    },
+    {
+      "stepId": "19:vista:1375",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1375",
+      "coord": [
+        59393,
+        30825
+      ],
+      "recommendedLevel": null,
+      "name": "Charr's Triumph",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2046,
+      "wikiText": "Start on the North face and jump up to the vista.",
+      "waypointChatLink": "[&BIMBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:387",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "387",
+      "coord": [
+        59160,
+        30930
+      ],
+      "recommendedLevel": null,
+      "name": "Temperus Point Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIMBAAA=]",
+      "waypointChatLink": "[&BIMBAAA=]",
+      "trailIndex": 2076,
+      "wikiText": "Charr's Triumph is an area in the Plains of Ashford located east of the Village of Smokestead, containing the local headquarters of both the Blood and Iron Legion."
+    },
+    {
+      "stepId": "19:heart:103",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "103",
+      "coord": [
+        59188,
+        31100
+      ],
+      "recommendedLevel": 8,
+      "name": "Defend the Iron Legion fort from Flame Legion.",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59037,
+          31044
+        ],
+        [
+          58898,
+          31137
+        ],
+        [
+          59023,
+          31343
+        ],
+        [
+          58904,
+          31552
+        ],
+        [
+          59039,
+          31762
+        ],
+        [
+          59139,
+          31816
+        ],
+        [
+          59243,
+          31766
+        ],
+        [
+          59256,
+          31619
+        ],
+        [
+          59277,
+          31532
+        ],
+        [
+          59263,
+          31381
+        ],
+        [
+          59476,
+          31023
+        ],
+        [
+          59372,
+          30973
+        ],
+        [
+          59129,
+          30996
+        ],
+        [
+          59037,
+          31044
+        ]
+      ],
+      "trailIndex": 2096,
+      "wikiText": "Protect Exterminatus HQ by killing Flame Legion in the area.",
+      "waypointChatLink": "[&BIMBAAA=]"
+    },
+    {
+      "stepId": "19:poi:347",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "347",
+      "coord": [
+        59005,
+        31181
+      ],
+      "recommendedLevel": null,
+      "name": "Exterminatus HQ",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2116,
+      "wikiText": "Exterminatus HQ is a stronghold that serves as the local headquarters for the Iron Legion in Charr's Triumph. In the rear of this encampment are many terraces overlooking the surrounding countryside.",
+      "waypointChatLink": "[&BIMBAAA=]"
+    },
+    {
+      "stepId": "19:poi:346",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "346",
+      "coord": [
+        59090,
+        31638
+      ],
+      "recommendedLevel": null,
+      "name": "Igni Castrum",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2170,
+      "wikiText": "Igni Castrum is a Flame Legion camp that sends patrols out into the neighboring areas.",
+      "waypointChatLink": "[&BIUBAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:1784",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "1784",
+      "coord": [
+        58552,
+        31814
+      ],
+      "recommendedLevel": null,
+      "name": "Langmar Estate Waypoint",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPgGAAA=]",
+      "waypointChatLink": "[&BPgGAAA=]",
+      "trailIndex": 2266,
+      "wikiText": "Langmar Estate is both an area and a Guild Puzzle located south of the Guardpoint Decimus Waypoint in the southwestern part of the Plains of Ashford."
+    },
+    {
+      "stepId": "19:waypoint:920",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "920",
+      "coord": [
+        58483,
+        31546
+      ],
+      "recommendedLevel": null,
+      "name": "Guardpoint Decimus Waypoint",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJgDAAA=]",
+      "waypointChatLink": "[&BJgDAAA=]",
+      "trailIndex": 2299,
+      "wikiText": "The Decimus Stones is an Ascalonian ruin dotted with statues that grant power to the ghosts in the area. According to dialog in The End of the Line, the ghosts here are more skilled than others because it is a burial site for Warmasters."
+    },
+    {
+      "stepId": "19:heart:97",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "97",
+      "coord": [
+        58390,
+        31340
+      ],
+      "recommendedLevel": 6,
+      "name": "Help Kyra Sharptracker thin out ghosts.",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58447,
+          31142
+        ],
+        [
+          58276,
+          31209
+        ],
+        [
+          58126,
+          31358
+        ],
+        [
+          58112,
+          31754
+        ],
+        [
+          58264,
+          31774
+        ],
+        [
+          58535,
+          31868
+        ],
+        [
+          58803,
+          31654
+        ],
+        [
+          58956,
+          31448
+        ],
+        [
+          58872,
+          31101
+        ],
+        [
+          58732,
+          31074
+        ],
+        [
+          58607,
+          31046
+        ],
+        [
+          58447,
+          31142
+        ]
+      ],
+      "trailIndex": 2324,
+      "wikiText": "Defeat ghosts, assist Ash Legion patrols, rescue downed soldiers, and destroy Ascalonian artifacts and statues.",
+      "waypointChatLink": "[&BJgDAAA=]"
+    },
+    {
+      "stepId": "19:poi:345",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "345",
+      "coord": [
+        58456,
+        31336
+      ],
+      "recommendedLevel": null,
+      "name": "Sharptail Encampment",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2333,
+      "wikiText": "Sharptail Encampment is an Ash Legion camp dealing with the Ascalonian ghosts coming out of the Decimus Stones.",
+      "waypointChatLink": "[&BJgDAAA=]"
+    },
+    {
+      "stepId": "19:vista:1373",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "vista",
+      "objectiveId": "1373",
+      "coord": [
+        58547,
+        31267
+      ],
+      "recommendedLevel": null,
+      "name": "Victor's Presidium",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2370,
+      "wikiText": "Head south from the waypoint. As you pass throught the Ash Legion camp, head a little east. Counterclockwise climb begins at the southeast corner of the vista rock.",
+      "waypointChatLink": "[&BH8BAAA=]"
+    },
+    {
+      "stepId": "19:waypoint:383",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "waypoint",
+      "objectiveId": "383",
+      "coord": [
+        58482,
+        31032
+      ],
+      "recommendedLevel": null,
+      "name": "Vir's Gate Waypoint",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BH8BAAA=]",
+      "waypointChatLink": "[&BH8BAAA=]",
+      "trailIndex": 2391,
+      "wikiText": "Victor's Presidium is an area in the south-west of the Plains of Ashford. The grave of the former warband leader, Howl the Brazen, can be found here."
+    },
+    {
+      "stepId": "19:heart:96",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "heart",
+      "objectiveId": "96",
+      "coord": [
+        58614,
+        30795
+      ],
+      "recommendedLevel": 6,
+      "name": "Help Bryllana Deepmind thin out ghosts.",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58537,
+          30818
+        ],
+        [
+          58466,
+          30997
+        ],
+        [
+          58726,
+          31067
+        ],
+        [
+          58892,
+          31073
+        ],
+        [
+          58969,
+          30994
+        ],
+        [
+          59035,
+          30822
+        ],
+        [
+          59104,
+          30762
+        ],
+        [
+          59067,
+          30614
+        ],
+        [
+          58862,
+          30554
+        ],
+        [
+          58655,
+          30649
+        ],
+        [
+          58537,
+          30818
+        ]
+      ],
+      "trailIndex": 2419,
+      "wikiText": "Destroy wine casks, kill ghosts, assist Iron Legion patrols, and light torches in the ruins of Barradin's Estate.",
+      "waypointChatLink": "[&BH8BAAA=]"
+    },
+    {
+      "stepId": "19:poi:1458",
+      "mapId": 19,
+      "zoneName": "Plains of Ashford",
+      "type": "poi",
+      "objectiveId": "1458",
+      "coord": [
+        58974,
+        30877
+      ],
+      "recommendedLevel": null,
+      "name": "Barradin's Vaults",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Barradin's Vaults is a point of interest within the Victor's Presidium. This ruined crypt holds the remains of Barradin family whose ghosts still haunt this tomb complex.",
+      "waypointChatLink": "[&BIMBAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

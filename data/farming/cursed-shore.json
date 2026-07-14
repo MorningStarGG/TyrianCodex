@@ -1,0 +1,769 @@
+{
+  "schemaVersion": 1,
+  "mapId": 62,
+  "slug": "cursed-shore",
+  "name": "Cursed Shore",
+  "regionName": "Ruins of Orr",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mithril Ore",
+      "category": "ore",
+      "material": "mithril",
+      "source": "tw"
+    },
+    {
+      "name": "Black Crocus",
+      "category": "plant",
+      "material": "winter_crocus",
+      "source": "lady"
+    },
+    {
+      "name": "Orrian Truffle",
+      "category": "plant",
+      "material": "truffle",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -307.0,
+      "y": 49.3,
+      "z": -731.2,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": -338.0,
+      "y": 40.8,
+      "z": -674.2,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": 355.7,
+      "y": 55.3,
+      "z": 804.4,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 480.6,
+      "y": 33.7,
+      "z": -688.6,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 450.9,
+      "y": 19.2,
+      "z": -805.0,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 413.4,
+      "y": 44.8,
+      "z": 958.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 484.8,
+      "y": 54.6,
+      "z": 814.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BBgDAAA=]"
+    },
+    {
+      "x": -303.7,
+      "y": 34.4,
+      "z": 770.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BBsDAAA=]"
+    },
+    {
+      "x": 376.7,
+      "y": 0.5,
+      "z": 539.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BB4DAAA=]"
+    },
+    {
+      "x": 552.8,
+      "y": 135.2,
+      "z": -41.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BB4DAAA=]"
+    },
+    {
+      "x": 304.1,
+      "y": 4.8,
+      "z": -58.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BCIDAAA=]"
+    },
+    {
+      "x": -130.4,
+      "y": 59.0,
+      "z": -857.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "Complete!"
+    },
+    {
+      "x": -262.1,
+      "y": -69.1,
+      "z": -117.6,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 318.7,
+      "y": -43.1,
+      "z": -1145.0,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 316.9,
+      "y": -43.7,
+      "z": -1143.8,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -363.9,
+      "y": 2.9,
+      "z": 1001.3,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -192.0,
+      "y": 27.0,
+      "z": 591.7,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -34.9,
+      "y": 20.4,
+      "z": 85.3,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -222.5,
+      "y": 58.0,
+      "z": -863.4,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -257.6,
+      "y": 21.7,
+      "z": -682.3,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -357.1,
+      "y": 9.7,
+      "z": -348.1,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": -220.4,
+      "y": 30.9,
+      "z": 650.6,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": -182.8,
+      "y": 6.8,
+      "z": 172.0,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": -30.3,
+      "y": 9.1,
+      "z": 508.6,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": -26.2,
+      "y": 17.9,
+      "z": 98.6,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 35.9,
+      "y": 27.7,
+      "z": -276.0,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 50.8,
+      "y": 20.7,
+      "z": -15.1,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 68.5,
+      "y": 66.6,
+      "z": 1091.1,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 420.7,
+      "y": 14.1,
+      "z": -869.2,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 427.3,
+      "y": 88.9,
+      "z": -258.2,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 493.8,
+      "y": 54.1,
+      "z": 804.8,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 20.8,
+      "y": 27.1,
+      "z": 889.9,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle",
+      "chatLink": "[&BBoDAAA=]"
+    },
+    {
+      "x": 40.1,
+      "y": 6.1,
+      "z": 592.9,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle",
+      "chatLink": "[&BBsDAAA=]"
+    },
+    {
+      "x": 184.0,
+      "y": 20.3,
+      "z": 180.9,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle",
+      "chatLink": "[&BO8JAAA=]"
+    },
+    {
+      "x": 349.9,
+      "y": 59.2,
+      "z": 760.0,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -101.8,
+      "y": 19.0,
+      "z": 542.0,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -112.9,
+      "y": 17.2,
+      "z": 532.4,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -123.6,
+      "y": 12.4,
+      "z": 506.1,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -158.4,
+      "y": 8.5,
+      "z": 454.6,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -11.1,
+      "y": 9.3,
+      "z": 320.8,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 396.6,
+      "y": 14.8,
+      "z": -845.2,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 186.3,
+      "y": 8.8,
+      "z": 254.7,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 20.6,
+      "y": 27.0,
+      "z": 889.5,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -65.9,
+      "y": 12.9,
+      "z": 853.6,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 207.1,
+      "y": 14.0,
+      "z": 243.7,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -4.7,
+      "y": 11.2,
+      "z": -1086.6,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 88.5,
+      "y": 80.6,
+      "z": 1104.4,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus",
+      "chatLink": "[&BBgDAAA=]"
+    },
+    {
+      "x": -31.2,
+      "y": 9.6,
+      "z": 509.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus",
+      "chatLink": "[&BB4DAAA=]"
+    },
+    {
+      "x": 75.5,
+      "y": 42.4,
+      "z": 980.5,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 121.4,
+      "y": 38.5,
+      "z": 997.4,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -265.4,
+      "y": 31.2,
+      "z": 609.4,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -220.2,
+      "y": 30.9,
+      "z": 650.8,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -26.3,
+      "y": 18.0,
+      "z": 98.4,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 50.8,
+      "y": 20.7,
+      "z": -15.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 35.7,
+      "y": 27.7,
+      "z": -276.1,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 115.2,
+      "y": 27.3,
+      "z": -238.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -63.0,
+      "y": 29.0,
+      "z": -475.7,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -380.4,
+      "y": 15.5,
+      "z": -314.3,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -357.9,
+      "y": 14.3,
+      "z": -289.6,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 427.1,
+      "y": 88.9,
+      "z": -258.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -175.4,
+      "y": 8.2,
+      "z": 29.6,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -133.3,
+      "y": 22.5,
+      "z": -8.1,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 83.9,
+      "y": 48.6,
+      "z": 1034.3,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 68.5,
+      "y": 66.5,
+      "z": 1091.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 132.2,
+      "y": 28.6,
+      "z": 952.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 18.9,
+      "y": 47.5,
+      "z": 959.6,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -98.2,
+      "y": 3.3,
+      "z": 647.5,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -215.8,
+      "y": 7.6,
+      "z": 141.5,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -182.5,
+      "y": 6.8,
+      "z": 172.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -190.3,
+      "y": 8.2,
+      "z": 101.1,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 133.9,
+      "y": 28.8,
+      "z": -184.3,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 405.9,
+      "y": 1.5,
+      "z": -958.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -356.9,
+      "y": 9.8,
+      "z": -347.7,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 264.0,
+      "y": 52.7,
+      "z": 784.1,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -444.1,
+      "y": -5.6,
+      "z": 572.3,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -396.4,
+      "y": -31.9,
+      "z": 279.6,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -122.4,
+      "y": 8.4,
+      "z": 491.3,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 3.2,
+      "y": -27.3,
+      "z": -790.4,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 217.1,
+      "y": -42.9,
+      "z": -1103.1,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -439.0,
+      "y": -15.2,
+      "z": 319.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -229.2,
+      "y": -4.6,
+      "z": -422.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -406.2,
+      "y": -62.5,
+      "z": 187.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -45.0,
+      "y": -33.0,
+      "z": -685.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 51.7,
+      "y": -48.9,
+      "z": -1095.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 160.5,
+      "y": -47.2,
+      "z": -1109.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 138.0,
+      "y": 17.8,
+      "z": -560.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -73.9,
+      "y": 8.1,
+      "z": 152.7,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 81.8,
+      "y": 26.1,
+      "z": 358.5,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -6.7,
+      "y": 30.5,
+      "z": -507.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 298.9,
+      "y": 11.3,
+      "z": -830.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -272.4,
+      "y": 22.7,
+      "z": -680.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    }
+  ]
+}

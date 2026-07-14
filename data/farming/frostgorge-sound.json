@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "mapId": 30,
+  "slug": "frostgorge-sound",
+  "name": "Frostgorge Sound",
+  "regionName": "Shiverpeak Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mithril Ore",
+      "category": "ore",
+      "material": "mithril",
+      "source": "lady"
+    },
+    {
+      "name": "Butternut Squash",
+      "category": "plant",
+      "material": "butternut",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 512.8,
+      "y": 10.2,
+      "z": 144.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BHgBAAA=]"
+    },
+    {
+      "x": -666.8,
+      "y": -12.0,
+      "z": -721.0,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -705.5,
+      "y": 45.3,
+      "z": -882.3,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 118.1,
+      "y": 5.4,
+      "z": 560.8,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 150.6,
+      "y": 1.7,
+      "z": 484.9,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 142.0,
+      "y": 37.8,
+      "z": 303.6,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 155.9,
+      "y": 39.8,
+      "z": 313.6,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 129.4,
+      "y": -7.1,
+      "z": 112.9,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -564.0,
+      "y": -126.9,
+      "z": -628.5,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -49.0,
+      "y": -54.9,
+      "z": 170.2,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 629.1,
+      "y": 2.8,
+      "z": -622.1,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 637.7,
+      "y": 3.1,
+      "z": -627.0,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 642.1,
+      "y": 2.3,
+      "z": -610.8,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 629.0,
+      "y": 1.9,
+      "z": -606.9,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 645.9,
+      "y": 7.7,
+      "z": -593.0,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 637.4,
+      "y": 8.6,
+      "z": -592.6,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 630.9,
+      "y": 9.1,
+      "z": -575.8,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 640.1,
+      "y": 8.3,
+      "z": -577.3,
+      "material": "butternut",
+      "category": "plant",
+      "icon": "butternut"
+    },
+    {
+      "x": 751.9,
+      "y": 33.1,
+      "z": 168.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    }
+  ]
+}

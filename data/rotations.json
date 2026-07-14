@@ -1,0 +1,307 @@
+{
+  "_about": "Deterministic daily/weekly content rotations (fractals + strikes) transcribed from the GW2 wiki rotation templates. The runtime computes today's entry via the wiki {{day of year index}} selector ({{#time:z}} UTC, 0-based, skips index 59 in non-leap years) mod period. Bjora is a weekly 3-cycle calibrated by anchorEpoch. Regenerate with builder/build_rotations.py.",
+  "fractalsDaily": {
+    "period": 15,
+    "offset": 0,
+    "sets": [
+      [
+        "Nightmare",
+        "Snowblind",
+        "Volcanic"
+      ],
+      [
+        "Aetherblade",
+        "Thaumanova Reactor",
+        "Uncategorized"
+      ],
+      [
+        "Chaos",
+        "Cliffside",
+        "Twilight Oasis"
+      ],
+      [
+        "Captain Mai Trin Boss",
+        "Deepstone",
+        "Silent Surf"
+      ],
+      [
+        "Nightmare",
+        "Snowblind",
+        "Solid Ocean"
+      ],
+      [
+        "Chaos",
+        "Uncategorized",
+        "Urban Battleground"
+      ],
+      [
+        "Deepstone",
+        "Molten Furnace",
+        "Siren's Reef"
+      ],
+      [
+        "Molten Boss",
+        "Twilight Oasis",
+        "Underground Facility"
+      ],
+      [
+        "Silent Surf",
+        "Swampland",
+        "Volcanic"
+      ],
+      [
+        "Aquatic Ruins",
+        "Lonely Tower",
+        "Thaumanova Reactor"
+      ],
+      [
+        "Sunqua Peak",
+        "Underground Facility",
+        "Urban Battleground"
+      ],
+      [
+        "Aetherblade",
+        "Chaos",
+        "Nightmare"
+      ],
+      [
+        "Cliffside",
+        "Lonely Tower",
+        "Kinfall"
+      ],
+      [
+        "Deepstone",
+        "Solid Ocean",
+        "Swampland"
+      ],
+      [
+        "Captain Mai Trin Boss",
+        "Molten Boss",
+        "Shattered Observatory"
+      ]
+    ]
+  },
+  "fractalsRecommended": {
+    "period": 15,
+    "offset": 0,
+    "sets": [
+      [
+        2,
+        37,
+        53
+      ],
+      [
+        6,
+        28,
+        61
+      ],
+      [
+        10,
+        32,
+        65
+      ],
+      [
+        14,
+        34,
+        74
+      ],
+      [
+        19,
+        50,
+        70
+      ],
+      [
+        15,
+        48,
+        60
+      ],
+      [
+        24,
+        35,
+        66
+      ],
+      [
+        21,
+        36,
+        75
+      ],
+      [
+        7,
+        40,
+        67
+      ],
+      [
+        8,
+        31,
+        54
+      ],
+      [
+        11,
+        39,
+        59
+      ],
+      [
+        18,
+        27,
+        64
+      ],
+      [
+        4,
+        30,
+        58
+      ],
+      [
+        16,
+        42,
+        62
+      ],
+      [
+        5,
+        47,
+        68
+      ]
+    ],
+    "scaleNames": {
+      "1": "Volcanic",
+      "2": "Uncategorized",
+      "3": "Snowblind",
+      "4": "Urban Battleground",
+      "5": "Swampland",
+      "6": "Cliffside",
+      "7": "Aquatic Ruins",
+      "8": "Underground Facility",
+      "9": "Molten Furnace",
+      "10": "Molten Boss",
+      "11": "Deepstone",
+      "12": "Siren's Reef",
+      "13": "Chaos",
+      "14": "Aetherblade",
+      "15": "Thaumanova Reactor",
+      "16": "Twilight Oasis",
+      "17": "Kinfall",
+      "18": "Captain Mai Trin Boss",
+      "19": "Volcanic",
+      "20": "Solid Ocean",
+      "21": "Silent Surf",
+      "22": "Nightmare",
+      "23": "Shattered Observatory",
+      "24": "Sunqua Peak",
+      "25": "Lonely Tower",
+      "26": "Aquatic Ruins",
+      "27": "Snowblind",
+      "28": "Volcanic",
+      "29": "Underground Facility",
+      "30": "Chaos",
+      "31": "Urban Battleground",
+      "32": "Swampland",
+      "33": "Deepstone",
+      "34": "Thaumanova Reactor",
+      "35": "Solid Ocean",
+      "36": "Uncategorized",
+      "37": "Siren's Reef",
+      "38": "Kinfall",
+      "39": "Molten Furnace",
+      "40": "Molten Boss",
+      "41": "Twilight Oasis",
+      "42": "Captain Mai Trin Boss",
+      "43": "Silent Surf",
+      "44": "Solid Ocean",
+      "45": "Aetherblade",
+      "46": "Cliffside",
+      "47": "Nightmare",
+      "48": "Shattered Observatory",
+      "49": "Sunqua Peak",
+      "50": "Lonely Tower",
+      "51": "Snowblind",
+      "52": "Volcanic",
+      "53": "Underground Facility",
+      "54": "Siren's Reef",
+      "55": "Thaumanova Reactor",
+      "56": "Swampland",
+      "57": "Urban Battleground",
+      "58": "Molten Furnace",
+      "59": "Twilight Oasis",
+      "60": "Solid Ocean",
+      "61": "Aquatic Ruins",
+      "62": "Uncategorized",
+      "63": "Chaos",
+      "64": "Thaumanova Reactor",
+      "65": "Aetherblade",
+      "66": "Silent Surf",
+      "67": "Deepstone",
+      "68": "Cliffside",
+      "69": "Molten Boss",
+      "70": "Kinfall",
+      "71": "Captain Mai Trin Boss",
+      "72": "Nightmare",
+      "73": "Shattered Observatory",
+      "74": "Sunqua Peak",
+      "75": "Lonely Tower",
+      "76": "Aquatic Ruins",
+      "77": "Swampland",
+      "78": "Siren's Reef",
+      "79": "Uncategorized",
+      "80": "Solid Ocean",
+      "81": "Underground Facility",
+      "82": "Thaumanova Reactor",
+      "83": "Molten Furnace",
+      "84": "Deepstone",
+      "85": "Urban Battleground",
+      "86": "Snowblind",
+      "87": "Twilight Oasis",
+      "88": "Chaos",
+      "89": "Swampland",
+      "90": "Molten Boss",
+      "91": "Captain Mai Trin Boss",
+      "92": "Volcanic",
+      "93": "Aetherblade",
+      "94": "Cliffside",
+      "95": "Kinfall",
+      "96": "Nightmare",
+      "97": "Shattered Observatory",
+      "98": "Sunqua Peak",
+      "99": "Silent Surf",
+      "100": "Lonely Tower"
+    }
+  },
+  "strikeIcebrood": {
+    "period": 6,
+    "offset": 0,
+    "list": [
+      "Cold War",
+      "Fraenir of Jormag",
+      "Shiverpeaks Pass",
+      "Voice of the Fallen and Claw of the Fallen",
+      "Whisper of Jormag",
+      "Boneskinner"
+    ]
+  },
+  "strikeEoD": {
+    "period": 5,
+    "offset": 0,
+    "list": [
+      "Aetherblade Hideout",
+      "Xunlai Jade Junkyard",
+      "Kaineng Overlook",
+      "Harvest Temple",
+      "Old Lion's Court"
+    ]
+  },
+  "strikeSoO": {
+    "period": 2,
+    "offset": 0,
+    "list": [
+      "Cosmic Observatory",
+      "Temple of Febe"
+    ]
+  },
+  "bjoraWeekly": {
+    "period": 3,
+    "anchorEpoch": 1783985400,
+    "list": [
+      "Boneskinner",
+      "Voice and Claw of the Fallen",
+      "Fraenir of Jormag"
+    ]
+  }
+}

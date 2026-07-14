@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 91,
+    "name": "The Grove",
+    "continentId": 1,
+    "regionId": 5,
+    "regionName": "Tarnished Coast",
+    "floor": 1,
+    "minLevel": 0,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -15360,
+        -24576
+      ],
+      [
+        18432,
+        24576
+      ]
+    ],
+    "continentRect": [
+      [
+        42496,
+        36480
+      ],
+      [
+        43904,
+        38528
+      ]
+    ],
+    "sectorRect": [
+      [
+        42377,
+        36427.1
+      ],
+      [
+        43860.7,
+        38344
+      ]
+    ],
+    "labelCoord": [
+      43200,
+      37384
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "91:waypoint:1042",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "waypoint",
+      "objectiveId": "1042",
+      "coord": [
+        43051,
+        37064
+      ],
+      "recommendedLevel": null,
+      "name": "Caledon Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBIEAAA=]",
+      "waypointChatLink": "[&BBIEAAA=]",
+      "trailIndex": 6,
+      "wikiText": "Caledon Path is the primary entrance into the Grove, leading into Caledon Forest which it was named after, and directly to the Village of Astorea and a small patch where Newborn sylvari come into the world."
+    },
+    {
+      "stepId": "91:vista:1471",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "vista",
+      "objectiveId": "1471",
+      "coord": [
+        43136,
+        37070
+      ],
+      "recommendedLevel": null,
+      "name": "Caledon Path",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 45,
+      "wikiText": "Head east from the waypoint to a building near merchants, there are fungi stairs starting inside and lead up to the roof for the vista.",
+      "waypointChatLink": "[&BBIEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1156",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1156",
+      "coord": [
+        43077,
+        37253
+      ],
+      "recommendedLevel": null,
+      "name": "Warden's Watchgate",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 76,
+      "wikiText": "The Warden's Watchgate is a point of interest in the Marshaling Field. This arched gateway crosses the path from the heart of The Grove to the outer parts of Tyria.",
+      "waypointChatLink": "[&BBIEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1158",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1158",
+      "coord": [
+        43311,
+        37407
+      ],
+      "recommendedLevel": null,
+      "name": "The Maker's Path",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 125,
+      "wikiText": "The Maker's Path is a point of interest in the Maker's Terrace. This path connects the upper and middle part of The Grove together.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:vista:1473",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "vista",
+      "objectiveId": "1473",
+      "coord": [
+        43373,
+        37344
+      ],
+      "recommendedLevel": null,
+      "name": "Marshaling Field (1)",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 157,
+      "wikiText": "The Marshaling Field is an area with The Grove. It contains an asura gate that connects to Lion's Arch.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:vista:1468",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "vista",
+      "objectiveId": "1468",
+      "coord": [
+        43289,
+        37469
+      ],
+      "recommendedLevel": null,
+      "name": "Starbower Nursery",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 209,
+      "wikiText": "Head east from the waypoint then take the southern fork, there is a spiked roof coming up from a lower level over the edge to the SW. Drop down on that and you can easily access the vista.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1155",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1155",
+      "coord": [
+        43194,
+        37453
+      ],
+      "recommendedLevel": null,
+      "name": "Pale Tree's Circle",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 244,
+      "wikiText": "The Pale Tree's Circle is a point of interest in the Upper Commons. This commom place is used by the sylvari as a meeting point.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:waypoint:1210",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "waypoint",
+      "objectiveId": "1210",
+      "coord": [
+        43162,
+        37494
+      ],
+      "recommendedLevel": null,
+      "name": "Upper Commons Waypoint",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLoEAAA=]",
+      "waypointChatLink": "[&BLoEAAA=]",
+      "trailIndex": 250,
+      "wikiText": "The Upper Commons is the central section of The Grove's highest level, containing access to the Omphalos Chamber."
+    },
+    {
+      "stepId": "91:waypoint:1211",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "waypoint",
+      "objectiveId": "1211",
+      "coord": [
+        43172,
+        37446
+      ],
+      "recommendedLevel": null,
+      "name": "Reckoner's Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLsEAAA=]",
+      "waypointChatLink": "[&BLsEAAA=]",
+      "trailIndex": 347,
+      "wikiText": "The Reckoner's Terrace is the central area of the terrace level of The Grove and leads into the Maker's Terrace, the Great Helix, the Scholar's Terrace, the Order's Terrace, and the Tender's Terrace"
+    },
+    {
+      "stepId": "91:vista:1469",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "vista",
+      "objectiveId": "1469",
+      "coord": [
+        43267,
+        37540
+      ],
+      "recommendedLevel": null,
+      "name": "The Song Bower",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 394,
+      "wikiText": "The Song Bower is an area on the top level of the Grove.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1157",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1157",
+      "coord": [
+        43329,
+        37472
+      ],
+      "recommendedLevel": null,
+      "name": "The Envoy's Shelter",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 474,
+      "wikiText": "The Envoy's Shelter is a point of interest in the The Quester's Terrace where a few sylvari are currently practicing their combat.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:waypoint:1212",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "waypoint",
+      "objectiveId": "1212",
+      "coord": [
+        43214,
+        37449
+      ],
+      "recommendedLevel": null,
+      "name": "Ronan's Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLwEAAA=]",
+      "waypointChatLink": "[&BLwEAAA=]",
+      "trailIndex": 518,
+      "wikiText": "Ronan's Bower is an area in the depth level of the The Grove."
+    },
+    {
+      "stepId": "91:vista:1472",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "vista",
+      "objectiveId": "1472",
+      "coord": [
+        43154,
+        37498
+      ],
+      "recommendedLevel": null,
+      "name": "Envoy's Shelter",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 562,
+      "wikiText": "Head east from waypoint to building with merchants and crafters, around the north side of the building there are mushrooms you can jump up to reach the roof.",
+      "waypointChatLink": "[&BLoEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1152",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1152",
+      "coord": [
+        42946,
+        37232
+      ],
+      "recommendedLevel": null,
+      "name": "Gardenroot Tunnel",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 676,
+      "wikiText": "The Gardenroot Tunnel is a tunnel in the Grove which connects the lowest and second-lowest levels. There is a deadend to the north of the tunnel.",
+      "waypointChatLink": "[&BBIEAAA=]"
+    },
+    {
+      "stepId": "91:vista:1470",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "vista",
+      "objectiveId": "1470",
+      "coord": [
+        43050,
+        37263
+      ],
+      "recommendedLevel": null,
+      "name": "Marshaling Field (2)",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 710,
+      "wikiText": "The Marshaling Field is an area with The Grove. It contains an asura gate that connects to Lion's Arch.",
+      "waypointChatLink": "[&BBIEAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

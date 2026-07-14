@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "mapId": 31,
+  "slug": "snowden-drifts",
+  "name": "Snowden Drifts",
+  "regionName": "Shiverpeak Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Iron Ore",
+      "category": "ore",
+      "material": "iron",
+      "source": "tw"
+    },
+    {
+      "name": "Silver Ore",
+      "category": "ore",
+      "material": "silver",
+      "source": "tw"
+    },
+    {
+      "name": "Strawberry",
+      "category": "plant",
+      "material": "strawberry",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -888.4,
+      "y": 53.3,
+      "z": -444.1,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": -674.0,
+      "y": 104.9,
+      "z": 541.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BHoCAAA=]"
+    },
+    {
+      "x": 732.8,
+      "y": 38.7,
+      "z": -97.0,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": 735.2,
+      "y": 38.2,
+      "z": -97.5,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": -62.1,
+      "y": 16.5,
+      "z": -269.8,
+      "material": "silver",
+      "category": "ore",
+      "icon": "silver"
+    },
+    {
+      "x": -64.5,
+      "y": 15.1,
+      "z": -270.3,
+      "material": "silver",
+      "category": "ore",
+      "icon": "silver"
+    },
+    {
+      "x": -271.7,
+      "y": 3.7,
+      "z": 210.1,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -267.3,
+      "y": 6.1,
+      "z": 49.2,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -249.6,
+      "y": 2.9,
+      "z": -375.0,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": 752.8,
+      "y": 111.0,
+      "z": -431.2,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 754.4,
+      "y": 111.6,
+      "z": -436.9,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 752.7,
+      "y": 111.4,
+      "z": -439.9,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 759.1,
+      "y": 111.5,
+      "z": -433.4,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 767.4,
+      "y": 112.0,
+      "z": -435.0,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 769.5,
+      "y": 112.9,
+      "z": -439.1,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 764.4,
+      "y": 114.0,
+      "z": -452.5,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 761.2,
+      "y": 113.7,
+      "z": -450.9,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 758.1,
+      "y": 113.1,
+      "z": -445.3,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    }
+  ]
+}

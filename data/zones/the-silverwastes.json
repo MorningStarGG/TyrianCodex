@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1015,
+    "name": "The Silverwastes",
+    "continentId": 1,
+    "regionId": 11,
+    "regionName": "Maguuma Wastes",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -24576,
+        -18432
+      ],
+      [
+        24576,
+        18432
+      ]
+    ],
+    "continentRect": [
+      [
+        36608,
+        30592
+      ],
+      [
+        38656,
+        32128
+      ]
+    ],
+    "sectorRect": [
+      [
+        36620.8,
+        30608.8
+      ],
+      [
+        38683.6,
+        32139.2
+      ]
+    ],
+    "labelCoord": [
+      37618,
+      31484
+    ],
+    "release": "lws2"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1015:poi:1959",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1959",
+      "coord": [
+        38488,
+        31706
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Resolve",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 18,
+      "wikiText": "Camp Resolve is an area in the Silverwastes. It serves as the Pact rally point for their airborne assault on Mordremoth.",
+      "waypointChatLink": "[&BH8HAAA=]"
+    },
+    {
+      "stepId": "1015:vista:1957",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "vista",
+      "objectiveId": "1957",
+      "coord": [
+        38382,
+        31686
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Resolve",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 46,
+      "wikiText": "Take the stairs to the top platform of the structure where the vista is located. Jump up on the railing and then jump from the railing to to the roof to reach the vista.",
+      "waypointChatLink": "[&BH8HAAA=]"
+    },
+    {
+      "stepId": "1015:waypoint:1919",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "waypoint",
+      "objectiveId": "1919",
+      "coord": [
+        38451,
+        31736
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Resolve Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BH8HAAA=]",
+      "waypointChatLink": "[&BH8HAAA=]",
+      "trailIndex": 62,
+      "wikiText": "Camp Resolve is an area in the Silverwastes. It serves as the Pact rally point for their airborne assault on Mordremoth."
+    },
+    {
+      "stepId": "1015:poi:1966",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1966",
+      "coord": [
+        38329,
+        32001
+      ],
+      "recommendedLevel": null,
+      "name": "Fugitive's Claim",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 108,
+      "wikiText": "Fugitive's Claim is a point of interest in Camp Resolve. This cave just outside Camp Resolve is home to a small group of earth elementals.",
+      "waypointChatLink": "[&BH8HAAA=]"
+    },
+    {
+      "stepId": "1015:vista:1955",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "vista",
+      "objectiveId": "1955",
+      "coord": [
+        38015,
+        31865
+      ],
+      "recommendedLevel": null,
+      "name": "Red Rock Bastion",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 213,
+      "wikiText": "Climb the stairs up in Red Rock Bastion and jump over to the ledge to the vista.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1958",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1958",
+      "coord": [
+        37947,
+        31914
+      ],
+      "recommendedLevel": null,
+      "name": "Red Rock Bastion",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 223,
+      "wikiText": "Red Rock Bastion is a point of interest in Southeastern Silverwastes. It is one of the four forts held by the Pact in The Silverwastes.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1951",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1951",
+      "coord": [
+        37752,
+        31827
+      ],
+      "recommendedLevel": null,
+      "name": "Wingspan Arch",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 265,
+      "wikiText": "Wingspan Arch is a point of interest in Southeastern Silverwastes. This natural rock formation is found just between Red Rock Bastion and the Indigo Cave.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1976",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1976",
+      "coord": [
+        37556,
+        32044
+      ],
+      "recommendedLevel": null,
+      "name": "Outlier's Foundry",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 309,
+      "wikiText": "Outlier's Foundry is a point of interest in Sharp Valley that can only be accessed by a Skritt Tunnel found in the Central Silverwastes.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:waypoint:1964",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "waypoint",
+      "objectiveId": "1964",
+      "coord": [
+        37669,
+        32071
+      ],
+      "recommendedLevel": null,
+      "name": "Hidden Depths Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKwHAAA=]",
+      "waypointChatLink": "[&BKwHAAA=]",
+      "trailIndex": 329,
+      "wikiText": "Sharp Valley is an area in the Silverwastes. This secluded box canyon is home to a charr mechanic with his two pet devourer. The entrance to the Tangled Labyrinth is also located there."
+    },
+    {
+      "stepId": "1015:poi:1950",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1950",
+      "coord": [
+        37239,
+        31916
+      ],
+      "recommendedLevel": null,
+      "name": "The Labyrinth",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 422,
+      "wikiText": "The Labyrinth is the very heart of an underground maze of vines. It is accessible after the Mordrem Vinewrath has been defeated as well as during the Living World Season 2 story instance Into the Labyrinth.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1962",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1962",
+      "coord": [
+        37188,
+        31809
+      ],
+      "recommendedLevel": null,
+      "name": "Amber Sandfall",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 607,
+      "wikiText": "Amber Sandfall is a point of interest in Southwestern Silverwastes. It is one of the four forts held by the Pact in The Silverwastes.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:vista:1977",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "vista",
+      "objectiveId": "1977",
+      "coord": [
+        37134,
+        31780
+      ],
+      "recommendedLevel": null,
+      "name": "Amber Sandfall",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 641,
+      "wikiText": "Use the stairs to get to the upper wall of Amber Sandfall and use a series of jumps encircling the pillar where the vista is located to reach it. The final jump up is a little tricky to get right.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:hero:0-248",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "hero",
+      "objectiveId": "0-248",
+      "coord": [
+        36956,
+        31479
+      ],
+      "recommendedLevel": null,
+      "name": "Fallen Asura",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 704,
+      "wikiText": "Fallen Asura is a hero challenge in Vinewrath Tangle. Interacting with it rewards a Mysterious Elixir, which can be consumed at any time to gain a hero point.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1975",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1975",
+      "coord": [
+        36880,
+        31407
+      ],
+      "recommendedLevel": null,
+      "name": "Vinewrath Tangle",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 718,
+      "wikiText": "Vinewrath Tangle is an area in the Silverwastes.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:hero:0-243",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "hero",
+      "objectiveId": "0-243",
+      "coord": [
+        37354,
+        31538
+      ],
+      "recommendedLevel": null,
+      "name": "Strange Pillar",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 794,
+      "wikiText": "The Strange Pillar is a hero challenge located in Central Silverwastes.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1963",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1963",
+      "coord": [
+        37319,
+        31092
+      ],
+      "recommendedLevel": null,
+      "name": "Blue Oasis",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 851,
+      "wikiText": "Blue Oasis is a point of interest in Northwestern Silverwastes. It is one of the four forts held by the Pact in The Silverwastes.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1972",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1972",
+      "coord": [
+        37598,
+        31016
+      ],
+      "recommendedLevel": null,
+      "name": "Dry Quarry",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 895,
+      "wikiText": "Dry Quarry is a pond in the Northern Silverwastes that is home to a small flock of Salamander Drakes and their nests.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:vista:1953",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "vista",
+      "objectiveId": "1953",
+      "coord": [
+        37124,
+        30979
+      ],
+      "recommendedLevel": null,
+      "name": "Desperate Passage",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1031,
+      "wikiText": "The vista can be reached by climbing the large rock next to the rock the vista is on, and then using a series of jumps to jump to and scale the rock the vista is on.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:hero:0-245",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "hero",
+      "objectiveId": "0-245",
+      "coord": [
+        36908,
+        30999
+      ],
+      "recommendedLevel": null,
+      "name": "Fragrant Cactus",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1074,
+      "wikiText": "The Fragrant Cactus is a hero point challenge located in Desperate Passage. Interacting with it rewards a Fragrant Cactus Fruit, which can be consumed to gain a hero point.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1967",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1967",
+      "coord": [
+        37365,
+        31278
+      ],
+      "recommendedLevel": null,
+      "name": "Sand Dune Caverns",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1167,
+      "wikiText": "Sand Dune Caverns is a point of interest in The Silverwastes. It is located underground, only accessible from the Retrospective Runaround jumping puzzle.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1971",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1971",
+      "coord": [
+        38089,
+        30910
+      ],
+      "recommendedLevel": null,
+      "name": "Charnel Grounds",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1226,
+      "wikiText": "The Charnel Grounds are the living grounds of the Zintl hylek tribe who, referred to by their captives, are servants of the Sun. They force their prisoners to tend to their Giant Beetles.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:vista:1956",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "vista",
+      "objectiveId": "1956",
+      "coord": [
+        37873,
+        30839
+      ],
+      "recommendedLevel": null,
+      "name": "Charnel Grounds",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1268,
+      "wikiText": "It can only be accessed via the skritt tunnel in Northwestern Silverwastes.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:hero:0-246",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "hero",
+      "objectiveId": "0-246",
+      "coord": [
+        37799,
+        30642
+      ],
+      "recommendedLevel": null,
+      "name": "Sacred Stones",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1308,
+      "wikiText": "Sacred Stones is a hero challenge located in the Far Silverwastes.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1970",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1970",
+      "coord": [
+        37683,
+        31241
+      ],
+      "recommendedLevel": null,
+      "name": "Wailing Sands",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1390,
+      "wikiText": "Wailing Sands is a point of interest in Northern Silverwastes. This plain is inhabited primarily by earth elementals.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1961",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1961",
+      "coord": [
+        37696,
+        31519
+      ],
+      "recommendedLevel": null,
+      "name": "Indigo Cave",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1424,
+      "wikiText": "Indigo Cave is a point of interest in Central Silverwastes. It is one of the four forts held by the Pact in The Silverwastes. Champion Mordrem Teragriff Gold and Champion Mordrem Teragriff Silver spawn beneath it during The Breach.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:vista:1954",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "vista",
+      "objectiveId": "1954",
+      "coord": [
+        37667,
+        31456
+      ],
+      "recommendedLevel": null,
+      "name": "Indigo Cave",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1460,
+      "wikiText": "Use the winding, twisting stairs up to the top shelf area above Indigo Cave. The vista is on a small ledge on the wall.",
+      "waypointChatLink": "[&BKwHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1974",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1974",
+      "coord": [
+        37946,
+        31182
+      ],
+      "recommendedLevel": null,
+      "name": "Remnant's Retreat",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1522,
+      "wikiText": "Remnant's Retreat is a point of interest in Northern Silverwastes. This camp is home to a small group of bandits who managed to escape Fort Vandal.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:vista:1960",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "vista",
+      "objectiveId": "1960",
+      "coord": [
+        37894,
+        31402
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Shelf",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1568,
+      "wikiText": "Use the northern exit from Camp Resolve and head towards Indigo Cave. The vista is on the side of the path.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1973",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1973",
+      "coord": [
+        38106,
+        31280
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Shelf",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1618,
+      "wikiText": "Northern Shelf is a point of interest in Northeastern Silverwastes. This place, which seems to be free of Mordrem, is a haven for the local wildlife.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:hero:0-244",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "hero",
+      "objectiveId": "0-244",
+      "coord": [
+        38267,
+        31341
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Northern Shelf Elemental",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1645,
+      "wikiText": "Veteran Northern Shelf Elemental is a powerful Dust Mite Twister found in Northeastern Silverwastes that players can challenge to gain a Hero point.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:poi:1968",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1968",
+      "coord": [
+        38564,
+        31153
+      ],
+      "recommendedLevel": null,
+      "name": "Picaroon Scratch",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1719,
+      "wikiText": "Picaroon Scratch is a point of interest within Northeastern Silverwastes. It is the place where the local skritt in the Silverwastes live. It is the entry to a large cave system below the Silverwastes.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:hero:0-247",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "hero",
+      "objectiveId": "0-247",
+      "coord": [
+        38328,
+        31223
+      ],
+      "recommendedLevel": null,
+      "name": "Skritt Ledge",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1779,
+      "wikiText": "Skritt Ledge is a hero challenge located in the skritt caves below Northeastern Silverwastes.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    },
+    {
+      "stepId": "1015:waypoint:1978",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "waypoint",
+      "objectiveId": "1978",
+      "coord": [
+        38234,
+        31108
+      ],
+      "recommendedLevel": null,
+      "name": "Drydock Grotto Waypoint",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLoHAAA=]",
+      "waypointChatLink": "[&BLoHAAA=]",
+      "trailIndex": 1802,
+      "wikiText": "Northeastern Silverwastes is an area in the Silverwastes. The stronghold of the skritt living in the Silverwastes is located here, as is the jumping puzzle, Retrospective Runaround."
+    },
+    {
+      "stepId": "1015:poi:1965",
+      "mapId": 1015,
+      "zoneName": "The Silverwastes",
+      "type": "poi",
+      "objectiveId": "1965",
+      "coord": [
+        38076,
+        31105
+      ],
+      "recommendedLevel": null,
+      "name": "SS Topsy-Turvy",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1833,
+      "wikiText": "SS Topsy-Turvy is a large ship, of unknown origin, hanging in the Skritt cave system in Northeastern Silverwastes.",
+      "waypointChatLink": "[&BLoHAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

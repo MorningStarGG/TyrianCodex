@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 1,
+  "mapId": 73,
+  "slug": "bloodtide-coast",
+  "name": "Bloodtide Coast",
+  "regionName": "Kryta",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Platinum Ore",
+      "category": "ore",
+      "material": "platinum",
+      "source": "tw"
+    },
+    {
+      "name": "Sugar Pumpkin",
+      "category": "plant",
+      "material": "pumpkin",
+      "source": "lady"
+    },
+    {
+      "name": "Varietal Mint Seed",
+      "category": "plant",
+      "material": "varietal_mint",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 27.7,
+      "y": 74.8,
+      "z": -405.8,
+      "material": "platinum",
+      "category": "ore",
+      "icon": "platinum"
+    },
+    {
+      "x": 621.0,
+      "y": 67.8,
+      "z": 9.6,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 614.7,
+      "y": 69.8,
+      "z": 17.6,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 618.3,
+      "y": 69.3,
+      "z": 19.0,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 622.1,
+      "y": 68.4,
+      "z": 15.7,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 626.7,
+      "y": 67.5,
+      "z": 18.4,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 631.0,
+      "y": 67.1,
+      "z": 15.7,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 632.9,
+      "y": 66.8,
+      "z": 10.3,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 626.4,
+      "y": 67.2,
+      "z": 10.3,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 630.6,
+      "y": 12.5,
+      "z": 779.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 668.5,
+      "y": 11.8,
+      "z": 356.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 675.7,
+      "y": 10.5,
+      "z": 279.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 669.7,
+      "y": 49.0,
+      "z": -162.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 599.4,
+      "y": 42.7,
+      "z": -179.3,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 110.3,
+      "y": 1.9,
+      "z": -10.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 418.4,
+      "y": 15.1,
+      "z": -751.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -507.2,
+      "y": 8.0,
+      "z": -102.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -252.8,
+      "y": 12.6,
+      "z": 166.8,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -1.9,
+      "y": 16.4,
+      "z": 708.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -31.4,
+      "y": 32.1,
+      "z": 664.5,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 321.4,
+      "y": 15.7,
+      "z": 922.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 363.1,
+      "y": 30.6,
+      "z": 31.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 29.8,
+      "y": 25.3,
+      "z": 481.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 651.0,
+      "y": 11.3,
+      "z": 343.5,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 277.3,
+      "y": 18.7,
+      "z": 1.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 630.0,
+      "y": 43.9,
+      "z": -187.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 554.8,
+      "y": 33.5,
+      "z": -199.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -475.9,
+      "y": 0.5,
+      "z": -31.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 78.8,
+      "y": 3.1,
+      "z": -613.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -41.5,
+      "y": 3.6,
+      "z": -21.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 553.8,
+      "y": 37.1,
+      "z": 839.1,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 518.9,
+      "y": 24.5,
+      "z": 481.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -46.1,
+      "y": 4.8,
+      "z": -48.2,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 357.8,
+      "y": 15.7,
+      "z": -773.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 8.1,
+      "y": 41.1,
+      "z": 586.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 27.3,
+      "y": 12.8,
+      "z": 703.2,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 627.6,
+      "y": 36.9,
+      "z": 895.3,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 539.9,
+      "y": 30.9,
+      "z": 856.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 385.2,
+      "y": 6.6,
+      "z": -568.5,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -315.9,
+      "y": 7.9,
+      "z": -404.5,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 195.8,
+      "y": 3.4,
+      "z": 875.3,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 529.5,
+      "y": 20.2,
+      "z": 509.2,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 580.3,
+      "y": 37.5,
+      "z": -202.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 288.2,
+      "y": 7.2,
+      "z": -556.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -489.3,
+      "y": 1.8,
+      "z": -53.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 101.3,
+      "y": 10.4,
+      "z": 903.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 648.8,
+      "y": 54.6,
+      "z": 89.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 447.1,
+      "y": 13.9,
+      "z": 123.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 178.3,
+      "y": 4.0,
+      "z": 125.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -505.6,
+      "y": 1.1,
+      "z": -338.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -523.4,
+      "y": 43.3,
+      "z": -493.8,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -494.2,
+      "y": 33.2,
+      "z": -589.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 98.1,
+      "y": 11.3,
+      "z": 120.8,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 49.0,
+      "y": 15.5,
+      "z": 872.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 629.3,
+      "y": 11.9,
+      "z": 371.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 453.1,
+      "y": 23.5,
+      "z": 61.1,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 629.7,
+      "y": 45.9,
+      "z": -147.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 353.8,
+      "y": 7.2,
+      "z": -548.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -57.4,
+      "y": 8.2,
+      "z": -525.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 646.5,
+      "y": 27.0,
+      "z": 838.8,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 659.2,
+      "y": 46.8,
+      "z": -116.2,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -538.7,
+      "y": 1.9,
+      "z": -253.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 561.5,
+      "y": 43.5,
+      "z": 78.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 492.0,
+      "y": 25.7,
+      "z": -521.5,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 475.8,
+      "y": 26.1,
+      "z": -567.5,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    }
+  ]
+}

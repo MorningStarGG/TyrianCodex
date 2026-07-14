@@ -1,0 +1,1671 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1248,
+    "name": "Domain of Vabbi",
+    "continentId": 1,
+    "regionId": 12,
+    "regionName": "Crystal Desert",
+    "floor": 49,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -58368,
+        -36864
+      ],
+      [
+        58368,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        63616,
+        52352
+      ],
+      [
+        68480,
+        55552
+      ]
+    ],
+    "sectorRect": [
+      [
+        63658.8,
+        52305.4
+      ],
+      [
+        68451.7,
+        55523.2
+      ]
+    ],
+    "labelCoord": [
+      66016,
+      53702
+    ],
+    "release": "pof"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1248:waypoint:2725",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "waypoint",
+      "objectiveId": "2725",
+      "coord": [
+        63792,
+        52750
+      ],
+      "recommendedLevel": null,
+      "name": "Cragged Vale Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKUKAAA=]",
+      "waypointChatLink": "[&BKUKAAA=]",
+      "trailIndex": 8,
+      "wikiText": "Cragged Vale is a small area in the northwestern corner of the Domain of Vabbi."
+    },
+    {
+      "stepId": "1248:vista:2749",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2749",
+      "coord": [
+        64798,
+        53179
+      ],
+      "recommendedLevel": null,
+      "name": "Garden of Seborhin",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 112,
+      "wikiText": "Accessible only with the help of a jackal and a sand portal since the vista is located inside a tower.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2796",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2796",
+      "coord": [
+        64728,
+        52403
+      ],
+      "recommendedLevel": null,
+      "name": "Lair of Zommoros",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 195,
+      "wikiText": "The Lair of Zommoros is a djinn vault in the Purling Deep within Domain of Vabbi. It was the original home of Zommoros before the djinn left Elona for Central Tyria and made his new home in Mythwright Gambit.",
+      "waypointChatLink": "[&BKUKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2555",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2555",
+      "coord": [
+        65000,
+        53201
+      ],
+      "recommendedLevel": null,
+      "name": "The Promenade",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 257,
+      "wikiText": "The Promenade is a point of interest within the Garden of Seborhin. Many of the nobles and royals gather there to mingle and watch mime showdowns.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:heart:395",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "395",
+      "coord": [
+        65090,
+        53202
+      ],
+      "recommendedLevel": 80,
+      "name": "Be the life of the party.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64970,
+          53200
+        ],
+        [
+          66267,
+          54016
+        ],
+        [
+          64970,
+          53200
+        ]
+      ],
+      "trailIndex": 261,
+      "wikiText": "Dance with lonely wallflowers, or obtain an Affinity Analyzer to play matchmaker for lonely nobles, or deal with discontent djinn lurking in the area.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2662",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2662",
+      "coord": [
+        65645,
+        53192
+      ],
+      "recommendedLevel": null,
+      "name": "Merchant's Row",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 288,
+      "wikiText": "Merchant's Row is a point of interest within the Garden of Seborhin.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2563",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2563",
+      "coord": [
+        65532,
+        52936
+      ],
+      "recommendedLevel": null,
+      "name": "Spa",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 332,
+      "wikiText": "Spa is a point of interest within the Garden of Seborhin. It is used by the Vabbian nobles and royalty of the Garden of Seborhin.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2621",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2621",
+      "coord": [
+        65287,
+        53198
+      ],
+      "recommendedLevel": null,
+      "name": "Seborhin Circle",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 362,
+      "wikiText": "Seborhin Circle is a point of interest within the Garden of Seborhin. The Seborhin tree can be seen floating high above the plaza.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2758",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2758",
+      "coord": [
+        65281,
+        53503
+      ],
+      "recommendedLevel": null,
+      "name": "Lyssan Fools Theater",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 390,
+      "wikiText": "Lyssan Fools Theater is a point of interest within the Garden of Seborhin.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:heart:401",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "401",
+      "coord": [
+        65371,
+        53458
+      ],
+      "recommendedLevel": 80,
+      "name": "Assist the Lyssan Fools acting troupe.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          65473,
+          53580
+        ],
+        [
+          65474,
+          53388
+        ],
+        [
+          65413,
+          53395
+        ],
+        [
+          65396,
+          53397
+        ],
+        [
+          65380,
+          53411
+        ],
+        [
+          65322,
+          53398
+        ],
+        [
+          65219,
+          53400
+        ],
+        [
+          65150,
+          53423
+        ],
+        [
+          65153,
+          53561
+        ],
+        [
+          65294,
+          53616
+        ],
+        [
+          65473,
+          53580
+        ]
+      ],
+      "trailIndex": 397,
+      "wikiText": "Receive scripts from the director and persuade troupe members to join his new play production, provide actors critiques on line deliveries, and help them rehearse scenes.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:waypoint:2768",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "waypoint",
+      "objectiveId": "2768",
+      "coord": [
+        65531,
+        53474
+      ],
+      "recommendedLevel": null,
+      "name": "Seborhin Waypoint",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNAKAAA=]",
+      "waypointChatLink": "[&BNAKAAA=]",
+      "trailIndex": 409,
+      "wikiText": "The Garden of Seborhin is a large garden, occupied by Elonian nobles, inside the Domain of Vabbi. The eastern wing of the garden has been abandoned due to the encroachment of the Brand."
+    },
+    {
+      "stepId": "1248:poi:2658",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2658",
+      "coord": [
+        65438,
+        54253
+      ],
+      "recommendedLevel": null,
+      "name": "Tihark Orchard",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 473,
+      "wikiText": "Tihark Orchard is a point of interest in Forum Highlands.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:waypoint:2634",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "waypoint",
+      "objectiveId": "2634",
+      "coord": [
+        65112,
+        54720
+      ],
+      "recommendedLevel": null,
+      "name": "Necropolis Waypoint",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEoKAAA=]",
+      "waypointChatLink": "[&BEoKAAA=]",
+      "trailIndex": 522,
+      "wikiText": "The Necropolis is an area in the Domain of Vabbi. The Necropolis is a place of great reverence and mourning. The dead are interred here, with Vabbians appealing for their loved ones to become Awakened."
+    },
+    {
+      "stepId": "1248:poi:2783",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2783",
+      "coord": [
+        64796,
+        53554
+      ],
+      "recommendedLevel": null,
+      "name": "Ruins of Jennur's Horde",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 617,
+      "wikiText": "Ruins of Jennur's Horde once was a mining camp used by the workers of Vehjin Mines before Palawa Joko conquered Vabbi.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:waypoint:2797",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "waypoint",
+      "objectiveId": "2797",
+      "coord": [
+        64290,
+        53304
+      ],
+      "recommendedLevel": null,
+      "name": "Vehjin Palace Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO0KAAA=]",
+      "waypointChatLink": "[&BO0KAAA=]",
+      "trailIndex": 679,
+      "wikiText": "Vehjin Palace is an area in the Domain of Vabbi. The palace has suffered numerous Forged raids, and the nobility have been forced to fend for themselves in lieu of Awakened servants."
+    },
+    {
+      "stepId": "1248:heart:389",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "389",
+      "coord": [
+        63798,
+        53338
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the royals of Vehjin Palace.",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63953,
+          53132
+        ],
+        [
+          63672,
+          53255
+        ],
+        [
+          63656,
+          53371
+        ],
+        [
+          63680,
+          53588
+        ],
+        [
+          63768,
+          53551
+        ],
+        [
+          63953,
+          53132
+        ]
+      ],
+      "trailIndex": 735,
+      "wikiText": "Protect the royals, show them how to care for themselves, clean up their messes, and clear out vermin.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2798",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2798",
+      "coord": [
+        63952,
+        53534
+      ],
+      "recommendedLevel": null,
+      "name": "Vehjin Palace",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 758,
+      "wikiText": "On the roof of the palace, use your springer.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2574",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2574",
+      "coord": [
+        64000,
+        53492
+      ],
+      "recommendedLevel": null,
+      "name": "Vehjin Royal Rotunda",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 759,
+      "wikiText": "Vehjin Royal Rotunda is a point of interest in Vehjin Palace.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:heart:388",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "388",
+      "coord": [
+        64053,
+        53863
+      ],
+      "recommendedLevel": 80,
+      "name": "Aid the Awakened in the Vehjin Mines.",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64214,
+          53997
+        ],
+        [
+          64264,
+          53974
+        ],
+        [
+          64303,
+          53830
+        ],
+        [
+          64187,
+          53711
+        ],
+        [
+          64120,
+          53750
+        ],
+        [
+          63877,
+          54089
+        ],
+        [
+          63908,
+          54096
+        ],
+        [
+          63930,
+          54092
+        ],
+        [
+          64214,
+          53997
+        ]
+      ],
+      "trailIndex": 787,
+      "wikiText": "Recover and return lost family heirlooms from Awakened corpses, secure and deposit unrefined ore, and cull Forged from the area.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2748",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2748",
+      "coord": [
+        63864,
+        53729
+      ],
+      "recommendedLevel": null,
+      "name": "Excavation Site",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 795,
+      "wikiText": "Excavation Site is an Awakened mine that has been overtaken by The Forged.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2669",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2669",
+      "coord": [
+        63953,
+        54417
+      ],
+      "recommendedLevel": null,
+      "name": "The Hearth",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 857,
+      "wikiText": "The Hearth is a large furnace used by the Forged as a base of operations within the Foundry. Its entrance is slightly to the southwest of the Disrupt the Forged occupying the Foundry renown heart.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:heart:405",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "405",
+      "coord": [
+        64323,
+        54146
+      ],
+      "recommendedLevel": 80,
+      "name": "Disrupt the Forged occupying the Foundry.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64393,
+          54262
+        ],
+        [
+          64395,
+          54173
+        ],
+        [
+          64297,
+          54081
+        ],
+        [
+          64190,
+          54101
+        ],
+        [
+          64135,
+          54180
+        ],
+        [
+          63997,
+          54226
+        ],
+        [
+          63871,
+          54204
+        ],
+        [
+          63710,
+          54215
+        ],
+        [
+          63658,
+          54311
+        ],
+        [
+          63664,
+          54541
+        ],
+        [
+          63932,
+          54798
+        ],
+        [
+          64290,
+          54503
+        ],
+        [
+          64368,
+          54370
+        ],
+        [
+          64386,
+          54324
+        ],
+        [
+          64393,
+          54262
+        ]
+      ],
+      "trailIndex": 895,
+      "wikiText": "Cull Forged from the foundry, destroy Forged cannons, break steam valves, and rescue Elonian workers.",
+      "waypointChatLink": "[&BO0KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2612",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2612",
+      "coord": [
+        64492,
+        54314
+      ],
+      "recommendedLevel": null,
+      "name": "Troopmarshal's Encampment",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 933,
+      "wikiText": "Troopmarshal's Encampment is an allied Awakened encampment.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2803",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2803",
+      "coord": [
+        64378,
+        54497
+      ],
+      "recommendedLevel": null,
+      "name": "The Foundry",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 949,
+      "wikiText": "Within The Foundry, upright.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2752",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2752",
+      "coord": [
+        63898,
+        55288
+      ],
+      "recommendedLevel": null,
+      "name": "The Boneyard",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1043,
+      "wikiText": "The Boneyard is a point of interest near The Necropolis in the Domain of Vabbi.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:heart:408",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "408",
+      "coord": [
+        64450,
+        55266
+      ],
+      "recommendedLevel": 80,
+      "name": "Help train the newly Awakened.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64739,
+          55218
+        ],
+        [
+          64511,
+          55070
+        ],
+        [
+          64484,
+          55075
+        ],
+        [
+          64462,
+          54990
+        ],
+        [
+          64384,
+          54998
+        ],
+        [
+          64257,
+          55031
+        ],
+        [
+          64295,
+          55106
+        ],
+        [
+          64343,
+          55147
+        ],
+        [
+          64227,
+          55276
+        ],
+        [
+          64232,
+          55334
+        ],
+        [
+          64208,
+          55333
+        ],
+        [
+          64193,
+          55447
+        ],
+        [
+          64281,
+          55469
+        ],
+        [
+          64673,
+          55420
+        ],
+        [
+          64739,
+          55218
+        ]
+      ],
+      "trailIndex": 1134,
+      "wikiText": "Speak with Supreme Training Specialist Tozan and guide newly Awakened trainees in combat and patrol formations.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2795",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2795",
+      "coord": [
+        64512,
+        55189
+      ],
+      "recommendedLevel": null,
+      "name": "The Crypts",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1165,
+      "wikiText": "The Crypts is a point of interest in The Necropolis in the Domain of Vabbi.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2763",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2763",
+      "coord": [
+        64650,
+        54973
+      ],
+      "recommendedLevel": null,
+      "name": "Court of the Dead",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1210,
+      "wikiText": "The Court of the Dead is a point of interest in the Necropolis in the Domain of Vabbi.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:heart:397",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "397",
+      "coord": [
+        64842,
+        54777
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the living and the dead at the Necropolis.",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64618,
+          54693
+        ],
+        [
+          64875,
+          54596
+        ],
+        [
+          64949,
+          54600
+        ],
+        [
+          65074,
+          54701
+        ],
+        [
+          65084,
+          54756
+        ],
+        [
+          65068,
+          54881
+        ],
+        [
+          64969,
+          54917
+        ],
+        [
+          64693,
+          54977
+        ],
+        [
+          64684,
+          55098
+        ],
+        [
+          64613,
+          55118
+        ],
+        [
+          64579,
+          55104
+        ],
+        [
+          64562,
+          55048
+        ],
+        [
+          64564,
+          55000
+        ],
+        [
+          64592,
+          54970
+        ],
+        [
+          64620,
+          54977
+        ],
+        [
+          64617,
+          54944
+        ],
+        [
+          64543,
+          54830
+        ],
+        [
+          64569,
+          54747
+        ],
+        [
+          64618,
+          54693
+        ]
+      ],
+      "trailIndex": 1229,
+      "wikiText": "Comfort mourners, honor the dead, prepare bodies for judgment, and defend the Necropolis from threats.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2681",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2681",
+      "coord": [
+        64673,
+        54918
+      ],
+      "recommendedLevel": null,
+      "name": "The Necropolis",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1300,
+      "wikiText": "On a side arch of the giant main building, reach it with your springer.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:hero:2-28",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "hero",
+      "objectiveId": "2-28",
+      "coord": [
+        64719,
+        55172
+      ],
+      "recommendedLevel": null,
+      "name": "Prepare the family's Awakened for their court appearance with a practice fight",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1309,
+      "wikiText": "Prepare the family's Awakened for their court appearance with a practice fight is a level 80 hero challenge event that occurs in The Necropolis.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2604",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2604",
+      "coord": [
+        65211,
+        55294
+      ],
+      "recommendedLevel": null,
+      "name": "Beastmarshal's Encampment",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1356,
+      "wikiText": "Beastmarshal's Encampment is a point of interest within the Kaluun Ravine. It is the staging ground of Beastmarshal Oluwa Eranko where her cavalry's raptors rest with Ulug commanding the outpost when the Beastmarshal is away.",
+      "waypointChatLink": "[&BEoKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2602",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2602",
+      "coord": [
+        65770,
+        55195
+      ],
+      "recommendedLevel": null,
+      "name": "Junundu Nests",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1398,
+      "wikiText": "Junundu Nests is a point of interest within the Kaluun Ravine.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2755",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2755",
+      "coord": [
+        67039,
+        55432
+      ],
+      "recommendedLevel": null,
+      "name": "Vehtendi Vineyard",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1517,
+      "wikiText": "The Vehtendi Vineyard is a point of interest within Vehtendi Academy.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2731",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2731",
+      "coord": [
+        66639,
+        55251
+      ],
+      "recommendedLevel": null,
+      "name": "House Ventura Dormitory",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1563,
+      "wikiText": "House Ventura Dormitory is the home of the Ventura house of students.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2714",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2714",
+      "coord": [
+        66716,
+        55167
+      ],
+      "recommendedLevel": null,
+      "name": "House Ingene Dormitory",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1573,
+      "wikiText": "House Ingene Dormitory is the home of the Ingene house of students.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2779",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2779",
+      "coord": [
+        66723,
+        55054
+      ],
+      "recommendedLevel": null,
+      "name": "House Rolic Dormitory",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1583,
+      "wikiText": "House Rolic Dormitory is the home point of interest of the Rolic house of students.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2581",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2581",
+      "coord": [
+        66629,
+        54895
+      ],
+      "recommendedLevel": null,
+      "name": "The Warehouse",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1638,
+      "wikiText": "The Warehouse is a point of interest in Vehtendi Academy, located in the basement of the school. It can be accessed via the Headmaster's Office.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2776",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2776",
+      "coord": [
+        66509,
+        55072
+      ],
+      "recommendedLevel": null,
+      "name": "Headmaster's Office",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1660,
+      "wikiText": "Headmaster's Office is a point of interest within the Vehtendi Academy. Through a \"secret\" door, The Warehouse is accessible.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:heart:409",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "heart",
+      "objectiveId": "409",
+      "coord": [
+        66390,
+        55144
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the students of Vehtendi Academy.",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          66515,
+          54779
+        ],
+        [
+          66209,
+          54775
+        ],
+        [
+          66095,
+          54886
+        ],
+        [
+          66078,
+          54997
+        ],
+        [
+          66110,
+          55159
+        ],
+        [
+          66314,
+          55322
+        ],
+        [
+          66500,
+          55442
+        ],
+        [
+          66698,
+          55421
+        ],
+        [
+          66887,
+          55228
+        ],
+        [
+          66823,
+          54982
+        ],
+        [
+          66515,
+          54779
+        ]
+      ],
+      "trailIndex": 1685,
+      "wikiText": "Teach cadets in the classroom by answering their questions, help them study, and assist them in their various endeavors.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2687",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2687",
+      "coord": [
+        66144,
+        54897
+      ],
+      "recommendedLevel": null,
+      "name": "Vehtendi Academy",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1728,
+      "wikiText": "Near the giant Palawa Joko Statue, climb the wooden platforms with your springer.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2715",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2715",
+      "coord": [
+        66154,
+        54897
+      ],
+      "recommendedLevel": null,
+      "name": "Great Palawa Joko Monument",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1729,
+      "wikiText": "The Great Palawa Joko Monument a large monument dedicated to Palawa Joko.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:waypoint:2575",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "waypoint",
+      "objectiveId": "2575",
+      "coord": [
+        66421,
+        54771
+      ],
+      "recommendedLevel": null,
+      "name": "Vehtendi Academy Waypoint",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BA8KAAA=]",
+      "waypointChatLink": "[&BA8KAAA=]",
+      "trailIndex": 1745,
+      "wikiText": "Vehtendi Academy is an area in the Domain of Vabbi. It is here that students are indoctrinated from a young age to worship Palawa Joko. They are taught a heavily revised and exaggerated history that portrays Joko as a divine being."
+    },
+    {
+      "stepId": "1248:poi:2720",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2720",
+      "coord": [
+        66206,
+        54516
+      ],
+      "recommendedLevel": null,
+      "name": "Tournament Battlegrounds",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1768,
+      "wikiText": "Tournament Battlegrounds is a point of interest within the Vehtendi Arena.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:hero:2-26",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "hero",
+      "objectiveId": "2-26",
+      "coord": [
+        66223,
+        54492
+      ],
+      "recommendedLevel": null,
+      "name": "Defeat the masters of the academy houses",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1768,
+      "wikiText": "Defeat the masters of the academy houses is a level 80 hero challenge event that occurs inside Vehtendi Arena in the lowest level of the Tournament Battlegrounds.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2696",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2696",
+      "coord": [
+        66162,
+        54005
+      ],
+      "recommendedLevel": null,
+      "name": "Market Ruins",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1841,
+      "wikiText": "Market Ruins is a point of interest within the Kodash Bazaar.",
+      "waypointChatLink": "[&BA8KAAA=]"
+    },
+    {
+      "stepId": "1248:waypoint:2676",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "waypoint",
+      "objectiveId": "2676",
+      "coord": [
+        67376,
+        53931
+      ],
+      "recommendedLevel": null,
+      "name": "Market Ruins Waypoint",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHQKAAA=]",
+      "waypointChatLink": "[&BHQKAAA=]",
+      "trailIndex": 1940,
+      "wikiText": "Kodash Bazaar is a branded area in the Domain of Vabbi. Previously the main centre of trade and the seat of power of the entire Vabbi, the Bazaar is now largely in ruins and overrun with Branded."
+    },
+    {
+      "stepId": "1248:poi:2794",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2794",
+      "coord": [
+        66843,
+        54040
+      ],
+      "recommendedLevel": null,
+      "name": "King Joko's Sky Garden",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1961,
+      "wikiText": "King Joko's Sky Garden is the roof of the largest structure within the Kodash Bazaar. It has been corrupted by the Elder Dragon Kralkatorrik's passage into Vabbi.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2560",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2560",
+      "coord": [
+        66512,
+        53708
+      ],
+      "recommendedLevel": null,
+      "name": "Kodash Bazaar",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2016,
+      "wikiText": "Within the ruins of the destroyed branded bazaar, use your raptor.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2550",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2550",
+      "coord": [
+        66235,
+        53193
+      ],
+      "recommendedLevel": null,
+      "name": "The Menagerie",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2057,
+      "wikiText": "The Menagerie is a point of interest within the Garden of Seborhin. It used to host fantastic creatures but was rampaged by the branded. Only the fierce \"bear\" survived.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2559",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2559",
+      "coord": [
+        66737,
+        52539
+      ],
+      "recommendedLevel": null,
+      "name": "Ruins of Mihanu Township",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2188,
+      "wikiText": "The Ruins of Mihanu Township is a point of interest within the Dehwan Expanse. It was once a small community of literate farmers, but now the area is guarded by High Elder Yoonam the Intrepid.",
+      "waypointChatLink": "[&BNAKAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2590",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2590",
+      "coord": [
+        67723,
+        52876
+      ],
+      "recommendedLevel": null,
+      "name": "Grand Court of Sebelkeh",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2255,
+      "wikiText": "A more complicated vista, you need to make a detour through the branded Dzasha Uplands, also beware of branded storms' lighting bolts.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2802",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2802",
+      "coord": [
+        67587,
+        53006
+      ],
+      "recommendedLevel": null,
+      "name": "Ruins of the Mirror of Lyss",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2273,
+      "wikiText": "The Ruins of the Mirror of Lyss is a point of interest within the Grand Court of Sebelkeh. This former shrine to Lyssa has been corrupted by Kralkatorrik, although the architecture remains intact.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:hero:2-27",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "hero",
+      "objectiveId": "2-27",
+      "coord": [
+        67931,
+        53490
+      ],
+      "recommendedLevel": null,
+      "name": "Hunter Glorg",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2331,
+      "wikiText": "Hunter Glorg is an ogre seeking adventurers' aid. His pet Malletgob has fallen afoul of the Branded corruption and needs to be put out of her misery.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2750",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2750",
+      "coord": [
+        68226,
+        53729
+      ],
+      "recommendedLevel": null,
+      "name": "Zagonur Cliffs (1)",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2392,
+      "wikiText": "Zagonur Cliffs is an area in the Domain of Vabbi. It is named after the currently inaccessible Dzagonur Bastion which once guarded a grand citadel of one of the Vabbian princes in the east.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2596",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2596",
+      "coord": [
+        68258,
+        54227
+      ],
+      "recommendedLevel": null,
+      "name": "Zagonur Cliffs (2)",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2432,
+      "wikiText": "Not far from the giant branded stone wheel, not hard to reach with the help of the skimmer.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2710",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2710",
+      "coord": [
+        68128,
+        54313
+      ],
+      "recommendedLevel": null,
+      "name": "Hanging Gardens",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2446,
+      "wikiText": "The Hanging Gardens is a palace that is now surrounded by the Dragonbrand in Zagonur Cliffs. Home to a number of djinn, it has avoided being Branded by Grandmaster Elder Djinn Emine's powers and is enclosed within a protective barrier.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:poi:2561",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "poi",
+      "objectiveId": "2561",
+      "coord": [
+        68077,
+        55017
+      ],
+      "recommendedLevel": null,
+      "name": "Spearmarshal's Lament",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Spearmarshal's Lament is a point of interest in western Yahnur Plateau. A group of seekers have set up camp in the protective shield of a djinn.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    },
+    {
+      "stepId": "1248:vista:2685",
+      "mapId": 1248,
+      "zoneName": "Domain of Vabbi",
+      "type": "vista",
+      "objectiveId": "2685",
+      "coord": [
+        68124,
+        54977
+      ],
+      "recommendedLevel": null,
+      "name": "Yahnur Plateau",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Very hard to reach not far from the griffons nest, use the sand portals, your springer or your glider to get up there.",
+      "waypointChatLink": "[&BHQKAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

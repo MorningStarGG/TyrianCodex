@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1248,
+  "slug": "domain-of-vabbi",
+  "name": "Domain of Vabbi",
+  "regionName": "Crystal Desert",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mithril Ore",
+      "category": "ore",
+      "material": "mithril",
+      "source": "lady"
+    },
+    {
+      "name": "Orichalcum Ore",
+      "category": "ore",
+      "material": "orichalcum",
+      "source": "lady"
+    },
+    {
+      "name": "Artichoke",
+      "category": "plant",
+      "material": "artichoke",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -309.9,
+      "y": 138.3,
+      "z": -523.1,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril",
+      "chatLink": "[&BHQKAAA=]"
+    },
+    {
+      "x": -567.1,
+      "y": 117.3,
+      "z": -429.6,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -364.9,
+      "y": 163.5,
+      "z": -540.4,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 1406.5,
+      "y": 96.8,
+      "z": -641.1,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 1405.5,
+      "y": 95.7,
+      "z": -640.3,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril",
+      "chatLink": "[&BAEKAAA=] or [&BMEKAAA=]"
+    },
+    {
+      "x": 813.1,
+      "y": 142.4,
+      "z": 56.2,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 860.2,
+      "y": -10.8,
+      "z": 848.8,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 1425.8,
+      "y": 154.4,
+      "z": -665.4,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 1436.2,
+      "y": 149.9,
+      "z": -528.5,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 1408.9,
+      "y": 174.0,
+      "z": -477.6,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 1446.7,
+      "y": 157.1,
+      "z": -409.3,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -949.1,
+      "y": 108.5,
+      "z": -752.6,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 1190.1,
+      "y": 78.9,
+      "z": 938.2,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 1370.0,
+      "y": 150.7,
+      "z": -888.2,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 1441.1,
+      "y": 161.0,
+      "z": -420.1,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum",
+      "chatLink": "[&BMEKAAA=]"
+    },
+    {
+      "x": -970.9,
+      "y": 261.5,
+      "z": -925.7,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": -968.9,
+      "y": 262.1,
+      "z": -921.9,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke",
+      "chatLink": "[&BEMLAAA=]"
+    },
+    {
+      "x": 1333.8,
+      "y": 139.0,
+      "z": 446.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -784.3,
+      "y": 279.6,
+      "z": -809.5,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -1214.8,
+      "y": 195.1,
+      "z": -297.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    }
+  ]
+}

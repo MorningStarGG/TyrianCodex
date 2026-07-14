@@ -1,0 +1,2426 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 15,
+    "name": "Queensdale",
+    "continentId": 1,
+    "regionId": 4,
+    "regionName": "Kryta",
+    "floor": 1,
+    "minLevel": 1,
+    "maxLevel": 15,
+    "mapRect": [
+      [
+        -43008,
+        -27648
+      ],
+      [
+        43008,
+        30720
+      ]
+    ],
+    "continentRect": [
+      [
+        42624,
+        28032
+      ],
+      [
+        46208,
+        30464
+      ]
+    ],
+    "sectorRect": [
+      [
+        42555.8,
+        27859.8
+      ],
+      [
+        46318,
+        30505.3
+      ]
+    ],
+    "labelCoord": [
+      44416,
+      29248
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "15:waypoint:239",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "239",
+      "coord": [
+        43728,
+        28590
+      ],
+      "recommendedLevel": null,
+      "name": "Shaemoor Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO8AAAA=]",
+      "waypointChatLink": "[&BO8AAAA=]",
+      "trailIndex": 34,
+      "wikiText": "The Village of Shaemoor is a province and village within Queensdale, just outside Divinity's Reach, led by Mayor North. It is constantly attacked by bandits."
+    },
+    {
+      "stepId": "15:poi:851",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "851",
+      "coord": [
+        43626,
+        28710
+      ],
+      "recommendedLevel": null,
+      "name": "Trainer's Terrace",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 53,
+      "wikiText": "Trainer's Terrace is a point of interest within the Village of Shaemoor that serves as a small training area for Seraph Trainees.",
+      "waypointChatLink": "[&BO8AAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:240",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "240",
+      "coord": [
+        43357,
+        28721
+      ],
+      "recommendedLevel": null,
+      "name": "Fields Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPAAAAA=]",
+      "waypointChatLink": "[&BPAAAAA=]",
+      "trailIndex": 86,
+      "wikiText": "Shaemoor Fields is the human nation of Kryta's primary food source, located just outside the Village of Shaemoor, in the northwest of Queensdale."
+    },
+    {
+      "stepId": "15:heart:215",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "215",
+      "coord": [
+        43245,
+        28724
+      ],
+      "recommendedLevel": 2,
+      "name": "Help Diah tend her farm.",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          43145,
+          28879
+        ],
+        [
+          42959,
+          28673
+        ],
+        [
+          43010,
+          28526
+        ],
+        [
+          43170,
+          28467
+        ],
+        [
+          43311,
+          28609
+        ],
+        [
+          43328,
+          28870
+        ],
+        [
+          43145,
+          28879
+        ]
+      ],
+      "trailIndex": 100,
+      "wikiText": "Help Diah by tending corn, stomping wurm mounds, entertaining cattle, and defending the fields.",
+      "waypointChatLink": "[&BPAAAAA=]"
+    },
+    {
+      "stepId": "15:poi:129",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "129",
+      "coord": [
+        43186,
+        28652
+      ],
+      "recommendedLevel": null,
+      "name": "Jeb's Wheatfield",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 112,
+      "wikiText": "Jeb's Wheatfield is a point of interest within Shaemoor Fields. This farm produces beef and milk for Divinity's Reach.",
+      "waypointChatLink": "[&BPAAAAA=]"
+    },
+    {
+      "stepId": "15:heart:216",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "216",
+      "coord": [
+        43237,
+        28382
+      ],
+      "recommendedLevel": 2,
+      "name": "Help Fisher Travis maintain the river.",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          43385,
+          28422
+        ],
+        [
+          43506,
+          28654
+        ],
+        [
+          43409,
+          28693
+        ],
+        [
+          43090,
+          28344
+        ],
+        [
+          43152,
+          28278
+        ],
+        [
+          43385,
+          28422
+        ]
+      ],
+      "trailIndex": 146,
+      "wikiText": "Check traps for hostile creatures, break drake eggs, and kill drakes and skale in the river.",
+      "waypointChatLink": "[&BPAAAAA=]"
+    },
+    {
+      "stepId": "15:heart:218",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "218",
+      "coord": [
+        43330,
+        28324
+      ],
+      "recommendedLevel": 3,
+      "name": "Help Foreman Flannum improve dam safety.",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          43380,
+          27909
+        ],
+        [
+          43372,
+          28406
+        ],
+        [
+          42974,
+          28170
+        ],
+        [
+          42983,
+          28093
+        ],
+        [
+          43380,
+          27909
+        ]
+      ],
+      "trailIndex": 165,
+      "wikiText": "Plug leaks, uncover and eliminate earth elementals, and defeat other dangers.",
+      "waypointChatLink": "[&BPAAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1361",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1361",
+      "coord": [
+        43090,
+        28128
+      ],
+      "recommendedLevel": null,
+      "name": "Western Divinity Dam",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 223,
+      "wikiText": "View of the Western Divinity Dam. The access to the vista is up a passage to the east of the vista.",
+      "waypointChatLink": "[&BEQDAAA=]"
+    },
+    {
+      "stepId": "15:heart:219",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "219",
+      "coord": [
+        42835,
+        28302
+      ],
+      "recommendedLevel": 4,
+      "name": "Assist Farmer Eda with her orchard.",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          42783,
+          28387
+        ],
+        [
+          44585,
+          29312
+        ],
+        [
+          42783,
+          28387
+        ]
+      ],
+      "trailIndex": 259,
+      "wikiText": "Squish spiders and spider egg sacs, and drive bats from the orchard at night.",
+      "waypointChatLink": "[&BEQDAAA=]"
+    },
+    {
+      "stepId": "15:poi:127",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "127",
+      "coord": [
+        42831,
+        28407
+      ],
+      "recommendedLevel": null,
+      "name": "Eda's Orchard",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 271,
+      "wikiText": "Eda's Orchard is a point of interest within the Shaemoor Fields. This farm is well known for its orchard and the apples and pies made here. Nearby players can assist Farmer Eda with her orchard by clearing pests from the orchard.",
+      "waypointChatLink": "[&BEQDAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:836",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "836",
+      "coord": [
+        42864,
+        28510
+      ],
+      "recommendedLevel": null,
+      "name": "Orchard Waypoint",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEQDAAA=]",
+      "waypointChatLink": "[&BEQDAAA=]",
+      "trailIndex": 283,
+      "wikiText": "Shaemoor Fields is the human nation of Kryta's primary food source, located just outside the Village of Shaemoor, in the northwest of Queensdale."
+    },
+    {
+      "stepId": "15:poi:128",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "128",
+      "coord": [
+        42846,
+        28728
+      ],
+      "recommendedLevel": null,
+      "name": "Mepi's Moa Ranch",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 310,
+      "wikiText": "Mepi's Moa Ranch is a point of interest within the Shaemoor Fields. Rancher Mepi and his wife Cassie raise and herd domesticated moas here at their farm.",
+      "waypointChatLink": "[&BEQDAAA=]"
+    },
+    {
+      "stepId": "15:heart:220",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "220",
+      "coord": [
+        42823,
+        28780
+      ],
+      "recommendedLevel": 5,
+      "name": "Help Cassie around the moa ranch.",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          42732,
+          28993
+        ],
+        [
+          42731,
+          28796
+        ],
+        [
+          42811,
+          28620
+        ],
+        [
+          43258,
+          29052
+        ],
+        [
+          43308,
+          29306
+        ],
+        [
+          42812,
+          29298
+        ],
+        [
+          42732,
+          28993
+        ]
+      ],
+      "trailIndex": 318,
+      "wikiText": "Search the bushes for lost moas, kill bandits, and recover feed from Bandithaunt Caverns.",
+      "waypointChatLink": "[&BEQDAAA=]"
+    },
+    {
+      "stepId": "15:vista:1387",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1387",
+      "coord": [
+        43185,
+        29210
+      ],
+      "recommendedLevel": null,
+      "name": "Bandithaunt Caverns",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 422,
+      "wikiText": "View of the central column in the cavern. Take the path going up around the cavern wall, then cross the bridge to the central column.",
+      "waypointChatLink": "[&BPIAAAA=]"
+    },
+    {
+      "stepId": "15:poi:130",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "130",
+      "coord": [
+        43401,
+        29097
+      ],
+      "recommendedLevel": null,
+      "name": "Dalin's Pumping Station",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 505,
+      "wikiText": "Dalin's Pumping Station is a point of interest within the Shaemoor Fields. High atop this natural rise sits this large reservoir and its network of pipes.",
+      "waypointChatLink": "[&BPAAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1384",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1384",
+      "coord": [
+        43560,
+        28990
+      ],
+      "recommendedLevel": null,
+      "name": "Dalin's Pumping Station",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 530,
+      "wikiText": "View of the pumping station. Go to the pumping station, then walk on top of the pipe to the vista.",
+      "waypointChatLink": "[&BPAAAAA=]"
+    },
+    {
+      "stepId": "15:heart:213",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "213",
+      "coord": [
+        44142,
+        28816
+      ],
+      "recommendedLevel": 6,
+      "name": "Assist the Seraph at Shaemoor Garrison.",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          44062,
+          29146
+        ],
+        [
+          44020,
+          29043
+        ],
+        [
+          43964,
+          28712
+        ],
+        [
+          44019,
+          28662
+        ],
+        [
+          44127,
+          28620
+        ],
+        [
+          44168,
+          28641
+        ],
+        [
+          44386,
+          28974
+        ],
+        [
+          44398,
+          29049
+        ],
+        [
+          44427,
+          29109
+        ],
+        [
+          44511,
+          29105
+        ],
+        [
+          44492,
+          29241
+        ],
+        [
+          44349,
+          29246
+        ],
+        [
+          44223,
+          29278
+        ],
+        [
+          44189,
+          29170
+        ],
+        [
+          44062,
+          29146
+        ]
+      ],
+      "trailIndex": 626,
+      "wikiText": "Kill centaurs, destroy centaur siege weapons, help fallen Seraph, and collect lost trinkets around the ruins.",
+      "waypointChatLink": "[&BPEAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1389",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1389",
+      "coord": [
+        44143,
+        28849
+      ],
+      "recommendedLevel": null,
+      "name": "Shaemoor Garrison",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 639,
+      "wikiText": "View of the Garrison castle. To access the vista, go up the stairs on either side of the Garrison's south gate.",
+      "waypointChatLink": "[&BPEAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:241",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "241",
+      "coord": [
+        44095,
+        28804
+      ],
+      "recommendedLevel": null,
+      "name": "Garrison Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPEAAAA=]",
+      "waypointChatLink": "[&BPEAAAA=]",
+      "trailIndex": 649,
+      "wikiText": "Shaemoor Garrison, in the northern part of Queensdale, is the main fortress defending Divinity's Reach. It defends against the Tamini centaurs attacking from Scaver Plateau."
+    },
+    {
+      "stepId": "15:hero:0-42",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "hero",
+      "objectiveId": "0-42",
+      "coord": [
+        44181,
+        29046
+      ],
+      "recommendedLevel": null,
+      "name": "Earthen Magic",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 687,
+      "wikiText": "A remnant pillar of Earthen Magic floats in the center of Scaver Plateau, marking the blasted site of a previous battle. Commune with this place of power and complete its hero challenge.",
+      "waypointChatLink": "[&BEUDAAA=]"
+    },
+    {
+      "stepId": "15:hero:0-6",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "hero",
+      "objectiveId": "0-6",
+      "coord": [
+        44472,
+        29022
+      ],
+      "recommendedLevel": null,
+      "name": "Chhk the Windmill King",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 756,
+      "wikiText": "Chhk the Windmill King is a confused skritt who believes himself the \"Windmill King\". Defeat him to earn a hero point.",
+      "waypointChatLink": "[&BEUDAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:837",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "837",
+      "coord": [
+        44145,
+        29194
+      ],
+      "recommendedLevel": null,
+      "name": "Scaver Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEUDAAA=]",
+      "waypointChatLink": "[&BEUDAAA=]",
+      "trailIndex": 809,
+      "wikiText": "Scaver Plateau is a hill south of Shaemoor Garrison near Divinity's Reach. The numerous ruined houses suggest that there was once a village there before the centaur attack on the garrison."
+    },
+    {
+      "stepId": "15:heart:214",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "214",
+      "coord": [
+        44088,
+        29386
+      ],
+      "recommendedLevel": 7,
+      "name": "Help Lexi Price protect the trade route.",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          43934,
+          29470
+        ],
+        [
+          43779,
+          29478
+        ],
+        [
+          43691,
+          29543
+        ],
+        [
+          43609,
+          29590
+        ],
+        [
+          43553,
+          29555
+        ],
+        [
+          43566,
+          29466
+        ],
+        [
+          43632,
+          29368
+        ],
+        [
+          43785,
+          29331
+        ],
+        [
+          43938,
+          29316
+        ],
+        [
+          44123,
+          29166
+        ],
+        [
+          44173,
+          29198
+        ],
+        [
+          44175,
+          29367
+        ],
+        [
+          44119,
+          29491
+        ],
+        [
+          43934,
+          29470
+        ]
+      ],
+      "trailIndex": 841,
+      "wikiText": "Kill vermin, clean up the trading post, eliminate threats along the trade route, and destroy Tamini stakes and death markers.",
+      "waypointChatLink": "[&BEUDAAA=]"
+    },
+    {
+      "stepId": "15:poi:131",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "131",
+      "coord": [
+        44066,
+        29381
+      ],
+      "recommendedLevel": null,
+      "name": "Altar Brook Trading Post",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 845,
+      "wikiText": "The Altar Brook Trading Post is a point of interest within Scaver Plateau in Queensdale. Located on a rocky island is this small, enclosed outpost along the trade route between Shaemoor Garrison and the Township of Claypool.",
+      "waypointChatLink": "[&BEUDAAA=]"
+    },
+    {
+      "stepId": "15:poi:132",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "132",
+      "coord": [
+        43709,
+        29564
+      ],
+      "recommendedLevel": null,
+      "name": "Altar Brook Crossing",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 896,
+      "wikiText": "Altar Brook Crossing is a bridge found in Altar Brook Vale that connects the main road between Altar Brook Trading Post and Claypool. As a result, it is often attacked by centaurs.",
+      "waypointChatLink": "[&BPIAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:242",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "242",
+      "coord": [
+        43584,
+        29519
+      ],
+      "recommendedLevel": null,
+      "name": "Crossing Waypoint",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPIAAAA=]",
+      "waypointChatLink": "[&BPIAAAA=]",
+      "trailIndex": 914,
+      "wikiText": "The Altar Brook Vale lies between Claypool and Shaemoor in the southwest corner of Queensdale. The cattle farm located there is often attacked by bandits."
+    },
+    {
+      "stepId": "15:hero:0-65",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "hero",
+      "objectiveId": "0-65",
+      "coord": [
+        43194,
+        29475
+      ],
+      "recommendedLevel": null,
+      "name": "Bandit Loot",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 970,
+      "wikiText": "Bandit Loot can be found tucked at the base of a tree in Altar Brook Vale. Franklin Quickblade and two of his friends won't let it go without a fight.",
+      "waypointChatLink": "[&BPQAAAA=]"
+    },
+    {
+      "stepId": "15:poi:1675",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "1675",
+      "coord": [
+        43216,
+        29722
+      ],
+      "recommendedLevel": null,
+      "name": "Bar Curtis Ranch",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1004,
+      "wikiText": "Bar Curtis Ranch is a large cattle ranch is owned by Cattleman Curtis within the Altar Brook Vale. The beef products from this ranch can be found throughout Tyria.",
+      "waypointChatLink": "[&BPQAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:244",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "244",
+      "coord": [
+        42996,
+        29696
+      ],
+      "recommendedLevel": null,
+      "name": "Vale Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPQAAAA=]",
+      "waypointChatLink": "[&BPQAAAA=]",
+      "trailIndex": 1031,
+      "wikiText": "The Altar Brook Vale lies between Claypool and Shaemoor in the southwest corner of Queensdale. The cattle farm located there is often attacked by bandits."
+    },
+    {
+      "stepId": "15:hero:0-8",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "hero",
+      "objectiveId": "0-8",
+      "coord": [
+        42718,
+        29510
+      ],
+      "recommendedLevel": null,
+      "name": "Erts Jug of Power Unguent",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1092,
+      "wikiText": "Erts Jug of Power Unguent[sic] sits in Veteran Ert and Burt's cave at the head of Pinion Trail. If one can tire Ert out, a sample of Ert's Unguent from the jar is an... interesting, if foul, reward.",
+      "waypointChatLink": "[&BPQAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1386",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1386",
+      "coord": [
+        42883,
+        29809
+      ],
+      "recommendedLevel": null,
+      "name": "Altar's Windings",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1145,
+      "wikiText": "View of Altar's Windings. No puzzle to get to this vista, just follow the path up the hill.",
+      "waypointChatLink": "[&BPQAAAA=]"
+    },
+    {
+      "stepId": "15:poi:1676",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "1676",
+      "coord": [
+        43110,
+        30146
+      ],
+      "recommendedLevel": null,
+      "name": "Duran Brothers' Docks",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1187,
+      "wikiText": "The Duran Brothers' Docks is a point of interest within Clayent Falls. This small one-room house and docks overlooking the falls is the home of the Duran family. The two brothers and their wives make their living fishing on the lake.",
+      "waypointChatLink": "[&BPYAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1382",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1382",
+      "coord": [
+        43094,
+        30157
+      ],
+      "recommendedLevel": null,
+      "name": "Clayent Falls",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1195,
+      "wikiText": "View of the Clayent Falls and surrounding area. Jump puzzle on the east side of the house.",
+      "waypointChatLink": "[&BPYAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:246",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "246",
+      "coord": [
+        43482,
+        29972
+      ],
+      "recommendedLevel": null,
+      "name": "Claypool Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPYAAAA=]",
+      "waypointChatLink": "[&BPYAAAA=]",
+      "trailIndex": 1255,
+      "wikiText": "The Township of Claypool is one of the largest towns in Queensdale, located south of Divinity's Reach. Because of its protective walls, it is often a spot where refugees from centaur attacks head to."
+    },
+    {
+      "stepId": "15:heart:212",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "212",
+      "coord": [
+        43551,
+        30028
+      ],
+      "recommendedLevel": 8,
+      "name": "Train with the militia.",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          43480,
+          29915
+        ],
+        [
+          43603,
+          29933
+        ],
+        [
+          43640,
+          30015
+        ],
+        [
+          43746,
+          30129
+        ],
+        [
+          43500,
+          30163
+        ],
+        [
+          43387,
+          30129
+        ],
+        [
+          43360,
+          30042
+        ],
+        [
+          43419,
+          29946
+        ],
+        [
+          43480,
+          29915
+        ]
+      ],
+      "trailIndex": 1270,
+      "wikiText": "Talk to Sergeant Sato to train with rifles, Sergeant Nital to train with swords, and Sergeant Liddy to train with shields.",
+      "waypointChatLink": "[&BPYAAAA=]"
+    },
+    {
+      "stepId": "15:heart:211",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "211",
+      "coord": [
+        44064,
+        29887
+      ],
+      "recommendedLevel": 9,
+      "name": "Help the Seraph protect Claypool from centaurs.",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          43758,
+          29866
+        ],
+        [
+          43744,
+          30190
+        ],
+        [
+          44251,
+          30270
+        ],
+        [
+          44443,
+          30103
+        ],
+        [
+          44367,
+          29860
+        ],
+        [
+          44152,
+          29749
+        ],
+        [
+          43758,
+          29866
+        ]
+      ],
+      "trailIndex": 1341,
+      "wikiText": "Defeat centaurs, destroy their holdings and find ways to weaken their presence in the area",
+      "waypointChatLink": "[&BPUAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:245",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "245",
+      "coord": [
+        44239,
+        30073
+      ],
+      "recommendedLevel": null,
+      "name": "Heartwood Pass Camp Waypoint",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPUAAAA=]",
+      "waypointChatLink": "[&BPUAAAA=]",
+      "trailIndex": 1387,
+      "wikiText": "The Heartwoods is a hilly region in southern Queensdale, east of the Township of Claypool. Many ambush camps built by the Tamini centaurs can be found hidden behind the walls of the town. There is also a treant sanctuary to the north."
+    },
+    {
+      "stepId": "15:poi:1674",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "1674",
+      "coord": [
+        44258,
+        29701
+      ],
+      "recommendedLevel": null,
+      "name": "Greatheart Weald",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1434,
+      "wikiText": "The Greatheart Weald is a point of interest within The Heartwoods. This picturesque clearing nestled within ettin and centaur infested hills is home to the oakhearts, who guard a rustic oak tree.",
+      "waypointChatLink": "[&BPMAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:243",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "243",
+      "coord": [
+        44549,
+        29806
+      ],
+      "recommendedLevel": null,
+      "name": "Phinney Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPMAAAA=]",
+      "waypointChatLink": "[&BPMAAAA=]",
+      "trailIndex": 1469,
+      "wikiText": "Phinney Ridge is an area in Queensdale. This steep ridge overlooks the Godslost Swamp and is home to a large group of ettins."
+    },
+    {
+      "stepId": "15:waypoint:247",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "247",
+      "coord": [
+        44959,
+        30336
+      ],
+      "recommendedLevel": null,
+      "name": "Swamplost Haven Waypoint",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPcAAAA=]",
+      "waypointChatLink": "[&BPcAAAA=]",
+      "trailIndex": 1511,
+      "wikiText": "The Godslost Swamp is an area of Queensdale, in which the sunken Temple of the Ages resides. It was formerly part of the Black Curtain."
+    },
+    {
+      "stepId": "15:poi:138",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "138",
+      "coord": [
+        44911,
+        29856
+      ],
+      "recommendedLevel": null,
+      "name": "Deathroot Shack",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1537,
+      "wikiText": "The Deathroot Shack is a point of interest within the Godslost Swamp. Inside this cracked island is the home of a norn necromancer who has traveled to this location to study a magical book.",
+      "waypointChatLink": "[&BPMAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1388",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1388",
+      "coord": [
+        44896,
+        29797
+      ],
+      "recommendedLevel": null,
+      "name": "Godslost Swamp",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1561,
+      "wikiText": "Overlook the Swamp. To get to the vista run up the southwest slope of the island.",
+      "waypointChatLink": "[&BPMAAAA=]"
+    },
+    {
+      "stepId": "15:heart:224",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "224",
+      "coord": [
+        44989,
+        29669
+      ],
+      "recommendedLevel": 15,
+      "name": "Help Historian Garrod investigate Godslost Swamp.",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          45021,
+          29539
+        ],
+        [
+          44920,
+          29539
+        ],
+        [
+          44851,
+          29548
+        ],
+        [
+          44789,
+          29566
+        ],
+        [
+          44769,
+          29621
+        ],
+        [
+          44744,
+          29661
+        ],
+        [
+          44689,
+          29682
+        ],
+        [
+          44632,
+          29702
+        ],
+        [
+          44622,
+          29766
+        ],
+        [
+          44636,
+          29802
+        ],
+        [
+          44659,
+          29844
+        ],
+        [
+          44635,
+          29883
+        ],
+        [
+          44612,
+          29927
+        ],
+        [
+          44611,
+          29959
+        ],
+        [
+          44603,
+          30005
+        ],
+        [
+          44618,
+          30044
+        ],
+        [
+          44638,
+          30059
+        ],
+        [
+          44672,
+          30079
+        ],
+        [
+          44686,
+          30130
+        ],
+        [
+          44725,
+          30162
+        ],
+        [
+          44773,
+          30227
+        ],
+        [
+          44818,
+          30272
+        ],
+        [
+          44850,
+          30278
+        ],
+        [
+          44926,
+          30282
+        ],
+        [
+          45006,
+          30272
+        ],
+        [
+          45070,
+          30278
+        ],
+        [
+          45104,
+          30301
+        ],
+        [
+          45147,
+          30308
+        ],
+        [
+          45185,
+          30321
+        ],
+        [
+          45224,
+          30325
+        ],
+        [
+          45290,
+          30319
+        ],
+        [
+          45339,
+          30292
+        ],
+        [
+          45351,
+          30198
+        ],
+        [
+          45344,
+          30133
+        ],
+        [
+          45383,
+          30088
+        ],
+        [
+          45414,
+          30061
+        ],
+        [
+          45439,
+          30000
+        ],
+        [
+          45448,
+          29938
+        ],
+        [
+          45447,
+          29902
+        ],
+        [
+          45415,
+          29889
+        ],
+        [
+          45383,
+          29889
+        ],
+        [
+          45358,
+          29859
+        ],
+        [
+          45357,
+          29836
+        ],
+        [
+          45356,
+          29794
+        ],
+        [
+          45338,
+          29759
+        ],
+        [
+          45321,
+          29725
+        ],
+        [
+          45282,
+          29708
+        ],
+        [
+          45220,
+          29670
+        ],
+        [
+          45168,
+          29640
+        ],
+        [
+          45128,
+          29609
+        ],
+        [
+          45066,
+          29568
+        ],
+        [
+          45021,
+          29539
+        ]
+      ],
+      "trailIndex": 1581,
+      "wikiText": "Close portals to the underworld, vanquish portal minions, and put tortured spirits to rest.",
+      "waypointChatLink": "[&BPwAAAA=]"
+    },
+    {
+      "stepId": "15:poi:139",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "139",
+      "coord": [
+        45151,
+        29776
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of the Ages",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1601,
+      "wikiText": "The Temple of the Ages is a point of interest within the Godslost Swamp. Rising up out of the swamp is the partially submerged ruins of a temple. The temple was a sacred location in Kryta where the six Human Gods were worshipped.",
+      "waypointChatLink": "[&BPwAAAA=]"
+    },
+    {
+      "stepId": "15:hero:0-7",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "hero",
+      "objectiveId": "0-7",
+      "coord": [
+        45136,
+        29864
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of the Ages",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1606,
+      "wikiText": "The Temple of the Ages is a point of interest within the Godslost Swamp. Rising up out of the swamp is the partially submerged ruins of a temple. The temple was a sacred location in Kryta where the six Human Gods were worshipped.",
+      "waypointChatLink": "[&BPwAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:252",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "252",
+      "coord": [
+        45275,
+        29755
+      ],
+      "recommendedLevel": null,
+      "name": "Godslost Waypoint",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPwAAAA=]",
+      "waypointChatLink": "[&BPwAAAA=]",
+      "trailIndex": 1617,
+      "wikiText": "The Godslost Swamp is an area of Queensdale, in which the sunken Temple of the Ages resides. It was formerly part of the Black Curtain."
+    },
+    {
+      "stepId": "15:poi:835",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "835",
+      "coord": [
+        45566,
+        30321
+      ],
+      "recommendedLevel": null,
+      "name": "Bonegrinder's Gully",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1701,
+      "wikiText": "The Bonegrinder's Gully is a point of interest within the Taminn Foothills.",
+      "waypointChatLink": "[&BPcAAAA=]"
+    },
+    {
+      "stepId": "15:heart:223",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "223",
+      "coord": [
+        45663,
+        30063
+      ],
+      "recommendedLevel": 14,
+      "name": "Unite the ettins.",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          45808,
+          29957
+        ],
+        [
+          45900,
+          29948
+        ],
+        [
+          46054,
+          30056
+        ],
+        [
+          46134,
+          30382
+        ],
+        [
+          45729,
+          30443
+        ],
+        [
+          45508,
+          30401
+        ],
+        [
+          45470,
+          30271
+        ],
+        [
+          45532,
+          30132
+        ],
+        [
+          45667,
+          29979
+        ],
+        [
+          45808,
+          29957
+        ]
+      ],
+      "trailIndex": 1731,
+      "wikiText": "Help Krug by uniting the ettins and battling centaurs.",
+      "waypointChatLink": "[&BPwAAAA=]"
+    },
+    {
+      "stepId": "15:poi:140",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "140",
+      "coord": [
+        45880,
+        30172
+      ],
+      "recommendedLevel": null,
+      "name": "Righteous Hoofmoot",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1761,
+      "wikiText": "The Righteous Hoofmoot is a point of interest within the Taminn Foothills.",
+      "waypointChatLink": "[&BPwAAAA=]"
+    },
+    {
+      "stepId": "15:hero:0-9",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "hero",
+      "objectiveId": "0-9",
+      "coord": [
+        45878,
+        30153
+      ],
+      "recommendedLevel": null,
+      "name": "Tamini Place of Power",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1762,
+      "wikiText": "The swirling energies of the Tamini Place of Power are a grim reminder of centaur cruelty in southeast Queensdale.",
+      "waypointChatLink": "[&BPwAAAA=]"
+    },
+    {
+      "stepId": "15:poi:137",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "137",
+      "coord": [
+        45658,
+        29620
+      ],
+      "recommendedLevel": null,
+      "name": "Cliffwatch Camp",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1831,
+      "wikiText": "The Cliffwatch Camp is a point of Interest within the Orlaf Escarpments. Atop this rocky outcropping a band of centaurs have established a base of operations.",
+      "waypointChatLink": "[&BPwAAAA=]"
+    },
+    {
+      "stepId": "15:poi:136",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "136",
+      "coord": [
+        46078,
+        29534
+      ],
+      "recommendedLevel": null,
+      "name": "Hidden Cliff Camp",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1883,
+      "wikiText": "The Hidden Cliff Camp is a point of interest within Salma's Heath. Inside this steep walled canyon is the primary lair of the local band of Tamini centaurs.",
+      "waypointChatLink": "[&BPsAAAA=]"
+    },
+    {
+      "stepId": "15:poi:135",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "135",
+      "coord": [
+        45517,
+        29263
+      ],
+      "recommendedLevel": null,
+      "name": "Holdland Camp",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1964,
+      "wikiText": "Holdland Camp is a point of interest within the Krytan Freeholds. In this small canyon lies a centaur war camp camp that is occasionally controlled by the Seraph.",
+      "waypointChatLink": "[&BPsAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:251",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "251",
+      "coord": [
+        45691,
+        29146
+      ],
+      "recommendedLevel": null,
+      "name": "Tunwatch Redoubt Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPsAAAA=]",
+      "waypointChatLink": "[&BPsAAAA=]",
+      "trailIndex": 1988,
+      "wikiText": "Salma's Heath is an area of Queensdale which contains a Tamini camp, wherein humans have been taken as slaves."
+    },
+    {
+      "stepId": "15:heart:221",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "221",
+      "coord": [
+        45751,
+        28964
+      ],
+      "recommendedLevel": 12,
+      "name": "Protect Beetletun farmers from Tamini centaurs.",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          45660,
+          28806
+        ],
+        [
+          46044,
+          28882
+        ],
+        [
+          46183,
+          29741
+        ],
+        [
+          45700,
+          29791
+        ],
+        [
+          45529,
+          29618
+        ],
+        [
+          45308,
+          29149
+        ],
+        [
+          45333,
+          29017
+        ],
+        [
+          45660,
+          28806
+        ]
+      ],
+      "trailIndex": 2016,
+      "wikiText": "Assist the Beetletun farmers by freeing their friends, killing centaurs and harassing centaur camps.",
+      "waypointChatLink": "[&BPsAAAA=]"
+    },
+    {
+      "stepId": "15:poi:1673",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "1673",
+      "coord": [
+        45608,
+        28868
+      ],
+      "recommendedLevel": null,
+      "name": "Beetletun Waterworks",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2041,
+      "wikiText": "The Beetletun Waterworks are a point of interest within the Beetletun Farms. It is the pumping station and pipes that supplies fresh water to the Shire of Beetletun and the Beetletun Farms.",
+      "waypointChatLink": "[&BPsAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1385",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1385",
+      "coord": [
+        45994,
+        28529
+      ],
+      "recommendedLevel": null,
+      "name": "Beetletun",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2127,
+      "wikiText": "Overlook of the Shire. To get to the vista run south from the waypoint.",
+      "waypointChatLink": "[&BPoAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:250",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "250",
+      "coord": [
+        45968,
+        28420
+      ],
+      "recommendedLevel": null,
+      "name": "Beetletun Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPoAAAA=]",
+      "waypointChatLink": "[&BPoAAAA=]",
+      "trailIndex": 2143,
+      "wikiText": "The Shire of Beetletun is a town in Kryta that is rarely attacked by the centaurs, though its farms are. Minister Caudecus expanded the town since becoming a minister, and has a mansion at its northern end."
+    },
+    {
+      "stepId": "15:hero:0-140",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "hero",
+      "objectiveId": "0-140",
+      "coord": [
+        46086,
+        28352
+      ],
+      "recommendedLevel": null,
+      "name": "Carnie Jeb",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2163,
+      "wikiText": "Carnie Jeb mans a tent at the Beetletun carnival grounds in Queensdale. Step right up and win a battle to complete his Hero challenge to earn a hero point.",
+      "waypointChatLink": "[&BPoAAAA=]"
+    },
+    {
+      "stepId": "15:heart:222",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "222",
+      "coord": [
+        45852,
+        28430
+      ],
+      "recommendedLevel": 13,
+      "name": "Help the citizens of Beetletun maintain their town.",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46114,
+          28311
+        ],
+        [
+          46150,
+          28375
+        ],
+        [
+          46063,
+          28571
+        ],
+        [
+          45998,
+          28582
+        ],
+        [
+          45976,
+          28534
+        ],
+        [
+          45941,
+          28497
+        ],
+        [
+          45898,
+          28491
+        ],
+        [
+          45820,
+          28510
+        ],
+        [
+          45764,
+          28509
+        ],
+        [
+          45732,
+          28469
+        ],
+        [
+          45704,
+          28374
+        ],
+        [
+          45706,
+          28225
+        ],
+        [
+          46114,
+          28311
+        ]
+      ],
+      "trailIndex": 2206,
+      "wikiText": "Help Beetletun maintain its prosperous reputation by killing vermin, clearing graffiti, and helping the carnival.",
+      "waypointChatLink": "[&BPoAAAA=]"
+    },
+    {
+      "stepId": "15:heart:228",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "228",
+      "coord": [
+        45600,
+        28219
+      ],
+      "recommendedLevel": 10,
+      "name": "Assist Fisherman Will and the fishermen of Beetletun.",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          45655,
+          28166
+        ],
+        [
+          45667,
+          28219
+        ],
+        [
+          45709,
+          28408
+        ],
+        [
+          45735,
+          28591
+        ],
+        [
+          45659,
+          28618
+        ],
+        [
+          45608,
+          28590
+        ],
+        [
+          45551,
+          28562
+        ],
+        [
+          45511,
+          28512
+        ],
+        [
+          45579,
+          28442
+        ],
+        [
+          45595,
+          28368
+        ],
+        [
+          45545,
+          28326
+        ],
+        [
+          45436,
+          28332
+        ],
+        [
+          45410,
+          28220
+        ],
+        [
+          45655,
+          28166
+        ]
+      ],
+      "trailIndex": 2243,
+      "wikiText": "Protect the fishermen from aggressive fish and skale, and capture crabs in the cages.",
+      "waypointChatLink": "[&BPoAAAA=]"
+    },
+    {
+      "stepId": "15:heart:227",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "227",
+      "coord": [
+        45267,
+        28533
+      ],
+      "recommendedLevel": 9,
+      "name": "Assist Hunter Block and the hunting lodge.",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          45357,
+          28841
+        ],
+        [
+          45254,
+          28910
+        ],
+        [
+          45155,
+          28940
+        ],
+        [
+          45100,
+          28889
+        ],
+        [
+          45088,
+          28802
+        ],
+        [
+          45015,
+          28536
+        ],
+        [
+          45097,
+          28424
+        ],
+        [
+          45229,
+          28386
+        ],
+        [
+          45400,
+          28390
+        ],
+        [
+          45411,
+          28492
+        ],
+        [
+          45397,
+          28604
+        ],
+        [
+          45421,
+          28647
+        ],
+        [
+          45553,
+          28723
+        ],
+        [
+          45548,
+          28751
+        ],
+        [
+          45527,
+          28759
+        ],
+        [
+          45502,
+          28766
+        ],
+        [
+          45357,
+          28841
+        ]
+      ],
+      "trailIndex": 2298,
+      "wikiText": "Help local hunters by fixing their traps, killing boars, and assisting anyone in danger while hunting.",
+      "waypointChatLink": "[&BPkAAAA=]"
+    },
+    {
+      "stepId": "15:poi:133",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "133",
+      "coord": [
+        45312,
+        28555
+      ],
+      "recommendedLevel": null,
+      "name": "Hunting Lodge",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2301,
+      "wikiText": "The Hunting Lodge is a point of Interest within the Queen's Forest. This opulent mansion and stable sits atop a small rise in the middle of a stand of trees. Inside is a pleasant bar and dining area with guest rooms upstairs.",
+      "waypointChatLink": "[&BPgAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:249",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "249",
+      "coord": [
+        44715,
+        28617
+      ],
+      "recommendedLevel": null,
+      "name": "Ojon's Lumbermill Waypoint",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPkAAAA=]",
+      "waypointChatLink": "[&BPkAAAA=]",
+      "trailIndex": 2364,
+      "wikiText": "The Queen's Forest is a wooded area in northeast Queensdale. This forest is largely habited by forest boars which are hunted by the people residing at the nearby Hunting Lodge."
+    },
+    {
+      "stepId": "15:heart:226",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "226",
+      "coord": [
+        44598,
+        28756
+      ],
+      "recommendedLevel": 8,
+      "name": "Assist Laborer Cardy and Ojon's lumbermill.",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          44694,
+          28536
+        ],
+        [
+          44409,
+          28678
+        ],
+        [
+          44385,
+          28883
+        ],
+        [
+          44392,
+          28973
+        ],
+        [
+          44408,
+          29051
+        ],
+        [
+          44436,
+          29104
+        ],
+        [
+          44719,
+          29093
+        ],
+        [
+          44756,
+          28971
+        ],
+        [
+          44949,
+          28852
+        ],
+        [
+          44983,
+          28755
+        ],
+        [
+          44968,
+          28534
+        ],
+        [
+          44923,
+          28428
+        ],
+        [
+          44791,
+          28444
+        ],
+        [
+          44694,
+          28536
+        ]
+      ],
+      "trailIndex": 2384,
+      "wikiText": "Kill skritt and wasps, gather wooden planks, destroy wasp nests, and topple skritt shiny things",
+      "waypointChatLink": "[&BPkAAAA=]"
+    },
+    {
+      "stepId": "15:poi:1672",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "1672",
+      "coord": [
+        45041,
+        28957
+      ],
+      "recommendedLevel": null,
+      "name": "Kappa's Corral",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2436,
+      "wikiText": "Kappa's Corral is a point of Interest within the Queen's Forest. This asuran invention serves both as a pen and a trap. Moa Trainer Kappa uses this location to capture and train her famous dancing moas.",
+      "waypointChatLink": "[&BPgAAAA=]"
+    },
+    {
+      "stepId": "15:vista:1383",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "vista",
+      "objectiveId": "1383",
+      "coord": [
+        45043,
+        29065
+      ],
+      "recommendedLevel": null,
+      "name": "Krytan Freeholds",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2451,
+      "wikiText": "Overlook the Hold. To get to the vista just climb the slope west of the waypoint.",
+      "waypointChatLink": "[&BPgAAAA=]"
+    },
+    {
+      "stepId": "15:waypoint:248",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "waypoint",
+      "objectiveId": "248",
+      "coord": [
+        45150,
+        29080
+      ],
+      "recommendedLevel": null,
+      "name": "Krytan Waypoint",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPgAAAA=]",
+      "waypointChatLink": "[&BPgAAAA=]",
+      "trailIndex": 2468,
+      "wikiText": "The Krytan Freeholds is an area in eastern Queensdale which boasts hilly terrain with an array of dangerous wildlife."
+    },
+    {
+      "stepId": "15:poi:134",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "poi",
+      "objectiveId": "134",
+      "coord": [
+        45185,
+        29265
+      ],
+      "recommendedLevel": null,
+      "name": "Eldvin Monastery",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2491,
+      "wikiText": "The Eldvin Monastery is a large walled keep and monastery with a courtyard that is named after its founder, located within the Krytan Freeholds.",
+      "waypointChatLink": "[&BPgAAAA=]"
+    },
+    {
+      "stepId": "15:heart:225",
+      "mapId": 15,
+      "zoneName": "Queensdale",
+      "type": "heart",
+      "objectiveId": "225",
+      "coord": [
+        45226,
+        29230
+      ],
+      "recommendedLevel": 11,
+      "name": "Keep the monastery operational.",
+      "prereqs": [],
+      "order": 69,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          44978,
+          29149
+        ],
+        [
+          45113,
+          29077
+        ],
+        [
+          45220,
+          29082
+        ],
+        [
+          45324,
+          29178
+        ],
+        [
+          45388,
+          29250
+        ],
+        [
+          45423,
+          29358
+        ],
+        [
+          45412,
+          29507
+        ],
+        [
+          45242,
+          29509
+        ],
+        [
+          45024,
+          29487
+        ],
+        [
+          45006,
+          29303
+        ],
+        [
+          44959,
+          29244
+        ],
+        [
+          44978,
+          29149
+        ]
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Fight centaurs, recover stolen ale, protect the monastery, clear grubs from the fields, and taste-test new ale",
+      "waypointChatLink": "[&BPgAAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

@@ -1,0 +1,7 @@
+#include "resources.h"
+
+// The Nexus tray / QuickAccess icons, embedded as raw PNG bytes (RCDATA). Extracted to
+// data\textures\ui\ at AddonLoad if absent (entry.cpp), so the tray icon is available before the
+// data self-download completes. Paths are relative to THIS .rc file (src\resources\) -> repo\data\...
+RESID_TRAY_ICON       RCDATA "..\\..\\data\\textures\\ui\\tc-icon.png"
+RESID_TRAY_ICON_HOVER RCDATA "..\\..\\data\\textures\\ui\\tc-icon-hover.png"

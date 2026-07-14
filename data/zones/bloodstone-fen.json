@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1165,
+    "name": "Bloodstone Fen",
+    "continentId": 1,
+    "regionId": 10,
+    "regionName": "Heart of Maguuma",
+    "floor": 2,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -18432,
+        -6144
+      ],
+      [
+        18432,
+        9216
+      ]
+    ],
+    "continentRect": [
+      [
+        34816,
+        30338
+      ],
+      [
+        36352,
+        30978
+      ]
+    ],
+    "sectorRect": [
+      [
+        34762.8,
+        30222.9
+      ],
+      [
+        36512.5,
+        31096.2
+      ]
+    ],
+    "labelCoord": [
+      35582,
+      30688
+    ],
+    "release": "lws3"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1165:waypoint:2379",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "waypoint",
+      "objectiveId": "2379",
+      "coord": [
+        35212,
+        30584
+      ],
+      "recommendedLevel": null,
+      "name": "Soulkeeper's Airship Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEsJAAA=]",
+      "waypointChatLink": "[&BEsJAAA=]",
+      "trailIndex": 2,
+      "wikiText": "The Pride of the Pact is an area of Bloodstone Fen that is composed of General Almorra Soulkeeper's personal airship, the Soul's Vendetta."
+    },
+    {
+      "stepId": "1165:vista:2368",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "vista",
+      "objectiveId": "2368",
+      "coord": [
+        35325,
+        30782
+      ],
+      "recommendedLevel": null,
+      "name": "Fragmented Wastes (1)",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 48,
+      "wikiText": "The Fragmented Wastes are an area of the Bloodstone Fen. It consists of the sky portion of the map, as the only way to travel is to go across the small islands floating in the air.",
+      "waypointChatLink": "[&BE4JAAA=]"
+    },
+    {
+      "stepId": "1165:waypoint:2382",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "waypoint",
+      "objectiveId": "2382",
+      "coord": [
+        35482,
+        30692
+      ],
+      "recommendedLevel": null,
+      "name": "Zealot's Overlook Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE4JAAA=]",
+      "waypointChatLink": "[&BE4JAAA=]",
+      "trailIndex": 114,
+      "wikiText": "The Fragmented Wastes are an area of the Bloodstone Fen. It consists of the sky portion of the map, as the only way to travel is to go across the small islands floating in the air."
+    },
+    {
+      "stepId": "1165:poi:2383",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "poi",
+      "objectiveId": "2383",
+      "coord": [
+        35948,
+        30690
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of Sacrifice",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 395,
+      "wikiText": "The Temple of Sacrifice is a point of interest in the Fragmented Wastes of Bloodstone Fen. It is a White Mantle ruin nestled high in the skies.",
+      "waypointChatLink": "[&BEEJAAA=]"
+    },
+    {
+      "stepId": "1165:vista:2376",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "vista",
+      "objectiveId": "2376",
+      "coord": [
+        36069,
+        30539
+      ],
+      "recommendedLevel": null,
+      "name": "Fragmented Wastes (2)",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 401,
+      "wikiText": "Use the bouncing mushroom to climb to the edge of the crater and walk to the vista.",
+      "waypointChatLink": "[&BEEJAAA=]"
+    },
+    {
+      "stepId": "1165:waypoint:2369",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "waypoint",
+      "objectiveId": "2369",
+      "coord": [
+        35828,
+        30738
+      ],
+      "recommendedLevel": null,
+      "name": "Ground Zero Waypoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEEJAAA=]",
+      "waypointChatLink": "[&BEEJAAA=]",
+      "trailIndex": 765,
+      "wikiText": "The Bloodstone Maw is an area containing the east half of Bloodstone Fen's surface and depths layers. It is a giant crater where the Bloodstone once was before it exploded."
+    },
+    {
+      "stepId": "1165:waypoint:2367",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "waypoint",
+      "objectiveId": "2367",
+      "coord": [
+        35511,
+        30577
+      ],
+      "recommendedLevel": null,
+      "name": "Depths of the Maw Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BD8JAAA=]",
+      "waypointChatLink": "[&BD8JAAA=]",
+      "trailIndex": 783,
+      "wikiText": "The Cavern of Unseen Lights is an underground area of the Bloodstone Fen. It is where a ley line that flowed beneath the Bloodstone channeled through."
+    },
+    {
+      "stepId": "1165:vista:2381",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "vista",
+      "objectiveId": "2381",
+      "coord": [
+        35350,
+        30686
+      ],
+      "recommendedLevel": null,
+      "name": "Colosseum of the Faithful",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 801,
+      "wikiText": "Make your way from the waypoint and carefully drop down on the branches. Walk towards the vista.",
+      "waypointChatLink": "[&BE4JAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

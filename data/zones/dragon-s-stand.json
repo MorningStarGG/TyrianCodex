@@ -1,0 +1,1094 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1041,
+    "name": "Dragon's Stand",
+    "continentId": 1,
+    "regionId": 10,
+    "regionName": "Heart of Maguuma",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -36864,
+        -30720
+      ],
+      [
+        36864,
+        33792
+      ]
+    ],
+    "continentRect": [
+      [
+        34048,
+        36096
+      ],
+      [
+        37120,
+        38784
+      ]
+    ],
+    "sectorRect": [
+      [
+        34152.7,
+        35863.6
+      ],
+      [
+        37176.4,
+        38766.4
+      ]
+    ],
+    "labelCoord": [
+      35712,
+      37120
+    ],
+    "release": "hot"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1041:waypoint:2064",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2064",
+      "coord": [
+        36649,
+        36232
+      ],
+      "recommendedLevel": null,
+      "name": "Pact Base Camp Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBAIAAA=]",
+      "waypointChatLink": "[&BBAIAAA=]",
+      "trailIndex": 16,
+      "wikiText": "Vigilant Precipice is one of the two opening areas of Dragon's Stand. Players that enter the map through Dragon's Passage emerge here."
+    },
+    {
+      "stepId": "1041:poi:2097",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2097",
+      "coord": [
+        36645,
+        36290
+      ],
+      "recommendedLevel": null,
+      "name": "Pact Base Camp",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 26,
+      "wikiText": "The Pact Base Camp is the starting area for the Pact's campaign against Mordremoth in Dragon's Stand.",
+      "waypointChatLink": "[&BBAIAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2170",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2170",
+      "coord": [
+        36811,
+        36525
+      ],
+      "recommendedLevel": null,
+      "name": "Pact Base Camp Southern Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHoIAAA=]",
+      "waypointChatLink": "[&BHoIAAA=]",
+      "trailIndex": 74,
+      "wikiText": "The Pact Base Camp is the starting area for the Pact's campaign against Mordremoth in Dragon's Stand."
+    },
+    {
+      "stepId": "1041:poi:2193",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2193",
+      "coord": [
+        36919,
+        36658
+      ],
+      "recommendedLevel": null,
+      "name": "First Southern Checkpoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 103,
+      "wikiText": "The First Southern Checkpoint is a Pact camp located in the Prismatic Postpile.",
+      "waypointChatLink": "[&BHoIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2147",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2147",
+      "coord": [
+        36563,
+        36431
+      ],
+      "recommendedLevel": null,
+      "name": "First Central Checkpoint",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 166,
+      "wikiText": "The First Central Checkpoint is a Pact camp located in the Toadstool Mire.",
+      "waypointChatLink": "[&BBAIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2110",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2110",
+      "coord": [
+        36388,
+        36272
+      ],
+      "recommendedLevel": null,
+      "name": "First Northern Checkpoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 227,
+      "wikiText": "The First Northern Checkpoint is a Pact camp located in the Vigilant Precipice.",
+      "waypointChatLink": "[&BBAIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2210",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2210",
+      "coord": [
+        35799,
+        36516
+      ],
+      "recommendedLevel": null,
+      "name": "Second Northern Checkpoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 315,
+      "wikiText": "The Second Northern Checkpoint is a Pact camp located in the Broken Altar.",
+      "waypointChatLink": "[&BFIIAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2130",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2130",
+      "coord": [
+        35730,
+        36556
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Forward Camp Waypoint",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFIIAAA=]",
+      "waypointChatLink": "[&BFIIAAA=]",
+      "trailIndex": 326,
+      "wikiText": "The Broken Altar is an area of Dragon's Stand inhabitated by Mordrem saurians and hylek, with a fungi cave to the north. An old Exalted watchpost is located here, but it has been destroyed by giant vines."
+    },
+    {
+      "stepId": "1041:waypoint:2304",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2304",
+      "coord": [
+        35532,
+        36790
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Advance Camp Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAAJAAA=]",
+      "waypointChatLink": "[&BAAJAAA=]",
+      "trailIndex": 387,
+      "wikiText": "The Northern Barbed Gate is one of the three entry points into the Dragon's Domain."
+    },
+    {
+      "stepId": "1041:poi:2233",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2233",
+      "coord": [
+        35506,
+        36862
+      ],
+      "recommendedLevel": null,
+      "name": "Third Northern Checkpoint",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 396,
+      "wikiText": "The Third Northern Checkpoint is a Pact camp located in the Northern Barbed Gate.",
+      "waypointChatLink": "[&BAAJAAA=]"
+    },
+    {
+      "stepId": "1041:vista:2251",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "vista",
+      "objectiveId": "2251",
+      "coord": [
+        35230,
+        36727
+      ],
+      "recommendedLevel": null,
+      "name": "Rooted Copse",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 457,
+      "wikiText": "...",
+      "waypointChatLink": "[&BAAJAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2241",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2241",
+      "coord": [
+        35033,
+        36820
+      ],
+      "recommendedLevel": null,
+      "name": "The Inverse Pit",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 492,
+      "wikiText": "The Inverse Pit is a point of interest located in the Rooted Copse. Vines used this hole in the ceiling to creep into the ruins.",
+      "waypointChatLink": "[&BAAJAAA=]"
+    },
+    {
+      "stepId": "1041:hero:1-35",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "hero",
+      "objectiveId": "1-35",
+      "coord": [
+        35297,
+        36722
+      ],
+      "recommendedLevel": null,
+      "name": "Exalted Pylon",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 542,
+      "wikiText": "Near the north lane in Dragon's Stand is an abandoned set of Exalted ruins that has been overtaken by the jungle. A pylon still stands among the ruins, however, full of power.",
+      "waypointChatLink": "[&BAAJAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2124",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2124",
+      "coord": [
+        36093,
+        37160
+      ],
+      "recommendedLevel": null,
+      "name": "Wyvern Nest",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 722,
+      "wikiText": "A Wyvern Nest can be found atop a tall tree located in the Wyvern Scar. It is the only location to get the Ranger pet the Juvenile Electric Wyvern.",
+      "waypointChatLink": "[&BFMIAAA=]"
+    },
+    {
+      "stepId": "1041:vista:2165",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "vista",
+      "objectiveId": "2165",
+      "coord": [
+        36063,
+        36929
+      ],
+      "recommendedLevel": null,
+      "name": "Wyvern Scar Vista<sup>2</sup>",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 733,
+      "wikiText": "Use the Bouncing Mushrooms near the waypoint to reach the vista.",
+      "waypointChatLink": "[&BC4IAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2094",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2094",
+      "coord": [
+        36205,
+        36974
+      ],
+      "recommendedLevel": null,
+      "name": "Central Forward Camp Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BC4IAAA=]",
+      "waypointChatLink": "[&BC4IAAA=]",
+      "trailIndex": 751,
+      "wikiText": "Wyvern Scar is an area of Dragon's Stand."
+    },
+    {
+      "stepId": "1041:poi:2274",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2274",
+      "coord": [
+        36283,
+        36962
+      ],
+      "recommendedLevel": null,
+      "name": "Second Central Checkpoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 760,
+      "wikiText": "The Second Central Checkpoint is a Pact camp located in the Wyvern Scar.",
+      "waypointChatLink": "[&BC4IAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2290",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2290",
+      "coord": [
+        36384,
+        36805
+      ],
+      "recommendedLevel": null,
+      "name": "Blighted Bog",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 780,
+      "wikiText": "The Blighted Bog is a grove infested with Mordrem.",
+      "waypointChatLink": "[&BC4IAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2104",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2104",
+      "coord": [
+        36707,
+        36829
+      ],
+      "recommendedLevel": null,
+      "name": "Ruined Glory",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 910,
+      "wikiText": "Ruined Glory is a small grove sitting upon a set of cliffs located within the Prismatic Postpile.",
+      "waypointChatLink": "[&BHoIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2169",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2169",
+      "coord": [
+        37059,
+        37014
+      ],
+      "recommendedLevel": null,
+      "name": "Rata Novan Remnants",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 972,
+      "wikiText": "The Rata Novan Remnants are the ruins of an ancient asuran city located in the Exhumed Delve.",
+      "waypointChatLink": "[&BE8IAAA=]"
+    },
+    {
+      "stepId": "1041:hero:1-34",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "hero",
+      "objectiveId": "1-34",
+      "coord": [
+        36539,
+        37126
+      ],
+      "recommendedLevel": null,
+      "name": "Spider Nest",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1084,
+      "wikiText": "Spider Nests are web balls containing the eggs of Spiders. Destroying them may release spiders and spider hatchlings.",
+      "waypointChatLink": "[&BC4IAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2127",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2127",
+      "coord": [
+        36987,
+        37143
+      ],
+      "recommendedLevel": null,
+      "name": "Southern Forward Camp Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE8IAAA=]",
+      "waypointChatLink": "[&BE8IAAA=]",
+      "trailIndex": 1132,
+      "wikiText": "The Exhumed Delve is an area of Dragon's Stand, containing part of the ancient Rata Novan ruins and several checkpoints for Pact camps."
+    },
+    {
+      "stepId": "1041:poi:2177",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2177",
+      "coord": [
+        36946,
+        37200
+      ],
+      "recommendedLevel": null,
+      "name": "Second Southern Checkpoint",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1142,
+      "wikiText": "The Second Southern Checkpoint is a Pact camp located in the Exhumed Delve.",
+      "waypointChatLink": "[&BE8IAAA=]"
+    },
+    {
+      "stepId": "1041:vista:2092",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "vista",
+      "objectiveId": "2092",
+      "coord": [
+        36790,
+        37351
+      ],
+      "recommendedLevel": null,
+      "name": "Exhumed Delve",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1203,
+      "wikiText": "From the waypoint, head north towards the Second Southern Checkpoint. It will be on small offshoot area to your left.",
+      "waypointChatLink": "[&BGUIAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2149",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2149",
+      "coord": [
+        36654,
+        37491
+      ],
+      "recommendedLevel": null,
+      "name": "Southern Advance Camp Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGUIAAA=]",
+      "waypointChatLink": "[&BGUIAAA=]",
+      "trailIndex": 1235,
+      "wikiText": "The Exhumed Delve is an area of Dragon's Stand, containing part of the ancient Rata Novan ruins and several checkpoints for Pact camps."
+    },
+    {
+      "stepId": "1041:poi:2289",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2289",
+      "coord": [
+        36693,
+        37538
+      ],
+      "recommendedLevel": null,
+      "name": "Third Southern Checkpoint",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1245,
+      "wikiText": "The Third Southern Checkpoint is a Pact camp located in the Exhumed Delve.",
+      "waypointChatLink": "[&BGUIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2224",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2224",
+      "coord": [
+        36840,
+        37761
+      ],
+      "recommendedLevel": null,
+      "name": "Chak Den",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1291,
+      "wikiText": "The Chak Den is a large poisonous pit located inside of the Chak Nest within Dragon's Stand.",
+      "waypointChatLink": "[&BGUIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2119",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2119",
+      "coord": [
+        36563,
+        37621
+      ],
+      "recommendedLevel": null,
+      "name": "Ley Line Boneyard",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1371,
+      "wikiText": "The Ley Line Boneyard is a point of interest located in the Southern Barbed Gate.",
+      "waypointChatLink": "[&BGUIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2125",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2125",
+      "coord": [
+        36478,
+        37721
+      ],
+      "recommendedLevel": null,
+      "name": "Ley Line Overlook",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1421,
+      "wikiText": "The Ley Line Overlook is a point of interest located in the Southern Barbed Gate.",
+      "waypointChatLink": "[&BGUIAAA=]"
+    },
+    {
+      "stepId": "1041:vista:2206",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "vista",
+      "objectiveId": "2206",
+      "coord": [
+        36402,
+        37842
+      ],
+      "recommendedLevel": null,
+      "name": "Southern Barbed Gate",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1459,
+      "wikiText": "...",
+      "waypointChatLink": "[&BGUIAAA=]"
+    },
+    {
+      "stepId": "1041:hero:1-38",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "hero",
+      "objectiveId": "1-38",
+      "coord": [
+        36077,
+        38100
+      ],
+      "recommendedLevel": null,
+      "name": "Axemaster Hareth's Pod",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1575,
+      "wikiText": "Axemaster Hareth's Pod is the Blighting Tree pod that creates new bodies for Legendary Axemaster Hareth to be reborn in.",
+      "waypointChatLink": "[&BFcIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2200",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2200",
+      "coord": [
+        36071,
+        38096
+      ],
+      "recommendedLevel": null,
+      "name": "Southern Blighting Tower",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1578,
+      "wikiText": "The Southern Blighting Tower is one of three towers blocking the entry to the Dragon's Domain.",
+      "waypointChatLink": "[&BFcIAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2135",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2135",
+      "coord": [
+        35649,
+        38077
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon's Domain Southern Waypoint",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFcIAAA=]",
+      "waypointChatLink": "[&BFcIAAA=]",
+      "trailIndex": 1642,
+      "wikiText": "The Southern Blighting Tower is one of three towers blocking the entry to the Dragon's Domain."
+    },
+    {
+      "stepId": "1041:poi:2181",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2181",
+      "coord": [
+        35736,
+        37803
+      ],
+      "recommendedLevel": null,
+      "name": "Central Blighting Tower",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1780,
+      "wikiText": "The Central Blighting Tower is one of three towers blocking the entry to the Dragon's Domain.",
+      "waypointChatLink": "[&BFcIAAA=]"
+    },
+    {
+      "stepId": "1041:hero:1-37",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "hero",
+      "objectiveId": "1-37",
+      "coord": [
+        35735,
+        37812
+      ],
+      "recommendedLevel": null,
+      "name": "Blademaster Diarmid's Pod",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1780,
+      "wikiText": "Blademaster Diarmid's Pod is the Blighting Tree pod that creates new bodies for Legendary Blademaster Diarmid to be reborn in.",
+      "waypointChatLink": "[&BFcIAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2199",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2199",
+      "coord": [
+        35436,
+        37715
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon's Domain Central Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJcIAAA=]",
+      "waypointChatLink": "[&BJcIAAA=]",
+      "trailIndex": 1848,
+      "wikiText": "The Central Blighting Tower is one of three towers blocking the entry to the Dragon's Domain."
+    },
+    {
+      "stepId": "1041:poi:2142",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2142",
+      "coord": [
+        34376,
+        38198
+      ],
+      "recommendedLevel": null,
+      "name": "Mordremoth's Vantage",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1909,
+      "wikiText": "Mordremoth's Vantage is the resting place of the Mouth of Mordremoth after its defeat at the hands of the Pact.",
+      "waypointChatLink": "[&BK4IAAA=]"
+    },
+    {
+      "stepId": "1041:hero:1-39",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "hero",
+      "objectiveId": "1-39",
+      "coord": [
+        34154,
+        37852
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon Overlook",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1943,
+      "wikiText": "Dragon Overlook is the Hero Challenge located near Serenity's Cove in Dragon's Stand.",
+      "waypointChatLink": "[&BK4IAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2175",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2175",
+      "coord": [
+        34185,
+        37842
+      ],
+      "recommendedLevel": null,
+      "name": "Serenity's Cove",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1949,
+      "wikiText": "Serenity's Cove is a peak to the north of Dragon's Domain. It overlooks the resting place of the Mouth of Mordremoth after his defeat at the hands of the Pact.",
+      "waypointChatLink": "[&BK4IAAA=]"
+    },
+    {
+      "stepId": "1041:vista:2188",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "vista",
+      "objectiveId": "2188",
+      "coord": [
+        34244,
+        38137
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon's Domain Vista<sup>1</sup>",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1969,
+      "wikiText": "Glide left from Mordremoth's Vantage to the vista.",
+      "waypointChatLink": "[&BK4IAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2222",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2222",
+      "coord": [
+        34756,
+        37367
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon's Domain Northern Waypoint",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK4IAAA=]",
+      "waypointChatLink": "[&BK4IAAA=]",
+      "trailIndex": 2040,
+      "wikiText": "The Northern Blighting Tower is one of three towers blocking the entry to the Dragon's Domain."
+    },
+    {
+      "stepId": "1041:poi:2176",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2176",
+      "coord": [
+        35009,
+        37225
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Blighting Tower",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2087,
+      "wikiText": "The Northern Blighting Tower is one of three towers blocking the entry to the Dragon's Domain.",
+      "waypointChatLink": "[&BK4IAAA=]"
+    },
+    {
+      "stepId": "1041:hero:1-36",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "hero",
+      "objectiveId": "1-36",
+      "coord": [
+        35003,
+        37222
+      ],
+      "recommendedLevel": null,
+      "name": "Stavemaster Adryn's Pod",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2087,
+      "wikiText": "Stavemaster Adryn's Pod is the Blighting Tree pod that creates new bodies for Legendary Stavemaster Adryn to be reborn in.",
+      "waypointChatLink": "[&BK4IAAA=]"
+    },
+    {
+      "stepId": "1041:vista:2161",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "vista",
+      "objectiveId": "2161",
+      "coord": [
+        35365,
+        37135
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Barbed Gate",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2170,
+      "wikiText": "Walk up to it.",
+      "waypointChatLink": "[&BAAJAAA=]"
+    },
+    {
+      "stepId": "1041:vista:2179",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "vista",
+      "objectiveId": "2179",
+      "coord": [
+        35863,
+        37440
+      ],
+      "recommendedLevel": null,
+      "name": "Central Barbed Gate",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2280,
+      "wikiText": "Walk up to it.",
+      "waypointChatLink": "[&BFMIAAA=]"
+    },
+    {
+      "stepId": "1041:poi:2143",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2143",
+      "coord": [
+        36070,
+        37336
+      ],
+      "recommendedLevel": null,
+      "name": "Third Central Checkpoint",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2313,
+      "wikiText": "The Third Central Checkpoint is a Pact camp located in the Central Barbed Gate.",
+      "waypointChatLink": "[&BFMIAAA=]"
+    },
+    {
+      "stepId": "1041:waypoint:2131",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "waypoint",
+      "objectiveId": "2131",
+      "coord": [
+        36118,
+        37357
+      ],
+      "recommendedLevel": null,
+      "name": "Central Advance Camp Waypoint",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFMIAAA=]",
+      "waypointChatLink": "[&BFMIAAA=]",
+      "trailIndex": 2321,
+      "wikiText": "The Central Barbed Gate is one of the three ways used to access Mordremoth's domain."
+    },
+    {
+      "stepId": "1041:poi:2172",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "poi",
+      "objectiveId": "2172",
+      "coord": [
+        36073,
+        37427
+      ],
+      "recommendedLevel": null,
+      "name": "Mordrem Vineyard",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2359,
+      "wikiText": "The Mordrem Vineyard is an underground fungi-filled cave located below the Third Central Checkpoint.",
+      "waypointChatLink": "[&BFMIAAA=]"
+    },
+    {
+      "stepId": "1041:hero:1-33",
+      "mapId": 1041,
+      "zoneName": "Dragon's Stand",
+      "type": "hero",
+      "objectiveId": "1-33",
+      "coord": [
+        35986,
+        37399
+      ],
+      "recommendedLevel": null,
+      "name": "Mushroom Grotto",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2372,
+      "wikiText": "In a cave beneath the Central Advance Camp, aggressive mushrooms line the rocky interior and attack any trespassers.",
+      "waypointChatLink": "[&BFMIAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

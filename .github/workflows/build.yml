@@ -1,0 +1,63 @@
+name: build
+
+# Builds TyrianCodex.dll from public source on GitHub's runners (so released binaries are provably built from the
+# committed code -- no "you modified it locally" doubt), and on a version tag publishes the GitHub Release the addon
+# self-downloads its data from. Nexus' updater ships ONLY the DLL, so the ~600 MB data/ is fetched at runtime from
+# the release tagged v<TC_DATA_VERSION>: tc-core.tcpk (blocking core data) + the *.pack image packs (background).
+# See src/app/DataBootstrap.cpp. The .pack files are committed through Git LFS, so the runner packages them straight
+# from data/ after an LFS-enabled checkout.
+on:
+  push:
+    branches: [ main ]
+    tags:     [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # FetchContent pulls Nexus headers, ImGui v1.80, nlohmann/json + litehtml on configure (the runner has network).
+      - name: Configure (CMake)
+        run: cmake -S . -B build -A x64
+
+      - name: Build (Release)
+        run: cmake --build build --config Release
+
+      - name: Upload DLL artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TyrianCodex-dll
+          path: build/Release/TyrianCodex.dll
+
+      # On a pushed version tag, assemble the data assets the addon self-downloads. build_release.py packages the
+      # COMMITTED data/ into tc-core.tcpk + collects the .pack files (no builder/ needed). IMPORTANT: tag each
+      # data-bearing release v<TC_DATA_VERSION> (from src/Version.h) -- that IS the URL the DLL downloads from.
+      # A DLL-only patch that doesn't touch data can reuse the existing data release (leave TC_DATA_VERSION alone).
+      - name: Package data assets (on tag)
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          git lfs fsck
+          python build_release.py release
+
+      # Nexus' GitHub auto-updater pulls the DLL asset (by the AddonDef version); the DLL then fetches tc-core.tcpk
+      # + the packs from this same release (tagged v<TC_DATA_VERSION>).
+      - name: Release (on tag)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/Release/TyrianCodex.dll
+            release/tc-core.tcpk
+            release/*.pack

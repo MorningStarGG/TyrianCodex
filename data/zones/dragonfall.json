@@ -1,0 +1,751 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1317,
+    "name": "Dragonfall",
+    "continentId": 1,
+    "regionId": 12,
+    "regionName": "Crystal Desert",
+    "floor": 49,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -39936,
+        -33792
+      ],
+      [
+        43008,
+        33792
+      ]
+    ],
+    "continentRect": [
+      [
+        43968,
+        48384
+      ],
+      [
+        47424,
+        51200
+      ]
+    ],
+    "sectorRect": [
+      [
+        43986,
+        48380.3
+      ],
+      [
+        47385.7,
+        51154.9
+      ]
+    ],
+    "labelCoord": [
+      45638,
+      49589
+    ],
+    "release": "lws4"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1317:waypoint:3038",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "waypoint",
+      "objectiveId": "3038",
+      "coord": [
+        46814,
+        48720
+      ],
+      "recommendedLevel": null,
+      "name": "Pact Command Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BN4LAAA=]",
+      "waypointChatLink": "[&BN4LAAA=]",
+      "trailIndex": 0,
+      "wikiText": "The Pact Command is an area in the northeast of Dragonfall. It is the main staging area for the Pact, Olmakhan, Mist Wardens and Order of the Crystal Bloom forces."
+    },
+    {
+      "stepId": "1317:poi:3044",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3044",
+      "coord": [
+        46880,
+        48566
+      ],
+      "recommendedLevel": null,
+      "name": "Airdrome Port",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 15,
+      "wikiText": "The Airdrome Port is where airships can dock at Pact Command in Dragonfall.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3033",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3033",
+      "coord": [
+        46783,
+        48753
+      ],
+      "recommendedLevel": null,
+      "name": "Pact Outpost",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 30,
+      "wikiText": "Pact Outpost is a point of interest within Pact Command, hosting the Pact and other allied forces.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3048",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3048",
+      "coord": [
+        46808,
+        49014
+      ],
+      "recommendedLevel": null,
+      "name": "Verdant Gate",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 57,
+      "wikiText": "The Verdant Gate is a gate at Pact Command that leads to the Melandru's Lost Domain via a bridge that leads into The Skein.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3029",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3029",
+      "coord": [
+        46758,
+        48818
+      ],
+      "recommendedLevel": null,
+      "name": "Pact Command",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 86,
+      "wikiText": "Use the springer to jump on iron gate right of the vista and then to the rocks rights of the vista. Jump over to the left and jump again with the springer to reach the vista.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3027",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3027",
+      "coord": [
+        46560,
+        48916
+      ],
+      "recommendedLevel": null,
+      "name": "Charnel Gate",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 103,
+      "wikiText": "The Charnel Gate is a gate at Pact Command that leads to the Olmakhan Camp in the southwest of Dragonfall.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3050",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3050",
+      "coord": [
+        46485,
+        48706
+      ],
+      "recommendedLevel": null,
+      "name": "Ember Gate",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 168,
+      "wikiText": "Ember Gate is an area within Dragonfall to the northwest.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3018",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3018",
+      "coord": [
+        46040,
+        48694
+      ],
+      "recommendedLevel": null,
+      "name": "Crystal Cudgel",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 196,
+      "wikiText": "The Crystal Cudgel is Kralkatorrik's tail. It occasionally moves, slamming the ground and sending out Branded lines of spikes when it lands. At the end of the meta when Kralkatorrik creates a carapace, the tail is also covered in crystal.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3049",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3049",
+      "coord": [
+        45725,
+        48972
+      ],
+      "recommendedLevel": null,
+      "name": "Umbral Battlegrounds",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 282,
+      "wikiText": "Walk from the waypoint to the bottom of the cliff. Use the springer and jump on the statue to reach the vista.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3041",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3041",
+      "coord": [
+        45546,
+        48869
+      ],
+      "recommendedLevel": null,
+      "name": "Trail of Cinder",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 300,
+      "wikiText": "The Trail of Cinder is the easiest trail into the Burning Forest among the high cliff faces that face the Dragon's Causeway and Pact Command.",
+      "waypointChatLink": "[&BOYLAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3047",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3047",
+      "coord": [
+        44809,
+        48665
+      ],
+      "recommendedLevel": null,
+      "name": "Scorched Cliffs",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 420,
+      "wikiText": "On the top of the mesa northeast of the Ashen Steppes POI.",
+      "waypointChatLink": "[&BOYLAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3036",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3036",
+      "coord": [
+        44690,
+        48847
+      ],
+      "recommendedLevel": null,
+      "name": "Ashen Steppes",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 453,
+      "wikiText": "The Ashen Steppes are a series of tall cliffs layered over one another, creating a small steppe structure in the Burning Forest.",
+      "waypointChatLink": "[&BOYLAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3034",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3034",
+      "coord": [
+        44422,
+        48965
+      ],
+      "recommendedLevel": null,
+      "name": "Crystal Bloom Outpost",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 507,
+      "wikiText": "Crystal Bloom Outpost is a point of interest within Crystal Bloom Camp.",
+      "waypointChatLink": "[&BOYLAAA=]"
+    },
+    {
+      "stepId": "1317:waypoint:3046",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "waypoint",
+      "objectiveId": "3046",
+      "coord": [
+        44342,
+        48962
+      ],
+      "recommendedLevel": null,
+      "name": "Burning Forest Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOYLAAA=]",
+      "waypointChatLink": "[&BOYLAAA=]",
+      "trailIndex": 515,
+      "wikiText": "Crystal Bloom Camp is an area on Dragonfall and serves as the base of operations for the Order of the Crystal Bloom in the battle against the Elder Dragon Kralkatorrik."
+    },
+    {
+      "stepId": "1317:poi:3032",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3032",
+      "coord": [
+        44078,
+        49023
+      ],
+      "recommendedLevel": null,
+      "name": "Balthazar's Folly",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 552,
+      "wikiText": "Balthazar's Folly is a point of interest within Crystal Bloom Camp which marks a fallen statue of Balthazar on the edge of the Burning Forest landmass.",
+      "waypointChatLink": "[&BOYLAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3042",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3042",
+      "coord": [
+        44444,
+        49392
+      ],
+      "recommendedLevel": null,
+      "name": "Fire God's Precipice",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 661,
+      "wikiText": "The Fire God's Precipice is the edge of the Burning Forest landmass that faces the Underworld landmass at Ember Gate.",
+      "waypointChatLink": "[&BOYLAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3045",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3045",
+      "coord": [
+        44422,
+        49794
+      ],
+      "recommendedLevel": null,
+      "name": "Necrotic Coast",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 710,
+      "wikiText": "using a Skyscale or a Griffon fly Northwest from the waypoint towards Ember Gate. The viewpoint is on the mesa just south of the bridge to Ember Gate.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3037",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3037",
+      "coord": [
+        44436,
+        50185
+      ],
+      "recommendedLevel": null,
+      "name": "Wailing Basin",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 748,
+      "wikiText": "The Wailing Basin marks the location of several lower areas (basins) which emit ethereal blue smoke and an otherworldy wailing noise.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3028",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3028",
+      "coord": [
+        44896,
+        49966
+      ],
+      "recommendedLevel": null,
+      "name": "Chaos Gate",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 812,
+      "wikiText": "The Chaos Gate marks the southwest entrance to the cave that goes between the Olmakhan Camp and Pact Command. The ground near this area is Branded, possibly due to being beneath Kralkatorrik's wing.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3022",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3022",
+      "coord": [
+        45352,
+        50112
+      ],
+      "recommendedLevel": null,
+      "name": "Shackled Grasp",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 896,
+      "wikiText": "Shackled Grasp is a point of interest within Dragon's Snare. It marks a weak spot on Kralkatorrik near one of his claws. In the story step Bleed in War Eternal, this point is used to test a True Dragonsblood Spear on Kralkatorrik.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:waypoint:3025",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "waypoint",
+      "objectiveId": "3025",
+      "coord": [
+        44864,
+        50382
+      ],
+      "recommendedLevel": null,
+      "name": "The Underworld Waypoint",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNELAAA=]",
+      "waypointChatLink": "[&BNELAAA=]",
+      "trailIndex": 957,
+      "wikiText": "Olmakhan Camp is an area in the Underworld part of Dragonfall, hosting the Olmakhan forces."
+    },
+    {
+      "stepId": "1317:poi:3019",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3019",
+      "coord": [
+        44896,
+        50447
+      ],
+      "recommendedLevel": null,
+      "name": "Olmakhan Outpost",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 969,
+      "wikiText": "Olmakhan Outpost is a point of interest within Olmakhan Camp.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3039",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3039",
+      "coord": [
+        44860,
+        50817
+      ],
+      "recommendedLevel": null,
+      "name": "Grenth's Teeth",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1024,
+      "wikiText": "Walk from the waypoint to the vista. Go through the nearby tunnel and use the springer to get on the cliffs. Walk to the vista, while dodging the enemies and their attacks.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3035",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3035",
+      "coord": [
+        44318,
+        50896
+      ],
+      "recommendedLevel": null,
+      "name": "Loathsome Pulpit",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1088,
+      "wikiText": "The Loathsome Pulpit features a statue of Grenth surrounded by pillars, almost like a classroom.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3023",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3023",
+      "coord": [
+        45134,
+        50965
+      ],
+      "recommendedLevel": null,
+      "name": "Skyscale Eyrie",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1197,
+      "wikiText": "The Skyscale Eyrie is small cave, where you first meet Skyscales during the story. It's located south of The Underworld Waypoint - .",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3024",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3024",
+      "coord": [
+        45492,
+        50808
+      ],
+      "recommendedLevel": null,
+      "name": "Grenth's Respite",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1260,
+      "wikiText": "Grenth's Respite marks a large statue of Grenth near the bridge spanning the area between the Underworld and Melandru's Lost Domain.",
+      "waypointChatLink": "[&BNELAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3043",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3043",
+      "coord": [
+        46251,
+        50601
+      ],
+      "recommendedLevel": null,
+      "name": "Mosswood",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1355,
+      "wikiText": "Walk towards the vista from the waypoint, until you find a branch with a bouncing mushroom on top. Use the springer and the bouncing mushroom to gain height. Fall down carefully from the last plateau to the vista",
+      "waypointChatLink": "[&BNILAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3020",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3020",
+      "coord": [
+        46310,
+        49427
+      ],
+      "recommendedLevel": null,
+      "name": "Gnarlgrove",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1595,
+      "wikiText": "Walk from the waypoint northhwest towards the vista, until you find a stairway of cliffs. Use the springer to get up and jump further north until you see a big branch heading towards the vista plateau.",
+      "waypointChatLink": "[&BN4LAAA=]"
+    },
+    {
+      "stepId": "1317:vista:3030",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "vista",
+      "objectiveId": "3030",
+      "coord": [
+        46845,
+        50313
+      ],
+      "recommendedLevel": null,
+      "name": "Melandru's Chalice",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1779,
+      "wikiText": "Walk from the path north of the vista.",
+      "waypointChatLink": "[&BNILAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3040",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3040",
+      "coord": [
+        46972,
+        50212
+      ],
+      "recommendedLevel": null,
+      "name": "Verdance Falls",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1802,
+      "wikiText": "Verdance Falls is a point of interest in Melandru's Chalice. It is a large waterfall that feeds the chalice.",
+      "waypointChatLink": "[&BNILAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3021",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3021",
+      "coord": [
+        47038,
+        50437
+      ],
+      "recommendedLevel": null,
+      "name": "Tower of the Third",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1827,
+      "wikiText": "Tower of the Third is a point of interest, marking an ancient tree in the basin of Melandru's Chalice.",
+      "waypointChatLink": "[&BNILAAA=]"
+    },
+    {
+      "stepId": "1317:poi:3017",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "poi",
+      "objectiveId": "3017",
+      "coord": [
+        46626,
+        50752
+      ],
+      "recommendedLevel": null,
+      "name": "Mist Warden Outpost",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1938,
+      "wikiText": "Mist Warden Outpost is a point of interest within Mist Warden Camp, hosting the Mist Warden forces.",
+      "waypointChatLink": "[&BNILAAA=]"
+    },
+    {
+      "stepId": "1317:waypoint:3026",
+      "mapId": 1317,
+      "zoneName": "Dragonfall",
+      "type": "waypoint",
+      "objectiveId": "3026",
+      "coord": [
+        46579,
+        50769
+      ],
+      "recommendedLevel": null,
+      "name": "Melandru's Lost Domain Waypoint",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNILAAA=]",
+      "waypointChatLink": "[&BNILAAA=]",
+      "trailIndex": 1946,
+      "wikiText": "Mist Warden Camp is an area in the Melandru's Lost Domain part of Dragonfall, hosting the Mist Wardens forces."
+    }
+  ],
+  "hasTrail": true
+}

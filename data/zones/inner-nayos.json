@@ -1,0 +1,1285 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1526,
+    "name": "Inner Nayos",
+    "continentId": 1,
+    "regionId": 48,
+    "regionName": "Horn of Maguuma",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -43008,
+        -24576
+      ],
+      [
+        46080,
+        27648
+      ]
+    ],
+    "continentRect": [
+      [
+        19435,
+        21900
+      ],
+      [
+        23147,
+        24076
+      ]
+    ],
+    "sectorRect": [
+      [
+        19497.3,
+        22007.8
+      ],
+      [
+        23022.4,
+        24013.5
+      ]
+    ],
+    "labelCoord": [
+      21325,
+      22772
+    ],
+    "release": "soto"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": false,
+  "steps": [
+    {
+      "stepId": "1526:waypoint:3686",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "waypoint",
+      "objectiveId": "3686",
+      "coord": [
+        22367,
+        23761
+      ],
+      "recommendedLevel": null,
+      "name": "Astral Ward Camp Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGYOAAA=]",
+      "waypointChatLink": "[&BGYOAAA=]",
+      "trailIndex": 0,
+      "wikiText": "Memory's Hollow is an area within eastern Inner Nayos. The Astral Ward forward camp in Nayos is situated here."
+    },
+    {
+      "stepId": "1526:vista:3681",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "vista",
+      "objectiveId": "3681",
+      "coord": [
+        22470,
+        23787
+      ],
+      "recommendedLevel": null,
+      "name": "Memory's Hollow",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 6,
+      "wikiText": "Memory's Hollow is an area within eastern Inner Nayos. The Astral Ward forward camp in Nayos is situated here.",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3685",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3685",
+      "coord": [
+        22285,
+        23842
+      ],
+      "recommendedLevel": null,
+      "name": "Astral Ward Camp",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 19,
+      "wikiText": "The Astral Ward Camp is an Astral Ward staging ground nested in Memory's Hollow. Astral Ward survivors from initial Kryptis incursions in Tyria have gathered around here.",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3675",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3675",
+      "coord": [
+        22546,
+        23829
+      ],
+      "recommendedLevel": null,
+      "name": "Tree of Many Faces",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 108,
+      "wikiText": "The Tree of Many Faces is a tree engraved with stone faces in Memory's Hollow. The Inner Nayos Insight: Memory's Hollow is located on top of one of the stone faces.",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3684",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3684",
+      "coord": [
+        22498,
+        23665
+      ],
+      "recommendedLevel": null,
+      "name": "The Pillars of Mosyn",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 123,
+      "wikiText": "The Pillars of Mosyn is a gateway leading to the Astral Ward Camp in Memory's Hollow",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3672",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3672",
+      "coord": [
+        22267,
+        23580
+      ],
+      "recommendedLevel": null,
+      "name": "Mere of Everlasting Night",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 146,
+      "wikiText": "The Mere of Everlasting Night is a point of interest in Memory's Hollow, in Heitor's Territory.",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3683",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3683",
+      "coord": [
+        22781,
+        23370
+      ],
+      "recommendedLevel": null,
+      "name": "Hollow of the Covetous",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 209,
+      "wikiText": "The Hollow of the Covetous is a clearing occupied by Kryptis in Heitor's Dominion",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3682",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3682",
+      "coord": [
+        22870,
+        23181
+      ],
+      "recommendedLevel": null,
+      "name": "Sullen Cliffside",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 241,
+      "wikiText": "The Sullen Cliffside is a cliff in Heitor's Dominion. There is a stone face engraved into the cliff, similar to the one seen in Tree of Many Faces",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:vista:3679",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "vista",
+      "objectiveId": "3679",
+      "coord": [
+        22589,
+        23228
+      ],
+      "recommendedLevel": null,
+      "name": "Heitor's Dominion",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 273,
+      "wikiText": "Heitor's Dominion is an area within eastern Inner Nayos overseen by Heitor, one of Eparch's generals. At the center of Heiter's Dominion lies Heitor's Gate which leads into the rest of Inner Nayos.",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3693",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3693",
+      "coord": [
+        22551,
+        23235
+      ],
+      "recommendedLevel": null,
+      "name": "The Waters of Regret",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 281,
+      "wikiText": "The Waters of Regret is a large pond in Heitor's Dominion",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3676",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3676",
+      "coord": [
+        22492,
+        23128
+      ],
+      "recommendedLevel": null,
+      "name": "Heitor's Maw",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 295,
+      "wikiText": "The Heitor's Maw is a large gateway occupied by Kryptis in Heitor's Dominion",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3671",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3671",
+      "coord": [
+        22308,
+        23051
+      ],
+      "recommendedLevel": null,
+      "name": "Seething Embrace",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 325,
+      "wikiText": "The Seething Embrace is a cliffside occupied by Kryptis in Heitor's Dominion.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3689",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3689",
+      "coord": [
+        22338,
+        22836
+      ],
+      "recommendedLevel": null,
+      "name": "The Divide",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 405,
+      "wikiText": "The Divide is a large path occupied by in Heitor's Dominion",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3678",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3678",
+      "coord": [
+        22309,
+        22649
+      ],
+      "recommendedLevel": null,
+      "name": "Heitor's Gate",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 426,
+      "wikiText": "Heitor's Gate is the thirteenth chapter of the Secrets of the Obscure story.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3690",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3690",
+      "coord": [
+        22737,
+        22804
+      ],
+      "recommendedLevel": null,
+      "name": "The Southern Extractor",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 462,
+      "wikiText": "The Southern Extractor is one of two extractors in The Bleeding Wastes",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3674",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3674",
+      "coord": [
+        22804,
+        22460
+      ],
+      "recommendedLevel": null,
+      "name": "The Rot",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 503,
+      "wikiText": "The Rot is a point of interest in The Bleeding Wastes Located east of the WP into a cavernous area",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3691",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3691",
+      "coord": [
+        22562,
+        22365
+      ],
+      "recommendedLevel": null,
+      "name": "The Northern Extractor",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 551,
+      "wikiText": "The Northern Extractor is one of two extractors in The Bleeding Wastes",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:vista:3680",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "vista",
+      "objectiveId": "3680",
+      "coord": [
+        22490,
+        22314
+      ],
+      "recommendedLevel": null,
+      "name": "The Bleeding Wastes",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 567,
+      "wikiText": "The Bleeding Wastes is an cragged area dotted with sharp peaks and blood vessels within eastern Inner Nayos.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3688",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3688",
+      "coord": [
+        22340,
+        22179
+      ],
+      "recommendedLevel": null,
+      "name": "The Ascending Dream",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 591,
+      "wikiText": "The Ascending Dream is a staircase in Mourning's Shade leading into the rest of the region.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3692",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3692",
+      "coord": [
+        22191,
+        22329
+      ],
+      "recommendedLevel": null,
+      "name": "Sky King's Aerie",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 613,
+      "wikiText": "The Sky King's Aerie is a plateau nestled with Tufted Skywing in Mourning's Shade",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3694",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3694",
+      "coord": [
+        22083,
+        22283
+      ],
+      "recommendedLevel": null,
+      "name": "The Pool of Whispers",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 627,
+      "wikiText": "The Pool of Whispers is a point of interest in Mourning's Shade. It is a small pool fed by waterfalls. There is a set of Diving Goggles to the west and far above in the tree branches, which provide an achievement and a mastery point.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3673",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3673",
+      "coord": [
+        21831,
+        22223
+      ],
+      "recommendedLevel": null,
+      "name": "Tree of Mourning",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 668,
+      "wikiText": "The Tree of Mourning is the namesake of Mourning's Shade, it is a towering tree overshadowing the rest of the region.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3677",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3677",
+      "coord": [
+        22032,
+        22649
+      ],
+      "recommendedLevel": null,
+      "name": "The Wailing Chasm",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 700,
+      "wikiText": "The The Wailing Chasm is a point of interest in Heitor's Dominion. It can be accessed either through finishing The Road to Heitor meta or gliding into the crevice.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3719",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3719",
+      "coord": [
+        21831,
+        22704
+      ],
+      "recommendedLevel": null,
+      "name": "Pool of Lost Dreams",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 720,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:waypoint:3702",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "waypoint",
+      "objectiveId": "3702",
+      "coord": [
+        21734,
+        22801
+      ],
+      "recommendedLevel": null,
+      "name": "Forward Bivouac Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHYOAAA=]",
+      "waypointChatLink": "[&BHYOAAA=]",
+      "trailIndex": 727,
+      "wikiText": "The Commons is an area in Nyedra Surrounds, Inner Nayos."
+    },
+    {
+      "stepId": "1526:poi:3717",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3717",
+      "coord": [
+        21735,
+        22865
+      ],
+      "recommendedLevel": null,
+      "name": "Grove of the First Kryptis",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 741,
+      "wikiText": "The Grove of the First Kryptis is a point of interest within the Commons of Inner Nayos. The name suggests that the first Kryptis once lived, or possibly, were created here.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3712",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3712",
+      "coord": [
+        21736,
+        23062
+      ],
+      "recommendedLevel": null,
+      "name": "The Lamented Courtyard",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 761,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3708",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3708",
+      "coord": [
+        21682,
+        23298
+      ],
+      "recommendedLevel": null,
+      "name": "Path of the Ancients",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 828,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3695",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3695",
+      "coord": [
+        21460,
+        23123
+      ],
+      "recommendedLevel": null,
+      "name": "Bridge of Sighs",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 858,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3709",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3709",
+      "coord": [
+        21382,
+        23314
+      ],
+      "recommendedLevel": null,
+      "name": "Fortress of the Founding",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 861,
+      "wikiText": "The Fortress of the Founding is a point of interest in the Old Settlement, within Inner Nayos.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3721",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3721",
+      "coord": [
+        21160,
+        23519
+      ],
+      "recommendedLevel": null,
+      "name": "Secluded Pond",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 923,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3704",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3704",
+      "coord": [
+        21342,
+        23561
+      ],
+      "recommendedLevel": null,
+      "name": "River Hideaway",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 936,
+      "wikiText": "The River Hideaway is a small camp along the river in The Old Settlement, currently home to Researcher Lanni, some sentient Kryptis, and a Tufted Skywing.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3687",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3687",
+      "coord": [
+        21499,
+        23888
+      ],
+      "recommendedLevel": null,
+      "name": "Lost Altar",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 992,
+      "wikiText": "The Lost Altar is a point of interest in The Forgotten Path. It's closed off by a ward until the completion of Escort the recon team as they investigate unusual Kryptis activity.",
+      "waypointChatLink": "[&BGYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3701",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3701",
+      "coord": [
+        21052,
+        23704
+      ],
+      "recommendedLevel": null,
+      "name": "Isolated Grasslands",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1026,
+      "wikiText": "Isolated Grasslands is a point of interest within The Old Settlement.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3714",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3714",
+      "coord": [
+        21041,
+        23160
+      ],
+      "recommendedLevel": null,
+      "name": "The Gathering Grounds",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1076,
+      "wikiText": "The Gathering Grounds is an area where Eparch loyalists keep other Kryptis enslaved.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:vista:3706",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "vista",
+      "objectiveId": "3706",
+      "coord": [
+        20892,
+        23178
+      ],
+      "recommendedLevel": null,
+      "name": "Nyedra, Dreamer's Sanctum",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1089,
+      "wikiText": "Nyedra, Dreamer's Sanctum is an area in Nyedra Surrounds, Inner Nayos.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3705",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3705",
+      "coord": [
+        20914,
+        23092
+      ],
+      "recommendedLevel": null,
+      "name": "The Burrows",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1090,
+      "wikiText": "The Burrows is a point of interest in Nyedra, Dreamer's Sanctum. Many Kryptis villagers live there under constant fear of Midnight King Eparch's tyranny.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3722",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3722",
+      "coord": [
+        19912,
+        23209
+      ],
+      "recommendedLevel": null,
+      "name": "The Royal Hatchery",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "wikiText": "The Royal Hatchery is a point of interest within the Spire of Creation at the west edge of Inner Nayos. Part of the Citadel of Zakiros, it is where Charybda the Cunning nurses Nourys's abyssal watcher spawn.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3723",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3723",
+      "coord": [
+        19749,
+        23032
+      ],
+      "recommendedLevel": null,
+      "name": "Council of Houses",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "wikiText": "The Council of Houses is a point of interest within the Spire of Dreams in the Citadel of Zakiros. The heads of major Kryptis houses have historically met there for talks concerning the future of Nayos.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3724",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3724",
+      "coord": [
+        19971,
+        23141
+      ],
+      "recommendedLevel": null,
+      "name": "Balcony of Creation",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3725",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3725",
+      "coord": [
+        19821,
+        22988
+      ],
+      "recommendedLevel": null,
+      "name": "Reliquary of the Chosen",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "wikiText": "Reliquary of the Chosen is a point of interest within the Spire of Dreams.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3726",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3726",
+      "coord": [
+        19628,
+        22984
+      ],
+      "recommendedLevel": null,
+      "name": "The Midnight Throne",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "wikiText": "The Midnight Throne, also known as the Throne of Midnight, is a point of interest within the Spire of Creation in the Citadel of Zakiros.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3727",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3727",
+      "coord": [
+        20184,
+        22982
+      ],
+      "recommendedLevel": null,
+      "name": "Stage of Dreamers",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "wikiText": "The Stage of Dreamers is a point of interest within the Midnight Abyss that surrounds the Citadel of Zakiros, at the west edge of Inner Nayos. It is a platform which the Kryptis loyalist Gatekeeper Vialgos watches for intruders from.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3728",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3728",
+      "coord": [
+        19980,
+        22751
+      ],
+      "recommendedLevel": null,
+      "name": "Balcony of Redemption",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3729",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3729",
+      "coord": [
+        20262,
+        22974
+      ],
+      "recommendedLevel": null,
+      "name": "The Dream Filter",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:vista:3730",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "vista",
+      "objectiveId": "3730",
+      "coord": [
+        20238,
+        22785
+      ],
+      "recommendedLevel": null,
+      "name": "The Midnight Abyss",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1107,
+      "wikiText": "The Midnight Abyss is a barren area surrounding the Citadel of Zakiros in western Inner Nayos. Only accessible during and after the Into the Spider's Lair meta event.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3731",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3731",
+      "coord": [
+        19925,
+        22680
+      ],
+      "recommendedLevel": null,
+      "name": "Chamber of Rehabilitation",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1107,
+      "wikiText": "This point of interest is only accessable during and after the Into the Spider's Lair event.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3716",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3716",
+      "coord": [
+        20715,
+        22996
+      ],
+      "recommendedLevel": null,
+      "name": "Coliseum of the Midnight King",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1112,
+      "wikiText": "Coliseum of the Midnight King is a point of interest within Nyedra, Dreamer's Sanctum.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3700",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3700",
+      "coord": [
+        20931,
+        22942
+      ],
+      "recommendedLevel": null,
+      "name": "The Queen's Procession",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1141,
+      "wikiText": "The Queen's Procession is a point of interest in Nyedra, Dreamer's Sanctum. It is named after Queen Labris who has made public appearances there with her personal guard.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3707",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3707",
+      "coord": [
+        21055,
+        22925
+      ],
+      "recommendedLevel": null,
+      "name": "Archway of the Fallen Heroes",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1157,
+      "wikiText": "Archway of the Fallen Heroes is a point of interest in Nyedra, Dreamer's Sanctum. It is where General Nephus and his followers have been exiled after their disagreement with Eparch's loyalists.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:vista:3718",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "vista",
+      "objectiveId": "3718",
+      "coord": [
+        21284,
+        22630
+      ],
+      "recommendedLevel": null,
+      "name": "Defiled Cradle (1)",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1201,
+      "wikiText": "Defiled Cradle is an area in northern Inner Nayos.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3699",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3699",
+      "coord": [
+        21469,
+        22737
+      ],
+      "recommendedLevel": null,
+      "name": "Mosyn's Repose",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1227,
+      "wikiText": "Mosyn's Repose is a point of interest in The Commons",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3715",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3715",
+      "coord": [
+        21448,
+        22479
+      ],
+      "recommendedLevel": null,
+      "name": "Well of Anguish",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1264,
+      "wikiText": "The Well of Anguish is a point of interest in the Commons of Inner Nayos. It is a small Kryptis village that is short on supplies thanks to Eparch's loyalists, inhabited by Nyroth and Vethrax.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3713",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3713",
+      "coord": [
+        21373,
+        22292
+      ],
+      "recommendedLevel": null,
+      "name": "Eventide's March",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1293,
+      "wikiText": "Eventide's March is the sixteenth chapter of the Secrets of the Obscure story.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:vista:3697",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "vista",
+      "objectiveId": "3697",
+      "coord": [
+        21322,
+        22222
+      ],
+      "recommendedLevel": null,
+      "name": "Defiled Cradle (2)",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1299,
+      "wikiText": "Defiled Cradle is an area in northern Inner Nayos.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3711",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3711",
+      "coord": [
+        20976,
+        22292
+      ],
+      "recommendedLevel": null,
+      "name": "Secondary Extractors",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1337,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3703",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3703",
+      "coord": [
+        21105,
+        22436
+      ],
+      "recommendedLevel": null,
+      "name": "The Blighted Pillar",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1345,
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3698",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3698",
+      "coord": [
+        21099,
+        22655
+      ],
+      "recommendedLevel": null,
+      "name": "Waters of the First Dream",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1357,
+      "wikiText": "The Waters of the First Dream are a point of interest within the Defiled Cradle, in Inner Nayos. They are a pool of purple liquid containing schools of dream and Nayosian fish. Numerous friendly Kryptis can be found nearby.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    },
+    {
+      "stepId": "1526:poi:3696",
+      "mapId": 1526,
+      "zoneName": "Inner Nayos",
+      "type": "poi",
+      "objectiveId": "3696",
+      "coord": [
+        20762,
+        22591
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of Charybda",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1399,
+      "wikiText": "The Temple of Charybda is named after Charybda the Cunning, although only the Apprentice Scyllan can be found within it during the corresponding events.",
+      "waypointChatLink": "[&BHYOAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

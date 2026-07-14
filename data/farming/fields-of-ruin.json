@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "mapId": 21,
+  "slug": "fields-of-ruin",
+  "name": "Fields of Ruin",
+  "regionName": "Ascalon",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Gold Ore",
+      "category": "ore",
+      "material": "gold",
+      "source": "tw"
+    },
+    {
+      "name": "Iron Ore",
+      "category": "ore",
+      "material": "iron",
+      "source": "tw"
+    },
+    {
+      "name": "Silver Ore",
+      "category": "ore",
+      "material": "silver",
+      "source": "tw"
+    },
+    {
+      "name": "Grapes",
+      "category": "plant",
+      "material": "grapes",
+      "source": "tw"
+    },
+    {
+      "name": "Soft Wood Log",
+      "category": "wood",
+      "material": "soft_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 879.6,
+      "y": 17.9,
+      "z": 271.1,
+      "material": "gold",
+      "category": "ore",
+      "icon": "gold"
+    },
+    {
+      "x": 881.3,
+      "y": 16.8,
+      "z": 270.5,
+      "material": "gold",
+      "category": "ore",
+      "icon": "gold"
+    },
+    {
+      "x": -759.7,
+      "y": 44.1,
+      "z": 265.8,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": -758.8,
+      "y": 43.4,
+      "z": 263.2,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": 544.8,
+      "y": 6.2,
+      "z": 819.8,
+      "material": "silver",
+      "category": "ore",
+      "icon": "silver"
+    },
+    {
+      "x": 536.7,
+      "y": 33.9,
+      "z": -814.1,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 545.6,
+      "y": 33.6,
+      "z": -822.2,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 558.2,
+      "y": 34.1,
+      "z": -835.4,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 555.6,
+      "y": 36.5,
+      "z": -852.2,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 549.2,
+      "y": 35.5,
+      "z": -840.5,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 535.2,
+      "y": 37.3,
+      "z": -850.9,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 533.1,
+      "y": 36.5,
+      "z": -842.2,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 539.1,
+      "y": 35.6,
+      "z": -833.9,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": 537.4,
+      "y": 34.1,
+      "z": -820.5,
+      "material": "grapes",
+      "category": "plant",
+      "icon": "grapes"
+    },
+    {
+      "x": -260.9,
+      "y": 10.2,
+      "z": 533.0,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": 1.7,
+      "y": 1.8,
+      "z": 101.9,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -160.3,
+      "y": 18.5,
+      "z": -72.6,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": 173.8,
+      "y": 7.7,
+      "z": 190.7,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -267.6,
+      "y": 10.4,
+      "z": 518.6,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -252.7,
+      "y": 7.3,
+      "z": 416.2,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -98.5,
+      "y": 9.0,
+      "z": 535.5,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": 134.7,
+      "y": 14.9,
+      "z": 197.2,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": 6.3,
+      "y": 8.9,
+      "z": 556.4,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -78.9,
+      "y": 6.9,
+      "z": 516.6,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": 201.7,
+      "y": 43.6,
+      "z": 258.5,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -19.0,
+      "y": 6.2,
+      "z": 527.4,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -184.6,
+      "y": 9.4,
+      "z": 430.1,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": -163.9,
+      "y": 8.4,
+      "z": 170.7,
+      "material": "kale",
+      "category": "plant",
+      "icon": "kale"
+    },
+    {
+      "x": 58.9,
+      "y": 22.9,
+      "z": -732.6,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 77.0,
+      "y": 13.7,
+      "z": -656.6,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 104.1,
+      "y": 10.3,
+      "z": -639.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 191.5,
+      "y": 34.4,
+      "z": -786.4,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 397.3,
+      "y": 29.1,
+      "z": -623.8,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 432.9,
+      "y": 32.7,
+      "z": -627.0,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 522.9,
+      "y": 30.9,
+      "z": -560.8,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 557.0,
+      "y": 39.5,
+      "z": -553.4,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 476.6,
+      "y": 26.4,
+      "z": -394.8,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 51.3,
+      "y": 19.0,
+      "z": -573.6,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 126.5,
+      "y": 32.7,
+      "z": -596.3,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 34.6,
+      "y": 14.7,
+      "z": -677.8,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -91.4,
+      "y": 15.5,
+      "z": -266.6,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -75.9,
+      "y": 15.1,
+      "z": -140.0,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 531.7,
+      "y": 31.9,
+      "z": -586.3,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 498.2,
+      "y": 27.5,
+      "z": -662.3,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 436.7,
+      "y": 31.1,
+      "z": -653.6,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 24.6,
+      "y": 20.5,
+      "z": -607.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 103.9,
+      "y": 12.3,
+      "z": -603.9,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 103.2,
+      "y": 12.7,
+      "z": -588.8,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 531.0,
+      "y": 1.8,
+      "z": 728.7,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 599.7,
+      "y": 47.3,
+      "z": 778.8,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 9.4,
+      "y": 13.9,
+      "z": -663.9,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 48.5,
+      "y": 20.0,
+      "z": -601.9,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 34.6,
+      "y": 18.5,
+      "z": -573.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 412.5,
+      "y": 29.0,
+      "z": -523.9,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 502.3,
+      "y": 25.9,
+      "z": -597.4,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 509.0,
+      "y": 27.7,
+      "z": -628.4,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 505.7,
+      "y": 29.3,
+      "z": -724.7,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 467.3,
+      "y": 7.1,
+      "z": 744.5,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 573.8,
+      "y": 2.0,
+      "z": 781.7,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 331.5,
+      "y": 12.4,
+      "z": 604.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 68.7,
+      "y": 16.3,
+      "z": -671.4,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 64.4,
+      "y": 14.9,
+      "z": -636.3,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 29.0,
+      "y": 19.2,
+      "z": -618.9,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 97.7,
+      "y": 14.9,
+      "z": -544.7,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 405.6,
+      "y": 30.8,
+      "z": -618.7,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -129.9,
+      "y": 10.1,
+      "z": -248.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -117.7,
+      "y": 21.5,
+      "z": -114.5,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 453.1,
+      "y": 19.2,
+      "z": 795.4,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 436.4,
+      "y": 13.3,
+      "z": -397.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 57.4,
+      "y": 25.4,
+      "z": -699.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 8.8,
+      "y": 18.6,
+      "z": -608.0,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 463.0,
+      "y": 33.7,
+      "z": -614.0,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 525.6,
+      "y": 28.0,
+      "z": -633.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": 458.6,
+      "y": 34.6,
+      "z": -570.4,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    }
+  ]
+}

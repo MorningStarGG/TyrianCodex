@@ -1,0 +1,2141 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 26,
+    "name": "Dredgehaunt Cliffs",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 40,
+    "maxLevel": 50,
+    "mapRect": [
+      [
+        -27648,
+        -36864
+      ],
+      [
+        27648,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        52224,
+        31360
+      ],
+      [
+        54528,
+        34560
+      ]
+    ],
+    "sectorRect": [
+      [
+        52095.1,
+        31193.8
+      ],
+      [
+        54964.5,
+        34694.9
+      ]
+    ],
+    "labelCoord": [
+      53376,
+      32960
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "26:poi:1580",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1580",
+      "coord": [
+        53492,
+        31388
+      ],
+      "recommendedLevel": null,
+      "name": "Wolf's Lair Shrine",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 30,
+      "wikiText": "Wolf's Lair Shrine is a point of interest within Graupel Kohn. In the back of this chilly cave is found a Spirits of the Wild shrine dedicated to Wolf. A norn shaman resides here with his pack of wolves.",
+      "waypointChatLink": "[&BGICAAA=]"
+    },
+    {
+      "stepId": "26:poi:564",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "564",
+      "coord": [
+        53416,
+        31630
+      ],
+      "recommendedLevel": null,
+      "name": "Skovtrolde Hearthstead",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 65,
+      "wikiText": "Skovtrolde Hearthstead is a point of interest within Graupel Kohn. This is one of the many norn lodges in Dredgehaunt Cliffs. A sylvari named Cydwenn is taking care of all the children around the place.",
+      "waypointChatLink": "[&BGICAAA=]"
+    },
+    {
+      "stepId": "26:vista:1570",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1570",
+      "coord": [
+        53443,
+        31642
+      ],
+      "recommendedLevel": null,
+      "name": "Graupel Kohn",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 79,
+      "wikiText": "Graupel Kohn is an area in the northern Dredgehaunt Cliffs. Many steadings can be found in the area as well as the ruins of a jotun settlement which is currently being studied by the Durmand Priory.",
+      "waypointChatLink": "[&BGICAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:610",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "610",
+      "coord": [
+        53574,
+        31650
+      ],
+      "recommendedLevel": null,
+      "name": "Graupel Waypoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGICAAA=]",
+      "waypointChatLink": "[&BGICAAA=]",
+      "trailIndex": 94,
+      "wikiText": "Graupel Kohn is an area in the northern Dredgehaunt Cliffs. Many steadings can be found in the area as well as the ruins of a jotun settlement which is currently being studied by the Durmand Priory."
+    },
+    {
+      "stepId": "26:poi:1291",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1291",
+      "coord": [
+        53710,
+        31606
+      ],
+      "recommendedLevel": null,
+      "name": "Brandalf's Steading",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 109,
+      "wikiText": "Brandalf's Steading[sic] is a point of interest within Graupel Kohn. This is one of the many norn lodges in Dredgehaunt Cliffs. Brandulf and his sister Myr reside here and operate this inn and tavern.",
+      "waypointChatLink": "[&BGICAAA=]"
+    },
+    {
+      "stepId": "26:poi:565",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "565",
+      "coord": [
+        53826,
+        31804
+      ],
+      "recommendedLevel": null,
+      "name": "Talecrafting Steading",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 132,
+      "wikiText": "Talecrafting Steading is a point of interest within Mountain's Tail. This corrupted norn lodge is home to a group of Sons of Svanir led by their shaman.",
+      "waypointChatLink": "[&BGICAAA=]"
+    },
+    {
+      "stepId": "26:heart:11",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "11",
+      "coord": [
+        53612,
+        32066
+      ],
+      "recommendedLevel": 44,
+      "name": "Help the grawl stave off Svanir attacks.",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53505,
+          32088
+        ],
+        [
+          53498,
+          31852
+        ],
+        [
+          53761,
+          31672
+        ],
+        [
+          54153,
+          31780
+        ],
+        [
+          54209,
+          31876
+        ],
+        [
+          54149,
+          31993
+        ],
+        [
+          54024,
+          31995
+        ],
+        [
+          53912,
+          32139
+        ],
+        [
+          53587,
+          32158
+        ],
+        [
+          53505,
+          32088
+        ]
+      ],
+      "trailIndex": 184,
+      "wikiText": "Fight Svanir, destroy their corrupted turrets and ice containers, and help wounded grawl.",
+      "waypointChatLink": "[&BGECAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:609",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "609",
+      "coord": [
+        53933,
+        32128
+      ],
+      "recommendedLevel": null,
+      "name": "Mountain's Tail Waypoint",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGECAAA=]",
+      "waypointChatLink": "[&BGECAAA=]",
+      "trailIndex": 219,
+      "wikiText": "Mountain's Tail is an area in the northeast of the Dredgehaunt Cliffs. A Sons of Svanir steading found there is trying to destroy the friendly grawl tribe living in Ulukk's Hunger."
+    },
+    {
+      "stepId": "26:heart:2",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "2",
+      "coord": [
+        54164,
+        32113
+      ],
+      "recommendedLevel": 45,
+      "name": "Assist the skritt of Ratatosk.",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54504,
+          31985
+        ],
+        [
+          54396,
+          31845
+        ],
+        [
+          54268,
+          31884
+        ],
+        [
+          54201,
+          31973
+        ],
+        [
+          54176,
+          32018
+        ],
+        [
+          54111,
+          32053
+        ],
+        [
+          54051,
+          32047
+        ],
+        [
+          54011,
+          32097
+        ],
+        [
+          53997,
+          32194
+        ],
+        [
+          54011,
+          32402
+        ],
+        [
+          54161,
+          32518
+        ],
+        [
+          54206,
+          32594
+        ],
+        [
+          54271,
+          32609
+        ],
+        [
+          54391,
+          32553
+        ],
+        [
+          54516,
+          32391
+        ],
+        [
+          54504,
+          31985
+        ]
+      ],
+      "trailIndex": 243,
+      "wikiText": "Destroy spiders and webs, free skritt from cocoons, and keep skritt in fighting shape.",
+      "waypointChatLink": "[&BGACAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:608",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "608",
+      "coord": [
+        54326,
+        32034
+      ],
+      "recommendedLevel": null,
+      "name": "Nottowr Fault Waypoint",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGACAAA=]",
+      "waypointChatLink": "[&BGACAAA=]",
+      "trailIndex": 264,
+      "wikiText": "Ratatosk is a large cave system in the northeast of Dredgehaunt Cliffs. It holds a sizeable skritt scratch. Aside from the skritt there are many hostile Cave Spiders present in the caves."
+    },
+    {
+      "stepId": "26:hero:0-90",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "hero",
+      "objectiveId": "0-90",
+      "coord": [
+        54367,
+        32336
+      ],
+      "recommendedLevel": null,
+      "name": "Shiniest Skritt Treasure",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 334,
+      "wikiText": "The Shiniest Skritt Treasure is a hero challenge located in Ratatosk, a skritt outpost in Dredgehaunt Cliffs. To gain the hero point, one must commune with the treasure. It is usually guarded by a Veteran Cave Spider and its minions.",
+      "waypointChatLink": "[&BGACAAA=]"
+    },
+    {
+      "stepId": "26:poi:566",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "566",
+      "coord": [
+        54344,
+        32355
+      ],
+      "recommendedLevel": null,
+      "name": "The Speaking Place",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 339,
+      "wikiText": "The Speaking Place is a point of interest within Ratatosk. Deep inside this dark skritt cave system rests a circular podium beneath a typical skritt structure. A colony of cave spiders occupies this location.",
+      "waypointChatLink": "[&BF8CAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:607",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "607",
+      "coord": [
+        54151,
+        32612
+      ],
+      "recommendedLevel": null,
+      "name": "Wide Expanse Waypoint",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF8CAAA=]",
+      "waypointChatLink": "[&BF8CAAA=]",
+      "trailIndex": 392,
+      "wikiText": "The Wide Expanse is an area in the east of Dredgehaunt Cliffs. It is home to a large tribe of jotun."
+    },
+    {
+      "stepId": "26:poi:1579",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1579",
+      "coord": [
+        54346,
+        32890
+      ],
+      "recommendedLevel": null,
+      "name": "Raven's Wing Shrine",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 424,
+      "wikiText": "Raven's Wing Shrine is a point of interest within The Wide Expanse. Set against the raw cliff face sits this Spirits of the Wild shrine dedicated to Raven. Many woodland creatures gather at this pastoral setting.",
+      "waypointChatLink": "[&BF8CAAA=]"
+    },
+    {
+      "stepId": "26:hero:0-33",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "hero",
+      "objectiveId": "0-33",
+      "coord": [
+        54055,
+        32782
+      ],
+      "recommendedLevel": null,
+      "name": "Preserved Footprint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 470,
+      "wikiText": "A Preserved Footprint can be found inside The Wide Expanse of Dredgehaunt Cliffs. Interacting with it triggers the Defeat the ancient jotun spirits hero challenge.",
+      "waypointChatLink": "[&BF8CAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:606",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "606",
+      "coord": [
+        53575,
+        32721
+      ],
+      "recommendedLevel": null,
+      "name": "Kenning Testing Ground Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF4CAAA=]",
+      "waypointChatLink": "[&BF4CAAA=]",
+      "trailIndex": 527,
+      "wikiText": "Theign Spiritwalk is an area located in the center of Dredgehaunt Cliffs. An ancient jotun citadel can be found there as well as a Durmand Priory camp studying the jotun from up-close."
+    },
+    {
+      "stepId": "26:poi:560",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "560",
+      "coord": [
+        53506,
+        32287
+      ],
+      "recommendedLevel": null,
+      "name": "Theign Kenning",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 574,
+      "wikiText": "Theign Kenning is a point of interest within Theign Spiritwalk. Through this narrow pass lies a guarded circle of stones surrounding the Jotun Holy Site. A spirit elder remains to guard this important jotun site.",
+      "waypointChatLink": "[&BF4CAAA=]"
+    },
+    {
+      "stepId": "26:hero:0-58",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "hero",
+      "objectiveId": "0-58",
+      "coord": [
+        53437,
+        32268
+      ],
+      "recommendedLevel": null,
+      "name": "Jotun Holy Site",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 581,
+      "wikiText": "Jotun Holy Site is a site where the presence of the elder jotun spirits can be felt. Communing with it awards the player one hero point.",
+      "waypointChatLink": "[&BF0CAAA=]"
+    },
+    {
+      "stepId": "26:poi:563",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "563",
+      "coord": [
+        53226,
+        32130
+      ],
+      "recommendedLevel": null,
+      "name": "Bergtrolde",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 604,
+      "wikiText": "Bergtrolde is a point of interest within Graupel Kohn. This is one of the many norn lodges in Dredgehaunt Cliffs. This inn is run by Bergtrolde Icetreader who lives here with her two children.",
+      "waypointChatLink": "[&BGMCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:611",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "611",
+      "coord": [
+        53272,
+        31898
+      ],
+      "recommendedLevel": null,
+      "name": "Havfrue Basin Waypoint",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGMCAAA=]",
+      "waypointChatLink": "[&BGMCAAA=]",
+      "trailIndex": 626,
+      "wikiText": "Graupel Kohn is an area in the northern Dredgehaunt Cliffs. Many steadings can be found in the area as well as the ruins of a jotun settlement which is currently being studied by the Durmand Priory."
+    },
+    {
+      "stepId": "26:waypoint:612",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "612",
+      "coord": [
+        52909,
+        31809
+      ],
+      "recommendedLevel": null,
+      "name": "Travelen's Waypoint",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGQCAAA=]",
+      "waypointChatLink": "[&BGQCAAA=]",
+      "trailIndex": 682,
+      "wikiText": "Snowslide Ravine is an area in the northwest of Dredgehaunt Cliffs. A norn steading has been built here, which has become the target of a nearby group of Sons of Svanir."
+    },
+    {
+      "stepId": "26:poi:562",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "562",
+      "coord": [
+        52804,
+        31777
+      ],
+      "recommendedLevel": null,
+      "name": "Travelen's Steading",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 691,
+      "wikiText": "Travelen's Steading is a point of interest within Snowslide Ravine. This is one of many norn lodges found throughout Dredgehaunt Cliffs. This busy tavern is run by Travelen and welcomes all travelers to his establishment.",
+      "waypointChatLink": "[&BGQCAAA=]"
+    },
+    {
+      "stepId": "26:heart:10",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "10",
+      "coord": [
+        52781,
+        31794
+      ],
+      "recommendedLevel": 43,
+      "name": "Defend Travelen's Steading against Svanir attacks.",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52746,
+          31735
+        ],
+        [
+          52640,
+          31773
+        ],
+        [
+          52612,
+          31839
+        ],
+        [
+          52645,
+          31902
+        ],
+        [
+          52826,
+          31989
+        ],
+        [
+          53061,
+          31928
+        ],
+        [
+          53146,
+          31743
+        ],
+        [
+          53042,
+          31664
+        ],
+        [
+          52746,
+          31735
+        ]
+      ],
+      "trailIndex": 699,
+      "wikiText": "Build snowmen, stop troublemakers, and keep the lodge cozy and safe.",
+      "waypointChatLink": "[&BGQCAAA=]"
+    },
+    {
+      "stepId": "26:vista:1574",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1574",
+      "coord": [
+        52664,
+        31757
+      ],
+      "recommendedLevel": null,
+      "name": "Wyrmblood Lake",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 712,
+      "wikiText": "Across the bridge from the Leopard's Snarl Shrine. Jump up from the roof of Travelen's Steading from the East.",
+      "waypointChatLink": "[&BGQCAAA=]"
+    },
+    {
+      "stepId": "26:poi:1486",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1486",
+      "coord": [
+        52529,
+        31764
+      ],
+      "recommendedLevel": null,
+      "name": "Falooaloo",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 727,
+      "wikiText": "Falooaloo is a point of interest within Wyrmblood Lake. This quaggan village found under the ice sheet is currently preparing their defense against an incoming icebrood attack.",
+      "waypointChatLink": "[&BGQCAAA=]"
+    },
+    {
+      "stepId": "26:poi:1578",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1578",
+      "coord": [
+        52394,
+        31647
+      ],
+      "recommendedLevel": null,
+      "name": "Leopard's Snarl Shrine",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 743,
+      "wikiText": "Leopard's Snarl Shrine is a point of interest within Wyrmblood Lake. At the back of this small plateau sits a Spirits of the Wild shrine dedicated to Snow Leopard. This location is guarded by a flock of eagle griffons.",
+      "waypointChatLink": "[&BGQCAAA=]"
+    },
+    {
+      "stepId": "26:heart:9",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "9",
+      "coord": [
+        52620,
+        31987
+      ],
+      "recommendedLevel": 42,
+      "name": "Protect the Snow Leopard shrine from the Svanir.",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52352,
+          31822
+        ],
+        [
+          52312,
+          31684
+        ],
+        [
+          52400,
+          31566
+        ],
+        [
+          52663,
+          31558
+        ],
+        [
+          52757,
+          31648
+        ],
+        [
+          52753,
+          31723
+        ],
+        [
+          52633,
+          31771
+        ],
+        [
+          52602,
+          31840
+        ],
+        [
+          52662,
+          31978
+        ],
+        [
+          52533,
+          32072
+        ],
+        [
+          52362,
+          31995
+        ],
+        [
+          52352,
+          31822
+        ]
+      ],
+      "trailIndex": 792,
+      "wikiText": "Kill Sons of Svanir, and tear down their territory markers and Dragon totems.",
+      "waypointChatLink": "[&BGUCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:613",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "613",
+      "coord": [
+        52690,
+        32156
+      ],
+      "recommendedLevel": null,
+      "name": "Wyrmblood Waypoint",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGUCAAA=]",
+      "waypointChatLink": "[&BGUCAAA=]",
+      "trailIndex": 812,
+      "wikiText": "Kolkorensburg is a large cave system in the northwestern Dredgehaunt Cliffs. It is home to a friendly skritt scratch. Aside from them, there are many hostile Phantom Imps present in the caves which have come through a portal."
+    },
+    {
+      "stepId": "26:poi:1700",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1700",
+      "coord": [
+        52692,
+        32353
+      ],
+      "recommendedLevel": null,
+      "name": "Ghost Stones",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 833,
+      "wikiText": "Ghost Stones is a Point of Interest within Kolkorensburg. These ancient jotun runestones seem to be a portal to the Mists.",
+      "waypointChatLink": "[&BGUCAAA=]"
+    },
+    {
+      "stepId": "26:heart:3",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "3",
+      "coord": [
+        52904,
+        32423
+      ],
+      "recommendedLevel": 41,
+      "name": "Help Antal the Patient impress the skritt in Kolkorensburg.",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53189,
+          32181
+        ],
+        [
+          53137,
+          31994
+        ],
+        [
+          52990,
+          31952
+        ],
+        [
+          52755,
+          32036
+        ],
+        [
+          52785,
+          32174
+        ],
+        [
+          52726,
+          32244
+        ],
+        [
+          52604,
+          32284
+        ],
+        [
+          52578,
+          32453
+        ],
+        [
+          52614,
+          32557
+        ],
+        [
+          52705,
+          32559
+        ],
+        [
+          52797,
+          32570
+        ],
+        [
+          52930,
+          32512
+        ],
+        [
+          52972,
+          32394
+        ],
+        [
+          53070,
+          32317
+        ],
+        [
+          53189,
+          32181
+        ]
+      ],
+      "trailIndex": 864,
+      "wikiText": "Make the skritt happy by entertaining them, returning lost treasures, and killing threats to their cave.",
+      "waypointChatLink": "[&BF0CAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:605",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "605",
+      "coord": [
+        53076,
+        32429
+      ],
+      "recommendedLevel": null,
+      "name": "Hessdallen Kenning Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF0CAAA=]",
+      "waypointChatLink": "[&BF0CAAA=]",
+      "trailIndex": 881,
+      "wikiText": "Troll's Teeth is a location near the center of Dredgehaunt Cliffs. The ruins of a former jotun citadel as well as a Durmand Priory camp helping the skritt of Kolkorensburg can be found here."
+    },
+    {
+      "stepId": "26:vista:1569",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1569",
+      "coord": [
+        53139,
+        32388
+      ],
+      "recommendedLevel": null,
+      "name": "Troll's Teeth",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 916,
+      "wikiText": "Troll's Teeth is a location near the center of Dredgehaunt Cliffs. The ruins of a former jotun citadel as well as a Durmand Priory camp helping the skritt of Kolkorensburg can be found here.",
+      "waypointChatLink": "[&BF0CAAA=]"
+    },
+    {
+      "stepId": "26:poi:561",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "561",
+      "coord": [
+        52770,
+        32512
+      ],
+      "recommendedLevel": null,
+      "name": "Landslide Lee",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 964,
+      "wikiText": "Landslide Lee is a point of interest within Troll's Teeth. A small group of scholars have established a campsite here from where they carry out their research in the surrounding area.",
+      "waypointChatLink": "[&BF0CAAA=]"
+    },
+    {
+      "stepId": "26:poi:1577",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1577",
+      "coord": [
+        52534,
+        32623
+      ],
+      "recommendedLevel": null,
+      "name": "Bear's Jaws Shrine",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 989,
+      "wikiText": "Bear's Jaws Shrine is a point of interest in Toran Hollow. Set against the mountain side at the fork of the road sits a Spirits of the Wild shrine dedicated to Bear.",
+      "waypointChatLink": "[&BFwCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:604",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "604",
+      "coord": [
+        52451,
+        32695
+      ],
+      "recommendedLevel": null,
+      "name": "Toran Hollow Waypoint",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFwCAAA=]",
+      "waypointChatLink": "[&BFwCAAA=]",
+      "trailIndex": 999,
+      "wikiText": "Toran Hollow is an area in the west of Dredgehaunt Cliffs. A small tribe of hostile grawl can be found here. They often raid the nearby shrine dedicated to the Spirit Bear."
+    },
+    {
+      "stepId": "26:vista:1572",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1572",
+      "coord": [
+        52435,
+        32511
+      ],
+      "recommendedLevel": null,
+      "name": "Toran Hollow",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1044,
+      "wikiText": "Near the Waypoint, there is a portal connecting Dredgehaunt Cliffs to Lornar's Pass. Face that portal, the way up to the Vista is to your left. Follow the left path for a little and jump up and over the portal to get to the vista.",
+      "waypointChatLink": "[&BFwCAAA=]"
+    },
+    {
+      "stepId": "26:poi:554",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "554",
+      "coord": [
+        52658,
+        32979
+      ],
+      "recommendedLevel": null,
+      "name": "Leaning Grade",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1108,
+      "wikiText": "Leaning Grade is a point of interest in Steelbrachen. This group of monolithic stones is an ancient ruin. Durmand Priory scholars make pilgrimages here to investigate this site.",
+      "waypointChatLink": "[&BFwCAAA=]"
+    },
+    {
+      "stepId": "26:poi:558",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "558",
+      "coord": [
+        52377,
+        32977
+      ],
+      "recommendedLevel": null,
+      "name": "Shelter Pointe",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1133,
+      "wikiText": "Shelter Pointe is a point of interest in Steelbrachen. A top this small rise a group of Durmand Priory researchers have established a base camp.",
+      "waypointChatLink": "[&BFwCAAA=]"
+    },
+    {
+      "stepId": "26:heart:1",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "1",
+      "coord": [
+        52413,
+        32988
+      ],
+      "recommendedLevel": 40,
+      "name": "Assist Daphne in halting the encroaching corruption.",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52647,
+          32761
+        ],
+        [
+          52594,
+          32714
+        ],
+        [
+          52526,
+          32719
+        ],
+        [
+          52365,
+          32812
+        ],
+        [
+          52316,
+          32880
+        ],
+        [
+          52313,
+          33065
+        ],
+        [
+          52353,
+          33296
+        ],
+        [
+          52444,
+          33476
+        ],
+        [
+          52734,
+          33445
+        ],
+        [
+          52925,
+          33198
+        ],
+        [
+          52804,
+          32922
+        ],
+        [
+          52647,
+          32761
+        ]
+      ],
+      "trailIndex": 1134,
+      "wikiText": "Kill corrupted elementals, defeat Sons of Svanir, and thwart their plans.",
+      "waypointChatLink": "[&BFwCAAA=]"
+    },
+    {
+      "stepId": "26:hero:0-91",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "hero",
+      "objectiveId": "0-91",
+      "coord": [
+        52341,
+        33647
+      ],
+      "recommendedLevel": null,
+      "name": "Kakkilak",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1215,
+      "wikiText": "Kakkilak can be found within Dissun's Mine. The entrance to the cave complex is on the snowy plain in Steelbrachen, not against the mountainside. Interact with her for the hero challenge.",
+      "waypointChatLink": "[&BFsCAAA=]"
+    },
+    {
+      "stepId": "26:poi:557",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "557",
+      "coord": [
+        52424,
+        33655
+      ],
+      "recommendedLevel": null,
+      "name": "Esjudare Scratch",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1225,
+      "wikiText": "Esjudare Scratch is a point of interest within Dissun's Mine. Inside this cave system is a skritt scratch and a small population of skritts. They live in an almost constant struggle against the dredge.",
+      "waypointChatLink": "[&BFsCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:603",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "603",
+      "coord": [
+        52705,
+        33489
+      ],
+      "recommendedLevel": null,
+      "name": "Steelbrachen Waypoint",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFsCAAA=]",
+      "waypointChatLink": "[&BFsCAAA=]",
+      "trailIndex": 1308,
+      "wikiText": "Steelbrachen is an area in west of Dredgehaunt Cliffs. The Durmand Priory has established a camp here in order to study nearby jotun ruins. There is also a cave housing a group of Sons of Svanir."
+    },
+    {
+      "stepId": "26:poi:1268",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1268",
+      "coord": [
+        52857,
+        33766
+      ],
+      "recommendedLevel": null,
+      "name": "Tomb of Blackpowder",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1371,
+      "wikiText": "Tomb of Blackpowder is a point of interest in Kapellenburg. This ancient dwarven tomb is found inside the dredge held caves. The door can be opened using a Dwarven Key which starts an event.",
+      "waypointChatLink": "[&BFsCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:598",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "598",
+      "coord": [
+        52890,
+        34117
+      ],
+      "recommendedLevel": null,
+      "name": "Tribulation Waypoint",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFYCAAA=]",
+      "waypointChatLink": "[&BFYCAAA=]",
+      "trailIndex": 1422,
+      "wikiText": "Tribulation Rift is a location in the southwest of Dredgehaunt Cliffs. This large and well-defended pit leads to the dredge capital of Sorrow's Embrace."
+    },
+    {
+      "stepId": "26:heart:8",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "8",
+      "coord": [
+        52870,
+        34177
+      ],
+      "recommendedLevel": 50,
+      "name": "Help Magister Kathryn wound dredge forces.",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52412,
+          34502
+        ],
+        [
+          52573,
+          34542
+        ],
+        [
+          52714,
+          34488
+        ],
+        [
+          52824,
+          34407
+        ],
+        [
+          52939,
+          34265
+        ],
+        [
+          52918,
+          34145
+        ],
+        [
+          52810,
+          34077
+        ],
+        [
+          52688,
+          34037
+        ],
+        [
+          52618,
+          34090
+        ],
+        [
+          52485,
+          34165
+        ],
+        [
+          52395,
+          34301
+        ],
+        [
+          52412,
+          34502
+        ]
+      ],
+      "trailIndex": 1430,
+      "wikiText": "Return unexploded fire bombs to Priory drop boxes, and block mortar shots with Priory shield generators.",
+      "waypointChatLink": "[&BFYCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:1343",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "1343",
+      "coord": [
+        52536,
+        34076
+      ],
+      "recommendedLevel": null,
+      "name": "Sorrow's Embrace Waypoint",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BD8FAAA=]",
+      "waypointChatLink": "[&BD8FAAA=]",
+      "trailIndex": 1476,
+      "wikiText": "Tribulation Rift is a location in the southwest of Dredgehaunt Cliffs. This large and well-defended pit leads to the dredge capital of Sorrow's Embrace."
+    },
+    {
+      "stepId": "26:poi:1267",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1267",
+      "coord": [
+        52471,
+        34404
+      ],
+      "recommendedLevel": null,
+      "name": "Tomb of Morlog",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1618,
+      "wikiText": "The Tomb of Morlog is a point of interest within Tribulation Rift. Located in the back of this dredge controlled area is a sealed door leading to the tomb of Morlog. This door cannot be opened.",
+      "waypointChatLink": "[&BD8FAAA=]"
+    },
+    {
+      "stepId": "26:vista:1571",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1571",
+      "coord": [
+        52478,
+        34432
+      ],
+      "recommendedLevel": null,
+      "name": "Tribulation Rift Viewpoint",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1623,
+      "wikiText": "This Vista is reached via the Tribulation Rift Jump Puzzle",
+      "waypointChatLink": "[&BD8FAAA=]"
+    },
+    {
+      "stepId": "26:heart:7",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "7",
+      "coord": [
+        53183,
+        34145
+      ],
+      "recommendedLevel": 49,
+      "name": "Help Explorer Brokkar sabotage dredge munitions.",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53250,
+          34124
+        ],
+        [
+          53154,
+          34094
+        ],
+        [
+          53093,
+          34108
+        ],
+        [
+          53088,
+          34153
+        ],
+        [
+          53084,
+          34197
+        ],
+        [
+          53081,
+          34239
+        ],
+        [
+          53017,
+          34270
+        ],
+        [
+          52961,
+          34337
+        ],
+        [
+          52944,
+          34452
+        ],
+        [
+          53000,
+          34483
+        ],
+        [
+          53069,
+          34472
+        ],
+        [
+          53124,
+          34417
+        ],
+        [
+          53218,
+          34396
+        ],
+        [
+          53313,
+          34335
+        ],
+        [
+          53312,
+          34190
+        ],
+        [
+          53250,
+          34124
+        ]
+      ],
+      "trailIndex": 1705,
+      "wikiText": "Clear dredge and turrets from the area, use cannonballs to open armory doors, and sabotage munitions stocks.",
+      "waypointChatLink": "[&BFcCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:599",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "599",
+      "coord": [
+        53427,
+        34291
+      ],
+      "recommendedLevel": null,
+      "name": "Frostland Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFcCAAA=]",
+      "waypointChatLink": "[&BFcCAAA=]",
+      "trailIndex": 1732,
+      "wikiText": "Frostland Melt is an area in the center of the southernmost portion of Dredgehaunt Cliffs."
+    },
+    {
+      "stepId": "26:poi:556",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "556",
+      "coord": [
+        53695,
+        34226
+      ],
+      "recommendedLevel": null,
+      "name": "Mantelet Refuge",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1764,
+      "wikiText": "Mantelet Refuge is a point of interest in Frostland Melt. It is an old monastery used primarily as a Durmand Priory encampment for their operations in the mountains. It is under siege regularly by the dredge.",
+      "waypointChatLink": "[&BFcCAAA=]"
+    },
+    {
+      "stepId": "26:vista:1575",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1575",
+      "coord": [
+        53716,
+        34146
+      ],
+      "recommendedLevel": null,
+      "name": "Frostland Melt",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1778,
+      "wikiText": "Start from Mantelet Refuge in Frostland Melt, head to the southern part of the fort and exit through the back door.",
+      "waypointChatLink": "[&BFgCAAA=]"
+    },
+    {
+      "stepId": "26:poi:1266",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1266",
+      "coord": [
+        53378,
+        33990
+      ],
+      "recommendedLevel": null,
+      "name": "Firebase Molek",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1812,
+      "wikiText": "Firebase Molek is a point of interest within Frostland Melt. This walled fortress is fought over and changes hands often between human and dredge forces as part of the In Pursuit of Knowledge meta event.",
+      "waypointChatLink": "[&BFcCAAA=]"
+    },
+    {
+      "stepId": "26:poi:555",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "555",
+      "coord": [
+        53607,
+        33742
+      ],
+      "recommendedLevel": null,
+      "name": "Fridgardr Lodge",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1853,
+      "wikiText": "Fridgardr Lodge is a point of interest within The Grey Road. This walled fortress is fought over and changes hands often between human and dredge forces as part of the In Pursuit of Knowledge meta event.",
+      "waypointChatLink": "[&BFoCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:602",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "602",
+      "coord": [
+        53453,
+        33489
+      ],
+      "recommendedLevel": null,
+      "name": "Grey Road Waypoint",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFoCAAA=]",
+      "waypointChatLink": "[&BFoCAAA=]",
+      "trailIndex": 1885,
+      "wikiText": "The Grey Road is an area in the southeast of Dredgehaunt Cliffs. Hostile dredge often set ambushes for people traveling on this road."
+    },
+    {
+      "stepId": "26:poi:1269",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "1269",
+      "coord": [
+        53378,
+        33290
+      ],
+      "recommendedLevel": null,
+      "name": "Tomb of Stoneskin",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1907,
+      "wikiText": "The Tomb of Stoneskin is a point of interest within Dostoev Sky Peak. This ancient Dwarven Tomb is found inside the caves held by the dredge. The door can be opened using a Dwarven Key which starts an event.",
+      "waypointChatLink": "[&BFoCAAA=]"
+    },
+    {
+      "stepId": "26:poi:559",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "poi",
+      "objectiveId": "559",
+      "coord": [
+        53271,
+        33154
+      ],
+      "recommendedLevel": null,
+      "name": "Vpered Drill",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1994,
+      "wikiText": "Vpered Drill is a point of interest within Dostoev Sky Peak. Inside the center of this vast cave system is a large dredge excavator. This location contains many levels to explore and a vast system of defended catwalks.",
+      "waypointChatLink": "[&BFoCAAA=]"
+    },
+    {
+      "stepId": "26:vista:1573",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1573",
+      "coord": [
+        53292,
+        33080
+      ],
+      "recommendedLevel": null,
+      "name": "Dostoev Sky Peak",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2039,
+      "wikiText": "Dostoev Sky Peak is a massive dredge mine containing dwarven artifacts located in the center of Dredgehaunt Cliffs.",
+      "waypointChatLink": "[&BFoCAAA=]"
+    },
+    {
+      "stepId": "26:hero:0-29",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "hero",
+      "objectiveId": "0-29",
+      "coord": [
+        53150,
+        32998
+      ],
+      "recommendedLevel": null,
+      "name": "Foreman's Gear",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2061,
+      "wikiText": "Foreman's Gear can be found on the ground at Dostoev Sky Peak. Interacting with it spawns the foreman and his crew.",
+      "waypointChatLink": "[&BF4CAAA=]"
+    },
+    {
+      "stepId": "26:heart:4",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "4",
+      "coord": [
+        53394,
+        33047
+      ],
+      "recommendedLevel": 46,
+      "name": "Help the Priory thwart dredge excavation in Dostoev Sky Peak.",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53484,
+          33421
+        ],
+        [
+          53358,
+          33455
+        ],
+        [
+          53243,
+          33544
+        ],
+        [
+          53133,
+          33430
+        ],
+        [
+          52993,
+          33389
+        ],
+        [
+          52917,
+          33219
+        ],
+        [
+          52837,
+          33061
+        ],
+        [
+          52868,
+          32946
+        ],
+        [
+          53010,
+          32883
+        ],
+        [
+          53111,
+          32813
+        ],
+        [
+          53240,
+          32786
+        ],
+        [
+          53341,
+          32810
+        ],
+        [
+          53429,
+          32873
+        ],
+        [
+          53545,
+          32914
+        ],
+        [
+          53637,
+          32892
+        ],
+        [
+          53695,
+          32982
+        ],
+        [
+          53726,
+          33122
+        ],
+        [
+          53727,
+          33286
+        ],
+        [
+          53631,
+          33337
+        ],
+        [
+          53561,
+          33369
+        ],
+        [
+          53484,
+          33421
+        ]
+      ],
+      "trailIndex": 2091,
+      "wikiText": "Sabotage weapon caches, slay dredge miners, and recover ore for research.",
+      "waypointChatLink": "[&BF4CAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:601",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "601",
+      "coord": [
+        53816,
+        33263
+      ],
+      "recommendedLevel": null,
+      "name": "Seven Pines Waypoint",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFkCAAA=]",
+      "waypointChatLink": "[&BFkCAAA=]",
+      "trailIndex": 2194,
+      "wikiText": "Nakrojos Pass is an area in east of Dredgehaunt Cliffs. It is home to a lone hunter as well as a Durmand Priory camp studying dredge blueprints."
+    },
+    {
+      "stepId": "26:waypoint:1262",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "1262",
+      "coord": [
+        54213,
+        33708
+      ],
+      "recommendedLevel": null,
+      "name": "Granite Citadel Waypoint",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO4EAAA=]",
+      "waypointChatLink": "[&BO4EAAA=]",
+      "trailIndex": 2259,
+      "wikiText": "Spearhead Bane is an area in the southeast of Dredgehaunt Cliffs. It holds the remains of the Granite Citadel, an ancient dwarven stronghold. The Durmand Priory are conducting research on the tombstones there."
+    },
+    {
+      "stepId": "26:heart:5",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "5",
+      "coord": [
+        54217,
+        33883
+      ],
+      "recommendedLevel": 47,
+      "name": "Help Arcanist Vance study dwarven relics at Granite Citadel.",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54168,
+          33462
+        ],
+        [
+          54228,
+          33483
+        ],
+        [
+          54256,
+          33613
+        ],
+        [
+          54333,
+          33581
+        ],
+        [
+          54382,
+          33719
+        ],
+        [
+          54388,
+          33948
+        ],
+        [
+          54376,
+          34044
+        ],
+        [
+          54305,
+          34082
+        ],
+        [
+          54248,
+          34096
+        ],
+        [
+          54173,
+          34094
+        ],
+        [
+          54141,
+          34087
+        ],
+        [
+          54110,
+          34044
+        ],
+        [
+          54057,
+          33994
+        ],
+        [
+          54080,
+          33912
+        ],
+        [
+          54003,
+          33768
+        ],
+        [
+          54075,
+          33629
+        ],
+        [
+          54127,
+          33537
+        ],
+        [
+          54168,
+          33462
+        ]
+      ],
+      "trailIndex": 2286,
+      "wikiText": "Decipher dwarven headstones, and protect Priory researchers.",
+      "waypointChatLink": "[&BO4EAAA=]"
+    },
+    {
+      "stepId": "26:heart:6",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "heart",
+      "objectiveId": "6",
+      "coord": [
+        54050,
+        34042
+      ],
+      "recommendedLevel": 48,
+      "name": "Help Magister Roslin infiltrate Black Earth Mine.",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54246,
+          34541
+        ],
+        [
+          54377,
+          34554
+        ],
+        [
+          54520,
+          34462
+        ],
+        [
+          54517,
+          34134
+        ],
+        [
+          54370,
+          34060
+        ],
+        [
+          54303,
+          34098
+        ],
+        [
+          54182,
+          34113
+        ],
+        [
+          54134,
+          34098
+        ],
+        [
+          54101,
+          34053
+        ],
+        [
+          54040,
+          33998
+        ],
+        [
+          53948,
+          33971
+        ],
+        [
+          53885,
+          34091
+        ],
+        [
+          53805,
+          34165
+        ],
+        [
+          53790,
+          34224
+        ],
+        [
+          53762,
+          34303
+        ],
+        [
+          53752,
+          34360
+        ],
+        [
+          53922,
+          34527
+        ],
+        [
+          54114,
+          34575
+        ],
+        [
+          54246,
+          34541
+        ]
+      ],
+      "trailIndex": 2333,
+      "wikiText": "Rescue Priory researchers, defuse dredge mines, and destroy reinforcement tubes.",
+      "waypointChatLink": "[&BFgCAAA=]"
+    },
+    {
+      "stepId": "26:waypoint:600",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "waypoint",
+      "objectiveId": "600",
+      "coord": [
+        54008,
+        34035
+      ],
+      "recommendedLevel": null,
+      "name": "Dociu Waypoint",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFgCAAA=]",
+      "waypointChatLink": "[&BFgCAAA=]",
+      "trailIndex": 2337,
+      "wikiText": "The Grey Road is an area in the southeast of Dredgehaunt Cliffs. Hostile dredge often set ambushes for people traveling on this road."
+    },
+    {
+      "stepId": "26:vista:1576",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "vista",
+      "objectiveId": "1576",
+      "coord": [
+        54036,
+        34282
+      ],
+      "recommendedLevel": null,
+      "name": "Blackearth Coal Mine",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2444,
+      "wikiText": "Start from Mantelet Refuge in Frostland Melt, head to the southern part of the fort and exit through the back door. Beware of Trolls on the way. There may be a Veteran Troll and a rich gold vein as you make your way to the Vista.",
+      "waypointChatLink": "[&BFgCAAA=]"
+    },
+    {
+      "stepId": "26:hero:0-89",
+      "mapId": 26,
+      "zoneName": "Dredgehaunt Cliffs",
+      "type": "hero",
+      "objectiveId": "0-89",
+      "coord": [
+        54427,
+        34466
+      ],
+      "recommendedLevel": null,
+      "name": "Dwarven Relic",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "A Dwarven Relic in the Dociu Excavation in the Dredgehaunt Cliffs. It is reached by walking through the dredge tunnels in the southeast corner of the map. It is guarded by a Veteran Dredge.",
+      "waypointChatLink": "[&BFgCAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

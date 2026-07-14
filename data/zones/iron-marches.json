@@ -1,0 +1,2129 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 25,
+    "name": "Iron Marches",
+    "continentId": 1,
+    "regionId": 2,
+    "regionName": "Ascalon",
+    "floor": 1,
+    "minLevel": 50,
+    "maxLevel": 60,
+    "mapRect": [
+      [
+        -24576,
+        -49152
+      ],
+      [
+        24576,
+        49152
+      ]
+    ],
+    "continentRect": [
+      [
+        59904,
+        25856
+      ],
+      [
+        61952,
+        29952
+      ]
+    ],
+    "sectorRect": [
+      [
+        59775,
+        25625.1
+      ],
+      [
+        62144.2,
+        30017.5
+      ]
+    ],
+    "labelCoord": [
+      60928,
+      27904
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "25:waypoint:486",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "486",
+      "coord": [
+        61816,
+        28807
+      ],
+      "recommendedLevel": null,
+      "name": "Hellion Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOYBAAA=]",
+      "waypointChatLink": "[&BOYBAAA=]",
+      "trailIndex": 9,
+      "wikiText": "The Hellion Forest is an explorable area within the Iron Marches. Many charr lumberjack ghosts can be found in theses woods due to the activity of the nearby necromancer, Bria, who is operating from her house in the area."
+    },
+    {
+      "stepId": "25:heart:145",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "145",
+      "coord": [
+        61688,
+        28870
+      ],
+      "recommendedLevel": 50,
+      "name": "Fight life-stealing minions in Hellion Forest.",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61892,
+          28972
+        ],
+        [
+          61765,
+          29297
+        ],
+        [
+          61619,
+          29229
+        ],
+        [
+          61544,
+          29112
+        ],
+        [
+          61523,
+          29051
+        ],
+        [
+          61549,
+          28994
+        ],
+        [
+          61640,
+          29012
+        ],
+        [
+          61644,
+          28987
+        ],
+        [
+          61541,
+          28974
+        ],
+        [
+          61503,
+          28868
+        ],
+        [
+          61576,
+          28828
+        ],
+        [
+          61814,
+          28837
+        ],
+        [
+          61822,
+          28860
+        ],
+        [
+          61868,
+          28893
+        ],
+        [
+          61897,
+          28932
+        ],
+        [
+          61892,
+          28972
+        ]
+      ],
+      "trailIndex": 29,
+      "wikiText": "Kill the ghostly spiders and shadow fiends attacking the loggers. Help lost spirits return to their bodies.",
+      "waypointChatLink": "[&BOYBAAA=]"
+    },
+    {
+      "stepId": "25:poi:480",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "480",
+      "coord": [
+        61454,
+        28730
+      ],
+      "recommendedLevel": null,
+      "name": "Kilnn's Rest",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 64,
+      "wikiText": "Kilnn's Rest is a point of interest within the Hellion Forest. These ruins are all that are left of the Testibrie family mausoleum. All that remains standing is the arch at the entrance.",
+      "waypointChatLink": "[&BOUBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:485",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "485",
+      "coord": [
+        61118,
+        28789
+      ],
+      "recommendedLevel": null,
+      "name": "Warhound Village Waypoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOUBAAA=]",
+      "waypointChatLink": "[&BOUBAAA=]",
+      "trailIndex": 107,
+      "wikiText": "Harvester's Glade is an area whose main feature is Warhound Village and its residents. True to its name, loggers can be found on the northeast side cutting down lumber to smelt iron ore and send it off to the legions."
+    },
+    {
+      "stepId": "25:heart:147",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "147",
+      "coord": [
+        61220,
+        29082
+      ],
+      "recommendedLevel": 52,
+      "name": "Help Kennelmaster Warsnout track the Separatists.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61410,
+          29021
+        ],
+        [
+          61459,
+          29190
+        ],
+        [
+          61477,
+          29235
+        ],
+        [
+          61412,
+          29305
+        ],
+        [
+          61337,
+          29337
+        ],
+        [
+          61225,
+          29290
+        ],
+        [
+          61138,
+          29313
+        ],
+        [
+          61102,
+          29314
+        ],
+        [
+          61064,
+          29228
+        ],
+        [
+          61109,
+          29110
+        ],
+        [
+          61141,
+          29080
+        ],
+        [
+          61190,
+          29014
+        ],
+        [
+          61193,
+          28990
+        ],
+        [
+          61216,
+          28990
+        ],
+        [
+          61234,
+          28976
+        ],
+        [
+          61242,
+          28959
+        ],
+        [
+          61239,
+          28943
+        ],
+        [
+          61234,
+          28928
+        ],
+        [
+          61214,
+          28912
+        ],
+        [
+          61205,
+          28889
+        ],
+        [
+          61194,
+          28869
+        ],
+        [
+          61258,
+          28848
+        ],
+        [
+          61298,
+          28854
+        ],
+        [
+          61330,
+          28898
+        ],
+        [
+          61328,
+          28968
+        ],
+        [
+          61410,
+          29021
+        ]
+      ],
+      "trailIndex": 153,
+      "wikiText": "Release warhounds from kennels to help you find and destroy hiding Separatists, traps and supply caches.",
+      "waypointChatLink": "[&BOUBAAA=]"
+    },
+    {
+      "stepId": "25:poi:471",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "471",
+      "coord": [
+        61772,
+        29038
+      ],
+      "recommendedLevel": null,
+      "name": "Bria's Manor",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 228,
+      "wikiText": "Bria's Manor is a point of interest within Hellion Forest. Secluded deep inside this dark forest is a house owned by the ghost of the necromancer Bria. Charr cubs occasionally play in the courtyard.",
+      "waypointChatLink": "[&BOYBAAA=]"
+    },
+    {
+      "stepId": "25:poi:470",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "470",
+      "coord": [
+        61716,
+        29662
+      ],
+      "recommendedLevel": null,
+      "name": "Herdsman's Bastion",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 301,
+      "wikiText": "The Herdsman's Bastion is a point of interest within Bloodfin Lake This tree lined grove is bordered to the southeast by a piece of Northern Wall.",
+      "waypointChatLink": "[&BOMBAAA=]"
+    },
+    {
+      "stepId": "25:heart:146",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "146",
+      "coord": [
+        61537,
+        29632
+      ],
+      "recommendedLevel": 51,
+      "name": "Join the Iron Legion in tearing down the Ascalonian wall.",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61954,
+          29512
+        ],
+        [
+          61562,
+          29940
+        ],
+        [
+          61455,
+          29814
+        ],
+        [
+          61475,
+          29638
+        ],
+        [
+          61488,
+          29585
+        ],
+        [
+          61646,
+          29471
+        ],
+        [
+          61817,
+          29386
+        ],
+        [
+          61954,
+          29512
+        ]
+      ],
+      "trailIndex": 324,
+      "wikiText": "Fire cannons at the wall to break it apart and throw the broken pieces into water. Destroy any ghosts rebuilding the wall.",
+      "waypointChatLink": "[&BOMBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:483",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "483",
+      "coord": [
+        61524,
+        29598
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodfin Lake Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOMBAAA=]",
+      "waypointChatLink": "[&BOMBAAA=]",
+      "trailIndex": 330,
+      "wikiText": "Bloodfin Lake is an area located in the southeastern section of the Iron Marches, on the border of Plains of Ashford and the Great Northern Wall."
+    },
+    {
+      "stepId": "25:poi:469",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "469",
+      "coord": [
+        60924,
+        29571
+      ],
+      "recommendedLevel": null,
+      "name": "The Cauldron of Searing",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 427,
+      "wikiText": "The Cauldron of Searing is a point of interest within Ironhead Lake. This location is the resting place of the massive iron cauldron that the charr used to ignite the Searing in 1070 AE.",
+      "waypointChatLink": "[&BOIBAAA=]"
+    },
+    {
+      "stepId": "25:hero:0-122",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "hero",
+      "objectiveId": "0-122",
+      "coord": [
+        60936,
+        29599
+      ],
+      "recommendedLevel": null,
+      "name": "Searing Cauldron",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 431,
+      "wikiText": "The Searing Cauldrons were the tools used by the charr led by Flame Legion to bring forth the Searing in 1070 AE.",
+      "waypointChatLink": "[&BOIBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:482",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "482",
+      "coord": [
+        60941,
+        29823
+      ],
+      "recommendedLevel": null,
+      "name": "Dewclaw Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOIBAAA=]",
+      "waypointChatLink": "[&BOIBAAA=]",
+      "trailIndex": 460,
+      "wikiText": "Stonesheath Overlook is an area within the Iron Marches. It holds the fishing village of Dewclaw Village."
+    },
+    {
+      "stepId": "25:poi:468",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "468",
+      "coord": [
+        60736,
+        29686
+      ],
+      "recommendedLevel": null,
+      "name": "Dewclaw Village",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 496,
+      "wikiText": "Dewclaw Village is a point of interest within Stonesheath Overlook. It is a Charr fishing village that is still under construction.",
+      "waypointChatLink": "[&BOIBAAA=]"
+    },
+    {
+      "stepId": "25:vista:1589",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1589",
+      "coord": [
+        60606,
+        29703
+      ],
+      "recommendedLevel": null,
+      "name": "Stonesheath Overlook",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 541,
+      "wikiText": "A very easy hike to the overlook",
+      "waypointChatLink": "[&BOIBAAA=]"
+    },
+    {
+      "stepId": "25:heart:150",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "150",
+      "coord": [
+        60280,
+        29622
+      ],
+      "recommendedLevel": 53,
+      "name": "Aid Centurion Truthbringer in Echoslab Arches.",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60172,
+          29889
+        ],
+        [
+          59959,
+          29752
+        ],
+        [
+          59957,
+          29634
+        ],
+        [
+          60043,
+          29601
+        ],
+        [
+          60141,
+          29427
+        ],
+        [
+          60253,
+          29462
+        ],
+        [
+          60388,
+          29528
+        ],
+        [
+          60424,
+          29600
+        ],
+        [
+          60449,
+          29716
+        ],
+        [
+          60425,
+          29770
+        ],
+        [
+          60172,
+          29889
+        ]
+      ],
+      "trailIndex": 597,
+      "wikiText": "Bring mortar rounds to engineers and join assault squads on raids. Speak to Legionnaires to start assaults.",
+      "waypointChatLink": "[&BOQBAAA=]"
+    },
+    {
+      "stepId": "25:vista:1595",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1595",
+      "coord": [
+        60085,
+        29769
+      ],
+      "recommendedLevel": null,
+      "name": "Echoslab Arches",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 646,
+      "wikiText": "Starting from waypoint, go west to the ramp and climb up the rocks, staying as close to the cliffs as possible.",
+      "waypointChatLink": "[&BOQBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:484",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "484",
+      "coord": [
+        60281,
+        29394
+      ],
+      "recommendedLevel": null,
+      "name": "Old Piken Ruins Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOQBAAA=]",
+      "waypointChatLink": "[&BOQBAAA=]",
+      "trailIndex": 721,
+      "wikiText": "Champion's Shield is an area within the Iron Marches. The ruins of Piken Square are located there, where the Durmand Priory are conducting research on Ascalonian relics."
+    },
+    {
+      "stepId": "25:heart:151",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "151",
+      "coord": [
+        60319,
+        29266
+      ],
+      "recommendedLevel": 54,
+      "name": "Aid Magister Razermane with the preservation of the Old Piken Ruins.",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60207,
+          29229
+        ],
+        [
+          60268,
+          29217
+        ],
+        [
+          60345,
+          29225
+        ],
+        [
+          60363,
+          29282
+        ],
+        [
+          60345,
+          29380
+        ],
+        [
+          60290,
+          29410
+        ],
+        [
+          60203,
+          29379
+        ],
+        [
+          60187,
+          29307
+        ],
+        [
+          60207,
+          29229
+        ]
+      ],
+      "trailIndex": 741,
+      "wikiText": "Find and return any looted artifacts to the proper tombs, slay any Flame Legion or ghosts who interfere.",
+      "waypointChatLink": "[&BOQBAAA=]"
+    },
+    {
+      "stepId": "25:heart:154",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "154",
+      "coord": [
+        60598,
+        28908
+      ],
+      "recommendedLevel": 54,
+      "name": "Help Braxa Scalehunter tend to the devourer nests.",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60670,
+          28759
+        ],
+        [
+          60725,
+          28778
+        ],
+        [
+          60741,
+          28836
+        ],
+        [
+          60750,
+          28880
+        ],
+        [
+          60766,
+          28897
+        ],
+        [
+          60772,
+          28910
+        ],
+        [
+          60785,
+          28938
+        ],
+        [
+          60782,
+          28995
+        ],
+        [
+          60774,
+          29060
+        ],
+        [
+          60758,
+          29114
+        ],
+        [
+          60715,
+          29149
+        ],
+        [
+          60658,
+          29174
+        ],
+        [
+          60638,
+          29200
+        ],
+        [
+          60621,
+          29237
+        ],
+        [
+          60590,
+          29243
+        ],
+        [
+          60548,
+          29247
+        ],
+        [
+          60523,
+          29180
+        ],
+        [
+          60514,
+          29128
+        ],
+        [
+          60508,
+          29077
+        ],
+        [
+          60497,
+          29000
+        ],
+        [
+          60492,
+          28900
+        ],
+        [
+          60490,
+          28859
+        ],
+        [
+          60508,
+          28820
+        ],
+        [
+          60574,
+          28762
+        ],
+        [
+          60670,
+          28759
+        ]
+      ],
+      "trailIndex": 800,
+      "wikiText": "Feed devourer queens. Defend them and their nests from hungry Flame Legion. Collect extra eggs and bring them to Hazen or Braxa.",
+      "waypointChatLink": "[&BOcBAAA=]"
+    },
+    {
+      "stepId": "25:poi:472",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "472",
+      "coord": [
+        60796,
+        28698
+      ],
+      "recommendedLevel": null,
+      "name": "Vermin's Folly",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 834,
+      "wikiText": "The Vermin's Folly is a point of interest within the Monger's Sink. Inside this hollow mesa, forces of the Flame Legion have established a small outpost.",
+      "waypointChatLink": "[&BOcBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:487",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "487",
+      "coord": [
+        60586,
+        28537
+      ],
+      "recommendedLevel": null,
+      "name": "Village of Scalecatch Waypoint",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOcBAAA=]",
+      "waypointChatLink": "[&BOcBAAA=]",
+      "trailIndex": 892,
+      "wikiText": "Monger's Sink is an area within the Iron Marches. This is where the charr train their devourers in this region."
+    },
+    {
+      "stepId": "25:heart:148",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "148",
+      "coord": [
+        60149,
+        28555
+      ],
+      "recommendedLevel": 55,
+      "name": "Help Warden Scourgejaw run the prison quarry.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59992,
+          28595
+        ],
+        [
+          59947,
+          28319
+        ],
+        [
+          59972,
+          28311
+        ],
+        [
+          60123,
+          28407
+        ],
+        [
+          60161,
+          28537
+        ],
+        [
+          60160,
+          28570
+        ],
+        [
+          59992,
+          28595
+        ]
+      ],
+      "trailIndex": 965,
+      "wikiText": "Motivate prisoners to work faster, throw scourgejaw ore into furnaces to make iron, and give the iron to the guards.",
+      "waypointChatLink": "[&BOgBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:488",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "488",
+      "coord": [
+        60205,
+        28157
+      ],
+      "recommendedLevel": null,
+      "name": "Sleekfur Encampment Waypoint",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOgBAAA=]",
+      "waypointChatLink": "[&BOgBAAA=]",
+      "trailIndex": 1016,
+      "wikiText": "Soldier Mesa is an area within the Iron Marches. This crossroad is often a target of the Flame Legion and thus a contingent of Iron Legion soldiers has been sent at Sleekfur Encampment to defend it."
+    },
+    {
+      "stepId": "25:heart:149",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "149",
+      "coord": [
+        60156,
+        28149
+      ],
+      "recommendedLevel": 56,
+      "name": "Help the Sleekfur Warband defend the road at Soldier Mesa.",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60070,
+          28191
+        ],
+        [
+          60127,
+          28241
+        ],
+        [
+          60248,
+          28267
+        ],
+        [
+          60308,
+          28256
+        ],
+        [
+          60434,
+          28188
+        ],
+        [
+          60613,
+          28168
+        ],
+        [
+          60648,
+          28098
+        ],
+        [
+          60625,
+          28056
+        ],
+        [
+          60594,
+          27956
+        ],
+        [
+          60541,
+          27915
+        ],
+        [
+          60455,
+          27841
+        ],
+        [
+          60406,
+          27812
+        ],
+        [
+          60320,
+          27818
+        ],
+        [
+          60266,
+          27833
+        ],
+        [
+          60259,
+          27893
+        ],
+        [
+          60240,
+          27941
+        ],
+        [
+          60062,
+          28083
+        ],
+        [
+          60061,
+          28135
+        ],
+        [
+          60070,
+          28191
+        ]
+      ],
+      "trailIndex": 1024,
+      "wikiText": "Defend machine guns emplacements along the road and kill shamans in the forest. Destroy shrines to provoke the shamans out of hiding.",
+      "waypointChatLink": "[&BOgBAAA=]"
+    },
+    {
+      "stepId": "25:hero:0-44",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "hero",
+      "objectiveId": "0-44",
+      "coord": [
+        60408,
+        27889
+      ],
+      "recommendedLevel": null,
+      "name": "Imp Power Essence",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1090,
+      "wikiText": "The Imp Power Essence is a stone that is tied to Emberclaw.",
+      "waypointChatLink": "[&BOgBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:491",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "491",
+      "coord": [
+        60642,
+        27418
+      ],
+      "recommendedLevel": null,
+      "name": "Town of Cowlfang's Star Waypoint",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOsBAAA=]",
+      "waypointChatLink": "[&BOsBAAA=]",
+      "trailIndex": 1155,
+      "wikiText": "Glory's Steps is an area in the Iron Marches. An Iron Legion outpost called the Town of Cowlfang's Star can be found there which is used as the legion's HQ in the region in their campaign against the Flame Legion."
+    },
+    {
+      "stepId": "25:vista:1594",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1594",
+      "coord": [
+        60625,
+        27318
+      ],
+      "recommendedLevel": null,
+      "name": "Lake Carnifex",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1180,
+      "wikiText": "Lake Carnifex is an area within the Iron Marches. This body of water is inhabited by different types of fish who fight for territory.",
+      "waypointChatLink": "[&BOsBAAA=]"
+    },
+    {
+      "stepId": "25:heart:152",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "152",
+      "coord": [
+        60723,
+        27228
+      ],
+      "recommendedLevel": 58,
+      "name": "Aid the Allied Legions as they march on the Flame Legion's territory.",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60686,
+          27166
+        ],
+        [
+          60685,
+          27081
+        ],
+        [
+          60668,
+          27009
+        ],
+        [
+          60600,
+          26903
+        ],
+        [
+          60578,
+          26904
+        ],
+        [
+          60582,
+          26980
+        ],
+        [
+          60519,
+          27047
+        ],
+        [
+          60474,
+          27086
+        ],
+        [
+          60310,
+          27057
+        ],
+        [
+          60251,
+          27010
+        ],
+        [
+          60259,
+          26816
+        ],
+        [
+          60301,
+          26775
+        ],
+        [
+          60368,
+          26763
+        ],
+        [
+          60469,
+          26763
+        ],
+        [
+          60511,
+          26767
+        ],
+        [
+          60608,
+          26761
+        ],
+        [
+          60580,
+          26820
+        ],
+        [
+          60606,
+          26822
+        ],
+        [
+          60752,
+          26734
+        ],
+        [
+          60819,
+          26719
+        ],
+        [
+          60860,
+          26683
+        ],
+        [
+          60926,
+          26678
+        ],
+        [
+          61057,
+          26684
+        ],
+        [
+          61152,
+          26713
+        ],
+        [
+          61187,
+          26826
+        ],
+        [
+          61156,
+          27031
+        ],
+        [
+          61166,
+          27145
+        ],
+        [
+          61149,
+          27346
+        ],
+        [
+          61048,
+          27516
+        ],
+        [
+          60954,
+          27603
+        ],
+        [
+          60815,
+          27567
+        ],
+        [
+          60688,
+          27514
+        ],
+        [
+          60588,
+          27494
+        ],
+        [
+          60525,
+          27509
+        ],
+        [
+          60461,
+          27354
+        ],
+        [
+          60515,
+          27295
+        ],
+        [
+          60582,
+          27274
+        ],
+        [
+          60634,
+          27277
+        ],
+        [
+          60672,
+          27241
+        ],
+        [
+          60686,
+          27166
+        ]
+      ],
+      "trailIndex": 1197,
+      "wikiText": "Kill Flame Legion, disarm land mines, set up turrets and Iron Legion war banners.",
+      "waypointChatLink": "[&BOsBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:493",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "493",
+      "coord": [
+        60750,
+        26950
+      ],
+      "recommendedLevel": null,
+      "name": "Firewatch Encampment Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO0BAAA=]",
+      "waypointChatLink": "[&BO0BAAA=]",
+      "trailIndex": 1230,
+      "wikiText": "Gladefall Run is an area in the northwest of the Iron Marches. Ogres are trying to establish a Kraal there but are constantly attacked by the Flame Legion."
+    },
+    {
+      "stepId": "25:hero:0-120",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "hero",
+      "objectiveId": "0-120",
+      "coord": [
+        60434,
+        27141
+      ],
+      "recommendedLevel": null,
+      "name": "Sharky Longears",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1253,
+      "wikiText": "Sharky Longears is a golemancer who starts the hero challenge Defeat Sharky Longears and Thundernation P70X near Lake Carnifex.",
+      "waypointChatLink": "[&BOsBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:492",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "492",
+      "coord": [
+        60046,
+        27208
+      ],
+      "recommendedLevel": null,
+      "name": "Bulwark Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOwBAAA=]",
+      "waypointChatLink": "[&BOwBAAA=]",
+      "trailIndex": 1273,
+      "wikiText": "The Western Bulwark is an area within the Iron Marches. This peaceful road leads to the Fireheart Rise."
+    },
+    {
+      "stepId": "25:poi:474",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "474",
+      "coord": [
+        60429,
+        26788
+      ],
+      "recommendedLevel": null,
+      "name": "Invictus Castrum",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1352,
+      "wikiText": "Invictus Castrum is a point of interest within the Victium Moors and is the southern half of the large Flame Legion encampment in the northwest of the Iron Marches. It features stone hands holding giant braziers.",
+      "waypointChatLink": "[&BO0BAAA=]"
+    },
+    {
+      "stepId": "25:heart:153",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "153",
+      "coord": [
+        60511,
+        26594
+      ],
+      "recommendedLevel": 60,
+      "name": "Aid the Scorch Warband with their assault on the Flame Legion.",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60279,
+          25855
+        ],
+        [
+          60520,
+          26502
+        ],
+        [
+          60572,
+          26611
+        ],
+        [
+          60559,
+          26703
+        ],
+        [
+          60528,
+          26731
+        ],
+        [
+          60487,
+          26724
+        ],
+        [
+          60462,
+          26720
+        ],
+        [
+          60380,
+          26752
+        ],
+        [
+          60257,
+          26706
+        ],
+        [
+          60153,
+          26665
+        ],
+        [
+          60069,
+          26396
+        ],
+        [
+          59867,
+          25851
+        ],
+        [
+          60279,
+          25855
+        ]
+      ],
+      "trailIndex": 1400,
+      "wikiText": "Eliminate Flame Legion. Destroy braziers, turrets and equipment. Uncover intel.",
+      "waypointChatLink": "[&BO4BAAA=]"
+    },
+    {
+      "stepId": "25:poi:475",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "475",
+      "coord": [
+        60642,
+        26455
+      ],
+      "recommendedLevel": null,
+      "name": "Newglade Kraal",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1424,
+      "wikiText": "Newglade Kraal is an ogre kraal located in the Gladefall Run. It is established by Gortho, Son of Malik and a few other ogres from Grostogg's Kraal in order to settle in a place situated further away from Kralkatorrik's Brand.",
+      "waypointChatLink": "[&BO4BAAA=]"
+    },
+    {
+      "stepId": "25:poi:476",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "476",
+      "coord": [
+        60181,
+        26042
+      ],
+      "recommendedLevel": null,
+      "name": "The Blasted Hearth",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1506,
+      "wikiText": "The Blasted Hearth is a point of interest within the Scorchlands. In the far northern section of this areas huge Flame Legion encampment is this large raised plateau. The head shaman Drakin Cinderspire carries out his evil rituals here.",
+      "waypointChatLink": "[&BO4BAAA=]"
+    },
+    {
+      "stepId": "25:vista:1596",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1596",
+      "coord": [
+        60240,
+        26144
+      ],
+      "recommendedLevel": null,
+      "name": "Scorchlands",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1526,
+      "wikiText": "If you try to walk through the Flame Legion basecamp, plan on a BIG fight just to get near this vista.",
+      "waypointChatLink": "[&BO4BAAA=]"
+    },
+    {
+      "stepId": "25:vista:1591",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1591",
+      "coord": [
+        60487,
+        26070
+      ],
+      "recommendedLevel": null,
+      "name": "Gladefall Run",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1605,
+      "wikiText": "This is a partial jumping route. Start from the waypoint, and head for the Renown Heart on the LEFT BANK. Hug the bank until you reach the cliff, where the jumps along the cliff face bring you to the bridge above the falls.",
+      "waypointChatLink": "[&BO4BAAA=]"
+    },
+    {
+      "stepId": "25:poi:478",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "478",
+      "coord": [
+        60451,
+        25934
+      ],
+      "recommendedLevel": null,
+      "name": "Fellmyst Falls",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1625,
+      "wikiText": "Fellmyst Falls is a pair of waterfalls in Gladefall Run that flow from deep in the mountains north of the Iron Marches.",
+      "waypointChatLink": "[&BO4BAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:494",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "494",
+      "coord": [
+        60676,
+        26282
+      ],
+      "recommendedLevel": null,
+      "name": "Gladefall Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO4BAAA=]",
+      "waypointChatLink": "[&BO4BAAA=]",
+      "trailIndex": 1677,
+      "wikiText": "Gladefall Run is an area in the northwest of the Iron Marches. Ogres are trying to establish a Kraal there but are constantly attacked by the Flame Legion."
+    },
+    {
+      "stepId": "25:poi:477",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "477",
+      "coord": [
+        61007,
+        26055
+      ],
+      "recommendedLevel": null,
+      "name": "Grundallion's Lair",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1735,
+      "wikiText": "Grundallion's Lair is a point of interest within The Infestation. It is inaccessible through the main caverns and must be accessed from above, to the west. In the bottom of this dead end canyon lies a huge Branded Devourer nest.",
+      "waypointChatLink": "[&BO4BAAA=]"
+    },
+    {
+      "stepId": "25:heart:144",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "144",
+      "coord": [
+        61545,
+        26437
+      ],
+      "recommendedLevel": 59,
+      "name": "Help the ogres remove the Branded from their land.",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61553,
+          25924
+        ],
+        [
+          61730,
+          25913
+        ],
+        [
+          61892,
+          25969
+        ],
+        [
+          61897,
+          26285
+        ],
+        [
+          61850,
+          26465
+        ],
+        [
+          61632,
+          26464
+        ],
+        [
+          61580,
+          26526
+        ],
+        [
+          61326,
+          26545
+        ],
+        [
+          61163,
+          26710
+        ],
+        [
+          60997,
+          26651
+        ],
+        [
+          60904,
+          26547
+        ],
+        [
+          60868,
+          26326
+        ],
+        [
+          60853,
+          26175
+        ],
+        [
+          60869,
+          25986
+        ],
+        [
+          60970,
+          25917
+        ],
+        [
+          61343,
+          25913
+        ],
+        [
+          61553,
+          25924
+        ]
+      ],
+      "trailIndex": 1873,
+      "wikiText": "Release ogre traps and motivate weary ogres. Slay Branded creatures, nests and eggs.",
+      "waypointChatLink": "[&BO8BAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:495",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "495",
+      "coord": [
+        61638,
+        26438
+      ],
+      "recommendedLevel": null,
+      "name": "Grostogg's Kraal Waypoint",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO8BAAA=]",
+      "waypointChatLink": "[&BO8BAAA=]",
+      "trailIndex": 1895,
+      "wikiText": "Ebbing Heart Run is an area in the northeast of the Iron Marches. The ogres there are in search of a new location to establish a kraal, away from the Dragonbrand."
+    },
+    {
+      "stepId": "25:vista:1593",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1593",
+      "coord": [
+        61704,
+        26429
+      ],
+      "recommendedLevel": null,
+      "name": "Ebbing Heart Run",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1923,
+      "wikiText": "Ebbing Heart Run is an area in the northeast of the Iron Marches. The ogres there are in search of a new location to establish a kraal, away from the Dragonbrand.",
+      "waypointChatLink": "[&BO8BAAA=]"
+    },
+    {
+      "stepId": "25:poi:479",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "479",
+      "coord": [
+        61870,
+        25981
+      ],
+      "recommendedLevel": null,
+      "name": "Heartsond Falls",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1977,
+      "wikiText": "The Heartsond Falls are a point of interest within the Ebbing Heart Run. Here at the far northern reaches of the Iron Marches is the headwater of one of the main rivers of Ascalon.",
+      "waypointChatLink": "[&BO8BAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:490",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "490",
+      "coord": [
+        61168,
+        26997
+      ],
+      "recommendedLevel": null,
+      "name": "Viper's Run Waypoint",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOoBAAA=]",
+      "waypointChatLink": "[&BOoBAAA=]",
+      "trailIndex": 2100,
+      "wikiText": "The Granite Front is an area within the Iron Marches. Iron Legion patrols are often ambushed by Flame Legion assassins in this area."
+    },
+    {
+      "stepId": "25:heart:143",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "143",
+      "coord": [
+        61194,
+        27025
+      ],
+      "recommendedLevel": 58,
+      "name": "Assist the Sentinels patrolling Crystalwept Groves.",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61976,
+          27170
+        ],
+        [
+          61629,
+          27330
+        ],
+        [
+          61405,
+          27349
+        ],
+        [
+          61279,
+          27366
+        ],
+        [
+          61275,
+          27212
+        ],
+        [
+          61253,
+          27179
+        ],
+        [
+          61200,
+          27136
+        ],
+        [
+          61185,
+          27066
+        ],
+        [
+          61183,
+          26936
+        ],
+        [
+          61201,
+          26842
+        ],
+        [
+          61165,
+          26745
+        ],
+        [
+          61223,
+          26715
+        ],
+        [
+          61359,
+          26553
+        ],
+        [
+          61503,
+          26532
+        ],
+        [
+          61589,
+          26530
+        ],
+        [
+          61668,
+          26593
+        ],
+        [
+          61742,
+          26646
+        ],
+        [
+          61888,
+          26802
+        ],
+        [
+          61976,
+          27170
+        ]
+      ],
+      "trailIndex": 2105,
+      "wikiText": "Activate beacons to lure out Branded, destroy Branded crystals, and cull Branded creatures.",
+      "waypointChatLink": "[&BOoBAAA=]"
+    },
+    {
+      "stepId": "25:vista:1592",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1592",
+      "coord": [
+        61257,
+        27293
+      ],
+      "recommendedLevel": null,
+      "name": "Crystalwept Groves",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2151,
+      "wikiText": "The access to this vista starts on the \"spiked tail\" south of the waypoint. Walk up the gully on the left side, then jump up the tail and shift to the grassy rocks on the right. The vista itself is higher on the tail.",
+      "waypointChatLink": "[&BOoBAAA=]"
+    },
+    {
+      "stepId": "25:poi:473",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "473",
+      "coord": [
+        61520,
+        27048
+      ],
+      "recommendedLevel": null,
+      "name": "Wreckage of Day's Labor",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2207,
+      "wikiText": "The Wreckage of Day's Labor is a Branded encampment in the Iron Marches. Sentinels are constantly battling with enemies there.",
+      "waypointChatLink": "[&BOoBAAA=]"
+    },
+    {
+      "stepId": "25:hero:0-124",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "hero",
+      "objectiveId": "0-124",
+      "coord": [
+        61875,
+        27354
+      ],
+      "recommendedLevel": null,
+      "name": "Branded Waterfall",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2274,
+      "wikiText": "A Branded Waterfall resides to the north of Lake Desolann, feeding the lake with corrupted water.",
+      "waypointChatLink": "[&BOoBAAA=]"
+    },
+    {
+      "stepId": "25:poi:481",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "poi",
+      "objectiveId": "481",
+      "coord": [
+        61484,
+        27641
+      ],
+      "recommendedLevel": null,
+      "name": "Spentlung Depth",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2303,
+      "wikiText": "The Spentlung Depth is a point of interest within Lake Desolann. This deep underwater cave is filled with many types of plant life. It is inhabited by Branded Fish and Sentinels who are constantly fighting each other.",
+      "waypointChatLink": "[&BOkBAAA=]"
+    },
+    {
+      "stepId": "25:hero:0-121",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "hero",
+      "objectiveId": "0-121",
+      "coord": [
+        61197,
+        27820
+      ],
+      "recommendedLevel": null,
+      "name": "Crusader Arevir Soulhammer",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2366,
+      "wikiText": "Crusader Arevir Soulhammer is a member of the Vigil that quizzes people about General Almorra Soulkeeper. Answer her correctly to earn a hero point.",
+      "waypointChatLink": "[&BOkBAAA=]"
+    },
+    {
+      "stepId": "25:waypoint:489",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "waypoint",
+      "objectiveId": "489",
+      "coord": [
+        61229,
+        28081
+      ],
+      "recommendedLevel": null,
+      "name": "Brandwatch Encampment Waypoint",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOkBAAA=]",
+      "waypointChatLink": "[&BOkBAAA=]",
+      "trailIndex": 2393,
+      "wikiText": "The Viper's Run is an area within the Iron Marches. Trained devourers are sent to Brandwatch Encampment."
+    },
+    {
+      "stepId": "25:heart:142",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "heart",
+      "objectiveId": "142",
+      "coord": [
+        61393,
+        28184
+      ],
+      "recommendedLevel": 57,
+      "name": "Fight the Branded in Lake Desolann with the Sentinels.",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61986,
+          27170
+        ],
+        [
+          61857,
+          28315
+        ],
+        [
+          61546,
+          28340
+        ],
+        [
+          61343,
+          28198
+        ],
+        [
+          61253,
+          27824
+        ],
+        [
+          61210,
+          27503
+        ],
+        [
+          61281,
+          27369
+        ],
+        [
+          61400,
+          27352
+        ],
+        [
+          61626,
+          27334
+        ],
+        [
+          61986,
+          27170
+        ]
+      ],
+      "trailIndex": 2412,
+      "wikiText": "Destroy Branded creatures, fish for Branded fish, set traps in the lake, and aid Sentinels in combat.",
+      "waypointChatLink": "[&BOkBAAA=]"
+    },
+    {
+      "stepId": "25:vista:1590",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "vista",
+      "objectiveId": "1590",
+      "coord": [
+        61494,
+        28232
+      ],
+      "recommendedLevel": null,
+      "name": "Southshore Wastes",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2432,
+      "wikiText": "The Southshore Wastes is an area within the Iron Marches. This plain was once habited by Earth Elementals but a large portion of them has been corrupted by the Brand.",
+      "waypointChatLink": "[&BOkBAAA=]"
+    },
+    {
+      "stepId": "25:hero:0-123",
+      "mapId": 25,
+      "zoneName": "Iron Marches",
+      "type": "hero",
+      "objectiveId": "0-123",
+      "coord": [
+        60999,
+        28305
+      ],
+      "recommendedLevel": null,
+      "name": "Zzzig",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Zzzig is an ogre found in Lamprey Grottoes that, as a means of staying awake, challenges the player to a duel. Defeat him to earn a hero point.",
+      "waypointChatLink": "[&BOkBAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

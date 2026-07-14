@@ -1,0 +1,1419 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1438,
+    "name": "New Kaineng City",
+    "continentId": 1,
+    "regionId": 37,
+    "regionName": "Cantha",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -46080,
+        -30720
+      ],
+      [
+        46080,
+        30720
+      ]
+    ],
+    "continentRect": [
+      [
+        25000,
+        98100
+      ],
+      [
+        28840,
+        100660
+      ]
+    ],
+    "sectorRect": [
+      [
+        25005.9,
+        98163.3
+      ],
+      [
+        28756.7,
+        100653
+      ]
+    ],
+    "labelCoord": [
+      27000,
+      99400
+    ],
+    "release": "eod"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1438:waypoint:3270",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "waypoint",
+      "objectiveId": "3270",
+      "coord": [
+        25473,
+        99592
+      ],
+      "recommendedLevel": null,
+      "name": "Promenade Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMYMAAA=]",
+      "waypointChatLink": "[&BMYMAAA=]",
+      "trailIndex": 2,
+      "wikiText": "Kaineng Docks is an area in New Kaineng City serving as an entry point for visitors from Shing Jea Island and other continents. Just like it is a large market where merchants offer and sell their products."
+    },
+    {
+      "stepId": "1438:poi:3380",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3380",
+      "coord": [
+        25481,
+        99474
+      ],
+      "recommendedLevel": null,
+      "name": "Kaineng Fish Market",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 7,
+      "wikiText": "The Kaineng Fish Market it is a trade center for fish and shellfish in the Kaineng Docks.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3305",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3305",
+      "coord": [
+        25656,
+        99375
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Monument",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 23,
+      "wikiText": "The Jade Monument is a point of interest in New Kaineng City. It is a monument made of jade in honor of Soo-Won for saving the Dragon Empire after the Zhaitan Disaster.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3418",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3418",
+      "coord": [
+        25490,
+        100403
+      ],
+      "recommendedLevel": null,
+      "name": "Shipwreck Graveyard",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 44,
+      "wikiText": "Shipwreck Graveyard is a cluster of destroyed ships located in Sotdae Landing.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[25520.2, 100604]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[25520.2, 100604]",
+      "coord": [
+        25520,
+        100604
+      ],
+      "recommendedLevel": null,
+      "name": "Sotdae Landing Lookout",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 98,
+      "wikiText": "Sotdae Landing Lookout is a communing hero challenge in Sotdae Landing. It is near the top of a building structure.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3377",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3377",
+      "coord": [
+        26067,
+        99381
+      ],
+      "recommendedLevel": null,
+      "name": "Central Power Station",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 144,
+      "wikiText": "The Central Power Station is the main power hub of New Kaineng City.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3247",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3247",
+      "coord": [
+        26108,
+        99380
+      ],
+      "recommendedLevel": null,
+      "name": "Haebaragi's Tears",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 145,
+      "wikiText": "Haebaragi's Tears is a large waterfall found in the Power Plant, named after the first Canthan empress regnant, Empress Haebaragi.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[26003.3, 99379.5]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[26003.3, 99379.5]",
+      "coord": [
+        26003,
+        99380
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Monument",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 193,
+      "wikiText": "The Jade Monument is a hero challenge located in the Power Plant area of New Kaineng City, overlooking the Jade Monument.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[26032.6, 99071.7]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[26032.6, 99071.7]",
+      "coord": [
+        26033,
+        99072
+      ],
+      "recommendedLevel": null,
+      "name": "Engineer Hu",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 227,
+      "wikiText": "Engineer Hu is a Xunlai Jade technician working in Baedal Hill he is also a repeatable hero challenge.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3301",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3301",
+      "coord": [
+        26275,
+        98858
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Statuette",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 233,
+      "wikiText": "The Jade Statuette is a jade dragon statue inside Baedal Hill, in New Kaineng City.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3381",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3381",
+      "coord": [
+        26425,
+        98666
+      ],
+      "recommendedLevel": null,
+      "name": "North Substation",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 239,
+      "wikiText": "The North Substation is a power station located on Baedal Hill, and together with Central Power Station supply power to New Kaineng City.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3339",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3339",
+      "coord": [
+        26428,
+        98550
+      ],
+      "recommendedLevel": null,
+      "name": "Tae-Jin's Estate",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 290,
+      "wikiText": "Tae-Jin's Estate it is the residence of Tae-Jin, which is located in the Garden Heights. Parties for the nobility are usually organized in the place.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3413",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3413",
+      "coord": [
+        26106,
+        98669
+      ],
+      "recommendedLevel": null,
+      "name": "Garden of Enlightenment",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 312,
+      "wikiText": "Garden of Enlightenment is a point of interest within the Garden Heights.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3308",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3308",
+      "coord": [
+        26117,
+        98802
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of Preeminence",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 327,
+      "wikiText": "The Temple of Preeminence it is a temple that is located in the Garden Heights.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:heart:447",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "heart",
+      "objectiveId": "447",
+      "coord": [
+        25993,
+        98646
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Xunlai Jade test and promote jade tech.",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          25834,
+          98774
+        ],
+        [
+          25830,
+          98691
+        ],
+        [
+          25906,
+          98593
+        ],
+        [
+          25970,
+          98531
+        ],
+        [
+          26056,
+          98466
+        ],
+        [
+          26096,
+          98490
+        ],
+        [
+          26183,
+          98615
+        ],
+        [
+          26191,
+          98652
+        ],
+        [
+          26158,
+          98710
+        ],
+        [
+          26023,
+          98851
+        ],
+        [
+          25947,
+          98882
+        ],
+        [
+          25834,
+          98774
+        ]
+      ],
+      "trailIndex": 353,
+      "wikiText": "Use jade tech to light floating lanterns, repair fountains, and activate training mechs to fight. Keep the garden free of agitators.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:waypoint:3350",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "waypoint",
+      "objectiveId": "3350",
+      "coord": [
+        25946,
+        98633
+      ],
+      "recommendedLevel": null,
+      "name": "Garden Heights Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBYNAAA=]",
+      "waypointChatLink": "[&BBYNAAA=]",
+      "trailIndex": 358,
+      "wikiText": "Garden Heights is one of the uppermost areas in the New Kaineng City. It is a place for the Xunlai Jade's dragonjade technology trade show and tech demos, where the player can learn different jade tech mechanics."
+    },
+    {
+      "stepId": "1438:poi:3364",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3364",
+      "coord": [
+        25805,
+        99098
+      ],
+      "recommendedLevel": null,
+      "name": "Pool of Tranquility",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 385,
+      "wikiText": "The Pool of Tranquility it is a small pond that is located in the Garden Heights.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:vista:3401",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "vista",
+      "objectiveId": "3401",
+      "coord": [
+        25696,
+        99111
+      ],
+      "recommendedLevel": null,
+      "name": "Garden Heights",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 395,
+      "wikiText": "On the same level as the waypoint.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3318",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3318",
+      "coord": [
+        25221,
+        98517
+      ],
+      "recommendedLevel": null,
+      "name": "Isle of Hanasha",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 402,
+      "wikiText": "The Isle of Hanasha is a point of interest in Naksi Bay. The island is occupied by naga and kappa which capture and imprison any humans who get too close.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3329",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3329",
+      "coord": [
+        26051,
+        98263
+      ],
+      "recommendedLevel": null,
+      "name": "Reactor Station",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 409,
+      "wikiText": "Reactor Station is the entrance to the Yong Reactor, which is located under Naksi Bay.",
+      "waypointChatLink": "[&BBYNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3225",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3225",
+      "coord": [
+        26434,
+        100183
+      ],
+      "recommendedLevel": null,
+      "name": "South Substation",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 492,
+      "wikiText": "South Substation is a power station located on Gwangsan Hill and together with Central Power Station supply power to New Kaineng City.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3227",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3227",
+      "coord": [
+        26086,
+        99946
+      ],
+      "recommendedLevel": null,
+      "name": "Ministry of Security Headquarters",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 510,
+      "wikiText": "The Ministry of Security Headquarters is the headquarters of the Ministry of Security, one of largest among the many Ministries of Cantha. It is located on Gwangsan Hill.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3323",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3323",
+      "coord": [
+        25846,
+        99906
+      ],
+      "recommendedLevel": null,
+      "name": "Red Duck Teahouse",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 537,
+      "wikiText": "The Red Duck Teahouse is a point of interest in Soojung Heights. It is one of the oldest establishments in New Kaineng, belonging to Lady Kanda.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3250",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3250",
+      "coord": [
+        26039,
+        100178
+      ],
+      "recommendedLevel": null,
+      "name": "Ministry of Archives",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 554,
+      "wikiText": "The Ministry of Archives is a library located in Soojung Heights. It is where the ministry of the same name resides.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[26136.5, 100129]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[26136.5, 100129]",
+      "coord": [
+        26136,
+        100129
+      ],
+      "recommendedLevel": null,
+      "name": "Ministry of Archives",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 586,
+      "wikiText": "The Ministry of Archives is a library located in Soojung Heights. It is where the ministry of the same name resides.",
+      "waypointChatLink": "[&BMYMAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3425",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3425",
+      "coord": [
+        26376,
+        100301
+      ],
+      "recommendedLevel": null,
+      "name": "Ihn's Grace",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 611,
+      "wikiText": "Ihn's Grace is a shrine found in Soojung Heights. It holds an Eye of the Ocean that helps protect New Kaineng City from the Risen.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3358",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3358",
+      "coord": [
+        26751,
+        100441
+      ],
+      "recommendedLevel": null,
+      "name": "Brume Alley",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 625,
+      "wikiText": "Brume Alley is a point of interest in Cobble Ward.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:heart:441",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "heart",
+      "objectiveId": "441",
+      "coord": [
+        27014,
+        100171
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the tengu of Cobble Ward restore their district.",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          26549,
+          99945
+        ],
+        [
+          26632,
+          100119
+        ],
+        [
+          26754,
+          100400
+        ],
+        [
+          26863,
+          100465
+        ],
+        [
+          27183,
+          100486
+        ],
+        [
+          27507,
+          100372
+        ],
+        [
+          27401,
+          99762
+        ],
+        [
+          27360,
+          99672
+        ],
+        [
+          26733,
+          99597
+        ],
+        [
+          26695,
+          99711
+        ],
+        [
+          26549,
+          99945
+        ]
+      ],
+      "trailIndex": 635,
+      "wikiText": "Help the tengu restore the Cobble Ward. Use a raptor mount to deliver pressurized steam canisters, realign malfunctioning drones, and use the Tail Spin attack to fix haywire antistealth towers.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3291",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3291",
+      "coord": [
+        27008,
+        100218
+      ],
+      "recommendedLevel": null,
+      "name": "Tengu Square",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 635,
+      "wikiText": "Tengu Square is a point of interest in Cobble Ward.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:waypoint:3353",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "waypoint",
+      "objectiveId": "3353",
+      "coord": [
+        26674,
+        99438
+      ],
+      "recommendedLevel": null,
+      "name": "Ministry Ward Waypoint",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBkNAAA=]",
+      "waypointChatLink": "[&BBkNAAA=]",
+      "trailIndex": 713,
+      "wikiText": "The Ministry Ward is the most central district of New Kaineng City. It is one of the most opulent parts of the city with, vast skyline gardens, and houses the Xunlai Jade Headquarters and the Ministries Headquarters."
+    },
+    {
+      "stepId": "1438:poi:3366",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3366",
+      "coord": [
+        27060,
+        99232
+      ],
+      "recommendedLevel": null,
+      "name": "Seung-Gi's Legacy",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 730,
+      "wikiText": "Seung-Gi's Legacy is a point of interest in Ministry Ward.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:vista:3239",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "vista",
+      "objectiveId": "3239",
+      "coord": [
+        26894,
+        99381
+      ],
+      "recommendedLevel": null,
+      "name": "Ministry Ward",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 776,
+      "wikiText": "On the top level of Kaineng. Move around the Ministry Headquarters towards Seung-Gi's Legacy PoI for the closest set of stairs.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3222",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3222",
+      "coord": [
+        26852,
+        99361
+      ],
+      "recommendedLevel": null,
+      "name": "Ministry Headquarters",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 777,
+      "wikiText": "Ministry Headquarters is the main building of the Ministries of Cantha in New Kaineng City, located in the Ministry Ward district.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3412",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3412",
+      "coord": [
+        27203,
+        99383
+      ],
+      "recommendedLevel": null,
+      "name": "Garden of the Celestials",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 817,
+      "wikiText": "Garden of the Celestials is a garden located in the Ministry Ward. It is located at the top Ministry Headquarters.",
+      "waypointChatLink": "[&BBkNAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3311",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3311",
+      "coord": [
+        27681,
+        98983
+      ],
+      "recommendedLevel": null,
+      "name": "The Old Steamshop",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 832,
+      "wikiText": "The Old Steamshop is a point of interest in North Lab.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[27665.1, 98756]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[27665.1, 98756]",
+      "coord": [
+        27665,
+        98756
+      ],
+      "recommendedLevel": null,
+      "name": "Lab District Terrace",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 839,
+      "wikiText": "Lab District Terrace is a communing hero challenge in North Lab. It is guarded by a random Elite Jade Brotherhood member.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3399",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3399",
+      "coord": [
+        27436,
+        99204
+      ],
+      "recommendedLevel": null,
+      "name": "Lutgardis Market",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 853,
+      "wikiText": "Lutgardis Market is a busy market within Lutgardis Plaza in New Kaineng City.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:vista:3383",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "vista",
+      "objectiveId": "3383",
+      "coord": [
+        28007,
+        99317
+      ],
+      "recommendedLevel": null,
+      "name": "Lutgardis Plaza",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 898,
+      "wikiText": "On the platform above the sushi place. From the waypoint, move north to reach a set of stairs, then run along the platform to reach the vista.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3235",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3235",
+      "coord": [
+        27862,
+        99249
+      ],
+      "recommendedLevel": null,
+      "name": "Tranquil Overlook",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 908,
+      "wikiText": "Tranquil Overlook is a viewpoint giving a great overview of Lutgardis Plaza.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:waypoint:3360",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "waypoint",
+      "objectiveId": "3360",
+      "coord": [
+        27870,
+        99381
+      ],
+      "recommendedLevel": null,
+      "name": "Lutgardis Plaza Waypoint",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCANAAA=]",
+      "waypointChatLink": "[&BCANAAA=]",
+      "trailIndex": 921,
+      "wikiText": "Lutgardis Plaza is a district in the east side of New Kaineng City, which houses the East Precinct and markets. The district takes its name from the old Kurzick House Lutgardis."
+    },
+    {
+      "stepId": "1438:poi:3376",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3376",
+      "coord": [
+        27736,
+        99319
+      ],
+      "recommendedLevel": null,
+      "name": "East Precinct",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 930,
+      "wikiText": "East Precinct is a Ministry of Security building containing some cells and offices, located in Lutgardis Plaza.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[27302.7, 98813]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[27302.7, 98813]",
+      "coord": [
+        27303,
+        98813
+      ],
+      "recommendedLevel": null,
+      "name": "Garden Scaffolding",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 954,
+      "wikiText": "Garden Scaffolding is a communing hero challenge in Bori Ward.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3255",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3255",
+      "coord": [
+        27311,
+        98647
+      ],
+      "recommendedLevel": null,
+      "name": "Garden of Lyssa",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 967,
+      "wikiText": "The Garden of Lyssa is a greenhouse with a translucent glass outer cover, and a cherry blossom. It is named after the goddess Lyssa.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3258",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3258",
+      "coord": [
+        27772,
+        98281
+      ],
+      "recommendedLevel": null,
+      "name": "Nahpui Lab",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1025,
+      "wikiText": "Nahpui Lab is a point of interest in the North Lab, in northeast New Kaineng City. It is a laboratory belonging to Xunlai Jade named after Nahpui Quarter, which was destroyed in the Zhaitan Disaster.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[28363.1, 98585.9]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[28363.1, 98585.9]",
+      "coord": [
+        28363,
+        98586
+      ],
+      "recommendedLevel": null,
+      "name": "Old Kaineng Ruins",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1097,
+      "wikiText": "Old Kaineng Ruins is a communing hero challenge in Old Kaineng. It is guarded by a random elite Unchained Risen. This may be an Elite Unchained Acolyte, Devastator, Mage, or Sentinel.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3223",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3223",
+      "coord": [
+        28436,
+        98615
+      ],
+      "recommendedLevel": null,
+      "name": "Aetherblade Camp",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1104,
+      "wikiText": "Aetherblade Camp is a small hidden camp set up by the Aetherblades in the ruins of Old Kaineng.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:vista:3254",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "vista",
+      "objectiveId": "3254",
+      "coord": [
+        28253,
+        98693
+      ],
+      "recommendedLevel": null,
+      "name": "Old Kaineng",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1137,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3307",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3307",
+      "coord": [
+        28456,
+        98428
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Vault",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1154,
+      "wikiText": "Ancient Vault is a point of interest in the ruins of Old Kaineng, in New Kaineng City.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3210",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3210",
+      "coord": [
+        28597,
+        98321
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Brotherhood Hideout",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1159,
+      "wikiText": "Jade Brotherhood Hideout is a hideout found in the ruins of Old Kaineng and used by the Jade Brotherhood.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[28630.9, 99381.1]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[28630.9, 99381.1]",
+      "coord": [
+        28631,
+        99381
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Purist Necromancer",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1198,
+      "wikiText": "Veteran Purist Necromancers are Purists spell-casters found in Cantha.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3282",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3282",
+      "coord": [
+        28388,
+        99560
+      ],
+      "recommendedLevel": null,
+      "name": "Soo-Won's Protection",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1229,
+      "wikiText": "Soo-Won's Protection is a sanctuary containing the Eyes of the Ocean, relics that are used to safeguard Grub Lane from encroaching Risen.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:heart:449",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "heart",
+      "objectiveId": "449",
+      "coord": [
+        28287,
+        99458
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the East Precinct protect Grub Lane.",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          28705,
+          99311
+        ],
+        [
+          28687,
+          99581
+        ],
+        [
+          28192,
+          99570
+        ],
+        [
+          28192,
+          99456
+        ],
+        [
+          28367,
+          99297
+        ],
+        [
+          28705,
+          99311
+        ]
+      ],
+      "trailIndex": 1244,
+      "wikiText": "Squash Unchained grubs and catch infected crows. Identify Purist hideouts and return stolen Eyes of the Ocean to their shrines.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:vista:3424",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "vista",
+      "objectiveId": "3424",
+      "coord": [
+        28180,
+        99577
+      ],
+      "recommendedLevel": null,
+      "name": "Grub Lane",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1274,
+      "wikiText": "Move towards the vista on ground level, there are stairs close to it. Alternatively, glide down from Sunjiang Lab.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3229",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3229",
+      "coord": [
+        28368,
+        99683
+      ],
+      "recommendedLevel": null,
+      "name": "Sunjiang Lab",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1295,
+      "wikiText": "Sunjiang Lab is a laboratory located in Grub Lane.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3359",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3359",
+      "coord": [
+        28482,
+        99881
+      ],
+      "recommendedLevel": null,
+      "name": "Petrified Shipping Docks",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1301,
+      "wikiText": "Petrified Shipping Docks are docks operated by Xunlai Jade, which are used to receive and send dragonjade shipments and other technological jade scrap.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:hero:coord:[28273.4, 100390]",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "hero",
+      "objectiveId": "coord:[28273.4, 100390]",
+      "coord": [
+        28273,
+        100390
+      ],
+      "recommendedLevel": null,
+      "name": "New Kaineng City Limits",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1340,
+      "wikiText": "The New Kaineng City Limits is a hero challenge located in the Petrified Woods area of New Kaineng City. It is guarded by a random elite Speaker.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3384",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3384",
+      "coord": [
+        28251,
+        100279
+      ],
+      "recommendedLevel": null,
+      "name": "Misa Village",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1346,
+      "wikiText": "Misa Village it is a small village within the Petrified Woods.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3296",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3296",
+      "coord": [
+        27965,
+        100356
+      ],
+      "recommendedLevel": null,
+      "name": "Salvage Yard",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1377,
+      "wikiText": "Salvage Yard is a junkyard, which is used for recycling within the Cobble Ward.",
+      "waypointChatLink": "[&BCANAAA=]"
+    },
+    {
+      "stepId": "1438:poi:3386",
+      "mapId": 1438,
+      "zoneName": "New Kaineng City",
+      "type": "poi",
+      "objectiveId": "3386",
+      "coord": [
+        27905,
+        100015
+      ],
+      "recommendedLevel": null,
+      "name": "Kappa Underpass",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1399,
+      "wikiText": "Kappa Underpass is a canal that is invaded by kappas in the Cobble Ward.",
+      "waypointChatLink": "[&BCANAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

@@ -1,0 +1,1403 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1422,
+    "name": "Dragon's End",
+    "continentId": 1,
+    "regionId": 37,
+    "regionName": "Cantha",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -24576,
+        -43008
+      ],
+      [
+        27648,
+        46080
+      ]
+    ],
+    "continentRect": [
+      [
+        33126,
+        101838
+      ],
+      [
+        35302,
+        105550
+      ]
+    ],
+    "sectorRect": [
+      [
+        33172.9,
+        101966
+      ],
+      [
+        35212.2,
+        105446
+      ]
+    ],
+    "labelCoord": [
+      34175,
+      103437
+    ],
+    "release": "eod"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1422:poi:3279",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3279",
+      "coord": [
+        33561,
+        102213
+      ],
+      "recommendedLevel": null,
+      "name": "Logistics District",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 50,
+      "wikiText": "Logistics District is a point of interest in Xunlai Jade Quarry, Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:hero:coord:[33962.2, 102148]",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "hero",
+      "objectiveId": "coord:[33962.2, 102148]",
+      "coord": [
+        33962,
+        102148
+      ],
+      "recommendedLevel": null,
+      "name": "Quarry Overlook",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 105,
+      "wikiText": "Quarry Overlook is a communing hero point located on a balcony overlooking Residential District of the Xunlai Jade Quarry.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3372",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3372",
+      "coord": [
+        33925,
+        102190
+      ],
+      "recommendedLevel": null,
+      "name": "Residential District",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 111,
+      "wikiText": "Residential District is a point of interest in Xunlai Jade Quarry, Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:waypoint:3234",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "waypoint",
+      "objectiveId": "3234",
+      "coord": [
+        33826,
+        102383
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Quarry Waypoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKIMAAA=]",
+      "waypointChatLink": "[&BKIMAAA=]",
+      "trailIndex": 129,
+      "wikiText": "The Xunlai Jade Quarry is the main Xunlai Jade quarry and mining operations in the Jade Sea after the quarry was purchased by Yu Joon and Park Chul-Moo."
+    },
+    {
+      "stepId": "1422:poi:3396",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3396",
+      "coord": [
+        34263,
+        102468
+      ],
+      "recommendedLevel": null,
+      "name": "Xiko Refugee Camp",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 177,
+      "wikiText": "Xiko Refugee Camp is a refugee camp that was established to house those that were displaced when Soo-Won arrived and spread the Void in Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3347",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3347",
+      "coord": [
+        34392,
+        102241
+      ],
+      "recommendedLevel": null,
+      "name": "The Green Grotto",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 212,
+      "wikiText": "The Green Grotto is a small bar run by Glennon, located beneath the Roaring Waterfall in the Archipelagos Rim.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:hero:coord:[34398.8, 102217]",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "hero",
+      "objectiveId": "coord:[34398.8, 102217]",
+      "coord": [
+        34399,
+        102217
+      ],
+      "recommendedLevel": null,
+      "name": "Roaring Waterfall",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 218,
+      "wikiText": "Roaring Waterfall is a communing hero challenge above The Green Grotto in Archipelagos Rim.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:vista:3398",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "vista",
+      "objectiveId": "3398",
+      "coord": [
+        34465,
+        102301
+      ],
+      "recommendedLevel": null,
+      "name": "Archipelagos Rim",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 238,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3288",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3288",
+      "coord": [
+        34776,
+        102102
+      ],
+      "recommendedLevel": null,
+      "name": "Shrine of the Serpent",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 304,
+      "wikiText": "Shrine of the Serpent is a small abandoned shrine on the Archipelagos Rim, on top of a hill. The name Serpent may refer to the Serpent Clan of the Luxons.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3314",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3314",
+      "coord": [
+        35007,
+        102169
+      ],
+      "recommendedLevel": null,
+      "name": "Alua Falls",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 344,
+      "wikiText": "Alua Falls are waterfalls named after one of the Three Queens that the Luxons worshipped.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3252",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3252",
+      "coord": [
+        35026,
+        102535
+      ],
+      "recommendedLevel": null,
+      "name": "Speakers Encampment",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 395,
+      "wikiText": "Speakers Encampment is the base camp of the allied Speakers in Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3268",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3268",
+      "coord": [
+        35038,
+        102797
+      ],
+      "recommendedLevel": null,
+      "name": "Shrine to Hanuku",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 416,
+      "wikiText": "Shrine to Hanuku is a point of interest in Reaver's Ridge, Dragon's End. It is named after Zhu Hanuku, an ancient kraken who was slain once a year as part of a Luxon celebration of Convocation.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3262",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3262",
+      "coord": [
+        35127,
+        103230
+      ],
+      "recommendedLevel": null,
+      "name": "The Great Jade Wall",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 488,
+      "wikiText": "The Great Jade Wall is a large wall made of tall cubed mined dragonjade.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3373",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3373",
+      "coord": [
+        34931,
+        103215
+      ],
+      "recommendedLevel": null,
+      "name": "Mine Site JS-36",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 501,
+      "wikiText": "Mine Site JS-36 is a quarry where Xunlai Jade miners extract dragonjade.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3363",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3363",
+      "coord": [
+        34984,
+        103507
+      ],
+      "recommendedLevel": null,
+      "name": "Chantry of the Crab",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 539,
+      "wikiText": "Chantry of the Crab is a point of interest within the Seafarer's Enclave. The name of the temple may refer to the Crab Clan of the Luxons.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3289",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3289",
+      "coord": [
+        34494,
+        103474
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of the Turtle",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 602,
+      "wikiText": "Temple of the Turtle is a small abandoned temple. The name may refer to the Turtle Clan of the Luxons.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3217",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3217",
+      "coord": [
+        34102,
+        103129
+      ],
+      "recommendedLevel": null,
+      "name": "Seaguard's Crossing",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 649,
+      "wikiText": "Seaguard's Crossing is a bridge located in Flooded Basin that connects with Outer Terrace. It is used as a path to transport Dragonjade from the mines.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3317",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3317",
+      "coord": [
+        34344,
+        103218
+      ],
+      "recommendedLevel": null,
+      "name": "Miner's Folly",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 676,
+      "wikiText": "Miner's Folly is one of many dragonjade mines in Dragon's End. The Void-Corrupted Jade Maw is buried under the jade piles here and sometimes emerges to the surface, where it must be repelled.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:hero:coord:[34441.4, 103193]",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "hero",
+      "objectiveId": "coord:[34441.4, 103193]",
+      "coord": [
+        34441,
+        103193
+      ],
+      "recommendedLevel": null,
+      "name": "Quarry Platform",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 696,
+      "wikiText": "Quarry Platform is a communing hero point located near Miner's Folly in the Flooded Basin.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3356",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3356",
+      "coord": [
+        34670,
+        102781
+      ],
+      "recommendedLevel": null,
+      "name": "Kaolai Tower",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 799,
+      "wikiText": "Kaolai Tower is a Point of Interest in the Flooded Basin, Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:vista:3414",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "vista",
+      "objectiveId": "3414",
+      "coord": [
+        34681,
+        102731
+      ],
+      "recommendedLevel": null,
+      "name": "Flooded Basin",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 809,
+      "wikiText": "Flooded Basin is a large flowing body of water in the top half of Dragon's End. The water courses down and under hard jade, giving way to deep grottoes underneath.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3220",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3220",
+      "coord": [
+        34424,
+        102779
+      ],
+      "recommendedLevel": null,
+      "name": "Tanasen Pier",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 820,
+      "wikiText": "Tanasen Pier is a pier that is located within the Flooded Basin.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3361",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3361",
+      "coord": [
+        34133,
+        102876
+      ],
+      "recommendedLevel": null,
+      "name": "Quarry Passage",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 884,
+      "wikiText": "Quarry Passage serves as an entrance and exit from the Outer Terrace, leading to the Seaguard's Crossing.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3426",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3426",
+      "coord": [
+        33426,
+        102633
+      ],
+      "recommendedLevel": null,
+      "name": "Warehouse District",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 927,
+      "wikiText": "Warehouse District is the storage area used by Xunlai Jade to safely keep dragonjade extracted from the nearby Xunlai Jade Quarry and quarries deeper in Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3391",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3391",
+      "coord": [
+        33558,
+        102846
+      ],
+      "recommendedLevel": null,
+      "name": "Brotherhood's Watch",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 950,
+      "wikiText": "Brotherhood's Watch is the base camp of the allied Jade Brotherhood in Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:vista:3218",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "vista",
+      "objectiveId": "3218",
+      "coord": [
+        33696,
+        103166
+      ],
+      "recommendedLevel": null,
+      "name": "Argo Crawler",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 979,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3319",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3319",
+      "coord": [
+        33679,
+        103164
+      ],
+      "recommendedLevel": null,
+      "name": "Argo Crawler",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 982,
+      "wikiText": "Argo Crawler is a Point of Interest in the Flooded Basin, Dragon's End.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3216",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3216",
+      "coord": [
+        33883,
+        103530
+      ],
+      "recommendedLevel": null,
+      "name": "Saltspray Roost",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 988,
+      "wikiText": "Saltspray Roost is a tall rock spire located in the Jade Promenade. Albax appears at the top once the The Battle for the Jade Sea has been completed successfully.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3241",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3241",
+      "coord": [
+        33361,
+        103922
+      ],
+      "recommendedLevel": null,
+      "name": "Guardian's Perch",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1031,
+      "wikiText": "Guardian's Perch is a shrine and the residence of the Shrine Guardian within the Temple of the Fallen.",
+      "waypointChatLink": "[&BBENAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3389",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3389",
+      "coord": [
+        33579,
+        103433
+      ],
+      "recommendedLevel": null,
+      "name": "Rhea's Landing",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1079,
+      "wikiText": "Rhea's Landing is a Point of Interest in Western Vale, Dragon's End.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3264",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3264",
+      "coord": [
+        33769,
+        103178
+      ],
+      "recommendedLevel": null,
+      "name": "Mine Site JS-02",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1092,
+      "wikiText": "Mine Site JS-02 is a dragonjade mining shaft that has sunken underwater, where naga quickly moved in.",
+      "waypointChatLink": "[&BKIMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3299",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3299",
+      "coord": [
+        33450,
+        103787
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of the Fallen",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1099,
+      "wikiText": "Temple of the Fallen is an area north of Hero's Lodge and it contains one of the five Green Borderlands ruins.",
+      "waypointChatLink": "[&BBENAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3233",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3233",
+      "coord": [
+        33934,
+        104276
+      ],
+      "recommendedLevel": null,
+      "name": "The Great Melt",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1110,
+      "wikiText": "The Great Melt is a complex of flooded caves under the petrified, but slowly melting, Jade Sea.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3290",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3290",
+      "coord": [
+        34021,
+        105000
+      ],
+      "recommendedLevel": null,
+      "name": "Archemorus's Solitude",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1141,
+      "wikiText": "Archemorus's Solitude is an area containing a dragon statue shrine above a teleporter. It is located below the petrified jade on the surface, at the end of a large complex of grottoes.",
+      "waypointChatLink": "[&BPEMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3400",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3400",
+      "coord": [
+        34912,
+        105056
+      ],
+      "recommendedLevel": null,
+      "name": "Sanctuary of Ione",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1148,
+      "wikiText": "Sanctuary of Ione is a complex containing hidden tunnels below. It is found in Silent Surf. It is named after Ione, one of the three legendary demi-goddesses known as the Three Queens whom the Luxons worshipped.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3333",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3333",
+      "coord": [
+        35151,
+        105394
+      ],
+      "recommendedLevel": null,
+      "name": "The Jade Expanse",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1190,
+      "wikiText": "The Jade Expanse is a large expanse of petrified jade which offers a good view of the greater Jade Sea further in the horizon.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3287",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3287",
+      "coord": [
+        34610,
+        105152
+      ],
+      "recommendedLevel": null,
+      "name": "Emerald Bluff",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1259,
+      "wikiText": "Emerald Bluff is a point of interest in the Silent Surf, in southeast Dragon's End. It is a small settlement on the shore of the Jade Sea that possibly predates the Jade Wind.",
+      "waypointChatLink": "[&BPEMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3320",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3320",
+      "coord": [
+        34706,
+        104812
+      ],
+      "recommendedLevel": null,
+      "name": "Risen's Havoc",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1315,
+      "wikiText": "Risen's Havoc is an area corrupted by Zhaitan's magic due to the presence of Soo-Won nearby at the Harvest Temple.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3367",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3367",
+      "coord": [
+        35030,
+        104634
+      ],
+      "recommendedLevel": null,
+      "name": "Speakers Outpost",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1365,
+      "wikiText": "Speakers Outpost was formerly a Luxon outpost leading to the Harvest Temple. It has been reused by the Speakers in their assault on Soo-Won.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:waypoint:3387",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "waypoint",
+      "objectiveId": "3387",
+      "coord": [
+        34979,
+        104479
+      ],
+      "recommendedLevel": null,
+      "name": "Speakers Waypoint",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BDsNAAA=]",
+      "waypointChatLink": "[&BDsNAAA=]",
+      "trailIndex": 1388,
+      "wikiText": "Seafarer's Enclave is an area in Dragon's End."
+    },
+    {
+      "stepId": "1422:poi:3266",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3266",
+      "coord": [
+        34927,
+        104259
+      ],
+      "recommendedLevel": null,
+      "name": "Icebrood's Desolation",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1413,
+      "wikiText": "Icebrood's Desolation is a cluster of Jormag magic that appeared as a result of Soo-Won's presence in the Harvest Temple.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3409",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3409",
+      "coord": [
+        35096,
+        104104
+      ],
+      "recommendedLevel": null,
+      "name": "Elora's Beach",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1451,
+      "wikiText": "Elora's Beach is a relatively peaceful beach in Dragon's End named after one of the Three Queens worshipped by the Luxons.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:vista:3260",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "vista",
+      "objectiveId": "3260",
+      "coord": [
+        34961,
+        103939
+      ],
+      "recommendedLevel": null,
+      "name": "Juno Hatchery",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1487,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3253",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3253",
+      "coord": [
+        34878,
+        103940
+      ],
+      "recommendedLevel": null,
+      "name": "Juno Hatchery",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1498,
+      "wikiText": "Juno Hatchery is a Luxons-ran sanctuary where turtles are raised to become Siege Turtles, which serve the Dragon Empire.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:hero:coord:[34930.7, 103939]",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "hero",
+      "objectiveId": "coord:[34930.7, 103939]",
+      "coord": [
+        34931,
+        103939
+      ],
+      "recommendedLevel": null,
+      "name": "Hatchery Play Pond",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1498,
+      "wikiText": "Hatchery Play Pond is a communing hero point located in the Juno Hatchery.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:hero:coord:[34331.8, 104188]",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "hero",
+      "objectiveId": "coord:[34331.8, 104188]",
+      "coord": [
+        34332,
+        104188
+      ],
+      "recommendedLevel": null,
+      "name": "Harvest Complex Pavilion",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1576,
+      "wikiText": "Harvest Complex Pavilion is a communing hero point located near the Harvest Temple.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3336",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3336",
+      "coord": [
+        34180,
+        104262
+      ],
+      "recommendedLevel": null,
+      "name": "Harvest Bridge",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1601,
+      "wikiText": "Harvest Bridge is a destroyed bridge that used to connect the Harvest Complex with the Harvest Temple.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:hero:coord:[34132.4, 104279]",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "hero",
+      "objectiveId": "coord:[34132.4, 104279]",
+      "coord": [
+        34132,
+        104279
+      ],
+      "recommendedLevel": null,
+      "name": "Harvest Temple Main Entrance",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1625,
+      "wikiText": "Harvest Temple Main Entrance is a communing hero point located near the Harvest Temple.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3370",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3370",
+      "coord": [
+        34175,
+        104095
+      ],
+      "recommendedLevel": null,
+      "name": "Branded Rise",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1660,
+      "wikiText": "Branded Rise is a section of the Harvest Complex that has been ravaged by Kralkatorrik's energy, through Soo-Won's presence in the Harvest Temple.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:waypoint:3232",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "waypoint",
+      "objectiveId": "3232",
+      "coord": [
+        34181,
+        103953
+      ],
+      "recommendedLevel": null,
+      "name": "Harvest Complex Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKAMAAA=]",
+      "waypointChatLink": "[&BKAMAAA=]",
+      "trailIndex": 1676,
+      "wikiText": "Harvest Complex is an area in Dragon's End which leads up towards the Harvest Temple. Due to Soo-Won's presence atop the temple, her Void corruption is especially intense in the complex."
+    },
+    {
+      "stepId": "1422:poi:3238",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3238",
+      "coord": [
+        34181,
+        103841
+      ],
+      "recommendedLevel": null,
+      "name": "Harvest Temple Observatory",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1681,
+      "wikiText": "Harvest Temple Observatory is a Point of Interest in the Jade Promenade, Dragon's End.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3420",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3420",
+      "coord": [
+        34336,
+        103939
+      ],
+      "recommendedLevel": null,
+      "name": "Kuan Jun Pavilion",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1691,
+      "wikiText": "Kuan Jun Pavilion is a point of interest in Harvest Complex, Dragon's End.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3379",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3379",
+      "coord": [
+        34520,
+        104517
+      ],
+      "recommendedLevel": null,
+      "name": "Xunlai Jade Museum",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1717,
+      "wikiText": "Xunlai Jade Museum is a Point of Interest in the Harvest Complex, Dragon's End.",
+      "waypointChatLink": "[&BDsNAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3237",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3237",
+      "coord": [
+        34174,
+        104606
+      ],
+      "recommendedLevel": null,
+      "name": "Harvest Temple",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1722,
+      "wikiText": "Harvest Temple is the fourth Canthan raid encounter for the Guild Wars 2: End of Dragons expansion, taking place atop the Harvest Temple. It contains story details from The Only One story step.",
+      "waypointChatLink": "[&BKAMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3355",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3355",
+      "coord": [
+        33385,
+        104172
+      ],
+      "recommendedLevel": null,
+      "name": "Wasteland of the Destroyer",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1807,
+      "wikiText": "Wasteland of the Destroyer is an area corrupted by Primordus' magic due to Soo-Won's presence nearby at the Harvest Temple.",
+      "waypointChatLink": "[&BBENAAA=]"
+    },
+    {
+      "stepId": "1422:waypoint:3345",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "waypoint",
+      "objectiveId": "3345",
+      "coord": [
+        33392,
+        104381
+      ],
+      "recommendedLevel": null,
+      "name": "Brotherhood Waypoint",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBENAAA=]",
+      "waypointChatLink": "[&BBENAAA=]",
+      "trailIndex": 1830,
+      "wikiText": "Echovald Fringe is an area near the Echovald Forest within Dragon's End. The location contains a Jade Brotherhood outpost, which is under attack by invading Void creatures."
+    },
+    {
+      "stepId": "1422:poi:3278",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3278",
+      "coord": [
+        33409,
+        104596
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Brotherhood Outpost",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1852,
+      "wikiText": "Jade Brotherhood Outpost is an allied Jade Brotherhood base used in the build-up to the confrontation with Soo-Won and the Void.",
+      "waypointChatLink": "[&BBENAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3406",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3406",
+      "coord": [
+        33726,
+        104820
+      ],
+      "recommendedLevel": null,
+      "name": "Mordrem's Blight",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1912,
+      "wikiText": "Mordrem's Blight is an area corrupted by Mordremoth's magic due to Soo-Won's presence nearby at the Harvest Temple.",
+      "waypointChatLink": "[&BBENAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3352",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3352",
+      "coord": [
+        34207,
+        105052
+      ],
+      "recommendedLevel": null,
+      "name": "Xinrae's Wharf",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1998,
+      "wikiText": "Xinrae's Wharf is a point of interest in Dragon's End. The ruins of a wharf and ships can be found here, stuck in the jade.",
+      "waypointChatLink": "[&BPEMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3280",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3280",
+      "coord": [
+        34432,
+        105132
+      ],
+      "recommendedLevel": null,
+      "name": "Font of Elders",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2031,
+      "wikiText": "Font of Elders is a shrine located within the Southern Bluff. A portal can be found to access the Harvest Temple raid encounter.",
+      "waypointChatLink": "[&BPEMAAA=]"
+    },
+    {
+      "stepId": "1422:vista:3378",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "vista",
+      "objectiveId": "3378",
+      "coord": [
+        34126,
+        105376
+      ],
+      "recommendedLevel": null,
+      "name": "Southern Bluffs",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2087,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BPEMAAA=]"
+    },
+    {
+      "stepId": "1422:poi:3212",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3212",
+      "coord": [
+        34125,
+        105413
+      ],
+      "recommendedLevel": null,
+      "name": "Frozen Sea Monastery",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2090,
+      "wikiText": "Frozen Sea Monastery is a secluded monastery hidden into the cliffs in the Southern Bluff.",
+      "waypointChatLink": "[&BPEMAAA=]"
+    },
+    {
+      "stepId": "1422:waypoint:3313",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "waypoint",
+      "objectiveId": "3313",
+      "coord": [
+        34126,
+        105319
+      ],
+      "recommendedLevel": null,
+      "name": "Frozen Sea Waypoint",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPEMAAA=]",
+      "waypointChatLink": "[&BPEMAAA=]",
+      "trailIndex": 2096,
+      "wikiText": "Southern Bluff is an area in the southern end of Dragon's End, which contains a peaceful monastery encased in the surrounding cliffs and petrified jade."
+    },
+    {
+      "stepId": "1422:poi:3224",
+      "mapId": 1422,
+      "zoneName": "Dragon's End",
+      "type": "poi",
+      "objectiveId": "3224",
+      "coord": [
+        33564,
+        105327
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Wind's Respite",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2148,
+      "wikiText": "Jade Wind's Respite is a point of interest in Mother's Lament, Dragon's End.",
+      "waypointChatLink": "[&BPEMAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

@@ -1,0 +1,2038 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 53,
+    "name": "Sparkfly Fen",
+    "continentId": 1,
+    "regionId": 8,
+    "regionName": "Steamspur Mountains",
+    "floor": 1,
+    "minLevel": 55,
+    "maxLevel": 65,
+    "mapRect": [
+      [
+        -30720,
+        -39936
+      ],
+      [
+        30720,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        48000,
+        35456
+      ],
+      [
+        50560,
+        38784
+      ]
+    ],
+    "sectorRect": [
+      [
+        48015.4,
+        35376.7
+      ],
+      [
+        50613.2,
+        38847.4
+      ]
+    ],
+    "labelCoord": [
+      49280,
+      37120
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "53:waypoint:454",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "454",
+      "coord": [
+        50129,
+        35786
+      ],
+      "recommendedLevel": null,
+      "name": "Braggi's Stead Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMYBAAA=]",
+      "waypointChatLink": "[&BMYBAAA=]",
+      "trailIndex": 19,
+      "wikiText": "The Floodwater Causeway is an area within Sparkfly Fen. This natural aqueduct carries floodwater from the north to empty into the Ocean's Gullet."
+    },
+    {
+      "stepId": "53:vista:1655",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "vista",
+      "objectiveId": "1655",
+      "coord": [
+        50164,
+        36022
+      ],
+      "recommendedLevel": null,
+      "name": "Saltflood Mire",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 81,
+      "wikiText": "Vista of the Saltflood Mire ruins. To access the vista you must climb the stairs running south to north, slightly to the east of the vista. Then run west and you will see a ramp running west to east that will get you to the vista.",
+      "waypointChatLink": "[&BMcBAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:455",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "455",
+      "coord": [
+        50076,
+        36234
+      ],
+      "recommendedLevel": null,
+      "name": "Saltflood Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMcBAAA=]",
+      "waypointChatLink": "[&BMcBAAA=]",
+      "trailIndex": 123,
+      "wikiText": "The Saltflood Mire is an area within Sparkfly Fen. The bog in this wide gully is filled with salt water from the nearby Ocean's Gullet. The eastern highlands are connected to Fort Cadence by means of an ancient grand causeway."
+    },
+    {
+      "stepId": "53:poi:435",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "435",
+      "coord": [
+        50168,
+        36444
+      ],
+      "recommendedLevel": null,
+      "name": "Occuintl Grounds",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 156,
+      "wikiText": "The Occuintl Grounds is a point of interest within the Flamefrog Vale. Hidden amoung the trees of this location is the home of the tribe of Occuintl hylek. Their leader defends this their home vigorously.",
+      "waypointChatLink": "[&BMcBAAA=]"
+    },
+    {
+      "stepId": "53:hero:0-70",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "hero",
+      "objectiveId": "0-70",
+      "coord": [
+        49937,
+        36288
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Energy Source",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 213,
+      "wikiText": "Ancient Energy Source is a communing hero challenge within a spider-infested cave in Saltflood Mire, located south and west of Saltflood Waypoint in water beneath tree roots.",
+      "waypointChatLink": "[&BMcBAAA=]"
+    },
+    {
+      "stepId": "53:poi:434",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "434",
+      "coord": [
+        49891,
+        36129
+      ],
+      "recommendedLevel": null,
+      "name": "Porgotl Grounds",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 244,
+      "wikiText": "Porgotl Grounds is a point of interest within Saltflood Mire. This small hylek village sits at the foot of the great causeway spanning the gully and adjacent bog.",
+      "waypointChatLink": "[&BMcBAAA=]"
+    },
+    {
+      "stepId": "53:poi:450",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "450",
+      "coord": [
+        49559,
+        36193
+      ],
+      "recommendedLevel": null,
+      "name": "Swampwatch Post",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 290,
+      "wikiText": "Swampwatch Post is a point of interest within Astrozintli Forelands in Sparkfly Fen. This northern outer guard post is one of three such posts defending the Zintl Holy Grounds.",
+      "waypointChatLink": "[&BLQDAAA=]"
+    },
+    {
+      "stepId": "53:heart:292",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "292",
+      "coord": [
+        49556,
+        36224
+      ],
+      "recommendedLevel": 57,
+      "name": "Assist Qoetl and the Ni-tlacua at Swampwatch Post.",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49727,
+          36606
+        ],
+        [
+          49511,
+          36606
+        ],
+        [
+          49485,
+          36470
+        ],
+        [
+          49435,
+          36440
+        ],
+        [
+          49418,
+          36415
+        ],
+        [
+          49410,
+          36346
+        ],
+        [
+          49388,
+          36325
+        ],
+        [
+          49350,
+          36314
+        ],
+        [
+          49383,
+          36229
+        ],
+        [
+          49401,
+          36107
+        ],
+        [
+          49532,
+          36072
+        ],
+        [
+          49633,
+          36123
+        ],
+        [
+          49700,
+          36228
+        ],
+        [
+          49712,
+          36342
+        ],
+        [
+          49727,
+          36606
+        ]
+      ],
+      "trailIndex": 294,
+      "wikiText": "Defend Swampwatch Post from Risen, fix hylek region markers, retrieve piles of wood, assist dehydrated Thlamatini[sic], and test potions against the Risen.",
+      "waypointChatLink": "[&BLQDAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:456",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "456",
+      "coord": [
+        49240,
+        36452
+      ],
+      "recommendedLevel": null,
+      "name": "Zintl Holy Grounds Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMgBAAA=]",
+      "waypointChatLink": "[&BMgBAAA=]",
+      "trailIndex": 343,
+      "wikiText": "The Astrozintli Forelands is an area within Sparkfly Fen. Here on this peninsula the hylek priests and chieftains have established a fortified temple guarding their sacred holy grounds."
+    },
+    {
+      "stepId": "53:poi:449",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "449",
+      "coord": [
+        48992,
+        36437
+      ],
+      "recommendedLevel": null,
+      "name": "Shorewatch Post",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 378,
+      "wikiText": "Shorewatch Post is a point of interest within Astrozintli Forelands. This western outer guard post is one of three such posts defending the Zintl Holy Grounds. The hylek troops here are the first line of defense against Risen attacks.",
+      "waypointChatLink": "[&BMgBAAA=]"
+    },
+    {
+      "stepId": "53:heart:290",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "290",
+      "coord": [
+        48995,
+        36482
+      ],
+      "recommendedLevel": 57,
+      "name": "Help Potatlan at the Western Shore.",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48867,
+          36400
+        ],
+        [
+          48874,
+          36269
+        ],
+        [
+          48915,
+          36168
+        ],
+        [
+          48962,
+          36075
+        ],
+        [
+          49159,
+          36026
+        ],
+        [
+          49209,
+          36175
+        ],
+        [
+          49263,
+          36335
+        ],
+        [
+          49201,
+          36466
+        ],
+        [
+          49129,
+          36544
+        ],
+        [
+          49015,
+          36590
+        ],
+        [
+          48931,
+          36556
+        ],
+        [
+          48867,
+          36400
+        ]
+      ],
+      "trailIndex": 383,
+      "wikiText": "Dispose of Risen remains to clean up the western shore.",
+      "waypointChatLink": "[&BMgBAAA=]"
+    },
+    {
+      "stepId": "53:poi:451",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "451",
+      "coord": [
+        49209,
+        36770
+      ],
+      "recommendedLevel": null,
+      "name": "Southwatch Post",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 431,
+      "wikiText": "Southwatch Post is a point of interest within Astrozintli Forelands. This southern outer guard post is one of three such posts defending the Zintl Holy Grounds. The hylek troops here are the first line of defense against Risen attacks.",
+      "waypointChatLink": "[&BMgBAAA=]"
+    },
+    {
+      "stepId": "53:heart:291",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "291",
+      "coord": [
+        49223,
+        36780
+      ],
+      "recommendedLevel": 58,
+      "name": "Help Cuadinti Prepare Southwatch Post.",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49002,
+          36781
+        ],
+        [
+          49031,
+          36704
+        ],
+        [
+          49100,
+          36642
+        ],
+        [
+          49165,
+          36593
+        ],
+        [
+          49252,
+          36551
+        ],
+        [
+          49360,
+          36556
+        ],
+        [
+          49348,
+          36729
+        ],
+        [
+          49326,
+          36792
+        ],
+        [
+          49311,
+          36846
+        ],
+        [
+          49260,
+          36890
+        ],
+        [
+          49150,
+          36923
+        ],
+        [
+          49075,
+          36922
+        ],
+        [
+          48953,
+          36867
+        ],
+        [
+          49002,
+          36781
+        ]
+      ],
+      "trailIndex": 434,
+      "wikiText": "Reinforce Southwatch Post by setting traps and alert allies by lighting signal fires.",
+      "waypointChatLink": "[&BMgBAAA=]"
+    },
+    {
+      "stepId": "53:poi:439",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "439",
+      "coord": [
+        48941,
+        36983
+      ],
+      "recommendedLevel": null,
+      "name": "Sunken Chaladeen",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 476,
+      "wikiText": "The Sunken Chaladeen is a point of interest within the Leeshore Gauntlet. These underwater ruins are infested with many Risen. Inside the largest structure remaining can be found an ancient tomb.",
+      "waypointChatLink": "[&BMsBAAA=]"
+    },
+    {
+      "stepId": "53:hero:0-102",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "hero",
+      "objectiveId": "0-102",
+      "coord": [
+        48938,
+        36957
+      ],
+      "recommendedLevel": null,
+      "name": "Orrian Tomb",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 478,
+      "wikiText": "The Orrian Tomb lies in ruin at the bottom of the lake in Leeshore Gauntlet.",
+      "waypointChatLink": "[&BMsBAAA=]"
+    },
+    {
+      "stepId": "53:hero:0-103",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "hero",
+      "objectiveId": "0-103",
+      "coord": [
+        49140,
+        37188
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Shark Pistrix",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 493,
+      "wikiText": "Ancient Shark Pistrix's corpse can be found in an underwater cave just northwest of the Shrine of Usharr. The entrance to the cave is found in a pool of water to the southeast of the skill challenge icon.",
+      "waypointChatLink": "[&BMsBAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:459",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "459",
+      "coord": [
+        49398,
+        37058
+      ],
+      "recommendedLevel": null,
+      "name": "Toade's Head Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMsBAAA=]",
+      "waypointChatLink": "[&BMsBAAA=]",
+      "trailIndex": 537,
+      "wikiText": "Toade's Head is an area within Sparkfly Fen. This tranquil valley is protected from the encroaching Risen to the south by a sizable rocky hill."
+    },
+    {
+      "stepId": "53:poi:442",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "442",
+      "coord": [
+        49303,
+        37287
+      ],
+      "recommendedLevel": null,
+      "name": "Shrine of Usharr",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 566,
+      "wikiText": "The Shrine of Usharr is a point of interest within Sparkfly Fen. Surrounded by many tide pools, this ruined ancient shrine still holds some of it's power.",
+      "waypointChatLink": "[&BMsBAAA=]"
+    },
+    {
+      "stepId": "53:heart:299",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "299",
+      "coord": [
+        48890,
+        37582
+      ],
+      "recommendedLevel": 61,
+      "name": "Help the Wyld Hunt valiants to explore the shipwrecks.",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48550,
+          37690
+        ],
+        [
+          48739,
+          37793
+        ],
+        [
+          48800,
+          37793
+        ],
+        [
+          48888,
+          37786
+        ],
+        [
+          48956,
+          37653
+        ],
+        [
+          48992,
+          37516
+        ],
+        [
+          48976,
+          37369
+        ],
+        [
+          48887,
+          37269
+        ],
+        [
+          48594,
+          37337
+        ],
+        [
+          48504,
+          37484
+        ],
+        [
+          48503,
+          37622
+        ],
+        [
+          48550,
+          37690
+        ]
+      ],
+      "trailIndex": 663,
+      "wikiText": "Rescue trapped allies around the shipwrecks overrun by Risen, retrieve and return mines from strongboxes, dig out piles of sand, and destroy Risen rotmouths.",
+      "waypointChatLink": "[&BM8BAAA=]"
+    },
+    {
+      "stepId": "53:poi:444",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "444",
+      "coord": [
+        48888,
+        37830
+      ],
+      "recommendedLevel": null,
+      "name": "Ruined Vallah",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 700,
+      "wikiText": "The Ruined Vallah is a point of interest within Sparkfly Fen. Deep in this hidden valley lies the ruins of an ancient temple. Risen forces guard this location and it's entrance ways.",
+      "waypointChatLink": "[&BM8BAAA=]"
+    },
+    {
+      "stepId": "53:hero:0-75",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "hero",
+      "objectiveId": "0-75",
+      "coord": [
+        49055,
+        37981
+      ],
+      "recommendedLevel": null,
+      "name": "Gilbert's Treasure Map",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 734,
+      "wikiText": "Gilbert's Treasure Map is found in southern Aleem's Penance. Taking this map will result in attack of the ghosts of Captain Gilbert and two Gilbert's Crew. Fend off their attack and the hero challenge will be completed.",
+      "waypointChatLink": "[&BLMDAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:463",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "463",
+      "coord": [
+        49165,
+        37688
+      ],
+      "recommendedLevel": null,
+      "name": "Aleem's Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM8BAAA=]",
+      "waypointChatLink": "[&BM8BAAA=]",
+      "trailIndex": 789,
+      "wikiText": "Aleem's Penance is an area within Sparkfly Fen. In the center of this area lies the Ruined Vallah, an ancient ruined temple crawling by Risen."
+    },
+    {
+      "stepId": "53:poi:440",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "440",
+      "coord": [
+        49555,
+        37613
+      ],
+      "recommendedLevel": null,
+      "name": "Jinotl Deadgrounds",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 844,
+      "wikiText": "The Jinotl Deadgrounds is a point of interest within the Thundertroll Swamp. This small village is the home to an endangered group of Jinotl hylek. The Wyld Hunt is trying to preserve them from complete destruction by the Risen.",
+      "waypointChatLink": "[&BE0DAAA=]"
+    },
+    {
+      "stepId": "53:heart:298",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "298",
+      "coord": [
+        49770,
+        37673
+      ],
+      "recommendedLevel": 62,
+      "name": "Secure the area around Dryground Village.",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49458,
+          37872
+        ],
+        [
+          49644,
+          37843
+        ],
+        [
+          49839,
+          37913
+        ],
+        [
+          50057,
+          37991
+        ],
+        [
+          50097,
+          37887
+        ],
+        [
+          50094,
+          37659
+        ],
+        [
+          50147,
+          37446
+        ],
+        [
+          49949,
+          37363
+        ],
+        [
+          49684,
+          37305
+        ],
+        [
+          49512,
+          37323
+        ],
+        [
+          49415,
+          37424
+        ],
+        [
+          49294,
+          37583
+        ],
+        [
+          49266,
+          37815
+        ],
+        [
+          49458,
+          37872
+        ]
+      ],
+      "trailIndex": 885,
+      "wikiText": "Help train Sylvari, remove corrupted mushrooms, and defeat hostile enemies around Dryground Village.",
+      "waypointChatLink": "[&BE0DAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:845",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "845",
+      "coord": [
+        49822,
+        37647
+      ],
+      "recommendedLevel": null,
+      "name": "Dryground Village Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE0DAAA=]",
+      "waypointChatLink": "[&BE0DAAA=]",
+      "trailIndex": 895,
+      "wikiText": "Thundertroll Swamp is an area within Sparkfly Fen. It is heavily inhabite by Jungle Trolls which threaten Brackwater and the operations of Wyld Hunt sylvari working for the Pact."
+    },
+    {
+      "stepId": "53:waypoint:460",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "460",
+      "coord": [
+        50234,
+        37084
+      ],
+      "recommendedLevel": null,
+      "name": "Flamefrog Waypoint",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMwBAAA=]",
+      "waypointChatLink": "[&BMwBAAA=]",
+      "trailIndex": 999,
+      "wikiText": "The Flamefrog Vale is an area within Sparkfly Fen. This tree lined valley is home to a small tribe of hylek."
+    },
+    {
+      "stepId": "53:poi:441",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "441",
+      "coord": [
+        50356,
+        37634
+      ],
+      "recommendedLevel": null,
+      "name": "Brokenhope Village",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1137,
+      "wikiText": "The Brokenhope Village is a point of interest within the Diresight Caverns. Deep underground in this area's largest chamber a force of Nightmare Court has established a sizeable base camp.",
+      "waypointChatLink": "[&BM0BAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:461",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "461",
+      "coord": [
+        50229,
+        38119
+      ],
+      "recommendedLevel": null,
+      "name": "Darkweather Waypoint",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM0BAAA=]",
+      "waypointChatLink": "[&BM0BAAA=]",
+      "trailIndex": 1286,
+      "wikiText": "Darkweather Rise is an area within Sparkfly Fen. Through this cliff lined hillside lies the portal into the Straits of Devastation. The Inquest and the Nightmare Court both hold secluded outposts within caves located here."
+    },
+    {
+      "stepId": "53:poi:443",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "443",
+      "coord": [
+        50328,
+        38308
+      ],
+      "recommendedLevel": null,
+      "name": "Inquest Hexfoundry G-14",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1315,
+      "wikiText": "Inquest Hexfoundry G-14 is a point of interest within the Darkweather Rise. Here, Inquest Operators scheme to kidnap sylvari for the Nightmare Court in exchange for Summoned Husks to be experimented upon at the Infinity Coil lab.",
+      "waypointChatLink": "[&BM0BAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:462",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "462",
+      "coord": [
+        49790,
+        38320
+      ],
+      "recommendedLevel": null,
+      "name": "Brackwater Waypoint",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM4BAAA=]",
+      "waypointChatLink": "[&BM4BAAA=]",
+      "trailIndex": 1387,
+      "wikiText": "Thundertroll Swamp is an area within Sparkfly Fen. It is heavily inhabite by Jungle Trolls which threaten Brackwater and the operations of Wyld Hunt sylvari working for the Pact."
+    },
+    {
+      "stepId": "53:heart:300",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "300",
+      "coord": [
+        49756,
+        38236
+      ],
+      "recommendedLevel": 63,
+      "name": "Secure Brackwater Village",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49435,
+          38080
+        ],
+        [
+          49410,
+          37939
+        ],
+        [
+          49613,
+          37879
+        ],
+        [
+          49684,
+          37866
+        ],
+        [
+          49853,
+          37935
+        ],
+        [
+          50060,
+          38004
+        ],
+        [
+          50093,
+          38070
+        ],
+        [
+          50205,
+          38179
+        ],
+        [
+          50155,
+          38356
+        ],
+        [
+          50058,
+          38545
+        ],
+        [
+          49809,
+          38570
+        ],
+        [
+          49680,
+          38528
+        ],
+        [
+          49465,
+          38356
+        ],
+        [
+          49435,
+          38080
+        ]
+      ],
+      "trailIndex": 1405,
+      "wikiText": "Kill pests invading Brackwater Village, recover stolen supplies, and track down Nightmare Court scouts.",
+      "waypointChatLink": "[&BM4BAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:947",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "947",
+      "coord": [
+        49260,
+        38212
+      ],
+      "recommendedLevel": null,
+      "name": "Caer Brier Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLMDAAA=]",
+      "waypointChatLink": "[&BLMDAAA=]",
+      "trailIndex": 1450,
+      "wikiText": "The Chokevine Gorge is an area within Sparkfly Fen. This densely forested canyon is constantly traveled through by Risen forces trying to breach the eastern defenses at the sylvari outpost Caer Brier."
+    },
+    {
+      "stepId": "53:heart:301",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "301",
+      "coord": [
+        49178,
+        38175
+      ],
+      "recommendedLevel": 64,
+      "name": "Help Brannen maintain Caer Brier.",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48833,
+          38138
+        ],
+        [
+          48758,
+          38247
+        ],
+        [
+          48796,
+          38331
+        ],
+        [
+          48856,
+          38352
+        ],
+        [
+          48935,
+          38412
+        ],
+        [
+          49081,
+          38426
+        ],
+        [
+          49234,
+          38392
+        ],
+        [
+          49349,
+          38376
+        ],
+        [
+          49474,
+          38188
+        ],
+        [
+          49390,
+          38058
+        ],
+        [
+          49300,
+          38021
+        ],
+        [
+          48961,
+          38029
+        ],
+        [
+          48889,
+          38047
+        ],
+        [
+          48833,
+          38138
+        ]
+      ],
+      "trailIndex": 1467,
+      "wikiText": "Kill undead, burn corrupted plants, light lamps, and collect scattered tools.",
+      "waypointChatLink": "[&BLMDAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:464",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "464",
+      "coord": [
+        48648,
+        38361
+      ],
+      "recommendedLevel": null,
+      "name": "Splintered Coast Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNABAAA=]",
+      "waypointChatLink": "[&BNABAAA=]",
+      "trailIndex": 1544,
+      "wikiText": "The Splintered Coast is an area within Sparkfly Fen. This ocean inlet is the primary path of Risen forces invasion of the Maguuma Jungle. In the northern waters live a colony of quaggan who are under attack from nearby krait."
+    },
+    {
+      "stepId": "53:poi:446",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "446",
+      "coord": [
+        48523,
+        38354
+      ],
+      "recommendedLevel": null,
+      "name": "Fabled Djannor",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1559,
+      "wikiText": "Fabled Djannor is a point of interest within the Splintered Coast.",
+      "waypointChatLink": "[&BNABAAA=]"
+    },
+    {
+      "stepId": "53:poi:445",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "445",
+      "coord": [
+        48632,
+        38126
+      ],
+      "recommendedLevel": null,
+      "name": "United Arcanist Lab",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1590,
+      "wikiText": "The United Arcanist Lab is a large asuran research facility found within Chokevine Gorge where the scientists are working on harnessing raw energy for use.",
+      "waypointChatLink": "[&BNABAAA=]"
+    },
+    {
+      "stepId": "53:heart:295",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "295",
+      "coord": [
+        48608,
+        38148
+      ],
+      "recommendedLevel": 65,
+      "name": "Help Kamma test her experimental weapon.",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48466,
+          37987
+        ],
+        [
+          48338,
+          38028
+        ],
+        [
+          48253,
+          38135
+        ],
+        [
+          48257,
+          38275
+        ],
+        [
+          48297,
+          38360
+        ],
+        [
+          48377,
+          38399
+        ],
+        [
+          48784,
+          38452
+        ],
+        [
+          48865,
+          38317
+        ],
+        [
+          48814,
+          38141
+        ],
+        [
+          48743,
+          38048
+        ],
+        [
+          48637,
+          38017
+        ],
+        [
+          48466,
+          37987
+        ]
+      ],
+      "trailIndex": 1594,
+      "wikiText": "Get an experimental weapon from Kamma and test it on Risen and krait, or activate energy scanners.",
+      "waypointChatLink": "[&BNABAAA=]"
+    },
+    {
+      "stepId": "53:vista:1659",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "vista",
+      "objectiveId": "1659",
+      "coord": [
+        48526,
+        38003
+      ],
+      "recommendedLevel": null,
+      "name": "Aleem's Penance",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1661,
+      "wikiText": "Head south from waypoint to the tan-colored rocks. Stay along the edge of the water. Jump up along the jagged outcroppings to the vista.",
+      "waypointChatLink": "[&BNEBAAA=]"
+    },
+    {
+      "stepId": "53:vista:1658",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "vista",
+      "objectiveId": "1658",
+      "coord": [
+        48173,
+        38020
+      ],
+      "recommendedLevel": null,
+      "name": "Wrathwave Deeps",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1707,
+      "wikiText": "Get close to Wrathwave Deeps PoI and climb the derelict wooden structure.",
+      "waypointChatLink": "[&BNEBAAA=]"
+    },
+    {
+      "stepId": "53:poi:447",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "447",
+      "coord": [
+        48161,
+        38009
+      ],
+      "recommendedLevel": null,
+      "name": "Wrathwave Deeps",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1708,
+      "wikiText": "Wrathwave Deeps is a point of interest within the Splintered Coast. This underwater derrick is surrounded by kelp plants and is the home to a group of krait.",
+      "waypointChatLink": "[&BNEBAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:465",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "465",
+      "coord": [
+        48381,
+        37754
+      ],
+      "recommendedLevel": null,
+      "name": "Brooloonu Waypoint",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNEBAAA=]",
+      "waypointChatLink": "[&BNEBAAA=]",
+      "trailIndex": 1711,
+      "wikiText": "The Splintered Coast is an area within Sparkfly Fen. This ocean inlet is the primary path of Risen forces invasion of the Maguuma Jungle. In the northern waters live a colony of quaggan who are under attack from nearby krait."
+    },
+    {
+      "stepId": "53:heart:294",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "294",
+      "coord": [
+        48189,
+        37539
+      ],
+      "recommendedLevel": 60,
+      "name": "Protect the quaggans from the krait.",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48468,
+          37665
+        ],
+        [
+          48404,
+          37506
+        ],
+        [
+          48356,
+          37430
+        ],
+        [
+          48248,
+          37426
+        ],
+        [
+          48009,
+          37432
+        ],
+        [
+          47988,
+          37489
+        ],
+        [
+          47977,
+          37538
+        ],
+        [
+          47968,
+          37636
+        ],
+        [
+          47992,
+          37700
+        ],
+        [
+          48191,
+          37788
+        ],
+        [
+          48456,
+          37768
+        ],
+        [
+          48468,
+          37665
+        ]
+      ],
+      "trailIndex": 1718,
+      "wikiText": "Kill krait, save kidnapped quaggans, and collect scattered quaggan eggs.",
+      "waypointChatLink": "[&BNEBAAA=]"
+    },
+    {
+      "stepId": "53:poi:448",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "448",
+      "coord": [
+        48514,
+        37315
+      ],
+      "recommendedLevel": null,
+      "name": "Wreck of the Argent Warrior",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1728,
+      "wikiText": "The Wreck of the Argent Warrior is a point of interest within the Leeshore Gauntlet. This is the site of a shipwreck that lies on the sea floor in pieces. Many sea chests are scattered about this location guarded by undead pirates.",
+      "waypointChatLink": "[&BMoBAAA=]"
+    },
+    {
+      "stepId": "53:heart:289",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "289",
+      "coord": [
+        48285,
+        37055
+      ],
+      "recommendedLevel": 59,
+      "name": "Help Admiral Clarinda Demard.",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48052,
+          37126
+        ],
+        [
+          48083,
+          37338
+        ],
+        [
+          48199,
+          37401
+        ],
+        [
+          48263,
+          37427
+        ],
+        [
+          48390,
+          37478
+        ],
+        [
+          48499,
+          37480
+        ],
+        [
+          48588,
+          37334
+        ],
+        [
+          48683,
+          37147
+        ],
+        [
+          48690,
+          36902
+        ],
+        [
+          48428,
+          36805
+        ],
+        [
+          48033,
+          36868
+        ],
+        [
+          48052,
+          37126
+        ]
+      ],
+      "trailIndex": 1746,
+      "wikiText": "Kill Risen, salvage loot from the beach and Argent Warrior wreck, and blow up boulders on the coast.",
+      "waypointChatLink": "[&BMoBAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:458",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "458",
+      "coord": [
+        48297,
+        37012
+      ],
+      "recommendedLevel": null,
+      "name": "Forvar's Waypoint",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMoBAAA=]",
+      "waypointChatLink": "[&BMoBAAA=]",
+      "trailIndex": 1752,
+      "wikiText": "Karinn's Passage is an area within Sparkfly Fen. A small band of Order of Whispers agents disguised as sailors established camp on the southern shore where they hunt for lost treasures."
+    },
+    {
+      "stepId": "53:poi:438",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "438",
+      "coord": [
+        48689,
+        36627
+      ],
+      "recommendedLevel": null,
+      "name": "Quinatl Deadgrounds",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1822,
+      "wikiText": "The Quinatl Deadgrounds is a point of interest within the Orvanic Shore. This shallow valley was once home to the tribe of Quinatl hylek. However the corruption in this area has warped this tribe into Risen.",
+      "waypointChatLink": "[&BMkBAAA=]"
+    },
+    {
+      "stepId": "53:vista:1657",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "vista",
+      "objectiveId": "1657",
+      "coord": [
+        48881,
+        36632
+      ],
+      "recommendedLevel": null,
+      "name": "Western Orvanic Shore",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1863,
+      "wikiText": "Leave the cave with the Uzanarin depths skill points on the side with the bats. South of the exit is the entrance to another cave. Jump the green platform rocks above the stream and Go through that cave and east to the edge of the cliff.",
+      "waypointChatLink": "[&BMkBAAA=]"
+    },
+    {
+      "stepId": "53:heart:297",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "297",
+      "coord": [
+        48739,
+        36466
+      ],
+      "recommendedLevel": 56,
+      "name": "Help Ayomichi slow the spread of Risen corruption",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48757,
+          36310
+        ],
+        [
+          48841,
+          36265
+        ],
+        [
+          48922,
+          36588
+        ],
+        [
+          48967,
+          36641
+        ],
+        [
+          48984,
+          36676
+        ],
+        [
+          48997,
+          36716
+        ],
+        [
+          48982,
+          36811
+        ],
+        [
+          48913,
+          36825
+        ],
+        [
+          48776,
+          36709
+        ],
+        [
+          48556,
+          36708
+        ],
+        [
+          47978,
+          36414
+        ],
+        [
+          48469,
+          36231
+        ],
+        [
+          48588,
+          36201
+        ],
+        [
+          48714,
+          36290
+        ],
+        [
+          48757,
+          36310
+        ]
+      ],
+      "trailIndex": 1898,
+      "wikiText": "Slow the Risen corruption by clearing out corrupted stumps and mangled fish corpses or killing sickened animals.",
+      "waypointChatLink": "[&BMkBAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:457",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "457",
+      "coord": [
+        48722,
+        36264
+      ],
+      "recommendedLevel": null,
+      "name": "Ocean's Gullet Waypoint",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMkBAAA=]",
+      "waypointChatLink": "[&BMkBAAA=]",
+      "trailIndex": 1940,
+      "wikiText": "The Orvanic Shore is an area within Sparkfly Fen. This troubled river shore was once the home to many hylek tribes until the arrival of the Risen and their subsequent conversions. Corruption can even be seen in the plants and animals."
+    },
+    {
+      "stepId": "53:poi:436",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "436",
+      "coord": [
+        48411,
+        36078
+      ],
+      "recommendedLevel": null,
+      "name": "Nicantl Grounds",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1995,
+      "wikiText": "The Nicantl Grounds is a point of interest within the Orvanic Shore. This small hillock was once home to the tribe of Nicantl hylek. However the corruption in this area has warped this tribe into Risen.",
+      "waypointChatLink": "[&BMkBAAA=]"
+    },
+    {
+      "stepId": "53:hero:0-63",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "hero",
+      "objectiveId": "0-63",
+      "coord": [
+        48206,
+        35995
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Hylek Chief",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2041,
+      "wikiText": "Veteran Hylek Chief is a hylek found inside the Uzanarin Depths.",
+      "waypointChatLink": "[&BMQBAAA=]"
+    },
+    {
+      "stepId": "53:vista:1656",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "vista",
+      "objectiveId": "1656",
+      "coord": [
+        48440,
+        36547
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Orvanic Shore",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2158,
+      "wikiText": "From the middle of the INLAND side of the cliff, climb/jump to the highest point, then drop down to the vista level.",
+      "waypointChatLink": "[&BMkBAAA=]"
+    },
+    {
+      "stepId": "53:poi:437",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "437",
+      "coord": [
+        48456,
+        36444
+      ],
+      "recommendedLevel": null,
+      "name": "The Tower of Modius",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2185,
+      "wikiText": "The Tower of Modius is a point of interest within the Orvanic Shore. Inside this ancient ruined tower lies the crypt of an evil spirit.",
+      "waypointChatLink": "[&BMkBAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:452",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "452",
+      "coord": [
+        48420,
+        35664
+      ],
+      "recommendedLevel": null,
+      "name": "Orvar's Glen Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMQBAAA=]",
+      "waypointChatLink": "[&BMQBAAA=]",
+      "trailIndex": 2284,
+      "wikiText": "Orvar's Glen is an area within Sparkfly Fen. A tranquil stream-fed grove lies a near a portal leading to the Bloodtide Coast."
+    },
+    {
+      "stepId": "53:poi:433",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "433",
+      "coord": [
+        48692,
+        35668
+      ],
+      "recommendedLevel": null,
+      "name": "Deadman's Reach",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2333,
+      "wikiText": "The Deadman's Reach is a point of interest within Orvar's Glen. Against the sheer rock face that forms the northern boundary of Sparkfly Fen the Vigil have constructed a large supply depot.",
+      "waypointChatLink": "[&BMQBAAA=]"
+    },
+    {
+      "stepId": "53:heart:296",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "296",
+      "coord": [
+        48764,
+        35870
+      ],
+      "recommendedLevel": 55,
+      "name": "Help Costi Atl and his tribe hunt for termite larvae.",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48807,
+          35639
+        ],
+        [
+          48810,
+          35938
+        ],
+        [
+          48737,
+          36016
+        ],
+        [
+          48655,
+          36013
+        ],
+        [
+          48560,
+          35975
+        ],
+        [
+          48522,
+          35873
+        ],
+        [
+          48526,
+          35798
+        ],
+        [
+          48559,
+          35744
+        ],
+        [
+          48634,
+          35608
+        ],
+        [
+          48807,
+          35639
+        ]
+      ],
+      "trailIndex": 2363,
+      "wikiText": "Use hylek weapons to collapse termite mounds and then pull termite larvae from the ground. Slay the termite larvae and throw their meat into the firepit. Retrieve the cooked meat and give it to Cook Nhatepi.",
+      "waypointChatLink": "[&BMkBAAA=]"
+    },
+    {
+      "stepId": "53:heart:293",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "heart",
+      "objectiveId": "293",
+      "coord": [
+        49421,
+        35765
+      ],
+      "recommendedLevel": 55,
+      "name": "Assist Jezza and the Vigil in clearing Risen from Fort Cadence.",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49251,
+          35513
+        ],
+        [
+          49573,
+          35456
+        ],
+        [
+          49827,
+          35450
+        ],
+        [
+          49828,
+          35770
+        ],
+        [
+          49643,
+          36008
+        ],
+        [
+          49486,
+          35996
+        ],
+        [
+          49299,
+          35902
+        ],
+        [
+          49176,
+          35642
+        ],
+        [
+          49251,
+          35513
+        ]
+      ],
+      "trailIndex": 2374,
+      "wikiText": "Use flamethrowers to burn corrupted plants, cave in Risen grub holes, destroy Orrian artifacts, and drive out Risen.",
+      "waypointChatLink": "[&BMUBAAA=]"
+    },
+    {
+      "stepId": "53:poi:945",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "poi",
+      "objectiveId": "945",
+      "coord": [
+        49448,
+        35851
+      ],
+      "recommendedLevel": null,
+      "name": "Battlement Shore",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2388,
+      "wikiText": "Battlement Shore is a point of interest within Fort Cadence. Located at the foot of the hillside overlooking the Ocean's Gullet, this Vigil base camp stands as the first line of defense for this location.",
+      "waypointChatLink": "[&BMUBAAA=]"
+    },
+    {
+      "stepId": "53:waypoint:948",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "948",
+      "coord": [
+        49627,
+        35966
+      ],
+      "recommendedLevel": null,
+      "name": "Mire Waypoint",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLQDAAA=]",
+      "waypointChatLink": "[&BLQDAAA=]",
+      "trailIndex": 2421,
+      "wikiText": "The Saltflood Mire is an area within Sparkfly Fen. The bog in this wide gully is filled with salt water from the nearby Ocean's Gullet. The eastern highlands are connected to Fort Cadence by means of an ancient grand causeway."
+    },
+    {
+      "stepId": "53:waypoint:453",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "waypoint",
+      "objectiveId": "453",
+      "coord": [
+        49607,
+        35722
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Cadence Waypoint",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMUBAAA=]",
+      "waypointChatLink": "[&BMUBAAA=]",
+      "trailIndex": 2461,
+      "wikiText": "Fort Cadence is an area within Sparkfly Fen. Atop this natural rise overlooking the Ocean's Gullet lies the ruins of an ancient fortress."
+    },
+    {
+      "stepId": "53:hero:0-101",
+      "mapId": 53,
+      "zoneName": "Sparkfly Fen",
+      "type": "hero",
+      "objectiveId": "0-101",
+      "coord": [
+        49646,
+        35505
+      ],
+      "recommendedLevel": null,
+      "name": "Spooky Luka the Disbeliever",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Spooky Luka the Disbeliever offers a hero point challenge. She does not aggro until the challenge dialogue is completed, so the two or three Ghostly Pirate Fighters in her vicinity can be dispatched at leisure.",
+      "waypointChatLink": "[&BMUBAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

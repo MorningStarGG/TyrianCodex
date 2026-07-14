@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1509,
+    "name": "The Wizard's Tower",
+    "continentId": 1,
+    "regionId": 48,
+    "regionName": "Horn of Maguuma",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -15360,
+        -9216
+      ],
+      [
+        18432,
+        9216
+      ]
+    ],
+    "continentRect": [
+      [
+        23399,
+        21882
+      ],
+      [
+        24807,
+        22650
+      ]
+    ],
+    "sectorRect": [
+      [
+        23421.6,
+        21634.1
+      ],
+      [
+        24766.5,
+        22704
+      ]
+    ],
+    "labelCoord": [
+      24106,
+      22350
+    ],
+    "release": "soto"
+  },
+  "primaryKind": "mount",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1509:poi:3509",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3509",
+      "coord": [
+        24103,
+        22547
+      ],
+      "recommendedLevel": null,
+      "name": "The Wizard's Court",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 8,
+      "wikiText": "The Wizard's Court is located within the Inner Sanctorium. This is where the members of the Wizard's Court meet to administer and make decisions.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3525",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3525",
+      "coord": [
+        24160,
+        22436
+      ],
+      "recommendedLevel": null,
+      "name": "Hall of Gallantry",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 23,
+      "wikiText": "Hall of Gallantry is an area on the first level of the Outer Sanctorium-the second floor The Wizard's Tower, serving as a gate for raid encounters from the Secrets of the Obscure expansion, as well as related services, can be accessed.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3560",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3560",
+      "coord": [
+        24047,
+        22436
+      ],
+      "recommendedLevel": null,
+      "name": "Rift Hunter Lounge",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 33,
+      "wikiText": "The Rift Hunter Lounge is as the base of operations for the Rift Hunters within the Outer Sanctorium of The Wizard's Tower.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3599",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3599",
+      "coord": [
+        24103,
+        22379
+      ],
+      "recommendedLevel": null,
+      "name": "Forge of Timelessness",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 44,
+      "wikiText": "The Forge of Timelessness is a point of interest found in the Outer Ring within The Wizard's Tower. Lyhr can be found here.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3564",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3564",
+      "coord": [
+        24102,
+        22318
+      ],
+      "recommendedLevel": null,
+      "name": "Empyrean Plaza",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 60,
+      "wikiText": "Empyrean Plaza is a central plaza where the Mystic Forge is located, and is located within the Outer Ring.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:waypoint:3615",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "waypoint",
+      "objectiveId": "3615",
+      "coord": [
+        24103,
+        22231
+      ],
+      "recommendedLevel": null,
+      "name": "Tower Courtyard Waypoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BB8OAAA=]",
+      "waypointChatLink": "[&BB8OAAA=]",
+      "trailIndex": 70,
+      "wikiText": "The Outer Ring is an area located within The Wizard's Tower. And it is where the Mystic Forge, the Craftings, the bank and among other services are located."
+    },
+    {
+      "stepId": "1509:poi:3558",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3558",
+      "coord": [
+        24102,
+        22074
+      ],
+      "recommendedLevel": null,
+      "name": "Amnytas Connector",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 93,
+      "wikiText": "Amnytas Connector is a portal found in the Outer Ring. Connects to the Amnytas zone.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3527",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3527",
+      "coord": [
+        24560,
+        22335
+      ],
+      "recommendedLevel": null,
+      "name": "Lion's Arch Connector",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 161,
+      "wikiText": "Lion's Arch Connector a gate that connects to the city of Lion's Arch.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3664",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3664",
+      "coord": [
+        24443,
+        22570
+      ],
+      "recommendedLevel": null,
+      "name": "Astral Ward Barracks",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 231,
+      "wikiText": "The Astral Ward Barracks it is located in the Outer Ring. It is where the bedrooms of the Astral Ward are located and housed.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3658",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3658",
+      "coord": [
+        24296,
+        22269
+      ],
+      "recommendedLevel": null,
+      "name": "Memory's Gaze",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 247,
+      "wikiText": "Memory's Gaze is the memorial site for the Astral Ward. It is located on the second floor of The Wizard's Tower.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3550",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3550",
+      "coord": [
+        24383,
+        22596
+      ],
+      "recommendedLevel": null,
+      "name": "Training Platform",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 279,
+      "wikiText": "The Training Platform it is located inside the Outer Sanctorium. It is used for training witches where they practice their combat skills, here you can see a djinn and a human training.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3553",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3553",
+      "coord": [
+        24269,
+        22545
+      ],
+      "recommendedLevel": null,
+      "name": "Wizard's Vault",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 288,
+      "wikiText": "Wizard's Vault is a rewards system available to all players, replacing the previous daily login reward format and its generic daily achievements.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3541",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3541",
+      "coord": [
+        24153,
+        22599
+      ],
+      "recommendedLevel": null,
+      "name": "The Reliquary",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 302,
+      "wikiText": "The Reliquary is a point of interest within the Inner Sanctorium. It is a place where various relics from the world of Tyria are kept. Livia can be found inside the place.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3630",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3630",
+      "coord": [
+        24155,
+        22564
+      ],
+      "recommendedLevel": null,
+      "name": "Lyhr's Quarters",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 304,
+      "wikiText": "The Lyhr's Quarters are located within the Inner Sanctorium. It houses Lyhr's living quarters and workspace. At the site you can find a statue of King Jalis Ironhammer and a small forge.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3554",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3554",
+      "coord": [
+        24042,
+        22563
+      ],
+      "recommendedLevel": null,
+      "name": "Dagda's Quarters",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 326,
+      "wikiText": "The Dagda's Quarters are located within the Inner Sanctorium. It houses Dagda's home and workspace.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3668",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3668",
+      "coord": [
+        24048,
+        22592
+      ],
+      "recommendedLevel": null,
+      "name": "War Room",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 329,
+      "wikiText": "The War Room is an upgrade and location within Guild halls, run and maintained by a War Room Proprietor.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3631",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3631",
+      "coord": [
+        23824,
+        22604
+      ],
+      "recommendedLevel": null,
+      "name": "Refugee Clinic",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 353,
+      "wikiText": "Refugee Clinic is a point of interest within Outer Sanctorium. It is a tent in where the Astral Ward tends to their wounded.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3562",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3562",
+      "coord": [
+        24013,
+        22605
+      ],
+      "recommendedLevel": null,
+      "name": "Isgarren's Quarters",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 376,
+      "wikiText": "Isgarren's Quarters are located within the Inner Sanctorium. It houses Isgarren's home and workspace, where Archivist Benny can be found taking care of Isgarren's astral cat, Mingoo, during his absence.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3512",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3512",
+      "coord": [
+        24191,
+        22605
+      ],
+      "recommendedLevel": null,
+      "name": "Mabon's Quarters",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 422,
+      "wikiText": "Mabon's Quarters are located within the Inner Sanctorium. It houses Mabon's home and in the place you can find some objects such as his work space.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3609",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3609",
+      "coord": [
+        24102,
+        22608
+      ],
+      "recommendedLevel": null,
+      "name": "Mystic Passage",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 454,
+      "wikiText": "Mystic Passage it is the first place you enter when you reach The Wizard's Tower and connects to Beacon of Ages.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:vista:3542",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "vista",
+      "objectiveId": "3542",
+      "coord": [
+        24103,
+        22578
+      ],
+      "recommendedLevel": null,
+      "name": "Inner Sanctorium",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 467,
+      "wikiText": "Inner Sanctorium is an area in The Wizard's Tower where the personal quarters of the members of the Astral Ward are located. As well as the The Wizard's Court, along with the War Room.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:vista:3568",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "vista",
+      "objectiveId": "3568",
+      "coord": [
+        24350,
+        22309
+      ],
+      "recommendedLevel": null,
+      "name": "Outer Ring",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 475,
+      "wikiText": "The Outer Ring is an area located within The Wizard's Tower. And it is where the Mystic Forge, the Craftings, the bank and among other services are located.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3543",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3543",
+      "coord": [
+        23671,
+        22072
+      ],
+      "recommendedLevel": null,
+      "name": "Wizard's Respite",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 479,
+      "wikiText": "The Wizard's Respite is a point of interest located within the Open Sky. At it is a small pond and a relaxation area.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:vista:3643",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "vista",
+      "objectiveId": "3643",
+      "coord": [
+        23642,
+        22055
+      ],
+      "recommendedLevel": null,
+      "name": "Open Sky",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 480,
+      "wikiText": "The Open Sky is an area encircling the northern side of the The Wizard's Tower, only one floating island can be found which is the Wizard's Respite.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3617",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3617",
+      "coord": [
+        23649,
+        22331
+      ],
+      "recommendedLevel": null,
+      "name": "Dream Connector",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 489,
+      "wikiText": "Dream Connector is a door located in the Outer Ring. It connects with the Inner Nayos.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3580",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3580",
+      "coord": [
+        23798,
+        22409
+      ],
+      "recommendedLevel": null,
+      "name": "Isgarren's Hidden Library",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 510,
+      "wikiText": "The Isgarren's Hidden Library is a point of interest found in the Outer Ring within The Wizard's Tower. The entrance to the library is closed, so it is not possible to access the interior.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3666",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3666",
+      "coord": [
+        23952,
+        22500
+      ],
+      "recommendedLevel": null,
+      "name": "Wizard's Trial",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 534,
+      "wikiText": "The Wizard's Trial is a point of interest located inside the Outer Sanctorium, in the Wizard's Tower. In it, there is a door that gives access to the Wizard's Trial Race.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    },
+    {
+      "stepId": "1509:poi:3506",
+      "mapId": 1509,
+      "zoneName": "The Wizard's Tower",
+      "type": "poi",
+      "objectiveId": "3506",
+      "coord": [
+        23760,
+        22583
+      ],
+      "recommendedLevel": null,
+      "name": "Skyscale Stables",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 560,
+      "wikiText": "The Skyscale Stables are located in the Outer Ring. It is a covered space intended for the accommodation of the Skyscales, which serve the Astral Ward.",
+      "waypointChatLink": "[&BB8OAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

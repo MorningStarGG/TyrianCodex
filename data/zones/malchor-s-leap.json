@@ -1,0 +1,1536 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 65,
+    "name": "Malchor's Leap",
+    "continentId": 1,
+    "regionId": 3,
+    "regionName": "Ruins of Orr",
+    "floor": 1,
+    "minLevel": 75,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -49152,
+        -24576
+      ],
+      [
+        49152,
+        24576
+      ]
+    ],
+    "continentRect": [
+      [
+        43136,
+        39552
+      ],
+      [
+        47232,
+        41600
+      ]
+    ],
+    "sectorRect": [
+      [
+        43272.3,
+        39384.2
+      ],
+      [
+        47367.3,
+        41790.3
+      ]
+    ],
+    "labelCoord": [
+      45184,
+      40576
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "65:poi:653",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "653",
+      "coord": [
+        47049,
+        40882
+      ],
+      "recommendedLevel": null,
+      "name": "Alarjann Bayt",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 26,
+      "wikiText": "Alarjann Bayt is a point of interest and the remains of Orrian farmland found in the Waste Hollows. A Priory Researcher has been sent there to study the agrarian techniques of the Risen Farmers.",
+      "waypointChatLink": "[&BKYCAAA=]"
+    },
+    {
+      "stepId": "65:poi:647",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "647",
+      "coord": [
+        46868,
+        41222
+      ],
+      "recommendedLevel": null,
+      "name": "Pagga's Post",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 75,
+      "wikiText": "Pagga's Post is one of the Pact's safe havens within Malchor's Leap.",
+      "waypointChatLink": "[&BKYCAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:678",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "678",
+      "coord": [
+        46866,
+        41177
+      ],
+      "recommendedLevel": null,
+      "name": "Pagga's Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKYCAAA=]",
+      "waypointChatLink": "[&BKYCAAA=]",
+      "trailIndex": 77,
+      "wikiText": "Theater of Delight is an area in the eastern half of Malchor's Leap. Two Pact camps are found in the area."
+    },
+    {
+      "stepId": "65:vista:1715",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "vista",
+      "objectiveId": "1715",
+      "coord": [
+        46749,
+        40882
+      ],
+      "recommendedLevel": null,
+      "name": "Theater of Delight",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 148,
+      "wikiText": "Go north from Pagga's Waypoint until you get to the tallest tree. Start climbing the limestone rock left to it.",
+      "waypointChatLink": "[&BKYCAAA=]"
+    },
+    {
+      "stepId": "65:poi:667",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "667",
+      "coord": [
+        46812,
+        40748
+      ],
+      "recommendedLevel": null,
+      "name": "Shelter Docks",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 177,
+      "wikiText": "The Shelter Docks are a Pact encampment within Malchor's Leap, run by Scholar Maroola of the Durmand Priory. She has set up multiple Orrian History Scrolls in order to help educate the soldiers on the battlefield.",
+      "waypointChatLink": "[&BKgCAAA=]"
+    },
+    {
+      "stepId": "65:poi:655",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "655",
+      "coord": [
+        47130,
+        40723
+      ],
+      "recommendedLevel": null,
+      "name": "Kitah Manse",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 217,
+      "wikiText": "Kitah Manse is an Orrian manor that once belonged to a powerful mesmer. In more recent times it served as the dwelling for a Mouth of Zhaitan, one of Zhaitan's most powerful minions.",
+      "waypointChatLink": "[&BKgCAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:680",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "680",
+      "coord": [
+        46875,
+        40461
+      ],
+      "recommendedLevel": null,
+      "name": "Waste Hollows Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKgCAAA=]",
+      "waypointChatLink": "[&BKgCAAA=]",
+      "trailIndex": 281,
+      "wikiText": "Waste Hollows is an area in the eastern half of Malchor's Leap. A decayed Orrian mansion and a Pact camp is found here."
+    },
+    {
+      "stepId": "65:poi:656",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "656",
+      "coord": [
+        46873,
+        39988
+      ],
+      "recommendedLevel": null,
+      "name": "Upsilon Test Facility",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 298,
+      "wikiText": "Upsilon Test Facility is an Inquest facility found in Midwater Hollows.",
+      "waypointChatLink": "[&BKgCAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-174",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-174",
+      "coord": [
+        46733,
+        40180
+      ],
+      "recommendedLevel": null,
+      "name": "Metal Forest",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 334,
+      "wikiText": "The Metal Forest is a hero challenge in the Wealdwood on the Pyrite Peninsula. The forest was turned to gold by an ancient and mysterious golden orb of light.",
+      "waypointChatLink": "[&BKgCAAA=]"
+    },
+    {
+      "stepId": "65:poi:654",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "654",
+      "coord": [
+        46686,
+        40202
+      ],
+      "recommendedLevel": null,
+      "name": "The Wealdwood",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 341,
+      "wikiText": "The Wealdwood on the Pyrite Peninsula holds an ancient Orrian mystery: a golden, magical orb wielding great and unknown forces. It has gilded the forest around it and lends a burst of power to any who commune with it.",
+      "waypointChatLink": "[&BKgCAAA=]"
+    },
+    {
+      "stepId": "65:poi:648",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "648",
+      "coord": [
+        46313,
+        40375
+      ],
+      "recommendedLevel": null,
+      "name": "Shark's Tooth Isle",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 402,
+      "wikiText": "Shark's Tooth Isle is a small island guarded by the remains of a Risen Pirate crew.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-171",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-171",
+      "coord": [
+        46300,
+        40343
+      ],
+      "recommendedLevel": null,
+      "name": "Crusted Sholes",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 408,
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:poi:649",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "649",
+      "coord": [
+        46430,
+        40798
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Colonnade",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 495,
+      "wikiText": "Eastern Colonnade is a Pact camp used to push forward into the eastern section of Malchor's Leap.",
+      "waypointChatLink": "[&BKkCAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:681",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "681",
+      "coord": [
+        46388,
+        40822
+      ],
+      "recommendedLevel": null,
+      "name": "Colonnade Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKkCAAA=]",
+      "waypointChatLink": "[&BKkCAAA=]",
+      "trailIndex": 511,
+      "wikiText": "Theater of Delight is an area in the eastern half of Malchor's Leap. Two Pact camps are found in the area."
+    },
+    {
+      "stepId": "65:poi:673",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "673",
+      "coord": [
+        46603,
+        41037
+      ],
+      "recommendedLevel": null,
+      "name": "Wreck of the Qashvian",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 553,
+      "wikiText": "The Wreck of the Qashvian is a shipwreck surrounded by other shipwrecks in Theater of Delight.",
+      "waypointChatLink": "[&BKYCAAA=]"
+    },
+    {
+      "stepId": "65:poi:670",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "670",
+      "coord": [
+        46634,
+        41218
+      ],
+      "recommendedLevel": null,
+      "name": "Rayhan Bayt",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 594,
+      "wikiText": "Rayhan Bayt is a point of interest at the Theater of Delight in Malchor's Leap. It is the ruins of a cooperative farm that was operated by multiple families. Researcher Nethry's ancestors once tended the fields here.",
+      "waypointChatLink": "[&BKYCAAA=]"
+    },
+    {
+      "stepId": "65:poi:677",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "677",
+      "coord": [
+        46328,
+        41430
+      ],
+      "recommendedLevel": null,
+      "name": "Hope Falls",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 649,
+      "wikiText": "Hope Falls is a large waterfall in the Valley of Lyss that marks the beginning of a canyon and river cutting through the middle of Malchor's Leap leading into the Reflection Cove.",
+      "waypointChatLink": "[&BKoCAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:682",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "682",
+      "coord": [
+        46179,
+        41238
+      ],
+      "recommendedLevel": null,
+      "name": "Valley of Lyss Waypoint",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKoCAAA=]",
+      "waypointChatLink": "[&BKoCAAA=]",
+      "trailIndex": 711,
+      "wikiText": "Valley of Lyss is an area in Malchor's Leap. This large gateway leads toward the eastern areas of Malchor's Leap."
+    },
+    {
+      "stepId": "65:hero:0-238",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-238",
+      "coord": [
+        46065,
+        41219
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Balthazar",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 729,
+      "wikiText": "Statues of Balthazar can be found throughout Tyria, dedicated to the god Balthazar. The hounds seen on the circular statue of Balthazar are Temar and Tegon.",
+      "waypointChatLink": "[&BKoCAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-168",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-168",
+      "coord": [
+        45595,
+        41238
+      ],
+      "recommendedLevel": null,
+      "name": "Enchanted Orrian Bow",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 837,
+      "wikiText": "The Enchanted Orrian Bow is lying on the ground near to the Bayt Fallahin point of interest in the Garden of Ilya.",
+      "waypointChatLink": "[&BKwCAAA=]"
+    },
+    {
+      "stepId": "65:poi:671",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "671",
+      "coord": [
+        45633,
+        41278
+      ],
+      "recommendedLevel": null,
+      "name": "Bayt Fallahin",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 841,
+      "wikiText": "Bayt Fallahin is the ruins of an ancient Orrian city close to the northern beaches of Orr.",
+      "waypointChatLink": "[&BKoCAAA=]"
+    },
+    {
+      "stepId": "65:poi:672",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "672",
+      "coord": [
+        45166,
+        41311
+      ],
+      "recommendedLevel": null,
+      "name": "Saliah Bayt",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 909,
+      "wikiText": "Saliah Bayt is a series of ruined farmlands now inhabited by Risen Chickens.",
+      "waypointChatLink": "[&BKcCAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-234",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-234",
+      "coord": [
+        44998,
+        41263
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Dwayna",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 943,
+      "wikiText": "There are two Statues of Dwayna that function as hero challenges, both of which are found within the Ruins of Orr: Within the Straits of Devastation: Statue of Dwayna (Triumph Plaza) Within Malchor's Leap: Statue of Dwayna (Karst Plains)",
+      "waypointChatLink": "[&BKcCAAA=]"
+    },
+    {
+      "stepId": "65:poi:676",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "676",
+      "coord": [
+        45478,
+        40770
+      ],
+      "recommendedLevel": null,
+      "name": "Village of Wren",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1047,
+      "wikiText": "Village of Wren is an Orrian village that stood before the city of Arah's construction by the Six Human Gods was completed. Lyssa lived here among the villagers, hidden by illusions.",
+      "waypointChatLink": "[&BKwCAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:684",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "684",
+      "coord": [
+        45495,
+        40742
+      ],
+      "recommendedLevel": null,
+      "name": "Wren Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKwCAAA=]",
+      "waypointChatLink": "[&BKwCAAA=]",
+      "trailIndex": 1051,
+      "wikiText": "The Garden of Ilya is a large area at the center of Malchor's Leap. It is named after Ilya, one of the twins known as human goddess Lyssa."
+    },
+    {
+      "stepId": "65:poi:660",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "660",
+      "coord": [
+        45903,
+        40337
+      ],
+      "recommendedLevel": null,
+      "name": "Altar of Lies",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1135,
+      "wikiText": "Altar of Lies is located within the Cathedral of Eternal Radiance. It is also the location of the exotic karma vendor Lightbringer Brutefur after completing the Cathedral of Eternal Radiance meta event.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:poi:1690",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "1690",
+      "coord": [
+        45924,
+        40216
+      ],
+      "recommendedLevel": null,
+      "name": "Reflection Cove",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1136,
+      "wikiText": "Reflection Cove is a body of water found underneath the Cathedral of Eternal Radiance.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-167",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-167",
+      "coord": [
+        45910,
+        40312
+      ],
+      "recommendedLevel": null,
+      "name": "Altar of Lyssa",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1136,
+      "wikiText": "The Altar of Lyssa is the altar of the Cathedral of Eternal Radiance, also known as the Altar of Lies.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:685",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "685",
+      "coord": [
+        45970,
+        40323
+      ],
+      "recommendedLevel": null,
+      "name": "Lyssa Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK0CAAA=]",
+      "waypointChatLink": "[&BK0CAAA=]",
+      "trailIndex": 1145,
+      "wikiText": "The Cathedral of Eternal Radiance is the primary temple to Lyssa in Orr. It is circular in shape and is suspended over a body of water, Mirror Bay."
+    },
+    {
+      "stepId": "65:poi:662",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "662",
+      "coord": [
+        46143,
+        40564
+      ],
+      "recommendedLevel": null,
+      "name": "Song of Lyss",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1176,
+      "wikiText": "Song of Lyss is one of the stations of the Cathedral of Eternal Radiance.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:poi:663",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "663",
+      "coord": [
+        46007,
+        39963
+      ],
+      "recommendedLevel": null,
+      "name": "Seal of Union",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1208,
+      "wikiText": "The Seal of Union is an altar to Lyssa located above Mirror Bay, as part of the Cathedral of Eternal Radiance.",
+      "waypointChatLink": "[&BKsCAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:683",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "683",
+      "coord": [
+        46014,
+        39947
+      ],
+      "recommendedLevel": null,
+      "name": "Union Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKsCAAA=]",
+      "waypointChatLink": "[&BKsCAAA=]",
+      "trailIndex": 1210,
+      "wikiText": "Mirror Bay is the bay that lies beneath the Cathedral of Eternal Radiance."
+    },
+    {
+      "stepId": "65:poi:665",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "665",
+      "coord": [
+        46019,
+        39894
+      ],
+      "recommendedLevel": null,
+      "name": "Mirror's Handle",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1231,
+      "wikiText": "Mirror's Handle is an Orrian ruin found on the northern shore of the Mirror Bay.",
+      "waypointChatLink": "[&BKsCAAA=]"
+    },
+    {
+      "stepId": "65:vista:1714",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "vista",
+      "objectiveId": "1714",
+      "coord": [
+        46055,
+        39635
+      ],
+      "recommendedLevel": null,
+      "name": "Malchor's Fingers",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1303,
+      "wikiText": "Start at Union Waypoint Glide to the Vista directly north of the Waypoint, or get to the shore using the great arches in the east. Swim counter-clockwise until you get to the vista. Jump on the rocks and climb up.",
+      "waypointChatLink": "[&BKsCAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-170",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-170",
+      "coord": [
+        45747,
+        40276
+      ],
+      "recommendedLevel": null,
+      "name": "Alexandra Duet",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1319,
+      "wikiText": "Alexandra Duet is a Pact member in Augur's Grotto that challenges adventurers to a duel in return for a hero point if she is defeated. Her quotes and attacks identify her as an Order of Whispers member and a mesmer.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:poi:1259",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "1259",
+      "coord": [
+        45729,
+        40331
+      ],
+      "recommendedLevel": null,
+      "name": "Augur's Grotto",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1327,
+      "wikiText": "Augur's Grotto is a Order of Whispers camp found underneath the Cathedral of Eternal Radiance.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:poi:661",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "661",
+      "coord": [
+        45566,
+        40095
+      ],
+      "recommendedLevel": null,
+      "name": "Spark of Ilya",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1409,
+      "wikiText": "Spark of Ilya is one of the stations found in the Cathedral of Eternal Radiance.",
+      "waypointChatLink": "[&BK0CAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-237",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-237",
+      "coord": [
+        45429,
+        39946
+      ],
+      "recommendedLevel": null,
+      "name": "Memory of Dhuum's Last Stand",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1437,
+      "wikiText": "Memory of Dhuum's Last Stand is the location where Grenth overthrew Dhuum, the former God of Death, with the aid of the Seven Heroes. It is located in the ossuary of the Cathedral of Eternal Radiance.",
+      "waypointChatLink": "[&BKsCAAA=]"
+    },
+    {
+      "stepId": "65:poi:650",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "650",
+      "coord": [
+        45356,
+        40139
+      ],
+      "recommendedLevel": null,
+      "name": "Beacon Torch",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1498,
+      "wikiText": "Beacon Torch is an Orrian beacon used to guide sailors away from the rocky cliffs and shores of Orr before The Cataclysm. Nowadays, it is used by the Risen to guide and send orders to their Dead Ships.",
+      "waypointChatLink": "[&BK4CAAA=]"
+    },
+    {
+      "stepId": "65:poi:658",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "658",
+      "coord": [
+        44984,
+        39914
+      ],
+      "recommendedLevel": null,
+      "name": "Omicron Test Facility",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1520,
+      "wikiText": "The Omicron Test Facility is an Inquest lab found in Whisper Bay.",
+      "waypointChatLink": "[&BK8CAAA=]"
+    },
+    {
+      "stepId": "65:poi:666",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "666",
+      "coord": [
+        44674,
+        40110
+      ],
+      "recommendedLevel": null,
+      "name": "Murmur Isle",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1533,
+      "wikiText": "Murmur Isle is an Order of Whispers base in Whisper Bay, from where they try to bring down the Inquest's Omicron Test Facility",
+      "waypointChatLink": "[&BK8CAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:687",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "687",
+      "coord": [
+        44641,
+        40123
+      ],
+      "recommendedLevel": null,
+      "name": "Murmur Waypoint",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK8CAAA=]",
+      "waypointChatLink": "[&BK8CAAA=]",
+      "trailIndex": 1538,
+      "wikiText": "Whisper Bay is body of water in northern Malchor's Leap."
+    },
+    {
+      "stepId": "65:poi:669",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "669",
+      "coord": [
+        44554,
+        40198
+      ],
+      "recommendedLevel": null,
+      "name": "Kahloipoi Village",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1547,
+      "wikiText": "Kahloipoi Village is a quaggan village found near Murmur Isle. It was established as a waypoint for the quaggans fleeing mysterious horrors in the Unending Ocean, due to the dangers of the Orrian Veil.",
+      "waypointChatLink": "[&BK8CAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:686",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "686",
+      "coord": [
+        45132,
+        40523
+      ],
+      "recommendedLevel": null,
+      "name": "Blighted Arch Waypoint",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK4CAAA=]",
+      "waypointChatLink": "[&BK4CAAA=]",
+      "trailIndex": 1619,
+      "wikiText": "The Blighted Arch is a northern area in Malchor's Leap. These steep cliffs are full of Risen."
+    },
+    {
+      "stepId": "65:poi:675",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "675",
+      "coord": [
+        45214,
+        40402
+      ],
+      "recommendedLevel": null,
+      "name": "Dhuum's Last Stand",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1684,
+      "wikiText": "Dhuum's Last Stand is the ossuary of the Cathedral of Eternal Radiance and marks the place where Grenth and the Seven Heroes overthrew Dhuum.",
+      "waypointChatLink": "[&BK4CAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-173",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-173",
+      "coord": [
+        45230,
+        40419
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Lyssa",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1684,
+      "wikiText": "Statues of Lyssa can be found throughout Tyria dedicated to the human goddess, Lyssa.",
+      "waypointChatLink": "[&BK4CAAA=]"
+    },
+    {
+      "stepId": "65:vista:1716",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "vista",
+      "objectiveId": "1716",
+      "coord": [
+        45328,
+        40579
+      ],
+      "recommendedLevel": null,
+      "name": "Garden of Ilya",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1773,
+      "wikiText": "Get inside the ribcage structure and go up the stairs. On the right you will find a hole in the wall, go through it and follow the arch.",
+      "waypointChatLink": "[&BK4CAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:688",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "688",
+      "coord": [
+        44889,
+        40703
+      ],
+      "recommendedLevel": null,
+      "name": "Tempest Waypoint",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLACAAA=]",
+      "waypointChatLink": "[&BLACAAA=]",
+      "trailIndex": 1866,
+      "wikiText": "The Cathedral of Zephyrs is the main Orrian temple dedicated to the goddess Dwayna."
+    },
+    {
+      "stepId": "65:poi:652",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "652",
+      "coord": [
+        44788,
+        40629
+      ],
+      "recommendedLevel": null,
+      "name": "Altar of Tempests",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1873,
+      "wikiText": "Altar of Tempests is located within the Cathedral of Zephyrs. It is also the location of the exotic karma vendor Historian Vermoth after completing the Cathedral of Zephyrs meta event.",
+      "waypointChatLink": "[&BLACAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-166",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-166",
+      "coord": [
+        44788,
+        40582
+      ],
+      "recommendedLevel": null,
+      "name": "Altar of Dwayna",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1877,
+      "wikiText": "The Altar of Dwayna is the altar of the Cathedral of Zephyrs, also known as the Altar of Tempests.",
+      "waypointChatLink": "[&BLACAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-169",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-169",
+      "coord": [
+        44620,
+        40510
+      ],
+      "recommendedLevel": null,
+      "name": "Explorer Cinnia",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1941,
+      "wikiText": "Explorer Cinnia is a Durmand Priory explorer who has begun studying Orrian lore. Talking to her will award a hero point.",
+      "waypointChatLink": "[&BLACAAA=]"
+    },
+    {
+      "stepId": "65:poi:657",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "657",
+      "coord": [
+        44577,
+        40392
+      ],
+      "recommendedLevel": null,
+      "name": "Sculptor's End",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1958,
+      "wikiText": "Sculptor's End is a tall cliff peak just beyond the Cathedral of Zephyrs that Malchor the Sculptor leapt from to take his own life.",
+      "waypointChatLink": "[&BK8CAAA=]"
+    },
+    {
+      "stepId": "65:vista:1713",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "vista",
+      "objectiveId": "1713",
+      "coord": [
+        44528,
+        40371
+      ],
+      "recommendedLevel": null,
+      "name": "Whisper Bay",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1963,
+      "wikiText": "Whisper Bay is body of water in northern Malchor's Leap.",
+      "waypointChatLink": "[&BK8CAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-236",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-236",
+      "coord": [
+        44472,
+        40376
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Melandru",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1967,
+      "wikiText": "Statues of Melandru can be found throughout Tyria, dedicated to the goddess Melandru.",
+      "waypointChatLink": "[&BK8CAAA=]"
+    },
+    {
+      "stepId": "65:poi:659",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "659",
+      "coord": [
+        44264,
+        40474
+      ],
+      "recommendedLevel": null,
+      "name": "Arcadian Deeps",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1969,
+      "wikiText": "Arcadian Deeps is a krait spire that was overrun by Risen.",
+      "waypointChatLink": "[&BLICAAA=]"
+    },
+    {
+      "stepId": "65:poi:1622",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "1622",
+      "coord": [
+        44114,
+        40096
+      ],
+      "recommendedLevel": null,
+      "name": "Bauxite Alchemicals",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1978,
+      "wikiText": "Bauxite Alchemicals is an underground Inquest facility found on Jinx Isle.",
+      "waypointChatLink": "[&BLECAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:689",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "689",
+      "coord": [
+        43931,
+        39953
+      ],
+      "recommendedLevel": null,
+      "name": "Versoconjouring Waypoint",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLECAAA=]",
+      "waypointChatLink": "[&BLECAAA=]",
+      "trailIndex": 1994,
+      "wikiText": "Jinx Isle is an area of Malchor's Leap. The isle serves as a base of operations for the Inquest who are conducting insidious experiments to create new powerful golems."
+    },
+    {
+      "stepId": "65:poi:1277",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "1277",
+      "coord": [
+        43798,
+        40096
+      ],
+      "recommendedLevel": null,
+      "name": "Versoconjouring Array",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1998,
+      "wikiText": "The Versoconjouring Array is an octogonal room with glass panes on each side and the top. Entrance from the inside of the laboratory is protected with a force field and it opens in the course of the Bashing Bauxite Alchemicals event chain.",
+      "waypointChatLink": "[&BLECAAA=]"
+    },
+    {
+      "stepId": "65:poi:1273",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "1273",
+      "coord": [
+        43475,
+        40606
+      ],
+      "recommendedLevel": null,
+      "name": "Harbinger",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2002,
+      "wikiText": "Harbinger is an elite specialization for the necromancer unlocked with the End of Dragons expansion. Harbingers combine magic and alchemy, extracting ancient energy from the Dragonjade to empower their magic.",
+      "waypointChatLink": "[&BLECAAA=]"
+    },
+    {
+      "stepId": "65:vista:1717",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "vista",
+      "objectiveId": "1717",
+      "coord": [
+        43412,
+        41036
+      ],
+      "recommendedLevel": null,
+      "name": "Drowned Brine",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2038,
+      "wikiText": "Swim west from Lights Waypoint until you get to a ragged structure coming out of the sea. There is an Orrian Chest next to the Vista.",
+      "waypointChatLink": "[&BLICAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-235",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-235",
+      "coord": [
+        43715,
+        41311
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Grenth",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2058,
+      "wikiText": "Statues of Grenth can be found throughout Tyria, dedicated to the god Grenth.",
+      "waypointChatLink": "[&BLICAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-172",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-172",
+      "coord": [
+        44156,
+        41241
+      ],
+      "recommendedLevel": null,
+      "name": "Looah",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2088,
+      "wikiText": "Looah is a Hero challenge NPC found at Snaketail Inlet, who gives a hero point upon being defeated.",
+      "waypointChatLink": "[&BKcCAAA=]"
+    },
+    {
+      "stepId": "65:poi:664",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "664",
+      "coord": [
+        44112,
+        40944
+      ],
+      "recommendedLevel": null,
+      "name": "Malchor's Anguish",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2103,
+      "wikiText": "Malchor's Anguish is Malchor's workshop, still sunken in the Drowned Brine even after the rising of Orr. Unfinished Dwayna Statues litter the area.",
+      "waypointChatLink": "[&BLICAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:690",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "690",
+      "coord": [
+        44489,
+        40825
+      ],
+      "recommendedLevel": null,
+      "name": "Lights Waypoint",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLICAAA=]",
+      "waypointChatLink": "[&BLICAAA=]",
+      "trailIndex": 2114,
+      "wikiText": "Karst Plains is an area on the western end of Malchor's Leap. It contains a bridge leading to Cursed Shore."
+    },
+    {
+      "stepId": "65:poi:651",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "651",
+      "coord": [
+        44453,
+        41112
+      ],
+      "recommendedLevel": null,
+      "name": "Plaza of Lights",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2194,
+      "wikiText": "Plaza of Lights is an Orrian ruin found in Karst Plains.",
+      "waypointChatLink": "[&BKcCAAA=]"
+    },
+    {
+      "stepId": "65:poi:668",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "668",
+      "coord": [
+        44604,
+        41285
+      ],
+      "recommendedLevel": null,
+      "name": "Doric's Shrine",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2250,
+      "wikiText": "Doric's Shrine is a Pact camp which guards the entry point to the Cursed Shore.",
+      "waypointChatLink": "[&BKcCAAA=]"
+    },
+    {
+      "stepId": "65:waypoint:679",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "waypoint",
+      "objectiveId": "679",
+      "coord": [
+        44641,
+        41268
+      ],
+      "recommendedLevel": null,
+      "name": "Doric's Waypoint",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKcCAAA=]",
+      "waypointChatLink": "[&BKcCAAA=]",
+      "trailIndex": 2252,
+      "wikiText": "Karst Plains is an area on the western end of Malchor's Leap. It contains a bridge leading to Cursed Shore."
+    },
+    {
+      "stepId": "65:poi:674",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "674",
+      "coord": [
+        44699,
+        41483
+      ],
+      "recommendedLevel": null,
+      "name": "Follower's Bridge",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2284,
+      "wikiText": "Follower's Bridge is a bridge in the southern area of the Karst Plains, leading to the Cursed Shore.",
+      "waypointChatLink": "[&BKcCAAA=]"
+    },
+    {
+      "stepId": "65:poi:1623",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "poi",
+      "objectiveId": "1623",
+      "coord": [
+        44517,
+        41307
+      ],
+      "recommendedLevel": null,
+      "name": "King's Passage",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2324,
+      "wikiText": "King's Passage is a cavernous area beneath Snaketail Inlet and Karst Plains, an entrance within each. An Eye of Zhaitan often spawns nearby, and the King's Altar hero point can be found within the passage as well.",
+      "waypointChatLink": "[&BKcCAAA=]"
+    },
+    {
+      "stepId": "65:hero:0-175",
+      "mapId": 65,
+      "zoneName": "Malchor's Leap",
+      "type": "hero",
+      "objectiveId": "0-175",
+      "coord": [
+        44585,
+        41117
+      ],
+      "recommendedLevel": null,
+      "name": "King's Altar",
+      "prereqs": [],
+      "order": 69,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2349,
+      "wikiText": "King's Altar is an altar dedicated to the kings of Orr. It is situated underground in the King's Passage, north of Doric's Waypoint.",
+      "waypointChatLink": "[&BKcCAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

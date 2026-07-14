@@ -1,0 +1,377 @@
+{
+  "_about": "In-world fishing-hole overlay per map, derived from the Metal-Marker-Myriad pack (fishing.xml; CC BY-NC-SA 4.0, Metallis.6105). Raw Y-up world coords project directly; `type` is the hole kind (matched to a fish's hole at runtime). Regenerate with builder/build_fish.py.",
+  "fishing": [
+    {
+      "mapId": 15,
+      "slug": "queensdale",
+      "name": "Queensdale",
+      "holes": 21
+    },
+    {
+      "mapId": 17,
+      "slug": "harathi-hinterlands",
+      "name": "Harathi Hinterlands",
+      "holes": 67
+    },
+    {
+      "mapId": 19,
+      "slug": "plains-of-ashford",
+      "name": "Plains of Ashford",
+      "holes": 41
+    },
+    {
+      "mapId": 20,
+      "slug": "blazeridge-steppes",
+      "name": "Blazeridge Steppes",
+      "holes": 2
+    },
+    {
+      "mapId": 21,
+      "slug": "fields-of-ruin",
+      "name": "Fields of Ruin",
+      "holes": 26
+    },
+    {
+      "mapId": 22,
+      "slug": "fireheart-rise",
+      "name": "Fireheart Rise",
+      "holes": 65
+    },
+    {
+      "mapId": 23,
+      "slug": "kessex-hills",
+      "name": "Kessex Hills",
+      "holes": 52
+    },
+    {
+      "mapId": 24,
+      "slug": "gendarran-fields",
+      "name": "Gendarran Fields",
+      "holes": 86
+    },
+    {
+      "mapId": 25,
+      "slug": "iron-marches",
+      "name": "Iron Marches",
+      "holes": 50
+    },
+    {
+      "mapId": 26,
+      "slug": "dredgehaunt-cliffs",
+      "name": "Dredgehaunt Cliffs",
+      "holes": 4
+    },
+    {
+      "mapId": 27,
+      "slug": "lornar-s-pass",
+      "name": "Lornar's Pass",
+      "holes": 11
+    },
+    {
+      "mapId": 28,
+      "slug": "wayfarer-foothills",
+      "name": "Wayfarer Foothills",
+      "holes": 7
+    },
+    {
+      "mapId": 29,
+      "slug": "timberline-falls",
+      "name": "Timberline Falls",
+      "holes": 37
+    },
+    {
+      "mapId": 30,
+      "slug": "frostgorge-sound",
+      "name": "Frostgorge Sound",
+      "holes": 57
+    },
+    {
+      "mapId": 31,
+      "slug": "snowden-drifts",
+      "name": "Snowden Drifts",
+      "holes": 19
+    },
+    {
+      "mapId": 32,
+      "slug": "diessa-plateau",
+      "name": "Diessa Plateau",
+      "holes": 42
+    },
+    {
+      "mapId": 34,
+      "slug": "caledon-forest",
+      "name": "Caledon Forest",
+      "holes": 35
+    },
+    {
+      "mapId": 35,
+      "slug": "metrica-province",
+      "name": "Metrica Province",
+      "holes": 35
+    },
+    {
+      "mapId": 39,
+      "slug": "mount-maelstrom",
+      "name": "Mount Maelstrom",
+      "holes": 53
+    },
+    {
+      "mapId": 50,
+      "slug": "lion-s-arch",
+      "name": "Lion's Arch",
+      "holes": 55
+    },
+    {
+      "mapId": 51,
+      "slug": "straits-of-devastation",
+      "name": "Straits of Devastation",
+      "holes": 157
+    },
+    {
+      "mapId": 53,
+      "slug": "sparkfly-fen",
+      "name": "Sparkfly Fen",
+      "holes": 49
+    },
+    {
+      "mapId": 54,
+      "slug": "brisban-wildlands",
+      "name": "Brisban Wildlands",
+      "holes": 6
+    },
+    {
+      "mapId": 62,
+      "slug": "cursed-shore",
+      "name": "Cursed Shore",
+      "holes": 58
+    },
+    {
+      "mapId": 65,
+      "slug": "malchor-s-leap",
+      "name": "Malchor's Leap",
+      "holes": 144
+    },
+    {
+      "mapId": 73,
+      "slug": "bloodtide-coast",
+      "name": "Bloodtide Coast",
+      "holes": 99
+    },
+    {
+      "mapId": 139,
+      "slug": "rata-sum",
+      "name": "Rata Sum",
+      "holes": 20
+    },
+    {
+      "mapId": 873,
+      "slug": "southsun-cove",
+      "name": "Southsun Cove",
+      "holes": 50
+    },
+    {
+      "mapId": 922,
+      "slug": "labyrinthine-cliffs",
+      "name": "Labyrinthine Cliffs",
+      "holes": 37
+    },
+    {
+      "mapId": 1121,
+      "slug": "gilded-hollow",
+      "name": "Gilded Hollow",
+      "holes": 15
+    },
+    {
+      "mapId": 1124,
+      "slug": "lost-precipice",
+      "name": "Lost Precipice",
+      "holes": 53
+    },
+    {
+      "mapId": 1175,
+      "slug": "ember-bay",
+      "name": "Ember Bay",
+      "holes": 90
+    },
+    {
+      "mapId": 1178,
+      "slug": "bitterfrost-frontier",
+      "name": "Bitterfrost Frontier",
+      "holes": 13
+    },
+    {
+      "mapId": 1185,
+      "slug": "lake-doric",
+      "name": "Lake Doric",
+      "holes": 8
+    },
+    {
+      "mapId": 1195,
+      "slug": "draconis-mons",
+      "name": "Draconis Mons",
+      "holes": 80
+    },
+    {
+      "mapId": 1203,
+      "slug": "siren-s-landing",
+      "name": "Siren's Landing",
+      "holes": 56
+    },
+    {
+      "mapId": 1210,
+      "slug": "crystal-oasis",
+      "name": "Crystal Oasis",
+      "holes": 79
+    },
+    {
+      "mapId": 1211,
+      "slug": "desert-highlands",
+      "name": "Desert Highlands",
+      "holes": 11
+    },
+    {
+      "mapId": 1226,
+      "slug": "the-desolation",
+      "name": "The Desolation",
+      "holes": 33
+    },
+    {
+      "mapId": 1228,
+      "slug": "elon-riverlands",
+      "name": "Elon Riverlands",
+      "holes": 85
+    },
+    {
+      "mapId": 1232,
+      "slug": "windswept-haven",
+      "name": "Windswept Haven",
+      "holes": 34
+    },
+    {
+      "mapId": 1248,
+      "slug": "domain-of-vabbi",
+      "name": "Domain of Vabbi",
+      "holes": 3
+    },
+    {
+      "mapId": 1263,
+      "slug": "domain-of-istan",
+      "name": "Domain of Istan",
+      "holes": 81
+    },
+    {
+      "mapId": 1271,
+      "slug": "sandswept-isles",
+      "name": "Sandswept Isles",
+      "holes": 87
+    },
+    {
+      "mapId": 1288,
+      "slug": "domain-of-kourna",
+      "name": "Domain of Kourna",
+      "holes": 64
+    },
+    {
+      "mapId": 1310,
+      "slug": "thunderhead-peaks",
+      "name": "Thunderhead Peaks",
+      "holes": 49
+    },
+    {
+      "mapId": 1330,
+      "slug": "grothmar-valley",
+      "name": "Grothmar Valley",
+      "holes": 34
+    },
+    {
+      "mapId": 1371,
+      "slug": "drizzlewood-coast",
+      "name": "Drizzlewood Coast",
+      "holes": 62
+    },
+    {
+      "mapId": 1422,
+      "slug": "dragon-s-end",
+      "name": "Dragon's End",
+      "holes": 80
+    },
+    {
+      "mapId": 1428,
+      "slug": "arborstone",
+      "name": "Arborstone",
+      "holes": 1
+    },
+    {
+      "mapId": 1438,
+      "slug": "new-kaineng-city",
+      "name": "New Kaineng City",
+      "holes": 222
+    },
+    {
+      "mapId": 1442,
+      "slug": "seitung-province",
+      "name": "Seitung Province",
+      "holes": 173
+    },
+    {
+      "mapId": 1452,
+      "slug": "the-echovald-wilds",
+      "name": "The Echovald Wilds",
+      "holes": 80
+    },
+    {
+      "mapId": 1462,
+      "slug": "isle-of-reflection",
+      "name": "Isle of Reflection",
+      "holes": 15
+    },
+    {
+      "mapId": 1465,
+      "slug": "thousand-seas-pavilion",
+      "name": "Thousand Seas Pavilion",
+      "holes": 34
+    },
+    {
+      "mapId": 1490,
+      "slug": "gyala-delve",
+      "name": "Gyala Delve",
+      "holes": 12
+    },
+    {
+      "mapId": 1509,
+      "slug": "the-wizard-s-tower",
+      "name": "The Wizard's Tower",
+      "holes": 2
+    },
+    {
+      "mapId": 1510,
+      "slug": "skywatch-archipelago",
+      "name": "Skywatch Archipelago",
+      "holes": 26
+    },
+    {
+      "mapId": 1517,
+      "slug": "amnytas",
+      "name": "Amnytas",
+      "holes": 21
+    },
+    {
+      "mapId": 1526,
+      "slug": "inner-nayos",
+      "name": "Inner Nayos",
+      "holes": 63
+    },
+    {
+      "mapId": 1550,
+      "slug": "lowland-shore",
+      "name": "Lowland Shore",
+      "holes": 125
+    },
+    {
+      "mapId": 1554,
+      "slug": "janthir-syntri",
+      "name": "Janthir Syntri",
+      "holes": 19
+    }
+  ]
+}

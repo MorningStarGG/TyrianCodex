@@ -1,0 +1,1550 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1442,
+    "name": "Seitung Province",
+    "continentId": 1,
+    "regionId": 37,
+    "regionName": "Cantha",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -46080,
+        -30720
+      ],
+      [
+        46080,
+        33792
+      ]
+    ],
+    "continentRect": [
+      [
+        21159,
+        100457
+      ],
+      [
+        24999,
+        103145
+      ]
+    ],
+    "sectorRect": [
+      [
+        21213.4,
+        100461
+      ],
+      [
+        25008.4,
+        103139
+      ]
+    ],
+    "labelCoord": [
+      23150,
+      101800
+    ],
+    "release": "eod"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1442:waypoint:3230",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "waypoint",
+      "objectiveId": "3230",
+      "coord": [
+        22949,
+        102166
+      ],
+      "recommendedLevel": null,
+      "name": "Village Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJ4MAAA=]",
+      "waypointChatLink": "[&BJ4MAAA=]",
+      "trailIndex": 2,
+      "wikiText": "Seitung Harbor is a port in Seitung Province in the southern end of Shing Jea Island. Historically, it has served as an entry point for visitors to the continent of Cantha from Elona, Tyria, and the Battle Isles."
+    },
+    {
+      "stepId": "1442:poi:3240",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3240",
+      "coord": [
+        22978,
+        102097
+      ],
+      "recommendedLevel": null,
+      "name": "Harbor Market",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 22,
+      "wikiText": "Harbor Market is within the Seitung Harbor in Seitung Province, it has merchants and a statue of a golden moa inside the place.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3416",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3416",
+      "coord": [
+        23316,
+        101929
+      ],
+      "recommendedLevel": null,
+      "name": "Valor Shrine",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 72,
+      "wikiText": "Valor Shrine is a graveyard found in Zen Daijun.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3362",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3362",
+      "coord": [
+        22785,
+        101972
+      ],
+      "recommendedLevel": null,
+      "name": "Town Outskirts",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 154,
+      "wikiText": "Town Outskirts is a small town with a few houses, which are located within Seitung Harbor in Seitung Province.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3244",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3244",
+      "coord": [
+        22553,
+        101941
+      ],
+      "recommendedLevel": null,
+      "name": "Bell Passage",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 180,
+      "wikiText": "The Bell Passage is a large archway over the waterway connecting Seitung Harbor to Shinota Shore. A large bell hangs within the archway, and the sides are lined with huge chunks of jade.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3267",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3267",
+      "coord": [
+        22338,
+        102114
+      ],
+      "recommendedLevel": null,
+      "name": "Imperial Overlook",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 192,
+      "wikiText": "The Imperial Overlook is the main entrance to Shing Jea Monastery, crossing from the Bell Passage bridge. The entrance has two giant Nian statues guarding it.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[22029.2, 101971]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[22029.2, 101971]",
+      "coord": [
+        22029,
+        101971
+      ],
+      "recommendedLevel": null,
+      "name": "Village Overlook (1)",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 257,
+      "wikiText": "Village Overlook can refer to one of these Hero challenges: Seitung Province Village Overlook (Shing Jea Monastery) Village Overlook (Eastern Wilds) The Echovald Wilds Village Overlook (Mori Village)",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:vista:3340",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "vista",
+      "objectiveId": "3340",
+      "coord": [
+        21757,
+        102267
+      ],
+      "recommendedLevel": null,
+      "name": "Shing Jea Monastery",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 306,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:waypoint:3263",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "waypoint",
+      "objectiveId": "3263",
+      "coord": [
+        21673,
+        102058
+      ],
+      "recommendedLevel": null,
+      "name": "Monastery Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BL8MAAA=]",
+      "waypointChatLink": "[&BL8MAAA=]",
+      "trailIndex": 328,
+      "wikiText": "Shing Jea Monastery is a large and peaceful training center for students of various arts and professions, including the native Canthan Ritualist and Assassin professions."
+    },
+    {
+      "stepId": "1442:poi:3261",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3261",
+      "coord": [
+        21628,
+        101935
+      ],
+      "recommendedLevel": null,
+      "name": "Monastery Temple",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 336,
+      "wikiText": "The Monastery Temple is a tall, multi-tiered structure at the center of the Shing Jea Monastery complex. Overlooking the rest of the grounds, even the Royal Court, it is the focal point of the area.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3388",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3388",
+      "coord": [
+        21439,
+        101926
+      ],
+      "recommendedLevel": null,
+      "name": "Secured Gate",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 346,
+      "wikiText": "The Secured Gate is a heavily-guarded gatehouse within Shing Jea Monastery. It is protected by a large Ministry of Security force and two Veteran Deluxe Jade Bulwarks. Based on its location, it's possible that it leads to Sunqua Vale.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3275",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3275",
+      "coord": [
+        21392,
+        102164
+      ],
+      "recommendedLevel": null,
+      "name": "Royal Court",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 352,
+      "wikiText": "The Royal Court is the center of power in the Empire of the Dragon. From here, upon the Jade Throne, Empress Ihn governs all of Cantha.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3303",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3303",
+      "coord": [
+        21560,
+        102585
+      ],
+      "recommendedLevel": null,
+      "name": "Aetherblade Flagship Wreckage",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 389,
+      "wikiText": "Aetherblade Flagship Wreckage is the wreck of an Aetherblade airship that crashed into Monastery Bay.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3273",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3273",
+      "coord": [
+        21743,
+        102725
+      ],
+      "recommendedLevel": null,
+      "name": "Dreary Caves",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 433,
+      "wikiText": "Dreary Caves is a cave found within Monastery Bay, used by the Aetherblades as a shelter after their airships crashed from The Mists.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3226",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3226",
+      "coord": [
+        21988,
+        102700
+      ],
+      "recommendedLevel": null,
+      "name": "Combat Arena",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 480,
+      "wikiText": "Combat Arena is located within the Training Grounds in Seitung Province. The place serves as a training place, where they take fights where their opponents are forced and serves as a practice to perfect their skills and attacks.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3390",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3390",
+      "coord": [
+        21984,
+        102541
+      ],
+      "recommendedLevel": null,
+      "name": "Obstacle Course",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 490,
+      "wikiText": "Obstacle Course is located within the Training Grounds in Seitung Province. It serves to test the skills and concentration for those who practice in this series of obstacles.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:heart:448",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "heart",
+      "objectiveId": "448",
+      "coord": [
+        22153,
+        102584
+      ],
+      "recommendedLevel": 80,
+      "name": "Monastery Training",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          21920,
+          102436
+        ],
+        [
+          22128,
+          102405
+        ],
+        [
+          22296,
+          102436
+        ],
+        [
+          22331,
+          102651
+        ],
+        [
+          22093,
+          102818
+        ],
+        [
+          21866,
+          102819
+        ],
+        [
+          21843,
+          102627
+        ],
+        [
+          21920,
+          102436
+        ]
+      ],
+      "trailIndex": 513,
+      "wikiText": "Earn the monastery's trust by participating in defiance, combo field, dodge, obstacle course, and other forms of training.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[22226.2, 102476]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[22226.2, 102476]",
+      "coord": [
+        22226,
+        102476
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Jade Bulwark",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 531,
+      "wikiText": "Veteran Jade Bulwark is a repeatable hero challenge on the Training Grounds in Seitung Province.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3327",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3327",
+      "coord": [
+        22222,
+        102605
+      ],
+      "recommendedLevel": null,
+      "name": "Painter's Platform",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 548,
+      "wikiText": "Painter's Platform is a point of interest within Training Grounds in Seitung Province.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3304",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3304",
+      "coord": [
+        22342,
+        102884
+      ],
+      "recommendedLevel": null,
+      "name": "Aurene's Enclave",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 586,
+      "wikiText": "Aurene's Enclave is Aurene and the Order of the Crystal Bloom's refuge in Cantha.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[22559.2, 102221]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[22559.2, 102221]",
+      "coord": [
+        22559,
+        102221
+      ],
+      "recommendedLevel": null,
+      "name": "Bloom of Seitung",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 608,
+      "wikiText": "The Bloom of Seitung is a communing hero challenge within Seitung Harbor underneath a tree.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3242",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3242",
+      "coord": [
+        22769,
+        102342
+      ],
+      "recommendedLevel": null,
+      "name": "Fishing Village",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 631,
+      "wikiText": "Fishing Village is a village located within Seitung Harbor in Seitung Province. Connects to Harbor Market and Seitung Prison. You can see several ports with skiffs where several fishermen are usually seen",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:vista:3316",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "vista",
+      "objectiveId": "3316",
+      "coord": [
+        22871,
+        102317
+      ],
+      "recommendedLevel": null,
+      "name": "Seitung Harbor",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 686,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3272",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3272",
+      "coord": [
+        22934,
+        102522
+      ],
+      "recommendedLevel": null,
+      "name": "Seitung Prison",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 710,
+      "wikiText": "The Seitung Prison is the detention center for prisoners in Shing Jea Island, and is run by the Ministry of Security.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3354",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3354",
+      "coord": [
+        23201,
+        102945
+      ],
+      "recommendedLevel": null,
+      "name": "Cat Island",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 803,
+      "wikiText": "Cat Island is an island inhabited by cats within Zen Daijun.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3248",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3248",
+      "coord": [
+        23419,
+        102452
+      ],
+      "recommendedLevel": null,
+      "name": "Zen Daijun Temple",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 902,
+      "wikiText": "Zen Daijun Temple is a temple and library within Zen Daijun in Seitung Province. Around the temple there is a labyrinth with a thick fog haunted by Purist spirits.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3302",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3302",
+      "coord": [
+        23748,
+        102533
+      ],
+      "recommendedLevel": null,
+      "name": "Hollow Caves",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 958,
+      "wikiText": "Hollow Caves are caverns in Zen Daijun infested with spiders. An Aetherblades hideout was established inside following their crash from The Mists onto Shing Jea Island.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3214",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3214",
+      "coord": [
+        23606,
+        102327
+      ],
+      "recommendedLevel": null,
+      "name": "Spirit Vestibule",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 999,
+      "wikiText": "Spirit Vestibule is a point of interest within Zen Daijun in Seitung Province. It marks the beginning of the Spirit Vestibule mini-dungeon in the fog around Zen Daijun Temple - .",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[23893.3, 102167]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[23893.3, 102167]",
+      "coord": [
+        23893,
+        102167
+      ],
+      "recommendedLevel": null,
+      "name": "Cliffside Memorial Bell",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1052,
+      "wikiText": "Cliffside Memorial Bell is a hero challenge in Zen Daijun. It's located east of the Spirit Vestibule - , guarded by several Speaker Ritualists and a random elite Speaker.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3325",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3325",
+      "coord": [
+        23882,
+        101916
+      ],
+      "recommendedLevel": null,
+      "name": "Serene Pool",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1086,
+      "wikiText": "The Serene Pool (formerly Tei Lake) is a shallow lake within Zen Daijun.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3246",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3246",
+      "coord": [
+        23816,
+        101496
+      ],
+      "recommendedLevel": null,
+      "name": "Daigo Dump Site",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1129,
+      "wikiText": "Daigo Dump Site is a point of interest within Haiju Lagoon in Seitung Province.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:vista:3346",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "vista",
+      "objectiveId": "3346",
+      "coord": [
+        23862,
+        101346
+      ],
+      "recommendedLevel": null,
+      "name": "Haiju Lagoon",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1176,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[23730.2, 101104]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[23730.2, 101104]",
+      "coord": [
+        23730,
+        101104
+      ],
+      "recommendedLevel": null,
+      "name": "Old Bell Shrine",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1202,
+      "wikiText": "Old Bell Shrine is found in Haiju Plains, over the bridge directly south of Haiju Docks Waypoint. It is the trigger for Defeat the Kirin hero challenge that is repeatable.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3410",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3410",
+      "coord": [
+        23574,
+        101925
+      ],
+      "recommendedLevel": null,
+      "name": "Joon's Mansion",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1279,
+      "wikiText": "Joon's Mansion is the residence of Yu Joon and her family, located on the hill overlooking the rest of Daigo Ward.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3221",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3221",
+      "coord": [
+        23271,
+        101537
+      ],
+      "recommendedLevel": null,
+      "name": "Ministry of Transit",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1310,
+      "wikiText": "Ministry of Transit is located within the Daigo Ward and deals with giving permission to people who wish to travel through Cantha.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:waypoint:3429",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "waypoint",
+      "objectiveId": "3429",
+      "coord": [
+        23191,
+        101452
+      ],
+      "recommendedLevel": null,
+      "name": "Daigo Ward Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGUNAAA=]",
+      "waypointChatLink": "[&BGUNAAA=]",
+      "trailIndex": 1320,
+      "wikiText": "Daigo Ward is a residential area in Seitung Province. It hosts the Ministry of Transit and Jade Memorial as well as the large and luxurious mansion of Lady Joon."
+    },
+    {
+      "stepId": "1442:poi:3265",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3265",
+      "coord": [
+        22998,
+        101557
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Memorial",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1344,
+      "wikiText": "Jade Memorial it is a monument in which a bell hangs and inside is a jade stone, in which the brave canthians are commemorated. The monument is inside the Daigo Ward in Seitung Province.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[22935.8, 101724]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[22935.8, 101724]",
+      "coord": [
+        22936,
+        101724
+      ],
+      "recommendedLevel": null,
+      "name": "Source of the Springs",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1384,
+      "wikiText": "Source of the Springs is a communing hero challenge in Shinota Shore.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3283",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3283",
+      "coord": [
+        22796,
+        101583
+      ],
+      "recommendedLevel": null,
+      "name": "Drizzle Cove",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1401,
+      "wikiText": "Drizzle Cove is a point of interest within the Shinota Shore, containing a dragon shrine. The area is occupied by the Aetherblades.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[22402.9, 101554]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[22402.9, 101554]",
+      "coord": [
+        22403,
+        101554
+      ],
+      "recommendedLevel": null,
+      "name": "Dog Statue",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1436,
+      "wikiText": "Dog Statue is a guild hall decoration crafted using the scribe discipline.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:heart:442",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "heart",
+      "objectiveId": "442",
+      "coord": [
+        22142,
+        100957
+      ],
+      "recommendedLevel": 80,
+      "name": "Assist the temple in its defense.",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          21869,
+          101351
+        ],
+        [
+          21953,
+          101398
+        ],
+        [
+          22146,
+          101464
+        ],
+        [
+          22442,
+          101600
+        ],
+        [
+          22441,
+          101669
+        ],
+        [
+          22467,
+          101707
+        ],
+        [
+          22488,
+          101856
+        ],
+        [
+          22644,
+          101832
+        ],
+        [
+          22753,
+          101782
+        ],
+        [
+          22826,
+          101774
+        ],
+        [
+          23010,
+          101766
+        ],
+        [
+          22921,
+          101651
+        ],
+        [
+          22895,
+          101557
+        ],
+        [
+          22816,
+          101441
+        ],
+        [
+          22816,
+          101348
+        ],
+        [
+          22854,
+          101274
+        ],
+        [
+          22914,
+          101261
+        ],
+        [
+          22869,
+          101106
+        ],
+        [
+          22794,
+          101013
+        ],
+        [
+          22772,
+          100938
+        ],
+        [
+          22864,
+          100852
+        ],
+        [
+          22956,
+          100701
+        ],
+        [
+          22943,
+          100461
+        ],
+        [
+          21987,
+          100466
+        ],
+        [
+          21938,
+          100669
+        ],
+        [
+          21837,
+          100830
+        ],
+        [
+          21819,
+          100955
+        ],
+        [
+          21851,
+          101074
+        ],
+        [
+          21839,
+          101147
+        ],
+        [
+          21815,
+          101234
+        ],
+        [
+          21869,
+          101351
+        ]
+      ],
+      "trailIndex": 1470,
+      "wikiText": "Assist the locals by repairing boats, rescuing villagers, cleaning debris, beating up riffraff, and donating Shinota blackfins to Hall Director Soohee.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3422",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3422",
+      "coord": [
+        22041,
+        100892
+      ],
+      "recommendedLevel": null,
+      "name": "Sizhou Hall",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1488,
+      "wikiText": "Sizhou Hall is a large monastery on an island in Shinota Shore. It stands at the midpoint of two bridges that connect Jaya Bluffs in the west to Shinota Shore in the east.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3430",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3430",
+      "coord": [
+        21582,
+        100744
+      ],
+      "recommendedLevel": null,
+      "name": "Tengu Alpine Camp",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1552,
+      "wikiText": "Tengu Alpine Camp is the camp of the Sensali tengu tribe, located in Jaya Bluffs.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3281",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3281",
+      "coord": [
+        21481,
+        101204
+      ],
+      "recommendedLevel": null,
+      "name": "Sensali Shrine",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1616,
+      "wikiText": "Hookbeak's Memorial, otherwise known as the Sensali Shrine, is a point of interest within Jaya Bluffs in Seitung Province. It is dedicated to the Sensali tengu Gull Hookbeak.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3341",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3341",
+      "coord": [
+        22338,
+        101667
+      ],
+      "recommendedLevel": null,
+      "name": "Shrine of Reverence",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1727,
+      "wikiText": "Shrine of Reverence is a point of interest within Jaya Bluffs in Seitung Province.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:vista:3397",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "vista",
+      "objectiveId": "3397",
+      "coord": [
+        22162,
+        101136
+      ],
+      "recommendedLevel": null,
+      "name": "Shinota Shore",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1810,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BL8MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3357",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3357",
+      "coord": [
+        22477,
+        100981
+      ],
+      "recommendedLevel": null,
+      "name": "Western Aetherblade Crash Site",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1847,
+      "wikiText": "Western Aetherblade Crash Site is one of the multiple Aetherblades airship crash locations following their exit from The Mists onto Shing Jea Island.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3394",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3394",
+      "coord": [
+        22804,
+        100657
+      ],
+      "recommendedLevel": null,
+      "name": "Fish Hatchery",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1903,
+      "wikiText": "The Fish Hatchery, also known as Gui Isle Hatchery, is a point of interest within Shinota Shore in Seitung Province. It is named after the Luxon hero Gui Lo.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[22792, 100671]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[22792, 100671]",
+      "coord": [
+        22792,
+        100671
+      ],
+      "recommendedLevel": null,
+      "name": "Haiju Hatchery",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1903,
+      "wikiText": "Haiju Hatchery is a communing hero challenge in Shinota Shore. It can be reached by diving in the basin of Fish Hatchery.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3228",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3228",
+      "coord": [
+        23222,
+        101025
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Aetherblade Crash Site",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1981,
+      "wikiText": "Northern Aetherblade Crash Site is one of the multiple Aetherblades airship crash locations following their exit from The Mists onto Shing Jea Island.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3269",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3269",
+      "coord": [
+        23189,
+        100848
+      ],
+      "recommendedLevel": null,
+      "name": "Aetherblade Refuge",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1993,
+      "wikiText": "Aetherblade Refuge is a hidden cave within a mountain in Haiju Plains, serving as Renyak's hideout after the Aetherblades' crash from The Mists onto Shing Jea Island. To enter the cave you must do the Defeat Renyak! meta-event.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:waypoint:3428",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "waypoint",
+      "objectiveId": "3428",
+      "coord": [
+        23638,
+        100727
+      ],
+      "recommendedLevel": null,
+      "name": "Haiju Docks Waypoint",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGQNAAA=]",
+      "waypointChatLink": "[&BGQNAAA=]",
+      "trailIndex": 2049,
+      "wikiText": "Haiju Plains is an area located outside Daigo Ward. The area has been taken over by the Aetherblade, where they have established a hidden refuge after recovering from their crash from The Mists."
+    },
+    {
+      "stepId": "1442:poi:3405",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3405",
+      "coord": [
+        24099,
+        100799
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Aetherblade Crash Site",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2106,
+      "wikiText": "Eastern Aetherblade Crash Site is one of the multiple Aetherblades airship crash locations following their exit from The Mists onto Shing Jea Island.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3435",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3435",
+      "coord": [
+        24655,
+        100700
+      ],
+      "recommendedLevel": null,
+      "name": "Abandoned Lighthouse",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2157,
+      "wikiText": "Abandoned Lighthouse is a point of interest within North Peninsula in Seitung Province. It is built upon Yuroso Island.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3324",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3324",
+      "coord": [
+        24539,
+        101135
+      ],
+      "recommendedLevel": null,
+      "name": "Emperor's Watchtower",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2188,
+      "wikiText": "Emperor's Watchtower (also referred to as Usoku's Watchtower) is a tower dedicated to Emperor Usoku within North Peninsula in Seitung Province. It is infested with Unchained Risen.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:vista:3215",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "vista",
+      "objectiveId": "3215",
+      "coord": [
+        24679,
+        101370
+      ],
+      "recommendedLevel": null,
+      "name": "North Peninsula",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2216,
+      "wikiText": "Needs description.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3407",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3407",
+      "coord": [
+        24558,
+        101507
+      ],
+      "recommendedLevel": null,
+      "name": "Provisional MinSec Camp",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2259,
+      "wikiText": "Provisional MinSec Camp is a camp of the Ministry of Security within the North Peninsula in Seitung Province.",
+      "waypointChatLink": "[&BGQNAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3408",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3408",
+      "coord": [
+        24588,
+        101954
+      ],
+      "recommendedLevel": null,
+      "name": "Derelict Temple",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2317,
+      "wikiText": "Derelict Temple, also known as the Shrine of Zunraa, is a point of interest within Eastern Wilds in Seitung Province.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:heart:446",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "heart",
+      "objectiveId": "446",
+      "coord": [
+        24383,
+        102235
+      ],
+      "recommendedLevel": 80,
+      "name": "Demonstrate your fishing skills to the village fishermen.",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          24051,
+          102324
+        ],
+        [
+          24244,
+          102049
+        ],
+        [
+          24683,
+          102228
+        ],
+        [
+          24792,
+          102579
+        ],
+        [
+          24173,
+          102856
+        ],
+        [
+          23917,
+          102735
+        ],
+        [
+          24051,
+          102324
+        ]
+      ],
+      "trailIndex": 2358,
+      "wikiText": "Earn the fishermen's respect by catching fish, fishing at fishing hotspots, donating Daijun Blackfin catches to Fishermen Benyo, and defending the village from naga.",
+      "waypointChatLink": "[&BGUNAAA=]"
+    },
+    {
+      "stepId": "1442:hero:coord:[24684.9, 102456]",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "hero",
+      "objectiveId": "coord:[24684.9, 102456]",
+      "coord": [
+        24685,
+        102456
+      ],
+      "recommendedLevel": null,
+      "name": "Village Overlook (2)",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2453,
+      "wikiText": "Village Overlook can refer to one of these Hero challenges: Seitung Province Village Overlook (Shing Jea Monastery) Village Overlook (Eastern Wilds) The Echovald Wilds Village Overlook (Mori Village)",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3310",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3310",
+      "coord": [
+        24509,
+        102484
+      ],
+      "recommendedLevel": null,
+      "name": "Fishing Hamlet",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2468,
+      "wikiText": "Fishing Hamlet is a fishing village in the Eastern Wilds. It often comes under attack from the naga inhabiting the nearby Naga Domain.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    },
+    {
+      "stepId": "1442:poi:3365",
+      "mapId": 1442,
+      "zoneName": "Seitung Province",
+      "type": "poi",
+      "objectiveId": "3365",
+      "coord": [
+        24632,
+        102853
+      ],
+      "recommendedLevel": null,
+      "name": "Naga Domain",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Naga Domain is an island in the far southeast of the Eastern Wilds. It is home to a large group of naga who often conduct raids on the nearby Fishing Hamlet.",
+      "waypointChatLink": "[&BJ4MAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

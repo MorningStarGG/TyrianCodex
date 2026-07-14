@@ -1,0 +1,1193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-23T23:04:06.840941+00:00",
+  "zone": {
+    "mapId": 1622,
+    "name": "Eternity's Garden",
+    "continentId": 1,
+    "regionId": 58,
+    "regionName": "Castora",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -30720,
+        -36864
+      ],
+      [
+        30720,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        3130,
+        59945
+      ],
+      [
+        5690,
+        63145
+      ]
+    ],
+    "sectorRect": [
+      [
+        3257.06,
+        59997.9
+      ],
+      [
+        5634.8,
+        63103.7
+      ]
+    ],
+    "labelCoord": [
+      4470,
+      62000
+    ],
+    "release": "voe"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": false,
+  "steps": [
+    {
+      "stepId": "1622:vista:4084",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "vista",
+      "objectiveId": "4084",
+      "coord": [
+        4500,
+        61647
+      ],
+      "recommendedLevel": null,
+      "name": "Artificer's Islet",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "Artificer's Islet is a central area within Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4095",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4095",
+      "coord": [
+        4566,
+        61529
+      ],
+      "recommendedLevel": null,
+      "name": "The Forge",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Forge is an area within Thunderhead Peaks. In the past, Glint and Frodak Steelstar used it to forge the first Dragonsblood Spear.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:heart:464",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "heart",
+      "objectiveId": "464",
+      "coord": [
+        4666,
+        61492
+      ],
+      "recommendedLevel": 80,
+      "name": "Assist the Stewards of Galdra around the forge.",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          4667,
+          62004
+        ],
+        [
+          4263,
+          62118
+        ],
+        [
+          3901,
+          61752
+        ],
+        [
+          3914,
+          61546
+        ],
+        [
+          4011,
+          61313
+        ],
+        [
+          4164,
+          61168
+        ],
+        [
+          4522,
+          61112
+        ],
+        [
+          4942,
+          61154
+        ],
+        [
+          5042,
+          61301
+        ],
+        [
+          5029,
+          61416
+        ],
+        [
+          4832,
+          61845
+        ],
+        [
+          4667,
+          62004
+        ]
+      ],
+      "wikiText": "Participate in nearby events, command the Stewards of Galdra, turn on archaic machines, and build weapons.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4087",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4087",
+      "coord": [
+        4727,
+        61371
+      ],
+      "recommendedLevel": null,
+      "name": "Steward Trial Chamber",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Steward Trial Chamber is a point of interest in the Artificer's Islet, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4097",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4097",
+      "coord": [
+        4678,
+        61108
+      ],
+      "recommendedLevel": null,
+      "name": "Inquest Bridgehead",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Inquest Bridgehead is a point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:waypoint:4080",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "waypoint",
+      "objectiveId": "4080",
+      "coord": [
+        4867,
+        61003
+      ],
+      "recommendedLevel": null,
+      "name": "Sanctum Exterior Waypoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPAPAAA=]",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4069",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4069",
+      "coord": [
+        4809,
+        60924
+      ],
+      "recommendedLevel": null,
+      "name": "Arcanological Survey Station",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Arcanological Survey Station is a point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4061",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4061",
+      "coord": [
+        4927,
+        60742
+      ],
+      "recommendedLevel": null,
+      "name": "Dilapidated Auditorium",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Dilapidated Auditorium is a point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4093",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4093",
+      "coord": [
+        5277,
+        60740
+      ],
+      "recommendedLevel": null,
+      "name": "Dome of the Indelible Word",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Dome of the Indelible Word is a point of interest in the Sanctum of the Divine, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:vista:4100",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "vista",
+      "objectiveId": "4100",
+      "coord": [
+        5307,
+        60805
+      ],
+      "recommendedLevel": null,
+      "name": "Sanctum of the Divine",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "Sanctum of the Divine is the northeastern area within Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4067",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4067",
+      "coord": [
+        5396,
+        60446
+      ],
+      "recommendedLevel": null,
+      "name": "Issvano's Reliquary",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Issvano's Reliquary is a point of interest in the Sanctum of the Divine, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4104",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4104",
+      "coord": [
+        5411,
+        60231
+      ],
+      "recommendedLevel": null,
+      "name": "Glowing Pond",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Glowing Pond is a point of interest in the Sanctum of the Divine, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4088",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4088",
+      "coord": [
+        4828,
+        60346
+      ],
+      "recommendedLevel": null,
+      "name": "Spire of Exaltation",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Spire of Exaltation is a point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:vista:4074",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "vista",
+      "objectiveId": "4074",
+      "coord": [
+        4756,
+        60312
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of the Blessed Mantle (1)",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "Temple of the Blessed Mantle is the northern area within Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4094",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4094",
+      "coord": [
+        4516,
+        60428
+      ],
+      "recommendedLevel": null,
+      "name": "Grand Colonnade",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Grand Colonnade is a point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4082",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4082",
+      "coord": [
+        4108,
+        60431
+      ],
+      "recommendedLevel": null,
+      "name": "The All Seer",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The All Seer, keeper of the seneschals is a statue and point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:vista:4085",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "vista",
+      "objectiveId": "4085",
+      "coord": [
+        4122,
+        60764
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of the Blessed Mantle (2)",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "Temple of the Blessed Mantle is the northern area within Eternity's Garden.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4071",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4071",
+      "coord": [
+        4016,
+        60781
+      ],
+      "recommendedLevel": null,
+      "name": "Leylit Retreat",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Leylit Retreat is a point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden. It is a cave under the temple, where there is a large lake, where River Otter Pups and Juvenile River Otters are found.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4056",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4056",
+      "coord": [
+        3789,
+        60888
+      ],
+      "recommendedLevel": null,
+      "name": "Deepwood Outpost",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Deepwood Outpost is a point of interest in the The Deepwood, within the Eternity's Garden.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:waypoint:4068",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "waypoint",
+      "objectiveId": "4068",
+      "coord": [
+        3804,
+        60931
+      ],
+      "recommendedLevel": null,
+      "name": "Deepwood Outpost Waypoint",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOQPAAA=]",
+      "waypointChatLink": "[&BOQPAAA=]",
+      "wikiText": "The Deepwood is the northwest area within Eternity's Garden."
+    },
+    {
+      "stepId": "1622:poi:4096",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4096",
+      "coord": [
+        4207,
+        61166
+      ],
+      "recommendedLevel": null,
+      "name": "Sunken Leyspring",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Sunken Leyspring is a point of interest in the Artificer's Islet, within the Eternity's Garden.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4062",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4062",
+      "coord": [
+        4381,
+        61306
+      ],
+      "recommendedLevel": null,
+      "name": "Gardesano's Atelier",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "Gardesano's Atelier is a point of interest in Artificer's Islet, within Eternity's Garden. It is where Stewards of Galdra are made, and thus bears the name of their creator, Gardesano.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4065",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4065",
+      "coord": [
+        4300,
+        61684
+      ],
+      "recommendedLevel": null,
+      "name": "Supra Fortis",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Supra Fortis is a point of interest in the Artificer's Islet, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4091",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4091",
+      "coord": [
+        3985,
+        61777
+      ],
+      "recommendedLevel": null,
+      "name": "Logistics Depot",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Logistics Depot is a point of interest in the Artificer's Islet, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:waypoint:4090",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "waypoint",
+      "objectiveId": "4090",
+      "coord": [
+        3723,
+        61851
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of Abnegation Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPoPAAA=]",
+      "waypointChatLink": "[&BPoPAAA=]",
+      "wikiText": "Temple of Abnegation is the western area within Eternity's Garden. It contains a mini-dungeon of the same name, the Temple of Abnegation (mechanically a meta event)."
+    },
+    {
+      "stepId": "1622:poi:4060",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4060",
+      "coord": [
+        3701,
+        61891
+      ],
+      "recommendedLevel": null,
+      "name": "Western Outpost",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Western Outpost is a point of interest in the Temple of Abnegation, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4078",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4078",
+      "coord": [
+        3497,
+        61933
+      ],
+      "recommendedLevel": null,
+      "name": "Serene Nursery",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Serene Nursery is a point of interest in the Temple of Abnegation, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4101",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4101",
+      "coord": [
+        3496,
+        61747
+      ],
+      "recommendedLevel": null,
+      "name": "Chamber of Discipline",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Chamber of Discipline is a point of interest. It is the second chamber of the Temple of Abnegation, within the Eternity's Garden",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4081",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4081",
+      "coord": [
+        3508,
+        61644
+      ],
+      "recommendedLevel": null,
+      "name": "Hidden Cellar",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Hidden Cellar is a point of interest at the end of the Munchin' Moths jumping puzzle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4079",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4079",
+      "coord": [
+        4108,
+        62035
+      ],
+      "recommendedLevel": null,
+      "name": "Hydrothermal Vents",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Hydrothermal Vents is a point of interest in the Artificer's Islet, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4070",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4070",
+      "coord": [
+        4048,
+        62209
+      ],
+      "recommendedLevel": null,
+      "name": "Kitshark Den",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Kitshark Den is a point of interest in Artificer's Islet within Eternity's Garden. It is a kitshark colony under the watch of the Kitshark Broodmother.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4073",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4073",
+      "coord": [
+        4201,
+        62408
+      ],
+      "recommendedLevel": null,
+      "name": "Beetle Gallery",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Beetle Gallery is a point of interest in the north of the Mothmarsh, within Eternity's Garden. It is a cave that houses a population of beetles, hence its name.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4057",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4057",
+      "coord": [
+        4283,
+        62461
+      ],
+      "recommendedLevel": null,
+      "name": "Deserted Inquest Camp",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Deserted Inquest Camp is a point of interest in the Mothmarsh, within Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4103",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4103",
+      "coord": [
+        4438,
+        62600
+      ],
+      "recommendedLevel": null,
+      "name": "Aperture Falls",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Aperture Falls is a point of interest in the Mothmarsh, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4066",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4066",
+      "coord": [
+        4765,
+        62524
+      ],
+      "recommendedLevel": null,
+      "name": "Gated Waterfall",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Gated Waterfall is a point of interest in the Pilgrim's Rest, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4099",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4099",
+      "coord": [
+        4956,
+        62318
+      ],
+      "recommendedLevel": null,
+      "name": "Pilgrim's Approach",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Pilgrim's Approach is a point of interest in the Pilgrim's Rest, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4089",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4089",
+      "coord": [
+        5082,
+        62489
+      ],
+      "recommendedLevel": null,
+      "name": "Alliance Expedition Camp",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Alliance Expedition Camp is a point of interest in the Pilgrim's Rest, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:waypoint:4092",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "waypoint",
+      "objectiveId": "4092",
+      "coord": [
+        5162,
+        62438
+      ],
+      "recommendedLevel": null,
+      "name": "Pilgrim's Rest Waypoint",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPwPAAA=]",
+      "waypointChatLink": "[&BPwPAAA=]",
+      "wikiText": "Pilgrim's Rest is the southeastern area within Eternity's Garden."
+    },
+    {
+      "stepId": "1622:heart:463",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "heart",
+      "objectiveId": "463",
+      "coord": [
+        5160,
+        62548
+      ],
+      "recommendedLevel": 80,
+      "name": "Help out with research and expedition tasks around Pilgrim's Rest.",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          5446,
+          62879
+        ],
+        [
+          4749,
+          62945
+        ],
+        [
+          4508,
+          62864
+        ],
+        [
+          4553,
+          62305
+        ],
+        [
+          4609,
+          62059
+        ],
+        [
+          5236,
+          62050
+        ],
+        [
+          5490,
+          62093
+        ],
+        [
+          5579,
+          62212
+        ],
+        [
+          5558,
+          62635
+        ],
+        [
+          5519,
+          62812
+        ],
+        [
+          5446,
+          62879
+        ]
+      ],
+      "wikiText": "Assist Tyrian Alliance efforts in the region by escorting allies to research locations, exploring sealed chambers, plundering Inquest caches, and helping pack expedition bags.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:vista:4064",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "vista",
+      "objectiveId": "4064",
+      "coord": [
+        5059,
+        62736
+      ],
+      "recommendedLevel": null,
+      "name": "Pilgrim's Rest",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "Pilgrim's Rest is the southeastern area within Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4098",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4098",
+      "coord": [
+        4937,
+        62869
+      ],
+      "recommendedLevel": null,
+      "name": "Pilfered Inquest Equipment",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Pilfered Inquest Equipment is a point of interest in the Pilgrim's Rest, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4063",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4063",
+      "coord": [
+        5321,
+        62324
+      ],
+      "recommendedLevel": null,
+      "name": "Luce's Garden",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Luce's Garden is a point of interest in the Pilgrim's Rest, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4083",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4083",
+      "coord": [
+        5335,
+        61940
+      ],
+      "recommendedLevel": null,
+      "name": "Toppled Monument",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Toppled Monument is a point of interest in the Ley-Drowned Quarry, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPwPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4072",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4072",
+      "coord": [
+        5156,
+        61454
+      ],
+      "recommendedLevel": null,
+      "name": "Crumbling Edifice",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Crumbling Edifice is a point of interest in the Ley-Drowned Quarry, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4086",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4086",
+      "coord": [
+        5310,
+        61308
+      ],
+      "recommendedLevel": null,
+      "name": "Quarry Depths",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Quarry Depths is a point of interest in the Ley-Drowned Quarry, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4059",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4059",
+      "coord": [
+        4766,
+        61685
+      ],
+      "recommendedLevel": null,
+      "name": "The Animal Apothecary",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The The Animal Apothecary is a point of interest in the Artificer's Islet, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPAPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4075",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4075",
+      "coord": [
+        4274,
+        60931
+      ],
+      "recommendedLevel": null,
+      "name": "Ascendant's Way",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Ascendant's Way is a point of interest in the Temple of the Blessed Mantle, within the Eternity's Garden.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4102",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4102",
+      "coord": [
+        3530,
+        60397
+      ],
+      "recommendedLevel": null,
+      "name": "Whispering Artifact",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Whispering Artifact is a point of interest in The Deepwood, within the Eternity's Garden. Walking next to the artifact is required for Step 1 of the Alliance Supporter achievement.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4058",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4058",
+      "coord": [
+        3452,
+        60255
+      ],
+      "recommendedLevel": null,
+      "name": "The First Elder",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The First Elder is a point of interest in the The Deepwood, within the Eternity's Garden.",
+      "waypointChatLink": "[&BOQPAAA=]"
+    },
+    {
+      "stepId": "1622:vista:4077",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "vista",
+      "objectiveId": "4077",
+      "coord": [
+        3418,
+        62534
+      ],
+      "recommendedLevel": null,
+      "name": "Venomgrove Observatory",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "Venomgrove Observatory is the southwestern area within Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4076",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4076",
+      "coord": [
+        3473,
+        62678
+      ],
+      "recommendedLevel": null,
+      "name": "Raul's Watch",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Raul's Watch is a point of interest in the Venomgrove Observatory, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    },
+    {
+      "stepId": "1622:poi:4105",
+      "mapId": 1622,
+      "zoneName": "Eternity's Garden",
+      "type": "poi",
+      "objectiveId": "4105",
+      "coord": [
+        4001,
+        62601
+      ],
+      "recommendedLevel": null,
+      "name": "Infested Thicket",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Infested Thicket is a point of interest in the Mothmarsh, within the Eternity's Garden.",
+      "waypointChatLink": "[&BPoPAAA=]"
+    }
+  ],
+  "hasTrail": false
+}

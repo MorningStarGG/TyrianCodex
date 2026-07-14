@@ -1,0 +1,533 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1211,
+  "slug": "desert-highlands",
+  "name": "Desert Highlands",
+  "regionName": "Crystal Desert",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Orichalcum Ore",
+      "category": "ore",
+      "material": "orichalcum",
+      "source": "lady"
+    },
+    {
+      "name": "Strawberry",
+      "category": "plant",
+      "material": "strawberry",
+      "source": "tw"
+    },
+    {
+      "name": "Mussels",
+      "category": "seafood",
+      "material": "mussels",
+      "source": "tw"
+    },
+    {
+      "name": "Elder Wood Log",
+      "category": "wood",
+      "material": "elder_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -971.6,
+      "y": 538.8,
+      "z": 38.1,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -1011.6,
+      "y": 336.8,
+      "z": -195.9,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -750.2,
+      "y": 136.2,
+      "z": -245.1,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -177.6,
+      "y": 244.1,
+      "z": 338.1,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -160.4,
+      "y": 229.0,
+      "z": 191.0,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -127.8,
+      "y": 298.2,
+      "z": 33.2,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 522.1,
+      "y": 162.5,
+      "z": -683.6,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 163.7,
+      "y": 139.6,
+      "z": -580.6,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -54.1,
+      "y": 174.0,
+      "z": -572.7,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -195.1,
+      "y": 181.0,
+      "z": -517.8,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum",
+      "chatLink": "[&BFcLAAA=]"
+    },
+    {
+      "x": -126.0,
+      "y": 298.2,
+      "z": 37.6,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -418.1,
+      "y": 86.6,
+      "z": -168.4,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": -400.4,
+      "y": 87.7,
+      "z": -177.0,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": -400.9,
+      "y": 87.8,
+      "z": -178.1,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": -418.7,
+      "y": 86.6,
+      "z": -169.6,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": -1373.5,
+      "y": -12.8,
+      "z": -593.6,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -1395.6,
+      "y": -20.7,
+      "z": -634.8,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -1460.8,
+      "y": -30.5,
+      "z": -670.8,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -1445.3,
+      "y": -26.6,
+      "z": -698.7,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -1408.4,
+      "y": -30.0,
+      "z": -518.9,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -1418.4,
+      "y": -19.1,
+      "z": -479.3,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -1469.1,
+      "y": -38.7,
+      "z": -442.5,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -301.9,
+      "y": -0.3,
+      "z": -580.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -448.9,
+      "y": -0.6,
+      "z": -456.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -627.2,
+      "y": -0.4,
+      "z": -617.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -912.5,
+      "y": -0.1,
+      "z": -526.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -1030.0,
+      "y": -0.0,
+      "z": -520.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -561.0,
+      "y": -0.1,
+      "z": -478.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -275.5,
+      "y": 15.0,
+      "z": -525.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -288.2,
+      "y": 14.7,
+      "z": -526.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -130.8,
+      "y": 253.6,
+      "z": 427.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -133.3,
+      "y": 251.9,
+      "z": 415.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -138.9,
+      "y": 259.5,
+      "z": 450.4,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -915.5,
+      "y": 22.3,
+      "z": -638.9,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -205.3,
+      "y": 234.8,
+      "z": 320.5,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -73.6,
+      "y": 281.6,
+      "z": 139.9,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -373.0,
+      "y": 203.9,
+      "z": 25.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -463.4,
+      "y": 246.1,
+      "z": 338.7,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -358.2,
+      "y": 237.0,
+      "z": 397.9,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 152.8,
+      "y": 288.4,
+      "z": 535.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 715.5,
+      "y": 217.8,
+      "z": 394.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 823.6,
+      "y": 218.0,
+      "z": 467.0,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 950.9,
+      "y": 199.7,
+      "z": 446.9,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 604.5,
+      "y": 154.8,
+      "z": 257.7,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 459.2,
+      "y": 140.4,
+      "z": 112.2,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 472.5,
+      "y": 182.7,
+      "z": 155.3,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 282.1,
+      "y": 238.3,
+      "z": 54.3,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 54.9,
+      "y": 262.8,
+      "z": 102.5,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 676.2,
+      "y": 137.0,
+      "z": -693.7,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -84.8,
+      "y": 69.7,
+      "z": -521.4,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 192.4,
+      "y": 258.7,
+      "z": 278.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -204.4,
+      "y": 232.7,
+      "z": 320.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -248.8,
+      "y": 228.8,
+      "z": 114.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -372.0,
+      "y": 201.9,
+      "z": 25.6,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -425.0,
+      "y": 220.5,
+      "z": 262.6,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -462.6,
+      "y": 243.7,
+      "z": 337.5,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -456.3,
+      "y": 259.9,
+      "z": 461.3,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -368.7,
+      "y": 239.0,
+      "z": 489.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -331.6,
+      "y": 232.2,
+      "z": 447.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 100.4,
+      "y": 330.4,
+      "z": 563.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 71.1,
+      "y": 239.5,
+      "z": 196.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -41.6,
+      "y": 228.3,
+      "z": 305.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    }
+  ]
+}

@@ -1,0 +1,2184 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 32,
+    "name": "Diessa Plateau",
+    "continentId": 1,
+    "regionId": 2,
+    "regionName": "Ascalon",
+    "floor": 1,
+    "minLevel": 15,
+    "maxLevel": 25,
+    "mapRect": [
+      [
+        -43008,
+        -27648
+      ],
+      [
+        43008,
+        27648
+      ]
+    ],
+    "continentRect": [
+      [
+        56320,
+        27648
+      ],
+      [
+        59904,
+        29952
+      ]
+    ],
+    "sectorRect": [
+      [
+        56201.5,
+        27500
+      ],
+      [
+        60041.6,
+        30094.3
+      ]
+    ],
+    "labelCoord": [
+      58048,
+      28760
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "32:waypoint:222",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "222",
+      "coord": [
+        56935,
+        29686
+      ],
+      "recommendedLevel": null,
+      "name": "Nolan Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BN4AAAA=]",
+      "waypointChatLink": "[&BN4AAAA=]",
+      "trailIndex": 15,
+      "wikiText": "The Town of Nolan is an area within the Diessa Plateau. A group of Iron Legion charr have established this settlement situated where the ruined city of Nolani once was."
+    },
+    {
+      "stepId": "32:heart:169",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "169",
+      "coord": [
+        56959,
+        29665
+      ],
+      "recommendedLevel": 15,
+      "name": "Assist the Blood Legion",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56916,
+          29698
+        ],
+        [
+          56863,
+          29551
+        ],
+        [
+          57082,
+          29381
+        ],
+        [
+          57221,
+          29385
+        ],
+        [
+          57278,
+          29423
+        ],
+        [
+          57370,
+          29523
+        ],
+        [
+          57359,
+          29585
+        ],
+        [
+          57322,
+          29641
+        ],
+        [
+          57252,
+          29724
+        ],
+        [
+          57162,
+          29734
+        ],
+        [
+          57038,
+          29751
+        ],
+        [
+          56916,
+          29698
+        ]
+      ],
+      "trailIndex": 19,
+      "wikiText": "Disarm mines, gather scrap metal, and defeat Separatists along the road.",
+      "waypointChatLink": "[&BN4AAAA=]"
+    },
+    {
+      "stepId": "32:poi:1793",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "1793",
+      "coord": [
+        56393,
+        29590
+      ],
+      "recommendedLevel": null,
+      "name": "North Nolan Hatchery",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 81,
+      "wikiText": "The North Nolan Hatchery is a point of interest and a mostly instanced area within the Town of Nolan. This training facility is operated by the Blood Legion. Here they raise and train devourers for combat and as pets.",
+      "waypointChatLink": "[&BN4AAAA=]"
+    },
+    {
+      "stepId": "32:vista:1496",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1496",
+      "coord": [
+        56533,
+        29857
+      ],
+      "recommendedLevel": null,
+      "name": "Town of Nolan",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 108,
+      "wikiText": "Pretty safe and easy to get to in the scrapyard part of the Town of Nolan.",
+      "waypointChatLink": "[&BN4AAAA=]"
+    },
+    {
+      "stepId": "32:heart:168",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "168",
+      "coord": [
+        56862,
+        29499
+      ],
+      "recommendedLevel": 16,
+      "name": "Assist the Iron Legion fighting ghosts.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56583,
+          29516
+        ],
+        [
+          56586,
+          29065
+        ],
+        [
+          56958,
+          29038
+        ],
+        [
+          56978,
+          29459
+        ],
+        [
+          56902,
+          29517
+        ],
+        [
+          56583,
+          29516
+        ]
+      ],
+      "trailIndex": 169,
+      "wikiText": "Help soldiers cull ghosts, light torches, and revive fallen allies.",
+      "waypointChatLink": "[&BN4AAAA=]"
+    },
+    {
+      "stepId": "32:poi:271",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "271",
+      "coord": [
+        57148,
+        29500
+      ],
+      "recommendedLevel": null,
+      "name": "Caravan Wreckage",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 200,
+      "wikiText": "The Caravan Wreckage is a point of interest within the Oldgate Clearing. Here on the road from the Black Citadel is the burnt wreckage of a caravan. Separatists still linger in the area to waylay any unwary travelers.",
+      "waypointChatLink": "[&BN4AAAA=]"
+    },
+    {
+      "stepId": "32:poi:418",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "418",
+      "coord": [
+        57235,
+        29798
+      ],
+      "recommendedLevel": null,
+      "name": "Phasma Castrum",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 234,
+      "wikiText": "Phasma Castrum is a point of interest within the Oldgate Clearing. Through a hidden cleft and up a small rise lies this Flame Legion encampment.",
+      "waypointChatLink": "[&BN4AAAA=]"
+    },
+    {
+      "stepId": "32:poi:274",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "274",
+      "coord": [
+        57483,
+        29775
+      ],
+      "recommendedLevel": null,
+      "name": "Dunrock Gulch",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 272,
+      "wikiText": "Dunrock Gulch is a point of interest within Oldgate Clearing. At the end of this canyon is a large Separatists camp. Situated near a troop of Flame Legion they hold an uneasy truce, preferring to raid travelers than attack their neighbors.",
+      "waypointChatLink": "[&BN0AAAA=]"
+    },
+    {
+      "stepId": "32:heart:180",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "180",
+      "coord": [
+        57444,
+        29680
+      ],
+      "recommendedLevel": 17,
+      "name": "Help the Ash Legion take out Separatists.",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57387,
+          29951
+        ],
+        [
+          57249,
+          29737
+        ],
+        [
+          57325,
+          29644
+        ],
+        [
+          57361,
+          29590
+        ],
+        [
+          57457,
+          29585
+        ],
+        [
+          57549,
+          29635
+        ],
+        [
+          57617,
+          29693
+        ],
+        [
+          57616,
+          29942
+        ],
+        [
+          57387,
+          29951
+        ]
+      ],
+      "trailIndex": 305,
+      "wikiText": "Defeat Separatists, destroy their camp, and rescue captured charr.",
+      "waypointChatLink": "[&BN0AAAA=]"
+    },
+    {
+      "stepId": "32:heart:179",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "179",
+      "coord": [
+        57864,
+        29811
+      ],
+      "recommendedLevel": 18,
+      "name": "Help Kastaz Strongpaw maintain his garden.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57776,
+          29842
+        ],
+        [
+          57797,
+          29793
+        ],
+        [
+          57836,
+          29782
+        ],
+        [
+          57896,
+          29788
+        ],
+        [
+          57939,
+          29819
+        ],
+        [
+          57953,
+          29844
+        ],
+        [
+          57956,
+          29881
+        ],
+        [
+          57926,
+          29926
+        ],
+        [
+          57886,
+          29943
+        ],
+        [
+          57842,
+          29938
+        ],
+        [
+          57798,
+          29908
+        ],
+        [
+          57785,
+          29883
+        ],
+        [
+          57776,
+          29842
+        ]
+      ],
+      "trailIndex": 353,
+      "wikiText": "Repel grub larva from plants, stop chickens from feeding, remove damaged plants.",
+      "waypointChatLink": "[&BN0AAAA=]"
+    },
+    {
+      "stepId": "32:vista:1497",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1497",
+      "coord": [
+        57701,
+        29710
+      ],
+      "recommendedLevel": null,
+      "name": "Noxin Dells",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 382,
+      "wikiText": "Start climbing to the South East of the vista, where the cliff becomes concave.",
+      "waypointChatLink": "[&BN0AAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:221",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "221",
+      "coord": [
+        57748,
+        29573
+      ],
+      "recommendedLevel": null,
+      "name": "Nageling Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BN0AAAA=]",
+      "waypointChatLink": "[&BN0AAAA=]",
+      "trailIndex": 398,
+      "wikiText": "The Town of Nageling is an area within the Diessa Plateau. This large walled settlement is occupied mostly by charr soldiers. One Blood Legion soldier in the town describes it as being in the \"Middle of cattle territory."
+    },
+    {
+      "stepId": "32:vista:1494",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1494",
+      "coord": [
+        57826,
+        28926
+      ],
+      "recommendedLevel": null,
+      "name": "Moorwatch Tower",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 457,
+      "wikiText": "This one is a bit tricky. You'll have to run southeast of the actual tower, there is a charr testing out a Cow Cannon. Wait until he is done testing cows, then go up and click cannon. Select get inside, it will shoot you onto the tower.",
+      "waypointChatLink": "[&BNoAAAA=]"
+    },
+    {
+      "stepId": "32:poi:987",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "987",
+      "coord": [
+        57794,
+        28925
+      ],
+      "recommendedLevel": null,
+      "name": "Moorwatch Tower",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 466,
+      "wikiText": "The Moorwatch Tower is a point of interest within The Blasted Moors. This tall watchtower appears to be unscalable.",
+      "waypointChatLink": "[&BNoAAAA=]"
+    },
+    {
+      "stepId": "32:hero:0-119",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-119",
+      "coord": [
+        57873,
+        28935
+      ],
+      "recommendedLevel": null,
+      "name": "Roj the Rowdy Butcher",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 478,
+      "wikiText": "Roj the Rowdy Butcher resides in the The Blasted Moors. Defeat him in combat to complete his challenge.",
+      "waypointChatLink": "[&BNoAAAA=]"
+    },
+    {
+      "stepId": "32:heart:182",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "182",
+      "coord": [
+        57943,
+        28805
+      ],
+      "recommendedLevel": 19,
+      "name": "Help the Blood Legion combat ghost siege weapons.",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57993,
+          28835
+        ],
+        [
+          57911,
+          28870
+        ],
+        [
+          57867,
+          28864
+        ],
+        [
+          57783,
+          28807
+        ],
+        [
+          57714,
+          28775
+        ],
+        [
+          57685,
+          28737
+        ],
+        [
+          57652,
+          28700
+        ],
+        [
+          57640,
+          28612
+        ],
+        [
+          57634,
+          28552
+        ],
+        [
+          57634,
+          28502
+        ],
+        [
+          57610,
+          28457
+        ],
+        [
+          57612,
+          28431
+        ],
+        [
+          57593,
+          28406
+        ],
+        [
+          57638,
+          28360
+        ],
+        [
+          57672,
+          28326
+        ],
+        [
+          57751,
+          28402
+        ],
+        [
+          57819,
+          28421
+        ],
+        [
+          57922,
+          28489
+        ],
+        [
+          58050,
+          28546
+        ],
+        [
+          58053,
+          28611
+        ],
+        [
+          58046,
+          28706
+        ],
+        [
+          57993,
+          28835
+        ]
+      ],
+      "trailIndex": 493,
+      "wikiText": "Motivate Blood Legion troops and destroy the ghost trebuchets and cannons in Grendich Ruins.",
+      "waypointChatLink": "[&BNoAAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:218",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "218",
+      "coord": [
+        57831,
+        28790
+      ],
+      "recommendedLevel": null,
+      "name": "Blasted Moors Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNoAAAA=]",
+      "waypointChatLink": "[&BNoAAAA=]",
+      "trailIndex": 506,
+      "wikiText": "The Blasted Moors is an area in the central section of the Diessa Plateau. Soldiers from the Blood Legion and Ascalonian ghosts are engaged in fierce combat here."
+    },
+    {
+      "stepId": "32:poi:1627",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "1627",
+      "coord": [
+        57865,
+        28671
+      ],
+      "recommendedLevel": null,
+      "name": "Old Grendich Aqueduct",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 520,
+      "wikiText": "The Old Grendich Aqueduct is a point of interest in The Blasted Moors. The abandoned sewer system lies deep under the ruins of the ancient city of Grendich. Great blood-borne energies from the surrounding area collect down here.",
+      "waypointChatLink": "[&BNoAAAA=]"
+    },
+    {
+      "stepId": "32:hero:0-118",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-118",
+      "coord": [
+        57862,
+        28643
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalonian Aqueduct",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 525,
+      "wikiText": "Ascalonian Aqueduct is a hero challenge in The Blasted Moors. The blood-borne energies reside within the Old Grendich Aqueduct, beneath the Grendich Ruins.",
+      "waypointChatLink": "[&BNoAAAA=]"
+    },
+    {
+      "stepId": "32:poi:273",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "273",
+      "coord": [
+        57689,
+        28424
+      ],
+      "recommendedLevel": null,
+      "name": "Grendich Ruins",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 578,
+      "wikiText": "The Grendich Ruins is a point of interest located in The Blasted Moors. The one-time seat of judicial power in the Grendich village, the formerly grand courthouse is now in shambles.",
+      "waypointChatLink": "[&BNoAAAA=]"
+    },
+    {
+      "stepId": "32:poi:272",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "272",
+      "coord": [
+        57238,
+        28791
+      ],
+      "recommendedLevel": null,
+      "name": "Bovarin Estate",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 663,
+      "wikiText": "The Bovarin Estate is a point of interest within the Freewain Pastures. Located southeast of the Village of Butcher's Block is this cattle ranch. They raise cows primarily for consumption at Meatoberfest.",
+      "waypointChatLink": "[&BGABAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:352",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "352",
+      "coord": [
+        57506,
+        29097
+      ],
+      "recommendedLevel": null,
+      "name": "Charradis Estate Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGABAAA=]",
+      "waypointChatLink": "[&BGABAAA=]",
+      "trailIndex": 709,
+      "wikiText": "Wodron Glens is a fertile plain lined with forested slopes whose trees team with game within the Diessa Plateau. It is also the location of the Charradis Estate, a large cattle ranch run by charr ranchers."
+    },
+    {
+      "stepId": "32:heart:181",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "181",
+      "coord": [
+        57369,
+        29232
+      ],
+      "recommendedLevel": 17,
+      "name": "Help Charradis Estate Ranchers attend to cattle",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57284,
+          29284
+        ],
+        [
+          57269,
+          29174
+        ],
+        [
+          57321,
+          29063
+        ],
+        [
+          57422,
+          29041
+        ],
+        [
+          57480,
+          29085
+        ],
+        [
+          57502,
+          29122
+        ],
+        [
+          57497,
+          29175
+        ],
+        [
+          57413,
+          29326
+        ],
+        [
+          57284,
+          29284
+        ]
+      ],
+      "trailIndex": 733,
+      "wikiText": "Catch bugs to feed to cattle, and appease stinky or moody cows.",
+      "waypointChatLink": "[&BGABAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:350",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "350",
+      "coord": [
+        56908,
+        29191
+      ],
+      "recommendedLevel": null,
+      "name": "Oldgate Waypoint",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF4BAAA=]",
+      "waypointChatLink": "[&BF4BAAA=]",
+      "trailIndex": 781,
+      "wikiText": "The Ruins of Oldgate is an area within the Diessa Plateau. This dark forested plain is filled with the ancient ruins of a lost military outpost who once stood before The Searing."
+    },
+    {
+      "stepId": "32:poi:417",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "417",
+      "coord": [
+        56493,
+        29097
+      ],
+      "recommendedLevel": null,
+      "name": "Silex Castrum",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 841,
+      "wikiText": "Silex Castrum is a point of interest within Arcovian Foothills. The Flame Legion established this hidden camp here in order to conduct secretive rituals away from prying eyes.",
+      "waypointChatLink": "[&BF4BAAA=]"
+    },
+    {
+      "stepId": "32:heart:170",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "170",
+      "coord": [
+        56999,
+        28459
+      ],
+      "recommendedLevel": 16,
+      "name": "Assist Lakor Grizzlemouth in keeping Meatoberfest running smoothly.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56465,
+          28680
+        ],
+        [
+          56562,
+          28420
+        ],
+        [
+          56642,
+          28287
+        ],
+        [
+          57193,
+          28307
+        ],
+        [
+          57325,
+          28441
+        ],
+        [
+          57334,
+          28857
+        ],
+        [
+          57216,
+          28870
+        ],
+        [
+          57147,
+          28877
+        ],
+        [
+          56928,
+          28921
+        ],
+        [
+          56726,
+          28973
+        ],
+        [
+          56380,
+          28970
+        ],
+        [
+          56465,
+          28680
+        ]
+      ],
+      "trailIndex": 946,
+      "wikiText": "Take food and ale to soldiers, but keep the inebriated ones in check. Boost the spirits of dejected soldiers, and dispatch anyone who tries to hinder the celebration.",
+      "waypointChatLink": "[&BF8BAAA=]"
+    },
+    {
+      "stepId": "32:vista:1730",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1730",
+      "coord": [
+        56876,
+        28462
+      ],
+      "recommendedLevel": null,
+      "name": "Village of Butcher's Block",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 983,
+      "wikiText": "Climb up the ridge line in the northwest corner inside the Village and jump onto the wall. You'll land on a ledge under the top. Walk around to the Vista.",
+      "waypointChatLink": "[&BF8BAAA=]"
+    },
+    {
+      "stepId": "32:poi:1033",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "1033",
+      "coord": [
+        56720,
+        28358
+      ],
+      "recommendedLevel": null,
+      "name": "Butcher's Yard",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1003,
+      "wikiText": "The Butcher's Yard is a point of interest within Halrunting Plains. It is an arena where people from all across Tyria go to test their strength in combat.",
+      "waypointChatLink": "[&BNkAAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:217",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "217",
+      "coord": [
+        56554,
+        28445
+      ],
+      "recommendedLevel": null,
+      "name": "Charrgate Haven Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNkAAAA=]",
+      "waypointChatLink": "[&BNkAAAA=]",
+      "trailIndex": 1039,
+      "wikiText": "Halrunting Plains is an area within the Diessa Plateau. It contains the entrance to the Wayfarer Foothills which is overlooked by the Lionguard haven, Charrgate Haven."
+    },
+    {
+      "stepId": "32:hero:0-80",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-80",
+      "coord": [
+        56488,
+        28455
+      ],
+      "recommendedLevel": null,
+      "name": "Shaman Purda",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1053,
+      "wikiText": "Shaman Purda is a norn shaman of the Snow Leopard. She can be found in Charrgate Haven in the Halrunting Plains and defeating her earns the player a hero point.",
+      "waypointChatLink": "[&BNkAAAA=]"
+    },
+    {
+      "stepId": "32:heart:171",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "171",
+      "coord": [
+        56723,
+        28144
+      ],
+      "recommendedLevel": 16,
+      "name": "Assist the Iron Legion",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56587,
+          28312
+        ],
+        [
+          56452,
+          27731
+        ],
+        [
+          56828,
+          27725
+        ],
+        [
+          57202,
+          27682
+        ],
+        [
+          57121,
+          28085
+        ],
+        [
+          56974,
+          28312
+        ],
+        [
+          56587,
+          28312
+        ]
+      ],
+      "trailIndex": 1115,
+      "wikiText": "Eliminate the dredge and their machinery. Revive fallen allies.",
+      "waypointChatLink": "[&BNkAAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:351",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "351",
+      "coord": [
+        57093,
+        28347
+      ],
+      "recommendedLevel": null,
+      "name": "Butcher's Block Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF8BAAA=]",
+      "waypointChatLink": "[&BF8BAAA=]",
+      "trailIndex": 1158,
+      "wikiText": "The Village of Butcher's Block is an area within the Diessa Plateau. It is currently celebrating Meatoberfest for the charr, which causes it to be a target by both dredge and separatists."
+    },
+    {
+      "stepId": "32:hero:0-38",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-38",
+      "coord": [
+        57306,
+        27853
+      ],
+      "recommendedLevel": null,
+      "name": "Sharptail's Nest",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1216,
+      "wikiText": "Sharptail's Nest is found high in the devourer-filled Gram Hills. Disturbing the nest will summon Veteran Sharptail and two of her brood to attack. Defeat them to rise to the challenge.",
+      "waypointChatLink": "[&BMQDAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:964",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "964",
+      "coord": [
+        57433,
+        28086
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodcliff Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMQDAAA=]",
+      "waypointChatLink": "[&BMQDAAA=]",
+      "trailIndex": 1255,
+      "wikiText": "Gram Hills is an area within the Diessa Plateau. This pleasant hillside is lined with trees along the road spanning its length. There is a small Iron Legion tower on the western edge."
+    },
+    {
+      "stepId": "32:heart:172",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "172",
+      "coord": [
+        57798,
+        27971
+      ],
+      "recommendedLevel": 17,
+      "name": "Assist the Quarry Workers",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57551,
+          28149
+        ],
+        [
+          57473,
+          28153
+        ],
+        [
+          57452,
+          27869
+        ],
+        [
+          57548,
+          27754
+        ],
+        [
+          57918,
+          27770
+        ],
+        [
+          57961,
+          27938
+        ],
+        [
+          57886,
+          28151
+        ],
+        [
+          57551,
+          28149
+        ]
+      ],
+      "trailIndex": 1300,
+      "wikiText": "Repair drilling machines, detonate rock piles, slay dredges, and collapse dredge holes.",
+      "waypointChatLink": "[&BMQDAAA=]"
+    },
+    {
+      "stepId": "32:vista:1500",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1500",
+      "coord": [
+        57889,
+        27914
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodcliff Quarry",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1329,
+      "wikiText": "A simple yet safe access vista.",
+      "waypointChatLink": "[&BMkDAAA=]"
+    },
+    {
+      "stepId": "32:hero:0-116",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-116",
+      "coord": [
+        58329,
+        27773
+      ],
+      "recommendedLevel": null,
+      "name": "Veruta Beefhawker",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1397,
+      "wikiText": "Veruta Beefhawker is a strange charr hiding in an isolated cave who offers players her Tasty Meat which, upon consuming the item, will grant a hero point.",
+      "waypointChatLink": "[&BNwAAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:969",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "969",
+      "coord": [
+        58194,
+        28258
+      ],
+      "recommendedLevel": null,
+      "name": "Manbane's Waypoint",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMkDAAA=]",
+      "waypointChatLink": "[&BMkDAAA=]",
+      "trailIndex": 1461,
+      "wikiText": "The Manbane's Outcrop is a cliff inhabited by black bears overlooking Blackblade Lake."
+    },
+    {
+      "stepId": "32:poi:275",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "275",
+      "coord": [
+        58413,
+        28379
+      ],
+      "recommendedLevel": null,
+      "name": "Ritual Isle",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1482,
+      "wikiText": "Ritual Isle is a point of interest within Blackblade Lake. This small rocky isle sits in the southwestern corner of the lake.",
+      "waypointChatLink": "[&BMkDAAA=]"
+    },
+    {
+      "stepId": "32:poi:988",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "988",
+      "coord": [
+        58323,
+        28593
+      ],
+      "recommendedLevel": null,
+      "name": "Ebonshore Plant",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1504,
+      "wikiText": "The Ebonshore Plant is a point of interest within the Rancher's Wash. This water treatment facility is a very important place for the charr in Ascalon.",
+      "waypointChatLink": "[&BMkDAAA=]"
+    },
+    {
+      "stepId": "32:heart:174",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "174",
+      "coord": [
+        58310,
+        28646
+      ],
+      "recommendedLevel": 20,
+      "name": "Assist Stout Darkmind",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58329,
+          28699
+        ],
+        [
+          58246,
+          28646
+        ],
+        [
+          58063,
+          28432
+        ],
+        [
+          58201,
+          28335
+        ],
+        [
+          58338,
+          28199
+        ],
+        [
+          58442,
+          28183
+        ],
+        [
+          58574,
+          28253
+        ],
+        [
+          58601,
+          28446
+        ],
+        [
+          58395,
+          28690
+        ],
+        [
+          58329,
+          28699
+        ]
+      ],
+      "trailIndex": 1513,
+      "wikiText": "Cull skale, retrieve water samples from test kits, and repair chemical dispensers in Blackblade Lake.",
+      "waypointChatLink": "[&BJoDAAA=]"
+    },
+    {
+      "stepId": "32:hero:0-117",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-117",
+      "coord": [
+        58400,
+        29022
+      ],
+      "recommendedLevel": null,
+      "name": "Rancher-in-Training Poisonswill",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1568,
+      "wikiText": "Rancher-in-Training Poisonswill is a charr cub and rancher in training. He has an apple-loving pet bull of which he might be over-confident of in its abilities.",
+      "waypointChatLink": "[&BJoDAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:922",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "922",
+      "coord": [
+        58480,
+        28980
+      ],
+      "recommendedLevel": null,
+      "name": "Dawnright Estate Waypoint",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJoDAAA=]",
+      "waypointChatLink": "[&BJoDAAA=]",
+      "trailIndex": 1579,
+      "wikiText": "The Rancher's Wash is an area in the Diessa Plateau. It also contains two main farms who serves as suppliers of meat for the Black Citadel."
+    },
+    {
+      "stepId": "32:poi:278",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "278",
+      "coord": [
+        58380,
+        29393
+      ],
+      "recommendedLevel": null,
+      "name": "Stonefall Estate",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1631,
+      "wikiText": "The Stonefall Estate is a point of interest within the Rancher's Wash. This farm raises mainly cattle but also tends to a few chickens. Charr farmers here must occasionally defend their herds from Separatists raids.",
+      "waypointChatLink": "[&BGEBAAA=]"
+    },
+    {
+      "stepId": "32:heart:173",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "173",
+      "coord": [
+        58295,
+        29446
+      ],
+      "recommendedLevel": 21,
+      "name": "Help Rak Deathmane maintain Stonefall Estate.",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58196,
+          29690
+        ],
+        [
+          58093,
+          29471
+        ],
+        [
+          58120,
+          29288
+        ],
+        [
+          58196,
+          29187
+        ],
+        [
+          58285,
+          29184
+        ],
+        [
+          58629,
+          29182
+        ],
+        [
+          58624,
+          29396
+        ],
+        [
+          58625,
+          29623
+        ],
+        [
+          58626,
+          29934
+        ],
+        [
+          58462,
+          29880
+        ],
+        [
+          58196,
+          29690
+        ]
+      ],
+      "trailIndex": 1653,
+      "wikiText": "Protect livestock from Separatists, return chickens to Stonefall Estate, feed hungry cows, and fill empty water troughs.",
+      "waypointChatLink": "[&BGEBAAA=]"
+    },
+    {
+      "stepId": "32:hero:0-203",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-203",
+      "coord": [
+        58714,
+        29732
+      ],
+      "recommendedLevel": null,
+      "name": "Remains of the Northern Wall",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1780,
+      "wikiText": "The Remains of the Northern Wall are part of the Northern Wall which once stood in defense of Ascalon from the charr horde.",
+      "waypointChatLink": "[&BGEBAAA=]"
+    },
+    {
+      "stepId": "32:vista:1493",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1493",
+      "coord": [
+        58741,
+        29718
+      ],
+      "recommendedLevel": null,
+      "name": "The Breached Wall",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1784,
+      "wikiText": "One of the hardest vistas to get to quickly. Bringing a friend to help in combat is highly advisable. Complex route starts SW of waypoint with stairs up.",
+      "waypointChatLink": "[&BGEBAAA=]"
+    },
+    {
+      "stepId": "32:poi:944",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "944",
+      "coord": [
+        58576,
+        29809
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Althea",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1803,
+      "wikiText": "Camp Althea is a point of interest within The Breached Wall. Secluded in the ruined structure of the shattered Great Northern Wall, a small band of Separatists have pitched their campsite.",
+      "waypointChatLink": "[&BGEBAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:353",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "353",
+      "coord": [
+        58484,
+        29676
+      ],
+      "recommendedLevel": null,
+      "name": "Breached Wall Waypoint",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGEBAAA=]",
+      "waypointChatLink": "[&BGEBAAA=]",
+      "trailIndex": 1821,
+      "wikiText": "The Breached Wall is an area within the Diessa Plateau consisting of a section of the shattered Great Northern Wall of Ascalon."
+    },
+    {
+      "stepId": "32:heart:175",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "175",
+      "coord": [
+        58832,
+        29199
+      ],
+      "recommendedLevel": 22,
+      "name": "Protect Redreave Mill from Separatists.",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58675,
+          29361
+        ],
+        [
+          58699,
+          29122
+        ],
+        [
+          58823,
+          29036
+        ],
+        [
+          59028,
+          28998
+        ],
+        [
+          59123,
+          29038
+        ],
+        [
+          59142,
+          29434
+        ],
+        [
+          58675,
+          29361
+        ]
+      ],
+      "trailIndex": 1887,
+      "wikiText": "Stop Separatists from sabotaging mill equipment, pick them off with sniper rifles, and disarm their bombs. Also, motivate lazy workers.",
+      "waypointChatLink": "[&BMYDAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:966",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "966",
+      "coord": [
+        58937,
+        29193
+      ],
+      "recommendedLevel": null,
+      "name": "Redreave Mill Waypoint",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMYDAAA=]",
+      "waypointChatLink": "[&BMYDAAA=]",
+      "trailIndex": 1899,
+      "wikiText": "Reaper's Corridor is an area populated by Separatists forces preying on the Redreave Mill."
+    },
+    {
+      "stepId": "32:vista:1495",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1495",
+      "coord": [
+        59092,
+        29197
+      ],
+      "recommendedLevel": null,
+      "name": "Redreave Mill",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1929,
+      "wikiText": "Easy to access from the village.",
+      "waypointChatLink": "[&BMYDAAA=]"
+    },
+    {
+      "stepId": "32:heart:176",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "176",
+      "coord": [
+        59272,
+        29385
+      ],
+      "recommendedLevel": 23,
+      "name": "Help Raintimber Mill",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59147,
+          29434
+        ],
+        [
+          59131,
+          29095
+        ],
+        [
+          59380,
+          29084
+        ],
+        [
+          59473,
+          29185
+        ],
+        [
+          59474,
+          29375
+        ],
+        [
+          59367,
+          29499
+        ],
+        [
+          59147,
+          29434
+        ]
+      ],
+      "trailIndex": 1962,
+      "wikiText": "Help train young skelk, order trained skelk to assist around the mill, and take out hostile skelk around the mill.",
+      "waypointChatLink": "[&BMYDAAA=]"
+    },
+    {
+      "stepId": "32:poi:277",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "277",
+      "coord": [
+        59306,
+        29340
+      ],
+      "recommendedLevel": null,
+      "name": "Raintimber Mill",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1970,
+      "wikiText": "The Raintimber Mill is a point of interest in Diessa Plateau. From this location much of the wood used by the Charr is processed. Many workers can be found here working at the mill and training skelk to cut wood.",
+      "waypointChatLink": "[&BMYDAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:356",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "356",
+      "coord": [
+        59470,
+        29828
+      ],
+      "recommendedLevel": null,
+      "name": "Breachwater Waypoint",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGQBAAA=]",
+      "waypointChatLink": "[&BGQBAAA=]",
+      "trailIndex": 2007,
+      "wikiText": "Breachwater Lake is a sizeable lake located in the southeast of the Diessa Plateau. It is mostly inhabited by drakes and skale."
+    },
+    {
+      "stepId": "32:poi:276",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "276",
+      "coord": [
+        59708,
+        29541
+      ],
+      "recommendedLevel": null,
+      "name": "Burntfur's Pool",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2042,
+      "wikiText": "Burntfur's Pool is a point of interest within Breachwater Lake. This cave and its shores are the breeding ground for drakes.",
+      "waypointChatLink": "[&BGQBAAA=]"
+    },
+    {
+      "stepId": "32:vista:1498",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1498",
+      "coord": [
+        59649,
+        29357
+      ],
+      "recommendedLevel": null,
+      "name": "Nemus Groves",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2098,
+      "wikiText": "Nemus Groves is an area surrounding the lumbermill Raintimber Mill in the southeast of the Diessa Plateau. This forest is the source of wood for the three woodmill found in the area.",
+      "waypointChatLink": "[&BGMBAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:355",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "355",
+      "coord": [
+        59654,
+        29084
+      ],
+      "recommendedLevel": null,
+      "name": "Nemus Grove Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGMBAAA=]",
+      "waypointChatLink": "[&BGMBAAA=]",
+      "trailIndex": 2127,
+      "wikiText": "Nemus Groves is an area surrounding the lumbermill Raintimber Mill in the southeast of the Diessa Plateau. This forest is the source of wood for the three woodmill found in the area."
+    },
+    {
+      "stepId": "32:waypoint:965",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "965",
+      "coord": [
+        59490,
+        28565
+      ],
+      "recommendedLevel": null,
+      "name": "Sanctum Waypoint",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMUDAAA=]",
+      "waypointChatLink": "[&BMUDAAA=]",
+      "trailIndex": 2183,
+      "wikiText": "Sanctum Way is an area within the Diessa Plateau. This plain is heavily populated by hyenas who are preying on travelers and wildlife alike."
+    },
+    {
+      "stepId": "32:poi:279",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "poi",
+      "objectiveId": "279",
+      "coord": [
+        59265,
+        28444
+      ],
+      "recommendedLevel": null,
+      "name": "Old Holtimm Abbey",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2209,
+      "wikiText": "The Old Holtimm Abbey is a point of interest within the Sanctum Way. This ancient ruined church is haunted by Ascalonian ghosts.",
+      "waypointChatLink": "[&BMUDAAA=]"
+    },
+    {
+      "stepId": "32:heart:177",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "177",
+      "coord": [
+        59142,
+        28528
+      ],
+      "recommendedLevel": 24,
+      "name": "Assist Bloodsaw Mill workers",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59203,
+          28699
+        ],
+        [
+          59135,
+          28765
+        ],
+        [
+          58869,
+          28757
+        ],
+        [
+          58804,
+          28744
+        ],
+        [
+          58800,
+          28704
+        ],
+        [
+          58884,
+          28649
+        ],
+        [
+          58921,
+          28661
+        ],
+        [
+          58951,
+          28693
+        ],
+        [
+          59032,
+          28664
+        ],
+        [
+          59063,
+          28616
+        ],
+        [
+          59065,
+          28580
+        ],
+        [
+          59031,
+          28529
+        ],
+        [
+          58990,
+          28430
+        ],
+        [
+          59056,
+          28275
+        ],
+        [
+          59164,
+          28310
+        ],
+        [
+          59200,
+          28378
+        ],
+        [
+          59206,
+          28491
+        ],
+        [
+          59254,
+          28633
+        ],
+        [
+          59203,
+          28699
+        ]
+      ],
+      "trailIndex": 2226,
+      "wikiText": "Use mill explosives to clear tree stumps and wasp nests. Cut down Bloodsaw Mill tree saplings, and dispose of the wood at a fire pit.",
+      "waypointChatLink": "[&BNsAAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:219",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "219",
+      "coord": [
+        58955,
+        28564
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodsaw Mill Waypoint",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNsAAAA=]",
+      "waypointChatLink": "[&BNsAAAA=]",
+      "trailIndex": 2248,
+      "wikiText": "Bulliyak Arsenal is an outpost serving as a warehouse for the forces attacking the Flame Legion stronghold Incendio Templum."
+    },
+    {
+      "stepId": "32:waypoint:1090",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "1090",
+      "coord": [
+        58744,
+        28272
+      ],
+      "recommendedLevel": null,
+      "name": "Blackblade Waypoint",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEIEAAA=]",
+      "waypointChatLink": "[&BEIEAAA=]",
+      "trailIndex": 2291,
+      "wikiText": "Blackblade Lake is a large narrow lake in the northeast of the Diessa Plateau. Two small islands can be found on the lake and the lake itself is mostly inhabited by skale."
+    },
+    {
+      "stepId": "32:hero:0-78",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "hero",
+      "objectiveId": "0-78",
+      "coord": [
+        58858,
+        27995
+      ],
+      "recommendedLevel": null,
+      "name": "Warning: Bogfang the Skale",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2302,
+      "wikiText": "A Warning: Bogfang the Skale sign can be found on the larger of two small islands in northern Blackblade Lake. Interacting with it will spawn Bogfang.",
+      "waypointChatLink": "[&BNwAAAA=]"
+    },
+    {
+      "stepId": "32:vista:1499",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1499",
+      "coord": [
+        58636,
+        27860
+      ],
+      "recommendedLevel": null,
+      "name": "Flame Temple Tombs",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2368,
+      "wikiText": "This vista is located towards the north end of the zone map. Simple to get to. Hint: jump from the smaller stone on to the larger one by the wall.",
+      "waypointChatLink": "[&BNwAAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:220",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "220",
+      "coord": [
+        58763,
+        27860
+      ],
+      "recommendedLevel": null,
+      "name": "Font of Rhand Waypoint",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNwAAAA=]",
+      "waypointChatLink": "[&BNwAAAA=]",
+      "trailIndex": 2384,
+      "wikiText": "The Flame Temple Tombs is an area and the location of a Mini-dungeon in the Diessa Plateau and are the actual crypts of the Font of Rhand."
+    },
+    {
+      "stepId": "32:heart:178",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "heart",
+      "objectiveId": "178",
+      "coord": [
+        59247,
+        28157
+      ],
+      "recommendedLevel": 25,
+      "name": "Assist the Ash Legion",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59232,
+          28172
+        ],
+        [
+          59267,
+          27630
+        ],
+        [
+          59848,
+          27629
+        ],
+        [
+          59848,
+          28160
+        ],
+        [
+          59354,
+          28244
+        ],
+        [
+          59232,
+          28172
+        ]
+      ],
+      "trailIndex": 2427,
+      "wikiText": "Infiltrate and sabotage the Flame Legion headquarters.",
+      "waypointChatLink": "[&BGIBAAA=]"
+    },
+    {
+      "stepId": "32:waypoint:354",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "waypoint",
+      "objectiveId": "354",
+      "coord": [
+        59358,
+        28078
+      ],
+      "recommendedLevel": null,
+      "name": "Incendio Waypoint",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGIBAAA=]",
+      "waypointChatLink": "[&BGIBAAA=]",
+      "trailIndex": 2441,
+      "wikiText": "Incendio Templum is a small area in the northeast of the Diessa Plateau. Its the main base of operation for the Flame Legion in the local region."
+    },
+    {
+      "stepId": "32:vista:1501",
+      "mapId": 32,
+      "zoneName": "Diessa Plateau",
+      "type": "vista",
+      "objectiveId": "1501",
+      "coord": [
+        59646,
+        27885
+      ],
+      "recommendedLevel": null,
+      "name": "Incendio Templum",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "An easy access vista once you have fought your way into the area.",
+      "waypointChatLink": "[&BGIBAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

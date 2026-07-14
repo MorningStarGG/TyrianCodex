@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1310,
+  "slug": "thunderhead-peaks",
+  "name": "Thunderhead Peaks",
+  "regionName": "Shiverpeak Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Branded Mass",
+      "category": "misc",
+      "material": "branded_mass",
+      "source": "lady"
+    },
+    {
+      "name": "Seaweed",
+      "category": "seafood",
+      "material": "seaweed",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -678.4,
+      "y": 139.8,
+      "z": 956.0,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": -683.7,
+      "y": 131.3,
+      "z": 953.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": -212.9,
+      "y": 165.9,
+      "z": 986.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": -92.2,
+      "y": 203.6,
+      "z": 983.3,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": -106.0,
+      "y": 263.2,
+      "z": 945.3,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": -109.1,
+      "y": 255.4,
+      "z": 940.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": -220.6,
+      "y": 231.7,
+      "z": 1082.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": -249.5,
+      "y": 238.7,
+      "z": 1103.5,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": -257.0,
+      "y": 279.6,
+      "z": 1085.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass"
+    },
+    {
+      "x": -101.3,
+      "y": 263.4,
+      "z": 956.4,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 274.0,
+      "y": 265.3,
+      "z": 996.1,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 301.6,
+      "y": 275.7,
+      "z": 999.3,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": -125.8,
+      "y": 259.4,
+      "z": 966.3,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": -156.6,
+      "y": 236.7,
+      "z": 1026.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": -268.1,
+      "y": 254.7,
+      "z": 1088.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": -189.8,
+      "y": 294.5,
+      "z": 1068.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": -154.3,
+      "y": 297.4,
+      "z": 1067.4,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass"
+    },
+    {
+      "x": -154.3,
+      "y": 297.5,
+      "z": 1065.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": -236.7,
+      "y": 269.9,
+      "z": 1071.1,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": -264.2,
+      "y": 264.4,
+      "z": 1053.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": -695.0,
+      "y": 141.4,
+      "z": 955.5,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass"
+    },
+    {
+      "x": 325.5,
+      "y": 276.2,
+      "z": 997.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "chatLink": "[&BLsLAAA=]"
+    },
+    {
+      "x": 565.5,
+      "y": 394.4,
+      "z": 825.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 512.5,
+      "y": 366.5,
+      "z": 659.3,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass"
+    },
+    {
+      "x": 511.2,
+      "y": 366.4,
+      "z": 656.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass"
+    },
+    {
+      "x": 768.0,
+      "y": 345.3,
+      "z": 1001.0,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "chatLink": "[&BLsLAAA=]"
+    },
+    {
+      "x": 701.8,
+      "y": 372.8,
+      "z": 975.0,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 310.2,
+      "y": 406.1,
+      "z": 620.9,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 268.1,
+      "y": 376.6,
+      "z": 597.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 196.4,
+      "y": 359.1,
+      "z": 546.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": 137.2,
+      "y": 352.9,
+      "z": 443.5,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 28.7,
+      "y": 315.7,
+      "z": 434.5,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": 76.5,
+      "y": 294.7,
+      "z": 425.1,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 95.1,
+      "y": 316.7,
+      "z": 453.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 99.5,
+      "y": 350.1,
+      "z": 458.1,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 293.4,
+      "y": 337.0,
+      "z": 483.4,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 499.4,
+      "y": 357.2,
+      "z": 381.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 497.7,
+      "y": 338.7,
+      "z": 140.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 476.5,
+      "y": 355.0,
+      "z": 81.5,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 515.2,
+      "y": 465.1,
+      "z": 135.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 557.0,
+      "y": 438.6,
+      "z": 155.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 613.9,
+      "y": 443.8,
+      "z": 97.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 676.2,
+      "y": 411.6,
+      "z": 48.0,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": 691.6,
+      "y": 412.1,
+      "z": 12.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 715.6,
+      "y": 416.8,
+      "z": 11.3,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 710.3,
+      "y": 435.0,
+      "z": 13.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 681.0,
+      "y": 388.0,
+      "z": 47.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 628.9,
+      "y": 418.8,
+      "z": 96.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 561.0,
+      "y": 446.0,
+      "z": 146.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 430.6,
+      "y": 336.1,
+      "z": 40.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 324.9,
+      "y": 311.9,
+      "z": 10.0,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 280.9,
+      "y": 347.3,
+      "z": -36.5,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": 324.4,
+      "y": 344.9,
+      "z": -93.1,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 336.1,
+      "y": 358.3,
+      "z": -106.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 250.2,
+      "y": 293.2,
+      "z": -209.9,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Springer"
+    },
+    {
+      "x": 58.0,
+      "y": 295.2,
+      "z": -206.9,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 490.8,
+      "y": 184.9,
+      "z": -252.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": 578.2,
+      "y": 146.6,
+      "z": -221.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": 116.8,
+      "y": 0.5,
+      "z": -586.4,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -132.6,
+      "y": 0.6,
+      "z": -685.4,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -257.7,
+      "y": 1.5,
+      "z": -715.0,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -806.2,
+      "y": 1.2,
+      "z": -926.9,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -907.7,
+      "y": -1.2,
+      "z": -905.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -639.4,
+      "y": 25.9,
+      "z": -801.2,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": -508.4,
+      "y": 1.1,
+      "z": -674.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -263.5,
+      "y": 112.0,
+      "z": -502.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": -189.9,
+      "y": 2.1,
+      "z": -942.7,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Raptor"
+    },
+    {
+      "x": -87.1,
+      "y": 1.7,
+      "z": -955.8,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 269.0,
+      "y": 6.9,
+      "z": -837.6,
+      "material": "branded_mass",
+      "category": "misc",
+      "icon": "branded_mass",
+      "mount": "Glider"
+    },
+    {
+      "x": -22.3,
+      "y": -102.3,
+      "z": -693.3,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -12.0,
+      "y": -106.1,
+      "z": -702.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 2.3,
+      "y": -104.6,
+      "z": -711.1,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -9.9,
+      "y": -102.5,
+      "z": -695.2,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 12.2,
+      "y": -109.5,
+      "z": -739.6,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 25.9,
+      "y": -104.4,
+      "z": -731.9,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 27.0,
+      "y": -107.0,
+      "z": -748.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 17.8,
+      "y": -109.6,
+      "z": -755.1,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    }
+  ]
+}

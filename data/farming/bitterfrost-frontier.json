@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1178,
+  "slug": "bitterfrost-frontier",
+  "name": "Bitterfrost Frontier",
+  "regionName": "Shiverpeak Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mithril Ore",
+      "category": "ore",
+      "material": "mithril",
+      "source": "lady"
+    },
+    {
+      "name": "Fresh Winterberry",
+      "category": "plant",
+      "material": "winterberry",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -541.7,
+      "y": 0.1,
+      "z": -348.2,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -392.4,
+      "y": 36.1,
+      "z": -91.7,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril",
+      "chatLink": "[&BHwCAAA=]"
+    },
+    {
+      "x": -541.5,
+      "y": 0.1,
+      "z": -352.0,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": 63.7,
+      "y": 9.3,
+      "z": -345.1,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": 562.9,
+      "y": 1.7,
+      "z": -26.9,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": 248.7,
+      "y": 34.7,
+      "z": 212.8,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -204.7,
+      "y": 15.9,
+      "z": 59.3,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -184.1,
+      "y": 23.9,
+      "z": 162.9,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -232.7,
+      "y": 35.5,
+      "z": 170.7,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -300.2,
+      "y": 34.2,
+      "z": 105.4,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -307.9,
+      "y": 48.4,
+      "z": 208.3,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -167.3,
+      "y": 101.8,
+      "z": 288.3,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -271.2,
+      "y": 74.9,
+      "z": 304.2,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -376.9,
+      "y": 88.7,
+      "z": 331.6,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -552.1,
+      "y": 70.8,
+      "z": 284.3,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -713.8,
+      "y": 66.6,
+      "z": 173.3,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -698.2,
+      "y": 72.8,
+      "z": 231.9,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -748.1,
+      "y": 102.3,
+      "z": 262.4,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -777.7,
+      "y": 88.6,
+      "z": 67.6,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -578.7,
+      "y": 40.7,
+      "z": -24.2,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -426.4,
+      "y": 15.6,
+      "z": -98.4,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -346.9,
+      "y": 30.5,
+      "z": -61.6,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -340.7,
+      "y": 31.9,
+      "z": 44.6,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -128.6,
+      "y": 1.6,
+      "z": 125.8,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -610.2,
+      "y": 43.2,
+      "z": -1.9,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Glider"
+    },
+    {
+      "x": -737.0,
+      "y": 91.3,
+      "z": 227.0,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Glider"
+    },
+    {
+      "x": -429.9,
+      "y": 82.1,
+      "z": 314.0,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Glider"
+    },
+    {
+      "x": -175.7,
+      "y": 63.1,
+      "z": 179.8,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Glider"
+    },
+    {
+      "x": 62.6,
+      "y": 9.6,
+      "z": -346.5,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "chatLink": "[&BH0JAAA=]"
+    },
+    {
+      "x": 563.2,
+      "y": 1.4,
+      "z": -25.1,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "chatLink": "[&BH0JAAA=]"
+    },
+    {
+      "x": -30.1,
+      "y": 1.4,
+      "z": -95.1,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -34.1,
+      "y": 2.5,
+      "z": -95.5,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry"
+    },
+    {
+      "x": -32.7,
+      "y": 1.0,
+      "z": -101.0,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Raptor"
+    },
+    {
+      "x": -204.5,
+      "y": 13.6,
+      "z": 65.5,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Raptor"
+    },
+    {
+      "x": -241.3,
+      "y": 32.3,
+      "z": 161.5,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Jackal"
+    },
+    {
+      "x": -303.4,
+      "y": 32.3,
+      "z": 113.0,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Raptor"
+    },
+    {
+      "x": -296.1,
+      "y": 50.0,
+      "z": 211.7,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Jackal"
+    },
+    {
+      "x": -643.8,
+      "y": 54.5,
+      "z": 269.4,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Jackal"
+    },
+    {
+      "x": -396.7,
+      "y": 87.0,
+      "z": 315.4,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -752.9,
+      "y": 98.2,
+      "z": 243.3,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Jackal"
+    },
+    {
+      "x": -774.8,
+      "y": 85.1,
+      "z": 65.0,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -563.8,
+      "y": 37.4,
+      "z": -29.2,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Raptor"
+    },
+    {
+      "x": -382.1,
+      "y": 31.3,
+      "z": -87.6,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Springer"
+    },
+    {
+      "x": -343.9,
+      "y": 30.2,
+      "z": -63.3,
+      "material": "winterberry",
+      "category": "plant",
+      "icon": "winterberry",
+      "mount": "Jackal"
+    }
+  ]
+}

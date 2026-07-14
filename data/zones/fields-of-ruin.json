@@ -1,0 +1,1874 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 21,
+    "name": "Fields of Ruin",
+    "continentId": 1,
+    "regionId": 2,
+    "regionName": "Ascalon",
+    "floor": 1,
+    "minLevel": 30,
+    "maxLevel": 40,
+    "mapRect": [
+      [
+        -36864,
+        -36864
+      ],
+      [
+        36864,
+        36864
+      ]
+    ],
+    "continentRect": [
+      [
+        61440,
+        32640
+      ],
+      [
+        64512,
+        35712
+      ]
+    ],
+    "sectorRect": [
+      [
+        61408,
+        32351.6
+      ],
+      [
+        64522.9,
+        35684.1
+      ]
+    ],
+    "labelCoord": [
+      62976,
+      34176
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "21:waypoint:211",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "211",
+      "coord": [
+        62124,
+        34784
+      ],
+      "recommendedLevel": null,
+      "name": "Hawkgates Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNMAAAA=]",
+      "waypointChatLink": "[&BNMAAAA=]",
+      "trailIndex": 26,
+      "wikiText": "The Stronghold of Ebonhawke is a human enclave-fort to the south of Ascalon and the one of the last remaining Ascalonian settlements. It is frequently attacked by Separatists and inhabited by many of their sympathizers."
+    },
+    {
+      "stepId": "21:poi:197",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "197",
+      "coord": [
+        62219,
+        34728
+      ],
+      "recommendedLevel": null,
+      "name": "The Hawkgates",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 36,
+      "wikiText": "The Hawkgates form the northern entrance of the Stronghold of Ebonhawke.",
+      "waypointChatLink": "[&BNMAAAA=]"
+    },
+    {
+      "stepId": "21:heart:157",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "157",
+      "coord": [
+        62030,
+        35067
+      ],
+      "recommendedLevel": 30,
+      "name": "Help the people of Ebonhawke.",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62136,
+          35406
+        ],
+        [
+          61976,
+          35398
+        ],
+        [
+          61834,
+          35232
+        ],
+        [
+          61852,
+          35045
+        ],
+        [
+          62256,
+          34734
+        ],
+        [
+          62472,
+          35021
+        ],
+        [
+          62448,
+          35382
+        ],
+        [
+          62136,
+          35406
+        ]
+      ],
+      "trailIndex": 75,
+      "wikiText": "Tear down Separatist propaganda, talk down sympathizers, and knock on doors to find potential Separatist hideouts.",
+      "waypointChatLink": "[&BNMAAAA=]"
+    },
+    {
+      "stepId": "21:poi:1051",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "1051",
+      "coord": [
+        62003,
+        35193
+      ],
+      "recommendedLevel": null,
+      "name": "The Hawke Heart",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 87,
+      "wikiText": "The Hawke Heart is a point of interest within the Stronghold of Ebonhawke. It is the center plaza of the town of Ebonhawke.",
+      "waypointChatLink": "[&BFEBAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:337",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "337",
+      "coord": [
+        61783,
+        35262
+      ],
+      "recommendedLevel": null,
+      "name": "Fallen Angels Garrison Waypoint",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFEBAAA=]",
+      "waypointChatLink": "[&BFEBAAA=]",
+      "trailIndex": 108,
+      "wikiText": "The Stronghold of Ebonhawke is a human enclave-fort to the south of Ascalon and the one of the last remaining Ascalonian settlements. It is frequently attacked by Separatists and inhabited by many of their sympathizers."
+    },
+    {
+      "stepId": "21:heart:158",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "158",
+      "coord": [
+        61710,
+        35329
+      ],
+      "recommendedLevel": 31,
+      "name": "Help Commander Varalyn and the Ebon Vanguard.",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61811,
+          34983
+        ],
+        [
+          61808,
+          35268
+        ],
+        [
+          61980,
+          35426
+        ],
+        [
+          61876,
+          35518
+        ],
+        [
+          61622,
+          35322
+        ],
+        [
+          61450,
+          34918
+        ],
+        [
+          61749,
+          34934
+        ],
+        [
+          61811,
+          34983
+        ]
+      ],
+      "trailIndex": 118,
+      "wikiText": "Train with soldiers, kill skritt, and help repair equipment.",
+      "waypointChatLink": "[&BFEBAAA=]"
+    },
+    {
+      "stepId": "21:hero:0-125",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "hero",
+      "objectiveId": "0-125",
+      "coord": [
+        61808,
+        35400
+      ],
+      "recommendedLevel": null,
+      "name": "Fallen Angel Gretel",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 132,
+      "wikiText": "Fallen Angel Gretel is a member of the Fallen Angels stationed in the Stronghold of Ebonhawke and a hero challenge NPC who offers to spar with the player.",
+      "waypointChatLink": "[&BFEBAAA=]"
+    },
+    {
+      "stepId": "21:vista:1536",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "vista",
+      "objectiveId": "1536",
+      "coord": [
+        62042,
+        35502
+      ],
+      "recommendedLevel": null,
+      "name": "The Hawkgates",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 195,
+      "wikiText": "Easy path up starts east of the vista just outside of Ebonhawke.",
+      "waypointChatLink": "[&BFEBAAA=]"
+    },
+    {
+      "stepId": "21:poi:1077",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "1077",
+      "coord": [
+        62329,
+        35073
+      ],
+      "recommendedLevel": null,
+      "name": "Kestrel Market",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 264,
+      "wikiText": "Kestrel Market is a point of interest and the main market street of the Stronghold of Ebonhawke. It is filled with various merchants and cultural weapon vendors.",
+      "waypointChatLink": "[&BD0EAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:1085",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "1085",
+      "coord": [
+        62364,
+        35184
+      ],
+      "recommendedLevel": null,
+      "name": "Kestrel Waypoint",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BD0EAAA=]",
+      "waypointChatLink": "[&BD0EAAA=]",
+      "trailIndex": 276,
+      "wikiText": "The Stronghold of Ebonhawke is a human enclave-fort to the south of Ascalon and the one of the last remaining Ascalonian settlements. It is frequently attacked by Separatists and inhabited by many of their sympathizers."
+    },
+    {
+      "stepId": "21:poi:1078",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "1078",
+      "coord": [
+        62340,
+        35551
+      ],
+      "recommendedLevel": null,
+      "name": "Defender's Field",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 326,
+      "wikiText": "Defender's Field is the graveyard housing the dead of the people of the Stronghold of Ebonhawke. It contains the graves of several notable figures of the past, including Gwen Thackeray and Nicholas Sandford.",
+      "waypointChatLink": "[&BD0EAAA=]"
+    },
+    {
+      "stepId": "21:hero:0-126",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "hero",
+      "objectiveId": "0-126",
+      "coord": [
+        62345,
+        35602
+      ],
+      "recommendedLevel": null,
+      "name": "Gwen's Grave",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 333,
+      "wikiText": "Gwen's Grave is the gravestone of Gwen Thackeray and a Hero Challenge in the Stronghold of Ebonhawke. It is located in the memorial at the top of the Defender's Field cemetery. Her headstone is flanked on both sides by Memorial Plaques.",
+      "waypointChatLink": "[&BD0EAAA=]"
+    },
+    {
+      "stepId": "21:poi:198",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "198",
+      "coord": [
+        62430,
+        35421
+      ],
+      "recommendedLevel": null,
+      "name": "Postern Gate",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 376,
+      "wikiText": "The Postern Gate is the southern exit of the Stronghold of Ebonhawke, separating it from the Blackwing Excavation.",
+      "waypointChatLink": "[&BD0EAAA=]"
+    },
+    {
+      "stepId": "21:heart:159",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "159",
+      "coord": [
+        62555,
+        35484
+      ],
+      "recommendedLevel": 31,
+      "name": "Help Foreman Boslo care for Blackwing Excavation.",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62711,
+          35689
+        ],
+        [
+          62846,
+          35368
+        ],
+        [
+          62795,
+          35278
+        ],
+        [
+          62434,
+          35236
+        ],
+        [
+          62428,
+          35695
+        ],
+        [
+          62711,
+          35689
+        ]
+      ],
+      "trailIndex": 394,
+      "wikiText": "Motivate workers and remove dangers from the work site.",
+      "waypointChatLink": "[&BD0EAAA=]"
+    },
+    {
+      "stepId": "21:poi:196",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "196",
+      "coord": [
+        62575,
+        35613
+      ],
+      "recommendedLevel": null,
+      "name": "Desert Gate",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 408,
+      "wikiText": "The Desert Gate serves as a barrier and, possibly, gateway through the Blazeridge Mountains to the Crystal Desert. It was constructed by order of Queen Jennah to ward the dangers that have arisen in the desert.",
+      "waypointChatLink": "[&BFABAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:336",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "336",
+      "coord": [
+        62943,
+        35338
+      ],
+      "recommendedLevel": null,
+      "name": "Forlorn Gate Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFABAAA=]",
+      "waypointChatLink": "[&BFABAAA=]",
+      "trailIndex": 465,
+      "wikiText": "Hautclaire Vale is an area in the south of the Fields of Ruin. Here, the Ebon Vanguard forces struggle with ogres for control of the lands."
+    },
+    {
+      "stepId": "21:poi:200",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "200",
+      "coord": [
+        63249,
+        35330
+      ],
+      "recommendedLevel": null,
+      "name": "Sapper's Delve",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 499,
+      "wikiText": "The Sapper's Delve is a point of interest in Hautclaire Vale. It was once a prominent charr camp during their siege of Ebonhawke, however it is now occupied by ogres.",
+      "waypointChatLink": "[&BFABAAA=]"
+    },
+    {
+      "stepId": "21:heart:166",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "166",
+      "coord": [
+        63294,
+        35489
+      ],
+      "recommendedLevel": 32,
+      "name": "Help the Vanguard stall the ogre advance.",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63114,
+          35231
+        ],
+        [
+          63163,
+          35065
+        ],
+        [
+          63509,
+          35053
+        ],
+        [
+          63666,
+          35159
+        ],
+        [
+          63564,
+          35455
+        ],
+        [
+          63346,
+          35568
+        ],
+        [
+          63198,
+          35566
+        ],
+        [
+          63065,
+          35467
+        ],
+        [
+          63114,
+          35231
+        ]
+      ],
+      "trailIndex": 531,
+      "wikiText": "Recover charr scrap metal, break ogre weapon racks, kill ogres and their pets.",
+      "waypointChatLink": "[&BFABAAA=]"
+    },
+    {
+      "stepId": "21:hero:0-43",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "hero",
+      "objectiveId": "0-43",
+      "coord": [
+        63511,
+        35112
+      ],
+      "recommendedLevel": null,
+      "name": "Krunko Bugtender",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 582,
+      "wikiText": "Krunko Bugtender is an ogre found in Hautclaire Vale. Entering her proximity will initiate the Defeat Krunko Bugtender hero challenge .",
+      "waypointChatLink": "[&BE8BAAA=]"
+    },
+    {
+      "stepId": "21:heart:167",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "167",
+      "coord": [
+        63474,
+        34958
+      ],
+      "recommendedLevel": 33,
+      "name": "Harass the ogres of Foulbear Kraal.",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63492,
+          35048
+        ],
+        [
+          63201,
+          35054
+        ],
+        [
+          63092,
+          35010
+        ],
+        [
+          63086,
+          34664
+        ],
+        [
+          63194,
+          34373
+        ],
+        [
+          63577,
+          34272
+        ],
+        [
+          63753,
+          34307
+        ],
+        [
+          63793,
+          34492
+        ],
+        [
+          63787,
+          34730
+        ],
+        [
+          63744,
+          34935
+        ],
+        [
+          63492,
+          35048
+        ]
+      ],
+      "trailIndex": 604,
+      "wikiText": "Kill ogres and their pets, and sabotage their supplies.",
+      "waypointChatLink": "[&BE8BAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:335",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "335",
+      "coord": [
+        63654,
+        34934
+      ],
+      "recommendedLevel": null,
+      "name": "Ogre Road Waypoint",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE8BAAA=]",
+      "waypointChatLink": "[&BE8BAAA=]",
+      "trailIndex": 642,
+      "wikiText": "The Ogre Road is an area in the southeast of the Fields of Ruin. It is named after the trail traversing ogre territory."
+    },
+    {
+      "stepId": "21:poi:202",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "202",
+      "coord": [
+        64032,
+        35190
+      ],
+      "recommendedLevel": null,
+      "name": "Otyugh's Kraal",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 775,
+      "wikiText": "Otyugh's Kraal is a point of interest in Wildlin Narrows. It is the home of the leader to the local ogres, Chief Otyugh.",
+      "waypointChatLink": "[&BE8BAAA=]"
+    },
+    {
+      "stepId": "21:poi:201",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "201",
+      "coord": [
+        64135,
+        34952
+      ],
+      "recommendedLevel": null,
+      "name": "Cymbel's Rescue",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 873,
+      "wikiText": "Cymbel's Rescue is a grove tended by the sylvari Cymbel within Fields of Ruin. It contains many friendly and neutral animals who, in the surrounding Wildlin Narrows, are neutral or hostile.",
+      "waypointChatLink": "[&BNQAAAA=]"
+    },
+    {
+      "stepId": "21:vista:1539",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "vista",
+      "objectiveId": "1539",
+      "coord": [
+        64022,
+        34696
+      ],
+      "recommendedLevel": null,
+      "name": "Mithric Cliffs",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 967,
+      "wikiText": "This vista is straight forward, just try not to fall down the stairs rounding the tower loop.",
+      "waypointChatLink": "[&BNQAAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:212",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "212",
+      "coord": [
+        64080,
+        34497
+      ],
+      "recommendedLevel": null,
+      "name": "Deathblade's Watch Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNQAAAA=]",
+      "waypointChatLink": "[&BNQAAAA=]",
+      "trailIndex": 993,
+      "wikiText": "Mithric Cliffs is an area in the eastern portion of the Fields of Ruin. It houses Deathblade's Watch, a sizeable charr compound."
+    },
+    {
+      "stepId": "21:poi:210",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "210",
+      "coord": [
+        63491,
+        34551
+      ],
+      "recommendedLevel": null,
+      "name": "Foulbear Kraal",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1086,
+      "wikiText": "Foulbear Kraal is a point of interest located in the northern part of the Hunter's Gorge. It is the largest ogre settlement in the local region.",
+      "waypointChatLink": "[&BE4BAAA=]"
+    },
+    {
+      "stepId": "21:vista:1541",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "vista",
+      "objectiveId": "1541",
+      "coord": [
+        63311,
+        34497
+      ],
+      "recommendedLevel": null,
+      "name": "Hunter's Gorge",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1115,
+      "wikiText": "Another safe-route vista.",
+      "waypointChatLink": "[&BE4BAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:334",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "334",
+      "coord": [
+        63113,
+        34430
+      ],
+      "recommendedLevel": null,
+      "name": "Wreckage of Bloodgorge Watch Waypoint",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE4BAAA=]",
+      "waypointChatLink": "[&BE4BAAA=]",
+      "trailIndex": 1138,
+      "wikiText": "Grimm Hills is a mountainous area within the Fields of Ruin, south of The Siege Plains."
+    },
+    {
+      "stepId": "21:poi:1709",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "1709",
+      "coord": [
+        62999,
+        34522
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodgorge Watch Camp",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1160,
+      "wikiText": "Bloodgorge Watch Camp is a point of interest in the north of Grimm Hills. There are regular battles between the charr and the ogres for control of these lands.",
+      "waypointChatLink": "[&BE4BAAA=]"
+    },
+    {
+      "stepId": "21:poi:199",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "199",
+      "coord": [
+        62811,
+        34858
+      ],
+      "recommendedLevel": null,
+      "name": "Spotter's Base",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1214,
+      "wikiText": "The Spotter's Base is a point of interest within Grimm Hills. It is a small encampment of Blood and Iron Legion charr to the south of The Siege Plains.",
+      "waypointChatLink": "[&BDwEAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:1084",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "1084",
+      "coord": [
+        62782,
+        34729
+      ],
+      "recommendedLevel": null,
+      "name": "Spotter's Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BDwEAAA=]",
+      "waypointChatLink": "[&BDwEAAA=]",
+      "trailIndex": 1231,
+      "wikiText": "Grimm Hills is a mountainous area within the Fields of Ruin, south of The Siege Plains."
+    },
+    {
+      "stepId": "21:heart:156",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "156",
+      "coord": [
+        62489,
+        34325
+      ],
+      "recommendedLevel": 33,
+      "name": "Hold back the insurrectionists.",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62527,
+          34526
+        ],
+        [
+          62426,
+          34412
+        ],
+        [
+          62206,
+          34467
+        ],
+        [
+          62166,
+          34212
+        ],
+        [
+          62436,
+          34132
+        ],
+        [
+          62645,
+          33986
+        ],
+        [
+          62765,
+          34026
+        ],
+        [
+          62819,
+          34184
+        ],
+        [
+          62728,
+          34397
+        ],
+        [
+          62527,
+          34526
+        ]
+      ],
+      "trailIndex": 1287,
+      "wikiText": "Fight the Renegades and Separatists in the area and destroy their equipment. Disarm unexploded shells and mines.",
+      "waypointChatLink": "[&BE0BAAA=]"
+    },
+    {
+      "stepId": "21:vista:1540",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "vista",
+      "objectiveId": "1540",
+      "coord": [
+        62130,
+        34461
+      ],
+      "recommendedLevel": null,
+      "name": "Sniper's Woods",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1345,
+      "wikiText": "Sniper's Woods is a lightly wooded area on the western side of the Fields of Ruin. A group of Separatists have made this area their home.",
+      "waypointChatLink": "[&BNMAAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:214",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "214",
+      "coord": [
+        61792,
+        34406
+      ],
+      "recommendedLevel": null,
+      "name": "Tyler's Bivouac Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNYAAAA=]",
+      "waypointChatLink": "[&BNYAAAA=]",
+      "trailIndex": 1386,
+      "wikiText": "Bento Canyon is an area located on the western edge of the Fields of Ruin. A group of Ebon Vanguard soldiers have established a stronghold at Tyler's Bivouac."
+    },
+    {
+      "stepId": "21:heart:155",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "155",
+      "coord": [
+        61802,
+        34354
+      ],
+      "recommendedLevel": 34,
+      "name": "Help pacify Tyler's Bivouac for settlers.",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61519,
+          34662
+        ],
+        [
+          62070,
+          34537
+        ],
+        [
+          62196,
+          34471
+        ],
+        [
+          62164,
+          34258
+        ],
+        [
+          62193,
+          34190
+        ],
+        [
+          62184,
+          34072
+        ],
+        [
+          61728,
+          33990
+        ],
+        [
+          61634,
+          34043
+        ],
+        [
+          61686,
+          34141
+        ],
+        [
+          61519,
+          34662
+        ]
+      ],
+      "trailIndex": 1395,
+      "wikiText": "Clear out predators and Separatists near Tyler's Bivouac.",
+      "waypointChatLink": "[&BNYAAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:331",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "331",
+      "coord": [
+        61745,
+        33678
+      ],
+      "recommendedLevel": null,
+      "name": "Helliot Mine Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEsBAAA=]",
+      "waypointChatLink": "[&BEsBAAA=]",
+      "trailIndex": 1484,
+      "wikiText": "The Dragonrot Domains is an area located on the western edge of the Fields of Ruin. The Helliot Mine, which digs up branded ore for the Varimhold Outpost, is located here."
+    },
+    {
+      "stepId": "21:poi:203",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "203",
+      "coord": [
+        62257,
+        33811
+      ],
+      "recommendedLevel": null,
+      "name": "Wreckage of Doomspy's Watch",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1556,
+      "wikiText": "The Wreckage of Doomspy's Watch is a point of interest within Tenaebron Lake. On the site of this ruined outpost a human and charr encampment has been founded. Siegemaster Erold and his crew work to fend off the branded.",
+      "waypointChatLink": "[&BE0BAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:333",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "333",
+      "coord": [
+        62564,
+        33973
+      ],
+      "recommendedLevel": null,
+      "name": "Vulture's Waypoint",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE0BAAA=]",
+      "waypointChatLink": "[&BE0BAAA=]",
+      "trailIndex": 1601,
+      "wikiText": "The Siege Plains is an area in the center of the Fields of Ruin. It experiences constant fighting between the Ebon Vanguard and charr Renegades."
+    },
+    {
+      "stepId": "21:heart:162",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "162",
+      "coord": [
+        63092,
+        33933
+      ],
+      "recommendedLevel": 35,
+      "name": "Support the human delegation.",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62810,
+          33690
+        ],
+        [
+          62868,
+          33690
+        ],
+        [
+          63019,
+          33725
+        ],
+        [
+          63092,
+          33726
+        ],
+        [
+          63368,
+          33890
+        ],
+        [
+          63434,
+          34305
+        ],
+        [
+          63084,
+          34400
+        ],
+        [
+          62967,
+          34362
+        ],
+        [
+          62844,
+          34184
+        ],
+        [
+          62812,
+          34097
+        ],
+        [
+          62731,
+          33844
+        ],
+        [
+          62747,
+          33797
+        ],
+        [
+          62810,
+          33690
+        ]
+      ],
+      "trailIndex": 1663,
+      "wikiText": "Keep the camp safe, discover spies and remove the wasps.",
+      "waypointChatLink": "[&BNUAAAA=]"
+    },
+    {
+      "stepId": "21:poi:205",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "205",
+      "coord": [
+        63123,
+        33937
+      ],
+      "recommendedLevel": null,
+      "name": "Ebonhawke Delegation",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1669,
+      "wikiText": "The Ebonhawke Delegation is a point of interest within Warrior's Crown. This circular encampment of human tents is home to the Ebon Vanguard peace delegation.",
+      "waypointChatLink": "[&BNUAAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:213",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "213",
+      "coord": [
+        63104,
+        33728
+      ],
+      "recommendedLevel": null,
+      "name": "Summit Waypoint",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNUAAAA=]",
+      "waypointChatLink": "[&BNUAAAA=]",
+      "trailIndex": 1698,
+      "wikiText": "Warrior's Crown is the location of the peace treaty talks between the charr High Legions, Ebonhawke, and Kryta. It is constantly attacked by Separatists and Renegades."
+    },
+    {
+      "stepId": "21:poi:206",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "206",
+      "coord": [
+        63070,
+        33619
+      ],
+      "recommendedLevel": null,
+      "name": "Summit Peak",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1714,
+      "wikiText": "The Summit Peak is a point of interest within Warrior's Crown. It is a well guarded large tent, in which the charr-human peace negotiations are being held.",
+      "waypointChatLink": "[&BNUAAAA=]"
+    },
+    {
+      "stepId": "21:poi:208",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "208",
+      "coord": [
+        63430,
+        33644
+      ],
+      "recommendedLevel": null,
+      "name": "Delegation of the Legions",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1750,
+      "wikiText": "The Delegation of the Legions is a point of interest within Warrior's Crown. This circular encampment of charr heavy machinery is home to the Ash Legion, Blood Legion and Iron Legion diplomatic delegations.",
+      "waypointChatLink": "[&BNUAAAA=]"
+    },
+    {
+      "stepId": "21:heart:161",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "161",
+      "coord": [
+        63396,
+        33625
+      ],
+      "recommendedLevel": 36,
+      "name": "Assist the charr delegation.",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63215,
+          33532
+        ],
+        [
+          63422,
+          33412
+        ],
+        [
+          63585,
+          33489
+        ],
+        [
+          63642,
+          33565
+        ],
+        [
+          63667,
+          33667
+        ],
+        [
+          63659,
+          33785
+        ],
+        [
+          63537,
+          34040
+        ],
+        [
+          63441,
+          34021
+        ],
+        [
+          63393,
+          33984
+        ],
+        [
+          63380,
+          33878
+        ],
+        [
+          63232,
+          33663
+        ],
+        [
+          63215,
+          33532
+        ]
+      ],
+      "trailIndex": 1753,
+      "wikiText": "Kill separatists, rally the disgruntled soldiers, train with the troops, and repair the charr mines and mortar protecting the camp.",
+      "waypointChatLink": "[&BNUAAAA=]"
+    },
+    {
+      "stepId": "21:vista:1538",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "vista",
+      "objectiveId": "1538",
+      "coord": [
+        63623,
+        33791
+      ],
+      "recommendedLevel": null,
+      "name": "Warrior's Crown",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1809,
+      "wikiText": "Warrior's Crown is the location of the peace treaty talks between the charr High Legions, Ebonhawke, and Kryta. It is constantly attacked by Separatists and Renegades.",
+      "waypointChatLink": "[&BEwBAAA=]"
+    },
+    {
+      "stepId": "21:poi:207",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "207",
+      "coord": [
+        63576,
+        33322
+      ],
+      "recommendedLevel": null,
+      "name": "Gillscale Pond",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1847,
+      "wikiText": "The Gillscale Pond is a point of interest within Gillfarn Plains. It is a shallow body of water that has metallic wreckage submerged.",
+      "waypointChatLink": "[&BEwBAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:332",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "332",
+      "coord": [
+        63866,
+        33374
+      ],
+      "recommendedLevel": null,
+      "name": "Fangfury Watch Waypoint",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEwBAAA=]",
+      "waypointChatLink": "[&BEwBAAA=]",
+      "trailIndex": 1871,
+      "wikiText": "The Axedrag Cut is an area on the eastern side of the Fields of Ruin. The area is mostly populated by griffons."
+    },
+    {
+      "stepId": "21:heart:165",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "165",
+      "coord": [
+        63904,
+        33089
+      ],
+      "recommendedLevel": 37,
+      "name": "Help Rosko's ranchers protect the village.",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64404,
+          32760
+        ],
+        [
+          64466,
+          32956
+        ],
+        [
+          64484,
+          33165
+        ],
+        [
+          64337,
+          33228
+        ],
+        [
+          64238,
+          33280
+        ],
+        [
+          64125,
+          33351
+        ],
+        [
+          63978,
+          33328
+        ],
+        [
+          63933,
+          33331
+        ],
+        [
+          63710,
+          33153
+        ],
+        [
+          63594,
+          33029
+        ],
+        [
+          63655,
+          32924
+        ],
+        [
+          63722,
+          32868
+        ],
+        [
+          63952,
+          32755
+        ],
+        [
+          64196,
+          32685
+        ],
+        [
+          64404,
+          32760
+        ]
+      ],
+      "trailIndex": 1905,
+      "wikiText": "Defend the village and cattle from the harpies, keep the restless bulls in line and drive the harpies from the area.",
+      "waypointChatLink": "[&BEwBAAA=]"
+    },
+    {
+      "stepId": "21:hero:0-61",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "hero",
+      "objectiveId": "0-61",
+      "coord": [
+        64342,
+        33143
+      ],
+      "recommendedLevel": null,
+      "name": "Scrabclaw's Roost",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1963,
+      "wikiText": "Scrabclaw's Roost is the home of Veteran Matriarch Scrabclaw and her flock.",
+      "waypointChatLink": "[&BEwBAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:216",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "216",
+      "coord": [
+        63571,
+        32957
+      ],
+      "recommendedLevel": null,
+      "name": "Rosko's Campsite Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNgAAAA=]",
+      "waypointChatLink": "[&BNgAAAA=]",
+      "trailIndex": 2055,
+      "wikiText": "Halkor Meadows is an area located in the north of the Fields of Ruin. A group of human ranchers have set up here, guarded by the Ebon Vanguard. A path leads further north, into the Blazeridge Steppes."
+    },
+    {
+      "stepId": "21:heart:160",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "160",
+      "coord": [
+        63062,
+        33115
+      ],
+      "recommendedLevel": 38,
+      "name": "Help the Iron Legion disrupt Renegade operations.",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63387,
+          32681
+        ],
+        [
+          63387,
+          32884
+        ],
+        [
+          63339,
+          32985
+        ],
+        [
+          63171,
+          33044
+        ],
+        [
+          63087,
+          33117
+        ],
+        [
+          63038,
+          33129
+        ],
+        [
+          62930,
+          33094
+        ],
+        [
+          62905,
+          32946
+        ],
+        [
+          62903,
+          32834
+        ],
+        [
+          63387,
+          32681
+        ]
+      ],
+      "trailIndex": 2117,
+      "wikiText": "Free Renegade prisoners, destroy Renegade supplies, and uncover intel.",
+      "waypointChatLink": "[&BD4EAAA=]"
+    },
+    {
+      "stepId": "21:poi:209",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "209",
+      "coord": [
+        63283,
+        32814
+      ],
+      "recommendedLevel": null,
+      "name": "The Thunder Den",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2168,
+      "wikiText": "The Thunder Den is a point of interest within the Thunderbreak Hills. A large group of Renegades have moved in and turned this cave into a base of operations.",
+      "waypointChatLink": "[&BNgAAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:1086",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "1086",
+      "coord": [
+        62592,
+        32994
+      ],
+      "recommendedLevel": null,
+      "name": "Thunderbreak Waypoint",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BD4EAAA=]",
+      "waypointChatLink": "[&BD4EAAA=]",
+      "trailIndex": 2238,
+      "wikiText": "The Thunderbreak Hills is an area in the Fields of Ruin. It consists of a large canyon ending in a cavern that serves as the location for a large Renegade base camp."
+    },
+    {
+      "stepId": "21:waypoint:330",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "330",
+      "coord": [
+        62634,
+        33391
+      ],
+      "recommendedLevel": null,
+      "name": "Skoll's Bivouac Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEoBAAA=]",
+      "waypointChatLink": "[&BEoBAAA=]",
+      "trailIndex": 2288,
+      "wikiText": "The Vulture's Sweep is an area in the center of the Fields of Ruin. A small contingent of Ebon Vanguard holds the fortified encampment at Skoll's Bivouac."
+    },
+    {
+      "stepId": "21:poi:1092",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "1092",
+      "coord": [
+        62435,
+        33210
+      ],
+      "recommendedLevel": null,
+      "name": "Sentinel's Perch",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2337,
+      "wikiText": "The Sentinel's Perch is a point of interest within Tenaebron Lake. Atop this small rise the Sentinels have established a large stronghold. They monitor the branded activity in the lake from it's high balcony.",
+      "waypointChatLink": "[&BD4EAAA=]"
+    },
+    {
+      "stepId": "21:vista:1537",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "vista",
+      "objectiveId": "1537",
+      "coord": [
+        62422,
+        33176
+      ],
+      "recommendedLevel": null,
+      "name": "Sentinel's Perch",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2353,
+      "wikiText": "Another straight forward vista point. Very easy.",
+      "waypointChatLink": "[&BD4EAAA=]"
+    },
+    {
+      "stepId": "21:heart:163",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "163",
+      "coord": [
+        62364,
+        33050
+      ],
+      "recommendedLevel": 39,
+      "name": "Contain the growth of the Dragonbrand.",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61991,
+          32838
+        ],
+        [
+          62517,
+          32841
+        ],
+        [
+          62436,
+          33280
+        ],
+        [
+          62265,
+          33539
+        ],
+        [
+          61902,
+          33528
+        ],
+        [
+          61991,
+          32838
+        ]
+      ],
+      "trailIndex": 2384,
+      "wikiText": "Consult Sentinel Gristletooth. Destroy Branded creatures, nests, and crystal clusters.",
+      "waypointChatLink": "[&BD4EAAA=]"
+    },
+    {
+      "stepId": "21:waypoint:215",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "waypoint",
+      "objectiveId": "215",
+      "coord": [
+        62073,
+        32995
+      ],
+      "recommendedLevel": null,
+      "name": "Tenaebron Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNcAAAA=]",
+      "waypointChatLink": "[&BNcAAAA=]",
+      "trailIndex": 2414,
+      "wikiText": "Tenaebron Lake is a lake in the northwest of the Fields of Ruin. It was changed by the passing of the Elder Dragon Kralkatorrik five years ago and is now part of the Dragonbrand."
+    },
+    {
+      "stepId": "21:heart:164",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "heart",
+      "objectiveId": "164",
+      "coord": [
+        61872,
+        32946
+      ],
+      "recommendedLevel": 40,
+      "name": "Aid the researchers in their study of the Brand.",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61896,
+          33450
+        ],
+        [
+          61985,
+          32816
+        ],
+        [
+          61827,
+          32790
+        ],
+        [
+          61559,
+          32976
+        ],
+        [
+          61628,
+          33423
+        ],
+        [
+          61896,
+          33450
+        ]
+      ],
+      "trailIndex": 2448,
+      "wikiText": "Test branded samples at capsitors and water samplers and destroy branded creatures that might disrupt the experiments.",
+      "waypointChatLink": "[&BNcAAAA=]"
+    },
+    {
+      "stepId": "21:poi:204",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "poi",
+      "objectiveId": "204",
+      "coord": [
+        61873,
+        32882
+      ],
+      "recommendedLevel": null,
+      "name": "Varimhold Outpost",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2454,
+      "wikiText": "The Varimhold Outpost is a point of interest with Varim's Run. The Sentinels have established a large stronghold at this location.",
+      "waypointChatLink": "[&BNcAAAA=]"
+    },
+    {
+      "stepId": "21:hero:0-127",
+      "mapId": 21,
+      "zoneName": "Fields of Ruin",
+      "type": "hero",
+      "objectiveId": "0-127",
+      "coord": [
+        61590,
+        32789
+      ],
+      "recommendedLevel": null,
+      "name": "Pile of Stones",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "This Pile of Stones is the grave of the sylvari, Killeen.",
+      "waypointChatLink": "[&BNcAAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

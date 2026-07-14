@@ -1,0 +1,5 @@
+data/items.json -text
+
+# Bundled texture packs (TCPK; verbatim image bytes from builder/build_texpacks.py). These are release assets
+# and some exceed GitHub's normal blob limit, so they are tracked through Git LFS.
+data/textures/*.pack filter=lfs diff=lfs merge=lfs -text

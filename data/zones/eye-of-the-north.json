@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 1370,
+    "name": "Eye of the North",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 0,
+    "maxLevel": 0,
+    "mapRect": [
+      [
+        -15360,
+        -15360
+      ],
+      [
+        15360,
+        15360
+      ]
+    ],
+    "continentRect": [
+      [
+        57344,
+        21248
+      ],
+      [
+        58624,
+        22528
+      ]
+    ],
+    "sectorRect": [
+      [
+        57476.6,
+        21468.5
+      ],
+      [
+        57959.2,
+        21933.5
+      ]
+    ],
+    "labelCoord": [
+      57984,
+      21504
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": false,
+  "steps": [
+    {
+      "stepId": "1370:waypoint:3081",
+      "mapId": 1370,
+      "zoneName": "Eye of the North",
+      "type": "waypoint",
+      "objectiveId": "3081",
+      "coord": [
+        57865,
+        21795
+      ],
+      "recommendedLevel": null,
+      "name": "Eye of the North Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAkMAAA=]",
+      "waypointChatLink": "[&BAkMAAA=]",
+      "wikiText": "The Hall of Monuments is an area in the Eye of the North, located within the Far Shiverpeaks."
+    },
+    {
+      "stepId": "1370:poi:1294",
+      "mapId": 1370,
+      "zoneName": "Eye of the North",
+      "type": "poi",
+      "objectiveId": "1294",
+      "coord": [
+        57602,
+        21592
+      ],
+      "recommendedLevel": null,
+      "name": "Scrying Pool",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "wikiText": "The Scrying Pool is a large pool of mystical water in the Eye of the North's Hall of Monuments with as-of-yet unexplained psychic properties.",
+      "waypointChatLink": "[&BAkMAAA=]"
+    }
+  ],
+  "hasTrail": false
+}

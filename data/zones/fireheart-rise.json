@@ -1,0 +1,1949 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 22,
+    "name": "Fireheart Rise",
+    "continentId": 1,
+    "regionId": 2,
+    "regionName": "Ascalon",
+    "floor": 1,
+    "minLevel": 60,
+    "maxLevel": 70,
+    "mapRect": [
+      [
+        -39936,
+        -33792
+      ],
+      [
+        39936,
+        33792
+      ]
+    ],
+    "continentRect": [
+      [
+        56576,
+        24832
+      ],
+      [
+        59904,
+        27648
+      ]
+    ],
+    "sectorRect": [
+      [
+        56436.9,
+        24798.2
+      ],
+      [
+        60294.6,
+        27757.7
+      ]
+    ],
+    "labelCoord": [
+      58240,
+      26240
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "22:waypoint:534",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "534",
+      "coord": [
+        59745,
+        27162
+      ],
+      "recommendedLevel": null,
+      "name": "Sati Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBYCAAA=]",
+      "waypointChatLink": "[&BBYCAAA=]",
+      "trailIndex": 8,
+      "wikiText": "The Sati Passage is in the south-eastern corner of the Fireheart Rise. The charr forces have established a major training facility at this location. The Legion recruits come here to receive training to be ready to face the Flame Legion."
+    },
+    {
+      "stepId": "22:heart:128",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "128",
+      "coord": [
+        59516,
+        27410
+      ],
+      "recommendedLevel": 60,
+      "name": "Assist with maintenance at Tuyere Command Post.",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59735,
+          27334
+        ],
+        [
+          59674,
+          27380
+        ],
+        [
+          59604,
+          27445
+        ],
+        [
+          59523,
+          27490
+        ],
+        [
+          59426,
+          27483
+        ],
+        [
+          59333,
+          27415
+        ],
+        [
+          59227,
+          27349
+        ],
+        [
+          59224,
+          27282
+        ],
+        [
+          59370,
+          27249
+        ],
+        [
+          59443,
+          27192
+        ],
+        [
+          59666,
+          27141
+        ],
+        [
+          59735,
+          27334
+        ]
+      ],
+      "trailIndex": 45,
+      "wikiText": "Protect the command post, train idle troops, and assist with maintenance.",
+      "waypointChatLink": "[&BBgCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:536",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "536",
+      "coord": [
+        59385,
+        27360
+      ],
+      "recommendedLevel": null,
+      "name": "Tuyere Command Post Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBgCAAA=]",
+      "waypointChatLink": "[&BBgCAAA=]",
+      "trailIndex": 65,
+      "wikiText": "The Sati Passage is in the south-eastern corner of the Fireheart Rise. The charr forces have established a major training facility at this location. The Legion recruits come here to receive training to be ready to face the Flame Legion."
+    },
+    {
+      "stepId": "22:vista:1662",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1662",
+      "coord": [
+        59525,
+        27350
+      ],
+      "recommendedLevel": null,
+      "name": "Tuyere",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 93,
+      "wikiText": "Just hop on the pipe that starts north of the waypoint and walk to the vista.",
+      "waypointChatLink": "[&BBgCAAA=]"
+    },
+    {
+      "stepId": "22:heart:129",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "129",
+      "coord": [
+        59388,
+        26850
+      ],
+      "recommendedLevel": 61,
+      "name": "Assist Engineer Verutum.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59258,
+          26804
+        ],
+        [
+          59210,
+          26970
+        ],
+        [
+          59220,
+          27052
+        ],
+        [
+          59389,
+          27135
+        ],
+        [
+          59495,
+          27170
+        ],
+        [
+          59658,
+          27098
+        ],
+        [
+          59712,
+          27043
+        ],
+        [
+          59740,
+          26901
+        ],
+        [
+          59687,
+          26745
+        ],
+        [
+          59659,
+          26684
+        ],
+        [
+          59504,
+          26632
+        ],
+        [
+          59258,
+          26804
+        ]
+      ],
+      "trailIndex": 124,
+      "wikiText": "Obtain a tar cleaner from Engineer Verutum. Use it to cleanse contaminated creatures, tar slicks, and spouts seeping from the lake bed.",
+      "waypointChatLink": "[&BBcCAAA=]"
+    },
+    {
+      "stepId": "22:hero:0-132",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "hero",
+      "objectiveId": "0-132",
+      "coord": [
+        59266,
+        26742
+      ],
+      "recommendedLevel": null,
+      "name": "Steelbeak's Nest",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 147,
+      "wikiText": "Steelbeak's Nest is found in the Fuller Cistern.",
+      "waypointChatLink": "[&BBcCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:535",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "535",
+      "coord": [
+        58968,
+        26939
+      ],
+      "recommendedLevel": null,
+      "name": "Pig Iron Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBcCAAA=]",
+      "waypointChatLink": "[&BBcCAAA=]",
+      "trailIndex": 202,
+      "wikiText": "Pig Iron Mine is a water filled canyon that is the home to a large mine complex belonging to the Flame Legion in Fireheart Rise."
+    },
+    {
+      "stepId": "22:poi:523",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "523",
+      "coord": [
+        58750,
+        26918
+      ],
+      "recommendedLevel": null,
+      "name": "Termerarus Castrum",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 221,
+      "wikiText": "Termerarus Castrum is a small island held by a group of Flame Legion charr.",
+      "waypointChatLink": "[&BBcCAAA=]"
+    },
+    {
+      "stepId": "22:vista:1663",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1663",
+      "coord": [
+        58633,
+        27191
+      ],
+      "recommendedLevel": null,
+      "name": "Pig Iron Mine",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 263,
+      "wikiText": "Start about in the middle of the southside of the island, jump your way up north until you can turn south and walk to the vista. Or land at the bottom of a slope at the northern tip of the island, and walk to the vista.",
+      "waypointChatLink": "[&BBkCAAA=]"
+    },
+    {
+      "stepId": "22:heart:130",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "130",
+      "coord": [
+        58759,
+        27479
+      ],
+      "recommendedLevel": 61,
+      "name": "Clean up the Flame Legion magic.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59097,
+          27360
+        ],
+        [
+          59035,
+          27497
+        ],
+        [
+          58905,
+          27561
+        ],
+        [
+          58808,
+          27578
+        ],
+        [
+          58717,
+          27613
+        ],
+        [
+          58602,
+          27587
+        ],
+        [
+          58490,
+          27387
+        ],
+        [
+          58494,
+          27268
+        ],
+        [
+          58543,
+          27214
+        ],
+        [
+          58649,
+          27204
+        ],
+        [
+          58684,
+          27071
+        ],
+        [
+          58816,
+          27017
+        ],
+        [
+          58925,
+          27077
+        ],
+        [
+          59027,
+          27158
+        ],
+        [
+          59079,
+          27282
+        ],
+        [
+          59097,
+          27360
+        ]
+      ],
+      "trailIndex": 296,
+      "wikiText": "Eliminate Flame Legion power sources and the elementals they create. Cull Flame legion presence in the area.",
+      "waypointChatLink": "[&BBkCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:537",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "537",
+      "coord": [
+        58630,
+        27336
+      ],
+      "recommendedLevel": null,
+      "name": "Severed Breach Waypoint",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBkCAAA=]",
+      "waypointChatLink": "[&BBkCAAA=]",
+      "trailIndex": 325,
+      "wikiText": "Pig Iron Mine is a water filled canyon that is the home to a large mine complex belonging to the Flame Legion in Fireheart Rise."
+    },
+    {
+      "stepId": "22:waypoint:540",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "540",
+      "coord": [
+        58055,
+        27217
+      ],
+      "recommendedLevel": null,
+      "name": "Vidius Castrum Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBwCAAA=]",
+      "waypointChatLink": "[&BBwCAAA=]",
+      "trailIndex": 402,
+      "wikiText": "Buloh Crossing is an area within Fireheart Rise. This arid wasteland is home to a large force of Flame Legion headquartered at Vidius Castrum. The allied Legions forces have moved in their heavy cannon to lay siege to this location."
+    },
+    {
+      "stepId": "22:vista:1660",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1660",
+      "coord": [
+        57830,
+        27128
+      ],
+      "recommendedLevel": null,
+      "name": "Vidius Castrum",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 450,
+      "wikiText": "Start from the north and go to the scout. Just a bit north-west from the scout you can jump to the next plateau where the vista is.",
+      "waypointChatLink": "[&BBwCAAA=]"
+    },
+    {
+      "stepId": "22:heart:132",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "132",
+      "coord": [
+        57966,
+        26934
+      ],
+      "recommendedLevel": 62,
+      "name": "Stop the Flame Legion from summoning embers.",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57881,
+          26997
+        ],
+        [
+          58136,
+          26954
+        ],
+        [
+          58296,
+          27083
+        ],
+        [
+          58354,
+          27042
+        ],
+        [
+          58472,
+          26859
+        ],
+        [
+          58194,
+          26607
+        ],
+        [
+          58012,
+          26630
+        ],
+        [
+          57842,
+          26744
+        ],
+        [
+          57800,
+          26897
+        ],
+        [
+          57881,
+          26997
+        ]
+      ],
+      "trailIndex": 473,
+      "wikiText": "Kill Flame Legion agents and disable their power sources.",
+      "waypointChatLink": "[&BBsCAAA=]"
+    },
+    {
+      "stepId": "22:poi:533",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "533",
+      "coord": [
+        58044,
+        26815
+      ],
+      "recommendedLevel": null,
+      "name": "Division Shrine",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 488,
+      "wikiText": "Division Shrine is a point of interest within Forge Plains. This flaming shrine is the object of worship of the Flame Legion.",
+      "waypointChatLink": "[&BBsCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:539",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "539",
+      "coord": [
+        57896,
+        26719
+      ],
+      "recommendedLevel": null,
+      "name": "Havoc Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBsCAAA=]",
+      "waypointChatLink": "[&BBsCAAA=]",
+      "trailIndex": 511,
+      "wikiText": "Havoc Steppes is an area within Fireheart Rise. Central to this area is a Flame Legion base at Atrox Castrum. A small tribe of passive grawl has an encampment in the north."
+    },
+    {
+      "stepId": "22:hero:0-131",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "hero",
+      "objectiveId": "0-131",
+      "coord": [
+        57909,
+        26461
+      ],
+      "recommendedLevel": null,
+      "name": "Tribune Sorya Fatekiller",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 547,
+      "wikiText": "Tribune Sorya Fatekiller is an Ash Legion Tribune in charge of Ash forces in Fireheart Rise fighting the Flame Legion.",
+      "waypointChatLink": "[&BBsCAAA=]"
+    },
+    {
+      "stepId": "22:poi:518",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "518",
+      "coord": [
+        58460,
+        26465
+      ],
+      "recommendedLevel": null,
+      "name": "Coalpit Watchpost",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 678,
+      "wikiText": "Coalpit Watchpost is a point of interest within Keeper's Sanctum. This small box canyon is home to a group of Ash Legion charr.",
+      "waypointChatLink": "[&BBsCAAA=]"
+    },
+    {
+      "stepId": "22:vista:1664",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1664",
+      "coord": [
+        58440,
+        26377
+      ],
+      "recommendedLevel": null,
+      "name": "Provatum Castrum",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 761,
+      "wikiText": "Start east of the vista, jumping east along the north edge of the cliff until you can't go further. Turn and start jumping west to the vista. Time your jump to the rock with the vista well.",
+      "waypointChatLink": "[&BCYCAAA=]"
+    },
+    {
+      "stepId": "22:hero:0-46",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "hero",
+      "objectiveId": "0-46",
+      "coord": [
+        58540,
+        26095
+      ],
+      "recommendedLevel": null,
+      "name": "Flame Core",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 792,
+      "wikiText": "The Flame Core is a hero challenge object located in Keeper's Sanctum. Players interacting with this object will start the Defeat Smolderjaw and His Warband event.",
+      "waypointChatLink": "[&BCYCAAA=]"
+    },
+    {
+      "stepId": "22:poi:524",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "524",
+      "coord": [
+        58503,
+        26011
+      ],
+      "recommendedLevel": null,
+      "name": "Provatum Castrum",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 809,
+      "wikiText": "Provatum Castrum is a point of interest within Keeper's Sanctum. This sunken island fortress needs no walls for defense; it relies on the lake of lava it rests in. It is well guarded by various creatures of fire.",
+      "waypointChatLink": "[&BCYCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:550",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "550",
+      "coord": [
+        58276,
+        25871
+      ],
+      "recommendedLevel": null,
+      "name": "Keeper's Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCYCAAA=]",
+      "waypointChatLink": "[&BCYCAAA=]",
+      "trailIndex": 849,
+      "wikiText": "Keeper's Sanctum is an area within the Fireheart Rise. This scorched plain is under constant assault from the element of fire. Trees and the ground itself are in flames as the sky is filled with burning ash."
+    },
+    {
+      "stepId": "22:poi:521",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "521",
+      "coord": [
+        58081,
+        25789
+      ],
+      "recommendedLevel": null,
+      "name": "Piketooth Tower",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 880,
+      "wikiText": "Piketooth Tower is a point of interest within Switchback Canyons. This tall, narrow, blackened column is patrolled by Flame Legion forces.",
+      "waypointChatLink": "[&BCYCAAA=]"
+    },
+    {
+      "stepId": "22:vista:1667",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1667",
+      "coord": [
+        57886,
+        25708
+      ],
+      "recommendedLevel": null,
+      "name": "Switchback Canyons",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 933,
+      "wikiText": "Switchback Canyons is an area within Fireheart Rise. This large canyon system serves as the main causeway for troop movements in Fireheart Rise.",
+      "waypointChatLink": "[&BCICAAA=]"
+    },
+    {
+      "stepId": "22:poi:519",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "519",
+      "coord": [
+        57885,
+        25738
+      ],
+      "recommendedLevel": null,
+      "name": "Shadow Cleft",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 946,
+      "wikiText": "Shadow Cleft is a point of interest within Switchback Canyons. This narrow canyon is home to a small force of Ash Legion soldiers. They use their superior elevation to launch indirect fire attacks at Flame Legion patrols.",
+      "waypointChatLink": "[&BCYCAAA=]"
+    },
+    {
+      "stepId": "22:heart:136",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "136",
+      "coord": [
+        57866,
+        25777
+      ],
+      "recommendedLevel": 65,
+      "name": "Assist the Ash Legion soldiers of Shadow Cleft.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57849,
+          25718
+        ],
+        [
+          58102,
+          25754
+        ],
+        [
+          58213,
+          25857
+        ],
+        [
+          58158,
+          26453
+        ],
+        [
+          58142,
+          26557
+        ],
+        [
+          57813,
+          26400
+        ],
+        [
+          57579,
+          26490
+        ],
+        [
+          57538,
+          26422
+        ],
+        [
+          57535,
+          26262
+        ],
+        [
+          57671,
+          25883
+        ],
+        [
+          57849,
+          25718
+        ]
+      ],
+      "trailIndex": 951,
+      "wikiText": "Ambush the Flame Legion using mines, traps, explosive boulders, and mortars throughout Switchback Canyons.",
+      "waypointChatLink": "[&BCYCAAA=]"
+    },
+    {
+      "stepId": "22:poi:520",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "520",
+      "coord": [
+        57836,
+        26176
+      ],
+      "recommendedLevel": null,
+      "name": "Veiled Cliff",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1000,
+      "wikiText": "Veiled Cliff is a point of interest within Switchback Canyons. This sheer rock face overlooks the main intersections of this area.",
+      "waypointChatLink": "[&BB8CAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:543",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "543",
+      "coord": [
+        57652,
+        26176
+      ],
+      "recommendedLevel": null,
+      "name": "Switchback Waypoint",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BB8CAAA=]",
+      "waypointChatLink": "[&BB8CAAA=]",
+      "trailIndex": 1021,
+      "wikiText": "Switchback Canyons is an area within Fireheart Rise. This large canyon system serves as the main causeway for troop movements in Fireheart Rise."
+    },
+    {
+      "stepId": "22:poi:528",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "528",
+      "coord": [
+        57277,
+        26522
+      ],
+      "recommendedLevel": null,
+      "name": "Heart Speaks Not",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1084,
+      "wikiText": "Heart Speaks Not is a point of interest within Havoc Steppes. This shallow canyon is home to a small tribe of passive grawl.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:poi:525",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "525",
+      "coord": [
+        57383,
+        26941
+      ],
+      "recommendedLevel": null,
+      "name": "Atrox Castrum",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1133,
+      "wikiText": "Atrox Castrum is a point of interest within Havoc Steppes. This lava shrine is held primarily by the Legion's forces but is contested by the Flame Legion during the dynamic event Kill the centurion to capture Atrox Castrum.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:541",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "541",
+      "coord": [
+        57161,
+        26999
+      ],
+      "recommendedLevel": null,
+      "name": "Apostate Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BB0CAAA=]",
+      "waypointChatLink": "[&BB0CAAA=]",
+      "trailIndex": 1162,
+      "wikiText": "Apostate Wastes is an area within Fireheart Rise."
+    },
+    {
+      "stepId": "22:heart:134",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "134",
+      "coord": [
+        57016,
+        27078
+      ],
+      "recommendedLevel": 63,
+      "name": "Help the Tarstar tribe survive so close to Flame lands.",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57048,
+          26916
+        ],
+        [
+          57138,
+          26913
+        ],
+        [
+          57115,
+          27021
+        ],
+        [
+          57167,
+          27151
+        ],
+        [
+          57120,
+          27238
+        ],
+        [
+          56963,
+          27274
+        ],
+        [
+          56814,
+          27424
+        ],
+        [
+          56648,
+          27304
+        ],
+        [
+          56633,
+          27002
+        ],
+        [
+          56731,
+          26881
+        ],
+        [
+          56834,
+          26852
+        ],
+        [
+          56920,
+          26927
+        ],
+        [
+          57048,
+          26916
+        ]
+      ],
+      "trailIndex": 1183,
+      "wikiText": "Kill harpies and smash their eggs. Collect grub eggs for the Tarstar Chief.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:heart:135",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "135",
+      "coord": [
+        57080,
+        27331
+      ],
+      "recommendedLevel": 63,
+      "name": "Help the Wupwup tribe survive so close to Flame lands.",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57146,
+          27538
+        ],
+        [
+          57155,
+          27419
+        ],
+        [
+          57133,
+          27310
+        ],
+        [
+          57054,
+          27269
+        ],
+        [
+          56971,
+          27282
+        ],
+        [
+          56884,
+          27358
+        ],
+        [
+          56790,
+          27484
+        ],
+        [
+          56814,
+          27556
+        ],
+        [
+          57011,
+          27636
+        ],
+        [
+          57146,
+          27538
+        ]
+      ],
+      "trailIndex": 1215,
+      "wikiText": "Protect and feed the pet warthogs. Kill hostile creatures guarding truffles in the cave.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:poi:530",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "530",
+      "coord": [
+        57052,
+        27423
+      ],
+      "recommendedLevel": null,
+      "name": "God's Skull",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1225,
+      "wikiText": "God's Skull is a point of interest within Apostate Wastes. A giant stone face juts out of the cliff side at this location. At the foot of this cliff is the Wupwup grawl tribe's village and the entrance to a small cave.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:poi:531",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "531",
+      "coord": [
+        56828,
+        27080
+      ],
+      "recommendedLevel": null,
+      "name": "God's Hand",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1279,
+      "wikiText": "God's Hand, also known as Tarstar Copse, is a point of interest within Apostate Wastes in Fireheart Rise. This ruined statue piece lies at the foot of a giant tree. Both harpies and grawl live under this tree's branches.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:poi:529",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "529",
+      "coord": [
+        56988,
+        26843
+      ],
+      "recommendedLevel": null,
+      "name": "God's Eye",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1314,
+      "wikiText": "God's Eye is a point of interest within Apostate Wastes. This ruined structure lies at the end of an impact crater. Agent Moop was sent to investigate the strange device that crashed there.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:heart:133",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "133",
+      "coord": [
+        57101,
+        26711
+      ],
+      "recommendedLevel": 64,
+      "name": "Help the Nrocroc tribe survive so close to Flame lands.",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57026,
+          26913
+        ],
+        [
+          56928,
+          26923
+        ],
+        [
+          56816,
+          26795
+        ],
+        [
+          56811,
+          26624
+        ],
+        [
+          56939,
+          26469
+        ],
+        [
+          57199,
+          26548
+        ],
+        [
+          57253,
+          26784
+        ],
+        [
+          57133,
+          26907
+        ],
+        [
+          57026,
+          26913
+        ]
+      ],
+      "trailIndex": 1335,
+      "wikiText": "Bring prickleberries to the Nrocroc Chief. Kill Flame Legion oppressors and bears roaming grawl foraging lands.",
+      "waypointChatLink": "[&BB0CAAA=]"
+    },
+    {
+      "stepId": "22:hero:0-34",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "hero",
+      "objectiveId": "0-34",
+      "coord": [
+        56883,
+        26399
+      ],
+      "recommendedLevel": null,
+      "name": "Chieftain Inpetla",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1388,
+      "wikiText": "Chieftain Inpetla is the start NPC for the Defeat Chieftain Inpetla hero challenge in the Rustbowl.",
+      "waypointChatLink": "[&BB4CAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:542",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "542",
+      "coord": [
+        56822,
+        26177
+      ],
+      "recommendedLevel": null,
+      "name": "Rustbowl Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BB4CAAA=]",
+      "waypointChatLink": "[&BB4CAAA=]",
+      "trailIndex": 1422,
+      "wikiText": "Rustbowl is an area within Fireheart Rise. Kodan from the Shiverpeak Mountains use the portal in the upper northwestern corner on their migration to Haymal Gore."
+    },
+    {
+      "stepId": "22:vista:1661",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1661",
+      "coord": [
+        57215,
+        25713
+      ],
+      "recommendedLevel": null,
+      "name": "Haymal Gore",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1505,
+      "wikiText": "You have to cross over the gate south of the vista. Start a bit south-east of the gate and jump on the ruins of the wall there. Jump your way to the gate and on the plateau with the vista.",
+      "waypointChatLink": "[&BCACAAA=]"
+    },
+    {
+      "stepId": "22:heart:137",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "137",
+      "coord": [
+        57068,
+        25723
+      ],
+      "recommendedLevel": 66,
+      "name": "Aid kodan refugees fleeing toward Haymal Gore.",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56647,
+          26191
+        ],
+        [
+          56951,
+          25354
+        ],
+        [
+          57105,
+          25309
+        ],
+        [
+          57220,
+          25381
+        ],
+        [
+          57294,
+          25697
+        ],
+        [
+          57327,
+          25994
+        ],
+        [
+          57175,
+          26153
+        ],
+        [
+          56971,
+          26262
+        ],
+        [
+          56647,
+          26191
+        ]
+      ],
+      "trailIndex": 1521,
+      "wikiText": "Help gather meat for refugees, protect refugees seeking Haymal Gore, and light beacons to guide them.",
+      "waypointChatLink": "[&BB4CAAA=]"
+    },
+    {
+      "stepId": "22:poi:527",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "527",
+      "coord": [
+        56883,
+        25647
+      ],
+      "recommendedLevel": null,
+      "name": "Haymal Gore",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1546,
+      "wikiText": "Haymal Gore is a point of interest within Highland Thaw in Fireheart Rise. This lake shore community offers a wide variety of services. Kodan Refugees make their way to this village.",
+      "waypointChatLink": "[&BB4CAAA=]"
+    },
+    {
+      "stepId": "22:poi:532",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "532",
+      "coord": [
+        57053,
+        24938
+      ],
+      "recommendedLevel": null,
+      "name": "Mangonel Bivouac",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1677,
+      "wikiText": "Mangonel Bivouac is a point of interest within Mangonel Cavern. This cave alcove is home to the campsite of a group of scholars.",
+      "waypointChatLink": "[&BCACAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:544",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "544",
+      "coord": [
+        57121,
+        25166
+      ],
+      "recommendedLevel": null,
+      "name": "Icespear's Waypoint",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCACAAA=]",
+      "waypointChatLink": "[&BCACAAA=]",
+      "trailIndex": 1717,
+      "wikiText": "Icespear's Shelf is an area within the Fireheart Rise. This alpine valley is home to many creatures of the north. The Pact has established a small research base in the northern tip of this area."
+    },
+    {
+      "stepId": "22:heart:138",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "138",
+      "coord": [
+        57163,
+        25156
+      ],
+      "recommendedLevel": 67,
+      "name": "Help Pact researchers with their experimental weapons.",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56933,
+          25349
+        ],
+        [
+          56717,
+          25416
+        ],
+        [
+          56779,
+          25041
+        ],
+        [
+          56910,
+          24860
+        ],
+        [
+          57592,
+          24871
+        ],
+        [
+          57555,
+          25121
+        ],
+        [
+          57525,
+          25229
+        ],
+        [
+          57329,
+          25339
+        ],
+        [
+          57228,
+          25379
+        ],
+        [
+          57110,
+          25303
+        ],
+        [
+          56933,
+          25349
+        ]
+      ],
+      "trailIndex": 1726,
+      "wikiText": "Help Pact researchers with their experimental weapons.",
+      "waypointChatLink": "[&BCACAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:545",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "545",
+      "coord": [
+        57538,
+        24911
+      ],
+      "recommendedLevel": null,
+      "name": "Snow Ridge Camp Waypoint",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCECAAA=]",
+      "waypointChatLink": "[&BCECAAA=]",
+      "trailIndex": 1795,
+      "wikiText": "Icespear's Shelf is an area within the Fireheart Rise. This alpine valley is home to many creatures of the north. The Pact has established a small research base in the northern tip of this area."
+    },
+    {
+      "stepId": "22:waypoint:546",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "546",
+      "coord": [
+        57974,
+        25299
+      ],
+      "recommendedLevel": null,
+      "name": "Vorgas Garrison Waypoint",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCICAAA=]",
+      "waypointChatLink": "[&BCICAAA=]",
+      "trailIndex": 1888,
+      "wikiText": "The Toughstone is an arid plain within Fireheart Rise, and is heavily protected by forces of the Flame Legion."
+    },
+    {
+      "stepId": "22:heart:140",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "140",
+      "coord": [
+        58452,
+        25058
+      ],
+      "recommendedLevel": 68,
+      "name": "Help the Ash Legion disrupt the Flame Legion.",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58184,
+          25040
+        ],
+        [
+          58387,
+          24958
+        ],
+        [
+          58468,
+          25026
+        ],
+        [
+          58539,
+          25182
+        ],
+        [
+          58692,
+          25120
+        ],
+        [
+          58765,
+          25143
+        ],
+        [
+          58835,
+          25358
+        ],
+        [
+          58963,
+          25427
+        ],
+        [
+          58925,
+          25656
+        ],
+        [
+          58959,
+          25832
+        ],
+        [
+          58688,
+          25854
+        ],
+        [
+          58426,
+          25645
+        ],
+        [
+          58255,
+          25725
+        ],
+        [
+          58193,
+          25396
+        ],
+        [
+          58184,
+          25040
+        ]
+      ],
+      "trailIndex": 1972,
+      "wikiText": "Kill Flame Legion, destroy elemental power sources, defend the Ash Legion, and destroy Flame Legion supplies.",
+      "waypointChatLink": "[&BCMCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:547",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "547",
+      "coord": [
+        58498,
+        25048
+      ],
+      "recommendedLevel": null,
+      "name": "Forlorn Waypoint",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCMCAAA=]",
+      "waypointChatLink": "[&BCMCAAA=]",
+      "trailIndex": 1978,
+      "wikiText": "Liberation Dell is an area within Fireheart Rise. This cave system is home to a group of Ash Legion forces."
+    },
+    {
+      "stepId": "22:hero:0-2",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "hero",
+      "objectiveId": "0-2",
+      "coord": [
+        58533,
+        24998
+      ],
+      "recommendedLevel": null,
+      "name": "Marse Scythetail",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1989,
+      "wikiText": "Marse Scythetail is a member of the Order of Whispers located in Liberation Dell who has heard about the player's character and wishes to spar with them. Defeating him will award a hero point.",
+      "waypointChatLink": "[&BCMCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:548",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "548",
+      "coord": [
+        58584,
+        25384
+      ],
+      "recommendedLevel": null,
+      "name": "Senecus Castrum Waypoint",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCQCAAA=]",
+      "waypointChatLink": "[&BCQCAAA=]",
+      "trailIndex": 2052,
+      "wikiText": "Simurgh Timberland is an area within Fireheart Rise. This once lush forest was burned to the ground by the Flame Legion to create more space for their bases."
+    },
+    {
+      "stepId": "22:hero:0-133",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "hero",
+      "objectiveId": "0-133",
+      "coord": [
+        58627,
+        25655
+      ],
+      "recommendedLevel": null,
+      "name": "Burning Forest",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2108,
+      "wikiText": "The Burning Forest was a section of the Fissure of Woe before becoming a section of Dragonfall, following Kralkatorrik's crash through The Mists.",
+      "waypointChatLink": "[&BCQCAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:549",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "549",
+      "coord": [
+        58958,
+        25674
+      ],
+      "recommendedLevel": null,
+      "name": "Simurgh Waypoint",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCUCAAA=]",
+      "waypointChatLink": "[&BCUCAAA=]",
+      "trailIndex": 2159,
+      "wikiText": "Simurgh Timberland is an area within Fireheart Rise. This once lush forest was burned to the ground by the Flame Legion to create more space for their bases."
+    },
+    {
+      "stepId": "22:heart:141",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "heart",
+      "objectiveId": "141",
+      "coord": [
+        59004,
+        25656
+      ],
+      "recommendedLevel": 69,
+      "name": "Help the Ash Legion strike at the heart of the Flame Legion.",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58931,
+          25660
+        ],
+        [
+          58966,
+          25840
+        ],
+        [
+          59518,
+          25863
+        ],
+        [
+          59591,
+          25684
+        ],
+        [
+          59410,
+          25601
+        ],
+        [
+          59368,
+          25484
+        ],
+        [
+          59462,
+          25260
+        ],
+        [
+          59173,
+          25237
+        ],
+        [
+          59155,
+          25137
+        ],
+        [
+          58941,
+          25029
+        ],
+        [
+          58797,
+          25082
+        ],
+        [
+          58772,
+          25142
+        ],
+        [
+          58838,
+          25354
+        ],
+        [
+          58972,
+          25426
+        ],
+        [
+          58931,
+          25660
+        ]
+      ],
+      "trailIndex": 2168,
+      "wikiText": "Kill the Flame Legion, destroy their turrets, raze their banners, destroy their founts, and help the Ash Legion soldiers.",
+      "waypointChatLink": "[&BCUCAAA=]"
+    },
+    {
+      "stepId": "22:vista:1665",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1665",
+      "coord": [
+        59032,
+        25389
+      ],
+      "recommendedLevel": null,
+      "name": "Amduat Point",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2225,
+      "wikiText": "Amduat Point is an area within Fireheart Rise. This highly contested hillside serves as the gateway to the Citadel of Flame dungeon.",
+      "waypointChatLink": "[&BCUCAAA=]"
+    },
+    {
+      "stepId": "22:poi:522",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "522",
+      "coord": [
+        59322,
+        25339
+      ],
+      "recommendedLevel": null,
+      "name": "Gates of Flame",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2263,
+      "wikiText": "The Gates of Flame are a point of interest within Amduat Point. This well defended rise serves as a choke point to the bridge leading to the Citadel of Flame dungeon.",
+      "waypointChatLink": "[&BEAFAAA=]"
+    },
+    {
+      "stepId": "22:waypoint:1344",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "1344",
+      "coord": [
+        59682,
+        25151
+      ],
+      "recommendedLevel": null,
+      "name": "The Citadel of Flame Waypoint",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEAFAAA=]",
+      "waypointChatLink": "[&BEAFAAA=]",
+      "trailIndex": 2310,
+      "wikiText": "The Baelfire is a desolate wasteland and waterway within Fireheart Rise that is almost totally barren of life except for the creatures of fire found."
+    },
+    {
+      "stepId": "22:waypoint:538",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "waypoint",
+      "objectiveId": "538",
+      "coord": [
+        59569,
+        26192
+      ],
+      "recommendedLevel": null,
+      "name": "Breaktooth's Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBoCAAA=]",
+      "waypointChatLink": "[&BBoCAAA=]",
+      "trailIndex": 2393,
+      "wikiText": "Sloven Pitch is an area within Fireheart Rise. This dry plain is intersected by a large stream and its eddies. It is most notable for the Flame Legion encampment on the stream's largest island."
+    },
+    {
+      "stepId": "22:hero:0-0",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "hero",
+      "objectiveId": "0-0",
+      "coord": [
+        59243,
+        26130
+      ],
+      "recommendedLevel": null,
+      "name": "Flame Castrum",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2447,
+      "wikiText": "Flame Castrum is a hero challenge located in Sloven Pitch. Communing with the volcanic vent awards players with a hero point.",
+      "waypointChatLink": "[&BBoCAAA=]"
+    },
+    {
+      "stepId": "22:poi:526",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "poi",
+      "objectiveId": "526",
+      "coord": [
+        59205,
+        26136
+      ],
+      "recommendedLevel": null,
+      "name": "Noxious Castrum",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2453,
+      "wikiText": "Noxious Castrum is a point of interest within Sloven Pitch. This walled hilltop is guarded by members of the Flame Legion who perform rituals at this location.",
+      "waypointChatLink": "[&BBoCAAA=]"
+    },
+    {
+      "stepId": "22:vista:1666",
+      "mapId": 22,
+      "zoneName": "Fireheart Rise",
+      "type": "vista",
+      "objectiveId": "1666",
+      "coord": [
+        58874,
+        26240
+      ],
+      "recommendedLevel": null,
+      "name": "Sloven Pitch",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Sloven Pitch is an area within Fireheart Rise. This dry plain is intersected by a large stream and its eddies. It is most notable for the Flame Legion encampment on the stream's largest island.",
+      "waypointChatLink": "[&BCUCAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

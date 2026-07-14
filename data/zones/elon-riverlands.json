@@ -1,0 +1,1514 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1228,
+    "name": "Elon Riverlands",
+    "continentId": 1,
+    "regionId": 12,
+    "regionName": "Crystal Desert",
+    "floor": 49,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -43008,
+        -39936
+      ],
+      [
+        43008,
+        43008
+      ]
+    ],
+    "continentRect": [
+      [
+        58240,
+        44736
+      ],
+      [
+        61824,
+        48192
+      ]
+    ],
+    "sectorRect": [
+      [
+        58283,
+        44692.2
+      ],
+      [
+        61769.7,
+        48400.3
+      ]
+    ],
+    "labelCoord": [
+      59868,
+      46284
+    ],
+    "release": "pof"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1228:heart:412",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "heart",
+      "objectiveId": "412",
+      "coord": [
+        60820,
+        45037
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Follower Xunn collect Forgotten Glyphs for decoding.",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60836,
+          45149
+        ],
+        [
+          60931,
+          45331
+        ],
+        [
+          61038,
+          45325
+        ],
+        [
+          61270,
+          45222
+        ],
+        [
+          61232,
+          44874
+        ],
+        [
+          60249,
+          44885
+        ],
+        [
+          60270,
+          45104
+        ],
+        [
+          60836,
+          45149
+        ]
+      ],
+      "trailIndex": 29,
+      "wikiText": "Wrestle air djinn loose from Forgotten pillars to obtain their glyphs, secure Forgotten reliquaries from sand sharks, and awaken inquisitive djinn from their urns and correctly answer their questions.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2743",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2743",
+      "coord": [
+        60997,
+        45092
+      ],
+      "recommendedLevel": null,
+      "name": "Scattered Remnants",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 48,
+      "wikiText": "The Scattered Remnants is a point of interest in the Skyward Reach.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2671",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2671",
+      "coord": [
+        61196,
+        45310
+      ],
+      "recommendedLevel": null,
+      "name": "Threefold Waylay",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 79,
+      "wikiText": "Threefold Waylay is a Point of Interest in the Skyward Reach. This Forgotten ruin was Branded over when the Elder Dragon Kralkatorrik flew above it while making its way towards Vabbi.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:hero:2-17",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-17",
+      "coord": [
+        61247,
+        45316
+      ],
+      "recommendedLevel": null,
+      "name": "Forgotten Shrine",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 85,
+      "wikiText": "Forgotten Shrine is a communing hero challenge in Skyward Reach in Elon Riverlands.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:waypoint:2643",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "waypoint",
+      "objectiveId": "2643",
+      "coord": [
+        61075,
+        45581
+      ],
+      "recommendedLevel": null,
+      "name": "Augury's Shadow Waypoint",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFMKAAA=]",
+      "waypointChatLink": "[&BFMKAAA=]",
+      "trailIndex": 131,
+      "wikiText": "Skyward Reach is a series of hills and canyons that encircle Augury Rock, and is named after the tall mesa. Most Followers of Ascension can be found here, either at their camps or out accomplishing various tasks."
+    },
+    {
+      "stepId": "1228:hero:2-14",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-14",
+      "coord": [
+        61776,
+        45062
+      ],
+      "recommendedLevel": null,
+      "name": "Branded Relic",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 224,
+      "wikiText": "The Branded Relic is the statue of a Forgotten enclosed in a branded crystal in the northeastern corner of the Ustulate Barrens in the Elon Riverlands. Examining it summons a Veteran Branded Forgotten Priest to fight.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:heart:394",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "heart",
+      "objectiveId": "394",
+      "coord": [
+        61375,
+        45644
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Adisa collect Slivers of Vlast from veteran Branded.",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61259,
+          46078
+        ],
+        [
+          61426,
+          46310
+        ],
+        [
+          61792,
+          46195
+        ],
+        [
+          61818,
+          44851
+        ],
+        [
+          61359,
+          44847
+        ],
+        [
+          61235,
+          44903
+        ],
+        [
+          61272,
+          45225
+        ],
+        [
+          61045,
+          45327
+        ],
+        [
+          61285,
+          45575
+        ],
+        [
+          61259,
+          46078
+        ]
+      ],
+      "trailIndex": 294,
+      "wikiText": "Defeat migrating Branded, including the infamous Hydras, reveal veteran devourers by culling minions, and destroy battleshards to mine slivers.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2570",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2570",
+      "coord": [
+        61580,
+        46154
+      ],
+      "recommendedLevel": null,
+      "name": "Decimation Bend",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 334,
+      "wikiText": "Decimation Bend is a point of interest in the Ustulate Barrens, which is located in the northeast corner of the Elon Riverlands.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2637",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2637",
+      "coord": [
+        61445,
+        46702
+      ],
+      "recommendedLevel": null,
+      "name": "Dragoon Hearth",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 402,
+      "wikiText": "Dragoon Hearth is a large cave area within the Whispering Grottos.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:heart:410",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "heart",
+      "objectiveId": "410",
+      "coord": [
+        60705,
+        46586
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Assistant Foreman Kofi keep the people of the Gladefields safe.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60568,
+          46459
+        ],
+        [
+          60551,
+          46617
+        ],
+        [
+          60598,
+          46757
+        ],
+        [
+          60759,
+          46868
+        ],
+        [
+          61181,
+          46836
+        ],
+        [
+          61175,
+          46657
+        ],
+        [
+          61077,
+          46465
+        ],
+        [
+          60568,
+          46459
+        ]
+      ],
+      "trailIndex": 498,
+      "wikiText": "Protect fieldworkers, distribute supplies to carts for collection, convince restless exiles to defect north, and defend exiles from Awakened collectors and other threats.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:heart:393",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "heart",
+      "objectiveId": "393",
+      "coord": [
+        60663,
+        46278
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Ebele prepare the way north for defectors.",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60208,
+          46120
+        ],
+        [
+          60092,
+          46295
+        ],
+        [
+          60180,
+          46475
+        ],
+        [
+          60568,
+          46457
+        ],
+        [
+          60909,
+          46459
+        ],
+        [
+          60987,
+          46140
+        ],
+        [
+          60802,
+          46039
+        ],
+        [
+          60704,
+          46004
+        ],
+        [
+          60596,
+          46000
+        ],
+        [
+          60208,
+          46120
+        ]
+      ],
+      "trailIndex": 545,
+      "wikiText": "Recover cairn stones from eel nests to repair trail markers, conceal supply caches from Awakened patrols, recover scavenged supplies, and clear desert threats.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:waypoint:2600",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "waypoint",
+      "objectiveId": "2600",
+      "coord": [
+        60364,
+        46367
+      ],
+      "recommendedLevel": null,
+      "name": "Olishar's Oasis Camp Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCgKAAA=]",
+      "waypointChatLink": "[&BCgKAAA=]",
+      "trailIndex": 577,
+      "wikiText": "The Arid Gladefields is an area in the Elon Riverlands that contains villages of exiles and is the starting point for many defectors making their way north to Amnoon."
+    },
+    {
+      "stepId": "1228:poi:2704",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2704",
+      "coord": [
+        60354,
+        46932
+      ],
+      "recommendedLevel": null,
+      "name": "Palawa's Grace",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 625,
+      "wikiText": "Palawa's Grace is the prison village where exiles from Elona are sentenced to live as they work the farms along the Elon River's gladefields.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2639",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2639",
+      "coord": [
+        60577,
+        46711
+      ],
+      "recommendedLevel": null,
+      "name": "Arid Gladefields",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 656,
+      "wikiText": "At the summit of the stone structure, use the springer.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2756",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2756",
+      "coord": [
+        61115,
+        47140
+      ],
+      "recommendedLevel": null,
+      "name": "Whispering Grottos",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 735,
+      "wikiText": "Southwest, easy to access by following the path, top of a small hill.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:hero:2-12",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-12",
+      "coord": [
+        61115,
+        47270
+      ],
+      "recommendedLevel": null,
+      "name": "Fallen Giant",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 752,
+      "wikiText": "Fallen Giant is a communing hero challenge in Arid Gladefields. This is the remains of the Lonely Vigil which had fallen 250 years ago. The statue's feet rest in Elon Flow, and its head, chest, and arms rest in Arid Gladefields",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2792",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2792",
+      "coord": [
+        61201,
+        47270
+      ],
+      "recommendedLevel": null,
+      "name": "Lonely Vigil",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 762,
+      "wikiText": "Lonely Vigil is a giant fallen statue within the Elon Flow. It was once one of the tallest of such statues, and had fallen 250 years ago. The pieces of the statue almost form a bridge between two mesas.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2605",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2605",
+      "coord": [
+        61730,
+        47520
+      ],
+      "recommendedLevel": null,
+      "name": "Elon Falls",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 812,
+      "wikiText": "Elon Falls is a large waterfall in the eastern part of Elon Flow.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2567",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2567",
+      "coord": [
+        61430,
+        47848
+      ],
+      "recommendedLevel": null,
+      "name": "Stoneyard Rest",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 848,
+      "wikiText": "Stoneyard Rest is an area with fallen statues located in Elon Flow. There is also a defector camp nearby waiting to help guide Defectors.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2713",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2713",
+      "coord": [
+        60631,
+        47688
+      ],
+      "recommendedLevel": null,
+      "name": "The Triumph of Palawa Joko",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 945,
+      "wikiText": "The Triumph of Palawa Joko is a large statue of Palawa Joko.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2695",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2695",
+      "coord": [
+        60582,
+        47703
+      ],
+      "recommendedLevel": null,
+      "name": "Shoals of Sovereignty",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 950,
+      "wikiText": "Top of the stone pillar structure, use the springer.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2558",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2558",
+      "coord": [
+        60678,
+        47999
+      ],
+      "recommendedLevel": null,
+      "name": "The Sepulcher",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 979,
+      "wikiText": "The Sepulcher is the inner area within The Deadhouse prison in Elon Riverlands. The prison is guarded by the Awakened.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2722",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2722",
+      "coord": [
+        60099,
+        48149
+      ],
+      "recommendedLevel": null,
+      "name": "The Joko Gate",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1041,
+      "wikiText": "The Joko Gate is a large bone gate separating Elon Riverlands and The Desolation. It is guarded by multiple Awakened forces.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:hero:2-13",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-13",
+      "coord": [
+        58542,
+        47924
+      ],
+      "recommendedLevel": null,
+      "name": "Throne of Pellentia",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1214,
+      "wikiText": "Throne of Pellentia is a point of interest, a ruined throne built by Turai Ossa to attract the attention of the Gods.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2694",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2694",
+      "coord": [
+        58540,
+        47864
+      ],
+      "recommendedLevel": null,
+      "name": "Throne of Pellentia",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1220,
+      "wikiText": "Throne of Pellentia is a point of interest, a ruined throne built by Turai Ossa to attract the attention of the Gods.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2733",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2733",
+      "coord": [
+        58689,
+        47789
+      ],
+      "recommendedLevel": null,
+      "name": "Shallows of Despair",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1242,
+      "wikiText": "Easy to access again, climb by yourself by jumping on the debris and ruins.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2712",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2712",
+      "coord": [
+        58355,
+        47551
+      ],
+      "recommendedLevel": null,
+      "name": "Bahdaj Vigil",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1265,
+      "wikiText": "Bahdaj Vigil is a point of interest in the Shallows of Despair, located in the southwest corner of the Elon Riverlands.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2659",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2659",
+      "coord": [
+        58877,
+        46904
+      ],
+      "recommendedLevel": null,
+      "name": "Pillars of Supremacy",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1376,
+      "wikiText": "Pillars of Supremacy is a tall mesa occupied by the Forged in the Skimshallow Cove.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2551",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2551",
+      "coord": [
+        59215,
+        47359
+      ],
+      "recommendedLevel": null,
+      "name": "Elon Riverbank",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1446,
+      "wikiText": "Easy to access, under a palm tree.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2726",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2726",
+      "coord": [
+        59283,
+        47398
+      ],
+      "recommendedLevel": null,
+      "name": "Pilgrims' Folly",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1447,
+      "wikiText": "Pilgrims' Folly is a ruin in the Elon Riverbank area of the Elon Riverlands.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:hero:2-16",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-16",
+      "coord": [
+        59434,
+        47021
+      ],
+      "recommendedLevel": null,
+      "name": "Lohrashi the Mournful",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1479,
+      "wikiText": "Lohrashi the Mournful is a human ghost found southeast of the Skimmer Ranch.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2740",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2740",
+      "coord": [
+        59664,
+        46972
+      ],
+      "recommendedLevel": null,
+      "name": "Garden of the Chosen",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1506,
+      "wikiText": "Garden of the Chosen is a Point of Interest on top of a mesa in Vulture Drifts.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2736",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2736",
+      "coord": [
+        59830,
+        46533
+      ],
+      "recommendedLevel": null,
+      "name": "Exile's Rest",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1561,
+      "wikiText": "Exile's Rest is a graveyard that is the resting area of dead exiles fleeing Palawa Joko.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2553",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2553",
+      "coord": [
+        59459,
+        46262
+      ],
+      "recommendedLevel": null,
+      "name": "Fallback Fissure",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1604,
+      "wikiText": "Fallback Fissure is a cave located in Champion's Gap in the Elon Riverlands.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:heart:400",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "heart",
+      "objectiveId": "400",
+      "coord": [
+        59168,
+        46574
+      ],
+      "recommendedLevel": 80,
+      "name": "Use a skimmer to help with training around the ranch.",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59475,
+          46285
+        ],
+        [
+          59284,
+          46346
+        ],
+        [
+          59041,
+          46332
+        ],
+        [
+          58920,
+          46420
+        ],
+        [
+          58874,
+          46536
+        ],
+        [
+          58865,
+          46695
+        ],
+        [
+          58929,
+          46753
+        ],
+        [
+          59045,
+          46817
+        ],
+        [
+          59132,
+          46857
+        ],
+        [
+          59226,
+          46888
+        ],
+        [
+          59292,
+          47012
+        ],
+        [
+          59458,
+          47081
+        ],
+        [
+          59574,
+          47056
+        ],
+        [
+          59715,
+          46803
+        ],
+        [
+          59716,
+          46682
+        ],
+        [
+          59622,
+          46668
+        ],
+        [
+          59549,
+          46353
+        ],
+        [
+          59475,
+          46285
+        ]
+      ],
+      "trailIndex": 1638,
+      "wikiText": "Help the ranch by returning lost skimmers to their pens, stopping Forged raids, delivering rations to lookouts, and healing injured villagers with a skimmer's Barrel Roll.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:waypoint:2663",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "waypoint",
+      "objectiveId": "2663",
+      "coord": [
+        59094,
+        46549
+      ],
+      "recommendedLevel": null,
+      "name": "Skimmer Ranch Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGcKAAA=]",
+      "waypointChatLink": "[&BGcKAAA=]",
+      "trailIndex": 1648,
+      "wikiText": "Skimmer Ranch is an area in the Elon Riverlands where players can acquire the skimmer mount."
+    },
+    {
+      "stepId": "1228:poi:2791",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2791",
+      "coord": [
+        58450,
+        46144
+      ],
+      "recommendedLevel": null,
+      "name": "Skritt's Audience",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1737,
+      "wikiText": "Skritt's Audience is a Point of Interest within The Scavengelands. There are several pieces of large statues in the area, with scaffolding around them.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2697",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2697",
+      "coord": [
+        58732,
+        46130
+      ],
+      "recommendedLevel": null,
+      "name": "Sandwallow Retreat",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1763,
+      "wikiText": "Sandwallow Retreat is a point of interest located in Champion's Gap in the Elon Riverlands. A skimmer is needed to access it.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2738",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2738",
+      "coord": [
+        58509,
+        45899
+      ],
+      "recommendedLevel": null,
+      "name": "The Scavengelands",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1801,
+      "wikiText": "Near the ruin of a Palawa Joko statue.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:hero:2-19",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-19",
+      "coord": [
+        58418,
+        45197
+      ],
+      "recommendedLevel": null,
+      "name": "Fresh Meat",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1865,
+      "wikiText": "Fresh Meat is a combat hero challenge in Deadlock Sweep. Attempting to take the meat will cause the player to be attacked by sand lions",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2769",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2769",
+      "coord": [
+        58441,
+        44895
+      ],
+      "recommendedLevel": null,
+      "name": "Ossa's Defeat",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1906,
+      "wikiText": "Ossa's Defeat is a point of interest located in the very northwest of Deadlock Sweep in Elon Riverlands.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2686",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2686",
+      "coord": [
+        58610,
+        45211
+      ],
+      "recommendedLevel": null,
+      "name": "Deadlock Sweep",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1949,
+      "wikiText": "At the south, top of the hill. Get up with the springer.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2579",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2579",
+      "coord": [
+        58759,
+        44906
+      ],
+      "recommendedLevel": null,
+      "name": "Syrtic Impasse",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1975,
+      "wikiText": "Syrtic Impasse is a point of interest surrounded by quicksand in Deadlock Sweep, Elon Riverlands.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2614",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2614",
+      "coord": [
+        59410,
+        44958
+      ],
+      "recommendedLevel": null,
+      "name": "Giant's Rise",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2015,
+      "wikiText": "Giant's Rise is a Point of Interest within Prophet's Path area.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2640",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2640",
+      "coord": [
+        59774,
+        44969
+      ],
+      "recommendedLevel": null,
+      "name": "Godslost Sandfalls",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2044,
+      "wikiText": "Godslost Sandfalls is a lake of quicksand found in the Skyward Reach. Beneath the lake lies the Cave of the Lost, which is full of statues of the Six Gods, and likely the origin of Godslost Sandfalls' name.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2608",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2608",
+      "coord": [
+        59779,
+        45333
+      ],
+      "recommendedLevel": null,
+      "name": "Heroes' Overlook",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2075,
+      "wikiText": "Heroes' Overlook is a haunted outpost located in the Skyward Reach. This place was once used as the gateway to Augury Rock and the Hall of Ascension.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2628",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2628",
+      "coord": [
+        59586,
+        45286
+      ],
+      "recommendedLevel": null,
+      "name": "Prophet's Path",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2099,
+      "wikiText": "Climb the different stone pillars, use the springer to get up and then, use the raptor to jump from a stone pillar to another.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:hero:2-15",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-15",
+      "coord": [
+        59211,
+        45653
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Trunt",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2152,
+      "wikiText": "Veteran Trunt is a giant found in an isolated camp in the Elon Riverlands.",
+      "waypointChatLink": "[&BGcKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2670",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2670",
+      "coord": [
+        59740,
+        45911
+      ],
+      "recommendedLevel": null,
+      "name": "Leviathan's Gullet",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2204,
+      "wikiText": "Leviathan's Gullet is a small underground cave in The Quickmire, entered through a leviathan skeleton. The cave is occupied and guarded by the Awakened.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:hero:2-18",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "hero",
+      "objectiveId": "2-18",
+      "coord": [
+        59933,
+        46196
+      ],
+      "recommendedLevel": null,
+      "name": "General's Grave",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2234,
+      "wikiText": "The General's Grave is a combat hero challenge in The Quickmire. Like most graves in the Crystal Desert, the inhabitant is still available to greet you with a trial by combat.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2576",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2576",
+      "coord": [
+        60100,
+        46100
+      ],
+      "recommendedLevel": null,
+      "name": "The Quickmire",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2257,
+      "wikiText": "Summit of the ruins, can be climbed like a jumping puzzle or by using the springer.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2772",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2772",
+      "coord": [
+        60182,
+        45956
+      ],
+      "recommendedLevel": null,
+      "name": "Sandbound Towers",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2296,
+      "wikiText": "Sandbound Towers is a Point of Interest located in the The Quickmire. The ruins of structures are standing in a large lake of quicksand. Human bodies are also scattered along the edges of the quicksand.",
+      "waypointChatLink": "[&BCgKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2635",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2635",
+      "coord": [
+        60879,
+        45981
+      ],
+      "recommendedLevel": null,
+      "name": "Second Camp",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2364,
+      "wikiText": "The Second Camp is a point of interest in the Skyward Reach. It is a Followers of Ascension camp located near Branded lands.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2620",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2620",
+      "coord": [
+        60660,
+        45720
+      ],
+      "recommendedLevel": null,
+      "name": "First Camp",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2394,
+      "wikiText": "First Camp is a point of interest in Skyward Reach. This is the first camp of the Followers of Ascension, a group of people looking to ascend at Augury Rock like the heroes of old.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:vista:2618",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "vista",
+      "objectiveId": "2618",
+      "coord": [
+        60740,
+        45510
+      ],
+      "recommendedLevel": null,
+      "name": "Augury Rock",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2420,
+      "wikiText": "At the south of the Augury Rock, climb inside or outside with the help of the springer.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:heart:404",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "heart",
+      "objectiveId": "404",
+      "coord": [
+        60299,
+        45312
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Follower Dawnwynn defeat Branded Forgotten at Augury Rock.",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60315,
+          45566
+        ],
+        [
+          60781,
+          45510
+        ],
+        [
+          60906,
+          45304
+        ],
+        [
+          60831,
+          45155
+        ],
+        [
+          60306,
+          45107
+        ],
+        [
+          59872,
+          45218
+        ],
+        [
+          59872,
+          45389
+        ],
+        [
+          60315,
+          45566
+        ]
+      ],
+      "trailIndex": 2477,
+      "wikiText": "Defeat Branded Forgotten, and destroy the crystals and seeds that protect them. Gather the lights of the Forgotten from the prophecy verses inside Augury Rock.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    },
+    {
+      "stepId": "1228:poi:2744",
+      "mapId": 1228,
+      "zoneName": "Elon Riverlands",
+      "type": "poi",
+      "objectiveId": "2744",
+      "coord": [
+        60642,
+        45313
+      ],
+      "recommendedLevel": null,
+      "name": "Hall of Ascension",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "The Hall of Ascension can be found inside the mesa at Augury Rock in Elon Riverlands. It was where the final test of Ascension, defeating a Doppelganger, happened.",
+      "waypointChatLink": "[&BFMKAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1422,
+  "slug": "dragon-s-end",
+  "name": "Dragon's End",
+  "regionName": "Cantha",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Chunk of Pure Jade",
+      "category": "ore",
+      "material": "jadeite",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -166.8,
+      "y": 176.4,
+      "z": 819.4,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 483.6,
+      "y": 61.3,
+      "z": 509.0,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 556.0,
+      "y": 67.7,
+      "z": 309.0,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 286.6,
+      "y": 89.3,
+      "z": 239.4,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -98.5,
+      "y": 114.5,
+      "z": 96.7,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -137.0,
+      "y": 133.7,
+      "z": 87.5,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Springer"
+    },
+    {
+      "x": 333.1,
+      "y": 147.6,
+      "z": -201.8,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 321.6,
+      "y": 149.8,
+      "z": -302.4,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 395.2,
+      "y": 150.1,
+      "z": -462.4,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -150.7,
+      "y": 163.6,
+      "z": -597.1,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Springer"
+    },
+    {
+      "x": -278.5,
+      "y": 150.6,
+      "z": -418.7,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Springer"
+    },
+    {
+      "x": -331.5,
+      "y": 146.2,
+      "z": -323.4,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -251.0,
+      "y": 144.6,
+      "z": -148.7,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -248.5,
+      "y": 129.5,
+      "z": 95.4,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Springer"
+    },
+    {
+      "x": -225.1,
+      "y": 147.8,
+      "z": 150.1,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 535.0,
+      "y": 96.7,
+      "z": 273.2,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -189.5,
+      "y": 159.7,
+      "z": -226.2,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -227.7,
+      "y": 154.1,
+      "z": -178.5,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -333.4,
+      "y": 152.8,
+      "z": -142.3,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -354.2,
+      "y": 155.9,
+      "z": -128.6,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -408.8,
+      "y": 194.0,
+      "z": 87.9,
+      "material": "jadeite",
+      "category": "ore",
+      "icon": "jadeite"
+    },
+    {
+      "x": -175.1,
+      "y": -72.3,
+      "z": 343.3,
+      "material": "quartz",
+      "category": "ore",
+      "icon": "quartz"
+    },
+    {
+      "x": -235.2,
+      "y": -172.3,
+      "z": 368.1,
+      "material": "quartz",
+      "category": "ore",
+      "icon": "quartz"
+    },
+    {
+      "x": -251.8,
+      "y": -170.0,
+      "z": 353.6,
+      "material": "quartz",
+      "category": "ore",
+      "icon": "quartz"
+    },
+    {
+      "x": -265.6,
+      "y": -152.9,
+      "z": 335.1,
+      "material": "quartz",
+      "category": "ore",
+      "icon": "quartz"
+    }
+  ]
+}

@@ -1,0 +1,929 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 326,
+    "name": "Hoelbrak",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 0,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -27648,
+        -18432
+      ],
+      [
+        27648,
+        21504
+      ]
+    ],
+    "continentRect": [
+      [
+        52224,
+        29696
+      ],
+      [
+        54528,
+        31360
+      ]
+    ],
+    "sectorRect": [
+      [
+        52143.3,
+        29664.4
+      ],
+      [
+        54556.9,
+        31414.9
+      ]
+    ],
+    "labelCoord": [
+      53664,
+      30432
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "326:waypoint:909",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "909",
+      "coord": [
+        54174,
+        30922
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Watchpost Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI0DAAA=]",
+      "waypointChatLink": "[&BI0DAAA=]",
+      "trailIndex": 3,
+      "wikiText": "The Eastern Watchpost is an area in Hoelbrak. This area is the first area encountered by new norn players entering from the Wayfarer Foothills."
+    },
+    {
+      "stepId": "326:vista:1446",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "vista",
+      "objectiveId": "1446",
+      "coord": [
+        54156,
+        30982
+      ],
+      "recommendedLevel": null,
+      "name": "Frost Basin",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 38,
+      "wikiText": "The Frost Basin is an area in southeast Hoelbrak. It is one of two areas which houses multiple homesteads.",
+      "waypointChatLink": "[&BI0DAAA=]"
+    },
+    {
+      "stepId": "326:poi:890",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "890",
+      "coord": [
+        54426,
+        31011
+      ],
+      "recommendedLevel": null,
+      "name": "Boasting Hall",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 76,
+      "wikiText": "The Boasting Hall is located in the Frost Basin, and, as the name implies, it is a place where norn hold competitions on boasting.",
+      "waypointChatLink": "[&BI0DAAA=]"
+    },
+    {
+      "stepId": "326:poi:889",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "889",
+      "coord": [
+        54293,
+        31220
+      ],
+      "recommendedLevel": null,
+      "name": "Old Fiach's Lorestead",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 109,
+      "wikiText": "Old Fiach's Lorestead is the storytellers' house at the Frost Basin in Hoelbrak.",
+      "waypointChatLink": "[&BI0DAAA=]"
+    },
+    {
+      "stepId": "326:poi:1136",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "1136",
+      "coord": [
+        53994,
+        30873
+      ],
+      "recommendedLevel": null,
+      "name": "Bilrost Gallery",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 179,
+      "wikiText": "The Bilrost Gallery is a large bridge that leads from the Great Lodge of Hoelbrak to the path leading into the Wayfarer Foothills.",
+      "waypointChatLink": "[&BIoDAAA=]"
+    },
+    {
+      "stepId": "326:vista:1447",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "vista",
+      "objectiveId": "1447",
+      "coord": [
+        53860,
+        30899
+      ],
+      "recommendedLevel": null,
+      "name": "The Great Lodge",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 219,
+      "wikiText": "Take the ramp up to the Banker area and glide to the rooftop on the right",
+      "waypointChatLink": "[&BI4DAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:910",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "910",
+      "coord": [
+        53840,
+        31018
+      ],
+      "recommendedLevel": null,
+      "name": "Southern Watchpost Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI4DAAA=]",
+      "waypointChatLink": "[&BI4DAAA=]",
+      "trailIndex": 241,
+      "wikiText": "The Southern Watchpost is an area located in southern Hoelbrak."
+    },
+    {
+      "stepId": "326:poi:895",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "895",
+      "coord": [
+        53732,
+        30962
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil Billet",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 258,
+      "wikiText": "The Vigil Billet can be found at the upper area of the Trade Commons in Hoelbrak. The Vigil representatives at Hoelbrak found their spot near the traders.",
+      "waypointChatLink": "[&BI4DAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:1288",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "1288",
+      "coord": [
+        53656,
+        30805
+      ],
+      "recommendedLevel": null,
+      "name": "Upper Balcony Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAgFAAA=]",
+      "waypointChatLink": "[&BAgFAAA=]",
+      "trailIndex": 281,
+      "wikiText": "The Trade Commons is an area of Hoelbrak located right outside The Great Lodge. Here you can find various merchants and craftsmen as well as do some crafting of your own."
+    },
+    {
+      "stepId": "326:poi:893",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "893",
+      "coord": [
+        53309,
+        30792
+      ],
+      "recommendedLevel": null,
+      "name": "Priory Encampment",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 329,
+      "wikiText": "The Priory Encampment is a small camp of Durmand Priory scholars located just west of the Trade Commons in Hoelbrak.",
+      "waypointChatLink": "[&BI8DAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:911",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "911",
+      "coord": [
+        53314,
+        30661
+      ],
+      "recommendedLevel": null,
+      "name": "Peeta's Waypoint",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI8DAAA=]",
+      "waypointChatLink": "[&BI8DAAA=]",
+      "trailIndex": 348,
+      "wikiText": "Peeta's Gate holds the asura gate of Hoelbrak that leads to Lion's Arch."
+    },
+    {
+      "stepId": "326:waypoint:902",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "902",
+      "coord": [
+        53677,
+        30665
+      ],
+      "recommendedLevel": null,
+      "name": "Trade Commons Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIYDAAA=]",
+      "waypointChatLink": "[&BIYDAAA=]",
+      "trailIndex": 399,
+      "wikiText": "The Trade Commons is an area of Hoelbrak located right outside The Great Lodge. Here you can find various merchants and craftsmen as well as do some crafting of your own."
+    },
+    {
+      "stepId": "326:waypoint:981",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "981",
+      "coord": [
+        53493,
+        30989
+      ],
+      "recommendedLevel": null,
+      "name": "Great Lodge Waypoint",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNUDAAA=]",
+      "waypointChatLink": "[&BNUDAAA=]",
+      "trailIndex": 462,
+      "wikiText": "The Great Lodge is one of the five most dominant structures in Hoelbrak. It is the domain of Knut Whitebear, who leads and protects the norn people, and is a place where the greatest norn heroes can be found."
+    },
+    {
+      "stepId": "326:poi:882",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "882",
+      "coord": [
+        53428,
+        31108
+      ],
+      "recommendedLevel": null,
+      "name": "Fang of the Serpent",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 501,
+      "wikiText": "The Fang of the Serpent is the central feature of the Great Lodge. This tooth of Jormag was knocked out by the great hero Asgeir Dragonrender and brought down to Hoelbrak during the norn's exodus from the north.",
+      "waypointChatLink": "[&BNUDAAA=]"
+    },
+    {
+      "stepId": "326:poi:884",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "884",
+      "coord": [
+        53592,
+        30802
+      ],
+      "recommendedLevel": null,
+      "name": "The Great Rise",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 530,
+      "wikiText": "The Great Rise is a large center wooden ramp leading from the first floor of the Trade Commons all the way up the hill to The Great Lodge in Hoelbrak.",
+      "waypointChatLink": "[&BAgFAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:901",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "901",
+      "coord": [
+        53776,
+        30500
+      ],
+      "recommendedLevel": null,
+      "name": "Might and Main Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIUDAAA=]",
+      "waypointChatLink": "[&BIUDAAA=]",
+      "trailIndex": 538,
+      "wikiText": "The Might and Main is the heart of Hoelbrak. At its center is a large dodecahedral structure, with thick sheets of carved ice - one carving for each major lodge - chained to five of its upper faces."
+    },
+    {
+      "stepId": "326:poi:883",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "883",
+      "coord": [
+        53790,
+        30450
+      ],
+      "recommendedLevel": null,
+      "name": "Brawler's Bout",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 540,
+      "wikiText": "The Brawler's Bout is a point of interest in central Hoelbrak. It is a large dodecahedral structure, with thick sheets of ice chained to five of its upper faces.",
+      "waypointChatLink": "[&BIUDAAA=]"
+    },
+    {
+      "stepId": "326:poi:898",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "898",
+      "coord": [
+        54110,
+        30794
+      ],
+      "recommendedLevel": null,
+      "name": "Wolf Hallow",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 591,
+      "wikiText": "The Wolf Hallow is the main shrine to the spirit of Wolf within the Wolf Lodge of Hoelbrak.",
+      "waypointChatLink": "[&BIoDAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:906",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "906",
+      "coord": [
+        54036,
+        30693
+      ],
+      "recommendedLevel": null,
+      "name": "Wolf Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIoDAAA=]",
+      "waypointChatLink": "[&BIoDAAA=]",
+      "trailIndex": 600,
+      "wikiText": "The Wolf Lodge is one of the four main lodges in Hoelbrak and is dedicated to Wolf."
+    },
+    {
+      "stepId": "326:poi:896",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "896",
+      "coord": [
+        54352,
+        30685
+      ],
+      "recommendedLevel": null,
+      "name": "Lost Spirits' Hallow",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 651,
+      "wikiText": "The Lost Spirits' Hallow is a shrine in Hoelbrak dedicated to Ox, Owl, and Wolverine who remained to fight the Elder Dragon Jormag during the norn exodus. It contains three shrines-one to each of the three spirits.",
+      "waypointChatLink": "[&BIwDAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:908",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "908",
+      "coord": [
+        54263,
+        30542
+      ],
+      "recommendedLevel": null,
+      "name": "Legends Waypoint",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIwDAAA=]",
+      "waypointChatLink": "[&BIwDAAA=]",
+      "trailIndex": 677,
+      "wikiText": "The Hall of Legends is an area in Hoelbrak."
+    },
+    {
+      "stepId": "326:poi:892",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "892",
+      "coord": [
+        54218,
+        30534
+      ],
+      "recommendedLevel": null,
+      "name": "Vheratha's Tavern",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 682,
+      "wikiText": "Vheratha's Tavern is a tavern at the Hall of Legends in Hoelbrak, under the not so welcoming care of Vheratha.",
+      "waypointChatLink": "[&BIwDAAA=]"
+    },
+    {
+      "stepId": "326:poi:885",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "885",
+      "coord": [
+        54432,
+        30364
+      ],
+      "recommendedLevel": null,
+      "name": "Skarti's Steading",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 714,
+      "wikiText": "Skarti's Steading is the homestead of Skarti and acts as the unofficial headquarters for the Wolfborn.",
+      "waypointChatLink": "[&BIwDAAA=]"
+    },
+    {
+      "stepId": "326:vista:1445",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "vista",
+      "objectiveId": "1445",
+      "coord": [
+        54080,
+        30393
+      ],
+      "recommendedLevel": null,
+      "name": "Might and Main (1)",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 776,
+      "wikiText": "The Might and Main is the heart of Hoelbrak. At its center is a large dodecahedral structure, with thick sheets of carved ice - one carving for each major lodge - chained to five of its upper faces.",
+      "waypointChatLink": "[&BIkDAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:905",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "905",
+      "coord": [
+        54090,
+        30287
+      ],
+      "recommendedLevel": null,
+      "name": "Bear Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIkDAAA=]",
+      "waypointChatLink": "[&BIkDAAA=]",
+      "trailIndex": 794,
+      "wikiText": "The Bear Lodge is a lodge in Hoelbrak dedicated to the spirit of Bear."
+    },
+    {
+      "stepId": "326:poi:897",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "897",
+      "coord": [
+        54244,
+        30242
+      ],
+      "recommendedLevel": null,
+      "name": "Bear Hallow",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 811,
+      "wikiText": "The Bear Hallow is the main shrine to Bear within the Bear Lodge of Hoelbrak.",
+      "waypointChatLink": "[&BIkDAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:907",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "907",
+      "coord": [
+        54271,
+        30010
+      ],
+      "recommendedLevel": null,
+      "name": "Shelter Rock Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIsDAAA=]",
+      "waypointChatLink": "[&BIsDAAA=]",
+      "trailIndex": 858,
+      "wikiText": "Shelter Rock is a sprawling cave located in northern Hoelbrak. It appears to be mainly a gathering area for the norn. Along the eastern wall, there is a cemetery of sorts filled with cairns denoting the graves."
+    },
+    {
+      "stepId": "326:poi:888",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "888",
+      "coord": [
+        54379,
+        29845
+      ],
+      "recommendedLevel": null,
+      "name": "Master Blackforge's Steading",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 887,
+      "wikiText": "Master Blackforge's Steading is a homestead owned by Einar Blackforge located within Shelter Rock that is used as a tavern by the norn locals and visitors.",
+      "waypointChatLink": "[&BIsDAAA=]"
+    },
+    {
+      "stepId": "326:poi:887",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "887",
+      "coord": [
+        53930,
+        29789
+      ],
+      "recommendedLevel": null,
+      "name": "Sigfast's Steading",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 952,
+      "wikiText": "Sigfast's Steading is the homestead of Sigfast at Shelter Rock in Hoelbrak. Children not old enough to hunt stay here while their families are out of Hoelbrak.",
+      "waypointChatLink": "[&BIsDAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:904",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "904",
+      "coord": [
+        53794,
+        30173
+      ],
+      "recommendedLevel": null,
+      "name": "Raven Waypoint",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIgDAAA=]",
+      "waypointChatLink": "[&BIgDAAA=]",
+      "trailIndex": 1046,
+      "wikiText": "The Raven Lodge is one of the four main lodges of Hoelbrak, dedicated to Raven."
+    },
+    {
+      "stepId": "326:poi:1263",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "1263",
+      "coord": [
+        53824,
+        30016
+      ],
+      "recommendedLevel": null,
+      "name": "Raven Hearth",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1068,
+      "wikiText": "The Raven Hearth is one of two main shrines to Raven within the Raven Lodge of Hoelbrak.",
+      "waypointChatLink": "[&BIgDAAA=]"
+    },
+    {
+      "stepId": "326:poi:899",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "899",
+      "coord": [
+        53711,
+        30026
+      ],
+      "recommendedLevel": null,
+      "name": "Raven Hallow",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1090,
+      "wikiText": "The Raven Hallow is one of two main shrines to Raven within the Raven Lodge of Hoelbrak.",
+      "waypointChatLink": "[&BIgDAAA=]"
+    },
+    {
+      "stepId": "326:vista:1453",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "vista",
+      "objectiveId": "1453",
+      "coord": [
+        53514,
+        30198
+      ],
+      "recommendedLevel": null,
+      "name": "Might and Main (2)",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1168,
+      "wikiText": "The Might and Main is the heart of Hoelbrak. At its center is a large dodecahedral structure, with thick sheets of carved ice - one carving for each major lodge - chained to five of its upper faces.",
+      "waypointChatLink": "[&BIcDAAA=]"
+    },
+    {
+      "stepId": "326:poi:900",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "900",
+      "coord": [
+        53271,
+        30336
+      ],
+      "recommendedLevel": null,
+      "name": "Snow Leopard Hallow",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1220,
+      "wikiText": "Snow Leopard Hallow is the main shrine to Snow Leopard within the Snow Leopard Lodge of Hoelbrak.",
+      "waypointChatLink": "[&BIcDAAA=]"
+    },
+    {
+      "stepId": "326:waypoint:903",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "903",
+      "coord": [
+        53456,
+        30396
+      ],
+      "recommendedLevel": null,
+      "name": "Snow Leopard Waypoint",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIcDAAA=]",
+      "waypointChatLink": "[&BIcDAAA=]",
+      "trailIndex": 1252,
+      "wikiText": "The Snow Leopard Lodge is one of the four main lodges of Hoelbrak dedicated to Snow Leopard."
+    },
+    {
+      "stepId": "326:waypoint:912",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "waypoint",
+      "objectiveId": "912",
+      "coord": [
+        53049,
+        30340
+      ],
+      "recommendedLevel": null,
+      "name": "Hero's Compass Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJADAAA=]",
+      "waypointChatLink": "[&BJADAAA=]",
+      "trailIndex": 1340,
+      "wikiText": "The Hero's Compass lies within western Hoelbrak on the shore of Lake Mourn, containing a statue of Jora. Just off of the shore of the frozen lake is a small island known as Hrothbeir's Rest."
+    },
+    {
+      "stepId": "326:poi:891",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "891",
+      "coord": [
+        52904,
+        30405
+      ],
+      "recommendedLevel": null,
+      "name": "Hrothbeir's Rest",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1358,
+      "wikiText": "Hrothbeir's Rest is a small iced hill with one tree at Lake Mourn in Hoelbrak. It is named after a norn, Hrothbeir, who chipped away a glacier that was threatening to crush Hoelbrak during its early years, creating Lake Mourn.",
+      "waypointChatLink": "[&BJADAAA=]"
+    },
+    {
+      "stepId": "326:vista:1444",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "vista",
+      "objectiveId": "1444",
+      "coord": [
+        52710,
+        30524
+      ],
+      "recommendedLevel": null,
+      "name": "Lake Mourn",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1399,
+      "wikiText": "look to the hillside left of Lake Mourn",
+      "waypointChatLink": "[&BJADAAA=]"
+    },
+    {
+      "stepId": "326:poi:881",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "881",
+      "coord": [
+        53009,
+        30196
+      ],
+      "recommendedLevel": null,
+      "name": "Courage Brewery",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1451,
+      "wikiText": "Courage Brewery an open drinking spot for norn in Hoelbrak. It is close to the Brewer who grants entrance to the norn Keg Brawl.",
+      "waypointChatLink": "[&BJADAAA=]"
+    },
+    {
+      "stepId": "326:poi:894",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "894",
+      "coord": [
+        53311,
+        29861
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon Hallow",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1508,
+      "wikiText": "The Dragon Hallow is the Sons of Svanir's main lodge inside the Veins of the Dragon in Hoelbrak.",
+      "waypointChatLink": "[&BJADAAA=]"
+    },
+    {
+      "stepId": "326:poi:886",
+      "mapId": 326,
+      "zoneName": "Hoelbrak",
+      "type": "poi",
+      "objectiveId": "886",
+      "coord": [
+        54016,
+        31160
+      ],
+      "recommendedLevel": null,
+      "name": "Stonewright's Steading",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1554,
+      "wikiText": "Stonewright's Steading is Eir Stegalkin's home in the Frost Basin. Outside her home are stone statues of renowned norn and Snaff.",
+      "waypointChatLink": "[&BI4DAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

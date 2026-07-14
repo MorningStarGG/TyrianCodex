@@ -1,0 +1,921 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1203,
+    "name": "Siren's Landing",
+    "continentId": 1,
+    "regionId": 3,
+    "regionName": "Ruins of Orr",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -39936,
+        -15360
+      ],
+      [
+        39936,
+        15360
+      ]
+    ],
+    "continentRect": [
+      [
+        47002,
+        41600
+      ],
+      [
+        50330,
+        42880
+      ]
+    ],
+    "sectorRect": [
+      [
+        47026.5,
+        41222.9
+      ],
+      [
+        50032.3,
+        42854.5
+      ]
+    ],
+    "labelCoord": [
+      48688,
+      42184
+    ],
+    "release": "lws3"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1203:waypoint:2543",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "waypoint",
+      "objectiveId": "2543",
+      "coord": [
+        49392,
+        42605
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Reclamation Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO8JAAA=]",
+      "waypointChatLink": "[&BO8JAAA=]",
+      "trailIndex": 2,
+      "wikiText": "The Risen Lowlands is an area in Siren's Landing. Various group intending to reclaim this region from Zhaitan's waning corruption have established camps in the ruins located near the shore."
+    },
+    {
+      "stepId": "1203:poi:2534",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2534",
+      "coord": [
+        49223,
+        42414
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Winfred",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 32,
+      "wikiText": "Camp Winfred is a point of interest in the Risen Lowlands. Wrangler Winfred has set up this hunting camp on the beach and can be found there unless he is out catching creatures.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2529",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2529",
+      "coord": [
+        48829,
+        41688
+      ],
+      "recommendedLevel": null,
+      "name": "Secret Garden",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 240,
+      "wikiText": "The Secret Garden is a point of interest within Lyssa's Reliquary. It is a small garden, currently maintained by sylvari botanists. Getting to it requires the use of the portals that appear randomly in the area, as well as gliding.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:heart:386",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "heart",
+      "objectiveId": "386",
+      "coord": [
+        48594,
+        41854
+      ],
+      "recommendedLevel": 80,
+      "name": "Reclaim Lyssa's reliquary.",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48673,
+          42072
+        ],
+        [
+          48898,
+          41972
+        ],
+        [
+          48928,
+          41665
+        ],
+        [
+          48885,
+          41632
+        ],
+        [
+          48796,
+          41622
+        ],
+        [
+          48671,
+          41639
+        ],
+        [
+          48507,
+          41600
+        ],
+        [
+          48244,
+          41678
+        ],
+        [
+          48268,
+          41793
+        ],
+        [
+          48170,
+          41853
+        ],
+        [
+          48172,
+          42136
+        ],
+        [
+          48302,
+          42173
+        ],
+        [
+          48514,
+          42159
+        ],
+        [
+          48673,
+          42072
+        ]
+      ],
+      "trailIndex": 264,
+      "wikiText": "Destroy horrid illusions, use ley-line magic to reclaim corrupted pools, and channel ley-line energy into Lyssa's reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:vista:2526",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "vista",
+      "objectiveId": "2526",
+      "coord": [
+        48983,
+        41843
+      ],
+      "recommendedLevel": null,
+      "name": "The Arm of Abaddon",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 316,
+      "wikiText": "The Arm of Abaddon is a spire of rock, shells and shipwrecks towering out of the surrounding sea.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2530",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2530",
+      "coord": [
+        49642,
+        41978
+      ],
+      "recommendedLevel": null,
+      "name": "The Arm of Abaddon",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 329,
+      "wikiText": "The Arm of Abaddon is a spire of rock, shells and shipwrecks towering out of the surrounding sea.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2544",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2544",
+      "coord": [
+        49965,
+        42355
+      ],
+      "recommendedLevel": null,
+      "name": "The Buoyant Bough",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 340,
+      "wikiText": "The Buoyant Bough is a point of interest in the Bloated Beach.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2525",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2525",
+      "coord": [
+        49903,
+        42614
+      ],
+      "recommendedLevel": null,
+      "name": "Wreck of the Yesteryear",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 344,
+      "wikiText": "The Wreck of the Yesteryear is a point of interest found within the Bloated Beach. A ship, The Yesteryear, has been dashed upon the rocks and split in two.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:vista:2548",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "vista",
+      "objectiveId": "2548",
+      "coord": [
+        49390,
+        42721
+      ],
+      "recommendedLevel": null,
+      "name": "Ruined Panorama",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 431,
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2533",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2533",
+      "coord": [
+        49258,
+        42710
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Reclamation",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 442,
+      "wikiText": "Camp Reclamation is a point of interest in the Risen Lowlands. The group intent on cleansing this land from Zhaitan's waning corruption has established this camp as their headquarters.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2540",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2540",
+      "coord": [
+        48467,
+        42433
+      ],
+      "recommendedLevel": null,
+      "name": "Watchman's Roost",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 568,
+      "wikiText": "The Watchman's Roost is a point of interest within the Merciless Shore. This ruined tower stands on the edge of Melandru's Reliquary, looking down onto the murky shore below.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:vista:2524",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "vista",
+      "objectiveId": "2524",
+      "coord": [
+        48238,
+        42588
+      ],
+      "recommendedLevel": null,
+      "name": "Mosaic Bower",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 573,
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2545",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2545",
+      "coord": [
+        48309,
+        42772
+      ],
+      "recommendedLevel": null,
+      "name": "Thoroughfare Ruins",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 586,
+      "wikiText": "The Thoroughfare Ruins are a point of interest in Melandru's Reliquary. It consists of a small series of buildings on the outskirts of the reliquary which are swarming with Risen.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2541",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2541",
+      "coord": [
+        48579,
+        42661
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Greenhouse",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 613,
+      "wikiText": "The Ancient Greenhouse is a point of interest in Melandru's Reliquary. This now ruined domed structure houses the central section of Melandru's reliquary in the Siren's Landing.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:heart:384",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "heart",
+      "objectiveId": "384",
+      "coord": [
+        48656,
+        42554
+      ],
+      "recommendedLevel": 80,
+      "name": "Reclaim Melandru's reliquary.",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49002,
+          42554
+        ],
+        [
+          48678,
+          42482
+        ],
+        [
+          48516,
+          42461
+        ],
+        [
+          48412,
+          42478
+        ],
+        [
+          47839,
+          42504
+        ],
+        [
+          48027,
+          42742
+        ],
+        [
+          48274,
+          42855
+        ],
+        [
+          48496,
+          42876
+        ],
+        [
+          48608,
+          42847
+        ],
+        [
+          48699,
+          42793
+        ],
+        [
+          48802,
+          42838
+        ],
+        [
+          48959,
+          42733
+        ],
+        [
+          49002,
+          42554
+        ]
+      ],
+      "trailIndex": 627,
+      "wikiText": "Kill undead, use ley-line magic to reclaim their corpses, and channel ley-line energy into Melandru's reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2539",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2539",
+      "coord": [
+        48264,
+        42074
+      ],
+      "recommendedLevel": null,
+      "name": "Forgotten Plaza",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 722,
+      "wikiText": "The Forgotten Plaza is a point of interest within Lyssa's Reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2531",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2531",
+      "coord": [
+        47996,
+        42094
+      ],
+      "recommendedLevel": null,
+      "name": "Hidden Reliquary",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 754,
+      "wikiText": "The Hidden Reliquary is a point of interest within Abaddon's Reliquary. It serves as the location of the daily reward for cleansing the five other gods' reliquaries in Siren's Landing.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2528",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2528",
+      "coord": [
+        47883,
+        42565
+      ],
+      "recommendedLevel": null,
+      "name": "Tears of Orr",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 779,
+      "wikiText": "The Tears of Orr is a point of interest in Grenth's Reliquary. This tall waterfall veils one of the eastern entrances to the reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:heart:382",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "heart",
+      "objectiveId": "382",
+      "coord": [
+        47772,
+        42679
+      ],
+      "recommendedLevel": 80,
+      "name": "Reclaim Grenth's reliquary.",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          47863,
+          42464
+        ],
+        [
+          47799,
+          42443
+        ],
+        [
+          47762,
+          42455
+        ],
+        [
+          47541,
+          42352
+        ],
+        [
+          47369,
+          42765
+        ],
+        [
+          47679,
+          42925
+        ],
+        [
+          47850,
+          42820
+        ],
+        [
+          47915,
+          42844
+        ],
+        [
+          48068,
+          42794
+        ],
+        [
+          47863,
+          42464
+        ]
+      ],
+      "trailIndex": 812,
+      "wikiText": "Kill unchained wraiths, use ley-line magic to reclaim their corpses, and channel magic to Grenth's reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2537",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2537",
+      "coord": [
+        47829,
+        42357
+      ],
+      "recommendedLevel": null,
+      "name": "Hiffa's Camp",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 873,
+      "wikiText": "Hiffa's Camp is a point of interest in Abaddon's Reliquary. Explorer Hiffa has chosen this place to establish her base as she conducts her studies in Dwayna's Reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2535",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2535",
+      "coord": [
+        47614,
+        42083
+      ],
+      "recommendedLevel": null,
+      "name": "Overgrown Gazebo",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 949,
+      "wikiText": "The Overgrown Gazebo is a point of interest in Abaddon's Reliquary. It overlooks the Hidden Reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2532",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2532",
+      "coord": [
+        47876,
+        41736
+      ],
+      "recommendedLevel": null,
+      "name": "Balthazar's Vein",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1016,
+      "wikiText": "Balthazar's Vein is a point of interest found in Balthazar's Reliquary. This lava-filled tunnel links the eastern entrance of the reliquary with the ruins themselves.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:heart:385",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "heart",
+      "objectiveId": "385",
+      "coord": [
+        47547,
+        41689
+      ],
+      "recommendedLevel": 80,
+      "name": "Reclaim Balthazar's reliquary.",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          47539,
+          41892
+        ],
+        [
+          47667,
+          41856
+        ],
+        [
+          47844,
+          41822
+        ],
+        [
+          47992,
+          41811
+        ],
+        [
+          48190,
+          41856
+        ],
+        [
+          48290,
+          41802
+        ],
+        [
+          48274,
+          41720
+        ],
+        [
+          48114,
+          41644
+        ],
+        [
+          47945,
+          41624
+        ],
+        [
+          47773,
+          41638
+        ],
+        [
+          47693,
+          41626
+        ],
+        [
+          47534,
+          41628
+        ],
+        [
+          47386,
+          41624
+        ],
+        [
+          47262,
+          41624
+        ],
+        [
+          47124,
+          41651
+        ],
+        [
+          46962,
+          41734
+        ],
+        [
+          46936,
+          41854
+        ],
+        [
+          47060,
+          41946
+        ],
+        [
+          47100,
+          42028
+        ],
+        [
+          47273,
+          42058
+        ],
+        [
+          47354,
+          42059
+        ],
+        [
+          47464,
+          41978
+        ],
+        [
+          47539,
+          41892
+        ]
+      ],
+      "trailIndex": 1058,
+      "wikiText": "Kill enemies, knock them into Balthazar's lava, and channel ley-line magic into Balthazar's reliquary.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2542",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2542",
+      "coord": [
+        47342,
+        41823
+      ],
+      "recommendedLevel": null,
+      "name": "Balthazar's Heart",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1089,
+      "wikiText": "Balthazar's Heart is a point of interest found in Balthazar's Reliquary. This central section is crawling with Balthazar's Mercenaries as well as some of his priests.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:poi:2536",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "poi",
+      "objectiveId": "2536",
+      "coord": [
+        47196,
+        42359
+      ],
+      "recommendedLevel": null,
+      "name": "Wyvern's Den",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1155,
+      "wikiText": "The Wyvern's Den is a point of interest found within Dwayna's Reliquary. This cliff is occasionally inhabited by a vicious Unchained Wyvern.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:heart:383",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "heart",
+      "objectiveId": "383",
+      "coord": [
+        47359,
+        42320
+      ],
+      "recommendedLevel": 80,
+      "name": "Reclaim Dwayna's reliquary.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          47493,
+          42471
+        ],
+        [
+          47533,
+          42345
+        ],
+        [
+          47505,
+          42192
+        ],
+        [
+          47412,
+          42027
+        ],
+        [
+          47346,
+          42072
+        ],
+        [
+          47255,
+          42080
+        ],
+        [
+          47121,
+          42027
+        ],
+        [
+          47037,
+          42144
+        ],
+        [
+          47027,
+          42464
+        ],
+        [
+          47003,
+          42913
+        ],
+        [
+          47248,
+          42919
+        ],
+        [
+          47319,
+          42864
+        ],
+        [
+          47493,
+          42471
+        ]
+      ],
+      "trailIndex": 1158,
+      "wikiText": "Kill creatures, channel ley-line energy into shrines of Dwayna, and use artifacts of Dwayna, and use artifacts of Dwayna to clean the pollution.",
+      "waypointChatLink": "[&BO8JAAA=]"
+    },
+    {
+      "stepId": "1203:vista:2527",
+      "mapId": 1203,
+      "zoneName": "Siren's Landing",
+      "type": "vista",
+      "objectiveId": "2527",
+      "coord": [
+        47484,
+        42305
+      ],
+      "recommendedLevel": null,
+      "name": "Updraft Alley",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1166,
+      "waypointChatLink": "[&BO8JAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

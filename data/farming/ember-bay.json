@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1175,
+  "slug": "ember-bay",
+  "name": "Ember Bay",
+  "regionName": "Ring of Fire",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Seaweed",
+      "category": "seafood",
+      "material": "seaweed",
+      "source": "lady"
+    },
+    {
+      "name": "Petrified Wood",
+      "category": "wood",
+      "material": "petrified_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -465.2,
+      "y": 30.7,
+      "z": -844.1,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -757.6,
+      "y": 4.6,
+      "z": -845.7,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -865.1,
+      "y": 18.6,
+      "z": -421.3,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -279.1,
+      "y": -41.5,
+      "z": -917.1,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -285.9,
+      "y": -30.5,
+      "z": -793.3,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -149.8,
+      "y": -16.7,
+      "z": -825.5,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -93.5,
+      "y": -37.8,
+      "z": -822.7,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -94.8,
+      "y": -43.4,
+      "z": -758.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 779.6,
+      "y": -13.4,
+      "z": -310.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -77.9,
+      "y": -73.5,
+      "z": -924.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed",
+      "chatLink": "[&BKYLAAA=]"
+    },
+    {
+      "x": -85.6,
+      "y": -72.2,
+      "z": -920.7,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -93.0,
+      "y": -74.8,
+      "z": -914.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -100.0,
+      "y": -72.8,
+      "z": -908.1,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -205.6,
+      "y": 20.2,
+      "z": -573.1,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -231.2,
+      "y": 14.2,
+      "z": -610.7,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -173.7,
+      "y": 14.9,
+      "z": -617.4,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 135.1,
+      "y": 19.0,
+      "z": -338.2,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 169.8,
+      "y": 17.3,
+      "z": -475.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 238.5,
+      "y": 11.9,
+      "z": -496.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 142.1,
+      "y": 45.7,
+      "z": -238.9,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 375.1,
+      "y": 24.8,
+      "z": -221.9,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 403.8,
+      "y": 17.3,
+      "z": -351.2,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 369.4,
+      "y": 8.1,
+      "z": -514.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 346.1,
+      "y": 7.2,
+      "z": -616.2,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 565.2,
+      "y": 2.5,
+      "z": -654.4,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 479.5,
+      "y": 11.5,
+      "z": -783.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 332.5,
+      "y": 0.9,
+      "z": -1051.4,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 418.0,
+      "y": 11.5,
+      "z": -461.0,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 518.8,
+      "y": 8.1,
+      "z": -371.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 693.7,
+      "y": 1.8,
+      "z": -369.1,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 846.6,
+      "y": 1.5,
+      "z": -121.4,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 684.5,
+      "y": 2.3,
+      "z": -150.6,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 630.7,
+      "y": 6.9,
+      "z": -240.7,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 496.6,
+      "y": 14.6,
+      "z": -223.8,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 570.6,
+      "y": 38.4,
+      "z": -142.9,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 623.3,
+      "y": 12.2,
+      "z": -30.1,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 522.1,
+      "y": 44.3,
+      "z": -4.1,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 252.1,
+      "y": 78.7,
+      "z": -33.0,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 209.4,
+      "y": 60.9,
+      "z": 88.4,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 187.6,
+      "y": 78.5,
+      "z": 171.8,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 109.6,
+      "y": 83.6,
+      "z": 162.8,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 132.1,
+      "y": 61.6,
+      "z": 97.9,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 47.1,
+      "y": 73.7,
+      "z": 114.6,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -62.9,
+      "y": 67.3,
+      "z": -8.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": 21.1,
+      "y": 58.5,
+      "z": -85.3,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -75.1,
+      "y": 27.9,
+      "z": -249.1,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -7.4,
+      "y": 2.2,
+      "z": -321.1,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -514.6,
+      "y": 46.8,
+      "z": -322.9,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -717.3,
+      "y": 13.5,
+      "z": -377.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -746.1,
+      "y": 22.9,
+      "z": -344.3,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -847.8,
+      "y": 20.8,
+      "z": -127.5,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -913.0,
+      "y": 2.2,
+      "z": -34.8,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    },
+    {
+      "x": -809.6,
+      "y": 33.0,
+      "z": 107.9,
+      "material": "petrified_wood",
+      "category": "wood",
+      "icon": "petrified_wood"
+    }
+  ]
+}

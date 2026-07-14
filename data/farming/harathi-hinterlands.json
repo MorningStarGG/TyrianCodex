@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 1,
+  "mapId": 17,
+  "slug": "harathi-hinterlands",
+  "name": "Harathi Hinterlands",
+  "regionName": "Kryta",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Gold Ore",
+      "category": "ore",
+      "material": "gold",
+      "source": "lady"
+    },
+    {
+      "name": "Iron Ore",
+      "category": "ore",
+      "material": "iron",
+      "source": "tw"
+    },
+    {
+      "name": "Head of Cabbage",
+      "category": "plant",
+      "material": "cabbage",
+      "source": "tw"
+    },
+    {
+      "name": "Seasoned Wood Log",
+      "category": "wood",
+      "material": "seasoned_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -901.3,
+      "y": 125.7,
+      "z": -128.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKwAAAA=]"
+    },
+    {
+      "x": 352.5,
+      "y": 52.5,
+      "z": -232.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BLAAAAA=]"
+    },
+    {
+      "x": 171.8,
+      "y": 63.9,
+      "z": 518.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 175.5,
+      "y": 63.8,
+      "z": 522.1,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 176.7,
+      "y": 63.9,
+      "z": 514.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 76.8,
+      "y": 71.8,
+      "z": 572.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BLAAAAA=]"
+    },
+    {
+      "x": 326.8,
+      "y": 127.4,
+      "z": 817.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BLAAAAA=]"
+    },
+    {
+      "x": 376.4,
+      "y": 64.4,
+      "z": 355.1,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BLEAAAA=] (Champ) OR [&BK0AAAA=]"
+    },
+    {
+      "x": 411.6,
+      "y": 0.1,
+      "z": 257.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BK0AAAA=]"
+    },
+    {
+      "x": 716.5,
+      "y": 72.7,
+      "z": -54.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKkAAAA=]"
+    },
+    {
+      "x": 819.3,
+      "y": 94.0,
+      "z": -128.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKoAAAA=]"
+    },
+    {
+      "x": -757.3,
+      "y": 77.1,
+      "z": -230.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Jackal"
+    },
+    {
+      "x": 71.2,
+      "y": -44.5,
+      "z": -625.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BI0BAAA=]"
+    },
+    {
+      "x": 948.5,
+      "y": 184.5,
+      "z": 591.4,
+      "material": "gold",
+      "category": "ore",
+      "icon": "gold",
+      "chatLink": "[&BOYAAAA=]"
+    },
+    {
+      "x": 950.0,
+      "y": 185.8,
+      "z": 591.3,
+      "material": "gold",
+      "category": "ore",
+      "icon": "gold"
+    },
+    {
+      "x": -869.9,
+      "y": 131.8,
+      "z": -140.6,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": -698.6,
+      "y": 0.4,
+      "z": -136.0,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -701.7,
+      "y": 0.3,
+      "z": -140.7,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -706.9,
+      "y": 0.2,
+      "z": -143.1,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -713.2,
+      "y": 0.3,
+      "z": -141.8,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -713.2,
+      "y": 0.3,
+      "z": -135.3,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -710.0,
+      "y": 0.8,
+      "z": -129.6,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -705.3,
+      "y": 0.5,
+      "z": -127.9,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -700.5,
+      "y": 0.7,
+      "z": -125.6,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -452.0,
+      "y": 52.4,
+      "z": -414.4,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -484.2,
+      "y": 53.5,
+      "z": -376.9,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -454.3,
+      "y": 50.9,
+      "z": -22.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -432.9,
+      "y": 37.6,
+      "z": -86.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -384.8,
+      "y": 36.7,
+      "z": -96.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -392.5,
+      "y": 34.6,
+      "z": -110.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -180.3,
+      "y": 54.0,
+      "z": -138.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -626.2,
+      "y": 26.6,
+      "z": -39.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -222.9,
+      "y": 41.6,
+      "z": -191.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -198.7,
+      "y": 42.6,
+      "z": -212.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -469.2,
+      "y": 37.4,
+      "z": -105.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -445.4,
+      "y": 37.3,
+      "z": -105.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -391.2,
+      "y": 30.7,
+      "z": -150.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -204.3,
+      "y": 48.7,
+      "z": -150.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -349.4,
+      "y": 39.5,
+      "z": -88.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -331.1,
+      "y": 36.4,
+      "z": -95.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -264.7,
+      "y": 32.2,
+      "z": -167.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -548.9,
+      "y": 37.2,
+      "z": -214.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -499.2,
+      "y": 37.3,
+      "z": -226.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -625.7,
+      "y": 23.7,
+      "z": -64.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -322.3,
+      "y": 31.8,
+      "z": -177.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -522.0,
+      "y": 38.7,
+      "z": -61.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -512.6,
+      "y": 39.0,
+      "z": -66.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -512.2,
+      "y": 39.5,
+      "z": -59.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -493.6,
+      "y": 41.0,
+      "z": -150.9,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -549.0,
+      "y": 36.9,
+      "z": -213.0,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -497.3,
+      "y": 37.3,
+      "z": -226.1,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -322.1,
+      "y": 31.9,
+      "z": -178.8,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -331.4,
+      "y": 36.5,
+      "z": -95.0,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -385.0,
+      "y": 64.1,
+      "z": -525.6,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    },
+    {
+      "x": -171.3,
+      "y": 32.4,
+      "z": -429.3,
+      "material": "soft_wood",
+      "category": "wood",
+      "icon": "soft_wood"
+    }
+  ]
+}

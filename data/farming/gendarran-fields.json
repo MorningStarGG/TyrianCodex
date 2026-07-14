@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "mapId": 24,
+  "slug": "gendarran-fields",
+  "name": "Gendarran Fields",
+  "regionName": "Kryta",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
+      "name": "Iron Ore",
+      "category": "ore",
+      "material": "iron",
+      "source": "tw"
+    },
+    {
+      "name": "Silver Ore",
+      "category": "ore",
+      "material": "silver",
+      "source": "tw"
+    },
+    {
+      "name": "Spinach",
+      "category": "plant",
+      "material": "spinach",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -568.9,
+      "y": 48.3,
+      "z": 394.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BJsDAAA=]"
+    },
+    {
+      "x": -512.0,
+      "y": 0.2,
+      "z": -509.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BM0DAAA=]"
+    },
+    {
+      "x": 452.7,
+      "y": 0.4,
+      "z": 354.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BJIBAAA=]"
+    },
+    {
+      "x": 785.4,
+      "y": 61.7,
+      "z": 425.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BOkAAAA=]"
+    },
+    {
+      "x": 885.1,
+      "y": 65.1,
+      "z": -432.1,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": 887.1,
+      "y": 65.1,
+      "z": -433.6,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": 1167.7,
+      "y": 78.2,
+      "z": -502.8,
+      "material": "silver",
+      "category": "ore",
+      "icon": "silver"
+    },
+    {
+      "x": 1165.3,
+      "y": 78.0,
+      "z": -501.4,
+      "material": "silver",
+      "category": "ore",
+      "icon": "silver"
+    },
+    {
+      "x": -45.9,
+      "y": 38.7,
+      "z": 560.3,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -44.2,
+      "y": 40.3,
+      "z": 571.1,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -48.3,
+      "y": 39.9,
+      "z": 571.2,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -57.3,
+      "y": 38.9,
+      "z": 568.0,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -39.9,
+      "y": 40.0,
+      "z": 585.9,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -41.1,
+      "y": 42.0,
+      "z": 598.6,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -44.4,
+      "y": 42.8,
+      "z": 606.0,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -70.6,
+      "y": 38.8,
+      "z": 576.8,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": -52.4,
+      "y": 38.8,
+      "z": 564.8,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    }
+  ]
+}

@@ -1,0 +1,2135 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 24,
+    "name": "Gendarran Fields",
+    "continentId": 1,
+    "regionId": 4,
+    "regionName": "Kryta",
+    "floor": 1,
+    "minLevel": 25,
+    "maxLevel": 35,
+    "mapRect": [
+      [
+        -49152,
+        -24576
+      ],
+      [
+        52224,
+        24576
+      ]
+    ],
+    "continentRect": [
+      [
+        46208,
+        28672
+      ],
+      [
+        50432,
+        30720
+      ]
+    ],
+    "sectorRect": [
+      [
+        46086.6,
+        28355.1
+      ],
+      [
+        50545,
+        30850.2
+      ]
+    ],
+    "labelCoord": [
+      48320,
+      29568
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "24:waypoint:227",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "227",
+      "coord": [
+        48668,
+        30456
+      ],
+      "recommendedLevel": null,
+      "name": "Cornucopian Fields Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOMAAAA=]",
+      "waypointChatLink": "[&BOMAAAA=]",
+      "trailIndex": 13,
+      "wikiText": "Cornucopian Fields is a community of farmers north of Lion's Arch in Gendarran Fields."
+    },
+    {
+      "stepId": "24:poi:1809",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "1809",
+      "coord": [
+        48071,
+        30686
+      ],
+      "recommendedLevel": null,
+      "name": "Second Aetherblade Site",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 96,
+      "wikiText": "The Second Aetherblade Site is a point of interest within the Broadhollow Bluffs near the jumping puzzle, Not So Secret.",
+      "waypointChatLink": "[&BOEAAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:225",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "225",
+      "coord": [
+        48027,
+        30390
+      ],
+      "recommendedLevel": null,
+      "name": "Broadhollow Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOEAAAA=]",
+      "waypointChatLink": "[&BOEAAAA=]",
+      "trailIndex": 131,
+      "wikiText": "Broadhollow Bluffs is cliffside road ridden with ettins who often attacks travelers walking between the Lionbridge Expanse and Cornucopian Fields."
+    },
+    {
+      "stepId": "24:heart:236",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "236",
+      "coord": [
+        48549,
+        30135
+      ],
+      "recommendedLevel": 30,
+      "name": "Help Milton Book and local farmers with their pirate and pest problems.",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48365,
+          30010
+        ],
+        [
+          48601,
+          29863
+        ],
+        [
+          48898,
+          29829
+        ],
+        [
+          49031,
+          29928
+        ],
+        [
+          49000,
+          30154
+        ],
+        [
+          49011,
+          30302
+        ],
+        [
+          48947,
+          30412
+        ],
+        [
+          48850,
+          30452
+        ],
+        [
+          48286,
+          30307
+        ],
+        [
+          48253,
+          30182
+        ],
+        [
+          48365,
+          30010
+        ]
+      ],
+      "trailIndex": 205,
+      "wikiText": "Motivate lazy farmers, destroy wasp nests, feed livestock, exterminate grubs, repair pipe leaks, clear spider eggs, and protect farmers from pirate ambushes.",
+      "waypointChatLink": "[&BOMAAAA=]"
+    },
+    {
+      "stepId": "24:vista:1514",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1514",
+      "coord": [
+        48634,
+        29977
+      ],
+      "recommendedLevel": null,
+      "name": "Cornucopian Fields",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 258,
+      "wikiText": "Jump on to the water pipe where it meets the windmill on the west side, run down it to the Vista and then jump on the beam the right to get to the roof.",
+      "waypointChatLink": "[&BJEBAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:401",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "401",
+      "coord": [
+        48876,
+        29957
+      ],
+      "recommendedLevel": null,
+      "name": "Applenook Hamlet Waypoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJEBAAA=]",
+      "waypointChatLink": "[&BJEBAAA=]",
+      "trailIndex": 287,
+      "wikiText": "Cornucopian Fields is a community of farmers north of Lion's Arch in Gendarran Fields."
+    },
+    {
+      "stepId": "24:waypoint:404",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "404",
+      "coord": [
+        49352,
+        29826
+      ],
+      "recommendedLevel": null,
+      "name": "Almuten Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJQBAAA=]",
+      "waypointChatLink": "[&BJQBAAA=]",
+      "trailIndex": 350,
+      "wikiText": "The Almuten Estates is an area in eastern Gendarran Fields. Its grounds, along with Almuten Mansion, have seen better days, as pirate incursions have made their way along the shores."
+    },
+    {
+      "stepId": "24:heart:245",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "245",
+      "coord": [
+        49388,
+        29920
+      ],
+      "recommendedLevel": 29,
+      "name": "Maintain security around Almuten Mansion.",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49502,
+          29758
+        ],
+        [
+          49529,
+          29803
+        ],
+        [
+          49553,
+          29858
+        ],
+        [
+          49510,
+          29923
+        ],
+        [
+          49447,
+          29964
+        ],
+        [
+          49372,
+          30026
+        ],
+        [
+          49298,
+          30013
+        ],
+        [
+          49246,
+          29988
+        ],
+        [
+          49210,
+          29926
+        ],
+        [
+          49274,
+          29835
+        ],
+        [
+          49318,
+          29768
+        ],
+        [
+          49333,
+          29752
+        ],
+        [
+          49395,
+          29719
+        ],
+        [
+          49447,
+          29706
+        ],
+        [
+          49482,
+          29727
+        ],
+        [
+          49502,
+          29758
+        ]
+      ],
+      "trailIndex": 372,
+      "wikiText": "Investigate suspicious bushes for pirates, disarm traps around the mansion, and interrogate service staff to find the disguised pirates.",
+      "waypointChatLink": "[&BJQBAAA=]"
+    },
+    {
+      "stepId": "24:poi:126",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "126",
+      "coord": [
+        49381,
+        29894
+      ],
+      "recommendedLevel": null,
+      "name": "Almuten Mansion",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 379,
+      "wikiText": "The Almuten Mansion is the main building of the estate that is owned by a former Lionguard officer and ex-member of the Captain's Council Master Wrelk found within the Almuten Estates.",
+      "waypointChatLink": "[&BJQBAAA=]"
+    },
+    {
+      "stepId": "24:vista:1515",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1515",
+      "coord": [
+        49344,
+        29919
+      ],
+      "recommendedLevel": null,
+      "name": "Almuten Mansion",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 407,
+      "wikiText": "At the top of the Almuten Mansion, accessible by stairs.",
+      "waypointChatLink": "[&BJQBAAA=]"
+    },
+    {
+      "stepId": "24:poi:122",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "122",
+      "coord": [
+        49391,
+        30214
+      ],
+      "recommendedLevel": null,
+      "name": "Stonefish Beach",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 427,
+      "wikiText": "Stonefish Beach is a tranquil island found within Lake Bounty, topped with a steep grass covered hill. It serves as the home to a large colony of drakes of which can be found along its shoreline.",
+      "waypointChatLink": "[&BJQBAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:237",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "237",
+      "coord": [
+        50046,
+        29938
+      ],
+      "recommendedLevel": null,
+      "name": "Junction Haven Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO0AAAA=]",
+      "waypointChatLink": "[&BO0AAAA=]",
+      "trailIndex": 501,
+      "wikiText": "The Shiverspur Front is an area in Gendarran Fields where the dredge have taken the tunnels at Molenheide and frequently attack Junction Haven to steal supplies."
+    },
+    {
+      "stepId": "24:heart:242",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "242",
+      "coord": [
+        50041,
+        30031
+      ],
+      "recommendedLevel": 28,
+      "name": "Assist the Lionguard and protect Junction Haven.",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50006,
+          30267
+        ],
+        [
+          49891,
+          30235
+        ],
+        [
+          49915,
+          30070
+        ],
+        [
+          49945,
+          29984
+        ],
+        [
+          50075,
+          29959
+        ],
+        [
+          50125,
+          30048
+        ],
+        [
+          50186,
+          30147
+        ],
+        [
+          50320,
+          30112
+        ],
+        [
+          50390,
+          30284
+        ],
+        [
+          50173,
+          30338
+        ],
+        [
+          50075,
+          30313
+        ],
+        [
+          50006,
+          30267
+        ]
+      ],
+      "trailIndex": 511,
+      "wikiText": "Recover food sacks stolen by the ettins and trolls from the Haven. Use frost traps to buy time to escape.",
+      "waypointChatLink": "[&BO0AAAA=]"
+    },
+    {
+      "stepId": "24:vista:1516",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1516",
+      "coord": [
+        49694,
+        30300
+      ],
+      "recommendedLevel": null,
+      "name": "Stonefish Beach",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 566,
+      "wikiText": "Travel through the Caverns to the end.",
+      "waypointChatLink": "[&BJMBAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:403",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "403",
+      "coord": [
+        49982,
+        30510
+      ],
+      "recommendedLevel": null,
+      "name": "Icegate Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJMBAAA=]",
+      "waypointChatLink": "[&BJMBAAA=]",
+      "trailIndex": 612,
+      "wikiText": "The Icegate Gorge is located in the southeast corner of Gendarran Fields and is mainly populated with ettins and ice elementals."
+    },
+    {
+      "stepId": "24:hero:0-60",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "hero",
+      "objectiveId": "0-60",
+      "coord": [
+        50307,
+        30255
+      ],
+      "recommendedLevel": null,
+      "name": "Softly Glowing Light",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 673,
+      "wikiText": "A Softly Glowing Light floats in a cave in the eastern mountains of Gendarran Fields. Its refreshing qualities have attracted Ettins that must be dealt with before reaching its power.",
+      "waypointChatLink": "[&BO0AAAA=]"
+    },
+    {
+      "stepId": "24:poi:1045",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "1045",
+      "coord": [
+        50284,
+        30224
+      ],
+      "recommendedLevel": null,
+      "name": "Janusian Caves",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 680,
+      "wikiText": "The Janusian Caves are a point of interest in Icegate Gorge, within Gendarran Fields. They are a roadside cavern that is home to a tribe of ettins led by a chieftain.",
+      "waypointChatLink": "[&BO0AAAA=]"
+    },
+    {
+      "stepId": "24:heart:241",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "241",
+      "coord": [
+        50096,
+        29643
+      ],
+      "recommendedLevel": 27,
+      "name": "Help Lionguard Rhyn drive the dredge away from Junction Haven.",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49821,
+          29435
+        ],
+        [
+          50177,
+          29403
+        ],
+        [
+          50155,
+          29603
+        ],
+        [
+          50123,
+          29721
+        ],
+        [
+          50076,
+          29804
+        ],
+        [
+          50064,
+          29957
+        ],
+        [
+          49887,
+          30011
+        ],
+        [
+          49784,
+          29878
+        ],
+        [
+          49730,
+          29674
+        ],
+        [
+          49821,
+          29435
+        ]
+      ],
+      "trailIndex": 765,
+      "wikiText": "Use dredge mining supplies to investigate burrows, dig at ore sites, and drive disoriented dredge underground.",
+      "waypointChatLink": "[&BO0AAAA=]"
+    },
+    {
+      "stepId": "24:poi:125",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "125",
+      "coord": [
+        50000,
+        29599
+      ],
+      "recommendedLevel": null,
+      "name": "Molenheide",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 780,
+      "wikiText": "Molenheide is a mine complex that is populated by dredge who are constantly stealing supplies from the nearby haven within the Shiverspur Front.",
+      "waypointChatLink": "[&BO0AAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:238",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "238",
+      "coord": [
+        50143,
+        29190
+      ],
+      "recommendedLevel": null,
+      "name": "Winter Haven Waypoint",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO4AAAA=]",
+      "waypointChatLink": "[&BO4AAAA=]",
+      "trailIndex": 839,
+      "wikiText": "Bitterfrost Peaks is a mountainous area that makes up the northeastern section of Gendarran Fields. Winter Haven, a Lionguard outpost, can be found here."
+    },
+    {
+      "stepId": "24:poi:956",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "956",
+      "coord": [
+        49834,
+        29062
+      ],
+      "recommendedLevel": null,
+      "name": "Vollym's Battle Pit",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 887,
+      "wikiText": "Vollym's Battle Pit is a point of interest within the Snowblind Peaks. In this gully the norn Vollym the Fierce has built an combat arena for any travelers who want to prove their worth.",
+      "waypointChatLink": "[&BMwDAAA=]"
+    },
+    {
+      "stepId": "24:heart:243",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "243",
+      "coord": [
+        49858,
+        29188
+      ],
+      "recommendedLevel": 26,
+      "name": "Help Johan with his training duties at Vollym's battle pit.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49969,
+          28932
+        ],
+        [
+          49931,
+          28903
+        ],
+        [
+          49850,
+          28906
+        ],
+        [
+          49793,
+          28895
+        ],
+        [
+          49734,
+          28908
+        ],
+        [
+          49691,
+          29093
+        ],
+        [
+          49650,
+          29202
+        ],
+        [
+          49749,
+          29301
+        ],
+        [
+          49835,
+          29320
+        ],
+        [
+          49870,
+          29315
+        ],
+        [
+          49913,
+          29285
+        ],
+        [
+          49968,
+          29220
+        ],
+        [
+          50040,
+          29153
+        ],
+        [
+          49969,
+          28932
+        ]
+      ],
+      "trailIndex": 905,
+      "wikiText": "Train in the individual or group arenas against the beasts of the Battle Pit.",
+      "waypointChatLink": "[&BMwDAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:972",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "972",
+      "coord": [
+        49698,
+        29287
+      ],
+      "recommendedLevel": null,
+      "name": "Snowblind Waypoint",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMwDAAA=]",
+      "waypointChatLink": "[&BMwDAAA=]",
+      "trailIndex": 929,
+      "wikiText": "Snowblind Peaks is an area in Gendarran Fields that houses Vollym the Fierce's fight pit."
+    },
+    {
+      "stepId": "24:waypoint:402",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "402",
+      "coord": [
+        49507,
+        28946
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil Keep Waypoint",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJIBAAA=]",
+      "waypointChatLink": "[&BJIBAAA=]",
+      "trailIndex": 1060,
+      "wikiText": "The Vigil Keep is the main base of operations for the Vigil, and is located north of the Vigilant Hills within Gendarran Fields. The Vigil Keep acts as a barrier to the north and the fort protects the river running south into Lion's Arch."
+    },
+    {
+      "stepId": "24:poi:124",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "124",
+      "coord": [
+        49417,
+        28868
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil HQ",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1076,
+      "wikiText": "The Vigil HQ is a point of interest inside the Vigil Keep. Inside this inner sanctum of this mighty keep is where the Vigil leaders make important decisions for the order.",
+      "waypointChatLink": "[&BJIBAAA=]"
+    },
+    {
+      "stepId": "24:hero:0-153",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "hero",
+      "objectiveId": "0-153",
+      "coord": [
+        49305,
+        28957
+      ],
+      "recommendedLevel": null,
+      "name": "Warmaster Yulia",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1096,
+      "wikiText": "Warmaster Yulia has been following your legend. Test your strength against her to complete the Hero challenge.",
+      "waypointChatLink": "[&BJIBAAA=]"
+    },
+    {
+      "stepId": "24:vista:1518",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1518",
+      "coord": [
+        49050,
+        29060
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil Keep",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1128,
+      "wikiText": "Approach from the east up the hill.",
+      "waypointChatLink": "[&BJIBAAA=]"
+    },
+    {
+      "stepId": "24:poi:123",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "123",
+      "coord": [
+        48989,
+        29170
+      ],
+      "recommendedLevel": null,
+      "name": "Wiley's Cove",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1142,
+      "wikiText": "Wiley's Cove is a shoreline cave that serves as the base of operations for Captain Wiley and his pirate crew within the Newbeach Bluffs.",
+      "waypointChatLink": "[&BM0DAAA=]"
+    },
+    {
+      "stepId": "24:heart:244",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "244",
+      "coord": [
+        48800,
+        29079
+      ],
+      "recommendedLevel": 32,
+      "name": "Help Mei Shadowwalker reclaim the Wiley pirates' stolen treasure.",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48584,
+          28953
+        ],
+        [
+          48624,
+          29082
+        ],
+        [
+          49037,
+          29613
+        ],
+        [
+          49175,
+          29640
+        ],
+        [
+          49264,
+          29562
+        ],
+        [
+          49218,
+          29411
+        ],
+        [
+          48989,
+          29054
+        ],
+        [
+          48884,
+          28910
+        ],
+        [
+          48710,
+          28902
+        ],
+        [
+          48648,
+          28910
+        ],
+        [
+          48584,
+          28953
+        ]
+      ],
+      "trailIndex": 1211,
+      "wikiText": "Steal sections of the Wiley plans, dig in loose sand for hidden treasure, and work with the Lionguard to recover larger stashes.",
+      "waypointChatLink": "[&BM0DAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:228",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "228",
+      "coord": [
+        48552,
+        28867
+      ],
+      "recommendedLevel": null,
+      "name": "Provern Shore Waypoint",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOQAAAA=]",
+      "waypointChatLink": "[&BOQAAAA=]",
+      "trailIndex": 1250,
+      "wikiText": "Provern Shore is an area in Gendarran Fields where a camp full of Wiley's Buccaneers, currently being spyed on an Ash Legion agent, can be found."
+    },
+    {
+      "stepId": "24:waypoint:973",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "973",
+      "coord": [
+        48632,
+        29278
+      ],
+      "recommendedLevel": null,
+      "name": "Brigantine Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM0DAAA=]",
+      "waypointChatLink": "[&BM0DAAA=]",
+      "trailIndex": 1269,
+      "wikiText": "The Brigantine Isles is a small, pirate-infested group of islands north of Lion's Arch in Lake Gendarr."
+    },
+    {
+      "stepId": "24:poi:957",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "957",
+      "coord": [
+        48726,
+        29400
+      ],
+      "recommendedLevel": null,
+      "name": "Jackdaw's Reef",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1283,
+      "wikiText": "Jackdaw's Reef is a point of interest within the Brigantine Isles. These tidal pools are home to many crabs and are under constant observation and subject to many pirate patrols.",
+      "waypointChatLink": "[&BM0DAAA=]"
+    },
+    {
+      "stepId": "24:vista:1517",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1517",
+      "coord": [
+        48447,
+        29560
+      ],
+      "recommendedLevel": null,
+      "name": "Brigantine",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1322,
+      "wikiText": "Run straight up the green hill south from the waypoint (north of the vista). The Vista is at the end.",
+      "waypointChatLink": "[&BJABAAA=]"
+    },
+    {
+      "stepId": "24:heart:234",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "234",
+      "coord": [
+        48504,
+        29572
+      ],
+      "recommendedLevel": 31,
+      "name": "Get back at the pirates for Joukje.",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48406,
+          29576
+        ],
+        [
+          48700,
+          29644
+        ],
+        [
+          48811,
+          29645
+        ],
+        [
+          48925,
+          29499
+        ],
+        [
+          48848,
+          29384
+        ],
+        [
+          48630,
+          29180
+        ],
+        [
+          48537,
+          29177
+        ],
+        [
+          48466,
+          29298
+        ],
+        [
+          48406,
+          29576
+        ]
+      ],
+      "trailIndex": 1332,
+      "wikiText": "Help Joukje get back at her old pirate comrades by killing them, freeing their captives, and breaking their cannons.",
+      "waypointChatLink": "[&BM0DAAA=]"
+    },
+    {
+      "stepId": "24:poi:958",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "958",
+      "coord": [
+        48562,
+        29522
+      ],
+      "recommendedLevel": null,
+      "name": "Slade's Bay",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1343,
+      "wikiText": "Slade's Bay is a sheltered cove that serves as a base to the local pirates led by Captain Slade Killcount within the Brigantine Isles. The seaward entrances are guarded by siege weaponry and lookouts watch the horizon for signs of threats.",
+      "waypointChatLink": "[&BM0DAAA=]"
+    },
+    {
+      "stepId": "24:hero:0-156",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "hero",
+      "objectiveId": "0-156",
+      "coord": [
+        48683,
+        29643
+      ],
+      "recommendedLevel": null,
+      "name": "Klakka the Brain",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1365,
+      "wikiText": "Klakka the Brain is on a half-sunken ship in the southern Brigantine Isles with Jaxx the Ram and Sunshine. She's either looking for a fight or some fun-show her your moves and complete her Hero challenge.",
+      "waypointChatLink": "[&BM0DAAA=]"
+    },
+    {
+      "stepId": "24:poi:1024",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "1024",
+      "coord": [
+        48263,
+        29626
+      ],
+      "recommendedLevel": null,
+      "name": "Mellaggan Shrine",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1369,
+      "wikiText": "The Mellaggan Shrine is a ruined sunken temple that sits on top of a small rise on the lake bed within Lake Gendarr. A large statue of Melandru remains that the quaggan worship as Mellaggan.",
+      "waypointChatLink": "[&BJABAAA=]"
+    },
+    {
+      "stepId": "24:hero:0-155",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "hero",
+      "objectiveId": "0-155",
+      "coord": [
+        48170,
+        29750
+      ],
+      "recommendedLevel": null,
+      "name": "Willoo",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1371,
+      "wikiText": "Willoo is a quaggan in Lake Gendarr trying to rage. Helping Willoo do so and defeating him will award a hero point.",
+      "waypointChatLink": "[&BOIAAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:226",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "226",
+      "coord": [
+        48089,
+        29884
+      ],
+      "recommendedLevel": null,
+      "name": "Oogooth Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOIAAAA=]",
+      "waypointChatLink": "[&BOIAAAA=]",
+      "trailIndex": 1372,
+      "wikiText": "Lake Gendarr is the central lake area of Gendarran Fields encompassing the Brigantine Isles."
+    },
+    {
+      "stepId": "24:poi:1528",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "1528",
+      "coord": [
+        47875,
+        30106
+      ],
+      "recommendedLevel": null,
+      "name": "Quaggankeep Channel",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1378,
+      "wikiText": "Quaggankeep Channel is an underwater channel located within the Broadhollow Bluffs that connects Lake Gendarr in the northeast and the Lionbridge Expanse in the southwest.",
+      "waypointChatLink": "[&BOIAAAA=]"
+    },
+    {
+      "stepId": "24:poi:946",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "946",
+      "coord": [
+        47545,
+        30266
+      ],
+      "recommendedLevel": null,
+      "name": "Bad Omen Beach",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1388,
+      "wikiText": "Bad Omen Beach is a small beach within the Lionbridge Expanse that overlooks the headwaters of the Witherflank River. A small band of friendly pirates can be found here.",
+      "waypointChatLink": "[&BJsDAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:923",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "923",
+      "coord": [
+        47325,
+        30117
+      ],
+      "recommendedLevel": null,
+      "name": "Lionbridge Waypoint",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJsDAAA=]",
+      "waypointChatLink": "[&BJsDAAA=]",
+      "trailIndex": 1421,
+      "wikiText": "The Lionbridge Expanse is a small area in the southwest portion of Gendarran Fields."
+    },
+    {
+      "stepId": "24:hero:0-55",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "hero",
+      "objectiveId": "0-55",
+      "coord": [
+        47137,
+        29954
+      ],
+      "recommendedLevel": null,
+      "name": "Oakheart Seed",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1446,
+      "wikiText": "A brightly-colored Oakheart Seed has taken root on the hills of the Talajian Piedmont. Choosing to undertake its challenge will summon forth a Veteran Ancient Oakheart and two Oakheart Saplings.",
+      "waypointChatLink": "[&BJsDAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:1026",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "1026",
+      "coord": [
+        47359,
+        29501
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodfields Waypoint",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAIEAAA=]",
+      "waypointChatLink": "[&BAIEAAA=]",
+      "trailIndex": 1498,
+      "wikiText": "The Bloodfields is an area in Gendarran Fields. It is the battlefield between Nebo Terrace and the Blood Hill Camps."
+    },
+    {
+      "stepId": "24:heart:239",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "239",
+      "coord": [
+        47644,
+        29732
+      ],
+      "recommendedLevel": 29,
+      "name": "Support the troops stationed at Ascalon Settlement.",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          47616,
+          29449
+        ],
+        [
+          47830,
+          29438
+        ],
+        [
+          47899,
+          29500
+        ],
+        [
+          48028,
+          29673
+        ],
+        [
+          48010,
+          29885
+        ],
+        [
+          47874,
+          30127
+        ],
+        [
+          47592,
+          30130
+        ],
+        [
+          47476,
+          29971
+        ],
+        [
+          47447,
+          29890
+        ],
+        [
+          47485,
+          29632
+        ],
+        [
+          47393,
+          29618
+        ],
+        [
+          47399,
+          29570
+        ],
+        [
+          47498,
+          29565
+        ],
+        [
+          47616,
+          29449
+        ]
+      ],
+      "trailIndex": 1544,
+      "wikiText": "Train with the troops, honor the fallen, and find ways to raise morale.",
+      "waypointChatLink": "[&BI8BAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:399",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "399",
+      "coord": [
+        47695,
+        29692
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalon Settlement Waypoint",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI8BAAA=]",
+      "waypointChatLink": "[&BI8BAAA=]",
+      "trailIndex": 1551,
+      "wikiText": "The Ascalon Settlement is a walled township within Gendarran Fields situated between two hills. It is populated by descendants of humans who fled from Ascalon in 1072 AE after the charr took over."
+    },
+    {
+      "stepId": "24:vista:1512",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1512",
+      "coord": [
+        47656,
+        29578
+      ],
+      "recommendedLevel": null,
+      "name": "Ascalon Settlement",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1604,
+      "wikiText": "Follow the path northeast of the Settlement. The Vista is on a roof at the end of the path.",
+      "waypointChatLink": "[&BI8BAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:400",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "400",
+      "coord": [
+        48225,
+        29350
+      ],
+      "recommendedLevel": null,
+      "name": "Northfields Waypoint",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJABAAA=]",
+      "waypointChatLink": "[&BJABAAA=]",
+      "trailIndex": 1673,
+      "wikiText": "The Northfields is a breadth of land stretching to the north of the Ascalon Settlement inhabited by centaurs."
+    },
+    {
+      "stepId": "24:poi:121",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "121",
+      "coord": [
+        48009,
+        29066
+      ],
+      "recommendedLevel": null,
+      "name": "The Beastpool",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1715,
+      "wikiText": "The Beastpool is a shallow pool that sits in an enclosed, caged area surrounded by a centaur encampment within the Northfields. It holds a Modniir war beast that is guarded by Harathi and is fed human flesh.",
+      "waypointChatLink": "[&BJABAAA=]"
+    },
+    {
+      "stepId": "24:vista:1513",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1513",
+      "coord": [
+        47913,
+        28792
+      ],
+      "recommendedLevel": null,
+      "name": "Northfields",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1763,
+      "wikiText": "Climb the hill to the east of the Vista.",
+      "waypointChatLink": "[&BJABAAA=]"
+    },
+    {
+      "stepId": "24:poi:120",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "120",
+      "coord": [
+        47403,
+        28893
+      ],
+      "recommendedLevel": null,
+      "name": "Amaranth Grotto",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1822,
+      "wikiText": "Amaranth Grotto is a caged area at the top of a hill located in the center of the centaur's Blood Hill Camps. Located inside this caged area is where the Harathi keep their pets while they keep their slaves.",
+      "waypointChatLink": "[&BI0BAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:397",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "397",
+      "coord": [
+        47156,
+        28762
+      ],
+      "recommendedLevel": null,
+      "name": "Blood Hill Waypoint",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI0BAAA=]",
+      "waypointChatLink": "[&BI0BAAA=]",
+      "trailIndex": 1864,
+      "wikiText": "The Blood Hill Camps is a group of centaur camps that serve as the primary base of operations for the Harathi in Gendarran Fields. Humans captured during raids on the Nebo Terrace and the Ascalon Settlement are held there as slaves."
+    },
+    {
+      "stepId": "24:hero:0-154",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "hero",
+      "objectiveId": "0-154",
+      "coord": [
+        46435,
+        28737
+      ],
+      "recommendedLevel": null,
+      "name": "Hezran Outcrops",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1962,
+      "wikiText": "The Hezran Outcrops is an area in Gendarran Fields consisting of a cave and a small field that connects to the Guardian's Pass and the Blood Hill Camps. The field is home to wargs and the cave is full of oozes and trolls.",
+      "waypointChatLink": "[&BOAAAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:224",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "224",
+      "coord": [
+        46364,
+        29131
+      ],
+      "recommendedLevel": null,
+      "name": "Stoneguard Gate Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOAAAAA=]",
+      "waypointChatLink": "[&BOAAAAA=]",
+      "trailIndex": 2030,
+      "wikiText": "Guardian's Pass is a small stretch of land located to the northwest of Nebo Terrace that runs northwest along the Blood Hill Camps and Hezran Outcrops."
+    },
+    {
+      "stepId": "24:heart:232",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "232",
+      "coord": [
+        46910,
+        29178
+      ],
+      "recommendedLevel": 28,
+      "name": "Help Bronson disrupt centaur troops.",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46851,
+          29216
+        ],
+        [
+          46722,
+          29065
+        ],
+        [
+          46774,
+          28885
+        ],
+        [
+          46811,
+          28727
+        ],
+        [
+          47717,
+          28706
+        ],
+        [
+          47722,
+          28830
+        ],
+        [
+          47792,
+          28954
+        ],
+        [
+          47832,
+          28934
+        ],
+        [
+          47898,
+          28955
+        ],
+        [
+          47968,
+          28940
+        ],
+        [
+          48067,
+          29028
+        ],
+        [
+          48107,
+          29098
+        ],
+        [
+          48107,
+          29201
+        ],
+        [
+          48012,
+          29262
+        ],
+        [
+          47909,
+          29314
+        ],
+        [
+          47807,
+          29286
+        ],
+        [
+          47793,
+          29233
+        ],
+        [
+          47759,
+          29156
+        ],
+        [
+          47665,
+          29146
+        ],
+        [
+          47666,
+          29167
+        ],
+        [
+          47610,
+          29206
+        ],
+        [
+          47523,
+          29220
+        ],
+        [
+          47491,
+          29202
+        ],
+        [
+          47450,
+          29223
+        ],
+        [
+          47435,
+          29276
+        ],
+        [
+          47385,
+          29292
+        ],
+        [
+          47338,
+          29320
+        ],
+        [
+          47264,
+          29294
+        ],
+        [
+          47215,
+          29298
+        ],
+        [
+          47177,
+          29285
+        ],
+        [
+          47172,
+          29260
+        ],
+        [
+          47203,
+          29212
+        ],
+        [
+          47185,
+          29152
+        ],
+        [
+          47151,
+          29125
+        ],
+        [
+          47116,
+          29136
+        ],
+        [
+          47074,
+          29172
+        ],
+        [
+          47053,
+          29185
+        ],
+        [
+          47044,
+          29225
+        ],
+        [
+          47022,
+          29232
+        ],
+        [
+          46967,
+          29245
+        ],
+        [
+          46897,
+          29251
+        ],
+        [
+          46870,
+          29237
+        ],
+        [
+          46851,
+          29216
+        ]
+      ],
+      "trailIndex": 2105,
+      "wikiText": "Sabotage the centaur camp, kill centaurs, and free the human slaves",
+      "waypointChatLink": "[&BI4BAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:398",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "398",
+      "coord": [
+        47005,
+        29559
+      ],
+      "recommendedLevel": null,
+      "name": "Nebo Terrace Waypoint",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI4BAAA=]",
+      "waypointChatLink": "[&BI4BAAA=]",
+      "trailIndex": 2158,
+      "wikiText": "Nebo Terrace is a Krytan town within Gendarran Fields on the front lines of centaur territory."
+    },
+    {
+      "stepId": "24:vista:1519",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "vista",
+      "objectiveId": "1519",
+      "coord": [
+        47028,
+        29713
+      ],
+      "recommendedLevel": null,
+      "name": "Nebo Terrace",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2182,
+      "wikiText": "Above the entry gate, accessible by stairs and a jump.",
+      "waypointChatLink": "[&BI4BAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:396",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "396",
+      "coord": [
+        46734,
+        29728
+      ],
+      "recommendedLevel": null,
+      "name": "Talajian Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIwBAAA=]",
+      "waypointChatLink": "[&BIwBAAA=]",
+      "trailIndex": 2216,
+      "wikiText": "The Talajian Piedmont lies in the south west corner of Gendarran Fields, just north of The Lawen Ponds, west of the Lionbridge Expanse, and south of Nebo Terrace. This lush plain is heavily populated by treants."
+    },
+    {
+      "stepId": "24:heart:231",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "231",
+      "coord": [
+        46778,
+        29544
+      ],
+      "recommendedLevel": 27,
+      "name": "Rescue fallen Seraph in the Bloodfields.",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46858,
+          29731
+        ],
+        [
+          46740,
+          29585
+        ],
+        [
+          46667,
+          29438
+        ],
+        [
+          46716,
+          29308
+        ],
+        [
+          46851,
+          29225
+        ],
+        [
+          46908,
+          29254
+        ],
+        [
+          47026,
+          29240
+        ],
+        [
+          47094,
+          29185
+        ],
+        [
+          47162,
+          29186
+        ],
+        [
+          47173,
+          29269
+        ],
+        [
+          47200,
+          29298
+        ],
+        [
+          47328,
+          29341
+        ],
+        [
+          47374,
+          29389
+        ],
+        [
+          47340,
+          29490
+        ],
+        [
+          47227,
+          29575
+        ],
+        [
+          47145,
+          29725
+        ],
+        [
+          47037,
+          29779
+        ],
+        [
+          46958,
+          29784
+        ],
+        [
+          46858,
+          29731
+        ]
+      ],
+      "trailIndex": 2236,
+      "wikiText": "Acquire a medical kit from the field hospitals adjacent to Nebo Terrace. Treat injured Seraph in the Bloodfields. Guard them as they return to the hospital",
+      "waypointChatLink": "[&BIwBAAA=]"
+    },
+    {
+      "stepId": "24:poi:955",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "955",
+      "coord": [
+        46354,
+        29529
+      ],
+      "recommendedLevel": null,
+      "name": "Ambush Camp",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2283,
+      "wikiText": "Ambush Camp, located in the northern section of the caverns that makes up the Stonebore Vaults, is the headquarters of the Tamini centaurs in Gendarran Fields.",
+      "waypointChatLink": "[&BOAAAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:395",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "395",
+      "coord": [
+        46694,
+        30206
+      ],
+      "recommendedLevel": null,
+      "name": "First Haven Waypoint",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIsBAAA=]",
+      "waypointChatLink": "[&BIsBAAA=]",
+      "trailIndex": 2386,
+      "wikiText": "Traveler's Dale is an area in Gendarran Fields. The miners of First Haven have tried to make do between the swamps and walls of stone, threatened as they are by undead from the south and the rash of Cave Spiders to the west."
+    },
+    {
+      "stepId": "24:heart:229",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "heart",
+      "objectiveId": "229",
+      "coord": [
+        46680,
+        30234
+      ],
+      "recommendedLevel": 26,
+      "name": "Help First Haven's residents deal with the undead.",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46495,
+          30688
+        ],
+        [
+          46461,
+          30384
+        ],
+        [
+          46481,
+          30234
+        ],
+        [
+          46667,
+          30075
+        ],
+        [
+          47087,
+          30060
+        ],
+        [
+          47345,
+          30166
+        ],
+        [
+          47445,
+          30421
+        ],
+        [
+          47403,
+          30661
+        ],
+        [
+          46495,
+          30688
+        ]
+      ],
+      "trailIndex": 2390,
+      "wikiText": "Help First Haven by killing undead, dealing with the aftermath of their attacks, and keeping the road safe.",
+      "waypointChatLink": "[&BIsBAAA=]"
+    },
+    {
+      "stepId": "24:waypoint:223",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "waypoint",
+      "objectiveId": "223",
+      "coord": [
+        46450,
+        30417
+      ],
+      "recommendedLevel": null,
+      "name": "Traveler's Dale Waypoint",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BN8AAAA=]",
+      "waypointChatLink": "[&BN8AAAA=]",
+      "trailIndex": 2419,
+      "wikiText": "Traveler's Dale is an area in Gendarran Fields. The miners of First Haven have tried to make do between the swamps and walls of stone, threatened as they are by undead from the south and the rash of Cave Spiders to the west."
+    },
+    {
+      "stepId": "24:poi:119",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "poi",
+      "objectiveId": "119",
+      "coord": [
+        46298,
+        30379
+      ],
+      "recommendedLevel": null,
+      "name": "Melandru's Cenote",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2494,
+      "wikiText": "Melandru's Cenote is a point of interest within the Stonebore Vaults in Gendarran Fields. This small grotto lies at the end of an abandoned mining tunnel. It is full of lush vegetation and has two springs.",
+      "waypointChatLink": "[&BN8AAAA=]"
+    },
+    {
+      "stepId": "24:hero:0-206",
+      "mapId": 24,
+      "zoneName": "Gendarran Fields",
+      "type": "hero",
+      "objectiveId": "0-206",
+      "coord": [
+        46334,
+        30371
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Cave Spring",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Ancient Cave Spring is a communing hero challenge hidden within Melandru's Cenote in Stonebore Vaults, and is guarded by a Veteran Cave Spider.",
+      "waypointChatLink": "[&BN8AAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

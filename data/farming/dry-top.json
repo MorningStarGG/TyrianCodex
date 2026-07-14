@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "mapId": 988,
+  "slug": "dry-top",
+  "name": "Dry Top",
+  "regionName": "Maguuma Wastes",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mixed",
+      "category": "misc",
+      "material": "mixed",
+      "source": "tw"
+    },
+    {
+      "name": "Quartz Crystal",
+      "category": "ore",
+      "material": "quartz",
+      "source": "tw"
+    },
+    {
+      "name": "Mixed",
+      "category": "plant",
+      "material": "plant_mixed",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -523.2,
+      "y": 9.6,
+      "z": -25.9,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -523.4,
+      "y": 9.2,
+      "z": -17.0,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -518.8,
+      "y": 9.1,
+      "z": -17.0,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -513.5,
+      "y": 9.4,
+      "z": -26.0,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -511.0,
+      "y": 9.4,
+      "z": -17.6,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -511.1,
+      "y": 9.4,
+      "z": -26.0,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -511.4,
+      "y": 8.4,
+      "z": -8.8,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -511.3,
+      "y": 7.9,
+      "z": -1.4,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -517.7,
+      "y": 8.5,
+      "z": -1.6,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -522.8,
+      "y": 8.5,
+      "z": -1.4,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -523.0,
+      "y": 8.9,
+      "z": -8.1,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -518.4,
+      "y": 8.9,
+      "z": -8.7,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -513.9,
+      "y": 8.7,
+      "z": -8.8,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -516.6,
+      "y": 9.3,
+      "z": -17.4,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -202.6,
+      "y": 80.8,
+      "z": -566.3,
+      "material": "quartz",
+      "category": "ore",
+      "icon": "quartz"
+    },
+    {
+      "x": -518.8,
+      "y": 9.4,
+      "z": -25.7,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -518.7,
+      "y": 9.2,
+      "z": -17.4,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -523.2,
+      "y": 9.6,
+      "z": -25.6,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -523.3,
+      "y": 9.2,
+      "z": -17.2,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -523.0,
+      "y": 8.9,
+      "z": -7.9,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -522.8,
+      "y": 8.5,
+      "z": -1.8,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -522.8,
+      "y": 9.6,
+      "z": -25.9,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -523.3,
+      "y": 9.1,
+      "z": -13.2,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -523.2,
+      "y": 8.5,
+      "z": -1.4,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -509.1,
+      "y": 9.5,
+      "z": -25.4,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -508.9,
+      "y": 8.4,
+      "z": -13.5,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -509.1,
+      "y": 7.9,
+      "z": -2.0,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": 33.0,
+      "y": 27.6,
+      "z": -503.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -425.3,
+      "y": 69.9,
+      "z": -185.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    }
+  ]
+}

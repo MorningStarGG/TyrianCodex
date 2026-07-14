@@ -1,0 +1,1208 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1310,
+    "name": "Thunderhead Peaks",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -39936,
+        -43008
+      ],
+      [
+        39936,
+        46080
+      ]
+    ],
+    "continentRect": [
+      [
+        55820,
+        34936
+      ],
+      [
+        59148,
+        38648
+      ]
+    ],
+    "sectorRect": [
+      [
+        55836.2,
+        34902.9
+      ],
+      [
+        59139,
+        38625.5
+      ]
+    ],
+    "labelCoord": [
+      57820,
+      36936
+    ],
+    "release": "lws4"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1310:waypoint:3001",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "waypoint",
+      "objectiveId": "3001",
+      "coord": [
+        56678,
+        35196
+      ],
+      "recommendedLevel": null,
+      "name": "Observation Deck Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLkLAAA=]",
+      "waypointChatLink": "[&BLkLAAA=]",
+      "trailIndex": 0,
+      "wikiText": "The Forge is an area within Thunderhead Peaks. In the past, Glint and Frodak Steelstar used it to forge the first Dragonsblood Spear."
+    },
+    {
+      "stepId": "1310:poi:3006",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "3006",
+      "coord": [
+        56586,
+        35146
+      ],
+      "recommendedLevel": null,
+      "name": "Heart of the Forge",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 13,
+      "wikiText": "The Heart of the Forge is a large device found in the middle of The Forge. It was once used to create the first Dragonsblood Spear and can now be used further to craft other Dragonsblood-style weaponry.",
+      "waypointChatLink": "[&BLkLAAA=]"
+    },
+    {
+      "stepId": "1310:vista:3000",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "vista",
+      "objectiveId": "3000",
+      "coord": [
+        56620,
+        35004
+      ],
+      "recommendedLevel": null,
+      "name": "The Forge",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 23,
+      "wikiText": "Walk to the west of the vista. Either walk up or use a Springer or Skyscale to get up the platform. Then walk to the vista.",
+      "waypointChatLink": "[&BLkLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:3012",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "3012",
+      "coord": [
+        57077,
+        35128
+      ],
+      "recommendedLevel": null,
+      "name": "Barracks",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 74,
+      "wikiText": "The Barracks is the living areas for the Pact and allied forces found in The Grotto. They are preparing for the assault against Kralkatorrik. A friendly tournament between Pact troops is being hosted here.",
+      "waypointChatLink": "[&BLkLAAA=]"
+    },
+    {
+      "stepId": "1310:heart:439",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "heart",
+      "objectiveId": "439",
+      "coord": [
+        57133,
+        35101
+      ],
+      "recommendedLevel": 80,
+      "name": "Ready your forces for the assault on Kralkatorrik.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56888,
+          35636
+        ],
+        [
+          56762,
+          34948
+        ],
+        [
+          57281,
+          34952
+        ],
+        [
+          57449,
+          35793
+        ],
+        [
+          56826,
+          35685
+        ],
+        [
+          56888,
+          35636
+        ]
+      ],
+      "trailIndex": 81,
+      "wikiText": "Help rally despondent troops, recover supplies, construct med kits, and make some bets on the tournament.",
+      "waypointChatLink": "[&BLkLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2993",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2993",
+      "coord": [
+        57451,
+        35115
+      ],
+      "recommendedLevel": null,
+      "name": "Deldrimor Cellars",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 124,
+      "wikiText": "The Deldrimor Cellars is a spacious room found within The Grotto area of Thunderhead Peaks. It is used to store supplies of the Pact and their allied forces.",
+      "waypointChatLink": "[&BLkLAAA=]"
+    },
+    {
+      "stepId": "1310:vista:2984",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "vista",
+      "objectiveId": "2984",
+      "coord": [
+        57588,
+        35309
+      ],
+      "recommendedLevel": null,
+      "name": "The Grotto",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 184,
+      "wikiText": "Walk to the Vista and use a Springer or a skyscale to get up to the vista.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2998",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2998",
+      "coord": [
+        57720,
+        35340
+      ],
+      "recommendedLevel": null,
+      "name": "Path of the Exalted",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 208,
+      "wikiText": "The Path of the Exalted is large stone corridor found within The Grotto leading to one-way portal linked to Glint's lair. This area has special music which is not heard elsewhere in the map.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2992",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2992",
+      "coord": [
+        57905,
+        35092
+      ],
+      "recommendedLevel": null,
+      "name": "Grand Lyceum",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 259,
+      "wikiText": "The Grand Lyceum is a room within The Grotto used by the Pact and their allied forces for combat training and friendly sparring.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2986",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2986",
+      "coord": [
+        58404,
+        35662
+      ],
+      "recommendedLevel": null,
+      "name": "Ironhammer Crossing",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 414,
+      "wikiText": "Ironhammer Crossing is an underground crossroads found within Thunderhead Keep. The road east leads deep into the Dwarven Catacombs. The road north leads towards the keep.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:3005",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "3005",
+      "coord": [
+        58970,
+        36010
+      ],
+      "recommendedLevel": null,
+      "name": "The Hammer's Hoard",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 531,
+      "wikiText": "The Hammer's Hoard is the treasury of King Jalis Ironhammer, the last known king of the Deldrimor dwarves, found within the Dwarven Catacombs. It contains many of his riches as well as his throne.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2978",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2978",
+      "coord": [
+        59036,
+        36147
+      ],
+      "recommendedLevel": null,
+      "name": "The Consul's Tomb",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 550,
+      "wikiText": "The Consul's Tomb is the final resting place of Consular Frodak Steelstar, which is found within the Dwarven Catacombs.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2976",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2976",
+      "coord": [
+        58893,
+        36157
+      ],
+      "recommendedLevel": null,
+      "name": "Brechnar's Gauntlet",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 726,
+      "wikiText": "Brechnar's Gauntlet is large series of rooms located in the upper levels of the Dwarven Catacombs, in Thunderhead Peaks.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:waypoint:3003",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "waypoint",
+      "objectiveId": "3003",
+      "coord": [
+        58328,
+        35778
+      ],
+      "recommendedLevel": null,
+      "name": "History's End Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLsLAAA=]",
+      "waypointChatLink": "[&BLsLAAA=]",
+      "trailIndex": 850,
+      "wikiText": "The Deldrimor Ruins is the remains of the old capital of the Deldrimor dwarves, the city portion of Thunderhead Keep."
+    },
+    {
+      "stepId": "1310:vista:3007",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "vista",
+      "objectiveId": "3007",
+      "coord": [
+        58721,
+        35184
+      ],
+      "recommendedLevel": null,
+      "name": "Thunderhead Keep",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1003,
+      "wikiText": "Walk to the vista. This is easier during the meta.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:3008",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "3008",
+      "coord": [
+        58610,
+        35428
+      ],
+      "recommendedLevel": null,
+      "name": "Stonefall",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1038,
+      "wikiText": "Stonefall is an ancient dwarf structure found in the middle of Thunderhead Keep's courtyard.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:heart:438",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "heart",
+      "objectiveId": "438",
+      "coord": [
+        58199,
+        35900
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the Priory with their excavations.",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57591,
+          36476
+        ],
+        [
+          57783,
+          36549
+        ],
+        [
+          57850,
+          36567
+        ],
+        [
+          57933,
+          36556
+        ],
+        [
+          58072,
+          36520
+        ],
+        [
+          58156,
+          36553
+        ],
+        [
+          58200,
+          36542
+        ],
+        [
+          58304,
+          36520
+        ],
+        [
+          58390,
+          36462
+        ],
+        [
+          58687,
+          36099
+        ],
+        [
+          58484,
+          35870
+        ],
+        [
+          58252,
+          35681
+        ],
+        [
+          57944,
+          35766
+        ],
+        [
+          57802,
+          35608
+        ],
+        [
+          57612,
+          35911
+        ],
+        [
+          57590,
+          36123
+        ],
+        [
+          57601,
+          36264
+        ],
+        [
+          57592,
+          36379
+        ],
+        [
+          57591,
+          36476
+        ]
+      ],
+      "trailIndex": 1176,
+      "wikiText": "Dig up and categorize artifacts, nudge skritt, and clear out ice wurms to help the Priory.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2977",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2977",
+      "coord": [
+        57850,
+        36069
+      ],
+      "recommendedLevel": null,
+      "name": "Deldrimor Garrison",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1206,
+      "wikiText": "The Deldrimor Garrison is an ancient and now ruined Deldrimor dwarves structure found in the Deldrimor Ruins.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:3004",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "3004",
+      "coord": [
+        58289,
+        36339
+      ],
+      "recommendedLevel": null,
+      "name": "Slag Pit",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1259,
+      "wikiText": "The Slag Pit is pit found in the Deldrimor Ruins. It was supposedly used as a dumping ground long ago, judging by the rusted pipes surrounding it. Now, it is inhabited by elementals formed by the refuse.",
+      "waypointChatLink": "[&BLsLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2990",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2990",
+      "coord": [
+        58198,
+        36596
+      ],
+      "recommendedLevel": null,
+      "name": "Stonebridge",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1284,
+      "wikiText": "The Stonebridge is one of two bridges crossing the deep gap separating the Deldrimor Ruins and Hundar Pike.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:vista:3011",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "vista",
+      "objectiveId": "3011",
+      "coord": [
+        57928,
+        36491
+      ],
+      "recommendedLevel": null,
+      "name": "Deldrimor Ruins",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1331,
+      "wikiText": "Walk to the vista from the waypoint",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2981",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2981",
+      "coord": [
+        57854,
+        36603
+      ],
+      "recommendedLevel": null,
+      "name": "Ironbridge",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1349,
+      "wikiText": "The Ironbridge is one of two bridges crossing the deep gap separating the Deldrimor Ruins and Hundar Pike.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2979",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2979",
+      "coord": [
+        57850,
+        36813
+      ],
+      "recommendedLevel": null,
+      "name": "Forgotten Falls",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1371,
+      "wikiText": "The Forgotten Falls is a point of interest located within Hundar Pike.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2994",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2994",
+      "coord": [
+        57285,
+        36668
+      ],
+      "recommendedLevel": null,
+      "name": "Sorrow's Cave",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1483,
+      "wikiText": "The Sorrow's Cave is an underground cave containing ancient ruins found within Hundar Pike.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2985",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2985",
+      "coord": [
+        56621,
+        36614
+      ],
+      "recommendedLevel": null,
+      "name": "The Weeping Sisters",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1568,
+      "wikiText": "The Weeping Sisters are a pair of frozen waterfalls within Hundar Pike.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:vista:2997",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "vista",
+      "objectiveId": "2997",
+      "coord": [
+        56883,
+        37060
+      ],
+      "recommendedLevel": null,
+      "name": "Hundar Pike",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1646,
+      "wikiText": "Walk to the vista. Use the Springer or the Skyscale to jump up plateaus until you reach the vista.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2999",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2999",
+      "coord": [
+        57322,
+        37251
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon's Claw",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1701,
+      "wikiText": "Fling fire in a claw-shaped spread at your foe. - In-game description",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2989",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2989",
+      "coord": [
+        57764,
+        37218
+      ],
+      "recommendedLevel": null,
+      "name": "Melody's Rest",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1832,
+      "wikiText": "Melody's Rest is an old gravesite found in Symphony's Haven that was used to bury both human Zephyrites and Forgotten alike when they were still active on Tyria.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:vista:2980",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "vista",
+      "objectiveId": "2980",
+      "coord": [
+        57903,
+        37292
+      ],
+      "recommendedLevel": null,
+      "name": "Symphony's Haven",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1848,
+      "wikiText": "Walk to the east of vista and jump up using Springer or a Skyscale.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:waypoint:3002",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "waypoint",
+      "objectiveId": "3002",
+      "coord": [
+        58150,
+        36960
+      ],
+      "recommendedLevel": null,
+      "name": "Moorage Waypoint",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLoLAAA=]",
+      "waypointChatLink": "[&BLoLAAA=]",
+      "trailIndex": 1897,
+      "wikiText": "Symphony's Haven is an area within Thunderhead Peaks. One of Sayida the Sly's airships was shot down to earth once she arrived and she was forced to land along with the rest of her crew and the escorted Zephyrites."
+    },
+    {
+      "stepId": "1310:heart:437",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "heart",
+      "objectiveId": "437",
+      "coord": [
+        58181,
+        37079
+      ],
+      "recommendedLevel": 80,
+      "name": "Rally the Pact soldiers, corsairs, and Zephyrites.",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          57971,
+          36945
+        ],
+        [
+          58056,
+          36929
+        ],
+        [
+          58144,
+          36895
+        ],
+        [
+          58311,
+          36867
+        ],
+        [
+          58441,
+          36931
+        ],
+        [
+          58553,
+          37010
+        ],
+        [
+          58671,
+          37153
+        ],
+        [
+          58666,
+          37314
+        ],
+        [
+          58602,
+          37469
+        ],
+        [
+          58462,
+          37663
+        ],
+        [
+          58300,
+          37693
+        ],
+        [
+          58274,
+          37677
+        ],
+        [
+          58110,
+          37769
+        ],
+        [
+          57949,
+          37892
+        ],
+        [
+          57796,
+          38037
+        ],
+        [
+          57462,
+          38016
+        ],
+        [
+          57296,
+          37892
+        ],
+        [
+          57370,
+          37612
+        ],
+        [
+          57436,
+          37529
+        ],
+        [
+          57535,
+          37502
+        ],
+        [
+          57650,
+          37487
+        ],
+        [
+          57724,
+          37478
+        ],
+        [
+          57744,
+          37388
+        ],
+        [
+          57732,
+          37324
+        ],
+        [
+          57710,
+          37250
+        ],
+        [
+          57698,
+          37207
+        ],
+        [
+          57735,
+          37136
+        ],
+        [
+          57776,
+          37074
+        ],
+        [
+          57864,
+          37067
+        ],
+        [
+          57920,
+          36998
+        ],
+        [
+          57971,
+          36945
+        ]
+      ],
+      "trailIndex": 1904,
+      "wikiText": "Help Zephyrites prepare for a supply run to the Forge by gathering supplies, breaking up arguments, and practicing the Forge ritual.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2987",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2987",
+      "coord": [
+        58485,
+        37149
+      ],
+      "recommendedLevel": null,
+      "name": "The Scorchrazor III",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1929,
+      "wikiText": "The Scorchrazor III was an airship under Sayida the Sly's command. It was shot down by Branded while on its way into Thunderhead Peaks. Its destruction forced the other airships and their crews to land and recuperate.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2988",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2988",
+      "coord": [
+        58079,
+        37316
+      ],
+      "recommendedLevel": null,
+      "name": "Corsair's Stand",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1981,
+      "wikiText": "Corsair's Stand is a makeshift camp set up by Sayida the Sly and her crew in Symphony's Haven after they were forced to land. They have set up a barricade to hold off the constant stream of Branded from the south.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2983",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2983",
+      "coord": [
+        56706,
+        37200
+      ],
+      "recommendedLevel": null,
+      "name": "Maiden's Veil",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2174,
+      "wikiText": "Maiden's Veil is an extremely tall frozen waterfall found in the Dredgeways.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:waypoint:2982",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "waypoint",
+      "objectiveId": "2982",
+      "coord": [
+        56733,
+        37408
+      ],
+      "recommendedLevel": null,
+      "name": "Revolution's Heart Waypoint",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKYLAAA=]",
+      "waypointChatLink": "[&BKYLAAA=]",
+      "trailIndex": 2185,
+      "wikiText": "The Dredgeways is an area within Thunderhead Peaks. Refiner's Joy, a dredge mining settlement, can be found here. Their operations in the nearby Ice Floe were shut down when Kralkatorrik unleashed the Dragonbrand over it."
+    },
+    {
+      "stepId": "1310:poi:2975",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2975",
+      "coord": [
+        56773,
+        37569
+      ],
+      "recommendedLevel": null,
+      "name": "Refiner's Joy",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2211,
+      "wikiText": "Refiner's Joy is a dredge oil drilling settlement found in the Dredgeways. It is facing hard times after a large number of its population as well as most of the machinery was Branded over by the Elder Dragon Kralkatorrik.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:heart:440",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "heart",
+      "objectiveId": "440",
+      "coord": [
+        56720,
+        37616
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the cold and hungry dredge.",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56482,
+          37826
+        ],
+        [
+          56874,
+          37942
+        ],
+        [
+          57040,
+          37826
+        ],
+        [
+          57078,
+          37659
+        ],
+        [
+          56888,
+          37370
+        ],
+        [
+          56788,
+          37247
+        ],
+        [
+          56633,
+          37276
+        ],
+        [
+          56468,
+          37467
+        ],
+        [
+          56482,
+          37826
+        ]
+      ],
+      "trailIndex": 2221,
+      "wikiText": "Destroy Branded dredge and Brand crystals, catch fish, and improve dredge morale.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:3010",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "3010",
+      "coord": [
+        56116,
+        38192
+      ],
+      "recommendedLevel": null,
+      "name": "Shattered Bay",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2322,
+      "wikiText": "The Shattered Bay is a body of water found in the Ice Floe, containing many icy glacier shards.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2996",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2996",
+      "coord": [
+        56028,
+        38492
+      ],
+      "recommendedLevel": null,
+      "name": "Labyrinthine Mountains",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2336,
+      "wikiText": "The Labyrinthine Mountains is a mountain range separating the Labyrinthine Cliffs from Thunderhead Peaks.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:vista:2995",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "vista",
+      "objectiveId": "2995",
+      "coord": [
+        56603,
+        38186
+      ],
+      "recommendedLevel": null,
+      "name": "Ice Floe",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2412,
+      "wikiText": "Walk to the Vista. Use a Springer or Skyscale to get up the platform.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:3009",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "3009",
+      "coord": [
+        57038,
+        38322
+      ],
+      "recommendedLevel": null,
+      "name": "Freedom's Catchment",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2465,
+      "wikiText": "Freedom's Catchment is basin located in the Ice Floe that was used by dredge to store harvested oil for future use.",
+      "waypointChatLink": "[&BKYLAAA=]"
+    },
+    {
+      "stepId": "1310:poi:2974",
+      "mapId": 1310,
+      "zoneName": "Thunderhead Peaks",
+      "type": "poi",
+      "objectiveId": "2974",
+      "coord": [
+        58105,
+        38257
+      ],
+      "recommendedLevel": null,
+      "name": "Silent Falls",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "The Silent Falls is a set of frozen waterfalls found in the Ice Floe.",
+      "waypointChatLink": "[&BLoLAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

@@ -1,0 +1,1289 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1165,
+  "slug": "bloodstone-fen",
+  "name": "Bloodstone Fen",
+  "regionName": "Heart of Maguuma",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Blood Ruby",
+      "category": "misc",
+      "material": "ruby",
+      "source": "lady"
+    },
+    {
+      "name": "Flax",
+      "category": "plant",
+      "material": "flax",
+      "source": "tw"
+    },
+    {
+      "name": "Maguuma Lily",
+      "category": "plant",
+      "material": "maguuma_lily",
+      "source": "lady"
+    },
+    {
+      "name": "Sawgill Mushroom",
+      "category": "plant",
+      "material": "sawgill_mushroom",
+      "source": "lady"
+    },
+    {
+      "name": "Mussels",
+      "category": "seafood",
+      "material": "mussels",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -226.7,
+      "y": 760.5,
+      "z": 84.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -222.5,
+      "y": 761.0,
+      "z": 89.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -204.1,
+      "y": 695.8,
+      "z": 130.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -230.5,
+      "y": 682.1,
+      "z": 75.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -18.6,
+      "y": 684.9,
+      "z": 127.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -2.9,
+      "y": 681.2,
+      "z": 130.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 61.0,
+      "y": 683.2,
+      "z": 106.6,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 107.9,
+      "y": 831.2,
+      "z": 52.7,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 229.4,
+      "y": 825.0,
+      "z": 142.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 236.0,
+      "y": 822.2,
+      "z": 132.7,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 254.7,
+      "y": 817.4,
+      "z": 100.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 199.7,
+      "y": 774.2,
+      "z": 123.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 148.2,
+      "y": 744.7,
+      "z": 0.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 83.5,
+      "y": 735.1,
+      "z": -37.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 83.3,
+      "y": 732.5,
+      "z": -48.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 63.0,
+      "y": 725.0,
+      "z": -86.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 88.3,
+      "y": 617.7,
+      "z": 15.6,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 80.6,
+      "y": 605.7,
+      "z": -5.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 61.9,
+      "y": 572.2,
+      "z": 107.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 176.1,
+      "y": 520.7,
+      "z": 131.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 233.1,
+      "y": 538.4,
+      "z": 85.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 109.0,
+      "y": 493.6,
+      "z": 46.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 126.6,
+      "y": 495.0,
+      "z": 106.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 98.5,
+      "y": 366.1,
+      "z": 123.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 192.9,
+      "y": 335.5,
+      "z": 82.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 181.3,
+      "y": 332.5,
+      "z": 87.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 93.2,
+      "y": 322.2,
+      "z": 121.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": 177.5,
+      "y": 257.4,
+      "z": 74.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -39.8,
+      "y": 148.9,
+      "z": 67.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -15.0,
+      "y": 140.6,
+      "z": 45.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -215.0,
+      "y": 99.0,
+      "z": 36.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -227.8,
+      "y": 111.6,
+      "z": 14.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -223.2,
+      "y": 92.1,
+      "z": -42.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -190.7,
+      "y": 684.3,
+      "z": 82.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 124.0,
+      "y": 507.7,
+      "z": -1.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 185.9,
+      "y": 520.8,
+      "z": 131.6,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Raptor"
+    },
+    {
+      "x": 213.8,
+      "y": 521.3,
+      "z": 113.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Springer"
+    },
+    {
+      "x": 116.0,
+      "y": 495.8,
+      "z": 41.6,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 139.3,
+      "y": 174.0,
+      "z": 79.6,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -20.4,
+      "y": 143.1,
+      "z": 44.7,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -2.8,
+      "y": 690.8,
+      "z": 109.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "mount": "Glider"
+    },
+    {
+      "x": -160.6,
+      "y": 511.7,
+      "z": 124.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby",
+      "chatLink": "[&BEEJAAA=]"
+    },
+    {
+      "x": -203.0,
+      "y": 697.6,
+      "z": 136.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -237.6,
+      "y": 679.3,
+      "z": 75.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -61.1,
+      "y": 669.5,
+      "z": 121.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 127.3,
+      "y": 689.4,
+      "z": 161.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 85.6,
+      "y": 690.1,
+      "z": 115.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 50.9,
+      "y": 780.7,
+      "z": 88.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -15.2,
+      "y": 537.7,
+      "z": 194.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 226.3,
+      "y": 820.0,
+      "z": 156.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 259.0,
+      "y": 819.5,
+      "z": 99.5,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 184.4,
+      "y": 783.1,
+      "z": -28.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 159.8,
+      "y": 750.0,
+      "z": 2.7,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 82.4,
+      "y": 738.7,
+      "z": -9.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 82.8,
+      "y": 723.9,
+      "z": -103.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 34.0,
+      "y": 697.9,
+      "z": 1.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 52.5,
+      "y": 614.4,
+      "z": 20.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 45.5,
+      "y": 616.0,
+      "z": 53.5,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 105.7,
+      "y": 621.6,
+      "z": 21.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 83.5,
+      "y": 606.8,
+      "z": -8.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 6.4,
+      "y": 564.2,
+      "z": 63.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 18.6,
+      "y": 552.1,
+      "z": 14.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 53.3,
+      "y": 553.9,
+      "z": -119.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -65.2,
+      "y": 533.8,
+      "z": -65.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -96.7,
+      "y": 531.5,
+      "z": 32.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -70.4,
+      "y": 529.4,
+      "z": 43.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -88.1,
+      "y": 536.8,
+      "z": 75.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -60.7,
+      "y": 528.0,
+      "z": 86.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -100.7,
+      "y": 522.4,
+      "z": 121.6,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -159.6,
+      "y": 511.8,
+      "z": 123.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 42.2,
+      "y": 517.1,
+      "z": 49.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 48.1,
+      "y": 562.7,
+      "z": 135.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 60.7,
+      "y": 550.1,
+      "z": 158.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 178.5,
+      "y": 518.6,
+      "z": 147.1,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 245.6,
+      "y": 535.6,
+      "z": 101.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 186.6,
+      "y": 490.1,
+      "z": 16.4,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 115.1,
+      "y": 494.1,
+      "z": 19.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 130.3,
+      "y": 494.9,
+      "z": 114.7,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 88.8,
+      "y": 369.7,
+      "z": 128.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 196.1,
+      "y": 336.7,
+      "z": 81.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 82.0,
+      "y": 326.6,
+      "z": 131.0,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 173.7,
+      "y": 177.3,
+      "z": 73.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 202.0,
+      "y": 175.7,
+      "z": 142.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 138.8,
+      "y": 177.0,
+      "z": 204.8,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -8.6,
+      "y": 142.0,
+      "z": 46.3,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -41.5,
+      "y": 152.2,
+      "z": 72.5,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -230.6,
+      "y": 112.3,
+      "z": 19.2,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -226.8,
+      "y": 95.7,
+      "z": -44.7,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": -194.0,
+      "y": 111.4,
+      "z": -23.9,
+      "material": "ruby",
+      "category": "misc",
+      "icon": "ruby"
+    },
+    {
+      "x": 196.0,
+      "y": 800.3,
+      "z": -4.2,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 204.4,
+      "y": 800.1,
+      "z": -7.3,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 208.9,
+      "y": 801.2,
+      "z": -2.6,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 164.8,
+      "y": 770.3,
+      "z": 12.8,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 165.3,
+      "y": 769.4,
+      "z": 6.6,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 162.2,
+      "y": 768.6,
+      "z": 6.9,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -224.5,
+      "y": 760.7,
+      "z": 87.1,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -155.2,
+      "y": 767.2,
+      "z": 143.2,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily",
+      "mount": "Glider"
+    },
+    {
+      "x": -245.0,
+      "y": 692.7,
+      "z": 118.8,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily",
+      "mount": "Springer"
+    },
+    {
+      "x": -84.1,
+      "y": 695.5,
+      "z": -84.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily",
+      "mount": "Springer"
+    },
+    {
+      "x": -361.8,
+      "y": 541.5,
+      "z": -109.6,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily",
+      "chatLink": "[&BEsJAAA=]"
+    },
+    {
+      "x": -213.2,
+      "y": 515.7,
+      "z": 75.4,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily",
+      "mount": "Springer"
+    },
+    {
+      "x": -264.9,
+      "y": 515.5,
+      "z": -11.1,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily",
+      "mount": "Springer"
+    },
+    {
+      "x": -257.9,
+      "y": 549.1,
+      "z": -19.0,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily",
+      "chatLink": "[&BNUJAAA=]"
+    },
+    {
+      "x": -231.4,
+      "y": 695.6,
+      "z": 153.4,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -243.5,
+      "y": 692.7,
+      "z": 118.6,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -266.5,
+      "y": 704.5,
+      "z": 133.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -40.1,
+      "y": 704.5,
+      "z": -89.9,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -51.1,
+      "y": 692.5,
+      "z": -85.7,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -107.7,
+      "y": 693.7,
+      "z": -70.2,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -106.1,
+      "y": 685.7,
+      "z": -39.3,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 122.5,
+      "y": 741.8,
+      "z": 145.3,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 175.5,
+      "y": 762.3,
+      "z": -22.0,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 245.9,
+      "y": 704.1,
+      "z": -95.0,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 184.0,
+      "y": 692.1,
+      "z": -139.2,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 158.2,
+      "y": 695.4,
+      "z": -107.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 71.0,
+      "y": 653.0,
+      "z": -81.1,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 36.3,
+      "y": 646.8,
+      "z": -71.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -29.0,
+      "y": 543.0,
+      "z": -112.7,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -92.7,
+      "y": 534.4,
+      "z": -48.1,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -146.7,
+      "y": 534.7,
+      "z": 36.1,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -157.3,
+      "y": 530.4,
+      "z": -14.2,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -176.7,
+      "y": 537.6,
+      "z": -57.9,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -190.1,
+      "y": 508.1,
+      "z": -66.6,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -256.2,
+      "y": 507.1,
+      "z": -57.9,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -285.3,
+      "y": 506.5,
+      "z": -88.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -361.2,
+      "y": 541.3,
+      "z": -109.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -109.4,
+      "y": 753.7,
+      "z": 183.4,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -34.9,
+      "y": 672.6,
+      "z": 140.9,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -81.4,
+      "y": 545.6,
+      "z": 122.0,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -178.9,
+      "y": 534.1,
+      "z": 123.6,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -221.6,
+      "y": 542.0,
+      "z": 59.0,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -231.4,
+      "y": 507.5,
+      "z": 98.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -254.2,
+      "y": 506.3,
+      "z": 154.7,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -286.9,
+      "y": 505.0,
+      "z": 107.2,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -315.9,
+      "y": 497.2,
+      "z": 23.0,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": -252.5,
+      "y": 514.1,
+      "z": -4.5,
+      "material": "maguuma_lily",
+      "category": "plant",
+      "icon": "maguuma_lily"
+    },
+    {
+      "x": 250.6,
+      "y": 309.2,
+      "z": -19.8,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom",
+      "chatLink": "[&BD8JAAA=]"
+    },
+    {
+      "x": -243.1,
+      "y": 33.6,
+      "z": 6.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom",
+      "chatLink": "[&BK8JAAA=]"
+    },
+    {
+      "x": 4.2,
+      "y": 112.6,
+      "z": 2.0,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -221.5,
+      "y": 46.6,
+      "z": -71.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -373.6,
+      "y": 510.8,
+      "z": 42.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -95.1,
+      "y": 99.1,
+      "z": 80.4,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 95.1,
+      "y": 175.7,
+      "z": 154.2,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -26.9,
+      "y": 266.4,
+      "z": 106.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -381.1,
+      "y": 541.9,
+      "z": -105.3,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -354.2,
+      "y": 534.2,
+      "z": -92.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -278.2,
+      "y": 503.6,
+      "z": -77.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -229.2,
+      "y": 502.3,
+      "z": -90.8,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -327.5,
+      "y": 521.3,
+      "z": -84.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -228.1,
+      "y": 502.3,
+      "z": -74.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    }
+  ]
+}

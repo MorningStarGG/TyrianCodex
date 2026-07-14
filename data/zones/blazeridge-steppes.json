@@ -1,0 +1,1875 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 20,
+    "name": "Blazeridge Steppes",
+    "continentId": 1,
+    "regionId": 2,
+    "regionName": "Ascalon",
+    "floor": 1,
+    "minLevel": 40,
+    "maxLevel": 50,
+    "mapRect": [
+      [
+        -24576,
+        -49152
+      ],
+      [
+        24576,
+        49152
+      ]
+    ],
+    "continentRect": [
+      [
+        61952,
+        28544
+      ],
+      [
+        64000,
+        32640
+      ]
+    ],
+    "sectorRect": [
+      [
+        61509.8,
+        28177.5
+      ],
+      [
+        64241,
+        32747.6
+      ]
+    ],
+    "labelCoord": [
+      62998,
+      30464
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "20:waypoint:508",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "508",
+      "coord": [
+        63630,
+        32492
+      ],
+      "recommendedLevel": null,
+      "name": "Twin Sisters Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPwBAAA=]",
+      "waypointChatLink": "[&BPwBAAA=]",
+      "trailIndex": 10,
+      "wikiText": "The Twin Sisters Crossing is an area located in the southeast portion of Blazeridge Steppes. It holds Foewatch Encampment, the Ebon Vanguard's forward outpost in the zone."
+    },
+    {
+      "stepId": "20:heart:121",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "121",
+      "coord": [
+        63624,
+        32404
+      ],
+      "recommendedLevel": 40,
+      "name": "Aid Legion and Ebon Vanguard soldiers against ogres.",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63438,
+          32405
+        ],
+        [
+          63297,
+          32420
+        ],
+        [
+          63258,
+          32387
+        ],
+        [
+          63260,
+          32219
+        ],
+        [
+          63220,
+          32110
+        ],
+        [
+          63175,
+          31978
+        ],
+        [
+          63199,
+          31903
+        ],
+        [
+          63278,
+          31892
+        ],
+        [
+          63380,
+          31849
+        ],
+        [
+          63472,
+          31853
+        ],
+        [
+          63582,
+          31898
+        ],
+        [
+          63696,
+          31882
+        ],
+        [
+          63795,
+          31944
+        ],
+        [
+          63826,
+          32041
+        ],
+        [
+          63870,
+          32119
+        ],
+        [
+          63959,
+          32114
+        ],
+        [
+          63894,
+          32506
+        ],
+        [
+          63648,
+          32446
+        ],
+        [
+          63438,
+          32405
+        ]
+      ],
+      "trailIndex": 26,
+      "wikiText": "Destroy ogre supplies and flag stands, prevent brawls between charr and humans, help patrols combat ogres, and revive fallen allies.",
+      "waypointChatLink": "[&BPwBAAA=]"
+    },
+    {
+      "stepId": "20:poi:504",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "504",
+      "coord": [
+        63712,
+        32291
+      ],
+      "recommendedLevel": null,
+      "name": "Foewatch Encampment",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 47,
+      "wikiText": "The Foewatch Encampment is an encampment of the Ebon Vanguard within Twin Sisters Crossing. It is constantly under attack from ogres which occasionally requires it be recaptured.",
+      "waypointChatLink": "[&BPwBAAA=]"
+    },
+    {
+      "stepId": "20:vista:1566",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "vista",
+      "objectiveId": "1566",
+      "coord": [
+        63691,
+        32263
+      ],
+      "recommendedLevel": null,
+      "name": "Foewatch Encampment",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 62,
+      "wikiText": "A very simple and safe to get to Vista.",
+      "waypointChatLink": "[&BPwBAAA=]"
+    },
+    {
+      "stepId": "20:poi:500",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "500",
+      "coord": [
+        63735,
+        31786
+      ],
+      "recommendedLevel": null,
+      "name": "Griffonclaw Peak",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 170,
+      "wikiText": "The Griffonclaw Peak is a point of interest within Splinter Hills. This cliff side is the nesting grounds of a flock of Hawkeye Griffon.",
+      "waypointChatLink": "[&BP0BAAA=]"
+    },
+    {
+      "stepId": "20:vista:1567",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "vista",
+      "objectiveId": "1567",
+      "coord": [
+        63800,
+        31828
+      ],
+      "recommendedLevel": null,
+      "name": "Splinter Hills",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 185,
+      "wikiText": "Splinter Hills is an area located in far southern section of Blazeridge Steppes.",
+      "waypointChatLink": "[&BP0BAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:849",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "849",
+      "coord": [
+        63345,
+        32097
+      ],
+      "recommendedLevel": null,
+      "name": "Splintercrest Fort Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFEDAAA=]",
+      "waypointChatLink": "[&BFEDAAA=]",
+      "trailIndex": 269,
+      "wikiText": "Splinter Hills is an area located in far southern section of Blazeridge Steppes."
+    },
+    {
+      "stepId": "20:heart:120",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "120",
+      "coord": [
+        63173,
+        32423
+      ],
+      "recommendedLevel": 41,
+      "name": "Aid Ferrusatos Village's fishing operation and help them hunt down Separatists.",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62766,
+          32462
+        ],
+        [
+          62824,
+          32371
+        ],
+        [
+          62910,
+          32416
+        ],
+        [
+          62969,
+          32322
+        ],
+        [
+          62936,
+          32296
+        ],
+        [
+          62971,
+          32250
+        ],
+        [
+          63071,
+          32247
+        ],
+        [
+          63151,
+          32196
+        ],
+        [
+          63213,
+          32204
+        ],
+        [
+          63254,
+          32259
+        ],
+        [
+          63247,
+          32353
+        ],
+        [
+          63260,
+          32428
+        ],
+        [
+          63342,
+          32446
+        ],
+        [
+          63398,
+          32516
+        ],
+        [
+          63383,
+          32622
+        ],
+        [
+          63257,
+          32617
+        ],
+        [
+          63087,
+          32646
+        ],
+        [
+          62864,
+          32592
+        ],
+        [
+          62787,
+          32521
+        ],
+        [
+          62766,
+          32462
+        ]
+      ],
+      "trailIndex": 337,
+      "wikiText": "Lure salamander drakes into fishing nets with tasty fishes, repair small fishing nets, and search the village for Separatists.",
+      "waypointChatLink": "[&BFEDAAA=]"
+    },
+    {
+      "stepId": "20:poi:497",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "497",
+      "coord": [
+        63114,
+        32394
+      ],
+      "recommendedLevel": null,
+      "name": "Ferrusatos Village",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 347,
+      "wikiText": "Ferrusatos Village is a point of interest within Splinter Hills in Blazeridge Steppes. This area is home to a small charr fishing village.",
+      "waypointChatLink": "[&BFEDAAA=]"
+    },
+    {
+      "stepId": "20:heart:124",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "124",
+      "coord": [
+        62960,
+        32244
+      ],
+      "recommendedLevel": 42,
+      "name": "Help Torruh Sweptweave disrupt Separatist activities.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62921,
+          32303
+        ],
+        [
+          62972,
+          32247
+        ],
+        [
+          62996,
+          32207
+        ],
+        [
+          62935,
+          32099
+        ],
+        [
+          62906,
+          32008
+        ],
+        [
+          62906,
+          31957
+        ],
+        [
+          62836,
+          31936
+        ],
+        [
+          62698,
+          31917
+        ],
+        [
+          62600,
+          32025
+        ],
+        [
+          62621,
+          32157
+        ],
+        [
+          62730,
+          32196
+        ],
+        [
+          62832,
+          32202
+        ],
+        [
+          62921,
+          32303
+        ]
+      ],
+      "trailIndex": 395,
+      "wikiText": "Destroy Separatist siege weapons and weapon plans, steal their siege weapon ammo, and rescue charr captives.",
+      "waypointChatLink": "[&BFEDAAA=]"
+    },
+    {
+      "stepId": "20:poi:852",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "852",
+      "coord": [
+        62721,
+        32066
+      ],
+      "recommendedLevel": null,
+      "name": "Drake Hollow",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 452,
+      "wikiText": "Drake Hollow is a point of interest within Tumok's Last Stand. A large force of Separatists have established a heavily fortified encampment inside this circular canyon.",
+      "waypointChatLink": "[&BPsBAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:507",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "507",
+      "coord": [
+        62506,
+        32210
+      ],
+      "recommendedLevel": null,
+      "name": "Tumok's Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPsBAAA=]",
+      "waypointChatLink": "[&BPsBAAA=]",
+      "trailIndex": 557,
+      "wikiText": "Tumok's Last Stand is an area located in the southern portion of Blazeridge Steppes. It holds Drake Hollow, a prominent Separatist camp."
+    },
+    {
+      "stepId": "20:heart:125",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "125",
+      "coord": [
+        62188,
+        32441
+      ],
+      "recommendedLevel": 42,
+      "name": "Help Sentinels instigate fights between ghosts and the Branded.",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62182,
+          32227
+        ],
+        [
+          62111,
+          32413
+        ],
+        [
+          62188,
+          32468
+        ],
+        [
+          62428,
+          32474
+        ],
+        [
+          62466,
+          32362
+        ],
+        [
+          62483,
+          32218
+        ],
+        [
+          62489,
+          32104
+        ],
+        [
+          62555,
+          32010
+        ],
+        [
+          62412,
+          31920
+        ],
+        [
+          62254,
+          31882
+        ],
+        [
+          62170,
+          31956
+        ],
+        [
+          62182,
+          32227
+        ]
+      ],
+      "trailIndex": 611,
+      "wikiText": "Use old Ascalonian weapons to send ghostly aggression towards the Branded. Use Branded crystal shards to lure Branded aggression towards Ascalonian ghosts.",
+      "waypointChatLink": "[&BPsBAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:505",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "505",
+      "coord": [
+        62150,
+        31333
+      ],
+      "recommendedLevel": null,
+      "name": "The Last Whiskey Bar Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPkBAAA=]",
+      "waypointChatLink": "[&BPkBAAA=]",
+      "trailIndex": 766,
+      "wikiText": "Dragonwatch is a lightly wooded grove on the western side of Blazeridge Steppes. There is a road here leading from the Plains of Ashford portal to the bridge at Steeleye Span."
+    },
+    {
+      "stepId": "20:waypoint:506",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "506",
+      "coord": [
+        62510,
+        31609
+      ],
+      "recommendedLevel": null,
+      "name": "Steeleye Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPoBAAA=]",
+      "waypointChatLink": "[&BPoBAAA=]",
+      "trailIndex": 834,
+      "wikiText": "The Steeleye Span is a charr stronghold and the only \"safe\" bridge across the Dragonbrand. Its cannons defend the line against the Branded in the center of the Dragonbrand."
+    },
+    {
+      "stepId": "20:heart:122",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "122",
+      "coord": [
+        62651,
+        31734
+      ],
+      "recommendedLevel": 43,
+      "name": "Help the Iron Legion protect Steeleye Span from Branded creatures.",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62591,
+          31819
+        ],
+        [
+          62323,
+          31730
+        ],
+        [
+          62291,
+          31594
+        ],
+        [
+          62347,
+          31424
+        ],
+        [
+          62722,
+          31531
+        ],
+        [
+          62741,
+          31732
+        ],
+        [
+          62591,
+          31819
+        ]
+      ],
+      "trailIndex": 864,
+      "wikiText": "Fight branded creatures, use Iron Legion cannons, pick up unexploded mortar shells, activate lightning rods and destroy Branded devourer nests.",
+      "waypointChatLink": "[&BPoBAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:850",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "850",
+      "coord": [
+        62873,
+        31804
+      ],
+      "recommendedLevel": null,
+      "name": "Soot Road Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFIDAAA=]",
+      "waypointChatLink": "[&BFIDAAA=]",
+      "trailIndex": 899,
+      "wikiText": "The Soot Road is an area in Blazeridge Steppes. This roadway passes through a large forest at this point. There is a large ogre krall in the northeastern corner of this area."
+    },
+    {
+      "stepId": "20:poi:498",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "498",
+      "coord": [
+        63234,
+        31561
+      ],
+      "recommendedLevel": null,
+      "name": "Sootpan Kraal",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 969,
+      "wikiText": "The Sootpan Kraal is a point of interest within Soot Road. This location is home to a large ogre kraal.",
+      "waypointChatLink": "[&BP0BAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:509",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "509",
+      "coord": [
+        63393,
+        31557
+      ],
+      "recommendedLevel": null,
+      "name": "Behem Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BP0BAAA=]",
+      "waypointChatLink": "[&BP0BAAA=]",
+      "trailIndex": 994,
+      "wikiText": "The Behem Gauntlet is in the southeastern section of Blazeridge Steppes. This grove of trees guards the entrance to a spider filled box canyon which leads to a secluded grotto."
+    },
+    {
+      "stepId": "20:heart:123",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "123",
+      "coord": [
+        63407,
+        31528
+      ],
+      "recommendedLevel": 43,
+      "name": "Help the Ash Legion take out ogres.",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63331,
+          31714
+        ],
+        [
+          63117,
+          31655
+        ],
+        [
+          63150,
+          31470
+        ],
+        [
+          63480,
+          31197
+        ],
+        [
+          63543,
+          31075
+        ],
+        [
+          63583,
+          31008
+        ],
+        [
+          63720,
+          31002
+        ],
+        [
+          63792,
+          31044
+        ],
+        [
+          63883,
+          31170
+        ],
+        [
+          63742,
+          31414
+        ],
+        [
+          63687,
+          31486
+        ],
+        [
+          63676,
+          31558
+        ],
+        [
+          63628,
+          31587
+        ],
+        [
+          63430,
+          31742
+        ],
+        [
+          63331,
+          31714
+        ]
+      ],
+      "trailIndex": 1002,
+      "wikiText": "Eliminate ogres and ogre pets. Destroy ogre housing, gates, supplies, and weapon racks.",
+      "waypointChatLink": "[&BP0BAAA=]"
+    },
+    {
+      "stepId": "20:poi:499",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "499",
+      "coord": [
+        63615,
+        31184
+      ],
+      "recommendedLevel": null,
+      "name": "Behemian Grand Kraal",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1075,
+      "wikiText": "The Behemian Grand Kraal is an ogre fortress and point of interest in Gastor Gullet.",
+      "waypointChatLink": "[&BE8DAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:847",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "847",
+      "coord": [
+        63533,
+        30773
+      ],
+      "recommendedLevel": null,
+      "name": "Gastor Gullet Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE8DAAA=]",
+      "waypointChatLink": "[&BE8DAAA=]",
+      "trailIndex": 1133,
+      "wikiText": "Gastor Gullet is an area in Blazeridge Steppes. Ogre forces have established a large kraal in the center of this canyon."
+    },
+    {
+      "stepId": "20:poi:496",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "496",
+      "coord": [
+        63195,
+        31008
+      ],
+      "recommendedLevel": null,
+      "name": "Tail of the Star God",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1213,
+      "wikiText": "The Tail of the Star God is a point of interest within Pockmark Roughs. It is one of the few remaining crystals from the Searing that ravaged Ascalon.",
+      "waypointChatLink": "[&BE8DAAA=]"
+    },
+    {
+      "stepId": "20:hero:0-45",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "hero",
+      "objectiveId": "0-45",
+      "coord": [
+        63169,
+        31000
+      ],
+      "recommendedLevel": null,
+      "name": "Searing Crystal",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1218,
+      "wikiText": "A large Searing Crystal, worshiped by nearby grawl as the Tail of the Star God remains as a testament to the Searing.",
+      "waypointChatLink": "[&BE8DAAA=]"
+    },
+    {
+      "stepId": "20:vista:1563",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "vista",
+      "objectiveId": "1563",
+      "coord": [
+        63080,
+        30874
+      ],
+      "recommendedLevel": null,
+      "name": "Tail of the Star God",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1256,
+      "wikiText": "Provided you are sneaky enough, you should be able to get to this point with no problem.",
+      "waypointChatLink": "[&BAUCAAA=]"
+    },
+    {
+      "stepId": "20:heart:114",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "114",
+      "coord": [
+        62990,
+        30729
+      ],
+      "recommendedLevel": 44,
+      "name": "Help Scholar Olenn trick the grawl around the Tail of the Star God.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62840,
+          30672
+        ],
+        [
+          62864,
+          30671
+        ],
+        [
+          63211,
+          30708
+        ],
+        [
+          63358,
+          30887
+        ],
+        [
+          63368,
+          31023
+        ],
+        [
+          63164,
+          31212
+        ],
+        [
+          63035,
+          31122
+        ],
+        [
+          62840,
+          30672
+        ]
+      ],
+      "trailIndex": 1285,
+      "wikiText": "Use Olenn's raven illusion to lure ravens and eliminate grawl, earth elementals, and grawl supplies.",
+      "waypointChatLink": "[&BAUCAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:517",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "517",
+      "coord": [
+        62795,
+        30752
+      ],
+      "recommendedLevel": null,
+      "name": "Refuge Sanctum Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAUCAAA=]",
+      "waypointChatLink": "[&BAUCAAA=]",
+      "trailIndex": 1315,
+      "wikiText": "Deserter Flats is an area of the Dragonbrand located within Blazeridge Steppes. It contains the ruins of the Serenity Temple and the Durmand Priory camp of Refuge Sanctum who are currently excavaging it for artifacts."
+    },
+    {
+      "stepId": "20:heart:115",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "115",
+      "coord": [
+        62739,
+        30677
+      ],
+      "recommendedLevel": 45,
+      "name": "Aid Historian Jinell's research at the Wreckage of Serenity.",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62462,
+          30853
+        ],
+        [
+          62487,
+          30572
+        ],
+        [
+          62664,
+          30534
+        ],
+        [
+          62865,
+          30729
+        ],
+        [
+          62887,
+          30786
+        ],
+        [
+          62588,
+          30863
+        ],
+        [
+          62462,
+          30853
+        ]
+      ],
+      "trailIndex": 1330,
+      "wikiText": "Investigate the mysterious stones and remove ghostly threats so the Priory can safely investigate the ruins.",
+      "waypointChatLink": "[&BAUCAAA=]"
+    },
+    {
+      "stepId": "20:hero:0-128",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "hero",
+      "objectiveId": "0-128",
+      "coord": [
+        62585,
+        30664
+      ],
+      "recommendedLevel": null,
+      "name": "Serenity Temple",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1353,
+      "wikiText": "In the center of the Wreckage of Serenity stand the ruins of Serenity Temple. Though destroyed hundreds of years ago in the Searing, the intrepid adventurer can channel the hallowed legacy and complete this hero challenge.",
+      "waypointChatLink": "[&BFADAAA=]"
+    },
+    {
+      "stepId": "20:poi:502",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "502",
+      "coord": [
+        62559,
+        30643
+      ],
+      "recommendedLevel": null,
+      "name": "Wreckage of Serenity",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1361,
+      "wikiText": "The Wreckage of Serenity is a point of interest in Deserter Flats within Blazeridge Steppes. It is the remains of the Serenity Temple that lay destroyed in the scar left by the flight path of the Elder Dragon Kralkatorrik.",
+      "waypointChatLink": "[&BFADAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:848",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "848",
+      "coord": [
+        62378,
+        30661
+      ],
+      "recommendedLevel": null,
+      "name": "Kinar Fort Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFADAAA=]",
+      "waypointChatLink": "[&BFADAAA=]",
+      "trailIndex": 1418,
+      "wikiText": "The Ratcatcher Knoll is an area within Blazeridge Steppes. The name of the area may have been given by the charr posted at Kinar Fort whose supplies are often being raided by the nearby skritt."
+    },
+    {
+      "stepId": "20:heart:117",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "117",
+      "coord": [
+        62359,
+        30577
+      ],
+      "recommendedLevel": 45,
+      "name": "Help Sentinel Faithspotter deal with skritt.",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62110,
+          30278
+        ],
+        [
+          62520,
+          30379
+        ],
+        [
+          62456,
+          30909
+        ],
+        [
+          61996,
+          30822
+        ],
+        [
+          61938,
+          30423
+        ],
+        [
+          62110,
+          30278
+        ]
+      ],
+      "trailIndex": 1440,
+      "wikiText": "Remove the skritt from Tongue Rock and the skritt encroaching on Kinar Fort. Knockover skritt shiny-things. Disable skritt traps. Return stolen weapons to the Sentinels.",
+      "waypointChatLink": "[&BFADAAA=]"
+    },
+    {
+      "stepId": "20:heart:113",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "113",
+      "coord": [
+        62364,
+        30182
+      ],
+      "recommendedLevel": 46,
+      "name": "Help Sentinel Liharn disrupt the Inquest.",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62442,
+          29727
+        ],
+        [
+          62754,
+          30265
+        ],
+        [
+          62504,
+          30370
+        ],
+        [
+          62061,
+          30264
+        ],
+        [
+          62100,
+          29843
+        ],
+        [
+          62140,
+          29702
+        ],
+        [
+          62442,
+          29727
+        ]
+      ],
+      "trailIndex": 1500,
+      "wikiText": "Infiltrate the InGenium Research Facility. Eliminate Inquest. Destroy their lab equipment and research data.",
+      "waypointChatLink": "[&BAQCAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:516",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "516",
+      "coord": [
+        62222,
+        29920
+      ],
+      "recommendedLevel": null,
+      "name": "Brandview Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAQCAAA=]",
+      "waypointChatLink": "[&BAQCAAA=]",
+      "trailIndex": 1546,
+      "wikiText": "Relliatus Canyon is an area within Blazeridge Steppes, to the west of the Dragonbrand. It is home to a large breeding colony of drakes. A group of Sentinels have established a small camp here."
+    },
+    {
+      "stepId": "20:hero:0-130",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "hero",
+      "objectiveId": "0-130",
+      "coord": [
+        62228,
+        29872
+      ],
+      "recommendedLevel": null,
+      "name": "Fane Skinchisel",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1554,
+      "wikiText": "Fane Skinchisel is a charr sentinel stationed at the sentinel camp near Brandview Waypoint in the Blazeridge Mountains. Players who don't back down from a sparring bout and prove their worth will complete her hero challenge.",
+      "waypointChatLink": "[&BAQCAAA=]"
+    },
+    {
+      "stepId": "20:vista:1565",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "vista",
+      "objectiveId": "1565",
+      "coord": [
+        62355,
+        29517
+      ],
+      "recommendedLevel": null,
+      "name": "Monument Grounds",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1626,
+      "wikiText": "Facing the vista from the ground, there is a set of stairs slightly to the left.",
+      "waypointChatLink": "[&BE4DAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:846",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "846",
+      "coord": [
+        62591,
+        29268
+      ],
+      "recommendedLevel": null,
+      "name": "Lowland Burns Waypoint",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BE4DAAA=]",
+      "waypointChatLink": "[&BE4DAAA=]",
+      "trailIndex": 1686,
+      "wikiText": "Lowland Burns is an area in Blazeridge Steppes that contains the northernmost section of the Dragonbrand within the zone, infested with Branded."
+    },
+    {
+      "stepId": "20:poi:501",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "501",
+      "coord": [
+        62275,
+        28990
+      ],
+      "recommendedLevel": null,
+      "name": "Skara Braevus",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1763,
+      "wikiText": "Skara Braevus is a point of interest within Kindling Bridge in Blazeridge Steppes. This fortress is home to a small contingent of Sentinels, who guard this area from branded forces from the Dragonbrand.",
+      "waypointChatLink": "[&BAMCAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:515",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "515",
+      "coord": [
+        62128,
+        28961
+      ],
+      "recommendedLevel": null,
+      "name": "Kindling Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAMCAAA=]",
+      "waypointChatLink": "[&BAMCAAA=]",
+      "trailIndex": 1787,
+      "wikiText": "Kindling Bridge is an area in northwestern Blazeridge Steppes. This tree lined roadway is defended by a group of Sentinels at Skara Braevus."
+    },
+    {
+      "stepId": "20:hero:0-48",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "hero",
+      "objectiveId": "0-48",
+      "coord": [
+        62275,
+        28732
+      ],
+      "recommendedLevel": null,
+      "name": "Birthplace of the Vigil",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1828,
+      "wikiText": "Tucked into a small cave, the Birthplace of the Vigil marks the location of Almorra's Massacre. Contemplate over the defining event to complete this hero challenge.",
+      "waypointChatLink": "[&BAMCAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:514",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "514",
+      "coord": [
+        62776,
+        29006
+      ],
+      "recommendedLevel": null,
+      "name": "Brokentooth Maw Waypoint",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAICAAA=]",
+      "waypointChatLink": "[&BAICAAA=]",
+      "trailIndex": 1919,
+      "wikiText": "Terra Combusta is an area in Blazeridge Steppes. A contingent of Blood Legion soldiers at Brokentooth Maw have been cut out by the Brand, and due to a lack of supply, they rely on the large group of Plains Wurms to the north for food."
+    },
+    {
+      "stepId": "20:heart:116",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "116",
+      "coord": [
+        62847,
+        29078
+      ],
+      "recommendedLevel": 50,
+      "name": "Assist Sentinel forces against dragonspawn.",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62865,
+          28933
+        ],
+        [
+          62889,
+          29258
+        ],
+        [
+          62775,
+          29333
+        ],
+        [
+          62542,
+          29351
+        ],
+        [
+          62419,
+          29342
+        ],
+        [
+          62338,
+          29278
+        ],
+        [
+          62189,
+          29005
+        ],
+        [
+          62215,
+          28864
+        ],
+        [
+          62250,
+          28650
+        ],
+        [
+          62418,
+          28619
+        ],
+        [
+          62597,
+          28561
+        ],
+        [
+          62601,
+          28689
+        ],
+        [
+          62582,
+          28816
+        ],
+        [
+          62628,
+          28846
+        ],
+        [
+          62865,
+          28933
+        ]
+      ],
+      "trailIndex": 1943,
+      "wikiText": "Help Sentinel and Vigil forces slay Branded creatures. Join Sentinel patrols and revive fallen allies. Destroy Branded crystals and noxious Branded plants.",
+      "waypointChatLink": "[&BAICAAA=]"
+    },
+    {
+      "stepId": "20:vista:1564",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "vista",
+      "objectiveId": "1564",
+      "coord": [
+        62859,
+        29159
+      ],
+      "recommendedLevel": null,
+      "name": "Terra Combusta",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1955,
+      "wikiText": "An easy to access vista point. On the westmost edge of the Terra Combusta region.",
+      "waypointChatLink": "[&BAICAAA=]"
+    },
+    {
+      "stepId": "20:heart:118",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "118",
+      "coord": [
+        63025,
+        29344
+      ],
+      "recommendedLevel": 47,
+      "name": "Help Wode with harpy research.",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          62788,
+          29683
+        ],
+        [
+          62795,
+          29470
+        ],
+        [
+          62887,
+          29374
+        ],
+        [
+          63054,
+          29252
+        ],
+        [
+          63218,
+          29388
+        ],
+        [
+          63252,
+          29474
+        ],
+        [
+          63106,
+          29614
+        ],
+        [
+          62993,
+          29669
+        ],
+        [
+          62788,
+          29683
+        ]
+      ],
+      "trailIndex": 1996,
+      "wikiText": "Recover harpy feathers and give them to Wode. Use Wode's Experimental Essence Extractor to obtain \"essence\" from harpies. Destroy harpy roosts.",
+      "waypointChatLink": "[&BAICAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:511",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "511",
+      "coord": [
+        62906,
+        29836
+      ],
+      "recommendedLevel": null,
+      "name": "Guardian Stone Waypoint",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BP8BAAA=]",
+      "waypointChatLink": "[&BP8BAAA=]",
+      "trailIndex": 2077,
+      "wikiText": "Heretic Plain is an arid plain located in Blazeridge Steppes that separates two heavily defended forces. To the west is Guardian Stone stonghold manned by charr of the Vigil, to the east is a large group of ogres at Lunk Kraal."
+    },
+    {
+      "stepId": "20:heart:119",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "119",
+      "coord": [
+        63508,
+        30209
+      ],
+      "recommendedLevel": 46,
+      "name": "Help the peaceful ogres of Degun Shun.",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63381,
+          29828
+        ],
+        [
+          64000,
+          29896
+        ],
+        [
+          63983,
+          30398
+        ],
+        [
+          63141,
+          30423
+        ],
+        [
+          63108,
+          30236
+        ],
+        [
+          63185,
+          30031
+        ],
+        [
+          63298,
+          29841
+        ],
+        [
+          63381,
+          29828
+        ]
+      ],
+      "trailIndex": 2181,
+      "wikiText": "Duel unskilled ogres and train their pets to help make the tougher. Build houses for the ogres pets. Return chickens to their cages. Replace spoiled food from their food supply.",
+      "waypointChatLink": "[&BP4BAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:510",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "510",
+      "coord": [
+        63518,
+        30177
+      ],
+      "recommendedLevel": null,
+      "name": "Expanse Waypoint",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BP4BAAA=]",
+      "waypointChatLink": "[&BP4BAAA=]",
+      "trailIndex": 2189,
+      "wikiText": "The Unbroken Expanse is an area within Blazeridge Steppes. It is to the east of the Dragonbrand. The pond in the middle is the main source of water for the local ogres as well as local wildlife."
+    },
+    {
+      "stepId": "20:hero:0-129",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "hero",
+      "objectiveId": "0-129",
+      "coord": [
+        63902,
+        29837
+      ],
+      "recommendedLevel": null,
+      "name": "Campfire",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2266,
+      "wikiText": "Campfires are interactive objects that give torches as bundles.",
+      "waypointChatLink": "[&BAACAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:512",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "512",
+      "coord": [
+        63698,
+        29769
+      ],
+      "recommendedLevel": null,
+      "name": "Lunk Kraal Waypoint",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAACAAA=]",
+      "waypointChatLink": "[&BAACAAA=]",
+      "trailIndex": 2307,
+      "wikiText": "Heretic Plain is an arid plain located in Blazeridge Steppes that separates two heavily defended forces. To the west is Guardian Stone stonghold manned by charr of the Vigil, to the east is a large group of ogres at Lunk Kraal."
+    },
+    {
+      "stepId": "20:heart:126",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "126",
+      "coord": [
+        63703,
+        29369
+      ],
+      "recommendedLevel": 48,
+      "name": "Join the Ash Legion of Tawny Ridge in stealth operations.",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63719,
+          29304
+        ],
+        [
+          63702,
+          29198
+        ],
+        [
+          63694,
+          29177
+        ],
+        [
+          63840,
+          29153
+        ],
+        [
+          63944,
+          29225
+        ],
+        [
+          63893,
+          29474
+        ],
+        [
+          63660,
+          29385
+        ],
+        [
+          63646,
+          29308
+        ],
+        [
+          63719,
+          29304
+        ]
+      ],
+      "trailIndex": 2400,
+      "wikiText": "Speak with Fina Duskmaker about stealth operations. Complete them without being spotted by Ash Legion seekers.",
+      "waypointChatLink": "[&BAECAAA=]"
+    },
+    {
+      "stepId": "20:waypoint:513",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "waypoint",
+      "objectiveId": "513",
+      "coord": [
+        63481,
+        29115
+      ],
+      "recommendedLevel": null,
+      "name": "Terra Carorunda Waypoint",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAECAAA=]",
+      "waypointChatLink": "[&BAECAAA=]",
+      "trailIndex": 2451,
+      "wikiText": "Terra Carorunda is an area in northeast Blazeridge Steppes. There is a Separatist camp situated in the nearby cave system."
+    },
+    {
+      "stepId": "20:heart:127",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "heart",
+      "objectiveId": "127",
+      "coord": [
+        63617,
+        29022
+      ],
+      "recommendedLevel": 49,
+      "name": "Help Jahr Duskrend disrupt Separatist activities.",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63641,
+          29062
+        ],
+        [
+          63495,
+          29043
+        ],
+        [
+          63463,
+          29037
+        ],
+        [
+          63436,
+          28977
+        ],
+        [
+          63460,
+          28796
+        ],
+        [
+          63552,
+          28699
+        ],
+        [
+          63918,
+          28799
+        ],
+        [
+          63771,
+          28939
+        ],
+        [
+          63700,
+          29045
+        ],
+        [
+          63641,
+          29062
+        ]
+      ],
+      "trailIndex": 2474,
+      "wikiText": "Dispatch Separatists, destroy their supplies, and steal explosive powder to give to Jahr Duskrend.",
+      "waypointChatLink": "[&BAECAAA=]"
+    },
+    {
+      "stepId": "20:poi:503",
+      "mapId": 20,
+      "zoneName": "Blazeridge Steppes",
+      "type": "poi",
+      "objectiveId": "503",
+      "coord": [
+        63589,
+        28855
+      ],
+      "recommendedLevel": null,
+      "name": "Craze's Folly",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Craze's Folly is a jumping puzzle located in Terra Carorunda, within Blazeridge Steppes.",
+      "waypointChatLink": "[&BAECAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

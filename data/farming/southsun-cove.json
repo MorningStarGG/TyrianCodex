@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "mapId": 873,
+  "slug": "southsun-cove",
+  "name": "Southsun Cove",
+  "regionName": "Kryta",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
+      "name": "Blooming Passiflora",
+      "category": "plant",
+      "material": "passiflora",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 644.3,
+      "y": 0.2,
+      "z": 352.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 633.1,
+      "y": 32.4,
+      "z": 246.7,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BNUGAAA=]"
+    },
+    {
+      "x": 625.8,
+      "y": 31.0,
+      "z": -347.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 704.1,
+      "y": 5.1,
+      "z": -374.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BNUGAAA=]"
+    },
+    {
+      "x": 620.3,
+      "y": 31.0,
+      "z": -348.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 551.0,
+      "y": -1.0,
+      "z": -425.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 208.7,
+      "y": -58.5,
+      "z": -491.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BNIEAAA=]"
+    },
+    {
+      "x": 616.1,
+      "y": 31.1,
+      "z": -342.6,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": 685.6,
+      "y": 18.2,
+      "z": 33.7,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora",
+      "chatLink": "[&BNgGAAA=]"
+    },
+    {
+      "x": -542.2,
+      "y": 31.7,
+      "z": -405.9,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -608.3,
+      "y": 31.6,
+      "z": -262.9,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora",
+      "chatLink": "[&BNgGAAA=]"
+    },
+    {
+      "x": -532.2,
+      "y": 31.8,
+      "z": -409.1,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -341.3,
+      "y": 40.8,
+      "z": 69.1,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora",
+      "chatLink": "[&BNAGAAA=]"
+    },
+    {
+      "x": -19.9,
+      "y": 0.7,
+      "z": 353.7,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -511.5,
+      "y": 34.0,
+      "z": 272.4,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora",
+      "chatLink": "[&BHgJAAA=]"
+    },
+    {
+      "x": 637.0,
+      "y": 34.4,
+      "z": -108.5,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": 543.2,
+      "y": 41.3,
+      "z": -40.1,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": 396.2,
+      "y": 58.9,
+      "z": -177.6,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": 543.1,
+      "y": 46.5,
+      "z": -196.5,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -304.6,
+      "y": 0.9,
+      "z": 370.2,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -531.9,
+      "y": 54.8,
+      "z": 313.9,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    },
+    {
+      "x": -168.0,
+      "y": 43.0,
+      "z": -208.9,
+      "material": "passiflora",
+      "category": "plant",
+      "icon": "passiflora"
+    }
+  ]
+}

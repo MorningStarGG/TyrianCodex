@@ -1,0 +1,716 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1178,
+    "name": "Bitterfrost Frontier",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -36864,
+        -18432
+      ],
+      [
+        36864,
+        18432
+      ]
+    ],
+    "continentRect": [
+      [
+        53504,
+        23040
+      ],
+      [
+        56576,
+        24576
+      ]
+    ],
+    "sectorRect": [
+      [
+        53530.9,
+        23074.6
+      ],
+      [
+        56530.5,
+        24612.1
+      ]
+    ],
+    "labelCoord": [
+      55040,
+      23854
+    ],
+    "release": "lws3"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1178:waypoint:2433",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "waypoint",
+      "objectiveId": "2433",
+      "coord": [
+        54152,
+        24386
+      ],
+      "recommendedLevel": null,
+      "name": "Koda's Welcome Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIEJAAA=]",
+      "waypointChatLink": "[&BIEJAAA=]",
+      "trailIndex": 3,
+      "wikiText": "Black Ice Pass is the opening area of Bitterfrost Frontier."
+    },
+    {
+      "stepId": "1178:poi:2444",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2444",
+      "coord": [
+        54458,
+        24387
+      ],
+      "recommendedLevel": null,
+      "name": "Ice Vein Cavern",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 71,
+      "wikiText": "Ice Vein Cavern is one of the many rooms located within the Wayward Cave. Some Svanir inhabit this cavern.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2436",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2436",
+      "coord": [
+        54682,
+        24429
+      ],
+      "recommendedLevel": null,
+      "name": "Black Cavern Junction",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 167,
+      "wikiText": "Black Cavern Junction is a vast room within the Wayward Cave which is crawling with Icebrood Elementals.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:vista:2437",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "vista",
+      "objectiveId": "2437",
+      "coord": [
+        53676,
+        24219
+      ],
+      "recommendedLevel": null,
+      "name": "The Svanir Hive",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 434,
+      "wikiText": "This vista is easier to obtain if the nearby Svanir event has been completed, otherwise you might be stuck in combat. This vista is located on a scaffold platform.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2441",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2441",
+      "coord": [
+        53653,
+        24242
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon's Eye View",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 435,
+      "wikiText": "Dragon's Eye View is a large ice carving of a dragon (perhaps Jormag) which is jutting out from the mountainside between two corrupted homesteads in The Svanir Hive.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:heart:371",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "heart",
+      "objectiveId": "371",
+      "coord": [
+        53647,
+        24354
+      ],
+      "recommendedLevel": 80,
+      "name": "Disrupt the Svanir.",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53610,
+          24365
+        ],
+        [
+          53518,
+          24162
+        ],
+        [
+          53708,
+          23983
+        ],
+        [
+          53981,
+          23889
+        ],
+        [
+          54082,
+          24163
+        ],
+        [
+          54011,
+          24419
+        ],
+        [
+          53796,
+          24468
+        ],
+        [
+          53610,
+          24365
+        ]
+      ],
+      "trailIndex": 455,
+      "wikiText": "Kill Sons of Svanir and tear down their banners.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2440",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2440",
+      "coord": [
+        53986,
+        23863
+      ],
+      "recommendedLevel": null,
+      "name": "Maw of Corruption",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 545,
+      "wikiText": "The Maw of Corruption is a corrupted archway leading into the Griffon Old Growth.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:vista:2443",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "vista",
+      "objectiveId": "2443",
+      "coord": [
+        53939,
+        23500
+      ],
+      "recommendedLevel": null,
+      "name": "Joyless Falls",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 609,
+      "wikiText": "Use the Bouncing Mushroom below the vista, and deploy a glider mid-bounce to glide over to the vista.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2435",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2435",
+      "coord": [
+        53981,
+        23370
+      ],
+      "recommendedLevel": null,
+      "name": "Joyless Falls",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 626,
+      "wikiText": "The Joyless Falls are tall frozen waterfalls located within the Griffon Old Growth. They can be temporarily opened to allow access to an Icebound Chest and minerals by activating a strange relic nearby.",
+      "waypointChatLink": "[&BIEJAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2447",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2447",
+      "coord": [
+        54435,
+        23458
+      ],
+      "recommendedLevel": null,
+      "name": "The Titan Tree",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 693,
+      "wikiText": "The Titan Tree is an immense tree located within the Griffon Old Growth.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:heart:370",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "heart",
+      "objectiveId": "370",
+      "coord": [
+        54374,
+        23694
+      ],
+      "recommendedLevel": 80,
+      "name": "Help protect the endangered snow griffons.",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54325,
+          23939
+        ],
+        [
+          54481,
+          23880
+        ],
+        [
+          54456,
+          23644
+        ],
+        [
+          54422,
+          23266
+        ],
+        [
+          54310,
+          23268
+        ],
+        [
+          53640,
+          23431
+        ],
+        [
+          53750,
+          23800
+        ],
+        [
+          54325,
+          23939
+        ]
+      ],
+      "trailIndex": 732,
+      "wikiText": "Protect griffon nest, kill corrupted predators, and incubate abandoned eggs.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:heart:368",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "heart",
+      "objectiveId": "368",
+      "coord": [
+        54977,
+        23513
+      ],
+      "recommendedLevel": 80,
+      "name": "Keep the grawl busy so they don't turn to Jormag.",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54442,
+          23447
+        ],
+        [
+          54494,
+          23197
+        ],
+        [
+          54782,
+          23281
+        ],
+        [
+          55255,
+          23073
+        ],
+        [
+          55318,
+          23082
+        ],
+        [
+          55530,
+          23301
+        ],
+        [
+          55410,
+          23757
+        ],
+        [
+          54476,
+          23850
+        ],
+        [
+          54442,
+          23447
+        ]
+      ],
+      "trailIndex": 818,
+      "wikiText": "Win over the grawl by killing icebrood trolls and building shrines to Chokocooka.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2431",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2431",
+      "coord": [
+        55050,
+        23487
+      ],
+      "recommendedLevel": null,
+      "name": "Chokocooka's Throne",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 854,
+      "wikiText": "Chokocooka's Throne is a statue of Jora surrounded by red crystals located inside Brakbrak Ice Snarl. It is the object of worship of the nearby grawl tribe.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:vista:2438",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "vista",
+      "objectiveId": "2438",
+      "coord": [
+        55140,
+        23439
+      ],
+      "recommendedLevel": null,
+      "name": "Chokocooka's Throne",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 878,
+      "wikiText": "This vista is almost located at ground level. Jump up using the barrels to the left of the vista.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2442",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2442",
+      "coord": [
+        55305,
+        23248
+      ],
+      "recommendedLevel": null,
+      "name": "Hollow Bone Den",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 923,
+      "wikiText": "Hollow Bone Den is an icebrood lair located within Brakbrak Ice Snarl.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:waypoint:2429",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "waypoint",
+      "objectiveId": "2429",
+      "coord": [
+        54984,
+        23970
+      ],
+      "recommendedLevel": null,
+      "name": "Sorrow's Eclipse Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BH0JAAA=]",
+      "waypointChatLink": "[&BH0JAAA=]",
+      "trailIndex": 1166,
+      "wikiText": "Sorrow's Eclipse Sanctuary is a kodan sanctuary currently anchored inside the Blizzard Basin, an area of the Bitterfrost Frontier. There the kodan try to survive alongside a quaggan village located beneath the sanctuary."
+    },
+    {
+      "stepId": "1178:poi:2434",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2434",
+      "coord": [
+        55053,
+        23980
+      ],
+      "recommendedLevel": null,
+      "name": "Gooloopa Deeps",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1181,
+      "wikiText": "Gooloopa Deeps is a quaggan village located beneath the kodan sanctuary Sorrow's Eclipse. The denizens of both settlements have formed an alliance in order to survive the Sons of Svanir and the Icebrood.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:vista:2439",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "vista",
+      "objectiveId": "2439",
+      "coord": [
+        55119,
+        23972
+      ],
+      "recommendedLevel": null,
+      "name": "Sorrow's Eclipse",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1228,
+      "wikiText": "From the waypoint, begin by walking to immediately below the vista on the eastern side of the sanctuary. To the south of the vista there is a small cherry tree.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2445",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2445",
+      "coord": [
+        55268,
+        24528
+      ],
+      "recommendedLevel": null,
+      "name": "Judgment Pass",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1292,
+      "wikiText": "Judgment Pass is a jotun ruin located in the Hailstone Floe. A jotun weapon specialist can be found there.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:vista:2446",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "vista",
+      "objectiveId": "2446",
+      "coord": [
+        55900,
+        24499
+      ],
+      "recommendedLevel": null,
+      "name": "Dragon's Teeth Hot Springs",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1503,
+      "wikiText": "The normal way is to start from the northwest of Whorl Lagoon (just below the \"D\" on the world map in \"Dragon's Teeth Hot Springs\") and run through the jumping puzzle, beginning at the stone steps, following the rope bridge across the...",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2428",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2428",
+      "coord": [
+        56373,
+        24427
+      ],
+      "recommendedLevel": null,
+      "name": "Blister Cauldron",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1549,
+      "wikiText": "The Blister Cauldron is an immensely hot spring located within the Dragon's Teeth Hot Springs in Bitterfrost Frontier. The Thaw Elixir is brewed here.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2430",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2430",
+      "coord": [
+        55928,
+        24298
+      ],
+      "recommendedLevel": null,
+      "name": "Whorl Lagoon",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1626,
+      "wikiText": "Whorl Lagoon is a shallow body of water located within the Dragon's Teeth Hot Springs. It is used by quaggans as a spot to bathe, relax as well as grow food.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:heart:369",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "heart",
+      "objectiveId": "369",
+      "coord": [
+        55892,
+        24288
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the quaggan farmers harvest food.",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          55769,
+          24185
+        ],
+        [
+          55848,
+          24016
+        ],
+        [
+          56171,
+          24071
+        ],
+        [
+          56364,
+          24368
+        ],
+        [
+          56415,
+          24391
+        ],
+        [
+          56421,
+          24464
+        ],
+        [
+          56369,
+          24507
+        ],
+        [
+          56166,
+          24483
+        ],
+        [
+          55940,
+          24504
+        ],
+        [
+          55829,
+          24429
+        ],
+        [
+          55771,
+          24330
+        ],
+        [
+          55769,
+          24185
+        ]
+      ],
+      "trailIndex": 1629,
+      "wikiText": "Kill mushrooms, and fertilize plants. Harvest herbs and deliver them to Farmer Simooba.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    },
+    {
+      "stepId": "1178:poi:2432",
+      "mapId": 1178,
+      "zoneName": "Bitterfrost Frontier",
+      "type": "poi",
+      "objectiveId": "2432",
+      "coord": [
+        56231,
+        23349
+      ],
+      "recommendedLevel": null,
+      "name": "Lockflow Ice Fall",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1857,
+      "wikiText": "The Lockflow Ice Fall is a tall frozen waterfall blocking access to a room holding a powerful transformed minion of Jormag. The room can be opened by using the unnamed device on a floating rock to the southwest of the Ice Fall.",
+      "waypointChatLink": "[&BH0JAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

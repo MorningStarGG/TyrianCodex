@@ -1,0 +1,1083 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1185,
+    "name": "Lake Doric",
+    "continentId": 1,
+    "regionId": 4,
+    "regionName": "Kryta",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -15360,
+        -30720
+      ],
+      [
+        15360,
+        30720
+      ]
+    ],
+    "continentRect": [
+      [
+        44928,
+        25472
+      ],
+      [
+        46208,
+        28032
+      ]
+    ],
+    "sectorRect": [
+      [
+        44194.8,
+        25502.1
+      ],
+      [
+        46402.6,
+        28349.5
+      ]
+    ],
+    "labelCoord": [
+      45568,
+      26884
+    ],
+    "release": "lws3"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1185:waypoint:2477",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "waypoint",
+      "objectiveId": "2477",
+      "coord": [
+        45005,
+        27002
+      ],
+      "recommendedLevel": null,
+      "name": "Doric's Landing Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK0JAAA=]",
+      "waypointChatLink": "[&BK0JAAA=]",
+      "trailIndex": 4,
+      "wikiText": "Doric's Landing is the beachfront area of Lake Doric, and connects directly to Divinity's Reach. The Seraph have set up their base of operations against the White Mantle here."
+    },
+    {
+      "stepId": "1185:vista:2461",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2461",
+      "coord": [
+        45109,
+        26826
+      ],
+      "recommendedLevel": null,
+      "name": "Doric's Landing",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 40,
+      "wikiText": "Climb up the tower staircase.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2448",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2448",
+      "coord": [
+        45262,
+        26945
+      ],
+      "recommendedLevel": null,
+      "name": "Land Bridge",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 53,
+      "wikiText": "The Land Bridge is a point of interest in Doric's Landing. It connects the landing to the rest of the lands in western Lake Doric.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2453",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2453",
+      "coord": [
+        45082,
+        27354
+      ],
+      "recommendedLevel": null,
+      "name": "Defense Headquarters",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 73,
+      "wikiText": "Defense Headquarters is a point of interest in Doric's Landing. It serves as the local operations center for Logan Thackeray and his Seraph during the defense of Lake Doric against the White Mantle.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:heart:373",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "heart",
+      "objectiveId": "373",
+      "coord": [
+        45046,
+        27360
+      ],
+      "recommendedLevel": 80,
+      "name": "Aid the front-line defense of Doric's Landing",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          44917,
+          26760
+        ],
+        [
+          45119,
+          26769
+        ],
+        [
+          45288,
+          26848
+        ],
+        [
+          45391,
+          26988
+        ],
+        [
+          45275,
+          27705
+        ],
+        [
+          44928,
+          27852
+        ],
+        [
+          44917,
+          26760
+        ]
+      ],
+      "trailIndex": 75,
+      "wikiText": "Train, discipline, and deliver rations to Seraph militia, receive intelligence from scouts, extinguish fires, and secure rations from the beached ships along the piers.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2455",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2455",
+      "coord": [
+        45030,
+        27762
+      ],
+      "recommendedLevel": null,
+      "name": "Divinity's Waterworks",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 104,
+      "wikiText": "Divinity's Waterworks is a point of interest in the Eastern Divinity Reservoir. This large grate lets out the waste water of Divinity's Reach into the reservoir.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2486",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2486",
+      "coord": [
+        45314,
+        27675
+      ],
+      "recommendedLevel": null,
+      "name": "Fisherman's Ship",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 113,
+      "wikiText": "The Fisherman's Ship is a point of interest in New Loamhurst. This boat was left stranded when a major portion of Lake Doric was drained out.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2462",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2462",
+      "coord": [
+        45303,
+        27714
+      ],
+      "recommendedLevel": null,
+      "name": "New Loamhurst",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 122,
+      "wikiText": "Climb up along the beached ship's mast.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2478",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2478",
+      "coord": [
+        45592,
+        27700
+      ],
+      "recommendedLevel": null,
+      "name": "Loamhurst Clubhouse",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 151,
+      "wikiText": "The Loamhurst Clubhouse is a point of interest in New Loamhurst. It is a small cabin found on the outskirts of the village.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:heart:375",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "heart",
+      "objectiveId": "375",
+      "coord": [
+        45565,
+        27601
+      ],
+      "recommendedLevel": 80,
+      "name": "Restore normalcy in New Loamhurst.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46135,
+          27528
+        ],
+        [
+          46094,
+          27434
+        ],
+        [
+          45918,
+          27358
+        ],
+        [
+          45814,
+          27332
+        ],
+        [
+          45599,
+          27354
+        ],
+        [
+          45289,
+          27386
+        ],
+        [
+          45272,
+          27682
+        ],
+        [
+          45387,
+          28031
+        ],
+        [
+          45560,
+          28030
+        ],
+        [
+          45723,
+          27875
+        ],
+        [
+          45938,
+          27690
+        ],
+        [
+          46188,
+          27819
+        ],
+        [
+          46135,
+          27528
+        ]
+      ],
+      "trailIndex": 165,
+      "wikiText": "Plant flowers, decorate, put out fires, collect fish, and defeat any White Mantle hiding in the village.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2460",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2460",
+      "coord": [
+        45913,
+        27517
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of the Six",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 224,
+      "wikiText": "The Temple of the Six is a point of interest in the Lakeside Bazaar. This cliffside ruin is used by the residents of the bazaar as a sanctuary and a place of worship to the Six Human Gods.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2449",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2449",
+      "coord": [
+        46108,
+        27516
+      ],
+      "recommendedLevel": null,
+      "name": "Melandru's Flourish",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 292,
+      "wikiText": "From the Temple of the Six, head east through the gap in the cliffs, and follow the stairs up to the top. Use updrafts to ascend to the vista or you can climb up rocks and glide to the rocks of the vista.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2485",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2485",
+      "coord": [
+        46141,
+        27278
+      ],
+      "recommendedLevel": null,
+      "name": "Lakeview Villa",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 411,
+      "wikiText": "The Lakeview Villa is a point of interest in the Lakeside Bazaar. It is the new residence of Albert the Butler after the events that went down at Caudecus' Manor.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:waypoint:2484",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "waypoint",
+      "objectiveId": "2484",
+      "coord": [
+        46062,
+        27238
+      ],
+      "recommendedLevel": null,
+      "name": "Lakeside Bazaar Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLQJAAA=]",
+      "waypointChatLink": "[&BLQJAAA=]",
+      "trailIndex": 426,
+      "wikiText": "Lakeside Bazaar is an area of Lake Doric where the eponymous trading post is located, nestled along the eastern cliffs."
+    },
+    {
+      "stepId": "1185:heart:372",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "heart",
+      "objectiveId": "372",
+      "coord": [
+        45987,
+        27216
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Cin Fursarai around the Lakeside Bazaar.",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46109,
+          27027
+        ],
+        [
+          46070,
+          26890
+        ],
+        [
+          45981,
+          26855
+        ],
+        [
+          45878,
+          26895
+        ],
+        [
+          45824,
+          26982
+        ],
+        [
+          45719,
+          27015
+        ],
+        [
+          45706,
+          27102
+        ],
+        [
+          45681,
+          27177
+        ],
+        [
+          45757,
+          27384
+        ],
+        [
+          45821,
+          27577
+        ],
+        [
+          45842,
+          27629
+        ],
+        [
+          45913,
+          27642
+        ],
+        [
+          45948,
+          27597
+        ],
+        [
+          46155,
+          27270
+        ],
+        [
+          46108,
+          27232
+        ],
+        [
+          46068,
+          27123
+        ],
+        [
+          46109,
+          27027
+        ]
+      ],
+      "trailIndex": 435,
+      "wikiText": "Bring fresh food to the starving Seraph soldiers, Kill white Mantle, subdue angry mobs, and bring goods to merchants.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2465",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2465",
+      "coord": [
+        45891,
+        27067
+      ],
+      "recommendedLevel": null,
+      "name": "Lakeside Bazaar",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 497,
+      "wikiText": "Jump up the earth bank behind the house between the vista and the waypoint.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:heart:376",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "heart",
+      "objectiveId": "376",
+      "coord": [
+        45505,
+        26810
+      ],
+      "recommendedLevel": 80,
+      "name": "Help restore life to Saidra's Haven.",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          45671,
+          26469
+        ],
+        [
+          45726,
+          26582
+        ],
+        [
+          45784,
+          26782
+        ],
+        [
+          45806,
+          26985
+        ],
+        [
+          45700,
+          26969
+        ],
+        [
+          45693,
+          27108
+        ],
+        [
+          45603,
+          27298
+        ],
+        [
+          45464,
+          27247
+        ],
+        [
+          45360,
+          26940
+        ],
+        [
+          45124,
+          26605
+        ],
+        [
+          45184,
+          26533
+        ],
+        [
+          45340,
+          26428
+        ],
+        [
+          45505,
+          26362
+        ],
+        [
+          45671,
+          26469
+        ]
+      ],
+      "trailIndex": 565,
+      "wikiText": "Defeat White Mantle and their sympathizers, disarm enemy traps, and help the residents of the area with repairs and gathering food.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2472",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2472",
+      "coord": [
+        45537,
+        26558
+      ],
+      "recommendedLevel": null,
+      "name": "SS Pinkeens",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 592,
+      "wikiText": "The SS Pinkeens is a point of interest in Saidra's Haven. It is the ship of Captain Pinkeens. It was left stranded when the White Mantle drained out Lake Doric and is constantly under attack from both White Mantle and Skritt.",
+      "waypointChatLink": "[&BK0JAAA=]"
+    },
+    {
+      "stepId": "1185:heart:377",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "heart",
+      "objectiveId": "377",
+      "coord": [
+        45918,
+        26705
+      ],
+      "recommendedLevel": 80,
+      "name": "Disrupt White Mantle forces occupying Fort Evennia.",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46206,
+          26688
+        ],
+        [
+          45928,
+          26769
+        ],
+        [
+          45862,
+          26695
+        ],
+        [
+          45952,
+          26142
+        ],
+        [
+          46248,
+          26121
+        ],
+        [
+          46206,
+          26688
+        ]
+      ],
+      "trailIndex": 660,
+      "wikiText": "Resue Seraph prisoners, steal battle plans, poison food, and perform other acts of sabotage.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2468",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2468",
+      "coord": [
+        46068,
+        26583
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Evennia",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 693,
+      "wikiText": "Fort Evennia is an area of Lake Doric where the eponymous Krytan fortress is located, named after one of the earliest Shining Blade leaders Evennia.",
+      "waypointChatLink": "[&BLQJAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2470",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2470",
+      "coord": [
+        45621,
+        26247
+      ],
+      "recommendedLevel": null,
+      "name": "Bluster Watershed",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 778,
+      "wikiText": "Bluster Watershed is a point of interest in Fort Evennia. It a mill and shed found on the banks of the river running underneath the fort.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:waypoint:2479",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "waypoint",
+      "objectiveId": "2479",
+      "coord": [
+        45006,
+        25823
+      ],
+      "recommendedLevel": null,
+      "name": "Red Leaf Retreat Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK8JAAA=]",
+      "waypointChatLink": "[&BK8JAAA=]",
+      "trailIndex": 898,
+      "wikiText": "The Harvest Cascades the northwestern area of Lake Doric. The plentiful trees of this location are the main source of the nearby sawmill at the Doric Lumberyard."
+    },
+    {
+      "stepId": "1185:poi:2480",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2480",
+      "coord": [
+        44988,
+        25778
+      ],
+      "recommendedLevel": null,
+      "name": "Red Leaf Retreat",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 902,
+      "wikiText": "The Red Leaf Retreat is a small camp of the Seraph-Sentinels coalition located in the Harvest Cascades.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2456",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2456",
+      "coord": [
+        45044,
+        26028
+      ],
+      "recommendedLevel": null,
+      "name": "Mantle's Breach",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 947,
+      "wikiText": "The Mantle's Breach is an area of Lake Doric. This was previously the location of Divinity's Reach's northeastern dam. Due to an attack by the White Mantle, the dam was destroyed, resulting in the drainage of water from Lake Doric.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2475",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2475",
+      "coord": [
+        45302,
+        25711
+      ],
+      "recommendedLevel": null,
+      "name": "Noran's Homestead",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1016,
+      "wikiText": "Noran's Homestead is the home of Noran located within the Harvest Cascades.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:heart:374",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "heart",
+      "objectiveId": "374",
+      "coord": [
+        45295,
+        25682
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Noran around the Harvest Cascades.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          46225,
+          25876
+        ],
+        [
+          46154,
+          26155
+        ],
+        [
+          45994,
+          26167
+        ],
+        [
+          45648,
+          26138
+        ],
+        [
+          45384,
+          26248
+        ],
+        [
+          45267,
+          26342
+        ],
+        [
+          45144,
+          26328
+        ],
+        [
+          45075,
+          26259
+        ],
+        [
+          44966,
+          26037
+        ],
+        [
+          44936,
+          25800
+        ],
+        [
+          44956,
+          25511
+        ],
+        [
+          45426,
+          25505
+        ],
+        [
+          45514,
+          25569
+        ],
+        [
+          45577,
+          25693
+        ],
+        [
+          45834,
+          25729
+        ],
+        [
+          45919,
+          25480
+        ],
+        [
+          46181,
+          25494
+        ],
+        [
+          46225,
+          25876
+        ]
+      ],
+      "trailIndex": 1033,
+      "wikiText": "Defeat White Mantle, centaurs, and hostile ghosts, set animal traps, put out fires, and clean up around the forest.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2458",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2458",
+      "coord": [
+        45128,
+        25581
+      ],
+      "recommendedLevel": null,
+      "name": "Soren's Rest",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1067,
+      "wikiText": "Soren's Rest is a point of interest in the Harvest Cascades. Noran's family was laid to rest here.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2451",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2451",
+      "coord": [
+        45652,
+        25621
+      ],
+      "recommendedLevel": null,
+      "name": "Watcher's Hollow",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1172,
+      "wikiText": "This vista requires navigation to the Peach Tree.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2471",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2471",
+      "coord": [
+        45709,
+        25622
+      ],
+      "recommendedLevel": null,
+      "name": "Peach Tree",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1185,
+      "wikiText": "The Peach Tree is a large fruit bearing tree in Watcher's Hollow, in the northern part of Lake Doric. Various peaceful ghosts surround the area, and a guardian spirit will gift visitors with a Magic-Imbued Peach once a day.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2483",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2483",
+      "coord": [
+        46035,
+        25636
+      ],
+      "recommendedLevel": null,
+      "name": "Fallen Watchtower",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1350,
+      "wikiText": "The Fallen Watchtower is a point of interest on the Watchtower Cliffs.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2474",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2474",
+      "coord": [
+        45688,
+        25785
+      ],
+      "recommendedLevel": null,
+      "name": "Watchtower Cliffs Vista (north)",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1367,
+      "wikiText": "This vista is due northwest of the Chieftain's Hollow point of interest, but can only be accessed (without mounts at least) from the Peach Tree area.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2473",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2473",
+      "coord": [
+        45678,
+        26058
+      ],
+      "recommendedLevel": null,
+      "name": "Doric Lumberyard Vista (south)",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1396,
+      "wikiText": "This vista is due southwest of the Chieftain's Hollow point of interest. The vista is at ground level and looks back towards the windmill.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:vista:2482",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "vista",
+      "objectiveId": "2482",
+      "coord": [
+        45869,
+        26108
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Evennia",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1435,
+      "wikiText": "This vista is due south of the Chieftain's Hollow point of interest. Approach from the west.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    },
+    {
+      "stepId": "1185:poi:2450",
+      "mapId": 1185,
+      "zoneName": "Lake Doric",
+      "type": "poi",
+      "objectiveId": "2450",
+      "coord": [
+        45933,
+        25875
+      ],
+      "recommendedLevel": null,
+      "name": "Chieftain's Hollow",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1483,
+      "wikiText": "The Chieftain's Hollow is a point of interest in the Watchtower Cliffs. Siegemaster Immelhoof's tent is located here amongst a large horde of centaur forces.",
+      "waypointChatLink": "[&BK8JAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

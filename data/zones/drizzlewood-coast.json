@@ -1,0 +1,1211 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1371,
+    "name": "Drizzlewood Coast",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -24576,
+        -52224
+      ],
+      [
+        27648,
+        55296
+      ]
+    ],
+    "continentRect": [
+      [
+        50128,
+        17809
+      ],
+      [
+        52304,
+        22289
+      ]
+    ],
+    "sectorRect": [
+      [
+        50177.6,
+        17863.6
+      ],
+      [
+        52238.9,
+        22235.7
+      ]
+    ],
+    "labelCoord": [
+      51218,
+      20334
+    ],
+    "release": "lws5"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1371:waypoint:3172",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "waypoint",
+      "objectiveId": "3172",
+      "coord": [
+        50992,
+        21878
+      ],
+      "recommendedLevel": null,
+      "name": "Base Camp Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGQMAAA=]",
+      "waypointChatLink": "[&BGQMAAA=]",
+      "trailIndex": 0,
+      "wikiText": "Umbral Grotto is the main staging area for the United Legions in Drizzlewood Coast."
+    },
+    {
+      "stepId": "1371:vista:3163",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3163",
+      "coord": [
+        51064,
+        21952
+      ],
+      "recommendedLevel": null,
+      "name": "Umbral Grotto",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 15,
+      "wikiText": "Walk to the vista. Use a Springer or a Skyscale to get on the branch.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3167",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3167",
+      "coord": [
+        50950,
+        21988
+      ],
+      "recommendedLevel": null,
+      "name": "United Legions Base Camp",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 30,
+      "wikiText": "The United Legions Base Camp is the home base for the United Legions in Drizzlewood Coast. It includes separate encampments for Ash Legion, Iron Legion, Blood Legion, and Flame Legion members, denoted by colored tents.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3177",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3177",
+      "coord": [
+        50999,
+        22070
+      ],
+      "recommendedLevel": null,
+      "name": "Pavilion of the Legions",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 33,
+      "wikiText": "Pavilion of the Legions is the main tent in the United Legions Base Camp where the leaders of the United Legions forces meet and discuss strategy at the war table.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3159",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3159",
+      "coord": [
+        51665,
+        21736
+      ],
+      "recommendedLevel": null,
+      "name": "Petraj Commons",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 147,
+      "wikiText": "Petraj Commons is a point of interest within Petraj Overlook. It serves as a town square for the encampment.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3165",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3165",
+      "coord": [
+        51774,
+        21810
+      ],
+      "recommendedLevel": null,
+      "name": "Petraj Overlook",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 166,
+      "wikiText": "Walk to the vista. Use a Springer or a Skyscale to get on top of the building.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3175",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3175",
+      "coord": [
+        51744,
+        22058
+      ],
+      "recommendedLevel": null,
+      "name": "Mistgate Graveyard",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 202,
+      "wikiText": "Mistgate Graveyard is a point of interest in the south of Petraj Overlook.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3147",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3147",
+      "coord": [
+        52076,
+        22009
+      ],
+      "recommendedLevel": null,
+      "name": "Griefshadow Falls",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 240,
+      "wikiText": "Griefshadow Falls is a point of interest within Petraj Overlook. This point marks a large waterfall, which likely takes its name from the nearby cemetery.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3169",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3169",
+      "coord": [
+        52083,
+        21598
+      ],
+      "recommendedLevel": null,
+      "name": "Griffon's Pillar",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 295,
+      "wikiText": "Griffon's Pillar is a very tall rock in the water near the cliffs on the east side of Petraj Overlook. Several griffons have made their nest at the top. The spire has been worn away by water over time to create the shape it is now.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3157",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3157",
+      "coord": [
+        51859,
+        21375
+      ],
+      "recommendedLevel": null,
+      "name": "Port Cascadia",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 314,
+      "wikiText": "Walk to the vista. Use a Springer or a Skyscale to get on top of the rocks.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3158",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3158",
+      "coord": [
+        51788,
+        21198
+      ],
+      "recommendedLevel": null,
+      "name": "Port Cascadia",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 319,
+      "wikiText": "Port Cascadia is an area within Drizzlewood Coast. Once captured from the Dominion by the United Legions, it provides various services to allied combatants.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3152",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3152",
+      "coord": [
+        52129,
+        21158
+      ],
+      "recommendedLevel": null,
+      "name": "Submerged Scrapyard",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 321,
+      "wikiText": "The Submerged Scrapyard is a point of interest in Drizzlewood Coast. It contains numerous sunken submarines.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3162",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3162",
+      "coord": [
+        51969,
+        20928
+      ],
+      "recommendedLevel": null,
+      "name": "Redsand Strand",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 323,
+      "wikiText": "Redsand Strand is a point of interest in the Port Cascadia region of the Drizzlewood Coast. There are many trenches carved into the beach around this point of interest, with destroyed tanks and makeshift barricades littered throughout.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3171",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3171",
+      "coord": [
+        51995,
+        20582
+      ],
+      "recommendedLevel": null,
+      "name": "Dwayna's Light",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 353,
+      "wikiText": "Hint: Use the Illuminator to capture the light at the purified Dwayna shrine in Malchor's Leap. - In-game description",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3148",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3148",
+      "coord": [
+        52036,
+        20483
+      ],
+      "recommendedLevel": null,
+      "name": "Lighthouse Point",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 360,
+      "wikiText": "Walk to the south of the vista. Use a Springer or a Skyscale to get on top of the rocks.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3173",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3173",
+      "coord": [
+        52007,
+        20305
+      ],
+      "recommendedLevel": null,
+      "name": "Stone Root",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 384,
+      "wikiText": "Stone Root is a small cave formed by natural stone arches and overgrown with roots, north of Lighthouse Point.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3149",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3149",
+      "coord": [
+        51310,
+        20513
+      ],
+      "recommendedLevel": null,
+      "name": "Wolf's Crossing Bridge",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 459,
+      "wikiText": "Wolf's Crossing Bridge is a point of interest within Wolf's Crossing. It marks the transition between the northern and southern portions of Drizzlewood Coast.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3160",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3160",
+      "coord": [
+        51488,
+        20715
+      ],
+      "recommendedLevel": null,
+      "name": "Wolf's Crossing",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 512,
+      "wikiText": "Walk to the south of the vista. Use a Springer or a Skyscale to get on top of the rocks.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3179",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3179",
+      "coord": [
+        51336,
+        20806
+      ],
+      "recommendedLevel": null,
+      "name": "Evergreen Pond",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 530,
+      "wikiText": "Evergreen Pond is a small, shallow pond south of the Wolf's Crossing bridge. The water likely flowed into the natural crevice in the rocks from the surrounding landscape to form this pond.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3174",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3174",
+      "coord": [
+        51227,
+        20991
+      ],
+      "recommendedLevel": null,
+      "name": "Breakroot Basin",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 559,
+      "wikiText": "Walk to the vista. Use the Griffon or Skyscale to fly over the basin to reach the vista.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3161",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3161",
+      "coord": [
+        51079,
+        21203
+      ],
+      "recommendedLevel": null,
+      "name": "Petraj's Rest",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 573,
+      "wikiText": "Petraj's Rest is an abandoned Quetzal tengu encampment named after Petraj the Evasive. When the Dominion invaded Drizzlewood Coast, the tengu there were forced to flee with the area's human and norn inhabitants.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3150",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3150",
+      "coord": [
+        51509,
+        21495
+      ],
+      "recommendedLevel": null,
+      "name": "Greattree Hamlet",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 629,
+      "wikiText": "Greattree Hamlet is a point of interest within Petraj Overlook.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3166",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3166",
+      "coord": [
+        50444,
+        21973
+      ],
+      "recommendedLevel": null,
+      "name": "Vloxen Mine",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 785,
+      "wikiText": "The Vloxen Mine is an area within Drizzlewood Coast.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3164",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3164",
+      "coord": [
+        50350,
+        21975
+      ],
+      "recommendedLevel": null,
+      "name": "Vloxen Mine",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 790,
+      "wikiText": "Walk to the vista. Get on the tracks from the mine side and walk to it.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3170",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3170",
+      "coord": [
+        50631,
+        21655
+      ],
+      "recommendedLevel": null,
+      "name": "Vloxen Shards",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 892,
+      "wikiText": "Vloxen Shards is a point of interest within the Vloxen Mine area. It contains a set of ruined buildings.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3151",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3151",
+      "coord": [
+        50778,
+        21236
+      ],
+      "recommendedLevel": null,
+      "name": "Troop Quarters",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 976,
+      "wikiText": "Troop Quarters is a point of interest within Fort Defiance full of tents",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3156",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3156",
+      "coord": [
+        50818,
+        21168
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Defiance",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 980,
+      "wikiText": "Walk to the north of the vista on the fortress walls. Use a Springer or a Skyscale to get on top of the rocks.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3155",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3155",
+      "coord": [
+        50279,
+        21094
+      ],
+      "recommendedLevel": null,
+      "name": "Verdant Falls",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1019,
+      "wikiText": "Verdant Falls is a series of waterfalls west of Fort Defiance. The water from these falls feeds into Breakroot Basin.",
+      "waypointChatLink": "[&BGQMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3176",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3176",
+      "coord": [
+        50263,
+        20358
+      ],
+      "recommendedLevel": null,
+      "name": "Olafson Farmstead",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1171,
+      "wikiText": "Olafson Farmstead is a small farm on the northwestern cliffs overlooking Leadfoot Village.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3178",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3178",
+      "coord": [
+        50404,
+        20350
+      ],
+      "recommendedLevel": null,
+      "name": "Leadfoot Village Southwest",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1183,
+      "wikiText": "Walk to the vista. Get on top of the building from the side using either a Springer or a Skyscale.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3154",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3154",
+      "coord": [
+        50514,
+        20437
+      ],
+      "recommendedLevel": null,
+      "name": "Leadfoot Village",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1189,
+      "wikiText": "Leadfoot Village is an area within Drizzlewood Coast. Once captured from the Dominion by the United Legions, it provides various services to allied combatants.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3153",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3153",
+      "coord": [
+        50663,
+        20172
+      ],
+      "recommendedLevel": null,
+      "name": "Leadfoot Village Northeast",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1233,
+      "wikiText": "Walk to the village and then walk to the vista.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3168",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3168",
+      "coord": [
+        50412,
+        20024
+      ],
+      "recommendedLevel": null,
+      "name": "Iceshard Trail",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1283,
+      "wikiText": "Iceshard Trail is the beginning of a trail going up into the Far Shiverpeaks and Woodland Cascades, north of Leadfoot Village in the northwest of the Drizzlewood Coast.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3193",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3193",
+      "coord": [
+        50423,
+        19428
+      ],
+      "recommendedLevel": null,
+      "name": "United Legions Forward Camp",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1362,
+      "wikiText": "The United Legions Forward Camp is a point of interest in the Legions' Alcove and is the base of operations for the United Legions in the northern half of Drizzlewood Coast.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:waypoint:3186",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "waypoint",
+      "objectiveId": "3186",
+      "coord": [
+        50444,
+        19441
+      ],
+      "recommendedLevel": null,
+      "name": "Forward Camp Waypoint",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHIMAAA=]",
+      "waypointChatLink": "[&BHIMAAA=]",
+      "trailIndex": 1366,
+      "wikiText": "Legions' Alcove is an area in Drizzlewood Coast, providing the main access point for the storyline of Jormag Rising."
+    },
+    {
+      "stepId": "1371:poi:3181",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3181",
+      "coord": [
+        50403,
+        18950
+      ],
+      "recommendedLevel": null,
+      "name": "Thermal Vent",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1494,
+      "wikiText": "Thermal Vent is a fiery pit in the western side of the Cavern of Guiding Spirits. It marks the start of a section of cave riddled with lava-filled pits and cracks.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3187",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3187",
+      "coord": [
+        50633,
+        18481
+      ],
+      "recommendedLevel": null,
+      "name": "Sanctum of the Wild",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1608,
+      "wikiText": "The Sanctum of the Wild is a point of interest within Cavern of Guiding Spirits. It is a shrine to the Spirits of the Wild and it marks the location where the Spirits first revealed themselves to the norn.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3199",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3199",
+      "coord": [
+        50822,
+        18734
+      ],
+      "recommendedLevel": null,
+      "name": "Cavern Entryway",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1745,
+      "wikiText": "Cavern Entryway is the eastern entrance to the Cavern of Guiding Spirits. It connects the cavern to The Bloodfield in the east, and Drizzlewood Peak to the southeast.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3201",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3201",
+      "coord": [
+        51030,
+        18511
+      ],
+      "recommendedLevel": null,
+      "name": "The Bloodfield Northeast",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1789,
+      "wikiText": "Walk to the south of the vista. Use a Springer or a Skyscale to get on top of the ice spire.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3195",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3195",
+      "coord": [
+        51121,
+        18372
+      ],
+      "recommendedLevel": null,
+      "name": "Ice Dragon's Gate",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1802,
+      "wikiText": "The Ice Dragon's Gate is a point of interest in the Frost Citadel.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3184",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3184",
+      "coord": [
+        51439,
+        18168
+      ],
+      "recommendedLevel": null,
+      "name": "Iceblood Channel",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1836,
+      "wikiText": "A point of interest in the Claw's Roost marking one of the rivers of Jormag's blood around the Frost Citadel.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3188",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3188",
+      "coord": [
+        51588,
+        18297
+      ],
+      "recommendedLevel": null,
+      "name": "The Spire",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1858,
+      "wikiText": "The Spire is a point of interest in the Claw's Roost.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3197",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3197",
+      "coord": [
+        51842,
+        18584
+      ],
+      "recommendedLevel": null,
+      "name": "The Bloodfield Northwest",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1898,
+      "wikiText": "Walk to the Iron Lookout camp. Fly over to vista with a Skyscale or Griffon.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3198",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3198",
+      "coord": [
+        51682,
+        19056
+      ],
+      "recommendedLevel": null,
+      "name": "Frostvein Dominion Camp",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1948,
+      "wikiText": "The Frostvein Dominion Camp is a point of interest in Frostvein Watch. It is populated by several Dominion charr and Frost Legion and contains a Frost Legion tribune.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3180",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3180",
+      "coord": [
+        51406,
+        18924
+      ],
+      "recommendedLevel": null,
+      "name": "Veins of Jormag",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1978,
+      "wikiText": "The Veins of Jormag is a point of interest in the The Bloodfield.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3189",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3189",
+      "coord": [
+        51081,
+        18901
+      ],
+      "recommendedLevel": null,
+      "name": "Iron Lookout",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2023,
+      "wikiText": "The Citadel Watch Camp, an Iron Lookout, sits halfway up the Drizzlewood Peak area, watching the road heading north towards Jormag's stronghold. It serves as a sentry post for the Iron legion",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3185",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3185",
+      "coord": [
+        51114,
+        19074
+      ],
+      "recommendedLevel": null,
+      "name": "Drizzlewood Peak",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2066,
+      "wikiText": "Walk to the Iron Lookout camp. Use the nearby Bouncing Mushrooms to gain height. Make sure to glide to them within the jumps. Walk to the vista after landing on the highest plateau.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3183",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3183",
+      "coord": [
+        51632,
+        19500
+      ],
+      "recommendedLevel": null,
+      "name": "Archstone Dominion Camp",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2148,
+      "wikiText": "The Archstone Dominion Camp is a point of interest in the Archstone Coast area of northern Drizzlewood Coast. It contains a number of Dominion alongside some tanks.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3182",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3182",
+      "coord": [
+        51724,
+        19594
+      ],
+      "recommendedLevel": null,
+      "name": "Archstone Coast",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2187,
+      "wikiText": "Walk to the southwest of the vista. Use a Springer or a Skyscale to get on top of the rocks.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3200",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3200",
+      "coord": [
+        51951,
+        19620
+      ],
+      "recommendedLevel": null,
+      "name": "Stone Archways",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2201,
+      "wikiText": "The Stone Archways are a point of interest in the Archstone Coast. They are composed of a number of rocky arches leading across a chasm.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3196",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3196",
+      "coord": [
+        51494,
+        19838
+      ],
+      "recommendedLevel": null,
+      "name": "Shoreline Dominion Camp",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2271,
+      "wikiText": "Shoreline Dominion Camp is a point of interest in Archstone Coast. It is one of many Dominion camps in the Northern Drizzlewood Coast where United Legions Prisoners-of-War are taken to be executed.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3194",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3194",
+      "coord": [
+        51227,
+        19829
+      ],
+      "recommendedLevel": null,
+      "name": "Sniper's Slope",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2301,
+      "wikiText": "Sniper's Slope is a Point of Interest in Drizzlewood Coast with many Dominion charr on it. It is likely named for the Dominion Snipers on and around it.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:poi:3191",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "poi",
+      "objectiveId": "3191",
+      "coord": [
+        51288,
+        19466
+      ],
+      "recommendedLevel": null,
+      "name": "Canopy Overlook",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2332,
+      "wikiText": "Canopy Overlook is a Point of Interest within Drizzlewood Coast. It is a large mountain that towers above the rest of Canopy Crag.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3190",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3190",
+      "coord": [
+        51201,
+        19496
+      ],
+      "recommendedLevel": null,
+      "name": "Canopy Crag",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2343,
+      "wikiText": "Walk to the north of the vista. Use a Springer or a Skyscale to get on top of the rocks.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    },
+    {
+      "stepId": "1371:vista:3192",
+      "mapId": 1371,
+      "zoneName": "Drizzlewood Coast",
+      "type": "vista",
+      "objectiveId": "3192",
+      "coord": [
+        50726,
+        19479
+      ],
+      "recommendedLevel": null,
+      "name": "Sentinel Bay",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2416,
+      "wikiText": "Get to the south of the vista. Use a Springer or a Skyscale to get on top of the rocks.",
+      "waypointChatLink": "[&BHIMAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

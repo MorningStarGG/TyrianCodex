@@ -1,0 +1,1074 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1301,
+    "name": "Jahai Bluffs",
+    "continentId": 1,
+    "regionId": 12,
+    "regionName": "Crystal Desert",
+    "floor": 49,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -49152,
+        -36864
+      ],
+      [
+        49152,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        63316,
+        56376
+      ],
+      [
+        67412,
+        59576
+      ]
+    ],
+    "sectorRect": [
+      [
+        63333.4,
+        56383
+      ],
+      [
+        67396,
+        59631
+      ]
+    ],
+    "labelCoord": [
+      65151,
+      58087
+    ],
+    "release": "lws4"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1301:waypoint:2969",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "waypoint",
+      "objectiveId": "2969",
+      "coord": [
+        66277,
+        56515
+      ],
+      "recommendedLevel": null,
+      "name": "Reclaimed Chantry Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJkLAAA=]",
+      "waypointChatLink": "[&BJkLAAA=]",
+      "trailIndex": 0,
+      "wikiText": "The Reclaimed Chantry is an ancient Order of Whispers base in Jahai Bluffs, and is the entry point to Jahai from the Domain of Vabbi."
+    },
+    {
+      "stepId": "1301:heart:434",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "heart",
+      "objectiveId": "434",
+      "coord": [
+        66562,
+        56636
+      ],
+      "recommendedLevel": 80,
+      "name": "Start dialogs between the Elonian factions",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          66147,
+          56939
+        ],
+        [
+          66105,
+          56864
+        ],
+        [
+          65947,
+          56597
+        ],
+        [
+          66086,
+          56545
+        ],
+        [
+          66222,
+          56428
+        ],
+        [
+          66397,
+          56400
+        ],
+        [
+          66658,
+          56401
+        ],
+        [
+          66711,
+          56474
+        ],
+        [
+          66780,
+          56534
+        ],
+        [
+          66797,
+          56614
+        ],
+        [
+          66828,
+          56658
+        ],
+        [
+          66908,
+          56666
+        ],
+        [
+          66884,
+          56917
+        ],
+        [
+          66592,
+          56890
+        ],
+        [
+          66420,
+          56974
+        ],
+        [
+          66147,
+          56939
+        ]
+      ],
+      "trailIndex": 67,
+      "wikiText": "Fight Branded, deter troublemakers, make meaningful introductions, and repair ramshackle turrets.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2923",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2923",
+      "coord": [
+        66589,
+        56648
+      ],
+      "recommendedLevel": null,
+      "name": "Gaze of the Ancients",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 68,
+      "wikiText": "The Gaze of the Ancients is a point of interest located in the center of the Reclaimed Chantry. Five statues of the Six Human Gods can be seen gazing at this central point.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2958",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2958",
+      "coord": [
+        66365,
+        56702
+      ],
+      "recommendedLevel": null,
+      "name": "Kormir's Reverence",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 92,
+      "wikiText": "Kormir's Reverence is a statue of Kormir located in the southwestern area of the Reclaimed Chantry. This statue sits apart from the other statues of the Six Human Gods, and can be knelt at to summon Nenah.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:vista:2924",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "vista",
+      "objectiveId": "2924",
+      "coord": [
+        66819,
+        56748
+      ],
+      "recommendedLevel": null,
+      "name": "Reclaimed Chantry",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 148,
+      "wikiText": "Walk from the waypoint past the vista to small pillar east of the vista. Use Springer or Skyscale to get up the pillars to the vista.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2934",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2934",
+      "coord": [
+        67272,
+        56921
+      ],
+      "recommendedLevel": null,
+      "name": "Riyid's Post",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 224,
+      "wikiText": "Riyid's Post is a point of interest within Rilohn River in Jahai Bluffs.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2954",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2954",
+      "coord": [
+        66286,
+        57337
+      ],
+      "recommendedLevel": null,
+      "name": "Archon's Retreat",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 363,
+      "wikiText": "Archon's Retreat is a point of interest in the Fortress of Jahai.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2929",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2929",
+      "coord": [
+        66384,
+        57740
+      ],
+      "recommendedLevel": null,
+      "name": "Jahai Great Hall",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 407,
+      "wikiText": "Jahai Great Hall is a point of interest in the Fortress of Jahai.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2931",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2931",
+      "coord": [
+        66276,
+        57741
+      ],
+      "recommendedLevel": null,
+      "name": "Ring of Judgment",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 416,
+      "wikiText": "Ring of Judgment is a point of interest in the Fortress of Jahai.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:vista:2951",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "vista",
+      "objectiveId": "2951",
+      "coord": [
+        66298,
+        57677
+      ],
+      "recommendedLevel": null,
+      "name": "Fortress of Jahai",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 459,
+      "wikiText": "Walk from the waypoint to the vista. Use Springer or Skyscale to get to the vista.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2968",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2968",
+      "coord": [
+        65871,
+        56801
+      ],
+      "recommendedLevel": null,
+      "name": "Crescent's Town Hall",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 604,
+      "wikiText": "Crescent's Town Hall is a point of interest within Crescent's Prosperity.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2967",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2967",
+      "coord": [
+        65352,
+        57030
+      ],
+      "recommendedLevel": null,
+      "name": "Wyvern Roost",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 681,
+      "wikiText": "Wyvern Roost is a point of interest in the Jungle Anomaly.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:vista:2930",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "vista",
+      "objectiveId": "2930",
+      "coord": [
+        65289,
+        57124
+      ],
+      "recommendedLevel": null,
+      "name": "Jungle Anomaly",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 694,
+      "wikiText": "Walk from the waypoint to the Jungle Anomaly. Gain height using either the Springer, the Skyscale or the Bouncing Mushrooms in the area. Travel to the west of the vista, while staying high up.",
+      "waypointChatLink": "[&BJkLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2925",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2925",
+      "coord": [
+        65627,
+        57826
+      ],
+      "recommendedLevel": null,
+      "name": "Displaced Vizier's Tower",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 833,
+      "wikiText": "Displaced Vizier's Tower is a copy of The Vizier's Tower as it was during the Human-charr conflict in 1071 AE, shortly before The Cataclysm.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:vista:2927",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "vista",
+      "objectiveId": "2927",
+      "coord": [
+        65520,
+        57803
+      ],
+      "recommendedLevel": null,
+      "name": "Displaced Towers",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 838,
+      "wikiText": "Walk to the middle tower and use it to gain height with either the Springer or the Skyscale. Glide or fly over the left tower and make the final jump.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2961",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2961",
+      "coord": [
+        65477,
+        58044
+      ],
+      "recommendedLevel": null,
+      "name": "Monument to the Return of Palawa Joko",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 858,
+      "wikiText": "Monument to the Return of Palawa Joko is a point of interest in the Central Brand Scar.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2937",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2937",
+      "coord": [
+        66059,
+        57883
+      ],
+      "recommendedLevel": null,
+      "name": "Sleepless Beacon",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 999,
+      "wikiText": "Sleepless Beacon is a point of interest within Prosperity's Approach. It was a beacon marking the way to Crescent's Prosperity village.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2944",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2944",
+      "coord": [
+        66362,
+        58173
+      ],
+      "recommendedLevel": null,
+      "name": "Noble's Walk",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1060,
+      "wikiText": "Noble's Walk is a point of interest in the Fortress of Jahai.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2936",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2936",
+      "coord": [
+        67150,
+        58147
+      ],
+      "recommendedLevel": null,
+      "name": "Fortress Courtyard",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1144,
+      "wikiText": "The Fortress Courtyard is a point of interest in the Jahai Keep.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:vista:2966",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "vista",
+      "objectiveId": "2966",
+      "coord": [
+        66902,
+        58316
+      ],
+      "recommendedLevel": null,
+      "name": "Yatendi Village",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1198,
+      "wikiText": "Walk to the vista and use either the Springer or the Skyscale to get to it.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2932",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2932",
+      "coord": [
+        67111,
+        58524
+      ],
+      "recommendedLevel": null,
+      "name": "Claw Den",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1234,
+      "wikiText": "Claw Den is a point of interest within Shattered Cliffs. It is located high above the valley floor and is infested with branded foes.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:heart:436",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "heart",
+      "objectiveId": "436",
+      "coord": [
+        66716,
+        58414
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the people of Yatendi village.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          66102,
+          58324
+        ],
+        [
+          66253,
+          58847
+        ],
+        [
+          67089,
+          59070
+        ],
+        [
+          67369,
+          58747
+        ],
+        [
+          67213,
+          58466
+        ],
+        [
+          66876,
+          58094
+        ],
+        [
+          66102,
+          58324
+        ]
+      ],
+      "trailIndex": 1293,
+      "wikiText": "Help gather, grow, and distribute food; make the town safer from drakes; destroy Branded and clear Brand Accumulation.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2952",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2952",
+      "coord": [
+        66546,
+        58256
+      ],
+      "recommendedLevel": null,
+      "name": "Rilohn Falls",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1307,
+      "wikiText": "Rilohn Falls is a point of interest in the Fortress of Jahai.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:waypoint:2942",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "waypoint",
+      "objectiveId": "2942",
+      "coord": [
+        66572,
+        58609
+      ],
+      "recommendedLevel": null,
+      "name": "Yatendi Village Waypoint",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BH4LAAA=]",
+      "waypointChatLink": "[&BH4LAAA=]",
+      "trailIndex": 1340,
+      "wikiText": "Yatendi Village is an area in the southeast of the Jahai Bluffs."
+    },
+    {
+      "stepId": "1301:poi:2962",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2962",
+      "coord": [
+        66504,
+        58747
+      ],
+      "recommendedLevel": null,
+      "name": "Yatendi Farm",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1364,
+      "wikiText": "The now-Branded Yatendi Farm is a point of interest within Eastern Brand Scar.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2953",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2953",
+      "coord": [
+        66618,
+        59353
+      ],
+      "recommendedLevel": null,
+      "name": "Confluence of the Elements",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1452,
+      "wikiText": "Confluence of the Elements is a point of interest in Kodonur Temple.",
+      "waypointChatLink": "[&BH4LAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2946",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2946",
+      "coord": [
+        65582,
+        59152
+      ],
+      "recommendedLevel": null,
+      "name": "Wurmmarshal's Encampment",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1571,
+      "wikiText": "Wurmmarshal's Encampment is a point of interest in Wurmhaven.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2955",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2955",
+      "coord": [
+        65519,
+        58839
+      ],
+      "recommendedLevel": null,
+      "name": "Garrison Command",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1621,
+      "wikiText": "Garrison Command is a point of interest in the Argon Garrison.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:vista:2922",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "vista",
+      "objectiveId": "2922",
+      "coord": [
+        65512,
+        58789
+      ],
+      "recommendedLevel": null,
+      "name": "Argon Garrison",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1625,
+      "wikiText": "Walk to the vista and use the stairs in Garrison Command to gain height. Use the Springer or the Skyscale to make the final jump.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2943",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2943",
+      "coord": [
+        65476,
+        58661
+      ],
+      "recommendedLevel": null,
+      "name": "Garrison Relay Tower",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1631,
+      "wikiText": "Garrison Relay Tower is a point of interest in the Argon Garrison.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2956",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2956",
+      "coord": [
+        65175,
+        58878
+      ],
+      "recommendedLevel": null,
+      "name": "Garrison Access Tower",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1696,
+      "wikiText": "Garrison Access Tower is a point of interest in the Argon Garrison.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:waypoint:2947",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "waypoint",
+      "objectiveId": "2947",
+      "coord": [
+        64762,
+        59142
+      ],
+      "recommendedLevel": null,
+      "name": "Soul's Vendetta Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIMLAAA=]",
+      "waypointChatLink": "[&BIMLAAA=]",
+      "trailIndex": 1783,
+      "wikiText": "Pact Vanguard is an area in the southwest of the Jahai Bluffs where the Pact have setup a temporary camp in the shell of their crashed airship."
+    },
+    {
+      "stepId": "1301:poi:2957",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2957",
+      "coord": [
+        64771,
+        59207
+      ],
+      "recommendedLevel": null,
+      "name": "Vanguard Ordinance",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1794,
+      "wikiText": "Vanguard Ordinance is a point of interest in Pact Vanguard.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:heart:435",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "heart",
+      "objectiveId": "435",
+      "coord": [
+        64663,
+        59066
+      ],
+      "recommendedLevel": 80,
+      "name": "Prepare the Pact camp for battle.",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64987,
+          58749
+        ],
+        [
+          65144,
+          59111
+        ],
+        [
+          65208,
+          59608
+        ],
+        [
+          64529,
+          59613
+        ],
+        [
+          64422,
+          59625
+        ],
+        [
+          64375,
+          59034
+        ],
+        [
+          64406,
+          58850
+        ],
+        [
+          64446,
+          58688
+        ],
+        [
+          64987,
+          58749
+        ]
+      ],
+      "trailIndex": 1830,
+      "wikiText": "Repair DERVs, collect airship debris while mounted, test weaponized Brand shards, and protect the camp perimeter from Branded.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2960",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2960",
+      "coord": [
+        64678,
+        58948
+      ],
+      "recommendedLevel": null,
+      "name": "Vanguard Salvage Yard",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1843,
+      "wikiText": "Vanguard Salvage Yard is a point of interest in Pact Vanguard.",
+      "waypointChatLink": "[&BIMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2964",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2964",
+      "coord": [
+        64884,
+        57923
+      ],
+      "recommendedLevel": null,
+      "name": "Crystal Cavern",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2026,
+      "wikiText": "Crystal Cavern is a point of interest in Central Brand Scar.",
+      "waypointChatLink": "[&BJMLAAA=]"
+    },
+    {
+      "stepId": "1301:waypoint:2963",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "waypoint",
+      "objectiveId": "2963",
+      "coord": [
+        63986,
+        57861
+      ],
+      "recommendedLevel": null,
+      "name": "Venta Pass Waypoint",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJMLAAA=]",
+      "waypointChatLink": "[&BJMLAAA=]",
+      "trailIndex": 2205,
+      "wikiText": "The Venta Pass is an area in the western Jahai Bluffs."
+    },
+    {
+      "stepId": "1301:poi:2959",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2959",
+      "coord": [
+        63832,
+        57754
+      ],
+      "recommendedLevel": null,
+      "name": "Mirza's Rest",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2232,
+      "wikiText": "Mirza's Rest is a point of interest in Venta Pass.",
+      "waypointChatLink": "[&BJMLAAA=]"
+    },
+    {
+      "stepId": "1301:vista:2945",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "vista",
+      "objectiveId": "2945",
+      "coord": [
+        63808,
+        57323
+      ],
+      "recommendedLevel": null,
+      "name": "Ruined Procession",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2316,
+      "wikiText": "Walk to the vista and gain height using either the Springer or the Skyscale. Repeat until you have reached the vista.",
+      "waypointChatLink": "[&BJMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2938",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2938",
+      "coord": [
+        63760,
+        57103
+      ],
+      "recommendedLevel": null,
+      "name": "Ancestor Tree",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2337,
+      "wikiText": "Ancestor Tree was a sacred tree to the Veldrunner centaurs. Some scholars believed that the fruit of these trees was considered divine and as a way to pass on spiritual wisdom from one generation to the next.",
+      "waypointChatLink": "[&BJMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2940",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2940",
+      "coord": [
+        64246,
+        56872
+      ],
+      "recommendedLevel": null,
+      "name": "Battleground Ramparts",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2424,
+      "wikiText": "Battleground Ramparts is a point of interest within Almorra's Stand in Jahai Bluffs. It is where the Death-Branded Shatterer spawns during Destroy the Death-Branded Shatterer.",
+      "waypointChatLink": "[&BJMLAAA=]"
+    },
+    {
+      "stepId": "1301:poi:2928",
+      "mapId": 1301,
+      "zoneName": "Jahai Bluffs",
+      "type": "poi",
+      "objectiveId": "2928",
+      "coord": [
+        64336,
+        57154
+      ],
+      "recommendedLevel": null,
+      "name": "Staging Platform",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2477,
+      "wikiText": "Staging Platform is a point of interest within Almorra's Stand in Jahai Bluffs. It is where General Almorra Soulkeeper assembles a team to Destroy the Death-Branded Shatterer.",
+      "waypointChatLink": "[&BJMLAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

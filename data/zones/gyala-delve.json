@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1490,
+    "name": "Gyala Delve",
+    "continentId": 1,
+    "regionId": 37,
+    "regionName": "Cantha",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -24576,
+        -43008
+      ],
+      [
+        27648,
+        46080
+      ]
+    ],
+    "continentRect": [
+      [
+        36677,
+        100479
+      ],
+      [
+        38853,
+        104191
+      ]
+    ],
+    "sectorRect": [
+      [
+        36858.7,
+        100641
+      ],
+      [
+        38684.1,
+        104000
+      ]
+    ],
+    "labelCoord": [
+      37749,
+      102240
+    ],
+    "release": "eod"
+  },
+  "primaryKind": "mount",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1490:poi:3493",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3493",
+      "coord": [
+        37080,
+        100786
+      ],
+      "recommendedLevel": null,
+      "name": "Park Quarry",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 59,
+      "wikiText": "The Park Quarry is the Excavation Yard where the miners of the Jade Brotherhood extract the jade.",
+      "waypointChatLink": "[&BKoNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3482",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3482",
+      "coord": [
+        37499,
+        100874
+      ],
+      "recommendedLevel": null,
+      "name": "Park Mining Ops",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 123,
+      "wikiText": "The Park Mining Ops it is a large building that belongs to the Jade Brotherhood and the mines from which jade is extracted operate from here. In the place there is an elevator that leads to a platform at the top.",
+      "waypointChatLink": "[&BKoNAAA=]"
+    },
+    {
+      "stepId": "1490:waypoint:3498",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "waypoint",
+      "objectiveId": "3498",
+      "coord": [
+        37631,
+        100871
+      ],
+      "recommendedLevel": null,
+      "name": "Park Mining Ops Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKoNAAA=]",
+      "waypointChatLink": "[&BKoNAAA=]",
+      "trailIndex": 141,
+      "wikiText": "The Excavation Yard is a Jade Brotherhood outpost at the entrance to Gyala Delve's mines."
+    },
+    {
+      "stepId": "1490:poi:3501",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3501",
+      "coord": [
+        37748,
+        100823
+      ],
+      "recommendedLevel": null,
+      "name": "Turtle Pen",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 160,
+      "wikiText": "The Turtle Pen is an animal pen belonging to the Jade Brotherhood. It houses two Canthan raptors, two siege turtle, and three Wallows.",
+      "waypointChatLink": "[&BKoNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3477",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3477",
+      "coord": [
+        38029,
+        100910
+      ],
+      "recommendedLevel": null,
+      "name": "Tailings Pond",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 200,
+      "wikiText": "Tailings Pond is a shallow pool of water inhabited by a group of kappa.",
+      "waypointChatLink": "[&BKoNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3495",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3495",
+      "coord": [
+        37661,
+        101472
+      ],
+      "recommendedLevel": null,
+      "name": "Crestfallen Trench",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 311,
+      "wikiText": "Crestfallen Trench it is another excavation where the miners of the Jade Brotherhood extract the jade.",
+      "waypointChatLink": "[&BKoNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3475",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3475",
+      "coord": [
+        37499,
+        101801
+      ],
+      "recommendedLevel": null,
+      "name": "Shipwreck Excavation",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 349,
+      "wikiText": "Shipwreck Excavation is another extraction point where you can see a ship stranded in the petrified jade",
+      "waypointChatLink": "[&BJINAAA=]"
+    },
+    {
+      "stepId": "1490:waypoint:3492",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "waypoint",
+      "objectiveId": "3492",
+      "coord": [
+        38285,
+        101596
+      ],
+      "recommendedLevel": null,
+      "name": "Jadepillar Point Waypoint",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKQNAAA=]",
+      "waypointChatLink": "[&BKQNAAA=]",
+      "trailIndex": 460,
+      "wikiText": "The Hollow is an open-air area of Gyala Delve's mines."
+    },
+    {
+      "stepId": "1490:poi:3486",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3486",
+      "coord": [
+        38261,
+        101643
+      ],
+      "recommendedLevel": null,
+      "name": "Jadepillar Point Base",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 468,
+      "wikiText": "Jadepillar Point Base it is one of the bases of the Jade Brotherhood where the mine operates, however the place has been taken over by the mist, corrupting the miners who are in the place.",
+      "waypointChatLink": "[&BKQNAAA=]"
+    },
+    {
+      "stepId": "1490:vista:3491",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "vista",
+      "objectiveId": "3491",
+      "coord": [
+        38257,
+        101758
+      ],
+      "recommendedLevel": null,
+      "name": "The Hollow",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 481,
+      "wikiText": "The Hollow is an open-air area of Gyala Delve's mines.",
+      "waypointChatLink": "[&BKQNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3488",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3488",
+      "coord": [
+        38381,
+        102162
+      ],
+      "recommendedLevel": null,
+      "name": "Fossilized Overlook",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 552,
+      "wikiText": "Fossilized Overlook it is an area where you can see the corpse of a leviathan trapped in the petrified jade at the top of the mine.",
+      "waypointChatLink": "[&BKQNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3480",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3480",
+      "coord": [
+        38539,
+        102706
+      ],
+      "recommendedLevel": null,
+      "name": "Shell-Side Excavation",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 609,
+      "wikiText": "Shell-Side Excavation it is one of the mines of the Jade Brotherhood in which a type of fossil snail can be seen.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3484",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3484",
+      "coord": [
+        38052,
+        102663
+      ],
+      "recommendedLevel": null,
+      "name": "Prospector's Landing",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 686,
+      "wikiText": "Prospector's Landing it is another of the Jade Brotherhood mines, where the mist has corrupted some miners.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:vista:3487",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "vista",
+      "objectiveId": "3487",
+      "coord": [
+        37874,
+        102542
+      ],
+      "recommendedLevel": null,
+      "name": "Howling Caves",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 744,
+      "wikiText": "Howling Caves is an area of the Gyala Delve that lies beneath the Jade Sea, it can be seen that there are several mines where miners from the Jade Brotherhood extract the dragonjade.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3497",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3497",
+      "coord": [
+        37734,
+        102413
+      ],
+      "recommendedLevel": null,
+      "name": "Behemoth's Drop",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 750,
+      "wikiText": "Behemoth's Drop it is a sunken area in which you can see a giant machine which was destroyed after the sinking.",
+      "waypointChatLink": "[&BJINAAA=]"
+    },
+    {
+      "stepId": "1490:waypoint:3474",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "waypoint",
+      "objectiveId": "3474",
+      "coord": [
+        37424,
+        102153
+      ],
+      "recommendedLevel": null,
+      "name": "Behemoth's Gap Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJINAAA=]",
+      "waypointChatLink": "[&BJINAAA=]",
+      "trailIndex": 879
+    },
+    {
+      "stepId": "1490:poi:3483",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3483",
+      "coord": [
+        37376,
+        102208
+      ],
+      "recommendedLevel": null,
+      "name": "Behemoth's Gap Base",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 888,
+      "wikiText": "Behemoth's Gap Base is another of the Jade Brotherhood bases where they operate the mine where jade is extracted. However, the place is sometimes controlled by the mist that corrupts the miners found here.",
+      "waypointChatLink": "[&BJINAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3500",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3500",
+      "coord": [
+        37457,
+        103153
+      ],
+      "recommendedLevel": null,
+      "name": "Crystal Cavern",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1053,
+      "wikiText": "Crystal Cavern is a cave containing several giant crystal spires mixed in with abundant vegetation. A group of twisted skelk have taken up residence within.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:waypoint:3481",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "waypoint",
+      "objectiveId": "3481",
+      "coord": [
+        37815,
+        103075
+      ],
+      "recommendedLevel": null,
+      "name": "Luxon Terminus Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJkNAAA=]",
+      "waypointChatLink": "[&BJkNAAA=]",
+      "trailIndex": 1115,
+      "wikiText": "The Jade Pools are an underground area of Gyala Delve where the jade making up the Jade Sea has begun to melt and take its watery form again. Some vegetation can be found around the area."
+    },
+    {
+      "stepId": "1490:poi:3479",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3479",
+      "coord": [
+        38036,
+        102988
+      ],
+      "recommendedLevel": null,
+      "name": "Stalagmite Islet",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1161,
+      "wikiText": "Stalagmite Islet is a small island in a jade river within the Jade Pools. Several corrupted skelk are found on it.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3485",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3485",
+      "coord": [
+        38302,
+        102918
+      ],
+      "recommendedLevel": null,
+      "name": "Melting Pools",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1205,
+      "wikiText": "Melting Pools it is a site within the Jade Pools, where you can see how the jade melts and takes on a watery form.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3478",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3478",
+      "coord": [
+        38075,
+        103237
+      ],
+      "recommendedLevel": null,
+      "name": "Mycelium Colony",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1257,
+      "wikiText": "The Mycelium Colony is a cave within the Jade Pools inhabited by Maguuma-harvested fungi smuggled into Canthan borders by unscrupulous traders due to their status as a delicacy in the Empire of the Dragon.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3476",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3476",
+      "coord": [
+        37843,
+        103167
+      ],
+      "recommendedLevel": null,
+      "name": "Luxon Terminus Fort",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1361,
+      "wikiText": "Luxon Terminus Fort it is a base that formerly belonged to the Luxons and is now where the Jade Brotherhood operates the mines that lie deep within the site.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:vista:3490",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "vista",
+      "objectiveId": "3490",
+      "coord": [
+        37686,
+        103802
+      ],
+      "recommendedLevel": null,
+      "name": "The Deep",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1515,
+      "wikiText": "The Deep is a cave once trapped by the petrified Jade Sea, south of Gyala Delve's mines. It was the lair of the demon Kanaxai.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3494",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3494",
+      "coord": [
+        38448,
+        103399
+      ],
+      "recommendedLevel": null,
+      "name": "Ley-Line Islet",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1678,
+      "wikiText": "Ley-Line Islet it is an island surrounded by a circular ley line river.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3499",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3499",
+      "coord": [
+        38493,
+        103851
+      ],
+      "recommendedLevel": null,
+      "name": "Littoral Cave",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1757,
+      "wikiText": "Littoral Cave is a hidden cave within The Deep where you can see that vegetation has grown on this site. To access it, you must go to the Celestial Pool, head southeast, and go into the water to find an underwater tunnel.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3496",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3496",
+      "coord": [
+        38157,
+        103785
+      ],
+      "recommendedLevel": null,
+      "name": "Celestial Pool",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1774,
+      "wikiText": "The Celestial Pool is a small lake within the Deep containing a small island inhabited by a powerful twisted skelk. An underwater passage in the pool connects to the Littoral Cave.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3489",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3489",
+      "coord": [
+        37266,
+        103751
+      ],
+      "recommendedLevel": null,
+      "name": "Ley-Line Nexus",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1860,
+      "wikiText": "Ley-Line Nexus is a ley-line hub located within The Deep. It is the lair of an oni feeding off the ley energy.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3504",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3504",
+      "coord": [
+        37029,
+        103184
+      ],
+      "recommendedLevel": null,
+      "name": "Fortune's Collapse",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1941,
+      "wikiText": "Fortune's Collapse is a point of interest in Gyala Delve. It is a small pond of melting jade.",
+      "waypointChatLink": "[&BJkNAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3503",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3503",
+      "coord": [
+        37118,
+        102300
+      ],
+      "recommendedLevel": null,
+      "name": "Serpent's Folly",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2062,
+      "wikiText": "The Serpent's Folly is a point of interest in Gyala Delve with a large cliff.",
+      "waypointChatLink": "[&BJINAAA=]"
+    },
+    {
+      "stepId": "1490:poi:3502",
+      "mapId": 1490,
+      "zoneName": "Gyala Delve",
+      "type": "poi",
+      "objectiveId": "3502",
+      "coord": [
+        36896,
+        101669
+      ],
+      "recommendedLevel": null,
+      "name": "Excavation Point 7-G",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2159,
+      "wikiText": "The Excavation Point 7-G is a point of interest in Gyala Delve. It is an excavation site with a massive drilling machine.",
+      "waypointChatLink": "[&BJINAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

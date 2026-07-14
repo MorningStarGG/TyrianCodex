@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "mapId": 28,
+  "slug": "wayfarer-foothills",
+  "name": "Wayfarer Foothills",
+  "regionName": "Shiverpeak Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -21.1,
+      "y": 95.5,
+      "z": 592.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BHIBAAA=]"
+    },
+    {
+      "x": -84.1,
+      "y": 54.5,
+      "z": -1333.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BMMDAAA=]"
+    },
+    {
+      "x": 473.9,
+      "y": 36.2,
+      "z": -672.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BMYDAAA=]"
+    },
+    {
+      "x": -9.5,
+      "y": 90.1,
+      "z": 575.7,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 78.0,
+      "y": 38.0,
+      "z": -142.1,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 304.2,
+      "y": 74.3,
+      "z": 257.0,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -283.0,
+      "y": 112.8,
+      "z": 495.2,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -263.0,
+      "y": 129.7,
+      "z": 826.2,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -108.6,
+      "y": 66.3,
+      "z": -166.4,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 88.2,
+      "y": 42.6,
+      "z": -95.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -129.4,
+      "y": 47.9,
+      "z": -52.6,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 141.6,
+      "y": 154.9,
+      "z": 1104.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 124.6,
+      "y": 201.2,
+      "z": 1211.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    }
+  ]
+}

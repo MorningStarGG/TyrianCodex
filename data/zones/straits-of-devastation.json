@@ -1,0 +1,1502 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 51,
+    "name": "Straits of Devastation",
+    "continentId": 1,
+    "regionId": 3,
+    "regionName": "Ruins of Orr",
+    "floor": 1,
+    "minLevel": 70,
+    "maxLevel": 75,
+    "mapRect": [
+      [
+        -39936,
+        -33792
+      ],
+      [
+        39936,
+        33792
+      ]
+    ],
+    "continentRect": [
+      [
+        47232,
+        38784
+      ],
+      [
+        50560,
+        41600
+      ]
+    ],
+    "sectorRect": [
+      [
+        47029.6,
+        38649.9
+      ],
+      [
+        50620.5,
+        41548.6
+      ]
+    ],
+    "labelCoord": [
+      48688,
+      40192
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "51:waypoint:748",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "748",
+      "coord": [
+        49731,
+        38999
+      ],
+      "recommendedLevel": null,
+      "name": "Bramble Pass Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOwCAAA=]",
+      "waypointChatLink": "[&BOwCAAA=]",
+      "trailIndex": 10,
+      "wikiText": "Bramble Pass is the northeasternmost area of Straits of Devastation. It is one of the last locations close to Orr left untouched by the Risen."
+    },
+    {
+      "stepId": "51:poi:1626",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1626",
+      "coord": [
+        49703,
+        39078
+      ],
+      "recommendedLevel": null,
+      "name": "The Underbelly",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 21,
+      "wikiText": "The Underbelly is a tunnel within the Bramble Pass used by the Pact to get their wounded to the Oceanside Ordnance without getting noticed by the Risen.",
+      "waypointChatLink": "[&BOwCAAA=]"
+    },
+    {
+      "stepId": "51:poi:727",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "727",
+      "coord": [
+        49419,
+        38971
+      ],
+      "recommendedLevel": null,
+      "name": "Oceanside Ordnance",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 76,
+      "wikiText": "Oceanside Ordnance is a field hospital used to heal wounded Pact soldiers.",
+      "waypointChatLink": "[&BO0CAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:749",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "749",
+      "coord": [
+        49122,
+        39052
+      ],
+      "recommendedLevel": null,
+      "name": "Signal Peak Waypoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO0CAAA=]",
+      "waypointChatLink": "[&BO0CAAA=]",
+      "trailIndex": 120,
+      "wikiText": "Signal Peak is a northern area of Straits of Devastation. This coastal area is home to two Pact encampments."
+    },
+    {
+      "stepId": "51:poi:729",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "729",
+      "coord": [
+        49000,
+        39163
+      ],
+      "recommendedLevel": null,
+      "name": "Stentor Cannonade",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 145,
+      "wikiText": "Stentor Cannonade is a Pact staging area for the northern invasion force.",
+      "waypointChatLink": "[&BO0CAAA=]"
+    },
+    {
+      "stepId": "51:poi:736",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "736",
+      "coord": [
+        48297,
+        39104
+      ],
+      "recommendedLevel": null,
+      "name": "Plaza of Lost Wisdom",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 162,
+      "wikiText": "The Plaza of Lost Wisdom marks the entrance to Abaddon's lost temple, the Cathedral of Hidden Depths.",
+      "waypointChatLink": "[&BPMCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:755",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "755",
+      "coord": [
+        48538,
+        39525
+      ],
+      "recommendedLevel": null,
+      "name": "Royal Forum Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPMCAAA=]",
+      "waypointChatLink": "[&BPMCAAA=]",
+      "trailIndex": 169,
+      "wikiText": "Strait of Malediction is a waterway in the Straits of Devastation. Many underwater Orrian ruins can be seen in this area."
+    },
+    {
+      "stepId": "51:poi:745",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "745",
+      "coord": [
+        48578,
+        39617
+      ],
+      "recommendedLevel": null,
+      "name": "The Royal Forum",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 180,
+      "wikiText": "The Royal Forum is an underwater Orrian ruin swarming with Risen.",
+      "waypointChatLink": "[&BPMCAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-239",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-239",
+      "coord": [
+        48641,
+        39592
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Melandru",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 191,
+      "wikiText": "Statues of Melandru can be found throughout Tyria, dedicated to the goddess Melandru.",
+      "waypointChatLink": "[&BPMCAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-164",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-164",
+      "coord": [
+        48789,
+        39472
+      ],
+      "recommendedLevel": null,
+      "name": "Lost Conservatory",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 196,
+      "wikiText": "Lost Conservatory is a communing hero challenge in Strait of Sacrilege.",
+      "waypointChatLink": "[&BPMCAAA=]"
+    },
+    {
+      "stepId": "51:poi:746",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "746",
+      "coord": [
+        48917,
+        40069
+      ],
+      "recommendedLevel": null,
+      "name": "The Vesper Bell",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 201,
+      "wikiText": "The Vesper Bell is an underwater Orrian ruin swarming with Risen.",
+      "waypointChatLink": "[&BPICAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:754",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "754",
+      "coord": [
+        49072,
+        40069
+      ],
+      "recommendedLevel": null,
+      "name": "Vesper Bell Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPICAAA=]",
+      "waypointChatLink": "[&BPICAAA=]",
+      "trailIndex": 202,
+      "wikiText": "Strait of Sacrilege is a waterway in the Straits of Devastation. Many sunken Orrian ruins are found there."
+    },
+    {
+      "stepId": "51:poi:735",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "735",
+      "coord": [
+        49178,
+        39895
+      ],
+      "recommendedLevel": null,
+      "name": "Stygian Deeps",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 227,
+      "wikiText": "Stygian Deeps is a krait spire that has been overrun by Risen.",
+      "waypointChatLink": "[&BPICAAA=]"
+    },
+    {
+      "stepId": "51:vista:1724",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "vista",
+      "objectiveId": "1724",
+      "coord": [
+        49207,
+        39884
+      ],
+      "recommendedLevel": null,
+      "name": "Terzetto Bay (1)",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 232,
+      "wikiText": "Terzetto Bay is a body of water in the Straits of Devastation. It originally was home to krait until their deeps was overrun by Risen.",
+      "waypointChatLink": "[&BPICAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:1625",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "1625",
+      "coord": [
+        49737,
+        39268
+      ],
+      "recommendedLevel": null,
+      "name": "Underbelly Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFkGAAA=]",
+      "waypointChatLink": "[&BFkGAAA=]",
+      "trailIndex": 249,
+      "wikiText": "Half Circle Cove is an area in the northeast of Straits of Devastation."
+    },
+    {
+      "stepId": "51:waypoint:1624",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "1624",
+      "coord": [
+        50065,
+        39285
+      ],
+      "recommendedLevel": null,
+      "name": "Plinth Timberland Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFgGAAA=]",
+      "waypointChatLink": "[&BFgGAAA=]",
+      "trailIndex": 297,
+      "wikiText": "Plinth Timberland is a densely forested area in Straits of Devastation. The Pact forces at Fort Trinity harvest the wood here to contribute it toward building weapons and camps for the war effort against Zaitan."
+    },
+    {
+      "stepId": "51:poi:728",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "728",
+      "coord": [
+        50224,
+        39473
+      ],
+      "recommendedLevel": null,
+      "name": "Razorslide Bivouac",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 332,
+      "wikiText": "Razorslide Bivouac is a point of interest in Plinth Timberland. It is used by the Pact to train new recruits to send to the front lines.",
+      "waypointChatLink": "[&BFgGAAA=]"
+    },
+    {
+      "stepId": "51:poi:1021",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1021",
+      "coord": [
+        49844,
+        39841
+      ],
+      "recommendedLevel": null,
+      "name": "Armada Harbor",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 403,
+      "wikiText": "Armada Harbor is a dock located within Fort Trinity. The Pact are storing their submarines there.",
+      "waypointChatLink": "[&BO4CAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:751",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "751",
+      "coord": [
+        50385,
+        39950
+      ],
+      "recommendedLevel": null,
+      "name": "Thorn Pass Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO8CAAA=]",
+      "waypointChatLink": "[&BO8CAAA=]",
+      "trailIndex": 502,
+      "wikiText": "Thorn Pass is an eastern area in the Straits of Devastation."
+    },
+    {
+      "stepId": "51:poi:1022",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1022",
+      "coord": [
+        50143,
+        39986
+      ],
+      "recommendedLevel": null,
+      "name": "Alseta Generator",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 559,
+      "wikiText": "Alseta Generator is a point of interest in Fort Trinity. This place is used to keep the Blue Orb safe from Risen.",
+      "waypointChatLink": "[&BO4CAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-160",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-160",
+      "coord": [
+        50071,
+        40060
+      ],
+      "recommendedLevel": null,
+      "name": "Priory Magister",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 573,
+      "wikiText": "Priory Magisters are generic members of the Durmand Priory of Magister ranking.",
+      "waypointChatLink": "[&BO4CAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:750",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "750",
+      "coord": [
+        50061,
+        40004
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Trinity Waypoint",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BO4CAAA=]",
+      "waypointChatLink": "[&BO4CAAA=]",
+      "trailIndex": 584,
+      "wikiText": "Fort Trinity is a large fort in the Straits of Devastation and the stronghold for the Pact's assault on Orr."
+    },
+    {
+      "stepId": "51:vista:1723",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "vista",
+      "objectiveId": "1723",
+      "coord": [
+        49702,
+        39995
+      ],
+      "recommendedLevel": null,
+      "name": "Terzetto Bay (2)",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 671,
+      "wikiText": "Terzetto Bay is a body of water in the Straits of Devastation. It originally was home to krait until their deeps was overrun by Risen.",
+      "waypointChatLink": "[&BO4CAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-165",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-165",
+      "coord": [
+        49378,
+        40315
+      ],
+      "recommendedLevel": null,
+      "name": "Sunken Ship",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 680,
+      "wikiText": "Sunken Ship is a communing hero challenge in Strait of Sacrilege.",
+      "waypointChatLink": "[&BPICAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:752",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "752",
+      "coord": [
+        49929,
+        40404
+      ],
+      "recommendedLevel": null,
+      "name": "Thunderhead Waypoint",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPACAAA=]",
+      "waypointChatLink": "[&BPACAAA=]",
+      "trailIndex": 702,
+      "wikiText": "The Squall Cusps is an area in the Straits of Devastation. A Pact camp found there is used to push south into Orr."
+    },
+    {
+      "stepId": "51:poi:730",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "730",
+      "coord": [
+        49957,
+        40497
+      ],
+      "recommendedLevel": null,
+      "name": "Thunderhead Battery",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 719,
+      "wikiText": "Thunderhead Battery is home to Siegemaster Denbi and his trebuchets.",
+      "waypointChatLink": "[&BPACAAA=]"
+    },
+    {
+      "stepId": "51:vista:1726",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "vista",
+      "objectiveId": "1726",
+      "coord": [
+        50378,
+        40549
+      ],
+      "recommendedLevel": null,
+      "name": "Lightfoot Passage",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 850,
+      "wikiText": "Accessed by climbing roots. Start point is north of vista on map, inside the passage near a lake area. It is clearly marked by a torch near the planks that are lying on the ground.",
+      "waypointChatLink": "[&BPACAAA=]"
+    },
+    {
+      "stepId": "51:poi:731",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "731",
+      "coord": [
+        50297,
+        40730
+      ],
+      "recommendedLevel": null,
+      "name": "Cadrigan's Jetty",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 929,
+      "wikiText": "Cadrigan's Jetty, also known as Lightfoot Dock, is a point of interest in Lightfoot Passage. This small abandoned dock is now home to a group of marsh drakes.",
+      "waypointChatLink": "[&BPACAAA=]"
+    },
+    {
+      "stepId": "51:poi:742",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "742",
+      "coord": [
+        49897,
+        40632
+      ],
+      "recommendedLevel": null,
+      "name": "Compass Bridge",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 949,
+      "wikiText": "Compass Bridge is a bridge marking the start of Risen territory in Orr.",
+      "waypointChatLink": "[&BPACAAA=]"
+    },
+    {
+      "stepId": "51:poi:732",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "732",
+      "coord": [
+        49595,
+        40784
+      ],
+      "recommendedLevel": null,
+      "name": "Izz-al-Din Sarayi",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 989,
+      "wikiText": "Izz-al-Din Sarayi is an Orrian structure on an island in the Shark's Teeth Archipelago between Orr and the Steamspur Mountains.",
+      "waypointChatLink": "[&BPECAAA=]"
+    },
+    {
+      "stepId": "51:vista:1728",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "vista",
+      "objectiveId": "1728",
+      "coord": [
+        49630,
+        40893
+      ],
+      "recommendedLevel": null,
+      "name": "Broken Spit",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1007,
+      "wikiText": "Straightforward Vista. Start at the Izz-al-Din Sarayi Point of Interest and head south. Almost no jumping/climbing required.",
+      "waypointChatLink": "[&BPECAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:753",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "753",
+      "coord": [
+        49380,
+        40962
+      ],
+      "recommendedLevel": null,
+      "name": "Broken Spit Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPECAAA=]",
+      "waypointChatLink": "[&BPECAAA=]",
+      "trailIndex": 1014,
+      "wikiText": "Shark's Teeth Archipelago is series of islands and bridges in the Straits of Devastation. It contains multiple asura gates that are currently under construction."
+    },
+    {
+      "stepId": "51:poi:733",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "733",
+      "coord": [
+        49330,
+        41020
+      ],
+      "recommendedLevel": null,
+      "name": "Broken Spit",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1020,
+      "wikiText": "Broken Spit is an Orrian ruin used by Risen fish to reproduce.",
+      "waypointChatLink": "[&BPECAAA=]"
+    },
+    {
+      "stepId": "51:poi:734",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "734",
+      "coord": [
+        49204,
+        40708
+      ],
+      "recommendedLevel": null,
+      "name": "The Vizier's Tower",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1140,
+      "wikiText": "The Vizier's Tower is a Point of Interest located in the Shark's Teeth Archipelago.",
+      "waypointChatLink": "[&BPcCAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-162",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-162",
+      "coord": [
+        49204,
+        40678
+      ],
+      "recommendedLevel": null,
+      "name": "Book",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1145,
+      "wikiText": "Books are collections of factual, historical, or personal writings. Letters and journals are also considered books.",
+      "waypointChatLink": "[&BPcCAAA=]"
+    },
+    {
+      "stepId": "51:vista:1727",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "vista",
+      "objectiveId": "1727",
+      "coord": [
+        49176,
+        40670
+      ],
+      "recommendedLevel": null,
+      "name": "Vizier's Tower",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1151,
+      "wikiText": "Accessed from the next \"island\" in the chain, southwest of the island the vista is on. Climb the rise at the southern part of that island, and jump across rocks. Jump across rocks, coral shelves and coral to reach top.",
+      "waypointChatLink": "[&BPcCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:759",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "759",
+      "coord": [
+        48936,
+        40697
+      ],
+      "recommendedLevel": null,
+      "name": "Lone Post Waypoint",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPcCAAA=]",
+      "waypointChatLink": "[&BPcCAAA=]",
+      "trailIndex": 1197,
+      "wikiText": "Blighted Battleground is an area in the Straits of Devastation."
+    },
+    {
+      "stepId": "51:poi:737",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "737",
+      "coord": [
+        48992,
+        40785
+      ],
+      "recommendedLevel": null,
+      "name": "Lone Post",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1214,
+      "wikiText": "Lone Post is a gate leading into a large Risen stronghold.",
+      "waypointChatLink": "[&BPcCAAA=]"
+    },
+    {
+      "stepId": "51:poi:1230",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1230",
+      "coord": [
+        48718,
+        40886
+      ],
+      "recommendedLevel": null,
+      "name": "Lasciate Gateway",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1249,
+      "wikiText": "Lasciate Gateway is a point of interest in Xenarius Bayt. Players must slay the Veteran Risen Gatekeeper to open the gateway and proceed.",
+      "waypointChatLink": "[&BPcCAAA=]"
+    },
+    {
+      "stepId": "51:poi:1233",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1233",
+      "coord": [
+        48667,
+        41105
+      ],
+      "recommendedLevel": null,
+      "name": "Conservatory",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1282,
+      "wikiText": "The Conservatory is an Orrian ruin swarming with Risen found in Waywarde Way.",
+      "waypointChatLink": "[&BPgCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:760",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "760",
+      "coord": [
+        48532,
+        41316
+      ],
+      "recommendedLevel": null,
+      "name": "Waywarde Waypoint",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPgCAAA=]",
+      "waypointChatLink": "[&BPgCAAA=]",
+      "trailIndex": 1385,
+      "wikiText": "Waywarde Way is an area in the southern portion of Straits of Devastation. Various Risen and elementals can be seen wandering around in this area."
+    },
+    {
+      "stepId": "51:poi:741",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "741",
+      "coord": [
+        47878,
+        41085
+      ],
+      "recommendedLevel": null,
+      "name": "Altar of Betrayal",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1514,
+      "wikiText": "Altar of Betrayal is an altar dedicated to Balthazar in the Cathedral of Glorious Victory.",
+      "waypointChatLink": "[&BPoCAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-158",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-158",
+      "coord": [
+        47873,
+        41091
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Balthazar",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1515,
+      "wikiText": "Statues of Balthazar can be found throughout Tyria, dedicated to the god Balthazar. The hounds seen on the circular statue of Balthazar are Temar and Tegon.",
+      "waypointChatLink": "[&BPoCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:762",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "762",
+      "coord": [
+        47819,
+        40960
+      ],
+      "recommendedLevel": null,
+      "name": "Glorious Victory Waypoint",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPoCAAA=]",
+      "waypointChatLink": "[&BPoCAAA=]",
+      "trailIndex": 1533,
+      "wikiText": "The Cathedral of Glorious Victory is an area in the Straits of Devastation. It is a temple dedicated to Balthazar, one of the Six Human Gods."
+    },
+    {
+      "stepId": "51:hero:0-50",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-50",
+      "coord": [
+        47752,
+        40642
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Sentry of Balthazar Statue",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1573,
+      "wikiText": "Ancient Sentry of Balthazar Statue is a hero challenge veteran battle in Triumph Plaza.",
+      "waypointChatLink": "[&BPoCAAA=]"
+    },
+    {
+      "stepId": "51:vista:1725",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "vista",
+      "objectiveId": "1725",
+      "coord": [
+        47956,
+        40542
+      ],
+      "recommendedLevel": null,
+      "name": "Triumph Plaza",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1639,
+      "wikiText": "Walk south from the waypoint, and jump up the cliff to the vista. You can safely ignore the Risen in the area.",
+      "waypointChatLink": "[&BNIEAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:761",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "761",
+      "coord": [
+        48250,
+        40846
+      ],
+      "recommendedLevel": null,
+      "name": "Xenarius Waypoint",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPkCAAA=]",
+      "waypointChatLink": "[&BPkCAAA=]",
+      "trailIndex": 1719,
+      "wikiText": "Xenarius Bayt is an area in the Straits of Devastation. A Pact helicopter crashed there and its team is struggling to defend itself against the swarms of Risen prowling nearby."
+    },
+    {
+      "stepId": "51:hero:0-240",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-240",
+      "coord": [
+        48267,
+        40610
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Dwayna",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1752,
+      "wikiText": "There are two Statues of Dwayna that function as hero challenges, both of which are found within the Ruins of Orr: Within the Straits of Devastation: Statue of Dwayna (Triumph Plaza) Within Malchor's Leap: Statue of Dwayna (Karst Plains)",
+      "waypointChatLink": "[&BPkCAAA=]"
+    },
+    {
+      "stepId": "51:poi:1232",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1232",
+      "coord": [
+        48052,
+        40415
+      ],
+      "recommendedLevel": null,
+      "name": "Pact Rally Point",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1802,
+      "wikiText": "Pact Rally Point is a hidden Pact camp used to strike the Risen found at the Cathedral of Glorious Victory.",
+      "waypointChatLink": "[&BNIEAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-163",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-163",
+      "coord": [
+        48029,
+        40336
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil Tactician",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1819,
+      "wikiText": "Vigil Tacticians are Vigil soldiers found across Tyria.",
+      "waypointChatLink": "[&BNIEAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:1234",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "1234",
+      "coord": [
+        48072,
+        40387
+      ],
+      "recommendedLevel": null,
+      "name": "Rally Waypoint",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNIEAAA=]",
+      "waypointChatLink": "[&BNIEAAA=]",
+      "trailIndex": 1831,
+      "wikiText": "Triumph Plaza is an area in the Straits of Devastation. This large battleground houses a small Pact camp used to capture the Cathedral of Glorious Victory."
+    },
+    {
+      "stepId": "51:poi:740",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "740",
+      "coord": [
+        48160,
+        40185
+      ],
+      "recommendedLevel": null,
+      "name": "Snipe Hill",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1868,
+      "wikiText": "Snipe Hill is a hill littered with Risen trebuchets.",
+      "waypointChatLink": "[&BNIEAAA=]"
+    },
+    {
+      "stepId": "51:poi:738",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "738",
+      "coord": [
+        48452,
+        40272
+      ],
+      "recommendedLevel": null,
+      "name": "Conquest Marina",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1912,
+      "wikiText": "Conquest Marina is an Orrian dock that is now used by Risen to store their Dead Ships.",
+      "waypointChatLink": "[&BPYCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:758",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "758",
+      "coord": [
+        48532,
+        40342
+      ],
+      "recommendedLevel": null,
+      "name": "Conquest Marina Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPYCAAA=]",
+      "waypointChatLink": "[&BPYCAAA=]",
+      "trailIndex": 1929,
+      "wikiText": "Hunter's Table is an area in the Straits of Devastation. This coastal area is used by the Risen to build trebuchets."
+    },
+    {
+      "stepId": "51:waypoint:756",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "756",
+      "coord": [
+        48349,
+        39852
+      ],
+      "recommendedLevel": null,
+      "name": "Brassclaw Waypoint",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPQCAAA=]",
+      "waypointChatLink": "[&BPQCAAA=]",
+      "trailIndex": 1997,
+      "wikiText": "Crippled Bridges is an area in Straits of Devastation. This former dock is now decayed and overrun by Risen."
+    },
+    {
+      "stepId": "51:poi:739",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "739",
+      "coord": [
+        48181,
+        39877
+      ],
+      "recommendedLevel": null,
+      "name": "Brassclaw Landing",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2019,
+      "wikiText": "Brassclaw Landing is an Orrian ruins used by Risen to protect the Brassburn Torch.",
+      "waypointChatLink": "[&BPQCAAA=]"
+    },
+    {
+      "stepId": "51:poi:1231",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1231",
+      "coord": [
+        48291,
+        39625
+      ],
+      "recommendedLevel": null,
+      "name": "Brassburn Torch",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2053,
+      "wikiText": "Brassburn Torch is an Orrian beacon once used to guide sailors away from the rocky cliffs and shores of Orr before The Cataclysm. Nowadays, it is used by the Risen to guide and send orders to their Dead Ships.",
+      "waypointChatLink": "[&BPQCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:1765",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "1765",
+      "coord": [
+        47707,
+        39502
+      ],
+      "recommendedLevel": null,
+      "name": "Dire Shoal Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOUGAAA=]",
+      "waypointChatLink": "[&BOUGAAA=]",
+      "trailIndex": 2063,
+      "wikiText": "Strait of Malediction is a waterway in the Straits of Devastation. Many underwater Orrian ruins can be seen in this area."
+    },
+    {
+      "stepId": "51:hero:0-157",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-157",
+      "coord": [
+        47379,
+        39713
+      ],
+      "recommendedLevel": null,
+      "name": "Statue of Lyssa",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2125,
+      "wikiText": "Statues of Lyssa can be found throughout Tyria dedicated to the human goddess, Lyssa.",
+      "waypointChatLink": "[&BOUGAAA=]"
+    },
+    {
+      "stepId": "51:poi:747",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "747",
+      "coord": [
+        47353,
+        39983
+      ],
+      "recommendedLevel": null,
+      "name": "Monastery of Tughra",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2182,
+      "wikiText": "The Monastery of Tughra is an Orrian ruin inhabited by Risen. Nothing is known about the monastery's history.",
+      "waypointChatLink": "[&BPUCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:757",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "757",
+      "coord": [
+        47602,
+        40252
+      ],
+      "recommendedLevel": null,
+      "name": "Antheneum Waypoint",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPUCAAA=]",
+      "waypointChatLink": "[&BPUCAAA=]",
+      "trailIndex": 2270,
+      "wikiText": "The Bloodtrough is an area in the Straits of Devastation. These rotted swamplands are heavily populated by Risen Drakes."
+    },
+    {
+      "stepId": "51:poi:816",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "816",
+      "coord": [
+        47644,
+        40287
+      ],
+      "recommendedLevel": null,
+      "name": "Zaishen Antheneum",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2273,
+      "wikiText": "Zaishen Antheneum is a large Orrian ruin that once belonged to the Zaishen Order found on Orr.",
+      "waypointChatLink": "[&BPUCAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-159",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-159",
+      "coord": [
+        47552,
+        40292
+      ],
+      "recommendedLevel": null,
+      "name": "Grenth's Graveyard",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2287,
+      "wikiText": "Grenth's Graveyard is a communing hero challenge in The Bloodtrough. Approaching it from the west provides a smaller number of enemies to defeat before being able to commune.",
+      "waypointChatLink": "[&BPUCAAA=]"
+    },
+    {
+      "stepId": "51:poi:744",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "744",
+      "coord": [
+        47401,
+        40610
+      ],
+      "recommendedLevel": null,
+      "name": "Chapel of Lady Glaive",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2349,
+      "wikiText": "Chapel of Lady Glaive is a small structure on the western edge of Triumph Plaza, north of Sentry Waypoint. Within the chapel is a single coffin and several Risen, including a female Champion Risen Captain.",
+      "waypointChatLink": "[&BPsCAAA=]"
+    },
+    {
+      "stepId": "51:waypoint:763",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "waypoint",
+      "objectiveId": "763",
+      "coord": [
+        47420,
+        40812
+      ],
+      "recommendedLevel": null,
+      "name": "Sentry Waypoint",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPsCAAA=]",
+      "waypointChatLink": "[&BPsCAAA=]",
+      "trailIndex": 2382,
+      "wikiText": "Sentry Steppes is a western area in the Straits of Devastation that connects to Malchor's Leap."
+    },
+    {
+      "stepId": "51:poi:743",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "743",
+      "coord": [
+        47368,
+        40898
+      ],
+      "recommendedLevel": null,
+      "name": "Din al-Jindi",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2394,
+      "wikiText": "Din al-Jindi is an Orrian gate leading to Malchor's Leap.",
+      "waypointChatLink": "[&BPsCAAA=]"
+    },
+    {
+      "stepId": "51:hero:0-161",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "hero",
+      "objectiveId": "0-161",
+      "coord": [
+        47563,
+        41241
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Risen Spectral Guard",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2486,
+      "wikiText": "The Veteran Risen Spectral Guard starts a hero challenge in the Cathedral of Glorious Victory.",
+      "waypointChatLink": "[&BPoCAAA=]"
+    },
+    {
+      "stepId": "51:poi:1023",
+      "mapId": 51,
+      "zoneName": "Straits of Devastation",
+      "type": "poi",
+      "objectiveId": "1023",
+      "coord": [
+        49934,
+        40162
+      ],
+      "recommendedLevel": null,
+      "name": "Caer Aval",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2493,
+      "wikiText": "Caer Aval is Trahearne's office located in the southwest portion of Fort Trinity. To enter the instance, approach the large safe-like door on the south side of the central Fort Trinity hub.",
+      "waypointChatLink": "[&BO4CAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

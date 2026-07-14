@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "mapId": 19,
+  "slug": "plains-of-ashford",
+  "name": "Plains of Ashford",
+  "regionName": "Ascalon",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
+      "name": "Copper Ore",
+      "category": "ore",
+      "material": "copper",
+      "source": "tw"
+    },
+    {
+      "name": "Potato",
+      "category": "plant",
+      "material": "potato",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 587.1,
+      "y": 80.3,
+      "z": 538.1,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": -483.6,
+      "y": 56.6,
+      "z": -394.3,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 486.1,
+      "y": -0.5,
+      "z": -312.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 303.6,
+      "y": 0.6,
+      "z": -508.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BJgDAAA=] OR [&BH8BAAA=]"
+    },
+    {
+      "x": -867.9,
+      "y": 45.9,
+      "z": -37.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": -864.1,
+      "y": 46.2,
+      "z": -34.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": -1086.1,
+      "y": 39.5,
+      "z": -324.7,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BH8BAAA=]"
+    },
+    {
+      "x": -619.2,
+      "y": 4.1,
+      "z": 79.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": -555.5,
+      "y": 0.4,
+      "z": 59.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BJcDAAA=]"
+    },
+    {
+      "x": -463.7,
+      "y": 29.5,
+      "z": 543.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BIIBAAA=]"
+    },
+    {
+      "x": 152.7,
+      "y": 81.7,
+      "z": 549.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BIcBAAA=]"
+    },
+    {
+      "x": -971.9,
+      "y": 31.8,
+      "z": -378.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Springer"
+    },
+    {
+      "x": 1212.2,
+      "y": 45.9,
+      "z": 602.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BAQCAAA=]"
+    },
+    {
+      "x": 251.6,
+      "y": -14.7,
+      "z": -336.1,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": -831.5,
+      "y": 58.8,
+      "z": -471.8,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": 252.3,
+      "y": -16.2,
+      "z": -337.7,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": -832.0,
+      "y": 57.2,
+      "z": -474.0,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": -191.0,
+      "y": 58.1,
+      "z": 336.2,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -127.3,
+      "y": 59.5,
+      "z": 445.5,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": 748.9,
+      "y": 17.9,
+      "z": -539.9,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 740.7,
+      "y": 19.2,
+      "z": -541.0,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 743.2,
+      "y": 19.7,
+      "z": -547.6,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 737.9,
+      "y": 21.5,
+      "z": -549.7,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 744.5,
+      "y": 21.2,
+      "z": -554.5,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 752.3,
+      "y": 20.3,
+      "z": -554.0,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 754.4,
+      "y": 18.4,
+      "z": -545.9,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 744.2,
+      "y": 18.8,
+      "z": -542.0,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    }
+  ]
+}

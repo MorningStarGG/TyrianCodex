@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "mapId": 54,
+  "slug": "brisban-wildlands",
+  "name": "Brisban Wildlands",
+  "regionName": "Tarnished Coast",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
+      "name": "Iron Ore",
+      "category": "ore",
+      "material": "iron",
+      "source": "tw"
+    },
+    {
+      "name": "Silver Ore",
+      "category": "ore",
+      "material": "silver",
+      "source": "tw"
+    },
+    {
+      "name": "Spinach",
+      "category": "plant",
+      "material": "spinach",
+      "source": "tw"
+    },
+    {
+      "name": "Clam",
+      "category": "seafood",
+      "material": "clam",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 714.5,
+      "y": 96.3,
+      "z": 501.7,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": -363.7,
+      "y": 63.5,
+      "z": 663.6,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 600.3,
+      "y": 57.4,
+      "z": -27.7,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Roller Beetle"
+    },
+    {
+      "x": 426.0,
+      "y": 32.7,
+      "z": 142.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 102.0,
+      "y": 5.1,
+      "z": 16.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 419.8,
+      "y": 32.3,
+      "z": 160.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BLoDAAA=]"
+    },
+    {
+      "x": -746.5,
+      "y": 36.1,
+      "z": 506.3,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": -367.1,
+      "y": 27.1,
+      "z": 694.5,
+      "material": "silver",
+      "category": "ore",
+      "icon": "silver"
+    },
+    {
+      "x": 1007.3,
+      "y": 111.2,
+      "z": -717.4,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 1002.8,
+      "y": 111.0,
+      "z": -716.2,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 948.6,
+      "y": 117.2,
+      "z": -714.9,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 952.1,
+      "y": 118.1,
+      "z": -715.0,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 963.7,
+      "y": 125.6,
+      "z": -739.7,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 972.8,
+      "y": 126.4,
+      "z": -740.0,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 994.0,
+      "y": 126.0,
+      "z": -728.6,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 997.1,
+      "y": 126.2,
+      "z": -733.7,
+      "material": "spinach",
+      "category": "plant",
+      "icon": "spinach"
+    },
+    {
+      "x": 425.0,
+      "y": -7.1,
+      "z": -455.1,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 548.4,
+      "y": -17.2,
+      "z": -495.7,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 556.2,
+      "y": -20.6,
+      "z": -478.3,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 561.8,
+      "y": -13.6,
+      "z": -526.0,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 536.2,
+      "y": -3.5,
+      "z": -508.8,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 614.9,
+      "y": -25.0,
+      "z": -507.9,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 607.3,
+      "y": -19.7,
+      "z": -492.9,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    }
+  ]
+}

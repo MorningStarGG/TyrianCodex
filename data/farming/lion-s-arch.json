@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "mapId": 50,
+  "slug": "lion-s-arch",
+  "name": "Lion's Arch",
+  "regionName": "Kryta",
+  "mode": "farming",
+  "routes": [],
+  "nodes": [
+    {
+      "x": -493.3,
+      "y": 84.5,
+      "z": 294.5,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -492.5,
+      "y": 85.5,
+      "z": 299.7,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    }
+  ]
+}

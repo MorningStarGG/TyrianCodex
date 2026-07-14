@@ -1,0 +1,2027 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 54,
+    "name": "Brisban Wildlands",
+    "continentId": 1,
+    "regionId": 5,
+    "regionName": "Tarnished Coast",
+    "floor": 1,
+    "minLevel": 15,
+    "maxLevel": 25,
+    "mapRect": [
+      [
+        -39936,
+        -30720
+      ],
+      [
+        43008,
+        33792
+      ]
+    ],
+    "continentRect": [
+      [
+        38656,
+        30848
+      ],
+      [
+        42112,
+        33536
+      ]
+    ],
+    "sectorRect": [
+      [
+        38589,
+        30816.2
+      ],
+      [
+        42195.1,
+        33576.8
+      ]
+    ],
+    "labelCoord": [
+      40384,
+      32192
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "54:waypoint:117",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "117",
+      "coord": [
+        40734,
+        33299
+      ],
+      "recommendedLevel": null,
+      "name": "Mrot Boru Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHUAAAA=]",
+      "waypointChatLink": "[&BHUAAAA=]",
+      "trailIndex": 12,
+      "wikiText": "The Venlin Vale is an area in the Brisban Wildlands. It holds the largest body of water in this somewhat arid part of the world."
+    },
+    {
+      "stepId": "54:heart:310",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "310",
+      "coord": [
+        40802,
+        32906
+      ],
+      "recommendedLevel": 17,
+      "name": "Keep the Inquest from endangering Mrot Boru.",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40396,
+          32912
+        ],
+        [
+          40355,
+          32740
+        ],
+        [
+          40459,
+          32648
+        ],
+        [
+          40688,
+          32692
+        ],
+        [
+          40848,
+          32944
+        ],
+        [
+          40791,
+          33013
+        ],
+        [
+          40396,
+          32912
+        ]
+      ],
+      "trailIndex": 52,
+      "wikiText": "Fight the Inquest that are causing trouble at Mrot Boru. Disable the Inquest equipment at Invariant base.",
+      "waypointChatLink": "[&BHUAAAA=]"
+    },
+    {
+      "stepId": "54:poi:102",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "102",
+      "coord": [
+        41102,
+        33326
+      ],
+      "recommendedLevel": null,
+      "name": "Aethervolt Lab",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 100,
+      "wikiText": "The Aethervolt Lab is a point of interest within the Venlin Vale. This large complex is an asura research laboratory. The workers here are experimenting with asura gate technology.",
+      "waypointChatLink": "[&BHUAAAA=]"
+    },
+    {
+      "stepId": "54:vista:1479",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "vista",
+      "objectiveId": "1479",
+      "coord": [
+        41081,
+        33230
+      ],
+      "recommendedLevel": null,
+      "name": "Aethervolt Labs",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 109,
+      "wikiText": "Accessed by traveling north from the Aethervolt Lab Point of Interest marker.",
+      "waypointChatLink": "[&BHUAAAA=]"
+    },
+    {
+      "stepId": "54:heart:309",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "309",
+      "coord": [
+        41050,
+        33151
+      ],
+      "recommendedLevel": 16,
+      "name": "Aethervolt researchers require temporary assistants.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41018,
+          33148
+        ],
+        [
+          41042,
+          32989
+        ],
+        [
+          41037,
+          32854
+        ],
+        [
+          41178,
+          32882
+        ],
+        [
+          41218,
+          33073
+        ],
+        [
+          41185,
+          33213
+        ],
+        [
+          41071,
+          33189
+        ],
+        [
+          41018,
+          33148
+        ]
+      ],
+      "trailIndex": 121,
+      "wikiText": "Test pigment transmorgrifiers on red hylek for Aerixx. Collect ooze samples for Tramma. Fight any Inquest spying in the area.",
+      "waypointChatLink": "[&BHUAAAA=]"
+    },
+    {
+      "stepId": "54:poi:77",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "77",
+      "coord": [
+        41938,
+        32967
+      ],
+      "recommendedLevel": null,
+      "name": "Joy's End",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 228,
+      "wikiText": "The Joy's End is a point of interest within the Karston Chambers. Deep in this twisted dark forest atop the rise a Nightmare Court village can be found.",
+      "waypointChatLink": "[&BFwAAAA=]"
+    },
+    {
+      "stepId": "54:heart:306",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "306",
+      "coord": [
+        41927,
+        32766
+      ],
+      "recommendedLevel": 16,
+      "name": "Thwart the Nightmare Court at Joy's End.",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          42018,
+          32784
+        ],
+        [
+          41882,
+          32738
+        ],
+        [
+          41766,
+          32750
+        ],
+        [
+          41704,
+          32838
+        ],
+        [
+          41830,
+          33188
+        ],
+        [
+          42061,
+          33172
+        ],
+        [
+          42096,
+          32964
+        ],
+        [
+          42018,
+          32784
+        ]
+      ],
+      "trailIndex": 250,
+      "wikiText": "Make the Nightmare Court feel unwelcome by setting fire to brambles. Search Nightmare bulbs for prisoners.",
+      "waypointChatLink": "[&BFwAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:92",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "92",
+      "coord": [
+        41834,
+        32676
+      ],
+      "recommendedLevel": null,
+      "name": "Watchful Source Waypoint",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFwAAAA=]",
+      "waypointChatLink": "[&BFwAAAA=]",
+      "trailIndex": 264,
+      "wikiText": "Zinder Slope is an area in the Brisban Wildlands. This dense forest holds the headquarters of the wardens participating in the campaign against the Sinister Triad."
+    },
+    {
+      "stepId": "54:vista:1475",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "vista",
+      "objectiveId": "1475",
+      "coord": [
+        41884,
+        32369
+      ],
+      "recommendedLevel": null,
+      "name": "Nemeton Grove",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 306,
+      "wikiText": "Run and jump up the hill to the south of the Vista.",
+      "waypointChatLink": "[&BFwAAAA=]"
+    },
+    {
+      "stepId": "54:heart:305",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "305",
+      "coord": [
+        41768,
+        32261
+      ],
+      "recommendedLevel": 17,
+      "name": "Help Leigheara protect the Revered Terebinth.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41612,
+          32454
+        ],
+        [
+          41918,
+          32302
+        ],
+        [
+          41915,
+          32073
+        ],
+        [
+          41605,
+          31926
+        ],
+        [
+          41494,
+          31976
+        ],
+        [
+          41418,
+          32103
+        ],
+        [
+          41612,
+          32454
+        ]
+      ],
+      "trailIndex": 328,
+      "wikiText": "Fight the Nightmare Court and free prisoners from Beldame's Rise. Remove pests and stranglebloom surrounding the Revered Terebinth.",
+      "waypointChatLink": "[&BFwAAAA=]"
+    },
+    {
+      "stepId": "54:poi:91",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "91",
+      "coord": [
+        41792,
+        32176
+      ],
+      "recommendedLevel": null,
+      "name": "Revered Terebinth",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 333,
+      "wikiText": "The sacred tree Revered Terebinth is a point of interest within Nemeton Grove. A secondborn sylvari, Fiana, sacrificed her life to protect her friends, dying at the roots of the tree.",
+      "waypointChatLink": "[&BF8AAAA=]"
+    },
+    {
+      "stepId": "54:poi:78",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "78",
+      "coord": [
+        41531,
+        32044
+      ],
+      "recommendedLevel": null,
+      "name": "Beldame's Rise",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 362,
+      "wikiText": "The Beldame's Rise is a point of interest within the Nemeton Grove. Set against the canyon walls sits this large Nightmare Court outpost. From here they organize their attacks against the nearby sacred tree, the Revered Terebinth.",
+      "waypointChatLink": "[&BGAAAAA=]"
+    },
+    {
+      "stepId": "54:hero:0-71",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-71",
+      "coord": [
+        41304,
+        31940
+      ],
+      "recommendedLevel": null,
+      "name": "Super Shiny Thing",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 402,
+      "wikiText": "Super Shiny Thing is an object that belongs to a king skritt. Interacting with it will start the Defeat Schotakk the Shiny King and His Band event.",
+      "waypointChatLink": "[&BGAAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:96",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "96",
+      "coord": [
+        41275,
+        31984
+      ],
+      "recommendedLevel": null,
+      "name": "East End Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGAAAAA=]",
+      "waypointChatLink": "[&BGAAAAA=]",
+      "trailIndex": 419,
+      "wikiText": "The Skrittsburgh East End is an area in the Brisban Wildlands. Destroyers have erupted in this area and are now attempting to force their way inside the skritt capital."
+    },
+    {
+      "stepId": "54:waypoint:95",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "95",
+      "coord": [
+        41311,
+        32307
+      ],
+      "recommendedLevel": null,
+      "name": "Hillstead Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF8AAAA=]",
+      "waypointChatLink": "[&BF8AAAA=]",
+      "trailIndex": 455,
+      "wikiText": "The Skrittsburgh Hillstead is an area in the Brisban Wildlands. It is there that the skritt tend to their grubs and raise them for their meat."
+    },
+    {
+      "stepId": "54:heart:302",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "302",
+      "coord": [
+        41468,
+        32512
+      ],
+      "recommendedLevel": 18,
+      "name": "Help the grub farmers in Skrittsburgh Hillstead.",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41465,
+          32149
+        ],
+        [
+          41217,
+          32133
+        ],
+        [
+          41061,
+          32304
+        ],
+        [
+          41290,
+          32570
+        ],
+        [
+          41355,
+          32837
+        ],
+        [
+          41507,
+          32740
+        ],
+        [
+          41586,
+          32571
+        ],
+        [
+          41518,
+          32230
+        ],
+        [
+          41465,
+          32149
+        ]
+      ],
+      "trailIndex": 485,
+      "wikiText": "Collect grub meat, light torches to draw out pests, destroy faulty turrets, and protect the skritt.",
+      "waypointChatLink": "[&BF8AAAA=]"
+    },
+    {
+      "stepId": "54:vista:1480",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "vista",
+      "objectiveId": "1480",
+      "coord": [
+        41139,
+        32709
+      ],
+      "recommendedLevel": null,
+      "name": "Skrittsburg Tunnels",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 567,
+      "wikiText": "Follow the series of Stairs and platforms starting on the bridge, in the center of room.",
+      "waypointChatLink": "[&BF4AAAA=]"
+    },
+    {
+      "stepId": "54:heart:304",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "304",
+      "coord": [
+        41018,
+        32695
+      ],
+      "recommendedLevel": 17,
+      "name": "Help the skritt experimenting in Skrittsburgh Tunnels.",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40931,
+          32712
+        ],
+        [
+          40797,
+          32571
+        ],
+        [
+          40746,
+          32417
+        ],
+        [
+          40826,
+          32307
+        ],
+        [
+          40882,
+          32275
+        ],
+        [
+          41073,
+          32364
+        ],
+        [
+          41263,
+          32544
+        ],
+        [
+          41255,
+          32763
+        ],
+        [
+          41144,
+          32772
+        ],
+        [
+          40931,
+          32712
+        ]
+      ],
+      "trailIndex": 580,
+      "wikiText": "Search junk piles and bring Undamaged baubles to Twitchok, and slay hostile forces.",
+      "waypointChatLink": "[&BF4AAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:94",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "94",
+      "coord": [
+        40860,
+        32460
+      ],
+      "recommendedLevel": null,
+      "name": "Tunnels Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF4AAAA=]",
+      "waypointChatLink": "[&BF4AAAA=]",
+      "trailIndex": 608,
+      "wikiText": "The Skrittsburgh Tunnels is an area in the Brisban Wildlands, inhabited by friendly skritt. This portion is the least inhabited by skritt and thus wildlife such as skelk and skale has made their home in the area."
+    },
+    {
+      "stepId": "54:hero:0-231",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-231",
+      "coord": [
+        40960,
+        32271
+      ],
+      "recommendedLevel": null,
+      "name": "Inventor Shminkta",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 669,
+      "wikiText": "Inventor Shminkta is a skritt with a power suit.",
+      "waypointChatLink": "[&BF4AAAA=]"
+    },
+    {
+      "stepId": "54:hero:0-232",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-232",
+      "coord": [
+        40758,
+        32016
+      ],
+      "recommendedLevel": null,
+      "name": "Keg of Skrittsburgh Special",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 731,
+      "wikiText": "A Keg of Skrittsburgh Special can be found in Skrittsburgh, providing a Bottle of Skrittsburgh Special to those curious enough to try it.",
+      "waypointChatLink": "[&BF4AAAA=]"
+    },
+    {
+      "stepId": "54:poi:82",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "82",
+      "coord": [
+        40662,
+        31762
+      ],
+      "recommendedLevel": null,
+      "name": "Angelan's Bandits",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 773,
+      "wikiText": "Angelan's Bandits is a bandit camp in Gnashar's Hills. They are led by Bandit Tactician Angelan and due to their proximity to Skrittsburgh, they often conducts raids on the skritts living there.",
+      "waypointChatLink": "[&BGEAAAA=]"
+    },
+    {
+      "stepId": "54:heart:303",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "303",
+      "coord": [
+        41381,
+        31739
+      ],
+      "recommendedLevel": 19,
+      "name": "Help the skritt defend Skrittsburgh East End.",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41095,
+          32009
+        ],
+        [
+          41086,
+          31936
+        ],
+        [
+          41047,
+          31811
+        ],
+        [
+          40957,
+          31697
+        ],
+        [
+          41080,
+          31558
+        ],
+        [
+          41482,
+          31556
+        ],
+        [
+          41628,
+          31880
+        ],
+        [
+          41486,
+          31976
+        ],
+        [
+          41413,
+          32099
+        ],
+        [
+          41267,
+          32135
+        ],
+        [
+          41095,
+          32009
+        ]
+      ],
+      "trailIndex": 872,
+      "wikiText": "Fight destroyers, utilize skritt supplies, and bring injured skritt to Bordekka's base.",
+      "waypointChatLink": "[&BGAAAAA=]"
+    },
+    {
+      "stepId": "54:heart:311",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "311",
+      "coord": [
+        41905,
+        31350
+      ],
+      "recommendedLevel": 19,
+      "name": "Help the Seraph fight Willem's bandits.",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41404,
+          30958
+        ],
+        [
+          41770,
+          30931
+        ],
+        [
+          41845,
+          31053
+        ],
+        [
+          41976,
+          31372
+        ],
+        [
+          41904,
+          31529
+        ],
+        [
+          41855,
+          31678
+        ],
+        [
+          41674,
+          31665
+        ],
+        [
+          41537,
+          31570
+        ],
+        [
+          41464,
+          31463
+        ],
+        [
+          41404,
+          30958
+        ]
+      ],
+      "trailIndex": 943,
+      "wikiText": "Check bushes for bandit spies and ambushers. Return Seraph supplies to Goran. Help Seraph and the local skritt.",
+      "waypointChatLink": "[&BF0AAAA=]"
+    },
+    {
+      "stepId": "54:poi:79",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "79",
+      "coord": [
+        41905,
+        31324
+      ],
+      "recommendedLevel": null,
+      "name": "Seraph Protectors",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 945,
+      "wikiText": "The Seraph Protectors is a point of interest within The Wendon Steps. Here overlooking the road to Kessex Hills, a group of Seraph troops has established a campsite. They send supplies of rations and armor to forward camps in this area.",
+      "waypointChatLink": "[&BF0AAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:93",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "93",
+      "coord": [
+        41907,
+        31192
+      ],
+      "recommendedLevel": null,
+      "name": "Wendon Waypoint",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF0AAAA=]",
+      "waypointChatLink": "[&BF0AAAA=]",
+      "trailIndex": 960,
+      "wikiText": "The Wendon Steps is an area in the Brisban Wildlands. A small Seraph camp has been established in the area to monitor bandits activity."
+    },
+    {
+      "stepId": "54:poi:80",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "80",
+      "coord": [
+        41502,
+        31042
+      ],
+      "recommendedLevel": null,
+      "name": "Willem's Bandits",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1013,
+      "wikiText": "Willem's Bandits is a bandit camp in The Wendon Steps. The bandits here are led by Bandit Supplier Willem, and they often steal the supplies from the Seraphs of the nearby Seraph Protectors camp.",
+      "waypointChatLink": "[&BF0AAAA=]"
+    },
+    {
+      "stepId": "54:heart:312",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "312",
+      "coord": [
+        41007,
+        31229
+      ],
+      "recommendedLevel": 20,
+      "name": "Hinder Scotta's bandits.",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41119,
+          31488
+        ],
+        [
+          41195,
+          31386
+        ],
+        [
+          41208,
+          31310
+        ],
+        [
+          41148,
+          31091
+        ],
+        [
+          40695,
+          30976
+        ],
+        [
+          40566,
+          31062
+        ],
+        [
+          40564,
+          31387
+        ],
+        [
+          41119,
+          31488
+        ]
+      ],
+      "trailIndex": 1074,
+      "wikiText": "Destroy or confiscate bandit supplies. Destroy bandit weapons and roadblocks.",
+      "waypointChatLink": "[&BGAAAAA=]"
+    },
+    {
+      "stepId": "54:poi:81",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "81",
+      "coord": [
+        40776,
+        31144
+      ],
+      "recommendedLevel": null,
+      "name": "Scotta's Bandits",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1100,
+      "wikiText": "Scotta's Bandits is a bandit camp in Gnashar's Hills. The bandits here are led by Bandit Munitionist Scotta, and they also have dealings with the Inquest, mainly involving the turrets they use to defend their camp.",
+      "waypointChatLink": "[&BGIAAAA=]"
+    },
+    {
+      "stepId": "54:heart:313",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "313",
+      "coord": [
+        40410,
+        31236
+      ],
+      "recommendedLevel": 21,
+      "name": "Help the cornered spies at Seraph Observers.",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40155,
+          31556
+        ],
+        [
+          40223,
+          31632
+        ],
+        [
+          40408,
+          31548
+        ],
+        [
+          40499,
+          31368
+        ],
+        [
+          40476,
+          31132
+        ],
+        [
+          40598,
+          31085
+        ],
+        [
+          40601,
+          30990
+        ],
+        [
+          40265,
+          30978
+        ],
+        [
+          40093,
+          30972
+        ],
+        [
+          40044,
+          31034
+        ],
+        [
+          40040,
+          31191
+        ],
+        [
+          40092,
+          31360
+        ],
+        [
+          40155,
+          31556
+        ]
+      ],
+      "trailIndex": 1140,
+      "wikiText": "Defeat would-be bandit assassins, find baneberries for Aidem Finlay, and calm ghosts haunting the hidden lake.",
+      "waypointChatLink": "[&BGIAAAA=]"
+    },
+    {
+      "stepId": "54:hero:0-107",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-107",
+      "coord": [
+        40258,
+        31194
+      ],
+      "recommendedLevel": null,
+      "name": "Restless Arboreal Spirit",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1156,
+      "wikiText": "Defeating a Restless Arboreal Spirit is the objective of a hero challenge in Hidden Lake.",
+      "waypointChatLink": "[&BGIAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:98",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "98",
+      "coord": [
+        40191,
+        31060
+      ],
+      "recommendedLevel": null,
+      "name": "Seraph Observers Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGIAAAA=]",
+      "waypointChatLink": "[&BGIAAAA=]",
+      "trailIndex": 1174,
+      "wikiText": "The Hidden Lake is an area in the Brisban Wildlands. It holds one of the Seraph's bases in their expanse into the territory to find the White Mantle. It is also home to various ghosts of people who died in the past."
+    },
+    {
+      "stepId": "54:vista:1474",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "vista",
+      "objectiveId": "1474",
+      "coord": [
+        39982,
+        31002
+      ],
+      "recommendedLevel": null,
+      "name": "Hidden Lake",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1209,
+      "wikiText": "Go up the hill to the east of the Vista, then cut west below it, then climb up. Path is fairly simple.",
+      "waypointChatLink": "[&BGIAAAA=]"
+    },
+    {
+      "stepId": "54:heart:318",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "318",
+      "coord": [
+        39430,
+        31415
+      ],
+      "recommendedLevel": 22,
+      "name": "Infiltrate and disrupt Seanan's bandits.",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39376,
+          31353
+        ],
+        [
+          40475,
+          32256
+        ],
+        [
+          39376,
+          31353
+        ]
+      ],
+      "trailIndex": 1283,
+      "wikiText": "Speak with Ivy or Ruppel to infiltrate Seanan's bandit camp. Poison supplies, destroy plans, injure bandits in duels, and help undercover allies.",
+      "waypointChatLink": "[&BGMAAAA=]"
+    },
+    {
+      "stepId": "54:poi:87",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "87",
+      "coord": [
+        39369,
+        31366
+      ],
+      "recommendedLevel": null,
+      "name": "Seanan's Bandits",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1290,
+      "wikiText": "Seanan's Bandits is a bandit camp in The Gallowfields. Seraph spies are currently trying to infiltrate them to get some intel about the Sinister Triad.",
+      "waypointChatLink": "[&BGMAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:99",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "99",
+      "coord": [
+        39175,
+        31346
+      ],
+      "recommendedLevel": null,
+      "name": "Gallowfields Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGMAAAA=]",
+      "waypointChatLink": "[&BGMAAAA=]",
+      "trailIndex": 1327,
+      "wikiText": "The Gallowfields is an area in the Brisban Wildlands. This large canyon is a deathtrap for anyone who ventures there as many dead bandits can be found amongst the blood-thirsty hyenas."
+    },
+    {
+      "stepId": "54:heart:314",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "314",
+      "coord": [
+        39141,
+        31402
+      ],
+      "recommendedLevel": 23,
+      "name": "Help the skritt challenge the bandits.",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39015,
+          31143
+        ],
+        [
+          39127,
+          31143
+        ],
+        [
+          39174,
+          31284
+        ],
+        [
+          39223,
+          31361
+        ],
+        [
+          39280,
+          31480
+        ],
+        [
+          39343,
+          31649
+        ],
+        [
+          39358,
+          31773
+        ],
+        [
+          39332,
+          31894
+        ],
+        [
+          39139,
+          31870
+        ],
+        [
+          38889,
+          31693
+        ],
+        [
+          38900,
+          31488
+        ],
+        [
+          38986,
+          31359
+        ],
+        [
+          39015,
+          31143
+        ]
+      ],
+      "trailIndex": 1335,
+      "wikiText": "Kill bandits, destroy their weapons and supplies, and help skritt gather trinkets in the canyon.",
+      "waypointChatLink": "[&BGMAAAA=]"
+    },
+    {
+      "stepId": "54:poi:86",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "86",
+      "coord": [
+        39063,
+        31197
+      ],
+      "recommendedLevel": null,
+      "name": "Plunder Hold",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1357,
+      "wikiText": "The Plunder Hold is a point of interest within The Gallowfields. Inside this small cave a small band of skritt have established a scratch. They are often harassed by Robbari's Bandits.",
+      "waypointChatLink": "[&BGMAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:1785",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "1785",
+      "coord": [
+        38937,
+        31509
+      ],
+      "recommendedLevel": null,
+      "name": "Proxemics Lab Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPkGAAA=]",
+      "waypointChatLink": "[&BPkGAAA=]",
+      "trailIndex": 1395,
+      "wikiText": "The Brisban Wildlands is a zone in the Maguuma Jungle. This mostly unsettled stretch of land holds many dangers as well as relics and ruins from times long passed. The river flowing from this map into Metrica Province is the Ullen River."
+    },
+    {
+      "stepId": "54:poi:88",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "88",
+      "coord": [
+        39260,
+        31843
+      ],
+      "recommendedLevel": null,
+      "name": "Robbari's Bandits",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1444,
+      "wikiText": "Robbari's Bandits is a bandit camp in The Gallowfields. They often attack the skritt living in the caves nearby.",
+      "waypointChatLink": "[&BPkGAAA=]"
+    },
+    {
+      "stepId": "54:poi:89",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "89",
+      "coord": [
+        38857,
+        32121
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Vandal",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1515,
+      "wikiText": "Fort Vandal is a bandit fortification in the northwest part of the Vandal's Claim area of the Brisban Wildlands (part of the Maguuma Jungle).",
+      "waypointChatLink": "[&BGQAAAA=]"
+    },
+    {
+      "stepId": "54:heart:315",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "315",
+      "coord": [
+        39012,
+        32471
+      ],
+      "recommendedLevel": 23,
+      "name": "Help Valiant Mathair secure Vandal's Claim.",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          38952,
+          32024
+        ],
+        [
+          39030,
+          31897
+        ],
+        [
+          39076,
+          31856
+        ],
+        [
+          39143,
+          31913
+        ],
+        [
+          39221,
+          32053
+        ],
+        [
+          39326,
+          32174
+        ],
+        [
+          39338,
+          32424
+        ],
+        [
+          39145,
+          32559
+        ],
+        [
+          38944,
+          32533
+        ],
+        [
+          38833,
+          32388
+        ],
+        [
+          38800,
+          32149
+        ],
+        [
+          38952,
+          32024
+        ]
+      ],
+      "trailIndex": 1560,
+      "wikiText": "Revive and escort allies to the southern spy camp, slay hostile forces, and destroy enemy equipment.",
+      "waypointChatLink": "[&BGQAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:100",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "100",
+      "coord": [
+        38992,
+        32509
+      ],
+      "recommendedLevel": null,
+      "name": "Triforge Point Waypoint",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGQAAAA=]",
+      "waypointChatLink": "[&BGQAAAA=]",
+      "trailIndex": 1565,
+      "wikiText": "Vandal's Claim is an area in the Brisban Wildlands. This trap-filled plain is home to the Sinister Triad forces."
+    },
+    {
+      "stepId": "54:poi:823",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "823",
+      "coord": [
+        39657,
+        31934
+      ],
+      "recommendedLevel": null,
+      "name": "Cutpurse Circle",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1664,
+      "wikiText": "The Cutpurse Circle is a bandit camp in the Highwayman's Vale. The Sinister Triad built this camp as a choke point to capture merchants and travelers alike passing through.",
+      "waypointChatLink": "[&BGEAAAA=]"
+    },
+    {
+      "stepId": "54:heart:316",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "316",
+      "coord": [
+        39872,
+        31922
+      ],
+      "recommendedLevel": 23,
+      "name": "Help Peacemaker Klodi disperse the alliance of criminals.",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39400,
+          32009
+        ],
+        [
+          39487,
+          31843
+        ],
+        [
+          39872,
+          31758
+        ],
+        [
+          39945,
+          31783
+        ],
+        [
+          40192,
+          32067
+        ],
+        [
+          40305,
+          32262
+        ],
+        [
+          40151,
+          32420
+        ],
+        [
+          39942,
+          32325
+        ],
+        [
+          39797,
+          32446
+        ],
+        [
+          39542,
+          32347
+        ],
+        [
+          39400,
+          32009
+        ]
+      ],
+      "trailIndex": 1689,
+      "wikiText": "Disrupt meetings between the Nightmare Court, Inquest, and bandits. Give stolen bandit documents to Corporal Rhea Shinde.",
+      "waypointChatLink": "[&BGEAAAA=]"
+    },
+    {
+      "stepId": "54:poi:85",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "85",
+      "coord": [
+        39934,
+        31646
+      ],
+      "recommendedLevel": null,
+      "name": "Breean's Bandits",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1729,
+      "wikiText": "Breean's Bandits is a bandit camp in the Lionshead Outcrops. Their leader, Bandit Weaponmaster Breann, is in charge of weapon distribution and maintenance for the Sinister Triad.",
+      "waypointChatLink": "[&BGEAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:97",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "97",
+      "coord": [
+        40166,
+        31857
+      ],
+      "recommendedLevel": null,
+      "name": "Brilitine Waypoint",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGEAAAA=]",
+      "waypointChatLink": "[&BGEAAAA=]",
+      "trailIndex": 1763,
+      "wikiText": "The Brilitine Swath is an area in the Brisban Wildlands. An Inquest base is found in the center where they capture the nearby skritt for their experiments."
+    },
+    {
+      "stepId": "54:poi:83",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "83",
+      "coord": [
+        40302,
+        31868
+      ],
+      "recommendedLevel": null,
+      "name": "Skrittsatawney",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1816,
+      "wikiText": "Skrittsatawney is a small skritt scratch east of the Brilitine Waypoint. Most of the skritt inside are traders. They are often the victim of bandits attacks.",
+      "waypointChatLink": "[&BGEAAAA=]"
+    },
+    {
+      "stepId": "54:poi:84",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "84",
+      "coord": [
+        40078,
+        32153
+      ],
+      "recommendedLevel": null,
+      "name": "Enrav Exploration Post",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1858,
+      "wikiText": "The Enrav Exploration Post is an Inquest base in the Brilitine Swath in Brisban Wildlands. The agents there are experimenting on captured skritt found in the nearby Skrittsatawney.",
+      "waypointChatLink": "[&BGEAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:101",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "101",
+      "coord": [
+        40016,
+        32543
+      ],
+      "recommendedLevel": null,
+      "name": "Ulta Metamagicals Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGUAAAA=]",
+      "waypointChatLink": "[&BGUAAAA=]",
+      "trailIndex": 1896,
+      "wikiText": "The Duskstruck Moors is an area in the Brisban Wildlands. An Inquest base doing research on chaos magic is found to the west and an asuran lab studying asura gate's technology is found to the east."
+    },
+    {
+      "stepId": "54:heart:308",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "308",
+      "coord": [
+        40130,
+        32571
+      ],
+      "recommendedLevel": 24,
+      "name": "Assist Ulta Metamagicals with their asura gate research.",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39811,
+          32629
+        ],
+        [
+          39754,
+          32457
+        ],
+        [
+          39812,
+          32359
+        ],
+        [
+          40054,
+          32343
+        ],
+        [
+          40211,
+          32511
+        ],
+        [
+          40164,
+          32624
+        ],
+        [
+          39962,
+          32705
+        ],
+        [
+          39811,
+          32629
+        ]
+      ],
+      "trailIndex": 1908,
+      "wikiText": "Use configurators to help tune asura gates, protect researchers from creatures and toxic material coming from malfunctioning gates, and gather crystals.",
+      "waypointChatLink": "[&BGUAAAA=]"
+    },
+    {
+      "stepId": "54:vista:1478",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "vista",
+      "objectiveId": "1478",
+      "coord": [
+        40573,
+        32144
+      ],
+      "recommendedLevel": null,
+      "name": "Gotala Cascade",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1981,
+      "wikiText": "Go south from the waypoint, then east at the small forest between the rocks. Go uphill until you can cut southeast to the top of the falls. There is a direct approach.",
+      "waypointChatLink": "[&BF4AAAA=]"
+    },
+    {
+      "stepId": "54:poi:75",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "75",
+      "coord": [
+        40536,
+        32195
+      ],
+      "recommendedLevel": null,
+      "name": "Ogotl Grounds",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1983,
+      "wikiText": "The Ogotl Grounds is a hylek village in the Gotala Cascade. They are true worshippers of the Sun and are hostile to anyone who trespasses on their territory.",
+      "waypointChatLink": "[&BF4AAAA=]"
+    },
+    {
+      "stepId": "54:poi:76",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "76",
+      "coord": [
+        40513,
+        32844
+      ],
+      "recommendedLevel": null,
+      "name": "Invariant Base",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2007,
+      "wikiText": "The Invariant Base is an Inquest lab found within the Venlin Vale. The Inquest here are primarily concerned with the construction of various golems and researching advanced power.",
+      "waypointChatLink": "[&BHUAAAA=]"
+    },
+    {
+      "stepId": "54:vista:1476",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "vista",
+      "objectiveId": "1476",
+      "coord": [
+        40367,
+        32962
+      ],
+      "recommendedLevel": null,
+      "name": "Koga Ruins",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2096,
+      "wikiText": "From Mrot Boru, head northwest up a hill into the mountains; from Koga Ruins, loop around the south uphill. Go north on the grass, then jump down to a stairway leading to a rock with wooden spikes on it.",
+      "waypointChatLink": "[&BHUAAAA=]"
+    },
+    {
+      "stepId": "54:hero:0-106",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-106",
+      "coord": [
+        40238,
+        32958
+      ],
+      "recommendedLevel": null,
+      "name": "Seraph Soldier Michella",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2127,
+      "wikiText": "Seraph Soldier Michella patrols the Koga Ruins.",
+      "waypointChatLink": "[&BHYAAAA=]"
+    },
+    {
+      "stepId": "54:waypoint:118",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "waypoint",
+      "objectiveId": "118",
+      "coord": [
+        39870,
+        33051
+      ],
+      "recommendedLevel": null,
+      "name": "Mirkrise Waypoint",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHYAAAA=]",
+      "waypointChatLink": "[&BHYAAAA=]",
+      "trailIndex": 2173,
+      "wikiText": "The Koga Ruins is the remains of Fort Koga. During the third Guild War, the fort was along a major trade route and thus fought for by many guilds. When new safer trade routes were established, the fort was abandoned."
+    },
+    {
+      "stepId": "54:heart:307",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "heart",
+      "objectiveId": "307",
+      "coord": [
+        39720,
+        32950
+      ],
+      "recommendedLevel": 25,
+      "name": "Remove threats to Durmand Priory researchers in Toxal Bog.",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39019,
+          32846
+        ],
+        [
+          39505,
+          32850
+        ],
+        [
+          39774,
+          32930
+        ],
+        [
+          39932,
+          33301
+        ],
+        [
+          39846,
+          33531
+        ],
+        [
+          39158,
+          33535
+        ],
+        [
+          39003,
+          32982
+        ],
+        [
+          39019,
+          32846
+        ]
+      ],
+      "trailIndex": 2192,
+      "wikiText": "Prevent the Inquest from draining druid husks, disable Inquest sapper devices, activate Priory energy monitors, protect Priory explorers in the swamp, and help them gather green stinkhorns.",
+      "waypointChatLink": "[&BHYAAAA=]"
+    },
+    {
+      "stepId": "54:poi:90",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "90",
+      "coord": [
+        39263,
+        32722
+      ],
+      "recommendedLevel": null,
+      "name": "Thaumacore Inquiry Center",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2246,
+      "wikiText": "The Thaumacore Inquiry Center is a point of interest within the Duskstruck Moors. This large multi-level base is the headquarters of the Inquest in this area. They have a unique power supply running this compound.",
+      "waypointChatLink": "[&BGQAAAA=]"
+    },
+    {
+      "stepId": "54:hero:0-204",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-204",
+      "coord": [
+        39218,
+        32769
+      ],
+      "recommendedLevel": null,
+      "name": "Thaumacore Energy Source",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2257,
+      "wikiText": "The Thaumacore Energy Source is a hero challenge located in the Duskstruck Moors.",
+      "waypointChatLink": "[&BGQAAAA=]"
+    },
+    {
+      "stepId": "54:hero:0-104",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-104",
+      "coord": [
+        39021,
+        32872
+      ],
+      "recommendedLevel": null,
+      "name": "Lady Grimassi",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2285,
+      "wikiText": "Lady Grimassi is a human that players can talk to in order to receive a Toxal Bog Stew, which, when consumed, will grant players a hero point.",
+      "waypointChatLink": "[&BGQAAAA=]"
+    },
+    {
+      "stepId": "54:vista:1477",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "vista",
+      "objectiveId": "1477",
+      "coord": [
+        39618,
+        33443
+      ],
+      "recommendedLevel": null,
+      "name": "Henge of Denravi",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2402,
+      "wikiText": "Go up the hill just east of the Hero point, climb the mushrooms, then walk out on the tree branch.",
+      "waypointChatLink": "[&BHYAAAA=]"
+    },
+    {
+      "stepId": "54:hero:0-105",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "hero",
+      "objectiveId": "0-105",
+      "coord": [
+        39588,
+        33438
+      ],
+      "recommendedLevel": null,
+      "name": "Henge of Denravi",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2409,
+      "wikiText": "The Henge of Denravi is a communing hero challenge in Brisban Wildlands.",
+      "waypointChatLink": "[&BHYAAAA=]"
+    },
+    {
+      "stepId": "54:poi:1904",
+      "mapId": 54,
+      "zoneName": "Brisban Wildlands",
+      "type": "poi",
+      "objectiveId": "1904",
+      "coord": [
+        38744,
+        33385
+      ],
+      "recommendedLevel": null,
+      "name": "Tangle Root Outpost",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "The Tangle Root Outpost is a point of interest within Tangle Root. A group of seraph settled a camp there to chase a group of copper smugglers that are rumoured to be hiding in Dry Top.",
+      "waypointChatLink": "[&BGQAAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

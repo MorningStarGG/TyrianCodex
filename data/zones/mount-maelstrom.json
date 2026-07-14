@@ -1,0 +1,2615 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 39,
+    "name": "Mount Maelstrom",
+    "continentId": 1,
+    "regionId": 8,
+    "regionName": "Steamspur Mountains",
+    "floor": 1,
+    "minLevel": 60,
+    "maxLevel": 70,
+    "mapRect": [
+      [
+        -46080,
+        -27648
+      ],
+      [
+        46080,
+        30720
+      ]
+    ],
+    "continentRect": [
+      [
+        50560,
+        37760
+      ],
+      [
+        54400,
+        40192
+      ]
+    ],
+    "sectorRect": [
+      [
+        50489.6,
+        37693.6
+      ],
+      [
+        54429.8,
+        40175.3
+      ]
+    ],
+    "labelCoord": [
+      52480,
+      38912
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "39:waypoint:712",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "712",
+      "coord": [
+        50706,
+        38116
+      ],
+      "recommendedLevel": null,
+      "name": "Govoran Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMgCAAA=]",
+      "waypointChatLink": "[&BMgCAAA=]",
+      "trailIndex": 5,
+      "wikiText": "Govoran Terraces is an area in the northwestern section of Mount Maelstrom. A Nightmare Court camp is located here, where they often raid the skritt settlement of New Skrittstead."
+    },
+    {
+      "stepId": "39:poi:698",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "698",
+      "coord": [
+        51145,
+        38076
+      ],
+      "recommendedLevel": null,
+      "name": "Evisomancer's Resort",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 58,
+      "wikiText": "Evisomancer's Resort is a point of interest in Govoran Terraces. This small secluded grove of trees is home to a force of Nightmare Court. They often raid the nearby skritt settlement of New Skrittstead.",
+      "waypointChatLink": "[&BMkCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:713",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "713",
+      "coord": [
+        51008,
+        38442
+      ],
+      "recommendedLevel": null,
+      "name": "Criterion Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMkCAAA=]",
+      "waypointChatLink": "[&BMkCAAA=]",
+      "trailIndex": 101,
+      "wikiText": "Criterion Canyon is an area in western Mount Maelstrom. A large asuran ruin is currently being studied by a group of Durmand Priory members."
+    },
+    {
+      "stepId": "39:vista:1703",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "vista",
+      "objectiveId": "1703",
+      "coord": [
+        50964,
+        38686
+      ],
+      "recommendedLevel": null,
+      "name": "Rata Pten",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 132,
+      "wikiText": "From the south part of the ruins, cross the bridge and straight ahead till the edge of the cliff. Look down for a plateau with a fallen tree leading to the other side.",
+      "waypointChatLink": "[&BMkCAAA=]"
+    },
+    {
+      "stepId": "39:heart:287",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "287",
+      "coord": [
+        50830,
+        38541
+      ],
+      "recommendedLevel": 63,
+      "name": "Help the Priory members excavate Rata Pten.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50850,
+          38537
+        ],
+        [
+          50865,
+          38547
+        ],
+        [
+          50875,
+          38561
+        ],
+        [
+          50889,
+          38576
+        ],
+        [
+          50898,
+          38596
+        ],
+        [
+          50915,
+          38622
+        ],
+        [
+          50928,
+          38640
+        ],
+        [
+          50939,
+          38648
+        ],
+        [
+          50972,
+          38656
+        ],
+        [
+          50952,
+          38720
+        ],
+        [
+          50930,
+          38742
+        ],
+        [
+          50913,
+          38758
+        ],
+        [
+          50907,
+          38773
+        ],
+        [
+          50903,
+          38786
+        ],
+        [
+          50899,
+          38799
+        ],
+        [
+          50897,
+          38809
+        ],
+        [
+          50891,
+          38827
+        ],
+        [
+          50872,
+          38819
+        ],
+        [
+          50851,
+          38821
+        ],
+        [
+          50812,
+          38824
+        ],
+        [
+          50798,
+          38821
+        ],
+        [
+          50785,
+          38822
+        ],
+        [
+          50770,
+          38819
+        ],
+        [
+          50762,
+          38815
+        ],
+        [
+          50766,
+          38796
+        ],
+        [
+          50750,
+          38774
+        ],
+        [
+          50729,
+          38748
+        ],
+        [
+          50690,
+          38731
+        ],
+        [
+          50683,
+          38697
+        ],
+        [
+          50690,
+          38647
+        ],
+        [
+          50681,
+          38591
+        ],
+        [
+          50703,
+          38572
+        ],
+        [
+          50714,
+          38552
+        ],
+        [
+          50728,
+          38540
+        ],
+        [
+          50750,
+          38530
+        ],
+        [
+          50777,
+          38523
+        ],
+        [
+          50806,
+          38524
+        ],
+        [
+          50829,
+          38528
+        ],
+        [
+          50850,
+          38537
+        ]
+      ],
+      "trailIndex": 162,
+      "wikiText": "Use the Priory artifact-scanning gun to find excavation sites in the ruins, then mark the spots for Priory workers.",
+      "waypointChatLink": "[&BMkCAAA=]"
+    },
+    {
+      "stepId": "39:poi:708",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "708",
+      "coord": [
+        50760,
+        38674
+      ],
+      "recommendedLevel": null,
+      "name": "Rata Pten",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 197,
+      "wikiText": "Rata Pten (Asuran: ) is a ruined asuran settlement on the surface of the Steamspur Mountains. It holds relics dating back to when Orr was a thriving nation. In addition, there are relics which have writing similar to dwarven.",
+      "waypointChatLink": "[&BMkCAAA=]"
+    },
+    {
+      "stepId": "39:vista:1708",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "vista",
+      "objectiveId": "1708",
+      "coord": [
+        51274,
+        38957
+      ],
+      "recommendedLevel": null,
+      "name": "Firebreak Fort",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 294,
+      "wikiText": "Take the south exit in the village and go to the south end of the cliff. Walk up along the edge, and jump the green plateaus sticking out of the cliff wall to the vista.",
+      "waypointChatLink": "[&BMoCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:714",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "714",
+      "coord": [
+        51327,
+        38960
+      ],
+      "recommendedLevel": null,
+      "name": "Firebreak Fort Waypoint",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMoCAAA=]",
+      "waypointChatLink": "[&BMoCAAA=]",
+      "trailIndex": 301,
+      "wikiText": "Sootberme is an area in western Mount Maelstrom. The Pact has established a camp in the area to contain the large number of Risen grouping up in the Murkvale."
+    },
+    {
+      "stepId": "39:heart:279",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "279",
+      "coord": [
+        51265,
+        38976
+      ],
+      "recommendedLevel": 64,
+      "name": "Aid Tactician Blazefur in preparing Firebreak Fort for the Risen offensive.",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51081,
+          39265
+        ],
+        [
+          51248,
+          39287
+        ],
+        [
+          51363,
+          39151
+        ],
+        [
+          51517,
+          38954
+        ],
+        [
+          51556,
+          38841
+        ],
+        [
+          51510,
+          38745
+        ],
+        [
+          51295,
+          38728
+        ],
+        [
+          51160,
+          38940
+        ],
+        [
+          51034,
+          39062
+        ],
+        [
+          51049,
+          39178
+        ],
+        [
+          51081,
+          39265
+        ]
+      ],
+      "trailIndex": 312,
+      "wikiText": "Clear caravan routes, unite dissenters, assist short-handed patrols, and reduce Risen numbers.",
+      "waypointChatLink": "[&BMoCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:715",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "715",
+      "coord": [
+        51296,
+        39360
+      ],
+      "recommendedLevel": null,
+      "name": "Spaecia Illogica Waypoint",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMsCAAA=]",
+      "waypointChatLink": "[&BMsCAAA=]",
+      "trailIndex": 365,
+      "wikiText": "The Dysphoric Rim is an area in south western Mount Maelstrom. This road borders the Risen-filled swamp of the Murkvale. A small asuran krewe under the protection of the Pact found here are doing research on Risen body parts."
+    },
+    {
+      "stepId": "39:heart:282",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "282",
+      "coord": [
+        51157,
+        39652
+      ],
+      "recommendedLevel": 65,
+      "name": "Help Pixtor test his weapons on the Risen in Murkvale.",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50739,
+          39309
+        ],
+        [
+          50776,
+          39140
+        ],
+        [
+          50922,
+          39110
+        ],
+        [
+          51044,
+          39208
+        ],
+        [
+          51144,
+          39402
+        ],
+        [
+          51204,
+          39569
+        ],
+        [
+          51232,
+          39790
+        ],
+        [
+          51112,
+          39920
+        ],
+        [
+          50958,
+          40027
+        ],
+        [
+          50884,
+          39939
+        ],
+        [
+          50789,
+          39758
+        ],
+        [
+          50784,
+          39512
+        ],
+        [
+          50739,
+          39309
+        ]
+      ],
+      "trailIndex": 415,
+      "wikiText": "Cleanse fertile soil to create plant turrets, test Pixtor's weapons on Risen, activate Risen activity monitors, and cull Risen forces.",
+      "waypointChatLink": "[&BMsCAAA=]"
+    },
+    {
+      "stepId": "39:poi:1682",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1682",
+      "coord": [
+        50884,
+        39702
+      ],
+      "recommendedLevel": null,
+      "name": "Aliyana's Haunt",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 447,
+      "wikiText": "Aliyana's Haunt is a point of interest in Murkvale. It is a small campsite that consists of Crusader Aliyana's ghost.",
+      "waypointChatLink": "[&BMcCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:711",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "711",
+      "coord": [
+        50740,
+        39672
+      ],
+      "recommendedLevel": null,
+      "name": "Murkvale Waypoint",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMcCAAA=]",
+      "waypointChatLink": "[&BMcCAAA=]",
+      "trailIndex": 478,
+      "wikiText": "Murkvale is an area in Mount Maelstrom. This Risen-filled swamp is dangerous to travel, and the Pact has established a choke-point to prevent them from going towards Fort Trinity."
+    },
+    {
+      "stepId": "39:poi:1680",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1680",
+      "coord": [
+        50688,
+        39818
+      ],
+      "recommendedLevel": null,
+      "name": "Gloomirk Outpost",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 496,
+      "wikiText": "The Gloomirk Outpost is a point of interest within the Murkvale. The Pact have established a fortified guardpost here to prevent further Risen from reaching Fort Trinity.",
+      "waypointChatLink": "[&BMcCAAA=]"
+    },
+    {
+      "stepId": "39:hero:0-111",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "hero",
+      "objectiveId": "0-111",
+      "coord": [
+        50843,
+        39866
+      ],
+      "recommendedLevel": null,
+      "name": "Scribbles in the Dirt",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 517,
+      "wikiText": "Scribbles in the Dirt can be found in the southwest corner of Mount Maelstrom, at Murkvale. Interacting with it will begin the hero challenge Defeat Venomspinner and her devourer brood.",
+      "waypointChatLink": "[&BMcCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:726",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "726",
+      "coord": [
+        51773,
+        39890
+      ],
+      "recommendedLevel": null,
+      "name": "Magmatic Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNYCAAA=]",
+      "waypointChatLink": "[&BNYCAAA=]",
+      "trailIndex": 645,
+      "wikiText": "Mon Maelstrom is an area in Mount Maelstrom. The southern part of the volcano houses a camp used by an asuran krewe who are currently studying the volcano."
+    },
+    {
+      "stepId": "39:heart:281",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "281",
+      "coord": [
+        51773,
+        39934
+      ],
+      "recommendedLevel": 65,
+      "name": "Help Ambr's krewe defend the lab.",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51574,
+          39872
+        ],
+        [
+          51735,
+          39664
+        ],
+        [
+          51860,
+          39760
+        ],
+        [
+          51964,
+          39877
+        ],
+        [
+          52024,
+          40103
+        ],
+        [
+          51850,
+          40138
+        ],
+        [
+          51739,
+          40072
+        ],
+        [
+          51530,
+          40020
+        ],
+        [
+          51574,
+          39872
+        ]
+      ],
+      "trailIndex": 652,
+      "wikiText": "Collect earth elemental cores to power and repair golems, stop Inquest golems from opening fissures, and kill destroyers.",
+      "waypointChatLink": "[&BNYCAAA=]"
+    },
+    {
+      "stepId": "39:poi:1685",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1685",
+      "coord": [
+        52068,
+        39790
+      ],
+      "recommendedLevel": null,
+      "name": "Hellmouth Falls",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 697,
+      "wikiText": "Hellmouth Falls is a series of lava falls on the south face of Mon Maelstrom.",
+      "waypointChatLink": "[&BM0CAAA=]"
+    },
+    {
+      "stepId": "39:poi:710",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "710",
+      "coord": [
+        52188,
+        40002
+      ],
+      "recommendedLevel": null,
+      "name": "Theurgic Volute",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 737,
+      "wikiText": "The Theurgic Volute is a point of interest in Mon Maelstrom. This magic staircase was created by Geitt to quickly move across the above and underground parts of the volcano.",
+      "waypointChatLink": "[&BNYCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:717",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "717",
+      "coord": [
+        51987,
+        39515
+      ],
+      "recommendedLevel": null,
+      "name": "Maelstrom's Waypoint",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM0CAAA=]",
+      "waypointChatLink": "[&BM0CAAA=]",
+      "trailIndex": 816,
+      "wikiText": "Maelstrom's Bile is the center of the volcano Mount Maelstrom. It can be accessed through passages originating near either Sootberme or Mon Maelstrom."
+    },
+    {
+      "stepId": "39:poi:1684",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1684",
+      "coord": [
+        51939,
+        39396
+      ],
+      "recommendedLevel": null,
+      "name": "Maelstrom's Core",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 826,
+      "wikiText": "Maelstrom's Core is deep within the underground caverns of the volcano that give this area its name.",
+      "waypointChatLink": "[&BM0CAAA=]"
+    },
+    {
+      "stepId": "39:hero:0-108",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "hero",
+      "objectiveId": "0-108",
+      "coord": [
+        51766,
+        39307
+      ],
+      "recommendedLevel": null,
+      "name": "Heart of the Volcano",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 863,
+      "wikiText": "Heart of the Volcano can refer to one of these: Heart of the Volcano (object), a hero challenge which is also an object used for the Bolt III: Zap collection. Heart of the Volcano (story), a Living World Season 3 story part.",
+      "waypointChatLink": "[&BM0CAAA=]"
+    },
+    {
+      "stepId": "39:poi:709",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "709",
+      "coord": [
+        52349,
+        39437
+      ],
+      "recommendedLevel": null,
+      "name": "Herot's Ascent",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1005,
+      "wikiText": "Herot's Ascent is a point of interest in Avernan Volatile serving as a large underground Inquest stronghold. Passage through this area leads into the heart of the volcano.",
+      "waypointChatLink": "[&BM8CAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:719",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "719",
+      "coord": [
+        52453,
+        39565
+      ],
+      "recommendedLevel": null,
+      "name": "Avernan Waypoint",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM8CAAA=]",
+      "waypointChatLink": "[&BM8CAAA=]",
+      "trailIndex": 1054,
+      "wikiText": "Avernan Volatile is an area in south central Mount Maelstrom. It features a vast arid plain with a large underground Inquest stronghold. An asuran krewe is also running experiments on the large number of Wind Riders located in the area."
+    },
+    {
+      "stepId": "39:poi:1686",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1686",
+      "coord": [
+        52368,
+        39893
+      ],
+      "recommendedLevel": null,
+      "name": "Felsic Plains",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1090,
+      "wikiText": "The Felsic Plains is a point of interest in the Avernan Volatile. This barren wasteland is completely devoid of all plant life; however, there is a colony of Breeze Riders here.",
+      "waypointChatLink": "[&BM8CAAA=]"
+    },
+    {
+      "stepId": "39:hero:0-110",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "hero",
+      "objectiveId": "0-110",
+      "coord": [
+        52920,
+        39695
+      ],
+      "recommendedLevel": null,
+      "name": "Urrahn The Hunter",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1157,
+      "wikiText": "Urrahn The Hunter is a powerful largos hunter who dwells in an underwater volcanic cave beneath an island in Mount Maelstrom. He is very secretive beyond wanting to test the player's skills. He has a hero challenge Defeat Urrahn the Hunter.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:poi:1683",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1683",
+      "coord": [
+        52823,
+        39608
+      ],
+      "recommendedLevel": null,
+      "name": "Treacherous Vents",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1161,
+      "wikiText": "Treacherous Vents is a point of interest within the Treacherous Depths. It is a underwater magma flow. Many largos are grouped up there, planning their next hunts.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:heart:288",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "288",
+      "coord": [
+        52746,
+        39012
+      ],
+      "recommendedLevel": 66,
+      "name": "Help the Order of Whispers instigate a fight between krait and Risen.",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53340,
+          39502
+        ],
+        [
+          53406,
+          39529
+        ],
+        [
+          53452,
+          39534
+        ],
+        [
+          53514,
+          39516
+        ],
+        [
+          53555,
+          39404
+        ],
+        [
+          53560,
+          39269
+        ],
+        [
+          53508,
+          39144
+        ],
+        [
+          53455,
+          39108
+        ],
+        [
+          53391,
+          39078
+        ],
+        [
+          53354,
+          38994
+        ],
+        [
+          53323,
+          38968
+        ],
+        [
+          53283,
+          38954
+        ],
+        [
+          53248,
+          38952
+        ],
+        [
+          53215,
+          38952
+        ],
+        [
+          53188,
+          38948
+        ],
+        [
+          53143,
+          38946
+        ],
+        [
+          53101,
+          38946
+        ],
+        [
+          53057,
+          38956
+        ],
+        [
+          53009,
+          38960
+        ],
+        [
+          52962,
+          38955
+        ],
+        [
+          52898,
+          38944
+        ],
+        [
+          52845,
+          38954
+        ],
+        [
+          52799,
+          38958
+        ],
+        [
+          52768,
+          38971
+        ],
+        [
+          52740,
+          38983
+        ],
+        [
+          52730,
+          39009
+        ],
+        [
+          52725,
+          39036
+        ],
+        [
+          52730,
+          39069
+        ],
+        [
+          52748,
+          39132
+        ],
+        [
+          52785,
+          39166
+        ],
+        [
+          52832,
+          39179
+        ],
+        [
+          52870,
+          39201
+        ],
+        [
+          52907,
+          39232
+        ],
+        [
+          52945,
+          39262
+        ],
+        [
+          52983,
+          39290
+        ],
+        [
+          53032,
+          39323
+        ],
+        [
+          53068,
+          39334
+        ],
+        [
+          53140,
+          39378
+        ],
+        [
+          53255,
+          39463
+        ],
+        [
+          53306,
+          39489
+        ],
+        [
+          53340,
+          39502
+        ]
+      ],
+      "trailIndex": 1171,
+      "wikiText": "While disguised as a Risen, free slaves, attack krait, and destroy their defenses.",
+      "waypointChatLink": "[&BNECAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:721",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "721",
+      "coord": [
+        52794,
+        38992
+      ],
+      "recommendedLevel": null,
+      "name": "Oxbow Isle Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNECAAA=]",
+      "waypointChatLink": "[&BNECAAA=]",
+      "trailIndex": 1183,
+      "wikiText": "The Mire Sea is a large body of water located within Mount Maelstrom. The waters are infested with both krait and their Risen counterparts."
+    },
+    {
+      "stepId": "39:poi:694",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "694",
+      "coord": [
+        53220,
+        39212
+      ],
+      "recommendedLevel": null,
+      "name": "Restless Deeps",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1194,
+      "wikiText": "Restless Deeps is a point of interest within The Mire Sea. It is deep underwater and guarded by krait.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:vista:1702",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "vista",
+      "objectiveId": "1702",
+      "coord": [
+        53330,
+        39368
+      ],
+      "recommendedLevel": null,
+      "name": "The Mire Sea",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1241,
+      "wikiText": "A straight climb up the rope walkway starting from the Western edge of the shipwrecks, then a shorter climb up the mast to the vista. Be wary of the veterans, but they can be taken away from support.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:poi:1687",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1687",
+      "coord": [
+        53114,
+        39546
+      ],
+      "recommendedLevel": null,
+      "name": "Clandest Basecamp",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1248,
+      "wikiText": "Clandest Basecamp is an Order of Whispers outpost on Irwin Isle within Treacherous Depths.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:722",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "722",
+      "coord": [
+        53195,
+        39623
+      ],
+      "recommendedLevel": null,
+      "name": "Irwin Isle Waypoint",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNICAAA=]",
+      "waypointChatLink": "[&BNICAAA=]",
+      "trailIndex": 1260,
+      "wikiText": "The Treacherous Depths is a large water filled area with two islands in Mount Maelstrom. One island has a hidden Order of Whispers outpost, the other an Artichoke Node farm."
+    },
+    {
+      "stepId": "39:poi:699",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "699",
+      "coord": [
+        53295,
+        39952
+      ],
+      "recommendedLevel": null,
+      "name": "Malxa Pyronetics",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1289,
+      "wikiText": "The Malxa Pyronetics is a point of interest within The Stychs. It is home to Inquest research base where they carry out weapon experiments against nearby hylek.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:heart:278",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "278",
+      "coord": [
+        53416,
+        39776
+      ],
+      "recommendedLevel": 67,
+      "name": "Help the Order of Whispers sabotage Inquest weapon tests on the hylek village of Tzanopl Grounds.",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53360,
+          40217
+        ],
+        [
+          53129,
+          40124
+        ],
+        [
+          53055,
+          40001
+        ],
+        [
+          53269,
+          39743
+        ],
+        [
+          53440,
+          39689
+        ],
+        [
+          53564,
+          39822
+        ],
+        [
+          53360,
+          40217
+        ]
+      ],
+      "trailIndex": 1313,
+      "wikiText": "Falsify Inquest data, free captured Order agents, steal access keys, and reduce Inquest numbers.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:vista:1706",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "vista",
+      "objectiveId": "1706",
+      "coord": [
+        53407,
+        40025
+      ],
+      "recommendedLevel": null,
+      "name": "Malxa Pyronetics",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1351,
+      "wikiText": "Go south past the east side of the Malxa Pyronetics. At the end of the cliff and your left hand turn north and north-east up the cliff past the vista till you can turn south-west again to the vista.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:poi:693",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "693",
+      "coord": [
+        53602,
+        40043
+      ],
+      "recommendedLevel": null,
+      "name": "Tzanopl Grounds",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1378,
+      "wikiText": "The Tzanopl Grounds is a point of interest within The Stychs that is the home to the tribe of Tzanopl hylek. The Inquest nearby are testing their mega-weapon on their village, much to their displeasure.",
+      "waypointChatLink": "[&BNICAAA=]"
+    },
+    {
+      "stepId": "39:hero:0-114",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "hero",
+      "objectiveId": "0-114",
+      "coord": [
+        53635,
+        40049
+      ],
+      "recommendedLevel": null,
+      "name": "Petil",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1381,
+      "wikiText": "Petil is one of the fiercest warrior of the Tzanopl Grounds.",
+      "waypointChatLink": "[&BNUCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:725",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "725",
+      "coord": [
+        54221,
+        40051
+      ],
+      "recommendedLevel": null,
+      "name": "Judgment Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNUCAAA=]",
+      "waypointChatLink": "[&BNUCAAA=]",
+      "trailIndex": 1417,
+      "wikiText": "Judgment Rock is an area within Mount Maelstrom. This beach holds a camp set up by a small sylvari contingent, called the Tyrian Protectors. Judgment Rock is also a religious and pilgrimage site for various hylek tribes."
+    },
+    {
+      "stepId": "39:heart:286",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "286",
+      "coord": [
+        54209,
+        39833
+      ],
+      "recommendedLevel": 69,
+      "name": "Help Jenrys protect nature from the Inquest.",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54247,
+          39692
+        ],
+        [
+          54208,
+          39488
+        ],
+        [
+          54074,
+          39408
+        ],
+        [
+          53949,
+          39428
+        ],
+        [
+          53825,
+          39454
+        ],
+        [
+          53715,
+          39545
+        ],
+        [
+          53690,
+          39646
+        ],
+        [
+          53729,
+          39762
+        ],
+        [
+          53799,
+          39857
+        ],
+        [
+          53925,
+          39915
+        ],
+        [
+          54214,
+          39844
+        ],
+        [
+          54247,
+          39692
+        ]
+      ],
+      "trailIndex": 1437,
+      "wikiText": "Clean up pollution, destroy turrets and recording devices, and kill Inquest.",
+      "waypointChatLink": "[&BNUCAAA=]"
+    },
+    {
+      "stepId": "39:poi:1677",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1677",
+      "coord": [
+        54054,
+        39613
+      ],
+      "recommendedLevel": null,
+      "name": "Aquabase Terror Seven",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1440,
+      "wikiText": "The Aquabase Terror Seven is a large underwater Inquest installation. Due to the pollution their experiments cause, a small group of ecologist sylvari are taking the fight to them to make them stop.",
+      "waypointChatLink": "[&BNQCAAA=]"
+    },
+    {
+      "stepId": "39:vista:1707",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "vista",
+      "objectiveId": "1707",
+      "coord": [
+        53822,
+        39417
+      ],
+      "recommendedLevel": null,
+      "name": "Old Sledge Site",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1483,
+      "wikiText": "Start at the north point of the island and just walk / jump your way more or less straight to the vista.",
+      "waypointChatLink": "[&BNQCAAA=]"
+    },
+    {
+      "stepId": "39:hero:0-113",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "hero",
+      "objectiveId": "0-113",
+      "coord": [
+        53644,
+        39220
+      ],
+      "recommendedLevel": null,
+      "name": "Tarkkakt",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1505,
+      "wikiText": "Tarkkakt is a skritt on the shore of the the Mire Sea.",
+      "waypointChatLink": "[&BNQCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:724",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "724",
+      "coord": [
+        53918,
+        39300
+      ],
+      "recommendedLevel": null,
+      "name": "Old Sledge Site Waypoint",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNQCAAA=]",
+      "waypointChatLink": "[&BNQCAAA=]",
+      "trailIndex": 1518,
+      "wikiText": "Whitland Flats is an area within Mount Maelstrom. It has been heavily polluted by Inquest activities. A camp of Wyld Hunt Valiants has been established to fight them and restore the land."
+    },
+    {
+      "stepId": "39:heart:280",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "280",
+      "coord": [
+        53964,
+        39212
+      ],
+      "recommendedLevel": 68,
+      "name": "Help Carmel cleanse the Inquest pollution.",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53827,
+          38686
+        ],
+        [
+          54172,
+          38641
+        ],
+        [
+          54349,
+          38815
+        ],
+        [
+          54247,
+          39171
+        ],
+        [
+          54119,
+          39387
+        ],
+        [
+          53975,
+          39376
+        ],
+        [
+          53860,
+          39317
+        ],
+        [
+          53782,
+          39261
+        ],
+        [
+          53622,
+          39036
+        ],
+        [
+          53689,
+          38720
+        ],
+        [
+          53827,
+          38686
+        ]
+      ],
+      "trailIndex": 1532,
+      "wikiText": "Clean golem pollution, cleanse infected wildlife, and fight off the Inquest.",
+      "waypointChatLink": "[&BNQCAAA=]"
+    },
+    {
+      "stepId": "39:poi:1688",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1688",
+      "coord": [
+        54269,
+        38888
+      ],
+      "recommendedLevel": null,
+      "name": "Lonatl Grounds",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1581,
+      "wikiText": "Lonatl Grounds is a point of interest within Whitland Flats that is the home to a tribe of Lonatl hylek. Many of the tribe's members became insane and lost due to the pollution unleashed because of the Inquest's foul experiments.",
+      "waypointChatLink": "[&BNQCAAA=]"
+    },
+    {
+      "stepId": "39:poi:1689",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1689",
+      "coord": [
+        53953,
+        38916
+      ],
+      "recommendedLevel": null,
+      "name": "Observation Platform XKV",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1620,
+      "wikiText": "Observation Platform XKV is an Inquest testing platform overseen by the Champion Platform Master found within Whitland Flats. It sets the stage for the event Defeat the Inquest's golem Mark II.",
+      "waypointChatLink": "[&BNQCAAA=]"
+    },
+    {
+      "stepId": "39:hero:0-199",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "hero",
+      "objectiveId": "0-199",
+      "coord": [
+        53353,
+        38852
+      ],
+      "recommendedLevel": null,
+      "name": "Droknah's Relic",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1649,
+      "wikiText": "Droknah's Relic is a communion hero point located at the Sunken Droknah.",
+      "waypointChatLink": "[&BNECAAA=]"
+    },
+    {
+      "stepId": "39:poi:1679",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1679",
+      "coord": [
+        53293,
+        38852
+      ],
+      "recommendedLevel": null,
+      "name": "Forge Foundations",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1655,
+      "wikiText": "The Forge Foundations are a point of interest within the Sunken Droknah. The sunken foundations of Droknar's Forge can still be seen at this location.",
+      "waypointChatLink": "[&BNECAAA=]"
+    },
+    {
+      "stepId": "39:poi:1681",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1681",
+      "coord": [
+        52995,
+        38559
+      ],
+      "recommendedLevel": null,
+      "name": "Mosstide Walfts",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1706,
+      "wikiText": "The Mosstide Walfts are a point of interest within the Gauntlet Gulch. It is a rise overlooking a small pond.",
+      "waypointChatLink": "[&BNECAAA=]"
+    },
+    {
+      "stepId": "39:vista:1705",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "vista",
+      "objectiveId": "1705",
+      "coord": [
+        53159,
+        38254
+      ],
+      "recommendedLevel": null,
+      "name": "Gauntlet",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1755,
+      "wikiText": "South of the vista there are a couple of broken pillars. Up the little hill west of the lowest pillar, then jump the 3 pillars that are together. From the highest one, jump on the narrow wall.",
+      "waypointChatLink": "[&BNMCAAA=]"
+    },
+    {
+      "stepId": "39:poi:704",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "704",
+      "coord": [
+        53422,
+        38463
+      ],
+      "recommendedLevel": null,
+      "name": "Zone Black",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1794,
+      "wikiText": "Found to the southwest, Zone Black is one of the six corners of the Infinite Coil Reactor. Risen are kept here.",
+      "waypointChatLink": "[&BEIFAAA=]"
+    },
+    {
+      "stepId": "39:poi:706",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "706",
+      "coord": [
+        53741,
+        38636
+      ],
+      "recommendedLevel": null,
+      "name": "Zone Blue (Under Construction)",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1811,
+      "wikiText": "Zone Blue (Under Construction) is an empty corner of the Infinite Coil Reactor.",
+      "waypointChatLink": "[&BEIFAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:1346",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "1346",
+      "coord": [
+        53743,
+        38323
+      ],
+      "recommendedLevel": null,
+      "name": "Crucible of Eternity Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEIFAAA=]",
+      "waypointChatLink": "[&BEIFAAA=]",
+      "trailIndex": 1824,
+      "wikiText": "The Infinite Coil Reactor is a major Inquest lab located in Mount Maelstrom. This reactor was built as a replacement for the Thaumanova Reactor which exploded due to Inquest experimentation."
+    },
+    {
+      "stepId": "39:poi:701",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "701",
+      "coord": [
+        54002,
+        38432
+      ],
+      "recommendedLevel": null,
+      "name": "Zone Violet",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1833,
+      "wikiText": "Zone Violet is a point of interest within the Infinite Coil Reactor. There are branded minions for experiment and study.",
+      "waypointChatLink": "[&BEIFAAA=]"
+    },
+    {
+      "stepId": "39:poi:702",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "702",
+      "coord": [
+        53999,
+        38066
+      ],
+      "recommendedLevel": null,
+      "name": "Zone White",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1855,
+      "wikiText": "Zone White is a point of interest in the northeastern corner of the Infinite Coil Reactor. Icebrood are kept here for study and experimentation. It is the part of the Infinity Coil Reactor dedicated to the Elder Dragon of Ice, Jormag.",
+      "waypointChatLink": "[&BEIFAAA=]"
+    },
+    {
+      "stepId": "39:poi:703",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "703",
+      "coord": [
+        53728,
+        37899
+      ],
+      "recommendedLevel": null,
+      "name": "Zone Green",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1876,
+      "wikiText": "Zone Green is a point of interest in the Infinite Coil Reactor. It holds a nature theme to it. It is meant to hold minions of the Elder Jungle Dragon Mordremoth.",
+      "waypointChatLink": "[&BEIFAAA=]"
+    },
+    {
+      "stepId": "39:hero:0-109",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "hero",
+      "objectiveId": "0-109",
+      "coord": [
+        53730,
+        37889
+      ],
+      "recommendedLevel": null,
+      "name": "IQ1800 LX",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1877,
+      "wikiText": "IQ1800 LX is a semi-transparent, malfunctioning holographic golem found in the Zone Green of the Infinite Coil Reactor area of Mount Maelstrom, which rewards a hero point for defeating it.",
+      "waypointChatLink": "[&BEIFAAA=]"
+    },
+    {
+      "stepId": "39:poi:705",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "705",
+      "coord": [
+        53383,
+        38081
+      ],
+      "recommendedLevel": null,
+      "name": "Zone Red",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1899,
+      "wikiText": "Zone Red is a point of interest within the northwestern corner of the Infinite Coil Reactor. Destroyers are kept here for study and experimentation.",
+      "waypointChatLink": "[&BEIFAAA=]"
+    },
+    {
+      "stepId": "39:poi:697",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "697",
+      "coord": [
+        52991,
+        37978
+      ],
+      "recommendedLevel": null,
+      "name": "Gallant's Folly",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1964,
+      "wikiText": "Gallant's Folly is a large Pact camp within the Gauntlet Gulch. The Pact use this as their primary base of operations for their assaults against the Inquest in the Infinite Coil Reactor.",
+      "waypointChatLink": "[&BNMCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:723",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "723",
+      "coord": [
+        52968,
+        37946
+      ],
+      "recommendedLevel": null,
+      "name": "Gauntlet Waypoint",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNMCAAA=]",
+      "waypointChatLink": "[&BNMCAAA=]",
+      "trailIndex": 1966,
+      "wikiText": "Gauntlet Gulch is an area in north central Mount Maelstrom. The Pact has established a large stronghold at Gallant's Folly from which they base their assault on the Inquest of the Infinite Coil Reactor."
+    },
+    {
+      "stepId": "39:heart:283",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "283",
+      "coord": [
+        52952,
+        38002
+      ],
+      "recommendedLevel": 68,
+      "name": "Help Zara secure and supply Gallant's Folly.",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53274,
+          38138
+        ],
+        [
+          53288,
+          38554
+        ],
+        [
+          53157,
+          38728
+        ],
+        [
+          53080,
+          38840
+        ],
+        [
+          52916,
+          38886
+        ],
+        [
+          52873,
+          38887
+        ],
+        [
+          52690,
+          38692
+        ],
+        [
+          52687,
+          38607
+        ],
+        [
+          52684,
+          38488
+        ],
+        [
+          52687,
+          38382
+        ],
+        [
+          52686,
+          38280
+        ],
+        [
+          52713,
+          38181
+        ],
+        [
+          52800,
+          38012
+        ],
+        [
+          52927,
+          37938
+        ],
+        [
+          53059,
+          37945
+        ],
+        [
+          53274,
+          38138
+        ]
+      ],
+      "trailIndex": 1970,
+      "wikiText": "Eliminate Inquest spies, ensure supplies get to Gallant's Folly, and spar with Pact brawlers.",
+      "waypointChatLink": "[&BNMCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:720",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "720",
+      "coord": [
+        52372,
+        37859
+      ],
+      "recommendedLevel": null,
+      "name": "Broken Arrow Waypoint",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNACAAA=]",
+      "waypointChatLink": "[&BNACAAA=]",
+      "trailIndex": 2042,
+      "wikiText": "Broken Arrow River is an area within Mount Maelstrom. A shallow river stretches halfway through the Risen-infested area. A large number of Jungle Trolls are found there, hiding among the tall grass and trees."
+    },
+    {
+      "stepId": "39:heart:284",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "284",
+      "coord": [
+        52216,
+        37915
+      ],
+      "recommendedLevel": 61,
+      "name": "Help Pact soldiers secure a path to Orr.",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51754,
+          38243
+        ],
+        [
+          51788,
+          38164
+        ],
+        [
+          51797,
+          38069
+        ],
+        [
+          51798,
+          37994
+        ],
+        [
+          51862,
+          37969
+        ],
+        [
+          51920,
+          37934
+        ],
+        [
+          51959,
+          37918
+        ],
+        [
+          51985,
+          37890
+        ],
+        [
+          52004,
+          37867
+        ],
+        [
+          52020,
+          37830
+        ],
+        [
+          52068,
+          37806
+        ],
+        [
+          52108,
+          37797
+        ],
+        [
+          52151,
+          37772
+        ],
+        [
+          52213,
+          37773
+        ],
+        [
+          52253,
+          37770
+        ],
+        [
+          52290,
+          37788
+        ],
+        [
+          52321,
+          37813
+        ],
+        [
+          52350,
+          37849
+        ],
+        [
+          52368,
+          37894
+        ],
+        [
+          52384,
+          37933
+        ],
+        [
+          52396,
+          37975
+        ],
+        [
+          52407,
+          38027
+        ],
+        [
+          52413,
+          38072
+        ],
+        [
+          52433,
+          38153
+        ],
+        [
+          52400,
+          38256
+        ],
+        [
+          52289,
+          38405
+        ],
+        [
+          52180,
+          38442
+        ],
+        [
+          52123,
+          38478
+        ],
+        [
+          52046,
+          38503
+        ],
+        [
+          51933,
+          38511
+        ],
+        [
+          51784,
+          38432
+        ],
+        [
+          51709,
+          38329
+        ],
+        [
+          51754,
+          38243
+        ]
+      ],
+      "trailIndex": 2057,
+      "wikiText": "Destroy Risen ambushes, rotmouths, and turrets.",
+      "waypointChatLink": "[&BNACAAA=]"
+    },
+    {
+      "stepId": "39:poi:700",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "700",
+      "coord": [
+        52210,
+        37876
+      ],
+      "recommendedLevel": null,
+      "name": "Moonlight Rill",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2060,
+      "wikiText": "Moonlight Rill is a point of interest within Broken Arrow River. It is a large waterfall inhabited by frogs.",
+      "waypointChatLink": "[&BNACAAA=]"
+    },
+    {
+      "stepId": "39:poi:692",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "692",
+      "coord": [
+        52043,
+        38152
+      ],
+      "recommendedLevel": null,
+      "name": "Valley of Gwaun",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2095,
+      "wikiText": "The Valley of Gwaun is a point of interest in the Bard's Valley. It is a large underground waterfall that is well defended by ghosts.",
+      "waypointChatLink": "[&BMwCAAA=]"
+    },
+    {
+      "stepId": "39:poi:1678",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "1678",
+      "coord": [
+        51506,
+        38141
+      ],
+      "recommendedLevel": null,
+      "name": "New Skrittstead",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2196,
+      "wikiText": "New Skrittstead is a point of interest within Quandry Scratch. It is home to a warren of skritt. They are currently caught between two deadly forces-the Nightmare Court to the west and the Risen to the east.",
+      "waypointChatLink": "[&BMwCAAA=]"
+    },
+    {
+      "stepId": "39:heart:285",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "heart",
+      "objectiveId": "285",
+      "coord": [
+        51559,
+        38065
+      ],
+      "recommendedLevel": 62,
+      "name": "Assist the skritt with their fortifications.",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51018,
+          37972
+        ],
+        [
+          51056,
+          37977
+        ],
+        [
+          51087,
+          37960
+        ],
+        [
+          51135,
+          37949
+        ],
+        [
+          51161,
+          37929
+        ],
+        [
+          51201,
+          37906
+        ],
+        [
+          51252,
+          37890
+        ],
+        [
+          51281,
+          37861
+        ],
+        [
+          51317,
+          37813
+        ],
+        [
+          51362,
+          37806
+        ],
+        [
+          51494,
+          37811
+        ],
+        [
+          51560,
+          37826
+        ],
+        [
+          51624,
+          37860
+        ],
+        [
+          51683,
+          37863
+        ],
+        [
+          51796,
+          37900
+        ],
+        [
+          51793,
+          37946
+        ],
+        [
+          51760,
+          37966
+        ],
+        [
+          51757,
+          37982
+        ],
+        [
+          51752,
+          38051
+        ],
+        [
+          51758,
+          38131
+        ],
+        [
+          51779,
+          38171
+        ],
+        [
+          51729,
+          38233
+        ],
+        [
+          51705,
+          38331
+        ],
+        [
+          51647,
+          38441
+        ],
+        [
+          51593,
+          38547
+        ],
+        [
+          51550,
+          38625
+        ],
+        [
+          51528,
+          38695
+        ],
+        [
+          51534,
+          38707
+        ],
+        [
+          51489,
+          38752
+        ],
+        [
+          51463,
+          38754
+        ],
+        [
+          51403,
+          38707
+        ],
+        [
+          51393,
+          38674
+        ],
+        [
+          51354,
+          38604
+        ],
+        [
+          51372,
+          38544
+        ],
+        [
+          51337,
+          38480
+        ],
+        [
+          51307,
+          38463
+        ],
+        [
+          51270,
+          38440
+        ],
+        [
+          51235,
+          38435
+        ],
+        [
+          51193,
+          38447
+        ],
+        [
+          51166,
+          38428
+        ],
+        [
+          51139,
+          38392
+        ],
+        [
+          51106,
+          38349
+        ],
+        [
+          51044,
+          38311
+        ],
+        [
+          51006,
+          38255
+        ],
+        [
+          50972,
+          38199
+        ],
+        [
+          50955,
+          38136
+        ],
+        [
+          50940,
+          38067
+        ],
+        [
+          50966,
+          38014
+        ],
+        [
+          50987,
+          37970
+        ],
+        [
+          51018,
+          37972
+        ]
+      ],
+      "trailIndex": 2207,
+      "wikiText": "Assist the admiral with training, the brewmaster with beer making, and Roc'loaka with repairs.",
+      "waypointChatLink": "[&BMwCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:716",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "716",
+      "coord": [
+        51797,
+        38108
+      ],
+      "recommendedLevel": null,
+      "name": "Bard's Waypoint",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMwCAAA=]",
+      "waypointChatLink": "[&BMwCAAA=]",
+      "trailIndex": 2246,
+      "wikiText": "Bard's Valley is an area in Mount Maelstrom. A valiant camp is located there, their goal being clearing the road for the Pact so they can safely travel to Orr."
+    },
+    {
+      "stepId": "39:poi:707",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "707",
+      "coord": [
+        51816,
+        38265
+      ],
+      "recommendedLevel": null,
+      "name": "Breth Ayahusasca",
+      "prereqs": [],
+      "order": 69,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2275,
+      "wikiText": "Breth Ayahusasca is a point of interest in the Bard's Valley. It is home to a large group of sylvari Wyld Hunt valiants, of which some have noticed the area radiates with an unknown energy that has drawn them to the location.",
+      "waypointChatLink": "[&BMwCAAA=]"
+    },
+    {
+      "stepId": "39:waypoint:718",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "waypoint",
+      "objectiveId": "718",
+      "coord": [
+        52162,
+        38540
+      ],
+      "recommendedLevel": null,
+      "name": "Ashen Waypoint",
+      "prereqs": [],
+      "order": 70,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BM4CAAA=]",
+      "waypointChatLink": "[&BM4CAAA=]",
+      "trailIndex": 2328,
+      "wikiText": "Ashen Waste is an area in central Mount Maelstrom. It's host to two rival camps, one held by sylvari valiants and one held by the Nightmare Court."
+    },
+    {
+      "stepId": "39:poi:695",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "695",
+      "coord": [
+        52290,
+        38824
+      ],
+      "recommendedLevel": null,
+      "name": "Gorlois Spine",
+      "prereqs": [],
+      "order": 71,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2366,
+      "wikiText": "Gorlois Spine is an oasis of growth that is the home to a small group of sylvari valiants in the Ashen Waste. It is also serves as the location for Stop the rampaging Inquest golem.",
+      "waypointChatLink": "[&BM4CAAA=]"
+    },
+    {
+      "stepId": "39:poi:696",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "poi",
+      "objectiveId": "696",
+      "coord": [
+        51840,
+        38707
+      ],
+      "recommendedLevel": null,
+      "name": "Venomblight",
+      "prereqs": [],
+      "order": 72,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2422,
+      "wikiText": "Venomblight is a small, twisted grove that is home to a force of Nightmare Court in the Ashen Waste. Here, courtiers subdue and convert Wyld Hunt Valiant sylvari patrolling the area.",
+      "waypointChatLink": "[&BM4CAAA=]"
+    },
+    {
+      "stepId": "39:vista:1704",
+      "mapId": 39,
+      "zoneName": "Mount Maelstrom",
+      "type": "vista",
+      "objectiveId": "1704",
+      "coord": [
+        51907,
+        39240
+      ],
+      "recommendedLevel": null,
+      "name": "Maelstrom's",
+      "prereqs": [],
+      "order": 73,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Start just in the middle between the Venomblight and the Gorlois Spine points of interest. Then just walk uphill south to the vista.",
+      "waypointChatLink": "[&BM0CAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

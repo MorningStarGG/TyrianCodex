@@ -1,0 +1,2527 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 35,
+    "name": "Metrica Province",
+    "continentId": 1,
+    "regionId": 5,
+    "regionName": "Tarnished Coast",
+    "floor": 1,
+    "minLevel": 1,
+    "maxLevel": 15,
+    "mapRect": [
+      [
+        -24576,
+        -39936
+      ],
+      [
+        27648,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        39936,
+        33536
+      ],
+      [
+        42112,
+        36864
+      ]
+    ],
+    "sectorRect": [
+      [
+        39889.8,
+        33454.1
+      ],
+      [
+        42198.6,
+        36956.3
+      ]
+    ],
+    "labelCoord": [
+      41024,
+      35200
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "35:waypoint:64",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "64",
+      "coord": [
+        40172,
+        36402
+      ],
+      "recommendedLevel": null,
+      "name": "Soren Draa Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEAAAAA=]",
+      "waypointChatLink": "[&BEAAAAA=]",
+      "trailIndex": 8,
+      "wikiText": "Soren Draa is an asuran settlement in the southern section of Metrica Province. This small town is built around the asura gate leading to Rata Sum."
+    },
+    {
+      "stepId": "35:poi:1289",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "1289",
+      "coord": [
+        40218,
+        36289
+      ],
+      "recommendedLevel": null,
+      "name": "Terranexic Lab",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 18,
+      "wikiText": "The Terranexic Lab is a point of interest within Soren Draa. This is one of the many asuran laboratories within southern Metrica Province. The Terranexic krewe's focus is winning the golem battle at Battleground Plaza with their golem.",
+      "waypointChatLink": "[&BEAAAAA=]"
+    },
+    {
+      "stepId": "35:vista:1406",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1406",
+      "coord": [
+        40283,
+        36643
+      ],
+      "recommendedLevel": null,
+      "name": "Wildflame Caverns",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 81,
+      "wikiText": "Overlooks the Wildflame Caverns. Can be reached via a small slope in the center of the caverns.",
+      "waypointChatLink": "[&BEAAAAA=]"
+    },
+    {
+      "stepId": "35:heart:319",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "319",
+      "coord": [
+        40428,
+        36473
+      ],
+      "recommendedLevel": 2,
+      "name": "Support Doola's golemancing research.",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40764,
+          36236
+        ],
+        [
+          40708,
+          36149
+        ],
+        [
+          40669,
+          36100
+        ],
+        [
+          40533,
+          36091
+        ],
+        [
+          40499,
+          36236
+        ],
+        [
+          40423,
+          36268
+        ],
+        [
+          40351,
+          36270
+        ],
+        [
+          40353,
+          36371
+        ],
+        [
+          40331,
+          36368
+        ],
+        [
+          40330,
+          36411
+        ],
+        [
+          40351,
+          36410
+        ],
+        [
+          40340,
+          36546
+        ],
+        [
+          40437,
+          36538
+        ],
+        [
+          40499,
+          36670
+        ],
+        [
+          40617,
+          36739
+        ],
+        [
+          40744,
+          36654
+        ],
+        [
+          40747,
+          36544
+        ],
+        [
+          40724,
+          36496
+        ],
+        [
+          40725,
+          36461
+        ],
+        [
+          40716,
+          36420
+        ],
+        [
+          40728,
+          36391
+        ],
+        [
+          40778,
+          36313
+        ],
+        [
+          40764,
+          36236
+        ]
+      ],
+      "trailIndex": 116,
+      "wikiText": "Experiment on inactive golems, repair golem control panels, and organize toolboxes along the road and inside nearby labs.",
+      "waypointChatLink": "[&BEAAAAA=]"
+    },
+    {
+      "stepId": "35:poi:52",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "52",
+      "coord": [
+        40584,
+        36343
+      ],
+      "recommendedLevel": null,
+      "name": "Battleground Plaza",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 142,
+      "wikiText": "The Battleground Plaza is a point of interest within The Hinterlabs. This arena is the location of a golem battle contest that's held between the various asura krewes in the area: Aeronotics, Hydrone, Incinergen, and Terranexic.",
+      "waypointChatLink": "[&BPcEAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:1271",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "1271",
+      "coord": [
+        40632,
+        36217
+      ],
+      "recommendedLevel": null,
+      "name": "Hydrone Unit Waypoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BPcEAAA=]",
+      "waypointChatLink": "[&BPcEAAA=]",
+      "trailIndex": 160,
+      "wikiText": "The Hinterlabs is an area in Metrica Province. Many asura krewes from Rata Sum hold their labs here."
+    },
+    {
+      "stepId": "35:poi:1076",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "1076",
+      "coord": [
+        40857,
+        36441
+      ],
+      "recommendedLevel": null,
+      "name": "Splorg Metamystics Lab",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 209,
+      "wikiText": "The Splorg Metamystics Lab is a point of interest within The Hinterlabs. It is a pre-college of asuran progeny run by Professor Hamm. They build golems and compete in the Battleground Plaza.",
+      "waypointChatLink": "[&BPcEAAA=]"
+    },
+    {
+      "stepId": "35:heart:333",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "333",
+      "coord": [
+        40809,
+        36504
+      ],
+      "recommendedLevel": 2,
+      "name": "Assist Professor Gahf in teaching his young progeny.",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40883,
+          36343
+        ],
+        [
+          40952,
+          36412
+        ],
+        [
+          40999,
+          36442
+        ],
+        [
+          40928,
+          36535
+        ],
+        [
+          40887,
+          36576
+        ],
+        [
+          40821,
+          36591
+        ],
+        [
+          40776,
+          36551
+        ],
+        [
+          40738,
+          36485
+        ],
+        [
+          40752,
+          36472
+        ],
+        [
+          40746,
+          36438
+        ],
+        [
+          40750,
+          36413
+        ],
+        [
+          40770,
+          36383
+        ],
+        [
+          40798,
+          36352
+        ],
+        [
+          40812,
+          36340
+        ],
+        [
+          40875,
+          36351
+        ],
+        [
+          40883,
+          36343
+        ]
+      ],
+      "trailIndex": 216,
+      "wikiText": "Inspire impressionable progeny, deter Inquest recruiters, chase down unruly progeny, perform demonstrations with teaching apparatuses, and protect progeny from any potential threats.",
+      "waypointChatLink": "[&BPcEAAA=]"
+    },
+    {
+      "stepId": "35:vista:1408",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1408",
+      "coord": [
+        40810,
+        36485
+      ],
+      "recommendedLevel": null,
+      "name": "Splorge Metamystics",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 238,
+      "wikiText": "Overlooks The Splorge Metamystics Lab. Can be reached via stairs on either the west corner of the building or the south corner.",
+      "waypointChatLink": "[&BPcEAAA=]"
+    },
+    {
+      "stepId": "35:vista:1409",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1409",
+      "coord": [
+        40625,
+        36550
+      ],
+      "recommendedLevel": null,
+      "name": "Incinergen Labs",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 263,
+      "wikiText": "Overlooks The Incinergen Labs. Can be reached from the north-eastern corner of the building.",
+      "waypointChatLink": "[&BPcEAAA=]"
+    },
+    {
+      "stepId": "35:poi:51",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "51",
+      "coord": [
+        40660,
+        36594
+      ],
+      "recommendedLevel": null,
+      "name": "Incinergen Labs",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 277,
+      "wikiText": "The Incinergen Labs is a point of interest within The Hinterlabs. This is one of many asuran laboratories in southern Metrica Province, and is used as a research center for the Incinergen Krewe.",
+      "waypointChatLink": "[&BPcEAAA=]"
+    },
+    {
+      "stepId": "35:poi:1290",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "1290",
+      "coord": [
+        40911,
+        36728
+      ],
+      "recommendedLevel": null,
+      "name": "Aeronotics Lab",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 320,
+      "wikiText": "The Aeronotics Lab is a point of interest within The Hinterlabs. This is one of many asuran laboratories in southern Metrica Province, and is the base of the fairly new Aeronotics krewe.",
+      "waypointChatLink": "[&BEEAAAA=]"
+    },
+    {
+      "stepId": "35:heart:320",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "320",
+      "coord": [
+        40969,
+        36621
+      ],
+      "recommendedLevel": 3,
+      "name": "Assist the Opticalium with lightning research.",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41184,
+          36820
+        ],
+        [
+          41196,
+          36670
+        ],
+        [
+          41180,
+          36600
+        ],
+        [
+          41166,
+          36542
+        ],
+        [
+          41050,
+          36537
+        ],
+        [
+          40975,
+          36558
+        ],
+        [
+          40963,
+          36582
+        ],
+        [
+          40940,
+          36594
+        ],
+        [
+          40939,
+          36616
+        ],
+        [
+          40956,
+          36625
+        ],
+        [
+          40959,
+          36638
+        ],
+        [
+          40945,
+          36813
+        ],
+        [
+          41184,
+          36820
+        ]
+      ],
+      "trailIndex": 333,
+      "wikiText": "Activate storm cloud generators and energy storage containers, and remove roaming sparks from the lab.",
+      "waypointChatLink": "[&BEEAAAA=]"
+    },
+    {
+      "stepId": "35:poi:53",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "53",
+      "coord": [
+        41068,
+        36685
+      ],
+      "recommendedLevel": null,
+      "name": "The Opticalium",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 347,
+      "wikiText": "The Opticalium is a point of interest within southern Metrica Province. The nearest Waypoint is Jeztar Falls Waypoint - . This is one of many asuran laboratories in The Hinterlabs.",
+      "waypointChatLink": "[&BEEAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:65",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "65",
+      "coord": [
+        41202,
+        36636
+      ],
+      "recommendedLevel": null,
+      "name": "Jeztar Falls Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEEAAAA=]",
+      "waypointChatLink": "[&BEEAAAA=]",
+      "trailIndex": 365,
+      "wikiText": "Jeztar Falls is an area found in Metrica Province. Most of the wildlife who inhabit the lake were driven mad by the Inquest's experiments."
+    },
+    {
+      "stepId": "35:poi:552",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "552",
+      "coord": [
+        41358,
+        36694
+      ],
+      "recommendedLevel": null,
+      "name": "Incomp Optics",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 386,
+      "wikiText": "Incomp Optics is one of the many asuran laboratories located in Metrica Province found within Jeztar Falls. This krewe is researching a new type of defensive golem.",
+      "waypointChatLink": "[&BEEAAAA=]"
+    },
+    {
+      "stepId": "35:heart:334",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "334",
+      "coord": [
+        41466,
+        36744
+      ],
+      "recommendedLevel": 4,
+      "name": "Assist Researcher Kaii with Incomp's scrap heap.",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41373,
+          36742
+        ],
+        [
+          41408,
+          36705
+        ],
+        [
+          41435,
+          36699
+        ],
+        [
+          41473,
+          36691
+        ],
+        [
+          41540,
+          36635
+        ],
+        [
+          41572,
+          36651
+        ],
+        [
+          41626,
+          36774
+        ],
+        [
+          41589,
+          36905
+        ],
+        [
+          41412,
+          36892
+        ],
+        [
+          41373,
+          36742
+        ]
+      ],
+      "trailIndex": 400,
+      "wikiText": "Talk to Kaii to test his protogolem then examine electrical distortions and report back. Repair and revive SCRAP 80-Ts.",
+      "waypointChatLink": "[&BEEAAAA=]"
+    },
+    {
+      "stepId": "35:poi:55",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "55",
+      "coord": [
+        41356,
+        36474
+      ],
+      "recommendedLevel": null,
+      "name": "Aquannian Research Group",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 425,
+      "wikiText": "The Aquannian Research Group is a point of interest within the Jeztar Falls. This underwater complex is used by the Inquest as a research laboratory.",
+      "waypointChatLink": "[&BEEAAAA=]"
+    },
+    {
+      "stepId": "35:heart:322",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "322",
+      "coord": [
+        41638,
+        36406
+      ],
+      "recommendedLevel": 4,
+      "name": "Assist PR&T Esoterics with ooze research.",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41320,
+          36197
+        ],
+        [
+          41330,
+          36247
+        ],
+        [
+          41343,
+          36307
+        ],
+        [
+          41399,
+          36344
+        ],
+        [
+          41441,
+          36387
+        ],
+        [
+          41572,
+          36533
+        ],
+        [
+          41700,
+          36525
+        ],
+        [
+          41740,
+          36372
+        ],
+        [
+          41545,
+          36242
+        ],
+        [
+          41467,
+          36185
+        ],
+        [
+          41410,
+          36166
+        ],
+        [
+          41320,
+          36197
+        ]
+      ],
+      "trailIndex": 457,
+      "wikiText": "Obtain a colored key card from Takka then chromatize flowers with observation turrets and defeat their oozes.",
+      "waypointChatLink": "[&BEIAAAA=]"
+    },
+    {
+      "stepId": "35:poi:551",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "551",
+      "coord": [
+        41645,
+        36378
+      ],
+      "recommendedLevel": null,
+      "name": "PR&T Esoterics",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 461,
+      "wikiText": "PR&T Esoterics is a point of interest within Jeztar Falls. The PR&T asuran krewe has established a research lab at this location and are studying varying aspects of oozes.",
+      "waypointChatLink": "[&BEIAAAA=]"
+    },
+    {
+      "stepId": "35:heart:321",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "321",
+      "coord": [
+        41225,
+        36275
+      ],
+      "recommendedLevel": 5,
+      "name": "Help Blopp stop the Inquest from using hylek poison to drive lake creatures crazy.",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41176,
+          36130
+        ],
+        [
+          41260,
+          36153
+        ],
+        [
+          41306,
+          36209
+        ],
+        [
+          41324,
+          36301
+        ],
+        [
+          41277,
+          36384
+        ],
+        [
+          41208,
+          36414
+        ],
+        [
+          41127,
+          36398
+        ],
+        [
+          41045,
+          36359
+        ],
+        [
+          40994,
+          36244
+        ],
+        [
+          40984,
+          36178
+        ],
+        [
+          40996,
+          36123
+        ],
+        [
+          41040,
+          36105
+        ],
+        [
+          41176,
+          36130
+        ]
+      ],
+      "trailIndex": 514,
+      "wikiText": "Bring Blopp lush kelp, defeat Inquest, neutralize poison ampoules, and defeat crazed hylek.",
+      "waypointChatLink": "[&BK8EAAA=]"
+    },
+    {
+      "stepId": "35:hero:0-25",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-25",
+      "coord": [
+        41227,
+        36240
+      ],
+      "recommendedLevel": null,
+      "name": "Utcua",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 526,
+      "wikiText": "Utcua is a hylek warrior of the Durotl tribe in Loch Jezt.",
+      "waypointChatLink": "[&BK8EAAA=]"
+    },
+    {
+      "stepId": "35:poi:54",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "54",
+      "coord": [
+        41131,
+        36209
+      ],
+      "recommendedLevel": null,
+      "name": "Durotl Grounds",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 541,
+      "wikiText": "The Durotl Grounds is a point of interest within Loch Jezt. This hylek village is the home of the Durotl tribe.",
+      "waypointChatLink": "[&BK8EAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:1199",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "1199",
+      "coord": [
+        41036,
+        36064
+      ],
+      "recommendedLevel": null,
+      "name": "Loch Waypoint",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK8EAAA=]",
+      "waypointChatLink": "[&BK8EAAA=]",
+      "trailIndex": 562,
+      "wikiText": "Loch Jezt is an area in the Metrica Province. The Durotl, a neutral hylek tribe, can be found there collaborating with Fixx in his studies of hylek poison."
+    },
+    {
+      "stepId": "35:heart:323",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "323",
+      "coord": [
+        40314,
+        36001
+      ],
+      "recommendedLevel": 6,
+      "name": "Help Shoon's salvage krewe deal with Inquest interference.",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40286,
+          36112
+        ],
+        [
+          39957,
+          36085
+        ],
+        [
+          39955,
+          35626
+        ],
+        [
+          40268,
+          35612
+        ],
+        [
+          40296,
+          35632
+        ],
+        [
+          40390,
+          35640
+        ],
+        [
+          40454,
+          35687
+        ],
+        [
+          40474,
+          35724
+        ],
+        [
+          40494,
+          35825
+        ],
+        [
+          40457,
+          36003
+        ],
+        [
+          40426,
+          36065
+        ],
+        [
+          40286,
+          36112
+        ]
+      ],
+      "trailIndex": 607,
+      "wikiText": "Find and disrupt the nearby Inquest lab, collect data crystals, and question suspicious salvage specialists.",
+      "waypointChatLink": "[&BK4EAAA=]"
+    },
+    {
+      "stepId": "35:hero:0-69",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-69",
+      "coord": [
+        40032,
+        35762
+      ],
+      "recommendedLevel": null,
+      "name": "Arcanic Interferometer",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 662,
+      "wikiText": "The Arcanic Interferometer is a asuran control console. Interacting with this object begins the hero challenge Defeat Master Genius Jettz and His Assistants.",
+      "waypointChatLink": "[&BK4EAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:1198",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "1198",
+      "coord": [
+        40388,
+        35749
+      ],
+      "recommendedLevel": null,
+      "name": "Old Golem Factory Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK4EAAA=]",
+      "waypointChatLink": "[&BK4EAAA=]",
+      "trailIndex": 717,
+      "wikiText": "Obscura Incline is an area in Metrica Province. An asuran krewe found there are salvaging golem parts at the Old Golem Factory."
+    },
+    {
+      "stepId": "35:heart:324",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "324",
+      "coord": [
+        40787,
+        35552
+      ],
+      "recommendedLevel": 7,
+      "name": "Help Brill Alliance study the skritt.",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40768,
+          35337
+        ],
+        [
+          40986,
+          35325
+        ],
+        [
+          41119,
+          35308
+        ],
+        [
+          41189,
+          35381
+        ],
+        [
+          41197,
+          35547
+        ],
+        [
+          41350,
+          35681
+        ],
+        [
+          41449,
+          35911
+        ],
+        [
+          41403,
+          36072
+        ],
+        [
+          41206,
+          36027
+        ],
+        [
+          41131,
+          35892
+        ],
+        [
+          41066,
+          35755
+        ],
+        [
+          40930,
+          35719
+        ],
+        [
+          40828,
+          35740
+        ],
+        [
+          40756,
+          35766
+        ],
+        [
+          40678,
+          35580
+        ],
+        [
+          40705,
+          35422
+        ],
+        [
+          40768,
+          35337
+        ]
+      ],
+      "trailIndex": 758,
+      "wikiText": "Provoke captivated skritt and calm enraged skritt, intercept skritt thieves, activate monitors, and interrogate IQ test subjects.",
+      "waypointChatLink": "[&BEMAAAA=]"
+    },
+    {
+      "stepId": "35:poi:553",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "553",
+      "coord": [
+        40869,
+        35413
+      ],
+      "recommendedLevel": null,
+      "name": "Brill Alliance Labs",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 787,
+      "wikiText": "The Brill Alliance Labs is a point of interest within the Voloxian Passage. This large structure houses the asuran Brill Alliance krewe's lab that is studying the intelligence possibilities of the skritt.",
+      "waypointChatLink": "[&BEMAAAA=]"
+    },
+    {
+      "stepId": "35:vista:1410",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1410",
+      "coord": [
+        40802,
+        35460
+      ],
+      "recommendedLevel": null,
+      "name": "Brill Alliance Labs",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 799,
+      "wikiText": "Overlooks Brill Alliance Labs. Can be reached via stairs found on the east side of the building, or by climbing a couple of steps and ascending the diamond archway to the south of the building.",
+      "waypointChatLink": "[&BEMAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:67",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "67",
+      "coord": [
+        40758,
+        35413
+      ],
+      "recommendedLevel": null,
+      "name": "Rana Landing Complex Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEMAAAA=]",
+      "waypointChatLink": "[&BEMAAAA=]",
+      "trailIndex": 807,
+      "wikiText": "The Voloxian Passage is an area in Metrica Province. An asura krewe found there is currently studying the intelligence of the nearby skritt living in The Serpentwind."
+    },
+    {
+      "stepId": "35:waypoint:72",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "72",
+      "coord": [
+        41308,
+        35437
+      ],
+      "recommendedLevel": null,
+      "name": "Desider Atum Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEgAAAA=]",
+      "waypointChatLink": "[&BEgAAAA=]",
+      "trailIndex": 865,
+      "wikiText": "Desider Atum is an area in Metrica Province. It is a bustling center of trade and research frequented by locals and travelers alike."
+    },
+    {
+      "stepId": "35:vista:1405",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1405",
+      "coord": [
+        41453,
+        35248
+      ],
+      "recommendedLevel": null,
+      "name": "Desider Atum",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 912,
+      "wikiText": "Overlooks Desider Atum. Can be reached via stairs near the Armorsmith.",
+      "waypointChatLink": "[&BEgAAAA=]"
+    },
+    {
+      "stepId": "35:poi:56",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "56",
+      "coord": [
+        41439,
+        35612
+      ],
+      "recommendedLevel": null,
+      "name": "Dr. Bleent's Encampment",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 957,
+      "wikiText": "Dr. Bleent's Encampment is a point of interest within the Akk Wilds. This tent and various asurian equipment is the residence and lab of Doctor Bleent who is studying oozes. His controversial work is the subject of protest.",
+      "waypointChatLink": "[&BEgAAAA=]"
+    },
+    {
+      "stepId": "35:heart:325",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "325",
+      "coord": [
+        41469,
+        35671
+      ],
+      "recommendedLevel": 8,
+      "name": "Help Hrouda maintain the ecosystem in spite of Dr. Bleent's research.",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41470,
+          35453
+        ],
+        [
+          41528,
+          35484
+        ],
+        [
+          41590,
+          35536
+        ],
+        [
+          41640,
+          35585
+        ],
+        [
+          41683,
+          35701
+        ],
+        [
+          41707,
+          35815
+        ],
+        [
+          41566,
+          35924
+        ],
+        [
+          41456,
+          35798
+        ],
+        [
+          41386,
+          35705
+        ],
+        [
+          41342,
+          35661
+        ],
+        [
+          41316,
+          35633
+        ],
+        [
+          41278,
+          35580
+        ],
+        [
+          41216,
+          35547
+        ],
+        [
+          41233,
+          35493
+        ],
+        [
+          41382,
+          35464
+        ],
+        [
+          41470,
+          35453
+        ]
+      ],
+      "trailIndex": 967,
+      "wikiText": "Kill oozes, break ooze containers, and help protesters.",
+      "waypointChatLink": "[&BEgAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:66",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "66",
+      "coord": [
+        41739,
+        36013
+      ],
+      "recommendedLevel": null,
+      "name": "Akk Wilds Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEIAAAA=]",
+      "waypointChatLink": "[&BEIAAAA=]",
+      "trailIndex": 1011,
+      "wikiText": "Akk Wilds is an area in Metrica Province. Due to Doctor Bleent experiements, oozes are found in large number in the area."
+    },
+    {
+      "stepId": "35:vista:1413",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1413",
+      "coord": [
+        41739,
+        36112
+      ],
+      "recommendedLevel": null,
+      "name": "Sunshade Caves",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1073,
+      "wikiText": "Overlooks Parnna's Gate. Can be reached through the either of the Sunshade Caves entrances (to the left or or right of the waypoint),or the entrance close by the PR&T Esoterics lab.",
+      "waypointChatLink": "[&BEIAAAA=]"
+    },
+    {
+      "stepId": "35:heart:326",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "326",
+      "coord": [
+        41794,
+        36108
+      ],
+      "recommendedLevel": 9,
+      "name": "Assist Parnna's research into the ancient transfer chamber.",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          42047,
+          36145
+        ],
+        [
+          42031,
+          36303
+        ],
+        [
+          41997,
+          36406
+        ],
+        [
+          42024,
+          36667
+        ],
+        [
+          41800,
+          36657
+        ],
+        [
+          41806,
+          36349
+        ],
+        [
+          41667,
+          36278
+        ],
+        [
+          41614,
+          36122
+        ],
+        [
+          41616,
+          36050
+        ],
+        [
+          41659,
+          35968
+        ],
+        [
+          41733,
+          35867
+        ],
+        [
+          41884,
+          35847
+        ],
+        [
+          42031,
+          35960
+        ],
+        [
+          42053,
+          36091
+        ],
+        [
+          42047,
+          36145
+        ]
+      ],
+      "trailIndex": 1087,
+      "wikiText": "Recover gate pieces, cull hostile wildlife, and defeat skritt bothering Parnna.",
+      "waypointChatLink": "[&BEIAAAA=]"
+    },
+    {
+      "stepId": "35:poi:58",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "58",
+      "coord": [
+        41974,
+        36140
+      ],
+      "recommendedLevel": null,
+      "name": "Parnna's Gate",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1110,
+      "wikiText": "Parnna's Gate is a point of interest within the Akk Wilds. Just outside a skritt scratch atop a small rise is an asura gate that Parnna is working on after finding coordinates to Calx's Hideout, an asura lab of her ancestor.",
+      "waypointChatLink": "[&BEIAAAA=]"
+    },
+    {
+      "stepId": "35:hero:0-27",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-27",
+      "coord": [
+        41952,
+        35462
+      ],
+      "recommendedLevel": null,
+      "name": "Oola",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1204,
+      "wikiText": "Councillor Oola was a brilliant asura who specialised in creating constructs-humanoid magical creations, of which golems are but one.",
+      "whatToDo": "The quiz answers are: 1) Oola, lab genius 2) I am not in charge 3) Necromancy and golemancy 4) We embody magic",
+      "waypointChatLink": "[&BLIEAAA=]"
+    },
+    {
+      "stepId": "35:poi:57",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "57",
+      "coord": [
+        42046,
+        35525
+      ],
+      "recommendedLevel": null,
+      "name": "Old Oola Lab",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1218,
+      "wikiText": "Old Oola Lab is a point of interest within the Akk Wilds. This cavern is the abandoned lab of the legendary asura researcher Oola. It has been locked down since Oola's death, and her equipment and notes can be found scattered throughout.",
+      "waypointChatLink": "[&BLIEAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:1202",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "1202",
+      "coord": [
+        41907,
+        35126
+      ],
+      "recommendedLevel": null,
+      "name": "Cuatl Waypoint",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLIEAAA=]",
+      "waypointChatLink": "[&BLIEAAA=]",
+      "trailIndex": 1266,
+      "wikiText": "The Cuatl Morass is an area in Metrica Province, home to a hostile Cuatl hylek tribe in the northeastern quadrant of the area. This tribe is well known for its cowardice. Instead of hunting food, these hylek steal the supplies from others."
+    },
+    {
+      "stepId": "35:heart:327",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "327",
+      "coord": [
+        41830,
+        35100
+      ],
+      "recommendedLevel": 10,
+      "name": "Help the Lionguard keep the Cuatl hylek in check.",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41739,
+          35200
+        ],
+        [
+          41880,
+          35105
+        ],
+        [
+          41829,
+          34946
+        ],
+        [
+          41756,
+          34832
+        ],
+        [
+          41604,
+          34752
+        ],
+        [
+          41500,
+          34742
+        ],
+        [
+          41448,
+          34781
+        ],
+        [
+          41374,
+          34790
+        ],
+        [
+          41340,
+          34852
+        ],
+        [
+          41347,
+          35037
+        ],
+        [
+          41400,
+          35192
+        ],
+        [
+          41672,
+          35224
+        ],
+        [
+          41739,
+          35200
+        ]
+      ],
+      "trailIndex": 1276,
+      "wikiText": "Eliminate Cuatl hylek, smash their turrets, and protect the haven from raids.",
+      "waypointChatLink": "[&BLIEAAA=]"
+    },
+    {
+      "stepId": "35:hero:0-24",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-24",
+      "coord": [
+        41508,
+        34980
+      ],
+      "recommendedLevel": null,
+      "name": "Cuatl Health Goo",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1322,
+      "wikiText": "Cuatl Health Goo is a container within Cuatl Morass that holds Cuatl Tonics.",
+      "waypointChatLink": "[&BEQAAAA=]"
+    },
+    {
+      "stepId": "35:heart:328",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "328",
+      "coord": [
+        41064,
+        35136
+      ],
+      "recommendedLevel": 11,
+      "name": "Help the Michotl tribe.",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41234,
+          35082
+        ],
+        [
+          41239,
+          35184
+        ],
+        [
+          41034,
+          35238
+        ],
+        [
+          40859,
+          35288
+        ],
+        [
+          40632,
+          35254
+        ],
+        [
+          40413,
+          35180
+        ],
+        [
+          40377,
+          34835
+        ],
+        [
+          40535,
+          34781
+        ],
+        [
+          40822,
+          34804
+        ],
+        [
+          40995,
+          34834
+        ],
+        [
+          41266,
+          35076
+        ],
+        [
+          41234,
+          35082
+        ]
+      ],
+      "trailIndex": 1393,
+      "wikiText": "Assist in dragonfly hunts, gather soft marsh plants for the hatchlings, and protect the Michotl from evil hylek and krait.",
+      "waypointChatLink": "[&BEgAAAA=]"
+    },
+    {
+      "stepId": "35:hero:0-67",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-67",
+      "coord": [
+        41006,
+        35158
+      ],
+      "recommendedLevel": null,
+      "name": "Suspicious Control Panel",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1406,
+      "wikiText": "Suspicious Control Panel is a hero challenge object found in Michoan Marsh that, upon interacting with it, starts Defeat Golemancer Gitt and His Prototype Golems.",
+      "waypointChatLink": "[&BLEEAAA=]"
+    },
+    {
+      "stepId": "35:poi:1191",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "1191",
+      "coord": [
+        40965,
+        35220
+      ],
+      "recommendedLevel": null,
+      "name": "Biocauldron Alchemics",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1423,
+      "wikiText": "The Biocauldron Alchemics is a point of interest within the Michoan Marsh. This complex is the local headquarters of the Inquest. From here they carry out their raids on the surrounding countryside.",
+      "waypointChatLink": "[&BEMAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:1201",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "1201",
+      "coord": [
+        40694,
+        35000
+      ],
+      "recommendedLevel": null,
+      "name": "Michotl Grounds Waypoint",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLEEAAA=]",
+      "waypointChatLink": "[&BLEEAAA=]",
+      "trailIndex": 1465,
+      "wikiText": "The Michoan Marsh is an area in Metrica Province. The local hylek tribe that lives here is in deep trouble. Their hatchlings keep are threatened by the nearby krait and another neighboring tribe often attempts to raid their supplies."
+    },
+    {
+      "stepId": "35:poi:1535",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "1535",
+      "coord": [
+        41148,
+        34999
+      ],
+      "recommendedLevel": null,
+      "name": "Old Flamen Lab",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1514,
+      "wikiText": "The Old Flamen Lab is a point of interest within the Michoan Marsh. This ancient structure is in actuality a locked down lab of Gadd, and contains ancient destroyers within.",
+      "waypointChatLink": "[&BEQAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:68",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "68",
+      "coord": [
+        41282,
+        34770
+      ],
+      "recommendedLevel": null,
+      "name": "Arterium Haven Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEQAAAA=]",
+      "waypointChatLink": "[&BEQAAAA=]",
+      "trailIndex": 1557,
+      "wikiText": "Artergon Woods is an area in Metrica Province. Most of the conduit towers forming the electricity line is found there. It also holds Arterium Haven which is often the target of the Cuatl hylek tribe."
+    },
+    {
+      "stepId": "35:vista:1407",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1407",
+      "coord": [
+        41124,
+        34782
+      ],
+      "recommendedLevel": null,
+      "name": "Arterium Haven",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1605,
+      "wikiText": "Overlooks Arterium Haven. Can be reached via stairs and wooden steps near Equipment Repairs.",
+      "waypointChatLink": "[&BEQAAAA=]"
+    },
+    {
+      "stepId": "35:hero:0-207",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-207",
+      "coord": [
+        41792,
+        34532
+      ],
+      "recommendedLevel": null,
+      "name": "Luminates Plant",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1704,
+      "wikiText": "The Luminates Plant is a large power plant in Metrica Province. The asura plan to build a city around this facility in the near future. The Inquest located nearby often try to steal their golems.",
+      "waypointChatLink": "[&BEUAAAA=]"
+    },
+    {
+      "stepId": "35:poi:59",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "59",
+      "coord": [
+        41374,
+        34433
+      ],
+      "recommendedLevel": null,
+      "name": "Conduit Tower Blig",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1768,
+      "wikiText": "The Conduit Tower Blig is a point of interest within the Artergon Woods. A top a small rise sits one of the three main power conduit towers of Metrica Province that supplies power to the surrounding area.",
+      "waypointChatLink": "[&BEQAAAA=]"
+    },
+    {
+      "stepId": "35:poi:1134",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "1134",
+      "coord": [
+        41319,
+        34228
+      ],
+      "recommendedLevel": null,
+      "name": "Transformer Hub Kachong",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1790,
+      "wikiText": "The Transformer Hub Kachong is a point of interest with the Hexane Regrade. This open plaza and buildings is the central hub nexus for the power system in this area of Metrica Province.",
+      "waypointChatLink": "[&BLMEAAA=]"
+    },
+    {
+      "stepId": "35:heart:329",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "329",
+      "coord": [
+        41057,
+        34337
+      ],
+      "recommendedLevel": 13,
+      "name": "Help the Luminates plant krewe maintain the power grid.",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41430,
+          34530
+        ],
+        [
+          41341,
+          34529
+        ],
+        [
+          41120,
+          34546
+        ],
+        [
+          40954,
+          34366
+        ],
+        [
+          40862,
+          34177
+        ],
+        [
+          40727,
+          34031
+        ],
+        [
+          40724,
+          33971
+        ],
+        [
+          40764,
+          33885
+        ],
+        [
+          40837,
+          33852
+        ],
+        [
+          40952,
+          33888
+        ],
+        [
+          41143,
+          34086
+        ],
+        [
+          41223,
+          34097
+        ],
+        [
+          41362,
+          34274
+        ],
+        [
+          41473,
+          34374
+        ],
+        [
+          41486,
+          34434
+        ],
+        [
+          41430,
+          34530
+        ]
+      ],
+      "trailIndex": 1817,
+      "wikiText": "Activate mini-conduits, stop Inquest interference, and destroy energy distortions and mosquitoes drawn to the grid.",
+      "waypointChatLink": "[&BLMEAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:1203",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "1203",
+      "coord": [
+        41016,
+        34338
+      ],
+      "recommendedLevel": null,
+      "name": "Artergon Waypoint",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLMEAAA=]",
+      "waypointChatLink": "[&BLMEAAA=]",
+      "trailIndex": 1824,
+      "wikiText": "Artergon Woods is an area in Metrica Province. Most of the conduit towers forming the electricity line is found there. It also holds Arterium Haven which is often the target of the Cuatl hylek tribe."
+    },
+    {
+      "stepId": "35:poi:60",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "60",
+      "coord": [
+        41101,
+        34156
+      ],
+      "recommendedLevel": null,
+      "name": "Conduit Tower Nopp",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1843,
+      "wikiText": "The Conduit Tower Nopp is a point of interest within the Artergon Woods. Just west of the main road sits one of the three main power conduit towers of Metrica Province that supplies power to the surrounding area.",
+      "waypointChatLink": "[&BLMEAAA=]"
+    },
+    {
+      "stepId": "35:heart:330",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "330",
+      "coord": [
+        41645,
+        34132
+      ],
+      "recommendedLevel": 14,
+      "name": "Help Peacemaker Owta disrupt the Inquest complex.",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          41754,
+          33944
+        ],
+        [
+          41680,
+          34055
+        ],
+        [
+          41713,
+          34129
+        ],
+        [
+          41642,
+          34168
+        ],
+        [
+          41593,
+          34142
+        ],
+        [
+          41522,
+          34005
+        ],
+        [
+          41506,
+          33973
+        ],
+        [
+          41523,
+          33846
+        ],
+        [
+          41577,
+          33778
+        ],
+        [
+          41560,
+          33499
+        ],
+        [
+          42054,
+          33514
+        ],
+        [
+          42085,
+          33727
+        ],
+        [
+          41998,
+          33818
+        ],
+        [
+          41754,
+          33944
+        ]
+      ],
+      "trailIndex": 1912,
+      "wikiText": "Take out Inquest operatives, sabotage their broken golems and their experiments, destroy lab equipment, and rescue prisoners.",
+      "waypointChatLink": "[&BEUAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:69",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "69",
+      "coord": [
+        41822,
+        34088
+      ],
+      "recommendedLevel": null,
+      "name": "Hexane Regrade Waypoint",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEUAAAA=]",
+      "waypointChatLink": "[&BEUAAAA=]",
+      "trailIndex": 1932,
+      "wikiText": "Hexane Regrade is a large area in northeastern Metrica Province. The electricity line hub is located there, being one of the main target of the nearby Inquest."
+    },
+    {
+      "stepId": "35:hero:0-26",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-26",
+      "coord": [
+        41714,
+        33790
+      ],
+      "recommendedLevel": null,
+      "name": "Black Ice 4444",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1981,
+      "wikiText": "Black Ice 4444 is an Inquest holographic training golem found in the Inquest Outer Complex.",
+      "waypointChatLink": "[&BEUAAAA=]"
+    },
+    {
+      "stepId": "35:vista:1412",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1412",
+      "coord": [
+        41531,
+        33791
+      ],
+      "recommendedLevel": null,
+      "name": "Inquest Outer Complex",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2037,
+      "wikiText": "Overlooks the waterfall & river to the west of the Inquest Outer Complex. Can be reached by going up a small slope to the west of the Inquest Outer Complex.",
+      "waypointChatLink": "[&BEUAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:71",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "71",
+      "coord": [
+        40841,
+        33722
+      ],
+      "recommendedLevel": null,
+      "name": "Muridian Waypoint",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEcAAAA=]",
+      "waypointChatLink": "[&BEcAAAA=]",
+      "trailIndex": 2107,
+      "wikiText": "The Muridian Uplands is an area in Metrica Province. A small camp located there serves as the base of operation of the C.L.E.A.N krewe tasked with cleansing the Thaumanova Reactor of chaos magic."
+    },
+    {
+      "stepId": "35:hero:0-66",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "hero",
+      "objectiveId": "0-66",
+      "coord": [
+        40466,
+        33759
+      ],
+      "recommendedLevel": null,
+      "name": "Ancient Elemental Fire Energy",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2153,
+      "wikiText": "Ancient Elemental Fire Energy can be found outside the north-east of the Thaumanova Reactor complex. When interacted with, it spawns one Veteran Ancient Ember and two Ancient Ember Minions.",
+      "waypointChatLink": "[&BEcAAAA=]"
+    },
+    {
+      "stepId": "35:heart:332",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "332",
+      "coord": [
+        40478,
+        34056
+      ],
+      "recommendedLevel": 15,
+      "name": "Help the C.L.E.A.N. krewe.",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40649,
+          33980
+        ],
+        [
+          40597,
+          33872
+        ],
+        [
+          40482,
+          33765
+        ],
+        [
+          40376,
+          33680
+        ],
+        [
+          40236,
+          33680
+        ],
+        [
+          40152,
+          33882
+        ],
+        [
+          40151,
+          34035
+        ],
+        [
+          40176,
+          34176
+        ],
+        [
+          40348,
+          34246
+        ],
+        [
+          40583,
+          34194
+        ],
+        [
+          40627,
+          34041
+        ],
+        [
+          40649,
+          33980
+        ]
+      ],
+      "trailIndex": 2207,
+      "wikiText": "Kill Inquest, destroy chaotic shards, defeat chaos beasts, and detoxify researchers.",
+      "waypointChatLink": "[&BEYAAAA=]"
+    },
+    {
+      "stepId": "35:poi:63",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "63",
+      "coord": [
+        40836,
+        33970
+      ],
+      "recommendedLevel": null,
+      "name": "Conduit Tower Scoln",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2274,
+      "wikiText": "The Conduit Tower Scoln is a point of interest within the Muridian Uplands. Atop a small rise sits one of the three main power conduit towers of Metrica Province that supplies power to the surrounding area.",
+      "waypointChatLink": "[&BEcAAAA=]"
+    },
+    {
+      "stepId": "35:poi:141",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "141",
+      "coord": [
+        40741,
+        34067
+      ],
+      "recommendedLevel": null,
+      "name": "C.L.E.A.N. Station",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2302,
+      "wikiText": "The C.L.E.A.N. Station is a point of interest within the Muridian Uplands. Against a small rock outcroping a group of asura have established a campsite. This serves as a base of operations for the C.L.E.A.N.",
+      "waypointChatLink": "[&BEcAAAA=]"
+    },
+    {
+      "stepId": "35:vista:1411",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "vista",
+      "objectiveId": "1411",
+      "coord": [
+        40744,
+        34113
+      ],
+      "recommendedLevel": null,
+      "name": "Thaumanova Reactor",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2314,
+      "wikiText": "Overlooks The Thaumanova Reactor. Can be reached via steps & overhangs on the west side of the hill.",
+      "waypointChatLink": "[&BLMEAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:70",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "70",
+      "coord": [
+        40578,
+        34466
+      ],
+      "recommendedLevel": null,
+      "name": "Survivor's Encampment Waypoint",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEYAAAA=]",
+      "waypointChatLink": "[&BEYAAAA=]",
+      "trailIndex": 2357,
+      "wikiText": "Greyfern Expanses is an area in Metrica Province. Many of the survivors of the Thaumanova Reactor incident are resting at the camp found here."
+    },
+    {
+      "stepId": "35:heart:331",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "heart",
+      "objectiveId": "331",
+      "coord": [
+        40497,
+        34563
+      ],
+      "recommendedLevel": 12,
+      "name": "Assist the Chaos krewe.",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          40611,
+          34710
+        ],
+        [
+          40434,
+          34789
+        ],
+        [
+          40290,
+          34797
+        ],
+        [
+          40126,
+          34838
+        ],
+        [
+          40036,
+          34836
+        ],
+        [
+          39985,
+          34720
+        ],
+        [
+          39942,
+          34648
+        ],
+        [
+          39929,
+          34528
+        ],
+        [
+          40192,
+          34454
+        ],
+        [
+          40327,
+          34396
+        ],
+        [
+          40446,
+          34431
+        ],
+        [
+          40630,
+          34470
+        ],
+        [
+          40662,
+          34600
+        ],
+        [
+          40611,
+          34710
+        ]
+      ],
+      "trailIndex": 2374,
+      "wikiText": "Clean up chaotic material, kill irradiated rats and chaos beasts, and get the skritt to stop collecting chaotic material.",
+      "waypointChatLink": "[&BEYAAAA=]"
+    },
+    {
+      "stepId": "35:waypoint:1200",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "waypoint",
+      "objectiveId": "1200",
+      "coord": [
+        40095,
+        34617
+      ],
+      "recommendedLevel": null,
+      "name": "Anthill Waypoint",
+      "prereqs": [],
+      "order": 69,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLAEAAA=]",
+      "waypointChatLink": "[&BLAEAAA=]",
+      "trailIndex": 2429,
+      "wikiText": "The Anthill is an area in the northwest of Metrica Province. The cave is full of skritt who have taken a liking to chaos magic. An asuran krewe is studying the effects of the chaos on the skritt living in the caves."
+    },
+    {
+      "stepId": "35:poi:62",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "62",
+      "coord": [
+        40134,
+        34310
+      ],
+      "recommendedLevel": null,
+      "name": "Transfer Gate (Private)",
+      "prereqs": [],
+      "order": 70,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2472,
+      "wikiText": "The Transfer Gate (Private) is a large stone archway that leads to a quiet tunnel within the Greyfern Expanses. An Inquest-owned asura gate awaits at the end.",
+      "waypointChatLink": "[&BLAEAAA=]"
+    },
+    {
+      "stepId": "35:poi:61",
+      "mapId": 35,
+      "zoneName": "Metrica Province",
+      "type": "poi",
+      "objectiveId": "61",
+      "coord": [
+        41888,
+        33655
+      ],
+      "recommendedLevel": null,
+      "name": "Inner Inquest Complex",
+      "prereqs": [],
+      "order": 71,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "The Inner Inquest Complex is a point of interest within the Inquest Outer Complex. This hidden northeastern section of the large Inquest complex in this area can only be accessed via an asura gate.",
+      "waypointChatLink": "[&BEUAAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

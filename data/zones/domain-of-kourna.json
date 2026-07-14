@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1288,
+    "name": "Domain of Kourna",
+    "continentId": 1,
+    "regionId": 12,
+    "regionName": "Crystal Desert",
+    "floor": 49,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -49152,
+        -55296
+      ],
+      [
+        49152,
+        58368
+      ]
+    ],
+    "continentRect": [
+      [
+        63624,
+        59572
+      ],
+      [
+        67720,
+        64308
+      ]
+    ],
+    "sectorRect": [
+      [
+        63664.1,
+        59527.6
+      ],
+      [
+        67113,
+        63706.8
+      ]
+    ],
+    "labelCoord": [
+      65368,
+      61384
+    ],
+    "release": "lws4"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1288:waypoint:2903",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "waypoint",
+      "objectiveId": "2903",
+      "coord": [
+        64765,
+        61579
+      ],
+      "recommendedLevel": null,
+      "name": "Allied Encampment Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFcLAAA=]",
+      "waypointChatLink": "[&BFcLAAA=]",
+      "trailIndex": 0,
+      "wikiText": "The Allied Encampment is an area within the Domain of Kourna. It is the main staging area of the allied forces in the war against Palawa Joko in the region."
+    },
+    {
+      "stepId": "1288:poi:2888",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2888",
+      "coord": [
+        64740,
+        61530
+      ],
+      "recommendedLevel": null,
+      "name": "Zelbahn Garrison",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 8,
+      "wikiText": "Zelbahn Garrison is a Point of Interest in the Allied Encampment. It is an Awakened stronghold that has been taken over by the allied forces in order to convert it into their local headquarters in the Domain of Kourna.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2898",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2898",
+      "coord": [
+        64569,
+        61220
+      ],
+      "recommendedLevel": null,
+      "name": "Army Landing & Entry Portal",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 61,
+      "wikiText": "Army Landing & Entry Portal is a point of interest in the Allied Encampment. It is the initial entry point into the Domain of Kourna from Tomb of the Primeval Kings, but cannot be used in the opposite direction.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:heart:430",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "heart",
+      "objectiveId": "430",
+      "coord": [
+        64452,
+        61815
+      ],
+      "recommendedLevel": 80,
+      "name": "Help distribute incoming supplies to the allied encampment.",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64460,
+          62024
+        ],
+        [
+          64051,
+          61867
+        ],
+        [
+          64066,
+          61311
+        ],
+        [
+          64483,
+          61090
+        ],
+        [
+          64927,
+          60937
+        ],
+        [
+          65570,
+          60689
+        ],
+        [
+          65408,
+          61057
+        ],
+        [
+          65429,
+          61325
+        ],
+        [
+          65220,
+          61475
+        ],
+        [
+          64768,
+          61813
+        ],
+        [
+          64460,
+          62024
+        ]
+      ],
+      "trailIndex": 161,
+      "wikiText": "Bring corsair supplies and tasteless roots to the supply depot, and rid the allied encampment of Awakened spies.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2894",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2894",
+      "coord": [
+        64456,
+        62041
+      ],
+      "recommendedLevel": null,
+      "name": "Western Allied Access",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 192,
+      "wikiText": "The Western Allied Access is a point of interest located in the Western Front.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2900",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2900",
+      "coord": [
+        64087,
+        62386
+      ],
+      "recommendedLevel": null,
+      "name": "Corsair Cannons",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 268,
+      "wikiText": "Corsair Cannons is a point of interest in the Western Front. This trio of cannons is used by the shipwrecked corsairs to launch supplies over the thorn wall to the Allied Encampment.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:heart:428",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "heart",
+      "objectiveId": "428",
+      "coord": [
+        63970,
+        62666
+      ],
+      "recommendedLevel": 80,
+      "name": "Secure the supply line from the Corsair Landing.",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          63891,
+          62908
+        ],
+        [
+          64322,
+          62764
+        ],
+        [
+          64477,
+          62603
+        ],
+        [
+          64519,
+          62507
+        ],
+        [
+          64438,
+          62051
+        ],
+        [
+          64221,
+          61911
+        ],
+        [
+          64134,
+          61910
+        ],
+        [
+          63993,
+          62242
+        ],
+        [
+          63726,
+          62665
+        ],
+        [
+          63891,
+          62908
+        ]
+      ],
+      "trailIndex": 314,
+      "wikiText": "Shoot supplies to your allies with corsair cannons, stop plague scarab outbreaks, take out Awakened forces and siege weapons, and retrieve bottled messages.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2909",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2909",
+      "coord": [
+        64199,
+        62682
+      ],
+      "recommendedLevel": null,
+      "name": "Wreck of the Scimitar",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 370,
+      "wikiText": "The Wreck of the Scimitar is a point of interest in the Corsair Landing.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2913",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2913",
+      "coord": [
+        64629,
+        62484
+      ],
+      "recommendedLevel": null,
+      "name": "Gandara Western Approach",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 374,
+      "wikiText": "Gandara Western Approach is a point of interest in the Front Line.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:heart:431",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "heart",
+      "objectiveId": "431",
+      "coord": [
+        65526,
+        61987
+      ],
+      "recommendedLevel": 80,
+      "name": "Help stabilize the front line.",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          64443,
+          62495
+        ],
+        [
+          64443,
+          62048
+        ],
+        [
+          65130,
+          61555
+        ],
+        [
+          65448,
+          61536
+        ],
+        [
+          65681,
+          61836
+        ],
+        [
+          66374,
+          62100
+        ],
+        [
+          66081,
+          62838
+        ],
+        [
+          65490,
+          62923
+        ],
+        [
+          65408,
+          62573
+        ],
+        [
+          65223,
+          62402
+        ],
+        [
+          65100,
+          62338
+        ],
+        [
+          64815,
+          62455
+        ],
+        [
+          64443,
+          62495
+        ]
+      ],
+      "trailIndex": 519,
+      "wikiText": "Kill Awakened forces and stop the spread of plague scarabs.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:vista:2890",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "vista",
+      "objectiveId": "2890",
+      "coord": [
+        65570,
+        61974
+      ],
+      "recommendedLevel": null,
+      "name": "Front Line",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 525,
+      "wikiText": "Walk towards the vista. It is on top of the plateau. Use the springer.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2912",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2912",
+      "coord": [
+        65347,
+        62348
+      ],
+      "recommendedLevel": null,
+      "name": "Gandara Main Approach",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 580,
+      "wikiText": "Gandara Main Approach is a point of interest located in the Front Line. It is the main entrance to Gandara, the Moon Fortress and is heavily defended by a pair of imposing towers surrounding the bridge which leads to the sturdy gate.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2902",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2902",
+      "coord": [
+        65856,
+        63071
+      ],
+      "recommendedLevel": null,
+      "name": "Bokoss Prison Ruins",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 612,
+      "wikiText": "The Bokoss Prison Ruins is a point of interest in the Eastern Front. It is connected to Gandara, the Moon Fortress by a bridge.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:vista:2916",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "vista",
+      "objectiveId": "2916",
+      "coord": [
+        65760,
+        63074
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Front",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 612,
+      "wikiText": "Use the portal in the garrison to warp near the vista. It is on top of a collapsed building. Use the springer.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2919",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2919",
+      "coord": [
+        65291,
+        63056
+      ],
+      "recommendedLevel": null,
+      "name": "Imperial Center for Applied Pestilence",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 643,
+      "wikiText": "The Imperial Center for Applied Pestilence is a point of interest in Gandara, the Moon Fortress. The main labs conducting research on the Scarab Plague are found here.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2897",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2897",
+      "coord": [
+        64835,
+        61869
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Allied Access",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 727,
+      "wikiText": "The Eastern Allied Access is a point of interest located in the Front Line. This vine barrier provides a gate between the Allied Encampment and the Front Line.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:vista:2895",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "vista",
+      "objectiveId": "2895",
+      "coord": [
+        65366,
+        61520
+      ],
+      "recommendedLevel": null,
+      "name": "Dabiji Hollows",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 840,
+      "wikiText": "Walk towards the vista. It is on top of a small plateaued mountain. Use the springer.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2891",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2891",
+      "coord": [
+        65236,
+        61155
+      ],
+      "recommendedLevel": null,
+      "name": "Research Mainframe Access",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 892,
+      "wikiText": "The Research Mainframe Access is an underground awakened Inquest facility located in the Dabiji Hollows. There, they are experimenting on the Scarab Plague.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2906",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2906",
+      "coord": [
+        65388,
+        60965
+      ],
+      "recommendedLevel": null,
+      "name": "Research Vault Beta",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 954,
+      "wikiText": "Research Vault Beta is an underground Awakened Inquest facility located in the Dabiji Hollows. There, they are experimenting on the Scarab Plague and rats.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2918",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2918",
+      "coord": [
+        65503,
+        60903
+      ],
+      "recommendedLevel": null,
+      "name": "Research Vault Alpha",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1012,
+      "wikiText": "Research Vault Alpha is a hidden cliffside awakened Inquest facility located in the Dabiji Hollows. There, they are experimenting on the Scarab Plague.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2908",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2908",
+      "coord": [
+        65641,
+        61025
+      ],
+      "recommendedLevel": null,
+      "name": "Pogahn Bluffs Proving Ground",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1075,
+      "wikiText": "The Pogahn Bluffs Proving Ground is an Awakened Inquest facility located in the Dabiji Hollows. There, they are experimenting on members from the local heket tribe.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:heart:433",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "heart",
+      "objectiveId": "433",
+      "coord": [
+        65990,
+        61253
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the critically endangered heket tribe.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          66774,
+          61554
+        ],
+        [
+          66433,
+          62118
+        ],
+        [
+          66074,
+          61956
+        ],
+        [
+          65587,
+          61730
+        ],
+        [
+          65463,
+          61392
+        ],
+        [
+          65422,
+          61059
+        ],
+        [
+          65979,
+          59834
+        ],
+        [
+          66465,
+          59838
+        ],
+        [
+          66889,
+          60674
+        ],
+        [
+          67097,
+          61154
+        ],
+        [
+          66774,
+          61554
+        ]
+      ],
+      "trailIndex": 1164,
+      "wikiText": "Rescue heket captives in the hills, bring firefly bits to heket hunters, and fight off predators, invading choya, and Awakened.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:waypoint:2896",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "waypoint",
+      "objectiveId": "2896",
+      "coord": [
+        66016,
+        61284
+      ],
+      "recommendedLevel": null,
+      "name": "Apizmic Grounds Waypoint",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFALAAA=]",
+      "waypointChatLink": "[&BFALAAA=]",
+      "trailIndex": 1170,
+      "wikiText": "Bitterfly Bayou is an area within the Domain of Kourna. A tribe of heket resides in this toxic swamp but their territory is often challenged by choya coming from the nearby Veldrunner Drifts."
+    },
+    {
+      "stepId": "1288:poi:2889",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2889",
+      "coord": [
+        66074,
+        61160
+      ],
+      "recommendedLevel": null,
+      "name": "Apizmic Grounds",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1183,
+      "wikiText": "The Apizmic Grounds is a heket village led by Chieftain Xipil on the border of Bitterfly Bayou and Veldrunner Drifts, from where it often falls under attack by invading choya.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2905",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2905",
+      "coord": [
+        66155,
+        60877
+      ],
+      "recommendedLevel": null,
+      "name": "Dejarin Ruins",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1221,
+      "wikiText": "The Dejarin Ruins is a point of interest in the Veldrunner Drifts. Here lies the remains of the once Dejarin Estate, now half buried in sand and only inhabited by roaming elementals.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2911",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2911",
+      "coord": [
+        66311,
+        59966
+      ],
+      "recommendedLevel": null,
+      "name": "Barbellate Crater",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1331,
+      "wikiText": "The Barbellate Crater is a point of interest in Kodonur Crossing. This deep crater is inhabited by a large group of Spotted Hyenas.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2910",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2910",
+      "coord": [
+        66020,
+        59982
+      ],
+      "recommendedLevel": null,
+      "name": "Idol of the Choya",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1373,
+      "wikiText": "Idol of the Choya is a point of interest within the Kodonur Crossing. It is a rock formation where many Choya and Rhythmic Choya gather around and dance.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2904",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2904",
+      "coord": [
+        65441,
+        59837
+      ],
+      "recommendedLevel": null,
+      "name": "Dunlon Springs",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1460,
+      "wikiText": "The Dunlon Springs is a point of interest in the Yohlon Bluffs. It is a small oasis and waterfall tucked away behind a series of cliffs.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2920",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2920",
+      "coord": [
+        65163,
+        60239
+      ],
+      "recommendedLevel": null,
+      "name": "Crocuta Vantage",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1583,
+      "wikiText": "Crocuta Vantage is a point of interest in the Elon Basin. This small cave and overlook are inhabited by a group of Spotted Hyenas.",
+      "waypointChatLink": "[&BFALAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2917",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2917",
+      "coord": [
+        64613,
+        60369
+      ],
+      "recommendedLevel": null,
+      "name": "Arkjok Kennels",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1660,
+      "wikiText": "Arkjok Kennels is a point of interest within the Arkjok Farmlands. The village's basenjis are kept there.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2915",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2915",
+      "coord": [
+        64525,
+        60651
+      ],
+      "recommendedLevel": null,
+      "name": "Palawa's Benevolence",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1692,
+      "wikiText": "Palawa's Benevolence is a point of interest and human village in the Arkjok Farmlands.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:heart:429",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "heart",
+      "objectiveId": "429",
+      "coord": [
+        64294,
+        60689
+      ],
+      "recommendedLevel": 80,
+      "name": "Respond to the food shortage in Arkjok Farmlands.",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          65245,
+          60762
+        ],
+        [
+          64481,
+          60975
+        ],
+        [
+          64050,
+          60902
+        ],
+        [
+          64162,
+          60730
+        ],
+        [
+          64264,
+          60514
+        ],
+        [
+          64450,
+          60334
+        ],
+        [
+          64824,
+          59900
+        ],
+        [
+          65190,
+          59828
+        ],
+        [
+          65245,
+          60762
+        ]
+      ],
+      "trailIndex": 1713,
+      "wikiText": "Hunt rat meat for the village butcher, burn infected crops, and break Joko's hold on the village by destroying his statues.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:vista:2907",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "vista",
+      "objectiveId": "2907",
+      "coord": [
+        64369,
+        60819
+      ],
+      "recommendedLevel": null,
+      "name": "Arkjok Farmlands",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1732,
+      "wikiText": "Walk towards the vista. It is on top of a building. Use the springer.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2914",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2914",
+      "coord": [
+        64040,
+        60909
+      ],
+      "recommendedLevel": null,
+      "name": "Secret Throughway",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1796,
+      "wikiText": "The Secret Throughway is a point of interest in Ntouka Pond. It is an enclosed tunnel linking Ntouka Pond to the rest of the surrounding lands.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2899",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2899",
+      "coord": [
+        63821,
+        61200
+      ],
+      "recommendedLevel": null,
+      "name": "Loyalist Warren",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1854,
+      "wikiText": "The Loyalist Warren is a point of interest in Ntouka Pond. It is a camp that was established in the small narrow canyons west of the Arkjok Farmlands by Joko Loyalists. They often conduct supply raids on Palawa's Benevolence.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    },
+    {
+      "stepId": "1288:poi:2892",
+      "mapId": 1288,
+      "zoneName": "Domain of Kourna",
+      "type": "poi",
+      "objectiveId": "2892",
+      "coord": [
+        64058,
+        60558
+      ],
+      "recommendedLevel": null,
+      "name": "Deeprift Brood",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1942,
+      "wikiText": "Deeprift Brood is a point of interest in Ntouka Pond. This deep underwater pit is home to a colony of Cave Wurms.",
+      "waypointChatLink": "[&BFcLAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

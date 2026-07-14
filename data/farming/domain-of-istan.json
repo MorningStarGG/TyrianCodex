@@ -1,0 +1,1071 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1263,
+  "slug": "domain-of-istan",
+  "name": "Domain of Istan",
+  "regionName": "Crystal Desert",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Kralkatite Ore",
+      "category": "ore",
+      "material": "kralkatite",
+      "source": "lady"
+    },
+    {
+      "name": "Orichalcum Ore",
+      "category": "ore",
+      "material": "orichalcum",
+      "source": "lady"
+    },
+    {
+      "name": "Sawgill Mushroom",
+      "category": "plant",
+      "material": "sawgill_mushroom",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -594.6,
+      "y": 56.6,
+      "z": -124.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -590.9,
+      "y": 56.4,
+      "z": -127.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -595.2,
+      "y": 56.2,
+      "z": -127.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -137.4,
+      "y": 115.0,
+      "z": 35.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -171.7,
+      "y": 171.3,
+      "z": 28.9,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -230.0,
+      "y": 204.7,
+      "z": 57.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -235.7,
+      "y": 210.1,
+      "z": 58.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Jackal"
+    },
+    {
+      "x": -53.3,
+      "y": 203.2,
+      "z": -109.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": -103.9,
+      "y": 155.1,
+      "z": -236.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": -54.4,
+      "y": 144.2,
+      "z": -159.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -23.8,
+      "y": 158.8,
+      "z": -134.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -23.7,
+      "y": 177.4,
+      "z": -159.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Jackal"
+    },
+    {
+      "x": 94.6,
+      "y": 226.9,
+      "z": -268.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 78.3,
+      "y": 231.4,
+      "z": -331.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Jackal"
+    },
+    {
+      "x": 225.8,
+      "y": 237.6,
+      "z": -481.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": 338.2,
+      "y": 200.8,
+      "z": -538.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": 421.8,
+      "y": 96.8,
+      "z": -610.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 388.3,
+      "y": 91.8,
+      "z": -576.9,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": 29.7,
+      "y": -0.0,
+      "z": -488.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -724.8,
+      "y": 48.8,
+      "z": -1.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -766.6,
+      "y": 86.8,
+      "z": -7.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -789.9,
+      "y": 100.9,
+      "z": -14.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Jackal"
+    },
+    {
+      "x": -815.1,
+      "y": 90.5,
+      "z": 103.8,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -666.5,
+      "y": 79.2,
+      "z": 339.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": -533.3,
+      "y": -0.2,
+      "z": 433.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Skimmer"
+    },
+    {
+      "x": -202.4,
+      "y": -0.1,
+      "z": 621.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 131.5,
+      "y": -0.4,
+      "z": 747.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 267.6,
+      "y": 2.0,
+      "z": 698.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": 259.8,
+      "y": 83.2,
+      "z": 570.8,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 239.7,
+      "y": 65.5,
+      "z": 518.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 185.5,
+      "y": 78.6,
+      "z": 525.0,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": 167.2,
+      "y": 109.8,
+      "z": 573.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -588.4,
+      "y": 56.1,
+      "z": -128.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -566.6,
+      "y": 59.6,
+      "z": -139.0,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -493.8,
+      "y": 85.1,
+      "z": -115.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -450.9,
+      "y": 72.4,
+      "z": -74.9,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": -612.4,
+      "y": 56.7,
+      "z": -138.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -662.3,
+      "y": 55.4,
+      "z": -236.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -658.8,
+      "y": 45.9,
+      "z": -305.9,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -638.8,
+      "y": 114.8,
+      "z": -321.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -730.7,
+      "y": 52.6,
+      "z": -463.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -603.1,
+      "y": 61.9,
+      "z": -440.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -571.1,
+      "y": 61.5,
+      "z": -420.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -508.2,
+      "y": 138.9,
+      "z": -415.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": 187.8,
+      "y": 112.3,
+      "z": 593.0,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": 143.5,
+      "y": 176.2,
+      "z": 464.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 164.8,
+      "y": 171.5,
+      "z": 428.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": 191.8,
+      "y": 188.3,
+      "z": 416.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": 176.6,
+      "y": 215.1,
+      "z": 491.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": 146.4,
+      "y": 210.1,
+      "z": 589.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": 5.1,
+      "y": 36.8,
+      "z": 258.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -176.5,
+      "y": 157.7,
+      "z": 272.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": -63.0,
+      "y": 209.8,
+      "z": 35.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": -67.9,
+      "y": 212.0,
+      "z": 56.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Jackal"
+    },
+    {
+      "x": -146.7,
+      "y": 221.7,
+      "z": -37.9,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Springer"
+    },
+    {
+      "x": -121.3,
+      "y": 262.9,
+      "z": -37.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "mount": "Glider"
+    },
+    {
+      "x": 68.9,
+      "y": 2.5,
+      "z": -372.8,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "chatLink": "[&BBoLAAA=]"
+    },
+    {
+      "x": 132.7,
+      "y": 90.3,
+      "z": 680.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "chatLink": "[&BBoLAAA=]"
+    },
+    {
+      "x": -324.4,
+      "y": 25.1,
+      "z": -54.0,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite",
+      "chatLink": "[&BBoLAAA=]"
+    },
+    {
+      "x": 183.7,
+      "y": 211.9,
+      "z": 467.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 172.7,
+      "y": 46.3,
+      "z": 259.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 179.3,
+      "y": 112.1,
+      "z": 566.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 282.2,
+      "y": 86.8,
+      "z": 582.8,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 131.9,
+      "y": 90.8,
+      "z": 683.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 101.8,
+      "y": 5.8,
+      "z": 726.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -604.0,
+      "y": 51.2,
+      "z": -38.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -809.0,
+      "y": 97.5,
+      "z": -25.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -884.9,
+      "y": 75.9,
+      "z": 92.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -774.4,
+      "y": 91.3,
+      "z": 169.8,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -520.9,
+      "y": 88.9,
+      "z": -162.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -457.8,
+      "y": 73.2,
+      "z": -75.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -321.1,
+      "y": 25.9,
+      "z": -53.3,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -684.5,
+      "y": 82.7,
+      "z": -462.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -830.9,
+      "y": 64.7,
+      "z": -347.8,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -513.9,
+      "y": 140.2,
+      "z": -413.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -366.7,
+      "y": 84.4,
+      "z": -437.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -451.6,
+      "y": 64.1,
+      "z": -369.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -561.5,
+      "y": 1.6,
+      "z": -687.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 71.4,
+      "y": 3.6,
+      "z": -370.7,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 102.4,
+      "y": 46.0,
+      "z": -554.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 476.3,
+      "y": 86.1,
+      "z": -626.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 315.1,
+      "y": 118.3,
+      "z": -462.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 307.9,
+      "y": 197.9,
+      "z": -521.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -555.6,
+      "y": 2.8,
+      "z": 425.8,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -145.7,
+      "y": 111.1,
+      "z": 37.9,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -180.3,
+      "y": 157.7,
+      "z": 294.4,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -126.9,
+      "y": 264.7,
+      "z": -32.1,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -34.1,
+      "y": 208.1,
+      "z": -105.5,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -109.2,
+      "y": 155.6,
+      "z": -238.2,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -24.8,
+      "y": 177.4,
+      "z": -179.6,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": 215.4,
+      "y": 239.2,
+      "z": -477.9,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -261.2,
+      "y": 8.4,
+      "z": 530.0,
+      "material": "kralkatite",
+      "category": "ore",
+      "icon": "kralkatite"
+    },
+    {
+      "x": -593.2,
+      "y": 56.2,
+      "z": -128.5,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -630.1,
+      "y": 63.5,
+      "z": -449.9,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum",
+      "chatLink": "[&BEMLAAA=]"
+    },
+    {
+      "x": 120.0,
+      "y": -0.7,
+      "z": 596.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom",
+      "chatLink": "[&BJMLAAA=]"
+    },
+    {
+      "x": 260.3,
+      "y": 62.9,
+      "z": 481.8,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 231.8,
+      "y": 48.3,
+      "z": 597.4,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -40.6,
+      "y": 47.9,
+      "z": 642.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 48.4,
+      "y": 36.5,
+      "z": 674.6,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 48.6,
+      "y": 101.5,
+      "z": 582.9,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 122.4,
+      "y": 1.0,
+      "z": 594.4,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -611.5,
+      "y": -0.2,
+      "z": 317.9,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -597.1,
+      "y": -0.3,
+      "z": 147.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -403.1,
+      "y": -0.3,
+      "z": -108.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -596.5,
+      "y": 46.1,
+      "z": 4.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -362.8,
+      "y": 0.3,
+      "z": 541.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 382.5,
+      "y": -0.2,
+      "z": 398.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -262.8,
+      "y": -0.7,
+      "z": -239.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -574.8,
+      "y": -0.6,
+      "z": -87.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -735.8,
+      "y": 46.1,
+      "z": -42.4,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -507.2,
+      "y": -3.5,
+      "z": 429.9,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -420.0,
+      "y": 0.1,
+      "z": 410.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 347.1,
+      "y": 0.5,
+      "z": 466.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -335.2,
+      "y": -64.8,
+      "z": 761.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -505.6,
+      "y": 0.5,
+      "z": 533.4,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -579.3,
+      "y": -0.2,
+      "z": 447.5,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -587.3,
+      "y": 0.1,
+      "z": 283.7,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -533.2,
+      "y": -0.2,
+      "z": -77.2,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": -410.9,
+      "y": -2.3,
+      "z": -168.0,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 525.2,
+      "y": 0.1,
+      "z": 355.8,
+      "material": "seaweed",
+      "category": "seafood",
+      "icon": "seaweed"
+    },
+    {
+      "x": 319.3,
+      "y": 119.6,
+      "z": -452.8,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -516.5,
+      "y": 99.2,
+      "z": 692.1,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -508.3,
+      "y": 45.0,
+      "z": 164.7,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    }
+  ]
+}

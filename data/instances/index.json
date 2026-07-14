@@ -1,0 +1,3503 @@
+{
+  "instances": [
+    {
+      "slug": "a-bold-new-theory",
+      "mapId": 629,
+      "name": "A Bold New Theory",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 10,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-fork-in-the-road",
+      "mapId": 294,
+      "name": "A Fork in the Road",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 303,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-kindness-repaid",
+      "mapId": 1281,
+      "name": "A Kindness Repaid",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "lws4",
+      "routes": [
+        {
+          "name": "Cabbage Shredder",
+          "points": 57,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-legacy-damned-the-golden-lake",
+      "mapId": 1577,
+      "name": "A Legacy Damned: The Golden Lake",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Janthir",
+      "release": "jw",
+      "routes": [
+        {
+          "name": "Once Golden, Now Tarnished",
+          "points": 403,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-meeting-of-ministers",
+      "mapId": 1190,
+      "name": "A Meeting of Ministers",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "lws3",
+      "routes": [
+        {
+          "name": "Shadow in the Shadows",
+          "points": 262,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-meeting-of-the-minds",
+      "mapId": 652,
+      "name": "A Meeting of the Minds",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 150,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-pup-s-illness",
+      "mapId": 392,
+      "name": "A Pup's Illness",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 19,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-race-to-arms",
+      "mapId": 1336,
+      "name": "A Race to Arms",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Flash Freeze",
+          "points": 256,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Flash Freeze Glide",
+          "points": 37,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-raw-deal-red-duck-teahouse",
+      "mapId": 1489,
+      "name": "A Raw Deal: Red Duck Teahouse",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "Party Animal",
+          "points": 352,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-sparkling-rescue",
+      "mapId": 581,
+      "name": "A Sparkling Rescue",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 544,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-splinter-in-the-flesh",
+      "mapId": 557,
+      "name": "A Splinter in the Flesh",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 74,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "a-traitor-s-testimony",
+      "mapId": 797,
+      "name": "A Traitor's Testimony",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 383,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "accusation",
+      "mapId": 157,
+      "name": "Accusation",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 59,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "among-the-kodan",
+      "mapId": 427,
+      "name": "Among the Kodan",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 656,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "an-unknown-soul",
+      "mapId": 538,
+      "name": "An Unknown Soul",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 561,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "applied-development-lab-home",
+      "mapId": 650,
+      "name": "Applied Development Lab (Home)",
+      "mode": "home",
+      "family": "home",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 109,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "arah-explorable",
+      "mapId": 112,
+      "name": "Arah",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Corrupted",
+          "points": 793,
+          "markers": 10,
+          "instructions": 6
+        },
+        {
+          "name": "Path 1 - Jotun",
+          "points": 3035,
+          "markers": 24,
+          "instructions": 20
+        },
+        {
+          "name": "Path 2 - Mursaat",
+          "points": 4690,
+          "markers": 25,
+          "instructions": 21
+        },
+        {
+          "name": "Path 3 - Forgotten",
+          "points": 4149,
+          "markers": 22,
+          "instructions": 18
+        },
+        {
+          "name": "Path 4 - Seer",
+          "points": 3668,
+          "markers": 35,
+          "instructions": 27
+        }
+      ]
+    },
+    {
+      "slug": "armaments",
+      "mapId": 449,
+      "name": "Armaments",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 229,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "arson-at-the-orphanage",
+      "mapId": 37,
+      "name": "Arson at the Orphanage",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 293,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "ac-explorable",
+      "mapId": 36,
+      "name": "Ascalonian Catacombs",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Path 1 - Hodgins",
+          "points": 1488,
+          "markers": 40,
+          "instructions": 17
+        },
+        {
+          "name": "Path 2 - Detha",
+          "points": 1166,
+          "markers": 24,
+          "instructions": 13
+        },
+        {
+          "name": "Path 3 - Tzark",
+          "points": 1468,
+          "markers": 37,
+          "instructions": 11
+        }
+      ]
+    },
+    {
+      "slug": "ac-story",
+      "mapId": 33,
+      "name": "Ascalonian Catacombs",
+      "mode": "story",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Story",
+          "points": 237,
+          "markers": 9,
+          "instructions": 9
+        }
+      ]
+    },
+    {
+      "slug": "ash-tribune-quarters",
+      "mapId": 833,
+      "name": "Ash Tribune Quarters",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 38,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "ashes-of-the-past",
+      "mapId": 365,
+      "name": "Ashes of the Past",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 310,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "bad-blood",
+      "mapId": 643,
+      "name": "Bad Blood",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 631,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "bad-forecast",
+      "mapId": 622,
+      "name": "Bad Forecast",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 311,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "behind-enemy-lines",
+      "mapId": 1378,
+      "name": "Behind Enemy Lines",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "The Ghost",
+          "points": 504,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "beta-test",
+      "mapId": 618,
+      "name": "Beta Test",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 65,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "bloodtide-coast-private",
+      "mapId": 1394,
+      "name": "Bloodtide Coast (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Bloodtide",
+          "points": 272,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "brisban-wildlands-private",
+      "mapId": 1391,
+      "name": "Brisban Wildlands (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Brisban",
+          "points": 33,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "buried-insight",
+      "mapId": 1033,
+      "name": "Buried Insight",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "hot",
+      "routes": [
+        {
+          "name": "Cleaning House",
+          "points": 1431,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "New Horizons",
+          "points": 346,
+          "markers": 1,
+          "instructions": 1
+        },
+        {
+          "name": "An Ignoble End",
+          "points": 128,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "caledon-forest-private",
+      "mapId": 1385,
+      "name": "Caledon Forest (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Caledon",
+          "points": 280,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "carry-a-big-stick",
+      "mapId": 625,
+      "name": "Carry a Big Stick",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 43,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "cm-explorable",
+      "mapId": 76,
+      "name": "Caudecus's Manor",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Path 1 - Asura",
+          "points": 659,
+          "markers": 15,
+          "instructions": 15
+        },
+        {
+          "name": "Path 2 - Seraph",
+          "points": 673,
+          "markers": 14,
+          "instructions": 14
+        },
+        {
+          "name": "Path 3 - Butler",
+          "points": 659,
+          "markers": 12,
+          "instructions": 12
+        }
+      ]
+    },
+    {
+      "slug": "cm-story",
+      "mapId": 75,
+      "name": "Caudecus's Manor",
+      "mode": "story",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Story",
+          "points": 591,
+          "markers": 4,
+          "instructions": 4
+        }
+      ]
+    },
+    {
+      "slug": "chain-of-command",
+      "mapId": 262,
+      "name": "Chain of Command",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 174,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "champion-s-sacrifice",
+      "mapId": 683,
+      "name": "Champion's Sacrifice",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 913,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "chosen-of-the-sun",
+      "mapId": 687,
+      "name": "Chosen of the Sun",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 249,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "citadel-stockade",
+      "mapId": 460,
+      "name": "Citadel Stockade",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 46,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "cof-explorable",
+      "mapId": 69,
+      "name": "Citadel of Flame",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Path 1 - Ferrah",
+          "points": 338,
+          "markers": 9,
+          "instructions": 9
+        },
+        {
+          "name": "Path 2 - Magg",
+          "points": 2116,
+          "markers": 12,
+          "instructions": 11
+        },
+        {
+          "name": "Path 3 - Rhiannon",
+          "points": 2084,
+          "markers": 21,
+          "instructions": 10
+        }
+      ]
+    },
+    {
+      "slug": "cof-story",
+      "mapId": 66,
+      "name": "Citadel of Flame",
+      "mode": "story",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Story",
+          "points": 1464,
+          "markers": 6,
+          "instructions": 6
+        }
+      ]
+    },
+    {
+      "slug": "city-of-hope",
+      "mapId": 1048,
+      "name": "City of Hope",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "hot",
+      "routes": [
+        {
+          "name": "No More Time",
+          "points": 720,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "commander-without-a-cause-gendarran-fields",
+      "mapId": 1511,
+      "name": "Commander without a Cause: Gendarran Fields",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "soto",
+      "routes": [
+        {
+          "name": "A Shadow in the Night",
+          "points": 383,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "confessor-s-end",
+      "mapId": 1191,
+      "name": "Confessor's End",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "lws3",
+      "routes": [
+        {
+          "name": "Master of Puppets",
+          "points": 671,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "The Vigil Way",
+          "points": 180,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "The Whispers Way",
+          "points": 103,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "confronting-captain-tervelan",
+      "mapId": 152,
+      "name": "Confronting Captain Tervelan",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 265,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "coe-explorable",
+      "mapId": 82,
+      "name": "Crucible of Eternity",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Path 1 - Submarine",
+          "points": 2822,
+          "markers": 12,
+          "instructions": 12
+        },
+        {
+          "name": "Path 2 - Teleporter",
+          "points": 2660,
+          "markers": 12,
+          "instructions": 12
+        },
+        {
+          "name": "Path 3 - Front Door",
+          "points": 4325,
+          "markers": 14,
+          "instructions": 14
+        }
+      ]
+    },
+    {
+      "slug": "coe-story",
+      "mapId": 81,
+      "name": "Crucible of Eternity",
+      "mode": "story",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Story",
+          "points": 1486,
+          "markers": 8,
+          "instructions": 8
+        }
+      ]
+    },
+    {
+      "slug": "darkness-at-drakentelt",
+      "mapId": 430,
+      "name": "Darkness at Drakentelt",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 100,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "dead-of-winter",
+      "mapId": 570,
+      "name": "Dead of Winter",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 368,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "deepest-secrets-yong-reactor",
+      "mapId": 1416,
+      "name": "Deepest Secrets: Yong Reactor",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "Mai Goodness",
+          "points": 121,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "defense-of-shaemoor",
+      "mapId": 138,
+      "name": "Defense of Shaemoor",
+      "mode": "tutorial",
+      "family": "tutorial",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 445,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "desperate-medicine",
+      "mapId": 113,
+      "name": "Desperate Medicine",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 375,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "detention-facility",
+      "mapId": 1457,
+      "name": "Detention Facility",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "The Great Escape",
+          "points": 54,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "digging-up-answers",
+      "mapId": 477,
+      "name": "Digging Up Answers",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 317,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "divitium-nava-empyreal-threshold",
+      "mapId": 1623,
+      "name": "Divitium Nava: Empyreal Threshold",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Castora",
+      "release": "voe",
+      "routes": [
+        {
+          "name": "Stalwart Candidate",
+          "points": 1106,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Astute Candidate",
+          "points": 83,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Stalwart Candidate 2 Power Nodes",
+          "points": 21,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "divitium-nava-ritual-grounds",
+      "mapId": 1621,
+      "name": "Divitium Nava: Ritual Grounds",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Castora",
+      "release": "voe",
+      "routes": [
+        {
+          "name": "Ascension's End",
+          "points": 184,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "dredge-assault",
+      "mapId": 440,
+      "name": "Dredge Assault",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 156,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "dredge-technology",
+      "mapId": 436,
+      "name": "Dredge Technology",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 78,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "dredging-up-the-past",
+      "mapId": 497,
+      "name": "Dredging Up the Past",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 313,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "enemy-of-my-enemy-the-beastmarshal",
+      "mapId": 1219,
+      "name": "Enemy of My Enemy: The Beastmarshal",
+      "mode": "story",
+      "family": "story",
+      "regionName": "",
+      "release": "pof",
+      "routes": [
+        {
+          "name": "Tag!",
+          "points": 2568,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Tag! Alt",
+          "points": 197,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "explosive-intellect",
+      "mapId": 573,
+      "name": "Explosive Intellect",
+      "mode": "tutorial",
+      "family": "tutorial",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 486,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "facing-the-truth-the-sanctum",
+      "mapId": 1230,
+      "name": "Facing the Truth: The Sanctum",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "pof",
+      "routes": [
+        {
+          "name": "Seeker of Truth and Knowledge",
+          "points": 1656,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Perfect Match",
+          "points": 119,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "fallout-arborstone",
+      "mapId": 1464,
+      "name": "Fallout: Arborstone",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "Study of the Macabre",
+          "points": 791,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "fighting-the-nightmare",
+      "mapId": 432,
+      "name": "Fighting the Nightmare",
+      "mode": "tutorial",
+      "family": "tutorial",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 361,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "fireheart-rise-private",
+      "mapId": 1404,
+      "name": "Fireheart Rise (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Fireheart",
+          "points": 70,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "forced-hand-nyedra",
+      "mapId": 1532,
+      "name": "Forced Hand: Nyedra",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Horn of Maguuma",
+      "release": "soto",
+      "routes": [
+        {
+          "name": "Kryptis Souvenirs",
+          "points": 814,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "forearmed-is-forewarned",
+      "mapId": 1291,
+      "name": "Forearmed Is Forewarned",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "lws4",
+      "routes": [
+        {
+          "name": "Forearmed is Forewarned",
+          "points": 635,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Glory Hog",
+          "points": 491,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "from-the-ashes-the-deadeye",
+      "mapId": 1300,
+      "name": "From the Ashes-The Deadeye",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "lws4",
+      "routes": [
+        {
+          "name": "I Brought a Friend",
+          "points": 101,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "fury-of-the-dead",
+      "mapId": 458,
+      "name": "Fury of the Dead",
+      "mode": "tutorial",
+      "family": "tutorial",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 504,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "gendarran-fields-private",
+      "mapId": 1405,
+      "name": "Gendarran Fields (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Gendarran",
+          "points": 170,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "good-work-spoiled",
+      "mapId": 516,
+      "name": "Good Work Spoiled",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 146,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "graveyard-ornaments",
+      "mapId": 297,
+      "name": "Graveyard Ornaments",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 44,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "hammer-and-steel",
+      "mapId": 528,
+      "name": "Hammer and Steel",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 392,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "haywire-punch-o-matic-battle",
+      "mapId": 1115,
+      "name": "Haywire Punch-o-Matic Battle",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 1366,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "hazardous-environment",
+      "mapId": 636,
+      "name": "Hazardous Environment",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 240,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "heitor-s-gate-heitor-s-territory",
+      "mapId": 1525,
+      "name": "Heitor's Gate: Heitor's Territory",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Horn of Maguuma",
+      "release": "soto",
+      "routes": [
+        {
+          "name": "In It Together",
+          "points": 30,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "here-there-everywhere",
+      "mapId": 587,
+      "name": "Here, There, Everywhere",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 120,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "hero-s-canton-home",
+      "mapId": 371,
+      "name": "Hero's Canton (Home)",
+      "mode": "home",
+      "family": "home",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 860,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "hotw-explorable",
+      "mapId": 71,
+      "name": "Honor of the Waves",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Path 1 - The Butcher",
+          "points": 964,
+          "markers": 10,
+          "instructions": 10
+        },
+        {
+          "name": "Path 2 - The Plunderer",
+          "points": 1202,
+          "markers": 9,
+          "instructions": 9
+        },
+        {
+          "name": "Path 3 - The Zealot",
+          "points": 1459,
+          "markers": 11,
+          "instructions": 11
+        }
+      ]
+    },
+    {
+      "slug": "hotw-story",
+      "mapId": 70,
+      "name": "Honor of the Waves",
+      "mode": "story",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Story",
+          "points": 1361,
+          "markers": 9,
+          "instructions": 9
+        }
+      ]
+    },
+    {
+      "slug": "hunter-s-hearth-home",
+      "mapId": 375,
+      "name": "Hunter's Hearth (Home)",
+      "mode": "home",
+      "family": "home",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 65,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "industrial-espionage",
+      "mapId": 623,
+      "name": "Industrial Espionage",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 304,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "infiltration",
+      "mapId": 61,
+      "name": "Infiltration",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 330,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "into-the-labyrinth",
+      "mapId": 1021,
+      "name": "Into the Labyrinth",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Maguuma Wastes",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 2249,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "into-the-mists",
+      "mapId": 400,
+      "name": "Into the Mists",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 202,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "into-the-obscure-bastion-of-the-obscure",
+      "mapId": 1504,
+      "name": "Into the Obscure: Bastion of the Obscure",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Horn of Maguuma",
+      "release": "soto",
+      "routes": [
+        {
+          "name": "Tracking with Gladium",
+          "points": 120,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "lake-doric-private",
+      "mapId": 1402,
+      "name": "Lake Doric (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Doric",
+          "points": 60,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "liberation",
+      "mapId": 161,
+      "name": "Liberation",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 196,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "library-science",
+      "mapId": 693,
+      "name": "Library Science",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 18,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "lighting-the-beacons",
+      "mapId": 288,
+      "name": "Lighting the Beacons",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 101,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "loved-and-lost",
+      "mapId": 513,
+      "name": "Loved and Lost",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 102,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "means-to-an-end",
+      "mapId": 435,
+      "name": "Means to an End",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 48,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "meeting-my-mentor",
+      "mapId": 496,
+      "name": "Meeting my Mentor",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 132,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "metrica-province-private",
+      "mapId": 1401,
+      "name": "Metrica Province (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Metrica",
+          "points": 17,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "mightier-than-the-sword",
+      "mapId": 653,
+      "name": "Mightier than the Sword",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 150,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "mockery-of-death",
+      "mapId": 507,
+      "name": "Mockery of Death",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 189,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "mortus-virge",
+      "mapId": 193,
+      "name": "Mortus Virge",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 599,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "night-of-fires",
+      "mapId": 1241,
+      "name": "Night of Fires",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "pof",
+      "routes": [
+        {
+          "name": "Shield of Kormir",
+          "points": 69,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "on-red-alert",
+      "mapId": 701,
+      "name": "On Red Alert",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 371,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "on-the-case-excavation-yard",
+      "mapId": 1488,
+      "name": "On the Case: Excavation Yard",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "Body-Language Basics",
+          "points": 392,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Thorough Investigator",
+          "points": 355,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "on-the-mend",
+      "mapId": 226,
+      "name": "On the Mend",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 334,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "on-the-sly-sanctum-harbor",
+      "mapId": 1602,
+      "name": "On the Sly: Sanctum Harbor",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "voe",
+      "routes": [
+        {
+          "name": "And Stay Out!",
+          "points": 54,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "operation-bulwark",
+      "mapId": 274,
+      "name": "Operation: Bulwark",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 530,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "path-of-divinity-overgrown-thicket",
+      "mapId": 1604,
+      "name": "Path of Divinity: Overgrown Thicket",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Castora",
+      "release": "voe",
+      "routes": [
+        {
+          "name": "Entrance to the Hidden Vault",
+          "points": 144,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "pets-and-walls-make-stronger-kraals",
+      "mapId": 662,
+      "name": "Pets and Walls Make Stronger Kraals",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 345,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "political-homicide",
+      "mapId": 586,
+      "name": "Political Homicide",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 23,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "precocious-aurene",
+      "mapId": 1182,
+      "name": "Precocious Aurene",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "lws3",
+      "routes": [
+        {
+          "name": "New in Box",
+          "points": 89,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "priory-library",
+      "mapId": 700,
+      "name": "Priory Library",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 179,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "prisoners-of-the-dragon",
+      "mapId": 1051,
+      "name": "Prisoners of the Dragon",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "hot",
+      "routes": [
+        {
+          "name": "My Friends, the Smiths",
+          "points": 824,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Peer Review",
+          "points": 341,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "prized-possessions",
+      "mapId": 1032,
+      "name": "Prized Possessions",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "hot",
+      "routes": [
+        {
+          "name": "Wild Dragon Chase",
+          "points": 768,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "prologue-rally-to-maguuma",
+      "mapId": 1058,
+      "name": "Prologue: Rally to Maguuma",
+      "mode": "tutorial",
+      "family": "tutorial",
+      "regionName": "Maguuma Wastes",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 864,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "protest-too-much",
+      "mapId": 676,
+      "name": "Protest Too Much",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 106,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "rage-suppression",
+      "mapId": 271,
+      "name": "Rage Suppression",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 49,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "raven-s-revered",
+      "mapId": 396,
+      "name": "Raven's Revered",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 335,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "rending-the-mantle",
+      "mapId": 171,
+      "name": "Rending the Mantle",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 366,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "research-and-destroy",
+      "mapId": 485,
+      "name": "Research and Destroy",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 558,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "return-to-camp-resolve",
+      "mapId": 1022,
+      "name": "Return to Camp Resolve",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Maguuma Wastes",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 277,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "roots-of-terror",
+      "mapId": 1046,
+      "name": "Roots of Terror",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "hot",
+      "routes": [
+        {
+          "name": "The Troll Road",
+          "points": 550,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "The Dark Path",
+          "points": 415,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "The Pit of Despair",
+          "points": 297,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "The Pit of Despair Alt",
+          "points": 230,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "rumors-of-trouble",
+      "mapId": 413,
+      "name": "Rumors of Trouble",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 138,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "sabotage",
+      "mapId": 444,
+      "name": "Sabotage",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 287,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "salma-district-home",
+      "mapId": 248,
+      "name": "Salma District (Home)",
+      "mode": "home",
+      "family": "home",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 38,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "salt-in-the-wound",
+      "mapId": 606,
+      "name": "Salt in the Wound",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 211,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "scrap-rifle-field-test",
+      "mapId": 1110,
+      "name": "Scrap Rifle Field Test",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 1543,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "searching-for-the-truth",
+      "mapId": 287,
+      "name": "Searching for the Truth",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 49,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "secrets-in-the-earth",
+      "mapId": 563,
+      "name": "Secrets in the Earth",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 47,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "setting-the-stage",
+      "mapId": 633,
+      "name": "Setting the Stage",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 56,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "shadow-of-the-tree",
+      "mapId": 558,
+      "name": "Shadow of the Tree",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 463,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "sharpened-thorns",
+      "mapId": 560,
+      "name": "Sharpened Thorns",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 230,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "silent-warfare",
+      "mapId": 454,
+      "name": "Silent Warfare",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 550,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "snapping-steel",
+      "mapId": 1375,
+      "name": "Snapping Steel",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "You Saw Nothing",
+          "points": 187,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "snowden-drifts-private",
+      "mapId": 1388,
+      "name": "Snowden Drifts (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Snowden",
+          "points": 59,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "se-explorable",
+      "mapId": 64,
+      "name": "Sorrow's Embrace",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Path 1 - Fergg",
+          "points": 1026,
+          "markers": 6,
+          "instructions": 6
+        },
+        {
+          "name": "Path 2 - Rasolov",
+          "points": 963,
+          "markers": 9,
+          "instructions": 8
+        },
+        {
+          "name": "Path 3 - Koptev",
+          "points": 1987,
+          "markers": 11,
+          "instructions": 11
+        }
+      ]
+    },
+    {
+      "slug": "se-story",
+      "mapId": 63,
+      "name": "Sorrow's Embrace",
+      "mode": "story",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Story",
+          "points": 1522,
+          "markers": 6,
+          "instructions": 6
+        }
+      ]
+    },
+    {
+      "slug": "source-of-the-issue",
+      "mapId": 542,
+      "name": "Source of the Issue",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 594,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "sovereign-of-nayos-the-wizard-s-tower",
+      "mapId": 1537,
+      "name": "Sovereign of Nayos: The Wizard's Tower",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Horn of Maguuma",
+      "release": "soto",
+      "routes": [
+        {
+          "name": "Tower Bibliophile",
+          "points": 295,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Sovereign of Nayos",
+          "points": 109,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "split-second",
+      "mapId": 624,
+      "name": "Split Second",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 31,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "stoking-the-flame",
+      "mapId": 290,
+      "name": "Stoking the Flame",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 216,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "stonewright-s-steading",
+      "mapId": 376,
+      "name": "Stonewright's Steading",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 45,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "storm-tracking",
+      "mapId": 1296,
+      "name": "Storm Tracking",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Fractals of the Mists",
+      "release": "lws4",
+      "routes": [
+        {
+          "name": "Raptor Out",
+          "points": 1176,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "strange-observations",
+      "mapId": 1057,
+      "name": "Strange Observations",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 641,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "taimi-s-pet-project",
+      "mapId": 1198,
+      "name": "Taimi's Pet Project",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "lws3",
+      "routes": [
+        {
+          "name": "Fire Fighter",
+          "points": 215,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "taking-credit-back",
+      "mapId": 584,
+      "name": "Taking Credit Back",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 435,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "test-subject",
+      "mapId": 644,
+      "name": "Test Subject",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 151,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-bad-apple",
+      "mapId": 566,
+      "name": "The Bad Apple",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 241,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-battle-of-claw-island",
+      "mapId": 698,
+      "name": "The Battle of Claw Island",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 2067,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-charge",
+      "mapId": 1274,
+      "name": "The Charge",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "lws4",
+      "routes": [
+        {
+          "name": "Saving Skritt",
+          "points": 70,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-command-core",
+      "mapId": 373,
+      "name": "The Command Core",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 189,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-commander",
+      "mapId": 120,
+      "name": "The Commander",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 154,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-departing",
+      "mapId": 1245,
+      "name": "The Departing",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "pof",
+      "routes": [
+        {
+          "name": "The Departing 4 - Purpose",
+          "points": 1529,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "The Departing",
+          "points": 708,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-end-of-the-line",
+      "mapId": 267,
+      "name": "The End of the Line",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 445,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-future-in-jade-nahpui-lab",
+      "mapId": 1445,
+      "name": "The Future in Jade: Nahpui Lab",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "Time Pilot",
+          "points": 110,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Duct Cleaning",
+          "points": 85,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-future-in-jade-power-plant",
+      "mapId": 1415,
+      "name": "The Future in Jade: Power Plant",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "Industrial Espionage",
+          "points": 284,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-great-hunt",
+      "mapId": 379,
+      "name": "The Great Hunt",
+      "mode": "tutorial",
+      "family": "tutorial",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 1317,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-invitation",
+      "mapId": 1342,
+      "name": "The Invitation",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Raven Sanctum during The Invitation",
+          "points": 965,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-jungle-provides",
+      "mapId": 1037,
+      "name": "The Jungle Provides",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "hot",
+      "routes": [
+        {
+          "name": "Totems of the Itzel",
+          "points": 2206,
+          "markers": 1,
+          "instructions": 1
+        },
+        {
+          "name": "Now That's a Fungus",
+          "points": 340,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-knight-s-duel",
+      "mapId": 527,
+      "name": "The Knight's Duel",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 204,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-lost-chieftain-s-return",
+      "mapId": 659,
+      "name": "The Lost Chieftain's Return",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 507,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-omphalos-chamber",
+      "mapId": 648,
+      "name": "The Omphalos Chamber",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 94,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-orders-of-tyria",
+      "mapId": 190,
+      "name": "The Orders of Tyria",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 14,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-queen-s-justice",
+      "mapId": 202,
+      "name": "The Queen's Justice",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 59,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-sacrifice",
+      "mapId": 1209,
+      "name": "The Sacrifice",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "pof",
+      "routes": [
+        {
+          "name": "Elite Elimination - Cannonade",
+          "points": 1369,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Elite Elimination - Officer",
+          "points": 1004,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Elite Elimination - Assembler",
+          "points": 538,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-sad-tale-of-the-ravenous",
+      "mapId": 199,
+      "name": "The Sad Tale of the \"Ravenous\"",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 448,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-scenic-route-kaineng-docks",
+      "mapId": 1454,
+      "name": "The Scenic Route: Kaineng Docks",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Cantha",
+      "release": "eod",
+      "routes": [
+        {
+          "name": "The Premium Tour",
+          "points": 887,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-snaff-prize",
+      "mapId": 579,
+      "name": "The Snaff Prize",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 21,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-sting",
+      "mapId": 363,
+      "name": "The Sting",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 173,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-stone-sheath",
+      "mapId": 642,
+      "name": "The Stone Sheath",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 1460,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-test-subject",
+      "mapId": 1276,
+      "name": "The Test Subject",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "lws4",
+      "routes": [
+        {
+          "name": "Inquest-Specimen Liberator",
+          "points": 136,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Drones Disabled",
+          "points": 59,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-way-forward",
+      "mapId": 1221,
+      "name": "The Way Forward",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "pof",
+      "routes": [
+        {
+          "name": "Walk a Fine Line",
+          "points": 677,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Guided Remembrance",
+          "points": 498,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Fast Asleep",
+          "points": 264,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "The Way Forward - Instance",
+          "points": 259,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-wolf-havroun",
+      "mapId": 407,
+      "name": "The Wolf Havroun",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 222,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "through-the-veil",
+      "mapId": 393,
+      "name": "Through the Veil",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 120,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "thunderhead-peaks-private",
+      "mapId": 1386,
+      "name": "Thunderhead Peaks (Private)",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Champions Insight - Thunderhead",
+          "points": 133,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "time-for-a-promotion",
+      "mapId": 264,
+      "name": "Time for a Promotion",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 29,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "torn-from-the-sky",
+      "mapId": 1050,
+      "name": "Torn from the Sky",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Heart of Maguuma",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 1039,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "tower-of-secrets-southern-wizard-s-tower",
+      "mapId": 1506,
+      "name": "Tower of Secrets: Southern Wizard's Tower",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Horn of Maguuma",
+      "release": "soto",
+      "routes": [
+        {
+          "name": "Astral Gofer - All",
+          "points": 2188,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Astral Gofer - Zojja",
+          "points": 1001,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Astral Gofer - Skritt",
+          "points": 873,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Tower Snoop",
+          "points": 713,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Key - Natural",
+          "points": 417,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Key - Celestial",
+          "points": 385,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Key - Obscure",
+          "points": 209,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Key - Knowledge",
+          "points": 197,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Key - Strength",
+          "points": 155,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Key - Balance",
+          "points": 30,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "tracking-the-aspect-masters",
+      "mapId": 1023,
+      "name": "Tracking the Aspect Masters",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Maguuma Wastes",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 341,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "tracking-the-scientist",
+      "mapId": 1282,
+      "name": "Tracking the Scientist",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Crystal Desert",
+      "release": "lws4",
+      "routes": [
+        {
+          "name": "Gate Crasher",
+          "points": 177,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "tribunes-in-effigy",
+      "mapId": 464,
+      "name": "Tribunes in Effigy",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ascalon",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 316,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "triskell-quay",
+      "mapId": 195,
+      "name": "Triskell Quay",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 115,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "turnabout",
+      "mapId": 1372,
+      "name": "Turnabout",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Fast Purrsuit",
+          "points": 333,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "ta-explorable",
+      "mapId": 67,
+      "name": "Twilight Arbor",
+      "mode": "explorable",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Aether",
+          "points": 2342,
+          "markers": 14,
+          "instructions": 14
+        },
+        {
+          "name": "Fwd - Vevina",
+          "points": 2293,
+          "markers": 13,
+          "instructions": 11
+        },
+        {
+          "name": "Up - Leurent",
+          "points": 1349,
+          "markers": 11,
+          "instructions": 11
+        }
+      ]
+    },
+    {
+      "slug": "ta-story",
+      "mapId": 68,
+      "name": "Twilight Arbor",
+      "mode": "story",
+      "family": "dungeon",
+      "regionName": "",
+      "routes": [
+        {
+          "name": "Story",
+          "points": 1417,
+          "markers": 8,
+          "instructions": 8
+        }
+      ]
+    },
+    {
+      "slug": "undead-detection",
+      "mapId": 481,
+      "name": "Undead Detection",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 533,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "unholy-grounds",
+      "mapId": 686,
+      "name": "Unholy Grounds",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 282,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "voices-from-the-past",
+      "mapId": 163,
+      "name": "Voices From the Past",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Kryta",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 43,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "where-credit-is-due",
+      "mapId": 596,
+      "name": "Where Credit Is Due",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 20,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "where-life-goes",
+      "mapId": 529,
+      "name": "Where Life Goes",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Tarnished Coast",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 265,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "whispers-in-the-dark",
+      "mapId": 474,
+      "name": "Whispers in the Dark",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Shiverpeak Mountains",
+      "release": "core",
+      "routes": [
+        {
+          "name": "Walkthrough",
+          "points": 377,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "wildfire",
+      "mapId": 1408,
+      "name": "Wildfire",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Ring of Fire",
+      "release": "lws5",
+      "routes": [
+        {
+          "name": "Strong as Bear, Sharp as Wolf",
+          "points": 1775,
+          "markers": 0,
+          "instructions": 0
+        },
+        {
+          "name": "Silent as Leopard, Clever as Raven",
+          "points": 767,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "within-your-grasp-ritual-grounds",
+      "mapId": 1617,
+      "name": "Within Your Grasp: Ritual Grounds",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Castora",
+      "release": "voe",
+      "routes": [
+        {
+          "name": "The Path to Ascension",
+          "points": 397,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    }
+  ]
+}

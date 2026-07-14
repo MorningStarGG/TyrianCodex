@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1045,
+  "slug": "tangled-depths",
+  "name": "Tangled Depths",
+  "regionName": "Heart of Maguuma",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Flax",
+      "category": "plant",
+      "material": "flax",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -186.0,
+      "y": 227.6,
+      "z": -135.6,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax",
+      "mount": "Springer"
+    },
+    {
+      "x": -198.8,
+      "y": 267.4,
+      "z": -114.0,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -295.9,
+      "y": 329.4,
+      "z": -98.3,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -289.9,
+      "y": 329.5,
+      "z": -80.6,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -292.5,
+      "y": 329.6,
+      "z": -64.8,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -307.2,
+      "y": 330.0,
+      "z": -48.4,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -306.3,
+      "y": 329.1,
+      "z": -81.5,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -325.1,
+      "y": 329.8,
+      "z": -76.7,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -323.7,
+      "y": 329.0,
+      "z": -100.2,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -346.8,
+      "y": 331.4,
+      "z": -66.2,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -339.6,
+      "y": 329.7,
+      "z": -97.9,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -351.8,
+      "y": 330.5,
+      "z": -90.4,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -272.9,
+      "y": 117.0,
+      "z": 112.3,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -275.1,
+      "y": 0.5,
+      "z": 99.9,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 91.6,
+      "y": 58.1,
+      "z": -4.2,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 246.0,
+      "y": 3.7,
+      "z": 454.0,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 272.2,
+      "y": 109.0,
+      "z": 521.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 287.3,
+      "y": 157.0,
+      "z": 425.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 429.5,
+      "y": 0.9,
+      "z": 183.8,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 438.1,
+      "y": 18.9,
+      "z": -8.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 352.7,
+      "y": 20.9,
+      "z": -86.6,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 489.6,
+      "y": 35.6,
+      "z": -190.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 629.6,
+      "y": 29.0,
+      "z": -262.8,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 787.9,
+      "y": 35.1,
+      "z": -87.9,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 206.5,
+      "y": 34.6,
+      "z": -486.9,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 266.7,
+      "y": 60.7,
+      "z": -503.2,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 694.2,
+      "y": 300.2,
+      "z": -507.9,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -380.5,
+      "y": 1.0,
+      "z": -505.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -152.5,
+      "y": 216.7,
+      "z": -292.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -244.0,
+      "y": 111.9,
+      "z": 569.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -163.2,
+      "y": 155.7,
+      "z": 259.1,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 241.3,
+      "y": 120.0,
+      "z": 241.0,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -634.5,
+      "y": -217.7,
+      "z": -265.3,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -464.3,
+      "y": -128.5,
+      "z": 16.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -478.6,
+      "y": -162.7,
+      "z": 505.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -22.1,
+      "y": -48.3,
+      "z": 430.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -483.3,
+      "y": -131.6,
+      "z": -115.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -470.7,
+      "y": -140.8,
+      "z": 67.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -497.3,
+      "y": -153.0,
+      "z": 186.4,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 702.2,
+      "y": -165.6,
+      "z": -118.8,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -882.6,
+      "y": -141.9,
+      "z": -298.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -362.9,
+      "y": -32.3,
+      "z": -203.9,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": -85.3,
+      "y": -178.5,
+      "z": 147.5,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 445.0,
+      "y": -144.3,
+      "z": 180.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    }
+  ]
+}

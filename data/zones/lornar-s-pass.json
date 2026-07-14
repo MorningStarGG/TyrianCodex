@@ -1,0 +1,2938 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 27,
+    "name": "Lornar's Pass",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 25,
+    "maxLevel": 40,
+    "mapRect": [
+      [
+        -21504,
+        -58368
+      ],
+      [
+        21504,
+        58368
+      ]
+    ],
+    "continentRect": [
+      [
+        50432,
+        29696
+      ],
+      [
+        52224,
+        34560
+      ]
+    ],
+    "sectorRect": [
+      [
+        50224.6,
+        29604.3
+      ],
+      [
+        52301.7,
+        34655.3
+      ]
+    ],
+    "labelCoord": [
+      51328,
+      32128
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "27:waypoint:235",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "235",
+      "coord": [
+        51805,
+        29890
+      ],
+      "recommendedLevel": null,
+      "name": "Thunderhorns Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOsAAAA=]",
+      "waypointChatLink": "[&BOsAAAA=]",
+      "trailIndex": 12,
+      "wikiText": "The Thunderhorns is an area in the northeast of Lornar's Pass. A norn steading was founded here to provide the workers of the Icedevil's Needle mine a place to eat, drink and rest."
+    },
+    {
+      "stepId": "27:poi:1599",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1599",
+      "coord": [
+        52035,
+        29838
+      ],
+      "recommendedLevel": null,
+      "name": "Glorious Dredge Excavation #74",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 30,
+      "wikiText": "Glorious Dredge Excavation #74 is a Point of Interest in Underburg. It is a machine used by the dredge of Underburg to drill into the earth.",
+      "waypointChatLink": "[&BOsAAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-95",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-95",
+      "coord": [
+        52067,
+        29792
+      ],
+      "recommendedLevel": null,
+      "name": "Dwarven Relic",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 37,
+      "wikiText": "A Dwarven Relic found within Underburg talks about the fate of the dwarves.",
+      "waypointChatLink": "[&BOsAAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-3",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-3",
+      "coord": [
+        52080,
+        30235
+      ],
+      "recommendedLevel": null,
+      "name": "Frozen Portal",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 84,
+      "wikiText": "A Frozen Portal used by an ice imp and ice elementals can be found in northern Lornar's Pass. Similar portals are used by the icebrood elsewhere.",
+      "waypointChatLink": "[&BOsAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1600",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1600",
+      "coord": [
+        52017,
+        30407
+      ],
+      "recommendedLevel": null,
+      "name": "Lost Owl Shrine",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 101,
+      "wikiText": "The Lost Owl Shrine is an area within Chillwing Perch. A small statue of Owl can be seen covered in snow.",
+      "waypointChatLink": "[&BOsAAAA=]"
+    },
+    {
+      "stepId": "27:heart:49",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "49",
+      "coord": [
+        51997,
+        30820
+      ],
+      "recommendedLevel": 30,
+      "name": "Help the Priory stop the dredge encroachment.",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52154,
+          31025
+        ],
+        [
+          52160,
+          30976
+        ],
+        [
+          52152,
+          30933
+        ],
+        [
+          52163,
+          30866
+        ],
+        [
+          52062,
+          30821
+        ],
+        [
+          51996,
+          30777
+        ],
+        [
+          51957,
+          30711
+        ],
+        [
+          51934,
+          30632
+        ],
+        [
+          51873,
+          30626
+        ],
+        [
+          51842,
+          30682
+        ],
+        [
+          51793,
+          30711
+        ],
+        [
+          51773,
+          30737
+        ],
+        [
+          51782,
+          30803
+        ],
+        [
+          51789,
+          30864
+        ],
+        [
+          51762,
+          30904
+        ],
+        [
+          51732,
+          30954
+        ],
+        [
+          51736,
+          31014
+        ],
+        [
+          51771,
+          31056
+        ],
+        [
+          51837,
+          31080
+        ],
+        [
+          51902,
+          31103
+        ],
+        [
+          51967,
+          31132
+        ],
+        [
+          52046,
+          31145
+        ],
+        [
+          52107,
+          31136
+        ],
+        [
+          52131,
+          31079
+        ],
+        [
+          52154,
+          31025
+        ]
+      ],
+      "trailIndex": 135,
+      "wikiText": "Destroy dredge mortars, turrets, APCs, towers, and reinforcements, and clear out cave spiders and their nests.",
+      "waypointChatLink": "[&BJgBAAA=]"
+    },
+    {
+      "stepId": "27:poi:296",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "296",
+      "coord": [
+        51919,
+        30850
+      ],
+      "recommendedLevel": null,
+      "name": "Ironhammer's Crypt",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 152,
+      "wikiText": "Ironhammer's Crypt is a small cave filled with cave spider eggs and a couple of Juvenile Cave Spiders. You can crush some eggs and kill the spiders that emerge for the heart task in that area.",
+      "waypointChatLink": "[&BJgBAAA=]"
+    },
+    {
+      "stepId": "27:poi:295",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "295",
+      "coord": [
+        52049,
+        30960
+      ],
+      "recommendedLevel": null,
+      "name": "The Dracon Steles",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 169,
+      "wikiText": "The Dracon Steles are two giant pillar structures of Deldrimor origin, sculpted into dragons, holding up an icy underpass at the base of the frozen Frostgate Falls in Lornar's Pass.",
+      "waypointChatLink": "[&BJgBAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:408",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "408",
+      "coord": [
+        51646,
+        30942
+      ],
+      "recommendedLevel": null,
+      "name": "Pinnacle Enclave Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJgBAAA=]",
+      "waypointChatLink": "[&BJgBAAA=]",
+      "trailIndex": 214,
+      "wikiText": "The Godspurs is an area in the northeast of Lornar's Pass. A tribe of elementals-worshipping grawl inhabit the area."
+    },
+    {
+      "stepId": "27:vista:1710",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1710",
+      "coord": [
+        51740,
+        30442
+      ],
+      "recommendedLevel": null,
+      "name": "The Thunderhorns",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 286,
+      "wikiText": "The Thunderhorns is an area in the northeast of Lornar's Pass. A norn steading was founded here to provide the workers of the Icedevil's Needle mine a place to eat, drink and rest.",
+      "waypointChatLink": "[&BJgBAAA=]"
+    },
+    {
+      "stepId": "27:heart:48",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "48",
+      "coord": [
+        51568,
+        29968
+      ],
+      "recommendedLevel": 26,
+      "name": "Help Hune manage the lodge.",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51718,
+          29891
+        ],
+        [
+          51734,
+          29854
+        ],
+        [
+          51706,
+          29815
+        ],
+        [
+          51611,
+          29794
+        ],
+        [
+          51496,
+          29761
+        ],
+        [
+          51414,
+          29887
+        ],
+        [
+          51412,
+          29945
+        ],
+        [
+          51401,
+          29996
+        ],
+        [
+          51423,
+          30016
+        ],
+        [
+          51494,
+          30041
+        ],
+        [
+          51538,
+          30033
+        ],
+        [
+          51566,
+          30040
+        ],
+        [
+          51594,
+          30044
+        ],
+        [
+          51619,
+          30043
+        ],
+        [
+          51669,
+          29988
+        ],
+        [
+          51704,
+          29931
+        ],
+        [
+          51718,
+          29891
+        ]
+      ],
+      "trailIndex": 337,
+      "wikiText": "Rouse drunks, take patrons' orders, calm rowdy patrons, protect dolyaks, and repair fencing.",
+      "waypointChatLink": "[&BOsAAAA=]"
+    },
+    {
+      "stepId": "27:poi:297",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "297",
+      "coord": [
+        51523,
+        29879
+      ],
+      "recommendedLevel": null,
+      "name": "Korakatt's Hall",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 345,
+      "wikiText": "Korakatt's Hall is a norn lodge housing the miners working at the Icedevil's Needle.",
+      "waypointChatLink": "[&BOsAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1604",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1604",
+      "coord": [
+        51278,
+        30155
+      ],
+      "recommendedLevel": null,
+      "name": "Leopardshadow Shrine",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 379,
+      "wikiText": "Leopardshadow Shrine is a Point of Interest in Nentor Valley. It is a norn shrine dedicated to the spirit of the Snow Leopard.",
+      "waypointChatLink": "[&BFEGAAA=]"
+    },
+    {
+      "stepId": "27:poi:1598",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1598",
+      "coord": [
+        51243,
+        29822
+      ],
+      "recommendedLevel": null,
+      "name": "Skritt Hill",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 424,
+      "wikiText": "Skritt Hill is a Point of Interest in Icedevil's Needle. The skritts living in the mine often rally here to listen to their leader, Korritkir the Chucker.",
+      "waypointChatLink": "[&BFEGAAA=]"
+    },
+    {
+      "stepId": "27:vista:1711",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1711",
+      "coord": [
+        51210,
+        29977
+      ],
+      "recommendedLevel": null,
+      "name": "Icedevil's Needle",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 439,
+      "wikiText": "Moving through the mine, the vista is atop a tall shoring post. It is accessible via the stairs and ramp to the north side of the vista.",
+      "waypointChatLink": "[&BFEGAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-233",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-233",
+      "coord": [
+        50987,
+        29767
+      ],
+      "recommendedLevel": null,
+      "name": "Skillet",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 487,
+      "wikiText": "Skillet is a skritt who wants to smash you with his pet Smashy.",
+      "waypointChatLink": "[&BFEGAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:1617",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "1617",
+      "coord": [
+        51057,
+        30098
+      ],
+      "recommendedLevel": null,
+      "name": "Icedevil's Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFEGAAA=]",
+      "waypointChatLink": "[&BFEGAAA=]",
+      "trailIndex": 543,
+      "wikiText": "Icedevil's Needle is a mine located at the northwest corner of Lornar's Pass. A large number of skritt can be found here, usually causing trouble for the miners."
+    },
+    {
+      "stepId": "27:heart:47",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "47",
+      "coord": [
+        51025,
+        30128
+      ],
+      "recommendedLevel": 28,
+      "name": "Help Kelgg with the mine's troubles.",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51040,
+          30189
+        ],
+        [
+          51182,
+          30206
+        ],
+        [
+          51287,
+          30166
+        ],
+        [
+          51373,
+          30109
+        ],
+        [
+          51384,
+          30053
+        ],
+        [
+          51393,
+          29976
+        ],
+        [
+          51402,
+          29874
+        ],
+        [
+          51475,
+          29776
+        ],
+        [
+          51431,
+          29701
+        ],
+        [
+          51287,
+          29592
+        ],
+        [
+          51115,
+          29563
+        ],
+        [
+          50946,
+          29570
+        ],
+        [
+          50841,
+          29594
+        ],
+        [
+          50771,
+          29714
+        ],
+        [
+          50729,
+          29795
+        ],
+        [
+          50731,
+          29900
+        ],
+        [
+          50831,
+          30029
+        ],
+        [
+          50892,
+          30087
+        ],
+        [
+          50965,
+          30156
+        ],
+        [
+          51040,
+          30189
+        ]
+      ],
+      "trailIndex": 547,
+      "wikiText": "Mend injured miners, collapse skritt holes, and stop skritt thieves",
+      "waypointChatLink": "[&BFEGAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:236",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "236",
+      "coord": [
+        50626,
+        30079
+      ],
+      "recommendedLevel": null,
+      "name": "Nentor Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOwAAAA=]",
+      "waypointChatLink": "[&BOwAAAA=]",
+      "trailIndex": 596,
+      "wikiText": "Nentor Valley is an area in the northwest of Lornar's Pass. The mountains behind the mines are home to a large population of snow trolls."
+    },
+    {
+      "stepId": "27:poi:298",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "298",
+      "coord": [
+        50695,
+        30361
+      ],
+      "recommendedLevel": null,
+      "name": "Nentor's Consolidated Mine",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 626,
+      "wikiText": "Nentor's Consolidated Mine is a fort in Nentor Valley that serves as a mine for the Lionguard.",
+      "waypointChatLink": "[&BOwAAAA=]"
+    },
+    {
+      "stepId": "27:heart:46",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "46",
+      "coord": [
+        50728,
+        30382
+      ],
+      "recommendedLevel": 27,
+      "name": "Make sure the mining camp maintains productivity.",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50892,
+          30327
+        ],
+        [
+          50936,
+          30238
+        ],
+        [
+          50768,
+          30120
+        ],
+        [
+          50702,
+          30172
+        ],
+        [
+          50642,
+          30272
+        ],
+        [
+          50612,
+          30358
+        ],
+        [
+          50616,
+          30434
+        ],
+        [
+          50684,
+          30478
+        ],
+        [
+          50801,
+          30454
+        ],
+        [
+          50834,
+          30388
+        ],
+        [
+          50851,
+          30321
+        ],
+        [
+          50892,
+          30327
+        ]
+      ],
+      "trailIndex": 629,
+      "wikiText": "Organize tools, disarm skritt-made traps, stop skritt ambushes, kill vermin, and protect miners and cargo from hostiles.",
+      "waypointChatLink": "[&BOwAAAA=]"
+    },
+    {
+      "stepId": "27:vista:1551",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1551",
+      "coord": [
+        50861,
+        30377
+      ],
+      "recommendedLevel": null,
+      "name": "Nentor Valley",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 669,
+      "wikiText": "East of the fort in Nentor Valley. On the top of the mountain. Start on the northwest side of the mountain, north of the vista. Jump zig-zag up the mountain, beware of the raptor at the entrance of the jump.",
+      "waypointChatLink": "[&BFEGAAA=]"
+    },
+    {
+      "stepId": "27:poi:1601",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1601",
+      "coord": [
+        50824,
+        30574
+      ],
+      "recommendedLevel": null,
+      "name": "Ravenbeak Shrine",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 688,
+      "wikiText": "Ravenbeak Shrine is a Point of Interest in Nentor Valley. It is a norn shrine dedicated to the spirit of the Raven.",
+      "waypointChatLink": "[&BJkBAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-4",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-4",
+      "coord": [
+        50764,
+        30797
+      ],
+      "recommendedLevel": null,
+      "name": "Mysterious Meat",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 718,
+      "wikiText": "The Mysterious Meat is a hero challenge object located in a Fleshreaver-infested cave in the Durmand Priory area of Lornar's Pass.",
+      "waypointChatLink": "[&BOkAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1221",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1221",
+      "coord": [
+        51050,
+        30562
+      ],
+      "recommendedLevel": null,
+      "name": "Windy Cave",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 774,
+      "wikiText": "Windy Cave is a cave south of Mistriven Waypoint in Lornar's Pass. Within the cave is the tomb of the Stone Summit dwarf Dagnar Stonepate.",
+      "waypointChatLink": "[&BJkBAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:409",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "409",
+      "coord": [
+        51209,
+        30480
+      ],
+      "recommendedLevel": null,
+      "name": "Mistriven Waypoint",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJkBAAA=]",
+      "waypointChatLink": "[&BJkBAAA=]",
+      "trailIndex": 806,
+      "wikiText": "Mistriven Gorge is an area in the northwest of Lornar's Pass. This passageway is crossed high above the gorge itself by a wooden trestle suspended on the side of the gorge."
+    },
+    {
+      "stepId": "27:poi:299",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "299",
+      "coord": [
+        51312,
+        30777
+      ],
+      "recommendedLevel": null,
+      "name": "Belldron's Guardholme",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 836,
+      "wikiText": "Belldron's Guardholme is a norn lodge in The Godspurs. Getting in trouble with the grawls seems to be the way of life here. A pair of hunters to the northeast of the lodge have a small camp that they sleep at during the night.",
+      "waypointChatLink": "[&BJkBAAA=]"
+    },
+    {
+      "stepId": "27:heart:52",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "52",
+      "coord": [
+        51202,
+        30733
+      ],
+      "recommendedLevel": 29,
+      "name": "Help Aurelio keep roads to the Priory safe from grawl.",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51336,
+          30808
+        ],
+        [
+          51496,
+          30906
+        ],
+        [
+          51542,
+          30974
+        ],
+        [
+          51450,
+          31140
+        ],
+        [
+          51190,
+          31421
+        ],
+        [
+          51118,
+          31376
+        ],
+        [
+          51179,
+          31240
+        ],
+        [
+          51085,
+          30870
+        ],
+        [
+          51114,
+          30805
+        ],
+        [
+          51161,
+          30729
+        ],
+        [
+          51211,
+          30718
+        ],
+        [
+          51336,
+          30808
+        ]
+      ],
+      "trailIndex": 846,
+      "wikiText": "Clear rockslides and grawl paintings, destroy grawl effigies, assist Priory travelers, and deactivate stolen equipment.",
+      "waypointChatLink": "[&BJkBAAA=]"
+    },
+    {
+      "stepId": "27:poi:1605",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1605",
+      "coord": [
+        51110,
+        30864
+      ],
+      "recommendedLevel": null,
+      "name": "The Riven Path",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 859,
+      "wikiText": "The Riven Path is a wooden pathway high up in the Mistriven Gorge mountains. Many Ravens likes the good view from here. The Grawl there are often seen attacking the traveler passing through.",
+      "waypointChatLink": "[&BJkBAAA=]"
+    },
+    {
+      "stepId": "27:poi:1606",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1606",
+      "coord": [
+        51080,
+        31083
+      ],
+      "recommendedLevel": null,
+      "name": "Keddle Moraine",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 878,
+      "wikiText": "Keddle Moraine is moraine formation in Mistriven Gorge.",
+      "waypointChatLink": "[&BFIGAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:1618",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "1618",
+      "coord": [
+        51039,
+        31474
+      ],
+      "recommendedLevel": null,
+      "name": "Refuge Peak Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFIGAAA=]",
+      "waypointChatLink": "[&BFIGAAA=]",
+      "trailIndex": 946,
+      "wikiText": "Refuge Peak is an area near the center of Lornar's Pass. It contains a narrow road leading to the Durmand Priory."
+    },
+    {
+      "stepId": "27:poi:1607",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1607",
+      "coord": [
+        50951,
+        31373
+      ],
+      "recommendedLevel": null,
+      "name": "Priory Bridge",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 959,
+      "wikiText": "Priory Bridge is a bridge leading to the Durmand Priory.",
+      "waypointChatLink": "[&BFIGAAA=]"
+    },
+    {
+      "stepId": "27:poi:294",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "294",
+      "coord": [
+        50801,
+        31370
+      ],
+      "recommendedLevel": null,
+      "name": "Ogden's Quarters",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 971,
+      "wikiText": "Ogden's Quarters is the home of Ogden Stonehealer which is located just after the Priory Bridge.",
+      "waypointChatLink": "[&BOkAAAA=]"
+    },
+    {
+      "stepId": "27:poi:293",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "293",
+      "coord": [
+        50509,
+        31049
+      ],
+      "recommendedLevel": null,
+      "name": "Priory Archives",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1016,
+      "wikiText": "The Priory Archives is a section within the Durmand Priory that holds a multitude of stone tablets written in New Krytan. In the center lies a pillar of light that many of the tablets revolve around.",
+      "waypointChatLink": "[&BOkAAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-93",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-93",
+      "coord": [
+        50515,
+        31062
+      ],
+      "recommendedLevel": null,
+      "name": "Heart of the Priory",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1017,
+      "wikiText": "The Heart of the Priory is a vast collection of levitating, rotating stone tablets.",
+      "waypointChatLink": "[&BOkAAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:233",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "233",
+      "coord": [
+        50640,
+        31315
+      ],
+      "recommendedLevel": null,
+      "name": "Durmand Priory Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOkAAAA=]",
+      "waypointChatLink": "[&BOkAAAA=]",
+      "trailIndex": 1023,
+      "wikiText": "Durmand Priory, established in 1105 AE, is a monastery and place of knowledge in the Shiverpeak Mountains. It contains many volumes of information rescued from Lion's Arch during the flood by the Order of Whispers."
+    },
+    {
+      "stepId": "27:vista:1555",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1555",
+      "coord": [
+        50754,
+        31459
+      ],
+      "recommendedLevel": null,
+      "name": "Bouldermouth Vale",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1039,
+      "wikiText": "Bouldermouth Vale is an area located in the western part of Lornar's Pass. Lyot, a norn rancher, settled here and built a dolyak ranch but nearby ice wurms are invading her land and causing trouble.",
+      "waypointChatLink": "[&BOkAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1628",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1628",
+      "coord": [
+        50495,
+        31254
+      ],
+      "recommendedLevel": null,
+      "name": "Posternus Caverns",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1082,
+      "wikiText": "The Posternus Caverns are located beneath the Durmand Priory. One entrance to the caverns can be found south of the Priory (directly below the asura gate icon), the other is in Mistriven Gorge, south of the Hero point.",
+      "waypointChatLink": "[&BOkAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1293",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1293",
+      "coord": [
+        50812,
+        31870
+      ],
+      "recommendedLevel": null,
+      "name": "Lyot's Herd",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1157,
+      "wikiText": "Lyot's Herd is a small ranch in Bouldermouth Vale. Lyot tries to make a living here, but is bothered by a great Ice Wurm.",
+      "waypointChatLink": "[&BFIGAAA=]"
+    },
+    {
+      "stepId": "27:heart:45",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "45",
+      "coord": [
+        50857,
+        31861
+      ],
+      "recommendedLevel": 33,
+      "name": "Help Herder Lyot maintain her dolyak ranch.",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50781,
+          32026
+        ],
+        [
+          50888,
+          32039
+        ],
+        [
+          51002,
+          31924
+        ],
+        [
+          51036,
+          31844
+        ],
+        [
+          51032,
+          31768
+        ],
+        [
+          50940,
+          31691
+        ],
+        [
+          50799,
+          31703
+        ],
+        [
+          50708,
+          31834
+        ],
+        [
+          50705,
+          31928
+        ],
+        [
+          50781,
+          32026
+        ]
+      ],
+      "trailIndex": 1160,
+      "wikiText": "Keep dolyaks safe, fed, and in their pen.",
+      "waypointChatLink": "[&BFMGAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:1619",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "1619",
+      "coord": [
+        51276,
+        31884
+      ],
+      "recommendedLevel": null,
+      "name": "Afgar's Waypoint",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFMGAAA=]",
+      "waypointChatLink": "[&BFMGAAA=]",
+      "trailIndex": 1201,
+      "wikiText": "Refuge Peak is an area near the center of Lornar's Pass. It contains a narrow road leading to the Durmand Priory."
+    },
+    {
+      "stepId": "27:poi:289",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "289",
+      "coord": [
+        51325,
+        31783
+      ],
+      "recommendedLevel": null,
+      "name": "Afgar's Steading",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1209,
+      "wikiText": "Afgar's Steading is a norn lodge in Refuge Peak. Afgar informs the player of the surrounding creatures, including what he calls \"metal creatures.\"",
+      "waypointChatLink": "[&BFMGAAA=]"
+    },
+    {
+      "stepId": "27:poi:1616",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1616",
+      "coord": [
+        52076,
+        31336
+      ],
+      "recommendedLevel": null,
+      "name": "Wonderous Drill Installation #73",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1316,
+      "wikiText": "Wonderous Drill Installation #73 is a point of interest within Molent Summit. This machine is used by the dredge of the Molent Summit to drill into the earth.",
+      "waypointChatLink": "[&BOoAAAA=]"
+    },
+    {
+      "stepId": "27:heart:53",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "53",
+      "coord": [
+        52076,
+        31602
+      ],
+      "recommendedLevel": 31,
+      "name": "Help Agent Kaukiri trick the dredge into fighting steam creatures.",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51965,
+          31188
+        ],
+        [
+          51923,
+          31199
+        ],
+        [
+          51891,
+          31210
+        ],
+        [
+          51841,
+          31231
+        ],
+        [
+          51816,
+          31270
+        ],
+        [
+          51809,
+          31308
+        ],
+        [
+          51794,
+          31349
+        ],
+        [
+          51800,
+          31386
+        ],
+        [
+          51796,
+          31438
+        ],
+        [
+          51827,
+          31500
+        ],
+        [
+          51887,
+          31557
+        ],
+        [
+          51939,
+          31588
+        ],
+        [
+          51956,
+          31598
+        ],
+        [
+          52019,
+          31608
+        ],
+        [
+          52055,
+          31614
+        ],
+        [
+          52186,
+          31575
+        ],
+        [
+          52217,
+          31474
+        ],
+        [
+          52219,
+          31402
+        ],
+        [
+          52201,
+          31336
+        ],
+        [
+          52153,
+          31279
+        ],
+        [
+          52058,
+          31193
+        ],
+        [
+          52006,
+          31185
+        ],
+        [
+          51965,
+          31188
+        ]
+      ],
+      "trailIndex": 1347,
+      "wikiText": "Obtain a steam creature disguise from a Whispers agent, attack dredge troops, and destroy their personnel carriers, grinders, tunnelers, and miners.",
+      "waypointChatLink": "[&BOoAAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:234",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "234",
+      "coord": [
+        52056,
+        31607
+      ],
+      "recommendedLevel": null,
+      "name": "Lamentation Waypoint",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOoAAAA=]",
+      "waypointChatLink": "[&BOoAAAA=]",
+      "trailIndex": 1350,
+      "wikiText": "The Lake of Lamentation is a frozen lake in Lornar's Pass. It is populated by pinipals and steam creatures. There is a steam outpost in the middle of the lake which the steam creatures are trying to rebuild from time to time."
+    },
+    {
+      "stepId": "27:heart:50",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "50",
+      "coord": [
+        51932,
+        31693
+      ],
+      "recommendedLevel": 32,
+      "name": "Investigate and contain the expanding steam creature forces.",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51630,
+          31768
+        ],
+        [
+          51643,
+          31826
+        ],
+        [
+          51689,
+          31830
+        ],
+        [
+          51702,
+          31862
+        ],
+        [
+          51681,
+          31919
+        ],
+        [
+          51650,
+          31958
+        ],
+        [
+          51632,
+          32004
+        ],
+        [
+          51721,
+          32017
+        ],
+        [
+          51796,
+          32025
+        ],
+        [
+          51914,
+          32043
+        ],
+        [
+          52005,
+          32014
+        ],
+        [
+          52037,
+          31903
+        ],
+        [
+          52006,
+          31846
+        ],
+        [
+          51979,
+          31778
+        ],
+        [
+          51980,
+          31743
+        ],
+        [
+          51966,
+          31708
+        ],
+        [
+          51950,
+          31673
+        ],
+        [
+          51934,
+          31643
+        ],
+        [
+          51895,
+          31613
+        ],
+        [
+          51847,
+          31600
+        ],
+        [
+          51788,
+          31579
+        ],
+        [
+          51717,
+          31533
+        ],
+        [
+          51653,
+          31467
+        ],
+        [
+          51576,
+          31444
+        ],
+        [
+          51516,
+          31452
+        ],
+        [
+          51434,
+          31536
+        ],
+        [
+          51474,
+          31615
+        ],
+        [
+          51552,
+          31681
+        ],
+        [
+          51622,
+          31712
+        ],
+        [
+          51630,
+          31768
+        ]
+      ],
+      "trailIndex": 1368,
+      "wikiText": "Reactivate cameras, destroy steam corpses, and gather steam parts for study.",
+      "waypointChatLink": "[&BOoAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1608",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1608",
+      "coord": [
+        51961,
+        31929
+      ],
+      "recommendedLevel": null,
+      "name": "Steam Mechagate",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1390,
+      "wikiText": "Steam Mechagate is a big steam structure in Lake of Lamentation.",
+      "waypointChatLink": "[&BOoAAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-92",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-92",
+      "coord": [
+        52087,
+        32229
+      ],
+      "recommendedLevel": null,
+      "name": "Grenth's Door",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1427,
+      "wikiText": "Grenth's Door is the Statue of Grenth within Reaper's Gate, once used to summon a Reaper to access the Underworld.",
+      "waypointChatLink": "[&BDEHAAA=]"
+    },
+    {
+      "stepId": "27:poi:290",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "290",
+      "coord": [
+        52112,
+        32227
+      ],
+      "recommendedLevel": null,
+      "name": "Grenth's Door",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1428,
+      "wikiText": "Grenth's Door is the Statue of Grenth within Reaper's Gate, once used to summon a Reaper to access the Underworld.",
+      "waypointChatLink": "[&BDEHAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-39",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-39",
+      "coord": [
+        51656,
+        32015
+      ],
+      "recommendedLevel": null,
+      "name": "Steam Portal",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1486,
+      "wikiText": "Steam Portals are mechanical towers that act as gateways to a possible future of Tyria, allowing the steam creatures into the present. They are smaller versions of the Steam Mechagate.",
+      "waypointChatLink": "[&BFMGAAA=]"
+    },
+    {
+      "stepId": "27:poi:292",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "292",
+      "coord": [
+        51488,
+        31923
+      ],
+      "recommendedLevel": null,
+      "name": "Molevon Portage",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1533,
+      "wikiText": "Molevon Portage is a dredge mine. There are two entrances, one to the east and one to the south. The cave, full of dredge, is almost exactly east across the ridge from Afgar's Steading.",
+      "waypointChatLink": "[&BFMGAAA=]"
+    },
+    {
+      "stepId": "27:vista:1552",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1552",
+      "coord": [
+        51580,
+        32122
+      ],
+      "recommendedLevel": null,
+      "name": "Icebound Plunge",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1566,
+      "wikiText": "Overlooks the Icebound Plunge and Molevon Mountain. The starting point is located in the Lake of Lamentation on the north side of the vista itself.",
+      "waypointChatLink": "[&BFMGAAA=]"
+    },
+    {
+      "stepId": "27:poi:291",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "291",
+      "coord": [
+        51643,
+        32062
+      ],
+      "recommendedLevel": null,
+      "name": "Icebound Plunge",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1584,
+      "wikiText": "Icebound Plunge is a frozen waterfall in False River Valley. Many Ice Elemental live on the frozen pond.",
+      "waypointChatLink": "[&BFMGAAA=]"
+    },
+    {
+      "stepId": "27:heart:51",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "51",
+      "coord": [
+        51187,
+        32393
+      ],
+      "recommendedLevel": 34,
+      "name": "Help Researcher Suki examine imps near Rocklair.",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51055,
+          32491
+        ],
+        [
+          51101,
+          32567
+        ],
+        [
+          51244,
+          32563
+        ],
+        [
+          51404,
+          32494
+        ],
+        [
+          51458,
+          32406
+        ],
+        [
+          51333,
+          32379
+        ],
+        [
+          51339,
+          32192
+        ],
+        [
+          51242,
+          32189
+        ],
+        [
+          51099,
+          32340
+        ],
+        [
+          51055,
+          32491
+        ]
+      ],
+      "trailIndex": 1631,
+      "wikiText": "Use the essence coagulator to defeat ice imps and open imp portals, then test collected imp essences.",
+      "waypointChatLink": "[&BFQGAAA=]"
+    },
+    {
+      "stepId": "27:poi:1629",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1629",
+      "coord": [
+        51030,
+        32422
+      ],
+      "recommendedLevel": null,
+      "name": "Rocklair",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1645,
+      "wikiText": "Rocklair is a Durmand Priory camp in Highfirn Passage, north of Cascade Bridge in Lornar's Pass. It also serves as the base camp for expeditions led by Explorer Gillard to The Molitage Digs to find dwarven artifacts.",
+      "waypointChatLink": "[&BFQGAAA=]"
+    },
+    {
+      "stepId": "27:poi:1602",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1602",
+      "coord": [
+        50564,
+        32128
+      ],
+      "recommendedLevel": null,
+      "name": "Bearstone Shrine",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1681,
+      "wikiText": "Bearstone Shrine is north of Stonescatter Waypoint. A Polar Bear and her three cubs are in this location.",
+      "waypointChatLink": "[&BJcBAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:407",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "407",
+      "coord": [
+        50628,
+        32378
+      ],
+      "recommendedLevel": null,
+      "name": "Stonescatter Waypoint",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJcBAAA=]",
+      "waypointChatLink": "[&BJcBAAA=]",
+      "trailIndex": 1700,
+      "wikiText": "Stonescatter Wash is an area in the west of Lornar's Pass."
+    },
+    {
+      "stepId": "27:poi:288",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "288",
+      "coord": [
+        50571,
+        32496
+      ],
+      "recommendedLevel": null,
+      "name": "Olia's Clearing",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1709,
+      "wikiText": "Olia's Clearing is a logging site used to harvest wood for the Lionguard.",
+      "waypointChatLink": "[&BJcBAAA=]"
+    },
+    {
+      "stepId": "27:poi:1611",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1611",
+      "coord": [
+        50765,
+        32858
+      ],
+      "recommendedLevel": null,
+      "name": "Mette's Posting",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1737,
+      "wikiText": "Mette's Posting is site where the Lionguards are guarding the loggers in Olia's Clearing. The pirates in False Lake can also be a threat.",
+      "waypointChatLink": "[&BOgAAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-5",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-5",
+      "coord": [
+        50800,
+        32850
+      ],
+      "recommendedLevel": null,
+      "name": "Lionguard Mette",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1740,
+      "wikiText": "Lionguard Mette looks for a sparring partner, providing a hero challenge in Stonescatter Wash.",
+      "waypointChatLink": "[&BFQGAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:1620",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "1620",
+      "coord": [
+        51135,
+        32777
+      ],
+      "recommendedLevel": null,
+      "name": "Cascade Bridge Waypoint",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFQGAAA=]",
+      "waypointChatLink": "[&BFQGAAA=]",
+      "trailIndex": 1763,
+      "wikiText": "The Winterthaw Snowfield is an area on the east side of Lornar's Pass."
+    },
+    {
+      "stepId": "27:poi:284",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "284",
+      "coord": [
+        51208,
+        32911
+      ],
+      "recommendedLevel": null,
+      "name": "Cascade Bridge",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1774,
+      "wikiText": "Cascade Bridge has a strategic position, looking over False Lake and the pirate Jetsam Isle. Pirates are trying to destroy this bridge from the Lionguard.",
+      "waypointChatLink": "[&BFQGAAA=]"
+    },
+    {
+      "stepId": "27:vista:1556",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1556",
+      "coord": [
+        51330,
+        33198
+      ],
+      "recommendedLevel": null,
+      "name": "Lost Delver's Ridge",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1814,
+      "wikiText": "Lost Delver's Ridge an area in the southern section of Lornar's Pass. The area contains a hidden Order of Whispers base within Guutra's Secret, only accessible to existing members of the order.",
+      "waypointChatLink": "[&BJYBAAA=]"
+    },
+    {
+      "stepId": "27:heart:42",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "42",
+      "coord": [
+        51538,
+        32973
+      ],
+      "recommendedLevel": 35,
+      "name": "Help Explorer Leandra find relics in Molitage Digs.",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51296,
+          32826
+        ],
+        [
+          51374,
+          32744
+        ],
+        [
+          51703,
+          32777
+        ],
+        [
+          51769,
+          32819
+        ],
+        [
+          51752,
+          32957
+        ],
+        [
+          51711,
+          33062
+        ],
+        [
+          51629,
+          33114
+        ],
+        [
+          51467,
+          33085
+        ],
+        [
+          51318,
+          32947
+        ],
+        [
+          51296,
+          32826
+        ]
+      ],
+      "trailIndex": 1842,
+      "wikiText": "Weaken dredge, and recover relics.",
+      "waypointChatLink": "[&BFQGAAA=]"
+    },
+    {
+      "stepId": "27:poi:283",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "283",
+      "coord": [
+        51430,
+        32852
+      ],
+      "recommendedLevel": null,
+      "name": "The Molitage Digs",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1861,
+      "wikiText": "The Molitage Digs is a small mine owned by the dredge. They are looking for dwarven artifacts.",
+      "waypointChatLink": "[&BFQGAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:1841",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "1841",
+      "coord": [
+        51596,
+        32519
+      ],
+      "recommendedLevel": null,
+      "name": "False River Waypoint",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BDEHAAA=]",
+      "waypointChatLink": "[&BDEHAAA=]",
+      "trailIndex": 1914,
+      "wikiText": "The False River Valley is an area located in Lornar's Pass. It is here that the Twisted Marionette was used by Scarlet Briar."
+    },
+    {
+      "stepId": "27:vista:1553",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1553",
+      "coord": [
+        51997,
+        32603
+      ],
+      "recommendedLevel": null,
+      "name": "Marionette's Landing",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1950,
+      "wikiText": "Run over the marionette's torso, jump on the upright cog next to the sword, then jump on the cog in the sword's hilt and run up its grip.",
+      "waypointChatLink": "[&BOcAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1609",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1609",
+      "coord": [
+        51891,
+        32669
+      ],
+      "recommendedLevel": null,
+      "name": "Marionette's Landing",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1963,
+      "wikiText": "Marionette's Landing is the five raised pads and generators used with Scarlet Briar's \"weapon test\" of the Twisted Marionette, which was bait to lure forces who'd fight Scarlet into a trap - the trap being the Marionette self-destructing.",
+      "waypointChatLink": "[&BDEHAAA=]"
+    },
+    {
+      "stepId": "27:poi:1610",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1610",
+      "coord": [
+        51791,
+        32886
+      ],
+      "recommendedLevel": null,
+      "name": "Skylady's Memory",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1985,
+      "wikiText": "Skylady's Memory is the site of a fallen statue of Dwayna in Lornar's Pass. It is half-buried in the snow.",
+      "waypointChatLink": "[&BOcAAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:231",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "231",
+      "coord": [
+        52021,
+        33007
+      ],
+      "recommendedLevel": null,
+      "name": "Winterthaw Waypoint",
+      "prereqs": [],
+      "order": 69,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOcAAAA=]",
+      "waypointChatLink": "[&BOcAAAA=]",
+      "trailIndex": 2008,
+      "wikiText": "The Winterthaw Snowfield is an area on the east side of Lornar's Pass."
+    },
+    {
+      "stepId": "27:poi:282",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "282",
+      "coord": [
+        52025,
+        33094
+      ],
+      "recommendedLevel": null,
+      "name": "Pinion Pass",
+      "prereqs": [],
+      "order": 70,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2013,
+      "wikiText": "Pinion Pass is a Durmand Priory camp used to study destroyers found in a nearby cave.",
+      "waypointChatLink": "[&BOcAAAA=]"
+    },
+    {
+      "stepId": "27:heart:43",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "43",
+      "coord": [
+        51918,
+        33078
+      ],
+      "recommendedLevel": 36,
+      "name": "Help Arcanist Kruppa with destroyers near Pinion Pass.",
+      "prereqs": [],
+      "order": 71,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51722,
+          33063
+        ],
+        [
+          51769,
+          33007
+        ],
+        [
+          51901,
+          32952
+        ],
+        [
+          51993,
+          32948
+        ],
+        [
+          52064,
+          33108
+        ],
+        [
+          51868,
+          33353
+        ],
+        [
+          51740,
+          33380
+        ],
+        [
+          51619,
+          33291
+        ],
+        [
+          51572,
+          33156
+        ],
+        [
+          51722,
+          33063
+        ]
+      ],
+      "trailIndex": 2023,
+      "wikiText": "Battle destroyers and collapse their burrows.",
+      "waypointChatLink": "[&BOcAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1613",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1613",
+      "coord": [
+        52117,
+        33704
+      ],
+      "recommendedLevel": null,
+      "name": "Grogshadow Kenning",
+      "prereqs": [],
+      "order": 72,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2088,
+      "wikiText": "Grogshadow Kenning is a jotun base in Jotun's Shoulders.",
+      "waypointChatLink": "[&BOUAAAA=]"
+    },
+    {
+      "stepId": "27:heart:44",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "44",
+      "coord": [
+        51926,
+        33914
+      ],
+      "recommendedLevel": 38,
+      "name": "Help Hunter Neida near Vanjir's Stead.",
+      "prereqs": [],
+      "order": 73,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          52164,
+          33694
+        ],
+        [
+          52121,
+          33534
+        ],
+        [
+          52068,
+          33491
+        ],
+        [
+          51927,
+          33546
+        ],
+        [
+          51881,
+          33636
+        ],
+        [
+          51837,
+          33810
+        ],
+        [
+          51838,
+          33943
+        ],
+        [
+          51921,
+          34025
+        ],
+        [
+          51987,
+          34030
+        ],
+        [
+          52164,
+          33694
+        ]
+      ],
+      "trailIndex": 2109,
+      "wikiText": "Battle jotun and hunt ice wurms.",
+      "waypointChatLink": "[&BOUAAAA=]"
+    },
+    {
+      "stepId": "27:vista:1712",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1712",
+      "coord": [
+        51973,
+        34232
+      ],
+      "recommendedLevel": null,
+      "name": "Venison Pass",
+      "prereqs": [],
+      "order": 74,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2161,
+      "wikiText": "Venison Pass is an area in the southeast of Lornar's Pass. A group of norn, who just lost their prized hunting grounds to jotun, have built a new settlement here.",
+      "waypointChatLink": "[&BOUAAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:229",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "229",
+      "coord": [
+        51846,
+        34059
+      ],
+      "recommendedLevel": null,
+      "name": "Vanjir's Stead Waypoint",
+      "prereqs": [],
+      "order": 75,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOUAAAA=]",
+      "waypointChatLink": "[&BOUAAAA=]",
+      "trailIndex": 2182,
+      "wikiText": "Venison Pass is an area in the southeast of Lornar's Pass. A group of norn, who just lost their prized hunting grounds to jotun, have built a new settlement here."
+    },
+    {
+      "stepId": "27:poi:1603",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1603",
+      "coord": [
+        51492,
+        34328
+      ],
+      "recommendedLevel": null,
+      "name": "Wolfpaw Shrine",
+      "prereqs": [],
+      "order": 76,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2211,
+      "wikiText": "Wolfpaw Shrine is a small shrine in Venison Pass. A wolf and her three pups are here.",
+      "waypointChatLink": "[&BOUAAAA=]"
+    },
+    {
+      "stepId": "27:poi:280",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "280",
+      "coord": [
+        51161,
+        34177
+      ],
+      "recommendedLevel": null,
+      "name": "Ettinworks Lab",
+      "prereqs": [],
+      "order": 77,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2234,
+      "wikiText": "Ettinworks Lab is east of Demon's Maw Waypoint. It is the site of Orson's research on the Ettin inhabiting Twoheaded Meadows.",
+      "waypointChatLink": "[&BOYAAAA=]"
+    },
+    {
+      "stepId": "27:heart:41",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "41",
+      "coord": [
+        51236,
+        34201
+      ],
+      "recommendedLevel": 39,
+      "name": "Help Researcher Bramm with his research equipment.",
+      "prereqs": [],
+      "order": 78,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          51378,
+          34276
+        ],
+        [
+          51264,
+          34416
+        ],
+        [
+          51094,
+          34545
+        ],
+        [
+          50836,
+          34510
+        ],
+        [
+          50794,
+          34291
+        ],
+        [
+          50918,
+          34181
+        ],
+        [
+          51181,
+          34090
+        ],
+        [
+          51327,
+          34150
+        ],
+        [
+          51378,
+          34276
+        ]
+      ],
+      "trailIndex": 2238,
+      "wikiText": "Activate surveillance equipment, revive researchers, and reduce the ettin population.",
+      "waypointChatLink": "[&BJYBAAA=]"
+    },
+    {
+      "stepId": "27:poi:1615",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1615",
+      "coord": [
+        51053,
+        34444
+      ],
+      "recommendedLevel": null,
+      "name": "Twoheaded Meadows",
+      "prereqs": [],
+      "order": 79,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2275,
+      "wikiText": "Twoheaded Meadows is a canyon located in Lornar's Pass. A colony of ettins moved in and claimed this place their home.",
+      "waypointChatLink": "[&BOYAAAA=]"
+    },
+    {
+      "stepId": "27:poi:281",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "281",
+      "coord": [
+        50968,
+        34093
+      ],
+      "recommendedLevel": null,
+      "name": "Black Barl's Mill",
+      "prereqs": [],
+      "order": 80,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2313,
+      "wikiText": "Black Barl's Mill is a run down mill used as a camp by the Covington Pirates.",
+      "waypointChatLink": "[&BOYAAAA=]"
+    },
+    {
+      "stepId": "27:poi:1614",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1614",
+      "coord": [
+        51207,
+        33712
+      ],
+      "recommendedLevel": null,
+      "name": "Guutra's Secret",
+      "prereqs": [],
+      "order": 81,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2355,
+      "wikiText": "Guutra's Secret is an Order of Whispers building located in Lost Delver's Ridge. The door can be examined and will let the character inside if they are a member of Order of Whispers. Underneath the lodge is a secret Order of Whispers base.",
+      "waypointChatLink": "[&BJYBAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:406",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "406",
+      "coord": [
+        51206,
+        33631
+      ],
+      "recommendedLevel": null,
+      "name": "Guutra's Homestead Waypoint",
+      "prereqs": [],
+      "order": 82,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJYBAAA=]",
+      "waypointChatLink": "[&BJYBAAA=]",
+      "trailIndex": 2363,
+      "wikiText": "Lost Delver's Ridge an area in the southern section of Lornar's Pass. The area contains a hidden Order of Whispers base within Guutra's Secret, only accessible to existing members of the order."
+    },
+    {
+      "stepId": "27:poi:287",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "287",
+      "coord": [
+        51122,
+        33211
+      ],
+      "recommendedLevel": null,
+      "name": "Koolookuu",
+      "prereqs": [],
+      "order": 83,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2380,
+      "wikiText": "Koolookuu is a quaggan village in Lornar's Pass found near Jetsam Isle.",
+      "waypointChatLink": "[&BOgAAAA=]"
+    },
+    {
+      "stepId": "27:hero:0-94",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "hero",
+      "objectiveId": "0-94",
+      "coord": [
+        51120,
+        33193
+      ],
+      "recommendedLevel": null,
+      "name": "Peg Leg",
+      "prereqs": [],
+      "order": 84,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2381,
+      "waypointChatLink": "[&BOgAAAA=]"
+    },
+    {
+      "stepId": "27:heart:39",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "39",
+      "coord": [
+        51023,
+        33177
+      ],
+      "recommendedLevel": 36,
+      "name": "Help Queldip pillage pirates.",
+      "prereqs": [],
+      "order": 85,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50972,
+          33411
+        ],
+        [
+          50864,
+          33321
+        ],
+        [
+          50822,
+          33208
+        ],
+        [
+          50872,
+          33101
+        ],
+        [
+          50996,
+          33072
+        ],
+        [
+          51103,
+          33138
+        ],
+        [
+          51131,
+          33290
+        ],
+        [
+          51059,
+          33397
+        ],
+        [
+          50972,
+          33411
+        ]
+      ],
+      "trailIndex": 2384,
+      "wikiText": "Defeat pirates, steal treasure, and destroy turrets.",
+      "waypointChatLink": "[&BOgAAAA=]"
+    },
+    {
+      "stepId": "27:poi:286",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "286",
+      "coord": [
+        50980,
+        33245
+      ],
+      "recommendedLevel": null,
+      "name": "Jetsam Isle",
+      "prereqs": [],
+      "order": 86,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2396,
+      "wikiText": "Jetsam Isle is a pirate base in Lornar's Pass, home of the Jetsam Pirates. The quaggan Suwash is trying to join the Jetsam Pirates and make them peaceful.",
+      "waypointChatLink": "[&BOgAAAA=]"
+    },
+    {
+      "stepId": "27:vista:1550",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1550",
+      "coord": [
+        51071,
+        33172
+      ],
+      "recommendedLevel": null,
+      "name": "Jetsam Isle",
+      "prereqs": [],
+      "order": 87,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2405,
+      "wikiText": "The vista on Jetsam Isle is next to Ingaborge. Just walk the plank.",
+      "waypointChatLink": "[&BOgAAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:232",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "232",
+      "coord": [
+        50785,
+        33228
+      ],
+      "recommendedLevel": null,
+      "name": "False Lake Waypoint",
+      "prereqs": [],
+      "order": 88,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOgAAAA=]",
+      "waypointChatLink": "[&BOgAAAA=]",
+      "trailIndex": 2428,
+      "wikiText": "False Lake is a large lake in the southern part of Lornar's Pass. In the northern part of the lake the pirate haven of Jetsam Isle can be found."
+    },
+    {
+      "stepId": "27:poi:1612",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "1612",
+      "coord": [
+        50921,
+        33674
+      ],
+      "recommendedLevel": null,
+      "name": "Dwarves' Gloaming",
+      "prereqs": [],
+      "order": 89,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2453,
+      "wikiText": "Dwarves' Gloaming is the underwater ruins of an old dwarven fortress containing a royal vault where the Stone Summit stored their most valued artifacts and victory trophies, including an ancient scabbard which could contain the corruptive...",
+      "waypointChatLink": "[&BJYBAAA=]"
+    },
+    {
+      "stepId": "27:heart:40",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "heart",
+      "objectiveId": "40",
+      "coord": [
+        50811,
+        33726
+      ],
+      "recommendedLevel": 37,
+      "name": "Help Duidda hassle pirates.",
+      "prereqs": [],
+      "order": 90,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50501,
+          33768
+        ],
+        [
+          50525,
+          33677
+        ],
+        [
+          50593,
+          33634
+        ],
+        [
+          50798,
+          33548
+        ],
+        [
+          50846,
+          33569
+        ],
+        [
+          50874,
+          33722
+        ],
+        [
+          50758,
+          33916
+        ],
+        [
+          50626,
+          33910
+        ],
+        [
+          50501,
+          33768
+        ]
+      ],
+      "trailIndex": 2455,
+      "wikiText": "Defeat pirates, destroy turrets, shred flags, and steal rum.",
+      "waypointChatLink": "[&BOYAAAA=]"
+    },
+    {
+      "stepId": "27:poi:285",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "poi",
+      "objectiveId": "285",
+      "coord": [
+        50659,
+        33739
+      ],
+      "recommendedLevel": null,
+      "name": "Greybeard's Landing",
+      "prereqs": [],
+      "order": 91,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2464,
+      "wikiText": "Greybeard's Landing is a pirate camp.",
+      "waypointChatLink": "[&BOYAAAA=]"
+    },
+    {
+      "stepId": "27:waypoint:230",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "waypoint",
+      "objectiveId": "230",
+      "coord": [
+        50668,
+        34082
+      ],
+      "recommendedLevel": null,
+      "name": "Demon's Maw Waypoint",
+      "prereqs": [],
+      "order": 92,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOYAAAA=]",
+      "waypointChatLink": "[&BOYAAAA=]",
+      "trailIndex": 2491,
+      "wikiText": "Demon's Maw is an area located at the southwest corner of Lornar's Pass. A large tribe of ettins has established itself in the canyon to the south of the area."
+    },
+    {
+      "stepId": "27:vista:1554",
+      "mapId": 27,
+      "zoneName": "Lornar's Pass",
+      "type": "vista",
+      "objectiveId": "1554",
+      "coord": [
+        50618,
+        34168
+      ],
+      "recommendedLevel": null,
+      "name": "Demon's Maw",
+      "prereqs": [],
+      "order": 93,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "When you are at Demon's Maw Waypoint, fall down from the south cliff. There is an almost invisible step. Then, use the outwards pointing rocks as steps towards the vista.",
+      "waypointChatLink": "[&BOYAAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

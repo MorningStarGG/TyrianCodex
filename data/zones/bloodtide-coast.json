@@ -1,0 +1,1842 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 73,
+    "name": "Bloodtide Coast",
+    "continentId": 1,
+    "regionId": 4,
+    "regionName": "Kryta",
+    "floor": 1,
+    "minLevel": 45,
+    "maxLevel": 55,
+    "mapRect": [
+      [
+        -27648,
+        -36864
+      ],
+      [
+        30720,
+        39936
+      ]
+    ],
+    "continentRect": [
+      [
+        48000,
+        32256
+      ],
+      [
+        50432,
+        35456
+      ]
+    ],
+    "sectorRect": [
+      [
+        48116.3,
+        32152.9
+      ],
+      [
+        50529.5,
+        35535.8
+      ]
+    ],
+    "labelCoord": [
+      49212,
+      33792
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "73:waypoint:419",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "419",
+      "coord": [
+        49516,
+        32338
+      ],
+      "recommendedLevel": null,
+      "name": "Archen Foreland Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKMBAAA=]",
+      "waypointChatLink": "[&BKMBAAA=]",
+      "trailIndex": 5,
+      "wikiText": "The Archen Foreland is an area within Bloodtide Coast. This pastoral coastal valley serves as the gateway to this zone from Lion's Arch and has roadways leading in all four directions."
+    },
+    {
+      "stepId": "73:heart:188",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "188",
+      "coord": [
+        49403,
+        32413
+      ],
+      "recommendedLevel": 45,
+      "name": "Help the Lionguard keep drakes at bay.",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49246,
+          32354
+        ],
+        [
+          49354,
+          32317
+        ],
+        [
+          49479,
+          32339
+        ],
+        [
+          49592,
+          32357
+        ],
+        [
+          49665,
+          32414
+        ],
+        [
+          49730,
+          32468
+        ],
+        [
+          49764,
+          32521
+        ],
+        [
+          49792,
+          32600
+        ],
+        [
+          49703,
+          32629
+        ],
+        [
+          49184,
+          32618
+        ],
+        [
+          49182,
+          32464
+        ],
+        [
+          49246,
+          32354
+        ]
+      ],
+      "trailIndex": 26,
+      "wikiText": "Catch frogs to set drake traps and make bottles of frog pheromone. Throw bottles of frog pheromone at poachers.",
+      "waypointChatLink": "[&BKMBAAA=]"
+    },
+    {
+      "stepId": "73:vista:1581",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "vista",
+      "objectiveId": "1581",
+      "coord": [
+        49920,
+        32378
+      ],
+      "recommendedLevel": null,
+      "name": "Portage Hills",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 146,
+      "wikiText": "View the Portage Bridge with the Portage Falls in the background. The path begins northwest of the waypoint next to the NPC Prospector Wren.",
+      "waypointChatLink": "[&BKYBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:422",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "422",
+      "coord": [
+        50113,
+        32532
+      ],
+      "recommendedLevel": null,
+      "name": "Marshwatch Haven Waypoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKYBAAA=]",
+      "waypointChatLink": "[&BKYBAAA=]",
+      "trailIndex": 182,
+      "wikiText": "The Portage Hills is an area located in the northeast corner of Bloodtide Coast. The Lionguard outpost Marshwatch Haven can be found here. The Lionguards there are currently in a battle against the Bloody Buccaneers, a local pirate crew."
+    },
+    {
+      "stepId": "73:heart:191",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "191",
+      "coord": [
+        50315,
+        33028
+      ],
+      "recommendedLevel": 48,
+      "name": "Help maintain order in Moriarity's Hold.",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50381,
+          33089
+        ],
+        [
+          50374,
+          33216
+        ],
+        [
+          50336,
+          33184
+        ],
+        [
+          50262,
+          33066
+        ],
+        [
+          50322,
+          32972
+        ],
+        [
+          50372,
+          32980
+        ],
+        [
+          50381,
+          33089
+        ]
+      ],
+      "trailIndex": 278,
+      "wikiText": "Break up fights, rouse knocked-out pirates with water, and eliminate the rum causing these problems.",
+      "waypointChatLink": "[&BKcBAAA=]"
+    },
+    {
+      "stepId": "73:poi:43",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "43",
+      "coord": [
+        49906,
+        33090
+      ],
+      "recommendedLevel": null,
+      "name": "Bloody Bill's Base",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 343,
+      "wikiText": "Bloody Bill's Base is a point of interest within the Remanda Saltmarsh. This treetop fortress is the base camp of Bloody Bill's pirate crew, the Bloody Buccaneers.",
+      "waypointChatLink": "[&BKcBAAA=]"
+    },
+    {
+      "stepId": "73:vista:1586",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "vista",
+      "objectiveId": "1586",
+      "coord": [
+        49980,
+        32922
+      ],
+      "recommendedLevel": null,
+      "name": "Bloody Bill's",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 372,
+      "wikiText": "Shows Bloody Bill's base. Path starts to the south of the vista.",
+      "waypointChatLink": "[&BKYBAAA=]"
+    },
+    {
+      "stepId": "73:heart:190",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "190",
+      "coord": [
+        49938,
+        32927
+      ],
+      "recommendedLevel": 47,
+      "name": "Help subvert the Bloody Buccaneers.",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49828,
+          33319
+        ],
+        [
+          49720,
+          33130
+        ],
+        [
+          49726,
+          33022
+        ],
+        [
+          49759,
+          32956
+        ],
+        [
+          49978,
+          32783
+        ],
+        [
+          50114,
+          32811
+        ],
+        [
+          50124,
+          33009
+        ],
+        [
+          50130,
+          33155
+        ],
+        [
+          49978,
+          33259
+        ],
+        [
+          49828,
+          33319
+        ]
+      ],
+      "trailIndex": 380,
+      "wikiText": "Rescue prisoners from pirate cages, steal cannon balls, or destroy pirate supplies and cannons.",
+      "waypointChatLink": "[&BAsEAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:1035",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "1035",
+      "coord": [
+        49550,
+        32792
+      ],
+      "recommendedLevel": null,
+      "name": "Deadend Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAsEAAA=]",
+      "waypointChatLink": "[&BAsEAAA=]",
+      "trailIndex": 410,
+      "wikiText": "The Stormbluff Isle is a small island in the northern section of the Bloodtide Coast."
+    },
+    {
+      "stepId": "73:poi:41",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "41",
+      "coord": [
+        49464,
+        33014
+      ],
+      "recommendedLevel": null,
+      "name": "Deadend Cave",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 442,
+      "wikiText": "The Deadend Cave is a point of interest within the Stormbluff Isle. This secluded underground lake is located in the cavern just southwest of the Deadend Waypoint.",
+      "waypointChatLink": "[&BKUBAAA=]"
+    },
+    {
+      "stepId": "73:hero:0-142",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "hero",
+      "objectiveId": "0-142",
+      "coord": [
+        49517,
+        32846
+      ],
+      "recommendedLevel": null,
+      "name": "Agent Xinn",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 468,
+      "wikiText": "Agent Xinn is a hero challenge NPC in northeast Stormbluff Isle. She is waiting in the cave entrance to the Chantry of Secrets near Deadend Waypoint. Defeat her to earn a hero point.",
+      "waypointChatLink": "[&BAsEAAA=]"
+    },
+    {
+      "stepId": "73:vista:1585",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "vista",
+      "objectiveId": "1585",
+      "coord": [
+        49284,
+        32935
+      ],
+      "recommendedLevel": null,
+      "name": "Stormbluff Isle",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 520,
+      "wikiText": "Overlook the Stormbluff Fort. The path is just a few jumps on the rocks slightly to the northwest of the vista.",
+      "waypointChatLink": "[&BKUBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:421",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "421",
+      "coord": [
+        49245,
+        33072
+      ],
+      "recommendedLevel": null,
+      "name": "Stormbluff Waypoint",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKUBAAA=]",
+      "waypointChatLink": "[&BKUBAAA=]",
+      "trailIndex": 544,
+      "wikiText": "The Stormbluff Isle is a small island in the northern section of the Bloodtide Coast."
+    },
+    {
+      "stepId": "73:poi:40",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "40",
+      "coord": [
+        49037,
+        32936
+      ],
+      "recommendedLevel": null,
+      "name": "Stormbluff Beacon",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 589,
+      "wikiText": "The Stormbluff Beacon is a lighthouse within the Stormbluff Isle. Located on the western side of the island, it represents the southern extent of Lion's Arch.",
+      "waypointChatLink": "[&BKUBAAA=]"
+    },
+    {
+      "stepId": "73:hero:0-53",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "hero",
+      "objectiveId": "0-53",
+      "coord": [
+        49085,
+        32912
+      ],
+      "recommendedLevel": null,
+      "name": "Deputy Crackshot",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 598,
+      "wikiText": "Deputy Crackshot is a member of the Lionguard at Stormbluff Beacon. She gives the hero challenge to hit 3 targets with her cannons.",
+      "waypointChatLink": "[&BKUBAAA=]"
+    },
+    {
+      "stepId": "73:heart:196",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "196",
+      "coord": [
+        48824,
+        32640
+      ],
+      "recommendedLevel": 46,
+      "name": "Teach quaggans how to raise crabs.",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48746,
+          32701
+        ],
+        [
+          48779,
+          32582
+        ],
+        [
+          49118,
+          32531
+        ],
+        [
+          49164,
+          32660
+        ],
+        [
+          48838,
+          32820
+        ],
+        [
+          48746,
+          32701
+        ]
+      ],
+      "trailIndex": 624,
+      "wikiText": "Stomp on crab holes, catch young crabs, and bring them to Bram or Anroov. Help defend the ranch from skale.",
+      "waypointChatLink": "[&BKQBAAA=]"
+    },
+    {
+      "stepId": "73:poi:48",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "48",
+      "coord": [
+        48816,
+        32388
+      ],
+      "recommendedLevel": null,
+      "name": "Broken Beacon",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 668,
+      "wikiText": "The Broken Beacon is a point of interest within the Archen Foreland. This ruined lighthouse contains many relics and ghosts. The Lionguard is currently investigating this site.",
+      "waypointChatLink": "[&BKQBAAA=]"
+    },
+    {
+      "stepId": "73:heart:187",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "187",
+      "coord": [
+        48805,
+        32336
+      ],
+      "recommendedLevel": 45,
+      "name": "Help the Priory put ghost pirates to rest.",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48663,
+          32314
+        ],
+        [
+          48730,
+          32512
+        ],
+        [
+          48841,
+          32521
+        ],
+        [
+          48972,
+          32472
+        ],
+        [
+          49090,
+          32305
+        ],
+        [
+          48663,
+          32314
+        ]
+      ],
+      "trailIndex": 677,
+      "wikiText": "Return cursed treasure to treasure chests. Defend explorers from the wrath of the treasure's ghostly owners.",
+      "waypointChatLink": "[&BKQBAAA=]"
+    },
+    {
+      "stepId": "73:poi:46",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "46",
+      "coord": [
+        48575,
+        32638
+      ],
+      "recommendedLevel": null,
+      "name": "Vonooroovah",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 710,
+      "wikiText": "Vonooroovah is a point of interest within the Sorrowful Sound. This underwater village is home to a small group of quaggan.",
+      "waypointChatLink": "[&BKQBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:420",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "420",
+      "coord": [
+        48753,
+        32780
+      ],
+      "recommendedLevel": null,
+      "name": "Sorrowful Waypoint",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKQBAAA=]",
+      "waypointChatLink": "[&BKQBAAA=]",
+      "trailIndex": 712,
+      "wikiText": "The Sorrowful Sound is an area located within Bloodtide Coast. This wide body of water connects the Sea of Sorrows to the northern half of the zone."
+    },
+    {
+      "stepId": "73:poi:39",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "39",
+      "coord": [
+        48692,
+        32921
+      ],
+      "recommendedLevel": null,
+      "name": "Aquanarium Hydropost",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 713,
+      "wikiText": "The Aquanarium Hydropost is a point of interest within the Sorrowful Sound. This underwater complex is home to a large force of inquest. Here they carry out their experiments on power systems and quaggan prisoners.",
+      "waypointChatLink": "[&BKQBAAA=]"
+    },
+    {
+      "stepId": "73:heart:195",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "195",
+      "coord": [
+        48882,
+        32956
+      ],
+      "recommendedLevel": 47,
+      "name": "Disrupt experiments at Aquanarium Hydropost.",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48642,
+          32715
+        ],
+        [
+          48546,
+          32811
+        ],
+        [
+          48585,
+          32973
+        ],
+        [
+          48626,
+          33080
+        ],
+        [
+          48806,
+          33030
+        ],
+        [
+          48910,
+          32942
+        ],
+        [
+          48642,
+          32715
+        ]
+      ],
+      "trailIndex": 725,
+      "wikiText": "Destroy containment cells, tinker with power supply equipment, and dispatch the Inquest.",
+      "waypointChatLink": "[&BKQBAAA=]"
+    },
+    {
+      "stepId": "73:poi:1196",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "1196",
+      "coord": [
+        48394,
+        33648
+      ],
+      "recommendedLevel": null,
+      "name": "Breekeelee",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 838,
+      "wikiText": "Breekeelee is a point of interest within the Sanguine Bay. It is an underwater cave southwest of the Laughing Gull Island that serves as the quaggan nursery for the villages in the Bloodtide Coast.",
+      "waypointChatLink": "[&BKkBAAA=]"
+    },
+    {
+      "stepId": "73:vista:1587",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "vista",
+      "objectiveId": "1587",
+      "coord": [
+        48778,
+        33523
+      ],
+      "recommendedLevel": null,
+      "name": "Laughing Gull",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 917,
+      "wikiText": "Go up the ramp to the first landing. Jump on the rail and then to rocks. Follow the rocks around to the ship with the vista. No need to enter the ship, just go around right side. Wide view of the pirate outpost.",
+      "waypointChatLink": "[&BKgBAAA=]"
+    },
+    {
+      "stepId": "73:poi:42",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "42",
+      "coord": [
+        48873,
+        33550
+      ],
+      "recommendedLevel": null,
+      "name": "Covington Keep",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 975,
+      "wikiText": "The Covington Keep is a point of interest within the Laughing Gull Island. Sitting on the shore of a sheltered cove lies a group of wrecked ships.",
+      "waypointChatLink": "[&BKgBAAA=]"
+    },
+    {
+      "stepId": "73:hero:0-51",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "hero",
+      "objectiveId": "0-51",
+      "coord": [
+        48881,
+        33504
+      ],
+      "recommendedLevel": null,
+      "name": "Beckoning Force",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 988,
+      "wikiText": "The Beckoning Force is a pool of water imbued with magic. It is located inside, at the bottom of one of the crashed pirate ships.",
+      "waypointChatLink": "[&BKgBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:424",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "424",
+      "coord": [
+        48916,
+        33772
+      ],
+      "recommendedLevel": null,
+      "name": "Laughing Gull Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKgBAAA=]",
+      "waypointChatLink": "[&BKgBAAA=]",
+      "trailIndex": 1059,
+      "wikiText": "Laughing Gull Island is a small island located southwest of Stormbluff Isle in Bloodtide Coast, and the former site of Port Noble. The island is the headquarters of the Covington Pirates and is accordingly swarming with pirates."
+    },
+    {
+      "stepId": "73:heart:192",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "192",
+      "coord": [
+        48893,
+        34072
+      ],
+      "recommendedLevel": 52,
+      "name": "Help Arm the Quaggans",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48569,
+          34200
+        ],
+        [
+          48663,
+          33927
+        ],
+        [
+          48869,
+          33889
+        ],
+        [
+          49013,
+          33909
+        ],
+        [
+          48950,
+          34169
+        ],
+        [
+          48839,
+          34331
+        ],
+        [
+          48668,
+          34365
+        ],
+        [
+          48569,
+          34200
+        ]
+      ],
+      "trailIndex": 1064,
+      "wikiText": "Collect weapons from shipwrecked weapon crates and bring them to quaggan guards. Help the quaggans fight off undead.",
+      "waypointChatLink": "[&BKgBAAA=]"
+    },
+    {
+      "stepId": "73:poi:47",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "47",
+      "coord": [
+        48742,
+        34182
+      ],
+      "recommendedLevel": null,
+      "name": "Morgooroo",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1065,
+      "wikiText": "Morgooroo is a point of interest in the Sanguine Bay. It is a small underwater quaggan village.",
+      "waypointChatLink": "[&BKkBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:425",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "425",
+      "coord": [
+        48358,
+        34155
+      ],
+      "recommendedLevel": null,
+      "name": "Barrier Camp Waypoint",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKkBAAA=]",
+      "waypointChatLink": "[&BKkBAAA=]",
+      "trailIndex": 1071,
+      "wikiText": "The Grand Barrier Isle is an area within Bloodtide Coast. Many sick quaggans have landed on this island where the Durmand Priory are trying to find a cure for their disease."
+    },
+    {
+      "stepId": "73:heart:194",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "194",
+      "coord": [
+        48305,
+        34098
+      ],
+      "recommendedLevel": 53,
+      "name": "Fight the Mysterious Quaggan Affliction",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48462,
+          34034
+        ],
+        [
+          48453,
+          33981
+        ],
+        [
+          48488,
+          33928
+        ],
+        [
+          48422,
+          33900
+        ],
+        [
+          48342,
+          33903
+        ],
+        [
+          48296,
+          33923
+        ],
+        [
+          48284,
+          33985
+        ],
+        [
+          48251,
+          34024
+        ],
+        [
+          48248,
+          34127
+        ],
+        [
+          48242,
+          34392
+        ],
+        [
+          48356,
+          34319
+        ],
+        [
+          48413,
+          34245
+        ],
+        [
+          48413,
+          34168
+        ],
+        [
+          48463,
+          34108
+        ],
+        [
+          48462,
+          34034
+        ]
+      ],
+      "trailIndex": 1082,
+      "wikiText": "Defend Priory healing sick quaggan, burn diseased corpses and cull plague carriers like skale, rats, and crows.",
+      "waypointChatLink": "[&BKkBAAA=]"
+    },
+    {
+      "stepId": "73:poi:38",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "38",
+      "coord": [
+        48254,
+        34762
+      ],
+      "recommendedLevel": null,
+      "name": "Lapatl Grounds",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1165,
+      "wikiText": "The Lapatl Grounds are a point of interest within the Jelako Cliffrise. This small hill is home to the tribe of Lapatl hylek. With the help of members of the Durmand Priory they defend their island home from constant Risen attacks.",
+      "waypointChatLink": "[&BK8BAAA=]"
+    },
+    {
+      "stepId": "73:heart:193",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "193",
+      "coord": [
+        48313,
+        34865
+      ],
+      "recommendedLevel": 54,
+      "name": "Help Shore up Hylek Defenses",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          48141,
+          35156
+        ],
+        [
+          48284,
+          35071
+        ],
+        [
+          48353,
+          34948
+        ],
+        [
+          48399,
+          34905
+        ],
+        [
+          48391,
+          34752
+        ],
+        [
+          48340,
+          34676
+        ],
+        [
+          48209,
+          34733
+        ],
+        [
+          48141,
+          35156
+        ]
+      ],
+      "trailIndex": 1184,
+      "wikiText": "Bring firefly essence to alchemy tables, set spike traps, and stomp Orrian grub holes.",
+      "waypointChatLink": "[&BK8BAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:431",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "431",
+      "coord": [
+        48315,
+        35172
+      ],
+      "recommendedLevel": null,
+      "name": "Jelako Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK8BAAA=]",
+      "waypointChatLink": "[&BK8BAAA=]",
+      "trailIndex": 1231,
+      "wikiText": "Jelako Cliffrise is an area located in the southwest corner of Bloodtide Coast. The hylek tribe there is helped by members of the Durmand Priory against the Risen threatening the village."
+    },
+    {
+      "stepId": "73:hero:0-143",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "hero",
+      "objectiveId": "0-143",
+      "coord": [
+        48509,
+        35013
+      ],
+      "recommendedLevel": null,
+      "name": "Two-Eye Ignatl",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1271,
+      "wikiText": "Two-Eye Ignatl is a hylek pirate in Mournful Depths that challenges passersby to a duel, awarding a hero point. See Defeat Two-Eye Ignatl the Pirate for the hero challenge event.",
+      "waypointChatLink": "[&BK8BAAA=]"
+    },
+    {
+      "stepId": "73:vista:1583",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "vista",
+      "objectiveId": "1583",
+      "coord": [
+        48651,
+        35404
+      ],
+      "recommendedLevel": null,
+      "name": "Mournful Depths",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1331,
+      "wikiText": "The Mournful Depths is an area in the the southernmost parts of Bloodtide Coast. This expansive body of water is teeming with Risen of all sorts.",
+      "waypointChatLink": "[&BK8BAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:430",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "430",
+      "coord": [
+        48999,
+        34955
+      ],
+      "recommendedLevel": null,
+      "name": "Castavall Waypoint",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK4BAAA=]",
+      "waypointChatLink": "[&BK4BAAA=]",
+      "trailIndex": 1355,
+      "wikiText": "The Flooded Castavall is an underwater cavern in southern Bloodtide Coast. It is a former underground krait deeps that was overrun by Risen. The entrance is directly above its waypoint."
+    },
+    {
+      "stepId": "73:hero:0-144",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "hero",
+      "objectiveId": "0-144",
+      "coord": [
+        49045,
+        34982
+      ],
+      "recommendedLevel": null,
+      "name": "Krait Place of Power",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1360,
+      "wikiText": "A Krait Place of Power can be found deep within the Flooded Castavall.",
+      "waypointChatLink": "[&BK4BAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:429",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "429",
+      "coord": [
+        48993,
+        34736
+      ],
+      "recommendedLevel": null,
+      "name": "Mournful Waypoint",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BK0BAAA=]",
+      "waypointChatLink": "[&BK0BAAA=]",
+      "trailIndex": 1373,
+      "wikiText": "The Mournful Depths is an area in the the southernmost parts of Bloodtide Coast. This expansive body of water is teeming with Risen of all sorts."
+    },
+    {
+      "stepId": "73:poi:36",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "36",
+      "coord": [
+        49202,
+        34450
+      ],
+      "recommendedLevel": null,
+      "name": "Glorious Drill Collective #4",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1430,
+      "wikiText": "The Glorious Drill Collective #4 is a point of interest within the Mole's Head. This large cavern was once the home to a large dredge mining operation but it now is completely overrun by Risen.",
+      "waypointChatLink": "[&BK0BAAA=]"
+    },
+    {
+      "stepId": "73:vista:1584",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "vista",
+      "objectiveId": "1584",
+      "coord": [
+        49312,
+        34321
+      ],
+      "recommendedLevel": null,
+      "name": "Mole's Head",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1494,
+      "wikiText": "View of Mole's Head cave. Before entering the cave, turn right. You will have to climb a pile of debris until you get to the height of the Vista. The vista is in a platform. You can jump up to the platform on the northeast corner.",
+      "waypointChatLink": "[&BKoBAAA=]"
+    },
+    {
+      "stepId": "73:heart:197",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "197",
+      "coord": [
+        49451,
+        34265
+      ],
+      "recommendedLevel": 51,
+      "name": "Help the Vigil clear out the abandoned caves of Mole's Head",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49245,
+          33944
+        ],
+        [
+          49473,
+          34211
+        ],
+        [
+          49489,
+          34316
+        ],
+        [
+          49483,
+          34359
+        ],
+        [
+          49453,
+          34531
+        ],
+        [
+          49161,
+          34696
+        ],
+        [
+          48987,
+          34705
+        ],
+        [
+          48894,
+          34648
+        ],
+        [
+          48882,
+          34418
+        ],
+        [
+          49042,
+          34094
+        ],
+        [
+          49245,
+          33944
+        ]
+      ],
+      "trailIndex": 1526,
+      "wikiText": "Locate dredge equipment, kill Risen, and disable unstable dredge turrets and mines.",
+      "waypointChatLink": "[&BKoBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:426",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "426",
+      "coord": [
+        49401,
+        34072
+      ],
+      "recommendedLevel": null,
+      "name": "Firthside Vigil Waypoint",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKoBAAA=]",
+      "waypointChatLink": "[&BKoBAAA=]",
+      "trailIndex": 1555,
+      "wikiText": "The Firth of Revanion is an area within the Bloodtide Coast. This river heading into the Mentecki Pass is home to a large brood of river drakes."
+    },
+    {
+      "stepId": "73:heart:198",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "198",
+      "coord": [
+        49623,
+        34176
+      ],
+      "recommendedLevel": 50,
+      "name": "Assist Crusader Aisling of the Vigil recover lost skritt territory",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49486,
+          34132
+        ],
+        [
+          49505,
+          34314
+        ],
+        [
+          49549,
+          34360
+        ],
+        [
+          49479,
+          34524
+        ],
+        [
+          49531,
+          34545
+        ],
+        [
+          49603,
+          34502
+        ],
+        [
+          49656,
+          34535
+        ],
+        [
+          49744,
+          34568
+        ],
+        [
+          49795,
+          34520
+        ],
+        [
+          49945,
+          34325
+        ],
+        [
+          50045,
+          34139
+        ],
+        [
+          49970,
+          34095
+        ],
+        [
+          49871,
+          34040
+        ],
+        [
+          49756,
+          34038
+        ],
+        [
+          49715,
+          34073
+        ],
+        [
+          49689,
+          34133
+        ],
+        [
+          49613,
+          34130
+        ],
+        [
+          49486,
+          34132
+        ]
+      ],
+      "trailIndex": 1598,
+      "wikiText": "Kill Risen, chop down corrupted trees, and protect the Vigil troops.",
+      "waypointChatLink": "[&BKoBAAA=]"
+    },
+    {
+      "stepId": "73:poi:49",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "49",
+      "coord": [
+        49882,
+        34327
+      ],
+      "recommendedLevel": null,
+      "name": "Challdar's Nest",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1673,
+      "wikiText": "Challdar's Nest is a point of interest within the Challdar Gorges. This tree lined canyon winds ever upwards in what was a skritt scratch before the Risen invasion of this location.",
+      "waypointChatLink": "[&BKsBAAA=]"
+    },
+    {
+      "stepId": "73:poi:1621",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "1621",
+      "coord": [
+        50306,
+        34236
+      ],
+      "recommendedLevel": null,
+      "name": "Lostwreck Passage",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1754,
+      "wikiText": "The Lostwreck Passage is a point of interest in the Mentecki Pass. This underground cavern is home to many foes. In the center of the small, waterfall-fed lake lies the wreckage of a pirate ship.",
+      "waypointChatLink": "[&BKsBAAA=]"
+    },
+    {
+      "stepId": "73:hero:0-52",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "hero",
+      "objectiveId": "0-52",
+      "coord": [
+        50262,
+        34194
+      ],
+      "recommendedLevel": null,
+      "name": "Mentecki Pass",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1760,
+      "wikiText": "Mentecki Pass is an area within Bloodtide Coast. The above ground and underground passage areas hold a group of jungle trolls and a brood of river drakes respectively.",
+      "waypointChatLink": "[&BKsBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:427",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "427",
+      "coord": [
+        50197,
+        34085
+      ],
+      "recommendedLevel": null,
+      "name": "Lostwreck Waypoint",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKsBAAA=]",
+      "waypointChatLink": "[&BKsBAAA=]",
+      "trailIndex": 1764,
+      "wikiText": "Mentecki Pass is an area within Bloodtide Coast. The above ground and underground passage areas hold a group of jungle trolls and a brood of river drakes respectively."
+    },
+    {
+      "stepId": "73:poi:45",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "45",
+      "coord": [
+        49936,
+        33727
+      ],
+      "recommendedLevel": null,
+      "name": "Mudflat Camp",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1826,
+      "wikiText": "Mudflat Camp is a point of interest within the Risewild Hills. Under the shade of palm trees, a small detachment of Durmand Priory troops have established a campsite.",
+      "waypointChatLink": "[&BKcBAAA=]"
+    },
+    {
+      "stepId": "73:poi:1197",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "1197",
+      "coord": [
+        49667,
+        33739
+      ],
+      "recommendedLevel": null,
+      "name": "Lorantl Grounds",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1895,
+      "wikiText": "The Lorantl Grounds are a point of interest within the Risewild Hills. This cavern is the home of the Lorantl hylek. They had to flee their former grounds because of the Risen uprising and leave a few of their brethren behind.",
+      "waypointChatLink": "[&BKoBAAA=]"
+    },
+    {
+      "stepId": "73:poi:44",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "44",
+      "coord": [
+        49390,
+        33581
+      ],
+      "recommendedLevel": null,
+      "name": "Sullivan's Wake",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1918,
+      "wikiText": "Sullivan's Wake is a cave within the Merchantman's Strait where the Crafty Corsairs have established a base, running missions to capture local authorities for interrogation.",
+      "waypointChatLink": "[&BKoBAAA=]"
+    },
+    {
+      "stepId": "73:heart:189",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "189",
+      "coord": [
+        49302,
+        33460
+      ],
+      "recommendedLevel": 49,
+      "name": "Help spy on the Crafty Corsairs.",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          49536,
+          33648
+        ],
+        [
+          49548,
+          33499
+        ],
+        [
+          49520,
+          33392
+        ],
+        [
+          49454,
+          33372
+        ],
+        [
+          49306,
+          33404
+        ],
+        [
+          49207,
+          33538
+        ],
+        [
+          49193,
+          33662
+        ],
+        [
+          49260,
+          33853
+        ],
+        [
+          49422,
+          33824
+        ],
+        [
+          49536,
+          33648
+        ]
+      ],
+      "trailIndex": 1938,
+      "wikiText": "Steal pirate clothing and bring it to Agent Carter, gather intel from hidden agents, and activate bug boxes.",
+      "waypointChatLink": "[&BKUBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:423",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "423",
+      "coord": [
+        49986,
+        33405
+      ],
+      "recommendedLevel": null,
+      "name": "Remanda Waypoint",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKcBAAA=]",
+      "waypointChatLink": "[&BKcBAAA=]",
+      "trailIndex": 1979,
+      "wikiText": "Remanda Saltmarsh is an area within Bloodtide Coast. The headquarters of the Bloody Buccaneers can be found there."
+    },
+    {
+      "stepId": "73:poi:37",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "37",
+      "coord": [
+        50051,
+        34681
+      ],
+      "recommendedLevel": null,
+      "name": "Gleaner's Archway",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2195,
+      "wikiText": "The Gleaner's Archway is a point of interest within the Wraithwalker Woods. Inside a tree hidden opening is a small dark grove. Forest animals hide here from the Risen in the area.",
+      "waypointChatLink": "[&BKwBAAA=]"
+    },
+    {
+      "stepId": "73:waypoint:432",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "432",
+      "coord": [
+        50033,
+        35244
+      ],
+      "recommendedLevel": null,
+      "name": "Whisperwill Waypoint",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BLABAAA=]",
+      "waypointChatLink": "[&BLABAAA=]",
+      "trailIndex": 2265,
+      "wikiText": "Whisperwill Bogs is an area located in the south east corner of Bloodtide Coast. A Durmand Priory camp is established just before the swamps."
+    },
+    {
+      "stepId": "73:waypoint:428",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "waypoint",
+      "objectiveId": "428",
+      "coord": [
+        50184,
+        34696
+      ],
+      "recommendedLevel": null,
+      "name": "Bogside Camp Waypoint",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKwBAAA=]",
+      "waypointChatLink": "[&BKwBAAA=]",
+      "trailIndex": 2345,
+      "wikiText": "Whisperwill Bogs is an area located in the south east corner of Bloodtide Coast. A Durmand Priory camp is established just before the swamps."
+    },
+    {
+      "stepId": "73:vista:1582",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "vista",
+      "objectiveId": "1582",
+      "coord": [
+        50271,
+        35017
+      ],
+      "recommendedLevel": null,
+      "name": "Whisperwill Bogs",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2427,
+      "wikiText": "View of the Whisperwill Bogs. North of the vista there is a root with some mushrooms growing on it. It is possible to use the mushrooms and the root to climb to a rock ledge that you can follow to get to the vista.",
+      "waypointChatLink": "[&BLABAAA=]"
+    },
+    {
+      "stepId": "73:heart:199",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "heart",
+      "objectiveId": "199",
+      "coord": [
+        50172,
+        35219
+      ],
+      "recommendedLevel": 55,
+      "name": "Help Cesseilia defend and research the oasis.",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          50265,
+          35034
+        ],
+        [
+          50192,
+          35016
+        ],
+        [
+          50155,
+          35067
+        ],
+        [
+          50138,
+          35170
+        ],
+        [
+          50097,
+          35357
+        ],
+        [
+          50282,
+          35383
+        ],
+        [
+          50325,
+          35296
+        ],
+        [
+          50283,
+          35096
+        ],
+        [
+          50265,
+          35034
+        ]
+      ],
+      "trailIndex": 2467,
+      "wikiText": "Combine components of oasis plants and animals and take them to Cesseilia for brewing. Test completed potions on Risen spider hatchlings. Defend the oasis from undead.",
+      "waypointChatLink": "[&BLABAAA=]"
+    },
+    {
+      "stepId": "73:poi:50",
+      "mapId": 73,
+      "zoneName": "Bloodtide Coast",
+      "type": "poi",
+      "objectiveId": "50",
+      "coord": [
+        50210,
+        35248
+      ],
+      "recommendedLevel": null,
+      "name": "Rhiann's Respite",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2472,
+      "wikiText": "Rhiann's Respite is a point of interest in the Whisperwill Bogs. This oasis serves as a research hub to find a cure against the Risen.",
+      "waypointChatLink": "[&BLABAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

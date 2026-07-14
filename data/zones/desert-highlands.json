@@ -1,0 +1,1421 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1211,
+    "name": "Desert Highlands",
+    "continentId": 1,
+    "regionId": 12,
+    "regionName": "Crystal Desert",
+    "floor": 49,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -61440,
+        -30720
+      ],
+      [
+        61440,
+        30720
+      ]
+    ],
+    "continentRect": [
+      [
+        57256,
+        39744
+      ],
+      [
+        62376,
+        42304
+      ]
+    ],
+    "sectorRect": [
+      [
+        57332.4,
+        39810.6
+      ],
+      [
+        62351.9,
+        42564.8
+      ]
+    ],
+    "labelCoord": [
+      59968,
+      41240
+    ],
+    "release": "pof"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1211:waypoint:2667",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "waypoint",
+      "objectiveId": "2667",
+      "coord": [
+        60676,
+        42149
+      ],
+      "recommendedLevel": null,
+      "name": "Makali Outpost Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGsKAAA=]",
+      "waypointChatLink": "[&BGsKAAA=]",
+      "trailIndex": 4,
+      "wikiText": "The Diviner's Reach is an area within the Desert Highlands. An outpost has been established there by the Free City of Amnoon Cavaliers to guard the path linking the highlands to the Crystal Oasis."
+    },
+    {
+      "stepId": "1211:poi:2647",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2647",
+      "coord": [
+        60786,
+        42044
+      ],
+      "recommendedLevel": null,
+      "name": "Makali Outpost",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 13,
+      "wikiText": "Makali Outpost is a point of interest located in Diviner's Reach. It is a Cavalier outpost on the frontier, keeping travelers safe from various dangers that lurk in the Crystal Desert.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:heart:398",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "heart",
+      "objectiveId": "398",
+      "coord": [
+        60703,
+        42042
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the Makali community.",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60170,
+          42223
+        ],
+        [
+          60302,
+          41763
+        ],
+        [
+          60411,
+          41365
+        ],
+        [
+          60779,
+          41275
+        ],
+        [
+          61128,
+          41289
+        ],
+        [
+          61143,
+          42274
+        ],
+        [
+          60170,
+          42223
+        ]
+      ],
+      "trailIndex": 16,
+      "wikiText": "Revive victims of heat exhaustion, stomp dormant choya, destroy tar traps, help hunt game, and distribute meat to butchers.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2556",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2556",
+      "coord": [
+        60163,
+        42042
+      ],
+      "recommendedLevel": null,
+      "name": "Salt Flats",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 73,
+      "wikiText": "Can be reached with the springer or by jumping with the raptor, from the cliff south of the vista.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2703",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2703",
+      "coord": [
+        59963,
+        41840
+      ],
+      "recommendedLevel": null,
+      "name": "Kanuz Cache",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 93,
+      "wikiText": "The Kanuz Cache is a point of interest located in the southwest of the Salt Flats in the Desert Highlands.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2765",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2765",
+      "coord": [
+        59518,
+        41457
+      ],
+      "recommendedLevel": null,
+      "name": "Nimbose Butte",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 174,
+      "wikiText": "The Nimbose Butte is a point of interest located within the Brightwater Inlet in the Desert Highlands.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:hero:2-7",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "hero",
+      "objectiveId": "2-7",
+      "coord": [
+        59956,
+        41461
+      ],
+      "recommendedLevel": null,
+      "name": "Dusty Bones",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 210,
+      "wikiText": "A pile of Dusty Bones lies in the Salt Flats in the Desert Highlands, that upon activation, spawn a Veteran Dust Tornado.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2800",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2800",
+      "coord": [
+        60098,
+        41629
+      ],
+      "recommendedLevel": null,
+      "name": "Godfall Tower",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 225,
+      "wikiText": "The Godfall Tower is an artificially made mesa located within the Salt Flats in the Desert Highlands.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2569",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2569",
+      "coord": [
+        60154,
+        41584
+      ],
+      "recommendedLevel": null,
+      "name": "Godfall Tower",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 229,
+      "wikiText": "This vista is right behind the Godfall Tower point of interest.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2594",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2594",
+      "coord": [
+        60268,
+        41276
+      ],
+      "recommendedLevel": null,
+      "name": "Awakened Garrison",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 260,
+      "wikiText": "The Awakened Garrison is a point of interest within the Salt Flats in the Desert Highlands. It is the only Awakened camp in the highlands.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2734",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2734",
+      "coord": [
+        60540,
+        41575
+      ],
+      "recommendedLevel": null,
+      "name": "Giant's Tea Table",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 295,
+      "wikiText": "The Giant's Tea Table is a point of interest located on the eastern side of the Salt Flats in the Desert Highlands. It is only reachable with a springer.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:hero:2-8",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "hero",
+      "objectiveId": "2-8",
+      "coord": [
+        61646,
+        41908
+      ],
+      "recommendedLevel": null,
+      "name": "Glint's Lair",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 410,
+      "wikiText": "Glint's Lair can refer to Glint's Lair (point of interest) - the point of interest at the bottom of Prophet's Fall. Glint's Lair (hero challenge) - the communing skill challenge on the upper slopes of Prophet's Fall.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2680",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2680",
+      "coord": [
+        61843,
+        41743
+      ],
+      "recommendedLevel": null,
+      "name": "Glint's Lair",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 428,
+      "wikiText": "Glint's Lair can refer to Glint's Lair (point of interest) - the point of interest at the bottom of Prophet's Fall. Glint's Lair (hero challenge) - the communing skill challenge on the upper slopes of Prophet's Fall.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2691",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2691",
+      "coord": [
+        61710,
+        41485
+      ],
+      "recommendedLevel": null,
+      "name": "Prophet's Fall",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 508,
+      "wikiText": "Near a branded crystal, requires the springer to pass the gate at the south or access it from the north.",
+      "waypointChatLink": "[&BGsKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2706",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2706",
+      "coord": [
+        61592,
+        41123
+      ],
+      "recommendedLevel": null,
+      "name": "Craggip Kraal",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 547,
+      "wikiText": "Craggip Kraal is a point of interest within The Sunderlands in the Desert Highlands. It was one of the two ogre kraals established in the highlands.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:hero:2-5",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "hero",
+      "objectiveId": "2-5",
+      "coord": [
+        61686,
+        40953
+      ],
+      "recommendedLevel": null,
+      "name": "Branded Crystal",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 584,
+      "wikiText": "A large Branded Crystal can be found resting atop an ogre tower. It can be reached by going through The Sunderlands, or, alternatively, by heading south from the Tomb of the Primeval Kings with a Springer.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:hero:2-10",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "hero",
+      "objectiveId": "2-10",
+      "coord": [
+        62002,
+        40640
+      ],
+      "recommendedLevel": null,
+      "name": "Eternal Fire",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 681,
+      "wikiText": "An Eternal Fire can be found near the eastern portion of the entrance to the Tomb of the Primeval Kings. It can be reached by scaling the eastern walls, through The Sunderlands.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2698",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2698",
+      "coord": [
+        62178,
+        40091
+      ],
+      "recommendedLevel": null,
+      "name": "The Portal",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 745,
+      "wikiText": "The Portal is a portal to The Mists created by Lord Odran over 450 years ago.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2650",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2650",
+      "coord": [
+        61326,
+        40698
+      ],
+      "recommendedLevel": null,
+      "name": "The Watchtower",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 868,
+      "wikiText": "The Watchtower is a point of interest within The Sunderlands in the Desert Highlands. This tall ogre structure was corrupted and twisted by the Elder Dragon Kralkatorrik's magic when it flew over it while on its way towards Vabbi.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2693",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2693",
+      "coord": [
+        61385,
+        40633
+      ],
+      "recommendedLevel": null,
+      "name": "Tomb of the Primeval Kings",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 879,
+      "wikiText": "Under branded stones at the southwest.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2661",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2661",
+      "coord": [
+        60856,
+        39883
+      ],
+      "recommendedLevel": null,
+      "name": "Lifeblood Falls",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 977,
+      "wikiText": "The Lifeblood Falls are a point of interest within the Lifeblood Ravine. This tall waterfall links the section of the river located north to the rest of it in the highlands.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:hero:2-9",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "hero",
+      "objectiveId": "2-9",
+      "coord": [
+        60879,
+        39907
+      ],
+      "recommendedLevel": null,
+      "name": "Glowing Campfire",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 978,
+      "wikiText": "Glowing Campfire is a communing hero challenge in the Lifeblood Ravine, near the Lifeblood Falls.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2585",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2585",
+      "coord": [
+        60797,
+        40008
+      ],
+      "recommendedLevel": null,
+      "name": "Closed Passage",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 994,
+      "wikiText": "Closed Passage is a point of interest within the Lifeblood Ravine. This passageway originally connected Ebonhawke and the Crystal Desert until a large boulder fell into it, blocking access to anyone wanting to travel the road behind it.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2699",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2699",
+      "coord": [
+        60806,
+        39999
+      ],
+      "recommendedLevel": null,
+      "name": "Lifeblood Ravine",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 994,
+      "wikiText": "Easy to access, stick the wall and follow the paths.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2615",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2615",
+      "coord": [
+        60622,
+        40846
+      ],
+      "recommendedLevel": null,
+      "name": "Lifeblood Waterhole",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1077,
+      "wikiText": "The Lifeblood Waterhole is a point of interest located within the Lifeblood Ravine in the Desert Highlands. The rivers both from the Lifeblood Falls and the Radiant Falls flow into it.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:heart:416",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "heart",
+      "objectiveId": "416",
+      "coord": [
+        60634,
+        40643
+      ],
+      "recommendedLevel": 80,
+      "name": "Pitch in around Lommuld Kraal.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60429,
+          41047
+        ],
+        [
+          60930,
+          40861
+        ],
+        [
+          61074,
+          40600
+        ],
+        [
+          61039,
+          40242
+        ],
+        [
+          60709,
+          40044
+        ],
+        [
+          60022,
+          40152
+        ],
+        [
+          59870,
+          40702
+        ],
+        [
+          60429,
+          41047
+        ]
+      ],
+      "trailIndex": 1142,
+      "wikiText": "Help the ogres train pets, reset hyena traps, and push back encroaching Branded.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:waypoint:2666",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "waypoint",
+      "objectiveId": "2666",
+      "coord": [
+        60598,
+        40453
+      ],
+      "recommendedLevel": null,
+      "name": "Lommuld Kraal Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGoKAAA=]",
+      "waypointChatLink": "[&BGoKAAA=]",
+      "trailIndex": 1163,
+      "wikiText": "The Auburn Hills are an area in the northern Desert Highlands. A large ogre kraal resisting the Branded can be found here."
+    },
+    {
+      "stepId": "1211:poi:2623",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2623",
+      "coord": [
+        60559,
+        40332
+      ],
+      "recommendedLevel": null,
+      "name": "Lommuld Kraal",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1169,
+      "wikiText": "Lommuld Kraal is an ogre village located in the Auburn Hills in Desert Highlands.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:hero:2-11",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "hero",
+      "objectiveId": "2-11",
+      "coord": [
+        60449,
+        40666
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Yandra Stonetusk",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1200,
+      "wikiText": "Veteran Yandra Stonetusk is looking for a sparring partner, providing a hero challenge in the Lommuld Kraal within the Auburn Hills.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2557",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2557",
+      "coord": [
+        60360,
+        40973
+      ],
+      "recommendedLevel": null,
+      "name": "Sabkha Watchpost",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1230,
+      "wikiText": "Sabkha Watchpost is a point of interest within the Auburn Hills in the Desert Highlands. It is a Cavalier garrison overlooking the Salt Flats, as well as some nomad tents nearby.",
+      "waypointChatLink": "[&BGoKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2741",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2741",
+      "coord": [
+        59930,
+        40442
+      ],
+      "recommendedLevel": null,
+      "name": "Highjump Gap",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1297,
+      "wikiText": "Highjump Gap is a point of interest in Auburn Hills. This gap in the rocky wall can be traversed with a raptor to gain access to Stampede Uplands.",
+      "waypointChatLink": "[&BJ0KAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2595",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2595",
+      "coord": [
+        59709,
+        40428
+      ],
+      "recommendedLevel": null,
+      "name": "Highjump Ranch",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1316,
+      "wikiText": "The Highjump Ranch is a springer ranch in the Stampede Uplands, run by Stablemaster Unja. It's suggested by Dian that Highjump Ranch was founded by people who migrated from Ebonhawke long ago.",
+      "waypointChatLink": "[&BJ0KAAA=]"
+    },
+    {
+      "stepId": "1211:heart:390",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "heart",
+      "objectiveId": "390",
+      "coord": [
+        59701,
+        40412
+      ],
+      "recommendedLevel": 80,
+      "name": "Help out around Highjump Ranch.",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59287,
+          40644
+        ],
+        [
+          59259,
+          40346
+        ],
+        [
+          59259,
+          40226
+        ],
+        [
+          59365,
+          40114
+        ],
+        [
+          59474,
+          39984
+        ],
+        [
+          60026,
+          40003
+        ],
+        [
+          60015,
+          40150
+        ],
+        [
+          59846,
+          40762
+        ],
+        [
+          59477,
+          40775
+        ],
+        [
+          59287,
+          40644
+        ]
+      ],
+      "trailIndex": 1317,
+      "wikiText": "Borrow a springer by speaking to it, return stolen carrots, chase off groundhogs, kill harpies and destroy their eggs, and refill water troughs.",
+      "waypointChatLink": "[&BJ0KAAA=]"
+    },
+    {
+      "stepId": "1211:waypoint:2717",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "waypoint",
+      "objectiveId": "2717",
+      "coord": [
+        59605,
+        40333
+      ],
+      "recommendedLevel": null,
+      "name": "Highjump Ranch Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJ0KAAA=]",
+      "waypointChatLink": "[&BJ0KAAA=]",
+      "trailIndex": 1329,
+      "wikiText": "The Stampede Uplands is an area in the north of the Desert Highlands. Stablemaster Unja runs her springer ranch here."
+    },
+    {
+      "stepId": "1211:poi:2673",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2673",
+      "coord": [
+        59885,
+        40121
+      ],
+      "recommendedLevel": null,
+      "name": "Radiant Falls",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1370,
+      "wikiText": "The Radiant Falls is a point of interest within the Stampede Uplands in the Desert Highlands. The water from these falls flows all the way down into the Lifeblood Waterhole.",
+      "waypointChatLink": "[&BJ0KAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2597",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2597",
+      "coord": [
+        59486,
+        40092
+      ],
+      "recommendedLevel": null,
+      "name": "Wayment Seep",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1397,
+      "wikiText": "The Wayment Seep is a cave system found near the Highjump Ranch in the Stampede Uplands. This small tunnel is infested with oozes.",
+      "waypointChatLink": "[&BJ0KAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2601",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2601",
+      "coord": [
+        59409,
+        40340
+      ],
+      "recommendedLevel": null,
+      "name": "Stampede Uplands",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1421,
+      "wikiText": "Top of an hill, west of the springer ranch.",
+      "waypointChatLink": "[&BJ0KAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2622",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2622",
+      "coord": [
+        58886,
+        40881
+      ],
+      "recommendedLevel": null,
+      "name": "Giant's Steps",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1489,
+      "wikiText": "The Giant's Steps is a point of interest within the Windshear Scarps area in the Desert Highlands. This ancient ruin is mostly shrouded in mist, with various Giants roaming the area.",
+      "waypointChatLink": "[&BJ0KAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2613",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2613",
+      "coord": [
+        58550,
+        40339
+      ],
+      "recommendedLevel": null,
+      "name": "Windchill Pass",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1565,
+      "wikiText": "The Windchill Pass is a point of interest located within the Winter's Teeth area in the Desert Highlands.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2573",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2573",
+      "coord": [
+        58339,
+        39977
+      ],
+      "recommendedLevel": null,
+      "name": "Standstill Lake",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1604,
+      "wikiText": "The Standstill Lake is a point of interest in the Winter's Teeth. Large numbers of ice elementals and pinipals are found on this frozen lake.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2777",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2777",
+      "coord": [
+        57740,
+        40364
+      ],
+      "recommendedLevel": null,
+      "name": "Derelict Delve",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1686,
+      "wikiText": "Derelict Delve is the excavation site of a massive ancient dwarven structure found in Fortune's Vale, being conducted by the Durmand Priory.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:waypoint:2724",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "waypoint",
+      "objectiveId": "2724",
+      "coord": [
+        57692,
+        40332
+      ],
+      "recommendedLevel": null,
+      "name": "Derelict Delve Waypoint",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKQKAAA=]",
+      "waypointChatLink": "[&BKQKAAA=]",
+      "trailIndex": 1690,
+      "wikiText": "Fortune's Vale is an area in the northwest of the Desert Highlands. A massive dwarven structure towers over the valley. A Priory excavation team was dispatched there to explore and recover anything of historic worth within."
+    },
+    {
+      "stepId": "1211:poi:2603",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2603",
+      "coord": [
+        58262,
+        41035
+      ],
+      "recommendedLevel": null,
+      "name": "Altar of Dakhma",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1814,
+      "wikiText": "The Altar of Dakhma is a group of snow-covered sandstone structures of unknown origin. The structure has been abandoned and is now home to a flock of owl griffons.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2657",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2657",
+      "coord": [
+        58269,
+        41501
+      ],
+      "recommendedLevel": null,
+      "name": "Winter's Teeth",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1864,
+      "wikiText": "Extreme south of the area, as the summit of a small mountain.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2782",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2782",
+      "coord": [
+        57952,
+        41571
+      ],
+      "recommendedLevel": null,
+      "name": "Enchanted Bluffs",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1881,
+      "wikiText": "On the south fortification wall, can be simply accessed by following the path near the eastern hills.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2762",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2762",
+      "coord": [
+        58150,
+        41397
+      ],
+      "recommendedLevel": null,
+      "name": "Jinx Hollow",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1947,
+      "wikiText": "The Jinx Hollow is a point of interest located near the Enchanted Bluffs in the Desert Highlands. This small tunnel is home to a large group of ice imps.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2565",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2565",
+      "coord": [
+        57734,
+        40796
+      ],
+      "recommendedLevel": null,
+      "name": "Fortune's Vale",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2015,
+      "wikiText": "At the top of a small snowy hill.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2799",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2799",
+      "coord": [
+        57804,
+        40768
+      ],
+      "recommendedLevel": null,
+      "name": "Overreach Chasm",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2023,
+      "wikiText": "Overreach Chasm is a point of interest within the Fortune's Vale in the Desert Highlands.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:hero:2-6",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "hero",
+      "objectiveId": "2-6",
+      "coord": [
+        57847,
+        40588
+      ],
+      "recommendedLevel": null,
+      "name": "Veteran Jubua the Wildfire",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2039,
+      "wikiText": "Veteran Jubua the Wildfire is a Djinn found in Fortune's Vale.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2730",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2730",
+      "coord": [
+        57826,
+        41327
+      ],
+      "recommendedLevel": null,
+      "name": "Palace of Aban",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2131,
+      "wikiText": "The Palace of Aban is an ancient Elonian palace that once belonged to an unnamed prince and is guarded by a powerful water djinn who had once lived with this prince.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2674",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2674",
+      "coord": [
+        57807,
+        41601
+      ],
+      "recommendedLevel": null,
+      "name": "Transcendent Falls",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2154,
+      "wikiText": "The Transcendent Falls is a Point of Interest in the Enchanted Bluffs. This tall waterfall was created as a result of the melting snow. It flows down into the bay below, where it then empties into the Elon River.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2773",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2773",
+      "coord": [
+        57753,
+        41881
+      ],
+      "recommendedLevel": null,
+      "name": "Discarded Vessels",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2165,
+      "wikiText": "The Discarded Vessels is a Point of Interest located in the Transcendent Bay. They are large vase-like structures that originally decorated the Palace of Aban. They eventually fell down the Transcendent Falls and into the bay.",
+      "waypointChatLink": "[&BKQKAAA=]"
+    },
+    {
+      "stepId": "1211:waypoint:2705",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "waypoint",
+      "objectiveId": "2705",
+      "coord": [
+        59352,
+        41883
+      ],
+      "recommendedLevel": null,
+      "name": "Brightwater Waypoint",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJEKAAA=]",
+      "waypointChatLink": "[&BJEKAAA=]",
+      "trailIndex": 2292,
+      "wikiText": "The Brightwater Inlet is an area in the southern Desert Highlands. The water from the Radiant Falls up north flows into the Elon River here."
+    },
+    {
+      "stepId": "1211:vista:2729",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2729",
+      "coord": [
+        58955,
+        41925
+      ],
+      "recommendedLevel": null,
+      "name": "Prickpatch Hollow",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2378,
+      "wikiText": "On a rocky spire, south-west of the choya camp.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:vista:2771",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "vista",
+      "objectiveId": "2771",
+      "coord": [
+        58798,
+        41766
+      ],
+      "recommendedLevel": null,
+      "name": "Brightwater Inlet",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2417,
+      "wikiText": "Near the tree, not far from a small wooden platform.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2625",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2625",
+      "coord": [
+        58624,
+        41459
+      ],
+      "recommendedLevel": null,
+      "name": "Vantage Scree",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2458,
+      "wikiText": "The Vantage Scree is a point of interest located within the Brightwater Inlet in the Desert Highlands. A large colony of harpies have made their nests on this tall cliffside.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:heart:407",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "heart",
+      "objectiveId": "407",
+      "coord": [
+        59067,
+        41442
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the Pricklepatch Hollow choya, or don't.",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          58382,
+          41761
+        ],
+        [
+          58892,
+          41772
+        ],
+        [
+          59164,
+          41609
+        ],
+        [
+          59347,
+          41210
+        ],
+        [
+          59102,
+          41162
+        ],
+        [
+          58934,
+          41220
+        ],
+        [
+          58588,
+          41411
+        ],
+        [
+          58426,
+          41590
+        ],
+        [
+          58382,
+          41761
+        ]
+      ],
+      "trailIndex": 2499,
+      "wikiText": "These choya seem to be indicating they need help, but it's not clear what exactly they need or want from you.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    },
+    {
+      "stepId": "1211:poi:2627",
+      "mapId": 1211,
+      "zoneName": "Desert Highlands",
+      "type": "poi",
+      "objectiveId": "2627",
+      "coord": [
+        59072,
+        41471
+      ],
+      "recommendedLevel": null,
+      "name": "Pricklepatch Hollow",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "The Pricklepatch Hollow is a choya village located atop of Brightwater Inlet mesa.",
+      "waypointChatLink": "[&BJEKAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

@@ -1,0 +1,30 @@
+{
+  "_about": "Curated fallback blurbs for Story Journal episodes whose /v2/stories 'description' (and sometimes 'timeline') the GW2 API leaves EMPTY - or returns JUNK like 'Summary of Chapter NN' (the module treats that as empty). Mostly the newest releases (Janthir Wilds, Visions of Eternity). The LIVE API ALWAYS WINS: the module only uses an entry here when the API field is blank/junk, so the day ArenaNet publishes the real text, ours is silently superseded. Keyed by the stable /v2/stories id. Maintainer notes live in builder/docs/journal-overrides.md.",
+  "stories": {
+    "36": { "description": "The commander descends into the Tangled Depths and rallies the Nuhoch as Mordremoth's corruption tightens its grip on the jungle, closing in on a reckoning with the Elder Dragon." },
+
+    "120": { "description": "The commander joins Gorrik in Gyala Delve to investigate the eerie haze and the demons rising from the Jade Brotherhood's deepest excavations." },
+    "122": { "description": "Alongside Rama, Yao, Taimi, and Gorrik, the commander descends into Gyala Delve to confront the evil festering in its depths and free the Jade Brotherhood from its grip." },
+
+    "155": { "timeline": "1338 AE", "description": "Summoned by Countess Anise, the commander journeys to the isles of Janthir and makes first contact with a lowland kodan colony and the Astral Ward, beginning to uncover the region's secrets and the threat stirring within it." },
+    "147": { "timeline": "1338 AE", "description": "The commander travels to Harvest Den to learn the ways of the lowland kodan and earn the trust of their colony." },
+    "152": { "timeline": "1338 AE", "description": "With newfound allies, the commander establishes a homestead in Janthir to serve as a base for the journey ahead." },
+    "146": { "timeline": "1338 AE", "description": "The commander looks into a disappearance and picks up the trail of a mysterious stranger moving through the wilds." },
+    "154": { "timeline": "1338 AE", "description": "The commander pursues the elusive threat as the kodan delegates vote on how their colony should respond." },
+    "149": { "timeline": "1338 AE", "description": "The commander ventures deeper into the wilds of Janthir, surveying the land as a gathering danger looms over the isles." },
+    "150": { "timeline": "1338 AE", "description": "A dangerous new threat strikes, and the commander races to protect their allies as the storm over Janthir breaks." },
+    "148": { "timeline": "1338 AE", "description": "The commander works to restore balance to the wilds and tend to the creatures caught up in the turmoil." },
+    "145": { "timeline": "1338 AE", "description": "The commander confronts the strangers behind the threat and rallies their allies to make a stand." },
+    "153": { "timeline": "1338 AE", "description": "In the aftermath of the conflict, the commander carries grave news to Isgarren of the Wizard's Court." },
+
+    "172": { "description": "The commander reunites with old friends in Lion's Arch and catches wind of covert Inquest voyages bound for a long-lost island." },
+    "168": { "description": "The commander sets sail through treacherous fog toward the remote island of Castora, following the trail of an emerging Inquest conspiracy." },
+    "167": { "description": "Newly ashore on Castora, the commander gets the lay of the land and meets the locals who call the island home." },
+    "165": { "description": "The commander scouts an Inquest research facility on Castora, gathering intelligence on what drew them to the island." },
+    "166": { "description": "The commander confronts an Inquest seneschal and begins to uncover the truth behind their work on Castora." },
+    "169": { "description": "The commander infiltrates Inquest operations hidden beneath Castora's canopy." },
+    "173": { "description": "Exploring Castora's ruins, the commander finds where ancient history and Inquest technology collide." },
+    "170": { "description": "The commander delves into a shadowed basilica crypt to uncover the secrets Castora has kept hidden." },
+    "171": { "description": "The commander races against the enemy, following the clues toward Castora's hidden heart at Ancora." }
+  }
+}

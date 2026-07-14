@@ -1,0 +1,1637 @@
+{
+  "_about": "Per-episode Story Journal locations scraped from the GW2 wiki infobox `location` field (the API has no map link). `mapId`/`continentId`/`contRect` are present when a location matches a continent-1 map, so the module can draw a thumbnail. Regenerate with builder/build_journal_locations.py. See builder/docs/journal-overrides.md for the sibling pattern.",
+  "stories": {
+    "9": {
+      "location": "Royal Palace, Viathan Lake",
+      "mapId": 18,
+      "continentId": 1,
+      "contRect": [
+        43008,
+        26240,
+        44928,
+        28032
+      ]
+    },
+    "11": {
+      "location": "Dry Top",
+      "mapId": 988,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30976,
+        38656,
+        33536
+      ]
+    },
+    "12": {
+      "location": "Dry Top",
+      "mapId": 988,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30976,
+        38656,
+        33536
+      ]
+    },
+    "13": {
+      "location": "Dry Top",
+      "mapId": 988,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30976,
+        38656,
+        33536
+      ]
+    },
+    "14": {
+      "location": "Dry Top",
+      "mapId": 988,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30976,
+        38656,
+        33536
+      ]
+    },
+    "15": {
+      "location": "The Silverwastes",
+      "mapId": 1015,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30592,
+        38656,
+        32128
+      ]
+    },
+    "16": {
+      "location": "The Silverwastes",
+      "mapId": 1015,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30592,
+        38656,
+        32128
+      ]
+    },
+    "17": {
+      "location": "The Silverwastes",
+      "mapId": 1015,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30592,
+        38656,
+        32128
+      ]
+    },
+    "18": {
+      "location": "The Silverwastes",
+      "mapId": 1015,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30592,
+        38656,
+        32128
+      ]
+    },
+    "19": {
+      "location": "Red Rock Bastion",
+      "mapId": 1015,
+      "continentId": 1,
+      "contRect": [
+        36608,
+        30592,
+        38656,
+        32128
+      ]
+    },
+    "20": {
+      "location": "Tarir, the Forgotten City",
+      "mapId": 1043,
+      "continentId": 1,
+      "contRect": [
+        33280,
+        32512,
+        35328,
+        35328
+      ]
+    },
+    "21": {
+      "location": "Tarnished Treetop",
+      "mapId": 1043,
+      "continentId": 1,
+      "contRect": [
+        33280,
+        32512,
+        35328,
+        35328
+      ]
+    },
+    "22": {
+      "location": "Decayed Hive, Rata Novus",
+      "mapId": 1045,
+      "continentId": 1,
+      "contRect": [
+        35328,
+        33792,
+        38656,
+        36096
+      ]
+    },
+    "23": {
+      "location": "Teku Nuhoch",
+      "mapId": 1045,
+      "continentId": 1,
+      "contRect": [
+        35328,
+        33792,
+        38656,
+        36096
+      ]
+    },
+    "25": {
+      "location": "Dragon's Stand (Heart of Thorns)",
+      "mapId": 1095,
+      "continentId": 1,
+      "contRect": [
+        34048,
+        36096,
+        37120,
+        38784
+      ]
+    },
+    "26": {
+      "location": "Verdant Brink",
+      "mapId": 1042,
+      "continentId": 1,
+      "contRect": [
+        34208,
+        30658,
+        37280,
+        33730
+      ]
+    },
+    "27": {
+      "location": "Bitter Harvest (area)",
+      "mapId": 1041,
+      "continentId": 1,
+      "contRect": [
+        34048,
+        36096,
+        37120,
+        38784
+      ]
+    },
+    "31": {
+      "location": "Chak Hollow",
+      "mapId": 1043,
+      "continentId": 1,
+      "contRect": [
+        33280,
+        32512,
+        35328,
+        35328
+      ]
+    },
+    "32": {
+      "location": "Maguuma's Breach, Dry Step Mesas, Heartless Pass",
+      "mapId": 1042,
+      "continentId": 1,
+      "contRect": [
+        34208,
+        30658,
+        37280,
+        33730
+      ]
+    },
+    "33": {
+      "location": "Treacherous Paths, Broken Bluffs",
+      "mapId": 1042,
+      "continentId": 1,
+      "contRect": [
+        34208,
+        30658,
+        37280,
+        33730
+      ]
+    },
+    "34": {
+      "location": "Wyvern Cliffs, Jaka Itzel",
+      "mapId": 1042,
+      "continentId": 1,
+      "contRect": [
+        34208,
+        30658,
+        37280,
+        33730
+      ]
+    },
+    "35": {
+      "location": "Bristleback Chasm",
+      "mapId": 1043,
+      "continentId": 1,
+      "contRect": [
+        33280,
+        32512,
+        35328,
+        35328
+      ]
+    },
+    "36": {
+      "location": "Nuhoch Lane",
+      "mapId": 1045,
+      "continentId": 1,
+      "contRect": [
+        35328,
+        33792,
+        38656,
+        36096
+      ]
+    },
+    "41": {
+      "location": "Maguuma's Breach, Stonetwist Paths",
+      "mapId": 1042,
+      "continentId": 1,
+      "contRect": [
+        34208,
+        30658,
+        37280,
+        33730
+      ]
+    },
+    "42": {
+      "location": "Tangled Descent",
+      "mapId": 1045,
+      "continentId": 1,
+      "contRect": [
+        35328,
+        33792,
+        38656,
+        36096
+      ]
+    },
+    "46": {
+      "location": "Bloodstone Fen",
+      "mapId": 1165,
+      "continentId": 1,
+      "contRect": [
+        34816,
+        30338,
+        36352,
+        30978
+      ]
+    },
+    "56": {
+      "location": "Ember Bay",
+      "mapId": 1175,
+      "continentId": 1,
+      "contRect": [
+        37374,
+        43518,
+        41214,
+        47358
+      ]
+    },
+    "63": {
+      "location": "Bitterfrost Frontier",
+      "mapId": 1178,
+      "continentId": 1,
+      "contRect": [
+        53504,
+        23040,
+        56576,
+        24576
+      ]
+    },
+    "64": {
+      "location": "Lake Doric",
+      "mapId": 1185,
+      "continentId": 1,
+      "contRect": [
+        44928,
+        25472,
+        46208,
+        28032
+      ]
+    },
+    "65": {
+      "location": "Draconis Mons",
+      "mapId": 1195,
+      "continentId": 1,
+      "contRect": [
+        34718,
+        39284,
+        38558,
+        43124
+      ]
+    },
+    "66": {
+      "location": "Siren's Landing",
+      "mapId": 1203,
+      "continentId": 1,
+      "contRect": [
+        47002,
+        41600,
+        50330,
+        42880
+      ]
+    },
+    "67": {
+      "location": "Free City of Amnoon, Zalambur's Office, Office of the Chief Councilor",
+      "mapId": 1210,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        42304,
+        62376,
+        44864
+      ]
+    },
+    "68": {
+      "location": "Free City of Amnoon, Elon Riverlands, Kesho",
+      "mapId": 1228,
+      "continentId": 1,
+      "contRect": [
+        58240,
+        44736,
+        61824,
+        48192
+      ]
+    },
+    "69": {
+      "location": "Tomb of the Primeval Kings",
+      "mapId": 1211,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        39744,
+        62376,
+        42304
+      ]
+    },
+    "71": {
+      "location": "Skimshallow Cove, Judgment",
+      "mapId": 1228,
+      "continentId": 1,
+      "contRect": [
+        58240,
+        44736,
+        61824,
+        48192
+      ]
+    },
+    "72": {
+      "location": "Diviner's Reach, Salt Flats, Auburn Hills",
+      "mapId": 1211,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        39744,
+        62376,
+        42304
+      ]
+    },
+    "75": {
+      "location": "Joko's Domain, Jennur's Run, The Necropolis",
+      "mapId": 1226,
+      "continentId": 1,
+      "contRect": [
+        58240,
+        48192,
+        61824,
+        53312
+      ]
+    },
+    "76": {
+      "location": "Forum Highlands",
+      "mapId": 1248,
+      "continentId": 1,
+      "contRect": [
+        63616,
+        52352,
+        68480,
+        55552
+      ]
+    },
+    "78": {
+      "location": "Free City of Amnoon",
+      "mapId": 1210,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        42304,
+        62376,
+        44864
+      ]
+    },
+    "79": {
+      "location": "Prophet's Fall",
+      "mapId": 1211,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        39744,
+        62376,
+        42304
+      ]
+    },
+    "80": {
+      "location": "Tomb of the Primeval Kings, The Sanctum",
+      "mapId": 1211,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        39744,
+        62376,
+        42304
+      ]
+    },
+    "81": {
+      "location": "Kodash Bazaar",
+      "mapId": 1248,
+      "continentId": 1,
+      "contRect": [
+        63616,
+        52352,
+        68480,
+        55552
+      ]
+    },
+    "82": {
+      "location": "Destiny's Gorge, Elona Reach, Forged Foothold",
+      "mapId": 1210,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        42304,
+        62376,
+        44864
+      ]
+    },
+    "83": {
+      "location": "The Sinking Ruins, Mekele Bluffs, Free City of Amnoon",
+      "mapId": 1210,
+      "continentId": 1,
+      "contRect": [
+        57256,
+        42304,
+        62376,
+        44864
+      ]
+    },
+    "85": {
+      "location": "Domain of Istan",
+      "mapId": 1263,
+      "continentId": 1,
+      "contRect": [
+        55318,
+        59916,
+        59158,
+        63756
+      ]
+    },
+    "86": {
+      "location": "Sandswept Isles",
+      "mapId": 1271,
+      "continentId": 1,
+      "contRect": [
+        51994,
+        55402,
+        55194,
+        59754
+      ]
+    },
+    "87": {
+      "location": "Domain of Kourna",
+      "mapId": 1288,
+      "continentId": 1,
+      "contRect": [
+        63624,
+        59572,
+        67720,
+        64308
+      ]
+    },
+    "88": {
+      "location": "Jahai Bluffs",
+      "mapId": 1301,
+      "continentId": 1,
+      "contRect": [
+        63316,
+        56376,
+        67412,
+        59576
+      ]
+    },
+    "89": {
+      "location": "Thunderhead Peaks",
+      "mapId": 1310,
+      "continentId": 1,
+      "contRect": [
+        55820,
+        34936,
+        59148,
+        38648
+      ]
+    },
+    "90": {
+      "location": "Dragonfall",
+      "mapId": 1317,
+      "continentId": 1,
+      "contRect": [
+        43968,
+        48384,
+        47424,
+        51200
+      ]
+    },
+    "91": {
+      "location": "Grothmar Valley",
+      "mapId": 1330,
+      "continentId": 1,
+      "contRect": [
+        59392,
+        17504,
+        62592,
+        20064
+      ]
+    },
+    "93": {
+      "location": "Bjora Marches",
+      "mapId": 1343,
+      "continentId": 1,
+      "contRect": [
+        54911,
+        16972,
+        59391,
+        19148
+      ]
+    },
+    "94": {
+      "location": "Bjora Marches",
+      "mapId": 1343,
+      "continentId": 1,
+      "contRect": [
+        54911,
+        16972,
+        59391,
+        19148
+      ]
+    },
+    "96": {
+      "location": "Drizzlewood Coast",
+      "mapId": 1371,
+      "continentId": 1,
+      "contRect": [
+        50128,
+        17809,
+        52304,
+        22289
+      ]
+    },
+    "97": {
+      "location": "Drizzlewood Coast",
+      "mapId": 1371,
+      "continentId": 1,
+      "contRect": [
+        50128,
+        17809,
+        52304,
+        22289
+      ]
+    },
+    "99": {
+      "location": "Melandru's Hope, Xunlai Jade Junkyard (area)",
+      "mapId": 1452,
+      "continentId": 1,
+      "contRect": [
+        29185,
+        100890,
+        33025,
+        103450
+      ]
+    },
+    "100": {
+      "location": "The Jade Whirl, Harvest Complex",
+      "mapId": 1422,
+      "continentId": 1,
+      "contRect": [
+        33126,
+        101838,
+        35302,
+        105550
+      ]
+    },
+    "101": {
+      "location": "Seitung Province",
+      "mapId": 1442,
+      "continentId": 1,
+      "contRect": [
+        21159,
+        100457,
+        24999,
+        103145
+      ]
+    },
+    "102": {
+      "location": "Arborstone, Warden's Folly, Brotherhood Woodlands",
+      "mapId": 1428,
+      "continentId": 1,
+      "contRect": [
+        29185,
+        100890,
+        33025,
+        103450
+      ]
+    },
+    "103": {
+      "location": "Yong Reactor",
+      "mapId": 1438,
+      "continentId": 1,
+      "contRect": [
+        25000,
+        98100,
+        28840,
+        100660
+      ]
+    },
+    "104": {
+      "location": "Seitung Province",
+      "mapId": 1442,
+      "continentId": 1,
+      "contRect": [
+        21159,
+        100457,
+        24999,
+        103145
+      ]
+    },
+    "105": {
+      "location": "Daigo Ward, Arborstone, Command Quarters",
+      "mapId": 1428,
+      "continentId": 1,
+      "contRect": [
+        29185,
+        100890,
+        33025,
+        103450
+      ]
+    },
+    "106": {
+      "location": "Lutgardis Plaza, Petrified Woods, Arborstone",
+      "mapId": 1428,
+      "continentId": 1,
+      "contRect": [
+        29185,
+        100890,
+        33025,
+        103450
+      ]
+    },
+    "107": {
+      "location": "Daigo Ward",
+      "mapId": 1442,
+      "continentId": 1,
+      "contRect": [
+        21159,
+        100457,
+        24999,
+        103145
+      ]
+    },
+    "108": {
+      "location": "Zu Heltzer Historical Site, Arborstone, Eastern Commons",
+      "mapId": 1428,
+      "continentId": 1,
+      "contRect": [
+        29185,
+        100890,
+        33025,
+        103450
+      ]
+    },
+    "109": {
+      "location": "Lutgardis Plaza, Grub Lane, Gwangsan Hill",
+      "mapId": 1438,
+      "continentId": 1,
+      "contRect": [
+        25000,
+        98100,
+        28840,
+        100660
+      ]
+    },
+    "110": {
+      "location": "Daigo Ward, Kaineng Docks",
+      "mapId": 1442,
+      "continentId": 1,
+      "contRect": [
+        21159,
+        100457,
+        24999,
+        103145
+      ]
+    },
+    "111": {
+      "location": "New Kaineng City",
+      "mapId": 1438,
+      "continentId": 1,
+      "contRect": [
+        25000,
+        98100,
+        28840,
+        100660
+      ]
+    },
+    "112": {
+      "location": "Eye of the North",
+      "mapId": 1370,
+      "continentId": 1,
+      "contRect": [
+        57344,
+        21248,
+        58624,
+        22528
+      ]
+    },
+    "113": {
+      "location": "Zen Daijun",
+      "mapId": 1442,
+      "continentId": 1,
+      "contRect": [
+        21159,
+        100457,
+        24999,
+        103145
+      ]
+    },
+    "114": {
+      "location": "Seitung Province, Crystal Cave",
+      "mapId": 1442,
+      "continentId": 1,
+      "contRect": [
+        21159,
+        100457,
+        24999,
+        103145
+      ]
+    },
+    "118": {
+      "location": "Kessex Hills",
+      "mapId": 23,
+      "continentId": 1,
+      "contRect": [
+        42112,
+        30464,
+        46208,
+        32512
+      ]
+    },
+    "119": {
+      "location": "Lion's Arch",
+      "mapId": 50,
+      "continentId": 1,
+      "contRect": [
+        48000,
+        30720,
+        50432,
+        32256
+      ]
+    },
+    "120": {
+      "location": "Gyala Delve",
+      "mapId": 1490,
+      "continentId": 1,
+      "contRect": [
+        36677,
+        100479,
+        38853,
+        104191
+      ]
+    },
+    "121": {
+      "location": "Gyala Delve",
+      "mapId": 1490,
+      "continentId": 1,
+      "contRect": [
+        36677,
+        100479,
+        38853,
+        104191
+      ]
+    },
+    "122": {
+      "location": "Gyala Delve",
+      "mapId": 1490,
+      "continentId": 1,
+      "contRect": [
+        36677,
+        100479,
+        38853,
+        104191
+      ]
+    },
+    "123": {
+      "location": "Crystal Cave",
+      "mapId": 1442,
+      "continentId": 1,
+      "contRect": [
+        21159,
+        100457,
+        24999,
+        103145
+      ]
+    },
+    "124": {
+      "location": "Temple of Febe (instance), The Wizard's Tower",
+      "mapId": 1509,
+      "continentId": 1,
+      "contRect": [
+        23399,
+        21882,
+        24807,
+        22650
+      ]
+    },
+    "125": {
+      "location": "The Wizard's Tower, Amnytas",
+      "mapId": 1509,
+      "continentId": 1,
+      "contRect": [
+        23399,
+        21882,
+        24807,
+        22650
+      ]
+    },
+    "126": {
+      "location": "Southern Wizard's Tower",
+      "mapId": 1510,
+      "continentId": 1,
+      "contRect": [
+        23590,
+        22650,
+        27302,
+        24826
+      ]
+    },
+    "127": {
+      "location": "Skywatch Archipelago",
+      "mapId": 1510,
+      "continentId": 1,
+      "contRect": [
+        23590,
+        22650,
+        27302,
+        24826
+      ]
+    },
+    "128": {
+      "location": "Inner Sanctorium, Amnytas",
+      "mapId": 1517,
+      "continentId": 1,
+      "contRect": [
+        22614,
+        18938,
+        25558,
+        21882
+      ]
+    },
+    "129": {
+      "location": "Skywatch Archipelago",
+      "mapId": 1510,
+      "continentId": 1,
+      "contRect": [
+        23590,
+        22650,
+        27302,
+        24826
+      ]
+    },
+    "130": {
+      "location": "The Grove, Divinity's Reach, Hoelbrak",
+      "mapId": 91,
+      "continentId": 1,
+      "contRect": [
+        42496,
+        36480,
+        43904,
+        38528
+      ]
+    },
+    "131": {
+      "location": "Cornucopian Fields, Wizard's Fief",
+      "mapId": 24,
+      "continentId": 1,
+      "contRect": [
+        46208,
+        28672,
+        50432,
+        30720
+      ]
+    },
+    "132": {
+      "location": "Skywatch Archipelago",
+      "mapId": 1510,
+      "continentId": 1,
+      "contRect": [
+        23590,
+        22650,
+        27302,
+        24826
+      ]
+    },
+    "133": {
+      "location": "Amnytas",
+      "mapId": 1517,
+      "continentId": 1,
+      "contRect": [
+        22614,
+        18938,
+        25558,
+        21882
+      ]
+    },
+    "134": {
+      "location": "Temple of Febe (instance), Wizard's Ascent",
+      "mapId": 1510,
+      "continentId": 1,
+      "contRect": [
+        23590,
+        22650,
+        27302,
+        24826
+      ]
+    },
+    "135": {
+      "location": "Inner Nayos",
+      "mapId": 1526,
+      "continentId": 1,
+      "contRect": [
+        19435,
+        21900,
+        23147,
+        24076
+      ]
+    },
+    "136": {
+      "location": "Heitor's Dominion",
+      "mapId": 1526,
+      "continentId": 1,
+      "contRect": [
+        19435,
+        21900,
+        23147,
+        24076
+      ]
+    },
+    "138": {
+      "location": "Outer Sanctorium, Memory's Hollow, Incursion Point",
+      "mapId": 1509,
+      "continentId": 1,
+      "contRect": [
+        23399,
+        21882,
+        24807,
+        22650
+      ]
+    },
+    "139": {
+      "location": "Inner Nayos",
+      "mapId": 1526,
+      "continentId": 1,
+      "contRect": [
+        19435,
+        21900,
+        23147,
+        24076
+      ]
+    },
+    "140": {
+      "location": "Inner Nayos",
+      "mapId": 1526,
+      "continentId": 1,
+      "contRect": [
+        19435,
+        21900,
+        23147,
+        24076
+      ]
+    },
+    "141": {
+      "location": "Nyedra, Dreamer's Sanctum",
+      "mapId": 1526,
+      "continentId": 1,
+      "contRect": [
+        19435,
+        21900,
+        23147,
+        24076
+      ]
+    },
+    "142": {
+      "location": "The Wizard's Tower",
+      "mapId": 1509,
+      "continentId": 1,
+      "contRect": [
+        23399,
+        21882,
+        24807,
+        22650
+      ]
+    },
+    "143": {
+      "location": "Inner Nayos",
+      "mapId": 1526,
+      "continentId": 1,
+      "contRect": [
+        19435,
+        21900,
+        23147,
+        24076
+      ]
+    },
+    "144": {
+      "location": "Citadel of Zakiros",
+      "mapId": 1526,
+      "continentId": 1,
+      "contRect": [
+        19435,
+        21900,
+        23147,
+        24076
+      ]
+    },
+    "145": {
+      "location": "Hearth's Glow, Sulfurous Springs",
+      "mapId": 1554,
+      "continentId": 1,
+      "contRect": [
+        38294,
+        14082,
+        41494,
+        17154
+      ]
+    },
+    "146": {
+      "location": "Lowland Shore",
+      "mapId": 1550,
+      "continentId": 1,
+      "contRect": [
+        40119,
+        21518,
+        43959,
+        24078
+      ]
+    },
+    "147": {
+      "location": "Lowland Shore",
+      "mapId": 1550,
+      "continentId": 1,
+      "contRect": [
+        40119,
+        21518,
+        43959,
+        24078
+      ]
+    },
+    "148": {
+      "location": "Moon Camp Covert, Harvest Den, Janthir Syntri",
+      "mapId": 1554,
+      "continentId": 1,
+      "contRect": [
+        38294,
+        14082,
+        41494,
+        17154
+      ]
+    },
+    "149": {
+      "location": "Janthir Syntri",
+      "mapId": 1554,
+      "continentId": 1,
+      "contRect": [
+        38294,
+        14082,
+        41494,
+        17154
+      ]
+    },
+    "150": {
+      "location": "Stricken Plains, Hearth's Glow",
+      "mapId": 1554,
+      "continentId": 1,
+      "contRect": [
+        38294,
+        14082,
+        41494,
+        17154
+      ]
+    },
+    "151": {
+      "location": "Lion's Arch, The Grove, Divinity's Reach",
+      "mapId": 50,
+      "continentId": 1,
+      "contRect": [
+        48000,
+        30720,
+        50432,
+        32256
+      ]
+    },
+    "152": {
+      "location": "Lowland Shore",
+      "mapId": 1550,
+      "continentId": 1,
+      "contRect": [
+        40119,
+        21518,
+        43959,
+        24078
+      ]
+    },
+    "153": {
+      "location": "Harvest Den, The Wizard's Tower",
+      "mapId": 1509,
+      "continentId": 1,
+      "contRect": [
+        23399,
+        21882,
+        24807,
+        22650
+      ]
+    },
+    "154": {
+      "location": "Postern Ward, Harvest Den, Harvest Shore",
+      "mapId": 1550,
+      "continentId": 1,
+      "contRect": [
+        40119,
+        21518,
+        43959,
+        24078
+      ]
+    },
+    "155": {
+      "location": "Royal Palace, Lowland Shore",
+      "mapId": 1550,
+      "continentId": 1,
+      "contRect": [
+        40119,
+        21518,
+        43959,
+        24078
+      ]
+    },
+    "156": {
+      "location": "Durmand Priory (location), Sulfurous Springs, The Wizard's Tower",
+      "mapId": 1509,
+      "continentId": 1,
+      "contRect": [
+        23399,
+        21882,
+        24807,
+        22650
+      ]
+    },
+    "157": {
+      "location": "Lowland Shore, Mount Balrior (zone)",
+      "mapId": 1550,
+      "continentId": 1,
+      "contRect": [
+        40119,
+        21518,
+        43959,
+        24078
+      ]
+    },
+    "158": {
+      "location": "Harvest Den",
+      "mapId": 1550,
+      "continentId": 1,
+      "contRect": [
+        40119,
+        21518,
+        43959,
+        24078
+      ]
+    },
+    "159": {
+      "location": "Mistburned Barrens",
+      "mapId": 1575,
+      "continentId": 1,
+      "contRect": [
+        34063,
+        10361,
+        37903,
+        12921
+      ]
+    },
+    "160": {
+      "location": "Janthir Syntri, Mistburned Barrens",
+      "mapId": 1554,
+      "continentId": 1,
+      "contRect": [
+        38294,
+        14082,
+        41494,
+        17154
+      ]
+    },
+    "161": {
+      "location": "Mistburned Barrens",
+      "mapId": 1575,
+      "continentId": 1,
+      "contRect": [
+        34063,
+        10361,
+        37903,
+        12921
+      ]
+    },
+    "162": {
+      "location": "Divinity's Reach, Brisban Wildlands, Queensdale",
+      "mapId": 18,
+      "continentId": 1,
+      "contRect": [
+        43008,
+        26240,
+        44928,
+        28032
+      ]
+    },
+    "163": {
+      "location": "Mistburned Barrens, Bava Nisos",
+      "mapId": 1575,
+      "continentId": 1,
+      "contRect": [
+        34063,
+        10361,
+        37903,
+        12921
+      ]
+    },
+    "164": {
+      "location": "Bava Nisos",
+      "mapId": 1574,
+      "continentId": 1,
+      "contRect": [
+        35720,
+        10344,
+        38280,
+        12904
+      ]
+    },
+    "165": {
+      "location": "Shipwreck Strand",
+      "mapId": 1595,
+      "continentId": 1,
+      "contRect": [
+        9530,
+        57385,
+        12090,
+        60585
+      ]
+    },
+    "166": {
+      "location": "Shipwreck Strand",
+      "mapId": 1595,
+      "continentId": 1,
+      "contRect": [
+        9530,
+        57385,
+        12090,
+        60585
+      ]
+    },
+    "167": {
+      "location": "Shipwreck Strand",
+      "mapId": 1595,
+      "continentId": 1,
+      "contRect": [
+        9530,
+        57385,
+        12090,
+        60585
+      ]
+    },
+    "168": {
+      "location": "Rata Sum Port Authority, Idea Incubation Lab, Sanctum Harbor",
+      "mapId": 139,
+      "continentId": 1,
+      "contRect": [
+        37376,
+        36094,
+        39936,
+        38654
+      ]
+    },
+    "169": {
+      "location": "Starlit Weald",
+      "mapId": 1593,
+      "continentId": 1,
+      "contRect": [
+        6330,
+        57385,
+        9530,
+        59945
+      ]
+    },
+    "170": {
+      "location": "Lost Basilica",
+      "mapId": 1593,
+      "continentId": 1,
+      "contRect": [
+        6330,
+        57385,
+        9530,
+        59945
+      ]
+    },
+    "171": {
+      "location": "Starlit Weald, Shipwreck Strand",
+      "mapId": 1593,
+      "continentId": 1,
+      "contRect": [
+        6330,
+        57385,
+        9530,
+        59945
+      ]
+    },
+    "172": {
+      "location": "Lion's Arch, The Grove, Divinity's Reach",
+      "mapId": 50,
+      "continentId": 1,
+      "contRect": [
+        48000,
+        30720,
+        50432,
+        32256
+      ]
+    },
+    "173": {
+      "location": "Starlit Weald",
+      "mapId": 1593,
+      "continentId": 1,
+      "contRect": [
+        6330,
+        57385,
+        9530,
+        59945
+      ]
+    },
+    "174": {
+      "location": "Eternity's Garden",
+      "mapId": 1622,
+      "continentId": 1,
+      "contRect": [
+        3130,
+        59945,
+        5690,
+        63145
+      ]
+    },
+    "175": {
+      "location": "Sanctum of the Divine",
+      "mapId": 1622,
+      "continentId": 1,
+      "contRect": [
+        3130,
+        59945,
+        5690,
+        63145
+      ]
+    },
+    "176": {
+      "location": "Eternity's Garden",
+      "mapId": 1622,
+      "continentId": 1,
+      "contRect": [
+        3130,
+        59945,
+        5690,
+        63145
+      ]
+    },
+    "178": {
+      "location": "Starlit Weald, Eternity's Garden",
+      "mapId": 1593,
+      "continentId": 1,
+      "contRect": [
+        6330,
+        57385,
+        9530,
+        59945
+      ]
+    },
+    "179": {
+      "location": "Artificer's Islet, Empyreal Threshold, Temple of the Blessed Mantle",
+      "mapId": 1622,
+      "continentId": 1,
+      "contRect": [
+        3130,
+        59945,
+        5690,
+        63145
+      ]
+    },
+    "98": {
+      "location": "Metrica Province, Brisban Wildlands, Gendarran Fields, Fields of Ruin, Thunderhead Peaks, Lake Doric, Snowden Drifts, Caledon Forest, Bloodtide Coast, Fireheart Rise",
+      "maps": [
+        {
+          "mapName": "Metrica Province",
+          "continentId": 1,
+          "contRect": [
+            39936,
+            33536,
+            42112,
+            36864
+          ]
+        },
+        {
+          "mapName": "Brisban Wildlands",
+          "continentId": 1,
+          "contRect": [
+            38656,
+            30848,
+            42112,
+            33536
+          ]
+        },
+        {
+          "mapName": "Gendarran Fields",
+          "continentId": 1,
+          "contRect": [
+            46208,
+            28672,
+            50432,
+            30720
+          ]
+        },
+        {
+          "mapName": "Fields of Ruin",
+          "continentId": 1,
+          "contRect": [
+            61440,
+            32640,
+            64512,
+            35712
+          ]
+        },
+        {
+          "mapName": "Thunderhead Peaks",
+          "continentId": 1,
+          "contRect": [
+            55820,
+            34936,
+            59148,
+            38648
+          ]
+        },
+        {
+          "mapName": "Lake Doric",
+          "continentId": 1,
+          "contRect": [
+            44928,
+            25472,
+            46208,
+            28032
+          ]
+        },
+        {
+          "mapName": "Snowden Drifts",
+          "continentId": 1,
+          "contRect": [
+            50432,
+            27648,
+            54528,
+            29696
+          ]
+        },
+        {
+          "mapName": "Caledon Forest",
+          "continentId": 1,
+          "contRect": [
+            42112,
+            32512,
+            44032,
+            36480
+          ]
+        },
+        {
+          "mapName": "Bloodtide Coast",
+          "continentId": 1,
+          "contRect": [
+            48000,
+            32256,
+            50432,
+            35456
+          ]
+        },
+        {
+          "mapName": "Fireheart Rise",
+          "continentId": 1,
+          "contRect": [
+            56576,
+            24832,
+            59904,
+            27648
+          ]
+        }
+      ]
+    },
+    "115": {
+      "location": "Wayfarer Foothills, Diessa Plateau",
+      "maps": [
+        {
+          "mapName": "Wayfarer Foothills",
+          "continentId": 1,
+          "contRect": [
+            54528,
+            27648,
+            56320,
+            32256
+          ]
+        },
+        {
+          "mapName": "Diessa Plateau",
+          "continentId": 1,
+          "contRect": [
+            56320,
+            27648,
+            59904,
+            29952
+          ]
+        }
+      ]
+    },
+    "116": {
+      "location": "Lion's Arch, Gendarran Fields, Kessex Hills",
+      "maps": [
+        {
+          "mapName": "Lion's Arch",
+          "continentId": 1,
+          "contRect": [
+            48000,
+            30720,
+            50432,
+            32256
+          ]
+        },
+        {
+          "mapName": "Gendarran Fields",
+          "continentId": 1,
+          "contRect": [
+            46208,
+            28672,
+            50432,
+            30720
+          ]
+        },
+        {
+          "mapName": "Kessex Hills",
+          "continentId": 1,
+          "contRect": [
+            42112,
+            30464,
+            46208,
+            32512
+          ]
+        }
+      ]
+    },
+    "117": {
+      "location": "Divinity's Reach",
+      "maps": [
+        {
+          "mapName": "Divinity's Reach",
+          "continentId": 1,
+          "contRect": [
+            43008,
+            26240,
+            44928,
+            28032
+          ]
+        }
+      ]
+    },
+    "95": {
+      "location": "Bjora Marches",
+      "mapId": 1343,
+      "continentId": 1,
+      "contRect": [
+        54911,
+        16972,
+        59391,
+        19148
+      ]
+    }
+  }
+}

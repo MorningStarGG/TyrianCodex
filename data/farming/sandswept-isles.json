@@ -1,0 +1,953 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1271,
+  "slug": "sandswept-isles",
+  "name": "Sandswept Isles",
+  "regionName": "Crystal Desert",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mixed",
+      "category": "misc",
+      "material": "mixed",
+      "source": "tw"
+    },
+    {
+      "name": "Difluorite Crystal",
+      "category": "ore",
+      "material": "difluorite",
+      "source": "lady"
+    },
+    {
+      "name": "Orichalcum Ore",
+      "category": "ore",
+      "material": "orichalcum",
+      "source": "lady"
+    },
+    {
+      "name": "Artichoke",
+      "category": "plant",
+      "material": "artichoke",
+      "source": "lady"
+    },
+    {
+      "name": "Cluster of Desert Herbs",
+      "category": "plant",
+      "material": "desert_herbs",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -20.0,
+      "y": 29.4,
+      "z": 721.8,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -21.4,
+      "y": 29.7,
+      "z": 727.7,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -22.4,
+      "y": 30.0,
+      "z": 731.9,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -23.5,
+      "y": 30.3,
+      "z": 736.4,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 10.8,
+      "y": 35.6,
+      "z": 781.6,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 15.4,
+      "y": 35.6,
+      "z": 780.7,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 19.6,
+      "y": 35.7,
+      "z": 779.9,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 23.2,
+      "y": 36.0,
+      "z": 779.1,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 49.0,
+      "y": 27.5,
+      "z": 683.0,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 52.0,
+      "y": 28.3,
+      "z": 672.5,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 54.9,
+      "y": 28.1,
+      "z": 664.0,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 57.2,
+      "y": 27.2,
+      "z": 654.9,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 40.8,
+      "y": 28.5,
+      "z": 633.8,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 35.6,
+      "y": 28.5,
+      "z": 636.7,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 31.4,
+      "y": 28.6,
+      "z": 638.4,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 25.7,
+      "y": 28.7,
+      "z": 640.8,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -4.0,
+      "y": 34.2,
+      "z": 570.3,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 0.5,
+      "y": 34.5,
+      "z": 569.3,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 4.8,
+      "y": 34.5,
+      "z": 568.6,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": 8.5,
+      "y": 34.7,
+      "z": 568.0,
+      "material": "mixed",
+      "category": "misc",
+      "icon": "mixed"
+    },
+    {
+      "x": -98.8,
+      "y": 5.8,
+      "z": 687.1,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 277.4,
+      "y": 24.2,
+      "z": 711.3,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 239.0,
+      "y": 23.3,
+      "z": 644.0,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 120.3,
+      "y": 14.5,
+      "z": 591.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 371.5,
+      "y": 10.4,
+      "z": 588.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 667.0,
+      "y": 5.5,
+      "z": 376.8,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 583.1,
+      "y": 29.6,
+      "z": 362.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 543.5,
+      "y": 34.2,
+      "z": 359.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 500.4,
+      "y": 38.7,
+      "z": 368.5,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Raptor"
+    },
+    {
+      "x": -260.4,
+      "y": 5.3,
+      "z": 236.0,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -274.4,
+      "y": 42.8,
+      "z": 236.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -481.8,
+      "y": 21.2,
+      "z": 1034.9,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -465.9,
+      "y": 30.2,
+      "z": 1054.9,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -440.2,
+      "y": 38.8,
+      "z": 1085.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -365.8,
+      "y": 109.0,
+      "z": 881.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -374.6,
+      "y": 95.4,
+      "z": 867.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -202.6,
+      "y": 80.8,
+      "z": 920.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -115.0,
+      "y": 56.6,
+      "z": 908.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -31.5,
+      "y": 119.1,
+      "z": 892.9,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 3.0,
+      "y": 148.6,
+      "z": 1027.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 265.5,
+      "y": 64.3,
+      "z": 962.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 296.5,
+      "y": 84.0,
+      "z": 987.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 510.3,
+      "y": 64.2,
+      "z": 969.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 547.5,
+      "y": 78.9,
+      "z": 888.3,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 176.6,
+      "y": 85.9,
+      "z": 1100.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite"
+    },
+    {
+      "x": 419.3,
+      "y": 2.6,
+      "z": 829.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "chatLink": "[&BEILAAA=]"
+    },
+    {
+      "x": 547.0,
+      "y": 0.5,
+      "z": 147.5,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite"
+    },
+    {
+      "x": 654.2,
+      "y": 40.5,
+      "z": -544.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 552.4,
+      "y": 66.9,
+      "z": -548.3,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 291.8,
+      "y": 0.9,
+      "z": -531.1,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 278.3,
+      "y": 33.4,
+      "z": -507.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 256.3,
+      "y": 51.9,
+      "z": -485.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -40.7,
+      "y": -0.4,
+      "z": -538.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -53.7,
+      "y": 27.1,
+      "z": -546.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -54.4,
+      "y": 33.3,
+      "z": -575.0,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Jackal"
+    },
+    {
+      "x": 82.5,
+      "y": 75.1,
+      "z": -376.5,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -5.0,
+      "y": 58.0,
+      "z": -396.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -90.6,
+      "y": 106.8,
+      "z": -351.3,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -154.2,
+      "y": 155.6,
+      "z": -329.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -451.5,
+      "y": 130.1,
+      "z": 64.8,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -112.3,
+      "y": 76.8,
+      "z": 24.3,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 85.7,
+      "y": 158.9,
+      "z": 103.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 211.3,
+      "y": 100.0,
+      "z": 62.3,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 166.4,
+      "y": 72.4,
+      "z": -65.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 270.6,
+      "y": 115.5,
+      "z": -38.8,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 253.2,
+      "y": 93.1,
+      "z": -183.1,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 217.9,
+      "y": 79.3,
+      "z": -226.8,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 219.5,
+      "y": 100.2,
+      "z": -238.8,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 300.4,
+      "y": 119.2,
+      "z": -107.3,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 206.7,
+      "y": 74.9,
+      "z": -77.8,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -88.7,
+      "y": 44.8,
+      "z": -96.2,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -358.2,
+      "y": 71.6,
+      "z": -35.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -429.3,
+      "y": 50.1,
+      "z": -35.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -471.2,
+      "y": 10.0,
+      "z": -31.0,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -678.6,
+      "y": 5.8,
+      "z": 56.4,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -636.3,
+      "y": 5.5,
+      "z": 21.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": -621.7,
+      "y": 31.7,
+      "z": -8.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 201.6,
+      "y": 4.4,
+      "z": -815.7,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 182.1,
+      "y": 37.1,
+      "z": -808.0,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": 390.7,
+      "y": 2.0,
+      "z": -718.0,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 398.3,
+      "y": 41.1,
+      "z": -728.6,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Raptor"
+    },
+    {
+      "x": 464.9,
+      "y": 40.9,
+      "z": -796.8,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Springer"
+    },
+    {
+      "x": 479.8,
+      "y": 62.7,
+      "z": -802.1,
+      "material": "difluorite",
+      "category": "ore",
+      "icon": "difluorite",
+      "mount": "Glider"
+    },
+    {
+      "x": -100.5,
+      "y": 5.3,
+      "z": 685.8,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -70.6,
+      "y": 24.5,
+      "z": 687.9,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": -70.2,
+      "y": 23.8,
+      "z": 686.5,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 278.1,
+      "y": 24.2,
+      "z": 712.2,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 345.5,
+      "y": 33.5,
+      "z": 723.4,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 17.5,
+      "y": 32.5,
+      "z": 721.4,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum"
+    },
+    {
+      "x": 338.9,
+      "y": 72.2,
+      "z": 798.7,
+      "material": "orichalcum",
+      "category": "ore",
+      "icon": "orichalcum",
+      "chatLink": "Complete!"
+    },
+    {
+      "x": 57.1,
+      "y": 27.2,
+      "z": 655.1,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 54.6,
+      "y": 28.0,
+      "z": 664.2,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 51.9,
+      "y": 28.3,
+      "z": 672.8,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 49.1,
+      "y": 27.5,
+      "z": 683.1,
+      "material": "artichoke",
+      "category": "plant",
+      "icon": "artichoke"
+    },
+    {
+      "x": 41.1,
+      "y": 28.5,
+      "z": 633.6,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs",
+      "chatLink": "[&BFcLAAA=]"
+    },
+    {
+      "x": 26.0,
+      "y": 28.7,
+      "z": 640.7,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": 31.6,
+      "y": 28.6,
+      "z": 638.1,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": 36.0,
+      "y": 28.5,
+      "z": 636.1,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": -4.0,
+      "y": 34.2,
+      "z": 570.5,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 0.4,
+      "y": 34.4,
+      "z": 569.5,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 4.8,
+      "y": 34.5,
+      "z": 568.6,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 8.4,
+      "y": 34.8,
+      "z": 567.8,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 25.8,
+      "y": 28.7,
+      "z": 640.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 31.3,
+      "y": 28.6,
+      "z": 638.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 35.8,
+      "y": 28.5,
+      "z": 636.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 40.9,
+      "y": 28.5,
+      "z": 633.6,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    }
+  ]
+}

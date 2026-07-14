@@ -1,0 +1,1405 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1510,
+    "name": "Skywatch Archipelago",
+    "continentId": 1,
+    "regionId": 48,
+    "regionName": "Horn of Maguuma",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -43008,
+        -24576
+      ],
+      [
+        46080,
+        27648
+      ]
+    ],
+    "continentRect": [
+      [
+        23590,
+        22650
+      ],
+      [
+        27302,
+        24826
+      ]
+    ],
+    "sectorRect": [
+      [
+        23641.2,
+        22561
+      ],
+      [
+        27232.2,
+        24764.8
+      ]
+    ],
+    "labelCoord": [
+      25415,
+      23679
+    ],
+    "release": "soto"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1510:waypoint:3627",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "waypoint",
+      "objectiveId": "3627",
+      "coord": [
+        26836,
+        24387
+      ],
+      "recommendedLevel": null,
+      "name": "Beacon of Ages Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCsOAAA=]",
+      "waypointChatLink": "[&BCsOAAA=]",
+      "trailIndex": 0,
+      "wikiText": "The Wizard's Ascent is a far northwestern edge of Maguuma surounded by several small islands in the southeast portion of the Skywatch Archipelago and the first part of the Horn of Maguuma region visited by the Pact Commander."
+    },
+    {
+      "stepId": "1510:vista:3530",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3530",
+      "coord": [
+        27003,
+        24360
+      ],
+      "recommendedLevel": null,
+      "name": "Wizard's Ascent",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 23,
+      "wikiText": "The Wizard's Ascent is a far northwestern edge of Maguuma surounded by several small islands in the southeast portion of the Skywatch Archipelago and the first part of the Horn of Maguuma region visited by the Pact Commander.",
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3667",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3667",
+      "coord": [
+        27012,
+        24472
+      ],
+      "recommendedLevel": null,
+      "name": "Monument to the Order",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 25,
+      "wikiText": "The Monument to the Order it is a point of interest within the Wizard's Ascent. It is a statue in which there are members of the Astral Ward paying homage.",
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3532",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3532",
+      "coord": [
+        27065,
+        24492
+      ],
+      "recommendedLevel": null,
+      "name": "Briella's Kitchen",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 37,
+      "wikiText": "Briella's Kitchen is a point of interest in Skywatch Archipelago. It is named after the asura who runs it, Alchemist Briella. The kitchen contains some strange ingredients such as Demonic essence, Bloodstone dust, Cauldron of Blood, etc.",
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3649",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3649",
+      "coord": [
+        26956,
+        24611
+      ],
+      "recommendedLevel": null,
+      "name": "Astral Ward Dining Hall",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 95,
+      "wikiText": "The Astral Ward Dining Hall is a point of interest within the Wizard's Ascent. It is a place where several tables are found and where the Astral Ward meets to eat.",
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3559",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3559",
+      "coord": [
+        26779,
+        24627
+      ],
+      "recommendedLevel": null,
+      "name": "Beacon of Ages Command Center",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 138,
+      "wikiText": "Beacon of Ages Command Center is a point of interest in Wizard's Ascent.",
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3557",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3557",
+      "coord": [
+        26631,
+        24164
+      ],
+      "recommendedLevel": null,
+      "name": "The Ruined Rampart",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 164,
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3611",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3611",
+      "coord": [
+        26694,
+        24270
+      ],
+      "recommendedLevel": null,
+      "name": "Skywatch Lookout",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 166,
+      "wikiText": "Skywatch Lookout is a point of interest in Wizard's Ascent. It is a floating platform.",
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3670",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3670",
+      "coord": [
+        26394,
+        24026
+      ],
+      "recommendedLevel": null,
+      "name": "Sailor's Lament",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 199,
+      "wikiText": "The Sailor's Lament is a point of interest within Devastated Garenhoff. It is a ship that is stranded on the coast.",
+      "waypointChatLink": "[&BCsOAAA=]"
+    },
+    {
+      "stepId": "1510:vista:3576",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3576",
+      "coord": [
+        26200,
+        23775
+      ],
+      "recommendedLevel": null,
+      "name": "Devastated Garenhoff",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 210,
+      "wikiText": "Devastated Garenhoff is an area within eastern Skywatch Archipelago. It was the first fractal created to test what would happen if the Wizard's Tower in Garenhoff was destroyed.",
+      "waypointChatLink": "[&BA4OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3591",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3591",
+      "coord": [
+        26207,
+        23885
+      ],
+      "recommendedLevel": null,
+      "name": "Abandoned Lab",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 212,
+      "wikiText": "The Abandoned Lab is a point of interest within Devastated Garenhoff. Amidst the ruins of Garenhoff can be found this odd bit of incongruous asuran architecture.",
+      "waypointChatLink": "[&BA4OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3669",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3669",
+      "coord": [
+        26377,
+        23783
+      ],
+      "recommendedLevel": null,
+      "name": "The Fractured Tower",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 232,
+      "wikiText": "The Fractured Tower is a point of interest within Devastated Garenhoff. This tower is located at the northern edge of the town, and was broken into several floating fragments following the destruction of the Wizard's Tower.",
+      "waypointChatLink": "[&BBUOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3547",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3547",
+      "coord": [
+        26622,
+        23758
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Ward",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 237,
+      "wikiText": "The Eastern Ward is a section of Lion's Arch. It contains Coriolis Plaza, the newly built asura gate hub to the five racial capitals, as well as The Vaults, the new Black Lion Trading Company Headquarters.",
+      "waypointChatLink": "[&BBUOAAA=]"
+    },
+    {
+      "stepId": "1510:waypoint:3605",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "waypoint",
+      "objectiveId": "3605",
+      "coord": [
+        26977,
+        23979
+      ],
+      "recommendedLevel": null,
+      "name": "Garenhoff Refugee Camp Waypoint",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBUOAAA=]",
+      "waypointChatLink": "[&BBUOAAA=]",
+      "trailIndex": 259,
+      "wikiText": "Devastated Garenhoff is an area within eastern Skywatch Archipelago. It was the first fractal created to test what would happen if the Wizard's Tower in Garenhoff was destroyed."
+    },
+    {
+      "stepId": "1510:poi:3531",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3531",
+      "coord": [
+        27028,
+        23958
+      ],
+      "recommendedLevel": null,
+      "name": "Garenhoff Refugee Camp",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 270,
+      "wikiText": "The Garenhoff Refugee Camp is a camp populated by mostly human refugees running away from Devastated Garenhoff. It is protected by a small group of Rift Hunters.",
+      "waypointChatLink": "[&BBUOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3575",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3575",
+      "coord": [
+        27004,
+        23756
+      ],
+      "recommendedLevel": null,
+      "name": "Fragmented Passage",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 285,
+      "wikiText": "Fragmented Passage is a cave full of spiders and used as a passageway to access the Cosmic Observatory, it is located within the Stargaze Ridge.",
+      "waypointChatLink": "[&BBUOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3579",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3579",
+      "coord": [
+        27056,
+        23251
+      ],
+      "recommendedLevel": null,
+      "name": "Dagda's Perception",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 398,
+      "wikiText": "The Dagda's Perception is located within the Cosmic Observatory, on the Stargaze Ridge.",
+      "waypointChatLink": "[&BBUOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3510",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3510",
+      "coord": [
+        26665,
+        23347
+      ],
+      "recommendedLevel": null,
+      "name": "Chak Hatchery",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 427,
+      "wikiText": "The center of the Chak Hatchery is full of ley-energy that fosters the newborn Chak. To enter, use the Nuhoch Wallow at the end of the Nuhoch Lane or swim through the underwater tunnels, exiting in the northwest.",
+      "waypointChatLink": "[&BOANAAA=]"
+    },
+    {
+      "stepId": "1510:waypoint:3552",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "waypoint",
+      "objectiveId": "3552",
+      "coord": [
+        26331,
+        23074
+      ],
+      "recommendedLevel": null,
+      "name": "Rata Novus Promenade Waypoint",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BOANAAA=]",
+      "waypointChatLink": "[&BOANAAA=]",
+      "trailIndex": 450,
+      "wikiText": "Rata Novus Promenade is an area within northeastern Skywatch Archipelago."
+    },
+    {
+      "stepId": "1510:poi:3606",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3606",
+      "coord": [
+        26173,
+        23105
+      ],
+      "recommendedLevel": null,
+      "name": "The Light Crystal",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 466,
+      "wikiText": "The Light Crystal is a point of interest within the Rata Novus Promenade.",
+      "waypointChatLink": "[&BOANAAA=]"
+    },
+    {
+      "stepId": "1510:vista:3612",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3612",
+      "coord": [
+        25983,
+        23360
+      ],
+      "recommendedLevel": null,
+      "name": "Rata Novus Promenade",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 474,
+      "wikiText": "Rata Novus Promenade is an area within northeastern Skywatch Archipelago.",
+      "waypointChatLink": "[&BOANAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3592",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3592",
+      "coord": [
+        26399,
+        23309
+      ],
+      "recommendedLevel": null,
+      "name": "Western Research Facilities",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 533,
+      "wikiText": "Western Research Facilities is a point of interest in Rata Novus Promenade. Access is via a teleport from Gate Research Lab.",
+      "waypointChatLink": "[&BOANAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3517",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3517",
+      "coord": [
+        26423,
+        22976
+      ],
+      "recommendedLevel": null,
+      "name": "Gate Research Lab",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 560,
+      "wikiText": "Gate Research Lab is a point of interest in Rata Novus Promenade.",
+      "waypointChatLink": "[&BOANAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3522",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3522",
+      "coord": [
+        26665,
+        22826
+      ],
+      "recommendedLevel": null,
+      "name": "Akeem's Sacrifice",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 604,
+      "wikiText": "Akeem's Sacrifice is a point of interest in the far northeastern corner of Skywatch Archipelago.",
+      "waypointChatLink": "[&BOANAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3608",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3608",
+      "coord": [
+        25957,
+        22991
+      ],
+      "recommendedLevel": null,
+      "name": "Bridge between Worlds",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 617,
+      "wikiText": "The Bridge between Worlds is a point of interest in Primal Maguuma, within Skywatch Archipelago. It is a vine bridge connecting Primal Maguuma to the Rata Novus Promenade.",
+      "waypointChatLink": "[&BOANAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3602",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3602",
+      "coord": [
+        25801,
+        23089
+      ],
+      "recommendedLevel": null,
+      "name": "Exalted Ruins",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 621,
+      "waypointChatLink": "[&BEYOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3577",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3577",
+      "coord": [
+        25546,
+        23147
+      ],
+      "recommendedLevel": null,
+      "name": "Cloudview Lake",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 628,
+      "waypointChatLink": "[&BEYOAAA=]"
+    },
+    {
+      "stepId": "1510:waypoint:3654",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "waypoint",
+      "objectiveId": "3654",
+      "coord": [
+        25559,
+        22867
+      ],
+      "recommendedLevel": null,
+      "name": "Observation Camp Waypoint",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEYOAAA=]",
+      "waypointChatLink": "[&BEYOAAA=]",
+      "trailIndex": 686,
+      "wikiText": "Primal Maguuma is an area in the northern potion of Skywatch Archipelago."
+    },
+    {
+      "stepId": "1510:poi:3589",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3589",
+      "coord": [
+        25387,
+        22888
+      ],
+      "recommendedLevel": null,
+      "name": "Crash of the Storm's Daughter",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 697,
+      "wikiText": "The Crash of the Storm's Daughter is a point of interest in the Primal Maguuma fractal in Skywatch Archipelago. It is the wreckage of an airship that crashed into north Cloudview Lake and subsequently became overgrown.",
+      "waypointChatLink": "[&BEYOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3637",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3637",
+      "coord": [
+        25176,
+        23057
+      ],
+      "recommendedLevel": null,
+      "name": "Hidden Falls",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 709,
+      "wikiText": "The Hidden Falls is a communing style hero challenge in Bonerattler Caverns.",
+      "waypointChatLink": "[&BEYOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3588",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3588",
+      "coord": [
+        24915,
+        23083
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of Glint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 734,
+      "waypointChatLink": "[&BEYOAAA=]"
+    },
+    {
+      "stepId": "1510:vista:3549",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3549",
+      "coord": [
+        24854,
+        23090
+      ],
+      "recommendedLevel": null,
+      "name": "Primal Maguuma",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 740,
+      "wikiText": "Primal Maguuma is an area in the northern potion of Skywatch Archipelago.",
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3533",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3533",
+      "coord": [
+        25077,
+        23236
+      ],
+      "recommendedLevel": null,
+      "name": "Matriarch's Nest",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 752,
+      "waypointChatLink": "[&BEYOAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3632",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3632",
+      "coord": [
+        25057,
+        23581
+      ],
+      "recommendedLevel": null,
+      "name": "MinSec Server Room",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 773,
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3556",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3556",
+      "coord": [
+        25243,
+        23644
+      ],
+      "recommendedLevel": null,
+      "name": "Naga Encampment",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 787,
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3538",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3538",
+      "coord": [
+        25522,
+        23735
+      ],
+      "recommendedLevel": null,
+      "name": "Vass's Compassion",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 832,
+      "wikiText": "Vass's Compassion is a point of interest within Jade Mech Habitation Zone 03. It is named after the Forgotten Vass of the Wizard's Court.",
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3537",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3537",
+      "coord": [
+        25500,
+        23864
+      ],
+      "recommendedLevel": null,
+      "name": "Kestrel's Vow",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 833,
+      "wikiText": "Kestrel's Vow is a point of interest within Jade Mech Habitation Zone 03, within the Skywatch Archipelago. It is a section of the Echovald Forest bordering New Kaineng which the Kestrels are using as a base of operations.",
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:waypoint:3647",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "waypoint",
+      "objectiveId": "3647",
+      "coord": [
+        25402,
+        23928
+      ],
+      "recommendedLevel": null,
+      "name": "Kestrel's Vow Waypoint",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BD8OAAA=]",
+      "waypointChatLink": "[&BD8OAAA=]",
+      "trailIndex": 846,
+      "wikiText": "Jade Mech Habitation Zone 03 is an area in central Skywatch Archipelago. Kaineng City Fractal Research is a book chronicling the Wizards research into what may happen if Kaineng City's jade mechs gained sentience."
+    },
+    {
+      "stepId": "1510:vista:3638",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3638",
+      "coord": [
+        24967,
+        23798
+      ],
+      "recommendedLevel": null,
+      "name": "Jade Mech Habitation Zone 03",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 894,
+      "wikiText": "Jade Mech Habitation Zone 03 is an area in central Skywatch Archipelago. Kaineng City Fractal Research is a book chronicling the Wizards research into what may happen if Kaineng City's jade mechs gained sentience.",
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3641",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3641",
+      "coord": [
+        25031,
+        23889
+      ],
+      "recommendedLevel": null,
+      "name": "Conquered Plaza",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 897,
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3616",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3616",
+      "coord": [
+        24791,
+        23971
+      ],
+      "recommendedLevel": null,
+      "name": "N.K. Broadcast Terminal Beta",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 913,
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3520",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3520",
+      "coord": [
+        24427,
+        23839
+      ],
+      "recommendedLevel": null,
+      "name": "Witman's Ice Shelf",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 927,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3634",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3634",
+      "coord": [
+        24756,
+        23551
+      ],
+      "recommendedLevel": null,
+      "name": "Esme's Overlook",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 946,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3619",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3619",
+      "coord": [
+        24456,
+        23452
+      ],
+      "recommendedLevel": null,
+      "name": "Training Pavilion",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 972,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3583",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3583",
+      "coord": [
+        24279,
+        23578
+      ],
+      "recommendedLevel": null,
+      "name": "Monument to King Jalis Ironhammer",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1004,
+      "wikiText": "The Monument to King Jalis Ironhammer is a point of interest within Droknar's Light, in Skywatch Archipelago. It is a statue of the dwarven king, Jalis Ironhammer. Its associated Starlight Lantern can be found between the statue's legs.",
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:waypoint:3518",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "waypoint",
+      "objectiveId": "3518",
+      "coord": [
+        24327,
+        23533
+      ],
+      "recommendedLevel": null,
+      "name": "Droknar's Light Waypoint",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BL4NAAA=]",
+      "waypointChatLink": "[&BL4NAAA=]",
+      "trailIndex": 1014,
+      "wikiText": "Droknar's Light is an area within the western Skywatch Archipelago and shows a fractal from a timeline where the Deldrimor lost to the Stone Summit."
+    },
+    {
+      "stepId": "1510:vista:3563",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3563",
+      "coord": [
+        24299,
+        23486
+      ],
+      "recommendedLevel": null,
+      "name": "Droknar's Light (1)",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1020,
+      "wikiText": "Droknar's Light is an area within the western Skywatch Archipelago and shows a fractal from a timeline where the Deldrimor lost to the Stone Summit.",
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3511",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3511",
+      "coord": [
+        24154,
+        23327
+      ],
+      "recommendedLevel": null,
+      "name": "Droknar's Forge",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1070,
+      "wikiText": "Droknar's Forge is a point of interest in Droknar's Light fractal mimicking the original that was lost in Sunken Droknah.",
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:vista:3613",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3613",
+      "coord": [
+        23823,
+        23106
+      ],
+      "recommendedLevel": null,
+      "name": "Droknar's Light (2)",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1084,
+      "wikiText": "Droknar's Light is an area within the western Skywatch Archipelago and shows a fractal from a timeline where the Deldrimor lost to the Stone Summit.",
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3524",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3524",
+      "coord": [
+        24099,
+        23067
+      ],
+      "recommendedLevel": null,
+      "name": "Wizard's Tower South Gate",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1086,
+      "wikiText": "The Wizard's Tower South Gate is the entrance to Wizard's Tower which is accessed from the Southern Wizard's Tower part.",
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3633",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3633",
+      "coord": [
+        24061,
+        23446
+      ],
+      "recommendedLevel": null,
+      "name": "Reserve Arsenal",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1090,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3578",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3578",
+      "coord": [
+        24173,
+        23720
+      ],
+      "recommendedLevel": null,
+      "name": "Droknar's Landing",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1130,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3540",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3540",
+      "coord": [
+        23932,
+        23648
+      ],
+      "recommendedLevel": null,
+      "name": "Hall of Deldrimor",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1145,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3523",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3523",
+      "coord": [
+        24363,
+        24383
+      ],
+      "recommendedLevel": null,
+      "name": "Mabon's Resolve",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1225,
+      "wikiText": "Mabon's Resolve is a large tower found on top of the Shattered Atoll. The tower belongs to Mabon, a mursaat of the Wizard's Court.",
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3548",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3548",
+      "coord": [
+        23961,
+        24101
+      ],
+      "recommendedLevel": null,
+      "name": "Derelict Ruins",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1241,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3573",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3573",
+      "coord": [
+        24503,
+        24479
+      ],
+      "recommendedLevel": null,
+      "name": "Balkor's Camp",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1267,
+      "waypointChatLink": "[&BL4NAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3514",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3514",
+      "coord": [
+        24819,
+        24120
+      ],
+      "recommendedLevel": null,
+      "name": "Throne of Judgment",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1360,
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3628",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3628",
+      "coord": [
+        24816,
+        24338
+      ],
+      "recommendedLevel": null,
+      "name": "The Burning Fortress",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1388,
+      "wikiText": "The Burning Fortress is a point of interest of the Skyward Marches fractal. It is the fortress where Balthazar rules these lands with his army of Forged.",
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:vista:3665",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "vista",
+      "objectiveId": "3665",
+      "coord": [
+        24837,
+        24585
+      ],
+      "recommendedLevel": null,
+      "name": "Skyward Marches",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1406,
+      "wikiText": "Skyward Marches is a southwestern area within Skywatch Archipelago and shows an Elonian fractal where The Commander never returned to save Elona and Balthazar rules over the lands.",
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3635",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3635",
+      "coord": [
+        25036,
+        24568
+      ],
+      "recommendedLevel": null,
+      "name": "Ruins of Rhawat",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1428,
+      "waypointChatLink": "[&BD8OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3571",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3571",
+      "coord": [
+        25425,
+        24686
+      ],
+      "recommendedLevel": null,
+      "name": "Aanisah's Windmill",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1464,
+      "waypointChatLink": "[&BA4OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3640",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3640",
+      "coord": [
+        25469,
+        24472
+      ],
+      "recommendedLevel": null,
+      "name": "Farisan Village",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1471,
+      "wikiText": "Farisan Village is a point of interest in the Skyward Marches, within the Skywatch Archipelago. It is an Elonian village which Zaishen deserters have begun to flock to.",
+      "waypointChatLink": "[&BA4OAAA=]"
+    },
+    {
+      "stepId": "1510:waypoint:3598",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "waypoint",
+      "objectiveId": "3598",
+      "coord": [
+        25830,
+        24166
+      ],
+      "recommendedLevel": null,
+      "name": "Astral Ward Encampment Waypoint",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BA4OAAA=]",
+      "waypointChatLink": "[&BA4OAAA=]",
+      "trailIndex": 1529,
+      "wikiText": "Skyward Marches is a southwestern area within Skywatch Archipelago and shows an Elonian fractal where The Commander never returned to save Elona and Balthazar rules over the lands."
+    },
+    {
+      "stepId": "1510:poi:3584",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3584",
+      "coord": [
+        25686,
+        24088
+      ],
+      "recommendedLevel": null,
+      "name": "The Falling Sands",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1575,
+      "waypointChatLink": "[&BA4OAAA=]"
+    },
+    {
+      "stepId": "1510:poi:3566",
+      "mapId": 1510,
+      "zoneName": "Skywatch Archipelago",
+      "type": "poi",
+      "objectiveId": "3566",
+      "coord": [
+        26072,
+        24236
+      ],
+      "recommendedLevel": null,
+      "name": "Lyhr's Design",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1582,
+      "wikiText": "The Lyhr's Design is a point of interest within Wizard's Ascent. It is a tower named after dwarf Lyhr.",
+      "waypointChatLink": "[&BA4OAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

@@ -1,0 +1,2566 @@
+{
+  "_about": "Curated questId -> chapter map for the per-character Personal Story view. The chapter names (in-game 'My Story' groupings) are not in the API; they are scraped from the GW2 wiki's {{Story infobox}} (whose `id` is the /v2/quests id). `order` is normalized when the wiki marks an Order-specific branch. `arcs` maps the My-Story story ids to a display name. Personal story is frozen, so this is built once + committed. Regenerate with builder/build_personal_story.py.",
+  "arcs": {
+    "1": "Charr",
+    "2": "Norn",
+    "3": "Human",
+    "7": "Sylvari",
+    "8": "Asura",
+    "9": "The Orders of Tyria",
+    "10": "The Elder Dragon Zhaitan"
+  },
+  "quests": {
+    "77": {
+      "story": 1,
+      "level": 1,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "59": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Iron Legion"
+    },
+    "60": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Ash Legion"
+    },
+    "61": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Ash Legion"
+    },
+    "62": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Iron Legion"
+    },
+    "63": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Ash Legion"
+    },
+    "64": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Iron Legion"
+    },
+    "65": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Ash Legion"
+    },
+    "66": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Ash Legion"
+    },
+    "67": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Iron Legion"
+    },
+    "68": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Ash Legion"
+    },
+    "69": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Iron Legion"
+    },
+    "70": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Iron Legion"
+    },
+    "71": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Blood Legion"
+    },
+    "72": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Blood Legion"
+    },
+    "73": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Blood Legion"
+    },
+    "74": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Blood Legion"
+    },
+    "75": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Blood Legion"
+    },
+    "76": {
+      "story": 1,
+      "level": 10,
+      "chapter": "Getting the Band Back Together",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Blood Legion"
+    },
+    "78": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Loyal Soldier"
+    },
+    "79": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Loyal Soldier"
+    },
+    "80": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Loyal Soldier"
+    },
+    "81": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Loyal Soldier"
+    },
+    "82": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Loyal Soldier"
+    },
+    "83": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Honorless Gladium"
+    },
+    "84": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Honorless Gladium"
+    },
+    "85": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Honorless Gladium"
+    },
+    "86": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Honorless Gladium"
+    },
+    "87": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Honorless Gladium"
+    },
+    "88": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Sorcerous Shaman"
+    },
+    "89": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Sorcerous Shaman"
+    },
+    "90": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Sorcerous Shaman"
+    },
+    "91": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Sorcerous Shaman"
+    },
+    "92": {
+      "story": 1,
+      "level": 20,
+      "chapter": "Sins of the Father",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Sorcerous Shaman"
+    },
+    "93": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "94": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "95": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "97": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "98": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "100": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "101": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "102": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "104": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "105": {
+      "story": 1,
+      "level": 30,
+      "chapter": "Crystal Corruption",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "154": {
+      "story": 2,
+      "level": 1,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "155": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Defeat Our Ancient Foes"
+    },
+    "156": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Defeat Our Ancient Foes"
+    },
+    "157": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Defeat Our Ancient Foes"
+    },
+    "158": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Defeat Our Ancient Foes"
+    },
+    "159": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Protect the Spirits"
+    },
+    "160": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Defeat Our Ancient Foes"
+    },
+    "161": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Defeat Our Ancient Foes"
+    },
+    "162": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Guard the Mists"
+    },
+    "163": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Protect the Spirits"
+    },
+    "164": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Guard the Mists"
+    },
+    "165": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Protect the Spirits"
+    },
+    "166": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Protect the Spirits"
+    },
+    "167": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Protect the Spirits"
+    },
+    "168": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Guard the Mists"
+    },
+    "169": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Guard the Mists"
+    },
+    "170": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Guard the Mists"
+    },
+    "171": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Guard the Mists"
+    },
+    "172": {
+      "story": 2,
+      "level": 10,
+      "chapter": "Forging a Legend",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Protect the Spirits"
+    },
+    "173": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Blacked Out"
+    },
+    "174": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Blacked Out"
+    },
+    "175": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Revenge"
+    },
+    "176": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Blacked Out"
+    },
+    "177": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Revenge"
+    },
+    "178": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Revenge"
+    },
+    "179": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Revenge"
+    },
+    "180": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Revenge"
+    },
+    "181": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Blacked Out"
+    },
+    "182": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Blacked Out"
+    },
+    "183": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Lost an Heirloom"
+    },
+    "184": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Lost an Heirloom"
+    },
+    "185": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Lost an Heirloom"
+    },
+    "186": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Lost an Heirloom"
+    },
+    "187": {
+      "story": 2,
+      "level": 20,
+      "chapter": "Everyone Makes Mistakes",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Lost an Heirloom"
+    },
+    "188": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "189": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "191": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "192": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "194": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "195": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "197": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "198": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "199": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "200": {
+      "story": 2,
+      "level": 30,
+      "chapter": "Death from Below",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "117": {
+      "story": 3,
+      "level": 1,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "106": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Nobility"
+    },
+    "107": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Nobility"
+    },
+    "108": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Nobility"
+    },
+    "109": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Nobility"
+    },
+    "110": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Nobility"
+    },
+    "111": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Commoner"
+    },
+    "112": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Commoner"
+    },
+    "113": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Commoner"
+    },
+    "114": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Commoner"
+    },
+    "115": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Street Rat"
+    },
+    "116": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Commoner"
+    },
+    "118": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Street Rat"
+    },
+    "119": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Street Rat"
+    },
+    "120": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Street Rat"
+    },
+    "121": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Street Rat"
+    },
+    "122": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Street Rat"
+    },
+    "123": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Nobility"
+    },
+    "124": {
+      "story": 3,
+      "level": 10,
+      "chapter": "Krytan Politics",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Commoner"
+    },
+    "125": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Dead Sister"
+    },
+    "126": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Dead Sister"
+    },
+    "127": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Dead Sister"
+    },
+    "128": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Dead Sister"
+    },
+    "129": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Unknown Parents"
+    },
+    "130": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Unknown Parents"
+    },
+    "131": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Unknown Parents"
+    },
+    "132": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Unknown Parents"
+    },
+    "133": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Unknown Parents"
+    },
+    "134": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Missed Opportunity"
+    },
+    "135": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Missed Opportunity"
+    },
+    "136": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Missed Opportunity"
+    },
+    "137": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Missed Opportunity"
+    },
+    "138": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Missed Opportunity"
+    },
+    "139": {
+      "story": 3,
+      "level": 20,
+      "chapter": "Shadows of the Past",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Dead Sister"
+    },
+    "140": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "141": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "142": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "144": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "145": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "147": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "148": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "150": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "151": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "152": {
+      "story": 3,
+      "level": 30,
+      "chapter": "Traitor to the Queen",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "201": {
+      "story": 7,
+      "level": 1,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "202": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "White Stag"
+    },
+    "203": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Green Knight"
+    },
+    "204": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "White Stag"
+    },
+    "205": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Green Knight"
+    },
+    "206": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "White Stag"
+    },
+    "207": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "White Stag"
+    },
+    "208": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Green Knight"
+    },
+    "209": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "White Stag"
+    },
+    "210": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "White Stag"
+    },
+    "211": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Green Knight"
+    },
+    "212": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Shield of the Moon"
+    },
+    "213": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Shield of the Moon"
+    },
+    "214": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Shield of the Moon"
+    },
+    "215": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Shield of the Moon"
+    },
+    "216": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Shield of the Moon"
+    },
+    "217": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Shield of the Moon"
+    },
+    "218": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Green Knight"
+    },
+    "219": {
+      "story": 7,
+      "level": 10,
+      "chapter": "Following the Dream",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Green Knight"
+    },
+    "220": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Right to Grow"
+    },
+    "221": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Right to Grow"
+    },
+    "222": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Right to Grow"
+    },
+    "223": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Right to Grow"
+    },
+    "224": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Right to Grow"
+    },
+    "225": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Where Life Goes"
+    },
+    "226": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Where Life Goes"
+    },
+    "227": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Where Life Goes"
+    },
+    "228": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Where Life Goes"
+    },
+    "229": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Where Life Goes"
+    },
+    "230": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Act With Wisdom"
+    },
+    "231": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Act With Wisdom"
+    },
+    "232": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Act With Wisdom"
+    },
+    "233": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Act With Wisdom"
+    },
+    "234": {
+      "story": 7,
+      "level": 20,
+      "chapter": "The Teachings of Ventari",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Act With Wisdom"
+    },
+    "235": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "236": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "237": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "238": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "239": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "241": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "243": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "244": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "246": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "247": {
+      "story": 7,
+      "level": 30,
+      "chapter": "Justice for Riannoc",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "15": {
+      "story": 8,
+      "level": 1,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "16": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Dynamics"
+    },
+    "17": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Dynamics"
+    },
+    "18": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Dynamics"
+    },
+    "19": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Dynamics"
+    },
+    "20": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Dynamics"
+    },
+    "21": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Synergetics"
+    },
+    "22": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Dynamics"
+    },
+    "23": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Synergetics"
+    },
+    "24": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Synergetics"
+    },
+    "25": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 2,
+      "choice": "Statics"
+    },
+    "26": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Synergetics"
+    },
+    "27": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Synergetics"
+    },
+    "28": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 3,
+      "choice": "Statics"
+    },
+    "29": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 4,
+      "choice": "Statics"
+    },
+    "30": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Statics"
+    },
+    "31": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Statics"
+    },
+    "32": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 5,
+      "choice": "Synergetics"
+    },
+    "33": {
+      "story": 8,
+      "level": 10,
+      "chapter": "Experiments Gone Wrong",
+      "chapterOrder": 1,
+      "stepOrder": 6,
+      "choice": "Statics"
+    },
+    "34": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Infinity Ball"
+    },
+    "35": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Infinity Ball"
+    },
+    "36": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Infinity Ball"
+    },
+    "37": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Infinity Ball"
+    },
+    "38": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Infinity Ball"
+    },
+    "39": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "VAL-A Golem"
+    },
+    "40": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "VAL-A Golem"
+    },
+    "41": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "VAL-A Golem"
+    },
+    "42": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "VAL-A Golem"
+    },
+    "43": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "VAL-A Golem"
+    },
+    "44": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 1,
+      "choice": "Transatmospheric Converter"
+    },
+    "45": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 2,
+      "choice": "Transatmospheric Converter"
+    },
+    "46": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Transatmospheric Converter"
+    },
+    "47": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 4,
+      "choice": "Transatmospheric Converter"
+    },
+    "48": {
+      "story": 8,
+      "level": 20,
+      "chapter": "Interested Parties",
+      "chapterOrder": 2,
+      "stepOrder": 3,
+      "choice": "Transatmospheric Converter"
+    },
+    "49": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "50": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "51": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "52": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "53": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "54": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "55": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "56": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "57": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "58": {
+      "story": 8,
+      "level": 30,
+      "chapter": "Rescue Researcher",
+      "chapterOrder": 3,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "248": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 2,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "249": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 3,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "250": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "251": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 2,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "252": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "253": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 2,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "254": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "255": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 3,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "256": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 3,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "257": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "258": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "259": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "260": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "261": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "262": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 5,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "358": {
+      "story": 9,
+      "level": 40,
+      "chapter": "Order Neophyte",
+      "chapterOrder": 4,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "263": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 1,
+      "choice": "Grawl"
+    },
+    "264": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Grawl"
+    },
+    "265": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 3,
+      "choice": "Grawl"
+    },
+    "266": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Grawl"
+    },
+    "267": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 1,
+      "choice": "Hylek"
+    },
+    "268": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Hylek"
+    },
+    "269": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 3,
+      "choice": "Hylek"
+    },
+    "270": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Hylek"
+    },
+    "271": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 1,
+      "choice": "Ogre"
+    },
+    "272": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Ogre"
+    },
+    "273": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 3,
+      "choice": "Ogre"
+    },
+    "274": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 1,
+      "choice": "Quaggan"
+    },
+    "275": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Quaggan"
+    },
+    "276": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Quaggan"
+    },
+    "277": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 3,
+      "choice": "Quaggan"
+    },
+    "278": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 1,
+      "choice": "Skritt"
+    },
+    "279": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Skritt"
+    },
+    "280": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 2,
+      "choice": "Skritt"
+    },
+    "281": {
+      "story": 9,
+      "level": 50,
+      "chapter": "Helping Hands",
+      "chapterOrder": 5,
+      "stepOrder": 3,
+      "choice": "Skritt"
+    },
+    "282": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "283": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 5,
+      "choice": ""
+    },
+    "284": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 7,
+      "choice": ""
+    },
+    "285": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 1,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "286": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 3,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "287": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "288": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "289": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 6,
+      "choice": "",
+      "order": "Durmand Priory"
+    },
+    "290": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 1,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "291": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 3,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "292": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "293": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "294": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 6,
+      "choice": "",
+      "order": "Order of Whispers"
+    },
+    "295": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 1,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "296": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 3,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "297": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "298": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 4,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "299": {
+      "story": 9,
+      "level": 60,
+      "chapter": "The Battle of Claw Island",
+      "chapterOrder": 6,
+      "stepOrder": 6,
+      "choice": "",
+      "order": "Vigil"
+    },
+    "300": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 5,
+      "choice": ""
+    },
+    "301": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "302": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 3,
+      "choice": "Dishonor my allies"
+    },
+    "303": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 3,
+      "choice": "Dishonor my allies"
+    },
+    "304": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 2,
+      "choice": "Dishonor my allies"
+    },
+    "305": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 4,
+      "choice": "Dishonor my allies"
+    },
+    "306": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 6,
+      "choice": "Dishonor my allies"
+    },
+    "307": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 3,
+      "choice": "Let an innocent die"
+    },
+    "308": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 3,
+      "choice": "Let an innocent die"
+    },
+    "309": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 2,
+      "choice": "Let an innocent die"
+    },
+    "310": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 4,
+      "choice": "Let an innocent die"
+    },
+    "311": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 6,
+      "choice": "Letting an innocent die"
+    },
+    "312": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 2,
+      "choice": "Make another suffer"
+    },
+    "313": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 3,
+      "choice": "Make another suffer"
+    },
+    "314": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 4,
+      "choice": "Make another suffer"
+    },
+    "315": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 4,
+      "choice": "Make another suffer"
+    },
+    "316": {
+      "story": 10,
+      "level": 70,
+      "chapter": "Forming the Pact",
+      "chapterOrder": 7,
+      "stepOrder": 6,
+      "choice": "Make another suffer"
+    },
+    "317": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 11,
+      "choice": ""
+    },
+    "318": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 6,
+      "choice": ""
+    },
+    "319": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 11,
+      "choice": ""
+    },
+    "320": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 3,
+      "choice": ""
+    },
+    "321": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 1,
+      "choice": ""
+    },
+    "322": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 10,
+      "choice": ""
+    },
+    "323": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 12,
+      "choice": ""
+    },
+    "324": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 13,
+      "choice": ""
+    },
+    "325": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 7,
+      "choice": "Priory's Plan"
+    },
+    "326": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 8,
+      "choice": "Priory's Plan",
+      "order": "Durmand Priory"
+    },
+    "327": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 9,
+      "choice": "Priory's Plan"
+    },
+    "328": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 7,
+      "choice": "Vigil's Plan"
+    },
+    "329": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 8,
+      "choice": "Vigil's Plan",
+      "order": "Vigil"
+    },
+    "330": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 9,
+      "choice": "Vigil's Plan"
+    },
+    "331": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 7,
+      "choice": "Whispers' Plan"
+    },
+    "332": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 8,
+      "choice": "Whispers' Plan",
+      "order": "Order of Whispers"
+    },
+    "333": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 9,
+      "choice": "Whispers' Plan"
+    },
+    "334": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "335": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 2,
+      "choice": ""
+    },
+    "336": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "337": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 4,
+      "choice": ""
+    },
+    "338": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 5,
+      "choice": ""
+    },
+    "339": {
+      "story": 10,
+      "level": 80,
+      "chapter": "Victory or Death",
+      "chapterOrder": 8,
+      "stepOrder": 5,
+      "choice": ""
+    }
+  }
+}

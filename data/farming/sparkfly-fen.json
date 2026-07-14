@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "mapId": 53,
+  "slug": "sparkfly-fen",
+  "name": "Sparkfly Fen",
+  "regionName": "Steamspur Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Platinum Ore",
+      "category": "ore",
+      "material": "platinum",
+      "source": "tw"
+    },
+    {
+      "name": "Cauliflower",
+      "category": "plant",
+      "material": "cauliflower",
+      "source": "tw"
+    },
+    {
+      "name": "Hard Wood Log",
+      "category": "wood",
+      "material": "hard_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 564.6,
+      "y": 12.3,
+      "z": 737.6,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": -518.3,
+      "y": 100.9,
+      "z": 386.1,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": 701.9,
+      "y": 69.2,
+      "z": -312.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BMcBAAA=]"
+    },
+    {
+      "x": 608.3,
+      "y": 27.1,
+      "z": 670.1,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BMUBAAA=]"
+    },
+    {
+      "x": 253.8,
+      "y": 52.3,
+      "z": 994.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 280.2,
+      "y": 35.3,
+      "z": 992.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BMkBAAA=]"
+    },
+    {
+      "x": -502.5,
+      "y": 37.6,
+      "z": 329.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Springer"
+    },
+    {
+      "x": -663.7,
+      "y": 56.5,
+      "z": 336.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BM8BAAA=]"
+    },
+    {
+      "x": -237.1,
+      "y": 36.9,
+      "z": -432.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BNIGAAA=]"
+    },
+    {
+      "x": 476.3,
+      "y": 71.0,
+      "z": 228.1,
+      "material": "platinum",
+      "category": "ore",
+      "icon": "platinum"
+    },
+    {
+      "x": -541.2,
+      "y": 51.5,
+      "z": 289.7,
+      "material": "platinum",
+      "category": "ore",
+      "icon": "platinum"
+    },
+    {
+      "x": 478.8,
+      "y": 70.3,
+      "z": 229.8,
+      "material": "platinum",
+      "category": "ore",
+      "icon": "platinum"
+    },
+    {
+      "x": -542.4,
+      "y": 51.3,
+      "z": 291.7,
+      "material": "platinum",
+      "category": "ore",
+      "icon": "platinum"
+    },
+    {
+      "x": -523.8,
+      "y": 87.0,
+      "z": 530.6,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -538.0,
+      "y": 88.1,
+      "z": 529.7,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -528.6,
+      "y": 86.4,
+      "z": 514.2,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -555.6,
+      "y": 89.0,
+      "z": 516.8,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -561.7,
+      "y": 89.0,
+      "z": 501.7,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -543.8,
+      "y": 89.4,
+      "z": 503.7,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -535.2,
+      "y": 91.9,
+      "z": 481.3,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -528.4,
+      "y": 88.3,
+      "z": 494.0,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -528.5,
+      "y": 86.7,
+      "z": 520.1,
+      "material": "cauliflower",
+      "category": "plant",
+      "icon": "cauliflower"
+    },
+    {
+      "x": -16.7,
+      "y": 17.3,
+      "z": -747.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -1.9,
+      "y": 37.4,
+      "z": -822.0,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -84.9,
+      "y": 67.2,
+      "z": -842.6,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 304.9,
+      "y": 19.7,
+      "z": -822.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 369.5,
+      "y": 30.3,
+      "z": -851.4,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 449.6,
+      "y": 24.7,
+      "z": -843.0,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 448.4,
+      "y": 13.2,
+      "z": -738.6,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 546.5,
+      "y": 19.9,
+      "z": -655.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 439.0,
+      "y": 7.4,
+      "z": -424.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 444.3,
+      "y": 13.7,
+      "z": -308.7,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 394.9,
+      "y": 21.0,
+      "z": -183.4,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 336.7,
+      "y": 7.3,
+      "z": -157.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 471.5,
+      "y": 39.1,
+      "z": -95.4,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 527.1,
+      "y": 27.6,
+      "z": -75.7,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 539.0,
+      "y": 65.5,
+      "z": 363.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 567.3,
+      "y": 28.7,
+      "z": 563.6,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 545.3,
+      "y": 6.8,
+      "z": 615.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 557.4,
+      "y": 6.6,
+      "z": 814.3,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 535.1,
+      "y": 6.7,
+      "z": 857.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -383.5,
+      "y": 9.4,
+      "z": 771.3,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 445.1,
+      "y": 0.3,
+      "z": -602.4,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 348.1,
+      "y": 0.4,
+      "z": -609.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 217.4,
+      "y": 7.9,
+      "z": -787.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 111.9,
+      "y": 0.8,
+      "z": -680.1,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 424.6,
+      "y": 25.7,
+      "z": -845.4,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 372.4,
+      "y": 5.8,
+      "z": -509.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 429.4,
+      "y": 7.1,
+      "z": -367.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 517.7,
+      "y": 28.7,
+      "z": -27.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 621.3,
+      "y": 80.0,
+      "z": 112.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 619.7,
+      "y": 82.8,
+      "z": 284.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 643.1,
+      "y": 85.5,
+      "z": 345.0,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 470.4,
+      "y": 54.2,
+      "z": 432.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 556.0,
+      "y": 6.3,
+      "z": 785.1,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -436.6,
+      "y": 33.9,
+      "z": 556.9,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -466.7,
+      "y": 32.5,
+      "z": 660.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -401.9,
+      "y": 22.0,
+      "z": 673.1,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -453.3,
+      "y": 12.1,
+      "z": 765.4,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 500.2,
+      "y": 13.1,
+      "z": -677.3,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 406.5,
+      "y": 5.6,
+      "z": -564.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 330.2,
+      "y": 5.1,
+      "z": -490.0,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 364.6,
+      "y": 47.0,
+      "z": -881.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 404.4,
+      "y": 4.5,
+      "z": -781.1,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 354.4,
+      "y": 0.2,
+      "z": -430.3,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 372.0,
+      "y": 14.6,
+      "z": -233.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 309.4,
+      "y": 4.4,
+      "z": -179.1,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -344.2,
+      "y": 22.8,
+      "z": 545.3,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -385.5,
+      "y": 24.7,
+      "z": 592.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -395.4,
+      "y": 22.6,
+      "z": 498.3,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -339.3,
+      "y": 10.7,
+      "z": 700.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -353.9,
+      "y": 8.4,
+      "z": 839.7,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 607.5,
+      "y": 31.3,
+      "z": -683.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 664.1,
+      "y": 82.2,
+      "z": 230.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 376.2,
+      "y": 52.8,
+      "z": 391.1,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 507.6,
+      "y": 1.7,
+      "z": 741.0,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -371.0,
+      "y": 13.8,
+      "z": 457.2,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -488.5,
+      "y": 25.0,
+      "z": 258.4,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 360.9,
+      "y": 12.2,
+      "z": -799.6,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 572.2,
+      "y": 46.0,
+      "z": 507.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": -417.7,
+      "y": 26.3,
+      "z": 431.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 223.7,
+      "y": 6.9,
+      "z": -201.3,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 200.8,
+      "y": 7.5,
+      "z": -180.8,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    },
+    {
+      "x": 240.3,
+      "y": 2.4,
+      "z": -127.5,
+      "material": "hard_wood",
+      "category": "wood",
+      "icon": "hard_wood"
+    }
+  ]
+}

@@ -1,0 +1,1284 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1301,
+  "slug": "jahai-bluffs",
+  "name": "Jahai Bluffs",
+  "regionName": "Crystal Desert",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Flax",
+      "category": "plant",
+      "material": "flax",
+      "source": "lady"
+    },
+    {
+      "name": "Sawgill Mushroom",
+      "category": "plant",
+      "material": "sawgill_mushroom",
+      "source": "lady"
+    },
+    {
+      "name": "Mussels",
+      "category": "seafood",
+      "material": "mussels",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -228.3,
+      "y": 82.5,
+      "z": -644.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "chatLink": "[&BIMLAAA=]"
+    },
+    {
+      "x": 689.1,
+      "y": 132.5,
+      "z": 890.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 697.1,
+      "y": 168.1,
+      "z": 874.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 785.9,
+      "y": 127.0,
+      "z": 802.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 880.8,
+      "y": 153.4,
+      "z": 763.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 912.7,
+      "y": 149.9,
+      "z": 809.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 1117.7,
+      "y": 116.0,
+      "z": 571.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 833.7,
+      "y": 114.1,
+      "z": 476.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 797.8,
+      "y": 216.3,
+      "z": 405.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 911.5,
+      "y": 123.3,
+      "z": 374.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Jackal"
+    },
+    {
+      "x": 808.7,
+      "y": 220.1,
+      "z": 259.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 601.2,
+      "y": 184.4,
+      "z": 234.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 588.5,
+      "y": 191.4,
+      "z": 245.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 555.9,
+      "y": 173.0,
+      "z": 296.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 453.2,
+      "y": 155.7,
+      "z": 281.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 430.9,
+      "y": 131.2,
+      "z": 242.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 451.7,
+      "y": 155.7,
+      "z": 179.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 402.8,
+      "y": 131.9,
+      "z": 58.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 548.9,
+      "y": 127.5,
+      "z": 82.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 557.2,
+      "y": 150.5,
+      "z": 109.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 751.2,
+      "y": 161.0,
+      "z": 28.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 745.0,
+      "y": 134.9,
+      "z": -35.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 682.0,
+      "y": 107.5,
+      "z": -107.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 601.2,
+      "y": 123.0,
+      "z": -123.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 591.9,
+      "y": 126.0,
+      "z": -124.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 710.2,
+      "y": 23.6,
+      "z": -112.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 726.7,
+      "y": -0.3,
+      "z": -141.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Roller Beetle"
+    },
+    {
+      "x": 774.3,
+      "y": 0.7,
+      "z": -154.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Jackal"
+    },
+    {
+      "x": 922.3,
+      "y": 155.2,
+      "z": -191.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 966.9,
+      "y": 136.0,
+      "z": -245.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 1017.1,
+      "y": 161.2,
+      "z": -267.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 1050.4,
+      "y": 153.2,
+      "z": -272.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 1070.8,
+      "y": 110.1,
+      "z": -357.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 933.4,
+      "y": 43.4,
+      "z": -487.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 789.0,
+      "y": 77.4,
+      "z": -496.9,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 715.5,
+      "y": 82.5,
+      "z": -473.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 666.8,
+      "y": 100.6,
+      "z": -463.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 624.9,
+      "y": 99.7,
+      "z": -487.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 712.3,
+      "y": 55.7,
+      "z": -617.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 764.0,
+      "y": 101.1,
+      "z": -673.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 731.7,
+      "y": 113.5,
+      "z": -832.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 719.3,
+      "y": 126.7,
+      "z": -831.9,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 105.3,
+      "y": 136.3,
+      "z": -469.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 52.5,
+      "y": 39.0,
+      "z": -722.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 102.9,
+      "y": 91.2,
+      "z": -495.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -26.4,
+      "y": 52.9,
+      "z": -544.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 1063.4,
+      "y": 58.2,
+      "z": -460.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 1063.0,
+      "y": 34.5,
+      "z": -537.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 486.4,
+      "y": 54.2,
+      "z": -654.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Jackal"
+    },
+    {
+      "x": 131.9,
+      "y": 55.3,
+      "z": -439.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -369.0,
+      "y": 50.9,
+      "z": -673.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium"
+    },
+    {
+      "x": -409.1,
+      "y": 49.3,
+      "z": -722.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -525.5,
+      "y": 93.1,
+      "z": -599.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -471.2,
+      "y": 114.3,
+      "z": -433.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -463.1,
+      "y": 61.6,
+      "z": -309.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -378.7,
+      "y": 86.1,
+      "z": -165.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -348.2,
+      "y": 59.2,
+      "z": -126.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -367.2,
+      "y": 83.7,
+      "z": -61.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": -290.6,
+      "y": 57.5,
+      "z": 93.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Roller Beetle"
+    },
+    {
+      "x": -115.4,
+      "y": 45.9,
+      "z": -1.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 4.6,
+      "y": 126.8,
+      "z": 61.9,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 252.3,
+      "y": 63.6,
+      "z": -43.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 240.3,
+      "y": 81.5,
+      "z": -27.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 232.1,
+      "y": 166.2,
+      "z": 31.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 215.2,
+      "y": 159.1,
+      "z": 129.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 190.7,
+      "y": 160.0,
+      "z": 211.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 214.4,
+      "y": 215.4,
+      "z": 219.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 164.2,
+      "y": 214.3,
+      "z": 191.9,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 142.3,
+      "y": 214.3,
+      "z": 144.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 144.4,
+      "y": 169.9,
+      "z": 307.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 179.9,
+      "y": 196.7,
+      "z": 318.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 17.4,
+      "y": 180.8,
+      "z": 464.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": -43.8,
+      "y": 133.8,
+      "z": 546.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -63.4,
+      "y": 150.2,
+      "z": 655.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -48.4,
+      "y": 180.8,
+      "z": 528.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -68.8,
+      "y": 132.5,
+      "z": 672.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -75.1,
+      "y": 152.6,
+      "z": 685.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 148.9,
+      "y": 120.9,
+      "z": 622.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 176.2,
+      "y": 137.8,
+      "z": 624.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 220.6,
+      "y": 139.8,
+      "z": 659.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 235.4,
+      "y": 143.3,
+      "z": 681.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 309.2,
+      "y": 143.4,
+      "z": 715.9,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": 300.9,
+      "y": 144.9,
+      "z": 657.9,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": 305.4,
+      "y": 151.1,
+      "z": 577.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": 47.7,
+      "y": 110.2,
+      "z": 516.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Jackal"
+    },
+    {
+      "x": -454.0,
+      "y": 75.0,
+      "z": 600.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -447.0,
+      "y": 114.7,
+      "z": 639.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -429.2,
+      "y": 73.0,
+      "z": 683.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Roller Beetle"
+    },
+    {
+      "x": -561.4,
+      "y": 102.6,
+      "z": 927.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": -740.9,
+      "y": 106.6,
+      "z": 898.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -823.9,
+      "y": 135.4,
+      "z": 817.9,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -957.0,
+      "y": 75.8,
+      "z": 741.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -1003.4,
+      "y": 53.2,
+      "z": 517.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -1043.4,
+      "y": 96.2,
+      "z": 474.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -1124.9,
+      "y": 61.4,
+      "z": 396.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -1124.6,
+      "y": 97.1,
+      "z": 340.3,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -1118.1,
+      "y": 111.5,
+      "z": 278.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -1135.5,
+      "y": 174.5,
+      "z": 223.5,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -1155.5,
+      "y": 130.1,
+      "z": 157.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -904.0,
+      "y": 39.3,
+      "z": 167.6,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -789.6,
+      "y": 140.1,
+      "z": 75.0,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -658.6,
+      "y": 110.4,
+      "z": 62.1,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -600.3,
+      "y": 98.5,
+      "z": 68.7,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -447.5,
+      "y": 117.1,
+      "z": 105.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Raptor"
+    },
+    {
+      "x": -418.3,
+      "y": 108.5,
+      "z": 141.2,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -440.3,
+      "y": 142.9,
+      "z": 302.4,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Glider"
+    },
+    {
+      "x": -435.8,
+      "y": 81.6,
+      "z": 391.8,
+      "material": "mistonium",
+      "category": "ore",
+      "icon": "mistonium",
+      "mount": "Springer"
+    },
+    {
+      "x": -829.0,
+      "y": 69.8,
+      "z": 185.9,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": 772.2,
+      "y": 1.3,
+      "z": -240.3,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": -874.2,
+      "y": 72.1,
+      "z": 152.5,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": -658.3,
+      "y": 80.5,
+      "z": 416.8,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": 662.4,
+      "y": 97.9,
+      "z": -821.4,
+      "material": "desert_herbs",
+      "category": "plant",
+      "icon": "desert_herbs"
+    },
+    {
+      "x": -88.2,
+      "y": 173.4,
+      "z": 642.9,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax",
+      "chatLink": "[&BFcLAAA=]"
+    },
+    {
+      "x": -430.7,
+      "y": 75.2,
+      "z": 594.7,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax",
+      "mount": "Jackal"
+    },
+    {
+      "x": -97.6,
+      "y": 181.2,
+      "z": 598.2,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -60.4,
+      "y": 154.4,
+      "z": 612.9,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -71.9,
+      "y": 163.5,
+      "z": 597.8,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -97.2,
+      "y": 181.2,
+      "z": 605.7,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -86.3,
+      "y": 181.2,
+      "z": 596.9,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -132.4,
+      "y": 179.5,
+      "z": 563.5,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -124.3,
+      "y": 161.3,
+      "z": 603.5,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -45.9,
+      "y": 153.9,
+      "z": 637.8,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": 164.3,
+      "y": 130.9,
+      "z": 61.3,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": -27.6,
+      "y": 103.8,
+      "z": 552.2,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 67.8,
+      "y": 103.5,
+      "z": 543.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -126.9,
+      "y": 161.5,
+      "z": 645.5,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": -17.5,
+      "y": 122.7,
+      "z": 495.3,
+      "material": "sawgill_mushroom",
+      "category": "plant",
+      "icon": "sawgill_mushroom"
+    },
+    {
+      "x": 174.8,
+      "y": 132.0,
+      "z": 206.5,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": 755.8,
+      "y": -0.3,
+      "z": -140.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels",
+      "chatLink": "[&BFcLAAA=]"
+    },
+    {
+      "x": 982.3,
+      "y": 113.1,
+      "z": 749.9,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 1080.9,
+      "y": 113.1,
+      "z": 860.4,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 1158.5,
+      "y": 113.0,
+      "z": 924.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 1177.5,
+      "y": 112.9,
+      "z": 631.1,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 1028.2,
+      "y": 112.9,
+      "z": 595.0,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 1007.1,
+      "y": 112.9,
+      "z": 523.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 948.3,
+      "y": 112.9,
+      "z": 486.7,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 817.0,
+      "y": 113.1,
+      "z": 432.3,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 766.5,
+      "y": 112.9,
+      "z": 324.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 586.9,
+      "y": 107.4,
+      "z": 64.3,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 667.4,
+      "y": 107.5,
+      "z": -10.2,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 709.3,
+      "y": 107.7,
+      "z": -38.6,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 683.3,
+      "y": 107.5,
+      "z": -87.8,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    },
+    {
+      "x": 707.1,
+      "y": -0.3,
+      "z": -123.9,
+      "material": "mussels",
+      "category": "seafood",
+      "icon": "mussels"
+    }
+  ]
+}

@@ -1,0 +1,1732 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1226,
+    "name": "The Desolation",
+    "continentId": 1,
+    "regionId": 12,
+    "regionName": "Crystal Desert",
+    "floor": 49,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -43008,
+        -61440
+      ],
+      [
+        43008,
+        61440
+      ]
+    ],
+    "continentRect": [
+      [
+        58240,
+        48192
+      ],
+      [
+        61824,
+        53312
+      ]
+    ],
+    "sectorRect": [
+      [
+        58277.4,
+        48058.4
+      ],
+      [
+        61783.7,
+        53272.6
+      ]
+    ],
+    "labelCoord": [
+      59868,
+      50752
+    ],
+    "release": "pof"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1226:waypoint:2780",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "waypoint",
+      "objectiveId": "2780",
+      "coord": [
+        60081,
+        48405
+      ],
+      "recommendedLevel": null,
+      "name": "Bonestrand Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNwKAAA=]",
+      "waypointChatLink": "[&BNwKAAA=]",
+      "trailIndex": 9,
+      "wikiText": "The Bonestrand is an area in The Desolation. A small village inhabitated by Palawa Joko's subjects, both Awakened and human, can be found here, surrounded by fields."
+    },
+    {
+      "stepId": "1226:vista:2664",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2664",
+      "coord": [
+        59892,
+        48412
+      ],
+      "recommendedLevel": null,
+      "name": "The Spillway",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 25,
+      "wikiText": "Use your skimmer to follow the path up the rock.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:vista:2709",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2709",
+      "coord": [
+        60355,
+        49066
+      ],
+      "recommendedLevel": null,
+      "name": "Palawa Cut",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 121,
+      "wikiText": "On the side of the Pergola, use the springer to get up.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2642",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2642",
+      "coord": [
+        60440,
+        49164
+      ],
+      "recommendedLevel": null,
+      "name": "Clanmarshal's Pergola",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 128,
+      "wikiText": "The Clanmarshal's Pergola is a point of interest within the Palawa Cut area in the Desolation.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2718",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2718",
+      "coord": [
+        60654,
+        49344
+      ],
+      "recommendedLevel": null,
+      "name": "Sandfall Sanctum",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 142,
+      "wikiText": "The Sandfall Sanctum is a point of interest in The Desolation.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2682",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2682",
+      "coord": [
+        59914,
+        49633
+      ],
+      "recommendedLevel": null,
+      "name": "Scourge's Threshold",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 236,
+      "wikiText": "Scourge's Threshold is a Point of Interest in The Desolation. This area marks the beginning of the Scourgeway and other hostile environments.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2609",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2609",
+      "coord": [
+        60214,
+        49914
+      ],
+      "recommendedLevel": null,
+      "name": "Chukeht Overlook",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 258,
+      "wikiText": "Chukeht Overlook is a point of interest located in The Scourgeway. This small Awakened camp on a high cliff looks out over the sulfurous chasms beneath the small rocky crags where various scruffy animals such as Hyenas make their home.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:vista:2719",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2719",
+      "coord": [
+        60444,
+        49770
+      ],
+      "recommendedLevel": null,
+      "name": "The Scourgeway",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 275,
+      "wikiText": "Beware of sulphur vapors, use your springer and raptor to get there.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:waypoint:2675",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "waypoint",
+      "objectiveId": "2675",
+      "coord": [
+        60443,
+        50248
+      ],
+      "recommendedLevel": null,
+      "name": "The Scourgeway Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHMKAAA=]",
+      "waypointChatLink": "[&BHMKAAA=]",
+      "trailIndex": 314,
+      "wikiText": "The Scourgeway is an area in The Desolation."
+    },
+    {
+      "stepId": "1226:poi:2626",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2626",
+      "coord": [
+        60600,
+        50446
+      ],
+      "recommendedLevel": null,
+      "name": "Towering Links",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 342,
+      "wikiText": "Towering Links is a point of interest found in The Scourgeway.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:hero:2-23",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "hero",
+      "objectiveId": "2-23",
+      "coord": [
+        60757,
+        50066
+      ],
+      "recommendedLevel": null,
+      "name": "Awakened Wanderer",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 361,
+      "wikiText": "Awakened Wanderer is a canid Hero Challenge in the Poisoned Outcrops",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2665",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2665",
+      "coord": [
+        60783,
+        49892
+      ],
+      "recommendedLevel": null,
+      "name": "Ember Heights",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 369,
+      "wikiText": "Ember Heights is a Point of Interest in The Desolation marking some tall stone pillars which are home to many Embers and Fire Imps.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2689",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2689",
+      "coord": [
+        61312,
+        49805
+      ],
+      "recommendedLevel": null,
+      "name": "Shadow Arcade",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 403,
+      "wikiText": "The Shadow Arcade is a Point of Interest in The Desolation marked by a set of 3 archways, leading to a Jackal portal. Shadow Imps appear along the ledges when something approaches the Lost Chest in the middle.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2702",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2702",
+      "coord": [
+        61519,
+        50447
+      ],
+      "recommendedLevel": null,
+      "name": "Toxic Pools",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 440,
+      "wikiText": "The Toxic Pools is a point of interest in the Helcoid Seeps area, at the eastern edge of The Desolation.",
+      "waypointChatLink": "[&BMEKAAA=]"
+    },
+    {
+      "stepId": "1226:heart:403",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "heart",
+      "objectiveId": "403",
+      "coord": [
+        61504,
+        51076
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Dunkoro assist local ghosts.",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          61561,
+          50636
+        ],
+        [
+          61350,
+          50813
+        ],
+        [
+          61110,
+          51030
+        ],
+        [
+          61184,
+          51327
+        ],
+        [
+          61374,
+          51541
+        ],
+        [
+          61806,
+          51304
+        ],
+        [
+          61829,
+          51128
+        ],
+        [
+          61903,
+          50741
+        ],
+        [
+          61561,
+          50636
+        ]
+      ],
+      "trailIndex": 494,
+      "wikiText": "Help pacify enraged spirits, lead lost ghosts to their destinations, read the last words from the Forgotten statues, and light ghost eater wardlights.",
+      "waypointChatLink": "[&BMEKAAA=]"
+    },
+    {
+      "stepId": "1226:waypoint:2753",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "waypoint",
+      "objectiveId": "2753",
+      "coord": [
+        61423,
+        51140
+      ],
+      "recommendedLevel": null,
+      "name": "Lair of the Forgotten Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BMEKAAA=]",
+      "waypointChatLink": "[&BMEKAAA=]",
+      "trailIndex": 501,
+      "wikiText": "The Lair of the Forgotten, once the home of the Forgotten, is now a hub of friendly ghosts in the Desolation. The ghosts have many origins, some dating back to the era of the Primeval Kings."
+    },
+    {
+      "stepId": "1226:vista:2654",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2654",
+      "coord": [
+        61396,
+        51036
+      ],
+      "recommendedLevel": null,
+      "name": "Lair of the Forgotten",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 505,
+      "wikiText": "Near the waypoint, on the cliff.",
+      "waypointChatLink": "[&BMEKAAA=]"
+    },
+    {
+      "stepId": "1226:hero:2-21",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "hero",
+      "objectiveId": "2-21",
+      "coord": [
+        61167,
+        51062
+      ],
+      "recommendedLevel": null,
+      "name": "Shanna the Valorous",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 520,
+      "wikiText": "Shanna the Valorous is a hero challenge ghost found on a rocky outcrop northwest of the Lair of the Forgotten.",
+      "waypointChatLink": "[&BMEKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2672",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2672",
+      "coord": [
+        61156,
+        51353
+      ],
+      "recommendedLevel": null,
+      "name": "Wayward Watch",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 537,
+      "wikiText": "Wayward Watch is a point of interest in the Lair of the Forgotten. Here, three human ghosts, Chessa, Kane, and Larano stand watch and contemplate the current state of Elona.",
+      "waypointChatLink": "[&BMEKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2607",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2607",
+      "coord": [
+        61813,
+        51627
+      ],
+      "recommendedLevel": null,
+      "name": "Uhiwi's Bones",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 584,
+      "wikiText": "Uhiwi's Bones is a point of interest in the eastern part of The Desolation. The Desolation Insight: Shattered Ravines can be found in a small corner south of it.",
+      "waypointChatLink": "[&BMEKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2653",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2653",
+      "coord": [
+        61616,
+        51921
+      ],
+      "recommendedLevel": null,
+      "name": "Vabbian Corridor",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 612,
+      "wikiText": "The Vabbian Corridor is a point of interest in the southeastern part of The Desolation. The large gate is used by Balthazar's Forged to travel towards The Foundry in the Domain of Vabbi.",
+      "waypointChatLink": "[&BMEKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2644",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2644",
+      "coord": [
+        61357,
+        51964
+      ],
+      "recommendedLevel": null,
+      "name": "Forbidden Vault",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 628,
+      "wikiText": "The Forbidden Vault is a secret chamber in which Palawa Joko keeps his harem of women, men, ogres, harpies, and choya. Some of the concubines are volunteers, but many were offered as a sacrifice by their villages to secure protection.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2648",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2648",
+      "coord": [
+        61028,
+        51793
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Huduh",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 653,
+      "wikiText": "Fort Huduh is a major Awakened fortress situated in The Shattered Ravines which is in constant siege warfare with Forged Firebase.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2586",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2586",
+      "coord": [
+        60683,
+        51575
+      ],
+      "recommendedLevel": null,
+      "name": "Forged Firebase",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 674,
+      "wikiText": "Forged Firebase is a major Forged fortress situated in The Shattered Ravines which is in constant siege warfare with Fort Huduh.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2588",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2588",
+      "coord": [
+        60357,
+        51112
+      ],
+      "recommendedLevel": null,
+      "name": "Zayan Gate",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 713,
+      "wikiText": "The Zayan Gate is a Point of Interest at the entrance to a cave where the main street through the Desolation passes from the Shattered Ravines into the Scourgeway.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2761",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2761",
+      "coord": [
+        59725,
+        50918
+      ],
+      "recommendedLevel": null,
+      "name": "Revealer Vantage",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 764,
+      "wikiText": "The Revealer Vantage is a Point of Interest on a tower in The Desolation.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:heart:418",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "heart",
+      "objectiveId": "418",
+      "coord": [
+        59325,
+        50678
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the Order of Shadows defend against the Forged.",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59608,
+          50622
+        ],
+        [
+          59281,
+          50576
+        ],
+        [
+          59171,
+          50707
+        ],
+        [
+          59094,
+          50898
+        ],
+        [
+          59208,
+          51161
+        ],
+        [
+          59823,
+          51121
+        ],
+        [
+          60083,
+          50893
+        ],
+        [
+          59893,
+          50645
+        ],
+        [
+          59698,
+          50606
+        ],
+        [
+          59608,
+          50622
+        ]
+      ],
+      "trailIndex": 802,
+      "wikiText": "Aid the Order of Shadows by repairing turrets, collecting surveillance data, healing injured agents, destroying Forged barricades, and fighting Forged and Awakened.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2638",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2638",
+      "coord": [
+        59297,
+        50677
+      ],
+      "recommendedLevel": null,
+      "name": "Torment's Watch",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 804,
+      "wikiText": "Torment's Watch is a point of interest in The Ruination. The Order of Shadows use it to guard the southern tunnel entrance to the Chantry of Shadows from attacks by the Forged.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2728",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2728",
+      "coord": [
+        59390,
+        50330
+      ],
+      "recommendedLevel": null,
+      "name": "Chantry of Shadows",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 828,
+      "wikiText": "The Chantry of Shadows is the Order of Shadows' base of operations in Elona. Some parts of the base are sealed behind doors, safe from any unwanted visitors.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2788",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2788",
+      "coord": [
+        59020,
+        50155
+      ],
+      "recommendedLevel": null,
+      "name": "Sandstrewn Shrine",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 835,
+      "wikiText": "The Sandstrewn Shrine is a point of interest located in The Darklands.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:waypoint:2723",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "waypoint",
+      "objectiveId": "2723",
+      "coord": [
+        59187,
+        50521
+      ],
+      "recommendedLevel": null,
+      "name": "The Darklands Waypoint",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BKMKAAA=]",
+      "waypointChatLink": "[&BKMKAAA=]",
+      "trailIndex": 844,
+      "wikiText": "The Darklands is an area in the lower northwestern part of The Desolation. The Chantry of Shadows can be found here."
+    },
+    {
+      "stepId": "1226:vista:2668",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2668",
+      "coord": [
+        59165,
+        50681
+      ],
+      "recommendedLevel": null,
+      "name": "The Ruination",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 853,
+      "wikiText": "Use your springer near the camp wall.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2619",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2619",
+      "coord": [
+        59726,
+        51308
+      ],
+      "recommendedLevel": null,
+      "name": "Conquest Overlook",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 914,
+      "wikiText": "Conquest Overlook is a point of interest in The Desolation. This tower provides a good vantage point to help the Forged defend The Mouth of Torment from the Order of Whispers and other threats to their source of new soldiers.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2766",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2766",
+      "coord": [
+        60049,
+        51820
+      ],
+      "recommendedLevel": null,
+      "name": "Henge of Joko",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 951,
+      "wikiText": "The Henge of Joko is a mesa top full of Shades and Fleshreavers.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2701",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2701",
+      "coord": [
+        59214,
+        51496
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Maw",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1015,
+      "wikiText": "The Eastern Maw is a Point of Interest in The Desolation, and one of the main three points of attack during Maws of Torment.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2554",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2554",
+      "coord": [
+        59051,
+        51348
+      ],
+      "recommendedLevel": null,
+      "name": "Northern Maw",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1031,
+      "wikiText": "The Northern Maw is a Point of Interest in The Desolation. It's one of the gates that grants entrance into the center of The Ruptured Heart, along with the Eastern Maw and Western Maw.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2754",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2754",
+      "coord": [
+        58944,
+        51368
+      ],
+      "recommendedLevel": null,
+      "name": "Western Maw",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1047,
+      "wikiText": "The Western Maw is a Point of Interest near the center of the Ruptured Heart in The Desolation, and one of the main three points of attack during Maws of Torment.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:vista:2700",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2700",
+      "coord": [
+        58976,
+        51531
+      ],
+      "recommendedLevel": null,
+      "name": "The Ruptured Heart",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1082,
+      "wikiText": "Find the corresponding sand portal to travel there.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:hero:2-24",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "hero",
+      "objectiveId": "2-24",
+      "coord": [
+        59039,
+        51508
+      ],
+      "recommendedLevel": null,
+      "name": "The Mouth of Torment",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1085,
+      "wikiText": "The Mouth of Torment is a twisted crater on the former shoreline of the Crystal Sea. When Abaddon rebelled against the other five gods, it was here that the final blow was dealt and Abaddon's defeat made certain.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2660",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2660",
+      "coord": [
+        59058,
+        51519
+      ],
+      "recommendedLevel": null,
+      "name": "The Mouth of Torment",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1087,
+      "wikiText": "The Mouth of Torment is a twisted crater on the former shoreline of the Crystal Sea. When Abaddon rebelled against the other five gods, it was here that the final blow was dealt and Abaddon's defeat made certain.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:heart:391",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "heart",
+      "objectiveId": "391",
+      "coord": [
+        59492,
+        52606
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Drojkor, Spirit Squall, control jackals.",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59839,
+          52961
+        ],
+        [
+          59995,
+          52641
+        ],
+        [
+          59732,
+          52276
+        ],
+        [
+          59377,
+          52172
+        ],
+        [
+          59026,
+          52300
+        ],
+        [
+          58881,
+          52595
+        ],
+        [
+          58874,
+          52744
+        ],
+        [
+          58995,
+          52879
+        ],
+        [
+          59171,
+          53034
+        ],
+        [
+          59489,
+          53206
+        ],
+        [
+          59839,
+          52961
+        ]
+      ],
+      "trailIndex": 1246,
+      "wikiText": "Hand in runestones and unbound energy, run over wisps, use the jackal's Pounce skill on tormented dust devils, and destroy remnants.",
+      "waypointChatLink": "[&BHcKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2790",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2790",
+      "coord": [
+        59470,
+        52616
+      ],
+      "recommendedLevel": null,
+      "name": "Djinn Enclave",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1246,
+      "wikiText": "Djinn Enclave is a point of interest located in Sand Jackal Run in The Desolation marking a large settlement of djinn who are cleansing Abaddon's magic of torment and re-purposing the magic in the form of a Jackal.",
+      "waypointChatLink": "[&BHcKAAA=]"
+    },
+    {
+      "stepId": "1226:vista:2617",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2617",
+      "coord": [
+        59431,
+        52396
+      ],
+      "recommendedLevel": null,
+      "name": "Sand Jackal Run",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1260,
+      "wikiText": "Use your jackal to get there.",
+      "waypointChatLink": "[&BHcKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2578",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2578",
+      "coord": [
+        60056,
+        52616
+      ],
+      "recommendedLevel": null,
+      "name": "Junundu Lookout",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1331,
+      "wikiText": "Junundu Lookout is a point of interest located within the Alkali Pan in the Desolation.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2646",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2646",
+      "coord": [
+        60333,
+        52226
+      ],
+      "recommendedLevel": null,
+      "name": "Lone-Tree Hill",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1367,
+      "wikiText": "An ancient tree sits atop Lone-Tree Hill in The Desolation. Many skulls litter the base of the tree and ravens roost in its branches.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:vista:2739",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2739",
+      "coord": [
+        60442,
+        52337
+      ],
+      "recommendedLevel": null,
+      "name": "Joko's Domain",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1377,
+      "wikiText": "Travel to the the north of the Bone Palace, on the cliff.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2562",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2562",
+      "coord": [
+        60544,
+        52978
+      ],
+      "recommendedLevel": null,
+      "name": "The Bone Palace",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1417,
+      "wikiText": "The Bone Palace is a point of interest in Joko's Domain and serves as Palawa Joko's seat of power.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:hero:2-25",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "hero",
+      "objectiveId": "2-25",
+      "coord": [
+        60478,
+        52856
+      ],
+      "recommendedLevel": null,
+      "name": "The Bone Palace",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1427,
+      "wikiText": "The Bone Palace is a point of interest in Joko's Domain and serves as Palawa Joko's seat of power.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2764",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2764",
+      "coord": [
+        60522,
+        53153
+      ],
+      "recommendedLevel": null,
+      "name": "Bitumen Reserve",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1471,
+      "wikiText": "The Bitumen Reserve is an underground area behind The Bone Palace of Palawa Joko. It serves as a Point of Interest in The Desolation.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2735",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2735",
+      "coord": [
+        61297,
+        53226
+      ],
+      "recommendedLevel": null,
+      "name": "Junundu Hatchery",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1520,
+      "wikiText": "The Junundu Hatchery is a point of interest in the Basaltic Fringe. Junundu Wurms use this place to breed and hatch their eggs.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2683",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2683",
+      "coord": [
+        61544,
+        52820
+      ],
+      "recommendedLevel": null,
+      "name": "Lupicus Boneyard",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1554,
+      "wikiText": "Lupicus Boneyard is a graveyard of huge beasts, their tar-covered fossils. The passageway towards the Domain of Vabbi can be found directly east of this point of interest.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2786",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2786",
+      "coord": [
+        61672,
+        52385
+      ],
+      "recommendedLevel": null,
+      "name": "Tarstone Weeps",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1594,
+      "wikiText": "The Tarstone Weeps is a Point of Interest in a hidden tar pit in the southeast of The Desolation. The Desolation Insight: Tarstone Weeps is right next to it.",
+      "waypointChatLink": "[&BAsKAAA=]"
+    },
+    {
+      "stepId": "1226:waypoint:2571",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "waypoint",
+      "objectiveId": "2571",
+      "coord": [
+        60886,
+        52308
+      ],
+      "recommendedLevel": null,
+      "name": "Joko's Domain Waypoint",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BAsKAAA=]",
+      "waypointChatLink": "[&BAsKAAA=]",
+      "trailIndex": 1682,
+      "wikiText": "Joko's Domain is an area in The Desolation and the heart of King Palawa Joko I's Elonian empire. Originally dominated around 757 AE, it has served as the home of The Bone Palace for over 500 years."
+    },
+    {
+      "stepId": "1226:waypoint:2679",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "waypoint",
+      "objectiveId": "2679",
+      "coord": [
+        59123,
+        52735
+      ],
+      "recommendedLevel": null,
+      "name": "Sand Jackal Run Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHcKAAA=]",
+      "waypointChatLink": "[&BHcKAAA=]",
+      "trailIndex": 1834,
+      "wikiText": "Sand Jackal Run is an area in The Desolation where the jackal can be acquired. To reach the levitating Djinn Enclave, climb the rotating staircase up the top, or use a jackal to teleport through one of the nearby Sand Portals."
+    },
+    {
+      "stepId": "1226:poi:2611",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2611",
+      "coord": [
+        58694,
+        52692
+      ],
+      "recommendedLevel": null,
+      "name": "The Vermitheater",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1852,
+      "wikiText": "The Vermitheater is a point of interest located within The Alkali Pan in The Desolation. It is a small sulfur island shaped like a natural arena.",
+      "waypointChatLink": "[&BHcKAAA=]"
+    },
+    {
+      "stepId": "1226:hero:2-20",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "hero",
+      "objectiveId": "2-20",
+      "coord": [
+        58796,
+        52558
+      ],
+      "recommendedLevel": null,
+      "name": "Gnarled Tree",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1859,
+      "wikiText": "Gnarled Tree is a hero challenge in Broken Shelf. It summons a Veteran Giant Jacaranda to fight.",
+      "waypointChatLink": "[&BHcKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2589",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2589",
+      "coord": [
+        58612,
+        52146
+      ],
+      "recommendedLevel": null,
+      "name": "Bleached Pillars",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1897,
+      "wikiText": "The Bleached Pillars is a several rock pillars connected with wooden bridges and Sand Portals found in the north western portion of Broken Shelf. Devourers and Earth Elementals roam nearby.",
+      "waypointChatLink": "[&BHcKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2577",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2577",
+      "coord": [
+        58421,
+        50181
+      ],
+      "recommendedLevel": null,
+      "name": "Acrid Sink",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2061,
+      "wikiText": "Acrid Sink is a point of interest located of the bottom of the Caustic Spur canyon in The Desolation. The ground around it is covered with Sulfurous Haze and some packs of sulfurous oozes can be found in the sulfur pools nearby.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:hero:2-22",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "hero",
+      "objectiveId": "2-22",
+      "coord": [
+        58471,
+        49148
+      ],
+      "recommendedLevel": null,
+      "name": "Broken Egg",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2128,
+      "wikiText": "Broken Egg is a hero challenge in Acrid Springs. It summons a Veteran Sulfur-Crazed Matriarch and 3 Young Harpies to fight.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:vista:2649",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2649",
+      "coord": [
+        58521,
+        49167
+      ],
+      "recommendedLevel": null,
+      "name": "Acrid Springs",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2160,
+      "wikiText": "At the top of a sulphur structure, use your springer to get up.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2583",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2583",
+      "coord": [
+        58935,
+        49612
+      ],
+      "recommendedLevel": null,
+      "name": "Imperial Sulfurworks",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2192,
+      "wikiText": "The Imperial Sulfurworks is a Point of Interest in The Desolation which marks a concentration in the sulfur mining hardware in the quarry.",
+      "waypointChatLink": "[&BKMKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2770",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2770",
+      "coord": [
+        59368,
+        49202
+      ],
+      "recommendedLevel": null,
+      "name": "Bonecage Paddock",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2227,
+      "wikiText": "The Bonecage Paddock is a Point of Interest in The Desolation. It contains an Awakened Abomination, either a Veteran Awakened Abomination, or when the bounty is active, Legendary Awakened Hoarder.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2727",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2727",
+      "coord": [
+        59635,
+        48880
+      ],
+      "recommendedLevel": null,
+      "name": "Bonestrand Garrison",
+      "prereqs": [],
+      "order": 62,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2253,
+      "wikiText": "The Bonestrand Garrison is a Point of Interest in The Desolation. The garrison is stationed full of Awakened forces.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:heart:415",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "heart",
+      "objectiveId": "415",
+      "coord": [
+        59787,
+        48835
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Tariq weaken the garrison.",
+      "prereqs": [],
+      "order": 63,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          59965,
+          48954
+        ],
+        [
+          59897,
+          48847
+        ],
+        [
+          59889,
+          48681
+        ],
+        [
+          59809,
+          48592
+        ],
+        [
+          59509,
+          48618
+        ],
+        [
+          59336,
+          48776
+        ],
+        [
+          59347,
+          48969
+        ],
+        [
+          59399,
+          49044
+        ],
+        [
+          59557,
+          49160
+        ],
+        [
+          59913,
+          49089
+        ],
+        [
+          59965,
+          48954
+        ]
+      ],
+      "trailIndex": 2267,
+      "wikiText": "Weaken the garrison by tearing down propaganda, burning corpses in the mausoleum, defeating hostile Awakened, and defusing mines using kits obtained in crates throughout the area.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2760",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2760",
+      "coord": [
+        60346,
+        48712
+      ],
+      "recommendedLevel": null,
+      "name": "Village of Purity",
+      "prereqs": [],
+      "order": 64,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2304,
+      "wikiText": "The Village of Purity is a point of interest in The Desolation. This village has been under the rule of Palawa Joko for a long time, but lately there's been hardship as the vizier has been cracking down.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:heart:419",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "heart",
+      "objectiveId": "419",
+      "coord": [
+        60370,
+        48571
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Kisha Odili keep the village running.",
+      "prereqs": [],
+      "order": 65,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          60219,
+          48171
+        ],
+        [
+          60824,
+          48202
+        ],
+        [
+          60964,
+          48616
+        ],
+        [
+          60764,
+          48908
+        ],
+        [
+          60315,
+          48977
+        ],
+        [
+          60114,
+          48724
+        ],
+        [
+          60219,
+          48171
+        ]
+      ],
+      "trailIndex": 2313,
+      "wikiText": "Protect the fields, patch up Awakened servants, make repairs in the village, destroy wasp nests, use local drakehounds to track down spies, and return suspicious orders to Kisha.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2582",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2582",
+      "coord": [
+        61172,
+        49061
+      ],
+      "recommendedLevel": null,
+      "name": "Matriarch's View",
+      "prereqs": [],
+      "order": 66,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2383,
+      "wikiText": "Matriarch's View is a point of interest in the Boundary Preserve, in the northeastern corner of The Desolation. It is located on a ledge high above the vale and it is guarded by a large group of Harpies.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2587",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2587",
+      "coord": [
+        61639,
+        49366
+      ],
+      "recommendedLevel": null,
+      "name": "Springer's Ladder",
+      "prereqs": [],
+      "order": 67,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2435,
+      "wikiText": "Springer's Ladder is a point of interest in Poisoned Outcrops marking the blocky, stair-like rock layers which form a natural barrier between the Boundary Preserve and the Poisoned Outcrops.",
+      "waypointChatLink": "[&BHMKAAA=]"
+    },
+    {
+      "stepId": "1226:vista:2778",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "vista",
+      "objectiveId": "2778",
+      "coord": [
+        61204,
+        48770
+      ],
+      "recommendedLevel": null,
+      "name": "Boundary Preserve",
+      "prereqs": [],
+      "order": 68,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2480,
+      "wikiText": "The top of a mountain within the woods, use your springer to get up.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    },
+    {
+      "stepId": "1226:poi:2759",
+      "mapId": 1226,
+      "zoneName": "The Desolation",
+      "type": "poi",
+      "objectiveId": "2759",
+      "coord": [
+        61203,
+        48244
+      ],
+      "recommendedLevel": null,
+      "name": "Blind Faith",
+      "prereqs": [],
+      "order": 69,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2499,
+      "wikiText": "Blind Faith is a point of interest within Silent Vale in The Desolation. At least several dozen from the Village of Purity are said to secretly worship Kormir here.",
+      "waypointChatLink": "[&BNwKAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

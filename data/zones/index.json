@@ -1,0 +1,764 @@
+{
+  "zones": [
+    {
+      "slug": "eye-of-the-north",
+      "mapId": 1370,
+      "name": "Eye of the North",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 0,
+      "maxLevel": 0
+    },
+    {
+      "slug": "divinity-s-reach",
+      "mapId": 18,
+      "name": "Divinity's Reach",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 0,
+      "maxLevel": 80
+    },
+    {
+      "slug": "lion-s-arch",
+      "mapId": 50,
+      "name": "Lion's Arch",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 0,
+      "maxLevel": 80
+    },
+    {
+      "slug": "the-grove",
+      "mapId": 91,
+      "name": "The Grove",
+      "release": "core",
+      "regionId": 5,
+      "regionName": "Tarnished Coast",
+      "minLevel": 0,
+      "maxLevel": 80
+    },
+    {
+      "slug": "rata-sum",
+      "mapId": 139,
+      "name": "Rata Sum",
+      "release": "core",
+      "regionId": 5,
+      "regionName": "Tarnished Coast",
+      "minLevel": 0,
+      "maxLevel": 80
+    },
+    {
+      "slug": "black-citadel",
+      "mapId": 218,
+      "name": "Black Citadel",
+      "release": "core",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 0,
+      "maxLevel": 80
+    },
+    {
+      "slug": "hoelbrak",
+      "mapId": 326,
+      "name": "Hoelbrak",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 0,
+      "maxLevel": 80
+    },
+    {
+      "slug": "queensdale",
+      "mapId": 15,
+      "name": "Queensdale",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 1,
+      "maxLevel": 15
+    },
+    {
+      "slug": "plains-of-ashford",
+      "mapId": 19,
+      "name": "Plains of Ashford",
+      "release": "core",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 1,
+      "maxLevel": 15
+    },
+    {
+      "slug": "wayfarer-foothills",
+      "mapId": 28,
+      "name": "Wayfarer Foothills",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 1,
+      "maxLevel": 15
+    },
+    {
+      "slug": "caledon-forest",
+      "mapId": 34,
+      "name": "Caledon Forest",
+      "release": "core",
+      "regionId": 5,
+      "regionName": "Tarnished Coast",
+      "minLevel": 1,
+      "maxLevel": 15
+    },
+    {
+      "slug": "metrica-province",
+      "mapId": 35,
+      "name": "Metrica Province",
+      "release": "core",
+      "regionId": 5,
+      "regionName": "Tarnished Coast",
+      "minLevel": 1,
+      "maxLevel": 15
+    },
+    {
+      "slug": "kessex-hills",
+      "mapId": 23,
+      "name": "Kessex Hills",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 15,
+      "maxLevel": 25
+    },
+    {
+      "slug": "snowden-drifts",
+      "mapId": 31,
+      "name": "Snowden Drifts",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 15,
+      "maxLevel": 25
+    },
+    {
+      "slug": "diessa-plateau",
+      "mapId": 32,
+      "name": "Diessa Plateau",
+      "release": "core",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 15,
+      "maxLevel": 25
+    },
+    {
+      "slug": "brisban-wildlands",
+      "mapId": 54,
+      "name": "Brisban Wildlands",
+      "release": "core",
+      "regionId": 5,
+      "regionName": "Tarnished Coast",
+      "minLevel": 15,
+      "maxLevel": 25
+    },
+    {
+      "slug": "gendarran-fields",
+      "mapId": 24,
+      "name": "Gendarran Fields",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 25,
+      "maxLevel": 35
+    },
+    {
+      "slug": "lornar-s-pass",
+      "mapId": 27,
+      "name": "Lornar's Pass",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 25,
+      "maxLevel": 40
+    },
+    {
+      "slug": "fields-of-ruin",
+      "mapId": 21,
+      "name": "Fields of Ruin",
+      "release": "core",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 30,
+      "maxLevel": 40
+    },
+    {
+      "slug": "harathi-hinterlands",
+      "mapId": 17,
+      "name": "Harathi Hinterlands",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 35,
+      "maxLevel": 45
+    },
+    {
+      "slug": "blazeridge-steppes",
+      "mapId": 20,
+      "name": "Blazeridge Steppes",
+      "release": "core",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 40,
+      "maxLevel": 50
+    },
+    {
+      "slug": "dredgehaunt-cliffs",
+      "mapId": 26,
+      "name": "Dredgehaunt Cliffs",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 40,
+      "maxLevel": 50
+    },
+    {
+      "slug": "bloodtide-coast",
+      "mapId": 73,
+      "name": "Bloodtide Coast",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 45,
+      "maxLevel": 55
+    },
+    {
+      "slug": "iron-marches",
+      "mapId": 25,
+      "name": "Iron Marches",
+      "release": "core",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 50,
+      "maxLevel": 60
+    },
+    {
+      "slug": "timberline-falls",
+      "mapId": 29,
+      "name": "Timberline Falls",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 50,
+      "maxLevel": 60
+    },
+    {
+      "slug": "sparkfly-fen",
+      "mapId": 53,
+      "name": "Sparkfly Fen",
+      "release": "core",
+      "regionId": 8,
+      "regionName": "Steamspur Mountains",
+      "minLevel": 55,
+      "maxLevel": 65
+    },
+    {
+      "slug": "fireheart-rise",
+      "mapId": 22,
+      "name": "Fireheart Rise",
+      "release": "core",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 60,
+      "maxLevel": 70
+    },
+    {
+      "slug": "mount-maelstrom",
+      "mapId": 39,
+      "name": "Mount Maelstrom",
+      "release": "core",
+      "regionId": 8,
+      "regionName": "Steamspur Mountains",
+      "minLevel": 60,
+      "maxLevel": 70
+    },
+    {
+      "slug": "straits-of-devastation",
+      "mapId": 51,
+      "name": "Straits of Devastation",
+      "release": "core",
+      "regionId": 3,
+      "regionName": "Ruins of Orr",
+      "minLevel": 70,
+      "maxLevel": 75
+    },
+    {
+      "slug": "frostgorge-sound",
+      "mapId": 30,
+      "name": "Frostgorge Sound",
+      "release": "core",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 70,
+      "maxLevel": 80
+    },
+    {
+      "slug": "malchor-s-leap",
+      "mapId": 65,
+      "name": "Malchor's Leap",
+      "release": "core",
+      "regionId": 3,
+      "regionName": "Ruins of Orr",
+      "minLevel": 75,
+      "maxLevel": 80
+    },
+    {
+      "slug": "cursed-shore",
+      "mapId": 62,
+      "name": "Cursed Shore",
+      "release": "core",
+      "regionId": 3,
+      "regionName": "Ruins of Orr",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "southsun-cove",
+      "mapId": 873,
+      "name": "Southsun Cove",
+      "release": "lws1",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "dry-top",
+      "mapId": 988,
+      "name": "Dry Top",
+      "release": "lws2",
+      "regionId": 11,
+      "regionName": "Maguuma Wastes",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "the-silverwastes",
+      "mapId": 1015,
+      "name": "The Silverwastes",
+      "release": "lws2",
+      "regionId": 11,
+      "regionName": "Maguuma Wastes",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "dragon-s-stand",
+      "mapId": 1041,
+      "name": "Dragon's Stand",
+      "release": "hot",
+      "regionId": 10,
+      "regionName": "Heart of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "auric-basin",
+      "mapId": 1043,
+      "name": "Auric Basin",
+      "release": "hot",
+      "regionId": 10,
+      "regionName": "Heart of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "tangled-depths",
+      "mapId": 1045,
+      "name": "Tangled Depths",
+      "release": "hot",
+      "regionId": 10,
+      "regionName": "Heart of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "verdant-brink",
+      "mapId": 1052,
+      "name": "Verdant Brink",
+      "release": "hot",
+      "regionId": 10,
+      "regionName": "Heart of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "bloodstone-fen",
+      "mapId": 1165,
+      "name": "Bloodstone Fen",
+      "release": "lws3",
+      "regionId": 10,
+      "regionName": "Heart of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "ember-bay",
+      "mapId": 1175,
+      "name": "Ember Bay",
+      "release": "lws3",
+      "regionId": 20,
+      "regionName": "Ring of Fire",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "bitterfrost-frontier",
+      "mapId": 1178,
+      "name": "Bitterfrost Frontier",
+      "release": "lws3",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "lake-doric",
+      "mapId": 1185,
+      "name": "Lake Doric",
+      "release": "lws3",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "draconis-mons",
+      "mapId": 1195,
+      "name": "Draconis Mons",
+      "release": "lws3",
+      "regionId": 20,
+      "regionName": "Ring of Fire",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "siren-s-landing",
+      "mapId": 1203,
+      "name": "Siren's Landing",
+      "release": "lws3",
+      "regionId": 3,
+      "regionName": "Ruins of Orr",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "crystal-oasis",
+      "mapId": 1210,
+      "name": "Crystal Oasis",
+      "release": "pof",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "desert-highlands",
+      "mapId": 1211,
+      "name": "Desert Highlands",
+      "release": "pof",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "the-desolation",
+      "mapId": 1226,
+      "name": "The Desolation",
+      "release": "pof",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "elon-riverlands",
+      "mapId": 1228,
+      "name": "Elon Riverlands",
+      "release": "pof",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "domain-of-vabbi",
+      "mapId": 1248,
+      "name": "Domain of Vabbi",
+      "release": "pof",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "domain-of-istan",
+      "mapId": 1263,
+      "name": "Domain of Istan",
+      "release": "lws4",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "sandswept-isles",
+      "mapId": 1271,
+      "name": "Sandswept Isles",
+      "release": "lws4",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "domain-of-kourna",
+      "mapId": 1288,
+      "name": "Domain of Kourna",
+      "release": "lws4",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "jahai-bluffs",
+      "mapId": 1301,
+      "name": "Jahai Bluffs",
+      "release": "lws4",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "thunderhead-peaks",
+      "mapId": 1310,
+      "name": "Thunderhead Peaks",
+      "release": "lws4",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "dragonfall",
+      "mapId": 1317,
+      "name": "Dragonfall",
+      "release": "lws4",
+      "regionId": 12,
+      "regionName": "Crystal Desert",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "grothmar-valley",
+      "mapId": 1330,
+      "name": "Grothmar Valley",
+      "release": "lws5",
+      "regionId": 2,
+      "regionName": "Ascalon",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "bjora-marches",
+      "mapId": 1343,
+      "name": "Bjora Marches",
+      "release": "lws5",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "drizzlewood-coast",
+      "mapId": 1371,
+      "name": "Drizzlewood Coast",
+      "release": "lws5",
+      "regionId": 1,
+      "regionName": "Shiverpeak Mountains",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "dragon-s-end",
+      "mapId": 1422,
+      "name": "Dragon's End",
+      "release": "eod",
+      "regionId": 37,
+      "regionName": "Cantha",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "arborstone",
+      "mapId": 1428,
+      "name": "Arborstone",
+      "release": "eod",
+      "regionId": 37,
+      "regionName": "Cantha",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "new-kaineng-city",
+      "mapId": 1438,
+      "name": "New Kaineng City",
+      "release": "eod",
+      "regionId": 37,
+      "regionName": "Cantha",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "seitung-province",
+      "mapId": 1442,
+      "name": "Seitung Province",
+      "release": "eod",
+      "regionId": 37,
+      "regionName": "Cantha",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "the-echovald-wilds",
+      "mapId": 1452,
+      "name": "The Echovald Wilds",
+      "release": "eod",
+      "regionId": 37,
+      "regionName": "Cantha",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "gyala-delve",
+      "mapId": 1490,
+      "name": "Gyala Delve",
+      "release": "eod",
+      "regionId": 37,
+      "regionName": "Cantha",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "the-wizard-s-tower",
+      "mapId": 1509,
+      "name": "The Wizard's Tower",
+      "release": "soto",
+      "regionId": 48,
+      "regionName": "Horn of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "skywatch-archipelago",
+      "mapId": 1510,
+      "name": "Skywatch Archipelago",
+      "release": "soto",
+      "regionId": 48,
+      "regionName": "Horn of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "amnytas",
+      "mapId": 1517,
+      "name": "Amnytas",
+      "release": "soto",
+      "regionId": 48,
+      "regionName": "Horn of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "inner-nayos",
+      "mapId": 1526,
+      "name": "Inner Nayos",
+      "release": "soto",
+      "regionId": 48,
+      "regionName": "Horn of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "lowland-shore",
+      "mapId": 1550,
+      "name": "Lowland Shore",
+      "release": "jw",
+      "regionId": 18,
+      "regionName": "Janthir",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "janthir-syntri",
+      "mapId": 1554,
+      "name": "Janthir Syntri",
+      "release": "jw",
+      "regionId": 18,
+      "regionName": "Janthir",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "bava-nisos",
+      "mapId": 1574,
+      "name": "Bava Nisos",
+      "release": "jw",
+      "regionId": 18,
+      "regionName": "Janthir",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "mistburned-barrens",
+      "mapId": 1575,
+      "name": "Mistburned Barrens",
+      "release": "jw",
+      "regionId": 18,
+      "regionName": "Janthir",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "starlit-weald",
+      "mapId": 1593,
+      "name": "Starlit Weald",
+      "release": "voe",
+      "regionId": 58,
+      "regionName": "Castora",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "shipwreck-strand",
+      "mapId": 1595,
+      "name": "Shipwreck Strand",
+      "release": "voe",
+      "regionId": 58,
+      "regionName": "Castora",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "eternity-s-garden",
+      "mapId": 1622,
+      "name": "Eternity's Garden",
+      "release": "voe",
+      "regionId": 58,
+      "regionName": "Castora",
+      "minLevel": 80,
+      "maxLevel": 80
+    }
+  ]
+}

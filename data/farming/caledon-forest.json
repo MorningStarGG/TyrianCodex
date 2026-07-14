@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "mapId": 34,
+  "slug": "caledon-forest",
+  "name": "Caledon Forest",
+  "regionName": "Tarnished Coast",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Copper Ore",
+      "category": "ore",
+      "material": "copper",
+      "source": "tw"
+    },
+    {
+      "name": "Head of Lettuce",
+      "category": "plant",
+      "material": "lettuce",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -271.8,
+      "y": 0.9,
+      "z": 1115.2,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": 503.6,
+      "y": -16.7,
+      "z": 415.1,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": -147.0,
+      "y": 29.8,
+      "z": 1202.6,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": -7.4,
+      "y": 11.5,
+      "z": 375.6,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": -228.3,
+      "y": 1.7,
+      "z": 1215.1,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": -9.4,
+      "y": 9.8,
+      "z": 375.6,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": 209.9,
+      "y": 7.6,
+      "z": 1140.8,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 228.2,
+      "y": 0.9,
+      "z": 1170.0,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 233.0,
+      "y": 2.0,
+      "z": 1194.5,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 212.4,
+      "y": 0.9,
+      "z": 1186.7,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 194.3,
+      "y": 2.2,
+      "z": 1164.6,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 162.5,
+      "y": 0.9,
+      "z": 1141.5,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 168.2,
+      "y": 2.8,
+      "z": 1105.7,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 131.9,
+      "y": 1.5,
+      "z": 1109.8,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    }
+  ]
+}

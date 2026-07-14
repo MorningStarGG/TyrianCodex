@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1330,
+  "slug": "grothmar-valley",
+  "name": "Grothmar Valley",
+  "regionName": "Ascalon",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mixed",
+      "category": "plant",
+      "material": "plant_mixed",
+      "source": "lady"
+    },
+    {
+      "name": "Varietal Mint Seed",
+      "category": "plant",
+      "material": "varietal_mint",
+      "source": "tw"
+    },
+    {
+      "name": "Verdant Herbs",
+      "category": "plant",
+      "material": "verdant_herbs",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 30.4,
+      "y": 87.4,
+      "z": 419.8,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -429.9,
+      "y": 70.8,
+      "z": -451.9,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 271.3,
+      "y": 65.5,
+      "z": -385.1,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": 154.5,
+      "y": 26.5,
+      "z": -448.1,
+      "material": "asparagus",
+      "category": "plant",
+      "icon": "asparagus"
+    },
+    {
+      "x": -324.5,
+      "y": 31.7,
+      "z": 403.2,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -276.2,
+      "y": 33.9,
+      "z": 433.6,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -285.3,
+      "y": 34.3,
+      "z": 432.1,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -263.5,
+      "y": 32.2,
+      "z": 430.4,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed"
+    },
+    {
+      "x": -323.0,
+      "y": 31.0,
+      "z": 399.4,
+      "material": "plant_mixed",
+      "category": "plant",
+      "icon": "plant_mixed",
+      "chatLink": "[&BGQMAAA=]"
+    },
+    {
+      "x": -255.7,
+      "y": 7.6,
+      "z": 256.2,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -127.6,
+      "y": 42.3,
+      "z": 392.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 834.9,
+      "y": 0.9,
+      "z": 390.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 93.8,
+      "y": 52.8,
+      "z": -26.1,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 769.6,
+      "y": 1.8,
+      "z": 326.3,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 265.5,
+      "y": 30.5,
+      "z": -71.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -202.7,
+      "y": 39.6,
+      "z": 435.8,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 255.2,
+      "y": 72.8,
+      "z": 331.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 465.3,
+      "y": 27.1,
+      "z": 272.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 269.9,
+      "y": 62.1,
+      "z": -663.0,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -55.7,
+      "y": 35.1,
+      "z": -304.4,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 71.5,
+      "y": 69.5,
+      "z": 374.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -13.5,
+      "y": 33.9,
+      "z": 167.7,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 393.5,
+      "y": 14.3,
+      "z": -234.8,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 226.5,
+      "y": 38.9,
+      "z": -254.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -27.4,
+      "y": 96.7,
+      "z": 447.2,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 725.5,
+      "y": 0.2,
+      "z": 450.5,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 799.7,
+      "y": 6.8,
+      "z": 510.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 314.0,
+      "y": 50.5,
+      "z": 157.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 778.0,
+      "y": 1.0,
+      "z": 186.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": 695.5,
+      "y": 2.6,
+      "z": 154.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -245.7,
+      "y": 18.4,
+      "z": -585.9,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -253.8,
+      "y": 44.0,
+      "z": 472.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -153.7,
+      "y": 3.7,
+      "z": -34.8,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -389.8,
+      "y": 5.6,
+      "z": 203.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -184.2,
+      "y": 0.3,
+      "z": -627.6,
+      "material": "varietal_mint",
+      "category": "plant",
+      "icon": "varietal_mint"
+    },
+    {
+      "x": -153.3,
+      "y": 3.7,
+      "z": -35.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -256.5,
+      "y": 7.8,
+      "z": 256.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -390.1,
+      "y": 5.5,
+      "z": 203.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -253.7,
+      "y": 44.0,
+      "z": 472.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -202.7,
+      "y": 39.6,
+      "z": 436.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -128.0,
+      "y": 42.3,
+      "z": 392.6,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -26.7,
+      "y": 96.9,
+      "z": 446.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 70.7,
+      "y": 69.2,
+      "z": 374.2,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -13.5,
+      "y": 34.2,
+      "z": 168.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 93.4,
+      "y": 52.9,
+      "z": -25.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -56.3,
+      "y": 35.3,
+      "z": -305.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -245.6,
+      "y": 18.5,
+      "z": -585.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 270.8,
+      "y": 62.3,
+      "z": -662.6,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -184.4,
+      "y": 0.4,
+      "z": -627.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -185.7,
+      "y": 0.1,
+      "z": -626.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs",
+      "chatLink": "[&BPgLAAA=]"
+    },
+    {
+      "x": 227.1,
+      "y": 38.7,
+      "z": -255.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 393.9,
+      "y": 14.2,
+      "z": -234.6,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 264.9,
+      "y": 30.8,
+      "z": -70.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 314.4,
+      "y": 51.0,
+      "z": 158.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 255.4,
+      "y": 72.9,
+      "z": 330.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 465.5,
+      "y": 27.1,
+      "z": 272.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 695.6,
+      "y": 2.6,
+      "z": 154.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 778.4,
+      "y": 1.6,
+      "z": 187.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 769.0,
+      "y": 1.6,
+      "z": 325.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 835.7,
+      "y": 1.2,
+      "z": 390.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 725.7,
+      "y": 0.2,
+      "z": 450.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -525.3,
+      "y": 30.1,
+      "z": 218.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 800.3,
+      "y": 7.2,
+      "z": 511.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 873,
+    "name": "Southsun Cove",
+    "continentId": 1,
+    "regionId": 4,
+    "regionName": "Kryta",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -30720,
+        -21504
+      ],
+      [
+        33792,
+        21504
+      ]
+    ],
+    "continentRect": [
+      [
+        44288,
+        35328
+      ],
+      [
+        46976,
+        37120
+      ]
+    ],
+    "sectorRect": [
+      [
+        44084.1,
+        35321.2
+      ],
+      [
+        46946.5,
+        37117.2
+      ]
+    ],
+    "labelCoord": [
+      45668,
+      36216
+    ],
+    "release": "lws1"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "873:waypoint:1749",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "waypoint",
+      "objectiveId": "1749",
+      "coord": [
+        46589,
+        36792
+      ],
+      "recommendedLevel": null,
+      "name": "Pearl Islet Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNUGAAA=]",
+      "waypointChatLink": "[&BNUGAAA=]",
+      "trailIndex": 13,
+      "wikiText": "Pearl Islet is an area within Southsun Cove. This small landmass connected to the main island by a rope bridge is where the Consortium has set up a resort."
+    },
+    {
+      "stepId": "873:poi:1750",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "poi",
+      "objectiveId": "1750",
+      "coord": [
+        46066,
+        36859
+      ],
+      "recommendedLevel": null,
+      "name": "Privateer's Moorage",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 69,
+      "wikiText": "Privateer's Moorage is a point of interest within Sawtooth Bay. Along this underwater cliff face lie many ruins of various buildings and ships. A large school of sharks patrol this vast kelp field.",
+      "waypointChatLink": "[&BNcGAAA=]"
+    },
+    {
+      "stepId": "873:poi:1748",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "poi",
+      "objectiveId": "1748",
+      "coord": [
+        46287,
+        36237
+      ],
+      "recommendedLevel": null,
+      "name": "Onyx Field",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 154,
+      "wikiText": "The Onyx Field, also known as Sandwurm Prowl, is a point of interest within the Dappled Shores. This cliff lined sandy chasm is full of the wreckage and debris of many ships.",
+      "waypointChatLink": "[&BNwGAAA=]"
+    },
+    {
+      "stepId": "873:waypoint:1756",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "waypoint",
+      "objectiveId": "1756",
+      "coord": [
+        46364,
+        36070
+      ],
+      "recommendedLevel": null,
+      "name": "Kiel's Outpost Waypoint",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNwGAAA=]",
+      "waypointChatLink": "[&BNwGAAA=]",
+      "trailIndex": 213,
+      "wikiText": "Southsun Shoals is the northeastern area of Southsun Cove. Most of the refugee settlements are found here."
+    },
+    {
+      "stepId": "873:waypoint:1746",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "waypoint",
+      "objectiveId": "1746",
+      "coord": [
+        46638,
+        35612
+      ],
+      "recommendedLevel": null,
+      "name": "Pride Point Waypoint",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNIGAAA=]",
+      "waypointChatLink": "[&BNIGAAA=]",
+      "trailIndex": 298,
+      "wikiText": "Southsun Shoals is the northeastern area of Southsun Cove. Most of the refugee settlements are found here."
+    },
+    {
+      "stepId": "873:waypoint:1744",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "waypoint",
+      "objectiveId": "1744",
+      "coord": [
+        45546,
+        35647
+      ],
+      "recommendedLevel": null,
+      "name": "Lion Point Waypoint",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNAGAAA=]",
+      "waypointChatLink": "[&BNAGAAA=]",
+      "trailIndex": 381,
+      "wikiText": "Southsun Shoals is the northeastern area of Southsun Cove. Most of the refugee settlements are found here."
+    },
+    {
+      "stepId": "873:poi:1753",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "poi",
+      "objectiveId": "1753",
+      "coord": [
+        45378,
+        36002
+      ],
+      "recommendedLevel": null,
+      "name": "Ember Passage",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 451,
+      "wikiText": "Ember Passage is a point of interest within Bakestone Cavern. This dark cavern leads deep underground to the lair of a karka egg layer. There are many karka found amongst the nests and eggs.",
+      "waypointChatLink": "[&BNAGAAA=]"
+    },
+    {
+      "stepId": "873:poi:1802",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "poi",
+      "objectiveId": "1802",
+      "coord": [
+        45878,
+        36202
+      ],
+      "recommendedLevel": null,
+      "name": "Steampipe Steading",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 502,
+      "wikiText": "The Steampipe Steading is a point of interest within the Driftglass Springs. This large Consortium settlement is defended to the west by a high wooden wall guarding the only access to the cliff lined western island.",
+      "waypointChatLink": "[&BNwGAAA=]"
+    },
+    {
+      "stepId": "873:waypoint:1751",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "waypoint",
+      "objectiveId": "1751",
+      "coord": [
+        45606,
+        36766
+      ],
+      "recommendedLevel": null,
+      "name": "Camp Karka Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNcGAAA=]",
+      "waypointChatLink": "[&BNcGAAA=]",
+      "trailIndex": 607,
+      "wikiText": "Captain's Retreat is the central southern area of Southsun Cove. The Lionguard have built a camp inside a ruined karka hive located here."
+    },
+    {
+      "stepId": "873:poi:1754",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "poi",
+      "objectiveId": "1754",
+      "coord": [
+        44972,
+        36699
+      ],
+      "recommendedLevel": null,
+      "name": "Canach's Folly",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 708,
+      "wikiText": "Canach's Folly is a point of interest within the Scoured Plains. In this barren wasteland a small group of Lionguard has established a base camp.",
+      "waypointChatLink": "[&BNgGAAA=]"
+    },
+    {
+      "stepId": "873:waypoint:1752",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "waypoint",
+      "objectiveId": "1752",
+      "coord": [
+        44684,
+        36898
+      ],
+      "recommendedLevel": null,
+      "name": "Owain's Refuge Waypoint",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BNgGAAA=]",
+      "waypointChatLink": "[&BNgGAAA=]",
+      "trailIndex": 758,
+      "wikiText": "Owain's Refuge is a small islet in Southsun Cove. It is named after Owain, the sole survivor of the initial Consortium expedition in the zone."
+    },
+    {
+      "stepId": "873:poi:1755",
+      "mapId": 873,
+      "zoneName": "Southsun Cove",
+      "type": "poi",
+      "objectiveId": "1755",
+      "coord": [
+        45165,
+        35922
+      ],
+      "recommendedLevel": null,
+      "name": "Karka Hive",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 906,
+      "wikiText": "The Karka Hive is a point of interest within Bakestone Cavern. This massive crystalline structure was once the primary nest of the Karka.",
+      "waypointChatLink": "[&BNAGAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

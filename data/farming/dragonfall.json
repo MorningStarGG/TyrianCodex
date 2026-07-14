@@ -1,0 +1,1121 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1317,
+  "slug": "dragonfall",
+  "name": "Dragonfall",
+  "regionName": "Crystal Desert",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Mistborn Mote",
+      "category": "misc",
+      "material": "mistborn",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 760.7,
+      "y": 100.9,
+      "z": 287.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 808.3,
+      "y": 146.0,
+      "z": 322.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 991.7,
+      "y": 76.5,
+      "z": 379.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 1034.9,
+      "y": 0.0,
+      "z": 182.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 801.1,
+      "y": -0.1,
+      "z": 8.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "chatLink": "[&BN4LAAA=]"
+    },
+    {
+      "x": 635.6,
+      "y": 234.1,
+      "z": -104.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "chatLink": "[&BN4LAAA=]"
+    },
+    {
+      "x": 159.2,
+      "y": 21.4,
+      "z": -688.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "chatLink": "[&BN4LAAA=]"
+    },
+    {
+      "x": 241.2,
+      "y": 237.7,
+      "z": -208.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn"
+    },
+    {
+      "x": 871.2,
+      "y": 246.5,
+      "z": -114.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 280.6,
+      "y": 193.9,
+      "z": -185.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 243.9,
+      "y": 237.9,
+      "z": -209.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 796.8,
+      "y": 99.2,
+      "z": 595.5,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 990.9,
+      "y": 76.6,
+      "z": 379.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 1016.8,
+      "y": 407.1,
+      "z": 95.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 1045.0,
+      "y": 444.2,
+      "z": 13.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 967.1,
+      "y": 422.1,
+      "z": -71.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 758.0,
+      "y": 133.4,
+      "z": -421.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 967.1,
+      "y": 40.3,
+      "z": -623.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 557.4,
+      "y": 20.9,
+      "z": -735.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 464.4,
+      "y": 247.1,
+      "z": -561.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 454.0,
+      "y": 178.7,
+      "z": -419.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 302.7,
+      "y": 309.2,
+      "z": 46.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 346.0,
+      "y": 272.6,
+      "z": 201.5,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 467.4,
+      "y": 155.0,
+      "z": 271.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Jackal"
+    },
+    {
+      "x": 703.1,
+      "y": 141.9,
+      "z": 33.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 712.9,
+      "y": 174.4,
+      "z": -16.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 740.6,
+      "y": 198.8,
+      "z": -10.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 804.9,
+      "y": 178.1,
+      "z": -29.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 818.0,
+      "y": 195.7,
+      "z": -58.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 931.8,
+      "y": 364.9,
+      "z": 55.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 794.6,
+      "y": 257.4,
+      "z": 236.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 783.7,
+      "y": 273.9,
+      "z": 231.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 619.6,
+      "y": 222.9,
+      "z": 159.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 736.1,
+      "y": 265.8,
+      "z": -320.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 730.3,
+      "y": 187.4,
+      "z": -424.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 964.2,
+      "y": 49.0,
+      "z": -220.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 1009.9,
+      "y": -0.2,
+      "z": -212.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 1048.7,
+      "y": 1.0,
+      "z": -537.5,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 904.9,
+      "y": -0.4,
+      "z": -709.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 585.5,
+      "y": 117.3,
+      "z": -689.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 591.4,
+      "y": 140.9,
+      "z": -656.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 489.6,
+      "y": 172.2,
+      "z": -716.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 443.3,
+      "y": 203.2,
+      "z": -708.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 443.0,
+      "y": 196.0,
+      "z": -368.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": 464.9,
+      "y": 195.5,
+      "z": -285.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 510.8,
+      "y": 175.0,
+      "z": -237.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 463.0,
+      "y": 199.9,
+      "z": -163.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 408.4,
+      "y": 214.8,
+      "z": -152.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 337.7,
+      "y": 238.6,
+      "z": -186.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": 417.8,
+      "y": 156.8,
+      "z": -195.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 411.1,
+      "y": 211.7,
+      "z": -64.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Roller Beetle"
+    },
+    {
+      "x": 383.0,
+      "y": 210.2,
+      "z": 20.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Jackal"
+    },
+    {
+      "x": 491.3,
+      "y": 293.0,
+      "z": 137.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 545.1,
+      "y": 232.3,
+      "z": 62.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 618.2,
+      "y": 291.9,
+      "z": -37.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 548.6,
+      "y": 267.5,
+      "z": -75.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 374.1,
+      "y": 50.8,
+      "z": 421.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 287.7,
+      "y": -0.4,
+      "z": 268.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 271.3,
+      "y": 17.7,
+      "z": 280.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 267.3,
+      "y": 34.9,
+      "z": 292.5,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 238.6,
+      "y": 76.6,
+      "z": 287.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -430.5,
+      "y": 112.8,
+      "z": -75.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -467.0,
+      "y": 144.3,
+      "z": -34.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Jackal"
+    },
+    {
+      "x": -451.2,
+      "y": 262.4,
+      "z": 25.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": -529.0,
+      "y": 245.1,
+      "z": 46.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -361.5,
+      "y": 277.7,
+      "z": 25.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -386.9,
+      "y": 282.7,
+      "z": -183.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -331.9,
+      "y": 136.2,
+      "z": -301.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": -561.8,
+      "y": 154.9,
+      "z": -230.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -480.6,
+      "y": 194.3,
+      "z": -205.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -578.7,
+      "y": 196.9,
+      "z": -101.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -697.9,
+      "y": 99.6,
+      "z": 62.5,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -913.4,
+      "y": -0.4,
+      "z": -201.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Jackal"
+    },
+    {
+      "x": -773.6,
+      "y": 153.1,
+      "z": -75.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -780.6,
+      "y": 124.6,
+      "z": -269.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -805.0,
+      "y": 130.9,
+      "z": -293.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -830.0,
+      "y": 157.6,
+      "z": -317.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -824.4,
+      "y": 168.0,
+      "z": -438.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -797.4,
+      "y": 143.5,
+      "z": -561.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -558.6,
+      "y": 126.2,
+      "z": -640.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -458.5,
+      "y": 68.3,
+      "z": -713.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Jackal"
+    },
+    {
+      "x": -270.0,
+      "y": 166.0,
+      "z": -645.5,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -109.7,
+      "y": 125.5,
+      "z": -712.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -67.2,
+      "y": 121.1,
+      "z": -647.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -200.3,
+      "y": 141.6,
+      "z": -514.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -184.2,
+      "y": 196.7,
+      "z": -403.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -176.4,
+      "y": 171.7,
+      "z": -435.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -70.8,
+      "y": 237.7,
+      "z": -438.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 2.3,
+      "y": 280.9,
+      "z": -402.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 198.3,
+      "y": 200.2,
+      "z": -479.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 80.7,
+      "y": 99.5,
+      "z": -653.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 716.5,
+      "y": 104.5,
+      "z": 650.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn"
+    },
+    {
+      "x": 719.5,
+      "y": 104.5,
+      "z": 649.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn"
+    },
+    {
+      "x": 716.1,
+      "y": 104.5,
+      "z": 654.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn"
+    },
+    {
+      "x": 318.8,
+      "y": 98.7,
+      "z": 524.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 209.6,
+      "y": 168.9,
+      "z": 412.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 99.2,
+      "y": 196.3,
+      "z": 322.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 112.1,
+      "y": 182.0,
+      "z": 426.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": 129.7,
+      "y": 176.3,
+      "z": 517.1,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 109.9,
+      "y": 100.2,
+      "z": 537.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": -100.9,
+      "y": 136.3,
+      "z": 620.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Jackal"
+    },
+    {
+      "x": -164.6,
+      "y": 206.6,
+      "z": 713.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -145.9,
+      "y": 215.1,
+      "z": 719.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -14.2,
+      "y": 209.7,
+      "z": 582.0,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -22.5,
+      "y": 191.7,
+      "z": 506.9,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": 34.9,
+      "y": 211.6,
+      "z": 492.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -120.5,
+      "y": 212.9,
+      "z": 391.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -206.5,
+      "y": 240.4,
+      "z": 317.7,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": -301.0,
+      "y": 237.3,
+      "z": 202.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -403.3,
+      "y": 258.7,
+      "z": 197.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    },
+    {
+      "x": -435.3,
+      "y": 245.0,
+      "z": 241.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -616.1,
+      "y": 274.2,
+      "z": 276.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -639.0,
+      "y": 282.0,
+      "z": 281.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -560.4,
+      "y": 255.8,
+      "z": 528.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": 212.3,
+      "y": 208.7,
+      "z": 384.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -841.5,
+      "y": 235.0,
+      "z": 405.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -509.3,
+      "y": 193.5,
+      "z": 626.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -286.4,
+      "y": 97.0,
+      "z": 686.8,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -264.9,
+      "y": 81.3,
+      "z": 708.3,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -312.5,
+      "y": 66.7,
+      "z": 714.4,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -652.3,
+      "y": 154.1,
+      "z": 376.6,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Springer"
+    },
+    {
+      "x": -619.6,
+      "y": 193.3,
+      "z": 338.2,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Glider"
+    },
+    {
+      "x": -592.4,
+      "y": 181.8,
+      "z": 358.5,
+      "material": "mistborn",
+      "category": "misc",
+      "icon": "mistborn",
+      "mount": "Raptor"
+    }
+  ]
+}

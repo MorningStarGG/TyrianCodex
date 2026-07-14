@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "zone": {
+    "mapId": 1175,
+    "name": "Ember Bay",
+    "continentId": 1,
+    "regionId": 20,
+    "regionName": "Ring of Fire",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -46080,
+        -46080
+      ],
+      [
+        46080,
+        46080
+      ]
+    ],
+    "continentRect": [
+      [
+        37374,
+        43518
+      ],
+      [
+        41214,
+        47358
+      ]
+    ],
+    "sectorRect": [
+      [
+        37606,
+        44844.7
+      ],
+      [
+        40803.2,
+        47254
+      ]
+    ],
+    "labelCoord": [
+      39008,
+      45445
+    ],
+    "release": "lws3"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1175:poi:2392",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2392",
+      "coord": [
+        38986,
+        46353
+      ],
+      "recommendedLevel": null,
+      "name": "Asuran Beachhead",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 0,
+      "wikiText": "The Asuran Beachhead is an outpost established by Krewe Lead Grunn on behalf of Councillor Phlunt on the Infernal Cape.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:waypoint:2399",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "waypoint",
+      "objectiveId": "2399",
+      "coord": [
+        38980,
+        46426
+      ],
+      "recommendedLevel": null,
+      "name": "Promontory Waypoint",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BF8JAAA=]",
+      "waypointChatLink": "[&BF8JAAA=]",
+      "trailIndex": 5,
+      "wikiText": "The Infernal Cape is an area within Ember Bay. The asura gate linking Rata Novus and the bay is located at the asura camp established here."
+    },
+    {
+      "stepId": "1175:vista:2419",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "vista",
+      "objectiveId": "2419",
+      "coord": [
+        38990,
+        46541
+      ],
+      "recommendedLevel": null,
+      "name": "Infernal Cape",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 27,
+      "wikiText": "Walk from the waypoint to the vista.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2387",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2387",
+      "coord": [
+        39775,
+        46790
+      ],
+      "recommendedLevel": null,
+      "name": "Furnace Chamber",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 132,
+      "wikiText": "The Furnace Chamber is a point of interest in Burning Grotto, a large chamber around the magma pit in the center of the volcano. It serves as the home of the powerful Molten Dominator and its minions.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2425",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2425",
+      "coord": [
+        39035,
+        46130
+      ],
+      "recommendedLevel": null,
+      "name": "Destruction's Maw",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 243,
+      "wikiText": "The Destruction's Maw is the mouth of the volcano found within the Infernal Cape.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:vista:2416",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "vista",
+      "objectiveId": "2416",
+      "coord": [
+        38882,
+        46104
+      ],
+      "recommendedLevel": null,
+      "name": "Pedestal of Flames",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 250,
+      "wikiText": "Walk towards the vista. Use the updraft mastery to glide to the vista. Alternatively use a skyscale to get to the vista.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2403",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2403",
+      "coord": [
+        38865,
+        45954
+      ],
+      "recommendedLevel": null,
+      "name": "Pedestal of Flames",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 255,
+      "wikiText": "The Pedestal of Flames is ancient structure found in the middle of a pond of molten lava in the Bleeding Pulpit.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2401",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2401",
+      "coord": [
+        39260,
+        45716
+      ],
+      "recommendedLevel": null,
+      "name": "Quickk's Retreat",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 455,
+      "wikiText": "Quickk's Retreat is where Scientist Quickk conducts his research on one of the four dwarven devices located in Ember Bay away from the rest of his team.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:vista:2422",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "vista",
+      "objectiveId": "2422",
+      "coord": [
+        39406,
+        45368
+      ],
+      "recommendedLevel": null,
+      "name": "Fractured Caldera",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 511,
+      "wikiText": "Walk from the waypoint to the vista.",
+      "waypointChatLink": "[&BGAJAAA=]"
+    },
+    {
+      "stepId": "1175:heart:366",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "heart",
+      "objectiveId": "366",
+      "coord": [
+        39523,
+        45358
+      ],
+      "recommendedLevel": 80,
+      "name": "Assist Scientist Vratt",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39340,
+          45442
+        ],
+        [
+          39842,
+          45438
+        ],
+        [
+          39340,
+          45442
+        ]
+      ],
+      "trailIndex": 533,
+      "wikiText": "Defeat Hostile wildlife, collect dwarven artifacts, and use the coolant buckets to catch falling volcanic rocks and cool floating data collectors.",
+      "waypointChatLink": "[&BGAJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2423",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2423",
+      "coord": [
+        39606,
+        45386
+      ],
+      "recommendedLevel": null,
+      "name": "Smoosh-a-Tron",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 551,
+      "wikiText": "Smoosh-a-Tron is a giant golem that was built by the team working inside the Fractured Caldera to ward off lava wurms disrupting their research.",
+      "waypointChatLink": "[&BGAJAAA=]"
+    },
+    {
+      "stepId": "1175:waypoint:2400",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "waypoint",
+      "objectiveId": "2400",
+      "coord": [
+        39809,
+        45115
+      ],
+      "recommendedLevel": null,
+      "name": "Crumbling Trail Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BGAJAAA=]",
+      "waypointChatLink": "[&BGAJAAA=]",
+      "trailIndex": 681,
+      "wikiText": "The Fractured Caldera is an area within Ember Bay. A group of asura are conducting research here but are often disturbed by the local population of lava wurms."
+    },
+    {
+      "stepId": "1175:poi:2410",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2410",
+      "coord": [
+        40088,
+        45230
+      ],
+      "recommendedLevel": null,
+      "name": "Cliffwalk Trailhead",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 759,
+      "wikiText": "The Cliffwalk Trailhead is a narrow path leading up to the Fractured Caldera.",
+      "waypointChatLink": "[&BGAJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2409",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2409",
+      "coord": [
+        40613,
+        45171
+      ],
+      "recommendedLevel": null,
+      "name": "Karka Hatchery",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 860,
+      "wikiText": "A Karka Hatchery can be found within Ashen Skerries.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2393",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2393",
+      "coord": [
+        40689,
+        45783
+      ],
+      "recommendedLevel": null,
+      "name": "Fool's Scratch",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 967,
+      "wikiText": "Fool's Scratch is a failed attempt at establishing a second scratch on the eastern coast of Ember Bay.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:vista:2417",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "vista",
+      "objectiveId": "2417",
+      "coord": [
+        40082,
+        45730
+      ],
+      "recommendedLevel": null,
+      "name": "Basalt Rise",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1057,
+      "wikiText": "Walk to the hill right of the vista and glide over. Alternatively use a springer or a skyscale to get to the vista.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2398",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2398",
+      "coord": [
+        39974,
+        45855
+      ],
+      "recommendedLevel": null,
+      "name": "Lava River",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1065,
+      "wikiText": "A Lava River can be found flowing through the Skritt Anchorage.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:waypoint:2389",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "waypoint",
+      "objectiveId": "2389",
+      "coord": [
+        40203,
+        45863
+      ],
+      "recommendedLevel": null,
+      "name": "Scratch Gate Waypoint",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BFUJAAA=]",
+      "waypointChatLink": "[&BFUJAAA=]",
+      "trailIndex": 1099,
+      "wikiText": "Skritt Anchorage is an area in Ember Bay. It is populated by friendly, hapless marine skritt who've landed here with their ship, the Dread Shiny, and are apparently intent on colonizing the island."
+    },
+    {
+      "stepId": "1175:heart:367",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "heart",
+      "objectiveId": "367",
+      "coord": [
+        40198,
+        45950
+      ],
+      "recommendedLevel": 80,
+      "name": "Help the skritt encampment.",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39937,
+          45618
+        ],
+        [
+          40088,
+          45596
+        ],
+        [
+          40808,
+          45752
+        ],
+        [
+          40739,
+          45886
+        ],
+        [
+          40430,
+          46152
+        ],
+        [
+          40076,
+          46202
+        ],
+        [
+          39952,
+          45928
+        ],
+        [
+          39937,
+          45618
+        ]
+      ],
+      "trailIndex": 1115,
+      "wikiText": "Help the skritt encampment. Wake passed-out skritt, defeat Destroyers, arm skritt from weapon caches, and rescue skritt from the lava river.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2414",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2414",
+      "coord": [
+        40246,
+        45983
+      ],
+      "recommendedLevel": null,
+      "name": "Rock Face Scratch",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1116,
+      "wikiText": "Rock Face Scratch is a scratch that was established by the pirate skritt gang once they got to the Fire Island Chain. There, they worship the half-still-living body of a Deldrimor dwarf named Rhoban Orestriker.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2390",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2390",
+      "coord": [
+        40187,
+        46140
+      ],
+      "recommendedLevel": null,
+      "name": "The Dread Shiny",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1139,
+      "wikiText": "The Dread Shiny is a ship that was used by the skritt pirate gang of Rock Face Scratch to make their way to the Fire Island Chain.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2405",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2405",
+      "coord": [
+        39817,
+        46185
+      ],
+      "recommendedLevel": null,
+      "name": "Slag Pools",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1199,
+      "wikiText": "The Slag Pools are pits filled with molten lava found across the Lava Flats.",
+      "waypointChatLink": "[&BFUJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2412",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2412",
+      "coord": [
+        39620,
+        46392
+      ],
+      "recommendedLevel": null,
+      "name": "Observation Outpost",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1255,
+      "wikiText": "The Observation Outpost is a camp set up by Researcher Twilli and her krewe to study the new brand of destroyers that have surfaced in the Lava Flats.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:heart:365",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "heart",
+      "objectiveId": "365",
+      "coord": [
+        39606,
+        46354
+      ],
+      "recommendedLevel": 80,
+      "name": "Assist the asuran researchers.",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          39460,
+          46809
+        ],
+        [
+          39517,
+          46037
+        ],
+        [
+          39791,
+          45907
+        ],
+        [
+          39995,
+          46040
+        ],
+        [
+          40086,
+          46753
+        ],
+        [
+          39897,
+          47064
+        ],
+        [
+          39709,
+          47098
+        ],
+        [
+          39577,
+          46968
+        ],
+        [
+          39460,
+          46809
+        ]
+      ],
+      "trailIndex": 1256,
+      "wikiText": "Help Research Assistant Ulaa by defeating destroyers, collecting samples, and resetting observers.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2395",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2395",
+      "coord": [
+        39360,
+        45905
+      ],
+      "recommendedLevel": null,
+      "name": "Magma Outlet",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1384,
+      "wikiText": "The Magma Outlet is a flow of magma pouring out into the Smoldering Inlet.",
+      "waypointChatLink": "[&BF8JAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2426",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2426",
+      "coord": [
+        38389,
+        45991
+      ],
+      "recommendedLevel": null,
+      "name": "Titan's Perch",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1566,
+      "wikiText": "The Titan's Perch is a tall lava-spewing structure located within the Shipwreck Beach.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2402",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2402",
+      "coord": [
+        38395,
+        46229
+      ],
+      "recommendedLevel": null,
+      "name": "Ivy's Circus Spectacular",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1605,
+      "wikiText": "Ivy's Circus Spectacular is Ringmaster Ivy's impromptu circus established on the Shipwreck Beach.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:vista:2404",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "vista",
+      "objectiveId": "2404",
+      "coord": [
+        38320,
+        46275
+      ],
+      "recommendedLevel": null,
+      "name": "Castaway Circus",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1621,
+      "wikiText": "Jump on the rocks to reach the vista",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:waypoint:2424",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "waypoint",
+      "objectiveId": "2424",
+      "coord": [
+        38285,
+        46256
+      ],
+      "recommendedLevel": null,
+      "name": "Castaway Circus Waypoint",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHgJAAA=]",
+      "waypointChatLink": "[&BHgJAAA=]",
+      "trailIndex": 1629,
+      "wikiText": "The Shipwreck Beach is an area within Ember Bay. A circus crew established themselves there after their ship crashed in Ember Bay."
+    },
+    {
+      "stepId": "1175:heart:364",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "heart",
+      "objectiveId": "364",
+      "coord": [
+        38226,
+        46492
+      ],
+      "recommendedLevel": 80,
+      "name": "Win the favor of the circus",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          37946,
+          46973
+        ],
+        [
+          37858,
+          46200
+        ],
+        [
+          38689,
+          46207
+        ],
+        [
+          38734,
+          47028
+        ],
+        [
+          37946,
+          46973
+        ]
+      ],
+      "trailIndex": 1665,
+      "wikiText": "Earn the village's help by donating valuable pearls or eggs and defeating hostile wildlife. Find pearls by breaking open giant clams on the beach, and gather eggs from nearby rolling devil nests or cliffside bird nests.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:vista:2397",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "vista",
+      "objectiveId": "2397",
+      "coord": [
+        38094,
+        46558
+      ],
+      "recommendedLevel": null,
+      "name": "Osprey Pillars",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1682,
+      "wikiText": "Walk towards the vista. Use two bouncy mushrooms to get up and glide over using leyline gliding. Alternatively use the nearby thermal tube to gain height and glide over.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2396",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2396",
+      "coord": [
+        38175,
+        46599
+      ],
+      "recommendedLevel": null,
+      "name": "Osprey Aeries",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1695,
+      "wikiText": "The Osprey Aeries are tall rocks where Ospreys come to make their nests.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2391",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2391",
+      "coord": [
+        37910,
+        46243
+      ],
+      "recommendedLevel": null,
+      "name": "Barrier Spires",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1712,
+      "wikiText": "The Barrier Spires are tall, jagged rock stacks shielding the Shipwreck Beach from the Unending Ocean. The nearby circus folk have built an exclusive lounge atop the largest of these stacks.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2415",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2415",
+      "coord": [
+        37945,
+        45786
+      ],
+      "recommendedLevel": null,
+      "name": "Sloth Queen's Showground",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1755,
+      "wikiText": "The Sloth Queen's Showground is a large arena found within the Performance Field. The Sloth Queen is let out of her nearby cage into this location occasionally.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:heart:363",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "heart",
+      "objectiveId": "363",
+      "coord": [
+        37865,
+        45616
+      ],
+      "recommendedLevel": 80,
+      "name": "Investigate the mursaat fortress",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          37707,
+          45750
+        ],
+        [
+          37659,
+          45484
+        ],
+        [
+          37652,
+          45348
+        ],
+        [
+          37639,
+          45245
+        ],
+        [
+          37677,
+          45113
+        ],
+        [
+          38298,
+          45144
+        ],
+        [
+          38502,
+          45531
+        ],
+        [
+          37985,
+          45668
+        ],
+        [
+          37707,
+          45750
+        ]
+      ],
+      "trailIndex": 1771,
+      "wikiText": "Defeat the mursaat defenses, Jade Constructs, and Destroyers[sic] that occupy the ancient mursaat ruins.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2386",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2386",
+      "coord": [
+        37947,
+        45267
+      ],
+      "recommendedLevel": null,
+      "name": "Twin Skulls",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1844,
+      "wikiText": "The Twin Skulls are an ancient structure depicting two giant skulls situated back to back which is located within Caliph's Steps.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2421",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2421",
+      "coord": [
+        38222,
+        45507
+      ],
+      "recommendedLevel": null,
+      "name": "Sealed Entrance",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1871,
+      "wikiText": "A Sealed Entrance prevents access to the final dwarven device required to contain the Fire Island Chain's volcanoes. To get inside, one must retrieve a full-set of Mursaat armor scattered nearby.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:vista:2408",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "vista",
+      "objectiveId": "2408",
+      "coord": [
+        38262,
+        45322
+      ],
+      "recommendedLevel": null,
+      "name": "Caliph's Steps",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1895,
+      "wikiText": "Walk from the waypoint to the mursaat fortress and take the stairs at the left side. Walk to the vista at the right height. Alternatively use the thermal tube near the waypoint to shoot over there. At the end glide down to the vista.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    },
+    {
+      "stepId": "1175:poi:2427",
+      "mapId": 1175,
+      "zoneName": "Ember Bay",
+      "type": "poi",
+      "objectiveId": "2427",
+      "coord": [
+        38454,
+        45592
+      ],
+      "recommendedLevel": null,
+      "name": "Chalice of Tears",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1984,
+      "wikiText": "The Chalice of Tears is the magma lake in the Sopor Titanum volcano. The Skip up the Volcano jumping puzzle starts here.",
+      "waypointChatLink": "[&BHgJAAA=]"
+    }
+  ],
+  "hasTrail": true
+}

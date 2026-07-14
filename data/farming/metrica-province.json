@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "mapId": 35,
+  "slug": "metrica-province",
+  "name": "Metrica Province",
+  "regionName": "Tarnished Coast",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
+      "name": "Potato",
+      "category": "plant",
+      "material": "potato",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 543.7,
+      "y": 16.7,
+      "z": -168.6,
+      "material": "candy_corn",
+      "category": "event",
+      "icon": "candy_corn"
+    },
+    {
+      "x": 575.8,
+      "y": 30.5,
+      "z": -385.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Springer"
+    },
+    {
+      "x": 588.6,
+      "y": 44.2,
+      "z": -380.7,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BLIEAAA=] (JP) OR [&BF8AAAA=]"
+    },
+    {
+      "x": 583.6,
+      "y": 9.6,
+      "z": -872.8,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 678.5,
+      "y": 13.3,
+      "z": -780.1,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BEIAAAA=]"
+    },
+    {
+      "x": 560.4,
+      "y": 62.6,
+      "z": 42.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BF8AAAA=]"
+    },
+    {
+      "x": -238.8,
+      "y": 26.4,
+      "z": -150.6,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": 404.6,
+      "y": 47.6,
+      "z": -398.2,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 410.1,
+      "y": 47.6,
+      "z": -394.2,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 402.7,
+      "y": 47.6,
+      "z": -391.1,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 397.3,
+      "y": 47.6,
+      "z": -389.0,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 400.4,
+      "y": 47.6,
+      "z": -383.9,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 401.0,
+      "y": 47.6,
+      "z": -378.8,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 406.4,
+      "y": 47.6,
+      "z": -372.1,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 409.3,
+      "y": 47.6,
+      "z": -378.5,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    },
+    {
+      "x": 400.4,
+      "y": 47.6,
+      "z": -395.4,
+      "material": "potato",
+      "category": "plant",
+      "icon": "potato"
+    }
+  ]
+}

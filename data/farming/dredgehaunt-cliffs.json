@@ -1,0 +1,1582 @@
+{
+  "schemaVersion": 1,
+  "mapId": 26,
+  "slug": "dredgehaunt-cliffs",
+  "name": "Dredgehaunt Cliffs",
+  "regionName": "Shiverpeak Mountains",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
+      "name": "Gold Ore",
+      "category": "ore",
+      "material": "gold",
+      "source": "tw"
+    },
+    {
+      "name": "Iron Ore",
+      "category": "ore",
+      "material": "iron",
+      "source": "tw"
+    },
+    {
+      "name": "Head of Cabbage",
+      "category": "plant",
+      "material": "cabbage",
+      "source": "tw"
+    },
+    {
+      "name": "Verdant Herbs",
+      "category": "plant",
+      "material": "verdant_herbs",
+      "source": "lady"
+    },
+    {
+      "name": "Seasoned Wood Log",
+      "category": "wood",
+      "material": "seasoned_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -488.2,
+      "y": 92.9,
+      "z": 111.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": -330.2,
+      "y": 118.3,
+      "z": -346.2,
+      "material": "gold",
+      "category": "ore",
+      "icon": "gold"
+    },
+    {
+      "x": -332.1,
+      "y": 117.7,
+      "z": -346.3,
+      "material": "gold",
+      "category": "ore",
+      "icon": "gold"
+    },
+    {
+      "x": -148.1,
+      "y": 41.1,
+      "z": 550.3,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": -150.0,
+      "y": 41.1,
+      "z": 551.8,
+      "material": "iron",
+      "category": "ore",
+      "icon": "iron"
+    },
+    {
+      "x": 369.5,
+      "y": 98.2,
+      "z": 240.7,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 359.3,
+      "y": 98.5,
+      "z": 234.9,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 356.4,
+      "y": 98.5,
+      "z": 233.8,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 384.4,
+      "y": 101.1,
+      "z": 226.0,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 383.1,
+      "y": 101.6,
+      "z": 223.0,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 380.7,
+      "y": 101.0,
+      "z": 223.6,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 371.4,
+      "y": 100.7,
+      "z": 215.9,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 370.0,
+      "y": 101.1,
+      "z": 212.4,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": 368.2,
+      "y": 98.0,
+      "z": 242.9,
+      "material": "cabbage",
+      "category": "plant",
+      "icon": "cabbage"
+    },
+    {
+      "x": -85.2,
+      "y": 66.8,
+      "z": 674.6,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 505.7,
+      "y": 63.2,
+      "z": -144.9,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -463.4,
+      "y": 4.4,
+      "z": 601.1,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 222.2,
+      "y": 74.7,
+      "z": 119.6,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 180.6,
+      "y": 92.7,
+      "z": 832.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs",
+      "chatLink": "[&BGUCAAA=]"
+    },
+    {
+      "x": -486.3,
+      "y": 3.9,
+      "z": 586.0,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs",
+      "chatLink": "[&BF0CAAA=]"
+    },
+    {
+      "x": -429.3,
+      "y": 68.3,
+      "z": -27.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs",
+      "chatLink": "[&BFkCAAA=]"
+    },
+    {
+      "x": 578.2,
+      "y": 130.1,
+      "z": -166.4,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs",
+      "chatLink": "[&BNECAAA=]"
+    },
+    {
+      "x": 159.8,
+      "y": 93.0,
+      "z": 842.4,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 475.5,
+      "y": 76.7,
+      "z": -185.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 336.4,
+      "y": 80.8,
+      "z": -169.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -431.9,
+      "y": 95.0,
+      "z": -515.4,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -280.6,
+      "y": 55.1,
+      "z": 257.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -486.7,
+      "y": 3.7,
+      "z": 586.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -406.0,
+      "y": 37.1,
+      "z": 560.8,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -478.2,
+      "y": 6.9,
+      "z": 541.3,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 70.9,
+      "y": 86.0,
+      "z": -349.2,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 354.0,
+      "y": 81.5,
+      "z": 294.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -565.3,
+      "y": 25.4,
+      "z": 342.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -455.4,
+      "y": 76.5,
+      "z": -132.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -274.5,
+      "y": 90.9,
+      "z": -234.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -211.7,
+      "y": 105.3,
+      "z": -319.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -395.5,
+      "y": 73.3,
+      "z": -55.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -336.1,
+      "y": 67.6,
+      "z": 162.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -305.4,
+      "y": 107.1,
+      "z": 82.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -425.1,
+      "y": 57.7,
+      "z": 252.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -294.1,
+      "y": 61.2,
+      "z": 354.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -92.8,
+      "y": 90.3,
+      "z": 295.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 133.8,
+      "y": 81.0,
+      "z": 761.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 37.9,
+      "y": 95.3,
+      "z": -358.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 134.1,
+      "y": 61.2,
+      "z": -350.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 187.8,
+      "y": 63.6,
+      "z": -407.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 358.9,
+      "y": 84.5,
+      "z": -333.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 446.6,
+      "y": 62.5,
+      "z": -96.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 504.6,
+      "y": 67.5,
+      "z": -79.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 542.3,
+      "y": 76.6,
+      "z": -36.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 569.6,
+      "y": 93.3,
+      "z": -39.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 533.3,
+      "y": 84.8,
+      "z": 53.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 289.2,
+      "y": 51.4,
+      "z": 314.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 268.6,
+      "y": 75.7,
+      "z": 135.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 273.1,
+      "y": 74.6,
+      "z": 91.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 260.0,
+      "y": 57.8,
+      "z": -5.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 316.8,
+      "y": 51.6,
+      "z": 526.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 319.7,
+      "y": 52.6,
+      "z": 554.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 354.3,
+      "y": 62.6,
+      "z": 617.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 374.9,
+      "y": 65.0,
+      "z": 659.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -390.2,
+      "y": 108.3,
+      "z": -351.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -412.3,
+      "y": 81.0,
+      "z": -219.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -352.2,
+      "y": 84.4,
+      "z": -164.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -450.6,
+      "y": 70.3,
+      "z": -86.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -399.6,
+      "y": 97.0,
+      "z": -536.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 5.0,
+      "y": 55.5,
+      "z": -795.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 204.4,
+      "y": 70.8,
+      "z": -634.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 42.0,
+      "y": 124.0,
+      "z": -272.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 49.9,
+      "y": 124.9,
+      "z": -263.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 199.4,
+      "y": 104.3,
+      "z": -227.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 378.7,
+      "y": 80.2,
+      "z": -146.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 496.6,
+      "y": 67.5,
+      "z": -69.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 553.8,
+      "y": 79.0,
+      "z": -40.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 517.1,
+      "y": 82.2,
+      "z": 164.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 531.3,
+      "y": 84.8,
+      "z": 178.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 325.1,
+      "y": 50.7,
+      "z": 383.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 349.9,
+      "y": 62.2,
+      "z": 604.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 283.9,
+      "y": 54.8,
+      "z": 1.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 47.0,
+      "y": 62.7,
+      "z": 683.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -381.0,
+      "y": 64.8,
+      "z": 68.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -408.5,
+      "y": 64.4,
+      "z": 50.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -404.1,
+      "y": 73.1,
+      "z": -60.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -327.2,
+      "y": 85.1,
+      "z": -186.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -393.1,
+      "y": 64.4,
+      "z": -647.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 21.7,
+      "y": 110.5,
+      "z": -308.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 175.9,
+      "y": 60.9,
+      "z": -357.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 529.7,
+      "y": 82.3,
+      "z": 39.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 531.6,
+      "y": 85.3,
+      "z": 210.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 194.4,
+      "y": 64.1,
+      "z": 269.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 168.5,
+      "y": 70.6,
+      "z": 219.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 236.2,
+      "y": 48.4,
+      "z": 172.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 464.8,
+      "y": 82.6,
+      "z": 711.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -387.8,
+      "y": 82.4,
+      "z": -181.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -321.7,
+      "y": 87.5,
+      "z": -235.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 79.9,
+      "y": 86.7,
+      "z": -336.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 71.6,
+      "y": 88.3,
+      "z": -332.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -26.0,
+      "y": 109.9,
+      "z": -362.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 296.8,
+      "y": 71.3,
+      "z": -129.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 544.0,
+      "y": 85.8,
+      "z": 78.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 125.7,
+      "y": 84.3,
+      "z": 145.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 202.6,
+      "y": 56.2,
+      "z": 616.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 146.5,
+      "y": 97.5,
+      "z": 896.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 58.5,
+      "y": 110.1,
+      "z": 893.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -0.5,
+      "y": 118.5,
+      "z": 872.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -445.7,
+      "y": 64.8,
+      "z": 191.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -285.4,
+      "y": 60.2,
+      "z": 333.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -433.8,
+      "y": 68.8,
+      "z": -66.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -419.8,
+      "y": 78.3,
+      "z": -122.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -179.7,
+      "y": 124.6,
+      "z": -261.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -181.8,
+      "y": 96.4,
+      "z": -366.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 70.2,
+      "y": 109.6,
+      "z": 118.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 501.0,
+      "y": 79.8,
+      "z": 214.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 343.7,
+      "y": 81.6,
+      "z": -319.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 297.0,
+      "y": 87.5,
+      "z": -300.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 478.2,
+      "y": 54.8,
+      "z": -555.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -598.2,
+      "y": 58.8,
+      "z": 798.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -597.6,
+      "y": 59.5,
+      "z": 812.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -590.4,
+      "y": 62.8,
+      "z": 843.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -117.7,
+      "y": 68.0,
+      "z": -692.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 73.9,
+      "y": 86.0,
+      "z": 765.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 37.3,
+      "y": 76.6,
+      "z": 737.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 31.8,
+      "y": 70.3,
+      "z": 707.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 109.6,
+      "y": 69.1,
+      "z": 721.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 247.3,
+      "y": 47.2,
+      "z": 461.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -243.5,
+      "y": 57.4,
+      "z": 368.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -420.7,
+      "y": 80.8,
+      "z": -240.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -342.9,
+      "y": 85.4,
+      "z": -211.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -468.3,
+      "y": 78.3,
+      "z": 3.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -275.4,
+      "y": 50.9,
+      "z": -705.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -263.7,
+      "y": 51.4,
+      "z": -733.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 586.5,
+      "y": 70.3,
+      "z": -590.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 524.6,
+      "y": 60.5,
+      "z": -667.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 77.3,
+      "y": 77.2,
+      "z": -399.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 170.9,
+      "y": 105.6,
+      "z": -255.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 583.1,
+      "y": 93.1,
+      "z": 76.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 391.1,
+      "y": 82.4,
+      "z": -157.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -379.9,
+      "y": 54.3,
+      "z": 227.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -545.2,
+      "y": 43.9,
+      "z": 837.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 201.1,
+      "y": 62.9,
+      "z": 692.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -482.2,
+      "y": 59.5,
+      "z": 232.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 103.7,
+      "y": 55.7,
+      "z": -594.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 214.4,
+      "y": 55.2,
+      "z": -396.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -5.8,
+      "y": 116.9,
+      "z": -295.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 146.8,
+      "y": 104.1,
+      "z": -264.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 289.0,
+      "y": 56.3,
+      "z": -19.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 279.8,
+      "y": 70.9,
+      "z": 47.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 415.0,
+      "y": 46.3,
+      "z": -591.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 334.4,
+      "y": 59.8,
+      "z": -604.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 13.6,
+      "y": 64.0,
+      "z": 677.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 356.3,
+      "y": 62.7,
+      "z": 586.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 258.1,
+      "y": 51.3,
+      "z": 406.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -582.3,
+      "y": 75.6,
+      "z": 113.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -388.0,
+      "y": 81.6,
+      "z": -578.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -389.4,
+      "y": 62.4,
+      "z": -654.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 84.7,
+      "y": 118.8,
+      "z": 828.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 166.6,
+      "y": 68.4,
+      "z": 725.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 365.4,
+      "y": 70.6,
+      "z": 707.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -518.4,
+      "y": 77.5,
+      "z": -1.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -509.4,
+      "y": 52.3,
+      "z": 281.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -399.7,
+      "y": 81.0,
+      "z": -224.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -475.4,
+      "y": 102.9,
+      "z": -499.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -409.6,
+      "y": 73.8,
+      "z": -605.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -251.8,
+      "y": 60.2,
+      "z": -689.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 86.8,
+      "y": 55.8,
+      "z": -594.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 259.6,
+      "y": 53.0,
+      "z": 37.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 511.2,
+      "y": 80.7,
+      "z": 223.6,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 242.8,
+      "y": 56.6,
+      "z": 332.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -548.0,
+      "y": 83.9,
+      "z": 45.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 53.4,
+      "y": 68.4,
+      "z": 704.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 233.3,
+      "y": 48.5,
+      "z": 574.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 297.0,
+      "y": 54.2,
+      "z": 603.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 396.7,
+      "y": 79.8,
+      "z": 733.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -108.9,
+      "y": 103.2,
+      "z": 347.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -202.1,
+      "y": 79.0,
+      "z": 223.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -279.2,
+      "y": 111.1,
+      "z": 71.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -132.5,
+      "y": 85.6,
+      "z": -454.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -152.2,
+      "y": 77.5,
+      "z": -523.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 339.9,
+      "y": 86.5,
+      "z": -1.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 361.1,
+      "y": 88.0,
+      "z": -369.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 122.2,
+      "y": 98.8,
+      "z": 841.5,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 334.4,
+      "y": 61.3,
+      "z": 548.4,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -559.2,
+      "y": 56.6,
+      "z": 201.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -188.9,
+      "y": 71.8,
+      "z": 363.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -410.6,
+      "y": 86.1,
+      "z": -277.2,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": -409.7,
+      "y": 89.7,
+      "z": -287.7,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 43.5,
+      "y": 116.9,
+      "z": -286.8,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 45.2,
+      "y": 119.8,
+      "z": -279.9,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 475.2,
+      "y": 76.4,
+      "z": 248.1,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 381.0,
+      "y": 57.7,
+      "z": -615.0,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood"
+    },
+    {
+      "x": 462.3,
+      "y": 82.3,
+      "z": 710.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood",
+      "chatLink": "[&BGECAAA=]"
+    },
+    {
+      "x": -93.4,
+      "y": 90.3,
+      "z": 295.3,
+      "material": "seasoned_wood",
+      "category": "wood",
+      "icon": "seasoned_wood",
+      "chatLink": "[&BF0CAAA=]"
+    }
+  ]
+}

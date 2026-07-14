@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "mapId": 15,
+  "slug": "queensdale",
+  "name": "Queensdale",
+  "regionName": "Kryta",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
+      "name": "Copper Ore",
+      "category": "ore",
+      "material": "copper",
+      "source": "lady"
+    },
+    {
+      "name": "Head of Lettuce",
+      "category": "plant",
+      "material": "lettuce",
+      "source": "tw"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 343.8,
+      "y": -2.7,
+      "z": 719.7,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": -151.2,
+      "y": 27.0,
+      "z": -351.3,
+      "material": "rich_candy_corn",
+      "category": "event",
+      "icon": "rich_candy_corn"
+    },
+    {
+      "x": 520.9,
+      "y": 3.1,
+      "z": -262.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Jackal"
+    },
+    {
+      "x": -886.6,
+      "y": 33.8,
+      "z": -195.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Springer"
+    },
+    {
+      "x": -914.5,
+      "y": 52.2,
+      "z": -192.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BPIAAAA=]"
+    },
+    {
+      "x": -504.9,
+      "y": 12.0,
+      "z": -122.9,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Raptor"
+    },
+    {
+      "x": -458.4,
+      "y": 16.7,
+      "z": 21.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BPkAAAA=]"
+    },
+    {
+      "x": 673.0,
+      "y": 60.6,
+      "z": -217.2,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skyscale"
+    },
+    {
+      "x": 749.1,
+      "y": 92.0,
+      "z": -162.7,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 1007.4,
+      "y": 66.0,
+      "z": -436.5,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Glider"
+    },
+    {
+      "x": 1058.1,
+      "y": 59.7,
+      "z": -434.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 1083.4,
+      "y": 50.0,
+      "z": -416.0,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal"
+    },
+    {
+      "x": 1034.1,
+      "y": 46.0,
+      "z": -672.4,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BPQAAAA=]"
+    },
+    {
+      "x": 152.2,
+      "y": -0.1,
+      "z": 457.3,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 0.4,
+      "y": 8.7,
+      "z": 699.6,
+      "material": "empyreal",
+      "category": "misc",
+      "icon": "empyreal",
+      "chatLink": "[&BKsAAAA=]"
+    },
+    {
+      "x": 699.6,
+      "y": 57.9,
+      "z": -595.8,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": -151.6,
+      "y": 27.5,
+      "z": -351.6,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": 70.3,
+      "y": 24.5,
+      "z": -107.5,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": 687.6,
+      "y": 60.5,
+      "z": -642.2,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": 689.0,
+      "y": 59.2,
+      "z": -642.4,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper",
+      "chatLink": "[&BPMAAAA=]"
+    },
+    {
+      "x": 70.7,
+      "y": 24.7,
+      "z": -107.1,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": 343.5,
+      "y": -2.0,
+      "z": 720.0,
+      "material": "copper",
+      "category": "ore",
+      "icon": "copper"
+    },
+    {
+      "x": 878.6,
+      "y": 16.0,
+      "z": 418.9,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 872.2,
+      "y": 16.0,
+      "z": 419.0,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 871.9,
+      "y": 16.0,
+      "z": 406.1,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 875.4,
+      "y": 16.0,
+      "z": 399.5,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 891.2,
+      "y": 16.0,
+      "z": 394.2,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 905.7,
+      "y": 16.0,
+      "z": 382.9,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 905.6,
+      "y": 16.0,
+      "z": 403.7,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 893.6,
+      "y": 16.0,
+      "z": 413.3,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 885.0,
+      "y": 16.0,
+      "z": 405.7,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 887.3,
+      "y": 16.0,
+      "z": 415.1,
+      "material": "lettuce",
+      "category": "plant",
+      "icon": "lettuce"
+    },
+    {
+      "x": 663.8,
+      "y": 31.0,
+      "z": 155.4,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 901.1,
+      "y": 21.9,
+      "z": 341.8,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 74.5,
+      "y": 0.6,
+      "z": 574.3,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": -986.1,
+      "y": 14.0,
+      "z": -493.4,
+      "material": "onion",
+      "category": "plant",
+      "icon": "onion"
+    },
+    {
+      "x": 863.5,
+      "y": 22.0,
+      "z": 214.7,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": 75.8,
+      "y": 26.2,
+      "z": -347.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -658.3,
+      "y": 12.5,
+      "z": -140.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -620.5,
+      "y": 29.3,
+      "z": -364.5,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    }
+  ]
+}

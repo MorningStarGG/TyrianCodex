@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1442,
+  "slug": "seitung-province",
+  "name": "Seitung Province",
+  "regionName": "Cantha",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Flax",
+      "category": "plant",
+      "material": "flax",
+      "source": "lady"
+    },
+    {
+      "name": "Sugar Pumpkin",
+      "category": "plant",
+      "material": "pumpkin",
+      "source": "lady"
+    },
+    {
+      "name": "Verdant Herbs",
+      "category": "plant",
+      "material": "verdant_herbs",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 249.2,
+      "y": 68.2,
+      "z": 405.3,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -82.6,
+      "y": 58.8,
+      "z": 383.8,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": 8.9,
+      "y": 64.6,
+      "z": 389.1,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": 76.2,
+      "y": 84.0,
+      "z": 632.0,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": 63.8,
+      "y": 91.7,
+      "z": 560.7,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -133.2,
+      "y": 48.3,
+      "z": -459.3,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -131.8,
+      "y": 48.4,
+      "z": -455.9,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -128.1,
+      "y": 48.3,
+      "z": -458.8,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -129.2,
+      "y": 48.3,
+      "z": -455.7,
+      "material": "carrots",
+      "category": "plant",
+      "icon": "carrots"
+    },
+    {
+      "x": -150.7,
+      "y": 43.7,
+      "z": -461.4,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -149.1,
+      "y": 43.7,
+      "z": -465.0,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -156.6,
+      "y": 43.7,
+      "z": -458.9,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -153.9,
+      "y": 43.6,
+      "z": -456.1,
+      "material": "flax",
+      "category": "plant",
+      "icon": "flax"
+    },
+    {
+      "x": -110.6,
+      "y": 48.3,
+      "z": -470.1,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": -104.1,
+      "y": 48.3,
+      "z": -469.8,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": -103.8,
+      "y": 48.3,
+      "z": -467.0,
+      "material": "pumpkin",
+      "category": "plant",
+      "icon": "pumpkin"
+    },
+    {
+      "x": 916.8,
+      "y": 14.4,
+      "z": -410.0,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": 931.4,
+      "y": 42.2,
+      "z": -432.4,
+      "material": "strawberry",
+      "category": "plant",
+      "icon": "strawberry"
+    },
+    {
+      "x": -167.9,
+      "y": 39.1,
+      "z": -424.9,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    },
+    {
+      "x": -163.6,
+      "y": 40.1,
+      "z": -424.1,
+      "material": "verdant_herbs",
+      "category": "plant",
+      "icon": "verdant_herbs"
+    }
+  ]
+}

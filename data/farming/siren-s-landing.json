@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1203,
+  "slug": "siren-s-landing",
+  "name": "Siren's Landing",
+  "regionName": "Ruins of Orr",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Orrian Pearl",
+      "category": "misc",
+      "material": "pearl",
+      "source": "lady"
+    },
+    {
+      "name": "Omnomberry",
+      "category": "plant",
+      "material": "omnomberry",
+      "source": "lady"
+    },
+    {
+      "name": "Orrian Truffle",
+      "category": "plant",
+      "material": "truffle",
+      "source": "lady"
+    },
+    {
+      "name": "Elder Wood Log",
+      "category": "wood",
+      "material": "elder_wood",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 437.2,
+      "y": 8.5,
+      "z": -227.6,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl",
+      "mount": "Jackal"
+    },
+    {
+      "x": 329.3,
+      "y": 44.1,
+      "z": -272.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl",
+      "mount": "Springer"
+    },
+    {
+      "x": 352.6,
+      "y": 9.4,
+      "z": -78.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 403.8,
+      "y": -0.1,
+      "z": -113.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 563.7,
+      "y": -40.9,
+      "z": -124.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 583.0,
+      "y": -2.1,
+      "z": -217.7,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 712.5,
+      "y": -34.2,
+      "z": 293.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 619.4,
+      "y": -6.6,
+      "z": 273.7,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 507.8,
+      "y": 2.4,
+      "z": 147.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 502.0,
+      "y": 4.1,
+      "z": 122.6,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 492.4,
+      "y": -0.9,
+      "z": 125.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl",
+      "mount": "Skimmer"
+    },
+    {
+      "x": 165.7,
+      "y": -0.3,
+      "z": 208.6,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 162.0,
+      "y": 0.5,
+      "z": 210.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl",
+      "mount": "Jackal"
+    },
+    {
+      "x": 149.4,
+      "y": 45.7,
+      "z": 291.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 149.1,
+      "y": -31.1,
+      "z": 116.7,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 99.7,
+      "y": 3.3,
+      "z": 35.3,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 20.6,
+      "y": 1.2,
+      "z": 34.9,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -46.9,
+      "y": 9.2,
+      "z": 9.7,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -44.6,
+      "y": -0.2,
+      "z": 37.3,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -59.6,
+      "y": -0.1,
+      "z": 32.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -193.2,
+      "y": 8.9,
+      "z": -21.5,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -332.6,
+      "y": 23.1,
+      "z": -37.9,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -340.2,
+      "y": 6.8,
+      "z": -60.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -452.4,
+      "y": 39.9,
+      "z": -3.6,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -358.3,
+      "y": 12.3,
+      "z": -116.4,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -419.8,
+      "y": 2.5,
+      "z": -217.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -705.7,
+      "y": 44.1,
+      "z": -278.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -666.4,
+      "y": 54.4,
+      "z": -123.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -721.2,
+      "y": 55.3,
+      "z": -90.3,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -588.0,
+      "y": 67.1,
+      "z": -60.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -613.9,
+      "y": 127.6,
+      "z": 149.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -525.7,
+      "y": 95.8,
+      "z": 173.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -882.8,
+      "y": 102.3,
+      "z": 270.8,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -919.0,
+      "y": 93.6,
+      "z": 196.9,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -916.3,
+      "y": 91.0,
+      "z": 168.7,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl",
+      "mount": "Springer"
+    },
+    {
+      "x": -919.5,
+      "y": 113.3,
+      "z": 153.6,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl",
+      "mount": "Skyscale"
+    },
+    {
+      "x": -980.1,
+      "y": 119.6,
+      "z": 66.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -853.3,
+      "y": 117.4,
+      "z": 102.5,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 322.9,
+      "y": 58.3,
+      "z": -262.9,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 136.5,
+      "y": 10.1,
+      "z": 163.4,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -148.7,
+      "y": 10.1,
+      "z": 45.9,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": 68.1,
+      "y": 89.0,
+      "z": -342.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -111.3,
+      "y": 117.7,
+      "z": -323.5,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -138.7,
+      "y": 100.6,
+      "z": -364.3,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -256.9,
+      "y": 107.3,
+      "z": -324.9,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -231.5,
+      "y": 88.5,
+      "z": -188.8,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -230.6,
+      "y": 32.7,
+      "z": -47.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -344.8,
+      "y": 24.7,
+      "z": -30.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -396.9,
+      "y": 23.2,
+      "z": -26.0,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -465.8,
+      "y": 21.9,
+      "z": -81.4,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -317.1,
+      "y": 36.3,
+      "z": -140.7,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -368.7,
+      "y": 34.0,
+      "z": -171.1,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -408.6,
+      "y": 95.1,
+      "z": 1.4,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -215.0,
+      "y": 71.6,
+      "z": 127.9,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -357.0,
+      "y": 106.6,
+      "z": 281.2,
+      "material": "pearl",
+      "category": "misc",
+      "icon": "pearl"
+    },
+    {
+      "x": -421.4,
+      "y": 2.5,
+      "z": -216.9,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -47.2,
+      "y": 17.5,
+      "z": -121.0,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": 20.7,
+      "y": 14.0,
+      "z": -91.1,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
+      "x": -151.9,
+      "y": 7.5,
+      "z": 37.5,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -204.4,
+      "y": 17.4,
+      "z": 68.9,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -245.1,
+      "y": 15.3,
+      "z": 39.2,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -297.1,
+      "y": 21.8,
+      "z": -6.3,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -314.7,
+      "y": 31.8,
+      "z": 36.2,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -338.6,
+      "y": 31.4,
+      "z": 10.6,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -197.1,
+      "y": 38.3,
+      "z": 127.3,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -485.7,
+      "y": 94.9,
+      "z": 42.1,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -553.1,
+      "y": 32.0,
+      "z": -173.3,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -601.8,
+      "y": 67.8,
+      "z": 9.5,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -542.3,
+      "y": 66.9,
+      "z": -76.8,
+      "material": "omnomberry",
+      "category": "plant",
+      "icon": "omnomberry"
+    },
+    {
+      "x": -669.4,
+      "y": 24.8,
+      "z": -314.1,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": -538.9,
+      "y": 30.8,
+      "z": -231.3,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": -197.1,
+      "y": 43.6,
+      "z": 265.2,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 12.6,
+      "y": 21.2,
+      "z": 171.0,
+      "material": "saffron",
+      "category": "plant",
+      "icon": "saffron"
+    },
+    {
+      "x": 127.4,
+      "y": 36.1,
+      "z": -97.1,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -157.2,
+      "y": 39.3,
+      "z": -85.5,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -227.2,
+      "y": 29.3,
+      "z": -166.8,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -269.4,
+      "y": 92.1,
+      "z": -202.7,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -653.0,
+      "y": 66.3,
+      "z": -52.2,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -57.2,
+      "y": 33.8,
+      "z": 269.5,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -529.7,
+      "y": 67.2,
+      "z": -95.0,
+      "material": "truffle",
+      "category": "plant",
+      "icon": "truffle"
+    },
+    {
+      "x": -88.8,
+      "y": 28.2,
+      "z": -100.0,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -153.4,
+      "y": 83.3,
+      "z": -145.2,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -299.8,
+      "y": 106.1,
+      "z": -299.7,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": -197.1,
+      "y": 43.5,
+      "z": 265.1,
+      "material": "winter_crocus",
+      "category": "plant",
+      "icon": "winter_crocus"
+    },
+    {
+      "x": 687.5,
+      "y": -26.2,
+      "z": -280.8,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 712.4,
+      "y": -61.4,
+      "z": -36.4,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 298.0,
+      "y": -5.1,
+      "z": 48.2,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 355.8,
+      "y": -9.4,
+      "z": 97.9,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 461.4,
+      "y": -0.5,
+      "z": 75.4,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 541.3,
+      "y": -58.8,
+      "z": 291.5,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 773.9,
+      "y": -53.2,
+      "z": 159.5,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": 483.7,
+      "y": -2.4,
+      "z": 117.8,
+      "material": "coral",
+      "category": "seafood",
+      "icon": "coral"
+    },
+    {
+      "x": -352.6,
+      "y": 28.1,
+      "z": -9.6,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": -367.0,
+      "y": 17.7,
+      "z": -53.3,
+      "material": "ancient_wood",
+      "category": "wood",
+      "icon": "ancient_wood"
+    },
+    {
+      "x": 404.2,
+      "y": 4.8,
+      "z": -195.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 475.1,
+      "y": 40.1,
+      "z": -316.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 487.3,
+      "y": 37.8,
+      "z": -323.4,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 470.8,
+      "y": 37.1,
+      "z": -351.7,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 418.2,
+      "y": 36.3,
+      "z": -332.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 330.0,
+      "y": 43.0,
+      "z": -346.0,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 323.8,
+      "y": 41.6,
+      "z": -337.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 309.8,
+      "y": 40.1,
+      "z": -339.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 292.3,
+      "y": 42.7,
+      "z": -357.6,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 336.8,
+      "y": 44.0,
+      "z": -285.0,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 251.7,
+      "y": 39.0,
+      "z": -261.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 283.4,
+      "y": 9.4,
+      "z": -139.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 26.7,
+      "y": 16.3,
+      "z": -109.5,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": 23.0,
+      "y": 9.5,
+      "z": -3.2,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -36.4,
+      "y": 16.0,
+      "z": -7.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -59.3,
+      "y": 21.2,
+      "z": -26.0,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -31.7,
+      "y": 21.4,
+      "z": -35.0,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -107.8,
+      "y": 38.1,
+      "z": -87.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -135.1,
+      "y": 43.9,
+      "z": -82.9,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -137.0,
+      "y": 41.3,
+      "z": -77.4,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -158.0,
+      "y": 47.4,
+      "z": -20.8,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -175.1,
+      "y": 29.0,
+      "z": -121.0,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -173.5,
+      "y": 29.4,
+      "z": -143.1,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -222.5,
+      "y": 7.6,
+      "z": -22.3,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -402.9,
+      "y": 12.6,
+      "z": -88.0,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    },
+    {
+      "x": -410.1,
+      "y": 3.5,
+      "z": -207.3,
+      "material": "elder_wood",
+      "category": "wood",
+      "icon": "elder_wood"
+    }
+  ]
+}

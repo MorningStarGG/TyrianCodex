@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1438,
+  "slug": "new-kaineng-city",
+  "name": "New Kaineng City",
+  "regionName": "Cantha",
+  "mode": "farming",
+  "routes": [],
+  "nodes": [
+    {
+      "x": -315.8,
+      "y": -10.9,
+      "z": -8.9,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -328.7,
+      "y": -11.0,
+      "z": -101.0,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -344.2,
+      "y": -11.4,
+      "z": -208.6,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -160.1,
+      "y": -13.7,
+      "z": 140.3,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -85.9,
+      "y": -13.2,
+      "z": 193.4,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -170.4,
+      "y": -11.9,
+      "z": -350.0,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -69.9,
+      "y": -11.6,
+      "z": -357.0,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": -48.9,
+      "y": -12.6,
+      "z": -281.7,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 44.4,
+      "y": -14.1,
+      "z": -270.4,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 147.6,
+      "y": -13.5,
+      "z": -343.0,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 231.0,
+      "y": -14.4,
+      "z": -136.7,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    },
+    {
+      "x": 38.6,
+      "y": -11.2,
+      "z": -337.6,
+      "material": "clam",
+      "category": "seafood",
+      "icon": "clam"
+    }
+  ]
+}

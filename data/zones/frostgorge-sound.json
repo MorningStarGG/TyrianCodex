@@ -1,0 +1,1842 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T22:15:01.476329+00:00",
+  "zone": {
+    "mapId": 30,
+    "name": "Frostgorge Sound",
+    "continentId": 1,
+    "regionId": 1,
+    "regionName": "Shiverpeak Mountains",
+    "floor": 1,
+    "minLevel": 70,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -36864,
+        -36864
+      ],
+      [
+        36864,
+        36864
+      ]
+    ],
+    "continentRect": [
+      [
+        53504,
+        24576
+      ],
+      [
+        56576,
+        27648
+      ]
+    ],
+    "sectorRect": [
+      [
+        53347.7,
+        24473.4
+      ],
+      [
+        56650.5,
+        27713.5
+      ]
+    ],
+    "labelCoord": [
+      55040,
+      25984
+    ],
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "30:waypoint:634",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "634",
+      "coord": [
+        56298,
+        25884
+      ],
+      "recommendedLevel": null,
+      "name": "Earthshake Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHoCAAA=]",
+      "waypointChatLink": "[&BHoCAAA=]",
+      "trailIndex": 23,
+      "wikiText": "Earthshake Basin is an area located in eastern side of Frostgorge Sound. A large camp was established here by the Pact in order to face off against the Claws of Jormag, fearsome champions of the Elder Dragon Jormag."
+    },
+    {
+      "stepId": "30:poi:623",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "623",
+      "coord": [
+        56361,
+        25770
+      ],
+      "recommendedLevel": null,
+      "name": "Elder's Vale",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 43,
+      "wikiText": "Elder's Vale is the primary Pact encampment in Frostgorge Sound that acts as the first line of defense against the icebrood.",
+      "waypointChatLink": "[&BHoCAAA=]"
+    },
+    {
+      "stepId": "30:vista:1699",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1699",
+      "coord": [
+        56116,
+        25692
+      ],
+      "recommendedLevel": null,
+      "name": "Elder's Vale",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 85,
+      "wikiText": "Start at the north-east corner of the rock with the vist and walk/jump your way to the vista in a straight line.",
+      "waypointChatLink": "[&BHoCAAA=]"
+    },
+    {
+      "stepId": "30:heart:24",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "24",
+      "coord": [
+        56277,
+        24857
+      ],
+      "recommendedLevel": 80,
+      "name": "Help Shifting Waves protect the kodan at Path of Starry Skies.",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56509,
+          24965
+        ],
+        [
+          56345,
+          25560
+        ],
+        [
+          56076,
+          25356
+        ],
+        [
+          56148,
+          24825
+        ],
+        [
+          56330,
+          24716
+        ],
+        [
+          56509,
+          24965
+        ]
+      ],
+      "trailIndex": 185,
+      "wikiText": "Destroy icebrood, free refugees, light the way, and protect the kodan.",
+      "waypointChatLink": "[&BHsCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:635",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "635",
+      "coord": [
+        56257,
+        24846
+      ],
+      "recommendedLevel": null,
+      "name": "Path of Starry Skies Waypoint",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHsCAAA=]",
+      "waypointChatLink": "[&BHsCAAA=]",
+      "trailIndex": 189,
+      "wikiText": "Snow Climb is an area in the northeast of Frostgorge Sound. A camp was established here by kodan from the fallen sanctuary Honor of the Waves that went scouting for a new place to stay."
+    },
+    {
+      "stepId": "30:vista:1693",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1693",
+      "coord": [
+        55944,
+        26313
+      ],
+      "recommendedLevel": null,
+      "name": "Trionic Lattice",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 406,
+      "wikiText": "From the waypoint go to the small camp west of the Elder's Vale vista, then south to Trionic lattice mountain.",
+      "waypointChatLink": "[&BIQCAAA=]"
+    },
+    {
+      "stepId": "30:poi:622",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "622",
+      "coord": [
+        55776,
+        26440
+      ],
+      "recommendedLevel": null,
+      "name": "Sacred Trust",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 432,
+      "wikiText": "Sacred Trust is a camp of kodan refugees in Yakkington's Toil. It started as a scout camp for the Honor of the Waves. Now the scouts have nowhere to go, as icebrood have assaulted their Sanctuary.",
+      "waypointChatLink": "[&BIQCAAA=]"
+    },
+    {
+      "stepId": "30:heart:12",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "12",
+      "coord": [
+        55606,
+        26717
+      ],
+      "recommendedLevel": 73,
+      "name": "Help Scholar Inka research imps.",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          55318,
+          26508
+        ],
+        [
+          55387,
+          26329
+        ],
+        [
+          55476,
+          26394
+        ],
+        [
+          55657,
+          26524
+        ],
+        [
+          55735,
+          26631
+        ],
+        [
+          55658,
+          26848
+        ],
+        [
+          55404,
+          26726
+        ],
+        [
+          55318,
+          26508
+        ]
+      ],
+      "trailIndex": 493,
+      "wikiText": "Scholar Inka needs summoning stones to conduct experiments, repaired equipment to monitor imps, and imps cleared from the cave to transport supplies.",
+      "waypointChatLink": "[&BIMCAAA=]"
+    },
+    {
+      "stepId": "30:hero:0-10",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "hero",
+      "objectiveId": "0-10",
+      "coord": [
+        55908,
+        26679
+      ],
+      "recommendedLevel": null,
+      "name": "Eulda Soulseer",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 539,
+      "wikiText": "Eulda Soulseer is a hero challenge NPC found in Yakkington's Toil.",
+      "waypointChatLink": "[&BIQCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:644",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "644",
+      "coord": [
+        56004,
+        26623
+      ],
+      "recommendedLevel": null,
+      "name": "Yak's Bend Waypoint",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIQCAAA=]",
+      "waypointChatLink": "[&BIQCAAA=]",
+      "trailIndex": 555,
+      "wikiText": "Yakkington's Toil is an area in southeast of Frostgorge Sound. A large group of independent norn has taken control of the long-abandoned dwarven camp of Yak's Bend. They often do trading with the nearby kodan refugees found in Sacred Trust."
+    },
+    {
+      "stepId": "30:vista:1696",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1696",
+      "coord": [
+        56109,
+        26694
+      ],
+      "recommendedLevel": null,
+      "name": "Yak's Bend",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 584,
+      "wikiText": "Start east of the mountain to the north of the vista, and work your way south and just walk your way up to the vista.",
+      "waypointChatLink": "[&BIQCAAA=]"
+    },
+    {
+      "stepId": "30:poi:842",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "842",
+      "coord": [
+        56280,
+        27189
+      ],
+      "recommendedLevel": null,
+      "name": "Offering Stone",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 649,
+      "wikiText": "The Offering Stone is a point of interest in Arundon Vale. A large group of fanatic grawls can be found there worshipping their god, the Claw of Jormag.",
+      "waypointChatLink": "[&BHgCAAA=]"
+    },
+    {
+      "stepId": "30:heart:21",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "21",
+      "coord": [
+        56068,
+        27207
+      ],
+      "recommendedLevel": 71,
+      "name": "Help Pact Explorer Erikk battle the Dragon Tribe grawl.",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          56351,
+          27120
+        ],
+        [
+          56303,
+          27236
+        ],
+        [
+          56109,
+          27314
+        ],
+        [
+          55995,
+          27294
+        ],
+        [
+          55850,
+          27195
+        ],
+        [
+          55935,
+          26990
+        ],
+        [
+          56114,
+          26894
+        ],
+        [
+          56320,
+          26972
+        ],
+        [
+          56351,
+          27120
+        ]
+      ],
+      "trailIndex": 679,
+      "wikiText": "Destroy effigies, light supplies on fire, ignite stolen explosives, burn paintings, and fight the Dragon Tribe grawl.",
+      "waypointChatLink": "[&BHgCAAA=]"
+    },
+    {
+      "stepId": "30:poi:624",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "624",
+      "coord": [
+        56066,
+        27244
+      ],
+      "recommendedLevel": null,
+      "name": "Safewatch Vale",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 685,
+      "wikiText": "Safewatch Vale is a Pact camp in Arundon Vale. The Pact established the camp to help monitor the nearby Sons of Svanir.",
+      "waypointChatLink": "[&BHgCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:632",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "632",
+      "coord": [
+        55832,
+        27489
+      ],
+      "recommendedLevel": null,
+      "name": "Arundon Waypoint",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHgCAAA=]",
+      "waypointChatLink": "[&BHgCAAA=]",
+      "trailIndex": 745,
+      "wikiText": "Arundon Vale is the southeasternmost area in Frostgorge Sound. It holds a Vigil camp as well as the encampment of the Dragon Tribe grawl."
+    },
+    {
+      "stepId": "30:poi:630",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "630",
+      "coord": [
+        55553,
+        27169
+      ],
+      "recommendedLevel": null,
+      "name": "Coiled Watch",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 812,
+      "wikiText": "Coiled Watch is a corrupted watch post on the top of a peak in the Highpeaks. There is a constant struggle between the icebrood and the Vigil for the control of this tower.",
+      "waypointChatLink": "[&BIICAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:642",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "642",
+      "coord": [
+        55396,
+        27076
+      ],
+      "recommendedLevel": null,
+      "name": "Highpeaks Waypoint",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIICAAA=]",
+      "waypointChatLink": "[&BIICAAA=]",
+      "trailIndex": 844,
+      "wikiText": "Highpeaks is an area in the south of Frostgorge Sound. The Vigil and the Sons of Svanir, with help from Icebrood minions, battle over control of this area."
+    },
+    {
+      "stepId": "30:heart:20",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "20",
+      "coord": [
+        55329,
+        27278
+      ],
+      "recommendedLevel": 72,
+      "name": "Help Pact Crusader D'Stolt fight the Sons of Svanir.",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          55083,
+          27551
+        ],
+        [
+          54955,
+          27404
+        ],
+        [
+          54994,
+          27116
+        ],
+        [
+          55275,
+          27147
+        ],
+        [
+          55426,
+          27439
+        ],
+        [
+          55304,
+          27573
+        ],
+        [
+          55083,
+          27551
+        ]
+      ],
+      "trailIndex": 877,
+      "wikiText": "Smash corrupted ice, tear down Dragon banners, open cages, destroy defenses, and kill Sons of Svanir.",
+      "waypointChatLink": "[&BIICAAA=]"
+    },
+    {
+      "stepId": "30:poi:629",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "629",
+      "coord": [
+        55104,
+        27408
+      ],
+      "recommendedLevel": null,
+      "name": "The Barrowstead",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 922,
+      "wikiText": "The Barrowstead is a point of interest in Highpeaks. It is the second largest Sons of Svanir base, guarded by watchtowers, notably Claw Watch at its north gate, and Coiled Watch further out to the east.",
+      "waypointChatLink": "[&BIICAAA=]"
+    },
+    {
+      "stepId": "30:poi:631",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "631",
+      "coord": [
+        55031,
+        27245
+      ],
+      "recommendedLevel": null,
+      "name": "Claw Watch",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 944,
+      "wikiText": "Claw Watch is a watch-tower, inhabited by the Sons of Svanir, north of The Barrowstead in the southern part of Frostgorge Sound.",
+      "waypointChatLink": "[&BIICAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:641",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "641",
+      "coord": [
+        54678,
+        26989
+      ],
+      "recommendedLevel": null,
+      "name": "Skyheight Steading Waypoint",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIECAAA=]",
+      "waypointChatLink": "[&BIECAAA=]",
+      "trailIndex": 1042,
+      "wikiText": "Leopard's Tail Valley is an area in the southwest of Frostgorge Sound. The Pact has established a camp to negotiate with the kodan of Blue Ice Shining. The name of the area likely comes from the high number Snow Leopard found there."
+    },
+    {
+      "stepId": "30:vista:1692",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1692",
+      "coord": [
+        54300,
+        27015
+      ],
+      "recommendedLevel": null,
+      "name": "Blue Ice Shining",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1106,
+      "wikiText": "Zone to Skyheaight Steading Waypoint and start climbing the hill just a bit south-west of the waypoint (in the village) and you can just walk along the edge of the cliff west to the vista.",
+      "waypointChatLink": "[&BIECAAA=]"
+    },
+    {
+      "stepId": "30:heart:15",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "15",
+      "coord": [
+        54669,
+        27472
+      ],
+      "recommendedLevel": 74,
+      "name": "Help Infinite Mind rally the forces of Blue Ice Station.",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54702,
+          27079
+        ],
+        [
+          54748,
+          27153
+        ],
+        [
+          54773,
+          27227
+        ],
+        [
+          54893,
+          27323
+        ],
+        [
+          54892,
+          27434
+        ],
+        [
+          54862,
+          27602
+        ],
+        [
+          54785,
+          27659
+        ],
+        [
+          54706,
+          27687
+        ],
+        [
+          54632,
+          27585
+        ],
+        [
+          54424,
+          27595
+        ],
+        [
+          54198,
+          27606
+        ],
+        [
+          53935,
+          27601
+        ],
+        [
+          53989,
+          27377
+        ],
+        [
+          54166,
+          27351
+        ],
+        [
+          54178,
+          27237
+        ],
+        [
+          54181,
+          27153
+        ],
+        [
+          54265,
+          26891
+        ],
+        [
+          54367,
+          26900
+        ],
+        [
+          54529,
+          27002
+        ],
+        [
+          54702,
+          27079
+        ]
+      ],
+      "trailIndex": 1195,
+      "wikiText": "Find and revive wounded kodan, recover stolen food to empower them, and reclaim kodan flagstands to boost morale.",
+      "waypointChatLink": "[&BIECAAA=]"
+    },
+    {
+      "stepId": "30:poi:1701",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "1701",
+      "coord": [
+        54648,
+        27468
+      ],
+      "recommendedLevel": null,
+      "name": "Blue Ice Station",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1200,
+      "wikiText": "Blue Ice Station is a kodan-controlled camp within dredge territory in Groznev Delve.",
+      "waypointChatLink": "[&BIECAAA=]"
+    },
+    {
+      "stepId": "30:poi:621",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "621",
+      "coord": [
+        54104,
+        27452
+      ],
+      "recommendedLevel": null,
+      "name": "Krok's Ruin",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1263,
+      "wikiText": "Krok's Ruin is a point of interest directly east of the Groznev Waypoint in Groznev Delve, Frostgorge Sound. Dredge are currently excavating this tomb in search of dwarven artifacts to destroy them to tarnished their last remaining legacy.",
+      "waypointChatLink": "[&BHkCAAA=]"
+    },
+    {
+      "stepId": "30:heart:25",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "25",
+      "coord": [
+        53945,
+        27504
+      ],
+      "recommendedLevel": 75,
+      "name": "Assist Rebel Isaak in sowing the seeds of dredge revolution.",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54015,
+          27597
+        ],
+        [
+          53798,
+          27589
+        ],
+        [
+          53592,
+          27537
+        ],
+        [
+          53517,
+          27339
+        ],
+        [
+          53543,
+          26950
+        ],
+        [
+          53895,
+          26982
+        ],
+        [
+          54171,
+          27160
+        ],
+        [
+          54221,
+          27402
+        ],
+        [
+          54043,
+          27424
+        ],
+        [
+          54015,
+          27597
+        ]
+      ],
+      "trailIndex": 1289,
+      "wikiText": "Acquire a mining suit from rebel Isaak, and follow Isaak's instructions to inspire local dredge rebels.",
+      "waypointChatLink": "[&BHkCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:633",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "633",
+      "coord": [
+        53880,
+        27566
+      ],
+      "recommendedLevel": null,
+      "name": "Groznev Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHkCAAA=]",
+      "waypointChatLink": "[&BHkCAAA=]",
+      "trailIndex": 1300,
+      "wikiText": "Groznev Delve is an underground area in Frostgorge Sound. Both kodan and dredge fight for control of the territory."
+    },
+    {
+      "stepId": "30:poi:619",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "619",
+      "coord": [
+        54037,
+        27136
+      ],
+      "recommendedLevel": null,
+      "name": "Forgepits",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1343,
+      "wikiText": "Forgepits is a point of interest in Bore Lynch. Many dredge mining armor can be found at the bottom. To get there, go underwater east of the vista in Bore Lynch.",
+      "waypointChatLink": "[&BHkCAAA=]"
+    },
+    {
+      "stepId": "30:hero:0-15",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "hero",
+      "objectiveId": "0-15",
+      "coord": [
+        53858,
+        27486
+      ],
+      "recommendedLevel": null,
+      "name": "Miner Voss",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1393,
+      "wikiText": "Miner Voss is a dredge eager to learn the ways of fighting of the other races. He is found slightly north of the Groznev Waypoint, after walking down the ramp from the, turning west, and heading through the tunnel.",
+      "waypointChatLink": "[&BHkCAAA=]"
+    },
+    {
+      "stepId": "30:poi:618",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "618",
+      "coord": [
+        53691,
+        27340
+      ],
+      "recommendedLevel": null,
+      "name": "The Sonic Furnace",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1466,
+      "wikiText": "The Sonic Furnace is a point of interest in Bore Lynch. This machine is used by the dredge to smelt the ore they are constantly digging up.",
+      "waypointChatLink": "[&BHkCAAA=]"
+    },
+    {
+      "stepId": "30:vista:1695",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1695",
+      "coord": [
+        53742,
+        27250
+      ],
+      "recommendedLevel": null,
+      "name": "The Sonic Furnace",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1520,
+      "wikiText": "Climb the spiral around the high tower north of the vista. At the top, walk the path to the vista. On the way, kill the dredge.",
+      "waypointChatLink": "[&BHkCAAA=]"
+    },
+    {
+      "stepId": "30:vista:1694",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1694",
+      "coord": [
+        53621,
+        26718
+      ],
+      "recommendedLevel": null,
+      "name": "Stonesledge Draft",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1597,
+      "wikiText": "Climb the hill to the vista south of the pit, behind the mortars.",
+      "waypointChatLink": "[&BIUCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:645",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "645",
+      "coord": [
+        54079,
+        26667
+      ],
+      "recommendedLevel": null,
+      "name": "Blue Ice Shining Waypoint",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIUCAAA=]",
+      "waypointChatLink": "[&BIUCAAA=]",
+      "trailIndex": 1663,
+      "wikiText": "Talabaroop Waves is an area in Frostgorge Sound. It contains the kodan sanctuary of Blue Ice Shining which was one of the first to arrive from the Far Shiverpeaks in the wake of Jormag's attack."
+    },
+    {
+      "stepId": "30:heart:14",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "14",
+      "coord": [
+        54119,
+        26550
+      ],
+      "recommendedLevel": 76,
+      "name": "Learn the way of the kodan.",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54403,
+          26426
+        ],
+        [
+          54304,
+          26364
+        ],
+        [
+          54153,
+          26367
+        ],
+        [
+          53938,
+          26459
+        ],
+        [
+          53861,
+          26578
+        ],
+        [
+          53878,
+          26668
+        ],
+        [
+          53919,
+          26742
+        ],
+        [
+          54061,
+          26865
+        ],
+        [
+          54163,
+          26917
+        ],
+        [
+          54209,
+          26878
+        ],
+        [
+          54305,
+          26791
+        ],
+        [
+          54376,
+          26674
+        ],
+        [
+          54403,
+          26426
+        ]
+      ],
+      "trailIndex": 1691,
+      "wikiText": "Speak with kodan about nature's balance, learn from scattered journals about what brought the kodan south, and pay homage at shrines of Koda.",
+      "waypointChatLink": "[&BIUCAAA=]"
+    },
+    {
+      "stepId": "30:hero:0-96",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "hero",
+      "objectiveId": "0-96",
+      "coord": [
+        54214,
+        26535
+      ],
+      "recommendedLevel": null,
+      "name": "Flowing Ice",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1737,
+      "wikiText": "Flowing Ice is a kodan found in Talabaroop Waves, on the east side of the track that rings the ship, up a staircase. Defeat him in order to earn a Hero point.",
+      "waypointChatLink": "[&BIUCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:640",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "640",
+      "coord": [
+        54300,
+        26254
+      ],
+      "recommendedLevel": null,
+      "name": "Twoloop Waypoint",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIACAAA=]",
+      "waypointChatLink": "[&BIACAAA=]",
+      "trailIndex": 1768,
+      "wikiText": "Talabaroop Waves is an area in Frostgorge Sound. It contains the kodan sanctuary of Blue Ice Shining which was one of the first to arrive from the Far Shiverpeaks in the wake of Jormag's attack."
+    },
+    {
+      "stepId": "30:hero:0-196",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "hero",
+      "objectiveId": "0-196",
+      "coord": [
+        54246,
+        26256
+      ],
+      "recommendedLevel": null,
+      "name": "Talooboo",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1771,
+      "wikiText": "Talooboo is a quaggan in Talabaroop Waves that is confident in the strength of the shark he has trained. Talk to Talooboo to fight the shark and earn a hero point, .",
+      "waypointChatLink": "[&BIACAAA=]"
+    },
+    {
+      "stepId": "30:poi:627",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "627",
+      "coord": [
+        54082,
+        25913
+      ],
+      "recommendedLevel": null,
+      "name": "Zuckermaloo",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1772,
+      "wikiText": "Zuckermaloo is the arena where the Quaggan Games take place.",
+      "waypointChatLink": "[&BIACAAA=]"
+    },
+    {
+      "stepId": "30:poi:1588",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "1588",
+      "coord": [
+        53970,
+        25673
+      ],
+      "recommendedLevel": null,
+      "name": "Peloopoo Needle",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1773,
+      "wikiText": "Peloopoo Needle is a point of interest in Dimotiki Waters. This underwater ravine is home to many wurms and skelks.",
+      "waypointChatLink": "[&BH8CAAA=]"
+    },
+    {
+      "stepId": "30:vista:1698",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1698",
+      "coord": [
+        53902,
+        25669
+      ],
+      "recommendedLevel": null,
+      "name": "Peloopoo Needle",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1775,
+      "wikiText": "Just dive down at the right place until you see the vista in an arch.",
+      "waypointChatLink": "[&BH8CAAA=]"
+    },
+    {
+      "stepId": "30:poi:625",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "625",
+      "coord": [
+        53794,
+        25478
+      ],
+      "recommendedLevel": null,
+      "name": "Orsippus",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1777,
+      "wikiText": "Orsippus is a quaggan village and a point of interest in Dimotiki Waters. According to Qualdup, Orsippus was founded by quaggans from many different villages whose homes have been destroyed by Jormag, so that no quaggan would be alone.",
+      "waypointChatLink": "[&BH8CAAA=]"
+    },
+    {
+      "stepId": "30:heart:16",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "16",
+      "coord": [
+        53896,
+        25473
+      ],
+      "recommendedLevel": 77,
+      "name": "Help Qualdup train Orsippus trainees for the Quaggan Games.",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53566,
+          25554
+        ],
+        [
+          53690,
+          25740
+        ],
+        [
+          53844,
+          25754
+        ],
+        [
+          54010,
+          25639
+        ],
+        [
+          54049,
+          25390
+        ],
+        [
+          53984,
+          25315
+        ],
+        [
+          53607,
+          25242
+        ],
+        [
+          53566,
+          25554
+        ]
+      ],
+      "trailIndex": 1779,
+      "wikiText": "Help Qualdup train Orsippus trainess for the Quaggan Games.",
+      "waypointChatLink": "[&BH8CAAA=]"
+    },
+    {
+      "stepId": "30:heart:19",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "19",
+      "coord": [
+        53985,
+        25203
+      ],
+      "recommendedLevel": 79,
+      "name": "Help Worthy Burden defeat icebrood in Drakkar Spurs.",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          53574,
+          24858
+        ],
+        [
+          53618,
+          25020
+        ],
+        [
+          53767,
+          25216
+        ],
+        [
+          53851,
+          25275
+        ],
+        [
+          54060,
+          25296
+        ],
+        [
+          54122,
+          25184
+        ],
+        [
+          54215,
+          25095
+        ],
+        [
+          54307,
+          24865
+        ],
+        [
+          54250,
+          24616
+        ],
+        [
+          53772,
+          24560
+        ],
+        [
+          53572,
+          24609
+        ],
+        [
+          53574,
+          24858
+        ]
+      ],
+      "trailIndex": 1782,
+      "wikiText": "Help Worthy Burden defeat icebrood in Drakkar Spurs.",
+      "waypointChatLink": "[&BH8CAAA=]"
+    },
+    {
+      "stepId": "30:hero:0-37",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "hero",
+      "objectiveId": "0-37",
+      "coord": [
+        53846,
+        24828
+      ],
+      "recommendedLevel": null,
+      "name": "Frost Portal",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 1822,
+      "wikiText": "A Frost Portal used by icebrood can be found in Drakkar Spurs. Similar portals are used by the icebrood elsewhere.",
+      "waypointChatLink": "[&BIYCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:646",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "646",
+      "coord": [
+        53572,
+        24662
+      ],
+      "recommendedLevel": null,
+      "name": "Drakkar Waypoint",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIYCAAA=]",
+      "waypointChatLink": "[&BIYCAAA=]",
+      "trailIndex": 1849,
+      "wikiText": "Drakkar Spurs is an area in the northwestern corner of Frostgorge Sound. It is swarming with icebrood and is full of Jormag's corrupted ice."
+    },
+    {
+      "stepId": "30:waypoint:639",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "639",
+      "coord": [
+        54001,
+        25497
+      ],
+      "recommendedLevel": null,
+      "name": "Dimotiki Waypoint",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BH8CAAA=]",
+      "waypointChatLink": "[&BH8CAAA=]",
+      "trailIndex": 1938,
+      "wikiText": "Dimotiki Waters is an area in the west of Frostgorge Sound. It contains the quaggan village of Orsippus, one of the two quaggan villages to participate in the Quaggan Games."
+    },
+    {
+      "stepId": "30:heart:17",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "17",
+      "coord": [
+        54246,
+        25513
+      ],
+      "recommendedLevel": 78,
+      "name": "Help Bladed Softness maintain Deep and Troubled Waters.",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          54092,
+          25305
+        ],
+        [
+          54186,
+          25495
+        ],
+        [
+          54304,
+          25588
+        ],
+        [
+          54407,
+          25603
+        ],
+        [
+          54544,
+          25519
+        ],
+        [
+          54560,
+          25419
+        ],
+        [
+          54560,
+          25273
+        ],
+        [
+          54488,
+          25129
+        ],
+        [
+          54322,
+          25009
+        ],
+        [
+          54144,
+          25206
+        ],
+        [
+          54092,
+          25305
+        ]
+      ],
+      "trailIndex": 1973,
+      "wikiText": "Repair cracks, remove barnacles, motivate ice shapers, feed guards, and keep the sanctuary safe.",
+      "waypointChatLink": "[&BH8CAAA=]"
+    },
+    {
+      "stepId": "30:poi:628",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "628",
+      "coord": [
+        54384,
+        25389
+      ],
+      "recommendedLevel": null,
+      "name": "Deep and Troubled Waters",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1988,
+      "wikiText": "Deep and Troubled Waters is a point of interest in the Sea of Lamentation, in the northern reaches of Frostgorge Sound. It is a kodan sanctuary with Deep Song and Cresting Wave as its Voice and Claw.",
+      "waypointChatLink": "[&BH4CAAA=]"
+    },
+    {
+      "stepId": "30:vista:1697",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "vista",
+      "objectiveId": "1697",
+      "coord": [
+        54428,
+        25574
+      ],
+      "recommendedLevel": null,
+      "name": "Deep and Troubled Waters",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2020,
+      "wikiText": "Cross the ramp behind Bladed Softness (heart) then turn south-east and walk to the vista.",
+      "waypointChatLink": "[&BH4CAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:638",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "638",
+      "coord": [
+        54545,
+        25299
+      ],
+      "recommendedLevel": null,
+      "name": "Ice Floe Waypoint",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BH4CAAA=]",
+      "waypointChatLink": "[&BH4CAAA=]",
+      "trailIndex": 2023,
+      "wikiText": "Shattered Ice Floe is an area in Frostgorge Sound."
+    },
+    {
+      "stepId": "30:poi:1511",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "1511",
+      "coord": [
+        54972,
+        25854
+      ],
+      "recommendedLevel": null,
+      "name": "Iron Horse Mines",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2092,
+      "wikiText": "Iron Horse Mines is a deep underwater cavern submerged within Grimstone Mol. Lying in ruins, its great machinery silently rusts away making foundations of coral growths.",
+      "waypointChatLink": "[&BHwCAAA=]"
+    },
+    {
+      "stepId": "30:poi:1261",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "1261",
+      "coord": [
+        55305,
+        26774
+      ],
+      "recommendedLevel": null,
+      "name": "Ridgepost Sentry",
+      "prereqs": [],
+      "order": 51,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2185,
+      "wikiText": "Ridgepost Sentry is a Pact watchtower in Wayward Climb. It's used to help monitor the nearby Sons of Svanir.",
+      "waypointChatLink": "[&BIMCAAA=]"
+    },
+    {
+      "stepId": "30:heart:13",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "heart",
+      "objectiveId": "13",
+      "coord": [
+        55318,
+        26776
+      ],
+      "recommendedLevel": 74,
+      "name": "Help Tactician Sebastian against the Sons of Svanir.",
+      "prereqs": [],
+      "order": 52,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          55320,
+          27032
+        ],
+        [
+          55388,
+          26759
+        ],
+        [
+          55300,
+          26514
+        ],
+        [
+          55044,
+          26466
+        ],
+        [
+          54942,
+          26977
+        ],
+        [
+          54994,
+          27106
+        ],
+        [
+          55174,
+          27127
+        ],
+        [
+          55320,
+          27032
+        ]
+      ],
+      "trailIndex": 2187,
+      "wikiText": "Defend Pact patrols from Sons of Svanir, destroy corrupted ice crystals, and repair damaged flag stands.",
+      "waypointChatLink": "[&BIMCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:643",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "643",
+      "coord": [
+        55253,
+        26550
+      ],
+      "recommendedLevel": null,
+      "name": "Ridgerock Camp Waypoint",
+      "prereqs": [],
+      "order": 53,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIMCAAA=]",
+      "waypointChatLink": "[&BIMCAAA=]",
+      "trailIndex": 2229,
+      "wikiText": "Wayward Climb is an area in the center of Frostgorge Sound. The Pact base, Ridgerock Camp, is located here. There is also a dwarven ruin which is currently excavated by the Durmand Priory."
+    },
+    {
+      "stepId": "30:poi:620",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "620",
+      "coord": [
+        55316,
+        26385
+      ],
+      "recommendedLevel": null,
+      "name": "Arkor's Tomb",
+      "prereqs": [],
+      "order": 54,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2252,
+      "wikiText": "Arkor's Tomb is a point of interest in Wayward Climb. To get there, head north-northeast from the Ridgerock Camp Waypoint. A member of the Durmand Priory is currently excavating the ruins, to no avail.",
+      "waypointChatLink": "[&BIMCAAA=]"
+    },
+    {
+      "stepId": "30:poi:841",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "841",
+      "coord": [
+        55543,
+        25788
+      ],
+      "recommendedLevel": null,
+      "name": "Firesnake's Tail",
+      "prereqs": [],
+      "order": 55,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2332,
+      "wikiText": "Firesnake's Tail is a point of interest in Despond Precipice. This large ravine is home to a large tribe of hostile grawls who covered the walls with red paintings, hence the name.",
+      "waypointChatLink": "[&BHwCAAA=]"
+    },
+    {
+      "stepId": "30:hero:0-97",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "hero",
+      "objectiveId": "0-97",
+      "coord": [
+        55520,
+        25764
+      ],
+      "recommendedLevel": null,
+      "name": "Shaman Okamuk",
+      "prereqs": [],
+      "order": 56,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2338,
+      "wikiText": "Shaman Okamuk starts the Defeat Okamuk hero challenge in Despond Precipice.",
+      "waypointChatLink": "[&BHwCAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:636",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "636",
+      "coord": [
+        55232,
+        25530
+      ],
+      "recommendedLevel": null,
+      "name": "Slough of Despond Waypoint",
+      "prereqs": [],
+      "order": 57,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BHwCAAA=]",
+      "waypointChatLink": "[&BHwCAAA=]",
+      "trailIndex": 2437,
+      "wikiText": "Frostwalk Tundra is an area in the northeast of Frostgorge Sound. A camp built by the kodan cast-aways from the Honor of the Waves sanctuary can be found here."
+    },
+    {
+      "stepId": "30:waypoint:1347",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "1347",
+      "coord": [
+        55228,
+        25187
+      ],
+      "recommendedLevel": null,
+      "name": "Honor of the Waves Waypoint",
+      "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BEMFAAA=]",
+      "waypointChatLink": "[&BEMFAAA=]",
+      "trailIndex": 2481,
+      "wikiText": "Watchful Fjord is an area in the north of Frostgorge Sound. The wrecked kodan sanctuary Honor of the Waves can be found here."
+    },
+    {
+      "stepId": "30:hero:0-191",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "hero",
+      "objectiveId": "0-191",
+      "coord": [
+        55209,
+        25038
+      ],
+      "recommendedLevel": null,
+      "name": "Glacial Trench",
+      "prereqs": [],
+      "order": 59,
+      "source": [
+        "gw2api:skill_challenges"
+      ],
+      "trailIndex": 2490,
+      "wikiText": "Commune with the Glacial Trench is a hero challenge located in a cavern in Watchful Fjord. Simply swim to the bottom of the ocean floor to reach this hero point.",
+      "waypointChatLink": "[&BEMFAAA=]"
+    },
+    {
+      "stepId": "30:poi:626",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "poi",
+      "objectiveId": "626",
+      "coord": [
+        55556,
+        25027
+      ],
+      "recommendedLevel": null,
+      "name": "Moshpoipoi",
+      "prereqs": [],
+      "order": 60,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 2494,
+      "wikiText": "Moshpoipoi is a Quaggan village and point of interest within Watchful Fjord. They are not happy with the new arrival of the kodan since they brought the icebrood along with them and they now try to destroy their village.",
+      "waypointChatLink": "[&BH0CAAA=]"
+    },
+    {
+      "stepId": "30:waypoint:637",
+      "mapId": 30,
+      "zoneName": "Frostgorge Sound",
+      "type": "waypoint",
+      "objectiveId": "637",
+      "coord": [
+        55565,
+        24987
+      ],
+      "recommendedLevel": null,
+      "name": "Watchful Waypoint",
+      "prereqs": [],
+      "order": 61,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BH0CAAA=]",
+      "waypointChatLink": "[&BH0CAAA=]",
+      "trailIndex": 2499,
+      "wikiText": "Watchful Fjord is an area in the north of Frostgorge Sound. The wrecked kodan sanctuary Honor of the Waves can be found here."
+    }
+  ],
+  "hasTrail": true
+}
