@@ -269,6 +269,9 @@ struct Config
     // snapshots this info* slice + infoTexts (placement) + infoTextOpts (per-text options).
     bool infoEnabled = true; // show the data bar for this profile
     int infoEdge = 1;        // 0 Top, 1 Bottom
+    int infoWidthPct = 100;   // width as a percentage of the screen (100 = full width)
+    float infoOffsetX = 0.f;  // horizontal nudge from centered position, px
+    float infoOffsetY = 0.f;  // inward nudge from the dock edge, px
     int infoOpacity = 60;    // background %
     float infoTextSize = 24.f;
     bool infoHideInCombat = true;

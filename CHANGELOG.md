@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.0.2
+
+### Added
+
+- Added Info Panel width, horizontal offset, and edge offset settings so the data bar can be a shorter positioned strip instead of always full-width.
+
+### Changed
+
+- Changed Tyrian Codex source-code licensing from GPLv3 to LGPLv3.
+- Updated the Info Panel renderer to use one bounded panel rectangle for background, hit targets, clipping, and left/center/right zone anchors.
+
 ## 1.0.0.1
 
 ### Added

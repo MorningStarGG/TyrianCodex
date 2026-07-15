@@ -214,6 +214,16 @@ void InfoPanel::Render(App& app)
     const float fs = cfg.infoTextSize, labelFs = std::max(10.f, fs - 4.f);   // labels distinctly smaller than values
     const float fsPx = fs * ui;
     const float barH = fsPx + 14.f * ui, margin = 12.f * ui, gap = 16.f * ui;
+    const int widthPct = std::clamp(cfg.infoWidthPct, 25, 100);
+    const float minPanelW = std::min(W, 240.f * ui);
+    const float panelW = std::clamp(W * (float)widthPct / 100.f, minPanelW, W);
+    const float maxPanelX = std::max(0.f, W - panelW);
+    const float panelX = std::round(maxPanelX * 0.5f + std::clamp(cfg.infoOffsetX, -maxPanelX * 0.5f, maxPanelX * 0.5f));
+    const float maxPanelY = std::max(0.f, H - barH);
+    const float edgeOffsetY = std::clamp(cfg.infoOffsetY, 0.f, maxPanelY);
+    const float winY = (cfg.infoEdge == 0) ? edgeOffsetY : (maxPanelY - edgeOffsetY);
+    const ImVec2 panelMin(panelX, winY);
+    const ImVec2 panelMax(panelX + panelW, winY + barH);
 
     // The visible segment per zone. Each compute() reads live state and several do O(N) scans (wallet, Wizard's
     // Vault, deaths, zone%) -- recomputing all of them EVERY frame is the single biggest always-on CPU cost, and
@@ -226,13 +236,13 @@ void InfoPanel::Render(App& app)
     static bool        s_any   = false;
     static double      s_lastT = -1e9;
     static std::string s_char;
-    static float       s_fs = -1.f, s_W = -1.f;
+    static float       s_fs = -1.f, s_panelW = -1.f;
     auto& zones = s_zones;   // alias: the draw code below reads the cached segments
 
     const double now = ImGui::GetTime();
-    if ((now - s_lastT) >= 0.2 || s_char != app.state.currentChar || s_fs != fsPx || s_W != W)
+    if ((now - s_lastT) >= 0.2 || s_char != app.state.currentChar || s_fs != fsPx || s_panelW != panelW)
     {
-        s_lastT = now; s_char = app.state.currentChar; s_fs = fsPx; s_W = W;
+        s_lastT = now; s_char = app.state.currentChar; s_fs = fsPx; s_panelW = panelW;
         for (auto& z : zones) z.clear();
         s_any = false;
         for (const InfoSlot& slot : cfg.infoTexts.items)
@@ -253,9 +263,8 @@ void InfoPanel::Render(App& app)
     }
     if (!s_any) return;
 
-    const float winY = (cfg.infoEdge == 0) ? 0.f : (H - barH);
-    ImGui::SetNextWindowPos(ImVec2(0.f, winY));
-    ImGui::SetNextWindowSize(ImVec2(W, barH));
+    ImGui::SetNextWindowPos(panelMin);
+    ImGui::SetNextWindowSize(ImVec2(panelW, barH));
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
     ImGui::Begin("##tcInfoPanel", nullptr,
                  ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoFocusOnAppearing |
@@ -265,9 +274,10 @@ void InfoPanel::Render(App& app)
         if (cfg.infoOpacity > 0)
         {
             const int a = (int)(cfg.infoOpacity * 2.35f);   // 0..100 -> 0..235
-            dl->AddRectFilled(ImVec2(0.f, winY), ImVec2(W, winY + barH), IM_COL32(18, 15, 10, a < 0 ? 0 : (a > 235 ? 235 : a)));
-            dl->AddLine(ImVec2(0.f, cfg.infoEdge == 0 ? winY + barH : winY), ImVec2(W, cfg.infoEdge == 0 ? winY + barH : winY), IM_COL32(150, 124, 70, 150), ui);
+            dl->AddRectFilled(panelMin, panelMax, IM_COL32(18, 15, 10, a < 0 ? 0 : (a > 235 ? 235 : a)));
+            dl->AddLine(ImVec2(panelX, cfg.infoEdge == 0 ? winY + barH : winY), ImVec2(panelX + panelW, cfg.infoEdge == 0 ? winY + barH : winY), IM_COL32(150, 124, 70, 150), ui);
         }
+        dl->PushClipRect(panelMin, panelMax, true);
 
         auto drawSeg = [&](Seg& e, float x)
         {
@@ -332,18 +342,19 @@ void InfoPanel::Render(App& app)
         // even count -> the midpoint between the two middle widgets is centered.
         auto centerStartX = [&](const std::vector<Seg>& v) -> float {
             const int n = (int)v.size();
-            if (n == 0) return W * 0.5f;
+            if (n == 0) return panelX + panelW * 0.5f;
             const int mid = n / 2;
             float anchor = 0.f;
             for (int i = 0; i < mid; ++i) anchor += v[i].w + gap;   // offset to the start of segment[mid]
             if (n % 2 == 1) anchor += v[mid].w * 0.5f;              // odd: center of the middle widget
             else            anchor -= gap * 0.5f;                   // even: center of the gap between the two middles
-            return W * 0.5f - anchor;
+            return panelX + panelW * 0.5f - anchor;
         };
 
-        if (!zones[0].empty()) drawZone(zones[0], margin);
+        if (!zones[0].empty()) drawZone(zones[0], panelX + margin);
         if (!zones[1].empty()) drawZone(zones[1], centerStartX(zones[1]));
-        if (!zones[2].empty()) drawZone(zones[2], W - margin - groupW(zones[2]));
+        if (!zones[2].empty()) drawZone(zones[2], panelX + panelW - margin - groupW(zones[2]));
+        dl->PopClipRect();
 
         // empty-area right-click -> panel menu. Only when the click is on EMPTY bar (no segment item hovered) --
         // a right-click on a segment is that segment's own menu, so the bar menu must not also open on top of it.
@@ -475,7 +486,11 @@ void InfoPanel::Render(App& app)
 
 void InfoPanel::DrawSettings(App& app, const char* page)
 {
-    if (page && *page) { DrawTextOptionsPage(app, page); return; }   // a data text's options subsection
+    if (page && *page)
+    {
+        DrawTextOptionsPage(app, page);
+        return;
+    }   // a data text's options subsection
 
     Config& cfg = app.config;
 
@@ -486,6 +501,7 @@ void InfoPanel::DrawSettings(App& app, const char* page)
         "import one from another character below.");
 
     // --- Scalar settings: the SEC_INFO model rows (searchable + tooltipped, same look as every other section) ---
+    Gw2Ui::Label("Bar placement", IM_COL32(190, 178, 150, 255), false, nullptr, SettingsText::Header);
     DrawSettingSection(app, SEC_INFO);
     ImGui::Dummy(ImVec2(0.f, 6.f));
 

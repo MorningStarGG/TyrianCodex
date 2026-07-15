@@ -120,13 +120,13 @@ Tyrian Codex is not just one window. Most features can be used via multiple over
 - **GPS arrow**: floating navigation arrow with right-click actions.
 - **Dashboard**: edge-docked slide-out widget panel with notifications, objectives, events, route arrow, recommended zones, wallet, Trading Post, inventory, WvW, and more.
 - **HUD bar**: top or bottom icon bar with clock and quick access to major tabs.
-- **Info Panel**: data-text strip for route status, clocks, currency, session earnings, location, WvW, bags, bank, crafting cart, loadouts, and other live values.
+- **Info Panel**: configurable data-text strip for route status, clocks, currency, session earnings, location, WvW, bags, bank, crafting cart, loadouts, and other live values.
 - **Notifications**: configurable toasts for zone, travel, action, event, and info messages.
 - **Zone Display**: animated region/zone/area banner when entering maps or crossing named areas.
 - **Wiki reader**: in-addon wiki viewer with native HTML rendering without leaving the game.
 - **QuickAccess tray menu**: GW2-styled popup for common actions and toggles.
 
-Each surface has its own placement, visibility, scale, behavior, and layout settings.
+Each surface has its own placement, visibility, scale, behavior, and layout settings. The Info Panel can be full-width or a shorter strip, with horizontal and edge offsets per profile.
 
 ## Profiles, Loadouts, And Keybinds
 
@@ -229,11 +229,13 @@ Tyrian Codex combines public Guild Wars 2 data, community marker packs, referenc
 
 ## License
 
-This project's source code is licensed under the **GNU General Public License v3.0**. See [LICENSE](LICENSE).
+Tyrian Codex's original source code is licensed under the **GNU Lesser General Public License v3.0**. See [LICENSE](LICENSE) and [LICENSE-GPL-3.0](LICENSE-GPL-3.0), subject to any additional permissions stated in the project's license notices.
 
-Bundled Guild Wars 2 icons, map tiles, UI fonts, API-derived data, wiki-derived text, and community marker data remain under their original owners' rights and licenses. The GPLv3 applies to Tyrian Codex's own source code only.
+The LGPLv3 does not apply to third-party materials distributed with or used by Tyrian Codex. These materials include, without limitation, Guild Wars 2 icons, map tiles, user-interface assets, fonts, API-derived content, wiki-derived text, and community-provided marker data.
 
-Guild Wars 2 is a trademark of ArenaNet, LLC. Tyrian Codex is an unofficial, fan-made addon and is not affiliated with or endorsed by ArenaNet.
+Each third-party material remains subject to the copyright, license, attribution requirements, trademarks, and other rights of its respective owner or contributor. Inclusion of third-party material in this project does not relicense that material under the LGPLv3 and does not imply ownership by the Tyrian Codex contributors.
+
+Guild Wars, Guild Wars 2, ArenaNet, and their associated names, logos, artwork, and game content are trademarks or intellectual property of their respective owners. Tyrian Codex is an unofficial community project and is not affiliated with or endorsed by ArenaNet or NCSOFT.
 
 ---
 

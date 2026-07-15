@@ -174,8 +174,7 @@ namespace SettingGroups
     inline constexpr const char *DashboardWidgetsId = "dashboard_widgets";
     inline constexpr const char *DashboardWidgetsName = "Widget Layout";
 
-    // HUD + Info Panel scalar rows are UNgrouped (they render as one flat card on the surface's own section page,
-    // under the profile bar + layout editor) -- so no group constants + no left-menu subsections for them.
+    // HUD + Info Panel scalar rows are ungrouped; their custom section pages place them explicitly.
 
     // Diagnostics
     inline constexpr const char *DiagTogglesId = "diag_toggles";
