@@ -58,7 +58,8 @@ int GpsArrow::Draw(const Follow::Vec2& aim, const Follow::Vec2& playerXz, const 
 
     ImDrawList* dl = ImGui::GetBackgroundDrawList();   // same layer as trail/markers: above the game, BELOW
                                                        // addon windows + popups (so the arrow menu isn't covered)
-    const float hs  = cfg.arrowSize * 0.5f;
+    const float ui = Gw2Ui::GlobalScale();
+    const float hs  = cfg.arrowSize * ui * 0.5f;
 
     // Arrow anchor: saved position, else default centre-low.
     float ax = (cfg.arrowPosX >= 0.f) ? cfg.arrowPosX : W * 0.5f;
@@ -104,7 +105,7 @@ int GpsArrow::Draw(const Follow::Vec2& aim, const Follow::Vec2& playerXz, const 
     ImGui::PopStyleColor();
 
     const float cx  = ax;
-    const float cyA = ay + (arrived ? (float)(std::sin(ImGui::GetTime() * 6.0) * 6.0) : 0.f); // bob on arrival
+    const float cyA = ay + (arrived ? (float)(std::sin(ImGui::GetTime() * 6.0) * 6.0 * ui) : 0.f); // bob on arrival
     const float rot = arrived ? 0.f : arrowRot_;
 
     const float cr = std::cos(rot), sr = std::sin(rot);
@@ -150,23 +151,23 @@ int GpsArrow::Draw(const Follow::Vec2& aim, const Follow::Vec2& playerXz, const 
 
     // GW2 font at the "Arrow text size" setting (was hardcoded to ImGui's default -> the setting did nothing).
     ImFont*      cf  = (NexusLink && NexusLink->Font) ? (ImFont*)NexusLink->Font : ImGui::GetFont();
-    const float  cfs = kFontSizePx[std::clamp(cfg.arrowTextSize, 0, kFontSizeCount - 1)];
-    const float  capY = ay + hs + 8.f;
+    const float  cfs = kFontSizePx[std::clamp(cfg.arrowTextSize, 0, kFontSizeCount - 1)] * ui;
+    const float  capY = ay + hs + 8.f * ui;
     const ImVec2 nmSz = cf->CalcTextSizeA(cfs, FLT_MAX, 0.f, nm);
     // Optional objective-type icon, drawn just LEFT of the name; the icon + name are centred as ONE block on cx.
     const bool   showIco = iconTex && cfg.arrowShowTypeIcon;   // "Show objective type icon" setting
     const float  icoSz  = showIco ? cfs * 1.15f : 0.f;
-    const float  icoGap = showIco ? 5.f : 0.f;
+    const float  icoGap = showIco ? 5.f * ui : 0.f;
     const float  blockX = cx - (icoSz + icoGap + nmSz.x) * 0.5f;   // left edge of the [icon + name] block
     const float  nmX    = blockX + icoSz + icoGap;
     if (showIco)
         dl->AddImage((ImTextureID)iconTex, ImVec2(blockX, capY + (nmSz.y - icoSz) * 0.5f),
                      ImVec2(blockX + icoSz, capY + (nmSz.y - icoSz) * 0.5f + icoSz));
-    dl->AddText(cf, cfs, ImVec2(nmX + 1, capY + 1), IM_COL32(0, 0, 0, 200), nm);
+    dl->AddText(cf, cfs, ImVec2(nmX + 1.f * ui, capY + 1.f * ui), IM_COL32(0, 0, 0, 200), nm);
     dl->AddText(cf, cfs, ImVec2(nmX,     capY),     IM_COL32(255, 255, 255, 255), nm);
-    const float  l2Y  = capY + nmSz.y + 2.f;
+    const float  l2Y  = capY + nmSz.y + 2.f * ui;
     const ImVec2 l2Sz = cf->CalcTextSizeA(cfs, FLT_MAX, 0.f, line2);
-    dl->AddText(cf, cfs, ImVec2(cx - l2Sz.x * 0.5f + 1, l2Y + 1), IM_COL32(0, 0, 0, 200), line2);
+    dl->AddText(cf, cfs, ImVec2(cx - l2Sz.x * 0.5f + 1.f * ui, l2Y + 1.f * ui), IM_COL32(0, 0, 0, 200), line2);
     dl->AddText(cf, cfs, ImVec2(cx - l2Sz.x * 0.5f,     l2Y),     Gw2Ui::kTextSelected, line2);
 
     return picked;

@@ -135,12 +135,12 @@ static void DrawDungeonsBody(App &app)
                 char dd[40]; std::snprintf(dd, sizeof(dd), "##dgnpath%u", c.expl->MapId);
                 float ddW = 0.f;   // Gw2Ui::Dropdown auto-fits to content (longest item @18px + 36); match it so we can centre
                 for (const std::string& pth : c.paths) ddW = (std::max)(ddW, Gw2Ui::MeasureWidth(pth.c_str(), 18.f));
-                ddW = (std::min)(iw, ddW + 36.f);
+                ddW = (std::min)(iw, ddW + 36.f * Gw2Ui::GlobalScale());
                 std::vector<const char*> pv; pv.reserve(c.paths.size());   // transient const char* view for Dropdown
                 for (const std::string& s : c.paths) pv.push_back(s.c_str());
                 const ImVec2 ddp = ImGui::GetCursorScreenPos();
                 ImGui::SetCursorScreenPos(ImVec2(ddp.x + (iw - ddW) * 0.5f, ddp.y));   // centre the dropdown in the card
-                if (Gw2Ui::Dropdown(dd, pv.data(), (int)pv.size(), &sel, ddW))
+                if (Gw2Ui::DropdownPx(dd, pv.data(), (int)pv.size(), &sel, ddW))
                 {
                     app.state.instRouteChoice[c.expl->MapId] = sel;
                     if (app.state.inst && app.state.inst->MapId == c.expl->MapId) app.zoneManager.ActivateInstanceRoute(sel);

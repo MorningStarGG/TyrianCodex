@@ -227,7 +227,9 @@ void ZoneDisplay::Draw(App &app)
     const bool perGlyphExit = (rowExit >= 1 && rowExit <= 3);                                     // letter fade / glyph dissolve / crumble exit per-letter
     const bool strokeNow = true;                                                                  // the 1px black stroke is always on (off can break the dissolve animations); LabelDL fades it with the fill
 
-    const float scale = (std::max)(40, (std::min)(220, c.zdScale)) / 100.f;
+    const float ui = Gw2Ui::GlobalScale();
+    Gw2Ui::PushTextScale(1.f / std::max(0.001f, ui));
+    const float scale = ui * (std::max)(40, (std::min)(220, c.zdScale)) / 100.f;
     const char *heroStr = full ? zone_.c_str() : sector_.c_str(); // the one-line sector IS the single hero line
 
     const float heroPx = (full ? 54.f : 34.f) * scale; // the one-line sector hero is a touch smaller
@@ -774,4 +776,5 @@ void ZoneDisplay::Draw(App &app)
             }
         }
     }
+    Gw2Ui::PopTextScale();
 }

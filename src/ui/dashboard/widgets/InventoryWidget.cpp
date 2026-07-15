@@ -64,7 +64,7 @@ void DashW::Inventory(App& app, float w)
     if (!AccountData::HasScope(Api::TokenPermission::Characters))
     {
         Gw2Ui::Label(UiStr::NeedScope("characters"), IM_COL32(180, 150, 110, 255), false, nullptr, 14.f);
-        if (Gw2Ui::ActionButton("Open Inventory", w, 24.f, Gw2Ui::ActionButtonVariant::Primary, "Open the account inventory browser"))
+        if (Gw2Ui::ActionButtonPx("Open Inventory", w, Gw2Ui::Scaled(24.f), Gw2Ui::ActionButtonVariant::Primary, "Open the account inventory browser"))
             OpenItemsTab(app, 1);
         return;
     }
@@ -102,17 +102,22 @@ void DashW::Inventory(App& app, float w)
     // Search-your-inventory bar + a compact Open button on one row. Typing a query and pressing Open jumps to
     // the Items tab on My Inventory with that OWNED-items search applied (distinct from the catalogue search).
     static char invq[96] = "";
-    const float btnW = 78.f, gap = 6.f, btnH = 26.f;
-    const float sbW  = (w - btnW - gap > 90.f) ? (w - btnW - gap) : 90.f;
+    const float ui = Gw2Ui::GlobalScale();
+    const float btnW = 78.f * ui, gap = 6.f * ui, btnH = 26.f * ui;
+    const bool inlineRow = w >= 90.f * ui + gap + btnW;
+    const float sbW = inlineRow ? (w - btnW - gap) : w;
     // Just "Search..." -- the Open button + magnifier icon eat the width, so the longer "Search inventory..."
     // clips even at full width; the "Inventory" title + Open button already make the context clear.
     const ImVec2 rowP = ImGui::GetCursorScreenPos();
     Gw2Ui::SearchBox("##invsearch", invq, sizeof(invq), sbW, "Search...");
     const float searchH = ImGui::GetCursorScreenPos().y - rowP.y;             // the box's real height (font + padding)
-    ImGui::SetCursorScreenPos(ImVec2(rowP.x + sbW + gap, rowP.y + (searchH - btnH) * 0.5f));   // centre the button on it
-    if (Gw2Ui::ActionButton("Open", btnW, btnH, Gw2Ui::ActionButtonVariant::Primary, "Open the inventory browser (with your search)"))
+    if (inlineRow)
+        ImGui::SetCursorScreenPos(ImVec2(rowP.x + sbW + gap, rowP.y + (searchH - btnH) * 0.5f));   // centre the button on it
+    else
+        ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + searchH + 4.f * ui));
+    if (Gw2Ui::ActionButtonPx("Open", inlineRow ? btnW : w, btnH, Gw2Ui::ActionButtonVariant::Primary, "Open the inventory browser (with your search)"))
         OpenItemsTab(app, 1, invq[0] ? invq : nullptr);
-    ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + searchH));              // leave the cursor cleanly below the row
+    ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + searchH + (inlineRow ? 0.f : (btnH + 4.f * ui))));              // leave the cursor cleanly below the row
 
     // Inline owned-item results (mirrors the Items / Search widgets): top matches across every source, click a
     // row (or the footer) to open the full My-Inventory view with the same search; hover for the rich tooltip.

@@ -467,7 +467,7 @@ static float CompactSummaryDetailHeight(App& app, float fs, float width, float a
     // Complete mode) + the frame insets. `width` is already the inner content width, so the labels wrap at it
     // exactly as DrawCompactSummaryDetail draws them. One shared measurement (ViewerModeBodies) mirrors the
     // draw, so the recommended-list area shrinks to fit and the Open-guide button is never clipped.
-    return SummaryDetailContentHeight(app, fs, width, 18.f * vs) + kCompactDetailInsetT * vs + kCompactDetailInsetB * vs;
+    return SummaryDetailContentHeight(app, fs, width, 18.f) + kCompactDetailInsetT * vs + kCompactDetailInsetB * vs;
 }
 
 static void DrawCompactSummaryDetail(App& app, float fs, float height)
@@ -514,7 +514,7 @@ static void DrawCompactSummaryDetail(App& app, float fs, float height)
         const int total = (int)app.state.zone.Steps.size();
         char hdr[96]; std::snprintf(hdr, sizeof(hdr), "%s   %d/%d", app.state.zone.Name.c_str(), total, total);
         Gw2Ui::Label(hdr, IM_COL32(220, 245, 210, 255), false, nullptr, fs - 3.f);
-        Gw2Ui::ProgressBar(1.f, "Complete", 0.f, 18.f * vs, IM_COL32(120, 235, 130, 255));
+        Gw2Ui::ProgressBar(1.f, "Complete", 0.f, 18.f, IM_COL32(120, 235, 130, 255));
     }
     else
     {

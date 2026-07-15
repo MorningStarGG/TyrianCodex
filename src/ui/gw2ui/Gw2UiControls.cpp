@@ -75,16 +75,64 @@ namespace
     ImGuiID s_numEdit = 0;
     bool s_numFocus = false;
     char s_numBuf[32] = {};
+
+    enum class ControlSizeMode
+    {
+        Logical,
+        Pixels
+    };
+
+    static float ResolveControlWidth(float width, float sc, ControlSizeMode mode)
+    {
+        if (width <= 0.f)
+            return ImGui::GetContentRegionAvail().x;
+        return mode == ControlSizeMode::Pixels ? width : width * sc;
+    }
+
+    static float ResolveControlHeight(float height, float sc, float defaultPx, ControlSizeMode mode)
+    {
+        if (height <= 0.f)
+            return defaultPx * sc;
+        return mode == ControlSizeMode::Pixels ? height : height * sc;
+    }
+
+    static float LayoutControlWidth(float width)
+    {
+        return std::max(1.f, width > 0.f ? width : ImGui::GetContentRegionAvail().x);
+    }
+
+    struct InputFontMetrics
+    {
+        ImFont *font = nullptr;
+        float requestedPx = 0.f;
+        float residualScale = 1.f;
+        float boxH = 0.f;
+    };
+
+    static InputFontMetrics InputMetrics(float sc)
+    {
+        ImFont *base = UiFont(nullptr);
+        const float basePx = base ? base->FontSize : ImGui::GetFontSize();
+        InputFontMetrics m;
+        m.requestedPx = basePx * sc;
+        m.font = ResolveFace(base, m.requestedPx);
+        if (!m.font)
+            m.font = base ? base : ImGui::GetFont();
+        m.residualScale = (m.font && m.font->FontSize > 0.f) ? (m.requestedPx / m.font->FontSize) : 1.f;
+        m.boxH = m.requestedPx + 10.f * sc;
+        return m;
+    }
 }
 
 bool Gw2Ui::Checkbox(const char *label, bool *v)
 {
-    const float box = 32.f;
+    const float sc = TextScale();
+    const float box = 32.f * sc;
     const ImVec2 p = ImGui::GetCursorScreenPos();
     // A "##"-prefixed (or empty) label is id-only: draw just the box (the caller labels the row itself).
     const bool showLabel = label && label[0] && !(label[0] == '#' && label[1] == '#');
-    const ImVec2 lbl = showLabel ? ImGui::CalcTextSize(label) : ImVec2(0.f, 0.f);
-    const bool clicked = ImGui::InvisibleButton(label, ImVec2(box + (showLabel ? 4.f + lbl.x : 0.f), box));
+    const float lblW = showLabel ? MeasureWidth(label, 0.f) : 0.f;
+    const bool clicked = ImGui::InvisibleButton(label, ImVec2(box + (showLabel ? 4.f * sc + lblW : 0.f), box));
     const bool hov = ImGui::IsItemHovered();
     if (clicked && v)
         *v = !*v;
@@ -97,20 +145,19 @@ bool Gw2Ui::Checkbox(const char *label, bool *v)
         Img(dl, cb, p, ImVec2(p.x + box, p.y + box));
     // Checkbox label: GW2 font, no stroke, vertically centered against the box.
     if (showLabel)
-        LabelIn(ImVec2(p.x + box + 4.f, p.y), ImVec2(p.x + box + 4.f + lbl.x, p.y + box), label,
+        LabelIn(ImVec2(p.x + box + 4.f * sc, p.y), ImVec2(p.x + box + 4.f * sc + lblW, p.y + box), label,
                 HAlign::Left, VAlign::Middle, IM_COL32(255, 255, 255, 255), /*stroke*/ false);
     return clicked;
 }
 
-// A GW2-styled action-button frame (per-variant background / hover / press art + optional disabled dim +
-// tooltip). Width auto-fills the content region when size.x <= 0; height defaults to 26px. Returns hover/click.
-Gw2Ui::ActionButtonResult Gw2Ui::ActionButtonFrame(const char *id, ImVec2 size, ActionButtonVariant variant,
-                                                   bool disabled, const char *tooltip)
+namespace
 {
-    if (size.x <= 0.f)
-        size.x = ImGui::GetContentRegionAvail().x;
-    if (size.y <= 0.f)
-        size.y = 26.f;
+Gw2Ui::ActionButtonResult ActionButtonFrameImpl(const char *id, ImVec2 size, Gw2Ui::ActionButtonVariant variant,
+                                                bool disabled, const char *tooltip, ControlSizeMode sizeMode)
+{
+    const float sc = Gw2Ui::GlobalScale();
+    size.x = ResolveControlWidth(size.x, sc, sizeMode);
+    size.y = ResolveControlHeight(size.y, sc, 26.f, sizeMode);
 
     const ImVec2 p = ImGui::GetCursorScreenPos();
     const bool rawClicked = ImGui::InvisibleButton(id, size);
@@ -123,7 +170,7 @@ Gw2Ui::ActionButtonResult Gw2Ui::ActionButtonFrame(const char *id, ImVec2 size, 
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImU32 bg = disabled ? IM_COL32(8, 8, 7, 118) : (held ? pal.bgHeld : (hovered ? pal.bgHover : pal.bgIdle));
     const ImU32 br = disabled ? IM_COL32(86, 76, 58, 105) : (lit ? pal.borderHover : pal.borderIdle);
-    const float rounding = 3.f;
+    const float rounding = 3.f * sc;
 
     dl->AddRectFilled(p, b, bg, rounding);
 
@@ -136,13 +183,28 @@ Gw2Ui::ActionButtonResult Gw2Ui::ActionButtonFrame(const char *id, ImVec2 size, 
     }
 
     dl->AddRect(p, b, br, rounding, 0, held ? 1.55f : (hovered && !disabled ? 1.35f : 1.f));
-    dl->AddRect(ImVec2(p.x + 1.f, p.y + 1.f), ImVec2(b.x - 1.f, b.y - 1.f),
-                disabled ? IM_COL32(255, 230, 170, 7) : pal.inner, rounding - 1.f, 0, 1.f);
+    dl->AddRect(ImVec2(p.x + sc, p.y + sc), ImVec2(b.x - sc, b.y - sc),
+                disabled ? IM_COL32(255, 230, 170, 7) : pal.inner, std::max(0.f, rounding - sc), 0, sc);
 
     if (hovered && tooltip && *tooltip)
         Gw2Ui::Tooltip(tooltip);
 
-    return ActionButtonResult{rawClicked && !disabled, hovered, held, p, b};
+    return Gw2Ui::ActionButtonResult{rawClicked && !disabled, hovered, held, p, b};
+}
+}
+
+// A GW2-styled action-button frame (per-variant background / hover / press art + optional disabled dim +
+// tooltip). Width auto-fills the content region when size.x <= 0; height defaults to 26px. Returns hover/click.
+Gw2Ui::ActionButtonResult Gw2Ui::ActionButtonFrame(const char *id, ImVec2 size, ActionButtonVariant variant,
+                                                   bool disabled, const char *tooltip)
+{
+    return ActionButtonFrameImpl(id, size, variant, disabled, tooltip, ControlSizeMode::Logical);
+}
+
+Gw2Ui::ActionButtonResult Gw2Ui::ActionButtonFramePx(const char *id, ImVec2 sizePx, ActionButtonVariant variant,
+                                                     bool disabled, const char *tooltip)
+{
+    return ActionButtonFrameImpl(id, sizePx, variant, disabled, tooltip, ControlSizeMode::Pixels);
 }
 
 bool Gw2Ui::ActionButton(const char *label, float width, float height, ActionButtonVariant variant,
@@ -153,15 +215,34 @@ bool Gw2Ui::ActionButton(const char *label, float width, float height, ActionBut
     const ImU32 col = disabled ? pal.textDisabled : ((r.hovered || r.held) ? pal.textHover : pal.textIdle);
 
     PushTextScale(1.f); // action button labels have a stable control size, even inside scaled dashboard text
-    LabelIn(ImVec2(r.min.x + 8.f, r.min.y), ImVec2(r.max.x - 8.f, r.max.y), label,
+    LabelIn(ImVec2(r.min.x + 8.f * GlobalScale(), r.min.y), ImVec2(r.max.x - 8.f * GlobalScale(), r.max.y), label,
+            HAlign::Center, VAlign::Middle, col, true, nullptr, 16.f);
+    PopTextScale();
+    return r.clicked;
+}
+
+bool Gw2Ui::ActionButtonPx(const char *label, float widthPx, float heightPx, ActionButtonVariant variant,
+                           const char *tooltip, bool disabled)
+{
+    const ActionButtonResult r = ActionButtonFramePx(label, ImVec2(widthPx, heightPx), variant, disabled, tooltip);
+    const ActionButtonPalette pal = ActionPalette(variant);
+    const ImU32 col = disabled ? pal.textDisabled : ((r.hovered || r.held) ? pal.textHover : pal.textIdle);
+
+    PushTextScale(1.f);
+    LabelIn(ImVec2(r.min.x + 8.f * GlobalScale(), r.min.y), ImVec2(r.max.x - 8.f * GlobalScale(), r.max.y), label,
             HAlign::Center, VAlign::Middle, col, true, nullptr, 16.f);
     PopTextScale();
     return r.clicked;
 }
 
 // GW2 StandardButton: animated 9-frame button-states atlas + 4-edge button-border + black text.
-bool Gw2Ui::Button(const char *label, float width, float height)
+namespace
 {
+bool ButtonImpl(const char *label, float width, float height, ControlSizeMode sizeMode)
+{
+    const float sc = Gw2Ui::GlobalScale();
+    width = ResolveControlWidth(width, sc, sizeMode);
+    height = ResolveControlHeight(height, sc, 26.f, sizeMode);
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImVec2 p = ImGui::GetCursorScreenPos();
     const bool clicked = ImGui::InvisibleButton(label, ImVec2(width, height));
@@ -186,7 +267,7 @@ bool Gw2Ui::Button(const char *label, float width, float height)
     if (const T bs = File("data\\textures\\ui\\button-states.png"); bs.srv)
     {
         const float vCap = 20.f / 76.f; // only the top 20px band of the 76px source
-        dl->AddImage((ImTextureID)bs.srv, ImVec2(p.x + 3.f, p.y + 3.f), ImVec2(p.x + width - 3.f, p.y + height - 2.f),
+        dl->AddImage((ImTextureID)bs.srv, ImVec2(p.x + 3.f * sc, p.y + 3.f * sc), ImVec2(p.x + width - 3.f * sc, p.y + height - 2.f * sc),
                      ImVec2(frame / 9.f, 0.f), ImVec2((frame + 1) / 9.f, vCap));
     }
 
@@ -195,65 +276,84 @@ bool Gw2Ui::Button(const char *label, float width, float height)
     {
         const ImTextureID t = (ImTextureID)bb.srv;
         const float W = width, H = height, q = 0.25f;
-        dl->AddImage(t, ImVec2(p.x + 2.f, p.y), ImVec2(p.x + W - 3.f, p.y + 4.f), ImVec2(0, 0), ImVec2(q, 1));             // top  src(0,0,1,4)
-        dl->AddImage(t, ImVec2(p.x + W - 4.f, p.y + 2.f), ImVec2(p.x + W, p.y + H - 1.f), ImVec2(0, q), ImVec2(1, 2 * q)); // right src(0,1,4,1)
-        dl->AddImage(t, ImVec2(p.x + 3.f, p.y + H - 4.f), ImVec2(p.x + W - 3.f, p.y + H), ImVec2(q, 0), ImVec2(2 * q, 1)); // bot  src(1,0,1,4)
-        dl->AddImage(t, ImVec2(p.x, p.y + 2.f), ImVec2(p.x + 4.f, p.y + H - 1.f), ImVec2(0, 3 * q), ImVec2(1, 4 * q));     // left src(0,3,4,1)
+        dl->AddImage(t, ImVec2(p.x + 2.f * sc, p.y), ImVec2(p.x + W - 3.f * sc, p.y + 4.f * sc), ImVec2(0, 0), ImVec2(q, 1));             // top  src(0,0,1,4)
+        dl->AddImage(t, ImVec2(p.x + W - 4.f * sc, p.y + 2.f * sc), ImVec2(p.x + W, p.y + H - sc), ImVec2(0, q), ImVec2(1, 2 * q)); // right src(0,1,4,1)
+        dl->AddImage(t, ImVec2(p.x + 3.f * sc, p.y + H - 4.f * sc), ImVec2(p.x + W - 3.f * sc, p.y + H), ImVec2(q, 0), ImVec2(2 * q, 1)); // bot  src(1,0,1,4)
+        dl->AddImage(t, ImVec2(p.x, p.y + 2.f * sc), ImVec2(p.x + 4.f * sc, p.y + H - sc), ImVec2(0, 3 * q), ImVec2(1, 4 * q));     // left src(0,3,4,1)
     }
 
     // StandardButton text: DefaultFont14, black, centered.
-    LabelIn(p, ImVec2(p.x + width, p.y + height), label, HAlign::Center, VAlign::Middle,
-            IM_COL32(0, 0, 0, 255), false, nullptr, 18.f);
+    Gw2Ui::LabelIn(p, ImVec2(p.x + width, p.y + height), label, Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle,
+                   IM_COL32(0, 0, 0, 255), false, nullptr, 18.f);
     return clicked;
+}
+}
+
+bool Gw2Ui::Button(const char *label, float width, float height)
+{
+    return ButtonImpl(label, width, height, ControlSizeMode::Logical);
+}
+
+bool Gw2Ui::ButtonPx(const char *label, float widthPx, float heightPx)
+{
+    return ButtonImpl(label, widthPx, heightPx, ControlSizeMode::Pixels);
 }
 
 // GW2 TextBox: the input-box texture (3-slice) skinning a transparent ImGui::InputText in the GW2 font.
 bool Gw2Ui::TextBox(const char *id, char *buf, size_t bufSize, float width)
 {
+    const float sc = TextScale();
+    width = LayoutControlWidth(width);
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    ImFont *f = UiFont(nullptr);
-    const float h = f->FontSize + 10.f;
+    const InputFontMetrics im = InputMetrics(sc);
+    const float h = im.boxH;
 
     if (const T ib = File("data\\textures\\ui\\input-box.png"); ib.srv)
-        Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f);
+        Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f * sc);
 
-    ImGui::PushFont(f);
+    ImGui::PushFont(im.font);
+    ImGui::SetWindowFontScale(im.residualScale);
     ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
     ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
     ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f, (h - f->FontSize) * 0.5f));
+    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
     ImGui::SetNextItemWidth(width);
     const bool changed = ImGui::InputText(id, buf, bufSize);
     ImGui::PopStyleVar();
     ImGui::PopStyleColor(3);
+    ImGui::SetWindowFontScale(1.f);
     ImGui::PopFont();
     return changed;
 }
 
-float Gw2Ui::InputBoxHeight() { return UiFont(nullptr)->FontSize + 10.f; } // matches TextBox/SearchBox box height
+float Gw2Ui::InputBoxHeight() { return InputMetrics(TextScale()).boxH; } // matches TextBox/SearchBox box height
 
 bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width, bool *revealed)
 {
+    const float sc = TextScale();
+    width = LayoutControlWidth(width);
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    ImFont *f = UiFont(nullptr);
-    const float h = f->FontSize + 10.f;
+    const InputFontMetrics im = InputMetrics(sc);
+    const float h = im.boxH;
     const float iconW = h; // right-hand eye-toggle column
     const bool reveal = revealed && *revealed;
 
     if (const T ib = File("data\\textures\\ui\\input-box.png"); ib.srv)
-        Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f);
+        Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f * sc);
 
-    ImGui::PushFont(f);
+    ImGui::PushFont(im.font);
+    ImGui::SetWindowFontScale(im.residualScale);
     ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
     ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
     ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f, (h - f->FontSize) * 0.5f));
-    ImGui::SetNextItemWidth(width - iconW);
+    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
+    ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
     const bool changed = ImGui::InputText(id, buf, bufSize, reveal ? 0 : ImGuiInputTextFlags_Password);
     ImGui::PopStyleVar();
     ImGui::PopStyleColor(3);
+    ImGui::SetWindowFontScale(1.f);
     ImGui::PopFont();
 
     // eye toggle: an outline eye + pupil, with a slash when hidden. Click flips *revealed.
@@ -269,7 +369,7 @@ bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width
         Tooltip(reveal ? "Hide key" : "Show key");
     }
     const ImU32 col = hov ? Gw2Ui::kGold : IM_COL32(190, 178, 150, 220);
-    Render::DrawGlyph(dl, c, 16.f, reveal ? Render::Glyph::Eye : Render::Glyph::EyeOff, col, {false, false, false});
+    Render::DrawGlyph(dl, c, 16.f * sc, reveal ? Render::Glyph::Eye : Render::Glyph::EyeOff, col, {false, false, false});
     if (click && revealed)
         *revealed = !*revealed;
 
@@ -282,25 +382,40 @@ bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width
 // journal / checklist / dye picker / ...) looks + behaves the same. Returns true when the text changed (incl. a clear).
 bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, const char *hint)
 {
+    const float sc = TextScale();
+    width = LayoutControlWidth(width);
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    ImFont *f = UiFont(nullptr);
-    const float h = f->FontSize + 10.f;
+    const InputFontMetrics im = InputMetrics(sc);
+    const float h = im.boxH;
     const float iconW = h; // right-hand icon column (magnifier when empty / X when filled)
 
     if (const T ib = File("data\\textures\\ui\\input-box.png"); ib.srv)
-        Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f);
+        Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f * sc);
 
-    ImGui::PushFont(f);
+    if (!buf[0])
+    {
+        const float padX = 8.f * sc;
+        const float textRight = std::max(p.x + padX, p.x + width - iconW - 4.f * sc);
+        const char *placeholder = (hint && hint[0]) ? hint : "Search...";
+        dl->PushClipRect(ImVec2(p.x + padX, p.y), ImVec2(textRight, p.y + h), true);
+        LabelDL(dl, ImVec2(p.x + padX, p.y), ImVec2(textRight, p.y + h), placeholder,
+                HAlign::Left, VAlign::Middle, IM_COL32(150, 142, 122, 190), false, nullptr,
+                UiFont(nullptr) ? UiFont(nullptr)->FontSize : ImGui::GetFontSize());
+        dl->PopClipRect();
+    }
+
+    ImGui::PushFont(im.font);
+    ImGui::SetWindowFontScale(im.residualScale);
     ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
     ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
     ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleColor(ImGuiCol_TextDisabled, IM_COL32(150, 142, 122, 190)); // the placeholder/hint colour
-    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8.f, (h - f->FontSize) * 0.5f));
-    ImGui::SetNextItemWidth(width - iconW);
-    bool changed = ImGui::InputTextWithHint(id, (hint && hint[0]) ? hint : "Search...", buf, bufSize);
+    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8.f * sc, (h - im.requestedPx) * 0.5f));
+    ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
+    bool changed = ImGui::InputText(id, buf, bufSize);
     ImGui::PopStyleVar();
-    ImGui::PopStyleColor(4);
+    ImGui::PopStyleColor(3);
+    ImGui::SetWindowFontScale(1.f);
     ImGui::PopFont();
 
     const ImVec2 c(p.x + width - iconW * 0.5f, p.y + h * 0.5f); // centre of the right icon column
@@ -311,9 +426,9 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
         ImGui::SetCursorScreenPos(ImVec2(p.x + width - iconW, p.y));
         const bool xc = ImGui::InvisibleButton(xid, ImVec2(iconW, h));
         const ImU32 col = ImGui::IsItemHovered() ? Gw2Ui::kTextSelected : IM_COL32(200, 190, 170, 220);
-        const float r = 4.f;
-        dl->AddLine(ImVec2(c.x - r, c.y - r), ImVec2(c.x + r, c.y + r), col, 1.8f);
-        dl->AddLine(ImVec2(c.x - r, c.y + r), ImVec2(c.x + r, c.y - r), col, 1.8f);
+        const float r = 4.f * sc;
+        dl->AddLine(ImVec2(c.x - r, c.y - r), ImVec2(c.x + r, c.y + r), col, 1.8f * sc);
+        dl->AddLine(ImVec2(c.x - r, c.y + r), ImVec2(c.x + r, c.y - r), col, 1.8f * sc);
         if (xc)
         {
             buf[0] = '\0';
@@ -323,19 +438,23 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
     else // magnifier affordance
     {
         const ImU32 col = IM_COL32(160, 150, 130, 150);
-        dl->AddCircle(ImVec2(c.x - 1.5f, c.y - 1.5f), 3.6f, col, 0, 1.6f);
-        dl->AddLine(ImVec2(c.x + 1.0f, c.y + 1.0f), ImVec2(c.x + 4.6f, c.y + 4.6f), col, 1.8f);
+        dl->AddCircle(ImVec2(c.x - 1.5f * sc, c.y - 1.5f * sc), 3.6f * sc, col, 0, 1.6f * sc);
+        dl->AddLine(ImVec2(c.x + 1.0f * sc, c.y + 1.0f * sc), ImVec2(c.x + 4.6f * sc, c.y + 4.6f * sc), col, 1.8f * sc);
     }
     ImGui::SetCursorScreenPos(ImVec2(p.x, p.y + h)); // leave the cursor below the box (the X moved it)
     return changed;
 }
 
 // GW2 Dropdown: input-box box + dd-arrow + selected text, then a popup list. DefaultFont14 == our 18px (matches the button).
-bool Gw2Ui::Dropdown(const char *id, const char *const *items, int itemCount, int *selected, float width,
-                     const int *sectionAt, const char *const *sectionLabel, int sectionCount, float height)
+namespace
 {
-    const float h = (height > 0.f) ? height : 27.f; // Overridable to match a row
-    const float arrowW = 16.f;
+bool DropdownImpl(const char *id, const char *const *items, int itemCount, int *selected, float width,
+                  const int *sectionAt, const char *const *sectionLabel, int sectionCount, float height,
+                  ControlSizeMode sizeMode)
+{
+    const float sc = Gw2Ui::TextScale();
+    const float h = ResolveControlHeight(height, sc, 27.f, sizeMode); // Overridable to match a row
+    const float arrowW = 16.f * sc;
     constexpr float kFs = 18.f;
     const ImU32 kText = IM_COL32(239, 240, 239, 255);
     const ImU32 kChard = IM_COL32(255, 204, 119, 255); // ContentService.Colors.Chardonnay
@@ -345,11 +464,11 @@ bool Gw2Ui::Dropdown(const char *id, const char *const *items, int itemCount, in
     // Central, so EVERY dropdown gets it -- not a per-call-site band-aid.
     float content = 0.f;
     for (int i = 0; i < itemCount; ++i)
-        content = std::max(content, MeasureWidth(items[i], kFs));
-    content += 36.f; // left pad + gap + arrow + right pad
-    width = (width > 0.f) ? std::min(width, content) : content;
-    if (width < arrowW + 24.f)
-        width = arrowW + 24.f; // floor: an empty/tiny list still shows the box + arrow
+        content = std::max(content, Gw2Ui::MeasureWidth(items[i], kFs));
+    content += 36.f * sc; // left pad + gap + arrow + right pad
+    width = (width > 0.f) ? std::min(ResolveControlWidth(width, sc, sizeMode), content) : content;
+    if (width < arrowW + 24.f * sc)
+        width = arrowW + 24.f * sc; // floor: an empty/tiny list still shows the box + arrow
 
     char pop[128];
     std::snprintf(pop, sizeof(pop), "%s_ddpop", id); // UNIQUE popup id per dropdown
@@ -366,22 +485,46 @@ bool Gw2Ui::Dropdown(const char *id, const char *const *items, int itemCount, in
                                 ? "data\\textures\\ui\\dd-arrow-active.png"
                                 : "data\\textures\\ui\\dd-arrow.png";
     if (const T ar = File(arrowFile); ar.srv)
-        Img(dl, ar, ImVec2(p.x + width - arrowW - 5.f, p.y + (h - 16.f) * 0.5f),
-            ImVec2(p.x + width - 5.f, p.y + (h - 16.f) * 0.5f + 16.f));
+        Img(dl, ar, ImVec2(p.x + width - arrowW - 5.f * sc, p.y + (h - 16.f * sc) * 0.5f),
+            ImVec2(p.x + width - 5.f * sc, p.y + (h - 16.f * sc) * 0.5f + 16.f * sc));
 
     const char *sel = (*selected >= 0 && *selected < itemCount) ? items[*selected] : "";
-    LabelIn(ImVec2(p.x + 5.f, p.y), ImVec2(p.x + width - 10.f - arrowW, p.y + h), sel,
-            HAlign::Left, VAlign::Middle, kText, false, nullptr, kFs);
+    Gw2Ui::LabelIn(ImVec2(p.x + 5.f * sc, p.y), ImVec2(p.x + width - 10.f * sc - arrowW, p.y + h), sel,
+                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, kText, false, nullptr, kFs);
 
     if (clicked)
         ImGui::OpenPopup(pop);
 
+    int visibleSectionCount = 0;
+    if (sectionAt)
+        for (int s = 0; s < sectionCount; ++s)
+            if (sectionAt[s] >= 0 && sectionAt[s] < itemCount)
+                ++visibleSectionCount;
+
+    const float sectionH = 23.f * sc;
+    const float fullContentH = std::max(h, itemCount * h + visibleSectionCount * sectionH);
+    const float desiredContentH = std::min(fullContentH, h * 10.f + sectionH);
+    const float margin = 8.f * sc;
+    const ImVec2 disp = ImGui::GetIO().DisplaySize;
+    const float belowY = p.y + h - sc;
+    const float spaceBelow = std::max(0.f, disp.y - margin - belowY);
+    const float spaceAbove = std::max(0.f, p.y - margin);
+    const bool openAbove = spaceBelow < desiredContentH && spaceAbove > spaceBelow;
+    const float availableH = openAbove ? spaceAbove : spaceBelow;
+    const float childH = std::min(desiredContentH, std::max(h, availableH));
+    const bool needsScroll = fullContentH > childH + 0.5f;
+    const float childW = width + (needsScroll ? ImGui::GetStyle().ScrollbarSize : 0.f);
+    const float popupX = std::clamp(p.x, margin, std::max(margin, disp.x - margin - childW));
+    const float popupY = openAbove ? std::max(margin, p.y + sc - childH) : belowY;
+
     bool changed = false;
-    ImGui::SetNextWindowPos(ImVec2(p.x, p.y + h - 1.f));
+    ImGui::SetNextWindowPos(ImVec2(popupX, popupY));
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.f, 0.f));
     ImGui::PushStyleColor(ImGuiCol_PopupBg, IM_COL32(0, 0, 0, 255));
     if (ImGui::BeginPopup(pop, ImGuiWindowFlags_NoMove))
     {
+        const bool popupAppearing = ImGui::IsWindowAppearing();
+        ImGui::BeginChild("##ddscroll", ImVec2(childW, childH), false);
         ImDrawList *pdl = ImGui::GetWindowDrawList();
         for (int i = 0; i < itemCount; ++i)
         {
@@ -389,24 +532,26 @@ bool Gw2Ui::Dropdown(const char *id, const char *const *items, int itemCount, in
                 if (sectionAt && sectionAt[s] == i) // section divider before item i
                 {
                     const ImVec2 hp = ImGui::GetCursorScreenPos();
-                    const float hh = 23.f;
+                    const float hh = 23.f * sc;
                     ImGui::Dummy(ImVec2(width, hh));
-                    pdl->AddLine(ImVec2(hp.x + 8.f, hp.y + 5.f), ImVec2(hp.x + width - 8.f, hp.y + 5.f), IM_COL32(92, 80, 56, 220), 1.f);
+                    pdl->AddLine(ImVec2(hp.x + 8.f * sc, hp.y + 5.f * sc), ImVec2(hp.x + width - 8.f * sc, hp.y + 5.f * sc), IM_COL32(92, 80, 56, 220), sc);
                     if (sectionLabel && sectionLabel[s] && sectionLabel[s][0])
-                        DrawLabelCore(pdl, ImVec2(hp.x + 10.f, hp.y + 5.f), ImVec2(hp.x + width - 8.f, hp.y + hh),
+                        DrawLabelCore(pdl, ImVec2(hp.x + 10.f * sc, hp.y + 5.f * sc), ImVec2(hp.x + width - 8.f * sc, hp.y + hh),
                                       sectionLabel[s], UiFont(nullptr), IM_COL32(176, 154, 112, 235), false,
-                                      HAlign::Left, VAlign::Middle, 14.f);
+                                      Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, 14.f);
                 }
             ImGui::PushID(i);
             const ImVec2 rp = ImGui::GetCursorScreenPos();
             const bool rclick = ImGui::InvisibleButton("##it", ImVec2(width, h));
             const bool rhov = ImGui::IsItemHovered();
+            if (popupAppearing && selected && i == *selected)
+                ImGui::SetScrollHereY(0.5f);
             if (rhov) // dark-brown highlight spanning the FULL row (was inset ~28px on the right -> a black gap)
-                pdl->AddRectFilled(ImVec2(rp.x + 2.f, rp.y + 2.f),
-                                   ImVec2(rp.x + width - 2.f, rp.y + h - 2.f), IM_COL32(45, 37, 25, 255));
-            DrawLabelCore(pdl, ImVec2(rp.x + 8.f, rp.y), ImVec2(rp.x + width - 8.f, rp.y + h),
+                pdl->AddRectFilled(ImVec2(rp.x + 2.f * sc, rp.y + 2.f * sc),
+                                   ImVec2(rp.x + width - 2.f * sc, rp.y + h - 2.f * sc), IM_COL32(45, 37, 25, 255));
+            DrawLabelCore(pdl, ImVec2(rp.x + 8.f * sc, rp.y), ImVec2(rp.x + width - 8.f * sc, rp.y + h),
                           items[i], UiFont(nullptr), rhov ? kChard : kText, false,
-                          HAlign::Left, VAlign::Middle, kFs);
+                          Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, kFs);
             if (rclick)
             {
                 *selected = i;
@@ -415,11 +560,27 @@ bool Gw2Ui::Dropdown(const char *id, const char *const *items, int itemCount, in
             }
             ImGui::PopID();
         }
+        ImGui::EndChild();
         ImGui::EndPopup();
     }
     ImGui::PopStyleColor();
     ImGui::PopStyleVar();
     return changed;
+}
+}
+
+bool Gw2Ui::Dropdown(const char *id, const char *const *items, int itemCount, int *selected, float width,
+                     const int *sectionAt, const char *const *sectionLabel, int sectionCount, float height)
+{
+    return DropdownImpl(id, items, itemCount, selected, width, sectionAt, sectionLabel, sectionCount, height,
+                        ControlSizeMode::Logical);
+}
+
+bool Gw2Ui::DropdownPx(const char *id, const char *const *items, int itemCount, int *selected, float widthPx,
+                       const int *sectionAt, const char *const *sectionLabel, int sectionCount, float heightPx)
+{
+    return DropdownImpl(id, items, itemCount, selected, widthPx, sectionAt, sectionLabel, sectionCount, heightPx,
+                        ControlSizeMode::Pixels);
 }
 
 // GW2 KeybindingAssigner: name panel + hotkey panel (white*0.15, *0.20 on hover) + centered bind
@@ -429,8 +590,11 @@ bool Gw2Ui::Dropdown(const char *id, const char *const *items, int itemCount, in
 bool Gw2Ui::KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, float width, float nameWidth)
 {
     const char *&s_capturing = s_kbCapturing; // file-scope (so BeginWindow can see an active capture)
-    const float h = 20.f;
-    const float pad = 2.f;
+    const float sc = TextScale();
+    width = ResolveControlWidth(width, sc, ControlSizeMode::Logical);
+    nameWidth *= sc;
+    const float h = 20.f * sc;
+    const float pad = 2.f * sc;
     constexpr float kFs = 18.f;
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImVec2 p = ImGui::GetCursorScreenPos();
@@ -442,7 +606,7 @@ bool Gw2Ui::KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, fl
     const bool capturing = (s_capturing == label);
 
     dl->AddRectFilled(p, ImVec2(p.x + nameWidth, p.y + h), IM_COL32(255, 255, 255, 38)); // name panel white*0.15
-    LabelIn(ImVec2(p.x + 4.f, p.y), ImVec2(p.x + nameWidth, p.y + h), label,
+    LabelIn(ImVec2(p.x + 4.f * sc, p.y), ImVec2(p.x + nameWidth, p.y + h), label,
             HAlign::Left, VAlign::Middle, IM_COL32(255, 255, 255, 255), false, nullptr, kFs);
 
     const ImU32 hkBg = (overHotkey || capturing) ? IM_COL32(255, 255, 255, 51) : IM_COL32(255, 255, 255, 38);
@@ -497,6 +661,8 @@ bool Gw2Ui::KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, fl
 // tinted by its cloth rgb. Picking a dye writes its rgb back.
 bool Gw2Ui::ColorBox(const char *id, unsigned int *rgb, const Dye *dyes, int dyeCount, float size)
 {
+    const float sc = TextScale();
+    size *= sc;
     auto rgbOf = [](const Dye &d) -> unsigned int
     { return ((unsigned)d.r << 16) | ((unsigned)d.g << 8) | d.b; };
     const char *kDc = "data\\textures\\ui\\colorpicker\\cp-clr-dc.png";
@@ -519,12 +685,12 @@ bool Gw2Ui::ColorBox(const char *id, unsigned int *rgb, const Dye *dyes, int dye
         ImGui::OpenPopup("##cppop");
 
     bool changed = false;
-    const float cell = 24.f, pad = 3.f;
+    const float cell = 24.f * sc, pad = 3.f * sc;
     const int perRow = 15;
     const float sb = ImGui::GetStyle().ScrollbarSize;
     const float gridDrawW = perRow * (cell + pad);   // the swatch columns
     const float childW = gridDrawW + 2.f * pad + sb; // + padding + room for the scrollbar
-    ImGui::SetNextWindowSize(ImVec2(childW + 2.f * pad, 470.f), ImGuiCond_Always);
+    ImGui::SetNextWindowSize(ImVec2(childW + 2.f * pad, 470.f * sc), ImGuiCond_Always);
     ImGui::PushStyleColor(ImGuiCol_PopupBg, IM_COL32(0, 0, 0, 235));
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(pad, pad));
     if (ImGui::BeginPopup("##cppop"))
@@ -544,7 +710,7 @@ bool Gw2Ui::ColorBox(const char *id, unsigned int *rgb, const Dye *dyes, int dye
             return n.find(q) != std::string::npos;
         };
 
-        ImGui::BeginChild("##cpgrid", ImVec2(childW, 418.f), false);
+        ImGui::BeginChild("##cpgrid", ImVec2(childW, 418.f * sc), false);
         ImDrawList *pdl = ImGui::GetWindowDrawList();
         int shown = 0;
         for (int i = 0; i < dyeCount; ++i)
@@ -598,12 +764,13 @@ namespace Gw2Ui
 
     static void MenuMetrics(const char *const *items, int itemCount, float &iw, float &panelW, float &panelH)
     {
-        const float bp = 2.f, ih = 22.f, vm = 6.f, pitch = ih + vm;
+        const float sc = Gw2Ui::TextScale();
+        const float bp = 2.f * sc, ih = 22.f * sc, vm = 6.f * sc, pitch = ih + vm;
         constexpr float kFs = 18.f; // 18 is a native ladder rung -> exact (scale 1.0)
         float maxTextW = 0.f;
         for (int i = 0; i < itemCount; ++i)
             maxTextW = (std::max)(maxTextW, Gw2Ui::MeasureWidth(items[i], kFs)); // SAME rung the rows draw with -> measure==draw
-        iw = (std::max)(135.f, maxTextW + 30.f + 30.f);
+        iw = (std::max)(135.f * sc, maxTextW + 30.f * sc + 30.f * sc);
         panelW = iw + bp * 2.f;
         panelH = bp + ih + (itemCount - 1) * pitch + bp;
     }
@@ -614,7 +781,8 @@ namespace Gw2Ui
     // ContextMenuInline (renders into a popup the host already opened). The caller has already reserved space.
     static int DrawMenuBody(ImVec2 o, const char *const *items, int itemCount, float iw, float panelW, float panelH)
     {
-        const float bp = 2.f, ih = 22.f, vm = 6.f, pitch = ih + vm;
+        const float sc = Gw2Ui::TextScale();
+        const float bp = 2.f * sc, ih = 22.f * sc, vm = 6.f * sc, pitch = ih + vm;
         ImDrawList *dl = ImGui::GetWindowDrawList();
 
         dl->AddRectFilled(ImVec2(o.x + bp, o.y + bp), ImVec2(o.x + panelW - bp, o.y + panelH - bp),
@@ -623,7 +791,7 @@ namespace Gw2Ui
         if (const T edge = File("data\\textures\\ui\\scrollbar-track.png"); edge.srv)
         {
             const ImTextureID t = (ImTextureID)edge.srv;
-            const float tw = edge.w;                       // track width (4px)
+            const float tw = edge.w * sc;                  // track width (4px)
             const ImU32 ec = IM_COL32(255, 255, 255, 204); // White * 0.8
             const float x0 = o.x, x1 = o.x + panelW, y0 = o.y, y1 = o.y + panelH;
             dl->AddImage(t, ImVec2(x0, y0), ImVec2(x0 + tw, y1), ImVec2(0, 0), ImVec2(1, 1), ec); // left
@@ -645,9 +813,9 @@ namespace Gw2Ui
             const bool rhov = ImGui::IsItemHovered();
             RowBackground(rp, ImVec2(rp.x + iw, rp.y + ih), rhov, false, ImGui::GetID("##cmi"), -1);
             if (const T b = Asset(155038); b.srv)
-                Img(dl, b, ImVec2(rp.x + 6.f, rp.y + (ih - 18.f) * 0.5f),
-                    ImVec2(rp.x + 24.f, rp.y + (ih - 18.f) * 0.5f + 18.f)); // bullet @ HORIZONTAL_PADDING, 18px
-            LabelIn(ImVec2(rp.x + 30.f, rp.y), ImVec2(rp.x + iw - 6.f, rp.y + ih), items[i],
+                Img(dl, b, ImVec2(rp.x + 6.f * sc, rp.y + (ih - 18.f * sc) * 0.5f),
+                    ImVec2(rp.x + 24.f * sc, rp.y + (ih - 18.f * sc) * 0.5f + 18.f * sc)); // bullet @ HORIZONTAL_PADDING, 18px
+            LabelIn(ImVec2(rp.x + 30.f * sc, rp.y), ImVec2(rp.x + iw - 6.f * sc, rp.y + ih), items[i],
                     HAlign::Left, VAlign::Middle, IM_COL32(239, 240, 239, 255), false, nullptr, 18.f); // TEXT_LEFTPADDING 30
             if (rclick)
             {
@@ -662,7 +830,8 @@ namespace Gw2Ui
     // ---- Submenu-capable variant (same panel/row look) ----------------------------------------------------
     static void LevelMetrics(const std::vector<Gw2Ui::MenuNode> &nodes, float &iw, float &panelW, float &panelH)
     {
-        const float bp = 2.f, ih = 22.f, vm = 6.f, pitch = ih + vm;
+        const float sc = Gw2Ui::TextScale();
+        const float bp = 2.f * sc, ih = 22.f * sc, vm = 6.f * sc, pitch = ih + vm;
         constexpr float kFs = 18.f; // 18 is a native ladder rung -> exact (scale 1.0)
         float maxTextW = 0.f;
         bool anySub = false, anySel = false;
@@ -677,7 +846,7 @@ namespace Gw2Ui
                 anySel = true;
         }
         // 30 left bullet/pad; wider right pad when any row carries a submenu arrow OR a selected green check.
-        iw = (std::max)(135.f, maxTextW + 30.f + ((anySub || anySel) ? 28.f : 12.f));
+        iw = (std::max)(135.f * sc, maxTextW + 30.f * sc + ((anySub || anySel) ? 28.f * sc : 12.f * sc));
         panelW = iw + bp * 2.f;
         panelH = bp + ih + ((int)nodes.size() - 1) * pitch + bp; // uniform pitch (a separator occupies a row too)
     }
@@ -692,7 +861,8 @@ namespace Gw2Ui
     // submenu alive while a grandchild is hovered (fixes deep-menu cascade-close).
     static int DrawMenuLevel(ImVec2 o, const std::vector<Gw2Ui::MenuNode> &nodes, const char *idPrefix, bool *outHovered = nullptr)
     {
-        const float bp = 2.f, ih = 22.f, vm = 6.f, pitch = ih + vm;
+        const float sc = Gw2Ui::TextScale();
+        const float bp = 2.f * sc, ih = 22.f * sc, vm = 6.f * sc, pitch = ih + vm;
         float iw, panelW, panelH;
         LevelMetrics(nodes, iw, panelW, panelH);
         ImDrawList *dl = ImGui::GetWindowDrawList();
@@ -702,7 +872,7 @@ namespace Gw2Ui
         if (const T edge = File("data\\textures\\ui\\scrollbar-track.png"); edge.srv)
         {
             const ImTextureID t = (ImTextureID)edge.srv;
-            const float tw = edge.w;
+            const float tw = edge.w * sc;
             const ImU32 ec = IM_COL32(255, 255, 255, 204);
             const float x0 = o.x, x1 = o.x + panelW, y0 = o.y, y1 = o.y + panelH;
             dl->AddImage(t, ImVec2(x0, y0), ImVec2(x0 + tw, y1), ImVec2(0, 0), ImVec2(1, 1), ec);
@@ -719,7 +889,7 @@ namespace Gw2Ui
             const ImVec2 rp(o.x + bp, o.y + bp + i * pitch);
             if (n.separator)
             {
-                dl->AddLine(ImVec2(rp.x + 8.f, rp.y + ih * 0.5f), ImVec2(rp.x + iw - 8.f, rp.y + ih * 0.5f), IM_COL32(120, 108, 82, 130), 1.f);
+                dl->AddLine(ImVec2(rp.x + 8.f * sc, rp.y + ih * 0.5f), ImVec2(rp.x + iw - 8.f * sc, rp.y + ih * 0.5f), IM_COL32(120, 108, 82, 130), sc);
                 continue;
             }
             ImGui::SetCursorScreenPos(rp);
@@ -732,14 +902,14 @@ namespace Gw2Ui
             // the right instead of a persistent highlight that would mask the hover.
             RowBackground(rp, ImVec2(rp.x + iw, rp.y + ih), hov, /*selected*/ false, ImGui::GetID("##mi"), -1);
             if (const T b = Asset(155038); b.srv)
-                Img(dl, b, ImVec2(rp.x + 6.f, rp.y + (ih - 18.f) * 0.5f), ImVec2(rp.x + 24.f, rp.y + (ih - 18.f) * 0.5f + 18.f));
-            LabelIn(ImVec2(rp.x + 30.f, rp.y), ImVec2(rp.x + iw - 6.f, rp.y + ih), n.label.c_str(), HAlign::Left, VAlign::Middle, IM_COL32(239, 240, 239, 255), false, nullptr, 18.f);
+                Img(dl, b, ImVec2(rp.x + 6.f * sc, rp.y + (ih - 18.f * sc) * 0.5f), ImVec2(rp.x + 24.f * sc, rp.y + (ih - 18.f * sc) * 0.5f + 18.f * sc));
+            LabelIn(ImVec2(rp.x + 30.f * sc, rp.y), ImVec2(rp.x + iw - 6.f * sc, rp.y + ih), n.label.c_str(), HAlign::Left, VAlign::Middle, IM_COL32(239, 240, 239, 255), false, nullptr, 18.f);
             if (n.selected) // current/enabled -> right-side green check (a row is never both selected and a submenu)
-                Render::DrawGlyph(dl, ImVec2(rp.x + iw - 12.f, rp.y + ih * 0.5f), 16.f, Render::Glyph::Check, IM_COL32(120, 235, 140, 255), {false, false, false});
+                Render::DrawGlyph(dl, ImVec2(rp.x + iw - 12.f * sc, rp.y + ih * 0.5f), 16.f * sc, Render::Glyph::Check, IM_COL32(120, 235, 140, 255), {false, false, false});
             if (!n.children.empty())
             {
                 const float ay = rp.y + ih * 0.5f; // submenu arrow
-                Render::DrawGlyph(dl, ImVec2(rp.x + iw - 10.f, ay), 16.f, Render::Glyph::CaretRight, IM_COL32(239, 240, 239, 235), {false, false, false});
+                Render::DrawGlyph(dl, ImVec2(rp.x + iw - 10.f * sc, ay), 16.f * sc, Render::Glyph::CaretRight, IM_COL32(239, 240, 239, 235), {false, false, false});
                 char cid[96];
                 std::snprintf(cid, sizeof(cid), "%s/%d", idPrefix, i);
                 if (hov)
@@ -752,9 +922,9 @@ namespace Gw2Ui
                 LevelMetrics(n.children, ciw, cpw, cph);
                 const ImVec2 disp = ImGui::GetIO().DisplaySize; // fullscreen overlay -> work area is 0..DisplaySize
                 const float vpL = 0.f, vpT = 0.f, vpR = disp.x, vpB = disp.y;
-                float subX = o.x + panelW - bp - 2.f, subY = rp.y - bp; // 2px overlap so moving right into it has no dead gap
+                float subX = o.x + panelW - bp - 2.f * sc, subY = rp.y - bp; // 2px overlap so moving right into it has no dead gap
                 if (subX + cpw > vpR)
-                    subX = o.x - cpw + bp + 2.f; // off the right edge -> flip to the LEFT of the parent
+                    subX = o.x - cpw + bp + 2.f * sc; // off the right edge -> flip to the LEFT of the parent
                 if (subX < vpL)
                     subX = vpL;
                 if (subY + cph > vpB)
@@ -871,15 +1041,16 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
         return false;
     bool changed = false;
     ImGui::PushID(label);
+    const float sc = Gw2Ui::TextScale();
 
     // 1) Number box (left): GW2 input-box texture (3-slice, 2px caps). The value shows CENTRED; click it
     //    to type a precise value (an editable field appears, then commits on Enter / focus loss).
-    const float boxW = 64.f;
-    const float frameH0 = ImGui::GetFrameHeight();
+    const float boxW = 64.f * sc;
+    const float frameH0 = std::max(ImGui::GetFrameHeight(), Gw2Ui::InputBoxHeight());
     const ImVec2 bp = ImGui::GetCursorScreenPos();
     ImDrawList *dlb = ImGui::GetWindowDrawList();
     if (const T ib = File("data\\textures\\ui\\input-box.png"); ib.srv)
-        Img3H(dlb, ib, bp, ImVec2(bp.x + boxW, bp.y + frameH0), 2.f);
+        Img3H(dlb, ib, bp, ImVec2(bp.x + boxW, bp.y + frameH0), 2.f * sc);
 
     const ImGuiID nid = ImGui::GetID("##num");
     if (s_numEdit == nid)
@@ -891,9 +1062,10 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
             s_numFocus = false;
         }
         // Centre the text while typing by padding the frame to (boxW - textWidth)/2 each frame.
+        ImGui::SetWindowFontScale(sc);
         const float tw = ImGui::CalcTextSize(s_numBuf).x;
-        const float padX = std::max(2.f, (boxW - tw) * 0.5f - 2.f);
-        ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(padX, ImGui::GetStyle().FramePadding.y));
+        const float padX = std::max(2.f * sc, (boxW - tw) * 0.5f - 2.f * sc);
+        ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(padX, ImGui::GetStyle().FramePadding.y * sc));
         ImGui::PushStyleColor(ImGuiCol_FrameBg, ImVec4(0, 0, 0, 0));
         ImGui::SetCursorScreenPos(bp);
         ImGui::SetNextItemWidth(boxW);
@@ -917,6 +1089,7 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
         }
         ImGui::PopStyleColor();
         ImGui::PopStyleVar();
+        ImGui::SetWindowFontScale(1.f);
     }
     else
     {
@@ -928,9 +1101,8 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
         }
         char nb[32];
         std::snprintf(nb, sizeof(nb), fmt, *v);
-        const ImVec2 ns = ImGui::CalcTextSize(nb);
-        dlb->AddText(ImVec2(bp.x + (boxW - ns.x) * 0.5f, bp.y + (frameH0 - ns.y) * 0.5f),
-                     ImGui::GetColorU32(ImGuiCol_Text), nb);
+        Gw2Ui::LabelIn(bp, ImVec2(bp.x + boxW, bp.y + frameH0), nb, Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle,
+                       ImGui::GetColorU32(ImGuiCol_Text), false, nullptr, 16.f);
     }
     ImGui::SameLine();
 
@@ -939,12 +1111,13 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
     // put the name on the LEFT at a column), so the track then fills the rest of the row.
     const bool showLabel = label && label[0] && !(label[0] == '#' && label[1] == '#');
     ImDrawList *dl = ImGui::GetWindowDrawList();
-    const float Hh = 16.f, nubW = 16.f, BUMP = 4.f;
-    const float frameH = ImGui::GetFrameHeight();
-    const ImVec2 lbl = showLabel ? ImGui::CalcTextSize(label) : ImVec2(0.f, 0.f);
-    float trackW = (trackWidth > 0.f) ? trackWidth : ImGui::GetContentRegionAvail().x - lbl.x - 16.f;
-    if (trackW < 90.f)
-        trackW = 90.f;
+    const float Hh = 16.f * sc, nubW = 16.f * sc, BUMP = 4.f * sc;
+    const float frameH = std::max(ImGui::GetFrameHeight(), Hh + 6.f * sc);
+    const float lblW = showLabel ? Gw2Ui::MeasureWidth(label, 16.f) : 0.f;
+    const float autoTrackW = ImGui::GetContentRegionAvail().x - lblW - 16.f * sc;
+    float trackW = (trackWidth > 0.f) ? trackWidth * sc : std::min(autoTrackW, 620.f);
+    if (trackW < 90.f * sc)
+        trackW = 90.f * sc;
     const ImVec2 cur = ImGui::GetCursorScreenPos();
     const ImVec2 p(cur.x, cur.y + (frameH - Hh) * 0.5f);
     ImGui::InvisibleButton("##trk", ImVec2(trackW, frameH));
@@ -975,8 +1148,7 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
     if (showLabel)
     {
         ImGui::SameLine();
-        ImGui::AlignTextToFramePadding();
-        ImGui::TextUnformatted(label);
+        Gw2Ui::Label(label, ImGui::GetColorU32(ImGuiCol_Text), false, nullptr, 16.f);
     }
 
     ImGui::PopID();
@@ -1001,19 +1173,19 @@ bool Gw2Ui::RangeSliderInt(const char *id, int *lo, int *hi, int vmin, int vmax)
 {
     ImGui::PushID(id);
     bool changed = false;
-    const float Hh = 16.f, nubW = 16.f, BUMP = 4.f;
-    const float frameH = ImGui::GetFrameHeight();
+    const float sc = Gw2Ui::TextScale();
+    const float Hh = 16.f * sc, nubW = 16.f * sc, BUMP = 4.f * sc;
+    const float frameH = std::max(ImGui::GetFrameHeight(), Hh + 6.f * sc);
 
     char lab[32];
     std::snprintf(lab, sizeof(lab), "Lv %d - %d", *lo, *hi);
-    ImGui::AlignTextToFramePadding();
-    ImGui::TextUnformatted(lab);
+    Gw2Ui::Label(lab, ImGui::GetColorU32(ImGuiCol_Text), false, nullptr, 16.f);
     ImGui::SameLine();
 
     ImDrawList *dl = ImGui::GetWindowDrawList();
-    float trackW = ImGui::GetContentRegionAvail().x - 8.f;
-    if (trackW < 120.f)
-        trackW = 120.f;
+    float trackW = ImGui::GetContentRegionAvail().x - 8.f * sc;
+    if (trackW < 120.f * sc)
+        trackW = 120.f * sc;
     const ImVec2 cur = ImGui::GetCursorScreenPos();
     const ImVec2 p(cur.x, cur.y + (frameH - Hh) * 0.5f);
     ImGui::InvisibleButton("##rtrk", ImVec2(trackW, frameH));
@@ -1067,8 +1239,8 @@ bool Gw2Ui::RangeSliderInt(const char *id, int *lo, int *hi, int vmin, int vmax)
     dl->AddRectFilled(p, ImVec2(p.x + BUMP, p.y + Hh), IM_COL32(225, 222, 210, 255));
     dl->AddRectFilled(ImVec2(p.x + trackW - BUMP, p.y), ImVec2(p.x + trackW, p.y + Hh), IM_COL32(225, 222, 210, 255));
     const float xlo = valToCx(*lo), xhi = valToCx(*hi);
-    dl->AddRectFilled(ImVec2(std::min(xlo, xhi), p.y + Hh * 0.5f - 2.f),
-                      ImVec2(std::max(xlo, xhi), p.y + Hh * 0.5f + 2.f), IM_COL32(214, 170, 90, 205));
+    dl->AddRectFilled(ImVec2(std::min(xlo, xhi), p.y + Hh * 0.5f - 2.f * sc),
+                      ImVec2(std::max(xlo, xhi), p.y + Hh * 0.5f + 2.f * sc), IM_COL32(214, 170, 90, 205));
     auto drawNub = [&](float cx)
     {
         const float nx = cx - nubW * 0.5f;

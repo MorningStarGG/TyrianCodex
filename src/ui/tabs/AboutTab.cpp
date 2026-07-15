@@ -47,10 +47,12 @@ namespace
 
     const Credit kTrailCredits[] = {
         {"Lady Elyssa",
-         "For route trails, markers, trail art, heart notes, and gathering data used by parts of Tyrian Codex."},
+         "For route trails, markers, trail art, and gathering data used by parts of Tyrian Codex."},
         {"Tekkit",
          "For route trails and marker-pack data, including source material used by open-world and farming routes.",
          "https://www.tekkitsworkshop.net/donate"},
+        {"SZG5",
+         "For dungeon trails and markers."},
         {"QuitarHero",
          "For route and marker-pack data used by some trails and gathering paths."},
         {"Metallis",

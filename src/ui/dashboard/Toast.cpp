@@ -30,13 +30,17 @@ namespace
     Layout Measure(const App& app, const Notify::Item& it, ImFont* font)
     {
         Layout L{};
-        const float iconW = app.config.notifyIcons ? 16.f : 0.f;
-        L.textX  = kAccentW + kPad + (iconW > 0.f ? iconW + 8.f : 0.f);
-        L.textW  = kCardW - L.textX - kPad;
+        const float sc = Gw2Ui::GlobalScale();
+        const float cardW = kCardW * sc;
+        const float pad = kPad * sc;
+        const float accentW = kAccentW * sc;
+        const float iconW = app.config.notifyIcons ? 16.f * sc : 0.f;
+        L.textX  = accentW + pad + (iconW > 0.f ? iconW + 8.f * sc : 0.f);
+        L.textW  = cardW - L.textX - pad;
         L.titleH = it.title.empty() ? 0.f : Gw2Ui::MeasureWrappedHeight(it.title.c_str(), kTitlePx, L.textW, font);
         L.bodyH  = it.body.empty()  ? 0.f : Gw2Ui::MeasureWrappedHeight(it.body.c_str(),  kBodyPx,  L.textW, font);
-        L.h = kPad + L.titleH + (L.bodyH > 0.f ? 4.f + L.bodyH : 0.f) + kPad;
-        if (L.h < 38.f) L.h = 38.f;
+        L.h = pad + L.titleH + (L.bodyH > 0.f ? 4.f * sc + L.bodyH : 0.f) + pad;
+        if (L.h < 38.f * sc) L.h = 38.f * sc;
         return L;
     }
 }
@@ -49,6 +53,12 @@ void Toast::Render(App& app)
     const float W = io.DisplaySize.x, H = io.DisplaySize.y;
     if (W < 1.f || H < 1.f) return;
 
+    const float sc = Gw2Ui::GlobalScale();
+    const float cardW = kCardW * sc;
+    const float gap = kGap * sc;
+    const float margin = kMargin * sc;
+    const float pad = kPad * sc;
+    const float accentW = kAccentW * sc;
     const double now = ImGui::GetTime();
     std::vector<const Notify::Item*> live = Notify::Live(now);
     if (live.empty()) return;
@@ -67,21 +77,21 @@ void Toast::Render(App& app)
     std::vector<Layout> lay; lay.reserve(live.size());
     float totalH = 0.f;
     for (const Notify::Item* it : live) { Layout L = Measure(app, *it, font); lay.push_back(L); totalH += L.h; }
-    if (live.size() > 1) totalH += kGap * (live.size() - 1);
+    if (live.size() > 1) totalH += gap * (live.size() - 1);
 
     // Horizontal anchor (card left x), then apply the user offset.
     float cardX;
-    if (left)       cardX = kMargin;
-    else if (right) cardX = W - kMargin - kCardW;
-    else            cardX = (W - kCardW) * 0.5f;        // centre columns (1,3,5)
+    if (left)       cardX = margin;
+    else if (right) cardX = W - margin - cardW;
+    else            cardX = (W - cardW) * 0.5f;        // centre columns (1,3,5)
     cardX += app.config.notifyOffsetX;
 
     // Vertical start edge. Newest is drawn nearest the anchor: top/centre stack downward, bottom upward.
     ImDrawList* dl = ImGui::GetForegroundDrawList();
     float edge;
-    if (bottom)        edge = H - kMargin;                 // bottom of the newest card
+    if (bottom)        edge = H - margin;                   // bottom of the newest card
     else if (corner == 3) edge = (H - totalH) * 0.5f;      // centre block
-    else               edge = kMargin;                     // top of the newest card
+    else               edge = margin;                      // top of the newest card
     edge += app.config.notifyOffsetY;
 
     // Draw newest-first (nearest the anchor).
@@ -95,14 +105,14 @@ void Toast::Render(App& app)
         const float tin  = std::min(1.f, (float)(now - it.created) / kInAnim);
         const float tout = std::min(1.f, (float)(it.expires - now) / kOutAnim);
         const float alpha = std::max(0.f, std::min(tin, tout));
-        const float slide = (1.f - tin) * 16.f;
+        const float slide = (1.f - tin) * 16.f * sc;
         float ox = 0.f, oy = 0.f;
         if (left)        ox = -slide;
         else if (right)  ox =  slide;
         else             oy = bottom ? slide : -slide;
 
         const ImVec2 a(cardX + ox, top + oy);
-        const ImVec2 b(a.x + kCardW, a.y + L.h);
+        const ImVec2 b(a.x + cardW, a.y + L.h);
 
         // hover-pause: freeze the timer while the cursor is over the card (geometry test only; no input capture).
         const bool over = io.MousePos.x >= a.x && io.MousePos.x <= b.x && io.MousePos.y >= a.y && io.MousePos.y <= b.y;
@@ -123,31 +133,31 @@ void Toast::Render(App& app)
 
         if (app.config.notifyBackground)
         {
-            dl->AddRectFilled(a, b, WithA(IM_COL32(18, 15, 11, 235), alpha), 4.f);
-            dl->AddRect      (a, b, WithA(IM_COL32(120, 100, 60, 200), alpha), 4.f);
+            dl->AddRectFilled(a, b, WithA(IM_COL32(18, 15, 11, 235), alpha), 4.f * sc);
+            dl->AddRect      (a, b, WithA(IM_COL32(120, 100, 60, 200), alpha), 4.f * sc);
         }
         // left accent bar
-        dl->AddRectFilled(ImVec2(a.x, a.y), ImVec2(a.x + kAccentW, b.y), accent, 4.f, ImDrawCornerFlags_Left);
+        dl->AddRectFilled(ImVec2(a.x, a.y), ImVec2(a.x + accentW, b.y), accent, 4.f * sc, ImDrawCornerFlags_Left);
         // icon marker (a small accent dot until real gw2dat icons are wired in)
         if (app.config.notifyIcons)
-            dl->AddCircleFilled(ImVec2(a.x + kAccentW + kPad + 8.f, (a.y + b.y) * 0.5f), 5.f, accent);
+            dl->AddCircleFilled(ImVec2(a.x + accentW + pad + 8.f * sc, (a.y + b.y) * 0.5f), 5.f * sc, accent);
 
         const float tx = a.x + L.textX;
         const float tw = L.textW;
-        float ty = a.y + kPad;
+        float ty = a.y + pad;
         const bool stroke = !app.config.notifyBackground;   // outline text when there is no card behind it
         if (!it.title.empty())
         {
             Gw2Ui::LabelDL(dl, ImVec2(tx, ty), ImVec2(tx + tw, ty + L.titleH), it.title.c_str(),
                            Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Top, WithA(IM_COL32(247, 241, 224, 255), alpha),
                            stroke, font, kTitlePx, tw, 1.0f);
-            ty += L.titleH + 4.f;
+            ty += L.titleH + 4.f * sc;
         }
         if (!it.body.empty())
             Gw2Ui::LabelDL(dl, ImVec2(tx, ty), ImVec2(tx + tw, ty + L.bodyH), it.body.c_str(),
                            Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Top, WithA(IM_COL32(202, 196, 178, 255), alpha),
                            stroke, font, kBodyPx, tw);
 
-        edge = bottom ? (top - kGap) : (top + L.h + kGap);
+        edge = bottom ? (top - gap) : (top + L.h + gap);
     }
 }

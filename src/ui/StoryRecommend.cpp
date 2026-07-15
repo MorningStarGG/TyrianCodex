@@ -174,15 +174,15 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
     Gw2Ui::Divider(0.f, IM_COL32(178, 144, 84, 52));
     const float cw       = Gw2Ui::CardInnerWidth();
     const bool  hasTravel = ns.entryZone != nullptr;
-    const float gap      = 6.f;
+    const float gap      = Gw2Ui::Scaled(6.f);
     const float bw       = hasTravel ? (cw - gap) * 0.5f : cw;
-    if (Gw2Ui::ActionButton("Open Journal", bw, 26.f, Gw2Ui::ActionButtonVariant::Primary, "Open the Story Journal"))
+    if (Gw2Ui::ActionButtonPx("Open Journal", bw, Gw2Ui::Scaled(26.f), Gw2Ui::ActionButtonVariant::Primary, "Open the Story Journal"))
         OpenSettingsTab(app, SettingsTabJournal);
     if (hasTravel)
     {
         ImGui::SameLine(0.f, gap);
         char tip[128]; std::snprintf(tip, sizeof(tip), "Travel toward %s", ns.entryZone->Name.c_str());
-        if (Gw2Ui::ActionButton("Travel", bw, 26.f, Gw2Ui::ActionButtonVariant::Normal, tip))
+        if (Gw2Ui::ActionButtonPx("Travel", bw, Gw2Ui::Scaled(26.f), Gw2Ui::ActionButtonVariant::Normal, tip))
             OpenZoneTravelChoice(app, ns.entryZone->MapId);
     }
     Gw2Ui::EndCard();

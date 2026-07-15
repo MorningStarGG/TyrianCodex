@@ -253,11 +253,12 @@ void DrawRecipesContent(App& app)
     RebuildView(learned, m.recipesAt);
 
     {
-        const float barW = ImGui::GetContentRegionAvail().x, dropW = 120.f, gap = 8.f;
-        const float searchW = Gw2Ui::FillWidth(barW, 1, dropW + gap, gap, 160.f);
+        const float ui = Gw2Ui::GlobalScale();
+        const float barW = ImGui::GetContentRegionAvail().x, dropW = 120.f * ui, gap = 8.f * ui;
+        const float searchW = Gw2Ui::FillWidth(barW, 1, dropW + gap, gap, 160.f * ui);
         Gw2Ui::SearchBox("##recsearch", g_search, (int)sizeof(g_search), searchW, "Search output item...");
         ImGui::SameLine(searchW + gap);
-        { int lf = g_learn; if (Gw2Ui::Dropdown("##reclearn", kLearn, 3, &lf, dropW, nullptr, nullptr, 0, Gw2Ui::InputBoxHeight())) g_learn = lf; }
+        { int lf = g_learn; if (Gw2Ui::DropdownPx("##reclearn", kLearn, 3, &lf, dropW, nullptr, nullptr, 0, Gw2Ui::InputBoxHeight())) g_learn = lf; }
     }
 
     { char h[96]; std::snprintf(h, sizeof(h), "Recipes  --  %d / %d learned", g_totLearned, g_total);

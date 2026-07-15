@@ -149,6 +149,15 @@ namespace
 
 namespace Wiki
 {
+    void Container::SetContentScale(float scale)
+    {
+        const float next = std::clamp(scale, 0.75f, 2.0f);
+        if (std::fabs(next - m_contentScale) <= 0.001f)
+            return;
+        m_contentScale = next;
+        m_fonts.clear();
+    }
+
     float Container::SeparatorAdvance(const FontRef* font)
     {
         return std::ceil(std::max(4.f, font ? font->size * 0.32f : 5.f));
@@ -348,8 +357,8 @@ namespace Wiki
         ImFont* face = italic && Gw2Ui::Gw2Italic() ? Gw2Ui::Gw2Italic() : Gw2Ui::UiFontResolved();
         if (!face) face = ImGui::GetFont();
         const float baseSize = face && face->FontSize > 0.f ? face->FontSize : ImGui::GetFontSize();
-        const float requestedSize = (float)(descr.size > 0 ? descr.size : get_default_font_size());
-        const float reqSize = std::max(std::max(8.f, m_minFontSize), requestedSize);
+        const float requestedSize = (float)(descr.size > 0 ? descr.size : get_default_font_size()) * m_contentScale;
+        const float reqSize = std::max(std::max(8.f * m_contentScale, m_minFontSize * m_contentScale), requestedSize);
 
         // Dedup: litehtml asks for the same font description repeatedly across a relayout. Reuse the
         // cached handle instead of growing m_fonts unbounded (delete_font is a no-op for ImGui fonts).
@@ -508,14 +517,14 @@ namespace Wiki
         const Texture_t* tex = ImageCache::GetUrl(id.c_str(), url.c_str());
         if (tex && tex->Width > 0 && tex->Height > 0)
         {
-            sz.width = (litehtml::pixel_t)tex->Width;
-            sz.height = (litehtml::pixel_t)tex->Height;
+            sz.width = (litehtml::pixel_t)std::ceil((float)tex->Width * m_contentScale);
+            sz.height = (litehtml::pixel_t)std::ceil((float)tex->Height * m_contentScale);
         }
         else
         {
             // Initial layout must be deterministic while the async image cache is still filling.
-            sz.width = 96;
-            sz.height = 72;
+            sz.width = (litehtml::pixel_t)std::ceil(96.f * m_contentScale);
+            sz.height = (litehtml::pixel_t)std::ceil(72.f * m_contentScale);
         }
     }
 

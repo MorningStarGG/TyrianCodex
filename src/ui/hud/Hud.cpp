@@ -127,18 +127,19 @@ void HUD::Render(App& app)
     const float W = io.DisplaySize.x, H = io.DisplaySize.y;
     if (W < 2.f || H < 2.f) return;
 
+    const float ui = Gw2Ui::GlobalScale();
     const bool labels = cfg.hudLabels;
-    const float iconBox = 34.f, iconSz = 22.f, btnGap = 2.f, sidePad = 8.f, panelGap = 6.f, clockPad = 16.f, vpad = 6.f;
-    const float labelFs = 14.f, labelH = labels ? (labelFs + 2.f) : 0.f;
+    const float iconBox = 34.f * ui, iconSz = 22.f * ui, btnGap = 2.f * ui, sidePad = 8.f * ui, panelGap = 6.f * ui, clockPad = 16.f * ui, vpad = 6.f * ui;
+    const float labelFs = 14.f, labelH = labels ? ((labelFs + 2.f) * ui) : 0.f;
     const float cellH = iconBox + labelH;
     const float sideH = cellH + vpad * 2.f;
-    const float centerH = std::max(sideH, 46.f) + 14.f;   // clock box is taller than the side boxes
+    const float centerH = std::max(sideH, 46.f * ui) + 14.f * ui;   // clock box is taller than the side boxes
 
     // per-button cell width (wide enough for the label when labels are on)
     auto cellW = [&](const HudBtn* b) {
         const HudButtons::Button* def = HudButtons::Find(b->key.c_str());
         if (!labels || !def) return iconBox;
-        return std::max(iconBox, Gw2Ui::MeasureWidth(def->label, labelFs) + 6.f);
+        return std::max(iconBox, Gw2Ui::MeasureWidth(def->label, labelFs) + 6.f * ui);
     };
     auto groupW = [&](const std::vector<const HudBtn*>& g) {
         if (g.empty()) return 0.f;
@@ -155,14 +156,14 @@ void HUD::Render(App& app)
     const float primFs = 26.f, secFs = 14.f;
     float clockTextW = Gw2Ui::MeasureWidth(primStr.c_str(), primFs);
     if (hasSec) clockTextW = std::max(clockTextW, Gw2Ui::MeasureWidth(secStr.c_str(), secFs));
-    const float centerW = cfg.hudClockShow ? std::max(92.f, clockTextW + clockPad * 2.f) : 0.f;
+    const float centerW = cfg.hudClockShow ? std::max(92.f * ui, clockTextW + clockPad * 2.f) : 0.f;
 
     if (left.empty() && right.empty() && !cfg.hudClockShow) return;   // nothing to draw
 
     const float totalW = leftPanelW + (leftPanelW > 0.f ? panelGap : 0.f) + centerW
                        + (rightPanelW > 0.f && centerW > 0.f ? panelGap : 0.f) + rightPanelW;
 
-    const float m = 2.f;                                       // window margin so panel borders aren't clipped at the edge
+    const float m = 2.f * ui;                                  // window margin so panel borders aren't clipped at the edge
     // The CLOCK stays on the true screen centre (W/2 + manual offset); the left/right button groups extend
     // outward from it -- so more buttons on a side just push that side further out, the clock never moves.
     // (When the clock is hidden there's no anchor, so centre the whole bar instead.)
@@ -171,14 +172,14 @@ void HUD::Render(App& app)
     if (centerW > 0.f)
     {
         float clockCenter = W * 0.5f + cfg.hudOffset;                              // screen centre + manual nudge
-        const float ccMin = centerW * 0.5f + 6.f, ccMax = W - centerW * 0.5f - 6.f;
+        const float ccMin = centerW * 0.5f + 6.f * ui, ccMax = W - centerW * 0.5f - 6.f * ui;
         if (ccMax > ccMin) clockCenter = std::min(std::max(clockCenter, ccMin), ccMax);   // keep the clock itself on-screen
         x0 = clockCenter - clockMid;                                               // groups extend outward from the clock
     }
     else x0 = (W - totalW) * 0.5f + cfg.hudOffset;                                 // no clock -> centre the whole bar
     const float winW = totalW + 2.f * m, winH = centerH + 2.f * m;
     const float winX = x0 - m;
-    const float winY = (cfg.hudEdge == 0) ? 6.f : (H - winH - 6.f);
+    const float winY = (cfg.hudEdge == 0) ? 6.f * ui : (H - winH - 6.f * ui);
     const float y0 = winY + m;
     const float sideTop = y0 + (centerH - sideH) * 0.5f;
     const float midY = y0 + centerH * 0.5f;
@@ -193,8 +194,8 @@ void HUD::Render(App& app)
         ImDrawList* dl = ImGui::GetWindowDrawList();
         const ImU32 fill = IM_COL32(24, 20, 13, 235), border = IM_COL32(150, 124, 70, 220);
         auto panel = [&](float px, float pw, float top, float h, ImU32 brd) {
-            dl->AddRectFilled(ImVec2(px, top), ImVec2(px + pw, top + h), fill, 7.f);
-            dl->AddRect(ImVec2(px, top), ImVec2(px + pw, top + h), brd, 7.f, 0, 1.4f);
+            dl->AddRectFilled(ImVec2(px, top), ImVec2(px + pw, top + h), fill, 7.f * ui);
+            dl->AddRect(ImVec2(px, top), ImVec2(px + pw, top + h), brd, 7.f * ui, 0, 1.4f * ui);
         };
 
         // ONE InvisibleButton per icon (no overlapping full-bar button -> every click registers). The clock
@@ -213,7 +214,7 @@ void HUD::Render(App& app)
             if (hov)
             {
                 ImGui::SetMouseCursor(ImGuiMouseCursor_Hand);
-                dl->AddRectFilled(ImVec2(cx, iconTop), ImVec2(cx + cw, iconTop + cellH), IM_COL32(255, 220, 140, 40), 5.f);
+                dl->AddRectFilled(ImVec2(cx, iconTop), ImVec2(cx + cw, iconTop + cellH), IM_COL32(255, 220, 140, 40), 5.f * ui);
             }
             const ImU32 col = hov ? Gw2Ui::kGold : IM_COL32(206, 190, 150, 235);
             Render::DrawGlyph(dl, ImVec2(cx + cw * 0.5f, iconTop + iconBox * 0.5f), iconSz, def->glyph, col);
@@ -223,10 +224,10 @@ void HUD::Render(App& app)
                 if (n > 0)
                 {
                     char nb[8]; std::snprintf(nb, sizeof(nb), "%d", n > 99 ? 99 : n);
-                    const float br = 7.f;
-                    const ImVec2 bc(cx + cw * 0.5f + iconBox * 0.5f - br + 2.f, iconTop + iconBox * 0.5f - br - 1.f);
+                    const float br = 7.f * ui;
+                    const ImVec2 bc(cx + cw * 0.5f + iconBox * 0.5f - br + 2.f * ui, iconTop + iconBox * 0.5f - br - 1.f * ui);
                     dl->AddCircleFilled(bc, br, IM_COL32(150, 40, 36, 240), 12);
-                    dl->AddCircle(bc, br, Gw2Ui::Alpha(Gw2Ui::kGold, 200), 12, 1.2f);
+                    dl->AddCircle(bc, br, Gw2Ui::Alpha(Gw2Ui::kGold, 200), 12, 1.2f * ui);
                     Gw2Ui::LabelDL(dl, ImVec2(bc.x - br, bc.y - br), ImVec2(bc.x + br, bc.y + br), nb,
                                    Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, IM_COL32(255, 240, 220, 255), false, nullptr, 14.f);
                 }
@@ -254,9 +255,9 @@ void HUD::Render(App& app)
             panel(x, centerW, y0, centerH, IM_COL32(198, 166, 94, 235));
             if (hasSec)
             {
-                Gw2Ui::LabelDL(dl, ImVec2(cMin.x, midY - 18.f), ImVec2(cMax.x, midY + 6.f), primStr.c_str(),
+                Gw2Ui::LabelDL(dl, ImVec2(cMin.x, midY - 18.f * ui), ImVec2(cMax.x, midY + 6.f * ui), primStr.c_str(),
                                Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, IM_COL32(255, 236, 188, 255), false, nullptr, primFs);
-                Gw2Ui::LabelDL(dl, ImVec2(cMin.x, midY + 6.f), ImVec2(cMax.x, midY + 22.f), secStr.c_str(),
+                Gw2Ui::LabelDL(dl, ImVec2(cMin.x, midY + 6.f * ui), ImVec2(cMax.x, midY + 22.f * ui), secStr.c_str(),
                                Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, IM_COL32(184, 200, 224, 235), false, nullptr, secFs);
             }
             else

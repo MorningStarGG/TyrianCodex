@@ -193,13 +193,15 @@ void Search::DrawFilterBar(App& app, Filters& f, bool compact)
     // takes its content width and region gets the rest as its max, so the pair always fits without stacking.
     // Status: All / Recommended (in-band + incomplete) / Incomplete -- Recommended needs an API key.
     static const char* kStatus[] = { "All zones", "Recommended", "Incomplete" };
+    const float ui = Gw2Ui::GlobalScale();
     float statusW = 0.f;
     for (const char* s : kStatus) statusW = std::max(statusW, Gw2Ui::MeasureWidth(s, 18.f));
-    statusW += 36.f;
-    Gw2Ui::Dropdown("##atlasregion", regions.data(), (int)regions.size(), &f.regionSel, std::max(120.f, availW - statusW - 8.f),
-                    sectionAt, sectionLabel, sectionCount);
-    ImGui::SameLine(0.f, 8.f);
-    Gw2Ui::Dropdown("##atlasstatus", kStatus, 3, &f.statusSel, statusW);
+    statusW += 36.f * ui;
+    const float rowGap = 8.f * ui;
+    Gw2Ui::DropdownPx("##atlasregion", regions.data(), (int)regions.size(), &f.regionSel, std::max(120.f * ui, availW - statusW - rowGap),
+                      sectionAt, sectionLabel, sectionCount);
+    ImGui::SameLine(0.f, rowGap);
+    Gw2Ui::DropdownPx("##atlasstatus", kStatus, 3, &f.statusSel, statusW);
     ImGui::Spacing();
     // Level-range slider: keep entries whose owning-zone band overlaps it (1-80 = off). A manual range browse,
     // independent of the status dropdown.

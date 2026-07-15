@@ -33,7 +33,8 @@ void DashW::AltEquipment(App& app, float w)
     if (it == m.equip.end() || !it->second.have)
     { Gw2Ui::Label("Loading equipment...", Gw2Ui::kTextDim, false, nullptr, 14.f); return; }
 
-    const float cell = 34.f, gap = 4.f;
+    const float ui = Gw2Ui::GlobalScale();
+    const float cell = 34.f * ui, gap = 4.f * ui;
     const int cols = std::max(1, (int)((w + gap) / (cell + gap)));
     int n = 0;
     for (const Api::V2::ItemSlot& s : it->second.pieces)
@@ -48,6 +49,6 @@ void DashW::AltEquipment(App& app, float w)
     if (n == 0) { Gw2Ui::Label("No equipped items.", Gw2Ui::kTextDim, false, nullptr, 14.f); return; }
 
     ImGui::Spacing();
-    if (Gw2Ui::ActionButton("Open Equipment", w, 24.f, Gw2Ui::ActionButtonVariant::Primary, "Open this character's equipment in the Items tab"))
+    if (Gw2Ui::ActionButtonPx("Open Equipment", w, Gw2Ui::Scaled(24.f), Gw2Ui::ActionButtonVariant::Primary, "Open this character's equipment in the Items tab"))
     { SetEquipmentChar(name.c_str()); OpenItemsTab(app, 2); }
 }

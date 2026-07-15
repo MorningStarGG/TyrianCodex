@@ -61,14 +61,15 @@ namespace Gw2Ui
         void DrawToolbar(const ToolbarSpec& d)
         {
             const float barW = ImGui::GetContentRegionAvail().x;
-            const float gap = 8.f, gridW = 70.f, sortW = 132.f, dirW = 60.f, h = InputBoxHeight();
+            const float sc = TextScale();
+            const float gap = 8.f * sc, gridW = 70.f * sc, sortW = 132.f, dirW = 60.f * sc, h = InputBoxHeight();
 
             // A dropdown AUTO-FITS to its longest item -- its `width` is only a MAX (see Gw2Ui::Dropdown). So the
             // cluster width must use the SAME fit; a too-wide estimate would leave a gap before the right-pinned
             // grid button. Mirror the Dropdown fit: longest item (18px) + 36 (pads + arrow), capped at the max.
-            auto ddFit = [](const char* const* opts, int n, float maxW) {
+            auto ddFit = [sc](const char* const* opts, int n, float maxW) {
                 float c = 0.f; for (int i = 0; i < n; ++i) c = std::max(c, MeasureWidth(opts[i], 18.f));
-                c += 36.f; const float w = (maxW > 0.f) ? std::min(maxW, c) : c; return std::max(w, 40.f);
+                c += 36.f * sc; const float w = (maxW > 0.f) ? std::min(maxW * sc, c) : c; return std::max(w, 40.f * sc);
             };
 
             // The right-hand cluster width: filters + (sort + asc) + grid|list.
@@ -85,17 +86,17 @@ namespace Gw2Ui
                     if (!first) ImGui::SameLine(0.f, gap);
                     const GalleryBrowser::FilterDropdown& f = d.filters[i];
                     const std::string fid = std::string("##gf") + std::to_string(i);
-                    Dropdown(fid.c_str(), f.options, f.count, f.selected, f.width, nullptr, nullptr, 0, h);
+                    DropdownPx(fid.c_str(), f.options, f.count, f.selected, ddFit(f.options, f.count, f.width), nullptr, nullptr, 0, h);
                     first = false;
                 }
                 if (d.sortOptions && d.sortCount > 0)
                 {
                     if (!first) ImGui::SameLine(0.f, gap);
-                    Dropdown("##gsort", d.sortOptions, d.sortCount, d.sortSelected, sortW, nullptr, nullptr, 0, h);
+                    DropdownPx("##gsort", d.sortOptions, d.sortCount, d.sortSelected, ddFit(d.sortOptions, d.sortCount, sortW), nullptr, nullptr, 0, h);
                     if (d.sortAsc)
                     {
                         ImGui::SameLine(0.f, gap);
-                        if (ActionButton(*d.sortAsc ? "Asc" : "Desc", dirW, h)) { *d.sortAsc = !*d.sortAsc; if (d.settingsDirty) *d.settingsDirty = true; }
+                        if (ActionButtonPx(*d.sortAsc ? "Asc" : "Desc", dirW, h)) { *d.sortAsc = !*d.sortAsc; if (d.settingsDirty) *d.settingsDirty = true; }
                     }
                     first = false;
                 }
@@ -103,13 +104,13 @@ namespace Gw2Ui
                 {
                     SameLineRightCluster(gridW);
                     const bool grid = (*d.viewMode == 0);
-                    if (ActionButton(grid ? "Grid" : "List", gridW, h)) { *d.viewMode = grid ? 1 : 0; if (d.settingsDirty) *d.settingsDirty = true; }
+                    if (ActionButtonPx(grid ? "Grid" : "List", gridW, h)) { *d.viewMode = grid ? 1 : 0; if (d.settingsDirty) *d.settingsDirty = true; }
                 }
             };
 
             // search fills the row; the cluster sits right (one row) or wraps below (narrow). searchW+gap places
             // the cluster start at barW-clusterW, so the cluster is a tight right-aligned group.
-            const bool inlineCluster = (clusterW <= 0.f) || barW >= 180.f + clusterW + gap;
+            const bool inlineCluster = (clusterW <= 0.f) || barW >= 180.f * sc + clusterW + gap;
             if (d.search && d.searchBuf)
             {
                 const float searchW = (inlineCluster && clusterW > 0.f) ? (barW - clusterW - gap) : barW;

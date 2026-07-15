@@ -27,6 +27,7 @@ struct Config
     int itemsView = 1;                                       // Items tab: 0 icon grid, 1 details list (internal UI state)
     std::map<std::string, bool> inventorySingleGridBySource; // Inventory tab: per-source combined-grid toggle
     std::map<std::string, float> uiPaneWidths;               // resizable rail/column widths by stable key (Gw2Ui::VSplitter)
+    float uiScale = 1.0f;                                    // global screen-space UI scale (all characters; local size settings stack on top)
 
     // Persisted width for a draggable rail/column by stable key; seeds `def` on first use and returns a
     // reference so the resize helper edits it in place (the caller marks settingsDirty on change).

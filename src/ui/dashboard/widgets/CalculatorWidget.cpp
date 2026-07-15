@@ -44,23 +44,24 @@ namespace
 void DashW::Calculator(App& /*app*/, float w)
 {
     ImDrawList* dl = ImGui::GetWindowDrawList();
+    const float ui = Gw2Ui::GlobalScale();
 
     // display (right-aligned, with the pending op shown faintly on the left)
-    const float dispH = 32.f;
+    const float dispH = 32.f * ui;
     const ImVec2 p = ImGui::GetCursorScreenPos();
     ImGui::Dummy(ImVec2(w, dispH));
     dl->AddRectFilled(p, ImVec2(p.x + w, p.y + dispH), IM_COL32(6, 8, 7, 224), 4.f);
     dl->AddRect(p, ImVec2(p.x + w, p.y + dispH), IM_COL32(150, 124, 70, 160), 4.f);
-    if (g_op) { char o[2] = { g_op == '*' ? 'x' : g_op, 0 }; Gw2Ui::LabelDL(dl, ImVec2(p.x + 8.f, p.y), ImVec2(p.x + 24.f, p.y + dispH), o, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(180, 150, 100, 220), false, nullptr, 16.f); }
+    if (g_op) { char o[2] = { g_op == '*' ? 'x' : g_op, 0 }; Gw2Ui::LabelDL(dl, ImVec2(p.x + 8.f * ui, p.y), ImVec2(p.x + 24.f * ui, p.y + dispH), o, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(180, 150, 100, 220), false, nullptr, 16.f); }
     const std::string disp = g_err ? "Error" : (!g_entry.empty() ? g_entry : Fmt(g_acc));
-    Gw2Ui::LabelDL(dl, ImVec2(p.x + 26.f, p.y), ImVec2(p.x + w - 8.f, p.y + dispH), disp.c_str(),
+    Gw2Ui::LabelDL(dl, ImVec2(p.x + 26.f * ui, p.y), ImVec2(p.x + w - 8.f * ui, p.y + dispH), disp.c_str(),
                    Gw2Ui::HAlign::Right, Gw2Ui::VAlign::Middle, IM_COL32(238, 232, 212, 255), false, nullptr, 20.f);
     ImGui::Spacing();
 
-    const float gap = 5.f;
+    const float gap = 5.f * ui;
     const float bw = (w - 3.f * gap) / 4.f;
-    const float bh = 27.f;
-    auto B = [&](const char* lbl, Gw2Ui::ActionButtonVariant v = Gw2Ui::ActionButtonVariant::Normal) { return Gw2Ui::ActionButton(lbl, bw, bh, v); };
+    const float bh = 27.f * ui;
+    auto B = [&](const char* lbl, Gw2Ui::ActionButtonVariant v = Gw2Ui::ActionButtonVariant::Normal) { return Gw2Ui::ActionButtonPx(lbl, bw, bh, v); };
 
     // Row 1: C  DEL  /  x
     if (B("C"))   Clear();      ImGui::SameLine(0.f, gap);
@@ -83,6 +84,6 @@ void DashW::Calculator(App& /*app*/, float w)
     if (B("3")) Digit('3'); ImGui::SameLine(0.f, gap);
     if (B("=", Gw2Ui::ActionButtonVariant::Primary)) Equals();
     // Row 5: 0 (wide) .
-    if (Gw2Ui::ActionButton("0", bw * 2.f + gap, bh)) Digit('0'); ImGui::SameLine(0.f, gap);
+    if (Gw2Ui::ActionButtonPx("0", bw * 2.f + gap, bh)) Digit('0'); ImGui::SameLine(0.f, gap);
     if (B(".")) Dot();
 }

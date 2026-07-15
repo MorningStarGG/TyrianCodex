@@ -13,7 +13,7 @@
 #define TC_VER_MAJOR    1
 #define TC_VER_MINOR    0
 #define TC_VER_BUILD    0
-#define TC_VER_REVISION 0
+#define TC_VER_REVISION 1
 
 // "0.1.0.0" -- used as the cache-version marker (ImageCache).
 #define TC_STRINGIZE2(x) #x

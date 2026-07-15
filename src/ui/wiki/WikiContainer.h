@@ -19,6 +19,7 @@ namespace Wiki
         void SetViewport(ImVec2 size) { m_viewport = size; }
         void SetBaseUrl(std::string url) { m_baseUrl = std::move(url); }
         void SetMinimumFontSize(float px) { m_minFontSize = px; }
+        void SetContentScale(float scale);
         void ResetFrame();
 
         std::string TakeClickedUrl();
@@ -111,6 +112,7 @@ namespace Wiki
         ImVec2 m_origin = ImVec2(0.f, 0.f);
         ImVec2 m_viewport = ImVec2(900.f, 650.f);
         float m_minFontSize = 16.f;   // floor (was 12) -- no wiki text smaller/blurrier than a clean 16px
+        float m_contentScale = 1.f;    // scales litehtml text/image layout through real relayout, not stretched output
         std::string m_baseUrl = "https://wiki.guildwars2.com/wiki/";
         std::string m_caption;
         std::string m_clickedUrl;

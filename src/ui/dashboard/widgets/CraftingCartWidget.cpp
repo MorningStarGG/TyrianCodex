@@ -21,17 +21,18 @@ namespace
 {
     bool CartToggle(const char* id, const char* label, bool* v, const char* tip, float w)
     {
-        const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFrame(id, ImVec2(w, 26.f), Gw2Ui::ActionButtonVariant::Normal, false, tip);
+        const float ui = Gw2Ui::GlobalScale();
+        const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFramePx(id, ImVec2(w, Gw2Ui::Scaled(26.f)), Gw2Ui::ActionButtonVariant::Normal, false, tip);
         ImDrawList* dl = ImGui::GetWindowDrawList();
         if (*v)
         {
-            dl->AddRectFilled(r.min, r.max, IM_COL32(88, 62, 22, 62), 3.f);
-            dl->AddRect(r.min, r.max, Gw2Ui::Alpha(Gw2Ui::kGold, 220), 3.f, 0, 1.45f);
-            dl->AddRect(ImVec2(r.min.x + 1.f, r.min.y + 1.f), ImVec2(r.max.x - 1.f, r.max.y - 1.f), Gw2Ui::Alpha(Gw2Ui::kGold, 70), 2.f, 0, 1.f);
+            dl->AddRectFilled(r.min, r.max, IM_COL32(88, 62, 22, 62), 3.f * ui);
+            dl->AddRect(r.min, r.max, Gw2Ui::Alpha(Gw2Ui::kGold, 220), 3.f * ui, 0, 1.45f * ui);
+            dl->AddRect(ImVec2(r.min.x + ui, r.min.y + ui), ImVec2(r.max.x - ui, r.max.y - ui), Gw2Ui::Alpha(Gw2Ui::kGold, 70), 2.f * ui, 0, ui);
         }
         const ImU32 textCol = *v ? Gw2Ui::kGold
                             : ((r.hovered || r.held) ? IM_COL32(255, 232, 184, 255) : IM_COL32(225, 209, 176, 248));
-        Gw2Ui::LabelIn(ImVec2(r.min.x + 8.f, r.min.y), ImVec2(r.max.x - 8.f, r.max.y), label,
+        Gw2Ui::LabelIn(ImVec2(r.min.x + 8.f * ui, r.min.y), ImVec2(r.max.x - 8.f * ui, r.max.y), label,
                        Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, textCol, true, nullptr, 16.f);
         if (r.clicked) { *v = !*v; return true; }
         return false;
@@ -66,11 +67,12 @@ void DashW::CraftingCart(App& app, float w)
         std::vector<const char*> cn; cn.reserve(names.size());
         int sel = 0;
         for (int i = 0; i < (int)names.size(); ++i) { cn.push_back(names[i].c_str()); if (names[i] == active) sel = i; }
-        const float openW = 58.f;
-        if (Gw2Ui::Dropdown("##dwcartproj", cn.data(), (int)cn.size(), &sel, w - openW - 6.f) && sel >= 0 && sel < (int)names.size())
+        const float openW = Gw2Ui::Scaled(58.f);
+        const float gap = Gw2Ui::Scaled(6.f);
+        if (Gw2Ui::DropdownPx("##dwcartproj", cn.data(), (int)cn.size(), &sel, w - openW - gap) && sel >= 0 && sel < (int)names.size())
             CraftCart::SetActive(names[sel]);
-        ImGui::SameLine(0.f, 6.f);
-        if (Gw2Ui::ActionButton("Open", openW, 26.f, Gw2Ui::ActionButtonVariant::Primary, "Open the cart in Trading Post -> Crafting")) OpenCraftingCart(app);
+        ImGui::SameLine(0.f, gap);
+        if (Gw2Ui::ActionButtonPx("Open", openW, Gw2Ui::Scaled(26.f), Gw2Ui::ActionButtonVariant::Primary, "Open the cart in Trading Post -> Crafting")) OpenCraftingCart(app);
     }
 
     const CraftCartSummary::Summary& s = CraftCartSummary::Get(app);
@@ -80,7 +82,7 @@ void DashW::CraftingCart(App& app, float w)
         char ln[96];
         std::snprintf(ln, sizeof(ln), "%d item%s   to buy %s", s.itemCount, s.itemCount == 1 ? "" : "s", Trading::Coins(s.stillNeed).c_str());
         Gw2Ui::Label(ln, IM_COL32(228, 222, 204, 255), false, nullptr, 14.f);
-        const float toggleW = std::min(w, narrow ? 118.f : 150.f);
+        const float toggleW = std::min(w, Gw2Ui::Scaled(narrow ? 118.f : 150.f));
         if (CartToggle("##dwcartbyitem", narrow ? "By item" : "Group by item", &app.config.craftShopByItem,
                        "Show materials grouped per cart item instead of one flat list", toggleW))
             app.settingsDirty = true;

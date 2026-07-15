@@ -265,28 +265,30 @@ void DrawAtlasContent(App& app)
 
     // ---- toolbar: [Expand/Collapse all (grouped)]  .....  [Flat/Grouped toggle (search)]  [count] ----
     {
-        const float th = 26.f;
+        const float ui = Gw2Ui::GlobalScale();
+        const float th = 26.f * ui;
         if (grouped)
         {
             const bool anyOpen = !open.empty();
-            if (Gw2Ui::ActionButton(anyOpen ? "Collapse all" : "Expand all", 124.f, th))
+            if (Gw2Ui::ActionButtonPx(anyOpen ? "Collapse all" : "Expand all", 124.f * ui, th))
             { if (anyOpen) open.clear(); else SeedAllOpen(open, res, all, zoneHeaders); }
         }
         else ImGui::Dummy(ImVec2(1.f, th));
 
         char cnt[48]; std::snprintf(cnt, sizeof(cnt), "%d %s", (int)res.size(), heading);
-        const float cntW = Gw2Ui::MeasureWidth(cnt, 16.f) + 4.f;
-        const float grpW = 104.f;
-        const float rightW = cntW + (browse ? 0.f : grpW + 8.f);
+        const float cntW = Gw2Ui::MeasureWidth(cnt, 16.f) + 4.f * ui;
+        const float grpW = 104.f * ui;
+        const float gap = 8.f * ui;
+        const float rightW = cntW + (browse ? 0.f : grpW + gap);
         Gw2Ui::SameLineRightCluster(rightW);   // right-align the cluster only if it fits; else leave it beside the button (no left-overlap, no right-overflow)
         if (!browse)   // search: the flat/grouped toggle, beside the count
         {
-            if (Gw2Ui::ActionButton(g_searchGroup ? "Grouped" : "Flat list", grpW, th))
+            if (Gw2Ui::ActionButtonPx(g_searchGroup ? "Grouped" : "Flat list", grpW, th))
             {
                 g_searchGroup = !g_searchGroup;
                 if (g_searchGroup && g_searchOpen.empty()) SeedAllOpen(g_searchOpen, res, all, zoneHeaders);   // grouping -> start expanded
             }
-            ImGui::SameLine(0.f, 8.f);
+            ImGui::SameLine(0.f, gap);
         }
         const ImVec2 cp = ImGui::GetCursorScreenPos();
         Gw2Ui::LabelIn(cp, ImVec2(cp.x + cntW, cp.y + th), cnt, Gw2Ui::HAlign::Right, Gw2Ui::VAlign::Middle,

@@ -39,7 +39,7 @@ void DashW::SessionEarnings(App& app, float w)
         Gw2Ui::Label("No earnings yet this session.", Gw2Ui::kTextDim, false, nullptr, 14.f);
 
     ImGui::Spacing();
-    if (Gw2Ui::ActionButton("Reset", w, 22.f, Gw2Ui::ActionButtonVariant::Normal, "Re-baseline now (zero the session deltas)"))
+    if (Gw2Ui::ActionButtonPx("Reset", w, Gw2Ui::Scaled(22.f), Gw2Ui::ActionButtonVariant::Normal, "Re-baseline now (zero the session deltas)"))
         SessionTracker::Reset(app);
     DashApi::Freshness(AccountData::Get().walletAt);
 }

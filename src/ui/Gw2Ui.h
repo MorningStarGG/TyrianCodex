@@ -105,10 +105,17 @@ namespace Gw2Ui
     ImFont *UiFontResolved();
     ImFont *StockFont();
 
-    // Global text-scale multiplier: every Label/LabelIn/LabelDL fontSize AND MeasureWrappedHeight/MeasureWidth
-    // result is multiplied by the current scale, so a caller can enlarge a whole region's text uniformly and
-    // the measured row heights grow with it. Push/Pop are balanced (a stack); default 1.0. Used by the
-    // dashboard panel for its user "text size" setting. ProgressBar honours it too (via TextScale()).
+    // Global screen-space UI scale. This is set once per frame from Config::uiScale and applies to Tyrian Codex
+    // UI only; it does not touch ImGui's shared global font/style state.
+    void SetGlobalScale(float s);
+    float GlobalScale();
+    float Scaled(float px);
+    float Unscaled(float px);
+
+    // Text-scale multiplier: every Label/LabelIn/LabelDL fontSize AND MeasureWrappedHeight/MeasureWidth result
+    // is multiplied by GlobalScale() * the current local stack value, so a caller can enlarge a region's text
+    // uniformly and the measured row heights grow with it. Push/Pop are balanced (a stack); default local 1.0.
+    // PushTextScale(1.0f) neutralizes ambient/local scale but still honors the global UI scale.
     void PushTextScale(float s);
     void PopTextScale();
     float TextScale();
@@ -497,7 +504,9 @@ namespace Gw2Ui
 
     // Tyrian Codex action button: the shared non-settings button frame. Use ActionButton() for plain text
     // actions; use ActionButtonFrame() when a caller needs to draw custom contents such as icons inside the
-    // same hover/border/fill treatment.
+    // same hover/border/fill treatment. The normal variants take logical design units and apply GlobalScale().
+    // Use the *Px variants when the caller already has a screen-pixel width/height from GetContentRegionAvail(),
+    // FillWidth(), split columns, or dashboard/widget body layout. That avoids double-scaling responsive rows.
     enum class ActionButtonVariant
     {
         Normal,
@@ -514,13 +523,19 @@ namespace Gw2Ui
     };
     ActionButtonResult ActionButtonFrame(const char *id, ImVec2 size, ActionButtonVariant variant = ActionButtonVariant::Normal,
                                          bool disabled = false, const char *tooltip = nullptr);
+    ActionButtonResult ActionButtonFramePx(const char *id, ImVec2 sizePx, ActionButtonVariant variant = ActionButtonVariant::Normal,
+                                           bool disabled = false, const char *tooltip = nullptr);
     bool ActionButton(const char *label, float width = 128.f, float height = 26.f,
                       ActionButtonVariant variant = ActionButtonVariant::Normal,
                       const char *tooltip = nullptr, bool disabled = false);
+    bool ActionButtonPx(const char *label, float widthPx, float heightPx,
+                        ActionButtonVariant variant = ActionButtonVariant::Normal,
+                        const char *tooltip = nullptr, bool disabled = false);
 
     // Legacy/settings GW2 StandardButton: the 9-frame button-states atlas (hover animates frame 0->8
     // over 0.25s) inside the 4-edge button-border, with black centered text. Returns true when clicked.
     bool Button(const char *label, float width = 128.f, float height = 26.f);
+    bool ButtonPx(const char *label, float widthPx, float heightPx);
 
     // GW2 TextBox: the GW2 input-box texture skinning an ImGui::InputText (which supplies the cursor /
     // selection / keyboard) in the GW2 font. Returns true while the text changes. `buf` is edited in place.
@@ -543,6 +558,9 @@ namespace Gw2Ui
     bool Dropdown(const char *id, const char *const *items, int itemCount, int *selected, float width = 250.f,
                   const int *sectionAt = nullptr, const char *const *sectionLabel = nullptr, int sectionCount = 0,
                   float height = 27.f); // height: the box height, raise it to line up with a SearchBox row
+    bool DropdownPx(const char *id, const char *const *items, int itemCount, int *selected, float widthPx,
+                    const int *sectionAt = nullptr, const char *const *sectionLabel = nullptr, int sectionCount = 0,
+                    float heightPx = 0.f);
 
     // GW2 KeybindingAssigner: a name panel + a hotkey panel (both subtle white fills; the hotkey
     // brightens on hover) with the bind text centered. Double-click the hotkey region to capture a new
@@ -650,8 +668,9 @@ namespace Gw2Ui
 
     // Return the top-left for a right-aligned row element. If itemHeight > 0 it is vertically centered in row.
     ImVec2 RowRight(const RowHotspot &row, float itemWidth, float itemHeight = 0.f, float rightInset = 0.f);
-    // Common two-column label/value row. Uses ContentWidth(), reserves the measured value width, clips the label,
-    // and right-aligns the value to the same row edge in every card/dashboard context.
+    // Common two-column label/value row. Uses ContentWidth(), scales the logical row height/insets with
+    // TextScale(), reserves the measured value width, clips the label, and right-aligns the value to the same
+    // row edge in every card/dashboard context.
     void TextValueRow(const char *label, const char *value, float width = 0.f, float height = 18.f,
                       float fontSize = 14.f,
                       ImU32 labelColor = Gw2Ui::kTextSub,

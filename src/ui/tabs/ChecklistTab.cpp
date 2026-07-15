@@ -512,14 +512,19 @@ void DrawChecklistContent(App &app)
         std::string relP, regP, zoneP;
         const bool haveZone = ChkFindZonePaths(CurrentMapId(), relP, regP, zoneP);
         const ImVec2 rowP = ImGui::GetCursorScreenPos();
-        const float btnW = 132.f, gap = 8.f, rh = Gw2Ui::InputBoxHeight();
-        const float searchW = std::max(120.f, fullW - btnW - gap);
+        const float ui = Gw2Ui::GlobalScale();
+        const float btnW = 132.f * ui, gap = 8.f * ui, rh = Gw2Ui::InputBoxHeight();
+        const bool inlineRow = fullW >= 120.f * ui + gap + btnW;
+        const float searchW = inlineRow ? std::max(120.f * ui, fullW - btnW - gap) : fullW;
         Gw2Ui::SearchBox("##chksearch", g_chkSearch, sizeof(g_chkSearch), searchW, "Search objectives...");
-        ImGui::SetCursorScreenPos(ImVec2(rowP.x + searchW + gap, rowP.y));
-        const bool jump = Gw2Ui::ActionButton("Current zone", btnW, rh, Gw2Ui::ActionButtonVariant::Normal,
-                                              haveZone ? "Expand and scroll to the zone you're in" : "Enter a guided zone first",
-                                              /*disabled*/ !haveZone);
-        ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + rh)); // next element starts below the whole row
+        if (inlineRow)
+            ImGui::SetCursorScreenPos(ImVec2(rowP.x + searchW + gap, rowP.y));
+        else
+            ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + rh + 4.f * ui));
+        const bool jump = Gw2Ui::ActionButtonPx("Current zone", inlineRow ? btnW : fullW, rh, Gw2Ui::ActionButtonVariant::Normal,
+                                                haveZone ? "Expand and scroll to the zone you're in" : "Enter a guided zone first",
+                                                /*disabled*/ !haveZone);
+        ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + rh + (inlineRow ? 0.f : rh + 4.f * ui))); // next element starts below the whole row
         if (jump && haveZone)
         {
             g_chkSearch[0] = '\0';

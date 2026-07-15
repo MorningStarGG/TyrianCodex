@@ -1391,27 +1391,29 @@ static void SelectJournalStory(App &app, int id)
 // (shown ticked + non-interactive). Returns true when the user toggled it (caller persists *checked).
 static bool JournalCompleteRow(const char *label, bool *checked, bool locked)
 {
+    const float sc = Gw2Ui::TextScale();
     const float avail = ImGui::GetContentRegionAvail().x;
-    const float h = 50.f, box = 32.f, lblFs = 18.f;
+    const float h = 50.f * sc, box = 32.f * sc, lblFs = 18.f;
+    const float padX = 14.f * sc, gap = 10.f * sc;
     const float labelW = Gw2Ui::MeasureWidth(label, lblFs);
-    const float w = std::min(avail, 14.f + box + 10.f + labelW + 18.f); // fit content: pad+box+gap+label+pad
+    const float w = std::min(avail, padX + box + gap + labelW + 18.f * sc); // fit content: pad+box+gap+label+pad
     const ImVec2 cur = ImGui::GetCursorScreenPos();
     const ImVec2 p(cur.x + (avail - w) * 0.5f, cur.y); // centre the panel in the detail pane
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const bool done = checked && *checked;
-    dl->AddRectFilled(p, ImVec2(p.x + w, p.y + h), done ? IM_COL32(30, 52, 33, 190) : IM_COL32(26, 26, 30, 150), 5.f);
-    dl->AddRect(p, ImVec2(p.x + w, p.y + h), done ? IM_COL32(96, 165, 104, 210) : IM_COL32(96, 90, 80, 200), 5.f);
-    const ImVec2 boxP(p.x + 14.f, p.y + (h - box) * 0.5f);
+    dl->AddRectFilled(p, ImVec2(p.x + w, p.y + h), done ? IM_COL32(30, 52, 33, 190) : IM_COL32(26, 26, 30, 150), 5.f * sc);
+    dl->AddRect(p, ImVec2(p.x + w, p.y + h), done ? IM_COL32(96, 165, 104, 210) : IM_COL32(96, 90, 80, 200), 5.f * sc, 0, sc);
+    const ImVec2 boxP(p.x + padX, p.y + (h - box) * 0.5f);
     ImGui::SetCursorScreenPos(boxP);
     bool toggled = false;
     if (locked)
         Gw2Ui::PaintCheckbox(boxP, box, 1, false); // ticked, non-interactive
     else
         toggled = Gw2Ui::Checkbox("##jdone", checked);
-    Gw2Ui::LabelIn(ImVec2(boxP.x + box + 10.f, p.y), ImVec2(p.x + w - 8.f, p.y + h), label,
+    Gw2Ui::LabelIn(ImVec2(boxP.x + box + gap, p.y), ImVec2(p.x + w - 8.f * sc, p.y + h), label,
                    Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle,
                    done ? IM_COL32(175, 224, 181, 255) : IM_COL32(235, 230, 215, 255), false, nullptr, lblFs);
-    ImGui::SetCursorScreenPos(ImVec2(cur.x, p.y + h + 6.f));
+    ImGui::SetCursorScreenPos(ImVec2(cur.x, p.y + h + 6.f * sc));
     return toggled;
 }
 

@@ -130,11 +130,12 @@ namespace
 
     bool DrawSubsectionMenuItem(const char *label, bool selected, int rowIndex)
     {
-        const float h = 28.f;
+        const float ui = Gw2Ui::GlobalScale();
+        const float h = 28.f * ui;
         const Gw2Ui::RowHotspot row = Gw2Ui::Row(label, rowIndex, h, 0.f, false, selected);
         ImDrawList *dl = ImGui::GetWindowDrawList();
         const ImU32 col = selected ? Gw2Ui::kGold : IM_COL32(190, 182, 162, 245);
-        Gw2Ui::RowLabel(dl, row, 28.f, 6.f, label,
+        Gw2Ui::RowLabel(dl, row, 28.f * ui, 6.f * ui, label,
                         Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, col, false, nullptr, SettingsText::Hint);
         return row.clicked;
     }
@@ -157,7 +158,8 @@ namespace
                 continue; // these draw their label inline (no column)
             maxW = std::max(maxW, Gw2Ui::MeasureWidth(s.name, 0.f));
         }
-        return std::clamp(maxW + 16.f, 250.f, 360.f);
+        const float ui = Gw2Ui::GlobalScale();
+        return std::clamp(maxW + 16.f * ui, 250.f * ui, 360.f * ui);
     }
 
     bool DrawSettingAndApply(App &app, const Setting &s)
@@ -444,9 +446,15 @@ void DrawOptionsContent(App &app)
     const ImVec2 avail = ImGui::GetContentRegionAvail();
     const float w = avail.x, h = avail.y;
     // Draggable, persisted menu/body split (shared Gw2Ui::VSplitter).
-    const float optMaxMenu = std::clamp(w - 300.f, 180.f, 380.f);
+    const float ui = Gw2Ui::GlobalScale();
+    const float bodyMin = std::min(300.f * ui, std::max(180.f, w * 0.58f));
+    const float maxByBody = std::max(120.f * ui, w - bodyMin);
+    const float optMinMenu = std::min(180.f * ui, maxByBody);
+    const float optMaxMenu = std::max(optMinMenu, std::min(380.f * ui, maxByBody));
+    const float panelPad = 5.f * ui;
+    const float panelGap = 7.f * ui;
     float &menuW = app.config.PaneW("opt.menu", 235.f);
-    menuW = std::clamp(menuW, 180.f, optMaxMenu);
+    menuW = std::clamp(menuW, optMinMenu, optMaxMenu);
     const auto &settings = Settings(app);
     const bool searching = g_settingSearch[0] != '\0';
 
@@ -462,8 +470,8 @@ void DrawOptionsContent(App &app)
     // the wrench tab + the right panel's title already say where we are) and, living in the panel's fixed top
     // OUTSIDE the inner scroll child, it's always reachable without scrolling past the categories. The category
     // list scrolls in its own child below it.
-    ImGui::SetCursorScreenPos(ImVec2(origin.x + 5.f, origin.y + 5.f));
-    if (Gw2Ui::BeginPanel("##optmenu", menuW, h - 10.f, nullptr))
+    ImGui::SetCursorScreenPos(ImVec2(origin.x + panelPad, origin.y + panelPad));
+    if (Gw2Ui::BeginPanel("##optmenu", menuW, h - panelPad * 2.f, nullptr))
     {
         Gw2Ui::SearchBox("##setsearch", g_settingSearch, sizeof(g_settingSearch),
                          ImGui::GetContentRegionAvail().x, "Search settings...");
@@ -471,7 +479,7 @@ void DrawOptionsContent(App &app)
         ImGui::BeginChild("##sectabs", ImGui::GetContentRegionAvail(), false);
         for (int i = 0; i < SEC_COUNT; ++i)
         {
-            if (Gw2Ui::MenuItem(kSections[i], !searching && g_optSection == i, 40.f, i))
+            if (Gw2Ui::MenuItem(kSections[i], !searching && g_optSection == i, 40.f * ui, i))
             {
                 g_optSection = i;
                 g_optGroup.clear();
@@ -520,7 +528,9 @@ void DrawOptionsContent(App &app)
     }
 
     // RIGHT: the selected section's settings, or the cross-section search results.
-    ImGui::SetCursorScreenPos(ImVec2(origin.x + menuW + 12.f, origin.y + 5.f));
+    const float bodyX = origin.x + panelPad + menuW + panelGap;
+    const float bodyW = std::max(120.f * ui, w - panelPad * 2.f - panelGap - menuW);
+    ImGui::SetCursorScreenPos(ImVec2(bodyX, origin.y + panelPad));
     const std::vector<GroupInfo> activeGroups = GroupsForSection(settings, g_optSection);
     const char *activeGroupName = GroupNameForId(activeGroups, g_optGroup);
     if (!activeGroupName && g_optSection == SEC_INFO && !g_optGroup.empty())
@@ -536,7 +546,7 @@ void DrawOptionsContent(App &app)
         std::snprintf(panelTitle, sizeof(panelTitle), "%s / %s", kSections[g_optSection], activeGroupName);
     else
         std::snprintf(panelTitle, sizeof(panelTitle), "%s", kSections[g_optSection]);
-    if (!Gw2Ui::BeginPanel("##optbody", w - menuW - 17.f, h - 10.f,
+    if (!Gw2Ui::BeginPanel("##optbody", bodyW, h - panelPad * 2.f,
                            panelTitle))
         return;
 
@@ -547,7 +557,7 @@ void DrawOptionsContent(App &app)
             for (const Setting &s : settings)
                 if (s.kind != SKind::Bool && s.kind != SKind::Keybind && SettingMatches(s, qLower))
                     maxW = std::max(maxW, Gw2Ui::MeasureWidth(s.name, 0.f));
-            g_settingsLabelCol = std::clamp(maxW + 16.f, 250.f, 360.f);
+            g_settingsLabelCol = std::clamp(maxW + 16.f * ui, 250.f * ui, 360.f * ui);
         }
         int hits = 0, cardN = 0;
         std::string lastHeader;
@@ -694,7 +704,8 @@ void DrawOptionsContent(App &app)
     Gw2Ui::EndPanel();
 
     // Splitter handle in the gap between the menu and body panels.
-    if (Gw2Ui::VSplitter("##opt_menu_split", origin.x + menuW + 8.5f, origin.y + 5.f, h - 10.f, &menuW, 180.f, optMaxMenu))
+    if (Gw2Ui::VSplitter("##opt_menu_split", origin.x + panelPad + menuW + panelGap * 0.5f, origin.y + panelPad,
+                         h - panelPad * 2.f, &menuW, optMinMenu, optMaxMenu))
         app.settingsDirty = true;
 }
 

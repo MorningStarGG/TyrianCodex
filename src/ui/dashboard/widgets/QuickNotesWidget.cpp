@@ -637,13 +637,13 @@ namespace
         for (const Note& n : g_notes) names.push_back(n.title.c_str());
 
         const float sc = Gw2Ui::TextScale();
-        const float btn = 18.f;
+        const float btn = 18.f * sc;
         const float gap = 5.f * sc;
         const float actionsW = btn * 4.f + gap * 4.f;
-        const float ddW = std::max(72.f, width - actionsW);
+        const float ddW = std::max(72.f * sc, width - actionsW);
         const ImVec2 p = ImGui::GetCursorScreenPos();
         int sel = std::max(0, ActiveIndex());
-        if (Gw2Ui::Dropdown("##qnsel", names.data(), (int)names.size(), &sel, ddW))
+        if (Gw2Ui::DropdownPx("##qnsel", names.data(), (int)names.size(), &sel, ddW))
         {
             sel = std::clamp(sel, 0, (int)g_notes.size() - 1);
             g_activeId = g_notes[sel].id;

@@ -193,8 +193,9 @@ namespace
     // remembering `loneKey` so the chosen widget becomes its half partner.
     void DrawAddPlaceholder(float w, const std::string& loneKey)
     {
+        const float sc = Gw2Ui::TextScale();
         const ImVec2 p = ImGui::GetCursorScreenPos();
-        const float h = 54.f;
+        const float h = 54.f * sc;
         ImGui::PushID(("add_" + loneKey).c_str());
         const bool clicked = ImGui::InvisibleButton("##addslot", ImVec2(w, h));
         const bool hov = ImGui::IsItemHovered();
@@ -202,11 +203,11 @@ namespace
         if (clicked) { g_addReq = true; g_addCtx = loneKey; }
         ImDrawList* dl = ImGui::GetWindowDrawList();
         const ImU32 col = hov ? Gw2Ui::Alpha(Gw2Ui::kGold, 200) : IM_COL32(120, 110, 86, 140);
-        dl->AddRect(p, ImVec2(p.x + w, p.y + h), col, 3.f, 0, 1.2f);
-        const ImVec2 c(p.x + w * 0.5f, p.y + h * 0.5f - 6.f);
-        dl->AddLine(ImVec2(c.x - 6.f, c.y), ImVec2(c.x + 6.f, c.y), col, 1.8f);
-        dl->AddLine(ImVec2(c.x, c.y - 6.f), ImVec2(c.x, c.y + 6.f), col, 1.8f);
-        Gw2Ui::LabelDL(dl, ImVec2(p.x, c.y + 8.f), ImVec2(p.x + w, c.y + 24.f), "Add widget",
+        dl->AddRect(p, ImVec2(p.x + w, p.y + h), col, 3.f * sc, 0, 1.2f * sc);
+        const ImVec2 c(p.x + w * 0.5f, p.y + h * 0.5f - 6.f * sc);
+        dl->AddLine(ImVec2(c.x - 6.f * sc, c.y), ImVec2(c.x + 6.f * sc, c.y), col, 1.8f * sc);
+        dl->AddLine(ImVec2(c.x, c.y - 6.f * sc), ImVec2(c.x, c.y + 6.f * sc), col, 1.8f * sc);
+        Gw2Ui::LabelDL(dl, ImVec2(p.x, c.y + 8.f * sc), ImVec2(p.x + w, c.y + 24.f * sc), "Add widget",
                        Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, col, false, nullptr, 14.f);
     }
 
@@ -222,19 +223,20 @@ namespace
     {
         const bool doInput  = (phase != StripPhase::Visual);
         const bool doVisual = (phase != StripPhase::Input);
-        const float tsz = 18.f, gp = 6.f;
+        const float sc = Gw2Ui::TextScale();
+        const float tsz = 18.f * sc, gp = 6.f * sc, gripSz = 16.f * sc;
         const float yC = at.y + (bandH - tsz) * 0.5f;
         char ctxId[96]; std::snprintf(ctxId, sizeof(ctxId), "##hctx_%s", wdef.key);
 
         // shared geometry (right-to-left): trash | half | chrome | ... | title
-        const ImVec2 gripAt(at.x, at.y + (bandH - 16.f) * 0.5f);
-        float rx = at.x + w - 4.f - tsz;
+        const ImVec2 gripAt(at.x, at.y + (bandH - gripSz) * 0.5f);
+        float rx = at.x + w - 4.f * sc - tsz;
         const ImVec2 trashAt(rx, yC);                  rx -= tsz + gp;
         const bool   hasHalf = wdef.canHalf;
         const ImVec2 halfAt(rx, yC);                   if (hasHalf) rx -= tsz + gp;
         const ImVec2 chromeAt(rx, yC);
         const float  titleRight = rx - gp;
-        const ImVec2 titleAt(at.x + 22.f, at.y);
+        const ImVec2 titleAt(at.x + 22.f * sc, at.y);
 
         StripHover local; StripHover& hv = sh ? *sh : local;
 
@@ -242,7 +244,7 @@ namespace
         {
             ImGui::PushID(wdef.key);
             ImGui::SetCursorScreenPos(gripAt);
-            ImGui::InvisibleButton("##grip", ImVec2(16.f, 16.f));
+            ImGui::InvisibleButton("##grip", ImVec2(gripSz, gripSz));
             hv.grip = ImGui::IsItemHovered();
             if (ImGui::IsItemActivated()) g_dragKey = wdef.key;
             if (ImGui::IsItemClicked(ImGuiMouseButton_Right)) ImGui::OpenPopup(ctxId);
@@ -269,7 +271,7 @@ namespace
             if (chromeClick && sl) { sl->hoverChrome = !sl->hoverChrome; app.settingsDirty = true; }
 
             ImGui::SetCursorScreenPos(titleAt);
-            ImGui::InvisibleButton("##hdr", ImVec2(std::max(10.f, titleRight - at.x - 22.f), bandH));
+            ImGui::InvisibleButton("##hdr", ImVec2(std::max(10.f * sc, titleRight - at.x - 22.f * sc), bandH));
             if (ImGui::IsItemClicked(ImGuiMouseButton_Right)) ImGui::OpenPopup(ctxId);
             ImGui::PopID();
 
@@ -293,16 +295,16 @@ namespace
             ImDrawList* dl = ImGui::GetWindowDrawList();
             if (faint)
             {
-                dl->AddRectFilled(at, ImVec2(at.x + w, at.y + bandH), IM_COL32(22, 19, 13, 226), 3.f);
-                dl->AddRect(at, ImVec2(at.x + w, at.y + bandH), IM_COL32(120, 100, 60, 150), 3.f);
+                dl->AddRectFilled(at, ImVec2(at.x + w, at.y + bandH), IM_COL32(22, 19, 13, 226), 3.f * sc);
+                dl->AddRect(at, ImVec2(at.x + w, at.y + bandH), IM_COL32(120, 100, 60, 150), 3.f * sc);
             }
-            Gw2Ui::SmallIconGlyph(dl, gripAt, 16.f, Gw2Ui::IconBtn::Grip, hv.grip || g_dragKey == wdef.key);
+            Gw2Ui::SmallIconGlyph(dl, gripAt, gripSz, Gw2Ui::IconBtn::Grip, hv.grip || g_dragKey == wdef.key);
             Gw2Ui::SmallIconGlyph(dl, trashAt, tsz, Gw2Ui::IconBtn::Minus, hv.trash);
             if (hasHalf) Gw2Ui::SmallIconGlyph(dl, halfAt, tsz, (sl && sl->span == 2) ? Gw2Ui::IconBtn::WidthHalf : Gw2Ui::IconBtn::WidthFull, hv.half);
             Gw2Ui::SmallIconGlyph(dl, chromeAt, tsz, (sl && sl->hoverChrome) ? Gw2Ui::IconBtn::ChromeHover : Gw2Ui::IconBtn::ChromeBar, hv.chrome);
             // Auto-fit the title to the space left of the controls (half-width cards are narrow).
             float titleFs = 18.f;
-            const float titleAvail = titleRight - (at.x + 22.f);
+            const float titleAvail = titleRight - (at.x + 22.f * sc);
             const float titleMeasured = Gw2Ui::MeasureWidth(wdef.title, titleFs);
             if (titleMeasured > titleAvail && titleMeasured > 1.f)
                 titleFs = std::max(11.f, titleFs * (titleAvail / titleMeasured));
@@ -319,8 +321,8 @@ namespace
     {
         DashSlot* sl = SlotFor(app, wdef.key);
         const bool hover = sl && sl->hoverChrome;
-        const float inner = width - 16.f;
-        const float bandH = std::max(24.f, Gw2Ui::MeasureWrappedHeight("Ag", 18.f, 0.f) + 6.f);   // scales with text size
+        const float sc = Gw2Ui::TextScale();
+        const float bandH = std::max(24.f * sc, Gw2Ui::MeasureWrappedHeight("Ag", 18.f, 0.f) + 6.f * sc);
         const ImGuiIO& io = ImGui::GetIO();
 
         // Hover overlay (no window): if it was revealed last frame, submit its INPUT at the band BEFORE the body
@@ -338,7 +340,7 @@ namespace
             if (!hover)
             {
                 DrawControlStrip(app, wdef, sl, top, width, bandH, false);   // pinned bar (Both)
-                ImGui::SetCursorScreenPos(ImVec2(top.x, top.y + bandH + 2.f));
+                ImGui::SetCursorScreenPos(ImVec2(top.x, top.y + bandH + 2.f * sc));
             }
             else if (inputThisFrame)
             {
@@ -349,6 +351,7 @@ namespace
         }
         else if (Gw2Ui::BeginCard(wdef.key, width))
         {
+            const float inner = Gw2Ui::CardInnerWidth();
             const ImVec2 hp = ImGui::GetCursorScreenPos();
             bandPos = hp; bandW = inner;
             if (!hover)
@@ -548,6 +551,7 @@ void Dashboard::Render(App& app)
     const ImGuiIO& io = ImGui::GetIO();
     const float W = io.DisplaySize.x, H = io.DisplaySize.y;
     if (W < 2.f || H < 2.f) return;
+    const float ui = Gw2Ui::GlobalScale();
 
     const float dt = io.DeltaTime > 0.f ? io.DeltaTime : 0.016f;
     g_anim += (g_open ? 1.f : -1.f) * dt * 8.f;
@@ -555,14 +559,15 @@ void Dashboard::Render(App& app)
 
     const int edge = app.config.dashEdge;   // 0 Top,1 Bottom,2 Left,3 Right
     const bool vert = (edge == 2 || edge == 3);   // handle slides off a vertical edge (left/right)
-    const float m = 8.f;
+    const float hT = kT * ui, hL = kL * ui;
+    const float m = 8.f * ui;
 
     // ---- handle geometry (recomputed each frame from dashPos) ----
     ImVec2 hMin, hMax;
-    if (edge == 2)      { float y0 = std::min(std::max(app.config.dashPos * H - kL * 0.5f, m), H - kL - m); hMin = ImVec2(0.f, y0);       hMax = ImVec2(kT, y0 + kL); }
-    else if (edge == 3) { float y0 = std::min(std::max(app.config.dashPos * H - kL * 0.5f, m), H - kL - m); hMin = ImVec2(W - kT, y0);    hMax = ImVec2(W, y0 + kL); }
-    else if (edge == 0) { float x0 = std::min(std::max(app.config.dashPos * W - kL * 0.5f, m), W - kL - m); hMin = ImVec2(x0, 0.f);       hMax = ImVec2(x0 + kL, kT); }
-    else                { float x0 = std::min(std::max(app.config.dashPos * W - kL * 0.5f, m), W - kL - m); hMin = ImVec2(x0, H - kT);    hMax = ImVec2(x0 + kL, H); }
+    if (edge == 2)      { float y0 = std::min(std::max(app.config.dashPos * H - hL * 0.5f, m), H - hL - m); hMin = ImVec2(0.f, y0);       hMax = ImVec2(hT, y0 + hL); }
+    else if (edge == 3) { float y0 = std::min(std::max(app.config.dashPos * H - hL * 0.5f, m), H - hL - m); hMin = ImVec2(W - hT, y0);    hMax = ImVec2(W, y0 + hL); }
+    else if (edge == 0) { float x0 = std::min(std::max(app.config.dashPos * W - hL * 0.5f, m), W - hL - m); hMin = ImVec2(x0, 0.f);       hMax = ImVec2(x0 + hL, hT); }
+    else                { float x0 = std::min(std::max(app.config.dashPos * W - hL * 0.5f, m), W - hL - m); hMin = ImVec2(x0, H - hT);    hMax = ImVec2(x0 + hL, H); }
 
     // ---- handle window (small, interactive so clicks/drag don't leak to the game) ----
     ImGui::SetNextWindowPos(hMin);
@@ -579,7 +584,7 @@ void Dashboard::Render(App& app)
         if (g_hDown && ImGui::IsItemActive() && !app.config.dashLocked)
         {
             const float dx = io.MousePos.x - g_hStart.x, dy = io.MousePos.y - g_hStart.y;
-            if (std::sqrt(dx * dx + dy * dy) > 4.f) g_hDragged = true;
+            if (std::sqrt(dx * dx + dy * dy) > 4.f * ui) g_hDragged = true;
             if (g_hDragged)
             {
                 app.config.dashPos = vert ? (io.MousePos.y / H) : (io.MousePos.x / W);
@@ -597,32 +602,32 @@ void Dashboard::Render(App& app)
         const bool hov = ImGui::IsItemHovered() || g_hDown;
         const ImU32 bg  = hov ? IM_COL32(46, 38, 24, 245) : IM_COL32(28, 23, 15, 230);
         const ImU32 brd = IM_COL32(150, 124, 70, 220);
-        dl->AddRectFilled(hMin, hMax, bg, 5.f);
-        dl->AddRect(hMin, hMax, brd, 5.f);
+        dl->AddRectFilled(hMin, hMax, bg, 5.f * ui);
+        dl->AddRect(hMin, hMax, brd, 5.f * ui, 0, ui);
         // chevron: points toward screen centre when closed, back toward the edge when open.
         const ImVec2 c((hMin.x + hMax.x) * 0.5f, (hMin.y + hMax.y) * 0.5f);
-        const float s = 4.f;
+        const float s = 4.f * ui;
         bool pointIn = !g_open;   // closed -> open it (point inward)
         const ImU32 cc = IM_COL32(245, 226, 170, 255);
         if (vert)
         {
             float dir = ((edge == 2) == pointIn) ? 1.f : -1.f;   // left edge inward = right
-            dl->AddLine(ImVec2(c.x - s * dir, c.y - s), ImVec2(c.x + s * dir, c.y), cc, 2.f);
-            dl->AddLine(ImVec2(c.x + s * dir, c.y), ImVec2(c.x - s * dir, c.y + s), cc, 2.f);
+            dl->AddLine(ImVec2(c.x - s * dir, c.y - s), ImVec2(c.x + s * dir, c.y), cc, 2.f * ui);
+            dl->AddLine(ImVec2(c.x + s * dir, c.y), ImVec2(c.x - s * dir, c.y + s), cc, 2.f * ui);
         }
         else
         {
             float dir = ((edge == 0) == pointIn) ? 1.f : -1.f;   // top edge inward = down
-            dl->AddLine(ImVec2(c.x - s, c.y - s * dir), ImVec2(c.x, c.y + s * dir), cc, 2.f);
-            dl->AddLine(ImVec2(c.x, c.y + s * dir), ImVec2(c.x + s, c.y - s * dir), cc, 2.f);
+            dl->AddLine(ImVec2(c.x - s, c.y - s * dir), ImVec2(c.x, c.y + s * dir), cc, 2.f * ui);
+            dl->AddLine(ImVec2(c.x, c.y + s * dir), ImVec2(c.x + s, c.y - s * dir), cc, 2.f * ui);
         }
         // unread badge
         const int unread = Notify::UnreadCount();
         if (unread > 0 && !g_open)
         {
             char nb[8]; std::snprintf(nb, sizeof(nb), "%d", unread > 99 ? 99 : unread);
-            const ImVec2 bc(hMax.x - 6.f, hMin.y + 6.f);
-            dl->AddCircleFilled(bc, 7.f, IM_COL32(200, 60, 50, 255));
+            const ImVec2 bc(hMax.x - 6.f * ui, hMin.y + 6.f * ui);
+            dl->AddCircleFilled(bc, 7.f * ui, IM_COL32(200, 60, 50, 255));
             const ImVec2 ts = ImGui::CalcTextSize(nb);
             dl->AddText(ImVec2(bc.x - ts.x * 0.5f, bc.y - ts.y * 0.5f), IM_COL32_WHITE, nb);
         }
@@ -633,26 +638,27 @@ void Dashboard::Render(App& app)
     if (g_anim <= 0.001f && !g_open) return;   // panel fully closed
 
     // ---- panel geometry ----
-    const float panelW = std::min(std::max(app.config.dashWidth, 300.f), 600.f);
-    const float headerH = 30.f;
-    float panelH = headerH + g_bodyH + 28.f;
-    panelH = std::min(std::max(panelH, 160.f), 0.80f * H);
+    const float panelWLocal = std::min(std::max(app.config.dashWidth, 300.f), 600.f);
+    const float panelW = panelWLocal * ui;
+    const float headerH = 30.f * ui;
+    float panelH = headerH + g_bodyH + 28.f * ui;
+    panelH = std::min(std::max(panelH, 160.f * ui), 0.80f * H);
 
     const float hCenterY = (hMin.y + hMax.y) * 0.5f;
     const float hCenterX = (hMin.x + hMax.x) * 0.5f;
     ImVec2 pPos;
-    const float slide = (1.f - g_anim) * 16.f;
-    if (edge == 2)      pPos = ImVec2(kT - slide,                std::min(std::max(hCenterY - panelH * 0.5f, m), H - panelH - m));
-    else if (edge == 3) pPos = ImVec2(W - kT - panelW + slide,   std::min(std::max(hCenterY - panelH * 0.5f, m), H - panelH - m));
-    else if (edge == 0) pPos = ImVec2(std::min(std::max(hCenterX - panelW * 0.5f, m), W - panelW - m), kT - slide);
-    else                pPos = ImVec2(std::min(std::max(hCenterX - panelW * 0.5f, m), W - panelW - m), H - kT - panelH + slide);
+    const float slide = (1.f - g_anim) * 16.f * ui;
+    if (edge == 2)      pPos = ImVec2(hT - slide,                std::min(std::max(hCenterY - panelH * 0.5f, m), H - panelH - m));
+    else if (edge == 3) pPos = ImVec2(W - hT - panelW + slide,   std::min(std::max(hCenterY - panelH * 0.5f, m), H - panelH - m));
+    else if (edge == 0) pPos = ImVec2(std::min(std::max(hCenterX - panelW * 0.5f, m), W - panelW - m), hT - slide);
+    else                pPos = ImVec2(std::min(std::max(hCenterX - panelW * 0.5f, m), W - panelW - m), H - hT - panelH + slide);
 
     ImGui::SetNextWindowPos(pPos);
     ImGui::SetNextWindowSize(ImVec2(panelW, panelH));
     ImGui::PushStyleVar(ImGuiStyleVar_Alpha, std::max(0.05f, g_anim));
-    ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 6.f);
-    ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 1.f);
-    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(10.f, 8.f));
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 6.f * ui);
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, ui);
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(10.f * ui, 8.f * ui));
     ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.045f, 0.038f, 0.028f, 0.975f));
     ImGui::PushStyleColor(ImGuiCol_Border,   ImVec4(0.50f, 0.42f, 0.24f, 0.55f));
     ImGui::Begin("##tcDashPanel", nullptr,
@@ -663,79 +669,79 @@ void Dashboard::Render(App& app)
         // header: [+] add  [book] open guide (left)  |  centered title  |  [x] close (right). Every icon has a tooltip.
         const ImVec2 hbase = ImGui::GetCursorScreenPos();
         const float cw = ImGui::GetContentRegionAvail().x;
-        const float rowH = 24.f;
+        const float rowH = 24.f * ui;
         ImDrawList* hdl = ImGui::GetWindowDrawList();
 
         // + add
         ImGui::SetCursorScreenPos(hbase);
-        ImGui::InvisibleButton("##dashadd", ImVec2(22.f, rowH));
+        ImGui::InvisibleButton("##dashadd", ImVec2(22.f * ui, rowH));
         const bool addHov = ImGui::IsItemHovered();
         if (ImGui::IsItemClicked()) { g_addReq = true; g_addCtx.clear(); }
         if (addHov) Gw2Ui::Tooltip("Add a widget");
         {
             const ImU32 ac = addHov ? Gw2Ui::kGold : IM_COL32(190, 170, 120, 230);
-            const ImVec2 c(hbase.x + 10.f, hbase.y + rowH * 0.5f);
-            hdl->AddLine(ImVec2(c.x - 6.f, c.y), ImVec2(c.x + 6.f, c.y), ac, 2.f);
-            hdl->AddLine(ImVec2(c.x, c.y - 6.f), ImVec2(c.x, c.y + 6.f), ac, 2.f);
+            const ImVec2 c(hbase.x + 10.f * ui, hbase.y + rowH * 0.5f);
+            hdl->AddLine(ImVec2(c.x - 6.f * ui, c.y), ImVec2(c.x + 6.f * ui, c.y), ac, 2.f * ui);
+            hdl->AddLine(ImVec2(c.x, c.y - 6.f * ui), ImVec2(c.x, c.y + 6.f * ui), ac, 2.f * ui);
         }
 
         // open Hub (same action + icon the viewer uses)
-        const ImVec2 gbase(hbase.x + 26.f, hbase.y);
+        const ImVec2 gbase(hbase.x + 26.f * ui, hbase.y);
         ImGui::SetCursorScreenPos(gbase);
-        ImGui::InvisibleButton("##dashguide", ImVec2(22.f, rowH));
+        ImGui::InvisibleButton("##dashguide", ImVec2(22.f * ui, rowH));
         const bool gHov = ImGui::IsItemHovered();
         if (ImGui::IsItemClicked()) OpenSettingsTab(app, SettingsTabHub);
         if (gHov) Gw2Ui::Tooltip("Open Hub");
-        Gw2Ui::GuideGlyph(hdl, ImVec2(gbase.x + 11.f, gbase.y + rowH * 0.5f),
+        Gw2Ui::GuideGlyph(hdl, ImVec2(gbase.x + 11.f * ui, gbase.y + rowH * 0.5f),
                           gHov ? IM_COL32(255, 220, 150, 255) : IM_COL32(200, 178, 130, 235));
 
         // profile chip (name + caret) just left of the X -> opens the profile selector menu
         Profiles::IProfileHost& profHost = ConfigProfiles::Host(app, ConfigProfiles::Owner::Dash);
         std::string profNameS = profHost.Count() ? profHost.NameAt(profHost.Active()) : std::string("Default");
         const char* profName = profNameS.c_str();
-        const float caretW = 13.f, chipPad = 8.f;
+        const float caretW = 13.f * ui, chipPad = 8.f * ui;
         const float nameW  = Gw2Ui::MeasureWidth(profName, 14.f);
-        const float chipW  = std::min(150.f, nameW + caretW + chipPad * 2.f);
-        const float chipRight = hbase.x + cw - 16.f - 8.f;   // 8px gap before the X
+        const float chipW  = std::min(150.f * ui, nameW + caretW + chipPad * 2.f);
+        const float chipRight = hbase.x + cw - 16.f * ui - 8.f * ui;   // 8px gap before the X
         const float chipLeft  = chipRight - chipW;
-        const ImVec2 chipMin(chipLeft, hbase.y + (rowH - 20.f) * 0.5f), chipMax(chipRight, chipMin.y + 20.f);
+        const ImVec2 chipMin(chipLeft, hbase.y + (rowH - 20.f * ui) * 0.5f), chipMax(chipRight, chipMin.y + 20.f * ui);
         ImGui::SetCursorScreenPos(chipMin);
         ImGui::InvisibleButton("##dashprof", ImVec2(chipW, 20.f));
         const bool pHov = ImGui::IsItemHovered();
         if (ImGui::IsItemClicked()) g_profMenuReq = true;
         if (pHov) Gw2Ui::Tooltip("Switch dashboard profile");
-        hdl->AddRectFilled(chipMin, chipMax, pHov ? IM_COL32(60, 50, 30, 235) : IM_COL32(38, 31, 20, 210), 3.f);
-        hdl->AddRect(chipMin, chipMax, IM_COL32(130, 108, 64, 200), 3.f);
+        hdl->AddRectFilled(chipMin, chipMax, pHov ? IM_COL32(60, 50, 30, 235) : IM_COL32(38, 31, 20, 210), 3.f * ui);
+        hdl->AddRect(chipMin, chipMax, IM_COL32(130, 108, 64, 200), 3.f * ui, 0, ui);
         const float caretX = chipMax.x - caretW;
         {
             float fs = 14.f;
-            const float avail = (caretX - 2.f) - (chipMin.x + chipPad);
+            const float avail = (caretX - 2.f * ui) - (chipMin.x + chipPad);
             const float meas  = Gw2Ui::MeasureWidth(profName, fs);
             if (meas > avail && meas > 1.f) fs = std::max(9.f, fs * (avail / meas));
-            Gw2Ui::LabelDL(hdl, ImVec2(chipMin.x + chipPad, chipMin.y), ImVec2(caretX - 2.f, chipMax.y), profName,
+            Gw2Ui::LabelDL(hdl, ImVec2(chipMin.x + chipPad, chipMin.y), ImVec2(caretX - 2.f * ui, chipMax.y), profName,
                            Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, pHov ? Gw2Ui::kGold : IM_COL32(220, 206, 170, 255), false, nullptr, fs);
         }
-        const ImVec2 cc(caretX + caretW * 0.5f - 1.f, chipMin.y + 10.f);
+        const ImVec2 cc(caretX + caretW * 0.5f - 1.f * ui, chipMin.y + 10.f * ui);
         const ImU32  caretCol = pHov ? Gw2Ui::kGold : IM_COL32(200, 182, 140, 235);
-        Render::DrawGlyph(hdl, cc, 12.f, Render::Glyph::CaretDown, caretCol, { false, false, false });
+        Render::DrawGlyph(hdl, cc, 12.f * ui, Render::Glyph::CaretDown, caretCol, { false, false, false });
 
         // centred title, bounded clear of the left icons and the chip (auto-fit so it never overflows)
-        const float tLeft = hbase.x + 52.f, tRight = chipLeft - 6.f;
+        const float tLeft = hbase.x + 52.f * ui, tRight = chipLeft - 6.f * ui;
         float tFs = 20.f;
         const float tAvail = tRight - tLeft, tMeas = Gw2Ui::MeasureWidth("Dashboard", tFs);
         if (tMeas > tAvail && tMeas > 1.f) tFs = std::max(12.f, tFs * (tAvail / tMeas));
         Gw2Ui::LabelDL(hdl, ImVec2(tLeft, hbase.y), ImVec2(tRight, hbase.y + rowH), "Dashboard",
                        Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, IM_COL32(255, 244, 207, 255), false, nullptr, tFs, 0.f, 1.3f);
 
-        const ImVec2 xp(hbase.x + cw - 16.f, hbase.y + (rowH - 18.f) * 0.5f);
+        const ImVec2 xp(hbase.x + cw - 16.f * ui, hbase.y + (rowH - 18.f * ui) * 0.5f);
         ImGui::SetCursorScreenPos(xp);
-        ImGui::InvisibleButton("##dashclose", ImVec2(16.f, 18.f));
+        ImGui::InvisibleButton("##dashclose", ImVec2(16.f * ui, 18.f * ui));
         const bool xhov = ImGui::IsItemHovered();
         if (ImGui::IsItemClicked()) Toggle();
         if (xhov) Gw2Ui::Tooltip("Close dashboard");
         const ImU32 xc = xhov ? IM_COL32(255, 200, 200, 255) : IM_COL32(180, 168, 140, 255);
-        hdl->AddLine(ImVec2(xp.x + 2.f, xp.y + 3.f), ImVec2(xp.x + 13.f, xp.y + 14.f), xc, 1.6f);
-        hdl->AddLine(ImVec2(xp.x + 13.f, xp.y + 3.f), ImVec2(xp.x + 2.f, xp.y + 14.f), xc, 1.6f);
+        hdl->AddLine(ImVec2(xp.x + 2.f * ui, xp.y + 3.f * ui), ImVec2(xp.x + 13.f * ui, xp.y + 14.f * ui), xc, 1.6f * ui);
+        hdl->AddLine(ImVec2(xp.x + 13.f * ui, xp.y + 3.f * ui), ImVec2(xp.x + 2.f * ui, xp.y + 14.f * ui), xc, 1.6f * ui);
 
         ImGui::SetCursorScreenPos(ImVec2(hbase.x, hbase.y + rowH));
         Gw2Ui::Divider(0.f);
@@ -747,11 +753,11 @@ void Dashboard::Render(App& app)
         ImGui::BeginChild("##dashBody", ImVec2(0, 0), false);
         {
             const float bodyW = ImGui::GetContentRegionAvail().x;
-            const float gap = 8.f;
+            const float gap = 8.f * Gw2Ui::TextScale();
             // Too narrow for a usable side-by-side pair -> collapse to ONE full-width column: every widget
             // stacks (its draw() renders compact, since the width drops below DashUtil::kNarrowWidth) and no
             // lone-half "+ Add" placeholder shows. The slot's span stays 2, so widening the panel re-pairs automatically.
-            const bool allowHalf = ((bodyW - gap) * 0.5f) >= 190.f;   // kHalfMin (tunable)
+            const bool allowHalf = ((bodyW - gap) * 0.5f) >= 190.f * Gw2Ui::TextScale();   // kHalfMin (tunable)
             // gather shown widgets in layout order (app.config.dashLayout.items are all shown -- no holes)
             std::vector<std::pair<const DashSlot*, const DashWidget*>> show;
             for (const DashSlot& s : app.config.dashLayout.items)
@@ -797,7 +803,7 @@ void Dashboard::Render(App& app)
         {
             // A generous corner grab so it's easy to hit (the old 10x28 strip was fiddly). The hotspot extends
             // gripW inward from the free edge and gripH up from the bottom, overlapping the body's corner.
-            const float gripW = 24.f, gripH = 40.f;
+            const float gripW = 24.f * ui, gripH = 40.f * ui;
             auto cornerGrip = [&](const char* id, bool leftCorner)
             {
                 const float ex = leftCorner ? pPos.x : pPos.x + panelW;        // the free vertical edge
@@ -811,9 +817,9 @@ void Dashboard::Render(App& app)
                 const ImVec2 c(ex, pPos.y + panelH);   // the corner
                 for (int k = 0; k < 4; ++k)
                 {
-                    const float o = 5.f + k * 5.f;     // bigger, more grip lines so it reads as a resize handle
-                    if (leftCorner) gdl->AddLine(ImVec2(c.x + o, c.y), ImVec2(c.x, c.y - o), lc, actHov ? 2.f : 1.6f);
-                    else            gdl->AddLine(ImVec2(c.x - o, c.y), ImVec2(c.x, c.y - o), lc, actHov ? 2.f : 1.6f);
+                    const float o = (5.f + k * 5.f) * ui;     // bigger, more grip lines so it reads as a resize handle
+                    if (leftCorner) gdl->AddLine(ImVec2(c.x + o, c.y), ImVec2(c.x, c.y - o), lc, actHov ? 2.f * ui : 1.6f * ui);
+                    else            gdl->AddLine(ImVec2(c.x - o, c.y), ImVec2(c.x, c.y - o), lc, actHov ? 2.f * ui : 1.6f * ui);
                 }
                 if (active)
                 {
@@ -821,7 +827,7 @@ void Dashboard::Render(App& app)
                     if (edge == 2)      nw = io.MousePos.x - pPos.x;                 // left dock: right edge moves
                     else if (edge == 3) nw = (pPos.x + panelW) - io.MousePos.x;       // right dock: left edge moves
                     else                nw = 2.f * std::fabs(io.MousePos.x - hCenterX); // top/bottom: symmetric, centred
-                    app.config.dashWidth = std::min(std::max(nw, 300.f), 600.f);
+                    app.config.dashWidth = std::min(std::max(nw / ui, 300.f), 600.f);
                     app.settingsDirty = true;
                 }
             };

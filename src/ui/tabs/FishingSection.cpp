@@ -542,44 +542,45 @@ void DrawFishingContent(App& app)
     // The body is rail-narrowed (as little as ~334px), so every toolbar row sizes from GetContentRegionAvail and
     // stacks instead of running off the right edge. Row 1: the Tyrian time-of-day pill (left) + Catchable-now (right).
     DrawPhasePill(phase, secToNext);
-    Gw2Ui::SameLineRightCluster(132.f);
-    if (Gw2Ui::ChipToggle("##fnow", "Catchable now", g_now, ImVec2(132.f, 32.f), 16.f)) g_now = !g_now;
+    const float ui = Gw2Ui::GlobalScale();
+    Gw2Ui::SameLineRightCluster(132.f * ui);
+    if (Gw2Ui::ChipToggle("##fnow", "Catchable now", g_now, ImVec2(132.f * ui, 32.f * ui), 16.f)) g_now = !g_now;
 
     Gw2Ui::SearchBox("##fishsearch", g_search, sizeof(g_search), ImGui::GetContentRegionAvail().x, "Search name / region / hole / bait / rarity...");
 
     // Filter dropdowns: equal share of the available width (each shrinks to fit); wrap to 3 + 2 when even the
     // collapsed widths no longer fit one row.
     {
-        const float gap = 8.f, minDw = 64.f;
+        const float gap = 8.f * ui, minDw = 64.f * ui;
         const float availW = ImGui::GetContentRegionAvail().x;
         if (5.f * minDw + 4.f * gap <= availW)
         {
             const float dw = Gw2Ui::FillWidth(availW, 5, gap, minDw);
-            { int v = g_caught; if (Gw2Ui::Dropdown("##fcaught", kCaught, 3, &v, dw)) g_caught = v; }
-            ImGui::SameLine(0.f, gap); { int v = g_rarity; if (Gw2Ui::Dropdown("##frar", g_rarPtrs.data(), (int)g_rarPtrs.size(), &v, dw)) g_rarity = v; }
-            ImGui::SameLine(0.f, gap); { int v = g_hole;   if (Gw2Ui::Dropdown("##fhole", g_holePtrs.data(), (int)g_holePtrs.size(), &v, dw)) g_hole = v; }
-            ImGui::SameLine(0.f, gap); { int v = g_bait;   if (Gw2Ui::Dropdown("##fbait", g_baitPtrs.data(), (int)g_baitPtrs.size(), &v, dw)) g_bait = v; }
-            ImGui::SameLine(0.f, gap); { int v = g_time;   if (Gw2Ui::Dropdown("##ftime", kTime, 4, &v, dw)) g_time = v; }
+            { int v = g_caught; if (Gw2Ui::DropdownPx("##fcaught", kCaught, 3, &v, dw)) g_caught = v; }
+            ImGui::SameLine(0.f, gap); { int v = g_rarity; if (Gw2Ui::DropdownPx("##frar", g_rarPtrs.data(), (int)g_rarPtrs.size(), &v, dw)) g_rarity = v; }
+            ImGui::SameLine(0.f, gap); { int v = g_hole;   if (Gw2Ui::DropdownPx("##fhole", g_holePtrs.data(), (int)g_holePtrs.size(), &v, dw)) g_hole = v; }
+            ImGui::SameLine(0.f, gap); { int v = g_bait;   if (Gw2Ui::DropdownPx("##fbait", g_baitPtrs.data(), (int)g_baitPtrs.size(), &v, dw)) g_bait = v; }
+            ImGui::SameLine(0.f, gap); { int v = g_time;   if (Gw2Ui::DropdownPx("##ftime", kTime, 4, &v, dw)) g_time = v; }
         }
         else
         {
             const float dw1 = Gw2Ui::FillWidth(availW, 3, gap, minDw);
-            { int v = g_caught; if (Gw2Ui::Dropdown("##fcaught", kCaught, 3, &v, dw1)) g_caught = v; }
-            ImGui::SameLine(0.f, gap); { int v = g_rarity; if (Gw2Ui::Dropdown("##frar", g_rarPtrs.data(), (int)g_rarPtrs.size(), &v, dw1)) g_rarity = v; }
-            ImGui::SameLine(0.f, gap); { int v = g_hole;   if (Gw2Ui::Dropdown("##fhole", g_holePtrs.data(), (int)g_holePtrs.size(), &v, dw1)) g_hole = v; }
+            { int v = g_caught; if (Gw2Ui::DropdownPx("##fcaught", kCaught, 3, &v, dw1)) g_caught = v; }
+            ImGui::SameLine(0.f, gap); { int v = g_rarity; if (Gw2Ui::DropdownPx("##frar", g_rarPtrs.data(), (int)g_rarPtrs.size(), &v, dw1)) g_rarity = v; }
+            ImGui::SameLine(0.f, gap); { int v = g_hole;   if (Gw2Ui::DropdownPx("##fhole", g_holePtrs.data(), (int)g_holePtrs.size(), &v, dw1)) g_hole = v; }
             const float dw2 = Gw2Ui::FillWidth(availW, 2, gap, minDw);
-            { int v = g_bait; if (Gw2Ui::Dropdown("##fbait", g_baitPtrs.data(), (int)g_baitPtrs.size(), &v, dw2)) g_bait = v; }
-            ImGui::SameLine(0.f, gap); { int v = g_time; if (Gw2Ui::Dropdown("##ftime", kTime, 4, &v, dw2)) g_time = v; }
+            { int v = g_bait; if (Gw2Ui::DropdownPx("##fbait", g_baitPtrs.data(), (int)g_baitPtrs.size(), &v, dw2)) g_bait = v; }
+            ImGui::SameLine(0.f, gap); { int v = g_time; if (Gw2Ui::DropdownPx("##ftime", kTime, 4, &v, dw2)) g_time = v; }
         }
     }
 
     // Sort (self-describing dropdown -- "Sort: Name", like the other filters) + direction + Grid/List (pinned right).
-    { int v = g_sort; if (Gw2Ui::Dropdown("##fsort", kSort, 6, &v, 160.f)) g_sort = v; }
-    ImGui::SameLine(0.f, 6.f); if (Gw2Ui::ActionButton(g_asc ? "Asc" : "Desc", 56.f, 28.f)) g_asc = !g_asc;
+    { int v = g_sort; if (Gw2Ui::DropdownPx("##fsort", kSort, 6, &v, 160.f * ui)) g_sort = v; }
+    ImGui::SameLine(0.f, 6.f * ui); if (Gw2Ui::ActionButtonPx(g_asc ? "Asc" : "Desc", 56.f * ui, 28.f * ui)) g_asc = !g_asc;
     {
         const bool grid = (app.config.itemsView == 0);
-        Gw2Ui::SameLineRightCluster(70.f);
-        if (Gw2Ui::ActionButton(grid ? "Grid" : "List", 70.f, 28.f)) { app.config.itemsView = grid ? 1 : 0; app.settingsDirty = true; }
+        Gw2Ui::SameLineRightCluster(70.f * ui);
+        if (Gw2Ui::ActionButtonPx(grid ? "Grid" : "List", 70.f * ui, 28.f * ui)) { app.config.itemsView = grid ? 1 : 0; app.settingsDirty = true; }
     }
 
     // Watchlist status -- its own row so it never crowds the controls above (shown only while tracking a fish).
@@ -587,8 +588,8 @@ void DrawFishingContent(App& app)
     {
         char wl[40]; std::snprintf(wl, sizeof(wl), "Tracking %d", (int)app.state.fishWatch.size());
         Gw2Ui::Label(wl, Gw2Ui::kGold, false, nullptr, 16.f);
-        ImGui::SameLine(0.f, 8.f);
-        if (Gw2Ui::ActionButton("Clear", 60.f, 26.f)) { app.state.fishWatch.clear(); app.state.fishRunActive = false; }
+        ImGui::SameLine(0.f, 8.f * ui);
+        if (Gw2Ui::ActionButtonPx("Clear", 60.f * ui, 26.f * ui)) { app.state.fishWatch.clear(); app.state.fishRunActive = false; }
     }
 
     RebuildView(app, phase);

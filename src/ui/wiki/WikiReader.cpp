@@ -391,6 +391,7 @@ namespace
     {
         if (!rd.doc || !rd.container || width <= 1.f)
             return false;
+        const float ui = Gw2Ui::GlobalScale();
         const float viewportH = std::max(1.f, ImGui::GetContentRegionAvail().y);
         rd.container->SetViewport(ImVec2(width, viewportH));
 
@@ -416,7 +417,7 @@ namespace
             {
                 const int y = FindAnchorY(rd.doc->root(), *scrollToAnchor);
                 if (y >= 0)
-                    ImGui::SetScrollY((float)std::max(0, y - 8));
+                    ImGui::SetScrollY((float)std::max(0, y - (int)std::lround(8.f * ui)));
             }
 
             rd.container->SetOrigin(origin);
@@ -425,7 +426,7 @@ namespace
             const float scrollY = ImGui::GetScrollY();
             litehtml::position clip(0, (litehtml::pixel_t)std::floor(scrollY),
                                     (litehtml::pixel_t)std::ceil(width + 2.f),
-                                    (litehtml::pixel_t)std::ceil(viewportH + 24.f));
+                                    (litehtml::pixel_t)std::ceil(viewportH + 24.f * ui));
             rd.doc->draw(0, 0, 0, &clip);
         }
         catch (...)
@@ -562,11 +563,13 @@ namespace
     {
         if (item.text.empty())
             return 0.f;
-        return std::max(20.f, Gw2Ui::MeasureWrappedHeight(item.text.c_str(), fontSize, std::max(20.f, width)));
+        const float sc = Gw2Ui::TextScale();
+        return std::max(20.f * sc, Gw2Ui::MeasureWrappedHeight(item.text.c_str(), fontSize, std::max(20.f * sc, width)));
     }
 
     float RailRowHeight(const Wiki::NativeRailRow &row, float labelW, float valueW)
     {
+        const float sc = Gw2Ui::TextScale();
         float valuesH = 0.f;
         for (const Wiki::NativeRailItem &item : row.values)
         {
@@ -574,13 +577,13 @@ namespace
             if (h <= 0.f)
                 continue;
             if (valuesH > 0.f)
-                valuesH += 2.f;
+                valuesH += 2.f * sc;
             valuesH += h;
         }
         if (valuesH <= 0.f)
-            valuesH = 20.f;
-        const float labelH = row.label.empty() ? 0.f : Gw2Ui::MeasureWrappedHeight(row.label.c_str(), kRailLabelFs, std::max(20.f, labelW));
-        return std::ceil(std::max(30.f, std::max(valuesH, labelH) + 9.f));
+            valuesH = 20.f * sc;
+        const float labelH = row.label.empty() ? 0.f : Gw2Ui::MeasureWrappedHeight(row.label.c_str(), kRailLabelFs, std::max(20.f * sc, labelW));
+        return std::ceil(std::max(30.f * sc, std::max(valuesH, labelH) + 9.f * sc));
     }
 
     void EnrichRailRows(std::vector<Wiki::NativeRailRow> &rows, int itemId)
@@ -671,10 +674,14 @@ namespace
                               ? (hovered ? IM_COL32(156, 203, 255, 255) : IM_COL32(103, 175, 255, 255))
                               : IM_COL32(236, 228, 206, 255);
         Gw2Ui::LabelDL(ImGui::GetWindowDrawList(), a, b, item.text.c_str(), Gw2Ui::HAlign::Left,
-                       Gw2Ui::VAlign::Top, col, false, nullptr, kRailValueFs, std::max(20.f, b.x - a.x));
+                       Gw2Ui::VAlign::Top, col, false, nullptr, kRailValueFs, std::max(20.f * Gw2Ui::TextScale(), b.x - a.x));
         if (clickable && hovered)
-            ImGui::GetWindowDrawList()->AddLine(ImVec2(a.x, b.y - 2.f), ImVec2(std::min(b.x, a.x + Gw2Ui::MeasureWidth(item.text.c_str(), kRailValueFs)), b.y - 2.f),
-                                                Gw2Ui::Alpha(col, 180), 1.f);
+        {
+            const float sc = Gw2Ui::TextScale();
+            ImGui::GetWindowDrawList()->AddLine(ImVec2(a.x, b.y - 2.f * sc),
+                                                ImVec2(std::min(b.x, a.x + Gw2Ui::MeasureWidth(item.text.c_str(), kRailValueFs)), b.y - 2.f * sc),
+                                                Gw2Ui::Alpha(col, 180), sc);
+        }
         if (clicked && chatLink)
         {
             SetClipboard(item.text);
@@ -688,7 +695,8 @@ namespace
 
     void DrawNativeRail(App &app, const Wiki::NativeRail &rail, float width)
     {
-        const float w = std::max(120.f, width);
+        const float ui = Gw2Ui::GlobalScale();
+        const float w = std::max(120.f * ui, width);
         std::vector<Wiki::NativeRailRow> rows = rail.rows;
         const int itemId = rail.isItem ? rail.apiId : 0; // only an ITEM infobox's API id is an item; area/zone/strike use a MAP id
         const ItemCatalog::Item &item = itemId > 0 ? ItemCatalog::ById(itemId) : ItemCatalog::ById(0);
@@ -705,15 +713,15 @@ namespace
         const bool bannerOnly = rows.empty() && !imageUrl.empty();
         const std::string imageTexId = imageUrl.empty() ? std::string() : WikiImageTextureId(imageUrl);
         const Texture_t *railImageTex = imageUrl.empty() ? nullptr : ImageCache::GetUrl(imageTexId.c_str(), imageUrl.c_str());
-        const float pad = 8.f;
-        const float labelW = std::clamp(w * 0.36f, 92.f, 124.f);
-        const float sepLocalX = labelW + 8.f;
-        const float valueLocalX = sepLocalX + 9.f;
-        const float valueW = std::max(36.f, w - valueLocalX - pad);
-        const float iconSize = (imageUrl.empty() || bannerOnly) ? 0.f : 42.f;
-        const float titleW = std::max(40.f, w - (iconSize > 0.f ? iconSize + 22.f : 18.f));
+        const float pad = 8.f * ui;
+        const float labelW = std::clamp(w * 0.38f, 92.f * ui, std::min(180.f * ui, w * 0.50f));
+        const float sepLocalX = labelW + 8.f * ui;
+        const float valueLocalX = sepLocalX + 9.f * ui;
+        const float valueW = std::max(36.f * ui, w - valueLocalX - pad);
+        const float iconSize = (imageUrl.empty() || bannerOnly) ? 0.f : 42.f * ui;
+        const float titleW = std::max(40.f * ui, w - (iconSize > 0.f ? iconSize + 22.f * ui : 18.f * ui));
         const float titleH = Gw2Ui::MeasureWrappedHeight(title.c_str(), kRailTitleFs, titleW);
-        const float headerH = std::ceil(std::max(64.f, titleH + 22.f));
+        const float headerH = std::ceil(std::max(64.f * ui, titleH + 22.f * ui));
 
         std::vector<float> rowHeights;
         rowHeights.reserve(rows.size());
@@ -724,12 +732,12 @@ namespace
             if (railImageTex && railImageTex->Width > 0 && railImageTex->Height > 0)
                 bannerH = bannerW * (float)railImageTex->Height / (float)railImageTex->Width;
             else
-                bannerH = 126.f;
-            bannerH = std::clamp(bannerH, 82.f, 180.f);
+                bannerH = 126.f * ui;
+            bannerH = std::clamp(bannerH, 82.f * ui, 180.f * ui);
         }
 
         // ---- region/area sections (stats + map/screenshot images), only when NOT the simple banner-only case ----
-        const float statsIcon = 18.f, statsTextGap = 4.f, statsGap = 14.f, statsLineH = 24.f;
+        const float statsIcon = 18.f * ui, statsTextGap = 4.f * ui, statsGap = 14.f * ui, statsLineH = 24.f * ui;
         std::vector<ImVec2> statPos; // per-stat (dx, dy) within the stats block
         float statsBlockH = 0.f;
         if (!bannerOnly && !rail.stats.empty())
@@ -761,10 +769,10 @@ namespace
                 const Texture_t *tex = ImageCache::GetUrl(tid.c_str(), im.url.c_str());
                 float ih = (tex && tex->Width > 0 && tex->Height > 0)
                                ? bannerW * (float)tex->Height / (float)tex->Width
-                               : 120.f;
-                ih = std::clamp(ih, 60.f, 240.f);
+                               : 120.f * ui;
+                ih = std::clamp(ih, 60.f * ui, 240.f * ui);
                 imageHeights.push_back(ih);
-                imagesBlockH += ih + (im.caption.empty() ? 0.f : 18.f) + 8.f; // image + caption + gap
+                imagesBlockH += ih + (im.caption.empty() ? 0.f : 18.f * ui) + 8.f * ui; // image + caption + gap
             }
         }
 
@@ -790,7 +798,7 @@ namespace
             if (!rail.images.empty())
                 bodyH += pad + imagesBlockH;
             if (!rows.empty())
-                bodyH += 12.f + rowsH + 8.f;
+                bodyH += 12.f * ui + rowsH + 8.f * ui;
         }
         const float panelH = headerH + bodyH;
 
@@ -800,21 +808,21 @@ namespace
         // Rounded corners (3px) to match the Contents card below it. The header fill rounds only its TOP corners
         // (ImDrawCornerFlags_Top) so its bottom edge stays flush with the body; the 1px shadow line beneath it is
         // an internal divider and stays square.
-        dl->AddRectFilled(p, b, IM_COL32(24, 22, 21, 214), 3.f);
-        dl->AddRect(p, b, IM_COL32(156, 128, 82, 128), 3.f);
+        dl->AddRectFilled(p, b, IM_COL32(24, 22, 21, 214), 3.f * ui);
+        dl->AddRect(p, b, IM_COL32(156, 128, 82, 128), 3.f * ui, 0, ui);
 
         const ImVec2 headerB(p.x + w, p.y + headerH);
-        dl->AddRectFilled(p, headerB, IM_COL32(127, 50, 28, 222), 3.f, ImDrawCornerFlags_Top);
-        dl->AddRectFilled(ImVec2(p.x, headerB.y - 1.f), headerB, IM_COL32(0, 0, 0, 95));
+        dl->AddRectFilled(p, headerB, IM_COL32(127, 50, 28, 222), 3.f * ui, ImDrawCornerFlags_Top);
+        dl->AddRectFilled(ImVec2(p.x, headerB.y - ui), headerB, IM_COL32(0, 0, 0, 95));
 
-        ImVec2 titleA(p.x + 10.f, p.y + 7.f);
-        ImVec2 titleB(p.x + w - 10.f - (iconSize > 0.f ? iconSize + 8.f : 0.f), p.y + headerH - 7.f);
+        ImVec2 titleA(p.x + 10.f * ui, p.y + 7.f * ui);
+        ImVec2 titleB(p.x + w - 10.f * ui - (iconSize > 0.f ? iconSize + 8.f * ui : 0.f), p.y + headerH - 7.f * ui);
         Gw2Ui::LabelDL(dl, titleA, titleB, title.c_str(), Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle,
                        IM_COL32(255, 244, 221, 255), true, nullptr, kRailTitleFs, titleW, 1.35f);
 
         if (!imageUrl.empty() && !bannerOnly)
         {
-            const ImVec2 ia(std::floor(p.x + w - iconSize - 9.f), std::floor(p.y + (headerH - iconSize) * 0.5f));
+            const ImVec2 ia(std::floor(p.x + w - iconSize - 9.f * ui), std::floor(p.y + (headerH - iconSize) * 0.5f));
             const ImVec2 ib(ia.x + iconSize, ia.y + iconSize);
             ImGui::SetCursorScreenPos(ia);
             ImGui::InvisibleButton("##railImage", ImVec2(iconSize, iconSize));
@@ -825,7 +833,7 @@ namespace
                 dl->AddImage((ImTextureID)railImageTex->Resource, ia, ib);
             else
                 dl->AddRectFilled(ia, ib, IM_COL32(42, 34, 24, 210));
-            dl->AddRect(ia, ib, IM_COL32(0, 0, 0, 210), 0.f, 0, 2.f);
+            dl->AddRect(ia, ib, IM_COL32(0, 0, 0, 210), 0.f, 0, 2.f * ui);
             if (imageHovered)
             {
                 Gw2Ui::Tooltip("Open image");
@@ -845,14 +853,14 @@ namespace
                 ImGui::SetMouseCursor(ImGuiMouseCursor_Hand);
             if (railImageTex)
             {
-                dl->AddRectFilled(ImVec2(ia.x - 1.f, ia.y - 1.f), ImVec2(ib.x + 1.f, ib.y + 1.f), IM_COL32(0, 0, 0, 120));
+                dl->AddRectFilled(ImVec2(ia.x - ui, ia.y - ui), ImVec2(ib.x + ui, ib.y + ui), IM_COL32(0, 0, 0, 120));
                 dl->AddImage((ImTextureID)railImageTex->Resource, ia, ib);
             }
             else
             {
                 dl->AddRectFilled(ia, ib, IM_COL32(42, 34, 24, 210));
             }
-            dl->AddRect(ia, ib, IM_COL32(156, 128, 82, 120), 0.f, 0, 1.f);
+            dl->AddRect(ia, ib, IM_COL32(156, 128, 82, 120), 0.f, 0, ui);
             if (imageHovered)
             {
                 Gw2Ui::Tooltip("Open image");
@@ -877,7 +885,7 @@ namespace
                     const Wiki::NativeRailStat &st = rail.stats[i];
                     const ImVec2 sp(ox + statPos[i].x, y + statPos[i].y);
                     const float tw = Gw2Ui::MeasureWidth(st.count.c_str(), kRailStatFs);
-                    Gw2Ui::LabelDL(dl, ImVec2(sp.x, sp.y), ImVec2(sp.x + tw + 2.f, sp.y + statsLineH),
+                    Gw2Ui::LabelDL(dl, ImVec2(sp.x, sp.y), ImVec2(sp.x + tw + 2.f * ui, sp.y + statsLineH),
                                    st.count.c_str(), Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle,
                                    IM_COL32(245, 236, 214, 255), true, nullptr, kRailStatFs);
                     const ImVec2 ic(sp.x + tw + statsTextGap, sp.y + (statsLineH - statsIcon) * 0.5f);
@@ -911,14 +919,14 @@ namespace
                     const std::string tid = WikiImageTextureId(im.url);
                     if (const Texture_t *tex = ImageCache::GetUrl(tid.c_str(), im.url.c_str()))
                     {
-                        dl->AddRectFilled(ImVec2(ia.x - 1.f, ia.y - 1.f), ImVec2(ib.x + 1.f, ib.y + 1.f), IM_COL32(0, 0, 0, 120));
+                        dl->AddRectFilled(ImVec2(ia.x - ui, ia.y - ui), ImVec2(ib.x + ui, ib.y + ui), IM_COL32(0, 0, 0, 120));
                         dl->AddImage((ImTextureID)tex->Resource, ia, ib);
                     }
                     else
                     {
                         dl->AddRectFilled(ia, ib, IM_COL32(42, 34, 24, 210));
                     }
-                    dl->AddRect(ia, ib, IM_COL32(156, 128, 82, 120), 0.f, 0, 1.f);
+                    dl->AddRect(ia, ib, IM_COL32(156, 128, 82, 120), 0.f, 0, ui);
                     if (imageHovered)
                     {
                         Gw2Ui::Tooltip("Open image");
@@ -928,44 +936,44 @@ namespace
                     y += ih;
                     if (!im.caption.empty())
                     {
-                        Gw2Ui::LabelDL(dl, ImVec2(p.x + pad, y + 2.f), ImVec2(p.x + w - pad, y + 18.f),
+                        Gw2Ui::LabelDL(dl, ImVec2(p.x + pad, y + 2.f * ui), ImVec2(p.x + w - pad, y + 18.f * ui),
                                        im.caption.c_str(), Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle,
                                        IM_COL32(206, 198, 178, 255), true, nullptr, 14.f);
-                        y += 18.f;
+                        y += 18.f * ui;
                     }
-                    y += 8.f;
+                    y += 8.f * ui;
                 }
             }
 
             // Label rows (Levels / Type / Within / ...).
             if (!rows.empty())
             {
-                y += 12.f;
+                y += 12.f * ui;
                 const float rowsTop = y;
                 const float sepX = std::floor(p.x + sepLocalX);
-                dl->AddRectFilled(ImVec2(sepX - 1.f, rowsTop + 2.f), ImVec2(sepX + 1.f, rowsTop + rowsH - 2.f),
+                dl->AddRectFilled(ImVec2(sepX - ui, rowsTop + 2.f * ui), ImVec2(sepX + ui, rowsTop + rowsH - 2.f * ui),
                                   IM_COL32(196, 72, 24, 235));
                 for (int ri = 0; ri < (int)rows.size(); ++ri)
                 {
                     const Wiki::NativeRailRow &row = rows[ri];
                     const float rowH = rowHeights[ri];
-                    const ImVec2 ra(p.x + 1.f, y);
-                    const ImVec2 rb(p.x + w - 1.f, y + rowH);
+                    const ImVec2 ra(p.x + ui, y);
+                    const ImVec2 rb(p.x + w - ui, y + rowH);
                     if (ri & 1)
                         dl->AddRectFilled(ra, rb, IM_COL32(0, 0, 0, 22));
 
-                    Gw2Ui::LabelDL(dl, ImVec2(p.x + 6.f, y + 3.f), ImVec2(sepX - 8.f, y + rowH - 3.f),
+                    Gw2Ui::LabelDL(dl, ImVec2(p.x + 6.f * ui, y + 3.f * ui), ImVec2(sepX - 8.f * ui, y + rowH - 3.f * ui),
                                    row.label.c_str(), Gw2Ui::HAlign::Right, Gw2Ui::VAlign::Middle,
                                    IM_COL32(245, 236, 214, 255), true, nullptr, kRailLabelFs, labelW, 1.1f);
 
-                    float vy = y + 4.f;
+                    float vy = y + 4.f * ui;
                     for (int vi = 0; vi < (int)row.values.size(); ++vi)
                     {
                         const Wiki::NativeRailItem &value = row.values[vi];
                         const float vh = RailValueHeight(value, valueW, kRailValueFs);
                         DrawRailValue(app, value, ImVec2(p.x + valueLocalX, vy),
                                       ImVec2(p.x + valueLocalX + valueW, vy + vh), ri, vi);
-                        vy += vh + 2.f;
+                        vy += vh + 2.f * ui;
                     }
                     y += rowH;
                 }
@@ -983,9 +991,10 @@ namespace
         std::string &s_docKey = t.docKey;
         if (page.html.empty())
             return;
+        const int contentScaleKey = (int)std::lround(Gw2Ui::GlobalScale() * 100.f);
         const std::string key = page.title + "|" + std::to_string(page.revid) + "|" +
                                 std::to_string(page.html.size()) + "|" + std::to_string(page.css.size()) + "|" +
-                                std::to_string(Gw2Ui::FontRevision());
+                                std::to_string(Gw2Ui::FontRevision()) + "|" + std::to_string(contentScaleKey);
         if (s_docKey == key)
             return;
 
@@ -997,6 +1006,7 @@ namespace
                                                   page.displayTitle.empty() ? page.title : page.displayTitle);
         s_page.css = Wiki::BuildTyrianWikiCss(page.css);
         s_page.article.container = std::make_unique<Wiki::Container>();
+        s_page.article.container->SetContentScale(Gw2Ui::GlobalScale());
         s_page.article.container->SetMinimumFontSize(15.f);
         s_page.article.doc = Wiki::CreateDocument(s_page.sanitized.articleHtml, s_page.css, *s_page.article.container);
 
@@ -1020,29 +1030,32 @@ namespace
 
     float LibraryListHeight(const std::vector<std::string> &values)
     {
+        const float ui = Gw2Ui::GlobalScale();
         const size_t rows = values.empty() ? 1u : std::min<size_t>(values.size(), 12u);
-        return 20.f + (values.empty() ? 18.f : rows * 26.f);
+        return 20.f * ui + (values.empty() ? 18.f * ui : rows * 26.f * ui);
     }
 
     void AddLibraryWidth(float &width, const std::vector<std::string> &values)
     {
         for (size_t i = 0; i < values.size() && i < 12; ++i)
-            width = std::max(width, Gw2Ui::MeasureWidth(values[i].c_str(), 16.f) + 38.f);
+            width = std::max(width, Gw2Ui::MeasureWidth(values[i].c_str(), 16.f) + 38.f * Gw2Ui::GlobalScale());
     }
 
     float LibraryPopupWidth(App &app, float maxW)
     {
-        float width = 360.f;
+        const float ui = Gw2Ui::GlobalScale();
+        float width = 360.f * ui;
         AddLibraryWidth(width, app.wiki.Bookmarks());
         AddLibraryWidth(width, app.wiki.History());
-        return ClampFloat(width, std::min(360.f, maxW), maxW);
+        return ClampFloat(width, std::min(360.f * ui, maxW), maxW);
     }
 
     float LibraryPopupHeight(App &app)
     {
-        return 22.f +
-               LibraryListHeight(app.wiki.Bookmarks()) + 6.f +
-               LibraryListHeight(app.wiki.History()) + 10.f;
+        const float ui = Gw2Ui::GlobalScale();
+        return 22.f * ui +
+               LibraryListHeight(app.wiki.Bookmarks()) + 6.f * ui +
+               LibraryListHeight(app.wiki.History()) + 10.f * ui;
     }
 
     void DrawLibraryList(App &app, const char *title, const std::vector<std::string> &values)
@@ -1058,7 +1071,7 @@ namespace
         for (size_t i = 0; i < values.size() && i < 12; ++i)
         {
             ImGui::PushID((int)i);
-            if (Gw2Ui::MenuItem(values[i].c_str(), false, 26.f, (int)i))
+            if (Gw2Ui::MenuItem(values[i].c_str(), false, 26.f * Gw2Ui::GlobalScale(), (int)i))
             {
                 OpenTitle(app, values[i], true);
                 ImGui::CloseCurrentPopup();
@@ -1078,21 +1091,22 @@ namespace
         if (s_libraryAnchorValid)
         {
             const ImVec2 display = ImGui::GetIO().DisplaySize;
-            const ImVec2 boundsMin(8.f, 8.f);
-            const ImVec2 boundsMax(std::max(8.f, display.x - 8.f), std::max(8.f, display.y - 8.f));
-            const float boundsW = std::max(260.f, boundsMax.x - boundsMin.x);
-            const float boundsH = std::max(180.f, boundsMax.y - boundsMin.y);
-            const float popupW = LibraryPopupWidth(app, std::min(560.f, boundsW));
+            const float ui = Gw2Ui::GlobalScale();
+            const ImVec2 boundsMin(8.f * ui, 8.f * ui);
+            const ImVec2 boundsMax(std::max(8.f * ui, display.x - 8.f * ui), std::max(8.f * ui, display.y - 8.f * ui));
+            const float boundsW = std::max(260.f * ui, boundsMax.x - boundsMin.x);
+            const float boundsH = std::max(180.f * ui, boundsMax.y - boundsMin.y);
+            const float popupW = LibraryPopupWidth(app, std::min(560.f * ui, boundsW));
             const float desiredH = LibraryPopupHeight(app);
-            const float maxPopupH = std::min(620.f, boundsH);
-            const float belowH = std::max(0.f, boundsMax.y - s_libraryAnchorMax.y - 4.f);
-            const float aboveH = std::max(0.f, s_libraryAnchorMin.y - boundsMin.y - 4.f);
-            const bool placeAbove = belowH < std::min(desiredH, 260.f) && aboveH > belowH;
-            const float availableH = std::max(140.f, placeAbove ? aboveH : belowH);
-            const float popupH = ClampFloat(std::min(desiredH, std::min(maxPopupH, availableH)), 140.f, maxPopupH);
+            const float maxPopupH = std::min(620.f * ui, boundsH);
+            const float belowH = std::max(0.f, boundsMax.y - s_libraryAnchorMax.y - 4.f * ui);
+            const float aboveH = std::max(0.f, s_libraryAnchorMin.y - boundsMin.y - 4.f * ui);
+            const bool placeAbove = belowH < std::min(desiredH, 260.f * ui) && aboveH > belowH;
+            const float availableH = std::max(140.f * ui, placeAbove ? aboveH : belowH);
+            const float popupH = ClampFloat(std::min(desiredH, std::min(maxPopupH, availableH)), 140.f * ui, maxPopupH);
 
             const float x = ClampFloat(s_libraryAnchorMax.x - popupW, boundsMin.x, boundsMax.x - popupW);
-            float y = placeAbove ? s_libraryAnchorMin.y - popupH - 4.f : s_libraryAnchorMax.y + 4.f;
+            float y = placeAbove ? s_libraryAnchorMin.y - popupH - 4.f * ui : s_libraryAnchorMax.y + 4.f * ui;
             y = ClampFloat(y, boundsMin.y, boundsMax.y - popupH);
 
             ImGui::SetNextWindowPos(ImVec2(std::floor(x), std::floor(y)), ImGuiCond_Always);
@@ -1153,7 +1167,7 @@ namespace
                           const char *tooltip = nullptr, bool disabled = false)
     {
         ImGui::SetCursorScreenPos(ImVec2(std::floor(x), std::floor(y)));
-        return Gw2Ui::ActionButton(label, w, h, variant, tooltip, disabled);
+        return Gw2Ui::ActionButtonPx(label, w, h, variant, tooltip, disabled);
     }
 
     bool DrawIconActionAt(const char *id, float x, float y, float w, float h,
@@ -1162,7 +1176,7 @@ namespace
                           Gw2Ui::ActionButtonVariant variant = Gw2Ui::ActionButtonVariant::Normal)
     {
         ImGui::SetCursorScreenPos(ImVec2(std::floor(x), std::floor(y)));
-        const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFrame(id, ImVec2(w, h), variant, disabled, tooltip);
+        const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFramePx(id, ImVec2(w, h), variant, disabled, tooltip);
         const ImU32 col = disabled                ? IM_COL32(120, 110, 90, 150)
                           : (r.hovered || r.held) ? Gw2Ui::kTextSelected
                                                   : Gw2Ui::kGold;
@@ -1266,8 +1280,10 @@ namespace
     void DrawTabStrip(App &app)
     {
         ImDrawList *dl = ImGui::GetWindowDrawList();
-        const float h = 28.f, gap = 6.f, padL = 10.f, closeW = 22.f, fs = 15.f, maxW = 215.f;
-        ImGui::Dummy(ImVec2(1.f, 2.f));
+        const float ui = Gw2Ui::GlobalScale();
+        const float h = 28.f * ui, gap = 6.f * ui, padL = 10.f * ui, closeW = 22.f * ui;
+        const float fs = 15.f, maxW = 215.f * ui;
+        ImGui::Dummy(ImVec2(1.f, 2.f * ui));
         const ImVec2 start = ImGui::GetCursorScreenPos();
         float x = start.x;
         int switchTo = -1, closeIdx = -1;
@@ -1275,11 +1291,11 @@ namespace
         for (int i = 0; i < (int)s_tabs.size(); ++i)
         {
             const std::string lbl = TabLabel(s_tabs[i]);
-            const float tw = std::min(maxW, padL + Gw2Ui::MeasureWidth(lbl.c_str(), fs) + closeW + 4.f);
+            const float tw = std::min(maxW, padL + Gw2Ui::MeasureWidth(lbl.c_str(), fs) + closeW + 4.f * ui);
             const bool active = (i == s_artTab);
             ImGui::PushID(i);
             ImGui::SetCursorScreenPos(ImVec2(std::floor(x), std::floor(start.y)));
-            const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFrame(
+            const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFramePx(
                 "##wt", ImVec2(tw, h),
                 active ? Gw2Ui::ActionButtonVariant::Primary : Gw2Ui::ActionButtonVariant::Normal, false, nullptr);
             const bool hot = r.hovered || r.held;
@@ -1287,10 +1303,10 @@ namespace
             Gw2Ui::LabelDL(dl, ImVec2(r.min.x + padL, r.min.y), ImVec2(r.max.x - closeW, r.max.y), lbl.c_str(),
                            Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, txt, true, nullptr, fs);
             if (active) // active underline (kGold), square -- the selected-tab cue on top of the Primary frame
-                dl->AddRectFilled(ImVec2(r.min.x + 2.f, r.max.y - 2.f), ImVec2(r.max.x - 2.f, r.max.y), Gw2Ui::kGold, 0.f);
+                dl->AddRectFilled(ImVec2(r.min.x + 2.f * ui, r.max.y - 2.f * ui), ImVec2(r.max.x - 2.f * ui, r.max.y), Gw2Ui::kGold, 0.f);
             // close x inside the frame (right). One button (the frame); the x is a region check, not a 2nd item.
             const bool overX = r.hovered && ImGui::IsMouseHoveringRect(ImVec2(r.max.x - closeW, r.min.y), ImVec2(r.max.x, r.max.y));
-            Render::DrawGlyph(dl, ImVec2(r.max.x - closeW * 0.5f, (r.min.y + r.max.y) * 0.5f), 11.f, Render::Glyph::Cross,
+            Render::DrawGlyph(dl, ImVec2(r.max.x - closeW * 0.5f, (r.min.y + r.max.y) * 0.5f), 11.f * ui, Render::Glyph::Cross,
                               overX ? Gw2Ui::kTextSelected : IM_COL32(168, 150, 110, 220), {});
             const bool midClose = r.hovered && ImGui::IsMouseClicked(ImGuiMouseButton_Middle);
             if (midClose || (r.clicked && overX))
@@ -1309,28 +1325,123 @@ namespace
             SwitchTab(app, switchTo);
         if (addTab)
             NewTab(app);
-        ImGui::SetCursorScreenPos(ImVec2(start.x, start.y + h + 6.f));
+        ImGui::SetCursorScreenPos(ImVec2(start.x, start.y + h + 6.f * ui));
     }
 
     void DrawTopBar(App &app)
     {
         WikiTab &t = Active(); // the active article tab (its cached page + back/forward)
-        const float yPad = 2.f;
+        const float ui = Gw2Ui::GlobalScale();
+        const float yPad = 2.f * ui;
         ImGui::Dummy(ImVec2(1.f, yPad));
         const ImVec2 rowStart = ImGui::GetCursorScreenPos();
         const float rowAvailW = ImGui::GetContentRegionAvail().x;
-        const float buttonH = 28.f;
-        ImFont *uiFont = Gw2Ui::UiFontResolved();
-        const float searchH = std::max(28.f, (uiFont ? uiFont->FontSize : ImGui::GetFontSize()) + 10.f);
+        const float buttonH = 28.f * ui;
+        const float searchH = Gw2Ui::InputBoxHeight();
         const float rowH = std::max(buttonH, searchH);
-        const float btnY = std::floor(rowStart.y + (rowH - buttonH) * 0.5f);
-        const float searchY = std::floor(rowStart.y + (rowH - searchH) * 0.5f);
-        const float gap = 6.f;
-        const float navW = 36.f;
-        const float goW = 54.f;
-        const float iconW = 32.f;
+        const float gap = 6.f * ui;
+        const float majorGap = 10.f * ui;
+        const float navW = 36.f * ui;
+        const float goW = 54.f * ui;
+        const float iconW = 32.f * ui;
+        const float rightEdge = rowStart.x + rowAvailW;
+        const float navClusterW = navW + gap + navW + majorGap;
+        const float actionClusterW = iconW + gap + iconW + majorGap + iconW + gap + iconW;
+        const float minSearchW = 220.f * ui;
+        const bool stacked = rowAvailW < navClusterW + minSearchW + gap + goW + gap + actionClusterW;
+
+        auto drawNav = [&](float x, float y)
+        {
+            Render::GlyphStyle backStyle;
+            backStyle.mirrorX = true; // CaretRight mirrored -> points left
+            if (DrawIconActionAt("##wikiBack", x, y, navW, buttonH, "Back", t.back.empty(), Render::Glyph::CaretRight, backStyle))
+            {
+                const std::string cur = t.page.title;
+                const std::string title = t.back.back();
+                t.back.pop_back();
+                if (!cur.empty())
+                    t.forward.push_back(cur);
+                OpenTitle(app, title, false);
+            }
+            x += navW + gap;
+            if (DrawIconActionAt("##wikiFwd", x, y, navW, buttonH, "Forward", t.forward.empty(), Render::Glyph::CaretRight))
+            {
+                const std::string cur = t.page.title;
+                const std::string title = t.forward.back();
+                t.forward.pop_back();
+                if (!cur.empty())
+                    t.back.push_back(cur);
+                OpenTitle(app, title, false);
+            }
+        };
+
+        auto drawActions = [&](float x, float y)
+        {
+            const bool hasPage = !t.page.title.empty();
+            if (DrawIconActionAt("##wikiRefresh", x, y, iconW, buttonH, "Refresh this article", !hasPage,
+                                 Render::Glyph::Refresh))
+            {
+                t.pendingTitle = t.page.title;
+                app.wiki.OpenPage(t.page.title, /*forceRefresh*/ true);
+            }
+            x += iconW + gap;
+
+            const bool bookmarked = app.wiki.IsBookmarked(t.page.title);
+            Render::GlyphStyle starStyle;
+            starStyle.filled = bookmarked;
+            if (DrawIconActionAt("##wikiBookmark", x, y, iconW, buttonH, bookmarked ? "Remove bookmark" : "Bookmark this article",
+                                 !hasPage, Render::Glyph::Star, starStyle,
+                                 bookmarked ? Gw2Ui::ActionButtonVariant::Primary : Gw2Ui::ActionButtonVariant::Normal))
+                app.wiki.ToggleBookmark(t.page.title);
+            x += iconW + majorGap;
+
+            if (DrawIconActionAt("##wikiBrowser", x, y, iconW, buttonH, "Open current page in your browser",
+                                 t.page.canonicalUrl.empty(), Render::Glyph::Globe))
+                OpenBrowser(t.page.canonicalUrl);
+            x += iconW + gap;
+
+            if (DrawIconActionAt("##wikiLibrary", x, y, iconW, buttonH, "Bookmarks / Recent / History", false, Render::Glyph::Book))
+            {
+                s_libraryOpen = true;
+                s_libraryAnchorMin = ImGui::GetItemRectMin();
+                s_libraryAnchorMax = ImGui::GetItemRectMax();
+                s_libraryAnchorValid = true;
+            }
+        };
 
         float x = rowStart.x;
+        const float btnY = std::floor(rowStart.y + (rowH - buttonH) * 0.5f);
+        const float searchY = std::floor(rowStart.y + (rowH - searchH) * 0.5f);
+        if (stacked)
+        {
+            drawNav(x, btnY);
+            drawActions(std::max(rowStart.x + navClusterW, rightEdge - actionClusterW), btnY);
+            DrawLibraryPopup(app);
+
+            const float searchRowY = rowStart.y + rowH + 4.f * ui;
+            const float searchRowH = std::max(buttonH, searchH);
+            const float stackedSearchW = std::max(1.f, rowAvailW - gap - goW);
+            ImGui::SetCursorScreenPos(ImVec2(std::floor(rowStart.x), std::floor(searchRowY + (searchRowH - searchH) * 0.5f)));
+            if (Gw2Ui::SearchBox("##wikiSearch", s_query, sizeof(s_query), stackedSearchW, "Search the Guild Wars 2 Wiki..."))
+            {
+                s_searchEditedAt = ImGui::GetTime();
+                s_searchPanelOpen = true;
+                s_goPendingQuery.clear();
+            }
+            ImGui::SetCursorScreenPos(ImVec2(std::floor(rowStart.x + stackedSearchW + gap), std::floor(searchRowY + (searchRowH - buttonH) * 0.5f)));
+            if (DrawTextActionAt("Go", rowStart.x + stackedSearchW + gap, searchRowY + (searchRowH - buttonH) * 0.5f,
+                                 goW, buttonH, Gw2Ui::ActionButtonVariant::Primary))
+                SubmitSearchOrOpen(app);
+
+            const std::string q = Trim(s_query);
+            if (q.size() >= 2 && NormalizeTitle(s_lastSearchQuery) != NormalizeTitle(q) &&
+                ImGui::GetTime() - s_searchEditedAt > 0.35 && !app.wiki.IsSearching())
+                RequestSearch(app, q);
+
+            ImGui::SetCursorScreenPos(ImVec2(rowStart.x, searchRowY + searchRowH));
+            return;
+        }
+
         Render::GlyphStyle backStyle;
         backStyle.mirrorX = true; // CaretRight mirrored -> points left
         if (DrawIconActionAt("##wikiBack", x, btnY, navW, buttonH, "Back", t.back.empty(), Render::Glyph::CaretRight, backStyle))
@@ -1352,16 +1463,15 @@ namespace
                 t.back.push_back(cur);
             OpenTitle(app, title, false);
         }
-        x += navW + 10.f;
+        x += navW + majorGap;
 
-        const float rightEdge = rowStart.x + rowAvailW;
         const float afterSearchW =
             gap + goW +
             gap + iconW +  // refresh
             gap + iconW +  // star
-            10.f + iconW + // browser (globe)
+            majorGap + iconW + // browser (globe)
             gap + iconW;   // library (book)
-        const float searchW = std::max(120.f, rightEdge - x - afterSearchW);
+        const float searchW = std::max(120.f * ui, rightEdge - x - afterSearchW);
         ImGui::SetCursorScreenPos(ImVec2(std::floor(x), searchY));
         if (Gw2Ui::SearchBox("##wikiSearch", s_query, sizeof(s_query), searchW, "Search the Guild Wars 2 Wiki..."))
         {
@@ -1396,7 +1506,7 @@ namespace
                              !hasPage, Render::Glyph::Star, starStyle,
                              bookmarked ? Gw2Ui::ActionButtonVariant::Primary : Gw2Ui::ActionButtonVariant::Normal))
             app.wiki.ToggleBookmark(t.page.title);
-        x += iconW + 10.f;
+        x += iconW + majorGap;
 
         if (DrawIconActionAt("##wikiBrowser", x, btnY, iconW, buttonH, "Open current page in your browser",
                              t.page.canonicalUrl.empty(), Render::Glyph::Globe))
@@ -1422,7 +1532,8 @@ namespace
 
         const bool resultsForQuery = SearchResultsMatchQuery(app, q);
         const auto &results = app.wiki.SearchResults();
-        const float panelH = 170.f;
+        const float ui = Gw2Ui::GlobalScale();
+        const float panelH = 170.f * ui;
         ImGui::BeginChild("##wikiSearchResults", ImVec2(ImGui::GetContentRegionAvail().x, panelH), true,
                           ImGuiWindowFlags_AlwaysVerticalScrollbar);
         Gw2Ui::SectionHeader("Search results", nullptr, 16.f, Gw2Ui::kTextSelected, false);
@@ -1446,13 +1557,13 @@ namespace
             for (size_t i = 0; i < results.size(); ++i)
             {
                 ImGui::PushID((int)i);
-                if (Gw2Ui::MenuItem(results[i].title.c_str(), false, 28.f, (int)i))
+                if (Gw2Ui::MenuItem(results[i].title.c_str(), false, 28.f * ui, (int)i))
                     OpenTitle(app, results[i].title, true);
                 if (!results[i].snippet.empty())
                 {
-                    ImGui::Indent(12.f);
+                    ImGui::Indent(12.f * ui);
                     Gw2Ui::Label(results[i].snippet.c_str(), Gw2Ui::kTextSub, false, nullptr, 14.f);
-                    ImGui::Unindent(12.f);
+                    ImGui::Unindent(12.f * ui);
                 }
                 ImGui::PopID();
             }
@@ -1464,22 +1575,23 @@ namespace
     void DrawRail(App &app, float railW, float height)
     {
         WikiTab &t = Active();
+        const float ui = Gw2Ui::GlobalScale();
         ImGui::BeginChild("##wikiRail", ImVec2(railW, height), false, ImGuiWindowFlags_AlwaysVerticalScrollbar);
         const ImVec2 railCursor = ImGui::GetCursorScreenPos();
         const float railAvailW = ImGui::GetContentRegionAvail().x;
-        const float gutter = ImGui::GetStyle().ScrollbarSize + 6.f;
-        const float laneW = std::max(80.f, railAvailW - gutter);
+        const float gutter = ImGui::GetStyle().ScrollbarSize + 6.f * ui;
+        const float laneW = std::max(80.f * ui, railAvailW - gutter);
         if (!t.page.html.empty())
         {
             DrawNativeRail(app, t.render.nativeRail, laneW);
             ImGui::SetCursorScreenPos(ImVec2(railCursor.x, ImGui::GetCursorScreenPos().y));
-            ImGui::Dummy(ImVec2(1.f, 8.f));
+            ImGui::Dummy(ImVec2(1.f, 8.f * ui));
         }
         ImGui::SetCursorScreenPos(ImVec2(railCursor.x, ImGui::GetCursorScreenPos().y));
         if (Gw2Ui::BeginCard("##wikiTocCard", laneW, IM_COL32(0, 0, 0, 62), IM_COL32(155, 128, 82, 105)))
         {
             Gw2Ui::SectionHeader("Contents", nullptr, 16.f, Gw2Ui::kTextSelected, false);
-            ImGui::Dummy(ImVec2(1.f, 3.f));
+            ImGui::Dummy(ImVec2(1.f, 3.f * ui));
 
             const float cardLeft = ImGui::GetCursorScreenPos().x;
             const float cardRight = cardLeft + Gw2Ui::CardInnerWidth();
@@ -1493,15 +1605,15 @@ namespace
                 for (size_t i = 0; i < page.sections.size(); ++i)
                 {
                     const Wiki::Section &sec = page.sections[i];
-                    const float indent = (float)std::max(0, sec.level - 2) * 14.f;
+                    const float indent = (float)std::max(0, sec.level - 2) * 14.f * ui;
                     const float rowLeft = cardLeft + indent;
-                    const float rowRight = std::max(rowLeft + 40.f, cardRight);
+                    const float rowRight = std::max(rowLeft + 40.f * ui, cardRight);
                     // Wrap long entries (e.g. "Ascalon Explorer achievement") to the card's inner width instead of
                     // bleeding past the border. fontSize 0 == the same default size LabelDL uses, so MeasureWrappedHeight
                     // matches the draw exactly; the row grows to fit the wrapped text.
                     const float textW = std::max(1.f, rowRight - rowLeft);
                     const float textH = Gw2Ui::MeasureWrappedHeight(sec.line.c_str(), 0.f, textW);
-                    const float rowH = std::max(24.f, std::ceil(textH) + 6.f);
+                    const float rowH = std::max(24.f * ui, std::ceil(textH) + 6.f * ui);
                     const float y = ImGui::GetCursorScreenPos().y;
                     ImGui::PushID((int)i);
                     ImGui::SetCursorScreenPos(ImVec2(rowLeft, y));
@@ -1528,8 +1640,9 @@ namespace
         std::snprintf(childId, sizeof(childId), "##wikiArt%u", t.uid); // per-tab scroll memory
         ImGui::BeginChild(childId, ImVec2(width, height), false, ImGuiWindowFlags_AlwaysVerticalScrollbar);
         const float articleAvailW = ImGui::GetContentRegionAvail().x;
-        const float scrollbarGutter = ImGui::GetStyle().ScrollbarSize + 10.f;
-        const float docW = std::max(120.f, articleAvailW - scrollbarGutter);
+        const float ui = Gw2Ui::GlobalScale();
+        const float scrollbarGutter = ImGui::GetStyle().ScrollbarSize + 10.f * ui;
+        const float docW = std::max(120.f * ui, articleAvailW - scrollbarGutter);
         const Wiki::Page &page = t.page;
         if ((app.wiki.IsLoadingPage() || !t.pendingTitle.empty()) && page.html.empty())
         {
@@ -1542,7 +1655,7 @@ namespace
         else if (t.render.article.doc)
         {
             const std::string anchor = s_pendingArticleAnchor;
-            DrawLiteDocument("##wikiArticleDoc", t.render.article, docW, height - 4.f, app,
+            DrawLiteDocument("##wikiArticleDoc", t.render.article, docW, height - 4.f * ui, app,
                              anchor.empty() ? nullptr : &anchor);
             if (!anchor.empty())
                 s_pendingArticleAnchor.clear();
@@ -1760,18 +1873,36 @@ namespace Wiki
                     DrawSearchPanel(app);
 
                     float &railW = app.config.wikiRailW;
+                    const float ui = Gw2Ui::GlobalScale();
+                    const float gap = 8.f * ui;
                     const ImVec2 avail = ImGui::GetContentRegionAvail();
-                    railW = std::clamp(railW, kRailMinW, std::max(kRailMinW, avail.x * 0.42f));
-                    const float splitterX = ImGui::GetCursorScreenPos().x + railW + 8.f;
                     const float height = std::max(80.f, avail.y);
+                    const float railMinW = kRailMinW * ui;
+                    const float articleMinW = 360.f * ui;
+                    const bool sideBySide = avail.x >= railMinW + gap * 2.f + articleMinW;
 
-                    DrawRail(app, railW, height);
-                    ImGui::SameLine(0.f, 8.f);
-                    if (Gw2Ui::VSplitter("##wikiRailSplit", splitterX, ImGui::GetCursorScreenPos().y, height,
-                                         &railW, kRailMinW, std::max(kRailMinW + 10.f, avail.x * 0.48f)))
-                        app.settingsDirty = true; // persist the rail width on drag
-                    ImGui::SameLine(0.f, 8.f);
-                    DrawArticle(app, std::max(120.f, ImGui::GetContentRegionAvail().x), height);
+                    if (sideBySide)
+                    {
+                        const float railMaxW = std::max(railMinW + 10.f * ui, std::min(avail.x * 0.48f, avail.x - articleMinW - gap * 2.f));
+                        railW = std::clamp(railW, railMinW, railMaxW);
+                        const float splitterX = ImGui::GetCursorScreenPos().x + railW + gap;
+
+                        DrawRail(app, railW, height);
+                        ImGui::SameLine(0.f, gap);
+                        if (Gw2Ui::VSplitter("##wikiRailSplit", splitterX, ImGui::GetCursorScreenPos().y, height,
+                                             &railW, railMinW, railMaxW))
+                            app.settingsDirty = true; // persist the rail width on drag
+                        ImGui::SameLine(0.f, gap);
+                        DrawArticle(app, std::max(articleMinW, ImGui::GetContentRegionAvail().x), height);
+                    }
+                    else
+                    {
+                        const float railH = std::min(std::max(180.f * ui, height * 0.34f), std::min(360.f * ui, height * 0.45f));
+                        DrawRail(app, avail.x, railH);
+                        ImGui::Dummy(ImVec2(1.f, gap));
+                        DrawArticle(app, std::max(120.f * ui, ImGui::GetContentRegionAvail().x),
+                                    std::max(80.f * ui, height - railH - gap));
+                    }
 
                     DrawLightbox();
                     DrawExternalPrompt();

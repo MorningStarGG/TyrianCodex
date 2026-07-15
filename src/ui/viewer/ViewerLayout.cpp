@@ -1,4 +1,5 @@
 #include "ui/viewer/ViewerLayout.h"
+#include "ui/Gw2Ui.h"
 #include "util/Draw.h"
 #include "Shared.h"          // CurrentMapId
 #include <algorithm>
@@ -85,7 +86,7 @@ float ViewerPanelAutoWidth(const App& app)
 
 float ViewerScale(const App& app)
 {
-    return std::clamp(app.config.viewerScale, 0.70f, 1.30f);
+    return Gw2Ui::GlobalScale() * std::clamp(app.config.viewerScale, 0.70f, 1.30f);
 }
 
 ImVec2 ViewerWindowPadding(const App& app)

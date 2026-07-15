@@ -90,14 +90,17 @@ void Gw2Ui::TextValueRow(const char *label, const char *value, float width, floa
 {
     const char *safeLabel = label ? label : "";
     const char *safeValue = value ? value : "";
+    const float sc = TextScale();
     const float w = ContentWidth(width);
+    const float rowH = (height > 0.f) ? std::max(height, fontSize + 4.f) * sc : (fontSize + 4.f) * sc;
+    const float inset = std::max(0.f, rightInset) * sc;
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    ImGui::Dummy(ImVec2(w, height));
-    RowHotspot row{p, w, height, false, false};
-    const float valueW = safeValue[0] ? (MeasureWidth(safeValue, fontSize) + std::max(0.f, valuePad) * TextScale()) : 0.f;
-    RowLabel(ImGui::GetWindowDrawList(), row, 0.f, valueW + std::max(0.f, rightInset), safeLabel,
+    ImGui::Dummy(ImVec2(w, rowH));
+    RowHotspot row{p, w, rowH, false, false};
+    const float valueW = safeValue[0] ? (MeasureWidth(safeValue, fontSize) + std::max(0.f, valuePad) * sc) : 0.f;
+    RowLabel(ImGui::GetWindowDrawList(), row, 0.f, valueW + inset, safeLabel,
              HAlign::Left, VAlign::Middle, labelColor, labelStroke, nullptr, fontSize);
-    RowLabel(ImGui::GetWindowDrawList(), row, 0.f, std::max(0.f, rightInset), safeValue,
+    RowLabel(ImGui::GetWindowDrawList(), row, 0.f, inset, safeValue,
              HAlign::Right, VAlign::Middle, valueColor, valueStroke, nullptr, fontSize);
 }
 
@@ -350,7 +353,7 @@ void Gw2Ui::ProgressBar(float fraction, const char *label, float width, float he
             const Texture_t *t = Tex::GetAssetTex(iconAssetId);
             if (t && t->Resource)
                 dl->AddImage((ImTextureID)t->Resource, ImVec2(p0.x, y), ImVec2(p0.x + capH, y + capH));
-            labelX = p0.x + capH + 6.f;
+            labelX = p0.x + capH + 6.f * sc;
         }
         if (haveLabel)
             LabelIn(ImVec2(labelX, y), ImVec2(p0.x + w - 42.f * sc, y + capH), label, HAlign::Left, VAlign::Middle,
@@ -363,27 +366,29 @@ void Gw2Ui::ProgressBar(float fraction, const char *label, float width, float he
     if (placement == BarText::Above && haveLabel)
     {
         drawCaption(y);
-        y += capH + 3.f;
+        y += capH + 3.f * sc;
     }
 
     // The bar itself: a recessed dark track + a vertical-gradient fill with a top sheen + a warm rim.
     const float h = std::max(12.f, height) * sc;
     const ImVec2 p(p0.x, y), e(p0.x + w, y + h);
-    const float rnd = std::min(h * 0.5f, 5.f);
+    const float rnd = std::min(h * 0.5f, 5.f * sc);
+    const float inset = std::min(2.f * sc, h * 0.33f);
     dl->AddRectFilled(p, e, IM_COL32(6, 8, 7, 220), rnd);
     dl->AddRectFilledMultiColor(p, ImVec2(e.x, p.y + h * 0.55f),
                                 IM_COL32(0, 0, 0, 80), IM_COL32(0, 0, 0, 80), IM_COL32(0, 0, 0, 0), IM_COL32(0, 0, 0, 0));
-    const float fw = std::max(0.f, (w - 4.f) * fraction);
+    const float fw = std::max(0.f, (w - inset * 2.f) * fraction);
     if (fw > 1.f)
     {
-        const ImVec2 fa(p.x + 2.f, p.y + 2.f);
-        const ImVec2 fb(p.x + 2.f + fw, e.y - 2.f);
+        const ImVec2 fa(p.x + inset, p.y + inset);
+        const ImVec2 fb(p.x + inset + fw, e.y - inset);
         const ImU32 fillTop = (fill & 0x00FFFFFFu) | ((ImU32)255u << 24);
         const ImU32 fillBot = (fill & 0x00FFFFFFu) | ((ImU32)165u << 24);
         dl->AddRectFilledMultiColor(fa, fb, fillTop, fillTop, fillBot, fillBot);
-        dl->AddLine(ImVec2(fa.x + 1.f, fa.y + 1.f), ImVec2(fb.x - 1.f, fa.y + 1.f), IM_COL32(255, 255, 255, 90), 1.f);
+        dl->AddLine(ImVec2(fa.x + 1.f * sc, fa.y + 1.f * sc), ImVec2(fb.x - 1.f * sc, fa.y + 1.f * sc),
+                    IM_COL32(255, 255, 255, 90), std::max(1.f, sc));
     }
-    dl->AddRect(p, e, IM_COL32(150, 124, 70, 185), rnd, 0, 1.2f); // warm rim
+    dl->AddRect(p, e, IM_COL32(150, 124, 70, 185), rnd, 0, 1.2f * sc); // warm rim
 
     // OnBar: overlay the count + % centered on the fill, sized to the bar height (so it isn't tiny on a tall
     // bar), stroked so it stays readable over the bright fill.
@@ -402,11 +407,11 @@ void Gw2Ui::ProgressBar(float fraction, const char *label, float width, float he
     float bottom = e.y;
     if (placement == BarText::Below && haveLabel)
     {
-        drawCaption(e.y + 3.f);
-        bottom = e.y + 3.f + capH;
+        drawCaption(e.y + 3.f * sc);
+        bottom = e.y + 3.f * sc + capH;
     }
 
-    ImGui::Dummy(ImVec2(w, (bottom - p0.y) + 6.f));
+    ImGui::Dummy(ImVec2(w, (bottom - p0.y) + 6.f * sc));
 }
 
 void Gw2Ui::ProgressBreakdown(const ProgressSeg *segs, int segCount,

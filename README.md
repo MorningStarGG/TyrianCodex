@@ -216,6 +216,7 @@ Tyrian Codex combines public Guild Wars 2 data, community marker packs, referenc
 - **Tekkit**: route trails and marker-pack data used by open-world and farming routes.
 - **QuitarHero**: route and marker-pack data used by some trails and gathering paths.
 - **Metallis**: farming and fishing data, including fishing-hole locations.
+- **SZG5**: dungeon trails and markers.
 - **Immortius**: Wardrobe unlock data from the GW2 Wardrobe Unlock Analyser.
 - **GW2StoryTimes.com**: community story completion-time estimates.
 - **GW2dat**: Guild Wars 2 asset references used by some icons and visual assets.
@@ -233,3 +234,7 @@ This project's source code is licensed under the **GNU General Public License v3
 Bundled Guild Wars 2 icons, map tiles, UI fonts, API-derived data, wiki-derived text, and community marker data remain under their original owners' rights and licenses. The GPLv3 applies to Tyrian Codex's own source code only.
 
 Guild Wars 2 is a trademark of ArenaNet, LLC. Tyrian Codex is an unofficial, fan-made addon and is not affiliated with or endorsed by ArenaNet.
+
+---
+
+**AI Disclaimer:** Parts of this was made with various AI tools to speed development time.

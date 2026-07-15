@@ -210,8 +210,10 @@ void InfoPanel::Render(App& app)
     const float W = io.DisplaySize.x, H = io.DisplaySize.y;
     if (W < 4.f || H < 4.f) return;
 
+    const float ui = Gw2Ui::GlobalScale();
     const float fs = cfg.infoTextSize, labelFs = std::max(10.f, fs - 4.f);   // labels distinctly smaller than values
-    const float barH = fs + 14.f, margin = 12.f, gap = 16.f;
+    const float fsPx = fs * ui;
+    const float barH = fsPx + 14.f * ui, margin = 12.f * ui, gap = 16.f * ui;
 
     // The visible segment per zone. Each compute() reads live state and several do O(N) scans (wallet, Wizard's
     // Vault, deaths, zone%) -- recomputing all of them EVERY frame is the single biggest always-on CPU cost, and
@@ -228,9 +230,9 @@ void InfoPanel::Render(App& app)
     auto& zones = s_zones;   // alias: the draw code below reads the cached segments
 
     const double now = ImGui::GetTime();
-    if ((now - s_lastT) >= 0.2 || s_char != app.state.currentChar || s_fs != fs || s_W != W)
+    if ((now - s_lastT) >= 0.2 || s_char != app.state.currentChar || s_fs != fsPx || s_W != W)
     {
-        s_lastT = now; s_char = app.state.currentChar; s_fs = fs; s_W = W;
+        s_lastT = now; s_char = app.state.currentChar; s_fs = fsPx; s_W = W;
         for (auto& z : zones) z.clear();
         s_any = false;
         for (const InfoSlot& slot : cfg.infoTexts.items)
@@ -242,9 +244,9 @@ void InfoPanel::Render(App& app)
             InfoData::HudSeg seg = def->compute(app, InfoData::HudOpts{ mp });
             if (seg.value.empty() && !seg.paint) continue;
             Seg e; e.key = slot.key; e.s = std::move(seg); if (mp) e.opts = *mp;
-            const float lw = e.s.label.empty() ? 0.f : Gw2Ui::MeasureWidth(e.s.label.c_str(), labelFs) + 5.f;
-            if (e.s.paint) e.w = lw + (e.s.paintSize > 0.f ? e.s.paintSize : (barH - 6.f));   // square icon (route arrow)
-            else           e.w = lw + (e.s.locked ? fs + 4.f : 0.f) + (e.s.icon ? fs + 6.f : 0.f) + Gw2Ui::MeasureWidth(e.s.value.c_str(), fs);   // icon = fs+2 box + 4 gap (matches the draw)
+            const float lw = e.s.label.empty() ? 0.f : Gw2Ui::MeasureWidth(e.s.label.c_str(), labelFs) + 5.f * ui;
+            if (e.s.paint) e.w = lw + (e.s.paintSize > 0.f ? e.s.paintSize * ui : (barH - 6.f * ui));   // square icon (route arrow)
+            else           e.w = lw + (e.s.locked ? fsPx + 4.f * ui : 0.f) + (e.s.icon ? fsPx + 6.f * ui : 0.f) + Gw2Ui::MeasureWidth(e.s.value.c_str(), fs);   // icon = fs+2 box + 4 gap (matches the draw)
             zones[slot.zone].push_back(std::move(e));
             s_any = true;
         }
@@ -264,7 +266,7 @@ void InfoPanel::Render(App& app)
         {
             const int a = (int)(cfg.infoOpacity * 2.35f);   // 0..100 -> 0..235
             dl->AddRectFilled(ImVec2(0.f, winY), ImVec2(W, winY + barH), IM_COL32(18, 15, 10, a < 0 ? 0 : (a > 235 ? 235 : a)));
-            dl->AddLine(ImVec2(0.f, cfg.infoEdge == 0 ? winY + barH : winY), ImVec2(W, cfg.infoEdge == 0 ? winY + barH : winY), IM_COL32(150, 124, 70, 150), 1.f);
+            dl->AddLine(ImVec2(0.f, cfg.infoEdge == 0 ? winY + barH : winY), ImVec2(W, cfg.infoEdge == 0 ? winY + barH : winY), IM_COL32(150, 124, 70, 150), ui);
         }
 
         auto drawSeg = [&](Seg& e, float x)
@@ -278,24 +280,24 @@ void InfoPanel::Render(App& app)
             const InfoData::HudText* def = InfoData::FindText(e.key.c_str());
             const bool needsKey = def && def->domains != 0u && !AccountData::HasKey();   // API text with no key entered
             const bool clickable = def && (needsKey || def->onClick || def->actions || def->popup);
-            if (hov) { dl->AddRectFilled(ImVec2(x - 3.f, winY + 1.f), ImVec2(x + e.w + 3.f, winY + barH - 1.f), IM_COL32(255, 220, 140, 26), 3.f);
+            if (hov) { dl->AddRectFilled(ImVec2(x - 3.f * ui, winY + 1.f * ui), ImVec2(x + e.w + 3.f * ui, winY + barH - 1.f * ui), IM_COL32(255, 220, 140, 26), 3.f * ui);
                        if (clickable) ImGui::SetMouseCursor(ImGuiMouseCursor_Hand); }
             float cx = x;
             if (!e.s.label.empty())
             {
                 Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.label.c_str(),
                                Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(190, 165, 110, 255), false, nullptr, labelFs);   // gold "kind" label
-                cx += Gw2Ui::MeasureWidth(e.s.label.c_str(), labelFs) + 6.f;
+                cx += Gw2Ui::MeasureWidth(e.s.label.c_str(), labelFs) + 6.f * ui;
             }
             if (e.s.paint)   // a square icon (e.g. the route arrow) instead of a value
             {
-                const float isz = e.s.paintSize > 0.f ? e.s.paintSize : (barH - 6.f);
+                const float isz = e.s.paintSize > 0.f ? e.s.paintSize * ui : (barH - 6.f * ui);
                 e.s.paint(app, InfoData::HudOpts{ &e.opts }, dl, ImVec2(cx + isz * 0.5f, winY + barH * 0.5f), isz);
             }
             else
             {
-                if (e.s.locked) { Render::DrawLock(dl, ImVec2(cx, winY + (barH - fs) * 0.5f), fs, true); cx += fs + 4.f; }   // padlock = locked waypoint
-                if (e.s.icon) { const float is = fs + 2.f; dl->AddImage((ImTextureID)e.s.icon, ImVec2(cx, winY + (barH - is) * 0.5f), ImVec2(cx + is, winY + (barH + is) * 0.5f)); cx += is + 4.f; }   // objective type icon
+                if (e.s.locked) { Render::DrawLock(dl, ImVec2(cx, winY + (barH - fsPx) * 0.5f), fsPx, true); cx += fsPx + 4.f * ui; }   // padlock = locked waypoint
+                if (e.s.icon) { const float is = fsPx + 2.f * ui; dl->AddImage((ImTextureID)e.s.icon, ImVec2(cx, winY + (barH - is) * 0.5f), ImVec2(cx + is, winY + (barH + is) * 0.5f)); cx += is + 4.f * ui; }   // objective type icon
                 Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.value.c_str(),
                                Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, e.s.color, false, nullptr, fs);
             }
@@ -318,7 +320,7 @@ void InfoPanel::Render(App& app)
             float x = startX;
             for (size_t i = 0; i < v.size(); ++i)
             {
-                if (i > 0) dl->AddLine(ImVec2(x - gap * 0.5f, winY + 5.f), ImVec2(x - gap * 0.5f, winY + barH - 5.f), IM_COL32(120, 108, 82, 120), 1.f);
+                if (i > 0) dl->AddLine(ImVec2(x - gap * 0.5f, winY + 5.f * ui), ImVec2(x - gap * 0.5f, winY + barH - 5.f * ui), IM_COL32(120, 108, 82, 120), ui);
                 drawSeg(v[i], x);
                 x += v[i].w + gap;
             }
@@ -357,7 +359,7 @@ void InfoPanel::Render(App& app)
             const std::map<std::string, int>* popts = OptsPtr(app, g_popupKey);   // by key -- works even if unplaced
             ImGui::PushStyleColor(ImGuiCol_PopupBg, IM_COL32(20, 17, 11, 245));
             ImGui::PushStyleColor(ImGuiCol_Border, IM_COL32(150, 124, 70, 220));
-            ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(10, 10));
+            ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(10.f * ui, 10.f * ui));
             if (ImGui::BeginPopup("##ipDataPopup"))
             {
                 if (pdef && pdef->popup) pdef->popup(app, InfoData::HudOpts{ popts });

@@ -135,7 +135,8 @@ bool Gw2Ui::BeginCard(const char *id, float width, ImU32 bg, ImU32 border)
 
 bool Gw2Ui::BeginAccentCard(const char *id, float width, ImU32 accent, ImU32 bg, ImU32 border)
 {
-    const float PAD = 8.f;
+    const float sc = Gw2Ui::TextScale();
+    const float PAD = 8.f * sc;
     const ImVec2 p = ImGui::GetCursorScreenPos();
     // Auto-width cards leave a small right margin so they never butt against the panel edge / scrollbar.
     const float W = (width > 0.f) ? width : std::max(40.f, ImGui::GetContentRegionAvail().x - 6.f);
@@ -150,14 +151,15 @@ bool Gw2Ui::BeginAccentCard(const char *id, float width, ImU32 accent, ImU32 bg,
     s_cardStack.push_back({p, W, bg, border, accent});
 
     ImGui::PushID(id);
-    ImGui::SetCursorScreenPos(ImVec2(p.x + PAD + (accent ? 8.f : 0.f), p.y + PAD));
+    ImGui::SetCursorScreenPos(ImVec2(p.x + PAD + (accent ? 8.f * sc : 0.f), p.y + PAD));
     ImGui::BeginGroup(); // measures the content extent for auto-height
     return true;
 }
 
 void Gw2Ui::EndCard()
 {
-    const float PAD = 8.f;
+    const float sc = Gw2Ui::TextScale();
+    const float PAD = 8.f * sc;
     ImGui::EndGroup();
     ImGui::PopID();
 
@@ -168,14 +170,14 @@ void Gw2Ui::EndCard()
 
     ImDrawList *dl = ImGui::GetWindowDrawList();
     dl->ChannelsSetCurrent(0); // background channel (behind the content)
-    dl->AddRectFilled(c.p, b, c.bg, 3.f);
-    dl->AddRect(c.p, b, c.border, 3.f);
+    dl->AddRectFilled(c.p, b, c.bg, 3.f * sc);
+    dl->AddRect(c.p, b, c.border, 3.f * sc);
     if (c.accent)
     {
         const ImU32 accentSoft = (c.accent & 0x00FFFFFFu) | ((ImU32)90u << 24);
-        dl->AddRectFilled(ImVec2(c.p.x + 4.f, c.p.y + 6.f), ImVec2(c.p.x + 7.f, b.y - 6.f), c.accent, 2.f);
-        dl->AddLine(ImVec2(c.p.x + 10.f, c.p.y + 4.f), ImVec2(c.p.x + 10.f, b.y - 4.f),
-                    accentSoft, 1.f);
+        dl->AddRectFilled(ImVec2(c.p.x + 4.f * sc, c.p.y + 6.f * sc), ImVec2(c.p.x + 7.f * sc, b.y - 6.f * sc), c.accent, 2.f * sc);
+        dl->AddLine(ImVec2(c.p.x + 10.f * sc, c.p.y + 4.f * sc), ImVec2(c.p.x + 10.f * sc, b.y - 4.f * sc),
+                    accentSoft, sc);
     }
     dl->ChannelsMerge();
 
@@ -188,7 +190,8 @@ float Gw2Ui::CardInnerWidth()
     if (s_cardStack.empty())
         return ImGui::GetContentRegionAvail().x;
     const GwCard &c = s_cardStack.back();
-    return c.w - 16.f - (c.accent ? 8.f : 0.f); // minus 2*PAD(8) (+ accent inset)
+    const float sc = Gw2Ui::TextScale();
+    return c.w - 16.f * sc - (c.accent ? 8.f * sc : 0.f); // minus 2*PAD(8) (+ accent inset)
 }
 
 float Gw2Ui::ContentWidth(float explicitWidth)

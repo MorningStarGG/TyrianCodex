@@ -28,7 +28,7 @@ void DashW::Loadouts(App& app, float w)
         std::vector<const char*> cn; cn.reserve(nL);
         for (const std::string& s : names) cn.push_back(s.c_str());
         int sel = Loadouts::Active(app);
-        if (Gw2Ui::Dropdown("##ldwidget", cn.data(), nL, &sel, w)) Loadouts::ApplyIndex(app, sel);
+        if (Gw2Ui::DropdownPx("##ldwidget", cn.data(), nL, &sel, w)) Loadouts::ApplyIndex(app, sel);
     }
 
     ImGui::Spacing();
@@ -49,7 +49,7 @@ void DashW::Loadouts(App& app, float w)
         for (const std::string& s : names) cn.push_back(s.c_str());
         int active = h->Active();
         ImGui::PushID(f);
-        if (Gw2Ui::Dropdown("##fam", cn.data(), n, &active, w)) Loadouts::SetFamily(app, f, active);
+        if (Gw2Ui::DropdownPx("##fam", cn.data(), n, &active, w)) Loadouts::SetFamily(app, f, active);
         ImGui::PopID();
     }
 }

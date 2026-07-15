@@ -35,6 +35,7 @@ void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix
 
     ImGui::PushID(idPrefix);
     const int n = host.Count();
+    const float ui = std::max(0.01f, Gw2Ui::GlobalScale());
 
     // ---- Card 1: active profile selector + management (New / Rename / Duplicate / Delete) ----
     // The management popups are opened AND begun inside this card so their ids resolve under the same scope
@@ -52,31 +53,31 @@ void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix
     std::vector<const char*> ptrs; ptrs.reserve(n);
     for (const std::string& s : names) ptrs.push_back(s.c_str());
     int sel = host.Active();
-    if (!ptrs.empty() && Gw2Ui::Dropdown("##sel", ptrs.data(), (int)ptrs.size(), &sel, std::min(availW, 320.f)))
+    if (!ptrs.empty() && Gw2Ui::DropdownPx("##sel", ptrs.data(), (int)ptrs.size(), &sel, std::min(availW, 320.f * ui)))
     { host.SetActive(sel); app.settingsDirty = true; }
-    ImGui::Dummy(ImVec2(0.f, 6.f));
+    ImGui::Dummy(ImVec2(0.f, 6.f * ui));
 
     // ---- New / Rename / Duplicate / Delete ----
     const std::string activeName = (host.Active() >= 0 && host.Active() < n) ? host.NameAt(host.Active()) : "Default";
     const bool  canDelete = n > 1;
-    const float bgap = 6.f;
+    const float bgap = 6.f * ui;
     const int   nbtn = canDelete ? 4 : 3;
-    const float bw   = Gw2Ui::FillWidth(availW, nbtn, bgap, 48.f);
+    const float bw   = Gw2Ui::FillWidth(availW, nbtn, bgap, 48.f * ui);
 
     auto openPrompt = [&](PromptMode m, int idx, const std::string& seed) {
         g_promptOwner = &host; g_promptMode = m; g_promptIdx = idx;
         std::snprintf(g_promptName, sizeof(g_promptName), "%s", seed.c_str());
         ImGui::OpenPopup("##profPrompt");
     };
-    if (Gw2Ui::Button("New", bw, 26.f)) openPrompt(PromptMode::New, -1, host.Suggest("Profile"));
+    if (Gw2Ui::ButtonPx("New", bw, 26.f * ui)) openPrompt(PromptMode::New, -1, host.Suggest("Profile"));
     ImGui::SameLine(0.f, bgap);
-    if (Gw2Ui::Button("Rename", bw, 26.f)) openPrompt(PromptMode::Rename, host.Active(), activeName);
+    if (Gw2Ui::ButtonPx("Rename", bw, 26.f * ui)) openPrompt(PromptMode::Rename, host.Active(), activeName);
     ImGui::SameLine(0.f, bgap);
-    if (Gw2Ui::Button("Duplicate", bw, 26.f)) openPrompt(PromptMode::Duplicate, host.Active(), host.Suggest(activeName + " copy"));
+    if (Gw2Ui::ButtonPx("Duplicate", bw, 26.f * ui)) openPrompt(PromptMode::Duplicate, host.Active(), host.Suggest(activeName + " copy"));
     if (canDelete)
     {
         ImGui::SameLine(0.f, bgap);
-        if (Gw2Ui::Button("Delete", bw, 26.f)) { g_delOwner = &host; g_delIdx = host.Active(); ImGui::OpenPopup("##profDelete"); }
+        if (Gw2Ui::ButtonPx("Delete", bw, 26.f * ui)) { g_delOwner = &host; g_delIdx = host.Active(); ImGui::OpenPopup("##profDelete"); }
     }
 
     // name prompt
@@ -136,7 +137,7 @@ void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix
     std::vector<std::string> chars = host.CharsWithProfiles();
     if (!chars.empty())
     {
-        ImGui::Dummy(ImVec2(0.f, 6.f));
+        ImGui::Dummy(ImVec2(0.f, 6.f * ui));
         Gw2Ui::Label("Import from character", IM_COL32(190, 178, 150, 255), false, nullptr, SettingsText::Header);
         Gw2Ui::BeginCard("impcard");
         const float impW = Gw2Ui::CardInnerWidth();   // full inner width (symmetric L/R padding)
@@ -149,7 +150,7 @@ void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix
         for (const std::string& s : chars) cptr.push_back(s.c_str());
 
         Gw2Ui::Label("Character", Gw2Ui::kTextSub, false, nullptr, SettingsText::Hint);
-        Gw2Ui::Dropdown("##impchar", cptr.data(), (int)cptr.size(), &g_impChar, std::min(impW, 320.f));
+        Gw2Ui::DropdownPx("##impchar", cptr.data(), (int)cptr.size(), &g_impChar, std::min(impW, 320.f * ui));
 
         std::vector<std::string> pnames = host.ProfileNamesOf(chars[g_impChar]);
         if (g_impProf < 0 || g_impProf >= (int)pnames.size()) g_impProf = 0;
@@ -158,14 +159,14 @@ void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix
 
         ImGui::Spacing();
         Gw2Ui::Label("Profile", Gw2Ui::kTextSub, false, nullptr, SettingsText::Hint);
-        if (!pptr.empty()) Gw2Ui::Dropdown("##impprof", pptr.data(), (int)pptr.size(), &g_impProf, std::min(impW, 320.f));
+        if (!pptr.empty()) Gw2Ui::DropdownPx("##impprof", pptr.data(), (int)pptr.size(), &g_impProf, std::min(impW, 320.f * ui));
 
         ImGui::Spacing();
-        const float ibg = 8.f;
-        const float ibw = std::max(60.f, (impW - ibg) / 2.f);
-        if (!pptr.empty() && Gw2Ui::Button("Import this profile", ibw, 26.f)) { host.CopyFrom(chars[g_impChar], g_impProf); app.settingsDirty = true; }
+        const float ibg = 8.f * ui;
+        const float ibw = std::max(60.f * ui, (impW - ibg) / 2.f);
+        if (!pptr.empty() && Gw2Ui::ButtonPx("Import this profile", ibw, 26.f * ui)) { host.CopyFrom(chars[g_impChar], g_impProf); app.settingsDirty = true; }
         ImGui::SameLine(0.f, ibg);
-        if (Gw2Ui::Button("Import all", ibw, 26.f)) { host.CopyAllFrom(chars[g_impChar]); app.settingsDirty = true; }
+        if (Gw2Ui::ButtonPx("Import all", ibw, 26.f * ui)) { host.CopyAllFrom(chars[g_impChar]); app.settingsDirty = true; }
         Gw2Ui::EndCard();
     }
 

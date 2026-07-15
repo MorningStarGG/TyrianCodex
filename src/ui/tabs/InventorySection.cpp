@@ -950,11 +950,11 @@ void DrawInventoryContent(App& app)
         return;
     }
 
-    const float refreshW = std::min(110.f, fullW);
+    const float refreshW = std::min(Gw2Ui::Scaled(110.f), fullW);
     const ImVec2 statusP = ImGui::GetCursorScreenPos();
     DrawStatusLine(AccountData::InventoryStatus());
     ImGui::SetCursorScreenPos(ImVec2(statusP.x + fullW - refreshW, statusP.y));
-    if (Gw2Ui::ActionButton("Refresh all", refreshW, 26.f, Gw2Ui::ActionButtonVariant::Normal, "Refresh all inventory sources"))
+    if (Gw2Ui::ActionButtonPx("Refresh all", refreshW, Gw2Ui::Scaled(26.f), Gw2Ui::ActionButtonVariant::Normal, "Refresh all inventory sources"))
         AccountData::WarmInventoryIndex(true);
     const float toolbarBottom = std::max(ImGui::GetItemRectMax().y, statusP.y + 24.f);
     ImGui::SetCursorScreenPos(ImVec2(statusP.x, toolbarBottom + 5.f));

@@ -40,8 +40,8 @@ namespace DashApi
         if (!noKey && !noScope) return true;
         Note(noKey ? UiStr::NoKeyGeneric : UiStr::NeedScope(scopeLabel));
         ImGui::Spacing();
-        if (Gw2Ui::ActionButton(noKey ? "Add API key" : "Open API settings", ImGui::GetContentRegionAvail().x, 24.f,
-                                Gw2Ui::ActionButtonVariant::Primary, "Open the API key field in Options"))
+        if (Gw2Ui::ActionButtonPx(noKey ? "Add API key" : "Open API settings", ImGui::GetContentRegionAvail().x, Gw2Ui::Scaled(24.f),
+                                  Gw2Ui::ActionButtonVariant::Primary, "Open the API key field in Options"))
             OpenApiSettings(app);
         return false;
     }
@@ -80,7 +80,7 @@ namespace DashApi
         for (size_t i = 0; i < m.characters.size(); ++i) { names.push_back(m.characters[i].name.c_str()); if (m.characters[i].name == sel) idx = (int)i; }
         if (idx == 0 && (sel.empty() || sel != m.characters[0].name)) sel = m.characters[0].name;   // fall back to first cached
 
-        if (Gw2Ui::Dropdown(id, names.data(), (int)names.size(), &idx, width))
+        if (Gw2Ui::DropdownPx(id, names.data(), (int)names.size(), &idx, width))
             sel = m.characters[idx].name;
         AccountData::EnsureCharDetail(sel);   // no-op once cached (guarded inside)
         return sel;

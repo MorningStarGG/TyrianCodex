@@ -31,6 +31,10 @@ void Gw2Ui::LabelDL(ImDrawList* dl, ImVec2 a, ImVec2 b, const char* text, HAlign
 ImFont* Gw2Ui::UiFontResolved() { return UiFont(nullptr); }
 ImFont* Gw2Ui::StockFont()      { return (NexusLink && NexusLink->Font) ? (ImFont*)NexusLink->Font : ImGui::GetFont(); }
 
+void Gw2Ui::SetGlobalScale(float s) { g_globalScale = std::clamp(s, 0.75f, 2.0f); }
+float Gw2Ui::GlobalScale()          { return g_globalScale; }
+float Gw2Ui::Scaled(float px)       { return px * g_globalScale; }
+float Gw2Ui::Unscaled(float px)     { return px / std::max(0.01f, g_globalScale); }
 void  Gw2Ui::PushTextScale(float s) { g_textScale.push_back(s > 0.05f ? s : 1.f); }
 void  Gw2Ui::PopTextScale()         { if (!g_textScale.empty()) g_textScale.pop_back(); }
 float Gw2Ui::TextScale()            { return CurTextScale(); }
@@ -42,7 +46,8 @@ void Gw2Ui::SetTooltipFontSize(float px) { g_ttBase = (px > 6.f) ? px : 20.f; }
 
 bool Gw2Ui::TooltipBegin()
 {
-    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(9.f, 7.f));
+    const float sc = GlobalScale();
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(9.f * sc, 7.f * sc));
     ImGui::BeginTooltip();
     PushTextScale(1.f);   // a tooltip raised from a scaled dashboard hover must not inherit that scale
     return true;
@@ -60,7 +65,8 @@ void Gw2Ui::TooltipEnd()
 static void TtLine(const char* text, ImU32 col, float fs, bool bold, float xIndent)
 {
     if (!text || !*text) return;
-    const float maxW = kTtMaxW - xIndent;
+    const float sc = Gw2Ui::TextScale();
+    const float maxW = kTtMaxW * sc - xIndent;
     // +4 px so a string that fits on ONE line doesn't wrap on a rounding edge (ImGui word-wrap treats
     // "fits exactly" as "wrap", which split e.g. "Copy waypoint" onto two lines).
     const float tw   = std::min(Gw2Ui::MeasureWidth(text, fs) + 4.f, maxW);
@@ -80,9 +86,9 @@ void Gw2Ui::TooltipColored(const char* text, ImU32 col) { TtLine(text, col, g_tt
 void Gw2Ui::TooltipBullet(const char* text)
 {
     if (!text || !*text) return;
-    const float fs = g_ttBase, indent = 11.f;
+    const float fs = g_ttBase, sc = GlobalScale(), indent = 11.f * sc;
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    ImGui::GetWindowDrawList()->AddCircleFilled(ImVec2(p.x + 3.f, p.y + fs * 0.5f + 1.f), 1.7f, IM_COL32(210, 196, 150, 255));
+    ImGui::GetWindowDrawList()->AddCircleFilled(ImVec2(p.x + 3.f * sc, p.y + fs * TextScale() * 0.5f + sc), 1.7f * sc, IM_COL32(210, 196, 150, 255));
     TtLine(text, IM_COL32(224, 217, 197, 255), fs, false, indent);
 }
 

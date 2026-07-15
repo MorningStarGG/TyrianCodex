@@ -50,8 +50,8 @@ void DrawActionGlyph(ImDrawList* dl, ImVec2 c, ActionIcon icon, ImU32 col, float
 bool DrawActionButton(const char* id, float w, float h, ActionIcon icon, ImU32 accent,
                       const char* label, const char* tooltip, bool compact, float vs)
 {
-    const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFrame(id, ImVec2(w, h), Gw2Ui::ActionButtonVariant::Normal,
-                                                                  false, tooltip);
+    const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFramePx(id, ImVec2(w, h), Gw2Ui::ActionButtonVariant::Normal,
+                                                                    false, tooltip);
     const ImVec2 p = r.min;
     const ImVec2 b = r.max;
     ImDrawList* dl = ImGui::GetWindowDrawList();

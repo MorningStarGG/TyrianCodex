@@ -57,9 +57,10 @@ namespace Gw2Ui
         ImFont *g_gw2Italic = nullptr;
         int g_fontRevision = 0;
 
-        // Global text-scale stack (see Gw2Ui::PushTextScale). 1.0 = no scaling.
+        // Global screen UI scale + local text-scale stack (see Gw2Ui::PushTextScale).
+        float g_globalScale = 1.f;
         std::vector<float> g_textScale;
-        float CurTextScale() { return g_textScale.empty() ? 1.f : g_textScale.back(); }
+        float CurTextScale() { return g_globalScale * (g_textScale.empty() ? 1.f : g_textScale.back()); }
 
         ImFont *UiFont(ImFont *f)
         {

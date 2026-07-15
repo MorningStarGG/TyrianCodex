@@ -145,6 +145,31 @@ static Setting SStr(int sec, const char *k, const char *n, const char *s, char *
 static const char *kWvwCurModeNames[] = {"Map + data", "Map only", "Data only"};
 static const char *kWvwMapModeNames[] = {"Off", "Data only", "Map only", "Map + data"};
 static const char *kTopBottomNames[] = {"Top", "Bottom"}; // HUD / Info Panel dock edge
+static const char *kUiScaleNames[] = {
+    "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%", "130%", "135%",
+    "140%", "145%", "150%", "155%", "160%", "165%", "170%", "175%", "180%", "185%", "190%", "195%", "200%"};
+static constexpr float kUiScaleMin = 0.75f;
+static constexpr float kUiScaleMax = 2.0f;
+static constexpr float kUiScaleStep = 0.05f;
+static constexpr int kUiScaleCount = static_cast<int>(sizeof(kUiScaleNames) / sizeof(kUiScaleNames[0]));
+
+static int UiScaleIndex(float value)
+{
+    const float clamped = std::clamp(value, kUiScaleMin, kUiScaleMax);
+    const int index = static_cast<int>(std::lround((clamped - kUiScaleMin) / kUiScaleStep));
+    return std::clamp(index, 0, kUiScaleCount - 1);
+}
+
+static float UiScaleValue(int index)
+{
+    index = std::clamp(index, 0, kUiScaleCount - 1);
+    return std::round((kUiScaleMin + static_cast<float>(index) * kUiScaleStep) * 100.f) / 100.f;
+}
+
+static float SnapUiScale(float value)
+{
+    return UiScaleValue(UiScaleIndex(value));
+}
 
 // Rebuilt fresh each call (by value) rather than cached in a function-static: the addresses now point into
 // app.config, which is delete'd + new'd on a hot-reload, so a cached table would dangle. Rebuilding the
@@ -164,6 +189,7 @@ std::vector<Setting> Settings(App &app)
         SBool(SEC_GENERAL, "craftShopByItem", "Crafting: shopping list grouped by item", "crafting cart shopping list flat grouped by item per output materials", &app.config.craftShopByItem, GeneralBehaviorId, GeneralBehaviorName),
         SBool(SEC_GENERAL, "craftStepsByItem", "Crafting: steps grouped by item", "crafting cart steps build order flat grouped by item per output", &app.config.craftStepsByItem, GeneralBehaviorId, GeneralBehaviorName),
         SBool(SEC_GENERAL, "useGw2Font", "Use GW2 font (Menomonia)", "font gw2 menomonia typeface text readable game", &app.config.useGw2Font, GeneralTextId, GeneralTextName),
+        SFloat(SEC_GENERAL, "uiScale", "Global UI scale", "global ui scale interface size bigger smaller readable all windows hud dashboard", &app.config.uiScale, 0.75f, 2.0f, "%.2f", GeneralTextId, GeneralTextName),
         SEnum(SEC_GENERAL, "tooltipFontSize", "Tooltip text size", "tooltip hover text size font bigger larger readable", &app.config.tooltipFontSize, kFontSizeNames, kFontSizeCount, GeneralTextId, GeneralTextName),
         SFloat(SEC_GENERAL, "atlasTextScale", "Atlas text scale", "atlas search location database text size scale font bigger larger readable", &app.config.atlasTextScale, 0.8f, 1.6f, "%.2f", GeneralTextId, GeneralTextName),
 
@@ -444,6 +470,7 @@ static const char *SettingDesc(const char *key)
         {"craftSubComponents", "In the crafting cart, expand intermediate components into their own recipes (craft them) instead of buying the intermediates outright."},
         {"craftShopByItem", "Crafting-cart shopping list layout: group the materials under each output item instead of one flat combined list."},
         {"craftStepsByItem", "Crafting-cart build-order layout: group the craft steps under each output item instead of one flat combined order."},
+        {"uiScale", "Global size multiplier for Tyrian Codex screen UI, chosen in 5% steps. Existing panel, dashboard, arrow, tooltip, and banner size settings still fine-tune on top of this."},
         {"atlasTextScale", "Text + row size for the Atlas search / location browser only. Raise it for a more readable list."},
         {"wikiConfirmExternal", "Ask for confirmation before the in-overlay Wiki opens a link that leaves the wiki (an external website in your browser)."},
         {"keyLoadoutCycle", "Keybind to switch to the next loadout (a whole-bundle swap of your saved setups)."},
@@ -664,6 +691,20 @@ bool DrawSetting(const Setting &s, float labelCol) // returns true the frame the
     char id[96];
     std::snprintf(id, sizeof(id), "##%s", s.name);
     bool changed = false;
+    const float ui = Gw2Ui::GlobalScale();
+    const float rowW = std::max(1.f, Gw2Ui::CardInnerWidth());
+    const float minControlW = 170.f * ui;
+    auto placeControl = [&]()
+    {
+        if (rowW - labelCol >= minControlW)
+            ImGui::SameLine(labelCol);
+        else
+            ImGui::Dummy(ImVec2(0.f, 2.f * ui));
+    };
+    auto fitControlW = [&](float logicalW)
+    {
+        return std::max(1.f, std::min(logicalW * ui, ImGui::GetContentRegionAvail().x));
+    };
     ImGui::BeginGroup();
     switch (s.kind)
     {
@@ -672,34 +713,54 @@ bool DrawSetting(const Setting &s, float labelCol) // returns true the frame the
         break;
     case SKind::Float:
         Gw2Ui::Label(s.name);
-        ImGui::SameLine(labelCol);
-        changed = Gw2Ui::Slider(id, s.vf, s.fmin, s.fmax, s.ffmt);
+        placeControl();
+        if (s.vf && s.key && std::strcmp(s.key, "uiScale") == 0)
+        {
+            int selected = UiScaleIndex(*s.vf);
+            const float snapped = UiScaleValue(selected);
+            if (std::fabs(*s.vf - snapped) > 0.001f)
+            {
+                *s.vf = snapped;
+                changed = true;
+            }
+            if (Gw2Ui::DropdownPx(id, kUiScaleNames, kUiScaleCount, &selected, fitControlW(150.f)))
+            {
+                *s.vf = UiScaleValue(selected);
+                changed = true;
+            }
+        }
+        else
+            changed = Gw2Ui::Slider(id, s.vf, s.fmin, s.fmax, s.ffmt);
         break;
     case SKind::Int:
         Gw2Ui::Label(s.name);
-        ImGui::SameLine(labelCol);
+        placeControl();
         changed = Gw2Ui::SliderInt(id, s.vi, s.imin, s.imax);
         break;
     case SKind::Enum:
         Gw2Ui::Label(s.name);
-        ImGui::SameLine(labelCol);
-        changed = Gw2Ui::Dropdown(id, s.enames, s.ecount, s.ve, 240.f);
+        placeControl();
+        changed = Gw2Ui::DropdownPx(id, s.enames, s.ecount, s.ve, fitControlW(240.f));
         break;
     case SKind::Keybind:
-        changed = Gw2Ui::KeybindAssigner(s.name, s.vk, s.kbuf, 380.f, 230.f);
+    {
+        const float widthPx = std::min(380.f * ui, rowW);
+        const float namePx = std::min(230.f * ui, widthPx * 0.58f);
+        changed = Gw2Ui::KeybindAssigner(s.name, s.vk, s.kbuf, Gw2Ui::Unscaled(widthPx), Gw2Ui::Unscaled(namePx));
         break;
+    }
     case SKind::String:
         Gw2Ui::Label(s.name);
-        ImGui::SameLine(labelCol);
+        placeControl();
         if (s.secret)
         {
             // Masked by default (hidden) so a key never shows on stream; an eye toggle reveals it to verify.
             // Reveal state is per-key UI state (resets to hidden each session).
             static std::map<std::string, bool> s_reveal;
-            changed = Gw2Ui::TextBoxSecret(id, s.vs, s.sbuf, 240.f, &s_reveal[s.key]);
+            changed = Gw2Ui::TextBoxSecret(id, s.vs, s.sbuf, fitControlW(240.f), &s_reveal[s.key]);
         }
         else
-            changed = Gw2Ui::TextBox(id, s.vs, s.sbuf, 240.f);
+            changed = Gw2Ui::TextBox(id, s.vs, s.sbuf, fitControlW(240.f));
         break;
     }
     ImGui::EndGroup();
@@ -862,6 +923,7 @@ void LoadSettings(App &app)
         { /* malformed value -> keep the default */
         }
     }
+    app.config.uiScale = SnapUiScale(app.config.uiScale);
     if (auto it = j.find("arrowPosX"); it != j.end() && it->is_number())
         app.config.arrowPosX = it->get<float>();
     if (auto it = j.find("arrowPosY"); it != j.end() && it->is_number())

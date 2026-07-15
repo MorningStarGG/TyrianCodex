@@ -23,7 +23,7 @@ namespace
 
     bool ActionButton(const char* label, float width, Gw2Ui::ActionButtonVariant variant = Gw2Ui::ActionButtonVariant::Normal)
     {
-        return Gw2Ui::ActionButton(label, width, 24.f, variant);
+        return Gw2Ui::ActionButtonPx(label, width, Gw2Ui::Scaled(24.f), variant);
     }
 }
 
@@ -64,9 +64,10 @@ void DashW::TravelTarget(App& app, float w)
             return;
         }
 
-        const float bw = (w - 8.f) * 0.5f;
+        const float gap = Gw2Ui::Scaled(8.f);
+        const float bw = (w - gap) * 0.5f;
         if (ActionButton("Copy waypoint", bw, Gw2Ui::ActionButtonVariant::Primary)) { SetClipboard(known.chatLink); ViewerAlert("Copied travel waypoint link - paste/click to teleport."); }
-        ImGui::SameLine(0.f, 8.f);
+        ImGui::SameLine(0.f, gap);
         if (ActionButton("Clear target", bw)) t.Clear();
     }
     else

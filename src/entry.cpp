@@ -543,6 +543,7 @@ static void Render()
     try
     {
         Gw2Ui::NewFrameEscReset();                                                                                // clear the per-frame "a Gw2Ui window is focused" flag; BeginWindow re-sets it
+        Gw2Ui::SetGlobalScale(g_app->config.uiScale);                                                             // one addon-wide screen UI multiplier; local panel/text scales stack on top
         Gw2Ui::SetTooltipFontSize(kFontSizePx[std::clamp(g_app->config.tooltipFontSize, 0, kFontSizeCount - 1)]); // push the user's tooltip text size into the framework
         UpdateChatLinkWatch();                                                                                    // clicked-chat-link travel (default on) + the map-center probe (default off) -- inside the try so a chat/travel exception can't escape into GW2's render loop
         g_app->api.Pump();                      // deliver any completed API callbacks on this (render) thread before drawing

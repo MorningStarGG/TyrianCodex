@@ -35,6 +35,7 @@ namespace detail
     extern ImFont* g_gw2Italic;
     extern std::vector<Gw2Ui::FontBake> g_fontLadder;   // native-size ladder, sorted ascending by px
     extern int     g_fontRevision;
+    extern float   g_globalScale; // Config::uiScale, clamped; applies to every Gw2Ui text measurement/draw
     extern std::vector<float> g_textScale; // PushTextScale stack; 1.0 = no scaling
     float   CurTextScale();
     ImFont* UiFont(ImFont* f);            // resolve the face (NO size): caller font > Menomonia 24 > Nexus > ImGui

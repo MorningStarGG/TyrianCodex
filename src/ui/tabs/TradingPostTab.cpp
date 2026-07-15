@@ -194,18 +194,19 @@ namespace
     // A light-up toggle BUTTON (the Items-tab "Tradeable" style); flips *v on click and returns true then.
     bool CraftToggle(const char* id, const char* label, bool* v, const char* tip, float w)
     {
-        const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFrame(id, ImVec2(w, 26.f), Gw2Ui::ActionButtonVariant::Normal, false, tip);
+        const float ui = Gw2Ui::GlobalScale();
+        const Gw2Ui::ActionButtonResult r = Gw2Ui::ActionButtonFramePx(id, ImVec2(w, 26.f * ui), Gw2Ui::ActionButtonVariant::Normal, false, tip);
         ImDrawList* dl = ImGui::GetWindowDrawList();
         if (*v)
         {
-            dl->AddRectFilled(r.min, r.max, IM_COL32(88, 62, 22, 62), 3.f);
-            dl->AddRect(r.min, r.max, Gw2Ui::Alpha(Gw2Ui::kGold, 220), 3.f, 0, 1.45f);
-            dl->AddRect(ImVec2(r.min.x + 1.f, r.min.y + 1.f), ImVec2(r.max.x - 1.f, r.max.y - 1.f), Gw2Ui::Alpha(Gw2Ui::kGold, 70), 2.f, 0, 1.f);
+            dl->AddRectFilled(r.min, r.max, IM_COL32(88, 62, 22, 62), 3.f * ui);
+            dl->AddRect(r.min, r.max, Gw2Ui::Alpha(Gw2Ui::kGold, 220), 3.f * ui, 0, 1.45f * ui);
+            dl->AddRect(ImVec2(r.min.x + ui, r.min.y + ui), ImVec2(r.max.x - ui, r.max.y - ui), Gw2Ui::Alpha(Gw2Ui::kGold, 70), 2.f * ui, 0, ui);
         }
         const ImU32 textCol = *v ? Gw2Ui::kGold
                             : ((r.hovered || r.held) ? IM_COL32(255, 232, 184, 255) : IM_COL32(225, 209, 176, 248));
         Gw2Ui::PushTextScale(1.f);
-        Gw2Ui::LabelIn(ImVec2(r.min.x + 8.f, r.min.y), ImVec2(r.max.x - 8.f, r.max.y), label,
+        Gw2Ui::LabelIn(ImVec2(r.min.x + 8.f * ui, r.min.y), ImVec2(r.max.x - 8.f * ui, r.max.y), label,
                        Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, textCol, true, nullptr, 16.f);
         Gw2Ui::PopTextScale();
         if (r.clicked) { *v = !*v; return true; }
@@ -668,21 +669,23 @@ static void DrawFlipFinderContent(App& app)
     Gw2Ui::BeginCard("flip-controls");
     Gw2Ui::SectionHeader("Flip Finder");
     const float w  = Gw2Ui::ContentWidth();
+    const float ui = Gw2Ui::GlobalScale();
     const float bh = Gw2Ui::InputBoxHeight();   // the search-box height; the dropdown + Refresh match it so the row lines up
     // Reserve the fixed sort+refresh tail, then size the search box from what's left so the row never overflows.
-    const float flipTail = 8.f + 120.f + 8.f + 110.f;
-    const float  searchW    = std::max(140.f, std::min(320.f, w - flipTail));
+    const float gap = 8.f * ui, sortW = 120.f * ui, refreshW = 110.f * ui;
+    const float flipTail = gap + sortW + gap + refreshW;
+    const float  searchW    = std::max(140.f * ui, std::min(320.f * ui, w - flipTail));
     const ImVec2 flipRowTop = ImGui::GetCursorScreenPos();
     Gw2Ui::SearchBox("##flipsearch", g_flipSearch, sizeof(g_flipSearch), searchW, "Search items...");
     // SearchBox parks the cursor below-left, so SameLine would land the dropdown INSIDE the box -- position it
     // explicitly to the right of the full box width instead.
-    ImGui::SetCursorScreenPos(ImVec2(flipRowTop.x + searchW + 10.f, flipRowTop.y));
+    ImGui::SetCursorScreenPos(ImVec2(flipRowTop.x + searchW + 10.f * ui, flipRowTop.y));
     static const char* kSorts[] = { "Score", "Profit", "ROI", "Spread", "Supply", "Demand", "Name", "Buy", "Sell", "Depth" };
     const int prevSort = g_flipSort;
-    if (Gw2Ui::Dropdown("##flipsort", kSorts, 10, &g_flipSort, 120.f, nullptr, nullptr, 0, bh) && g_flipSort != prevSort)
+    if (Gw2Ui::DropdownPx("##flipsort", kSorts, 10, &g_flipSort, sortW, nullptr, nullptr, 0, bh) && g_flipSort != prevSort)
         g_flipAsc = FlipDefaultAsc(g_flipSort);
-    ImGui::SameLine(0.f, 8.f);
-    if (Gw2Ui::ActionButton("Refresh", 110.f, bh, Gw2Ui::ActionButtonVariant::Normal, "Refresh the datawars2 market snapshot"))
+    ImGui::SameLine(0.f, gap);
+    if (Gw2Ui::ActionButtonPx("Refresh", refreshW, bh, Gw2Ui::ActionButtonVariant::Normal, "Refresh the datawars2 market snapshot"))
         MarketData::Warm(true);
     if (MarketData::IsRefreshing()) { ImGui::SameLine(); Gw2Ui::Label("Updating...", Gw2Ui::kTextDim, false, nullptr, 14.f); }
 
@@ -1172,41 +1175,42 @@ static void DrawCraftBody(App& app)
         // Picker dropdown + New/Rename/Delete. The "Project" label is dropped (the dropdown is self-evident) so
         // the row fits a narrow rail. The dropdown takes a capped share; the 3 buttons share the rest via
         // FillWidth, wrapping to a 2nd row when even their minimum widths won't fit alongside the dropdown.
+        const float ui = Gw2Ui::GlobalScale();
         const float projW   = Gw2Ui::ContentWidth();
-        const float projGap = 6.f;
-        const float btnMin  = 56.f;
-        const bool  projWrap = projW < 190.f + projGap + (btnMin * 3.f + projGap * 2.f);
-        const float ddW     = projWrap ? projW : std::min(190.f, projW - projGap - (btnMin * 3.f + projGap * 2.f));
-        if (Gw2Ui::Dropdown("##projsel", cnames.data(), (int)cnames.size(), &sel, ddW) && sel >= 0 && sel < (int)names.size())
+        const float projGap = 6.f * ui;
+        const float btnMin  = 56.f * ui;
+        const bool  projWrap = projW < 190.f * ui + projGap + (btnMin * 3.f + projGap * 2.f);
+        const float ddW     = projWrap ? projW : std::min(190.f * ui, projW - projGap - (btnMin * 3.f + projGap * 2.f));
+        if (Gw2Ui::DropdownPx("##projsel", cnames.data(), (int)cnames.size(), &sel, ddW) && sel >= 0 && sel < (int)names.size())
         { CraftCart::SetActive(names[sel]); g_craftDirty = true; g_craftProjMode = 0; }
-        if (projWrap) ImGui::Dummy(ImVec2(0.f, 4.f)); else ImGui::SameLine(0.f, projGap);
+        if (projWrap) ImGui::Dummy(ImVec2(0.f, 4.f * ui)); else ImGui::SameLine(0.f, projGap);
         const float projBtnW = projWrap ? Gw2Ui::FillWidth(projW, 3, projGap, btnMin)
                                         : Gw2Ui::FillWidth(projW - ddW - projGap, 3, projGap, btnMin);
-        if (Gw2Ui::ActionButton("New", projBtnW, 26.f)) { g_craftProjMode = 1; g_craftProjEdit[0] = '\0'; }
+        if (Gw2Ui::ActionButtonPx("New", projBtnW, 26.f * ui)) { g_craftProjMode = 1; g_craftProjEdit[0] = '\0'; }
         ImGui::SameLine(0.f, projGap);
-        if (Gw2Ui::ActionButton("Rename", projBtnW, 26.f)) { g_craftProjMode = 2; std::snprintf(g_craftProjEdit, sizeof(g_craftProjEdit), "%s", active.c_str()); }
+        if (Gw2Ui::ActionButtonPx("Rename", projBtnW, 26.f * ui)) { g_craftProjMode = 2; std::snprintf(g_craftProjEdit, sizeof(g_craftProjEdit), "%s", active.c_str()); }
         ImGui::SameLine(0.f, projGap);
-        if (Gw2Ui::ActionButton("Delete", projBtnW, 26.f)) { CraftCart::Delete(active); g_craftDirty = true; g_craftProjMode = 0; }
+        if (Gw2Ui::ActionButtonPx("Delete", projBtnW, 26.f * ui)) { CraftCart::Delete(active); g_craftDirty = true; g_craftProjMode = 0; }
         if (g_craftProjMode != 0)
         {
-            ImGui::Dummy(ImVec2(0.f, 4.f));
+            ImGui::Dummy(ImVec2(0.f, 4.f * ui));
             const char* projEditLbl = g_craftProjMode == 1 ? "New:" : "Rename:";
             Gw2Ui::Label(projEditLbl, Gw2Ui::kTextDim, false, nullptr, 14.f);
-            ImGui::SameLine(0.f, 6.f);
+            ImGui::SameLine(0.f, 6.f * ui);
             // Fit the edit box: take the content width minus the label, the OK(52)+Cancel(70) tail and gaps.
             const float projEditW = Gw2Ui::ContentWidth()
-                                  - Gw2Ui::MeasureWidth(projEditLbl, 14.f) - 6.f   // label + its gap
-                                  - 52.f - 70.f - 6.f - 6.f;                       // OK + Cancel + their gaps
-            Gw2Ui::TextBox("##projedit", g_craftProjEdit, sizeof(g_craftProjEdit), std::max(120.f, projEditW));
-            ImGui::SameLine(0.f, 6.f);
-            if (Gw2Ui::ActionButton("OK", 52.f, 26.f))
+                                  - Gw2Ui::MeasureWidth(projEditLbl, 14.f) - 6.f * ui   // label + its gap
+                                  - 52.f * ui - 70.f * ui - 6.f * ui - 6.f * ui;        // OK + Cancel + their gaps
+            Gw2Ui::TextBox("##projedit", g_craftProjEdit, sizeof(g_craftProjEdit), std::max(120.f * ui, projEditW));
+            ImGui::SameLine(0.f, 6.f * ui);
+            if (Gw2Ui::ActionButtonPx("OK", 52.f * ui, 26.f * ui))
             {
                 if (g_craftProjMode == 1) CraftCart::New(g_craftProjEdit);
                 else CraftCart::Rename(active, g_craftProjEdit);
                 g_craftProjMode = 0; g_craftDirty = true;
             }
-            ImGui::SameLine(0.f, 6.f);
-            if (Gw2Ui::ActionButton("Cancel", 70.f, 26.f)) g_craftProjMode = 0;
+            ImGui::SameLine(0.f, 6.f * ui);
+            if (Gw2Ui::ActionButtonPx("Cancel", 70.f * ui, 26.f * ui)) g_craftProjMode = 0;
         }
         ImGui::PopID();
     }
@@ -1254,11 +1258,13 @@ static void DrawCraftBody(App& app)
             const ImVec2 srp = ImGui::GetCursorScreenPos();
             const float sfw = Gw2Ui::ContentWidth();
             const float srH = 24.f * Gw2Ui::TextScale();
-            const float saddW = 60.f;
-            if (CraftItemRow(shown, sfw - saddW - 8.f, it).clicked) { g_craftPreview = it.id; g_craftPreviewQty = 1; }
-            ImGui::SetCursorScreenPos(Gw2Ui::RowRight(Gw2Ui::RowHotspot{ srp, sfw, srH, false, false }, saddW, 24.f));
+            const float ui = Gw2Ui::GlobalScale();
+            const float saddW = 60.f * ui;
+            const float gap = 8.f * ui;
+            if (CraftItemRow(shown, sfw - saddW - gap, it).clicked) { g_craftPreview = it.id; g_craftPreviewQty = 1; }
+            ImGui::SetCursorScreenPos(Gw2Ui::RowRight(Gw2Ui::RowHotspot{ srp, sfw, srH, false, false }, saddW, srH));
             ImGui::PushID(it.id);
-            if (Gw2Ui::ActionButton("Add", saddW, 24.f, Gw2Ui::ActionButtonVariant::Primary, "Add to cart")) { CraftQueueAdd(it.id); g_craftSearch[0] = '\0'; }
+            if (Gw2Ui::ActionButtonPx("Add", saddW, srH, Gw2Ui::ActionButtonVariant::Primary, "Add to cart")) { CraftQueueAdd(it.id); g_craftSearch[0] = '\0'; }
             ImGui::PopID();
             ImGui::SetCursorScreenPos(ImVec2(srp.x, srp.y + srH));
             if (++shown >= 8) break;
@@ -1297,18 +1303,19 @@ static void DrawCraftBody(App& app)
         char qb[24]; std::snprintf(qb, sizeof(qb), "x%lld", g_craftPreviewQty);
         // The steppers stay fixed; the two action buttons share the remaining content width via FillWidth so
         // they never run off a narrow rail (was 124 + 110 hardcoded).
-        const float pvStepper = 30.f + 6.f + Gw2Ui::MeasureWidth(qb, 16.f) + 6.f + 30.f + 12.f;
-        const float pvActW    = Gw2Ui::FillWidth(Gw2Ui::ContentWidth() - pvStepper, 2, 6.f, 90.f);
-        if (Gw2Ui::ActionButton("-", 30.f, 26.f) && g_craftPreviewQty > 1) --g_craftPreviewQty;
-        ImGui::SameLine(0.f, 6.f);
+        const float ui = Gw2Ui::GlobalScale();
+        const float pvStepper = 30.f * ui + 6.f * ui + Gw2Ui::MeasureWidth(qb, 16.f) + 6.f * ui + 30.f * ui + 12.f * ui;
+        const float pvActW    = Gw2Ui::FillWidth(Gw2Ui::ContentWidth() - pvStepper, 2, 6.f * ui, 90.f * ui);
+        if (Gw2Ui::ActionButtonPx("-", 30.f * ui, 26.f * ui) && g_craftPreviewQty > 1) --g_craftPreviewQty;
+        ImGui::SameLine(0.f, 6.f * ui);
         Gw2Ui::Label(qb, IM_COL32(236, 230, 212, 255), false, nullptr, 16.f);
-        ImGui::SameLine(0.f, 6.f);
-        if (Gw2Ui::ActionButton("+", 30.f, 26.f)) ++g_craftPreviewQty;
-        ImGui::SameLine(0.f, 12.f);
-        if (Gw2Ui::ActionButton("Add to cart", pvActW, 26.f, Gw2Ui::ActionButtonVariant::Primary))
+        ImGui::SameLine(0.f, 6.f * ui);
+        if (Gw2Ui::ActionButtonPx("+", 30.f * ui, 26.f * ui)) ++g_craftPreviewQty;
+        ImGui::SameLine(0.f, 12.f * ui);
+        if (Gw2Ui::ActionButtonPx("Add to cart", pvActW, 26.f * ui, Gw2Ui::ActionButtonVariant::Primary))
         { CraftCart::Add(CraftCart::Active(), g_craftPreview, g_craftPreviewQty); g_craftDirty = true; g_craftPreview = 0; g_craftPreviewQty = 1; }
-        ImGui::SameLine(0.f, 6.f);
-        if (Gw2Ui::ActionButton("Back to cart", pvActW, 26.f)) { g_craftPreview = 0; g_craftPreviewQty = 1; }
+        ImGui::SameLine(0.f, 6.f * ui);
+        if (Gw2Ui::ActionButtonPx("Back to cart", pvActW, 26.f * ui)) { g_craftPreview = 0; g_craftPreviewQty = 1; }
         ImGui::PopID();
         Gw2Ui::EndCard();
 
@@ -1353,13 +1360,14 @@ static void DrawCraftBody(App& app)
         const ItemCatalog::Item& it = ItemCatalog::ById(id);
         if (CraftItemRow(i, 0.f, it).clicked) ToggleCraftTpCard(id, it.name);   // click -> TP price card
         ImGui::PushID(id);
-        if (Gw2Ui::ActionButton("-", 30.f, 24.f) && qty > 1) { CraftCart::SetQty(activeProj, id, qty - 1); g_craftDirty = true; }
-        ImGui::SameLine(0.f, 6.f);
+        const float ui = Gw2Ui::GlobalScale();
+        if (Gw2Ui::ActionButtonPx("-", 30.f * ui, 24.f * ui) && qty > 1) { CraftCart::SetQty(activeProj, id, qty - 1); g_craftDirty = true; }
+        ImGui::SameLine(0.f, 6.f * ui);
         char qb[24]; std::snprintf(qb, sizeof(qb), "x%lld", qty);
-        Gw2Ui::Label(qb, IM_COL32(236, 230, 212, 255), false, nullptr, 16.f); ImGui::SameLine(0.f, 6.f);
-        if (Gw2Ui::ActionButton("+", 30.f, 24.f)) { CraftCart::SetQty(activeProj, id, qty + 1); g_craftDirty = true; }
-        ImGui::SameLine(0.f, 12.f);
-        if (Gw2Ui::ActionButton("Remove", 84.f, 24.f)) removeId = id;
+        Gw2Ui::Label(qb, IM_COL32(236, 230, 212, 255), false, nullptr, 16.f); ImGui::SameLine(0.f, 6.f * ui);
+        if (Gw2Ui::ActionButtonPx("+", 30.f * ui, 24.f * ui)) { CraftCart::SetQty(activeProj, id, qty + 1); g_craftDirty = true; }
+        ImGui::SameLine(0.f, 12.f * ui);
+        if (Gw2Ui::ActionButtonPx("Remove", 84.f * ui, 24.f * ui)) removeId = id;
         ImGui::PopID();
     }
     ImGui::PopID();

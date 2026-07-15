@@ -69,7 +69,7 @@ float SummaryDetailContentHeight(App& app, float fs, float contentW, float barHe
     float h = (fs + 8.f * vs) + sp;                              // icon + "Zone complete"/"No guide route" row (fs is text-scaled)
     h += Gw2Ui::MeasureWrappedHeight(line, fs - 3.f, w) + sp;    // name / map line (wraps if the name is long)
     if (complete)                                                // the "Complete" bar: caption(18) + gap(3) + bar + Dummy pad(6)
-        h += (18.f * vs + 3.f * vs + std::max(12.f * vs, barHeight) + 6.f * vs) + sp;
+        h += (18.f * vs + 3.f * vs + std::max(12.f, barHeight) * vs + 6.f * vs) + sp;
     h += Gw2Ui::MeasureWrappedHeight(hint, fs - 3.f, w) + sp;    // hint line
     h += 12.f * vs + sp;                                         // divider
     h += 30.f * vs;                                              // Open-guide button (DrawGuideOnlyButton, fixed 30)
@@ -294,4 +294,3 @@ void DrawDungeonUpNextBody(App& app)
         ImGui::Dummy(ImVec2(wrapW, th));
     }
 }
-

@@ -162,7 +162,8 @@ void DrawGuideWindow(App &app)
 
     if (ImGui::Begin("##tcguide", nullptr, flags))
     {
-        Gw2Ui::PushTextScale(vs); // uniform viewer zoom: scales every Gw2Ui label + measured height/pill width
+        const float localViewerScale = std::clamp(app.config.viewerScale, 0.70f, 1.30f);
+        Gw2Ui::PushTextScale(localViewerScale); // global scale is applied by Gw2Ui; this is the viewer's local zoom
         const float op = std::clamp((float)app.config.panelOpacity / 100.f, 0.05f, 1.f);
         const int bgA = (int)std::round(150.f + 90.f * op);
         const ImVec2 wp = ImGui::GetWindowPos();
@@ -206,7 +207,7 @@ void DrawGuideWindow(App &app)
             // detail-card child windows (children render after the parent), so draw our own on the foreground draw
             // list (above the children); the native corner/edge resize still does the actual work.
             ImDrawList *fdl = ImGui::GetForegroundDrawList();
-            const float g = 14.f;
+            const float g = 14.f * vs;
             auto grip = [&](float cx, bool mirror)
             {
                 const ImVec2 c(cx, wp.y + ws.y - g * 0.5f - 3.f);
