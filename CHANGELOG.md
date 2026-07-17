@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.1.0
+
+### Added
+
+- Added an Info Panel bar-height setting from `18 px` to `64 px`, with `Auto` preserving the existing text-size based height.
+
+### Changed
+
+- Updated Info Panel height calculation so fixed bar heights use a compact clamp while still avoiding obvious text clipping.
+
 ## 1.0.0.2
 
 ### Added

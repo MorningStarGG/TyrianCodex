@@ -274,6 +274,7 @@ struct Config
     float infoOffsetY = 0.f;  // inward nudge from the dock edge, px
     int infoOpacity = 60;    // background %
     float infoTextSize = 24.f;
+    int infoBarHeight = 0;   // 0 Auto, else index into the Info Panel bar-height preset list
     bool infoHideInCombat = true;
     bool infoHideOnMap = false;
     UiLayout::Ordered<InfoSlot> infoTexts;                          // shown texts (ordered) + per-text zone + removed set

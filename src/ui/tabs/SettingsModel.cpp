@@ -145,6 +145,9 @@ static Setting SStr(int sec, const char *k, const char *n, const char *s, char *
 static const char *kWvwCurModeNames[] = {"Map + data", "Map only", "Data only"};
 static const char *kWvwMapModeNames[] = {"Off", "Data only", "Map only", "Map + data"};
 static const char *kTopBottomNames[] = {"Top", "Bottom"}; // HUD / Info Panel dock edge
+static const char *kInfoBarHeightNames[] = {
+    "Auto", "18 px", "20 px", "22 px", "24 px", "26 px", "28 px", "32 px", "36 px", "40 px", "44 px", "48 px", "56 px", "64 px"};
+static constexpr int kInfoBarHeightCount = static_cast<int>(sizeof(kInfoBarHeightNames) / sizeof(kInfoBarHeightNames[0]));
 static const char *kUiScaleNames[] = {
     "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%", "130%", "135%",
     "140%", "145%", "150%", "155%", "160%", "165%", "170%", "175%", "180%", "185%", "190%", "195%", "200%"};
@@ -421,6 +424,7 @@ std::vector<Setting> Settings(App &app)
         SFloat(SEC_INFO, "infoOffsetY", "Edge offset (px)", "info panel vertical offset top bottom edge nudge position y", &app.config.infoOffsetY, 0.f, 400.f, "%.0f"),
         SInt(SEC_INFO, "infoOpacity", "Background opacity", "info panel background opacity transparency alpha darkness percent", &app.config.infoOpacity, 0, 100),
         SFloat(SEC_INFO, "infoTextSize", "Text size", "info panel text size font bigger larger readable scale", &app.config.infoTextSize, 12.f, 32.f, "%.0f"),
+        SEnum(SEC_INFO, "infoBarHeight", "Bar height", "info panel bar height strip thickness compact tall auto", &app.config.infoBarHeight, kInfoBarHeightNames, kInfoBarHeightCount),
         SBool(SEC_INFO, "infoHideInCombat", "Hide in combat", "info panel hide combat declutter fight", &app.config.infoHideInCombat),
         SBool(SEC_INFO, "infoHideOnMap", "Hide on full map", "info panel hide map open fullscreen world", &app.config.infoHideOnMap),
 
@@ -678,6 +682,7 @@ static const char *SettingDesc(const char *key)
         {"infoOffsetY", "Move the Info Panel inward from its dock edge: down from the top edge, or up from the bottom edge."},
         {"infoOpacity", "Background opacity of the Info Panel strip, in percent."},
         {"infoTextSize", "Text size of the Info Panel data texts, in pixels."},
+        {"infoBarHeight", "Height of the Info Panel strip. Auto preserves the current text-size based height; fixed values are clamped upward when needed so text and icons do not clip."},
         {"infoHideInCombat", "Hide the Info Panel while you are in combat."},
         {"infoHideOnMap", "Hide the Info Panel while the full map is open."},
     };

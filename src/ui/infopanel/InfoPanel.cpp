@@ -60,6 +60,13 @@ namespace
         return o;
     }
 
+    float FixedBarHeightLogical(const Config& cfg)
+    {
+        static constexpr float kHeights[] = { 0.f, 18.f, 20.f, 22.f, 24.f, 26.f, 28.f, 32.f, 36.f, 40.f, 44.f, 48.f, 56.f, 64.f };
+        const int idx = std::clamp(cfg.infoBarHeight, 0, (int)(sizeof(kHeights) / sizeof(kHeights[0])) - 1);
+        return kHeights[idx];
+    }
+
     int FindSlotIdx(App& app, const std::string& key)
     {
         auto& items = app.config.infoTexts.items;
@@ -213,7 +220,11 @@ void InfoPanel::Render(App& app)
     const float ui = Gw2Ui::GlobalScale();
     const float fs = cfg.infoTextSize, labelFs = std::max(10.f, fs - 4.f);   // labels distinctly smaller than values
     const float fsPx = fs * ui;
-    const float barH = fsPx + 14.f * ui, margin = 12.f * ui, gap = 16.f * ui;
+    const float fixedBarH = FixedBarHeightLogical(cfg) * ui;
+    const float autoBarH = fsPx + 14.f * ui;
+    const float minBarH = fsPx + 0.f * ui;   // custom fixed heights stay compact while still avoiding obvious clipping
+    const float barH = (fixedBarH > 0.f) ? std::max(fixedBarH, minBarH) : autoBarH;
+    const float margin = 12.f * ui, gap = 16.f * ui;
     const int widthPct = std::clamp(cfg.infoWidthPct, 25, 100);
     const float minPanelW = std::min(W, 240.f * ui);
     const float panelW = std::clamp(W * (float)widthPct / 100.f, minPanelW, W);
@@ -236,13 +247,13 @@ void InfoPanel::Render(App& app)
     static bool        s_any   = false;
     static double      s_lastT = -1e9;
     static std::string s_char;
-    static float       s_fs = -1.f, s_panelW = -1.f;
+    static float       s_fs = -1.f, s_panelW = -1.f, s_barH = -1.f;
     auto& zones = s_zones;   // alias: the draw code below reads the cached segments
 
     const double now = ImGui::GetTime();
-    if ((now - s_lastT) >= 0.2 || s_char != app.state.currentChar || s_fs != fsPx || s_panelW != panelW)
+    if ((now - s_lastT) >= 0.2 || s_char != app.state.currentChar || s_fs != fsPx || s_panelW != panelW || s_barH != barH)
     {
-        s_lastT = now; s_char = app.state.currentChar; s_fs = fsPx; s_panelW = panelW;
+        s_lastT = now; s_char = app.state.currentChar; s_fs = fsPx; s_panelW = panelW; s_barH = barH;
         for (auto& z : zones) z.clear();
         s_any = false;
         for (const InfoSlot& slot : cfg.infoTexts.items)

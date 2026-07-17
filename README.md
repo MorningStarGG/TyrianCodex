@@ -126,7 +126,7 @@ Tyrian Codex is not just one window. Most features can be used via multiple over
 - **Wiki reader**: in-addon wiki viewer with native HTML rendering without leaving the game.
 - **QuickAccess tray menu**: GW2-styled popup for common actions and toggles.
 
-Each surface has its own placement, visibility, scale, behavior, and layout settings. The Info Panel can be full-width or a shorter strip, with horizontal and edge offsets per profile.
+Each surface has its own placement, visibility, scale, behavior, and layout settings.
 
 ## Profiles, Loadouts, And Keybinds
 
