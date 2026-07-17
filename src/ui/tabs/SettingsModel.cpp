@@ -144,10 +144,7 @@ static Setting SStr(int sec, const char *k, const char *n, const char *s, char *
 
 static const char *kWvwCurModeNames[] = {"Map + data", "Map only", "Data only"};
 static const char *kWvwMapModeNames[] = {"Off", "Data only", "Map only", "Map + data"};
-static const char *kTopBottomNames[] = {"Top", "Bottom"}; // HUD / Info Panel dock edge
-static const char *kInfoBarHeightNames[] = {
-    "Auto", "18 px", "20 px", "22 px", "24 px", "26 px", "28 px", "32 px", "36 px", "40 px", "44 px", "48 px", "56 px", "64 px"};
-static constexpr int kInfoBarHeightCount = static_cast<int>(sizeof(kInfoBarHeightNames) / sizeof(kInfoBarHeightNames[0]));
+static const char *kTopBottomNames[] = {"Top", "Bottom"}; // HUD dock edge
 static const char *kUiScaleNames[] = {
     "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%", "130%", "135%",
     "140%", "145%", "150%", "155%", "160%", "165%", "170%", "175%", "180%", "185%", "190%", "195%", "200%"};
@@ -415,18 +412,9 @@ std::vector<Setting> Settings(App &app)
         SBool(SEC_HUD, "hudClockAmpm", "Show AM/PM", "hud clock am pm meridiem 12 hour", &app.config.hudClockAmpm),
         SBool(SEC_HUD, "hudClockTooltip", "All times on hover", "hud clock hover tooltip all times local server tyrian", &app.config.hudClockTooltip),
 
-        // Info Panel data bar -- config-backed scalars (owned per-character by the Info ConfigProfileFamily). The
-        // text placement + per-text options are structured and edited in InfoPanel::DrawSettings, below these rows.
+        // Info Panel master toggle. Per-bar placement, text layout, and per-text options are structured and edited
+        // in InfoPanel::DrawSettings because there are up to five independently configured bars.
         SBool(SEC_INFO, "infoEnabled", "Enable Info Panel", "info panel data bar text hud enable show on off", &app.config.infoEnabled),
-        SEnum(SEC_INFO, "infoEdge", "Dock edge", "info panel edge top bottom position dock screen", &app.config.infoEdge, kTopBottomNames, 2),
-        SInt(SEC_INFO, "infoWidthPct", "Width (%)", "info panel width percent screen full compact shorter", &app.config.infoWidthPct, 25, 100),
-        SFloat(SEC_INFO, "infoOffsetX", "Horizontal offset (px)", "info panel horizontal offset left right nudge position x", &app.config.infoOffsetX, -1000.f, 1000.f, "%.0f"),
-        SFloat(SEC_INFO, "infoOffsetY", "Edge offset (px)", "info panel vertical offset top bottom edge nudge position y", &app.config.infoOffsetY, 0.f, 400.f, "%.0f"),
-        SInt(SEC_INFO, "infoOpacity", "Background opacity", "info panel background opacity transparency alpha darkness percent", &app.config.infoOpacity, 0, 100),
-        SFloat(SEC_INFO, "infoTextSize", "Text size", "info panel text size font bigger larger readable scale", &app.config.infoTextSize, 12.f, 32.f, "%.0f"),
-        SEnum(SEC_INFO, "infoBarHeight", "Bar height", "info panel bar height strip thickness compact tall auto", &app.config.infoBarHeight, kInfoBarHeightNames, kInfoBarHeightCount),
-        SBool(SEC_INFO, "infoHideInCombat", "Hide in combat", "info panel hide combat declutter fight", &app.config.infoHideInCombat),
-        SBool(SEC_INFO, "infoHideOnMap", "Hide on full map", "info panel hide map open fullscreen world", &app.config.infoHideOnMap),
 
         // Wiki -- the in-overlay GW2 Wiki reader window.
         SBool(SEC_WIKI, "wikiConfirmExternal", "Confirm before opening external links", "wiki external link confirm browser leave open safety prompt", &app.config.wikiConfirmExternal),
@@ -675,16 +663,7 @@ static const char *SettingDesc(const char *key)
         {"hudClockAmpm", "Show the AM/PM suffix on the 12-hour HUD clock."},
         {"hudClockTooltip", "Hovering the HUD clock shows all three time zones (local, server, Tyrian) at once."},
         // Info Panel data bar (per-character profile)
-        {"infoEnabled", "Show the Info Panel data bar (the strip of live data texts) for this profile."},
-        {"infoEdge", "Dock the Info Panel to the top or bottom edge of the screen."},
-        {"infoWidthPct", "Width of the Info Panel strip as a percentage of the screen. 100% keeps the original full-width bar."},
-        {"infoOffsetX", "Move the Info Panel left or right from its centered position. The bar is clamped so it stays on-screen."},
-        {"infoOffsetY", "Move the Info Panel inward from its dock edge: down from the top edge, or up from the bottom edge."},
-        {"infoOpacity", "Background opacity of the Info Panel strip, in percent."},
-        {"infoTextSize", "Text size of the Info Panel data texts, in pixels."},
-        {"infoBarHeight", "Height of the Info Panel strip. Auto preserves the current text-size based height; fixed values are clamped upward when needed so text and icons do not clip."},
-        {"infoHideInCombat", "Hide the Info Panel while you are in combat."},
-        {"infoHideOnMap", "Hide the Info Panel while the full map is open."},
+        {"infoEnabled", "Master toggle for all Info Panel bars in this profile. Individual bars can also be enabled or disabled on the Info Panel layout page."},
     };
     if (!key)
         return "";

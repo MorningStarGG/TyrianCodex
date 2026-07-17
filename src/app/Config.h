@@ -1,8 +1,25 @@
 #pragma once
+#include <array>
 #include <map>
 #include <string>
 #include <vector>
 #include "ui/LayoutTypes.h" // HudBtn / InfoSlot / DashSlot + UiLayout::Ordered<> (json-free -> cheap to include here)
+struct InfoBarConfig
+{
+    bool enabled = false;     // per-bar toggle; Config::infoEnabled is the profile-level master
+    int edge = 1;             // 0 Top, 1 Bottom
+    int widthPct = 100;       // width as a percentage of the screen (100 = full width)
+    float offsetX = 0.f;      // horizontal nudge from centered position, px
+    float offsetY = 0.f;      // inward nudge from the dock edge, px
+    int opacity = 60;         // background %
+    float textSize = 24.f;
+    int barHeight = 0;        // 0 Auto, else index into the Info Panel bar-height preset list
+    bool hideInCombat = true;
+    bool hideOnMap = false;
+    UiLayout::Ordered<InfoSlot> texts;
+    std::map<std::string, std::map<std::string, int>> textOpts; // textKey -> optKey -> value
+};
+
 // -----------------------------------------------------------------------------------------------------
 // Config: every user-tunable setting in ONE long-lived object (App owns exactly one). The settings table
 // (entry.cpp Settings()) points into it with stable addresses; Save/LoadSettings serialize it keyed by the
@@ -265,20 +282,10 @@ struct Config
     bool hudClockTooltip = true;          // show all times on hover
     UiLayout::Ordered<HudBtn> hudButtons; // shown buttons (ordered) + per-button side + removed set
 
-    // Info Panel data bar -- same model. Per character via the Info ConfigProfileFamily (owner Info), which
-    // snapshots this info* slice + infoTexts (placement) + infoTextOpts (per-text options).
-    bool infoEnabled = true; // show the data bar for this profile
-    int infoEdge = 1;        // 0 Top, 1 Bottom
-    int infoWidthPct = 100;   // width as a percentage of the screen (100 = full width)
-    float infoOffsetX = 0.f;  // horizontal nudge from centered position, px
-    float infoOffsetY = 0.f;  // inward nudge from the dock edge, px
-    int infoOpacity = 60;    // background %
-    float infoTextSize = 24.f;
-    int infoBarHeight = 0;   // 0 Auto, else index into the Info Panel bar-height preset list
-    bool infoHideInCombat = true;
-    bool infoHideOnMap = false;
-    UiLayout::Ordered<InfoSlot> infoTexts;                          // shown texts (ordered) + per-text zone + removed set
-    std::map<std::string, std::map<std::string, int>> infoTextOpts; // per-text options (textKey -> optKey -> value)
+    // Info Panel data bars. Per character via the Info ConfigProfileFamily (owner Info). infoEnabled is the
+    // profile-level master toggle; each InfoBarConfig has its own enabled state, placement, texts, and options.
+    bool infoEnabled = true;
+    std::array<InfoBarConfig, 5> infoBars;
 
     // Markers (in-world objective icons)
     bool showMarkers = true;                               // master toggle

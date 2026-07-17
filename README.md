@@ -120,7 +120,7 @@ Tyrian Codex is not just one window. Most features can be used via multiple over
 - **GPS arrow**: floating navigation arrow with right-click actions.
 - **Dashboard**: edge-docked slide-out widget panel with notifications, objectives, events, route arrow, recommended zones, wallet, Trading Post, inventory, WvW, and more.
 - **HUD bar**: top or bottom icon bar with clock and quick access to major tabs.
-- **Info Panel**: configurable data-text strip for route status, clocks, currency, session earnings, location, WvW, bags, bank, crafting cart, loadouts, and other live values.
+- **Info Panel**: up to five configurable data-text bars for route status, clocks, currency, session earnings, location, WvW, bags, bank, crafting cart, loadouts, and other live values. Each bar has its own position, size, opacity, text size, and data-text layout.
 - **Notifications**: configurable toasts for zone, travel, action, event, and info messages.
 - **Zone Display**: animated region/zone/area banner when entering maps or crossing named areas.
 - **Wiki reader**: in-addon wiki viewer with native HTML rendering without leaving the game.

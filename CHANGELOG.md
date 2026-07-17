@@ -1,13 +1,17 @@
 # Changelog
 
-## 1.0.1.0
+## 1.0.0.3
 
 ### Added
 
+- Added support for up to five independent Info Panel bars. Bar 1 keeps the existing migrated setup; Bars 2-5 start disabled and empty.
+- Added per-bar Info Panel settings for enabled state, dock edge, width, offsets, opacity, text size, bar height, combat/map hiding, data-text layout, and per-data-text options.
 - Added an Info Panel bar-height setting from `18 px` to `64 px`, with `Auto` preserving the existing text-size based height.
 
 ### Changed
 
+- Migrated old single-bar Info Panel profile data into Bar 1 and changed new profile saves to write the new `infoBars` shape.
+- Updated Info Panel rendering, context menus, API-domain polling, and WvW live polling to scan all enabled bars independently.
 - Updated Info Panel height calculation so fixed bar heights use a compact clamp while still avoiding obvious text clipping.
 
 ## 1.0.0.2
