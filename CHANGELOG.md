@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0.4
+
+### Fixed
+
+- Fixed typed text in shared search, password, text, and slider-number fields using a different scale path than GW2-drawn placeholders under Nexus/GW2 font scaling.
+
 ## 1.0.0.3
 
 ### Added

@@ -7,6 +7,7 @@
 #include "ui/Effect.h"
 
 #include <imgui.h>
+#include <imgui_internal.h>
 #include <algorithm>
 #include <cctype>
 #include <cfloat>
@@ -105,7 +106,7 @@ namespace
     {
         ImFont *font = nullptr;
         float requestedPx = 0.f;
-        float residualScale = 1.f;
+        float windowScale = 1.f;
         float boxH = 0.f;
     };
 
@@ -118,10 +119,40 @@ namespace
         m.font = ResolveFace(base, m.requestedPx);
         if (!m.font)
             m.font = base ? base : ImGui::GetFont();
-        m.residualScale = (m.font && m.font->FontSize > 0.f) ? (m.requestedPx / m.font->FontSize) : 1.f;
+
+        // ImGui::InputText renders through the current window font scale and any external ImGui
+        // font-global scaling. Our placeholders are drawn with explicit GW2 UI pixel sizes, so
+        // compensate here to keep typed text and placeholders on the same scale path.
+        const float ioScale = std::max(0.001f, ImGui::GetIO().FontGlobalScale);
+        const float facePx = std::max(0.001f, m.font ? m.font->FontSize : basePx);
+        const float faceScale = std::max(0.001f, m.font ? m.font->Scale : 1.f);
+        float parentWindowScale = 1.f;
+        if (ImGuiWindow *w = ImGui::GetCurrentWindow())
+            if (w->ParentWindow)
+                parentWindowScale = std::max(0.001f, w->ParentWindow->FontWindowScale);
+        m.windowScale = m.requestedPx / std::max(0.001f, ioScale * facePx * faceScale * parentWindowScale);
         m.boxH = m.requestedPx + 10.f * sc;
         return m;
     }
+
+    struct ScopedInputFont
+    {
+        float previousWindowScale = 1.f;
+
+        explicit ScopedInputFont(const InputFontMetrics &metrics)
+        {
+            if (ImGuiWindow *w = ImGui::GetCurrentWindow())
+                previousWindowScale = w->FontWindowScale;
+            ImGui::PushFont(metrics.font ? metrics.font : ImGui::GetFont());
+            ImGui::SetWindowFontScale(metrics.windowScale);
+        }
+
+        ~ScopedInputFont()
+        {
+            ImGui::SetWindowFontScale(previousWindowScale);
+            ImGui::PopFont();
+        }
+    };
 }
 
 bool Gw2Ui::Checkbox(const char *label, bool *v)
@@ -312,18 +343,18 @@ bool Gw2Ui::TextBox(const char *id, char *buf, size_t bufSize, float width)
     if (const T ib = File("data\\textures\\ui\\input-box.png"); ib.srv)
         Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f * sc);
 
-    ImGui::PushFont(im.font);
-    ImGui::SetWindowFontScale(im.residualScale);
-    ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
-    ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
-    ImGui::SetNextItemWidth(width);
-    const bool changed = ImGui::InputText(id, buf, bufSize);
-    ImGui::PopStyleVar();
-    ImGui::PopStyleColor(3);
-    ImGui::SetWindowFontScale(1.f);
-    ImGui::PopFont();
+    bool changed = false;
+    {
+        ScopedInputFont inputFont(im);
+        ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
+        ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
+        ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
+        ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
+        ImGui::SetNextItemWidth(width);
+        changed = ImGui::InputText(id, buf, bufSize);
+        ImGui::PopStyleVar();
+        ImGui::PopStyleColor(3);
+    }
     return changed;
 }
 
@@ -343,18 +374,18 @@ bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width
     if (const T ib = File("data\\textures\\ui\\input-box.png"); ib.srv)
         Img3H(dl, ib, p, ImVec2(p.x + width, p.y + h), 2.f * sc);
 
-    ImGui::PushFont(im.font);
-    ImGui::SetWindowFontScale(im.residualScale);
-    ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
-    ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
-    ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
-    const bool changed = ImGui::InputText(id, buf, bufSize, reveal ? 0 : ImGuiInputTextFlags_Password);
-    ImGui::PopStyleVar();
-    ImGui::PopStyleColor(3);
-    ImGui::SetWindowFontScale(1.f);
-    ImGui::PopFont();
+    bool changed = false;
+    {
+        ScopedInputFont inputFont(im);
+        ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
+        ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
+        ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
+        ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
+        ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
+        changed = ImGui::InputText(id, buf, bufSize, reveal ? 0 : ImGuiInputTextFlags_Password);
+        ImGui::PopStyleVar();
+        ImGui::PopStyleColor(3);
+    }
 
     // eye toggle: an outline eye + pupil, with a slash when hidden. Click flips *revealed.
     const ImVec2 c(p.x + width - iconW * 0.5f, p.y + h * 0.5f);
@@ -405,18 +436,18 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
         dl->PopClipRect();
     }
 
-    ImGui::PushFont(im.font);
-    ImGui::SetWindowFontScale(im.residualScale);
-    ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
-    ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
-    ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8.f * sc, (h - im.requestedPx) * 0.5f));
-    ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
-    bool changed = ImGui::InputText(id, buf, bufSize);
-    ImGui::PopStyleVar();
-    ImGui::PopStyleColor(3);
-    ImGui::SetWindowFontScale(1.f);
-    ImGui::PopFont();
+    bool changed = false;
+    {
+        ScopedInputFont inputFont(im);
+        ImGui::PushStyleColor(ImGuiCol_FrameBg, IM_COL32(0, 0, 0, 0)); // texture supplies the box
+        ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
+        ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
+        ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8.f * sc, (h - im.requestedPx) * 0.5f));
+        ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
+        changed = ImGui::InputText(id, buf, bufSize);
+        ImGui::PopStyleVar();
+        ImGui::PopStyleColor(3);
+    }
 
     const ImVec2 c(p.x + width - iconW * 0.5f, p.y + h * 0.5f); // centre of the right icon column
     if (buf[0])                                                 // clear (X) button
@@ -1062,34 +1093,37 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
             s_numFocus = false;
         }
         // Centre the text while typing by padding the frame to (boxW - textWidth)/2 each frame.
-        ImGui::SetWindowFontScale(sc);
-        const float tw = ImGui::CalcTextSize(s_numBuf).x;
-        const float padX = std::max(2.f * sc, (boxW - tw) * 0.5f - 2.f * sc);
-        ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(padX, ImGui::GetStyle().FramePadding.y * sc));
-        ImGui::PushStyleColor(ImGuiCol_FrameBg, ImVec4(0, 0, 0, 0));
-        ImGui::SetCursorScreenPos(bp);
-        ImGui::SetNextItemWidth(boxW);
-        ImGui::InputText("##num", s_numBuf, sizeof(s_numBuf),
-                         ImGuiInputTextFlags_CharsDecimal | ImGuiInputTextFlags_AutoSelectAll);
-        if (ImGui::IsItemDeactivated())
         {
-            float parsed = *v;
-            if (std::sscanf(s_numBuf, "%f", &parsed) == 1)
+            const InputFontMetrics im = InputMetrics(sc);
+            ScopedInputFont inputFont(im);
+            const float tw = ImGui::CalcTextSize(s_numBuf).x;
+            const float padX = std::max(2.f * sc, (boxW - tw) * 0.5f - 2.f * sc);
+            const float padY = std::max(0.f, (frameH0 - im.requestedPx) * 0.5f);
+            ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(padX, padY));
+            ImGui::PushStyleColor(ImGuiCol_FrameBg, ImVec4(0, 0, 0, 0));
+            ImGui::SetCursorScreenPos(bp);
+            ImGui::SetNextItemWidth(boxW);
+            ImGui::InputText("##num", s_numBuf, sizeof(s_numBuf),
+                             ImGuiInputTextFlags_CharsDecimal | ImGuiInputTextFlags_AutoSelectAll);
+            if (ImGui::IsItemDeactivated())
             {
-                float nv = std::clamp(parsed, vmin, vmax);
-                if (asInt)
-                    nv = std::round(nv);
-                if (nv != *v)
+                float parsed = *v;
+                if (std::sscanf(s_numBuf, "%f", &parsed) == 1)
                 {
-                    *v = nv;
-                    changed = true;
+                    float nv = std::clamp(parsed, vmin, vmax);
+                    if (asInt)
+                        nv = std::round(nv);
+                    if (nv != *v)
+                    {
+                        *v = nv;
+                        changed = true;
+                    }
                 }
+                s_numEdit = 0;
             }
-            s_numEdit = 0;
+            ImGui::PopStyleColor();
+            ImGui::PopStyleVar();
         }
-        ImGui::PopStyleColor();
-        ImGui::PopStyleVar();
-        ImGui::SetWindowFontScale(1.f);
     }
     else
     {
