@@ -6,13 +6,14 @@ class App;
 namespace Profiles { struct IProfileHost; }
 
 // -----------------------------------------------------------------------------------------------------
-// Loadouts: a per-character "meta profile" -- a named bundle remembering WHICH profile is active in each of
-// the four families (General / Dashboard / Info Panel / HUD). Applying a loadout sets all four at once, for a
-// one-click "switch my whole setup" (e.g. Leveling / Combat / AFK). It is NOT a PerCharProfiles consumer: its
-// "live state" (the families' active profiles) is owned by the families and can drift independently, so it uses
-// a bespoke IProfileHost where New() snapshots the current family selections and SetActive() APPLIES the bundle.
+// Loadouts: a "meta profile" -- a named bundle remembering WHICH profile is active in each of the four
+// families (General / Dashboard / Info Panel / HUD). Loadouts and the profiles they reference can be either
+// character-local or shared/global. Applying a loadout sets all four families at once, for a one-click
+// "switch my whole setup" (e.g. Leveling / Combat / AFK). It is NOT a PerCharProfiles consumer: its "live
+// state" (the families' active profiles) is owned by the families and can drift independently, so it uses a
+// bespoke IProfileHost where New() snapshots the current family selections and SetActive() APPLIES the bundle.
 // Apply is MANUAL (UI / keybind) -- loadouts do not auto-apply on character switch (the families restore their
-// own per-character active profile as before).
+// own active profile as before, whether local or shared).
 // -----------------------------------------------------------------------------------------------------
 namespace Loadouts
 {
@@ -35,7 +36,7 @@ namespace Loadouts
     const char*             FamilyName(int fam);
     Profiles::IProfileHost* FamilyHost(App& app, int fam);   // list / switch that family's profiles directly
 
-    void Serialize(App& app, nlohmann::json& j);             // -> loadoutsByChar
+    void Serialize(App& app, nlohmann::json& j);             // -> loadoutsByChar + loadoutsGlobal
     void Deserialize(App& app, const nlohmann::json& j);
 
     // -- per-character maintenance (rename detector + Diagnostics cleanup); persisted by the next SaveSettings --

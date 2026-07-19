@@ -7,7 +7,8 @@ class App;
 struct Setting;                // ui/tabs/SettingsModel.h
 
 // -----------------------------------------------------------------------------------------------------
-// ConfigProfiles: the ONE universal per-character profile mechanism. Every setting lives in Config; a
+// ConfigProfiles: the ONE universal profile mechanism, with character-local and shared/global profiles.
+// Every setting lives in Config; a
 // "profile" is just a snapshot of a SLICE of Config, chosen by an Owner. The four families (General / HUD /
 // Info / Dashboard) are the same code, differing only by which Config sections they own -- this replaces the
 // bespoke HudPayload/InfoPayload/DashPayload systems and their four hand-written capture/apply/toJson/fromJson.
@@ -39,7 +40,7 @@ namespace ConfigProfiles
     // DeserializeAll), then TickAll every frame.
     void Init(App&);                                   // configure the 4 families + capture the baked default slices
     void TickAll(App&);                                // bind all 4 families to the current character (cheap no-op unless changed)
-    void SerializeAll(App&, nlohmann::json&);          // write the 4 families' per-character profiles
+    void SerializeAll(App&, nlohmann::json&);          // write the 4 families' character-local + shared profiles
     void DeserializeAll(App&, const nlohmann::json&);  // read them + bind the current character (applies its active profile)
 
     Profiles::IProfileHost& Host(App&, Owner);         // for Loadouts + DrawProfileBar

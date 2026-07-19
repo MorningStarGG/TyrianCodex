@@ -28,7 +28,7 @@ Tyrian Codex provides several major feature groups:
 - **Search and reference tools** for locations, items, skins, cosmetics, recipes, fishing, homestead unlocks, and wiki pages.
 - **Economy tools** including Trading Post delivery/order views, item price tooltips, flip finder, crafting cart, and price charts.
 - **Configurable overlay surfaces** including the guide panel, dashboard, HUD launcher bar, info data bar, notifications, and zone-entry banners.
-- **Per-character profiles and loadouts** so each character can have its own UI setup.
+- **Character and shared profiles/loadouts** so each character can keep its own UI setup or use account-wide shared presets.
 
 ## Main Window Tabs
 
@@ -141,7 +141,9 @@ Several setting groups are profile-based:
 - **Info Panel profiles**
 - **HUD profiles**
 
-Profiles are saved per character. Loadouts bundle the active profile from each of those areas, allowing one-click or keybound swaps between whole UI setups such as leveling, combat, WvW, or minimalist layouts. Profiles/loadouts can be imported and used across characters.
+Profiles can be character-specific or marked global. A global profile is shared by every character that uses it, so changes made on one character carry to the others using that same global profile. Loadouts bundle the active profile from each of those areas, allowing one-click or keybound swaps between whole UI setups such as leveling, combat, WvW, or minimalist layouts.
+
+Use **Make global** on a profile or loadout to create a shared copy and switch to it. Use **Copy to this character** when you want to start from a global setup but make private changes on one character. Profiles/loadouts can still be imported from other characters.
 
 Available keybinds include guide toggle, mark current step done, undo/back, copy waypoint, cycle/apply loadouts, reannounce zone display, toggle markers, and toggle trail.
 

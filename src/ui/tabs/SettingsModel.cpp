@@ -849,8 +849,8 @@ void SaveSettings(App &app)
     j["mapMultOpen"] = app.config.mapOpenScale;      // internal: open-map fine-tune multiplier (1.0 = auto). NEW key so the old
     j["mapMultMini"] = app.config.miniMapScale;      // internal: minimap fine-tune multiplier. "mapOpenScale"/"miniMapScale" (old
                                                      //           absolute factors) are deliberately not read into these multipliers.
-    ConfigProfiles::SerializeAll(app, j);            // the 4 families (General/HUD/Info/Dashboard) -- ONE universal mechanism, each a config slice
-    Loadouts::Serialize(app, j);                     // internal: per-character loadouts (bundles of the 4 families' active profiles)
+    Loadouts::Serialize(app, j);          // may promote referenced family profiles for shared loadouts before profile stores write
+    ConfigProfiles::SerializeAll(app, j); // the 4 families (General/HUD/Info/Dashboard) -- ONE universal mechanism, each a config slice
     Json::WriteAtomic(app.settingsPath, j.dump(2));
 }
 

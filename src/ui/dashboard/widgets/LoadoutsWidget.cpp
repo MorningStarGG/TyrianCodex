@@ -7,6 +7,17 @@
 #include <string>
 #include <vector>
 
+namespace
+{
+    std::string DisplayName(Profiles::IProfileHost& host, int i)
+    {
+        std::string name = host.NameAt(i);
+        if (host.IsGlobalAt(i))
+            name += "  [global]";
+        return name;
+    }
+}
+
 // Loadouts quick-switcher: a compact mirror of SEC_LOADOUTS (minus the New/Rename/Delete bar -- that lives in
 // Settings). Pick a whole loadout from the top dropdown to apply all four families at once, or set one family's
 // active profile directly below. Every switch is DEFERRED (Loadouts::ApplyIndex / SetFamily) -- applying here
@@ -14,7 +25,8 @@
 // queued switch runs at the next frame's Loadouts::ProcessPending(), before any family draws.
 void DashW::Loadouts(App& app, float w)
 {
-    const int nL = Loadouts::Count(app);
+    Profiles::IProfileHost& loadoutHost = Loadouts::Host(app);
+    const int nL = loadoutHost.Count();
 
     Gw2Ui::Label("Active loadout", Gw2Ui::kTextSub, false, nullptr, 14.f);
     if (nL <= 0)
@@ -24,10 +36,10 @@ void DashW::Loadouts(App& app, float w)
     else
     {
         std::vector<std::string> names; names.reserve(nL);
-        for (int i = 0; i < nL; ++i) names.push_back(Loadouts::NameAt(app, i));
+        for (int i = 0; i < nL; ++i) names.push_back(DisplayName(loadoutHost, i));
         std::vector<const char*> cn; cn.reserve(nL);
         for (const std::string& s : names) cn.push_back(s.c_str());
-        int sel = Loadouts::Active(app);
+        int sel = loadoutHost.Active();
         if (Gw2Ui::DropdownPx("##ldwidget", cn.data(), nL, &sel, w)) Loadouts::ApplyIndex(app, sel);
     }
 
@@ -44,7 +56,7 @@ void DashW::Loadouts(App& app, float w)
         const int n = h->Count();
         if (n <= 0) { Gw2Ui::Label("   (no profiles)", Gw2Ui::kTextDim, false, nullptr, 14.f); continue; }
         std::vector<std::string> names; names.reserve(n);
-        for (int i = 0; i < n; ++i) names.push_back(h->NameAt(i));
+        for (int i = 0; i < n; ++i) names.push_back(DisplayName(*h, i));
         std::vector<const char*> cn; cn.reserve(n);
         for (const std::string& s : names) cn.push_back(s.c_str());
         int active = h->Active();

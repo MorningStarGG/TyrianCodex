@@ -2,6 +2,17 @@
 
 ## 1.0.0.4
 
+### Added
+
+- Added shared/global profiles for General, Dashboard, Info Panel, and HUD profile families.
+- Added shared/global loadouts that can be used by every character and can reference shared/global family profiles.
+- Added **Make global** and **Copy to this character** actions to profile/loadout management.
+
+### Changed
+
+- Updated loadouts to store scoped profile references so shared loadouts can point at shared profiles instead of relying on same-name per-character profiles.
+- Updated loadout settings, dashboard loadout widget, and Info Panel loadout menus to label shared entries with `[global]`.
+
 ### Fixed
 
 - Fixed typed text in shared search, password, text, and slider-number fields using a different scale path than GW2-drawn placeholders under Nexus/GW2 font scaling.

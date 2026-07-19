@@ -27,6 +27,14 @@ namespace
     const void* g_impOwner = nullptr;      // remembered import selection (per host)
     int         g_impChar  = 0;
     int         g_impProf  = 0;
+
+    std::string DisplayName(Profiles::IProfileHost& host, int i)
+    {
+        std::string name = host.NameAt(i);
+        if (host.IsGlobalAt(i))
+            name += "  [global]";
+        return name;
+    }
 }
 
 void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix, const char* helpText)
@@ -36,6 +44,7 @@ void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix
     ImGui::PushID(idPrefix);
     const int n = host.Count();
     const float ui = std::max(0.01f, Gw2Ui::GlobalScale());
+    const float bgap = 6.f * ui;
 
     // ---- Card 1: active profile selector + management (New / Rename / Duplicate / Delete) ----
     // The management popups are opened AND begun inside this card so their ids resolve under the same scope
@@ -49,18 +58,40 @@ void Profiles::DrawProfileBar(App& app, IProfileHost& host, const char* idPrefix
 
     // ---- selector ----
     std::vector<std::string> names; names.reserve(n);
-    for (int i = 0; i < n; ++i) names.push_back(host.NameAt(i));
+    for (int i = 0; i < n; ++i) names.push_back(DisplayName(host, i));
     std::vector<const char*> ptrs; ptrs.reserve(n);
     for (const std::string& s : names) ptrs.push_back(s.c_str());
     int sel = host.Active();
     if (!ptrs.empty() && Gw2Ui::DropdownPx("##sel", ptrs.data(), (int)ptrs.size(), &sel, std::min(availW, 320.f * ui)))
     { host.SetActive(sel); app.settingsDirty = true; }
+
+    const int activeIdx = host.Active();
+    const bool canMakeGlobal = host.CanMakeGlobal(activeIdx);
+    const bool canCopyLocal = host.CanCopyToCharacter(activeIdx);
+    const char* scopeLabel = canMakeGlobal ? "Make global" : (canCopyLocal ? "Copy to this character" : nullptr);
+    if (scopeLabel)
+    {
+        const float scopeW = std::min(availW, (canCopyLocal ? 220.f : 150.f) * ui);
+        if (ImGui::GetContentRegionAvail().x >= scopeW + bgap)
+            ImGui::SameLine(0.f, bgap);
+        else
+            ImGui::Dummy(ImVec2(0.f, 6.f * ui));
+        if (Gw2Ui::ButtonPx(scopeLabel, scopeW, 26.f * ui))
+        {
+            if (canMakeGlobal) host.MakeGlobal(activeIdx);
+            else              host.CopyToCharacter(activeIdx);
+            app.settingsDirty = true;
+        }
+        if (ImGui::IsItemHovered())
+            Gw2Ui::Tooltip(canMakeGlobal
+                ? "Create a shared copy and switch to it. Changes to that shared profile apply to every character using it."
+                : "Create a private character copy and switch to it. Future edits will not change the shared profile.");
+    }
     ImGui::Dummy(ImVec2(0.f, 6.f * ui));
 
     // ---- New / Rename / Duplicate / Delete ----
     const std::string activeName = (host.Active() >= 0 && host.Active() < n) ? host.NameAt(host.Active()) : "Default";
     const bool  canDelete = n > 1;
-    const float bgap = 6.f * ui;
     const int   nbtn = canDelete ? 4 : 3;
     const float bw   = Gw2Ui::FillWidth(availW, nbtn, bgap, 48.f * ui);
 

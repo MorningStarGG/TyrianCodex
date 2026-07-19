@@ -13,6 +13,18 @@ class App;
 // -----------------------------------------------------------------------------------------------------
 namespace Profiles
 {
+    enum class Scope
+    {
+        Character,
+        Global
+    };
+
+    struct ProfileRef
+    {
+        Scope scope = Scope::Character;
+        std::string name;
+    };
+
     // Type-erased view of a per-character profile collection (PerCharProfiles<Payload> implements this).
     // All indices are into the CURRENT character's profile list.
     struct IProfileHost
@@ -33,6 +45,25 @@ namespace Profiles
         virtual std::vector<std::string> ProfileNamesOf(const std::string& ch) const = 0;
         virtual void        CopyFrom(const std::string& srcChar, int srcIdx) = 0;
         virtual void        CopyAllFrom(const std::string& srcChar) = 0;
+        // Optional shared/global profile support. Hosts that do not override these remain character-only.
+        virtual bool        IsGlobalAt(int /*i*/) const { return false; }
+        virtual ProfileRef  RefAt(int i) const
+        {
+            return ProfileRef{ Scope::Character, NameAt(i) };
+        }
+        virtual int         FindRef(const ProfileRef& ref) const
+        {
+            if (ref.name.empty() || ref.scope != Scope::Character)
+                return -1;
+            for (int i = 0; i < Count(); ++i)
+                if (!IsGlobalAt(i) && NameAt(i) == ref.name)
+                    return i;
+            return -1;
+        }
+        virtual bool        CanMakeGlobal(int /*i*/) const { return false; }
+        virtual bool        CanCopyToCharacter(int /*i*/) const { return false; }
+        virtual void        MakeGlobal(int /*i*/) {}
+        virtual void        CopyToCharacter(int /*i*/) {}
         // per-character maintenance (rename detector + Diagnostics cleanup). Default no-op so a host that is not
         // per-character keyed (e.g. the bespoke Loadouts host) need not implement them.
         virtual void        RenameChar(const std::string& /*from*/, const std::string& /*to*/) {}

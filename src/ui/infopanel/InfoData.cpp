@@ -513,21 +513,34 @@ namespace
     }
 
     // ---- Loadout switcher: value = active loadout; hover = the profiles it uses; right-click = switch (submenus) ----
+    std::string ScopedProfileName(Profiles::IProfileHost& host, int i)
+    {
+        std::string name = host.NameAt(i);
+        if (host.IsGlobalAt(i))
+            name += " [global]";
+        return name;
+    }
+    std::string ScopedLoadoutName(App& app, int i)
+    {
+        Profiles::IProfileHost& host = Loadouts::Host(app);
+        return ScopedProfileName(host, i);
+    }
     HudSeg SegLoadout(App& app, const HudOpts&) { HudSeg s; s.label = "Loadout";
         const int n = Loadouts::Count(app), a = Loadouts::Active(app);
         if (n <= 0) { s.value = "None"; s.color = kDim; return s; }
-        s.value = (a >= 0 && a < n) ? Loadouts::NameAt(app, a) : std::string("--"); return s; }
+        s.value = (a >= 0 && a < n) ? ScopedLoadoutName(app, a) : std::string("--"); return s; }
     void TipLoadout(App& app, const HudOpts&)
     {
         if (!Gw2Ui::TooltipBegin()) return;
         const int n = Loadouts::Count(app), a = Loadouts::Active(app);
-        Gw2Ui::TooltipTitle((n > 0 && a >= 0 && a < n) ? Loadouts::NameAt(app, a).c_str() : "Loadout");
+        const std::string title = (n > 0 && a >= 0 && a < n) ? ScopedLoadoutName(app, a) : std::string("Loadout");
+        Gw2Ui::TooltipTitle(title.c_str());
         for (int f = 0; f < Loadouts::FamCount; ++f)
         {
             Profiles::IProfileHost* h = Loadouts::FamilyHost(app, f);
             if (!h) continue;
             const int act = h->Active();
-            const std::string pn = (act >= 0 && act < h->Count()) ? h->NameAt(act) : std::string("-");
+            const std::string pn = (act >= 0 && act < h->Count()) ? ScopedProfileName(*h, act) : std::string("-");
             Gw2Ui::TooltipText((std::string(Loadouts::FamilyName(f)) + ":  " + pn).c_str());
         }
         Gw2Ui::TooltipSeparator();
@@ -538,7 +551,7 @@ namespace
     {
         const int nL = Loadouts::Count(app), aL = Loadouts::Active(app);
         if (nL <= 0) { Gw2Ui::MenuNode z; z.label = "No loadouts (Settings -> Loadouts)"; z.id = -1; nodes.push_back(z); }
-        else for (int i = 0; i < nL; ++i) { Gw2Ui::MenuNode n; n.label = Loadouts::NameAt(app, i); n.id = i; n.selected = (i == aL); nodes.push_back(n); }
+        else for (int i = 0; i < nL; ++i) { Gw2Ui::MenuNode n; n.label = ScopedLoadoutName(app, i); n.id = i; n.selected = (i == aL); nodes.push_back(n); }
         { Gw2Ui::MenuNode sep; sep.separator = true; nodes.push_back(sep); }
         for (int f = 0; f < Loadouts::FamCount; ++f)
         {
@@ -546,7 +559,7 @@ namespace
             if (!h || h->Count() == 0) continue;
             Gw2Ui::MenuNode fam; fam.label = Loadouts::FamilyName(f);
             const int act = h->Active();
-            for (int p = 0; p < h->Count(); ++p) { Gw2Ui::MenuNode c; c.label = h->NameAt(p); c.id = 1000 + f * 100 + p; c.selected = (p == act); fam.children.push_back(std::move(c)); }
+            for (int p = 0; p < h->Count(); ++p) { Gw2Ui::MenuNode c; c.label = ScopedProfileName(*h, p); c.id = 1000 + f * 100 + p; c.selected = (p == act); fam.children.push_back(std::move(c)); }
             nodes.push_back(std::move(fam));
         }
     }
