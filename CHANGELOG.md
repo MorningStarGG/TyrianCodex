@@ -13,7 +13,8 @@
 - Added shared/global profiles for General, Dashboard, Info Panel, and HUD profile families.
 - Added shared/global loadouts that can be used by every character and can reference shared/global family profiles.
 - Added **Make global** and **Copy to this character** actions to profile/loadout management.
-- Added Tyrian Codex window and guide-panel-only hotkey rows to **Options -> Keybinds**.
+- Added Tyrian Codex window and guide-panel-only keybinds to **Options -> Keybinds**.
+- Added Farming coverage for three Secrets of the Obscure gathering materials: Static Charge (Skywatch Archipelago), Pinch of Stardust (Amnytas), and Calcified Gasp (Inner Nayos).
 
 ### Changed
 
@@ -27,8 +28,8 @@
 - Updated Tekkit and Lady Elyssa marker handling so marker points stay attached to their exact source route branch instead of being copied by map ID or between authors.
 - Updated loadouts to store scoped profile references so shared loadouts can point at shared profiles instead of relying on same-name per-character profiles.
 - Updated loadout settings, dashboard loadout widget, and Info Panel loadout menus to label shared entries with `[global]`.
-- Updated Tyrian Codex hotkeys to be handled by Tyrian Codex settings instead of trying to mirror Nexus's saved keybind UI.
-- Kept one no-default Nexus QuickAccess bridge bind for tray-icon left-click behavior; user-configurable addon hotkeys now live in Tyrian Codex settings.
+- Updated Tyrian Codex keybinds to be handled by Tyrian Codex settings instead of trying to mirror Nexus's saved keybind UI.
+- Kept one no-default Nexus QuickAccess bridge bind for tray-icon left-click behavior; user-configurable addon keybinds now live in Tyrian Codex settings.
 
 ### Fixed
 
