@@ -1272,7 +1272,11 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
     const float frameH = std::max(ImGui::GetFrameHeight(), Hh + 6.f * sc);
     const float lblW = showLabel ? Gw2Ui::MeasureWidth(label, 16.f) : 0.f;
     const float autoTrackW = ImGui::GetContentRegionAvail().x - lblW - 16.f * sc;
-    float trackW = (trackWidth > 0.f) ? trackWidth * sc : std::min(autoTrackW, 620.f);
+    // A caller-requested trackWidth is a PREFERENCE, not a guarantee -- clamp it to what's actually left in the
+    // row too, else a fixed width wider than the current panel/scale just overflows past the row (this is what
+    // made every row overflow together once they all requested the same width: none of them were ever actually
+    // checked against available space, only the auto-size branch was).
+    float trackW = (trackWidth > 0.f) ? std::min(trackWidth * sc, autoTrackW) : std::min(autoTrackW, 620.f);
     if (trackW < 90.f * sc)
         trackW = 90.f * sc;
     const ImVec2 cur = ImGui::GetCursorScreenPos();
@@ -1312,9 +1316,9 @@ static bool TrackBar(const char *label, float *v, float vmin, float vmax, const 
     return changed;
 }
 
-bool Gw2Ui::Slider(const char *label, float *v, float vmin, float vmax, const char *fmt)
+bool Gw2Ui::Slider(const char *label, float *v, float vmin, float vmax, const char *fmt, float trackWidth)
 {
-    return TrackBar(label, v, vmin, vmax, fmt, false);
+    return TrackBar(label, v, vmin, vmax, fmt, false, trackWidth);
 }
 
 bool Gw2Ui::SliderInt(const char *label, int *v, int vmin, int vmax, float trackWidth)

@@ -121,7 +121,7 @@ namespace Gw2Ui
 
         void DrawLabelCore(ImDrawList *dl, ImVec2 a, ImVec2 b, const char *text, ImFont *font,
                            ImU32 color, bool stroke, Gw2Ui::HAlign h, Gw2Ui::VAlign v, float fontSize,
-                           float wrap, float weight)
+                           float wrap, float weight, Gw2Ui::TextShadow shadowMode, float shadowStrength)
         {
             if (!text || !*text)
                 return;
@@ -149,15 +149,28 @@ namespace Gw2Ui
             auto drawRun = [&](const char *s, const char *e, float x, float y, float runWrap)
             {
                 y = std::floor(y);
-                if (stroke)
+                if (stroke && shadowMode != Gw2Ui::TextShadow::None)
                 {
                     const float Af = ((color >> IM_COL32_A_SHIFT) & 0xFFu) / 255.f;
-                    const int sa = (int)((1.f - std::pow(1.f - Af, 1.f / 8.f)) * 255.f + 0.5f);
-                    const ImU32 scol = IM_COL32(0, 0, 0, sa);
-                    const float d = 1.f;
-                    const ImVec2 off[8] = {{0, -d}, {d, -d}, {d, 0}, {d, d}, {0, d}, {-d, d}, {-d, 0}, {-d, -d}};
-                    for (const ImVec2 &o : off)
-                        dl->AddText(f, fs, ImVec2(x + o.x, y + o.y), scol, s, e, runWrap);
+                    const float strength = std::clamp(shadowStrength, 0.f, 1.f);
+                    if (shadowMode == Gw2Ui::TextShadow::Drop)
+                    {
+                        // A single down-right offset pass -- the classic UI drop-shadow, for callers that want
+                        // floating text (no ring) with a strength dial instead of the fixed-alpha Outline ring.
+                        const int sa = (int)(Af * 255.f * strength + 0.5f);
+                        const ImU32 scol = IM_COL32(0, 0, 0, sa);
+                        const float d = 2.f;
+                        dl->AddText(f, fs, ImVec2(x + d, y + d), scol, s, e, runWrap);
+                    }
+                    else   // Outline: the original 8-direction ring. strength=1 reproduces the exact legacy formula.
+                    {
+                        const int sa = (int)((1.f - std::pow(1.f - Af, 1.f / 8.f)) * 255.f * strength + 0.5f);
+                        const ImU32 scol = IM_COL32(0, 0, 0, sa);
+                        const float d = 1.f;
+                        const ImVec2 off[8] = {{0, -d}, {d, -d}, {d, 0}, {d, d}, {0, d}, {-d, d}, {-d, 0}, {-d, -d}};
+                        for (const ImVec2 &o : off)
+                            dl->AddText(f, fs, ImVec2(x + o.x, y + o.y), scol, s, e, runWrap);
+                    }
                 }
                 dl->AddText(f, fs, ImVec2(x, y), color, s, e, runWrap);
                 if (bw > 0.f)

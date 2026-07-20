@@ -77,10 +77,21 @@ namespace Gw2Ui
         Bottom
     };
 
+    // Shape of the optional shadow pass behind stroke=true text (see Label/LabelIn/LabelDL below). Outline is the
+    // original 8-direction ring (busy-background readability, unchanged default). Drop is a single down-right
+    // offset pass -- the classic UI drop-shadow look, for callers that want a floating-text style instead of a
+    // halo (e.g. Info Panel bars run with their background bar hidden).
+    enum class TextShadow
+    {
+        None,
+        Outline,
+        Drop
+    };
+
     // GW2 text: the shared GW2 font with optional StrokeText --
-    // the 8-direction black outline drawn so text stays readable on
-    // busy backgrounds. `font` null = the shared GW2 UI font. This is the universal text primitive; every
-    // control's text and every list-row label routes through it, so font + stroke match the game.
+    // a shadow pass (TextShadow: Outline's 8-direction black ring, or a single Drop offset) drawn so text stays
+    // readable on busy backgrounds. `font` null = the shared GW2 UI font. This is the universal text primitive;
+    // every control's text and every list-row label routes through it, so font + shadow match the game.
     //   Label   : flows at the cursor like ImGui::Text (left aligned), advancing by the measured size.
     //   LabelIn : draws into an explicit rect [a,b] with H/V alignment (row columns, headers, captions).
     // fontSize: 0 = the GW2 font's native size; otherwise render scaled to that pixel size, so controls
@@ -88,18 +99,23 @@ namespace Gw2Ui
     // weight: faux-bold strength (the GW2 TTF renders thin, so text is drawn 2-3x sub-pixel offset). -1 =
     // the default body weight; pass a larger value (~1.6) for genuinely BOLD headers,
     // Menomonia-Bold section titles vs its regular body.
+    // shadowMode/shadowStrength only apply when stroke=true; the defaults (Outline, 1.0) reproduce the original
+    // stroke look exactly, so existing stroke=true/false callers are unaffected by these two params existing.
     void Label(const char *text, ImU32 color = IM_COL32(255, 255, 255, 255), bool stroke = false,
-               ImFont *font = nullptr, float fontSize = 0.f, float weight = -1.f);
+               ImFont *font = nullptr, float fontSize = 0.f, float weight = -1.f,
+               TextShadow shadowMode = TextShadow::Outline, float shadowStrength = 1.f);
     // wrapWidth > 0 wraps the text at that pixel width (the caller sizes its rect/row to fit via
     // MeasureWrappedHeight). 0 = single line (clips at the rect).
     void LabelIn(ImVec2 a, ImVec2 b, const char *text, HAlign h = HAlign::Left, VAlign v = VAlign::Middle,
                  ImU32 color = IM_COL32(255, 255, 255, 255), bool stroke = false, ImFont *font = nullptr,
-                 float fontSize = 0.f, float wrapWidth = 0.f, float weight = -1.f);
+                 float fontSize = 0.f, float wrapWidth = 0.f, float weight = -1.f,
+                 TextShadow shadowMode = TextShadow::Outline, float shadowStrength = 1.f);
     // Like LabelIn but draws into an EXPLICIT draw list (e.g. ImGui::GetForegroundDrawList() for HUD overlays
     // such as the notification toasts that live outside any window). Same alignment/stroke/weight semantics.
     void LabelDL(ImDrawList *dl, ImVec2 a, ImVec2 b, const char *text, HAlign h = HAlign::Left, VAlign v = VAlign::Middle,
                  ImU32 color = IM_COL32(255, 255, 255, 255), bool stroke = false, ImFont *font = nullptr,
-                 float fontSize = 0.f, float wrapWidth = 0.f, float weight = -1.f);
+                 float fontSize = 0.f, float wrapWidth = 0.f, float weight = -1.f,
+                 TextShadow shadowMode = TextShadow::Outline, float shadowStrength = 1.f);
     // The resolved GW2 UI font (Menomonia when enabled, else Nexus's shared font) and the Nexus stock font, so
     // overlays can pick a face (the toasts' Menomonia/stock setting). Either may be null very early in startup.
     ImFont *UiFontResolved();
@@ -495,9 +511,10 @@ namespace Gw2Ui
     // GW2-skinned controls. Drop-in for the ImGui equivalents.
     // Each returns true when the value changed this frame.
     bool Checkbox(const char *label, bool *v);
-    bool Slider(const char *label, float *v, float vmin, float vmax, const char *fmt = "%.0f");
-    // trackWidth > 0 caps the slider track to that pixel width (else it fills the row); use it where the slider
-    // shouldn't stretch the full content region (e.g. the Info Panel per-text options page).
+    // trackWidth > 0 caps the slider track to that pixel width (else it fills the row, up to 620px); use it where
+    // the slider shouldn't stretch the full content region (e.g. the Info Panel per-text options page) or where it
+    // needs to match a fixed-width sibling row instead of auto-sizing to whatever's left of the row.
+    bool Slider(const char *label, float *v, float vmin, float vmax, const char *fmt = "%.0f", float trackWidth = 0.f);
     bool SliderInt(const char *label, int *v, int vmin, int vmax, float trackWidth = 0.f);
     // A two-handle integer RANGE slider (drag either end). Shows "Lv lo - hi" + the track with both nubs and the
     // selected band lit. Clamps lo<=hi within [vmin,vmax]. Returns true on change. Same track/nub art as SliderInt.

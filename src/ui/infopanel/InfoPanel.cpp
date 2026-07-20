@@ -33,6 +33,7 @@ namespace
     static const char* kZones[3] = { "Left", "Center", "Right" };
     static const char* kZoneLetters[3] = { "L", "C", "R" };
     static const char* kEdgeNames[2] = { "Top", "Bottom" };
+    static const char* kShadowModeNames[3] = { "None", "Directional", "Drop" };
     static const char* kHeightNames[] = {
         "Auto", "18 px", "20 px", "22 px", "24 px", "26 px", "28 px", "32 px", "36 px", "40 px", "44 px", "48 px", "56 px", "64 px"
     };
@@ -97,6 +98,8 @@ namespace
         bar.opacity = std::clamp(bar.opacity, 0, 100);
         bar.textSize = std::clamp(bar.textSize, 12.f, 32.f);
         bar.barHeight = std::clamp(bar.barHeight, 0, kHeightCount - 1);
+        bar.textShadowMode = std::clamp(bar.textShadowMode, 0, 2);
+        bar.textShadowStrength = std::clamp(bar.textShadowStrength, 0, 100);
     }
 
     float FixedBarHeightLogical(const InfoBarConfig& bar)
@@ -177,7 +180,8 @@ namespace
         j["barHeight"] = bar.barHeight;
         j["hideInCombat"] = bar.hideInCombat;
         j["hideOnMap"] = bar.hideOnMap;
-        j["showTextShadow"] = bar.showTextShadow;
+        j["textShadowMode"] = bar.textShadowMode;
+        j["textShadowStrength"] = bar.textShadowStrength;
         j["texts"] = UiLayout::OrderedToJson(bar.texts, [](const InfoSlot& s, nlohmann::json& e) { e["zone"] = s.zone; });
         j["textOpts"] = TextOptsToJson(bar);
         return j;
@@ -196,7 +200,8 @@ namespace
         bar.barHeight = Api::Json::Int(j, "barHeight", bar.barHeight);
         bar.hideInCombat = Api::Json::Bool(j, "hideInCombat", bar.hideInCombat);
         bar.hideOnMap = Api::Json::Bool(j, "hideOnMap", bar.hideOnMap);
-        bar.showTextShadow = Api::Json::Bool(j, "showTextShadow", bar.showTextShadow);
+        bar.textShadowMode = Api::Json::Int(j, "textShadowMode", bar.textShadowMode);
+        bar.textShadowStrength = Api::Json::Int(j, "textShadowStrength", bar.textShadowStrength);
         LoadTextOpts(bar, Api::Json::Node(j, "textOpts"));
         if (j.contains("texts"))
             LoadTexts(bar, j["texts"]);
@@ -461,6 +466,10 @@ namespace
             }
             dl->PushClipRect(panelMin, panelMax, true);
 
+            const bool shadowOn = bar.textShadowMode != 0;
+            const Gw2Ui::TextShadow shadowShape = (bar.textShadowMode == 2) ? Gw2Ui::TextShadow::Drop : Gw2Ui::TextShadow::Outline;
+            const float shadowStrength = bar.textShadowStrength / 100.f;
+
             auto drawSeg = [&](Seg& e, float x)
             {
                 ImGui::SetCursorScreenPos(ImVec2(x, winY));
@@ -483,7 +492,8 @@ namespace
                 if (!e.s.label.empty())
                 {
                     Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.label.c_str(),
-                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(190, 165, 110, 255), bar.showTextShadow, nullptr, labelFs);
+                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(190, 165, 110, 255), shadowOn, nullptr, labelFs,
+                                   0.f, -1.f, shadowShape, shadowStrength);
                     cx += Gw2Ui::MeasureWidth(e.s.label.c_str(), labelFs) + 6.f * ui;
                 }
                 if (e.s.paint)
@@ -506,7 +516,8 @@ namespace
                         cx += is + 4.f * ui;
                     }
                     Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.value.c_str(),
-                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, e.s.color, bar.showTextShadow, nullptr, fs);
+                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, e.s.color, shadowOn, nullptr, fs,
+                                   0.f, -1.f, shadowShape, shadowStrength);
                 }
 
                 if (hov)
@@ -855,11 +866,11 @@ namespace
 
         Gw2Ui::Label("Horizontal offset (px)");
         place();
-        if (Gw2Ui::Slider("##offsetX", &bar.offsetX, -1000.f, 1000.f, "%.0f")) mark();
+        if (Gw2Ui::Slider("##offsetX", &bar.offsetX, -1000.f, 1000.f, "%.0f", 260.f)) mark();
 
         Gw2Ui::Label("Edge offset (px)");
         place();
-        if (Gw2Ui::Slider("##offsetY", &bar.offsetY, 0.f, 400.f, "%.0f")) mark();
+        if (Gw2Ui::Slider("##offsetY", &bar.offsetY, 0.f, 400.f, "%.0f", 260.f)) mark();
 
         Gw2Ui::Label("Background opacity");
         place();
@@ -867,7 +878,15 @@ namespace
 
         Gw2Ui::Label("Text size");
         place();
-        if (Gw2Ui::Slider("##textSize", &bar.textSize, 12.f, 32.f, "%.0f")) mark();
+        if (Gw2Ui::Slider("##textSize", &bar.textSize, 12.f, 32.f, "%.0f", 260.f)) mark();
+
+        Gw2Ui::Label("Text shadow");
+        place();
+        if (Gw2Ui::Dropdown("##shadowMode", kShadowModeNames, 3, &bar.textShadowMode, 180.f)) mark();
+
+        Gw2Ui::Label("Shadow strength");
+        place();
+        if (Gw2Ui::SliderInt("##shadowStrength", &bar.textShadowStrength, 0, 100, 260.f)) mark();
 
         Gw2Ui::Label("Bar height");
         place();
@@ -875,7 +894,6 @@ namespace
 
         if (Gw2Ui::Checkbox("Hide in combat", &bar.hideInCombat)) mark();
         if (Gw2Ui::Checkbox("Hide on full map", &bar.hideOnMap)) mark();
-        if (Gw2Ui::Checkbox("Text shadow", &bar.showTextShadow)) mark();
     }
 }
 

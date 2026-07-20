@@ -18,14 +18,14 @@
 
 using namespace Gw2Ui::detail;
 
-void Gw2Ui::LabelIn(ImVec2 a, ImVec2 b, const char* text, HAlign h, VAlign v, ImU32 color, bool stroke, ImFont* font, float fontSize, float wrapWidth, float weight)
+void Gw2Ui::LabelIn(ImVec2 a, ImVec2 b, const char* text, HAlign h, VAlign v, ImU32 color, bool stroke, ImFont* font, float fontSize, float wrapWidth, float weight, TextShadow shadowMode, float shadowStrength)
 {
-    DrawLabelCore(ImGui::GetWindowDrawList(), a, b, text, font, color, stroke, h, v, fontSize, wrapWidth, weight);
+    DrawLabelCore(ImGui::GetWindowDrawList(), a, b, text, font, color, stroke, h, v, fontSize, wrapWidth, weight, shadowMode, shadowStrength);
 }
 
-void Gw2Ui::LabelDL(ImDrawList* dl, ImVec2 a, ImVec2 b, const char* text, HAlign h, VAlign v, ImU32 color, bool stroke, ImFont* font, float fontSize, float wrapWidth, float weight)
+void Gw2Ui::LabelDL(ImDrawList* dl, ImVec2 a, ImVec2 b, const char* text, HAlign h, VAlign v, ImU32 color, bool stroke, ImFont* font, float fontSize, float wrapWidth, float weight, TextShadow shadowMode, float shadowStrength)
 {
-    if (dl) DrawLabelCore(dl, a, b, text, font, color, stroke, h, v, fontSize, wrapWidth, weight);
+    if (dl) DrawLabelCore(dl, a, b, text, font, color, stroke, h, v, fontSize, wrapWidth, weight, shadowMode, shadowStrength);
 }
 
 ImFont* Gw2Ui::UiFontResolved() { return UiFont(nullptr); }
@@ -144,7 +144,7 @@ std::string Gw2Ui::Ellipsize(const std::string& text, float fontSize, float maxW
     return ell;
 }
 
-void Gw2Ui::Label(const char* text, ImU32 color, bool stroke, ImFont* font, float fontSize, float weight)
+void Gw2Ui::Label(const char* text, ImU32 color, bool stroke, ImFont* font, float fontSize, float weight, TextShadow shadowMode, float shadowStrength)
 {
     // Measure + reserve at the SCALED size with the SAME rung DrawLabelCore will draw with (we pass `font`
     // through; DrawLabelCore re-resolves it identically) -- so the flowed box matches the glyphs under a
@@ -155,7 +155,7 @@ void Gw2Ui::Label(const char* text, ImU32 color, bool stroke, ImFont* font, floa
     const ImVec2 ts = f->CalcTextSizeA(fs, FLT_MAX, 0.f, text ? text : "");
     const ImVec2 p  = ImGui::GetCursorScreenPos();
     DrawLabelCore(ImGui::GetWindowDrawList(), p, ImVec2(p.x + ts.x, p.y + ts.y),
-                  text, font, color, stroke, HAlign::Left, VAlign::Top, fontSize, 0.f, weight);
+                  text, font, color, stroke, HAlign::Left, VAlign::Top, fontSize, 0.f, weight, shadowMode, shadowStrength);
     ImGui::Dummy(ImVec2(ts.x, ts.y));   // reserve the text box so ImGui layout flows like ::Text
 }
 

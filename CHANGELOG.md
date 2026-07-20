@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0.2
+
+### Added
+
+- Added a per-bar Text shadow setting to the Info Panel, with a None / Directional / Drop mode and an adjustable 0-100% strength, so data text stays readable with the background bar dimmed down or turned off entirely.
+
+### Fixed
+
+- Fixed setting sliders being inconsistently sized (some auto-stretched to fill the row, others fixed-width) and able to overflow past the settings panel edge at narrower window widths or higher UI scale.
+
 ## 1.1.0.1
 
 ### Changed

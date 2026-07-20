@@ -50,7 +50,8 @@ namespace detail
 
     void    DrawLabelCore(ImDrawList* dl, ImVec2 a, ImVec2 b, const char* text, ImFont* font,
                           ImU32 color, bool stroke, Gw2Ui::HAlign h, Gw2Ui::VAlign v, float fontSize,
-                          float wrap = 0.f, float weight = -1.f);
+                          float wrap = 0.f, float weight = -1.f,
+                          Gw2Ui::TextShadow shadowMode = Gw2Ui::TextShadow::Outline, float shadowStrength = 1.f);
 
     // Which KeybindAssigner is capturing keys (nullptr = none). File-scope so BeginWindow can skip its
     // Escape-to-close while a bind is being captured.
