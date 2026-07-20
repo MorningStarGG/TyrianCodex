@@ -13,7 +13,7 @@
 #define TC_VER_MAJOR    1
 #define TC_VER_MINOR    1
 #define TC_VER_BUILD    0
-#define TC_VER_REVISION 0
+#define TC_VER_REVISION 1
 
 // "0.1.0.0" -- used as the cache-version marker (ImageCache).
 #define TC_STRINGIZE2(x) #x
@@ -23,8 +23,10 @@
     TC_STRINGIZE(TC_VER_BUILD) "." TC_STRINGIZE(TC_VER_REVISION)
 
 // The shipped DATA-package version -- drives the self-download bootstrap (DataBootstrap). Nexus's updater ships
-// only the DLL; the ~600MB data/ folder is fetched from the GitHub release keyed by THIS version. Bump it ONLY
-// when the shipped data payload (tc-core.tcpk or any *.pack) changes -- it is INDEPENDENT of TC_VER_* so a
-// DLL-only patch never forces a re-download. It selects the release tag (releases/download/v<TC_DATA_VERSION>/...)
-// and is written to data/.coreversion + data/.assetsversion for the wipe/redownload-on-mismatch check.
+// only the DLL; the ~600MB data/ folder is fetched from GitHub's "latest" release (DataBootstrap.cpp always
+// downloads from releases/latest/download/, not a tag built from this string -- CI packages full data into every
+// v* release, so latest always has it). Bump THIS value ONLY when the shipped data payload (tc-core.tcpk or any
+// *.pack) changes -- it is INDEPENDENT of TC_VER_* so a DLL-only patch never forces a re-download: it is written
+// to data/.coreversion + data/.assetsversion, and a mismatch against that on-disk marker is what triggers the
+// redownload, not the release tag name.
 #define TC_DATA_VERSION "1.0.1"

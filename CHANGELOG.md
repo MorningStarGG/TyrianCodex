@@ -1,6 +1,16 @@
 # Changelog
 
-## 1.0.0.4
+## 1.1.0.1
+
+### Changed
+
+- Changed the addon's automatic data download to always pull from the latest GitHub release instead of a tag built from the internal data-version number.
+
+### Fixed
+
+- Fixed the addon's automatic data download failing on startup ("Core data download failed", stuck retrying) when a published release didn't match the internal data-version tag it was requesting.
+
+## 1.1.0.0
 
 ### Added
 

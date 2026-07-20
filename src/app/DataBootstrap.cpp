@@ -24,9 +24,16 @@ namespace DataBootstrap
 {
     namespace
     {
-        // The GitHub Release the DLL pulls its data from. Tag = v<TC_DATA_VERSION> (CI must publish there).
+        // The GitHub Release the DLL pulls its data from -- always whichever release GitHub currently marks
+        // "latest" (CI packages full data into every v* tag push, so latest always has it; see build.yml). This
+        // is deliberately NOT a URL built from TC_DATA_VERSION: that scheme required every release to be tagged
+        // v<TC_DATA_VERSION> exactly, a manual step with no build/release-time check, which silently 404s the
+        // instant someone tags a release by the addon version (TC_VER_*) instead. TC_DATA_VERSION still gates
+        // whether a download happens at all (see Init/StartAssets below, compared against the on-disk marker) --
+        // only the SOURCE url no longer depends on it, so a DLL-only patch still doesn't force a redownload for
+        // users already current.
         const std::string kGithubBaseUrl =
-            "https://github.com/MorningStarGG/TyrianCodex/releases/download/v" TC_DATA_VERSION "/";
+            "https://github.com/MorningStarGG/TyrianCodex/releases/latest/download/";
         const std::vector<std::pair<std::string, std::string>> kHdrs = { { "User-Agent", "TyrianCodex" } };
 
         // Resolved ONCE in Init: normally kGithubBaseUrl, but a `<addon>\bootstrap_url.txt` file OVERRIDES it so the

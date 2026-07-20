@@ -1,11 +1,13 @@
 name: build
 
 # Builds TyrianCodex.dll from public source on GitHub's runners (so released binaries are provably built from the
-# committed code -- no "you modified it locally" doubt), and on a version tag publishes the GitHub Release the addon
+# committed code -- no "you modified it locally" doubt), and on ANY version tag publishes a GitHub Release the addon
 # self-downloads its data from. Nexus' updater ships ONLY the DLL, so the ~600 MB data/ is fetched at runtime from
-# the release tagged v<TC_DATA_VERSION>: tc-core.tcpk (blocking core data) + the *.pack image packs (background).
-# See src/app/DataBootstrap.cpp. The .pack files are committed through Git LFS, so the runner packages them straight
-# from data/ after an LFS-enabled checkout.
+# releases/latest/download/: tc-core.tcpk (blocking core data) + the *.pack image packs (background). The DLL always
+# pulls from whichever release GitHub currently marks "latest" -- NOT a tag matched against TC_DATA_VERSION, so
+# there is no separate tag-naming step to get right; tag with whatever version bump you're actually cutting (addon
+# or data) and this job attaches full data to it regardless. See src/app/DataBootstrap.cpp. The .pack files are
+# committed through Git LFS, so the runner packages them straight from data/ after an LFS-enabled checkout.
 on:
   push:
     branches: [ main ]
@@ -42,9 +44,10 @@ jobs:
           path: build/Release/TyrianCodex.dll
 
       # On a pushed version tag, assemble the data assets the addon self-downloads. build_release.py packages the
-      # COMMITTED data/ into tc-core.tcpk + collects the .pack files (no builder/ needed). IMPORTANT: tag each
-      # data-bearing release v<TC_DATA_VERSION> (from src/Version.h) -- that IS the URL the DLL downloads from.
-      # A DLL-only patch that doesn't touch data can reuse the existing data release (leave TC_DATA_VERSION alone).
+      # COMMITTED data/ into tc-core.tcpk + collects the .pack files (no builder/ needed). The DLL always pulls
+      # from releases/latest/download/, so the tag name itself doesn't matter to it -- just bump TC_DATA_VERSION
+      # (src/Version.h) whenever the data payload actually changed, so existing installs' on-disk marker mismatches
+      # and they redownload; leave it alone for a DLL-only patch so current installs skip the redownload.
       - name: Package data assets (on tag)
         if: startsWith(github.ref, 'refs/tags/')
         run: |
