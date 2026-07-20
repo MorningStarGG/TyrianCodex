@@ -177,6 +177,7 @@ namespace
         j["barHeight"] = bar.barHeight;
         j["hideInCombat"] = bar.hideInCombat;
         j["hideOnMap"] = bar.hideOnMap;
+        j["showTextShadow"] = bar.showTextShadow;
         j["texts"] = UiLayout::OrderedToJson(bar.texts, [](const InfoSlot& s, nlohmann::json& e) { e["zone"] = s.zone; });
         j["textOpts"] = TextOptsToJson(bar);
         return j;
@@ -195,6 +196,7 @@ namespace
         bar.barHeight = Api::Json::Int(j, "barHeight", bar.barHeight);
         bar.hideInCombat = Api::Json::Bool(j, "hideInCombat", bar.hideInCombat);
         bar.hideOnMap = Api::Json::Bool(j, "hideOnMap", bar.hideOnMap);
+        bar.showTextShadow = Api::Json::Bool(j, "showTextShadow", bar.showTextShadow);
         LoadTextOpts(bar, Api::Json::Node(j, "textOpts"));
         if (j.contains("texts"))
             LoadTexts(bar, j["texts"]);
@@ -481,7 +483,7 @@ namespace
                 if (!e.s.label.empty())
                 {
                     Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.label.c_str(),
-                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(190, 165, 110, 255), false, nullptr, labelFs);
+                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(190, 165, 110, 255), bar.showTextShadow, nullptr, labelFs);
                     cx += Gw2Ui::MeasureWidth(e.s.label.c_str(), labelFs) + 6.f * ui;
                 }
                 if (e.s.paint)
@@ -504,7 +506,7 @@ namespace
                         cx += is + 4.f * ui;
                     }
                     Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.value.c_str(),
-                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, e.s.color, false, nullptr, fs);
+                                   Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, e.s.color, bar.showTextShadow, nullptr, fs);
                 }
 
                 if (hov)
@@ -873,6 +875,7 @@ namespace
 
         if (Gw2Ui::Checkbox("Hide in combat", &bar.hideInCombat)) mark();
         if (Gw2Ui::Checkbox("Hide on full map", &bar.hideOnMap)) mark();
+        if (Gw2Ui::Checkbox("Text shadow", &bar.showTextShadow)) mark();
     }
 }
 

@@ -16,6 +16,7 @@ struct InfoBarConfig
     int barHeight = 0;        // 0 Auto, else index into the Info Panel bar-height preset list
     bool hideInCombat = true;
     bool hideOnMap = false;
+    bool showTextShadow = false;   // 8-dir black outline behind data-text labels (Gw2Ui stroke), off by default
     UiLayout::Ordered<InfoSlot> texts;
     std::map<std::string, std::map<std::string, int>> textOpts; // textKey -> optKey -> value
 };
