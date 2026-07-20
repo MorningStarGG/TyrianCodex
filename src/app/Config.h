@@ -244,6 +244,7 @@ struct Config
     bool dashLocked = false;           // lock the handle position + panel resize (handle still toggles open/close)
     bool dashAutoHideHoverOff = false; // collapse the open panel a moment after the cursor leaves it
     bool dashAutoHideClickOff = true;  // collapse the open panel when you click outside it (default on)
+    bool dashAutoOpenHover = false;    // open the panel when the cursor hovers the handle (the inverse of Auto-hide)
     // Per-widget "show map in tooltip" toggles (the Widgets settings section). Default ON (the zone thumbnail is
     // the most useful part of the hover); each objective/waypoint widget reads its own to gate the thumbnail.
     bool wMapTipCurrent = true;
