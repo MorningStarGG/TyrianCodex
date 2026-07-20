@@ -456,6 +456,7 @@ bool Gw2Ui::ColumnBorder(const char *id, float x, float y, float height,
 // when it consumes an Escape, calls RequestEscapeClose for BeginWindow to action.
 void Gw2Ui::NewFrameEscReset() { s_escClosable = false; }
 bool Gw2Ui::WindowEatsEscape() { return s_escClosable; }
+bool Gw2Ui::KeybindCaptureActive() { return s_kbCapturing != nullptr; }
 void Gw2Ui::RequestEscapeClose() { s_escRequest = true; }
 void Gw2Ui::WarmAsset(uint32_t assetId)
 {

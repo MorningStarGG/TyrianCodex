@@ -1,0 +1,1558 @@
+{
+  "routes": [
+    {
+      "name": "Calcified Gasp",
+      "material": "calcified_gasp",
+      "trail": [
+        [
+          693.1,
+          216.0,
+          -431.7
+        ],
+        [
+          677.9,
+          214.9,
+          -425.6
+        ],
+        [
+          632.4,
+          205.1,
+          -403.2
+        ],
+        [
+          613.8,
+          217.6,
+          -392.0
+        ],
+        [
+          610.4,
+          314.2,
+          -389.7
+        ],
+        [
+          627.3,
+          326.6,
+          -301.3
+        ],
+        [
+          647.9,
+          242.9,
+          -191.6
+        ],
+        [
+          654.7,
+          201.5,
+          -133.1
+        ],
+        [
+          676.4,
+          224.6,
+          -126.1
+        ],
+        [
+          647.6,
+          233.0,
+          -93.4
+        ],
+        [
+          605.6,
+          225.9,
+          -91.9
+        ],
+        [
+          625.1,
+          245.8,
+          -65.8
+        ],
+        [
+          631.0,
+          256.3,
+          -53.6
+        ],
+        [
+          634.5,
+          256.2,
+          -27.4
+        ],
+        [
+          660.8,
+          254.4,
+          -22.1
+        ],
+        [
+          648.8,
+          259.7,
+          13.5
+        ],
+        [
+          578.2,
+          249.9,
+          154.7
+        ],
+        [
+          516.2,
+          245.1,
+          330.8
+        ],
+        [
+          500.1,
+          252.6,
+          321.8
+        ],
+        [
+          490.5,
+          257.9,
+          306.7
+        ],
+        [
+          458.6,
+          269.8,
+          302.2
+        ],
+        [
+          416.8,
+          263.5,
+          343.0
+        ],
+        [
+          418.9,
+          269.7,
+          362.2
+        ],
+        [
+          433.5,
+          260.0,
+          361.1
+        ],
+        [
+          449.8,
+          269.5,
+          367.7
+        ],
+        [
+          440.7,
+          276.9,
+          384.1
+        ],
+        [
+          422.1,
+          287.9,
+          409.4
+        ],
+        [
+          391.7,
+          310.6,
+          411.7
+        ],
+        [
+          368.4,
+          314.2,
+          422.3
+        ],
+        [
+          361.9,
+          349.3,
+          423.1
+        ],
+        [
+          358.7,
+          358.8,
+          434.4
+        ],
+        [
+          383.5,
+          378.3,
+          448.8
+        ],
+        [
+          403.9,
+          401.3,
+          469.9
+        ],
+        [
+          402.6,
+          400.8,
+          429.6
+        ],
+        [
+          421.2,
+          413.0,
+          438.6
+        ],
+        [
+          398.1,
+          433.5,
+          462.8
+        ],
+        [
+          373.4,
+          460.9,
+          416.5
+        ],
+        [
+          383.9,
+          474.9,
+          448.9
+        ],
+        [
+          412.5,
+          485.9,
+          412.2
+        ],
+        [
+          416.1,
+          500.3,
+          447.7
+        ],
+        [
+          449.4,
+          468.5,
+          457.4
+        ],
+        [
+          488.8,
+          475.9,
+          477.0
+        ],
+        [
+          470.3,
+          448.6,
+          485.3
+        ],
+        [
+          461.3,
+          440.7,
+          449.7
+        ],
+        [
+          518.9,
+          434.5,
+          460.2
+        ],
+        [
+          626.8,
+          304.0,
+          474.5
+        ],
+        [
+          771.4,
+          243.5,
+          449.8
+        ],
+        [
+          773.5,
+          260.0,
+          457.4
+        ],
+        [
+          777.3,
+          273.1,
+          473.3
+        ],
+        [
+          779.8,
+          281.8,
+          483.2
+        ],
+        [
+          781.4,
+          288.5,
+          491.5
+        ],
+        [
+          783.3,
+          296.6,
+          499.9
+        ],
+        [
+          786.9,
+          307.7,
+          515.3
+        ],
+        [
+          790.1,
+          316.6,
+          528.1
+        ],
+        [
+          794.3,
+          328.9,
+          547.2
+        ],
+        [
+          802.1,
+          329.2,
+          547.2
+        ],
+        [
+          911.1,
+          328.0,
+          418.3
+        ],
+        [
+          967.6,
+          302.4,
+          209.4
+        ],
+        [
+          963.5,
+          316.4,
+          188.8
+        ],
+        [
+          968.8,
+          335.8,
+          130.1
+        ],
+        [
+          936.0,
+          303.0,
+          109.1
+        ],
+        [
+          901.5,
+          322.9,
+          132.3
+        ],
+        [
+          926.4,
+          320.6,
+          195.0
+        ],
+        [
+          940.5,
+          281.6,
+          181.6
+        ],
+        [
+          973.3,
+          258.3,
+          137.5
+        ],
+        [
+          978.4,
+          239.5,
+          118.0
+        ],
+        [
+          953.8,
+          270.8,
+          110.3
+        ],
+        [
+          887.4,
+          283.7,
+          144.1
+        ],
+        [
+          900.8,
+          259.7,
+          191.9
+        ],
+        [
+          907.6,
+          235.0,
+          211.2
+        ],
+        [
+          308.6,
+          186.3,
+          150.6
+        ],
+        [
+          309.8,
+          186.5,
+          22.6
+        ],
+        [
+          260.5,
+          196.3,
+          -57.0
+        ],
+        [
+          243.8,
+          201.6,
+          -93.5
+        ],
+        [
+          227.1,
+          203.7,
+          -100.7
+        ],
+        [
+          188.2,
+          232.4,
+          -59.3
+        ],
+        [
+          70.2,
+          226.1,
+          -27.1
+        ],
+        [
+          -61.7,
+          233.1,
+          -16.4
+        ],
+        [
+          -85.9,
+          239.3,
+          -3.5
+        ],
+        [
+          -93.5,
+          261.9,
+          55.1
+        ],
+        [
+          -81.2,
+          271.7,
+          63.0
+        ],
+        [
+          -63.1,
+          283.9,
+          60.2
+        ],
+        [
+          -60.4,
+          303.3,
+          52.4
+        ],
+        [
+          -49.0,
+          321.5,
+          63.5
+        ],
+        [
+          -32.2,
+          328.0,
+          75.4
+        ],
+        [
+          -13.5,
+          337.8,
+          69.7
+        ],
+        [
+          5.9,
+          354.4,
+          62.4
+        ],
+        [
+          25.8,
+          375.1,
+          60.3
+        ],
+        [
+          30.1,
+          384.9,
+          60.1
+        ],
+        [
+          8.2,
+          361.6,
+          77.4
+        ],
+        [
+          10.5,
+          368.4,
+          65.0
+        ],
+        [
+          40.5,
+          397.9,
+          62.7
+        ],
+        [
+          34.9,
+          412.1,
+          88.0
+        ],
+        [
+          1.2,
+          418.7,
+          187.2
+        ],
+        [
+          40.3,
+          429.4,
+          188.2
+        ],
+        [
+          55.3,
+          432.6,
+          185.2
+        ],
+        [
+          68.2,
+          433.9,
+          177.9
+        ],
+        [
+          81.8,
+          435.2,
+          170.3
+        ],
+        [
+          95.4,
+          436.5,
+          162.7
+        ],
+        [
+          110.9,
+          437.9,
+          153.9
+        ],
+        [
+          124.5,
+          439.3,
+          146.2
+        ],
+        [
+          137.8,
+          443.8,
+          136.8
+        ],
+        [
+          150.1,
+          448.0,
+          128.0
+        ],
+        [
+          161.5,
+          451.9,
+          119.9
+        ],
+        [
+          173.7,
+          456.0,
+          111.1
+        ],
+        [
+          187.8,
+          460.8,
+          101.1
+        ],
+        [
+          200.9,
+          465.2,
+          91.7
+        ],
+        [
+          212.9,
+          466.7,
+          78.5
+        ],
+        [
+          221.9,
+          465.5,
+          64.0
+        ],
+        [
+          230.1,
+          464.4,
+          50.7
+        ],
+        [
+          237.7,
+          463.4,
+          38.4
+        ],
+        [
+          245.9,
+          462.3,
+          25.1
+        ],
+        [
+          254.0,
+          461.2,
+          11.8
+        ],
+        [
+          260.4,
+          460.2,
+          -1.5
+        ],
+        [
+          247.6,
+          459.1,
+          -13.0
+        ],
+        [
+          234.0,
+          458.9,
+          -25.2
+        ],
+        [
+          222.7,
+          458.9,
+          -35.4
+        ],
+        [
+          206.9,
+          458.8,
+          -37.1
+        ],
+        [
+          191.3,
+          458.8,
+          -37.0
+        ],
+        [
+          174.5,
+          458.8,
+          -37.9
+        ],
+        [
+          158.9,
+          458.8,
+          -38.7
+        ],
+        [
+          144.4,
+          458.8,
+          -39.5
+        ],
+        [
+          128.8,
+          458.8,
+          -40.4
+        ],
+        [
+          112.8,
+          454.9,
+          -32.0
+        ],
+        [
+          100.7,
+          451.0,
+          -23.4
+        ],
+        [
+          88.3,
+          447.1,
+          -14.6
+        ],
+        [
+          76.9,
+          443.4,
+          -6.4
+        ],
+        [
+          65.4,
+          439.7,
+          1.7
+        ],
+        [
+          53.1,
+          435.8,
+          10.5
+        ],
+        [
+          41.6,
+          432.2,
+          18.6
+        ],
+        [
+          29.8,
+          429.2,
+          31.1
+        ],
+        [
+          19.6,
+          427.0,
+          42.8
+        ],
+        [
+          9.5,
+          424.7,
+          54.5
+        ],
+        [
+          -1.3,
+          422.3,
+          67.1
+        ],
+        [
+          -11.4,
+          420.1,
+          78.8
+        ],
+        [
+          -21.6,
+          417.8,
+          90.5
+        ],
+        [
+          -31.0,
+          416.0,
+          101.4
+        ],
+        [
+          -41.2,
+          414.1,
+          113.1
+        ],
+        [
+          -51.4,
+          412.2,
+          124.8
+        ],
+        [
+          -56.2,
+          410.6,
+          137.5
+        ],
+        [
+          -45.8,
+          410.5,
+          152.0
+        ],
+        [
+          -39.3,
+          410.5,
+          166.5
+        ],
+        [
+          -33.7,
+          410.5,
+          179.9
+        ],
+        [
+          -23.8,
+          414.5,
+          227.6
+        ],
+        [
+          -74.8,
+          307.4,
+          357.3
+        ],
+        [
+          -43.8,
+          331.7,
+          298.1
+        ],
+        [
+          -26.8,
+          324.2,
+          267.8
+        ],
+        [
+          -8.4,
+          316.3,
+          234.1
+        ],
+        [
+          11.7,
+          307.0,
+          195.8
+        ],
+        [
+          16.1,
+          303.7,
+          187.1
+        ],
+        [
+          33.7,
+          297.5,
+          148.9
+        ],
+        [
+          43.5,
+          293.2,
+          125.1
+        ],
+        [
+          50.8,
+          284.4,
+          96.4
+        ],
+        [
+          15.4,
+          277.9,
+          -13.0
+        ],
+        [
+          -5.8,
+          269.2,
+          -66.2
+        ],
+        [
+          -25.2,
+          258.8,
+          -117.1
+        ],
+        [
+          -37.3,
+          248.6,
+          -156.0
+        ],
+        [
+          -44.0,
+          238.5,
+          -190.9
+        ],
+        [
+          -42.7,
+          234.0,
+          -216.8
+        ],
+        [
+          -33.2,
+          248.2,
+          -250.9
+        ],
+        [
+          -4.2,
+          247.4,
+          -255.1
+        ],
+        [
+          0.5,
+          266.9,
+          -278.3
+        ],
+        [
+          -33.3,
+          268.4,
+          -280.4
+        ],
+        [
+          -46.6,
+          280.1,
+          -264.3
+        ],
+        [
+          -48.9,
+          281.0,
+          -253.1
+        ],
+        [
+          27.4,
+          297.9,
+          -232.1
+        ],
+        [
+          24.3,
+          311.5,
+          -232.1
+        ],
+        [
+          -2.4,
+          337.7,
+          -245.7
+        ],
+        [
+          -0.1,
+          358.3,
+          -244.9
+        ],
+        [
+          -39.4,
+          378.6,
+          -272.8
+        ],
+        [
+          -49.0,
+          368.5,
+          -261.3
+        ],
+        [
+          -49.4,
+          336.2,
+          -257.8
+        ]
+      ],
+      "markers": [
+        {
+          "x": 610.7,
+          "y": 314.7,
+          "z": -389.4,
+          "role": "node",
+          "trailIndex": 4,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 618.6,
+          "y": 321.1,
+          "z": -345.8,
+          "role": "node",
+          "trailIndex": 4,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 627.2,
+          "y": 327.4,
+          "z": -300.9,
+          "role": "node",
+          "trailIndex": 5,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 654.7,
+          "y": 201.5,
+          "z": -133.1,
+          "role": "node",
+          "trailIndex": 7,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 676.4,
+          "y": 224.6,
+          "z": -126.1,
+          "role": "node",
+          "trailIndex": 8,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 647.6,
+          "y": 233.0,
+          "z": -93.4,
+          "role": "node",
+          "trailIndex": 9,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 605.6,
+          "y": 225.9,
+          "z": -91.9,
+          "role": "node",
+          "trailIndex": 10,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 631.0,
+          "y": 256.3,
+          "z": -53.6,
+          "role": "node",
+          "trailIndex": 12,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 634.5,
+          "y": 256.2,
+          "z": -27.4,
+          "role": "node",
+          "trailIndex": 13,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 660.8,
+          "y": 254.4,
+          "z": -22.1,
+          "role": "node",
+          "trailIndex": 14,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 516.2,
+          "y": 245.1,
+          "z": 330.8,
+          "role": "node",
+          "trailIndex": 17,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 500.1,
+          "y": 252.6,
+          "z": 321.8,
+          "role": "node",
+          "trailIndex": 18,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 490.5,
+          "y": 257.9,
+          "z": 306.7,
+          "role": "node",
+          "trailIndex": 19,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 458.6,
+          "y": 269.8,
+          "z": 302.2,
+          "role": "node",
+          "trailIndex": 20,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 416.8,
+          "y": 263.5,
+          "z": 343.0,
+          "role": "node",
+          "trailIndex": 21,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 418.9,
+          "y": 269.7,
+          "z": 362.2,
+          "role": "node",
+          "trailIndex": 22,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 433.5,
+          "y": 260.0,
+          "z": 361.1,
+          "role": "node",
+          "trailIndex": 23,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 449.8,
+          "y": 269.5,
+          "z": 367.7,
+          "role": "node",
+          "trailIndex": 24,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 383.4,
+          "y": 378.3,
+          "z": 448.8,
+          "role": "node",
+          "trailIndex": 31,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 403.9,
+          "y": 401.3,
+          "z": 469.9,
+          "role": "node",
+          "trailIndex": 32,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 402.6,
+          "y": 400.8,
+          "z": 429.6,
+          "role": "node",
+          "trailIndex": 33,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 421.2,
+          "y": 413.0,
+          "z": 438.6,
+          "role": "node",
+          "trailIndex": 34,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 398.1,
+          "y": 433.5,
+          "z": 462.8,
+          "role": "node",
+          "trailIndex": 35,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 373.4,
+          "y": 460.9,
+          "z": 416.5,
+          "role": "node",
+          "trailIndex": 36,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 383.9,
+          "y": 474.9,
+          "z": 448.9,
+          "role": "node",
+          "trailIndex": 37,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 412.5,
+          "y": 485.9,
+          "z": 412.2,
+          "role": "node",
+          "trailIndex": 38,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 416.1,
+          "y": 500.3,
+          "z": 447.7,
+          "role": "node",
+          "trailIndex": 39,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 449.4,
+          "y": 468.5,
+          "z": 457.4,
+          "role": "node",
+          "trailIndex": 40,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 488.8,
+          "y": 475.9,
+          "z": 477.0,
+          "role": "node",
+          "trailIndex": 41,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 470.3,
+          "y": 448.6,
+          "z": 485.3,
+          "role": "node",
+          "trailIndex": 42,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 461.3,
+          "y": 440.7,
+          "z": 449.7,
+          "role": "node",
+          "trailIndex": 43,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 507.3,
+          "y": 262.8,
+          "z": 449.1,
+          "role": "node",
+          "trailIndex": 44,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 773.5,
+          "y": 260.0,
+          "z": 457.4,
+          "role": "node",
+          "trailIndex": 47,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 777.3,
+          "y": 273.1,
+          "z": 473.3,
+          "role": "node",
+          "trailIndex": 48,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 779.8,
+          "y": 281.8,
+          "z": 483.2,
+          "role": "node",
+          "trailIndex": 49,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 781.4,
+          "y": 288.5,
+          "z": 491.5,
+          "role": "node",
+          "trailIndex": 50,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 783.3,
+          "y": 296.6,
+          "z": 499.9,
+          "role": "node",
+          "trailIndex": 51,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 786.9,
+          "y": 307.7,
+          "z": 515.3,
+          "role": "node",
+          "trailIndex": 52,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 790.1,
+          "y": 316.6,
+          "z": 528.1,
+          "role": "node",
+          "trailIndex": 53,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 963.5,
+          "y": 316.4,
+          "z": 188.8,
+          "role": "node",
+          "trailIndex": 58,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 968.8,
+          "y": 335.8,
+          "z": 130.1,
+          "role": "node",
+          "trailIndex": 59,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 936.0,
+          "y": 303.0,
+          "z": 109.1,
+          "role": "node",
+          "trailIndex": 60,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 901.5,
+          "y": 322.9,
+          "z": 132.3,
+          "role": "node",
+          "trailIndex": 61,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 926.4,
+          "y": 320.6,
+          "z": 195.0,
+          "role": "node",
+          "trailIndex": 62,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 940.5,
+          "y": 281.6,
+          "z": 181.6,
+          "role": "node",
+          "trailIndex": 63,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 973.3,
+          "y": 258.3,
+          "z": 137.5,
+          "role": "node",
+          "trailIndex": 64,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 978.4,
+          "y": 239.5,
+          "z": 118.0,
+          "role": "node",
+          "trailIndex": 65,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 953.8,
+          "y": 270.8,
+          "z": 110.3,
+          "role": "node",
+          "trailIndex": 66,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 887.4,
+          "y": 283.7,
+          "z": 144.1,
+          "role": "node",
+          "trailIndex": 67,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 900.8,
+          "y": 259.7,
+          "z": 191.9,
+          "role": "node",
+          "trailIndex": 68,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 907.6,
+          "y": 235.0,
+          "z": 211.2,
+          "role": "wp",
+          "chatLink": "[&BHYOAAA=]",
+          "trailIndex": 69,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 186.4,
+          "y": 231.9,
+          "z": -58.5,
+          "role": "node",
+          "trailIndex": 75,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 68.0,
+          "y": 225.1,
+          "z": -26.5,
+          "role": "node",
+          "trailIndex": 76,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 3.4,
+          "y": 422.7,
+          "z": 64.8,
+          "role": "node",
+          "trailIndex": 86,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 8.7,
+          "y": 360.8,
+          "z": 77.0,
+          "role": "node",
+          "trailIndex": 89,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 83.3,
+          "y": 434.3,
+          "z": 170.8,
+          "role": "node",
+          "trailIndex": 97,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 176.1,
+          "y": 455.5,
+          "z": 112.2,
+          "role": "node",
+          "trailIndex": 104,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 235.3,
+          "y": 461.8,
+          "z": 40.8,
+          "role": "node",
+          "trailIndex": 110,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 234.5,
+          "y": 458.4,
+          "z": -20.8,
+          "role": "node",
+          "trailIndex": 115,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 168.2,
+          "y": 459.2,
+          "z": -38.9,
+          "role": "node",
+          "trailIndex": 119,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 99.9,
+          "y": 449.0,
+          "z": -22.9,
+          "role": "node",
+          "trailIndex": 124,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -38.9,
+          "y": 412.8,
+          "z": 112.8,
+          "role": "node",
+          "trailIndex": 137,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -44.9,
+          "y": 410.4,
+          "z": 157.5,
+          "role": "node",
+          "trailIndex": 140,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -74.7,
+          "y": 307.2,
+          "z": 357.0,
+          "role": "node",
+          "trailIndex": 144,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 12.5,
+          "y": 421.6,
+          "z": 189.4,
+          "role": "node",
+          "trailIndex": 149,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -32.3,
+          "y": 247.8,
+          "z": -252.1,
+          "role": "node",
+          "trailIndex": 159,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -4.5,
+          "y": 247.5,
+          "z": -255.3,
+          "role": "node",
+          "trailIndex": 160,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 0.9,
+          "y": 266.6,
+          "z": -280.2,
+          "role": "node",
+          "trailIndex": 161,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -34.8,
+          "y": 268.6,
+          "z": -280.0,
+          "role": "node",
+          "trailIndex": 162,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -47.4,
+          "y": 279.4,
+          "z": -262.7,
+          "role": "node",
+          "trailIndex": 163,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -49.4,
+          "y": 280.5,
+          "z": -253.0,
+          "role": "node",
+          "trailIndex": 164,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": 24.9,
+          "y": 311.4,
+          "z": -231.9,
+          "role": "node",
+          "trailIndex": 166,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -0.8,
+          "y": 357.9,
+          "z": -245.9,
+          "role": "node",
+          "trailIndex": 168,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -38.2,
+          "y": 376.9,
+          "z": -273.4,
+          "role": "node",
+          "trailIndex": 169,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -48.7,
+          "y": 367.5,
+          "z": -262.4,
+          "role": "node",
+          "trailIndex": 170,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        },
+        {
+          "x": -48.9,
+          "y": 335.6,
+          "z": -258.2,
+          "role": "wp",
+          "chatLink": "[&BGYOAAA=]",
+          "trailIndex": 171,
+          "material": "calcified_gasp",
+          "icon": "calcified_gasp"
+        }
+      ]
+    }
+  ]
+}

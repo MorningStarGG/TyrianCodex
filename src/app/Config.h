@@ -361,6 +361,8 @@ struct Config
 
     // Account / API + keybind buffers (plaintext in settings.json; Nexus has no subtoken vault)
     char apiKey[80] = "";
+    char keyToggleSettings[64] = "Not set";
+    char keyTogglePanel[64] = "Not set";
     char keyToggleGuide[64] = "Not set";
     char keyMarkDone[64] = "Not set";
     char keyBack[64] = "Not set";

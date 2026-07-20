@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "mapId": 536,
+  "slug": "map-536",
+  "name": "Map 536",
+  "regionName": "",
+  "mode": "farming",
+  "routes": [],
+  "nodes": [
+    {
+      "x": -254.7,
+      "y": 18.2,
+      "z": -346.7,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -246.6,
+      "y": 21.4,
+      "z": -340.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    }
+  ]
+}

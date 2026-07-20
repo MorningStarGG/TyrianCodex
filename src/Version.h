@@ -11,9 +11,9 @@
 //
 // Keep the format MAJOR.MINOR.BUILD.REVISION (four ints) -- cmake parses these lines with a regex.
 #define TC_VER_MAJOR    1
-#define TC_VER_MINOR    0
+#define TC_VER_MINOR    1
 #define TC_VER_BUILD    0
-#define TC_VER_REVISION 3
+#define TC_VER_REVISION 0
 
 // "0.1.0.0" -- used as the cache-version marker (ImageCache).
 #define TC_STRINGIZE2(x) #x
@@ -27,4 +27,4 @@
 // when the shipped data payload (tc-core.tcpk or any *.pack) changes -- it is INDEPENDENT of TC_VER_* so a
 // DLL-only patch never forces a re-download. It selects the release tag (releases/download/v<TC_DATA_VERSION>/...)
 // and is written to data/.coreversion + data/.assetsversion for the wipe/redownload-on-mismatch check.
-#define TC_DATA_VERSION "1.0.0"
+#define TC_DATA_VERSION "1.0.1"

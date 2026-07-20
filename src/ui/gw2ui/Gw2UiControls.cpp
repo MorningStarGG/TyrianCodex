@@ -13,6 +13,7 @@
 #include <cfloat>
 #include <cmath>
 #include <cstdio>
+#include <cstring>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -614,18 +615,129 @@ bool Gw2Ui::DropdownPx(const char *id, const char *const *items, int itemCount, 
                         ControlSizeMode::Pixels);
 }
 
+namespace
+{
+bool IsUnsetKeybind(const char *bind)
+{
+    return !bind || !bind[0] || std::strcmp(bind, "Not set") == 0 || std::strcmp(bind, "(null)") == 0;
+}
+
+bool NexusKeyName(int vk, char *out, size_t outSize)
+{
+    if (!out || outSize == 0)
+        return false;
+    out[0] = '\0';
+
+    if ((vk >= 'A' && vk <= 'Z') || (vk >= '0' && vk <= '9'))
+    {
+        std::snprintf(out, outSize, "%c", (char)vk);
+        return true;
+    }
+    if (vk >= VK_F1 && vk <= VK_F24)
+    {
+        std::snprintf(out, outSize, "F%d", vk - VK_F1 + 1);
+        return true;
+    }
+    if (vk >= VK_NUMPAD0 && vk <= VK_NUMPAD9)
+    {
+        std::snprintf(out, outSize, "NUM %d", vk - VK_NUMPAD0);
+        return true;
+    }
+
+    const char *name = nullptr;
+    switch (vk)
+    {
+    case VK_SPACE: name = "SPACE"; break;
+    case VK_RETURN: name = "ENTER"; break;
+    case VK_TAB: name = "TAB"; break;
+    case VK_BACK: name = "BACKSPACE"; break;
+    case VK_INSERT: name = "INSERT"; break;
+    case VK_DELETE: name = "DELETE"; break;
+    case VK_HOME: name = "HOME"; break;
+    case VK_END: name = "END"; break;
+    case VK_PRIOR: name = "PAGEUP"; break;
+    case VK_NEXT: name = "PAGEDOWN"; break;
+    case VK_UP: name = "UP"; break;
+    case VK_DOWN: name = "DOWN"; break;
+    case VK_LEFT: name = "LEFT"; break;
+    case VK_RIGHT: name = "RIGHT"; break;
+    case VK_ADD: name = "NUM +"; break;
+    case VK_SUBTRACT: name = "NUM -"; break;
+    case VK_MULTIPLY: name = "NUM *"; break;
+    case VK_DIVIDE: name = "NUM /"; break;
+    case VK_DECIMAL: name = "NUM ."; break;
+    case VK_OEM_1: name = ";"; break;
+    case VK_OEM_PLUS: name = "="; break;
+    case VK_OEM_COMMA: name = ","; break;
+    case VK_OEM_MINUS: name = "-"; break;
+    case VK_OEM_PERIOD: name = "."; break;
+    case VK_OEM_2: name = "/"; break;
+    case VK_OEM_3: name = "`"; break;
+    case VK_OEM_4: name = "["; break;
+    case VK_OEM_5: name = "\\"; break;
+    case VK_OEM_6: name = "]"; break;
+    case VK_OEM_7: name = "'"; break;
+    default: break;
+    }
+    if (name)
+    {
+        std::snprintf(out, outSize, "%s", name);
+        return true;
+    }
+
+    char fallback[32] = {};
+    const UINT sc = MapVirtualKeyA((UINT)vk, MAPVK_VK_TO_VSC);
+    if (sc == 0 || GetKeyNameTextA((LONG)(sc << 16), fallback, sizeof(fallback)) <= 0)
+        return false;
+    for (char &c : fallback)
+        c = (char)std::toupper((unsigned char)c);
+    std::snprintf(out, outSize, "%s", fallback);
+    return out[0] != '\0';
+}
+
+bool IsModifierOrMouse(int vk)
+{
+    switch (vk)
+    {
+    case VK_CONTROL:
+    case VK_SHIFT:
+    case VK_MENU:
+    case VK_LCONTROL:
+    case VK_RCONTROL:
+    case VK_LSHIFT:
+    case VK_RSHIFT:
+    case VK_LMENU:
+    case VK_RMENU:
+    case VK_LBUTTON:
+    case VK_RBUTTON:
+    case VK_MBUTTON:
+    case VK_XBUTTON1:
+    case VK_XBUTTON2:
+        return true;
+    default:
+        return false;
+    }
+}
+}
+
 // GW2 KeybindingAssigner: name panel + hotkey panel (white*0.15, *0.20 on hover) + centered bind
-// text. Double-click the hotkey region to capture; we read the live key state (Win32) and format the
-// combo, Nexus owns the real bind registration -- this is the
+// text. Click the hotkey region to capture; we read the live key state (Win32) and format the
+// combo for Nexus, Nexus owns the real bind registration -- this is the
 // control surface; wiring it to InputBinds happens when the Keybinds section is built.
 bool Gw2Ui::KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, float width, float nameWidth)
 {
+    if (!bindBuf || bufSize == 0)
+        return false;
     const char *&s_capturing = s_kbCapturing; // file-scope (so BeginWindow can see an active capture)
     const float sc = TextScale();
     width = ResolveControlWidth(width, sc, ControlSizeMode::Logical);
     nameWidth *= sc;
     const float h = 20.f * sc;
     const float pad = 2.f * sc;
+    const float clearW = 70.f * sc;
+    const float minHotkeyW = 92.f * sc;
+    if (width < nameWidth + pad + minHotkeyW + pad + clearW)
+        nameWidth = std::max(82.f * sc, width - pad - minHotkeyW - pad - clearW);
     constexpr float kFs = 18.f;
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImVec2 p = ImGui::GetCursorScreenPos();
@@ -633,7 +745,11 @@ bool Gw2Ui::KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, fl
     ImGui::InvisibleButton(label, ImVec2(width, h));
     const bool hovered = ImGui::IsItemHovered();
     const float hkLeft = nameWidth + pad;
-    const bool overHotkey = hovered && (ImGui::GetIO().MousePos.x - p.x) >= hkLeft;
+    const float clearLeft = width - clearW;
+    const float hkRight = clearLeft - pad;
+    const float mouseX = ImGui::GetIO().MousePos.x - p.x;
+    const bool overHotkey = hovered && mouseX >= hkLeft && mouseX < hkRight;
+    const bool overClear = hovered && mouseX >= clearLeft;
     const bool capturing = (s_capturing == label);
 
     dl->AddRectFilled(p, ImVec2(p.x + nameWidth, p.y + h), IM_COL32(255, 255, 255, 38)); // name panel white*0.15
@@ -641,15 +757,26 @@ bool Gw2Ui::KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, fl
             HAlign::Left, VAlign::Middle, IM_COL32(255, 255, 255, 255), false, nullptr, kFs);
 
     const ImU32 hkBg = (overHotkey || capturing) ? IM_COL32(255, 255, 255, 51) : IM_COL32(255, 255, 255, 38);
-    dl->AddRectFilled(ImVec2(p.x + hkLeft, p.y), ImVec2(p.x + width, p.y + h), hkBg);
-    const char *shown = capturing ? "Press keys... (Esc)" : bindBuf;
-    LabelIn(ImVec2(p.x + hkLeft, p.y), ImVec2(p.x + width, p.y + h), shown,
+    dl->AddRectFilled(ImVec2(p.x + hkLeft, p.y), ImVec2(p.x + hkRight, p.y + h), hkBg);
+    const char *shown = capturing ? "Press keys... (Esc)" : (IsUnsetKeybind(bindBuf) ? "Not set" : bindBuf);
+    LabelIn(ImVec2(p.x + hkLeft, p.y), ImVec2(p.x + hkRight, p.y + h), shown,
             HAlign::Center, VAlign::Middle, IM_COL32(255, 255, 255, 255), false, nullptr, kFs);
 
-    if (overHotkey && ImGui::IsMouseDoubleClicked(0))
-        s_capturing = label;
+    const ImU32 clearBg = overClear ? IM_COL32(255, 255, 255, 51) : IM_COL32(255, 255, 255, 38);
+    dl->AddRectFilled(ImVec2(p.x + clearLeft, p.y), ImVec2(p.x + width, p.y + h), clearBg);
+    LabelIn(ImVec2(p.x + clearLeft, p.y), ImVec2(p.x + width, p.y + h), "Clear",
+            HAlign::Center, VAlign::Middle, IM_COL32(255, 255, 255, 245), false, nullptr, kFs);
 
     bool changed = false;
+    if (overClear && ImGui::IsMouseClicked(0))
+    {
+        std::snprintf(bindBuf, bufSize, "(null)");
+        s_capturing = nullptr;
+        changed = true;
+    }
+    else if (overHotkey && ImGui::IsMouseClicked(0))
+        s_capturing = label;
+
     if (capturing)
     {
         if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
@@ -663,16 +790,12 @@ bool Gw2Ui::KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, fl
             const bool alt = (GetAsyncKeyState(VK_MENU) & 0x8000) != 0;
             for (int vk = 0x08; vk <= 0xFE; ++vk)
             {
-                if (vk == VK_CONTROL || vk == VK_SHIFT || vk == VK_MENU || vk == VK_ESCAPE ||
-                    vk == VK_LBUTTON || vk == VK_RBUTTON || vk == VK_MBUTTON ||
-                    vk == VK_LCONTROL || vk == VK_RCONTROL || vk == VK_LSHIFT ||
-                    vk == VK_RSHIFT || vk == VK_LMENU || vk == VK_RMENU)
+                if (vk == VK_ESCAPE || IsModifierOrMouse(vk))
                     continue;
                 if (GetAsyncKeyState(vk) & 0x8000)
                 {
                     char keyName[32] = {};
-                    const UINT sc = MapVirtualKeyA((UINT)vk, MAPVK_VK_TO_VSC);
-                    if (GetKeyNameTextA((LONG)(sc << 16), keyName, sizeof(keyName)) > 0)
+                    if (NexusKeyName(vk, keyName, sizeof(keyName)))
                     {
                         std::snprintf(bindBuf, bufSize, "%s%s%s%s",
                                       ctrl ? "CTRL+" : "", shift ? "SHIFT+" : "", alt ? "ALT+" : "", keyName);

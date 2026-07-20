@@ -1,6 +1,18 @@
 {
   "farming": [
     {
+      "slug": "map-536",
+      "mapId": 536,
+      "name": "Map 536",
+      "regionName": "",
+      "routeCount": 0,
+      "nodeCount": 2,
+      "byCategory": {
+        "special": 2
+      },
+      "bundledZone": false
+    },
+    {
       "slug": "blazeridge-steppes",
       "mapId": 20,
       "name": "Blazeridge Steppes",
@@ -357,6 +369,42 @@
       "byCategory": {
         "plant": 14,
         "seafood": 31
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "amnytas",
+      "mapId": 1517,
+      "name": "Amnytas",
+      "regionName": "Horn of Maguuma",
+      "routeCount": 1,
+      "nodeCount": 57,
+      "byCategory": {
+        "special": 57
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "inner-nayos",
+      "mapId": 1526,
+      "name": "Inner Nayos",
+      "regionName": "Horn of Maguuma",
+      "routeCount": 1,
+      "nodeCount": 75,
+      "byCategory": {
+        "special": 75
+      },
+      "bundledZone": true
+    },
+    {
+      "slug": "skywatch-archipelago",
+      "mapId": 1510,
+      "name": "Skywatch Archipelago",
+      "regionName": "Horn of Maguuma",
+      "routeCount": 1,
+      "nodeCount": 36,
+      "byCategory": {
+        "special": 36
       },
       "bundledZone": true
     },
@@ -957,6 +1005,9 @@
     "lws5": "Living World S5",
     "jw": "Janthir Wilds",
     "eod": "End of Dragons",
+    "static_charge": "Static Charge",
+    "stardust": "Pinch of Stardust",
+    "calcified_gasp": "Calcified Gasp",
     "mixed": "Mixed",
     "combo": "Combo",
     "plant_mixed": "Mixed",

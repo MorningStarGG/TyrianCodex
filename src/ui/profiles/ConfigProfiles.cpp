@@ -80,6 +80,8 @@ namespace
         // zone yet, so the route reapply is a no-op; after the current character binds, it fixes the live route.
         if (owner == Owner::General)
         {
+            if (NormalizeKeybinds(app))
+                app.settingsDirty = true;
             ApplyFontChoice(app);
             if (oldPathType != app.config.pathType && app.state.zone.Loaded && !app.state.inDungeon)
                 app.zoneManager.ApplyPathType();

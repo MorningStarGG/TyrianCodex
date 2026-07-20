@@ -2,7 +2,6 @@
 #include "ui/SettingsWindow.h"
 #include "ui/UiCommon.h"
 #include "app/App.h"
-#include "app/Glue.h"
 #include "Shared.h"
 #include "util/Draw.h"
 #include "util/Json.h"
@@ -422,7 +421,9 @@ std::vector<Setting> Settings(App &app)
         // Account / API -- the GW2 API key (additive: enables character level, story auto-check, map names).
         SStr(SEC_API, "apiKey", "GW2 API key", "api key token account authentication scope tokeninfo level story permission permissions arenanet", app.config.apiKey, sizeof(app.config.apiKey), nullptr, nullptr, /*secret*/ true),
 
-        // Keybinds -- Guide actions, loadout switching, then display.
+        // Keybinds -- window/panel controls, guide actions, loadout switching, then display.
+        SKey(SEC_KEYS, "keyToggleSettings", "Toggle Tyrian Codex window", "keybind toggle options settings main window show hide", app.config.keyToggleSettings, sizeof(app.config.keyToggleSettings), KeysGuideId, KeysGuideName),
+        SKey(SEC_KEYS, "keyTogglePanel", "Toggle guide panel only", "keybind toggle guide panel viewer only show hide tray", app.config.keyTogglePanel, sizeof(app.config.keyTogglePanel), KeysGuideId, KeysGuideName),
         SKey(SEC_KEYS, "keyToggleGuide", "Toggle guide", "keybind toggle guide hotkey show hide", app.config.keyToggleGuide, sizeof(app.config.keyToggleGuide), KeysGuideId, KeysGuideName),
         SKey(SEC_KEYS, "keyMarkDone", "Skip / mark step done", "keybind mark done skip step complete advance objective", app.config.keyMarkDone, sizeof(app.config.keyMarkDone), KeysGuideId, KeysGuideName),
         SKey(SEC_KEYS, "keyBack", "Back (undo last)", "keybind back undo previous step", app.config.keyBack, sizeof(app.config.keyBack), KeysGuideId, KeysGuideName),
@@ -633,6 +634,8 @@ static const char *SettingDesc(const char *key)
         {"markerFadeNear", "Distance within which markers are fully visible."},
         {"markerFadeFar", "Distance past which markers fade out."},
         {"apiKey", "Your GW2 API key. Unlocks account-gated features -- character level, story auto-check, wallet/session earnings, Trading Post, etc."},
+        {"keyToggleSettings", "Hotkey to show / hide the Tyrian Codex window."},
+        {"keyTogglePanel", "Hotkey to hide or restore only the guide panel while leaving arrow, trail, and markers alone."},
         {"keyToggleGuide", "Hotkey to show / hide the guide."},
         {"keyMarkDone", "Hotkey to tick the current step done / skip it."},
         {"keyBack", "Hotkey to undo the last marked step."},
@@ -671,6 +674,63 @@ static const char *SettingDesc(const char *key)
         if (std::strcmp(e.k, key) == 0)
             return e.d;
     return "";
+}
+
+static bool IsAssignedKeybind(const char *bind)
+{
+    return bind && bind[0] && std::strcmp(bind, "Not set") != 0 && std::strcmp(bind, "(null)") != 0;
+}
+
+static bool SameKeybindCombo(const char *a, const char *b)
+{
+    return IsAssignedKeybind(a) && IsAssignedKeybind(b) && _stricmp(a, b) == 0;
+}
+
+bool NormalizeKeybinds(App &app, const char *preferredKey)
+{
+    std::vector<Setting> rows = Settings(app);
+    bool changed = false;
+
+    const Setting *preferred = nullptr;
+    if (preferredKey && *preferredKey)
+        for (const Setting &s : rows)
+            if (s.kind == SKind::Keybind && s.key && std::strcmp(s.key, preferredKey) == 0)
+            {
+                preferred = &s;
+                break;
+            }
+
+    if (preferred && IsAssignedKeybind(preferred->vk))
+    {
+        for (const Setting &s : rows)
+        {
+            if (s.kind != SKind::Keybind || !s.vk || !s.key || std::strcmp(s.key, preferred->key) == 0)
+                continue;
+            if (SameKeybindCombo(s.vk, preferred->vk))
+            {
+                std::snprintf(s.vk, s.kbuf, "(null)");
+                changed = true;
+            }
+        }
+    }
+
+    // Clean up old persisted duplicates too. First surviving row wins unless `preferredKey` already claimed it.
+    for (size_t i = 0; i < rows.size(); ++i)
+    {
+        const Setting &keep = rows[i];
+        if (keep.kind != SKind::Keybind || !IsAssignedKeybind(keep.vk))
+            continue;
+        for (size_t j = i + 1; j < rows.size(); ++j)
+        {
+            const Setting &dupe = rows[j];
+            if (dupe.kind != SKind::Keybind || !dupe.vk || !SameKeybindCombo(keep.vk, dupe.vk))
+                continue;
+            std::snprintf(dupe.vk, dupe.kbuf, "(null)");
+            changed = true;
+        }
+    }
+
+    return changed;
 }
 
 // Render one setting with the right GW2 control for its type. Non-bool/keybind rows put the name on the
@@ -734,8 +794,8 @@ bool DrawSetting(const Setting &s, float labelCol) // returns true the frame the
         break;
     case SKind::Keybind:
     {
-        const float widthPx = std::min(380.f * ui, rowW);
-        const float namePx = std::min(230.f * ui, widthPx * 0.58f);
+        const float widthPx = std::min(540.f * ui, rowW);
+        const float namePx = std::min(230.f * ui, widthPx * 0.43f);
         changed = Gw2Ui::KeybindAssigner(s.name, s.vk, s.kbuf, Gw2Ui::Unscaled(widthPx), Gw2Ui::Unscaled(namePx));
         break;
     }
@@ -782,6 +842,7 @@ void SaveSettings(App &app)
     if (app.settingsPath.empty())
         return;
     EnsureQuickControlsTiles(app);
+    NormalizeKeybinds(app);
     nlohmann::json j = nlohmann::json::object();
     for (const Setting &s : Settings(app))
     {

@@ -4,17 +4,36 @@
 
 ### Added
 
+- Added route variants for map-completion routing: **On Foot (Tekkit)**, **Mount (Tekkit)**, **On Foot (Lady Elyssa)**, and **With Mounts (Lady Elyssa)**.
+- Added route fallback when the preferred route variant is missing on the current map, without changing the user's saved preference.
+- Added Lady Elyssa authored waypoint teleports from markers that contain waypoint chat links.
+- Segmented Lady Elyssa routes so her trails preserve waypoint gaps instead of being forced into one continuous path.
+- Added mount/glider route markers and a bundled universal mount marker icon set for raptor, springer, skimmer, jackal, griffon, skyscale, beetle, warclaw, and glider.
+- Added active route diagnostics showing the requested route preference and the actual active route when fallback is used.
 - Added shared/global profiles for General, Dashboard, Info Panel, and HUD profile families.
 - Added shared/global loadouts that can be used by every character and can reference shared/global family profiles.
 - Added **Make global** and **Copy to this character** actions to profile/loadout management.
+- Added Tyrian Codex window and guide-panel-only hotkey rows to **Options -> Keybinds**.
 
 ### Changed
 
+- Replaced the old binary `On Foot` / `Mount` path selector with the new route variant selector.
+- Preserved old route settings by migrating old foot/mount values to Tekkit foot/mount preferences.
+- Updated route JSON loading to support optional `routeVariants`, `routeMarkers`, and `routeTransitions` while keeping old route JSON compatible.
+- Updated route activation so trail points, trail sections, objective order, route markers, and authored waypoint teleports come from the same selected route variant.
+- Updated Lady Elyssa route ordering and fallback checks to use objective coverage instead of treating authored waypoint gaps as missing route coverage.
+- Updated trail rendering, map trail rendering, and trail following to respect route sections and avoid drawing/walking lines across Lady Elyssa waypoint teleports.
+- Updated travel prompts for Lady Elyssa-authored waypoint teleports so they describe the waypoint use clearly and continue using Guild Wars 2's normal teleport confirmation.
+- Updated Tekkit and Lady Elyssa marker handling so marker points stay attached to their exact source route branch instead of being copied by map ID or between authors.
 - Updated loadouts to store scoped profile references so shared loadouts can point at shared profiles instead of relying on same-name per-character profiles.
 - Updated loadout settings, dashboard loadout widget, and Info Panel loadout menus to label shared entries with `[global]`.
+- Updated Tyrian Codex hotkeys to be handled by Tyrian Codex settings instead of trying to mirror Nexus's saved keybind UI.
+- Kept one no-default Nexus QuickAccess bridge bind for tray-icon left-click behavior; user-configurable addon hotkeys now live in Tyrian Codex settings.
 
 ### Fixed
 
+- Fixed selected Lady Elyssa routes being misclassified as partial because waypoint teleports create intentional trail gaps.
+- Fixed trail rendering/localization stopping or reconnecting incorrectly at authored route section boundaries.
 - Fixed typed text in shared search, password, text, and slider-number fields using a different scale path than GW2-drawn placeholders under Nexus/GW2 font scaling.
 
 ## 1.0.0.3

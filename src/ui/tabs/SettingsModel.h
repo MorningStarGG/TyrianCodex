@@ -185,6 +185,7 @@ namespace SettingGroups
 
 std::vector<Setting> Settings(App &app);                    // the full settings table (rebuilt by value each call)
 bool DrawSetting(const Setting &s, float labelCol = 250.f); // render one control + its hover tooltip; true the frame it changes (labelCol = the page's shared, auto-sized control column)
+bool NormalizeKeybinds(App &app, const char *preferredKey = nullptr); // enforce one action per non-empty keybind
 // Render a whole section's model rows as grouped cards (used by the HUD / Info Panel section pages so their
 // scalar settings look/behave like every other section). groupId != null renders just that subsection.
 void DrawSettingSection(App &app, int section, const char *groupId = nullptr);

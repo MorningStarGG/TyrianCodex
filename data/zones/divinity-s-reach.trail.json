@@ -16522,9 +16522,9 @@
         "Data/Map Completion/Core/Barefoot/Divinity's Reach 4.trl",
         "Data/Map Completion/Core/Barefoot/Divinity's Reach 5.trl",
         "Data/Map Completion/Core/Barefoot/Divinity's Reach 6.trl",
-        "Data/Map Completion/Core/Barefoot/Divinity's Reach 7.trl",
         "Data/Map Completion/Core/Barefoot/Divinity's Reach 8.trl",
-        "Data/Map Completion/Core/Barefoot/Divinity's Reach 9.trl"
+        "Data/Map Completion/Core/Barefoot/Divinity's Reach 9.trl",
+        "Data/Map Completion/Core/Barefoot/Divinity's Reach 10.trl"
       ],
       "xmlFiles": [
         "Map_Completion_A_Core_Barefoot.xml"
@@ -16536,9 +16536,9 @@
         "legs.map.core.divinity.barefoot.4",
         "legs.map.core.divinity.barefoot.5",
         "legs.map.core.divinity.barefoot.6",
-        "legs.map.core.divinity.barefoot.7",
         "legs.map.core.divinity.barefoot.8",
-        "legs.map.core.divinity.barefoot.9"
+        "legs.map.core.divinity.barefoot.9",
+        "legs.map.core.divinity.barefoot.10"
       ],
       "trail": [
         [
@@ -29147,19 +29147,14 @@
           197.9
         ],
         [
-          205.6,
-          74.7,
-          187.8
+          205.8,
+          75.3,
+          187.2
         ],
         [
-          207.6,
-          75.0,
-          177.8
-        ],
-        [
-          211.3,
-          75.6,
-          159.6
+          210.9,
+          75.3,
+          161.9
         ],
         [
           211.5,
@@ -34277,35 +34272,35 @@
         ],
         [
           2486,
-          2527
+          2526
         ],
         [
-          2528,
-          2540
+          2527,
+          2539
         ],
         [
-          2541,
-          2799
+          2540,
+          2798
         ],
         [
-          2800,
-          2918
+          2799,
+          2917
         ],
         [
-          2919,
-          3120
+          2918,
+          3119
         ],
         [
-          3121,
-          3258
+          3120,
+          3257
         ],
         [
-          3259,
-          3273
+          3258,
+          3272
         ],
         [
-          3274,
-          3503
+          3273,
+          3502
         ]
       ],
       "steps": {
@@ -34399,55 +34394,55 @@
         },
         "18:poi:262": {
           "order": 22,
-          "trailIndex": 2523
+          "trailIndex": 2522
         },
         "18:poi:267": {
           "order": 23,
-          "trailIndex": 2541
+          "trailIndex": 2540
         },
         "18:poi:268": {
           "order": 24,
-          "trailIndex": 2628
+          "trailIndex": 2627
         },
         "18:vista:1404": {
           "order": 25,
-          "trailIndex": 2854
+          "trailIndex": 2853
         },
         "18:waypoint:806": {
           "order": 26,
-          "trailIndex": 2918
+          "trailIndex": 2917
         },
         "18:waypoint:814": {
           "order": 27,
-          "trailIndex": 2919
+          "trailIndex": 2918
         },
         "18:poi:257": {
           "order": 28,
-          "trailIndex": 3050
+          "trailIndex": 3049
         },
         "18:waypoint:805": {
           "order": 29,
-          "trailIndex": 3117
+          "trailIndex": 3116
         },
         "18:poi:259": {
           "order": 30,
-          "trailIndex": 3175
+          "trailIndex": 3174
         },
         "18:poi:1805": {
           "order": 31,
-          "trailIndex": 3258
+          "trailIndex": 3257
         },
         "18:waypoint:811": {
           "order": 32,
-          "trailIndex": 3259
+          "trailIndex": 3258
         },
         "18:poi:264": {
           "order": 33,
-          "trailIndex": 3355
+          "trailIndex": 3354
         },
         "18:poi:258": {
           "order": 34,
-          "trailIndex": 3429
+          "trailIndex": 3428
         }
       },
       "routeTransitions": [
@@ -34596,7 +34591,7 @@
               "chatLink": "[&BC4DAAA=]"
             }
           ],
-          "trailIndex": 2918,
+          "trailIndex": 2917,
           "projectionDistance": 0.3,
           "sectionBefore": 55,
           "sectionAfter": 56
@@ -34621,7 +34616,7 @@
               "chatLink": "[&BCsDAAA=]"
             }
           ],
-          "trailIndex": 3257,
+          "trailIndex": 3256,
           "projectionDistance": 0.1,
           "sectionBefore": 57,
           "sectionAfter": 58

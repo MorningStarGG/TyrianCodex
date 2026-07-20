@@ -164,13 +164,92 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason, LPVOID /*reserved*/)
 // -- a "next up" recommendation bar. Honors viewerLocked / panelOpacity / viewerFontSize / boldText /
 // showUpcoming. Completion is the persistent ProgressStore. --
 
-// Toggle the settings window from the Nexus keybind / quick-access shortcut.
-static void OnToggleSettings(const char * /*aIdentifier*/, bool aIsRelease)
+static bool HandleLocalKeybind(UINT uMsg, WPARAM wParam, LPARAM lParam);
+
+static void DoToggleSettings()
 {
     if (!g_app)
         return;
-    if (aIsRelease)
-        g_app->state.showSettings = !g_app->state.showSettings;
+    g_app->state.showSettings = !g_app->state.showSettings;
+}
+
+static void DoToggleGuide()
+{
+    if (!g_app)
+        return;
+    g_app->config.showGuide = !g_app->config.showGuide;
+    g_app->settingsDirty = true;
+}
+
+static void DoTogglePanel()
+{
+    if (!g_app)
+        return;
+    Config &c = g_app->config;
+    if (c.viewerStyle == ViewerStyleNone)
+        c.viewerStyle = (c.viewerStylePrev == ViewerStyleNone) ? ViewerStyleCompact : c.viewerStylePrev;
+    else
+    {
+        c.viewerStylePrev = c.viewerStyle;
+        c.viewerStyle = ViewerStyleNone;
+    }
+    g_app->settingsDirty = true;
+}
+
+static void DoMarkDone()
+{
+    if (!g_app || !g_app->state.zone.Loaded || g_app->state.curStep < 0 || g_app->state.curStep >= (int)g_app->state.zone.Steps.size())
+        return;
+    CompleteStep(g_app->progress, g_app->state, g_app->state.zone.Steps[g_app->state.curStep].StepId);
+    g_app->state.manualTarget.clear();
+}
+
+static void DoBack()
+{
+    if (!g_app || g_app->state.undoStack.empty())
+        return;
+    g_app->progress.SetComplete(g_app->state.currentChar, g_app->state.undoStack.back(), false);
+    g_app->state.undoStack.pop_back();
+}
+
+static void DoCopyWaypoint()
+{
+    if (g_app)
+        CopyCurrentWaypoint(*g_app);
+}
+
+static void DoLoadoutCycle()
+{
+    if (g_app)
+        Loadouts::CycleNext(*g_app);
+}
+
+static void DoLoadout(int index)
+{
+    if (g_app)
+        Loadouts::ApplyIndex(*g_app, index);
+}
+
+static void DoZoneReannounce()
+{
+    if (g_app)
+        g_app->zoneDisplay.Reannounce(*g_app);
+}
+
+static void DoToggleMarkers()
+{
+    if (!g_app)
+        return;
+    g_app->config.showMarkers = !g_app->config.showMarkers;
+    g_app->settingsDirty = true;
+}
+
+static void DoToggleTrail()
+{
+    if (!g_app)
+        return;
+    g_app->config.showTrail = !g_app->config.showTrail;
+    g_app->settingsDirty = true;
 }
 
 // Nexus WndProc hook: while one of OUR Gw2Ui windows is focused, CONSUME Escape so closing it doesn't also
@@ -178,6 +257,8 @@ static void OnToggleSettings(const char * /*aIdentifier*/, bool aIsRelease)
 // pass it on. Acts on the initial press only (skips auto-repeat) but consumes repeats too so no menu sneaks in.
 static UINT OnWndProc(HWND /*hWnd*/, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
+    if (HandleLocalKeybind(uMsg, wParam, lParam))
+        return 0;
     if ((uMsg == WM_KEYDOWN || uMsg == WM_SYSKEYDOWN) && wParam == VK_ESCAPE && Gw2Ui::WindowEatsEscape())
     {
         if (!(lParam & (1 << 30)))
@@ -267,124 +348,289 @@ static void UpdateChatLinkWatch()
 // Toggle on PRESS, not release: the tray icon's left-click goes through Nexus InputBindApi::Invoke(id),
 // which fires the handler once with aIsRelease=false (a press). Acting only on release made the tray
 // click a no-op. A keyboard bind still sends press then release, so this toggles once (release ignored).
+static void OnToggleSettings(const char *, bool aRelease)
+{
+    if (g_app && aRelease)
+        DoToggleSettings();
+}
+
 static void OnToggleGuide(const char *, bool aRelease)
 {
     if (g_app && !aRelease)
-        g_app->config.showGuide = !g_app->config.showGuide;
+        DoToggleGuide();
 }
 // The tray icon's left-click: show/hide just the GUIDE PANEL (viewerStyle None <-> last style) -- non-destructive
 // (the arrow / trail / markers / map pins keep running). Remembers the last non-None style across reloads.
 static void OnTogglePanel(const char *, bool aRelease)
 {
-    if (!g_app || aRelease)
-        return;
-    Config &c = g_app->config;
-    if (c.viewerStyle == ViewerStyleNone)
-        c.viewerStyle = (c.viewerStylePrev == ViewerStyleNone) ? ViewerStyleCompact : c.viewerStylePrev;
-    else
-    {
-        c.viewerStylePrev = c.viewerStyle;
-        c.viewerStyle = ViewerStyleNone;
-    }
-    g_app->settingsDirty = true;
+    if (g_app && !aRelease)
+        DoTogglePanel();
 }
 static void OnMarkDone(const char *, bool aRelease)
 {
-    if (!g_app)
-        return;
-    if (!aRelease || !g_app->state.zone.Loaded || g_app->state.curStep < 0 || g_app->state.curStep >= (int)g_app->state.zone.Steps.size())
-        return;
-    CompleteStep(g_app->progress, g_app->state, g_app->state.zone.Steps[g_app->state.curStep].StepId);
-    g_app->state.manualTarget.clear();
+    if (g_app && aRelease)
+        DoMarkDone();
 }
 static void OnBack(const char *, bool aRelease)
 {
-    if (!g_app)
-        return;
-    if (!aRelease || g_app->state.undoStack.empty())
-        return;
-    g_app->progress.SetComplete(g_app->state.currentChar, g_app->state.undoStack.back(), false); // un-tick the most recent
-    g_app->state.undoStack.pop_back();
+    if (g_app && aRelease)
+        DoBack();
 }
 static void OnCopyWaypoint(const char *, bool aRelease)
 {
     if (g_app && aRelease)
-        CopyCurrentWaypoint(*g_app);
+        DoCopyWaypoint();
 }
 // Loadout switches are DEFERRED (queued for the next frame's Loadouts::ProcessPending) -- a SetActive must not
 // mutate a family mid-render. Fire on release like the other guide binds.
 static void OnLoadoutCycle(const char *, bool aRelease)
 {
     if (g_app && aRelease)
-        Loadouts::CycleNext(*g_app);
+        DoLoadoutCycle();
 }
 static void OnLoadout1(const char *, bool aRelease)
 {
     if (g_app && aRelease)
-        Loadouts::ApplyIndex(*g_app, 0);
+        DoLoadout(0);
 }
 static void OnLoadout2(const char *, bool aRelease)
 {
     if (g_app && aRelease)
-        Loadouts::ApplyIndex(*g_app, 1);
+        DoLoadout(1);
 }
 static void OnLoadout3(const char *, bool aRelease)
 {
     if (g_app && aRelease)
-        Loadouts::ApplyIndex(*g_app, 2);
+        DoLoadout(2);
 }
 static void OnZoneReannounce(const char *, bool aRelease)
 {
     if (g_app && aRelease)
-        g_app->zoneDisplay.Reannounce(*g_app);
+        DoZoneReannounce();
 }
 static void OnToggleMarkers(const char *, bool aRelease)
 {
     if (g_app && aRelease)
-    {
-        g_app->config.showMarkers = !g_app->config.showMarkers;
-        g_app->settingsDirty = true;
-    }
+        DoToggleMarkers();
 }
 static void OnToggleTrail(const char *, bool aRelease)
 {
     if (g_app && aRelease)
+        DoToggleTrail();
+}
+
+static bool IsExplicitlyUnbound(const char *combo)
+{
+    return combo && std::strcmp(combo, "(null)") == 0;
+}
+
+static bool IsUntouchedBind(const char *combo)
+{
+    return !combo || !combo[0] || std::strcmp(combo, "Not set") == 0;
+}
+
+static bool IsLocalBindActive(const char *combo)
+{
+    return combo && combo[0] && !IsUntouchedBind(combo) && !IsExplicitlyUnbound(combo);
+}
+
+static bool EntryKeyName(int vk, char *out, size_t outSize)
+{
+    if (!out || outSize == 0)
+        return false;
+    out[0] = '\0';
+    if ((vk >= 'A' && vk <= 'Z') || (vk >= '0' && vk <= '9'))
     {
-        g_app->config.showTrail = !g_app->config.showTrail;
-        g_app->settingsDirty = true;
+        std::snprintf(out, outSize, "%c", (char)vk);
+        return true;
+    }
+    if (vk >= VK_F1 && vk <= VK_F24)
+    {
+        std::snprintf(out, outSize, "F%d", vk - VK_F1 + 1);
+        return true;
+    }
+    if (vk >= VK_NUMPAD0 && vk <= VK_NUMPAD9)
+    {
+        std::snprintf(out, outSize, "NUM %d", vk - VK_NUMPAD0);
+        return true;
+    }
+
+    const char *name = nullptr;
+    switch (vk)
+    {
+    case VK_SPACE: name = "SPACE"; break;
+    case VK_RETURN: name = "ENTER"; break;
+    case VK_TAB: name = "TAB"; break;
+    case VK_BACK: name = "BACKSPACE"; break;
+    case VK_INSERT: name = "INSERT"; break;
+    case VK_DELETE: name = "DELETE"; break;
+    case VK_HOME: name = "HOME"; break;
+    case VK_END: name = "END"; break;
+    case VK_PRIOR: name = "PAGEUP"; break;
+    case VK_NEXT: name = "PAGEDOWN"; break;
+    case VK_UP: name = "UP"; break;
+    case VK_DOWN: name = "DOWN"; break;
+    case VK_LEFT: name = "LEFT"; break;
+    case VK_RIGHT: name = "RIGHT"; break;
+    case VK_ADD: name = "NUM +"; break;
+    case VK_SUBTRACT: name = "NUM -"; break;
+    case VK_MULTIPLY: name = "NUM *"; break;
+    case VK_DIVIDE: name = "NUM /"; break;
+    case VK_DECIMAL: name = "NUM ."; break;
+    case VK_OEM_1: name = ";"; break;
+    case VK_OEM_PLUS: name = "="; break;
+    case VK_OEM_COMMA: name = ","; break;
+    case VK_OEM_MINUS: name = "-"; break;
+    case VK_OEM_PERIOD: name = "."; break;
+    case VK_OEM_2: name = "/"; break;
+    case VK_OEM_3: name = "`"; break;
+    case VK_OEM_4: name = "["; break;
+    case VK_OEM_5: name = "\\"; break;
+    case VK_OEM_6: name = "]"; break;
+    case VK_OEM_7: name = "'"; break;
+    default: break;
+    }
+    if (name)
+    {
+        std::snprintf(out, outSize, "%s", name);
+        return true;
+    }
+
+    char fallback[32] = {};
+    const UINT sc = MapVirtualKeyA((UINT)vk, MAPVK_VK_TO_VSC);
+    if (sc == 0 || GetKeyNameTextA((LONG)(sc << 16), fallback, sizeof(fallback)) <= 0)
+        return false;
+    for (char &c : fallback)
+        c = (char)std::toupper((unsigned char)c);
+    std::snprintf(out, outSize, "%s", fallback);
+    return out[0] != '\0';
+}
+
+static bool EntryIsModifierOrMouse(int vk)
+{
+    switch (vk)
+    {
+    case VK_CONTROL:
+    case VK_SHIFT:
+    case VK_MENU:
+    case VK_LCONTROL:
+    case VK_RCONTROL:
+    case VK_LSHIFT:
+    case VK_RSHIFT:
+    case VK_LMENU:
+    case VK_RMENU:
+    case VK_LBUTTON:
+    case VK_RBUTTON:
+    case VK_MBUTTON:
+    case VK_XBUTTON1:
+    case VK_XBUTTON2:
+        return true;
+    default:
+        return false;
     }
 }
 
-// (Re)register the 4 guide keybinds with Nexus from their setting strings, so the in-settings assigner
-// actually drives the Nexus bind. Called on load + whenever a keybind setting changes. A blank / "Not set"
-// value registers as unbound. NOTE: combo format is our assigner's "CTRL+SHIFT+G" - matches Nexus's.
-void ApplyKeybinds(App &app) // declared in app/Glue.h so the Options tab (ui/SettingsWindow.cpp) can re-register
+static bool EventComboString(WPARAM wParam, char *out, size_t outSize)
 {
-    if (!APIDefs || !APIDefs->InputBinds_RegisterWithString)
-        return;
-    const struct
+    if (!out || outSize == 0)
+        return false;
+    out[0] = '\0';
+    const int vk = (int)wParam;
+    if (vk == VK_ESCAPE || EntryIsModifierOrMouse(vk))
+        return false;
+
+    char keyName[32] = {};
+    if (!EntryKeyName(vk, keyName, sizeof(keyName)))
+        return false;
+    const bool ctrl = (GetKeyState(VK_CONTROL) & 0x8000) != 0;
+    const bool shift = (GetKeyState(VK_SHIFT) & 0x8000) != 0;
+    const bool alt = (GetKeyState(VK_MENU) & 0x8000) != 0;
+    std::snprintf(out, outSize, "%s%s%s%s",
+                  ctrl ? "CTRL+" : "", shift ? "SHIFT+" : "", alt ? "ALT+" : "", keyName);
+    return out[0] != '\0';
+}
+
+static bool ComboEquals(const char *a, const char *b)
+{
+    return a && b && _stricmp(a, b) == 0;
+}
+
+static bool HandleLocalKeybind(UINT uMsg, WPARAM wParam, LPARAM lParam)
+{
+    if (!g_app || (uMsg != WM_KEYDOWN && uMsg != WM_SYSKEYDOWN) || (lParam & (1 << 30)) || Gw2Ui::KeybindCaptureActive())
+        return false;
+
+    const bool ctrl = (GetKeyState(VK_CONTROL) & 0x8000) != 0;
+    const bool alt = (GetKeyState(VK_MENU) & 0x8000) != 0;
+    if (!ctrl && !alt && ImGui::GetCurrentContext() && ImGui::GetIO().WantTextInput)
+        return false;
+
+    char combo[64] = {};
+    if (!EventComboString(wParam, combo, sizeof(combo)))
+        return false;
+
+    Config &c = g_app->config;
+    struct LocalBind
     {
-        const char *id;
-        INPUTBINDS_PROCESS handler;
         const char *combo;
-    } binds[] = {
-        {"TC_TOGGLE_GUIDE", OnToggleGuide, app.config.keyToggleGuide},
-        {"TC_MARK_DONE", OnMarkDone, app.config.keyMarkDone},
-        {"TC_BACK", OnBack, app.config.keyBack},
-        {"TC_COPY_WP", OnCopyWaypoint, app.config.keyCopyWp},
-        {"TC_LOADOUT_CYCLE", OnLoadoutCycle, app.config.keyLoadoutCycle},
-        {"TC_LOADOUT_1", OnLoadout1, app.config.keyLoadout1},
-        {"TC_LOADOUT_2", OnLoadout2, app.config.keyLoadout2},
-        {"TC_LOADOUT_3", OnLoadout3, app.config.keyLoadout3},
-        {"TC_ZONE_REANNOUNCE", OnZoneReannounce, app.config.keyZoneReannounce},
-        {"TC_TOGGLE_MARKERS", OnToggleMarkers, app.config.keyToggleMarkers},
-        {"TC_TOGGLE_TRAIL", OnToggleTrail, app.config.keyToggleTrail},
+        void (*action)();
     };
-    for (const auto &b : binds)
+    const LocalBind binds[] = {
+        {c.keyToggleSettings, DoToggleSettings},
+        {c.keyTogglePanel, DoTogglePanel},
+        {c.keyToggleGuide, DoToggleGuide},
+        {c.keyMarkDone, DoMarkDone},
+        {c.keyBack, DoBack},
+        {c.keyCopyWp, DoCopyWaypoint},
+        {c.keyLoadoutCycle, DoLoadoutCycle},
+        {c.keyLoadout1, []() { DoLoadout(0); }},
+        {c.keyLoadout2, []() { DoLoadout(1); }},
+        {c.keyLoadout3, []() { DoLoadout(2); }},
+        {c.keyZoneReannounce, DoZoneReannounce},
+        {c.keyToggleMarkers, DoToggleMarkers},
+        {c.keyToggleTrail, DoToggleTrail},
+    };
+
+    for (const LocalBind &b : binds)
     {
-        const bool unset = !b.combo || !b.combo[0] || std::strcmp(b.combo, "Not set") == 0;
-        APIDefs->InputBinds_RegisterWithString(b.id, b.handler, unset ? "(null)" : b.combo);
+        if (IsLocalBindActive(b.combo) && ComboEquals(b.combo, combo))
+        {
+            b.action();
+            return true;
+        }
     }
+    return false;
+}
+
+// Nexus does not expose a read/write API for its saved user keybinds, only registration/default binding.
+// User-configurable Tyrian Codex hotkeys are handled internally by OnWndProc. Do not register them with
+// Nexus: registered InputBinds show up in Nexus settings and create a second, conflicting source of truth.
+void ApplyKeybinds(App &app) // declared in app/Glue.h; retained as the lifecycle hook for the bridge/cleanup.
+{
+    (void)app;
+    if (!APIDefs)
+        return;
+    const char *legacyIds[] = {
+        "TC_TOGGLE_SETTINGS",
+        "TC_TOGGLE_PANEL",
+        "TC_TOGGLE_GUIDE",
+        "TC_MARK_DONE",
+        "TC_BACK",
+        "TC_COPY_WP",
+        "TC_LOADOUT_CYCLE",
+        "TC_LOADOUT_1",
+        "TC_LOADOUT_2",
+        "TC_LOADOUT_3",
+        "TC_ZONE_REANNOUNCE",
+        "TC_TOGGLE_MARKERS",
+        "TC_TOGGLE_TRAIL",
+        "TC_TOGGLE_PANEL_QA",
+    };
+    if (APIDefs->InputBinds_Deregister)
+        for (const char *id : legacyIds)
+            APIDefs->InputBinds_Deregister(id);
+    if (APIDefs->InputBinds_RegisterWithString)
+        APIDefs->InputBinds_RegisterWithString("TC_TOGGLE_PANEL_QA", OnTogglePanel, "(null)");
 }
 
 // The active trail in CONTINENT coords, for the in-game map / minimap overlay (which work in continent
@@ -1268,16 +1514,15 @@ static void AddonLoad(AddonAPI_t *aApi)
     ExtractResourceToFile(RESID_TRAY_ICON_HOVER, base + "\\data\\textures\\ui\\tc-icon-hover.png");
     aApi->Textures_GetOrCreateFromFile("TC_TRAY_ARROW_V2", (base + "\\data\\textures\\ui\\tc-icon.png").c_str());
     aApi->Textures_GetOrCreateFromFile("TC_TRAY_ARROW_V2_HOVER", (base + "\\data\\textures\\ui\\tc-icon-hover.png").c_str());
-    aApi->InputBinds_RegisterWithString("TC_TOGGLE_SETTINGS", OnToggleSettings, "CTRL+SHIFT+G");
-    aApi->InputBinds_RegisterWithString("TC_TOGGLE_PANEL", OnTogglePanel, "(null)"); // tray-icon left-click (no default key)
     if (aApi->WndProc_Register)
         aApi->WndProc_Register(OnWndProc); // consume Escape while our window is focused
 
     // Guide-action keybinds: register them from the saved settings (also bindable in Nexus's keybind UI).
     ApplyKeybinds(*g_app);
 
-    // Tray shortcut: LEFT-click shows/hides the guide PANEL (non-destructive); RIGHT-click opens the menu.
-    aApi->QuickAccess_Add("TC_SHORTCUT", "TC_TRAY_ARROW_V2", "TC_TRAY_ARROW_V2_HOVER", "TC_TOGGLE_PANEL",
+    // Tray shortcut: QuickAccess left-clicks require a registered InputBind. This internal bridge is the only
+    // Nexus bind we keep; user-editable hotkeys are handled by Tyrian Codex itself.
+    aApi->QuickAccess_Add("TC_SHORTCUT", "TC_TRAY_ARROW_V2", "TC_TRAY_ARROW_V2_HOVER", "TC_TOGGLE_PANEL_QA",
                           "Tyrian Codex - left-click hides/shows the guide panel, right-click for the menu");
     aApi->QuickAccess_AddContextMenu("TC_CTX", "TC_SHORTCUT", RenderQuickAccessMenu);
 
@@ -1335,6 +1580,7 @@ static void AddonUnload()
     if (APIDefs->WndProc_Deregister)
         APIDefs->WndProc_Deregister(OnWndProc);
     APIDefs->InputBinds_Deregister("TC_TOGGLE_SETTINGS");
+    APIDefs->InputBinds_Deregister("TC_TOGGLE_PANEL_QA");
     APIDefs->InputBinds_Deregister("TC_TOGGLE_PANEL");
     APIDefs->InputBinds_Deregister("TC_TOGGLE_GUIDE");
     APIDefs->InputBinds_Deregister("TC_MARK_DONE");

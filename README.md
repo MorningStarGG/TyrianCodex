@@ -68,7 +68,16 @@ Route modes:
 - **Direct Trail** targets the authored next objective by straight-line direction.
 - **Direct Nearest** targets the nearest unfinished objective by straight-line direction.
 
-For maps that have both variants, **Path: On Foot or Mount** changes which route the guide uses. Hybrid modes can also show a direct-objective glow so you know where the final target is while still being guided along the route entrance.
+Use **Options -> Routing -> Route variant** to choose the route source and style you prefer:
+
+- **On Foot (Tekkit)**
+- **Mount (Tekkit)**
+- **On Foot (Lady Elyssa)**
+- **With Mounts (Lady Elyssa)**
+
+Tekkit is the default migrated behavior. Lady Elyssa routes are kept as authored route sections, including waypoint teleports. If a selected route variant is not available on the current map, Tyrian Codex uses the closest available fallback for that map without changing your saved preference.
+
+Hybrid modes can also show a direct-objective glow so you know where the final target is while still being guided along the route entrance. Mount and glider markers can appear on routes that include them, using Tyrian Codex's bundled mount marker icons.
 
 Travel assistance never bypasses Guild Wars 2's own confirmation. Tyrian Codex can open or pan the map and, if enabled, click a confirmed waypoint to bring up the game's normal teleport prompt. But, you must personally confirm the teleport.
 
@@ -145,7 +154,9 @@ Profiles can be character-specific or marked global. A global profile is shared 
 
 Use **Make global** on a profile or loadout to create a shared copy and switch to it. Use **Copy to this character** when you want to start from a global setup but make private changes on one character. Profiles/loadouts can still be imported from other characters.
 
-Available keybinds include guide toggle, mark current step done, undo/back, copy waypoint, cycle/apply loadouts, reannounce zone display, toggle markers, and toggle trail.
+Available keybinds include Tyrian Codex window toggle, guide panel toggle, guide toggle, mark current step done, undo/back, copy waypoint, cycle/apply loadouts, reannounce zone display, toggle markers, and toggle trail.
+
+Tyrian Codex keybinds are configured in **Options -> Keybinds** and start unbound. Click a bind row to assign a key combination, or use **Clear** to unbind it. The addon prevents duplicate Tyrian Codex keybinds; assigning a key combination to one action clears that same combination from the other action. Nexus will still show one internal QuickAccess bridge bind used for tray-icon left-click behavior, but normal Tyrian Codex hotkeys should be managed from Tyrian Codex's own settings.
 
 ## Local Data And Saved Files
 

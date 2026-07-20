@@ -1,0 +1,1097 @@
+{
+  "routes": [
+    {
+      "name": "Pinch of Stardust",
+      "material": "stardust",
+      "trail": [
+        [
+          -166.0,
+          394.8,
+          570.2
+        ],
+        [
+          -171.9,
+          395.3,
+          509.6
+        ],
+        [
+          -195.6,
+          413.8,
+          477.9
+        ],
+        [
+          -199.5,
+          501.0,
+          473.1
+        ],
+        [
+          -101.7,
+          478.5,
+          471.5
+        ],
+        [
+          13.9,
+          469.1,
+          554.3
+        ],
+        [
+          81.5,
+          458.3,
+          584.2
+        ],
+        [
+          105.2,
+          483.0,
+          584.4
+        ],
+        [
+          131.6,
+          494.6,
+          584.6
+        ],
+        [
+          156.2,
+          484.0,
+          584.3
+        ],
+        [
+          182.9,
+          458.4,
+          584.4
+        ],
+        [
+          150.5,
+          445.7,
+          608.0
+        ],
+        [
+          125.9,
+          428.3,
+          642.0
+        ],
+        [
+          111.6,
+          399.2,
+          697.2
+        ],
+        [
+          52.1,
+          445.8,
+          699.3
+        ],
+        [
+          60.0,
+          418.2,
+          685.7
+        ],
+        [
+          83.9,
+          430.8,
+          640.4
+        ],
+        [
+          69.1,
+          417.9,
+          597.1
+        ],
+        [
+          60.9,
+          393.5,
+          601.5
+        ],
+        [
+          108.7,
+          395.3,
+          611.1
+        ],
+        [
+          81.9,
+          364.9,
+          668.5
+        ],
+        [
+          107.6,
+          363.6,
+          599.4
+        ],
+        [
+          135.7,
+          377.3,
+          515.1
+        ],
+        [
+          145.1,
+          383.2,
+          486.6
+        ],
+        [
+          132.0,
+          402.2,
+          534.0
+        ],
+        [
+          144.6,
+          398.5,
+          528.9
+        ],
+        [
+          151.8,
+          445.7,
+          521.0
+        ],
+        [
+          110.3,
+          433.7,
+          519.5
+        ],
+        [
+          132.4,
+          444.5,
+          459.6
+        ],
+        [
+          150.0,
+          436.2,
+          383.3
+        ],
+        [
+          158.2,
+          407.7,
+          414.3
+        ],
+        [
+          161.8,
+          419.2,
+          464.1
+        ],
+        [
+          703.8,
+          379.8,
+          186.9
+        ],
+        [
+          716.7,
+          379.7,
+          158.2
+        ],
+        [
+          720.5,
+          322.5,
+          100.3
+        ],
+        [
+          777.9,
+          299.8,
+          73.5
+        ],
+        [
+          738.0,
+          292.4,
+          68.8
+        ],
+        [
+          694.8,
+          318.9,
+          75.4
+        ],
+        [
+          648.4,
+          313.1,
+          84.1
+        ],
+        [
+          637.8,
+          294.5,
+          81.5
+        ],
+        [
+          565.0,
+          306.7,
+          98.6
+        ],
+        [
+          473.8,
+          296.5,
+          102.0
+        ],
+        [
+          460.3,
+          300.5,
+          90.7
+        ],
+        [
+          457.8,
+          375.8,
+          89.0
+        ],
+        [
+          542.8,
+          362.7,
+          109.8
+        ],
+        [
+          515.2,
+          348.5,
+          65.8
+        ],
+        [
+          490.6,
+          335.1,
+          26.0
+        ],
+        [
+          433.5,
+          333.5,
+          -23.5
+        ],
+        [
+          380.2,
+          319.0,
+          -70.0
+        ],
+        [
+          300.1,
+          280.7,
+          -123.2
+        ],
+        [
+          302.1,
+          303.4,
+          -140.4
+        ],
+        [
+          295.4,
+          302.5,
+          -205.8
+        ],
+        [
+          315.4,
+          287.7,
+          -211.6
+        ],
+        [
+          346.9,
+          249.6,
+          -340.9
+        ],
+        [
+          325.2,
+          225.4,
+          -365.8
+        ],
+        [
+          394.7,
+          224.8,
+          -358.2
+        ],
+        [
+          430.0,
+          250.1,
+          -382.1
+        ],
+        [
+          429.1,
+          230.5,
+          -493.1
+        ],
+        [
+          456.6,
+          255.2,
+          -493.4
+        ],
+        [
+          482.6,
+          279.0,
+          -493.6
+        ],
+        [
+          479.5,
+          256.0,
+          -574.8
+        ],
+        [
+          461.1,
+          236.9,
+          -600.1
+        ],
+        [
+          453.1,
+          212.5,
+          -603.4
+        ],
+        [
+          454.1,
+          218.7,
+          -577.3
+        ],
+        [
+          457.2,
+          230.6,
+          -546.8
+        ],
+        [
+          -544.5,
+          507.1,
+          -68.1
+        ],
+        [
+          -558.6,
+          507.1,
+          -64.7
+        ],
+        [
+          -571.1,
+          507.0,
+          -62.9
+        ],
+        [
+          -579.7,
+          504.0,
+          -62.5
+        ],
+        [
+          -588.1,
+          504.0,
+          -67.7
+        ],
+        [
+          -597.3,
+          503.9,
+          -76.5
+        ],
+        [
+          -604.6,
+          503.9,
+          -85.9
+        ],
+        [
+          -611.7,
+          503.9,
+          -93.5
+        ],
+        [
+          -618.2,
+          503.9,
+          -102.6
+        ],
+        [
+          -623.5,
+          504.0,
+          -114.5
+        ],
+        [
+          -628.6,
+          504.0,
+          -125.7
+        ],
+        [
+          -634.5,
+          504.0,
+          -138.2
+        ],
+        [
+          -639.8,
+          503.9,
+          -149.3
+        ],
+        [
+          -645.1,
+          503.9,
+          -160.5
+        ],
+        [
+          -646.6,
+          504.7,
+          -173.5
+        ],
+        [
+          -646.5,
+          504.7,
+          -185.8
+        ],
+        [
+          -646.3,
+          504.7,
+          -198.1
+        ],
+        [
+          -646.3,
+          504.7,
+          -211.2
+        ],
+        [
+          -646.4,
+          503.9,
+          -220.8
+        ],
+        [
+          -658.8,
+          503.9,
+          -233.3
+        ],
+        [
+          -664.5,
+          505.2,
+          -241.3
+        ],
+        [
+          -666.9,
+          510.6,
+          -247.4
+        ],
+        [
+          -677.0,
+          508.4,
+          -262.6
+        ],
+        [
+          -677.0,
+          466.6,
+          -263.1
+        ],
+        [
+          -677.0,
+          428.9,
+          -263.6
+        ],
+        [
+          -677.0,
+          397.3,
+          -263.4
+        ],
+        [
+          -647.7,
+          372.4,
+          -317.1
+        ],
+        [
+          -637.8,
+          365.4,
+          -333.0
+        ],
+        [
+          -640.2,
+          339.4,
+          -356.3
+        ],
+        [
+          -639.8,
+          315.0,
+          -377.1
+        ],
+        [
+          -621.5,
+          305.4,
+          -421.7
+        ],
+        [
+          -596.3,
+          304.7,
+          -451.2
+        ],
+        [
+          -567.1,
+          300.4,
+          -483.7
+        ],
+        [
+          -540.5,
+          296.1,
+          -511.8
+        ],
+        [
+          -516.0,
+          292.1,
+          -537.0
+        ],
+        [
+          -491.6,
+          287.1,
+          -562.1
+        ],
+        [
+          -466.0,
+          280.1,
+          -589.0
+        ],
+        [
+          -442.1,
+          270.9,
+          -615.9
+        ],
+        [
+          -467.6,
+          277.6,
+          -630.0
+        ],
+        [
+          -481.9,
+          290.0,
+          -630.3
+        ],
+        [
+          -499.3,
+          302.7,
+          -630.2
+        ],
+        [
+          -510.0,
+          313.0,
+          -630.4
+        ],
+        [
+          -525.1,
+          324.2,
+          -630.4
+        ],
+        [
+          -537.5,
+          334.6,
+          -630.1
+        ]
+      ],
+      "markers": [
+        {
+          "x": 79.8,
+          "y": 459.0,
+          "z": 584.4,
+          "role": "node",
+          "trailIndex": 6,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 105.3,
+          "y": 483.8,
+          "z": 584.4,
+          "role": "node",
+          "trailIndex": 7,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 130.6,
+          "y": 494.5,
+          "z": 584.4,
+          "role": "node",
+          "trailIndex": 8,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 156.0,
+          "y": 484.0,
+          "z": 584.3,
+          "role": "node",
+          "trailIndex": 9,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 181.5,
+          "y": 459.1,
+          "z": 584.4,
+          "role": "node",
+          "trailIndex": 10,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 109.8,
+          "y": 397.3,
+          "z": 698.3,
+          "role": "node",
+          "trailIndex": 13,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 51.8,
+          "y": 445.3,
+          "z": 697.9,
+          "role": "node",
+          "trailIndex": 14,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 60.4,
+          "y": 418.6,
+          "z": 684.1,
+          "role": "node",
+          "trailIndex": 15,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 83.0,
+          "y": 431.9,
+          "z": 638.5,
+          "role": "node",
+          "trailIndex": 16,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 68.9,
+          "y": 417.2,
+          "z": 595.7,
+          "role": "node",
+          "trailIndex": 17,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 61.0,
+          "y": 391.8,
+          "z": 600.3,
+          "role": "node",
+          "trailIndex": 18,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 108.7,
+          "y": 393.8,
+          "z": 610.5,
+          "role": "node",
+          "trailIndex": 19,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 83.5,
+          "y": 362.7,
+          "z": 665.8,
+          "role": "node",
+          "trailIndex": 20,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 108.0,
+          "y": 362.2,
+          "z": 599.5,
+          "role": "node",
+          "trailIndex": 21,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 136.1,
+          "y": 375.7,
+          "z": 513.6,
+          "role": "node",
+          "trailIndex": 22,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 145.0,
+          "y": 384.0,
+          "z": 487.5,
+          "role": "node",
+          "trailIndex": 23,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 131.4,
+          "y": 400.4,
+          "z": 535.4,
+          "role": "node",
+          "trailIndex": 24,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 110.3,
+          "y": 431.8,
+          "z": 521.3,
+          "role": "node",
+          "trailIndex": 27,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 132.7,
+          "y": 444.9,
+          "z": 459.9,
+          "role": "node",
+          "trailIndex": 28,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 150.0,
+          "y": 435.7,
+          "z": 385.2,
+          "role": "node",
+          "trailIndex": 29,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 158.2,
+          "y": 406.9,
+          "z": 413.8,
+          "role": "node",
+          "trailIndex": 30,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 161.8,
+          "y": 419.2,
+          "z": 464.1,
+          "role": "node",
+          "trailIndex": 31,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 719.9,
+          "y": 321.7,
+          "z": 100.2,
+          "role": "node",
+          "trailIndex": 34,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 777.6,
+          "y": 299.0,
+          "z": 73.3,
+          "role": "node",
+          "trailIndex": 35,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 647.3,
+          "y": 312.7,
+          "z": 84.1,
+          "role": "node",
+          "trailIndex": 38,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 636.7,
+          "y": 293.9,
+          "z": 81.5,
+          "role": "node",
+          "trailIndex": 39,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 567.3,
+          "y": 305.6,
+          "z": 98.1,
+          "role": "node",
+          "trailIndex": 40,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 474.4,
+          "y": 296.7,
+          "z": 101.4,
+          "role": "node",
+          "trailIndex": 41,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 542.4,
+          "y": 361.8,
+          "z": 108.7,
+          "role": "node",
+          "trailIndex": 44,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 517.1,
+          "y": 349.0,
+          "z": 68.2,
+          "role": "node",
+          "trailIndex": 45,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 491.7,
+          "y": 336.3,
+          "z": 27.3,
+          "role": "node",
+          "trailIndex": 46,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 298.2,
+          "y": 278.4,
+          "z": -124.7,
+          "role": "node",
+          "trailIndex": 49,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 302.1,
+          "y": 303.2,
+          "z": -141.4,
+          "role": "node",
+          "trailIndex": 50,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 293.8,
+          "y": 303.8,
+          "z": -203.2,
+          "role": "node",
+          "trailIndex": 51,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 314.6,
+          "y": 289.5,
+          "z": -211.8,
+          "role": "node",
+          "trailIndex": 52,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 346.5,
+          "y": 249.4,
+          "z": -341.3,
+          "role": "node",
+          "trailIndex": 53,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 326.7,
+          "y": 224.8,
+          "z": -365.3,
+          "role": "node",
+          "trailIndex": 54,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 392.0,
+          "y": 227.3,
+          "z": -357.1,
+          "role": "node",
+          "trailIndex": 55,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 430.0,
+          "y": 250.1,
+          "z": -383.0,
+          "role": "node",
+          "trailIndex": 56,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 429.1,
+          "y": 229.1,
+          "z": -493.4,
+          "role": "node",
+          "trailIndex": 57,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 454.5,
+          "y": 254.5,
+          "z": -493.5,
+          "role": "node",
+          "trailIndex": 58,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 479.9,
+          "y": 279.8,
+          "z": -493.5,
+          "role": "node",
+          "trailIndex": 59,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 479.2,
+          "y": 256.4,
+          "z": -573.6,
+          "role": "node",
+          "trailIndex": 60,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 461.7,
+          "y": 237.5,
+          "z": -600.3,
+          "role": "node",
+          "trailIndex": 61,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 452.6,
+          "y": 213.1,
+          "z": -604.1,
+          "role": "node",
+          "trailIndex": 62,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 453.9,
+          "y": 218.5,
+          "z": -577.5,
+          "role": "node",
+          "trailIndex": 63,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": 456.9,
+          "y": 230.7,
+          "z": -546.8,
+          "role": "node",
+          "trailIndex": 64,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -676.7,
+          "y": 496.4,
+          "z": -263.6,
+          "role": "node",
+          "trailIndex": 89,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -676.7,
+          "y": 463.3,
+          "z": -263.6,
+          "role": "node",
+          "trailIndex": 89,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -676.7,
+          "y": 430.2,
+          "z": -263.6,
+          "role": "node",
+          "trailIndex": 89,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -676.6,
+          "y": 397.3,
+          "z": -263.6,
+          "role": "node",
+          "trailIndex": 89,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -640.3,
+          "y": 365.8,
+          "z": -330.1,
+          "role": "node",
+          "trailIndex": 92,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -640.3,
+          "y": 340.4,
+          "z": -355.4,
+          "role": "node",
+          "trailIndex": 93,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -640.3,
+          "y": 314.9,
+          "z": -380.8,
+          "role": "node",
+          "trailIndex": 94,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -468.6,
+          "y": 277.1,
+          "z": -630.3,
+          "role": "node",
+          "trailIndex": 103,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -482.1,
+          "y": 290.3,
+          "z": -630.3,
+          "role": "node",
+          "trailIndex": 104,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -498.2,
+          "y": 302.6,
+          "z": -630.2,
+          "role": "node",
+          "trailIndex": 105,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -511.6,
+          "y": 313.9,
+          "z": -630.2,
+          "role": "node",
+          "trailIndex": 106,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -524.2,
+          "y": 324.7,
+          "z": -630.2,
+          "role": "node",
+          "trailIndex": 107,
+          "material": "stardust",
+          "icon": "stardust"
+        },
+        {
+          "x": -536.9,
+          "y": 334.3,
+          "z": -630.2,
+          "role": "node",
+          "trailIndex": 108,
+          "material": "stardust",
+          "icon": "stardust"
+        }
+      ]
+    }
+  ]
+}

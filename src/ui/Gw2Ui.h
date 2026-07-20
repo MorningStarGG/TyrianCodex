@@ -363,6 +363,7 @@ namespace Gw2Ui
     // per frame (before any window draws) so the "focused" flag is fresh.
     void NewFrameEscReset();
     bool WindowEatsEscape();
+    bool KeybindCaptureActive();
     void RequestEscapeClose();
 
     // A GW2 bordered panel: header bar (1032325) + title, a corner-accent flourish (1002144), a subtle dark tint,
@@ -562,9 +563,9 @@ namespace Gw2Ui
                     const int *sectionAt = nullptr, const char *const *sectionLabel = nullptr, int sectionCount = 0,
                     float heightPx = 0.f);
 
-    // GW2 KeybindingAssigner: a name panel + a hotkey panel (both subtle white fills; the hotkey
-    // brightens on hover) with the bind text centered. Double-click the hotkey region to capture a new
-    // combo (Esc cancels). Returns true when the bind changes; the new combo string is written to bindBuf.
+    // GW2 KeybindingAssigner: a name panel + a hotkey panel + a Clear panel. Click the hotkey region to
+    // capture a new combo (Esc cancels). Clear writes "(null)" internally and displays it as "Not set".
+    // Returns true when the bind changes; the new combo string is written to bindBuf.
     bool KeybindAssigner(const char *label, char *bindBuf, size_t bufSize, float width = 380.f, float nameWidth = 220.f);
 
     // GW2 ColorBox: a dye swatch (cp-clr-dc tinted by *rgb, 0xRRGGBB) that opens the GW2 dye

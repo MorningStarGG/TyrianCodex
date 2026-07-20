@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1526,
+  "slug": "inner-nayos",
+  "name": "Inner Nayos",
+  "regionName": "Horn of Maguuma",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Calcified Gasp",
+      "category": "special",
+      "material": "calcified_gasp",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": 654.7,
+      "y": 201.5,
+      "z": -133.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 676.4,
+      "y": 224.6,
+      "z": -126.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 647.6,
+      "y": 233.0,
+      "z": -93.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 605.6,
+      "y": 225.9,
+      "z": -91.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 631.0,
+      "y": 256.3,
+      "z": -53.6,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 634.5,
+      "y": 256.2,
+      "z": -27.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 660.8,
+      "y": 254.4,
+      "z": -22.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 516.2,
+      "y": 245.1,
+      "z": 330.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 500.1,
+      "y": 252.6,
+      "z": 321.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 490.5,
+      "y": 257.9,
+      "z": 306.7,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 458.6,
+      "y": 269.8,
+      "z": 302.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 416.8,
+      "y": 263.5,
+      "z": 343.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 418.9,
+      "y": 269.7,
+      "z": 362.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 433.5,
+      "y": 260.0,
+      "z": 361.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 449.8,
+      "y": 269.5,
+      "z": 367.7,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 773.5,
+      "y": 260.0,
+      "z": 457.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 777.3,
+      "y": 273.1,
+      "z": 473.3,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 779.8,
+      "y": 281.8,
+      "z": 483.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 781.4,
+      "y": 288.5,
+      "z": 491.5,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 783.3,
+      "y": 296.6,
+      "z": 499.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 786.9,
+      "y": 307.7,
+      "z": 515.3,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 790.1,
+      "y": 316.6,
+      "z": 528.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 963.5,
+      "y": 316.4,
+      "z": 188.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 968.8,
+      "y": 335.8,
+      "z": 130.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 926.4,
+      "y": 320.6,
+      "z": 195.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 901.5,
+      "y": 322.9,
+      "z": 132.3,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 936.0,
+      "y": 303.0,
+      "z": 109.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 887.4,
+      "y": 283.7,
+      "z": 144.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 940.5,
+      "y": 281.6,
+      "z": 181.6,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 953.8,
+      "y": 270.8,
+      "z": 110.3,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 973.3,
+      "y": 258.3,
+      "z": 137.5,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 900.8,
+      "y": 259.7,
+      "z": 191.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 978.4,
+      "y": 239.5,
+      "z": 118.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 907.6,
+      "y": 235.0,
+      "z": 211.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp",
+      "chatLink": "[&BHYOAAA=]"
+    },
+    {
+      "x": 383.4,
+      "y": 378.3,
+      "z": 448.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 403.9,
+      "y": 401.3,
+      "z": 469.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 402.6,
+      "y": 400.8,
+      "z": 429.6,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 421.2,
+      "y": 413.0,
+      "z": 438.6,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 398.1,
+      "y": 433.5,
+      "z": 462.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 461.3,
+      "y": 440.7,
+      "z": 449.7,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 470.3,
+      "y": 448.6,
+      "z": 485.3,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 488.8,
+      "y": 475.9,
+      "z": 477.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 449.4,
+      "y": 468.5,
+      "z": 457.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 416.1,
+      "y": 500.3,
+      "z": 447.7,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 412.5,
+      "y": 485.9,
+      "z": 412.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 373.4,
+      "y": 460.9,
+      "z": 416.5,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 186.4,
+      "y": 231.9,
+      "z": -58.5,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 68.0,
+      "y": 225.1,
+      "z": -26.5,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 8.7,
+      "y": 360.8,
+      "z": 77.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 12.5,
+      "y": 421.6,
+      "z": 189.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 83.3,
+      "y": 434.3,
+      "z": 170.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 176.1,
+      "y": 455.5,
+      "z": 112.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 235.3,
+      "y": 461.8,
+      "z": 40.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 234.5,
+      "y": 458.4,
+      "z": -20.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 168.2,
+      "y": 459.2,
+      "z": -38.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 99.9,
+      "y": 449.0,
+      "z": -22.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 3.4,
+      "y": 422.7,
+      "z": 64.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -38.9,
+      "y": 412.8,
+      "z": 112.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -44.9,
+      "y": 410.4,
+      "z": 157.5,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -74.7,
+      "y": 307.2,
+      "z": 357.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -32.3,
+      "y": 247.8,
+      "z": -252.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -4.5,
+      "y": 247.5,
+      "z": -255.3,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 0.9,
+      "y": 266.6,
+      "z": -280.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -34.8,
+      "y": 268.6,
+      "z": -280.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -47.4,
+      "y": 279.4,
+      "z": -262.7,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -49.4,
+      "y": 280.5,
+      "z": -253.0,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -48.9,
+      "y": 335.6,
+      "z": -258.2,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp",
+      "chatLink": "[&BGYOAAA=]"
+    },
+    {
+      "x": -0.8,
+      "y": 357.9,
+      "z": -245.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -38.2,
+      "y": 376.9,
+      "z": -273.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": -48.7,
+      "y": 367.5,
+      "z": -262.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 24.9,
+      "y": 311.4,
+      "z": -231.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 507.3,
+      "y": 262.8,
+      "z": 449.1,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 610.7,
+      "y": 314.7,
+      "z": -389.4,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 618.6,
+      "y": 321.1,
+      "z": -345.8,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    },
+    {
+      "x": 627.2,
+      "y": 327.4,
+      "z": -300.9,
+      "material": "calcified_gasp",
+      "category": "special",
+      "icon": "calcified_gasp"
+    }
+  ]
+}

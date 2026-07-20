@@ -2,7 +2,6 @@
 #include "ui/SettingsWindow.h"
 #include "ui/UiCommon.h"
 #include "app/App.h"
-#include "app/Glue.h"
 #include "Shared.h"
 #include "util/Draw.h"
 #include "util/Json.h"
@@ -168,7 +167,7 @@ namespace
             return false;
         app.settingsDirty = true;
         if (s.kind == SKind::Keybind)
-            ApplyKeybinds(app);
+            NormalizeKeybinds(app, s.key);
         if (s.ve == &app.config.pathType)
             app.zoneManager.ApplyPathType();
         if (s.vb == &app.config.useGw2Font)

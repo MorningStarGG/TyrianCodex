@@ -1,0 +1,570 @@
+{
+  "routes": [
+    {
+      "name": "Static Charge",
+      "material": "static_charge",
+      "trail": [
+        [
+          -647.9,
+          549.6,
+          163.5
+        ],
+        [
+          -701.0,
+          563.7,
+          149.8
+        ],
+        [
+          -702.0,
+          581.2,
+          124.6
+        ],
+        [
+          -687.0,
+          595.2,
+          103.4
+        ],
+        [
+          -659.9,
+          615.3,
+          97.8
+        ],
+        [
+          -640.8,
+          632.9,
+          109.3
+        ],
+        [
+          -631.2,
+          650.5,
+          133.9
+        ],
+        [
+          -639.8,
+          654.8,
+          157.8
+        ],
+        [
+          -659.8,
+          661.1,
+          169.2
+        ],
+        [
+          -684.8,
+          668.5,
+          166.2
+        ],
+        [
+          -748.7,
+          601.0,
+          320.3
+        ],
+        [
+          -750.4,
+          614.2,
+          321.3
+        ],
+        [
+          -750.4,
+          629.7,
+          321.6
+        ],
+        [
+          -791.4,
+          644.6,
+          302.1
+        ],
+        [
+          -809.6,
+          659.9,
+          296.9
+        ],
+        [
+          -835.9,
+          677.8,
+          286.4
+        ],
+        [
+          -850.3,
+          702.1,
+          311.1
+        ],
+        [
+          -854.2,
+          718.4,
+          310.6
+        ],
+        [
+          -864.5,
+          731.2,
+          309.9
+        ],
+        [
+          -860.7,
+          728.2,
+          339.3
+        ],
+        [
+          -876.0,
+          745.7,
+          343.1
+        ],
+        [
+          -891.7,
+          761.7,
+          345.5
+        ],
+        [
+          -891.7,
+          779.9,
+          345.7
+        ],
+        [
+          -897.1,
+          788.3,
+          356.1
+        ],
+        [
+          -926.0,
+          796.1,
+          382.8
+        ],
+        [
+          -935.9,
+          808.3,
+          388.0
+        ],
+        [
+          -939.3,
+          816.8,
+          400.6
+        ],
+        [
+          -955.8,
+          821.4,
+          414.3
+        ],
+        [
+          -922.7,
+          818.6,
+          400.2
+        ],
+        [
+          -900.0,
+          805.6,
+          381.0
+        ],
+        [
+          -865.0,
+          793.1,
+          366.6
+        ],
+        [
+          -838.1,
+          810.7,
+          370.9
+        ],
+        [
+          -812.4,
+          825.7,
+          377.4
+        ],
+        [
+          -831.9,
+          564.9,
+          335.4
+        ],
+        [
+          -816.2,
+          530.5,
+          300.7
+        ],
+        [
+          -801.9,
+          511.4,
+          286.7
+        ],
+        [
+          -779.5,
+          492.8,
+          282.5
+        ],
+        [
+          -762.3,
+          485.1,
+          276.7
+        ],
+        [
+          -749.1,
+          483.7,
+          270.2
+        ],
+        [
+          -735.7,
+          483.5,
+          274.6
+        ],
+        [
+          -728.0,
+          482.9,
+          289.2
+        ],
+        [
+          -732.1,
+          483.7,
+          302.6
+        ],
+        [
+          -746.9,
+          483.7,
+          309.3
+        ],
+        [
+          -760.5,
+          483.7,
+          304.3
+        ],
+        [
+          -767.4,
+          483.7,
+          291.7
+        ]
+      ],
+      "markers": [
+        {
+          "x": -702.1,
+          "y": 563.1,
+          "z": 146.7,
+          "role": "node",
+          "trailIndex": 1,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -702.1,
+          "y": 580.4,
+          "z": 121.7,
+          "role": "node",
+          "trailIndex": 2,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -685.9,
+          "y": 594.2,
+          "z": 102.7,
+          "role": "node",
+          "trailIndex": 3,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -661.4,
+          "y": 614.8,
+          "z": 98.3,
+          "role": "node",
+          "trailIndex": 4,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -639.7,
+          "y": 634.7,
+          "z": 110.8,
+          "role": "node",
+          "trailIndex": 5,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -631.2,
+          "y": 650.9,
+          "z": 134.3,
+          "role": "node",
+          "trailIndex": 6,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -639.8,
+          "y": 655.6,
+          "z": 157.8,
+          "role": "node",
+          "trailIndex": 7,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -661.5,
+          "y": 661.8,
+          "z": 170.3,
+          "role": "node",
+          "trailIndex": 8,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -686.0,
+          "y": 668.6,
+          "z": 165.9,
+          "role": "node",
+          "trailIndex": 9,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -751.1,
+          "y": 598.8,
+          "z": 323.6,
+          "role": "node",
+          "trailIndex": 12,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -752.9,
+          "y": 613.7,
+          "z": 322.8,
+          "role": "node",
+          "trailIndex": 12,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -752.0,
+          "y": 628.5,
+          "z": 323.4,
+          "role": "node",
+          "trailIndex": 12,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -794.4,
+          "y": 643.7,
+          "z": 302.0,
+          "role": "node",
+          "trailIndex": 13,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -810.1,
+          "y": 659.9,
+          "z": 296.3,
+          "role": "node",
+          "trailIndex": 14,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -837.7,
+          "y": 678.0,
+          "z": 285.6,
+          "role": "node",
+          "trailIndex": 15,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -851.1,
+          "y": 701.7,
+          "z": 311.6,
+          "role": "node",
+          "trailIndex": 16,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -857.4,
+          "y": 718.2,
+          "z": 311.3,
+          "role": "node",
+          "trailIndex": 17,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -865.8,
+          "y": 730.1,
+          "z": 309.8,
+          "role": "node",
+          "trailIndex": 18,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -860.6,
+          "y": 727.4,
+          "z": 340.7,
+          "role": "node",
+          "trailIndex": 19,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -877.4,
+          "y": 745.0,
+          "z": 343.1,
+          "role": "node",
+          "trailIndex": 20,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -892.8,
+          "y": 761.6,
+          "z": 345.9,
+          "role": "node",
+          "trailIndex": 22,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -891.7,
+          "y": 779.1,
+          "z": 345.7,
+          "role": "node",
+          "trailIndex": 22,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -924.7,
+          "y": 795.7,
+          "z": 381.7,
+          "role": "node",
+          "trailIndex": 24,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -936.6,
+          "y": 808.3,
+          "z": 388.2,
+          "role": "node",
+          "trailIndex": 25,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -939.6,
+          "y": 816.9,
+          "z": 400.8,
+          "role": "node",
+          "trailIndex": 26,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -956.9,
+          "y": 821.6,
+          "z": 415.4,
+          "role": "node",
+          "trailIndex": 27,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -865.0,
+          "y": 793.1,
+          "z": 367.1,
+          "role": "node",
+          "trailIndex": 30,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -839.8,
+          "y": 808.3,
+          "z": 370.9,
+          "role": "node",
+          "trailIndex": 31,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -813.6,
+          "y": 824.4,
+          "z": 375.4,
+          "role": "node",
+          "trailIndex": 32,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -762.3,
+          "y": 483.3,
+          "z": 275.3,
+          "role": "node",
+          "trailIndex": 37,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -747.8,
+          "y": 483.2,
+          "z": 269.3,
+          "role": "node",
+          "trailIndex": 38,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -733.3,
+          "y": 483.3,
+          "z": 275.1,
+          "role": "node",
+          "trailIndex": 39,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -727.6,
+          "y": 483.1,
+          "z": 289.8,
+          "role": "node",
+          "trailIndex": 40,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -733.4,
+          "y": 483.2,
+          "z": 304.1,
+          "role": "node",
+          "trailIndex": 41,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -747.7,
+          "y": 483.2,
+          "z": 310.0,
+          "role": "node",
+          "trailIndex": 42,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -762.3,
+          "y": 483.3,
+          "z": 304.1,
+          "role": "node",
+          "trailIndex": 43,
+          "material": "static_charge",
+          "icon": "static_charge"
+        },
+        {
+          "x": -768.1,
+          "y": 484.2,
+          "z": 289.4,
+          "role": "node",
+          "trailIndex": 44,
+          "material": "static_charge",
+          "icon": "static_charge"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "mapId": 1510,
+  "slug": "skywatch-archipelago",
+  "name": "Skywatch Archipelago",
+  "regionName": "Horn of Maguuma",
+  "mode": "farming",
+  "routes": [
+    {
+      "name": "Static Charge",
+      "category": "special",
+      "material": "static_charge",
+      "source": "lady"
+    }
+  ],
+  "nodes": [
+    {
+      "x": -768.1,
+      "y": 484.2,
+      "z": 289.4,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -702.1,
+      "y": 563.1,
+      "z": 146.7,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -702.1,
+      "y": 580.4,
+      "z": 121.7,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -685.9,
+      "y": 594.2,
+      "z": 102.7,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -661.4,
+      "y": 614.8,
+      "z": 98.3,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -639.7,
+      "y": 634.7,
+      "z": 110.8,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -631.2,
+      "y": 650.9,
+      "z": 134.3,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -639.8,
+      "y": 655.6,
+      "z": 157.8,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -661.5,
+      "y": 661.8,
+      "z": 170.3,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -686.0,
+      "y": 668.6,
+      "z": 165.9,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -751.1,
+      "y": 598.8,
+      "z": 323.6,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -752.9,
+      "y": 613.7,
+      "z": 322.8,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -794.4,
+      "y": 643.7,
+      "z": 302.0,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -810.1,
+      "y": 659.9,
+      "z": 296.3,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -837.7,
+      "y": 678.0,
+      "z": 285.6,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -851.1,
+      "y": 701.7,
+      "z": 311.6,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -857.4,
+      "y": 718.2,
+      "z": 311.3,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -865.8,
+      "y": 730.1,
+      "z": 309.8,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -860.6,
+      "y": 727.4,
+      "z": 340.7,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -877.4,
+      "y": 745.0,
+      "z": 343.1,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -892.8,
+      "y": 761.6,
+      "z": 345.9,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -891.7,
+      "y": 779.1,
+      "z": 345.7,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -924.7,
+      "y": 795.7,
+      "z": 381.7,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -936.6,
+      "y": 808.3,
+      "z": 388.2,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -939.6,
+      "y": 816.9,
+      "z": 400.8,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -956.9,
+      "y": 821.6,
+      "z": 415.4,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -813.6,
+      "y": 824.4,
+      "z": 375.4,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -839.8,
+      "y": 808.3,
+      "z": 370.9,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -865.0,
+      "y": 793.1,
+      "z": 367.1,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -762.3,
+      "y": 483.3,
+      "z": 275.3,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -747.8,
+      "y": 483.2,
+      "z": 269.3,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -733.3,
+      "y": 483.3,
+      "z": 275.1,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -727.6,
+      "y": 483.1,
+      "z": 289.8,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -733.4,
+      "y": 483.2,
+      "z": 304.1,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -747.7,
+      "y": 483.2,
+      "z": 310.0,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    },
+    {
+      "x": -762.3,
+      "y": 483.3,
+      "z": 304.1,
+      "material": "static_charge",
+      "category": "special",
+      "icon": "static_charge"
+    }
+  ]
+}
