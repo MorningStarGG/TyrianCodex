@@ -57,7 +57,8 @@ enum class TravelOfferTargetKind
 {
     Step,
     Personal,
-    ZoneTravel
+    ZoneTravel,
+    RouteTransition
 };
 
 // Best-effort map assist target created by "Show on Map". This is intentionally separate from the
@@ -139,6 +140,12 @@ struct WaypointTravelOffer
     std::string waypointStepId;
     std::string waypointName;
     std::string waypointLink;
+    std::vector<std::string> waypointChoiceNames;
+    std::vector<std::string> waypointChoiceLinks;
+    int waypointChoice = 0;
+    bool routeChoiceRequired = false;
+    std::string routeTransitionId;
+    std::string routeTransitionMessage;
     uint32_t waypointMapId = 0;
     float waypointCx = 0.f;
     float waypointCy = 0.f;

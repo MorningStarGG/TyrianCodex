@@ -227,7 +227,7 @@ std::vector<Setting> Settings(App &app)
 
         // Routing.
         SEnum(SEC_ROUTING, "routeMode", "Routing mode", "route mode trail hybrid direct nearest authored", &app.config.routeMode, kRouteModeNames, 5, RoutingBehaviorId, RoutingBehaviorName),
-        SEnum(SEC_ROUTING, "pathType", "Path: On Foot or Mount", "path foot mount route variant barefoot mounted", &app.config.pathType, kPathTypeNames, 2, RoutingBehaviorId, RoutingBehaviorName),
+        SEnum(SEC_ROUTING, "pathType", "Route variant", "path foot mount route variant barefoot mounted tekkit lady elyssa source", &app.config.pathType, kPathTypeNames, 4, RoutingBehaviorId, RoutingBehaviorName),
         SInt(SEC_ROUTING, "approachMeters", "Approach distance (m)", "approach entrance distance hybrid handoff footprints", &app.config.approachMeters, 40, 400, RoutingBehaviorId, RoutingBehaviorName),
         SBool(SEC_ROUTING, "mapAssistClickWaypoint", "Click waypoint after pan", "routing travel map assist click waypoint after pan opens teleport confirmation", &app.config.mapAssistClickWaypoint, RoutingMapAssistId, RoutingMapAssistName),
         SBool(SEC_ROUTING, "autoTravelCloserWaypoint", "Auto-travel: suggested waypoint", "auto travel automatic closer waypoint offer prompt card skip pan", &app.config.autoTravelCloserWaypoint, RoutingAutoTravelId, RoutingAutoTravelName),
@@ -513,7 +513,7 @@ static const char *SettingDesc(const char *key)
         {"hideWhenComplete", "Hide the panel once every objective in the zone is done (unless traveling or targeting)."},
         {"offerWaypointTravel", "On a step change, offer to travel to a closer unlocked waypoint when it meaningfully shortens the route."},
         {"routeMode", "How the arrow routes you: follow the authored trail, a hybrid, or head direct / nearest."},
-        {"pathType", "Use the on-foot or mounted route variant where both exist."},
+        {"pathType", "Preferred route source and movement type. If it is unavailable on the current map, Tyrian Codex temporarily falls back to another available route without changing this setting."},
         {"approachMeters", "In hybrid modes, how close to a zone entrance before the route hands off to the trail."},
         {"mapAssistClickWaypoint", "After 'Show on map' pans to a confirmed waypoint, click it to open GW2's teleport confirmation (you still confirm the teleport)."},
         {"autoTravelCloserWaypoint", "When the addon suggests a closer unlocked waypoint for your next objective, skip the prompt card and go straight to open-map + pan (and click it if 'Click waypoint after pan' is on). You still confirm the teleport in-game. Needs 'Offer waypoint travel' on."},

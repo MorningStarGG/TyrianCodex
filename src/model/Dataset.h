@@ -46,14 +46,61 @@ struct RouteStepInfo
     int TrailIndex = -1;
 };
 
-// An alternate path variant for a zone (foot vs mount): its own trail polyline plus a per-stepId
-// {order, trailIndex} map that re-sequences the shared steps along that trail.
+// One source-authored mount/glider marker on an open-world route.
+struct RouteMarker
+{
+    float X = 0.f, Y = 0.f, Z = 0.f; // world position ([x, height, z], matches MumbleLink)
+    int TrailIndex = -1;
+    std::string Mount; // display name ("Springer", "Roller Beetle", "Glider")
+    std::string Icon;  // bundled icon basename (data/textures/markers/mounts/<icon>.png)
+};
+
+struct TrailSectionRange
+{
+    int Start = 0; // inclusive index into a route Trail
+    int End = 0;   // inclusive index into a route Trail
+};
+
+struct RouteTransitionLink
+{
+    std::string Label;
+    std::string ChatLink;
+};
+
+// A source-authored waypoint transfer inside a route. Lady Elyssa uses these to split a route into
+// efficient trail sections connected by teleports; they are not map-completion waypoint objectives.
+struct RouteTransition
+{
+    std::string Id;
+    std::string SourceBranch;
+    std::string SourceType;
+    std::string SourceFile;
+    std::string Message;
+    uint32_t MapId = 0;
+    float X = 0.f, Y = 0.f, Z = 0.f; // author marker world position
+    float CX = 0.f, CY = 0.f;        // same point in continent coords for map assist fallback
+    int TrailIndex = -1;
+    int SectionBefore = -1;
+    int SectionAfter = -1;
+    std::vector<RouteTransitionLink> Links;
+};
+
+// One route variant for a zone: its own trail polyline plus a per-stepId {order, trailIndex}
+// map that re-sequences the shared steps along that trail.
 struct RouteOverlay
 {
+    std::string Id;                             // "tekkit-foot", "lady-mount", ...
+    std::string Label;                          // user-facing route label
+    std::string Author;                         // "tekkit" / "lady"
     std::string Kind;                           // "foot" or "mount"
-    bool Complete = true;                       // reaches most objectives?
+    std::string Source;                         // builder source id ("tekkit:barefoot")
+    std::string SourceBranch;                   // original pack route branch
+    bool Complete = true;                       // route has ordering metadata for every objective
     std::vector<Math::Vec3> Trail;              // [x, y, z] world points
+    std::vector<TrailSectionRange> Sections;     // explicit route sections; empty = one continuous legacy route
     std::map<std::string, RouteStepInfo> Steps; // stepId -> {order, trailIndex}
+    std::vector<RouteMarker> RouteMarkers;      // source-authored route-use markers for this route
+    std::vector<RouteTransition> RouteTransitions; // source-authored waypoint transfers for this route
 };
 
 // One open-world zone dataset. The `trail` array is already in raw MumbleLink world coordinates
@@ -62,7 +109,7 @@ struct RouteOverlay
 struct Zone
 {
     bool Loaded = false;
-    bool GeomLoaded = false; // the <slug>.trail.json (trail + altRoute) has been lazy-loaded in
+    bool GeomLoaded = false; // the <slug>.trail.json (trail + legacy altRoute + routeVariants) has been lazy-loaded
     std::string Slug;        // key for the lazy trail side-file (data/zones/<slug>.trail.json)
     uint32_t MapId = 0;
     int ContinentId = 1;    // GW2 continent id: 1 = Tyria, 2 = Mists (Maguuma/Cantha are regions on 1); travel filters same-continent
@@ -73,42 +120,54 @@ struct Zone
     std::string Name;
     int MinLevel = 0, MaxLevel = 0;
     std::vector<Math::Vec3> Trail; // the ACTIVE route's trail (Activate() swaps this)
+    std::vector<TrailSectionRange> TrailSections; // the ACTIVE route's explicit trail sections
     std::vector<Step> Steps;       // the ACTIVE route's steps (Activate() swaps this)
+    std::vector<RouteMarker> RouteMarkers; // the ACTIVE route's source-authored route-use markers
+    std::vector<RouteTransition> RouteTransitions; // the ACTIVE route's authored waypoint transfers
     bool HasRects = false;
     float MapRect[4] = {};  // minX, minY, maxX, maxY
     float ContRect[4] = {}; // left, top, right, bottom
     bool HasSectorRect = false;
     float SectorRect[4] = {}; // union of named-sector bounds = tight playable extent (hover-map crop)
 
-    // Route variants (schema 3: foot vs mount). Trail/Steps above are the ACTIVE route; Activate()
-    // swaps them between the primary (as-loaded) and the alt overlay per the player's PathType setting.
-    // Falls back to the primary when the requested kind is absent.
+    // Route variants. Trail/Steps above are the ACTIVE route; Activate() swaps them between schema 5
+    // source-aware routeVariants when present, or the legacy primary/altRoute pair when loading old data.
     std::string PrimaryKind = "foot"; // kind the as-loaded Trail/Steps represent
-    bool PrimaryComplete = true;      // does the primary route reach most objectives?
+    bool PrimaryComplete = true;      // primary route has ordering metadata for every objective
     bool HasAlt = false;              // the other-kind variant exists
     RouteOverlay Alt;                 // that other variant (trail + per-stepId order/index)
     std::string ActiveKind;           // kind currently in Trail/Steps (set by Activate)
-    bool ActiveComplete = true;       // does the active route reach most objectives?
+    std::string ActiveRouteId;        // route variant currently in Trail/Steps
+    std::string ActiveRouteLabel;     // user-facing active route label
+    std::string ActiveRouteAuthor;    // "tekkit" / "lady" / ""
+    bool ActiveRouteFallback = false; // requested preference was unavailable on this map
+    bool ActiveComplete = true;       // active route has ordering metadata for every objective
+    std::vector<RouteOverlay> RouteVariants; // schema 5+: source-aware route variants
     // internal swap state (don't touch directly): captured primary + lazily-built alt steps.
     bool _primaryCaptured = false;
     std::vector<Math::Vec3> _primaryTrail;
+    std::vector<TrailSectionRange> _primaryTrailSections;
     std::vector<Step> _primarySteps;
+    std::vector<RouteMarker> _primaryRouteMarkers;
+    std::vector<RouteTransition> _primaryRouteTransitions;
     std::vector<Step> _altSteps;
     bool _altBuilt = false;
 
-    // Make the requested kind ("foot"/"mount") active: swaps Trail + Steps to that variant's ordering,
-    // falling back to the primary when the kind isn't available (so a caller is never left without a route).
+    // Legacy path: make the requested kind ("foot"/"mount") active from primary/altRoute data.
     void Activate(const std::string &preferredKind);
+    // Make the requested route preference active. The saved preference is not mutated; unavailable routes
+    // fall back at runtime to another route variant for this map.
+    void Activate(int routePreference);
 };
 
-// Parse data/zones/<slug>.json (schemaVersion 3) into `out`. Returns true if a trail loaded.
+// Parse data/zones/<slug>.json into `out`. Returns true if a trail loaded.
 bool LoadZone(const std::string &path, Zone &out);
 
 // Load every zone listed in <zonesDir>/index.json into `out`, keyed by mapId. Returns the count loaded.
 // Each zone is loaded METADATA-ONLY (meta + steps); the heavy trail geometry stays on disk until LoadZoneTrail.
 int LoadAllZones(const std::string &zonesDir, std::map<uint32_t, Zone> &out);
 
-// Lazy-load a zone's trail + altRoute from <zonesDir>/<z.Slug>.trail.json into an already-metadata-loaded Zone
+// Lazy-load a zone's trail + route overlays from <zonesDir>/<z.Slug>.trail.json into an already-metadata-loaded Zone
 // (sets z.GeomLoaded). Called on map entry. No-op-safe: returns true if the geometry is present after the call.
 bool LoadZoneTrail(const std::string &zonesDir, Zone &z);
 
@@ -132,12 +191,6 @@ struct InstanceMarker
     std::string Role;         // "node" / "wp" / "start" / "end"
     std::string Mount;        // required mount display ("Skyscale"); "" = foot-reachable
     uint32_t IconAssetId = 0; // gw2dat asset id when no bundled icon
-};
-
-struct TrailSectionRange
-{
-    int Start = 0; // inclusive index into InstanceRoute::Trail
-    int End = 0;   // inclusive index into InstanceRoute::Trail
 };
 
 // One named route (a dungeon path, or a single-material farming trail): world-coord trail + ordered markers.

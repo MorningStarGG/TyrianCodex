@@ -27,6 +27,18 @@ void TrailRenderer::Draw(const FrameCtx &fc, const Config &cfg, const GuideState
     onScreen_ = 0;
     if (n < 2 || !cfg.showTrail)
         return; // "Show route trail" toggle
+    const std::vector<TrailSectionRange> &sections = st.inDungeon ? st.instTrailSections : st.zone.TrailSections;
+    auto segmentAllowed = [&](int seg)
+    {
+        if (seg < 0 || seg + 1 >= n)
+            return false;
+        if (sections.empty())
+            return true;
+        for (const TrailSectionRange &s : sections)
+            if (seg >= s.Start && seg + 1 <= s.End)
+                return true;
+        return false;
+    };
 
     // Nearest trail point to the player (horizontal) = the progress split: points before it are "passed"
     // (dimmed), points from it on are "ahead" (full) -- so the way forward reads brighter.
@@ -113,11 +125,14 @@ void TrailRenderer::Draw(const FrameCtx &fc, const Config &cfg, const GuideState
         tz /= tl;
         const float perpx = tz * half, perpz = -tx * half; // perpendicular in the horizontal plane, half-width
 
-        if (i > 0)
+        const bool continuesSection = i > 0 && segmentAllowed(i - 1);
+        if (continuesSection)
         {
             const float dx = trail[i].x - trail[i - 1].x, dz = trail[i].z - trail[i - 1].z;
             cumDist += std::sqrt(dx * dx + dz * dz);
         }
+        else if (i > 0)
+            cumDist = 0.f;
         const float v = -cumDist / repeat + vScroll; // negate so the prints' toes face forward
         const float by = p.y + kTrailLift;           // lift along the height axis (y)
         const Math::Vec3 Lw{p.x + perpx, by, p.z + perpz};
@@ -132,7 +147,7 @@ void TrailRenderer::Draw(const FrameCtx &fc, const Config &cfg, const GuideState
         const ImU32 col = colorAt(alpha);
 
         // Emit the segment (i-1 -> i) only when point i is inside the corridor [visLo, visHi].
-        if (havePrev && i > floorVisLo && i <= visHi)
+        if (havePrev && continuesSection && i > floorVisLo && i <= visHi)
         {
             Math::Vec3 sL = pL, sR = pR;
             float sV = pV;

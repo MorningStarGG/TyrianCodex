@@ -11,6 +11,90 @@
 #include <cmath>
 #include <vector>
 
+namespace
+{
+    void *RouteUseMarkerTexture(const RouteMarker &m)
+    {
+        return m.Icon.empty() ? nullptr
+                              : Tex::GetBundledTexture(("data\\textures\\markers\\mounts\\" + m.Icon + ".png").c_str());
+    }
+
+    ImU32 RouteUseMarkerFallback(const RouteMarker &m, int alpha)
+    {
+        if (m.Icon == "glider")
+            return IM_COL32(120, 200, 255, alpha);
+        if (m.Icon == "skyscale" || m.Icon == "griffon")
+            return IM_COL32(180, 150, 255, alpha);
+        if (m.Icon == "skimmer")
+            return IM_COL32(80, 180, 220, alpha);
+        if (m.Icon == "springer")
+            return IM_COL32(150, 220, 120, alpha);
+        if (m.Icon == "beetle" || m.Icon == "warclaw")
+            return IM_COL32(230, 170, 80, alpha);
+        return IM_COL32(255, 220, 120, alpha);
+    }
+
+    void DrawRouteUseMarkers(const FrameCtx &fc, const Config &cfg, const GuideState &st,
+                             const MarkerFx::Between &between, float combatFade)
+    {
+        if (st.zone.RouteMarkers.empty())
+            return;
+
+        ImDrawList *dl = ImGui::GetBackgroundDrawList();
+        const float fadeNear = cfg.markerFadeNear;
+        const float fadeFar = std::max(cfg.markerFadeFar, fadeNear + 1.f);
+
+        struct RM
+        {
+            float dist, sx, sy;
+            const RouteMarker *m;
+            int alpha;
+        };
+        static std::vector<RM> ms;
+        ms.clear();
+        ms.reserve(st.zone.RouteMarkers.size());
+
+        for (const RouteMarker &m : st.zone.RouteMarkers)
+        {
+            const Math::Vec3 pos{m.X, m.Y + cfg.markerExtraH, m.Z};
+            const float dist = (pos - fc.camPos).Length();
+            if (dist > fadeFar)
+                continue;
+            float sx, sy, depth;
+            if (!Math::WorldToScreen(pos, fc.vp, fc.W, fc.H, sx, sy, depth))
+                continue;
+            const float fade = 1.f - std::clamp((dist - fadeNear) / (fadeFar - fadeNear), 0.f, 1.f);
+            if (fade <= 0.01f)
+                continue;
+            const float vis = MarkerFx::OpacityCap(fade * combatFade * MarkerFx::BetweenDim(between, ImVec2(sx, sy), dist), cfg);
+            if (vis <= 0.004f)
+                continue;
+            ms.push_back({dist, sx, sy, &m, (int)(vis * 255.f)});
+        }
+
+        std::sort(ms.begin(), ms.end(), [](const RM &a, const RM &b)
+                  { return a.dist > b.dist; });
+
+        for (const RM &it : ms)
+        {
+            const float px = std::clamp(cfg.markerSize * fc.pxScale / std::max(it.dist, 0.01f),
+                                        kMarkerMinPx, kMarkerMaxPx);
+            const float h = px * 0.5f;
+            if (void *tex = RouteUseMarkerTexture(*it.m))
+            {
+                dl->AddImage((ImTextureID)tex, ImVec2(it.sx - h, it.sy - h), ImVec2(it.sx + h, it.sy + h),
+                             ImVec2(0, 0), ImVec2(1, 1), IM_COL32(255, 255, 255, it.alpha));
+            }
+            else
+            {
+                const ImU32 col = RouteUseMarkerFallback(*it.m, it.alpha);
+                dl->AddCircleFilled(ImVec2(it.sx, it.sy), h * 0.62f, col, 18);
+                dl->AddCircle(ImVec2(it.sx, it.sy), h * 0.62f, IM_COL32(255, 255, 255, it.alpha / 2), 18, 1.5f);
+            }
+        }
+    }
+}
+
 // In-world objective markers: the real GW2 dat icon for each objective type as a billboard at the objective
 // (continent coord -> world, height from the nearest trail point), distance-faded from the camera and
 // size-clamped on screen. Completed objectives drop out. White tint = the icon's
@@ -31,6 +115,10 @@ void Markers::DrawWorld(const FrameCtx &fc, const Config &cfg, const GuideState 
     const float combatFade = MarkerFx::CombatFade(cfg.markerFadeInCombat, fc);
     const MarkerFx::Between between = MarkerFx::BeginBetween(cfg, fc);
     const bool showGhost = cfg.viewerShowCompleted; // completed objectives -> dim ghosts (else they vanish)
+
+    // Mount/glider route-use markers are source-authored route annotations, not objectives. Draw them first so
+    // objective icons stay visually dominant when both sit near the same spot.
+    DrawRouteUseMarkers(fc, cfg, st, between, combatFade);
 
     // Collect the visible markers, then DEPTH-SORT them far -> near and draw in that order, so a nearer marker
     // always covers a farther one (a CPU z-test -- the ImGui draw list has no depth buffer, so list order alone

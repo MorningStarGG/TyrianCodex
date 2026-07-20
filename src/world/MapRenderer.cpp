@@ -424,10 +424,17 @@ namespace
 
         if (cfg.debugRoute)
         {
-            const char *activeKind = st.zone.ActiveKind.empty() ? (cfg.pathType == 1 ? "mount" : "foot") : st.zone.ActiveKind.c_str();
+            const int pref = std::clamp(cfg.pathType, 0, 3);
+            const char *requested = kPathTypeNames[pref];
+            const std::string activeRoute = st.zone.ActiveRouteLabel.empty()
+                                                ? (st.zone.ActiveKind.empty() ? std::string(requested) : st.zone.ActiveKind)
+                                                : st.zone.ActiveRouteLabel;
+            const std::string routeText = st.zone.ActiveRouteFallback
+                                              ? (activeRoute + " (fallback from " + requested + ")")
+                                              : activeRoute;
             std::snprintf(lines[n++], sizeof(lines[0]),
-                          "routing: %s  path:%s%s  step %d  off-route:%s",
-                          RouteModeLabel(cfg.routeMode), activeKind, st.zone.ActiveComplete ? "" : " (partial)",
+                          "routing: %s  route:%s%s  step %d  off-route:%s",
+                          RouteModeLabel(cfg.routeMode), routeText.c_str(), st.zone.ActiveComplete ? "" : " (partial)",
                           st.curStep, st.offRoute ? "yes" : "no");
         }
 
@@ -815,25 +822,39 @@ void MapRenderer::Draw(const Config &cfg, const GuideState &st, Travel::Controll
         constexpr float kFloorFade = 28.f; // fully faded (to a faint floor) ~this much above/below
         const bool fadeHiLo = cfg.mapFadeHiLo && st.zone.Trail.size() == st.trailCont.size();
         const float avY = MumbleLink->AvatarPosition.Y;
-        ImVec2 prev = project(st.trailCont[0]);
-        for (size_t i = 1; i < st.trailCont.size(); ++i)
+        auto drawRange = [&](int start, int end)
         {
-            const ImVec2 cur = project(st.trailCont[i]);
-            const float lpx = prev.x - bMin.x, lcx = cur.x - bMin.x, lpy = prev.y - bMin.y, lcy = cur.y - bMin.y;
-            const bool off = (lpx < 0 && lcx < 0) || (lpx > bSize.x && lcx > bSize.x) ||
-                             (lpy < 0 && lcy < 0) || (lpy > bSize.y && lcy > bSize.y); // segment fully off one side
-            if (!off)
+            if (start < 0) start = 0;
+            if (end >= (int)st.trailCont.size()) end = (int)st.trailCont.size() - 1;
+            if (end <= start)
+                return;
+            ImVec2 prev = project(st.trailCont[start]);
+            for (int i = start + 1; i <= end; ++i)
             {
-                ImU32 col = colBase;
-                if (fadeHiLo)
+                const ImVec2 cur = project(st.trailCont[i]);
+                const float lpx = prev.x - bMin.x, lcx = cur.x - bMin.x, lpy = prev.y - bMin.y, lcy = cur.y - bMin.y;
+                const bool off = (lpx < 0 && lcx < 0) || (lpx > bSize.x && lcx > bSize.x) ||
+                                 (lpy < 0 && lcy < 0) || (lpy > bSize.y && lcy > bSize.y); // segment fully off one side
+                if (!off)
                 {
-                    const float dy = std::fabs((st.zone.Trail[i - 1].y + st.zone.Trail[i].y) * 0.5f - avY);
-                    const float f = 1.f - std::clamp((dy - kFloorBand) / kFloorFade, 0.f, 0.88f); // -> [0.12, 1]
-                    col = TrailColorFor(cfg.trailColor, (int)std::round(255.f * baseOpa * f));
+                    ImU32 col = colBase;
+                    if (fadeHiLo)
+                    {
+                        const float dy = std::fabs((st.zone.Trail[i - 1].y + st.zone.Trail[i].y) * 0.5f - avY);
+                        const float f = 1.f - std::clamp((dy - kFloorBand) / kFloorFade, 0.f, 0.88f); // -> [0.12, 1]
+                        col = TrailColorFor(cfg.trailColor, (int)std::round(255.f * baseOpa * f));
+                    }
+                    dl->AddLine(prev, cur, col, thick);
                 }
-                dl->AddLine(prev, cur, col, thick);
+                prev = cur;
             }
-            prev = cur;
+        };
+        if (st.zone.TrailSections.empty())
+            drawRange(0, (int)st.trailCont.size() - 1);
+        else
+        {
+            for (const TrailSectionRange &s : st.zone.TrailSections)
+                drawRange(s.Start, s.End);
         }
     }
 

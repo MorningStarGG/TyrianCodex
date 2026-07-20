@@ -387,8 +387,6 @@ void ApplyKeybinds(App &app) // declared in app/Glue.h so the Options tab (ui/Se
     }
 }
 
-// Map the PathType setting (0 = On Foot, 1 = Mount) to a route-variant kind string ("foot"/"mount").
-
 // The active trail in CONTINENT coords, for the in-game map / minimap overlay (which work in continent
 // coords, what MumbleLink's MapCenter uses). Rebuilt alongside the follower whenever the active route
 // changes. Empty when the zone has no rects (then the map trail just doesn't draw).
@@ -591,6 +589,10 @@ static void Render()
                 UpdateCurrentChar(g_app->state); // keep state.currentChar fresh (formerly in UpdateSessionStats)
             SessionTracker::Update(*g_app, seInGame, seInGame ? CurrentCharName() : std::string());
         }
+        // Apply queued loadouts/profile bindings before route selection and drawing. Route preferences live in the
+        // General profile; doing this after SwitchZone can leave the active route on the previous profile.
+        Loadouts::ProcessPending(*g_app);
+        ConfigProfiles::TickAll(*g_app);
 
         // Warm every map/icon disk cache ONCE, the first frame we're actually in-game (MumbleLink + zones ready).
         if (!g_app->state.warmedCaches && MumbleLink && NexusLink && NexusLink->IsGameplay && !g_app->zones.empty())
@@ -944,8 +946,6 @@ static void Render()
         DrawTrayMenu(*g_app);  // our GW2-skinned tray right-click menu (opened on request from the Nexus callback)
 
         // API data hub: char-switch detection always; gentle TTL refresh for the domains a visible consumer shows.
-        Loadouts::ProcessPending(*g_app); // apply any queued loadout/area switch FIRST (before the families render)
-        ConfigProfiles::TickAll(*g_app);  // bind all 4 families (General/HUD/Info/Dashboard) to the current character
         // The Dashboard wants everything while open; the Info Panel ORs in just the domains it currently draws; the
         // TP domain also polls (gentle TTL) whenever delivery toasts are on, so pickups are detected with the panel closed.
         AccountData::Tick((Dashboard::IsOpen() ? AccountData::DomAll : 0u) | InfoPanel::NeededDomains(*g_app) | (g_app->config.tpToasts ? AccountData::DomTradingPost : 0u) | AccountData::DomWallet // Session Tracker always baselines/accrues the wallet (gentle 300s TTL)

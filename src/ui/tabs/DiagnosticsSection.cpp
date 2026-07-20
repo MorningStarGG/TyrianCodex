@@ -95,7 +95,15 @@ void DrawDiagnosticsSection(App& app)
                         app.state.zone.MinLevel, app.state.zone.MaxLevel, app.state.curStep, (int)app.state.zone.Steps.size()); kv("Active zone", b, kVal); }
         else kv("Active zone", "(none / uncovered map - recommendations shown)", kVal);
         static const char* kMode[] = { "Trail", "HybridTrail", "HybridNearest", "DirectTrail", "DirectNearest" };
-        std::snprintf(b, sizeof(b), "%s    off-route: %s", kMode[std::clamp(app.config.routeMode, 0, 4)], app.state.offRoute ? "yes" : "no"); kv("Routing", b, kVal);
+        const int pref = std::clamp(app.config.pathType, 0, 3);
+        const char *requested = kPathTypeNames[pref];
+        const std::string activeRoute = app.state.zone.ActiveRouteLabel.empty()
+                                            ? (app.state.zone.ActiveKind.empty() ? std::string(requested) : app.state.zone.ActiveKind)
+                                            : app.state.zone.ActiveRouteLabel;
+        const std::string routeText = app.state.zone.ActiveRouteFallback
+                                          ? (activeRoute + " (fallback from " + requested + ")")
+                                          : activeRoute;
+        std::snprintf(b, sizeof(b), "%s    %s    off-route: %s", kMode[std::clamp(app.config.routeMode, 0, 4)], routeText.c_str(), app.state.offRoute ? "yes" : "no"); kv("Routing", b, kVal);
         if (app.config.travelOfferDebug && !app.state.travelOffer.debugLine.empty())
             kv("Travel offer", app.state.travelOffer.debugLine.c_str(), IM_COL32(214, 200, 150, 255));
     }

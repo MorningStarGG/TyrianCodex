@@ -5,6 +5,44 @@
 
 using namespace Follow;
 
+void TrailFollower::NormalizeSections()
+{
+    if (_trail.size() < 2)
+    {
+        _sections.clear();
+        return;
+    }
+    if (_sections.empty())
+    {
+        _sections.push_back({0, (int)_trail.size() - 1});
+        return;
+    }
+    std::vector<std::pair<int, int>> clean;
+    clean.reserve(_sections.size());
+    const int last = (int)_trail.size() - 1;
+    for (auto [lo, hi] : _sections)
+    {
+        lo = std::clamp(lo, 0, last);
+        hi = std::clamp(hi, 0, last);
+        if (hi > lo)
+            clean.push_back({lo, hi});
+    }
+    if (clean.empty())
+        clean.push_back({0, last});
+    _sections = std::move(clean);
+}
+
+std::pair<int, int> TrailFollower::SectionBoundsForIndex(int index) const
+{
+    if (_trail.empty())
+        return {0, 0};
+    index = std::clamp(index, 0, (int)_trail.size() - 1);
+    for (auto s : _sections)
+        if (index >= s.first && index <= s.second)
+            return s;
+    return {0, (int)_trail.size() - 1};
+}
+
 // Pure-pursuit: project the player onto the route polyline, then aim a fixed ARC distance ahead along
 // it. Because the aim is measured forward from the player's own projection, dir = aim - player can never
 // reverse (no 180 flip), independent of the (uneven) downsample spacing.
@@ -13,8 +51,11 @@ Vec2 TrailFollower::ComputeTrailAim(Vec2 playerXz, int targetIndex, Vec2 targetX
     const int n = (int)_trail.size();
     if (targetIndex < 0 || targetIndex >= n)
         targetIndex = n - 1;
-    if (_trailProgress > targetIndex)
-        _trailProgress = NearestTrailIndexUpTo(playerXz, targetIndex);
+    const auto [secLo, secHi] = SectionBoundsForIndex(targetIndex);
+    if (targetIndex > secHi)
+        targetIndex = secHi;
+    if (_trailProgress < secLo || _trailProgress > targetIndex)
+        _trailProgress = NearestTrailIndexInRange(playerXz, secLo, targetIndex);
     if (_trailProgress >= targetIndex)
         return targetXz; // already at the objective's trail point
 
@@ -26,7 +67,7 @@ Vec2 TrailFollower::ComputeTrailAim(Vec2 playerXz, int targetIndex, Vec2 targetX
     // Teleport / lost the window: re-project globally up to the objective.
     if (off > TrailResetDist)
     {
-        ProjectOntoTrail(playerXz, 0, std::numeric_limits<float>::max(), targetIndex, seg, t);
+        ProjectOntoTrail(playerXz, secLo, std::numeric_limits<float>::max(), targetIndex, seg, t);
         off = Dist(playerXz, TrailPointAt(seg, t));
     }
     _trailProgress = seg; // monotonic forward
@@ -50,8 +91,13 @@ Vec2 TrailFollower::ComputeTrailAimFrom(Vec2 playerXz, int anchorIndex, int targ
         return targetXz;
     if (targetIndex < 0 || targetIndex >= n)
         targetIndex = n - 1;
+    const auto [secLo, secHi] = SectionBoundsForIndex(targetIndex);
+    if (targetIndex > secHi)
+        targetIndex = secHi;
     if (anchorIndex < 0)
-        anchorIndex = 0;
+        anchorIndex = secLo;
+    if (anchorIndex < secLo || anchorIndex > secHi)
+        anchorIndex = secLo;
     if (anchorIndex >= targetIndex)
         return targetXz; // at or past the objective's trail point -- aim straight at it
 
@@ -144,9 +190,11 @@ int TrailFollower::NearestTrailIndexUpTo(Vec2 p, int maxIndex) const
 {
     if (maxIndex >= (int)_trail.size())
         maxIndex = (int)_trail.size() - 1;
-    int best = 0;
+    const auto [lo, hi] = SectionBoundsForIndex(maxIndex);
+    maxIndex = std::min(maxIndex, hi);
+    int best = lo;
     float bestD = std::numeric_limits<float>::max();
-    for (int i = 0; i <= maxIndex; ++i)
+    for (int i = lo; i <= maxIndex; ++i)
     {
         float d = DistSq(p, _trail[i]);
         if (d < bestD)
@@ -176,9 +224,12 @@ int TrailFollower::IndexBackAlongTrail(int fromIndex, float meters) const
 {
     if (fromIndex >= (int)_trail.size())
         fromIndex = (int)_trail.size() - 1;
+    const auto [secLo, secHi] = SectionBoundsForIndex(fromIndex);
+    if (fromIndex > secHi)
+        fromIndex = secHi;
     float acc = 0.f;
     int i = fromIndex;
-    while (i > 0 && acc < meters)
+    while (i > secLo && acc < meters)
     {
         acc += Dist(_trail[i], _trail[i - 1]);
         --i;
@@ -195,15 +246,18 @@ Vec2 TrailFollower::PointBackAlongTrail(int fromIndex, float meters, int &outSeg
         return Vec2{};
     if (fromIndex >= n)
         fromIndex = n - 1;
-    if (fromIndex <= 0 || meters <= 0.f)
+    const auto [secLo, secHi] = SectionBoundsForIndex(fromIndex);
+    if (fromIndex > secHi)
+        fromIndex = secHi;
+    if (fromIndex <= secLo || meters <= 0.f)
     {
-        outSeg = (fromIndex > 0) ? fromIndex - 1 : 0;
-        outT = (fromIndex > 0) ? 1.f : 0.f;
+        outSeg = (fromIndex > secLo) ? fromIndex - 1 : secLo;
+        outT = (fromIndex > secLo) ? 1.f : 0.f;
         return _trail[fromIndex < 0 ? 0 : fromIndex];
     }
 
     float acc = 0.f;
-    for (int i = fromIndex; i > 0; --i)
+    for (int i = fromIndex; i > secLo; --i)
     {
         const float segLen = Dist(_trail[i], _trail[i - 1]);
         if (acc + segLen >= meters)
@@ -215,9 +269,9 @@ Vec2 TrailFollower::PointBackAlongTrail(int fromIndex, float meters, int &outSeg
         }
         acc += segLen;
     }
-    outSeg = 0;
+    outSeg = secLo;
     outT = 0.f;
-    return _trail[0]; // ran off the start of the trail
+    return _trail[secLo]; // ran off the start of this section
 }
 
 int TrailFollower::NearestTrailIndexInRange(Vec2 p, int lo, int hi) const
@@ -226,6 +280,8 @@ int TrailFollower::NearestTrailIndexInRange(Vec2 p, int lo, int hi) const
         lo = 0;
     if (hi >= (int)_trail.size())
         hi = (int)_trail.size() - 1;
+    if (hi < lo)
+        hi = lo;
     int best = lo;
     float bestD = std::numeric_limits<float>::max();
     for (int i = lo; i <= hi; ++i)
@@ -269,6 +325,9 @@ float TrailFollower::TrailArc(int lo, int hi) const
         lo = 0;
     if (hi >= (int)_trail.size())
         hi = (int)_trail.size() - 1;
+    const auto [secLo, secHi] = SectionBoundsForIndex(hi);
+    lo = std::max(lo, secLo);
+    hi = std::min(hi, secHi);
     float a = 0.f;
     for (int i = lo; i < hi; ++i)
         a += Dist(_trail[i], _trail[i + 1]);

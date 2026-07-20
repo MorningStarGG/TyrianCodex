@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <cmath>
+#include <utility>
 
 // Pure-pursuit route follower. Owns the 2D follow polyline (horizontal world metres)
 // plus the player's monotonic progress along it and the approach-corridor hysteresis, and answers every trail-geometry query.
@@ -26,7 +27,18 @@ namespace Follow
     class TrailFollower
     {
     public:
-        void SetTrail(std::vector<Vec2> trail) { _trail = std::move(trail); } // does NOT reset progress
+        void SetTrail(std::vector<Vec2> trail)
+        {
+            _trail = std::move(trail);
+            _sections.clear();
+            NormalizeSections();
+        } // does NOT reset progress
+        void SetTrail(std::vector<Vec2> trail, std::vector<std::pair<int, int>> sections)
+        {
+            _trail = std::move(trail);
+            _sections = std::move(sections);
+            NormalizeSections();
+        } // does NOT reset progress
         void Reset()
         {
             _trailProgress = 0;
@@ -71,7 +83,11 @@ namespace Follow
         static constexpr float TrailLeaveDist = 35.f;  // release only past this (hysteresis deadband)
 
         std::vector<Vec2> _trail;
+        std::vector<std::pair<int, int>> _sections;
         int _trailProgress = 0;
         bool _onTrail = false;
+
+        void NormalizeSections();
+        std::pair<int, int> SectionBoundsForIndex(int index) const;
     };
 }

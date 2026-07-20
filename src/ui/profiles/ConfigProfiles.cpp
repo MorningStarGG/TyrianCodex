@@ -53,6 +53,7 @@ namespace
 
     void ApplySlice(App& app, Owner owner, const json& j)
     {
+        const int oldPathType = (owner == Owner::General) ? app.config.pathType : -1;
         if (j.is_object())
             for (const Setting& s : Settings(app))
             {
@@ -75,12 +76,14 @@ namespace
             }
         if (IsFamily(owner) && g_hasLayout[Idx(owner)] && g_layout[Idx(owner)].apply)
             g_layout[Idx(owner)].apply(app, j);   // writes the structured fields + reconciles vs the catalog
-        // Live side-effect so a profile switch takes effect immediately (matches the old GeneralProfiles::ApplyTo:
-        // only the font is re-applied here). Keybinds re-register from Config in AddonLoad + on a keybind edit;
-        // pathType re-applies on its own edit + the next zone activation -- neither is safe to force during the
-        // initial load (this Apply runs inside LoadSettings, before the zone system is ready).
+        // Live side-effects so a profile switch takes effect immediately. During LoadSettings there is no active
+        // zone yet, so the route reapply is a no-op; after the current character binds, it fixes the live route.
         if (owner == Owner::General)
+        {
             ApplyFontChoice(app);
+            if (oldPathType != app.config.pathType && app.state.zone.Loaded && !app.state.inDungeon)
+                app.zoneManager.ApplyPathType();
+        }
     }
 
     void ConfigureFamily(Owner owner, const char* storeKey)

@@ -182,17 +182,19 @@ const std::vector<int> &OrderedObjectiveSteps(App &app)
     static int s_total = -1;
     static int s_mode = -2;
     static int s_listStart = -1;
+    static std::string s_routeId;
     static float s_px = 1e30f, s_pz = 1e30f;
 
     const int total = (int)app.state.zone.Steps.size();
     const int mode = app.config.routeMode;
     const uint32_t mapId = app.state.zone.MapId;
+    const std::string routeId = app.state.zone.ActiveRouteId;
     const bool nearest = ModeIsNearest(mode) && MumbleLink && app.state.zone.HasRects;
     const float px = nearest ? MumbleLink->AvatarPosition.X : 0.f;
     const float pz = nearest ? MumbleLink->AvatarPosition.Z : 0.f;
     const int listStart = (app.state.curStep >= 0 && app.state.curStep < total) ? app.state.curStep : 0;
 
-    bool rebuild = (mapId != s_mapId) || (total != s_total) || (mode != s_mode);
+    bool rebuild = (mapId != s_mapId) || (total != s_total) || (mode != s_mode) || (routeId != s_routeId);
     if (nearest)
     {
         const float dx = px - s_px, dz = pz - s_pz;
@@ -231,6 +233,7 @@ const std::vector<int> &OrderedObjectiveSteps(App &app)
         s_total = total;
         s_mode = mode;
         s_listStart = listStart;
+        s_routeId = routeId;
         s_px = px;
         s_pz = pz;
     }

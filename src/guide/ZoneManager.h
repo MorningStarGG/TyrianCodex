@@ -10,7 +10,7 @@
 
 // -----------------------------------------------------------------------------------------------------
 // ZoneManager: owns the active-route lifecycle. Switches the active dataset on
-// map change (open-world zone or dungeon), activates the foot/mount path variant, rebuilds the follower +
+// map change (open-world zone or dungeon), activates the configured route preference, rebuilds the follower +
 // continent trail, and recommends zones for a level. Init'd (Travel::Controller-style) with pointers to the
 // runtime state, config, the bundled datasets, the follower, and the arrow (whose ease it re-snaps on a
 // switch). Operates mostly on those references; its only owned state is the RecommendZones cache and the
@@ -31,7 +31,7 @@ public:
     void SwitchZone(uint32_t mapId);     // activate the open-world zone for mapId (no-op if unchanged)
     void SwitchInstance(uint32_t mapId); // enter a dungeon map (pick the remembered / first path)
     void ActivateInstanceRoute(int idx); // switch the active dungeon path
-    void ApplyPathType();                // re-activate the current zone for the foot/mount setting
+    void ApplyPathType();                // re-activate the current zone for the route preference setting
 
     // Prepare the active map's farming nodes (world + continent coords) for the overlay + combined run. No-op
     // unless mapId changed; clears when the map has no bundled farming dataset. Cheap to call every frame.

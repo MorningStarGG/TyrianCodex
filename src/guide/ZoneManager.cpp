@@ -75,8 +75,6 @@ void ZoneManager::EnsureActiveFishHoles(uint32_t mapId)
     }
 }
 
-static const char* KindForPathType(int pt) { return pt == 1 ? "mount" : "foot"; }   // ZoneManager-internal
-
 void ZoneManager::RebuildActiveTrail()
 {
     std::vector<Follow::Vec2> poly;
@@ -93,14 +91,18 @@ void ZoneManager::RebuildActiveTrail()
             st_->trailCont.push_back(ImVec2(cx, cy));
         }
     }
-    follower_->SetTrail(std::move(poly));
+    std::vector<std::pair<int, int>> sections;
+    sections.reserve(st_->zone.TrailSections.size());
+    for (const TrailSectionRange& s : st_->zone.TrailSections)
+        sections.push_back({s.Start, s.End});
+    follower_->SetTrail(std::move(poly), std::move(sections));
     follower_->Reset();
 }
 
 void ZoneManager::ApplyPathType()
 {
     if (!st_->zone.Loaded) return;
-    st_->zone.Activate(KindForPathType(cfg_->pathType));
+    st_->zone.Activate(cfg_->pathType);
     RebuildActiveTrail();
     gpsArrow_->ResetEase();
 }
@@ -126,7 +128,7 @@ void ZoneManager::SwitchZone(uint32_t mapId)
     }
     if (!it->second.GeomLoaded) LoadZoneTrail(zonesDir_, it->second);   // lazy: pull the trail side-file in on entry
     st_->zone = it->second;                              // activate this zone
-    st_->zone.Activate(KindForPathType(cfg_->pathType));     // pick the foot/mount route variant before building
+    st_->zone.Activate(cfg_->pathType);                  // pick the requested route variant before building
     RebuildActiveTrail();                             // follower (x,z) poly + continent poly for the map
 
     // "Announce zone on entry" (GuideModule.Zones.cs toast): a coalescing Zone notification (gated by the
@@ -166,7 +168,11 @@ void ZoneManager::ActivateInstanceRoute(int idx)
     st_->trailCont.clear();                              // dungeons aren't on the continent map
     std::vector<Follow::Vec2> poly; poly.reserve(r.Trail.size());
     for (const Math::Vec3& p : r.Trail) poly.push_back({ p.x, p.z });
-    follower_->SetTrail(std::move(poly));
+    std::vector<std::pair<int, int>> sections;
+    sections.reserve(r.Sections.size());
+    for (const TrailSectionRange& s : r.Sections)
+        sections.push_back({ s.Start, s.End });
+    follower_->SetTrail(std::move(poly), std::move(sections));
     follower_->Reset();
 
     for (const InstanceMarker& m : r.Markers) if (!m.Text.empty()) st_->instSteps.push_back(&m);

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 3,
-  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "schemaVersion": 5,
+  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
   "zone": {
     "mapId": 1554,
     "name": "Janthir Syntri",
@@ -66,7 +66,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 5,
+      "trailIndex": 98,
       "waypointChatLink": "[&BLcOAAA=]"
     },
     {
@@ -86,7 +86,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 41,
+      "trailIndex": 292,
       "wikiText": "The First Bloodtree is a point of interest located in Slithering Outskirts.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -107,7 +107,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 83,
+      "trailIndex": 451,
       "wikiText": "The Second Bloodtree is a point of interest located in Festering Basin.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -128,7 +128,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 116,
+      "trailIndex": 576,
       "wikiText": "Manor of the Cruel Hound is a point of interest within the Festering Basin. It is a White Mantle ruin belonging to the now-destroyed village of Gavril.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -149,7 +149,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 170,
+      "trailIndex": 781,
       "wikiText": "Old Gavril Plaza is a point of interest within the Festering Basin. It was the plaza of the now-ruined town of Gavril.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -224,7 +224,7 @@
           16132
         ]
       ],
-      "trailIndex": 199,
+      "trailIndex": 892,
       "wikiText": "Help the kodan keep the forest's rot under control by participating in events, disabling relics, and culling hostile bugs, titanspawn, and mistburned creatures.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -247,7 +247,7 @@
       ],
       "chatLink": "[&BLgOAAA=]",
       "waypointChatLink": "[&BLgOAAA=]",
-      "trailIndex": 200,
+      "trailIndex": 894,
       "wikiText": "Festering Basin is an area in Janthir Syntri. It has been heavily affected by the pollution of Greer, the Blightbringer, and was turned into swampland due to his influence. Titanspawn infest the area."
     },
     {
@@ -267,7 +267,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 207,
+      "trailIndex": 923,
       "wikiText": "Rhea's Perch is a point of interest within the Festering Basin. It is a White Mantle structure overlooking the remains of Gavril.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -288,7 +288,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 263,
+      "trailIndex": 1139,
       "wikiText": "Wasted Shallows is a point of interest within the Festering Basin. The area around here has been heavily affected by the pollution of Greer, the Blightbringer, inhabited by Greer's titanspawns- a rotling titanspawn.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -309,28 +309,8 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 354,
+      "trailIndex": 1481,
       "wikiText": "The Infested Quag is a point of interest in the Moldering Greenwood, within Janthir Syntri. It is a clearing heavily affected by the aura of Greer, the Blightbringer, and is infested with titanspawn as a result.",
-      "waypointChatLink": "[&BLgOAAA=]"
-    },
-    {
-      "stepId": "1554:poi:3772",
-      "mapId": 1554,
-      "zoneName": "Janthir Syntri",
-      "type": "poi",
-      "objectiveId": "3772",
-      "coord": [
-        38685,
-        16322
-      ],
-      "recommendedLevel": null,
-      "name": "Scarwood Depths",
-      "prereqs": [],
-      "order": 10,
-      "source": [
-        "gw2api:poi"
-      ],
-      "trailIndex": 424,
       "waypointChatLink": "[&BLgOAAA=]"
     },
     {
@@ -346,12 +326,32 @@
       "recommendedLevel": null,
       "name": "The Lurking Spring",
       "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1817,
+      "wikiText": "The Lurking Spring is a point of interest located in Moldering Greenwood. It is a cave grotto containing a variety of plants and glowing mushrooms growing from the ceiling.",
+      "waypointChatLink": "[&BLgOAAA=]"
+    },
+    {
+      "stepId": "1554:poi:3772",
+      "mapId": 1554,
+      "zoneName": "Janthir Syntri",
+      "type": "poi",
+      "objectiveId": "3772",
+      "coord": [
+        38685,
+        16322
+      ],
+      "recommendedLevel": null,
+      "name": "Scarwood Depths",
+      "prereqs": [],
       "order": 11,
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 442,
-      "wikiText": "The Lurking Spring is a point of interest located in Moldering Greenwood. It is a cave grotto containing a variety of plants and glowing mushrooms growing from the ceiling.",
+      "trailIndex": 1849,
       "waypointChatLink": "[&BLgOAAA=]"
     },
     {
@@ -371,7 +371,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 483,
+      "trailIndex": 2014,
       "waypointChatLink": "[&BLgOAAA=]"
     },
     {
@@ -391,7 +391,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 558,
+      "trailIndex": 2301,
       "wikiText": "Buried Sacrament is a Point of Interest within Moldering Greenwood in Janthir Syntri.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -412,7 +412,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 582,
+      "trailIndex": 2389,
       "wikiText": "Pathway to Redemption is a Point of Interest within Moldering Greenwood in Janthir Syntri.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -433,7 +433,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 623,
+      "trailIndex": 2545,
       "wikiText": "Moldering Greenwood is an area in Janthir Syntri.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -454,7 +454,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 658,
+      "trailIndex": 2676,
       "wikiText": "Nivermer Rill is a point of interest in the northern section of the Moldering Greenwood, in Janthir Syntri. It is a small pond full of stagnant water that is toxic when drunk, surrounded by rotling titanspawn.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -475,7 +475,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 699,
+      "trailIndex": 2830,
       "waypointChatLink": "[&BCwPAAA=]"
     },
     {
@@ -495,7 +495,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 742,
+      "trailIndex": 2996,
       "wikiText": "The Cathedral of Blood is a point of interest within the Moldering Greenwood, in Janthir Syntri. It is a large ruin with spires reaching high into the sky that once belonged to the White Mantle.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -516,7 +516,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 796,
+      "trailIndex": 3198,
       "wikiText": "The Bloodstone Research Camp is a point of interest at the west end of Blood Hill, in Janthir Syntri.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -537,7 +537,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 848,
+      "trailIndex": 3397,
       "wikiText": "The Third Bloodtree is a point of interest located in Blood Hill.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -558,7 +558,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 911,
+      "trailIndex": 3634,
       "wikiText": "The Immortal Oak is a point of interest in the Slithering Outskirts in Janthir Syntri. It is a large oak tree growing through a rocky overhang, with a bloodstone crystal embedded in its trunk.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -579,7 +579,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 945,
+      "trailIndex": 3761,
       "wikiText": "The Twin's Table is a point of interest within the Slithering Outskirts. It is one of the White Mantle ruins in the now-destroyed village of Gavril.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -600,7 +600,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 985,
+      "trailIndex": 3914,
       "wikiText": "Slithering Outskirts is an area in Janthir Syntri.",
       "waypointChatLink": "[&BLgOAAA=]"
     },
@@ -621,7 +621,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1011,
+      "trailIndex": 4014,
       "wikiText": "The Observation Post is a point of interest within the Slithering Outskirts. It is a White Mantle ruin belonging to the now-destroyed village of Gavril.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -642,7 +642,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1030,
+      "trailIndex": 4085,
       "wikiText": "The Garden of Loetor is a point of interest within the Slithering Outskirts. It is a White Mantle ruin belonging to the now-destroyed village of Gavril.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -663,7 +663,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1077,
+      "trailIndex": 4358,
       "wikiText": "The Wrinkled Wetlands is a point of interest located west of Forager's Hunt next to the River's Maw. It is a misty swamp with scattered pools, sparse trees, and an eerie atmosphere.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -686,7 +686,7 @@
       ],
       "chatLink": "[&BLcOAAA=]",
       "waypointChatLink": "[&BLcOAAA=]",
-      "trailIndex": 1091,
+      "trailIndex": 4448,
       "wikiText": "Old Hutment Site is an area making up the southeastern corner of Janthir Syntri. It contains the lowlander camp Forager's Hunt, a large wetland, and grassy terrain against mountains and cliffs around its east and south borders."
     },
     {
@@ -756,7 +756,7 @@
           16671
         ]
       ],
-      "trailIndex": 1094,
+      "trailIndex": 4461,
       "wikiText": "Support the kodan camp by completing events and helping with camp tasks.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -777,7 +777,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1109,
+      "trailIndex": 4519,
       "wikiText": "Forager's Hunt is a point of interest located in Old Hutment Site. It is a camp being used as the base of operations for the Astral Ward and lowland kodan in Janthir Syntri.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -798,7 +798,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1141,
+      "trailIndex": 4640,
       "wikiText": "Old Hutment Site is an area making up the southeastern corner of Janthir Syntri. It contains the lowlander camp Forager's Hunt, a large wetland, and grassy terrain against mountains and cliffs around its east and south borders.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -819,7 +819,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1164,
+      "trailIndex": 4728,
       "wikiText": "Cliffside Lookout is a point of interest located atop the cliff south of Forager's Hunt, offering a vantage point overlooking the Old Hutment Site area.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -840,7 +840,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1294,
+      "trailIndex": 5219,
       "wikiText": "Hunting Grounds is a point of interest located in Old Hutment Site. It is inhabited by Janthiri wildlife and contains Rising Bloom's garden of flowers, which is sometimes affected by the Mistburn.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -861,7 +861,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1333,
+      "trailIndex": 5365,
       "wikiText": "Old Hutment Site is an area making up the southeastern corner of Janthir Syntri. It contains the lowlander camp Forager's Hunt, a large wetland, and grassy terrain against mountains and cliffs around its east and south borders.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -882,7 +882,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1350,
+      "trailIndex": 5438,
       "wikiText": "Battledance Beach is a point of interest located in Old Hutment Site. Lowland kodan use this beach to fish for supplies and to conduct their training exercises.",
       "waypointChatLink": "[&BLcOAAA=]"
     },
@@ -903,7 +903,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1375,
+      "trailIndex": 5541,
       "waypointChatLink": "[&BLcOAAA=]"
     },
     {
@@ -923,7 +923,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1463,
+      "trailIndex": 5908,
       "waypointChatLink": "[&BLcOAAA=]"
     },
     {
@@ -943,7 +943,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1549,
+      "trailIndex": 6232,
       "wikiText": "Storm Research Camp is a point of interest within Echoing Hills established as a base for the researchers led by Arid Esker.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1018,7 +1018,7 @@
           14264
         ]
       ],
-      "trailIndex": 1551,
+      "trailIndex": 6241,
       "wikiText": "Help the kodan research the region by eliminating elementals, setting up supply crates, putting out fires, and completing events to improve the conditions of the shore.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1039,7 +1039,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1557,
+      "trailIndex": 6262,
       "wikiText": "The Echoing Hills is an area in Janthir Syntri.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1060,7 +1060,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1588,
+      "trailIndex": 6379,
       "waypointChatLink": "[&BLcOAAA=]"
     },
     {
@@ -1080,7 +1080,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1650,
+      "trailIndex": 6614,
       "wikiText": "The Fourth Bloodtree is a point of interest located in Stricken Plains.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1101,7 +1101,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1698,
+      "trailIndex": 6795,
       "waypointChatLink": "[&BCoPAAA=]"
     },
     {
@@ -1121,7 +1121,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1768,
+      "trailIndex": 7063,
       "wikiText": "Maghead Beach is a point of interest on the eastern shore of Janthir Syntri.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1142,7 +1142,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1774,
+      "trailIndex": 7100,
       "wikiText": "The Corpse of the Deep Crawler is a point of interest in Landfall in eastern Janthir Syntri. It is the skeleton of a leviathan spoken of in Lowland Kodan tales, known for devouring their cubs.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1163,7 +1163,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1802,
+      "trailIndex": 7207,
       "waypointChatLink": "[&BCoPAAA=]"
     },
     {
@@ -1183,7 +1183,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1831,
+      "trailIndex": 7367,
       "waypointChatLink": "[&BCoPAAA=]"
     },
     {
@@ -1203,7 +1203,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1913,
+      "trailIndex": 7678,
       "waypointChatLink": "[&BCoPAAA=]"
     },
     {
@@ -1223,7 +1223,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1959,
+      "trailIndex": 7851,
       "wikiText": "Summerstorm Watch is a point of interest within the Tumultuous Sea. It is a White Mantle ruin overlooking the sea.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1244,7 +1244,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1959,
+      "trailIndex": 7851,
       "wikiText": "Tumultuous Sea is a large area containing the eastern and northern borders of Janthir Syntri. It is a section of dark ocean with sea stacks in it, waves lapping at the shores of the isle.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1265,7 +1265,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1988,
+      "trailIndex": 8046,
       "waypointChatLink": "[&BCoPAAA=]"
     },
     {
@@ -1287,7 +1287,7 @@
       ],
       "chatLink": "[&BCoPAAA=]",
       "waypointChatLink": "[&BCoPAAA=]",
-      "trailIndex": 1996,
+      "trailIndex": 8078,
       "wikiText": "Stricken Plains is an area in Janthir Syntri."
     },
     {
@@ -1307,7 +1307,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2014,
+      "trailIndex": 8343,
       "waypointChatLink": "[&BCoPAAA=]"
     },
     {
@@ -1327,7 +1327,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2056,
+      "trailIndex": 8505,
       "wikiText": "The Reaping Stones is a point of interest in the Dead Lab in Janthir Syntri.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1348,7 +1348,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2117,
+      "trailIndex": 8735,
       "waypointChatLink": "[&BCwPAAA=]"
     },
     {
@@ -1368,7 +1368,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2119,
+      "trailIndex": 8742,
       "wikiText": "Blood Hill is an area in Janthir Syntri. It wraps around the lower half of Sanguine Crater, the former site of the Janthiri bloodstone, the explosion of which turned the flora bordering the crater red.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1389,7 +1389,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2150,
+      "trailIndex": 8865,
       "wikiText": "The Sacrifical Grounds are a point of interest in Sanguine Crater, within Janthir Syntri. They were once used by the White Mantle to sacrifice victims on the Janthiri bloodstone.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1410,7 +1410,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2194,
+      "trailIndex": 9033,
       "wikiText": "The Athenaeum of Miracles is a point of interest in the Dead Lab in Janthir Syntri.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1433,7 +1433,7 @@
       ],
       "chatLink": "[&BCwPAAA=]",
       "waypointChatLink": "[&BCwPAAA=]",
-      "trailIndex": 2215,
+      "trailIndex": 9110,
       "wikiText": "Dead Lab is an area in Janthir Syntri."
     },
     {
@@ -1453,7 +1453,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2256,
+      "trailIndex": 9267,
       "wikiText": "Eroded Notch is a point of interest located in Sulfurous Springs. It is an entrance into the titanspawn-infested area that is filled with toxic springs.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1474,7 +1474,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2378,
+      "trailIndex": 9728,
       "wikiText": "The Foaming Mire is a point of interest located on the eastern side of the Sulfurous Springs. It is filled with toxic springs and titanspawn.",
       "waypointChatLink": "[&BCoPAAA=]"
     },
@@ -1495,7 +1495,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2393,
+      "trailIndex": 9782,
       "wikiText": "Sulfurous Springs is an area in Janthir Syntri. It is a titanspawn-infested area that is filled with toxic springs.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1516,7 +1516,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2408,
+      "trailIndex": 9844,
       "wikiText": "Ruinous Divide is a point of interest located in Sulfurous Springs. It is a passage between The Foaming Mire and The Molded Lands.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1537,7 +1537,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2439,
+      "trailIndex": 9961,
       "wikiText": "The Molded Lands is a point of interest located on the western side of the Sulfurous Springs. It filled with toxic springs and the titanspawns.",
       "waypointChatLink": "[&BCwPAAA=]"
     },
@@ -1558,7 +1558,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2499,
+      "trailIndex": 10191,
       "wikiText": "Path to Balrior is a point of interest located in the Sulfurous Springs. It is the path into Mount Balrior.",
       "waypointChatLink": "[&BCwPAAA=]"
     }

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 3,
-  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "schemaVersion": 5,
+  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
   "zone": {
     "mapId": 1043,
     "name": "Auric Basin",
@@ -216,8 +216,8 @@
       ],
       "trailIndex": 366,
       "wikiText": "The Toxin-Cured Hog is an object found in a cave west of Westwatch Patch. If Westwatch has not yet been powered up, then vines will block the path towards the cave from the south.",
-      "waypointChatLink": "[&BAYIAAA=]",
-      "whatToDo": "Eating the Bacon causes the player to lose health over time at a rate of 5% max health per second. The challenge is considered successful if the player can survive for 60 seconds without reaching 0 health. The key to success is self-healing through Keep It Down (see skills, below). It is possible to complete this challenge using Keep It Down alone."
+      "whatToDo": "Eating the Bacon causes the player to lose health over time at a rate of 5% max health per second. The challenge is considered successful if the player can survive for 60 seconds without reaching 0 health. The key to success is self-healing through Keep It Down (see skills, below). It is possible to complete this challenge using Keep It Down alone.",
+      "waypointChatLink": "[&BAYIAAA=]"
     },
     {
       "stepId": "1043:vista:2220",

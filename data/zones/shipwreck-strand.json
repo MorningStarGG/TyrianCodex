@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 3,
-  "generatedAt": "2026-06-14T03:49:17.557573+00:00",
+  "schemaVersion": 5,
+  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
   "zone": {
     "mapId": 1595,
     "name": "Shipwreck Strand",
@@ -66,7 +66,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 9,
+      "trailIndex": 29,
       "wikiText": "The Dark Leviathan is a corsair ship commanded by Captain Sayida the Sly of the Sly Crew.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -89,7 +89,7 @@
       ],
       "chatLink": "[&BJwPAAA=]",
       "waypointChatLink": "[&BJwPAAA=]",
-      "trailIndex": 13,
+      "trailIndex": 52,
       "wikiText": "Soaring Sands is the northeastern area of Shipwreck Strand."
     },
     {
@@ -109,7 +109,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 42,
+      "trailIndex": 153,
       "wikiText": "Great Bewilderseed is a twisting, towering tree imbued with the magic of Castora. Beneath its boughs bloom Bewilderflowers, plants which Astral Ward Researcher Corliss is studying for their transformative effects.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -130,7 +130,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 44,
+      "trailIndex": 172,
       "wikiText": "Soaring Copse is a point of interest found floating high above Soaring Sands. Its collection of small, lush isles forms the jumping puzzle of the same name.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -151,7 +151,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 50,
+      "trailIndex": 207,
       "wikiText": "Crimsonleaf Fountain is a point of interest within Soaring Sands, distinctive for a red-leafed tree atop an outcropping with streams of water coming down.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -172,7 +172,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 60,
+      "trailIndex": 284,
       "wikiText": "Tyrian Alliance Lookout Point is a place of power-a communing type hero challenge in southern Soaring Sands.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -193,7 +193,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 90,
+      "trailIndex": 410,
       "wikiText": "The Beachtree is a point of interest in the northeastern part of Glimmering Arches. It is a ship beached high above the surrounding shoals, held aloft by a tree that has begun to grow around it.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -214,7 +214,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 101,
+      "trailIndex": 514,
       "wikiText": "Leystone Promontory is a point of interest in the northeastern section of Glimmering Arches. Atop an outcropping are a circle of stones with faintly glowing circles on them.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -235,7 +235,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 123,
+      "trailIndex": 741,
       "wikiText": "Starry Grotto Skimmerway is a point of interest under the ocean in Glimmering Arches. It is one of several skimmerways in Shipwreck Strand, and is notable for a glowing fissure along its floor.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -256,7 +256,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 149,
+      "trailIndex": 922,
       "wikiText": "Luminous Glade is a point of interest in Glimmering Arches. Within it, sandy paths and shallow water meander between stone arches, outcroppings, and giant tree branches.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -335,7 +335,7 @@
           57392
         ]
       ],
-      "trailIndex": 163,
+      "trailIndex": 967,
       "wikiText": "Participate in nearby events, record tide-pool research, disarm freebooter traps, and stop undecided castaways from joining frebooters.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -356,7 +356,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 174,
+      "trailIndex": 1060,
       "wikiText": "The Mainland Verge is a place of power-a communing type hero challenge in Glimmering Arches. There is a bouncing mushroom just north of it to bring you up to the platform.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -377,7 +377,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 177,
+      "trailIndex": 1147,
       "wikiText": "Forecastle Rock is a point of interest in Hullgarden, a grassy platform ringed with the broken husks of beached ships. Here, a beast feeds on castaways and Astral Ward alike, and their remains litter the ground.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -398,7 +398,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 179,
+      "trailIndex": 1164,
       "wikiText": "Flotsam Grotto Skimmerway is a point of interest outside the village of Hullgarden, presumably named after the ship debris at and around its entrance.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -419,7 +419,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 193,
+      "trailIndex": 1215,
       "wikiText": "Surveillance Point is a place of power-a communing type hero challenge in west Hullgarden.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -440,7 +440,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 208,
+      "trailIndex": 1289,
       "wikiText": "Coconut Grove is a point of interest along the eastern shore of Shipwreck Strand. Various coconut trees can be found at this location, which can be used to complete Assist the castaways around Hullgarden.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -461,28 +461,8 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 267,
+      "trailIndex": 1477,
       "wikiText": "Littlewing Pond is a point of interest along the eastern shore of Shipwreck Strand, above and to the north of Hullgarden Village Plaza. Along the water's edge, Wavehawk Pete attends to several Wild Wavehawks.",
-      "waypointChatLink": "[&BMwPAAA=]"
-    },
-    {
-      "stepId": "1595:vista:3954",
-      "mapId": 1595,
-      "zoneName": "Shipwreck Strand",
-      "type": "vista",
-      "objectiveId": "3954",
-      "coord": [
-        11566,
-        58990
-      ],
-      "recommendedLevel": null,
-      "name": "Hullgarden Vista",
-      "prereqs": [],
-      "order": 17,
-      "source": [
-        "gw2api:poi"
-      ],
-      "trailIndex": 294,
       "waypointChatLink": "[&BMwPAAA=]"
     },
     {
@@ -498,12 +478,32 @@
       "recommendedLevel": null,
       "name": "Hullgarden Village Plaza",
       "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 1572,
+      "wikiText": "Hullgarden Village Plaza is the town center where the castaways known as Hullgardeners make their home from salvaged shipwrecks and natural rock formations.",
+      "waypointChatLink": "[&BMwPAAA=]"
+    },
+    {
+      "stepId": "1595:vista:3954",
+      "mapId": 1595,
+      "zoneName": "Shipwreck Strand",
+      "type": "vista",
+      "objectiveId": "3954",
+      "coord": [
+        11566,
+        58990
+      ],
+      "recommendedLevel": null,
+      "name": "Hullgarden Vista",
+      "prereqs": [],
       "order": 18,
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 294,
-      "wikiText": "Hullgarden Village Plaza is the town center where the castaways known as Hullgardeners make their home from salvaged shipwrecks and natural rock formations.",
+      "trailIndex": 1581,
       "waypointChatLink": "[&BMwPAAA=]"
     },
     {
@@ -561,7 +561,7 @@
           58736
         ]
       ],
-      "trailIndex": 312,
+      "trailIndex": 1637,
       "wikiText": "Participate in nearby events, collect coconuts, repair leaky roofs, and help out the entertainers.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -584,7 +584,7 @@
       ],
       "chatLink": "[&BMwPAAA=]",
       "waypointChatLink": "[&BMwPAAA=]",
-      "trailIndex": 313,
+      "trailIndex": 1641,
       "wikiText": "Hullgarden is an area in Shipwreck Strand-named after the coastal village inhabited by the castaways known as Hullgardeners-and is surrounded by numerous shipwrecks scattered along the shores of Castora."
     },
     {
@@ -604,7 +604,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 331,
+      "trailIndex": 1812,
       "wikiText": "Sad Freebooter is a hero challenge NPC located in northern Jetsam Point. Once cheered up, he becomes \"Freebooter Ajdin\" and can be seen with his mate, Castaway Bradley.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -625,7 +625,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 387,
+      "trailIndex": 2000,
       "wikiText": "Jetsam Point is an area in southeastern Shipwreck Strand.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -646,7 +646,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 388,
+      "trailIndex": 2003,
       "wikiText": "Far-Flung Lost Ship is a place of power-a communing type hero challenge in eastern Jetsam Point, in the structure of Morningrise Prow which is a ship cast up onto some rocks.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -667,7 +667,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 390,
+      "trailIndex": 2008,
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -687,7 +687,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 398,
+      "trailIndex": 2193,
       "wikiText": "Survivor's Lament Lookout is a place of power-a communing type hero challenge in southern Jetsam Point.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -708,7 +708,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 408,
+      "trailIndex": 2226,
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -728,7 +728,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 544,
+      "trailIndex": 2663,
       "wikiText": "|south of pub canach waypoint",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -749,7 +749,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 564,
+      "trailIndex": 2727,
       "wikiText": "Blue Hole is a point of interest almost directly south of Pub Canach.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -772,7 +772,7 @@
       ],
       "chatLink": "[&BJEPAAA=]",
       "waypointChatLink": "[&BJEPAAA=]",
-      "trailIndex": 607,
+      "trailIndex": 2867,
       "wikiText": "Breezy Cay is a central area in southern Shipwreck Strand."
     },
     {
@@ -792,10 +792,10 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 618,
+      "trailIndex": 2901,
       "wikiText": "Host Scott Bonnett offers a culinary hero challenge at Pub Canach.",
-      "waypointChatLink": "[&BJEPAAA=]",
-      "whatToDo": "Eating the Spicy Wing causes the player to lose health over time at a rate of 10% max health per second. The challenge is considered successful if the player can survive for 30 seconds without reaching 0 health. The key to success is self-healing through Take a Frosty Swig!, which restores 45% of your health each time it is used."
+      "whatToDo": "Eating the Spicy Wing causes the player to lose health over time at a rate of 10% max health per second. The challenge is considered successful if the player can survive for 30 seconds without reaching 0 health. The key to success is self-healing through Take a Frosty Swig!, which restores 45% of your health each time it is used.",
+      "waypointChatLink": "[&BJEPAAA=]"
     },
     {
       "stepId": "1595:poi:3970",
@@ -814,7 +814,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 632,
+      "trailIndex": 2947,
       "wikiText": "Pub Canach is a point of interest in Breezy Cay. Formerly a bar owned by Castaway Carol, this open-air establishment has since been purchased by Canach.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -881,7 +881,7 @@
           59570
         ]
       ],
-      "trailIndex": 637,
+      "trailIndex": 2963,
       "wikiText": "Help by making drinks, preparing food, restocking barrels, and calming rowdy patrons.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -902,7 +902,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 643,
+      "trailIndex": 2982,
       "wikiText": "Breezy Cay is a central area in southern Shipwreck Strand.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -923,7 +923,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 689,
+      "trailIndex": 3129,
       "wikiText": "Sailor's Heart is a point of interest along the southeast shore of Shipwreck Strand. The \"heart\" is a massive tree atop a floating stone, its canopy of deep red leaves and orbs of Castoran magic covering a large portion of Breezy Cay.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -944,7 +944,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 734,
+      "trailIndex": 3273,
       "wikiText": "Fisher's Lookout Point is a place of power-a communing type hero challenge at the west side of Breezy Cay.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -965,7 +965,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 801,
+      "trailIndex": 3562,
       "wikiText": "Inquest Subterranean Research Facility is a point of interest at the south-west of Shipwreck Strand. This a massive underground laboratories complex created by the Inquest.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -986,7 +986,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 854,
+      "trailIndex": 3734,
       "wikiText": "The Misplaced Inquest Box is a hero challenge in Riddled Cove, located in the right cavern in the continuation of the Inquest Subterranean Research Facility.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1007,7 +1007,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 972,
+      "trailIndex": 4110,
       "wikiText": "Inquest Supply Cavern is a point of interest at the south-west of Shipwreck Strand. This is a little storage outpost linked to Inquest Subterranean Research Facility. There are Magneton disruptors in the nearby cavern.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1028,7 +1028,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1036,
+      "trailIndex": 4314,
       "wikiText": "Structural Integrity Reinforcement is a point of interest at the south-west of Shipwreck Strand.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1049,7 +1049,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 1054,
+      "trailIndex": 4374,
       "wikiText": "The Inquest Research Outpost is a place of power-a communing type hero challenge in Riddled Cove, it is located in the left cavern in the continuation of Inquest Subterranean Research Facility.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1070,10 +1070,10 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 1098,
+      "trailIndex": 4513,
       "wikiText": "The Inquest Infinite Intelligence Interpreter is a hero challenge in Riddled Cove.",
-      "waypointChatLink": "[&BJEPAAA=]",
-      "whatToDo": "Answer the questions by selecting the second/third response a total of three times. Necromancers have a fourth response to the first question that will instantly complete the challenge."
+      "whatToDo": "Answer the questions by selecting the second/third response a total of three times. Necromancers have a fourth response to the first question that will instantly complete the challenge.",
+      "waypointChatLink": "[&BJEPAAA=]"
     },
     {
       "stepId": "1595:poi:4000",
@@ -1092,7 +1092,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1105,
+      "trailIndex": 4536,
       "wikiText": "Inquest Confinement Pens is a point of interest at the south-west of Shipwreck Strand. This is where the Inquest troops of the cavern keep their test subjects into containment force fields to do experiments on them.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1113,7 +1113,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1199,
+      "trailIndex": 4837,
       "wikiText": "Greenroot Grotto Skimmerway is a point of interest at the south-west of Shipwreck Strand.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1134,7 +1134,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1291,
+      "trailIndex": 5133,
       "wikiText": "The Wardroom is a private Freebooter bar, accessible only by password and exclusively during the story mission Eyes, Ears, and Arms.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1155,7 +1155,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1354,
+      "trailIndex": 5335,
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -1175,7 +1175,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 1380,
+      "trailIndex": 5417,
       "wikiText": "Freebooter's Stateroom is a place of power-a communing type hero challenge in a subterranean cave. From ground level, drop down into the waterfall basin at Hammerhart Battery and then head west into the caves to reach the hero challenge.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1196,7 +1196,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1425,
+      "trailIndex": 5562,
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -1216,7 +1216,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1509,
+      "trailIndex": 5837,
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -1236,7 +1236,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1552,
+      "trailIndex": 5984,
       "wikiText": "The 'Booter's Path is a point of interest in northwestern Twisting Hollows, in the caves north of Hammerhart Battery. It is the entrance to the mini-dungeon 'Booter's Path.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1257,7 +1257,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1692,
+      "trailIndex": 6433,
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -1277,7 +1277,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1709,
+      "trailIndex": 6494,
       "wikiText": "Grogslinger's is a freebooter bar located at Twisting Hollows. It is also where [Group Event] Rescue the sick castaways and wreak havoc at Grogslinger's to stop the staff from serving poisoned drinks (80) event takes place.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1298,7 +1298,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1717,
+      "trailIndex": 6520,
       "wikiText": "Twisting Hollows is an area in western Shipwreck Strand.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1319,7 +1319,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1756,
+      "trailIndex": 6688,
       "wikiText": "Inquest Mining Operation is a point of interest at the south-west of Shipwreck Strand. At this location, player can find various needle shaped Inquest devices that are mining the ground with red lasers.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1340,7 +1340,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1799,
+      "trailIndex": 6898,
       "wikiText": "Twisting Hollows is an area in western Shipwreck Strand.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1361,7 +1361,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1809,
+      "trailIndex": 7168,
       "wikiText": "Crow's Nest is a point of interest at the north-west of Twisting Hollows.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1382,29 +1382,8 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 1972,
+      "trailIndex": 7691,
       "wikiText": "Lilycreek Cascade is a point of interest near the center of Guarded Glades. As the name implies, a small waterfall feeds into a creek dotted with lily pads there.",
-      "waypointChatLink": "[&BJEPAAA=]"
-    },
-    {
-      "stepId": "1595:poi:4053",
-      "mapId": 1595,
-      "zoneName": "Shipwreck Strand",
-      "type": "poi",
-      "objectiveId": "4053",
-      "coord": [
-        9936,
-        58512
-      ],
-      "recommendedLevel": null,
-      "name": "Seneschal Sands",
-      "prereqs": [],
-      "order": 57,
-      "source": [
-        "gw2api:poi"
-      ],
-      "trailIndex": 1995,
-      "wikiText": "Seneschal Sands is a point of interest in Guarded Glades, at the west edge of Shipwreck Strand. Guarded by a pair of crushing horrors with another, stronger one watching from the cliffs above, this is where Kela, Seneschal of Waves resides.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -1420,11 +1399,11 @@
       "recommendedLevel": null,
       "name": "The Neverfalls",
       "prereqs": [],
-      "order": 58,
+      "order": 57,
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2061,
+      "trailIndex": 7981,
       "wikiText": "The Neverfalls is a point of interest at the west of Shipwreck Strand.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
@@ -1441,12 +1420,33 @@
       "recommendedLevel": null,
       "name": "Guarded Glades",
       "prereqs": [],
+      "order": 58,
+      "source": [
+        "gw2api:poi"
+      ],
+      "trailIndex": 7993,
+      "wikiText": "Guarded Glades is an area in western Shipwreck Strand.",
+      "waypointChatLink": "[&BJEPAAA=]"
+    },
+    {
+      "stepId": "1595:poi:4053",
+      "mapId": 1595,
+      "zoneName": "Shipwreck Strand",
+      "type": "poi",
+      "objectiveId": "4053",
+      "coord": [
+        9936,
+        58512
+      ],
+      "recommendedLevel": null,
+      "name": "Seneschal Sands",
+      "prereqs": [],
       "order": 59,
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2061,
-      "wikiText": "Guarded Glades is an area in western Shipwreck Strand.",
+      "trailIndex": 8064,
+      "wikiText": "Seneschal Sands is a point of interest in Guarded Glades, at the west edge of Shipwreck Strand. Guarded by a pair of crushing horrors with another, stronger one watching from the cliffs above, this is where Kela, Seneschal of Waves resides.",
       "waypointChatLink": "[&BJEPAAA=]"
     },
     {
@@ -1466,7 +1466,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 2087,
+      "trailIndex": 8175,
       "wikiText": "The Castoran Headland is a place of power-a communing type hero challenge on a plateau in Guarded Glades.",
       "waypointChatLink": "[&BMwPAAA=]"
     },
@@ -1487,7 +1487,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2139,
+      "trailIndex": 8343,
       "wikiText": "Spindrift Burrow is a point of interest north of Guarded Glades.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -1508,7 +1508,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2241,
+      "trailIndex": 8671,
       "waypointChatLink": "[&BJwPAAA=]"
     },
     {
@@ -1528,7 +1528,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 2321,
+      "trailIndex": 8927,
       "wikiText": "Castaway is a hero challenge NPC attempting to break into a locked chest. Helping her will almost inevitably lead to being jumpscared by a magical weapon.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -1549,7 +1549,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2370,
+      "trailIndex": 9085,
       "wikiText": "Congregation of the Sheltered is a secluded cave where the adherents of Shelterer Thornbloom make their home.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -1570,7 +1570,7 @@
       "source": [
         "gw2api:skill_challenges"
       ],
-      "trailIndex": 2387,
+      "trailIndex": 9139,
       "wikiText": "Shelterer's Backstage is a place of power-a communing type hero challenge in a ground level cave within Shoalstone. To reach it, start at Thornbloom Ravine at the coast, and follow the ravine northwest to the Congregation of the Sheltered.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -1591,7 +1591,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2476,
+      "trailIndex": 9423,
       "wikiText": "Sheltered Path is a point of interest in Shoalstone, and one of the entryways leading to the Congregation of the Sheltered.",
       "waypointChatLink": "[&BJwPAAA=]"
     },
@@ -1612,7 +1612,7 @@
       "source": [
         "gw2api:poi"
       ],
-      "trailIndex": 2499,
+      "trailIndex": 9504,
       "wikiText": "Starlit Stair is a point of interest along the westernmost edge of Shipwreck Strand, in the caverns of Guarded Glades that border Shoalstone. It leads to Starlit Weald.",
       "waypointChatLink": "[&BJwPAAA=]"
     }

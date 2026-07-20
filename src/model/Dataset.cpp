@@ -59,6 +59,124 @@ namespace
         }
         return out;
     }
+    float JNum(const json &j, const char *k)
+    {
+        return (float)(j.contains(k) && j[k].is_number() ? j[k].get<double>() : 0.0);
+    }
+    std::vector<RouteMarker> JRouteMarkers(const json &o, const char *key)
+    {
+        std::vector<RouteMarker> out;
+        auto it = o.find(key);
+        if (it == o.end() || !it->is_array())
+            return out;
+        out.reserve(it->size());
+        for (const auto &m : *it)
+        {
+            if (!m.is_object())
+                continue;
+            RouteMarker mk;
+            mk.X = JNum(m, "x");
+            mk.Y = JNum(m, "y");
+            mk.Z = JNum(m, "z");
+            mk.TrailIndex = JInt(m, "trailIndex", -1);
+            mk.Mount = JStr(m, "mount");
+            mk.Icon = JStr(m, "icon");
+            if (!mk.Icon.empty())
+                out.push_back(std::move(mk));
+        }
+        return out;
+    }
+    std::vector<RouteTransition> JRouteTransitions(const json &o, const char *key)
+    {
+        std::vector<RouteTransition> out;
+        auto it = o.find(key);
+        if (it == o.end() || !it->is_array())
+            return out;
+        out.reserve(it->size());
+        for (const auto &v : *it)
+        {
+            if (!v.is_object())
+                continue;
+            RouteTransition tr;
+            tr.Id = JStr(v, "id");
+            tr.SourceBranch = JStr(v, "sourceBranch");
+            tr.SourceType = JStr(v, "sourceType");
+            tr.SourceFile = JStr(v, "sourceFile");
+            tr.Message = JStr(v, "message");
+            tr.MapId = (uint32_t)JInt(v, "mapId", 0);
+            tr.X = JNum(v, "x");
+            tr.Y = JNum(v, "y");
+            tr.Z = JNum(v, "z");
+            tr.TrailIndex = JInt(v, "trailIndex", -1);
+            tr.SectionBefore = JInt(v, "sectionBefore", -1);
+            tr.SectionAfter = JInt(v, "sectionAfter", -1);
+            if (v.contains("coord") && v["coord"].is_array() && v["coord"].size() >= 2)
+            {
+                tr.CX = v["coord"][0].get<float>();
+                tr.CY = v["coord"][1].get<float>();
+            }
+            if (v.contains("links") && v["links"].is_array())
+                for (const auto &l : v["links"])
+                {
+                    if (!l.is_object())
+                        continue;
+                    RouteTransitionLink link;
+                    link.Label = JStr(l, "label");
+                    link.ChatLink = JStr(l, "chatLink");
+                    if (!link.ChatLink.empty())
+                        tr.Links.push_back(std::move(link));
+                }
+            if (tr.Links.empty() && v.contains("chatLinks") && v["chatLinks"].is_array())
+                for (const auto &l : v["chatLinks"])
+                {
+                    if (!l.is_string())
+                        continue;
+                    RouteTransitionLink link;
+                    link.ChatLink = l.get<std::string>();
+                    if (!link.ChatLink.empty())
+                        tr.Links.push_back(std::move(link));
+                }
+            if (!tr.Id.empty() && !tr.Links.empty())
+                out.push_back(std::move(tr));
+        }
+        return out;
+    }
+    void ReadStepsOverlay(const json &o, std::map<std::string, RouteStepInfo> &out)
+    {
+        if (!o.contains("steps") || !o["steps"].is_object())
+            return;
+        for (auto it = o["steps"].begin(); it != o["steps"].end(); ++it)
+        {
+            const auto &v = it.value();
+            RouteStepInfo info;
+            info.Order = JInt(v, "order", 0);
+            info.TrailIndex = JInt(v, "trailIndex", -1);
+            out[it.key()] = info;
+        }
+    }
+    RouteOverlay ReadRouteOverlay(const json &r)
+    {
+        RouteOverlay route;
+        route.Id = JStr(r, "id");
+        route.Label = JStr(r, "label");
+        route.Author = JStr(r, "author");
+        route.Kind = JStr(r, "kind");
+        route.Source = JStr(r, "source");
+        route.SourceBranch = JStr(r, "sourceBranch");
+        route.Complete = JBool(r, "complete", true);
+        if (r.contains("trail") && r["trail"].is_array())
+        {
+            route.Trail.reserve(r["trail"].size());
+            for (const auto &p : r["trail"])
+                if (p.is_array() && p.size() >= 3)
+                    route.Trail.push_back({p[0].get<float>(), p[1].get<float>(), p[2].get<float>()});
+        }
+        route.Sections = JTrailSections(r, "sections", (int)route.Trail.size());
+        ReadStepsOverlay(r, route.Steps);
+        route.RouteMarkers = JRouteMarkers(r, "routeMarkers");
+        route.RouteTransitions = JRouteTransitions(r, "routeTransitions");
+        return route;
+    }
     std::string ParentDir(const std::string &path)
     {
         const size_t slash = path.find_last_of("\\/");
@@ -115,15 +233,15 @@ namespace
         return out;
     }
 
-    // Clone the primary steps, overlay the alt route's per-stepId {order, trailIndex}, and re-sort by
+    // Clone the primary steps, overlay a route's per-stepId {order, trailIndex}, and re-sort by
     // order. Steps absent from the overlay keep their primary slot.
-    std::vector<Step> BuildAltSteps(const Zone &z)
+    std::vector<Step> BuildRouteSteps(const Zone &z, const RouteOverlay &route)
     {
         std::vector<Step> list = z._primarySteps;
         for (Step &s : list)
         {
-            auto it = z.Alt.Steps.find(s.StepId);
-            if (it != z.Alt.Steps.end())
+            auto it = route.Steps.find(s.StepId);
+            if (it != route.Steps.end())
             {
                 s.Order = it->second.Order;
                 s.TrailIndex = it->second.TrailIndex;
@@ -133,6 +251,26 @@ namespace
                          { return a.Order < b.Order; });
         return list;
     }
+    const char *RoutePreferenceId(int pref)
+    {
+        switch (pref)
+        {
+        case 1: return "tekkit-mount";
+        case 2: return "lady-foot";
+        case 3: return "lady-mount";
+        default: return "tekkit-foot";
+        }
+    }
+    std::vector<std::string> RouteFallbackOrder(int pref)
+    {
+        switch (pref)
+        {
+        case 1: return {"tekkit-mount", "lady-mount", "tekkit-foot", "lady-foot"};
+        case 2: return {"lady-foot", "tekkit-foot", "lady-mount", "tekkit-mount"};
+        case 3: return {"lady-mount", "tekkit-mount", "lady-foot", "tekkit-foot"};
+        default: return {"tekkit-foot", "lady-foot", "tekkit-mount", "lady-mount"};
+        }
+    }
 }
 
 void Zone::Activate(const std::string &preferredKind)
@@ -141,6 +279,9 @@ void Zone::Activate(const std::string &preferredKind)
     {
         _primarySteps = Steps;
         _primaryTrail = Trail;
+        _primaryTrailSections = TrailSections;
+        _primaryRouteMarkers = RouteMarkers;
+        _primaryRouteTransitions = RouteTransitions;
         _primaryCaptured = true;
     }
 
@@ -148,25 +289,107 @@ void Zone::Activate(const std::string &preferredKind)
     {
         if (!_altBuilt)
         {
-            _altSteps = BuildAltSteps(*this);
+            _altSteps = BuildRouteSteps(*this, Alt);
             _altBuilt = true;
         }
         Steps = _altSteps;
         Trail = Alt.Trail;
+        TrailSections = Alt.Sections;
+        RouteMarkers = Alt.RouteMarkers;
+        RouteTransitions = Alt.RouteTransitions;
         ActiveKind = Alt.Kind;
+        ActiveRouteId = Alt.Id.empty() ? Alt.Kind : Alt.Id;
+        ActiveRouteLabel = Alt.Label.empty() ? Alt.Kind : Alt.Label;
+        ActiveRouteAuthor = Alt.Author;
+        ActiveRouteFallback = false;
         ActiveComplete = Alt.Complete;
     }
     else
     {
         Steps = _primarySteps;
         Trail = _primaryTrail;
+        TrailSections = _primaryTrailSections;
+        RouteMarkers = _primaryRouteMarkers;
+        RouteTransitions = _primaryRouteTransitions;
         ActiveKind = PrimaryKind.empty() ? "foot" : PrimaryKind;
+        ActiveRouteId = ActiveKind;
+        ActiveRouteLabel = ActiveKind;
+        ActiveRouteAuthor.clear();
+        ActiveRouteFallback = false;
         ActiveComplete = PrimaryComplete;
     }
 }
 
-// Read a zone's heavy geometry (trail + altRoute) from `j` into `out`. Shared by LoadZone (back-compat: an
-// un-split <slug>.json that still carries them) and LoadZoneTrail (the lazy <slug>.trail.json side-file). Leaves
+void Zone::Activate(int routePreference)
+{
+    if (!_primaryCaptured)
+    {
+        _primarySteps = Steps;
+        _primaryTrail = Trail;
+        _primaryTrailSections = TrailSections;
+        _primaryRouteMarkers = RouteMarkers;
+        _primaryRouteTransitions = RouteTransitions;
+        _primaryCaptured = true;
+    }
+
+    if (!RouteVariants.empty())
+    {
+        const RouteOverlay *chosen = nullptr;
+        const std::string requested = RoutePreferenceId(routePreference);
+        std::vector<std::string> order = RouteFallbackOrder(routePreference);
+        auto findRoute = [&](const std::string &id, bool requireComplete) -> const RouteOverlay *
+        {
+            auto it = std::find_if(RouteVariants.begin(), RouteVariants.end(), [&](const RouteOverlay &r)
+                                   { return r.Id == id && r.Trail.size() >= 2 && (!requireComplete || r.Complete); });
+            return it != RouteVariants.end() ? &*it : nullptr;
+        };
+        for (bool requireComplete : {true, false})
+        {
+            for (const std::string &id : order)
+            {
+                chosen = findRoute(id, requireComplete);
+                if (chosen)
+                    break;
+            }
+            if (chosen)
+                break;
+        }
+        for (bool requireComplete : {true, false})
+        {
+            if (chosen)
+                break;
+            for (const RouteOverlay &r : RouteVariants)
+                if (r.Trail.size() >= 2 && (!requireComplete || r.Complete))
+                {
+                    chosen = &r;
+                    break;
+                }
+        }
+
+        if (chosen)
+        {
+            Steps = BuildRouteSteps(*this, *chosen);
+            Trail = chosen->Trail;
+            TrailSections = chosen->Sections;
+            RouteMarkers = chosen->RouteMarkers;
+            RouteTransitions = chosen->RouteTransitions;
+            ActiveKind = chosen->Kind.empty() ? "foot" : chosen->Kind;
+            ActiveRouteId = chosen->Id;
+            ActiveRouteLabel = chosen->Label.empty() ? chosen->Id : chosen->Label;
+            ActiveRouteAuthor = chosen->Author;
+            ActiveRouteFallback = chosen->Id != requested;
+            ActiveComplete = chosen->Complete;
+            return;
+        }
+    }
+
+    Activate(routePreference == 1 || routePreference == 3 ? "mount" : "foot");
+    ActiveRouteFallback = false;
+}
+
+// Read a zone's heavy geometry (trail + legacy altRoute + source-aware routeVariants) from `j` into `out`.
+// Shared by LoadZone (back-compat: an un-split <slug>.json that still carries them) and
+// LoadZoneTrail (the lazy <slug>.trail.json side-file). Leaves
 // the zone meta + steps untouched, so it can layer the trail onto an already-metadata-loaded Zone.
 static void ReadZoneGeom(const json &j, Zone &out)
 {
@@ -178,29 +401,26 @@ static void ReadZoneGeom(const json &j, Zone &out)
             if (p.is_array() && p.size() >= 3)
                 out.Trail.push_back({p[0].get<float>(), p[1].get<float>(), p[2].get<float>()});
     }
+    out.TrailSections = JTrailSections(j, "sections", (int)out.Trail.size());
+    out.RouteMarkers = JRouteMarkers(j, "routeMarkers");
+    out.RouteTransitions = JRouteTransitions(j, "routeTransitions");
     if (j.contains("altRoute") && j["altRoute"].is_object())
     {
         const auto &ar = j["altRoute"];
-        out.Alt = RouteOverlay{};
-        out.Alt.Kind = JStr(ar, "kind");
-        out.Alt.Complete = JBool(ar, "complete", true);
-        if (ar.contains("trail") && ar["trail"].is_array())
-        {
-            out.Alt.Trail.reserve(ar["trail"].size());
-            for (const auto &p : ar["trail"])
-                if (p.is_array() && p.size() >= 3)
-                    out.Alt.Trail.push_back({p[0].get<float>(), p[1].get<float>(), p[2].get<float>()});
-        }
-        if (ar.contains("steps") && ar["steps"].is_object())
-            for (auto it = ar["steps"].begin(); it != ar["steps"].end(); ++it)
-            {
-                const auto &v = it.value();
-                RouteStepInfo info;
-                info.Order = JInt(v, "order", 0);
-                info.TrailIndex = JInt(v, "trailIndex", -1);
-                out.Alt.Steps[it.key()] = info;
-            }
+        out.Alt = ReadRouteOverlay(ar);
         out.HasAlt = out.Alt.Trail.size() >= 2 && !out.Alt.Kind.empty();
+    }
+    if (j.contains("routeVariants") && j["routeVariants"].is_array())
+    {
+        out.RouteVariants.clear();
+        for (const auto &r : j["routeVariants"])
+        {
+            if (!r.is_object())
+                continue;
+            RouteOverlay route = ReadRouteOverlay(r);
+            if (!route.Id.empty() && route.Trail.size() >= 2)
+                out.RouteVariants.push_back(std::move(route));
+        }
     }
 }
 
@@ -292,12 +512,15 @@ bool LoadZone(const std::string &path, Zone &out)
                              { return a.Order < b.Order; });
         }
 
-        // Route variants (schema 3): which kind the primary Steps/Trail represent, and the OTHER variant
-        // (foot vs mount) with its own trail + per-stepId order/trailIndex overlay. The module's PathType
-        // setting picks one via Zone::Activate; a single-route zone has no altRoute and always uses primary.
+        // Legacy primary/altRoute metadata is still read for old JSON. Schema 5 routeVariants live in the
+        // sidecar geometry and are selected by Zone::Activate(int) when present.
         out.PrimaryKind = JStr(j, "primaryKind").empty() ? "foot" : JStr(j, "primaryKind");
         out.PrimaryComplete = JBool(j, "primaryComplete", true);
         out.ActiveKind = out.PrimaryKind;
+        out.ActiveRouteId = out.PrimaryKind;
+        out.ActiveRouteLabel = out.PrimaryKind;
+        out.ActiveRouteAuthor.clear();
+        out.ActiveRouteFallback = false;
         out.ActiveComplete = out.PrimaryComplete;
         ReadZoneGeom(j, out); // trail + altRoute IF an un-split file still has them inline (else stays empty -> lazy)
 
@@ -317,7 +540,7 @@ bool LoadZone(const std::string &path, Zone &out)
     return out.Loaded;
 }
 
-// Lazy-load a zone's trail + altRoute from <zonesDir>/<z.Slug>.trail.json onto an already-metadata-loaded Zone.
+// Lazy-load a zone's trail + route overlays from <zonesDir>/<z.Slug>.trail.json onto an already-metadata-loaded Zone.
 bool LoadZoneTrail(const std::string &zonesDir, Zone &z)
 {
     if (z.GeomLoaded)
@@ -480,11 +703,6 @@ namespace
 
         out.Loaded = out.MapId != 0 && !out.Routes.empty();
         return out.Loaded;
-    }
-
-    inline float JNum(const json &j, const char *k)
-    {
-        return (float)(j.contains(k) && j[k].is_number() ? j[k].get<double>() : 0.0);
     }
 
     // Farming dataset: the same route schema as a dungeon (reusing Instance) PLUS per-route material/category,

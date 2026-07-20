@@ -13,7 +13,7 @@
 // Enum-label tables, parallel to the Config enum indices. inline => a single shared definition across TUs.
 inline const char* const kRouteModeNames[]  = { "Trail", "Hybrid Trail", "Hybrid Nearest", "Direct Trail", "Direct Nearest" };
 inline const char* const kObjCircleSurfaceNames[] = { "Map + minimap", "Map only", "Minimap only", "Off" };
-inline const char* const kPathTypeNames[]   = { "On Foot", "Mount" };
+inline const char* const kPathTypeNames[]   = { "On Foot (Tekkit)", "Mount (Tekkit)", "On Foot (Lady Elyssa)", "With Mounts (Lady Elyssa)" };
 inline const char* const kUpcomingNames[]   = { "All", "Open-world only", "Dungeon only", "None" };
 inline const char* const kTrailColorNames[] = { "Gold", "Amber", "Cyan", "Green", "Magenta", "White" };
 inline const char* const kTrailStyleNames[] = { "Footprints", "Arrows", "Dashed", "Line", "Dots" };

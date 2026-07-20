@@ -130,7 +130,7 @@ struct Config
 
     // Routing
     int routeMode = 2; // RouteMode (HybridNearest)
-    int pathType = 0;  // PathType (OnFoot)
+    int pathType = 0;  // Route preference (0 = On Foot Tekkit)
     int approachMeters = 260;
     bool debugRoute = false;
     bool debugApi = false;              // show the journal reward-fetch diagnostic (Diagnostics section toggle)

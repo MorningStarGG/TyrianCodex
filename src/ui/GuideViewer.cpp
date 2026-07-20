@@ -59,12 +59,17 @@ static void DrawRouteDebug(App &app, float fs)
     if (!app.config.debugRoute)
         return;
     static const char *kMode[] = {"Trail", "HybridTrail", "HybridNearest", "DirectTrail", "DirectNearest"};
-    // Show the ACTIVE route kind (Activate falls back to primary when the requested kind is absent, so this
-    // can differ from the PathType setting) + a tag when the route is partial.
-    const char *akind = app.state.zone.ActiveKind.empty() ? (app.config.pathType == 1 ? "mount" : "foot") : app.state.zone.ActiveKind.c_str();
-    char dbg[180];
-    std::snprintf(dbg, sizeof(dbg), "[%s] path:%s%s  step %d  off-route:%s  trail %.0fm",
-                  kMode[std::clamp(app.config.routeMode, 0, 4)], akind, app.state.zone.ActiveComplete ? "" : " (partial)",
+    const int pref = std::clamp(app.config.pathType, 0, 3);
+    const char *requested = kPathTypeNames[pref];
+    const std::string active = app.state.zone.ActiveRouteLabel.empty()
+                                   ? (app.state.zone.ActiveKind.empty() ? std::string(requested) : app.state.zone.ActiveKind)
+                                   : app.state.zone.ActiveRouteLabel;
+    const std::string routeText = app.state.zone.ActiveRouteFallback
+                                      ? (active + " (fallback from " + requested + ")")
+                                      : active;
+    char dbg[260];
+    std::snprintf(dbg, sizeof(dbg), "[%s] route:%s  step %d  off-route:%s  trail %.0fm",
+                  kMode[std::clamp(app.config.routeMode, 0, 4)], routeText.c_str(),
                   app.state.curStep, app.state.offRoute ? "yes" : "no", app.trailRenderer.NearestDist());
     Gw2Ui::Label(dbg, IM_COL32(150, 200, 255, 255), false, nullptr, fs - 4.f);
 }
@@ -712,6 +717,142 @@ static bool BuildWaypointTravelOffer(App &app, const Step &targetStep, WaypointT
                                          targetStep.TrailIndex, out);
 }
 
+static const Step *FindWaypointByChatLink(App &app, const std::string &chatLink)
+{
+    if (chatLink.empty())
+        return nullptr;
+    for (const Step &wp : app.state.zone.Steps)
+        if (wp.Type == "waypoint" && WaypointLinkForStep(wp) == chatLink)
+            return &wp;
+    return nullptr;
+}
+
+static bool StepIsAfterTransition(const Zone &zone, const RouteTransition &tr, const Step &step)
+{
+    (void)zone;
+    if (step.TrailIndex < 0 || tr.TrailIndex < 0)
+        return false;
+    return step.TrailIndex >= tr.TrailIndex;
+}
+
+static const RouteTransition *RouteTransitionForStep(App &app, const Step &targetStep)
+{
+    if (app.state.zone.ActiveRouteAuthor != "lady" || ModeIsNearest(app.config.routeMode))
+        return nullptr;
+    const RouteTransition *best = nullptr;
+    for (const RouteTransition &tr : app.state.zone.RouteTransitions)
+    {
+        if (tr.Links.empty() || !StepIsAfterTransition(app.state.zone, tr, targetStep))
+            continue;
+        if (!best || tr.TrailIndex > best->TrailIndex)
+            best = &tr;
+    }
+    return best;
+}
+
+static bool BuildRouteTransitionTravelOffer(App &app, const Step &targetStep, const RouteTransition &tr,
+                                            WaypointTravelOffer &out)
+{
+    if (!MumbleLink || !TravelOfferRouteInputsReady(app, targetStep))
+    {
+        SetTravelOfferDebug(out, "waiting: route transition inputs are not ready");
+        return false;
+    }
+
+    const Follow::Vec2 playerXz{MumbleLink->AvatarPosition.X, MumbleLink->AvatarPosition.Z};
+    const Follow::Vec2 targetXz = StepWorldXz(app.state.zone, targetStep);
+    const int targetTrailIndex = TargetTrailIndex(app, targetXz, targetStep.TrailIndex);
+    const float playerDistance = RouteModeDistanceToTarget(app, playerXz, targetXz, targetTrailIndex);
+
+    struct Choice
+    {
+        std::string name;
+        std::string link;
+        std::string stepId;
+        uint32_t mapId = 0;
+        float cx = 0.f;
+        float cy = 0.f;
+        float dist = 0.f;
+    };
+    std::vector<Choice> choices;
+    choices.reserve(tr.Links.size());
+    int skippedLocked = 0;
+
+    for (const RouteTransitionLink &src : tr.Links)
+    {
+        Choice c;
+        c.name = src.Label.empty() ? (tr.Message.empty() ? std::string("Authored waypoint") : tr.Message) : src.Label;
+        c.link = src.ChatLink;
+        c.mapId = tr.MapId != 0 ? tr.MapId : app.state.zone.MapId;
+        c.cx = tr.CX;
+        c.cy = tr.CY;
+        if (const Step *wp = FindWaypointByChatLink(app, src.ChatLink))
+        {
+            if (!app.progress.IsConfirmed(app.state.currentChar, wp->StepId))
+            {
+                ++skippedLocked;
+                continue;
+            }
+            c.name = wp->Name;
+            c.stepId = wp->StepId;
+            c.mapId = app.state.zone.MapId;
+            c.cx = wp->CX;
+            c.cy = wp->CY;
+        }
+
+        float wx = tr.X, wz = tr.Z;
+        if (c.cx != 0.f || c.cy != 0.f)
+            Coords::ContinentToWorldXZ(c.cx, c.cy, app.state.zone.ContRect, app.state.zone.MapRect, wx, wz);
+        const Follow::Vec2 wpXz{wx, wz};
+        c.dist = RouteModeDistanceToTarget(app, wpXz, targetXz, targetTrailIndex);
+        if (TravelOfferWorthIt(playerDistance, c.dist))
+            choices.push_back(std::move(c));
+    }
+
+    if (choices.empty())
+    {
+        SetTravelOfferDebug(out, "rejected: Lady route transfer %s was not useful for %s (%d locked)",
+                            tr.Id.c_str(), targetStep.Name.c_str(), skippedLocked);
+        return false;
+    }
+    std::sort(choices.begin(), choices.end(), [](const Choice &a, const Choice &b)
+              { return a.dist < b.dist; });
+
+    out.active = true;
+    out.openRequested = true;
+    out.openedAt = ImGui::GetTime();
+    out.targetKind = TravelOfferTargetKind::RouteTransition;
+    out.targetStepId = targetStep.StepId;
+    out.targetName = targetStep.Name.empty() ? targetStep.Type : targetStep.Name;
+    out.targetMapId = app.state.zone.MapId;
+    out.targetCx = targetStep.CX;
+    out.targetCy = targetStep.CY;
+    out.routeTransitionId = tr.Id;
+    out.routeTransitionMessage = tr.Message;
+    out.waypointChoice = 0;
+    out.routeChoiceRequired = tr.Links.size() > 1;
+    out.waypointChoiceNames.clear();
+    out.waypointChoiceLinks.clear();
+    for (const Choice &c : choices)
+    {
+        out.waypointChoiceNames.push_back(c.name);
+        out.waypointChoiceLinks.push_back(c.link);
+    }
+    const Choice &best = choices.front();
+    out.waypointStepId = best.stepId;
+    out.waypointName = best.name;
+    out.waypointLink = best.link;
+    out.waypointMapId = best.mapId;
+    out.waypointCx = best.cx;
+    out.waypointCy = best.cy;
+    out.playerDistance = playerDistance;
+    out.waypointDistance = best.dist;
+    out.savedDistance = playerDistance - best.dist;
+    SetTravelOfferDebug(out, "offered: Lady route transfer %s for %s via %s current %.0fm after %.0fm",
+                        tr.Id.c_str(), targetStep.Name.c_str(), best.name.c_str(), playerDistance, best.dist);
+    return true;
+}
+
 static std::string TravelTargetEvalId(TravelOfferTargetKind kind, uint32_t mapId, float cx, float cy)
 {
     char buf[128];
@@ -1148,7 +1289,9 @@ static void UpdateWaypointTravelOffer(App &app)
         offer.evaluatedProgressVersion = progressVersion;
         return;
     }
-    if (!offer.manualChoice && offer.active && offer.targetKind != TravelOfferTargetKind::Step)
+    if (!offer.manualChoice && offer.active &&
+        offer.targetKind != TravelOfferTargetKind::Step &&
+        offer.targetKind != TravelOfferTargetKind::RouteTransition)
         ClearAutomaticWaypointTravelOffer(offer);
     if (app.state.inDungeon)
     {
@@ -1200,10 +1343,11 @@ static void UpdateWaypointTravelOffer(App &app)
         SetTravelOfferDebug(offer, "rejected: current step has no step id");
         return;
     }
-    if (step.StepId == offer.evaluatedStepId && progressVersion == offer.evaluatedProgressVersion)
+    const RouteTransition *routeTransition = RouteTransitionForStep(app, step);
+    const std::string evaluated = routeTransition ? ("route:" + routeTransition->Id + ":" + step.StepId) : step.StepId;
+    if (evaluated == offer.evaluatedStepId && progressVersion == offer.evaluatedProgressVersion)
         return;
 
-    const std::string evaluated = step.StepId;
     offer = WaypointTravelOffer{};
     offer.eligibleSince = now - kWaypointTravelOfferStartupDelaySeconds;
     offer.evaluatedStepId = evaluated;
@@ -1212,6 +1356,12 @@ static void UpdateWaypointTravelOffer(App &app)
     if (cooldown != app.state.travelOfferCooldownUntil.end() && now < cooldown->second)
     {
         SetTravelOfferDebug(offer, "cooldown: %s can be offered again in %.0fs", step.Name.c_str(), cooldown->second - now);
+        return;
+    }
+    if (routeTransition && BuildRouteTransitionTravelOffer(app, step, *routeTransition, offer))
+    {
+        offer.evaluatedStepId = evaluated;
+        offer.evaluatedProgressVersion = progressVersion;
         return;
     }
     BuildWaypointTravelOffer(app, step, offer);
@@ -1237,9 +1387,28 @@ static void CooldownWaypointTravelOffer(App &app, const std::string &stepId)
     cd[stepId] = now + kWaypointTravelOfferCooldownSeconds;
 }
 
+static void ApplySelectedWaypointChoice(App &app, WaypointTravelOffer &offer)
+{
+    if (offer.waypointChoiceLinks.empty())
+        return;
+    const int idx = std::clamp(offer.waypointChoice, 0, (int)offer.waypointChoiceLinks.size() - 1);
+    offer.waypointLink = offer.waypointChoiceLinks[idx];
+    if (idx < (int)offer.waypointChoiceNames.size())
+        offer.waypointName = offer.waypointChoiceNames[idx];
+    if (const Step *wp = FindWaypointByChatLink(app, offer.waypointLink))
+    {
+        offer.waypointStepId = wp->StepId;
+        offer.waypointName = offer.waypointName.empty() ? wp->Name : offer.waypointName;
+        offer.waypointMapId = app.state.zone.MapId;
+        offer.waypointCx = wp->CX;
+        offer.waypointCy = wp->CY;
+    }
+}
+
 static void AcceptWaypointTravelOffer(App &app)
 {
     WaypointTravelOffer &offer = app.state.travelOffer;
+    ApplySelectedWaypointChoice(app, offer);
     // Cooldown the step/target so the AUTOMATIC generator doesn't immediately re-pop the card for the waypoint
     // we just travelled to. This applies to manual accepts too: manual clicks bypass the cooldown CHECK, so it
     // only suppresses the auto re-offer, never a future manual click. (Skipping it for manualChoice was the
@@ -1250,7 +1419,7 @@ static void AcceptWaypointTravelOffer(App &app)
     if (offer.targetKind == TravelOfferTargetKind::ZoneTravel && offer.targetMapId != 0)
         app.travel.StartTravel(offer.targetMapId);
 
-    if (!offer.waypointStepId.empty())
+    if (!offer.waypointStepId.empty() || !offer.waypointLink.empty())
     {
         // Pan + click the resolved hop. A closer-OBJECTIVE (Step) offer keeps its waypoint AND target in the
         // active zone -> the step assist. Otherwise (TRAVEL: zone or personal) the hop may be in ANOTHER zone;
@@ -1290,6 +1459,47 @@ enum class TravelMetricIcon
     Waypoint,
     Saved,
 };
+
+static std::string TrimCopy(std::string s)
+{
+    auto isSpace = [](unsigned char c) { return c == ' ' || c == '\t' || c == '\r' || c == '\n'; };
+    while (!s.empty() && isSpace((unsigned char)s.front()))
+        s.erase(s.begin());
+    while (!s.empty() && isSpace((unsigned char)s.back()))
+        s.pop_back();
+    return s;
+}
+
+static bool StartsWithNoCase(const std::string &s, const std::string &prefix)
+{
+    if (prefix.empty() || s.size() < prefix.size())
+        return false;
+    for (size_t i = 0; i < prefix.size(); ++i)
+        if (std::tolower((unsigned char)s[i]) != std::tolower((unsigned char)prefix[i]))
+            return false;
+    return true;
+}
+
+static std::string RouteTransitionInstruction(std::string message, const std::string &waypointName)
+{
+    message = TrimCopy(std::move(message));
+    const std::string wp = TrimCopy(waypointName);
+    if (message.empty() || wp.empty())
+        return message;
+    if (message.size() == wp.size() && StartsWithNoCase(message, wp))
+        return std::string();
+    if (StartsWithNoCase(message, wp))
+    {
+        message = TrimCopy(message.substr(wp.size()));
+        while (!message.empty() && (message.front() == ':' || message.front() == '-' || message.front() == ',' || message.front() == '.'))
+            message = TrimCopy(message.substr(1));
+        if (StartsWithNoCase(message, "and "))
+            message = TrimCopy(message.substr(4));
+        if (!message.empty())
+            message[0] = (char)std::toupper((unsigned char)message[0]);
+    }
+    return message;
+}
 
 static ImU32 TravelAlpha(ImU32 col, int alpha)
 {
@@ -1433,7 +1643,7 @@ static bool DrawTravelPromptButton(const char *id, const char *label, float widt
     return clicked;
 }
 
-static TravelOfferPromptResult DrawTravelOfferPromptCard(const WaypointTravelOffer &offer, bool allowActions)
+static TravelOfferPromptResult DrawTravelOfferPromptCard(WaypointTravelOffer &offer, bool allowActions)
 {
     const ImVec2 display = ImGui::GetIO().DisplaySize;
     const float width = std::min(680.f, std::max(280.f, display.x - 32.f));
@@ -1449,26 +1659,55 @@ static TravelOfferPromptResult DrawTravelOfferPromptCard(const WaypointTravelOff
     const float buttonH = 30.f;
     const float buttonGap = 12.f;
 
-    const std::string waypointName = offer.waypointName.empty() ? "the nearest waypoint" : offer.waypointName;
+    const int choiceIdx = offer.waypointChoiceLinks.empty() ? 0 : std::clamp(offer.waypointChoice, 0, (int)offer.waypointChoiceLinks.size() - 1);
+    const std::string selectedChoiceName = (!offer.waypointChoiceNames.empty() && choiceIdx < (int)offer.waypointChoiceNames.size())
+                                               ? offer.waypointChoiceNames[choiceIdx]
+                                               : offer.waypointName;
+    const std::string waypointName = selectedChoiceName.empty() ? "the nearest waypoint" : selectedChoiceName;
     const std::string targetName = offer.targetName.empty() ? "the next objective" : offer.targetName;
-    const bool hasMetrics = !offer.waypointName.empty(); // a prospective zone target has no closer-waypoint metrics
+    const bool routeTransfer = offer.targetKind == TravelOfferTargetKind::RouteTransition;
+    const bool hasMetrics = !offer.waypointName.empty() || routeTransfer; // a prospective zone target has no closer-waypoint metrics
     char title[256];
-    std::snprintf(title, sizeof(title), "Travel to %s?", hasMetrics ? waypointName.c_str() : targetName.c_str());
-    char body[384];
-    if (!hasMetrics)
+    std::snprintf(title, sizeof(title), "%s%s?", routeTransfer ? "Teleport to " : "Travel to ",
+                  hasMetrics ? waypointName.c_str() : targetName.c_str());
+    std::string bodyText;
+    if (routeTransfer)
+    {
+        const std::string instruction = RouteTransitionInstruction(offer.routeTransitionMessage, waypointName);
+        bodyText = "Lady Elyssa's route uses this waypoint before continuing toward " + targetName + ".";
+        if (!instruction.empty())
+            bodyText += "\n" + instruction + ".";
+        bodyText += "\nGuild Wars 2 will still ask you to confirm the teleport.";
+        if (offer.routeChoiceRequired)
+            bodyText += "\nChoose the intended waypoint before traveling.";
+    }
+    else if (!hasMetrics)
+    {
+        char body[384];
         std::snprintf(body, sizeof(body), "Start guided travel to %s. Travel routes you there; Show target reveals it on the map.",
                       targetName.c_str());
+        bodyText = body;
+    }
     else if (offer.manualChoice)
+    {
+        char body[384];
         std::snprintf(body, sizeof(body), "This is closer to %s. Travel opens the waypoint confirmation; Show target just pans to your destination.",
                       targetName.c_str());
+        bodyText = body;
+    }
     else
+    {
+        char body[384];
         std::snprintf(body, sizeof(body), "This is closer to %s. Guild Wars 2 will still ask you to confirm the teleport.",
                       targetName.c_str());
+        bodyText = body;
+    }
 
     const float titleH = std::max(28.f, Gw2Ui::MeasureWrappedHeight(title, titleFs, contentW));
-    const float bodyH = std::max(22.f, Gw2Ui::MeasureWrappedHeight(body, bodyFs, contentW));
+    const float bodyH = std::max(22.f, Gw2Ui::MeasureWrappedHeight(bodyText.c_str(), bodyFs, contentW));
+    const float choiceBlock = offer.routeChoiceRequired ? 36.f : 0.f;
     const float metricsBlock = hasMetrics ? (16.f + metricsH) : 0.f;
-    const float height = std::ceil(padY + titleH + 6.f + bodyH + metricsBlock + 17.f + buttonH + padY);
+    const float height = std::ceil(padY + titleH + 6.f + bodyH + choiceBlock + metricsBlock + 17.f + buttonH + padY);
     const float minCenterY = height * 0.5f + 8.f;
     const float maxCenterY = std::max(minCenterY, display.y - height * 0.5f - 8.f);
     const float centerY = std::min(std::max(display.y * 0.43f, minCenterY), maxCenterY);
@@ -1508,10 +1747,34 @@ static TravelOfferPromptResult DrawTravelOfferPromptCard(const WaypointTravelOff
                        Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle,
                        IM_COL32(255, 238, 202, 255), true, nullptr, titleFs, contentW, 1.15f);
         y += titleH + 6.f;
-        Gw2Ui::LabelIn(ImVec2(x, y), ImVec2(x + contentW, y + bodyH), body,
+        Gw2Ui::LabelIn(ImVec2(x, y), ImVec2(x + contentW, y + bodyH), bodyText.c_str(),
                        Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Top,
                        IM_COL32(210, 202, 182, 250), false, nullptr, bodyFs, contentW);
         y += bodyH;
+
+        if (offer.routeChoiceRequired)
+        {
+            y += 8.f;
+            ImGui::SetCursorScreenPos(ImVec2(x, y));
+            ImGui::SetNextItemWidth(contentW);
+            const char *preview = waypointName.c_str();
+            if (ImGui::BeginCombo("##route_transfer_choice", preview))
+            {
+                for (int i = 0; i < (int)offer.waypointChoiceLinks.size(); ++i)
+                {
+                    const std::string label = (i < (int)offer.waypointChoiceNames.size() && !offer.waypointChoiceNames[i].empty())
+                                                  ? offer.waypointChoiceNames[i]
+                                                  : offer.waypointChoiceLinks[i];
+                    const bool selected = offer.waypointChoice == i;
+                    if (ImGui::Selectable(label.c_str(), selected))
+                        offer.waypointChoice = i;
+                    if (selected)
+                        ImGui::SetItemDefaultFocus();
+                }
+                ImGui::EndCombo();
+            }
+            y += 28.f;
+        }
 
         if (hasMetrics)
         {
@@ -1659,6 +1922,8 @@ static void DrawTargetSwitchPrompt(App &app)
 // = the viewer's "Show on map" action button.
 static bool AutoTravelEnabledFor(const App &app, const WaypointTravelOffer &offer)
 {
+    if (offer.targetKind == TravelOfferTargetKind::RouteTransition)
+        return !offer.routeChoiceRequired && app.config.autoTravelCloserWaypoint;
     if (offer.manualChoice)
         return offer.targetKind == TravelOfferTargetKind::ZoneTravel ? app.config.autoTravelZoneClick
                                                                      : app.config.autoTravelViewerButton;
@@ -1697,6 +1962,7 @@ void DrawWaypointTravelOffer(App &app)
         AcceptWaypointTravelOffer(app);
     else if (result == TravelOfferPromptResult::ShowTarget)
     {
+        ApplySelectedWaypointChoice(app, offer);
         ShowOfferTargetOnly(app, offer);
         offer.active = false;
         offer.openRequested = false;
