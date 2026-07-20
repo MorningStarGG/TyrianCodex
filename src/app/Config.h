@@ -12,6 +12,7 @@ struct InfoBarConfig
     float offsetX = 0.f;      // horizontal nudge from centered position, px
     float offsetY = 0.f;      // inward nudge from the dock edge, px
     int opacity = 60;         // background %
+    int shadow = 0;           // text drop-shadow strength (0 = none; up to kShadowMax) -- for users who want plain text with a readable shadow instead of a dark bar
     float textSize = 24.f;
     int barHeight = 0;        // 0 Auto, else index into the Info Panel bar-height preset list
     bool hideInCombat = true;

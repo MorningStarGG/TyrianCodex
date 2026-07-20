@@ -37,7 +37,8 @@ namespace
         "Auto", "18 px", "20 px", "22 px", "24 px", "26 px", "28 px", "32 px", "36 px", "40 px", "44 px", "48 px", "56 px", "64 px"
     };
     static constexpr float kHeights[] = { 0.f, 18.f, 20.f, 22.f, 24.f, 26.f, 28.f, 32.f, 36.f, 40.f, 44.f, 48.f, 56.f, 64.f };
-    static constexpr int kHeightCount = static_cast<int>(sizeof(kHeights) / sizeof(kHeights[0]));
+    static     constexpr int kHeightCount = static_cast<int>(sizeof(kHeights) / sizeof(kHeights[0]));
+    constexpr int kShadowMax = 100;
 
     enum class MenuKind { None, Bar };
 
@@ -95,6 +96,7 @@ namespace
         bar.edge = std::clamp(bar.edge, 0, 1);
         bar.widthPct = std::clamp(bar.widthPct, 25, 100);
         bar.opacity = std::clamp(bar.opacity, 0, 100);
+        bar.shadow = std::clamp(bar.shadow, 0, kShadowMax);
         bar.textSize = std::clamp(bar.textSize, 12.f, 32.f);
         bar.barHeight = std::clamp(bar.barHeight, 0, kHeightCount - 1);
     }
@@ -173,6 +175,7 @@ namespace
         j["offsetX"] = bar.offsetX;
         j["offsetY"] = bar.offsetY;
         j["opacity"] = bar.opacity;
+        j["shadow"] = bar.shadow;
         j["textSize"] = bar.textSize;
         j["barHeight"] = bar.barHeight;
         j["hideInCombat"] = bar.hideInCombat;
@@ -191,6 +194,7 @@ namespace
         bar.offsetX = static_cast<float>(Api::Json::Num(j, "offsetX", bar.offsetX));
         bar.offsetY = static_cast<float>(Api::Json::Num(j, "offsetY", bar.offsetY));
         bar.opacity = Api::Json::Int(j, "opacity", bar.opacity);
+        bar.shadow = Api::Json::Int(j, "shadow", bar.shadow);
         bar.textSize = static_cast<float>(Api::Json::Num(j, "textSize", bar.textSize));
         bar.barHeight = Api::Json::Int(j, "barHeight", bar.barHeight);
         bar.hideInCombat = Api::Json::Bool(j, "hideInCombat", bar.hideInCombat);
@@ -210,6 +214,7 @@ namespace
         bar.offsetX = static_cast<float>(Api::Json::Num(j, "infoOffsetX", 0.0));
         bar.offsetY = static_cast<float>(Api::Json::Num(j, "infoOffsetY", 0.0));
         bar.opacity = Api::Json::Int(j, "infoOpacity", 60);
+        bar.shadow = Api::Json::Int(j, "infoShadow", 0);
         bar.textSize = static_cast<float>(Api::Json::Num(j, "infoTextSize", 24.0));
         bar.barHeight = Api::Json::Int(j, "infoBarHeight", 0);
         bar.hideInCombat = Api::Json::Bool(j, "infoHideInCombat", true);
@@ -478,8 +483,18 @@ namespace
                 }
 
                 float cx = x;
+                const bool hasShadow = bar.shadow > 0;
+                const float shadowOff = (hasShadow ? std::max(1.f, 2.f * ui) : 0.f);
+                const int shadowA = hasShadow ? std::clamp(static_cast<int>(bar.shadow * 2.2f), 0, 220) : 0;
+                auto labelShadow = [&](const char* t, float sx, float fs)
+                {
+                    if (hasShadow)
+                        Gw2Ui::LabelDL(dl, ImVec2(sx + shadowOff, winY + shadowOff), ImVec2(sx + 1e4f + shadowOff, winY + barH + shadowOff),
+                                       t, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(0, 0, 0, shadowA), false, nullptr, fs);
+                };
                 if (!e.s.label.empty())
                 {
+                    labelShadow(e.s.label.c_str(), cx, labelFs);
                     Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.label.c_str(),
                                    Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(190, 165, 110, 255), false, nullptr, labelFs);
                     cx += Gw2Ui::MeasureWidth(e.s.label.c_str(), labelFs) + 6.f * ui;
@@ -503,6 +518,7 @@ namespace
                                      ImVec2(cx + is, winY + (barH + is) * 0.5f));
                         cx += is + 4.f * ui;
                     }
+                    labelShadow(e.s.value.c_str(), cx, fs);
                     Gw2Ui::LabelDL(dl, ImVec2(cx, winY), ImVec2(cx + 1e4f, winY + barH), e.s.value.c_str(),
                                    Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, e.s.color, false, nullptr, fs);
                 }
@@ -862,6 +878,10 @@ namespace
         Gw2Ui::Label("Background opacity");
         place();
         if (Gw2Ui::SliderInt("##opacity", &bar.opacity, 0, 100, 260.f)) mark();
+
+        Gw2Ui::Label("Text shadow");
+        place();
+        if (Gw2Ui::SliderInt("##shadow", &bar.shadow, 0, kShadowMax, 260.f)) mark();
 
         Gw2Ui::Label("Text size");
         place();
