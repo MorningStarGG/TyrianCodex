@@ -354,6 +354,10 @@ static bool StartMapAssistPoint(App &app, uint32_t mapId, float cx, float cy, co
 {
     if (mapId == 0 || !std::isfinite(cx) || !std::isfinite(cy))
         return false;
+    // (0,0) is the continent ORIGIN -- the map's top-left corner -- never a real objective. It only ever
+    // arrives from an unresolved anchor, and panning there drags the map into the corner until it clamps.
+    if (cx == 0.f && cy == 0.f)
+        return false;
     if (clearTravel)
         app.travel.Clear();
 

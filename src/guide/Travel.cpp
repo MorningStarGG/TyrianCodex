@@ -77,21 +77,28 @@ namespace Travel
         return std::sqrt(wgx * wgx + wgy * wgy) < std::sqrt(pgx * pgx + pgy * pgy) * 0.9f;
     }
 
+    // A zone's entry point = the start of its route, in CONTINENT coords.
+    //
+    // This reads the zone's first STEP, not Trail.front(). The trail moved into the lazy <slug>.trail.json
+    // side-file and is only loaded once you physically enter a zone (ZoneManager::EnsureActiveZone), so
+    // keying off it returned an INVALID entry for every zone you had not visited -- which GetAnchor then
+    // handed out as the continent origin, driving the map assist into the top-left corner and pointing
+    // NearestWaypoint at the wrong side of the world. Steps stay in the zone METADATA and are already
+    // sorted by route order, so the first one is resident for every zone and needs no coord conversion.
     const Entry& Controller::ZoneEntryCached(uint32_t mapId) const
     {
         auto cached = _entryCache.find(mapId);
-        if (cached != _entryCache.end()) return cached->second;
-
+        if (cached != _entryCache.end() && cached->second.valid) return cached->second;   // never trust a cached FAILURE:
+                                                                                         // data can arrive after the miss
         Entry info;   // default invalid
         if (_zones)
         {
             auto it = _zones->find(mapId);
-            if (it != _zones->end() && it->second.HasRects && it->second.Trail.size() >= 1)
+            if (it != _zones->end() && it->second.HasRects && !it->second.Steps.empty())
             {
                 const Zone& z = it->second;
-                const Math::Vec3& t0 = z.Trail.front();   // [x, height, z] world
-                float ex, ey;
-                Coords::WorldXZToContinent(t0.x, t0.z, z.ContRect, z.MapRect, ex, ey);
+                const Step& s0 = z.Steps.front();   // route order (Dataset sorts Steps by Order on load)
+                const float ex = s0.CX, ey = s0.CY; // already continent coords
 
                 // Adjacent from-zone = the nearest OTHER same-continent loaded zone to the entry.
                 uint32_t fromId = 0; float bestRect = FLT_MAX;
@@ -111,7 +118,15 @@ namespace Travel
     bool Controller::GetAnchor(float& cx, float& cy, uint32_t& mapId) const
     {
         if (_personalActive) { cx = _ptx; cy = _pty; mapId = _ptMapId; return true; }
-        if (_destValid) { const Entry e = ZoneEntryCached(_destMapId); cx = e.ex; cy = e.ey; mapId = _destMapId; return true; }
+        // Only report an anchor we actually resolved. Returning true with a default-constructed Entry made
+        // (0,0) -- the continent origin, i.e. the map's top-left corner -- look like a real destination to
+        // every caller (map assist, NearestWaypoint, the travel offer).
+        if (_destValid)
+        {
+            const Entry e = ZoneEntryCached(_destMapId);
+            if (!e.valid) return false;
+            cx = e.ex; cy = e.ey; mapId = _destMapId; return true;
+        }
         return false;
     }
 
