@@ -403,6 +403,7 @@ std::vector<Setting> Settings(App &app)
         SBool(SEC_HUD, "hudLocked", "Lock position", "hud lock position move drag pin fixed", &app.config.hudLocked),
         SBool(SEC_HUD, "hudHideInCombat", "Hide in combat", "hud hide combat declutter fight", &app.config.hudHideInCombat),
         SBool(SEC_HUD, "hudHideOnMap", "Hide on full map", "hud hide map open fullscreen world", &app.config.hudHideOnMap),
+        SBool(SEC_HUD, "hudHideInWvW", "Hide in WvW", "hud hide wvw world versus mists borderlands eternal battlegrounds declutter", &app.config.hudHideInWvW),
         SBool(SEC_HUD, "hudLabels", "Show button labels", "hud button label text under icon name caption", &app.config.hudLabels),
         SBool(SEC_HUD, "hudClockShow", "Show clock", "hud clock time centre center show display", &app.config.hudClockShow),
         SEnum(SEC_HUD, "hudClockPrimary", "Main time", "hud clock main time local server tyrian zone", &app.config.hudClockPrimary, kHudClockPrimaryNames, 3),
@@ -655,9 +656,12 @@ static const char *SettingDesc(const char *key)
         // HUD launcher bar (per-character profile)
         {"hudEnabled", "Show the HUD launcher bar (the icon bar with a centre clock) for this profile."},
         {"hudEdge", "Dock the HUD bar to the top or bottom edge of the screen."},
-        {"hudLocked", "Lock the HUD bar in place; uncheck to drag it left/right by the clock."},
+        {"hudLocked", "Lock the HUD bar in place; uncheck to drag it anywhere on screen by grabbing any part of "
+                      "it. Use Reset position to put it back at its docked edge."},
         {"hudHideInCombat", "Hide the HUD bar while you are in combat."},
         {"hudHideOnMap", "Hide the HUD bar while the full map is open."},
+        {"hudHideInWvW", "Hide the HUD bar on WvW match maps (Eternal Battlegrounds, the borderlands, Obsidian "
+                         "Sanctum, Edge of the Mists). The WvW Lounge is not affected."},
         {"hudLabels", "Show a text label under each HUD button icon."},
         {"hudClockShow", "Show the clock in the centre of the HUD bar."},
         {"hudClockPrimary", "Which time the HUD clock's main line shows: Local, Server, or Tyrian."},

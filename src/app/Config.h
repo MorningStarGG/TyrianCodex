@@ -271,10 +271,20 @@ struct Config
     // character via the HUD ConfigProfileFamily (owner Hud), which snapshots this hud* slice + hudButtons.
     bool hudEnabled = true; // show the HUD bar for this profile
     int hudEdge = 0;        // 0 Top, 1 Bottom
-    float hudOffset = 0.f;  // horizontal nudge from centre (drag position; internal, not a Setting row)
+    // Bar position as resolution-independent screen FRACTIONS (0..1) of the bar's anchor point; -1 = "default
+    // seat" (horizontally centred / the standard gap from the docked edge). Written by DRAGGING the bar and
+    // clamped at that moment, so a stored value is always a legal on-screen position. No settings slider --
+    // "Reset position" in the HUD section puts both back to -1. Internal, not Setting rows.
+    float hudPosX = -1.f;
+    float hudPosY = -1.f;
+    // LEGACY pixel offsets from older saves; migrated into hudPosX/hudPosY on the first render that knows the
+    // screen size, then zeroed and never written again.
+    float hudOffset = 0.f;
+    float hudOffsetY = 0.f;
     bool hudLocked = true;  // lock the bar in place (uncheck to drag)
     bool hudHideInCombat = false;
     bool hudHideOnMap = false;
+    bool hudHideInWvW = false; // hide on WvW match maps (not the WvW Lounge) -- see IsInWvW()
     bool hudLabels = false;               // text label under each icon
     int hudClockPrimary = 0;              // main clock time source (0 Local / 1 Server / 2 Tyrian)
     int hudClockSecondary = 0;            // optional second line (0 None / 1 Local / 2 Server / 3 Tyrian)

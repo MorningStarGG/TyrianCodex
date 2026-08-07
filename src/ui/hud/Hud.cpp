@@ -37,6 +37,19 @@ namespace
     int            g_menuSide = 0;        // side a right-click "Add" lands on (0 Left, 1 Right)
     constexpr int  kAddBase = 1000;       // ContextMenuTree leaf id base for "Add <button>" (id = base + registry index)
 
+    // Dock-edge tracking: a USER switching Dock edge re-seats the bar at that edge (otherwise, once dragged,
+    // nothing could ever put it back). A PROFILE applying a different edge must NOT re-seat -- that profile
+    // carries its own saved position -- so the apply hook sets g_edgeFromProfile to absorb one change.
+    bool           g_edgeInit = false;
+    int            g_lastEdge = 0;
+    bool           g_edgeFromProfile = false;
+    // Whole-bar drag: cursor offset from the bar's anchor when the press began (so the bar doesn't jump to
+    // centre on grab), plus press/drag state. g_barDragged outlives the release by design -- the icon
+    // release-clicks are evaluated after it, and a drag must never fire the button it ended on.
+    ImVec2         g_grab(0.f, 0.f);
+    bool           g_barDown = false;
+    bool           g_barDragged = false;
+
     HudBtn MakeBtn(const std::string& key)   // new/re-enabled -> its own default side
     {
         const HudButtons::Button* d = HudButtons::Find(key.c_str());
@@ -94,14 +107,21 @@ void HUD::RegisterConfig()
         // capture: config structured fields -> the slice json
         [](App& app, nlohmann::json& j) {
             j["hudButtons"] = UiLayout::OrderedToJson(app.config.hudButtons, [](const HudBtn& b, nlohmann::json& e) { e["side"] = b.side; });
-            j["hudOffset"]  = app.config.hudOffset;
+            j["hudPosX"]    = app.config.hudPosX;
+            j["hudPosY"]    = app.config.hudPosY;
         },
         // apply: slice json -> config structured fields, then reconcile against the button catalog
         [](App& app, const nlohmann::json& j) {
             if (j.contains("hudButtons"))
                 UiLayout::OrderedFromJson(app.config.hudButtons, j["hudButtons"],
                     [](const nlohmann::json& b) { HudBtn c; c.key = Api::Json::Str(b, "key"); c.side = Api::Json::Int(b, "side", 0); return c; });
-            app.config.hudOffset = (float)Api::Json::Num(j, "hudOffset", app.config.hudOffset);
+            app.config.hudPosX = (float)Api::Json::Num(j, "hudPosX", -1.0);
+            app.config.hudPosY = (float)Api::Json::Num(j, "hudPosY", -1.0);
+            // Older slices stored raw pixel offsets; carry them so Render can migrate them once it knows the
+            // screen size (a fraction cannot be derived here -- no display size at apply time).
+            app.config.hudOffset = (float)Api::Json::Num(j, "hudOffset", 0.0);
+            app.config.hudOffsetY = (float)Api::Json::Num(j, "hudOffsetY", 0.0);
+            g_edgeFromProfile = true;   // this profile's dock edge comes with its own position -- don't re-seat
             app.config.hudButtons.Reconcile(BuildReg());
         },
         // seedDefault: config structured fields <- catalog default (feeds the baked m_default)
@@ -118,6 +138,17 @@ void HUD::Render(App& app)
     if (!cfg.hudEnabled) return;
     if (cfg.hudHideInCombat && IsInCombat()) return;
     if (cfg.hudHideOnMap && IsMapOpen()) return;
+    if (cfg.hudHideInWvW && IsInWvW()) return;
+
+    // Picking a different Dock edge re-seats the bar at that edge, so the selector always restores a sane
+    // position even after the bar has been dragged. Profile-applied edges are adopted silently (see above).
+    if (!g_edgeInit || g_edgeFromProfile) { g_lastEdge = cfg.hudEdge; g_edgeInit = true; g_edgeFromProfile = false; }
+    else if (g_lastEdge != cfg.hudEdge)
+    {
+        g_lastEdge = cfg.hudEdge;
+        cfg.hudPosY = -1.f;
+        app.settingsDirty = true;
+    }
 
     std::vector<const HudBtn*> left, right;
     for (const HudBtn& b : cfg.hudButtons.items)
@@ -164,22 +195,34 @@ void HUD::Render(App& app)
                        + (rightPanelW > 0.f && centerW > 0.f ? panelGap : 0.f) + rightPanelW;
 
     const float m = 2.f * ui;                                  // window margin so panel borders aren't clipped at the edge
-    // The CLOCK stays on the true screen centre (W/2 + manual offset); the left/right button groups extend
-    // outward from it -- so more buttons on a side just push that side further out, the clock never moves.
-    // (When the clock is hidden there's no anchor, so centre the whole bar instead.)
-    const float clockMid = leftPanelW + (leftPanelW > 0.f ? panelGap : 0.f) + centerW * 0.5f;   // clock centre, from x0
-    float x0;
-    if (centerW > 0.f)
-    {
-        float clockCenter = W * 0.5f + cfg.hudOffset;                              // screen centre + manual nudge
-        const float ccMin = centerW * 0.5f + 6.f * ui, ccMax = W - centerW * 0.5f - 6.f * ui;
-        if (ccMax > ccMin) clockCenter = std::min(std::max(clockCenter, ccMin), ccMax);   // keep the clock itself on-screen
-        x0 = clockCenter - clockMid;                                               // groups extend outward from the clock
-    }
-    else x0 = (W - totalW) * 0.5f + cfg.hudOffset;                                 // no clock -> centre the whole bar
     const float winW = totalW + 2.f * m, winH = centerH + 2.f * m;
+    // The ANCHOR is the clock centre when there is one, so adding buttons to one side pushes that side outward
+    // and the clock never moves; with no clock it is the bar's own centre. hudPosX is that anchor as a fraction
+    // of screen width, hudPosY the bar's vertical centre as a fraction of height (-1 = default seat).
+    const float anchorMid = (centerW > 0.f) ? (leftPanelW + (leftPanelW > 0.f ? panelGap : 0.f) + centerW * 0.5f)
+                                            : (totalW * 0.5f);
+    const float defaultY = (cfg.hudEdge == 0) ? 6.f * ui : (H - winH - 6.f * ui);
+
+    // One-time migration of the legacy pixel offsets, now that the screen size is known.
+    if (cfg.hudOffset != 0.f || cfg.hudOffsetY != 0.f)
+    {
+        if (cfg.hudPosX < 0.f) cfg.hudPosX = (W * 0.5f + cfg.hudOffset) / W;
+        if (cfg.hudPosY < 0.f)
+        {
+            const float legacyY = (cfg.hudEdge == 0) ? (6.f * ui + cfg.hudOffsetY) : (H - winH - 6.f * ui - cfg.hudOffsetY);
+            cfg.hudPosY = (legacyY + winH * 0.5f) / H;
+        }
+        cfg.hudOffset = cfg.hudOffsetY = 0.f;
+        app.settingsDirty = true;
+    }
+
+    // Draw position. Clamped to the screen WITHOUT writing back, so the stored fraction survives a resolution
+    // change intact instead of being ratcheted by whatever monitor it was last drawn on.
+    float x0 = ((cfg.hudPosX < 0.f) ? (W * 0.5f) : (cfg.hudPosX * W)) - anchorMid;
+    x0 = std::min(std::max(x0, 0.f), std::max(0.f, W - totalW));
+    float winY = (cfg.hudPosY < 0.f) ? defaultY : (cfg.hudPosY * H - winH * 0.5f);
+    winY = std::min(std::max(winY, 0.f), std::max(0.f, H - winH));
     const float winX = x0 - m;
-    const float winY = (cfg.hudEdge == 0) ? 6.f * ui : (H - winH - 6.f * ui);
     const float y0 = winY + m;
     const float sideTop = y0 + (centerH - sideH) * 0.5f;
     const float midY = y0 + centerH * 0.5f;
@@ -193,6 +236,45 @@ void HUD::Render(App& app)
     {
         ImDrawList* dl = ImGui::GetWindowDrawList();
         const ImU32 fill = IM_COL32(24, 20, 13, 235), border = IM_COL32(150, 124, 70, 220);
+
+        // ---- Drag the WHOLE bar, from anywhere on it ----------------------------------------------------
+        // Grabbing any part -- an icon, a panel, the clock, the gaps -- moves the bar, so it behaves the same
+        // whether or not the clock is shown. Handled here at window level, BEFORE the icons are submitted, so
+        // g_barDragged is already set when their release-clicks are evaluated below and a drag never fires a
+        // button. A press that never passes the threshold stays a plain click.
+        const float kDragSlop = 4.f * ui;
+        if (!cfg.hudLocked)
+        {
+            const bool overBar = ImGui::IsWindowHovered(ImGuiHoveredFlags_AllowWhenBlockedByActiveItem);
+            if (overBar && ImGui::IsMouseClicked(ImGuiMouseButton_Left))
+            {
+                g_barDown = true;
+                g_barDragged = false;
+                g_grab = ImVec2(io.MousePos.x - (x0 + anchorMid), io.MousePos.y - (winY + winH * 0.5f));
+            }
+            if (g_barDown && io.MouseDown[0])
+            {
+                const float dx = io.MousePos.x - (x0 + anchorMid) - g_grab.x;
+                const float dy = io.MousePos.y - (winY + winH * 0.5f) - g_grab.y;
+                if (std::sqrt(dx * dx + dy * dy) > kDragSlop) g_barDragged = true;
+                if (g_barDragged)
+                {
+                    // ABSOLUTE positioning: the bar goes where the cursor is (minus wherever it was grabbed),
+                    // never "current += delta". An accumulator drifts -- drag past the edge and it keeps banking
+                    // movement the clamp hides, so dragging back does nothing until the slack unwinds. Clamped
+                    // HERE, so what gets stored is always a position the bar can actually occupy.
+                    const float axMin = anchorMid, axMax = W - (totalW - anchorMid);   // keep the WHOLE bar on screen
+                    const float ay = winH * 0.5f;
+                    cfg.hudPosX = std::min(std::max(io.MousePos.x - g_grab.x, axMin), std::max(axMin, axMax)) / W;
+                    cfg.hudPosY = std::min(std::max(io.MousePos.y - g_grab.y, ay), std::max(ay, H - ay)) / H;
+                    app.settingsDirty = true;
+                    ImGui::SetMouseCursor(ImGuiMouseCursor_ResizeAll);
+                }
+            }
+            if (overBar && !g_barDragged) ImGui::SetMouseCursor(ImGuiMouseCursor_ResizeAll);
+            if (!io.MouseDown[0]) g_barDown = false;   // g_barDragged survives the release so the click below is suppressed
+        }
+        else { g_barDown = false; g_barDragged = false; }
         auto panel = [&](float px, float pw, float top, float h, ImU32 brd) {
             dl->AddRectFilled(ImVec2(px, top), ImVec2(px + pw, top + h), fill, 7.f * ui);
             dl->AddRect(ImVec2(px, top), ImVec2(px + pw, top + h), brd, 7.f * ui, 0, 1.4f * ui);
@@ -236,7 +318,7 @@ void HUD::Render(App& app)
                 Gw2Ui::LabelDL(dl, ImVec2(cx, iconTop + iconBox), ImVec2(cx + cw, iconTop + iconBox + labelH), def->label,
                                Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, col, false, nullptr, labelFs);
             if (hov && !labels) Gw2Ui::Tooltip(def->label);
-            if (clicked) RunButton(app, b->key);
+            if (clicked && !g_barDragged) RunButton(app, b->key);   // a drag that ended on an icon must not launch it
             if (rclick) { g_menuReq = MenuKind::Icon; g_menuBtn = b->key; }
         };
 
@@ -269,11 +351,6 @@ void HUD::Render(App& app)
             ImGui::InvisibleButton("##clock", ImVec2(centerW, centerH));
             const bool clockHov = ImGui::IsItemHovered();
             if (clockHov && ImGui::IsMouseClicked(ImGuiMouseButton_Right)) g_menuReq = MenuKind::Clock;
-            if (!cfg.hudLocked)
-            {
-                if (clockHov || ImGui::IsItemActive()) ImGui::SetMouseCursor(ImGuiMouseCursor_ResizeAll);
-                if (ImGui::IsItemActive() && io.MouseDelta.x != 0.f) { cfg.hudOffset += io.MouseDelta.x; app.settingsDirty = true; }
-            }
             if (clockHov && cfg.hudClockTooltip && Gw2Ui::TooltipBegin())
             {
                 Gw2Ui::TooltipTitle("Time");
@@ -298,8 +375,7 @@ void HUD::Render(App& app)
         // half you click matches the half it lands on. !IsAnyItemHovered lets the icon/clock right-clicks win.
         if (ImGui::IsWindowHovered() && !ImGui::IsAnyItemHovered() && ImGui::IsMouseClicked(ImGuiMouseButton_Right))
         {
-            const float anchorX = (centerW > 0.f) ? (x0 + clockMid) : (x0 + totalW * 0.5f);
-            g_menuSide = (io.MousePos.x < anchorX) ? 0 : 1;
+            g_menuSide = (io.MousePos.x < x0 + anchorMid) ? 0 : 1;
             g_menuReq = MenuKind::Bar;
         }
 
@@ -398,6 +474,20 @@ void HUD::DrawSettings(App& app)
 
     // --- Scalar settings: the SEC_HUD model rows (searchable + tooltipped, same look as every other section) ---
     DrawSettingSection(app, SEC_HUD);
+
+    // Position lives in hudPosX/hudPosY, which are set by DRAGGING the bar rather than by a settings row -- so
+    // this is the only way back to the default seat once it has been moved.
+    const bool moved = (cfg.hudPosX >= 0.f || cfg.hudPosY >= 0.f);
+    if (Gw2Ui::ActionButtonPx("Reset position", Gw2Ui::Scaled(150.f), Gw2Ui::Scaled(26.f),
+                              Gw2Ui::ActionButtonVariant::Normal,
+                              moved ? "Re-centre the HUD bar at its docked edge"
+                                    : "The HUD bar is already at its default position") &&
+        moved)
+    {
+        cfg.hudPosX = -1.f;
+        cfg.hudPosY = -1.f;
+        app.settingsDirty = true;
+    }
     ImGui::Dummy(ImVec2(0.f, 6.f));
 
     // --- Button layout (structured; edits config.hudButtons) ---
