@@ -7,6 +7,7 @@
 #include "guide/StepStatus.h"
 #include "model/ObjectiveTypes.h"
 #include "render/glyphs/Glyphs.h" // Render::DrawGlyph (map above/below floor arrows)
+#include "ui/dashboard/Notify.h"  // tell the player when a pan cannot reach its target
 #include "Shared.h"
 #include <imgui.h>
 #include <windows.h>
@@ -57,7 +58,12 @@ namespace
     constexpr float kAssistFineMinGain = 0.04f;
     constexpr float kAssistProbeDrag = 44.f; // small first-attempt probe (px) to measure sensitivity before scaling (keep small so it can't fling)
     constexpr int kAssistMaxFineAttempts = 2;
-    constexpr int kAssistMaxPanAttempts = 12;
+    // The attempt budget is SIZED TO THE DISTANCE (see PanBudgetFor): a fixed 12 was tuned when pans stayed
+    // inside one zone, and a cross-continent pan needs roughly twice that -- it used to run out mid-ocean and
+    // silently leave the map there. A generous ceiling is safe because divergeReadbacks now stops a pan that
+    // has genuinely lost its target within three readbacks; the cap no longer doubles as the runaway rail.
+    constexpr int kAssistMinPanAttempts = 12;
+    constexpr int kAssistMaxPanAttempts = 48;
     constexpr double kAssistPanReadbackSeconds = 0.22;
     constexpr double kAssistCenterConfirmSeconds = 0.18;
     constexpr double kAssistFocusReadbackSeconds = 0.18;
@@ -92,6 +98,22 @@ namespace
     static float Length(ImVec2 v)
     {
         return std::sqrt(v.x * v.x + v.y * v.y);
+    }
+
+    // Longest single coarse drag we will issue, in screen px. Shared by the pan step and the budget estimate so
+    // the two can never disagree about how much ground one attempt covers.
+    static float CoarseMaxDrag(const ImVec2 &canvas)
+    {
+        return std::min(560.f, std::max(220.f, std::min(canvas.x, canvas.y) * 0.42f));
+    }
+
+    // Coarse attempts still needed to close `errPx`. The requested drag is error*gain clamped to one
+    // CoarseMaxDrag, so that ratio IS the attempt count. Raw estimate -- the caller adds slack and clamps.
+    static int PanAttemptsNeeded(float errPx, float gain, const ImVec2 &canvas)
+    {
+        const float step = std::max(1.f, CoarseMaxDrag(canvas));
+        const float need = std::ceil((errPx * std::max(0.02f, gain)) / step);
+        return (int)std::clamp(need, 0.f, 1000.f);
     }
 
     static void UpdateMeasuredPanGain(float requested, float actual, float &gain, bool &calibrated)
@@ -1196,10 +1218,29 @@ void MapRenderer::UpdateAssist(const Config &cfg, GuideState &st, ProgressStore 
         drawDiagnostics();
         return;
     }
-    if (st.mapAssist.panAttempts >= kAssistMaxPanAttempts)
+    // Size the budget to the distance still to cover, never shrinking below what has already been spent. It
+    // self-corrects: the first estimate uses an uncalibrated gain, and once UpdateMeasuredPanGain has measured
+    // the real drag sensitivity the estimate is re-taken (a too-low first guess can grow, up to the ceiling).
+    {
+        const float gain = 0.5f * (st.mapAssist.panGainX + st.mapAssist.panGainY);
+        const int want = st.mapAssist.panAttempts + PanAttemptsNeeded(len, gain, mapProj_.bSize) + 4;
+        st.mapAssist.panBudget = std::clamp(std::max(st.mapAssist.panBudget, want),
+                                            kAssistMinPanAttempts, kAssistMaxPanAttempts);
+    }
+    if (st.mapAssist.panAttempts >= st.mapAssist.panBudget)
     {
         st.mapAssist.panRequested = false;
         st.mapAssist.panStatus = "attempt cap";
+        // Say so. Silently abandoning the map wherever it got to is why this read as "it took me to the wrong
+        // place" rather than "it did not finish" -- for a cross-continent pan that spot is open ocean.
+        if (!st.mapAssist.panGaveUpNotified)
+        {
+            st.mapAssist.panGaveUpNotified = true;
+            Notify::Push(Notify::Kind::Info, "Map didn't reach the target",
+                         st.mapAssist.label.empty()
+                             ? std::string("Ran out of map drags before getting there.")
+                             : (st.mapAssist.label + " is too far to scroll to from here."));
+        }
         drawDiagnostics();
         return;
     }
@@ -1261,7 +1302,7 @@ void MapRenderer::UpdateAssist(const Config &cfg, GuideState &st, ProgressStore 
                               ? (st.mapAssist.fineAttempts == 0
                                      ? std::min(96.f, std::max(56.f, std::min(mapProj_.bSize.x, mapProj_.bSize.y) * 0.085f))
                                      : std::min(64.f, std::max(42.f, std::min(mapProj_.bSize.x, mapProj_.bSize.y) * 0.060f)))
-                              : std::min(560.f, std::max(220.f, std::min(mapProj_.bSize.x, mapProj_.bSize.y) * 0.42f));
+                              : CoarseMaxDrag(mapProj_.bSize);
     const float dragLen = Length(dragRequested);
     if (dragLen > maxDrag)
     {

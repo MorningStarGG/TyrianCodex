@@ -73,6 +73,8 @@ struct MapAssistTarget
     bool panRequested = false;
     bool panDone = false;
     int panAttempts = 0;
+    int panBudget = 0;              // attempts allowed for THIS pan, sized to its distance (0 = not sized yet)
+    bool panGaveUpNotified = false; // one "couldn't get there" toast per pan, not one per frame
     int fineAttempts = 0;
     double nextPanTime = 0.0;
 
