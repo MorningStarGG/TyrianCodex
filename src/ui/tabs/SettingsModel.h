@@ -190,4 +190,8 @@ bool NormalizeKeybinds(App &app, const char *preferredKey = nullptr); // enforce
 // scalar settings look/behave like every other section). groupId != null renders just that subsection.
 void DrawSettingSection(App &app, int section, const char *groupId = nullptr);
 bool SettingMatches(const Setting &s, const char *qLower); // case-insensitive name/keyword search match
+// The matcher behind it: every whitespace-separated term of `qLower` must appear in `hayLower` (already
+// lowercase). Use this for anything else the Options search surfaces -- an ACTION that is not a model row
+// still has to match the way rows do, or the same query finds the rows and misses it.
+bool KeywordsMatch(const char *hayLower, const char *qLower);
 // SaveSettings / LoadSettings are declared in ui/SettingsWindow.h (the lifecycle facade) and defined here.

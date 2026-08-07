@@ -11,7 +11,13 @@ namespace HUD
 {
     void RegisterConfig();          // register hudButtons with ConfigProfiles (call ONCE, before ConfigProfiles::Init)
     void Render(App& app);
-    void DrawSettings(App& app);    // SEC_HUD: profile bar + scalar model rows + button-layout editor
+    void DrawSettings(App& app);    // SEC_HUD: profile bar + scalar model rows + reset + button-layout editor
+    // The two ACTIONS inside that panel, drawable on their own. The Options search walks the settings MODEL,
+    // so a control that isn't a model row is unreachable by search unless it can be drawn standalone (the
+    // live Diagnostics readout is surfaced the same way). SearchMatchesActions decides when to show them.
+    void DrawResetPosition(App& app);
+    void DrawButtonLayout(App& app);
+    bool SearchMatchesActions(const char* qLower);
     bool IsEnabled(App& app);       // is the HUD bar on in the active profile?
     void SetEnabled(App& app, bool on);
 }

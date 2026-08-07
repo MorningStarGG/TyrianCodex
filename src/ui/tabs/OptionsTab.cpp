@@ -331,7 +331,10 @@ namespace
 
     bool SearchMatchesDiagnosticsLive(const char *qLower)
     {
-        return qLower && *qLower && std::string("diagnostics live debug cache map tiles icons clear reset progress mumble trail gameplay status level").find(qLower) != std::string::npos;
+        return qLower && *qLower &&
+               KeywordsMatch("diagnostics live debug cache map tiles icons clear reset progress mumble trail "
+                             "gameplay status level",
+                             qLower);
     }
 }
 
@@ -598,6 +601,18 @@ void DrawOptionsContent(App &app)
                 ImGui::Dummy(ImVec2(0.f, 6.f));
             Gw2Ui::SectionHeader("Diagnostics / Live Diagnostics", nullptr, SettingsText::Header, Gw2Ui::kGold, /*banded*/ false);
             DrawDiagnosticsSection(app);
+            ++hits;
+        }
+        // The HUD panel's ACTIONS (reset position + the button-layout editor) are not model rows either, so
+        // surface them on a keyword match for the same reason - otherwise "reset position" finds nothing.
+        if (HUD::SearchMatchesActions(qLower))
+        {
+            if (hits)
+                ImGui::Dummy(ImVec2(0.f, 6.f));
+            Gw2Ui::SectionHeader("HUD / Bar Actions", nullptr, SettingsText::Header, Gw2Ui::kGold, /*banded*/ false);
+            HUD::DrawResetPosition(app);
+            ImGui::Dummy(ImVec2(0.f, 6.f));
+            HUD::DrawButtonLayout(app);
             ++hits;
         }
         if (!hits)

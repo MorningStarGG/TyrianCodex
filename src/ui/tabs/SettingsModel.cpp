@@ -1097,15 +1097,17 @@ void LoadSettings(App &app)
 }
 
 // Case-insensitive: do ALL whitespace-separated query terms appear in the setting's name/keywords/group?
-// Per-term (AND) rather than one contiguous substring, so "hide markers" matches a row that has both words
-// even when they are not adjacent (e.g. name "...markers" + keyword "hide").
-bool SettingMatches(const Setting &s, const char *qLower)
+// Per-term (AND) rather than one contiguous substring, so "hide markers" matches when both words appear even
+// when they are not adjacent (e.g. name "...markers" + keyword "hide"). `hayLower` must already be lowercase.
+// Shared so the searchable ACTIONS (live Diagnostics, the HUD bar actions) match exactly like the model rows
+// do -- a plain substring test there would drop "hud reset" while every row still matched it.
+bool KeywordsMatch(const char *hayLower, const char *qLower)
 {
     if (!qLower || !*qLower)
         return true;
-    std::string hay = std::string(s.name) + " " + (s.search ? s.search : "") + " " + (s.groupName ? s.groupName : "") + " " + ((s.section >= 0 && s.section < SEC_COUNT) ? kSections[s.section] : ""); // + section name ("hud"/"info panel"/...)
-    for (char &c : hay)
-        c = (char)std::tolower((unsigned char)c);
+    if (!hayLower)
+        return false;
+    const std::string hay(hayLower);
     for (const char *p = qLower; *p;)
     {
         while (*p == ' ')
@@ -1117,4 +1119,14 @@ bool SettingMatches(const Setting &s, const char *qLower)
             return false; // some term is missing -> not a match
     }
     return true;
+}
+
+bool SettingMatches(const Setting &s, const char *qLower)
+{
+    if (!qLower || !*qLower)
+        return true;
+    std::string hay = std::string(s.name) + " " + (s.search ? s.search : "") + " " + (s.groupName ? s.groupName : "") + " " + ((s.section >= 0 && s.section < SEC_COUNT) ? kSections[s.section] : ""); // + section name ("hud"/"info panel"/...)
+    for (char &c : hay)
+        c = (char)std::tolower((unsigned char)c);
+    return KeywordsMatch(hay.c_str(), qLower);
 }

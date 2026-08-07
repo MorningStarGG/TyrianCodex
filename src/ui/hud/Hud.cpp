@@ -463,20 +463,13 @@ void HUD::Render(App& app)
     ImGui::PopStyleVar();
 }
 
-void HUD::DrawSettings(App& app)
+// Position lives in hudPosX/hudPosY, which are set by DRAGGING the bar rather than by a settings row -- so this
+// is the only way back to the default seat once it has been moved. Split out so the Options SEARCH can surface
+// it too: it is an ACTION, not a model row, and search only walks the settings model (same reason the live
+// Diagnostics readout is special-cased there).
+void HUD::DrawResetPosition(App& app)
 {
     Config& cfg = app.config;
-
-    // --- Profiles (top) -- one universal per-character profile family, via ConfigProfiles ---
-    Profiles::DrawProfileBar(app, ConfigProfiles::Host(app, ConfigProfiles::Owner::Hud), "hudprof",
-        "The HUD is a launcher bar with a center clock. Everything here -- placement, clock, buttons and "
-        "sides -- is saved per character in this profile; import one from another character below.");
-
-    // --- Scalar settings: the SEC_HUD model rows (searchable + tooltipped, same look as every other section) ---
-    DrawSettingSection(app, SEC_HUD);
-
-    // Position lives in hudPosX/hudPosY, which are set by DRAGGING the bar rather than by a settings row -- so
-    // this is the only way back to the default seat once it has been moved.
     const bool moved = (cfg.hudPosX >= 0.f || cfg.hudPosY >= 0.f);
     if (Gw2Ui::ActionButtonPx("Reset position", Gw2Ui::Scaled(150.f), Gw2Ui::Scaled(26.f),
                               Gw2Ui::ActionButtonVariant::Normal,
@@ -488,9 +481,37 @@ void HUD::DrawSettings(App& app)
         cfg.hudPosY = -1.f;
         app.settingsDirty = true;
     }
-    ImGui::Dummy(ImVec2(0.f, 6.f));
+}
 
-    // --- Button layout (structured; edits config.hudButtons) ---
+bool HUD::SearchMatchesActions(const char* qLower)
+{
+    return qLower && *qLower &&
+           KeywordsMatch("hud bar reset position move drag place placement recentre recenter default "
+                         "buttons layout order side icons add remove",
+                         qLower);
+}
+
+void HUD::DrawSettings(App& app)
+{
+    // --- Profiles (top) -- one universal per-character profile family, via ConfigProfiles ---
+    Profiles::DrawProfileBar(app, ConfigProfiles::Host(app, ConfigProfiles::Owner::Hud), "hudprof",
+        "The HUD is a launcher bar with a center clock. Everything here -- placement, clock, buttons and "
+        "sides -- is saved per character in this profile; import one from another character below.");
+
+    // --- Scalar settings: the SEC_HUD model rows (searchable + tooltipped, same look as every other section) ---
+    DrawSettingSection(app, SEC_HUD);
+
+    DrawResetPosition(app);
+    ImGui::Dummy(ImVec2(0.f, 6.f));
+    DrawButtonLayout(app);
+}
+
+// --- Button layout (structured; edits config.hudButtons) -----------------------------------------------
+// Split out for the same reason as DrawResetPosition: it is an editor, not a settings model row, so the
+// Options search can only reach it if it can be drawn on its own.
+void HUD::DrawButtonLayout(App& app)
+{
+    Config& cfg = app.config;
     Gw2Ui::Label("Buttons", IM_COL32(190, 178, 150, 255), false, nullptr, SettingsText::Header);
     int moveA = -1, moveB = -1;        // swap these two button indices (reorder within a side)
     int sideIdx = -1, sideTo = -1;     // send button index sideIdx to side sideTo (appended to its end)
