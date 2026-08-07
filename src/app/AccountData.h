@@ -71,6 +71,10 @@ namespace AccountData
         bool keyPresent = false;
 
         bool        haveAccount = false; std::string accountId, accountName; long age = 0; int fractalLevel = 0; int wvwRank = 0; double accountAt = 0;
+        // /v2/account access[]: the expansions this account can play ("GuildWars2", "HeartOfThorns", ...).
+        // EMPTY means UNKNOWN (no key / no scope / not fetched yet), never "owns nothing" -- consumers must
+        // fail OPEN and gate nothing in that case (see StoryData::ReleasePlayable).
+        std::vector<std::string> access;
         bool        haveWallet  = false; std::vector<WalletEntry> wallet; double walletAt = 0;
         bool        haveChars   = false; std::vector<AcctChar> characters; double charsAt = 0;
         bool        haveAch     = false; int achInProgress = 0, achDone = 0; double achAt = 0;

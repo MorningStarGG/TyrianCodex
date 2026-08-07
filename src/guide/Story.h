@@ -14,8 +14,9 @@
 
 struct StoryEpisode
 {
+    int storyId = 0;                 // /v2/stories id -- the Journal's row key; 0 for the synthesized core chapters
     std::string name;
-    int order = 0;
+    int order = 0;                   // the season's own order = true in-game Story Journal sequence
     std::string description;
     std::vector<int> achievementIds; // ALL must be unlocked (or ANY, when `any`) for auto-completion
     bool any = false;                // one-of the ids suffices (cumulative personal-story milestones)
@@ -35,6 +36,16 @@ public:
     static const std::vector<std::string> &ReleaseOrder();      // core, lws1, lws2, hot, ... voe
     static std::string ReleaseName(const std::string &release); // "Heart of Thorns", ...
     static bool PerCharacter(const std::string &release) { return release == "core"; }
+
+    // A /v2/stories season NAME -> our release key ("Living World Season 3" -> "lws3"). Mirrors the builder's
+    // season_to_release. Empty when we don't track that season.
+    static std::string ReleaseForSeason(const std::string &seasonName);
+
+    // Can this account actually PLAY this release? `access` is /v2/account access[]. FAILS OPEN: true when
+    // access is empty (unknown -- no key/scope/not fetched) or the release has no expansion gate at all
+    // (core + every Living World season; LW episode unlocks are not exposed in access[]). So a wrong or
+    // missing access list can never hide content, only a positively-known absence gates it.
+    static bool ReleasePlayable(const std::string &release, const std::vector<std::string> &access);
 
 private:
     std::map<std::string, std::vector<StoryEpisode>> _byRelease;

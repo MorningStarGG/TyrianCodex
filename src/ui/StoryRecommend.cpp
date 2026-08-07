@@ -1,8 +1,10 @@
 #include "ui/StoryRecommend.h"
 
 #include "app/App.h"
+#include "app/AccountData.h"        // access[] -- gate releases the account cannot play
 #include "guide/Story.h"           // StoryData / StoryEpisode
 #include "guide/StepStatus.h"      // ZoneComplete
+#include "ui/tabs/JournalTab.h"    // PersonalStoryProgress -- the real per-character personal-story progress
 #include "ui/Gw2Ui.h"
 #include "ui/GuideViewer.h"        // OpenZoneTravelChoice
 #include "ui/SettingsWindow.h"     // OpenSettingsTab + SettingsTabJournal
@@ -67,37 +69,81 @@ namespace
     std::vector<StoryRecommend::ReleaseGroup> g_groups;   // rebuilt each call (cheap) from cached map data + story counts
 }
 
+// The last episode of a release that is known-done, or -1. Story is sequential within a release, so the
+// suggestion treats everything below it as played -- otherwise an episode with no completion achievement
+// (all of LWS1, plus a handful of side episodes) walls the walk permanently. Read-only: it never marks
+// anything, so the release COUNTS below stay honest.
+static int LastDoneIndex(App& app, const std::string& rel, const std::vector<StoryEpisode>& eps)
+{
+    for (int i = (int)eps.size() - 1; i >= 0; --i)
+        if (app.storyCompletion.EpisodeDone(rel, eps[i]))
+            return i;
+    return -1;
+}
+
 StoryRecommend::NextStory StoryRecommend::Next(App& app)
 {
     NextStory ns;
+    const std::vector<std::string>& access = AccountData::Get().access;
     for (const std::string& rel : StoryData::ReleaseOrder())
     {
         const std::vector<StoryEpisode>* eps = app.stories.Episodes(rel);
         if (!eps || eps->empty()) continue;
-        for (const StoryEpisode& e : *eps)
+        if (!StoryData::ReleasePlayable(rel, access)) continue;   // not owned (fails open when unknown)
+
+        // The personal story is per-CHARACTER and reconstructed live from /v2/characters/:id/quests -- the
+        // manual "core:Chapter N" marks below can no longer even be written from the Journal once that
+        // reconstruction is up, so the API answer wins whenever it is ready.
+        if (StoryData::PerCharacter(rel))
         {
+            const PsProgress ps = PersonalStoryProgress(app);
+            if (ps.ready)
+            {
+                if (ps.allDone) continue;                          // finished -> fall through to the next release
+                ns.release     = &rel;
+                ns.name        = ps.nextName.empty() ? std::string("Personal story") : ps.nextName;
+                ns.description = "Your personal story continues. Play it from the in-game Story Journal.";
+                ns.entryZone   = EntryZone(app, rel);
+                return ns;
+            }
+            // not ready (no key / not fetched yet) -> fall through to the manual-mark model below
+        }
+
+        for (int i = LastDoneIndex(app, rel, *eps) + 1; i < (int)eps->size(); ++i)
+        {
+            const StoryEpisode& e = (*eps)[i];
             if (!app.storyCompletion.EpisodeDone(rel, e))
             {
-                ns.release   = &rel;          // element of the static ReleaseOrder() vector -> stable address
-                ns.episode   = &e;            // element of app.stories episodes -> app-owned
-                ns.entryZone = EntryZone(app, rel);
+                ns.release     = &rel;        // element of the static ReleaseOrder() vector -> stable address
+                ns.episode     = &e;          // element of app.stories episodes -> app-owned
+                ns.name        = e.name;
+                ns.description = e.description;
+                ns.entryZone   = EntryZone(app, rel);
                 return ns;
             }
         }
     }
-    return ns;   // every bundled episode complete
+    return ns;   // every playable episode complete
 }
 
 const std::vector<StoryRecommend::ReleaseGroup>& StoryRecommend::Groups(App& app)
 {
     EnsureMapData(app);
+    const std::vector<std::string>& access = AccountData::Get().access;
     g_groups.clear();
     for (const std::string& rel : StoryData::ReleaseOrder())
     {
+        if (!StoryData::ReleasePlayable(rel, access)) continue;   // don't recommend an expansion's maps if it can't be played
+
         ReleaseGroup g;
         g.release = rel;
 
-        if (const std::vector<StoryEpisode>* eps = app.stories.Episodes(rel))
+        const PsProgress ps = StoryData::PerCharacter(rel) ? PersonalStoryProgress(app) : PsProgress{};
+        if (ps.ready && ps.total > 0)   // personal story -> the real per-character API step progress, not manual marks
+        {
+            g.storyDone = ps.done; g.storyTotal = ps.total;
+        }
+        else if (const std::vector<StoryEpisode>* eps = app.stories.Episodes(rel))
         {
             g.storyTotal = (int)eps->size();
             for (const StoryEpisode& e : *eps) if (app.storyCompletion.EpisodeDone(rel, e)) ++g.storyDone;
@@ -148,7 +194,7 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
                            compact ? IM_COL32(0, 0, 0, 86)     : IM_COL32(3, 5, 5, 188),
                            compact ? IM_COL32(126, 110, 78, 96) : IM_COL32(150, 116, 58, 128));
 
-    if (!ns.episode || !ns.release)
+    if (!ns.release)
     {
         Gw2Ui::Label("All story content complete.", IM_COL32(160, 235, 170, 255), false, nullptr, fs);
         Gw2Ui::EndCard();
@@ -157,16 +203,16 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
 
     Gw2Ui::Label("Next story step", Gw2Ui::kTextDim, false, nullptr, fs - 4.f);
     Gw2Ui::Label(StoryData::ReleaseName(*ns.release).c_str(), Gw2Ui::kGold, false, nullptr, fs - 1.f);
-    Gw2Ui::Label(ns.episode->name.c_str(), IM_COL32(235, 230, 215, 255), true, nullptr, fs + 1.f);
+    Gw2Ui::Label(ns.name.c_str(), IM_COL32(235, 230, 215, 255), true, nullptr, fs + 1.f);
 
-    if (!ns.episode->description.empty())
+    if (!ns.description.empty())
     {
         Gw2Ui::Divider(0.f, IM_COL32(178, 144, 84, 62));
         const float  cw = Gw2Ui::CardInnerWidth();
-        const float  h  = Gw2Ui::MeasureWrappedHeight(ns.episode->description.c_str(), fs - 2.f, cw);
+        const float  h  = Gw2Ui::MeasureWrappedHeight(ns.description.c_str(), fs - 2.f, cw);
         const ImVec2 p  = ImGui::GetCursorScreenPos();
         ImGui::Dummy(ImVec2(cw, h));
-        Gw2Ui::LabelDL(ImGui::GetWindowDrawList(), p, ImVec2(p.x + cw, p.y + h), ns.episode->description.c_str(),
+        Gw2Ui::LabelDL(ImGui::GetWindowDrawList(), p, ImVec2(p.x + cw, p.y + h), ns.description.c_str(),
                        Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Top, IM_COL32(218, 212, 196, 255), false,
                        Gw2Ui::Gw2Italic(), fs - 2.f, cw);
     }

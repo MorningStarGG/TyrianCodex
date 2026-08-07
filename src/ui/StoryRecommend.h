@@ -18,12 +18,17 @@ namespace StoryRecommend
 {
     // The next unfinished story step: the first release (in StoryData::ReleaseOrder) holding an episode that
     // is not done yet, that episode, and a best-effort entry zone for the Travel action. All pointers reference
-    // app-owned data (valid for the frame). episode/release are null when every bundled episode is complete.
+    // app-owned data (valid for the frame). release is null when every playable episode is complete.
+    // `name`/`description` are what to DRAW: they are owned copies because the personal story's next chapter
+    // comes from the live API reconstruction (PersonalStoryProgress), not from an element of app.stories -- in
+    // that case `episode` is null while name/release are set.
     struct NextStory
     {
         const std::string*  release   = nullptr;
-        const StoryEpisode* episode   = nullptr;
+        const StoryEpisode* episode   = nullptr;   // null for the API-derived personal-story chapter
         const Zone*         entryZone = nullptr;   // null when the release has no bundled open-world zone
+        std::string         name;
+        std::string         description;
     };
     NextStory Next(App& app);
 

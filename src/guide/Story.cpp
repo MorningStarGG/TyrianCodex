@@ -2,6 +2,7 @@
 #include "util/Json.h" // Json::WriteAtomic (atomic, corruption-safe saves)
 
 #include <algorithm>
+#include <cctype>
 #include <fstream>
 #include <nlohmann/json.hpp>
 
@@ -58,6 +59,7 @@ bool StoryData::Load(const std::string &path)
                 if (!e.is_object())
                     continue;
                 StoryEpisode ep;
+                ep.storyId = JInt(e, "storyId", 0);
                 ep.name = JStr(e, "name");
                 ep.order = JInt(e, "order", (int)eps.size());
                 ep.description = JStr(e, "description");
@@ -125,6 +127,78 @@ std::string StoryData::ReleaseName(const std::string &release)
     if (release == "voe")
         return "Visions of Eternity";
     return release;
+}
+
+// Mirror of the builder's season_to_release: "Season N" is matched generically so a NEW Living World season
+// needs no code change here; only a brand-new expansion name would.
+std::string StoryData::ReleaseForSeason(const std::string &seasonName)
+{
+    std::string s;
+    s.reserve(seasonName.size());
+    for (char c : seasonName)
+        s.push_back((char)std::tolower((unsigned char)c));
+    const auto has = [&s](const char *needle)
+    { return s.find(needle) != std::string::npos; };
+
+    const size_t se = s.find("season");
+    if (se != std::string::npos)
+        for (size_t i = se + 6; i < s.size(); ++i)
+        {
+            if (s[i] == ' ')
+                continue;
+            if (s[i] >= '1' && s[i] <= '9')
+                return std::string("lws") + s[i];
+            break;
+        }
+    if (has("scarlet"))
+        return "lws1"; // "Scarlet's War" is the Living World Season 1 arc
+    if (has("icebrood"))
+        return "lws5";
+    if (has("heart of thorns"))
+        return "hot";
+    if (has("path of fire"))
+        return "pof";
+    if (has("end of dragons"))
+        return "eod";
+    if (has("secrets of the obscure"))
+        return "soto";
+    if (has("janthir"))
+        return "jw";
+    if (has("visions of eternity"))
+        return "voe";
+    if (has("my story") || has("personal"))
+        return "core";
+    return std::string();
+}
+
+// The /v2/account access[] token that grants a release, or "" when nothing gates it. Living World seasons are
+// deliberately absent: their episodes unlock per-account outside access[], so we can never prove a player
+// cannot play one.
+static const char *ReleaseAccessToken(const std::string &release)
+{
+    if (release == "core")
+        return "GuildWars2";
+    if (release == "hot")
+        return "HeartOfThorns";
+    if (release == "pof")
+        return "PathOfFire";
+    if (release == "eod")
+        return "EndOfDragons";
+    if (release == "soto")
+        return "SecretsOfTheObscure";
+    if (release == "jw")
+        return "JanthirWilds";
+    return nullptr; // lws1-5 (not gated) + voe (token unverified -> never gate on a guess)
+}
+
+bool StoryData::ReleasePlayable(const std::string &release, const std::vector<std::string> &access)
+{
+    if (access.empty())
+        return true; // unknown -> fail open
+    const char *tok = ReleaseAccessToken(release);
+    if (!tok)
+        return true; // nothing gates this release
+    return std::find(access.begin(), access.end(), std::string(tok)) != access.end();
 }
 
 // ---- StoryProgressStore -------------------------------------------------------------------------------

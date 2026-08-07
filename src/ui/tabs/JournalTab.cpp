@@ -78,6 +78,13 @@ static void ApplyChapterCascade(App &app, const std::string &rel, const StoryEpi
             app.storyStore.Set(rel + ":" + chapters[i]->name, false, scope);
 }
 
+// Living World / expansion episodes form a run just like the personal-story chapters: the in-game Story
+// Journal unlocks episode N+1 only after N, so ticking N marks 1..N done and unticking N clears N..end.
+// Keyed by API story id ("story:<id>", account scope) over the season's ORDERED episode list, so it is the
+// same "contiguous done-up-to-here prefix" shape as ApplyChapterCascade, just a different key namespace.
+// Episodes already confirmed by achievements are skipped on the way down -- no redundant manual marks.
+static void ApplySeasonCascade(App &app, const std::vector<const Api::V2::Story *> &ordered, int idx, bool done);
+
 // ===================== Story Journal tab ====================
 // Collapsible season tree (left) + per-episode detail (right): a release-tinted header band + the official
 // description + an Achievements & Rewards block + a manual "Mark complete" checkbox. Driven by /v2/stories
@@ -86,6 +93,19 @@ static void ApplyChapterCascade(App &app, const std::string &rel, const StoryEpi
 static std::vector<Api::V2::StorySeason> g_jSeasons; // the season tree (My Story, LWS1, ...)
 
 static std::map<int, Api::V2::Story> g_jStories; // story id -> details
+
+// The per-season story lists (sorted by `order`) are STATIC once the API data has landed (the API ships the
+// season.stories unsorted), so precompute them when the story/season sets change - not every frame. Pointers
+// are into g_jStories (a std::map, node-stable), and the cache rebuilds whenever either set grows. Declared
+// here (built further down) because the episode detail + the suggested-next walk both need the ordered list.
+static std::map<std::string, std::vector<const Api::V2::Story *>> g_jSeasonStories;
+
+// story id -> (its season id, its index in that season's ordered list). Built with g_jSeasonStories so the
+// per-row done-check never linear-scans every season's story list (JournalDone runs for every visible row AND
+// for every episode SeasonLastDone walks, so the old scan was O(seasons x stories) per call).
+static std::map<int, std::pair<std::string, int>> g_jStoryPos;
+
+static size_t g_jSeasonStoriesS = (size_t)-1, g_jSeasonStoriesT = (size_t)-1;
 
 static std::map<int, Api::V2::Achievement> g_jAch; // achievement id -> catalog (icon/rewards)
 
@@ -176,6 +196,7 @@ struct PsCharView
     bool computed = false;
 };
 static std::map<std::string, PsCharView> g_psView; // character name -> its view (ALL known characters)
+static uint64_t g_psViewVer = 0;                   // bumped on every g_psView write -> change token for PersonalStoryProgress
 static std::map<std::string, int> g_psFetching;    // character -> outstanding fetch count (3..0); guards re-entry
 
 // Shared static catalogs (fetched once; needed to reconstruct any character).
@@ -470,6 +491,7 @@ static void RebuildViewFor(const std::string &name, const std::string &race, con
     }
 
     g_psView[name] = std::move(v);
+    ++g_psViewVer;
     g_psCacheDirty = true;
     if (name == g_psChar)
         g_psActiveDirty = true; // the displayed character's view changed -> re-activate
@@ -506,10 +528,25 @@ static void ActivateView(const std::string &cur, bool resetSel)
 // fresh API fetch OR the disk cache -- the cache path never runs RebuildViewFor, so we must not depend on it.
 PsProgress PersonalStoryProgress(App &app)
 {
+    // Memoized per (character, view generation): the `total` pass below scans the whole ~590-entry quest map
+    // into a std::set, and this is called EVERY frame by the dashboard widget, the Journal's suggested-next
+    // banner and StoryRecommend (viewer card + release groups). g_psViewVer bumps whenever any view is rebuilt
+    // or re-activated, so a real change still recomputes immediately.
+    static std::string s_char = "\x01"; // sentinel: force the first build
+    static uint64_t s_ver = (uint64_t)-1;
+    static PsProgress s_cached;
+    if (s_char == app.state.currentChar && s_ver == g_psViewVer)
+        return s_cached;
+
     PsProgress p;
     auto it = g_psView.find(app.state.currentChar);
     if (it == g_psView.end() || !it->second.computed)
+    {
+        s_char = app.state.currentChar;
+        s_ver = g_psViewVer;
+        s_cached = p;
         return p;
+    }
     const PsCharView &v = it->second;
     p.ready = true;
 
@@ -567,6 +604,9 @@ PsProgress PersonalStoryProgress(App &app)
     p.total = (int)pos.size();
     if (p.total < p.done)
         p.total = p.done; // safety (shouldn't happen)
+    s_char = app.state.currentChar;
+    s_ver = g_psViewVer;
+    s_cached = p;
     return p;
 }
 
@@ -638,6 +678,7 @@ static void PsCharFetchDone(const std::string &name)
     {
         acc.computed = false;
         g_psView[name] = std::move(acc);
+        ++g_psViewVer;
     } // stash raw; OnPsCatalogsReady() will build
 }
 
@@ -782,7 +823,10 @@ void LoadPersonalStoryCache(const std::string &path)
                 v.chapters.push_back(std::move(ch));
             }
         if (valid)
+        {
             g_psView[it.key()] = std::move(v);
+            ++g_psViewVer;
+        }
     }
 }
 
@@ -1185,11 +1229,19 @@ static void DrawSeasonHeaderBg(ImDrawList *dl, ImVec2 a, ImVec2 b, const std::st
     dl->AddRectFilled(a, ImVec2(a.x + 4.f, b.y), tint); // bright accent edge
 }
 
+static std::string JournalSeasonId(int storyId)
+{
+    auto it = g_jStoryPos.find(storyId);
+    return it != g_jStoryPos.end() ? it->second.first : std::string();
+}
+
 static std::string JournalSeasonName(int storyId)
 {
-    for (const auto &s : g_jSeasons)
-        if (std::find(s.stories.begin(), s.stories.end(), storyId) != s.stories.end())
-            return s.name;
+    const std::string id = JournalSeasonId(storyId);
+    if (!id.empty())
+        for (const auto &s : g_jSeasons)
+            if (s.id == id)
+                return s.name;
     return "";
 }
 
@@ -1198,47 +1250,26 @@ static bool JournalPerCharacter(const std::string &seasonName)
     return seasonName.find("My Story") != std::string::npos || seasonName.find("Personal") != std::string::npos;
 }
 
-// Normalize an episode name to cross-match API stories ("1. Flame and Frost") to our stories.json episodes
-// ("Flame and Frost"): strip a leading "N. " then lowercase.
-static std::string NormalizeEpName(const std::string &s)
-{
-    size_t i = 0;
-    while (i < s.size() && std::isdigit((unsigned char)s[i]))
-        ++i;
-    if (i > 0 && i < s.size() && s[i] == '.')
-    {
-        ++i;
-        while (i < s.size() && s[i] == ' ')
-            ++i;
-    }
-    else
-        i = 0;
-    std::string out = s.substr(i);
-    for (char &c : out)
-        c = (char)std::tolower((unsigned char)c);
-    return out;
-}
-
-// The achievement ids an API story unlocks, via our stories.json episode (matched by normalized name).
-// Memoized per story id (the spine never changes after load) so the tree's per-row done-check is O(1) per
-// frame instead of re-scanning every episode of every release each frame (that was the stutter).
+// The achievement ids an API story unlocks, looked up by /v2/stories id -- stories.json is keyed by the same
+// `storyId`, so this is a direct hit with no name matching (the old normalized-name match could never pair an
+// expansion's ACT entries with the Journal's EPISODE rows, leaving all of HoT/PoF/EoD/SotO/JW/VoE undetectable).
+// Built once into a flat index: the spine never changes after load.
 static const std::vector<int> &StoryAchievementIds(App &app, const Api::V2::Story &st)
 {
-    static std::map<int, std::vector<int>> cache;
-    auto c = cache.find(st.id);
-    if (c != cache.end())
-        return c->second;
-
-    std::vector<int> &slot = cache[st.id];
-    const std::string n = NormalizeEpName(st.name);
-    for (const auto &kv : app.stories.ByRelease())
-        for (const StoryEpisode &ep : kv.second)
-            if (NormalizeEpName(ep.name) == n)
-            {
-                slot = ep.achievementIds;
-                return slot;
-            }
-    return slot; // empty (no match)
+    static std::map<int, std::vector<int>> index;
+    static size_t builtFor = (size_t)-1;
+    if (builtFor != app.stories.ByRelease().size())
+    {
+        index.clear();
+        for (const auto &kv : app.stories.ByRelease())
+            for (const StoryEpisode &ep : kv.second)
+                if (ep.storyId > 0)
+                    index[ep.storyId] = ep.achievementIds;
+        builtFor = app.stories.ByRelease().size();
+    }
+    static const std::vector<int> kNone;
+    auto it = index.find(st.id);
+    return it != index.end() ? it->second : kNone;
 }
 
 static bool JournalAutoDone(App &app, const std::vector<int> &achIds)
@@ -1258,6 +1289,40 @@ static bool JournalDone(App &app, const Api::V2::Story &st)
         return true;
     const std::string scope = JournalPerCharacter(JournalSeasonName(st.id)) ? app.state.currentChar : std::string();
     return app.storyStore.IsDone("story:" + std::to_string(st.id), scope);
+}
+
+static void ApplySeasonCascade(App &app, const std::vector<const Api::V2::Story *> &ordered, int idx, bool done)
+{
+    if (idx < 0 || idx >= (int)ordered.size())
+        return;
+    const std::string scope = JournalPerCharacter(JournalSeasonName(ordered[idx]->id)) ? app.state.currentChar : std::string();
+    const auto set = [&](const Api::V2::Story &st, bool v)
+    { app.storyStore.Set("story:" + std::to_string(st.id), v, scope); };
+
+    if (done)
+    {
+        for (int i = 0; i <= idx; ++i)
+            if (!JournalAutoDone(app, StoryAchievementIds(app, *ordered[i]))) // already proven -- don't store a duplicate
+                set(*ordered[i], true);
+    }
+    else
+    {
+        for (int i = idx; i < (int)ordered.size(); ++i)
+            set(*ordered[i], false);
+    }
+}
+
+// The highest index in an ordered season that is known-done, or -1. The suggestion uses it to SUPERSEDE the
+// episodes below: story is strictly sequential within a season, so anything before a confirmed completion has
+// been played even when we cannot prove it (LWS1 and a handful of side episodes carry no completion
+// achievement at all, and without this the "Suggested next" banner parks on the first of them forever).
+// Read-only -- it never marks anything done, so the dots and the completion counts stay honest.
+static int SeasonLastDone(App &app, const std::vector<const Api::V2::Story *> &ordered)
+{
+    for (int i = (int)ordered.size() - 1; i >= 0; --i)
+        if (JournalDone(app, *ordered[i]))
+            return i;
+    return -1;
 }
 
 // Is this the personal-story ("My Story") season? Its API stories are branched per race, so we replace them
@@ -1760,9 +1825,18 @@ static void DrawJournalDetail(App &app, const Api::V2::Story &st)
     const bool autoDone = JournalAutoDone(app, achIds);
     bool checked = autoDone || app.storyStore.IsDone(key, scope);
     const char *clbl = autoDone ? "Completed (from your achievements)"
-                                : (checked ? "Completed - click to undo" : "Mark this episode complete");
+                                : (checked ? "Completed - click to undo (also clears the later episodes)"
+                                           : "Mark this episode complete (also marks the earlier ones)");
     if (JournalCompleteRow(clbl, &checked, autoDone))
-        app.storyStore.Set(key, checked, scope);
+    {
+        // Cascade over the season run (ticking N marks 1..N), matching the personal story's chapter cascade.
+        auto pos = g_jStoryPos.find(st.id);
+        auto sit = pos != g_jStoryPos.end() ? g_jSeasonStories.find(pos->second.first) : g_jSeasonStories.end();
+        if (sit != g_jSeasonStories.end())
+            ApplySeasonCascade(app, sit->second, pos->second.second, checked);
+        else
+            app.storyStore.Set(key, checked, scope); // not in a season list (shouldn't happen) -- plain single mark
+    }
 
     DrawMapZoomPopup(); // enlarged map, opened by clicking the infobox map
 }
@@ -1938,16 +2012,10 @@ static void DrawPersonalStoryDetail(App &app, int sel)
     Gw2Ui::Label("Continue your story in the in-game Story Journal.", IM_COL32(160, 155, 145, 255), false, nullptr, 16.f);
 }
 
-// The per-season story lists (sorted by `order`) are STATIC once the API data has landed (the API ships the
-// season.stories unsorted), so precompute them when the story/season sets change - not every frame. Pointers
-// are into g_jStories (a std::map, node-stable), and the cache rebuilds whenever either set grows.
-static std::map<std::string, std::vector<const Api::V2::Story *>> g_jSeasonStories;
-
-static size_t g_jSeasonStoriesS = (size_t)-1, g_jSeasonStoriesT = (size_t)-1;
-
 static void BuildJournalSeasonStories()
 {
     g_jSeasonStories.clear();
+    g_jStoryPos.clear();
     for (const Api::V2::StorySeason &s : g_jSeasons)
     {
         std::vector<const Api::V2::Story *> ss;
@@ -1959,6 +2027,8 @@ static void BuildJournalSeasonStories()
         }
         std::sort(ss.begin(), ss.end(), [](const Api::V2::Story *a, const Api::V2::Story *b)
                   { return a->order < b->order; });
+        for (int i = 0; i < (int)ss.size(); ++i)
+            g_jStoryPos[ss[i]->id] = {s.id, i};
         g_jSeasonStories[s.id] = std::move(ss);
     }
     g_jSeasonStoriesS = g_jStories.size();
@@ -2028,15 +2098,21 @@ void DrawJournalContent(App &app)
         return row.clicked;
     };
 
-    // Suggested-next = the first not-done entry in journal order (the game's green "currently playing" star).
+    // Suggested-next = the first not-done entry in journal order (the game's green "currently playing" star),
+    // SKIPPING episodes a later completion in the same season has superseded and releases this account cannot
+    // play. Without both, the banner parks forever on the first episode we cannot auto-detect (LWS1 has no
+    // completion achievements at all) or on an expansion the player does not own.
     int sugChapter = 0;
     int sugStoryId = -1;
     bool sugFound = false;
     std::string sugSeasonId, sugName;
+    const std::vector<std::string> &access = AccountData::Get().access;
     for (const Api::V2::StorySeason &s : g_jSeasons)
     {
         if (!IsPersonalSeason(s.name) && s.stories.empty())
             continue;
+        if (!StoryData::ReleasePlayable(StoryData::ReleaseForSeason(s.name), access))
+            continue; // not owned -- do not send the player somewhere they cannot go (fails open when unknown)
         if (IsPersonalSeason(s.name))
         {
             const PsProgress ps = PersonalStoryProgress(app);
@@ -2064,12 +2140,14 @@ void DrawJournalContent(App &app)
         }
         else if (auto sit = g_jSeasonStories.find(s.id); sit != g_jSeasonStories.end())
         {
-            for (const Api::V2::Story *st : sit->second)
-                if (!JournalDone(app, *st))
+            // Start past the last confirmed completion: everything below it is superseded (story is sequential
+            // within a season), so an undetectable episode can no longer wall the walk.
+            for (int i = SeasonLastDone(app, sit->second) + 1; i < (int)sit->second.size(); ++i)
+                if (!JournalDone(app, *sit->second[i]))
                 {
-                    sugStoryId = st->id;
+                    sugStoryId = sit->second[i]->id;
                     sugSeasonId = s.id;
-                    sugName = st->name;
+                    sugName = sit->second[i]->name;
                     sugFound = true;
                     break;
                 }

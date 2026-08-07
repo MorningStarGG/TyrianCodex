@@ -617,6 +617,11 @@ namespace
                 if (j.contains("wvw_rank") && j["wvw_rank"].is_number())           g_m.wvwRank = j["wvw_rank"].get<int>();
                 if (j.contains("daily_ap") && j["daily_ap"].is_number())           g_m.dailyAp = j["daily_ap"].get<int>();      // capped historical daily AP
                 if (j.contains("monthly_ap") && j["monthly_ap"].is_number())       g_m.monthlyAp = j["monthly_ap"].get<int>();  // capped historical monthly AP
+                if (j.contains("access") && j["access"].is_array())                                          // owned expansions
+                {
+                    g_m.access.clear();
+                    for (const auto& a : j["access"]) if (a.is_string()) g_m.access.push_back(a.get<std::string>());
+                }
                 g_m.totalAp = g_m.achPermAp + g_m.dailyAp + g_m.monthlyAp;   // fold into the (possibly already-computed) permanent sum
                 g_m.haveAccount = true; g_m.accountAt = Now();
                 SaveInventoryCache();
@@ -1020,6 +1025,7 @@ namespace
         if (g_cacheFile.empty()) return;
         nlohmann::json j;
         j["accountId"] = g_m.accountId; j["accountName"] = g_m.accountName; j["age"] = g_m.age; j["fractalLevel"] = g_m.fractalLevel; j["wvwRank"] = g_m.wvwRank; j["haveAccount"] = g_m.haveAccount;
+        j["access"] = g_m.access;   // owned expansions -> story suggestions stay gated from the first frame after a restart
         if (g_m.haveWvwMatch)   // full match snapshot -> the scoreboard + rendered map show last-known instantly on reload
         {
             nlohmann::json wv;
@@ -1464,6 +1470,9 @@ void AccountData::LoadCache()
 
     g_m.accountId = j.value("accountId", std::string()); g_m.accountName = j.value("accountName", std::string()); g_m.age = j.value("age", 0L);
     g_m.fractalLevel = j.value("fractalLevel", 0); g_m.wvwRank = j.value("wvwRank", 0); g_m.haveAccount = j.value("haveAccount", false);
+    g_m.access.clear();
+    if (j.contains("access") && j["access"].is_array())
+        for (const auto& a : j["access"]) if (a.is_string()) g_m.access.push_back(a.get<std::string>());
     if (j.contains("wvw") && j["wvw"].is_object())   // last-known WvW match (re-verified by ResolveWvwTeam: wvwTeamId left 0)
     {
         const auto& wv = j["wvw"];

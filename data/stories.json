@@ -1,95 +1,227 @@
 {
-  "generatedAt": "2026-06-05T07:34:24+00:00",
-  "source": "GW2 API /v2/stories(+seasons) + /v2/achievements (Story Journal group); completion detected via the 'Journal: ... Completed' requirement pattern.",
+  "generatedAt": "2026-08-06T22:11:08+00:00",
+  "source": "GW2 API /v2/stories(+seasons) + /v2/achievements (Story Journal group); one entry per story EPISODE keyed by storyId, completion detected via the 'Journal: ...' pattern.",
   "releases": {
-    "voe": {
+    "lws2": {
       "episodes": [
         {
-          "name": "Visions of Eternity: Act 1",
-          "order": 37,
-          "description": "",
+          "storyId": 11,
+          "name": "1. Gates of Maguuma",
+          "order": 1,
+          "description": "When a roar was heard from somewhere out west, many worried that Scarlet Briar managed to rouse an Elder Dragon during her destructive attack on Lion's Arch. Now, mysterious incursions into Brisban Wildlands have alerted Tyria's heroes to a new threat reaching across its frontiers to tear at its foundations.",
           "achievementIds": [
-            8891,
-            8936,
-            9031,
-            9036,
-            9038
+            1641
           ]
         },
         {
-          "name": "Visions of Eternity: Act 2",
-          "order": 38,
-          "description": "",
+          "storyId": 12,
+          "name": "2. Entanglement",
+          "order": 2,
+          "description": "Treachery and tragedy led Tyria's heroes on a chase across the frontiers of the Maguuma Wastes and landed them at the doorstep of their former adversary. What has Taimi been able to learn from her investigation, and who's been watching from atop the mesa above Prospect Valley?",
           "achievementIds": [
-            8940,
-            8955,
-            9017
+            1659
+          ]
+        },
+        {
+          "storyId": 13,
+          "name": "3. The Dragon's Reach, Part 1",
+          "order": 3,
+          "description": "With an Elder Dragon's corruption spreading, the heroes of Tyria set out in an attempt to gather allies to meet this new threat. But with problems of their own close to home, will world leaders add their support or just introduce more challenges?",
+          "achievementIds": [
+            1674
+          ]
+        },
+        {
+          "storyId": 14,
+          "name": "4. The Dragon's Reach, Part 2",
+          "order": 4,
+          "description": "World leaders are converging for a historic summit in the spreading shadow of Mordremoth's advance. Can you convince uneasy allies to cooperate, or will political turmoil spell Tyria's doom?",
+          "achievementIds": [
+            1700
+          ]
+        },
+        {
+          "storyId": 15,
+          "name": "5. Echoes of the Past",
+          "order": 5,
+          "description": "As Tyria prepares for war with another Elder Dragon, the search for information becomes paramount. The arcane secrets stashed inside the depths of the Durmand Priory shed some light on your mysterious vision, and also give hope for the future.",
+          "achievementIds": [
+            1783
+          ]
+        },
+        {
+          "storyId": 16,
+          "name": "6. Tangled Paths",
+          "order": 6,
+          "description": "As the Pact continues its preparations for the fight against Mordremoth, a new opportunity arises. But the search for the Master of Peace ends in tragedy, calling into question the motives of a friend.",
+          "achievementIds": [
+            1822
+          ]
+        },
+        {
+          "storyId": 17,
+          "name": "7. Seeds of Truth",
+          "order": 7,
+          "description": "To find where Caithe may be now, the Pale Tree suggests returning to where she's been. Retracing your friend's steps across the years will take you down a strange and dark path.",
+          "achievementIds": [
+            1826
+          ]
+        },
+        {
+          "storyId": 18,
+          "name": "8. Point of No Return",
+          "order": 8,
+          "description": "The memory seeds have led to a cave in the Silverwastes where Caithe once chased after Wynne. Getting into it, however, won't be so easy. Perhaps Ogden Stonehealer at the Durmand Priory will know of a solution.",
+          "achievementIds": [
+            2060
           ]
         }
       ]
     },
-    "jw": {
+    "hot": {
       "episodes": [
         {
-          "name": "Janthir Wilds: Act 1",
-          "order": 42,
-          "description": "",
+          "storyId": 19,
+          "name": "1. Prologue: Rally to Maguuma",
+          "order": 1,
+          "description": "The Elder Dragon Mordremoth has risen, dominating the Maguuma Jungle and destroying the Pact fleet sent to confront it. Now Tyria's bravest heroes race to find the downed Pact flagship and determine the fates of Marshal Trahearne and Destiny's Edge before the dragon's minions completely colonize the jungle and swarm out to overwhelm all of Tyria.",
           "achievementIds": [
-            8160,
-            8247,
-            8272,
-            8324,
-            8339,
-            8366
+            2185
           ]
         },
         {
-          "name": "Janthir Wilds: Act 2",
-          "order": 43,
-          "description": "",
+          "storyId": 32,
+          "name": "2. Torn from the Sky",
+          "order": 2,
+          "description": "Take charge of the demoralized and disorganized survivors of the Pact fleet disaster.",
           "achievementIds": [
-            8163,
-            8226,
-            8240,
-            8290,
-            8368
-          ]
-        }
-      ]
-    },
-    "soto": {
-      "episodes": [
-        {
-          "name": "Secrets of the Obscure: Act 1",
-          "order": 48,
-          "description": "",
-          "achievementIds": [
-            7122,
-            7162,
-            7175,
-            7227,
-            7236
+            2264
           ]
         },
         {
-          "name": "Secrets of the Obscure: Act 2",
-          "order": 49,
-          "description": "",
+          "storyId": 41,
+          "name": "3. Establishing a Foothold",
+          "order": 3,
+          "description": "Help the Pact survivors regroup and establish defenses against Mordrem attacks.",
           "achievementIds": [
-            6997,
-            7010,
-            7089,
-            7091
+            2440
           ]
         },
         {
-          "name": "Secrets of the Obscure: Act 3",
-          "order": 50,
-          "description": "",
+          "storyId": 34,
+          "name": "4. The Jungle Provides",
+          "order": 4,
+          "description": "Make contact with the local Itzel hylek and secure their help as allies against Mordremoth.",
           "achievementIds": [
-            7172,
-            7211,
-            7221
+            2315
+          ]
+        },
+        {
+          "storyId": 26,
+          "name": "5. In Their Footsteps",
+          "order": 5,
+          "description": "Navigate the jungle and confer with the hylek scouts to pick up Rytlock and Braham's trail.",
+          "achievementIds": [
+            2178
+          ]
+        },
+        {
+          "storyId": 33,
+          "name": "6. Prisoners of the Dragon",
+          "order": 6,
+          "description": "Storm the Mordrem Guard prison camp, and release the prisoners.",
+          "achievementIds": [
+            2201
+          ]
+        },
+        {
+          "storyId": 21,
+          "name": "7. Prized Possessions",
+          "order": 7,
+          "description": "Expand your search for Destiny's Edge to include Caithe, who has been spotted nearby with Glint's egg.",
+          "achievementIds": [
+            2320
+          ]
+        },
+        {
+          "storyId": 20,
+          "name": "8. City of Hope",
+          "order": 8,
+          "description": "Secure Glint's egg in Tarir, the golden city designed and built to safeguard Glint's legacy.",
+          "achievementIds": [
+            2627
+          ]
+        },
+        {
+          "storyId": 35,
+          "name": "9. The Predator's Path",
+          "order": 10,
+          "description": "Follow the trail of holo-disks left by Taimi in order to catch up with the others.",
+          "achievementIds": [
+            2527
+          ]
+        },
+        {
+          "storyId": 31,
+          "name": "10. Strange Observations",
+          "order": 11,
+          "description": "The egg is safe in Tarir, but as you search for your friends, the jungle grows even more menacing and steeped in mystery.",
+          "achievementIds": [
+            2501
+          ]
+        },
+        {
+          "storyId": 36,
+          "name": "11. Roots of Terror",
+          "order": 12,
+          "description": "Summary of Chapter 06",
+          "achievementIds": [
+            2531
+          ]
+        },
+        {
+          "storyId": 23,
+          "name": "12. The Way In",
+          "order": 13,
+          "description": "Find a way into Rata Novus.",
+          "achievementIds": [
+            2581
+          ]
+        },
+        {
+          "storyId": 22,
+          "name": "13. Buried Insight",
+          "order": 14,
+          "description": "Find the dragon research lab in the lost city of Rata Novus.",
+          "achievementIds": [
+            2443
+          ]
+        },
+        {
+          "storyId": 42,
+          "name": "14. Sign Cutting",
+          "order": 15,
+          "description": "Follow the trail Rox left for you so you can reunite with your team.",
+          "achievementIds": [
+            2392
+          ]
+        },
+        {
+          "storyId": 27,
+          "name": "15. Bitter Harvest",
+          "order": 16,
+          "description": "Explore Mordremoth's stronghold and try to find your friends and expose the jungle dragon's weakness.",
+          "achievementIds": [
+            2577
+          ]
+        },
+        {
+          "storyId": 25,
+          "name": "16. Hearts and Minds",
+          "order": 17,
+          "description": "Storm Modremoth's stronghold.",
+          "achievementIds": [
+            2472
           ]
         }
       ]
@@ -97,8 +229,165 @@
     "eod": {
       "episodes": [
         {
-          "name": "What Lies Within",
-          "order": 51,
+          "storyId": 112,
+          "name": "0. Convergence",
+          "order": 1,
+          "description": "Five Elder Dragons are dead, and with each death, more magic has been released into Tyria. While most passed to Aurene, the rest vanished. After an exhaustive period of research, Dragon's Watch has finally had a breakthrough.",
+          "achievementIds": []
+        },
+        {
+          "storyId": 101,
+          "name": "1. Old Friends",
+          "order": 2,
+          "description": "Accompany Gorrik as he retrieves dragon research from his contact.",
+          "achievementIds": [
+            6199
+          ]
+        },
+        {
+          "storyId": 104,
+          "name": "2. Outreach",
+          "order": 3,
+          "description": "Prove to the people of Cantha that opening their shores is not a mistake.",
+          "achievementIds": [
+            6126
+          ]
+        },
+        {
+          "storyId": 114,
+          "name": "3. Your Kind of People",
+          "order": 4,
+          "description": "Search for clues about what the Aetherblades did to Aurene and why they are in Cantha.",
+          "achievementIds": [
+            6134
+          ]
+        },
+        {
+          "storyId": 113,
+          "name": "4. Can't Trust a Pirate",
+          "order": 5,
+          "description": "Track down the wayward Captain Mai Trin.",
+          "achievementIds": [
+            6139
+          ]
+        },
+        {
+          "storyId": 110,
+          "name": "5. The Scenic Route",
+          "order": 6,
+          "description": "Pursue the mutineer Ankka to New Kaineng, where Mai Trin believes clues may be found.",
+          "achievementIds": [
+            6323
+          ]
+        },
+        {
+          "storyId": 111,
+          "name": "6. The Future in Jade",
+          "order": 7,
+          "description": "Hunt down what Ankka was looking for in the Xunlai Jade power plants.",
+          "achievementIds": [
+            6259
+          ]
+        },
+        {
+          "storyId": 103,
+          "name": "7. Deepest Secrets",
+          "order": 8,
+          "description": "Meet Joon at her reactor to confront her about Soo-Won's hidden presence.",
+          "achievementIds": [
+            6419
+          ]
+        },
+        {
+          "storyId": 106,
+          "name": "8. Fallout",
+          "order": 9,
+          "description": "Regroup and make a plan to prove your innocence.",
+          "achievementIds": [
+            6146
+          ]
+        },
+        {
+          "storyId": 102,
+          "name": "9. To Catch a Spider",
+          "order": 10,
+          "description": "Track down Ankka in Echovald Forest with the help of the Kestrels.",
+          "achievementIds": [
+            6252
+          ]
+        },
+        {
+          "storyId": 99,
+          "name": "10. Empty",
+          "order": 11,
+          "description": "Use Canach's airship to lure out Ankka and put a stop to her machinations.",
+          "achievementIds": [
+            6268
+          ]
+        },
+        {
+          "storyId": 109,
+          "name": "11. In the Name of the Law",
+          "order": 12,
+          "description": "Meet with Minister Li to present evidence of Ankka's misdeeds.",
+          "achievementIds": [
+            6156
+          ]
+        },
+        {
+          "storyId": 107,
+          "name": "12. Weight of the World",
+          "order": 13,
+          "description": "Convince Joon to ally with us to stop the Void.",
+          "achievementIds": [
+            6500
+          ]
+        },
+        {
+          "storyId": 105,
+          "name": "13. Extraction Point",
+          "order": 14,
+          "description": "Ready the extractors in Dragon's End to trap Soo-Won.",
+          "achievementIds": [
+            6080
+          ]
+        },
+        {
+          "storyId": 100,
+          "name": "14. The Only One",
+          "order": 15,
+          "description": "Purge the Void from Soo-Won.",
+          "achievementIds": [
+            6172
+          ]
+        },
+        {
+          "storyId": 108,
+          "name": "15. The Cycle, Reborn",
+          "order": 16,
+          "description": "Reflect with your allies on your victory over the Void and what comes next.",
+          "achievementIds": [
+            6326
+          ]
+        },
+        {
+          "storyId": 121,
+          "name": "16. What Lies Beneath",
+          "order": 17,
+          "description": "As Cantha recovers in the wake of the dragon cycle's end, Gorrik, Rama, and Yao take on a mind-altering investigation into power and treachery at a Jade Brotherhood mining operation.",
+          "achievementIds": []
+        },
+        {
+          "storyId": 120,
+          "name": "17. Deep Research",
+          "order": 18,
+          "description": "",
+          "achievementIds": []
+        },
+        {
+          "storyId": 122,
+          "name": "18. What Lies Within",
+          "order": 19,
           "description": "",
           "achievementIds": [
             6899,
@@ -108,61 +397,526 @@
           ]
         },
         {
-          "name": "End of Dragons: Interlude",
-          "order": 53,
-          "description": "",
+          "storyId": 123,
+          "name": "Interlude: Forward",
+          "order": 20,
+          "description": "Following the end of the dragon cycle and a restoration of the magical balance across Tyria, Aurene has been preparing for her role as its guardian, the sole remaining Elder Dragon to maintain stability in the fragile new system that she helped establish. Now, her time to step fully into that role has arrived, and the commander is summoned to talk about their place in her plans.",
           "achievementIds": [
             6949
           ]
-        },
+        }
+      ]
+    },
+    "lws3": {
+      "episodes": [
         {
-          "name": "End of Dragons: Act 1",
-          "order": 54,
-          "description": "",
+          "storyId": 46,
+          "name": "1. Out of the Shadows",
+          "order": 1,
+          "description": "The events in the war against Mordremoth came with deep consequences.",
           "achievementIds": [
-            6126,
-            6134,
-            6139,
-            6199
+            3042,
+            3054,
+            3056,
+            3059,
+            3065,
+            3074
           ]
         },
         {
-          "name": "End of Dragons: Act 2",
-          "order": 55,
-          "description": "",
+          "storyId": 56,
+          "name": "2. Rising Flames",
+          "order": 2,
+          "description": "Taimi has another task for you; one of extreme importance to the war on the Elder Dragons. Help her with her research as she tries to nail down how best to deal with them.",
           "achievementIds": [
-            6259,
-            6323,
-            6419
+            3105,
+            3107,
+            3130,
+            3136,
+            3138,
+            3145
           ]
         },
         {
-          "name": "End of Dragons: Act 3",
-          "order": 56,
-          "description": "",
+          "storyId": 63,
+          "name": "3. A Crack in the Ice",
+          "order": 3,
+          "description": "Braham has gone after Svanir in the Shiverpeaks. What better opportunity to kill two birds with one stone: recruit him to Dragon's Watch, and find another corrupted sample for Taimi.",
           "achievementIds": [
-            6146,
-            6252,
-            6268
+            3182,
+            3193,
+            3207,
+            3210,
+            3216,
+            3224,
+            3227
           ]
         },
         {
-          "name": "End of Dragons: Act 4",
-          "order": 57,
-          "description": "",
+          "storyId": 64,
+          "name": "4. The Head of the Snake",
+          "order": 4,
+          "description": "Queen Jennah has summoned you to an emergency gathering of the ministry in Divinity's Reach. What are her plans for Kryta, and what role will you play in them?",
           "achievementIds": [
-            6156,
-            6500
+            3285,
+            3294,
+            3301,
+            3317,
+            3340,
+            3372
           ]
         },
         {
-          "name": "End of Dragons: Act 5",
-          "order": 58,
+          "storyId": 65,
+          "name": "5. Flashpoint",
+          "order": 5,
+          "description": "Taimi says she's completed her device. Has she found a solution to the Elder Dragon problem?",
+          "achievementIds": [
+            3396,
+            3401,
+            3422,
+            3435,
+            3446
+          ]
+        },
+        {
+          "storyId": 66,
+          "name": "6. One Path Ends",
+          "order": 6,
+          "description": "Balthazar has gone missing. How does one go about finding a god?",
+          "achievementIds": [
+            3470,
+            3472,
+            3485,
+            3507,
+            3511
+          ]
+        }
+      ]
+    },
+    "pof": {
+      "episodes": [
+        {
+          "storyId": 83,
+          "name": "1. Sparking the Flame",
+          "order": 1,
+          "description": "Travel to the Crystal Desert and confront the rampaging war god, Balthazar.",
+          "achievementIds": [
+            3816
+          ]
+        },
+        {
+          "storyId": 67,
+          "name": "2. Blazing a Trail",
+          "order": 2,
+          "description": "Establish your noble intentions with the people of Amnoon.",
+          "achievementIds": [
+            3808
+          ]
+        },
+        {
+          "storyId": 82,
+          "name": "3. Night of Fires",
+          "order": 3,
+          "description": "Searching for Balthazar's whereabouts.",
+          "achievementIds": [
+            3730
+          ]
+        },
+        {
+          "storyId": 72,
+          "name": "4. The Sacrifice",
+          "order": 4,
+          "description": "Confronting the god of fire has unintended consequences.",
+          "achievementIds": [
+            3622
+          ]
+        },
+        {
+          "storyId": 79,
+          "name": "5. Crystalline Memories",
+          "order": 5,
+          "description": "Travel to Glint's lair in search of the weapon mentioned in Vlast's memories.",
+          "achievementIds": [
+            3566
+          ]
+        },
+        {
+          "storyId": 69,
+          "name": "6. Hallowed Ground",
+          "order": 6,
+          "description": "Travel through the Tomb of Primeval Kings to find entrance into the Mists in order to seek an audience with the gods.",
+          "achievementIds": [
+            3580
+          ]
+        },
+        {
+          "storyId": 80,
+          "name": "7. Facing the Truth",
+          "order": 7,
+          "description": "Confront the gods and learn the truth about Balthazar.",
+          "achievementIds": [
+            3733
+          ]
+        },
+        {
+          "storyId": 68,
+          "name": "8. The Way Forward",
+          "order": 8,
+          "description": "Search the desert for answers.",
+          "achievementIds": [
+            3664
+          ]
+        },
+        {
+          "storyId": 71,
+          "name": "9. The Departing",
+          "order": 9,
+          "description": "Explore the lost ruins of Kesho for answers about the Forgotten and Glint's Legacy.",
+          "achievementIds": [
+            3588
+          ]
+        },
+        {
+          "storyId": 75,
+          "name": "10. Enemy of My Enemy",
+          "order": 10,
+          "description": "Deceive Palawa Joko's military into battle against Balthazar.",
+          "achievementIds": [
+            3673
+          ]
+        },
+        {
+          "storyId": 76,
+          "name": "11. Beast of War",
+          "order": 11,
+          "description": "Stop Balthazar's campaign to destroy Kralkatorrik.",
+          "achievementIds": [
+            3581
+          ]
+        },
+        {
+          "storyId": 81,
+          "name": "12. To Kill a God",
+          "order": 12,
+          "description": "Defeat Balthazar.",
+          "achievementIds": [
+            3672
+          ]
+        },
+        {
+          "storyId": 78,
+          "name": "13. Small Victory (Epilogue)",
+          "order": 13,
+          "description": "Balthazar is dead, but bigger problems may be on the horizon.",
+          "achievementIds": []
+        }
+      ]
+    },
+    "jw": {
+      "episodes": [
+        {
+          "storyId": 151,
+          "name": "Prologue: The Tyrian Alliance",
+          "order": 1,
+          "description": "Nations of Tyria come together in a historic meeting.",
+          "achievementIds": [
+            8324
+          ]
+        },
+        {
+          "storyId": 155,
+          "name": "1. Unknown Territory",
+          "order": 2,
           "description": "",
           "achievementIds": [
-            6080,
-            6172,
-            6326
+            8272
+          ]
+        },
+        {
+          "storyId": 147,
+          "name": "2. Diplomacy and Discovery",
+          "order": 3,
+          "description": "",
+          "achievementIds": [
+            8366
+          ]
+        },
+        {
+          "storyId": 152,
+          "name": "3. Home Sweet Home",
+          "order": 4,
+          "description": "",
+          "achievementIds": [
+            8247
+          ]
+        },
+        {
+          "storyId": 146,
+          "name": "4. Missing in Action",
+          "order": 5,
+          "description": "",
+          "achievementIds": [
+            8160
+          ]
+        },
+        {
+          "storyId": 154,
+          "name": "5. Strangers among Lands",
+          "order": 6,
+          "description": "",
+          "achievementIds": [
+            8339
+          ]
+        },
+        {
+          "storyId": 149,
+          "name": "6. Storm Clouds over Janthir",
+          "order": 7,
+          "description": "",
+          "achievementIds": [
+            8240
+          ]
+        },
+        {
+          "storyId": 150,
+          "name": "7. Twice Stricken",
+          "order": 8,
+          "description": "",
+          "achievementIds": [
+            8226
+          ]
+        },
+        {
+          "storyId": 148,
+          "name": "8. Finding Balance",
+          "order": 9,
+          "description": "",
+          "achievementIds": [
+            8368
+          ]
+        },
+        {
+          "storyId": 145,
+          "name": "9. Against the Wall",
+          "order": 10,
+          "description": "",
+          "achievementIds": [
+            8290
+          ]
+        },
+        {
+          "storyId": 153,
+          "name": "10. Sorrow in These Halls",
+          "order": 11,
+          "description": "",
+          "achievementIds": [
+            8163
+          ]
+        },
+        {
+          "storyId": 156,
+          "name": "11. Trial and Error",
+          "order": 12,
+          "description": "The commander, Caithe, and Malice track down the Durmand Priory's missing titan expert.",
+          "achievementIds": [
+            8470
+          ]
+        },
+        {
+          "storyId": 158,
+          "name": "12. Battle's Eve",
+          "order": 13,
+          "description": "Stoic Alder invites delegates from the Tyrian Alliance to the battle's eve feast.",
+          "achievementIds": [
+            8451
+          ]
+        },
+        {
+          "storyId": 157,
+          "name": "13. Balrior Peak",
+          "order": 14,
+          "description": "The commander and their allies climb Mount Balrior to track down the titans.",
+          "achievementIds": [
+            8490
+          ]
+        },
+        {
+          "storyId": 160,
+          "name": "14. Into the Valley of Shadow",
+          "order": 15,
+          "description": "The commander travels to the outskirts of Bava Nisos to uncover the long-ruined city's menacing past.",
+          "achievementIds": [
+            8614
+          ]
+        },
+        {
+          "storyId": 159,
+          "name": "15. A Legacy Damned",
+          "order": 16,
+          "description": "The commander pursues Mabon's essence.",
+          "achievementIds": [
+            8632
+          ]
+        },
+        {
+          "storyId": 161,
+          "name": "16. Penance for the Past",
+          "order": 17,
+          "description": "The essence of Mabon guides the commander toward the gates of Bava Nisos.",
+          "achievementIds": [
+            8559
+          ]
+        },
+        {
+          "storyId": 163,
+          "name": "17. Forced Entry",
+          "order": 18,
+          "description": "Rash decisions are made, leading the wayfinder into the heart of Bava Nisos, and face-to-face with the truths that await...",
+          "achievementIds": []
+        },
+        {
+          "storyId": 164,
+          "name": "18. A Titanic Undertaking",
+          "order": 19,
+          "description": "Entering the heart of Bava Nisos, the wayfinder and their allies are confronted by Saevus Saxum, the massive titan that has become one with the city he once helped bring to ruin.",
+          "achievementIds": []
+        },
+        {
+          "storyId": 162,
+          "name": "19. Salvation's Cost",
+          "order": 20,
+          "description": "Faced with the difficult task of releasing the White Mantle spirits tied to the Mists gate, the wayfinder must locate touchstones that can free the spirits from their eternal torment.",
+          "achievementIds": [
+            8731
+          ]
+        }
+      ]
+    },
+    "voe": {
+      "episodes": [
+        {
+          "storyId": 172,
+          "name": "Prologue: On the Sly",
+          "order": 1,
+          "description": "",
+          "achievementIds": [
+            8936
+          ]
+        },
+        {
+          "storyId": 168,
+          "name": "1. Unscheduled Departures",
+          "order": 2,
+          "description": "",
+          "achievementIds": [
+            8891
+          ]
+        },
+        {
+          "storyId": 167,
+          "name": "2. Solid Ground",
+          "order": 3,
+          "description": "",
+          "achievementIds": [
+            9031
+          ]
+        },
+        {
+          "storyId": 165,
+          "name": "3. Eyes, Ears, and Arms",
+          "order": 4,
+          "description": "",
+          "achievementIds": [
+            9036
+          ]
+        },
+        {
+          "storyId": 166,
+          "name": "4. Truths Unearthed",
+          "order": 5,
+          "description": "",
+          "achievementIds": [
+            9038
+          ]
+        },
+        {
+          "storyId": 169,
+          "name": "5. Beneath the Canopy",
+          "order": 6,
+          "description": "",
+          "achievementIds": [
+            9017
+          ]
+        },
+        {
+          "storyId": 173,
+          "name": "6. Ruins of the Old World",
+          "order": 7,
+          "description": "",
+          "achievementIds": [
+            8940
+          ]
+        },
+        {
+          "storyId": 170,
+          "name": "7. Fumbling in the Dark",
+          "order": 8,
+          "description": "",
+          "achievementIds": [
+            8955
+          ]
+        },
+        {
+          "storyId": 171,
+          "name": "8. Path of Divinity",
+          "order": 9,
+          "description": "",
+          "achievementIds": []
+        },
+        {
+          "storyId": 178,
+          "name": "9. On the Threshold",
+          "order": 10,
+          "description": "The commander ventures deeper into the island of Castora in pursuit of the Inquest.",
+          "achievementIds": [
+            9278
+          ]
+        },
+        {
+          "storyId": 176,
+          "name": "10. Within Your Grasp",
+          "order": 11,
+          "description": "The team attempts to catch up with the mysterious Director Vloxx.",
+          "achievementIds": [
+            9317
+          ]
+        },
+        {
+          "storyId": 179,
+          "name": "11. Divitium Nava",
+          "order": 12,
+          "description": "The commander and Canach build a device to narrow Vloxx's lead.",
+          "achievementIds": [
+            9284
+          ]
+        },
+        {
+          "storyId": 174,
+          "name": "12. A Bold Strategy",
+          "order": 13,
+          "description": "The team turns to an enemy for aid.",
+          "achievementIds": [
+            9312
+          ]
+        },
+        {
+          "storyId": 175,
+          "name": "13. So It Is Written",
+          "order": 14,
+          "description": "A hindered ally returns to the field.",
+          "achievementIds": [
+            9336
           ]
         }
       ]
@@ -170,9 +924,81 @@
     "lws5": {
       "episodes": [
         {
-          "name": "Champions",
-          "order": 59,
-          "description": "",
+          "storyId": 91,
+          "name": "Prologue: Bound by Blood",
+          "order": 1,
+          "description": "Dragon's Watch travels to the Blood Legion homelands at the invitation of Imperator Bangar Ruinbringer to commemorate Kralkatorrik's defeat with an all-legion rally.",
+          "achievementIds": [
+            4899,
+            4914,
+            4957,
+            4974,
+            4988
+          ]
+        },
+        {
+          "storyId": 93,
+          "name": "1. Whisper in the Dark",
+          "order": 2,
+          "description": "The commander and allies rush to Bjora Marches in pursuit of Bangar as he attempts to subjugate Jormag. But from the moment they arrive, their progress is halted by the vicious Sons of Svanir and mysterious whispers that threaten to unravel them.",
+          "achievementIds": [
+            5031,
+            5050,
+            5053,
+            5063
+          ]
+        },
+        {
+          "storyId": 94,
+          "name": "2. Shadow in the Ice",
+          "order": 3,
+          "description": "When Braham goes missing in the hunt for Rytlock and Crecia, the commander travels west to find him. Beyond the door in the mountains lies a long-forgotten lake remembered only in norn legend, home to the terrifying source of the whispers plaguing the Far Shiverpeaks...",
+          "achievementIds": [
+            5102,
+            5109,
+            5113,
+            5124,
+            5130
+          ]
+        },
+        {
+          "storyId": 95,
+          "name": "Visions of the Past: Steel and Fire",
+          "order": 4,
+          "description": "Harnessing the Scrying Pool, the commander experiences a vision of the past that sheds light on the forces marshaling in the north.",
+          "achievementIds": []
+        },
+        {
+          "storyId": 96,
+          "name": "3. No Quarter",
+          "order": 5,
+          "description": "Mass defections to Bangar's army have resulted in a charr civil war that will destabilize the legions and thwart efforts to contain the Ice Dragon's awakening. Head to Drizzlewood Coast and quell the insurgency before all is lost.",
+          "achievementIds": [
+            5268,
+            5313,
+            5316,
+            5318,
+            5329
+          ]
+        },
+        {
+          "storyId": 97,
+          "name": "4. Jormag Rising",
+          "order": 6,
+          "description": "With the arrival of the Frost Legion, the charr civil war is intensifying. And the ice dragon has taken notice.",
+          "achievementIds": [
+            5353,
+            5366,
+            5379,
+            5380,
+            5417
+          ]
+        },
+        {
+          "storyId": 98,
+          "name": "5. Champions",
+          "order": 7,
+          "description": "Rallying their allies, the commander defends Tyria from the march of two dragons in the thrilling climax of the Icebrood Saga.",
           "achievementIds": [
             5503,
             5505,
@@ -185,114 +1011,43 @@
             5544,
             5546
           ]
-        },
-        {
-          "name": "Jormag Rising",
-          "order": 60,
-          "description": "",
-          "achievementIds": [
-            5353,
-            5366,
-            5379,
-            5380,
-            5417
-          ]
-        },
-        {
-          "name": "No Quarter",
-          "order": 61,
-          "description": "",
-          "achievementIds": [
-            5268,
-            5313,
-            5316,
-            5318,
-            5329
-          ]
-        },
-        {
-          "name": "Visions of the Past: Steel and Fire",
-          "order": 62,
-          "description": "",
-          "achievementIds": []
-        },
-        {
-          "name": "Shadow in the Ice",
-          "order": 63,
-          "description": "",
-          "achievementIds": [
-            5102,
-            5109,
-            5113,
-            5124,
-            5130
-          ]
-        },
-        {
-          "name": "Whisper in the Dark",
-          "order": 64,
-          "description": "",
-          "achievementIds": [
-            5031,
-            5050,
-            5053,
-            5063
-          ]
-        },
-        {
-          "name": "Prologue: Bound by Blood",
-          "order": 65,
-          "description": "",
-          "achievementIds": [
-            4899,
-            4914,
-            4957,
-            4974,
-            4988
-          ]
         }
       ]
     },
     "lws4": {
       "episodes": [
         {
-          "name": "War Eternal",
-          "order": 66,
-          "description": "",
+          "storyId": 85,
+          "name": "1. Daybreak",
+          "order": 1,
+          "description": "Kralkatorrik is on the loose and Aurene is missing. But before you can deal with your dragon problems, Amnoon needs your help.",
           "achievementIds": [
-            4673,
-            4747,
-            4753
+            3955,
+            3962,
+            3994,
+            3996,
+            4009,
+            4040
           ]
         },
         {
-          "name": "All or Nothing",
-          "order": 67,
-          "description": "",
+          "storyId": 86,
+          "name": "2. A Bug in the System",
+          "order": 2,
+          "description": "A scientist in the mysterious Inquest facility known as Rata Primus appears to hold the key to stopping Palawa Joko's vengeful invasion of Tyria, but infiltrating the enemy's stronghold will prove challenging.",
           "achievementIds": [
-            4493,
-            4497,
-            4513,
-            4588,
-            4618
+            4091,
+            4092,
+            4114,
+            4115,
+            4146
           ]
         },
         {
-          "name": "A Star to Guide Us",
-          "order": 68,
-          "description": "",
-          "achievementIds": [
-            4342,
-            4346,
-            4358,
-            4372,
-            4392
-          ]
-        },
-        {
-          "name": "Long Live the Lich",
-          "order": 69,
-          "description": "",
+          "storyId": 87,
+          "name": "3. Long Live the Lich",
+          "order": 3,
+          "description": "As the Scarab Plague threatens the Free City of Amnoon, Joko's plans are revealed in all their horrific splendor. Put an end to them.",
           "achievementIds": [
             4201,
             4214,
@@ -305,262 +1060,40 @@
           ]
         },
         {
-          "name": "A Bug in the System",
-          "order": 70,
-          "description": "",
+          "storyId": 88,
+          "name": "4. A Star to Guide Us",
+          "order": 4,
+          "description": "Palawa Joko is gone for good, and Elona can finally begin to rebuild. But when a leadership summit in Jahai is unexpectedly interrupted, Elona finds itself at the center of yet another crisis.",
           "achievementIds": [
-            4091,
-            4092,
-            4114,
-            4115,
-            4146
+            4342,
+            4346,
+            4358,
+            4372,
+            4392
           ]
         },
         {
-          "name": "Daybreak",
-          "order": 71,
-          "description": "",
+          "storyId": 89,
+          "name": "5. All or Nothing",
+          "order": 5,
+          "description": "When the details of Glint's legacy are revealed, the commander and Aurene must prove their trust for one another and prepare their allies for the battle of their lives: bringing down the Crystal Dragon.",
           "achievementIds": [
-            3955,
-            3962,
-            3994,
-            3996,
-            4009,
-            4040
-          ]
-        }
-      ]
-    },
-    "pof": {
-      "episodes": [
-        {
-          "name": "Path of Fire: Act 1",
-          "order": 72,
-          "description": "",
-          "achievementIds": [
-            3622,
-            3730,
-            3808,
-            3816
+            4493,
+            4497,
+            4513,
+            4588,
+            4618
           ]
         },
         {
-          "name": "Path of Fire: Act 2",
-          "order": 73,
-          "description": "",
+          "storyId": 90,
+          "name": "6. War Eternal",
+          "order": 6,
+          "description": "Following their catastrophic loss in Thunderhead Keep, the commander's allies gather to honor the fallen. For them, a single question lingers: What now?",
           "achievementIds": [
-            3566,
-            3580,
-            3664,
-            3733
-          ]
-        },
-        {
-          "name": "Path of Fire: Act 3",
-          "order": 74,
-          "description": "",
-          "achievementIds": [
-            3581,
-            3588,
-            3672,
-            3673
-          ]
-        }
-      ]
-    },
-    "lws3": {
-      "episodes": [
-        {
-          "name": "One Path Ends",
-          "order": 75,
-          "description": "",
-          "achievementIds": [
-            3470,
-            3472,
-            3485,
-            3507,
-            3511
-          ]
-        },
-        {
-          "name": "Flashpoint",
-          "order": 76,
-          "description": "",
-          "achievementIds": [
-            3396,
-            3401,
-            3422,
-            3435,
-            3446
-          ]
-        },
-        {
-          "name": "The Head of the Snake",
-          "order": 77,
-          "description": "",
-          "achievementIds": [
-            3285,
-            3294,
-            3301,
-            3317,
-            3340,
-            3372
-          ]
-        },
-        {
-          "name": "A Crack in the Ice",
-          "order": 78,
-          "description": "",
-          "achievementIds": [
-            3182,
-            3193,
-            3207,
-            3210,
-            3216,
-            3224,
-            3227
-          ]
-        },
-        {
-          "name": "Rising Flames",
-          "order": 79,
-          "description": "",
-          "achievementIds": [
-            3105,
-            3107,
-            3130,
-            3136,
-            3138,
-            3145
-          ]
-        },
-        {
-          "name": "Out of the Shadows",
-          "order": 80,
-          "description": "",
-          "achievementIds": [
-            3042,
-            3054,
-            3056,
-            3059,
-            3065,
-            3074
-          ]
-        }
-      ]
-    },
-    "hot": {
-      "episodes": [
-        {
-          "name": "Heart of Thorns: Act 1",
-          "order": 81,
-          "description": "",
-          "achievementIds": [
-            2178,
-            2185,
-            2201,
-            2264,
-            2315,
-            2440
-          ]
-        },
-        {
-          "name": "Heart of Thorns: Act 2",
-          "order": 82,
-          "description": "",
-          "achievementIds": [
-            2320,
-            2501,
-            2527,
-            2627
-          ]
-        },
-        {
-          "name": "Heart of Thorns: Act 3",
-          "order": 83,
-          "description": "",
-          "achievementIds": [
-            2392,
-            2443,
-            2531,
-            2581
-          ]
-        },
-        {
-          "name": "Heart of Thorns: Act 4",
-          "order": 84,
-          "description": "",
-          "achievementIds": [
-            2472,
-            2577
-          ]
-        }
-      ]
-    },
-    "lws2": {
-      "episodes": [
-        {
-          "name": "Point of No Return",
-          "order": 85,
-          "description": "",
-          "achievementIds": [
-            2060
-          ]
-        },
-        {
-          "name": "Seeds of Truth",
-          "order": 86,
-          "description": "",
-          "achievementIds": [
-            1826
-          ]
-        },
-        {
-          "name": "Tangled Paths",
-          "order": 87,
-          "description": "",
-          "achievementIds": [
-            1822
-          ]
-        },
-        {
-          "name": "Echoes of the Past",
-          "order": 88,
-          "description": "",
-          "achievementIds": [
-            1783
-          ]
-        },
-        {
-          "name": "The Dragon's Reach, Part 2",
-          "order": 89,
-          "description": "",
-          "achievementIds": [
-            1700
-          ]
-        },
-        {
-          "name": "The Dragon's Reach, Part 1",
-          "order": 90,
-          "description": "",
-          "achievementIds": [
-            1674
-          ]
-        },
-        {
-          "name": "Entanglement",
-          "order": 91,
-          "description": "",
-          "achievementIds": [
-            1659
-          ]
-        },
-        {
-          "name": "Gates of Maguuma",
-          "order": 92,
-          "description": "",
-          "achievementIds": [
-            1641
+            4673,
+            4747,
+            4753
           ]
         }
       ]
@@ -568,28 +1101,223 @@
     "lws1": {
       "episodes": [
         {
-          "name": "The Battle for Lion's Arch",
-          "order": 93,
-          "description": "",
+          "storyId": 115,
+          "name": "1. Flame and Frost",
+          "order": 1,
+          "description": "Refugees begin to arrive from the north, bearing tales of outlandish raiders. The commander rallies to the aid of new allies and begins to uncover traces of a threat to all of Tyria.",
           "achievementIds": []
         },
         {
-          "name": "Clockwork Chaos",
-          "order": 99,
-          "description": "",
+          "storyId": 116,
+          "name": "2. Sky Pirates",
+          "order": 2,
+          "description": "In Lion's Arch, a festival is announced to celebrate the dragon's defeat. The commander arrives for the opening ceremony, but is soon plunged into a darker investigation...",
           "achievementIds": []
         },
         {
-          "name": "Sky Pirates",
-          "order": 100,
-          "description": "",
+          "storyId": 117,
+          "name": "3. Clockwork Chaos",
+          "order": 3,
+          "description": "Queen Jennah announces a new celebration in Divinity's Reach, but strange machinations are afoot.",
           "achievementIds": []
         },
         {
-          "name": "Flame and Frost",
-          "order": 101,
-          "description": "",
+          "storyId": 118,
+          "name": "4. The Tower of Nightmares",
+          "order": 4,
+          "description": "In Kessex Hills, evil is brewing. Responding to a missive from Kasmeer, the commander finds the land ravaged by a dark tower looming out of the lake...",
           "achievementIds": []
+        },
+        {
+          "storyId": 119,
+          "name": "5. The Battle for Lion's Arch",
+          "order": 5,
+          "description": "As the mysterious Scarlet Briar's schemes reach their climax, the commander and their allies gather in defense of Tyria.",
+          "achievementIds": []
+        }
+      ]
+    },
+    "soto": {
+      "episodes": [
+        {
+          "storyId": 130,
+          "name": "Prologue: Uncertain Times",
+          "order": 1,
+          "description": "The commander finds themselves with no shortage of things they could do, but at the same time, they are not feeling a pull toward any distinct purpose.",
+          "achievementIds": [
+            7227
+          ]
+        },
+        {
+          "storyId": 131,
+          "name": "1. Commander without a Cause",
+          "order": 2,
+          "description": "The commander is called into action, giving them a much-needed reprieve from an otherwise relaxed vacation.",
+          "achievementIds": [
+            7236
+          ]
+        },
+        {
+          "storyId": 134,
+          "name": "2. Hell Breaks Loose",
+          "order": 3,
+          "description": "The commander is thrust into danger!",
+          "achievementIds": [
+            7175
+          ]
+        },
+        {
+          "storyId": 129,
+          "name": "3. Mother of Stars",
+          "order": 4,
+          "description": "The commander gets to know the mysterious Astral Ward and aids in their efforts to rescue Dagda, the Wizard of the Celestial.",
+          "achievementIds": [
+            7162
+          ]
+        },
+        {
+          "storyId": 132,
+          "name": "4. Voices beyond the Veil",
+          "order": 5,
+          "description": "The commander continues to aid the Astral Ward and the Rift Hunters as they fight back against the Kryptis.",
+          "achievementIds": [
+            7091
+          ]
+        },
+        {
+          "storyId": 127,
+          "name": "5. The Missing Facet",
+          "order": 6,
+          "description": "The commander and their new allies march on the Wizard's Tower.",
+          "achievementIds": [
+            6997
+          ]
+        },
+        {
+          "storyId": 126,
+          "name": "6. Tower of Secrets",
+          "order": 7,
+          "description": "With Dagda and Lyhr saved, the commander finally finds their footing in this strange side of Tyria.",
+          "achievementIds": [
+            7010
+          ]
+        },
+        {
+          "storyId": 125,
+          "name": "7. Mabon's Fate",
+          "order": 8,
+          "description": "The commander, now dubbed the \"wayfinder,\" must track down and attempt to save Mabon before it's too late.",
+          "achievementIds": [
+            7089
+          ]
+        },
+        {
+          "storyId": 128,
+          "name": "8. Into the Obscure",
+          "order": 9,
+          "description": "The wayfinder and the Astral Ward continue in their march against the Kryptis; Amnytas is in danger.",
+          "achievementIds": [
+            7211
+          ]
+        },
+        {
+          "storyId": 133,
+          "name": "9. The World Spire",
+          "order": 10,
+          "description": "The wayfinder and their Astral Ward allies march against the World Spire in search of Isgarren.",
+          "achievementIds": [
+            7221
+          ]
+        },
+        {
+          "storyId": 124,
+          "name": "10. Treachery",
+          "order": 11,
+          "description": "The commander faces Cerus. Hopefully for the last time.",
+          "achievementIds": [
+            7172
+          ]
+        },
+        {
+          "storyId": 138,
+          "name": "11. Duress",
+          "order": 12,
+          "description": "The wayfinder is called back into action by Peitha and the Wizard's Court.",
+          "achievementIds": [
+            7710
+          ]
+        },
+        {
+          "storyId": 135,
+          "name": "12. The Survivors",
+          "order": 13,
+          "description": "The wayfinder finds their bearings in Nayos, the Realm of Dreams.",
+          "achievementIds": [
+            7656
+          ]
+        },
+        {
+          "storyId": 136,
+          "name": "13. Heitor's Gate",
+          "order": 14,
+          "description": "The wayfinder confronts Heitor, one of Eparch's generals, and frees the outer reaches of Nayos.",
+          "achievementIds": [
+            7728
+          ]
+        },
+        {
+          "storyId": 139,
+          "name": "14. The War Council",
+          "order": 15,
+          "description": "The wayfinder helps Peitha weaken King Eparch's control.",
+          "achievementIds": [
+            7825
+          ]
+        },
+        {
+          "storyId": 141,
+          "name": "15. Forced Hand",
+          "order": 16,
+          "description": "The wayfinder seeks a powerful ally.",
+          "achievementIds": [
+            7826
+          ]
+        },
+        {
+          "storyId": 140,
+          "name": "16. Eventide's March",
+          "order": 17,
+          "description": "The wayfinder deals with Queen Labris.",
+          "achievementIds": [
+            7815
+          ]
+        },
+        {
+          "storyId": 143,
+          "name": "17. Desperate Measures",
+          "order": 18,
+          "description": "The wayfinder gathers with allies and prepares for the assault on Zakiros.",
+          "achievementIds": [
+            8021
+          ]
+        },
+        {
+          "storyId": 144,
+          "name": "18. The Eleventh Hour",
+          "order": 19,
+          "description": "The wayfinder ascends the Spire of Dreams.",
+          "achievementIds": [
+            7984
+          ]
+        },
+        {
+          "storyId": 142,
+          "name": "19. Sovereign of Nayos",
+          "order": 20,
+          "description": "The wayfinder witnesses the signing of a historic treaty.",
+          "achievementIds": [
+            8024
+          ]
         }
       ]
     },
