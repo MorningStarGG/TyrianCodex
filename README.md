@@ -41,7 +41,7 @@ The main Tyrian Codex window is organized into user-facing tabs:
 | **Items** | Whole-game item catalog, owned inventory browser, and equipment view. |
 | **Collections** | Wardrobe, Homestead, Fishing, mounts, gliders, skiffs, jade bots, novelties, finishers, mail carriers, minis, titles, emotes, and recipes. |
 | **Trading Post** | Delivery box, open orders, flip finder, crafting cart, and price-history charts. |
-| **Journal** | Story Journal style view plus per-character My Story when API data is available. |
+| **Journal** | Story Journal style view plus per-character My Story when API data is available. Completed episodes tick themselves off from your achievements, and **Track** pins which story the guide suggests next if you are not playing in release order. |
 | **Checklist** | Release, region, zone, and objective tree with search and manual completion control. Helps the addon know what waypoints and things you've already completed. |
 | **Instances** | Dungeons, story instances, fractals, raids, strikes, and home content progress. Routes are shown where bundled route data exists. |
 | **Timers** | Global event board with list and timeline views, filters, and click-to-guide behavior. |

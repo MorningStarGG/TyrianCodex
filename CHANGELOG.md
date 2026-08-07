@@ -1,10 +1,36 @@
 # Changelog
 
+## 1.1.0.3
+
+### Added
+
+- Added a **Track** button to each Story Journal episode that pins the "next story" suggestion to that release, for players working through the story out of release order. The guide viewer's card shows what it is tracking and offers **Stop tracking**, and the pin releases itself once that release is finished.
+- Added a **Hide in WvW** setting to the HUD bar, covering the match maps (Eternal Battlegrounds, the borderlands, Obsidian Sanctum, Edge of the Mists). The WvW Lounge is not affected.
+- Added a **Reset position** button to the HUD settings, which returns the bar to its docked edge.
+
+### Changed
+
+- Changed story completion to be detected per episode instead of per expansion act, so 123 of 143 story episodes now tick themselves off from your achievements where only 27 did before. Heart of Thorns, Path of Fire, End of Dragons, Secrets of the Obscure, Janthir Wilds, and Visions of Eternity previously had no automatic detection at all.
+- Changed marking a story episode complete to also mark the earlier episodes of that season, matching how the personal story chapters already behaved.
+- Changed the story suggestion to skip releases your account cannot play, so it no longer sends you to an expansion you do not own. It never hides anything when expansion ownership is unknown.
+- Changed the HUD bar so it can be dragged by **any** part of it rather than only by the clock, and so its position is stored as a proportion of the screen. The bar now keeps its place after a resolution or monitor change, and picking a different dock edge re-seats it there.
+
+### Fixed
+
+- Fixed the guide viewer's "Next story step" card reading "Chapter 1" and "Story 0/8" for every player regardless of their actual progress. It now follows the real per-character personal story.
+- Fixed the Story Journal's "Suggested next" banner parking permanently on an episode that cannot be detected automatically, such as any Living World Season 1 episode, and never advancing past it.
+- Fixed story episodes being listed in reverse order within a release, which made several seasons suggest their finale first.
+- Fixed Living World Season 1's "The Tower of Nightmares" being missing from the story list entirely.
+- Fixed **Travel** and **Show on map** driving the world map into its top-left corner, and suggesting waypoints from the wrong side of the world, for any zone not already visited that session.
+- Fixed a cross-zone **Show on map** from the Atlas stalling partway to its destination, often out in open water, instead of reaching the location.
+- Fixed the HUD bar becoming unresponsive to dragging after being dragged past a screen edge, where it would ignore movement until the same distance had been dragged back.
+- Fixed the HUD bar being strandable off screen with no way to recover it, which could happen by dragging it wide and then hiding the clock.
+
 ## 1.1.0.2
 
 ### Added
 
-- Added a per-bar Text shadow setting to the Info Panel, with a None / Directional / Drop mode and an adjustable 0-100% strength, so data text stays readable with the background bar dimmed down or turned off entirely.
+- Added a per-bar Text shadow setting to the Info Panel, with a None / Directional / Drop mode and an adjustable 0-100% strength, so data text stays readable with the background bar dimmed down or turned off entirely. Drop shadow version and opacity slider inspired by Netu.
 
 ### Fixed
 
