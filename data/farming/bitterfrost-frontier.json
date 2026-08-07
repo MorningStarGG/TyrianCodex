@@ -38,6 +38,14 @@
       "chatLink": "[&BHwCAAA=]"
     },
     {
+      "x": -428.2,
+      "y": -0.6,
+      "z": -130.2,
+      "material": "mithril",
+      "category": "ore",
+      "icon": "mithril"
+    },
+    {
       "x": -541.5,
       "y": 0.1,
       "z": -352.0,

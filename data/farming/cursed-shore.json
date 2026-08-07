@@ -7,6 +7,12 @@
   "mode": "farming",
   "routes": [
     {
+      "name": "Empyreal Fragment Run",
+      "category": "misc",
+      "material": "empyreal",
+      "source": "lady"
+    },
+    {
       "name": "Mithril Ore",
       "category": "ore",
       "material": "mithril",

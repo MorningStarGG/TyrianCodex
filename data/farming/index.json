@@ -517,10 +517,10 @@
       "name": "Kessex Hills",
       "regionName": "Kryta",
       "routeCount": 3,
-      "nodeCount": 216,
+      "nodeCount": 219,
       "byCategory": {
         "misc": 3,
-        "ore": 6,
+        "ore": 9,
         "plant": 207
       },
       "bundledZone": true
@@ -556,11 +556,11 @@
       "name": "Queensdale",
       "regionName": "Kryta",
       "routeCount": 3,
-      "nodeCount": 40,
+      "nodeCount": 43,
       "byCategory": {
         "event": 2,
         "misc": 13,
-        "ore": 7,
+        "ore": 10,
         "plant": 18
       },
       "bundledZone": true
@@ -638,7 +638,7 @@
       "mapId": 62,
       "name": "Cursed Shore",
       "regionName": "Ruins of Orr",
-      "routeCount": 3,
+      "routeCount": 4,
       "nodeCount": 91,
       "byCategory": {
         "event": 5,
@@ -704,9 +704,9 @@
       "name": "Bitterfrost Frontier",
       "regionName": "Shiverpeak Mountains",
       "routeCount": 2,
-      "nodeCount": 44,
+      "nodeCount": 45,
       "byCategory": {
-        "ore": 2,
+        "ore": 3,
         "plant": 42
       },
       "bundledZone": true
@@ -771,10 +771,10 @@
       "name": "Frostgorge Sound",
       "regionName": "Shiverpeak Mountains",
       "routeCount": 2,
-      "nodeCount": 19,
+      "nodeCount": 14,
       "byCategory": {
         "misc": 1,
-        "ore": 9,
+        "ore": 4,
         "plant": 8,
         "wood": 1
       },

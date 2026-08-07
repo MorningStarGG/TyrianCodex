@@ -13138,6 +13138,33 @@
           "icon": "copper"
         },
         {
+          "x": -798.8,
+          "y": 1.9,
+          "z": -601.2,
+          "role": "node",
+          "trailIndex": 40,
+          "material": "copper",
+          "icon": "copper"
+        },
+        {
+          "x": -626.3,
+          "y": 31.6,
+          "z": -383.8,
+          "role": "node",
+          "trailIndex": 40,
+          "material": "copper",
+          "icon": "copper"
+        },
+        {
+          "x": -451.8,
+          "y": 21.0,
+          "z": -2.3,
+          "role": "node",
+          "trailIndex": 42,
+          "material": "copper",
+          "icon": "copper"
+        },
+        {
           "x": 343.5,
           "y": -2.0,
           "z": 720.0,
