@@ -1838,6 +1838,32 @@ static void DrawJournalDetail(App &app, const Api::V2::Story &st)
             app.storyStore.Set(key, checked, scope); // not in a season list (shouldn't happen) -- plain single mark
     }
 
+    // Pin the story suggestion to THIS release. The suggestion otherwise walks releases chronologically, which
+    // is wrong for anyone playing out of order -- and the API never reports which story the player selected
+    // in-game, so an explicit choice is the only signal there is.
+    const std::string trackRel = StoryData::ReleaseForSeason(seas);
+    if (!trackRel.empty() && !StoryData::PerCharacter(trackRel))
+    {
+        ImGui::Spacing();
+        const bool tracking = (app.config.storyTrack == trackRel);
+        const std::string relName = StoryData::ReleaseName(trackRel);
+        const std::string label = tracking ? ("Tracking " + relName + " - click to stop")
+                                           : ("Track " + relName);
+        const std::string tip = tracking
+            ? "The story suggestion follows this release; click to go back to the suggested order"
+            : ("Make the guide suggest " + relName + " next, instead of the earliest unfinished story");
+        const float availW = ImGui::GetContentRegionAvail().x;
+        const float bw = std::min(availW, Gw2Ui::Scaled(320.f));
+        ImGui::SetCursorPosX(ImGui::GetCursorPosX() + (availW - bw) * 0.5f);   // centred, like the completion panel above
+        if (Gw2Ui::ActionButtonPx(label.c_str(), bw, Gw2Ui::Scaled(26.f),
+                                  tracking ? Gw2Ui::ActionButtonVariant::Primary : Gw2Ui::ActionButtonVariant::Normal,
+                                  tip.c_str()))
+        {
+            app.config.storyTrack = tracking ? std::string() : trackRel;
+            app.settingsDirty = true;
+        }
+    }
+
     DrawMapZoomPopup(); // enlarged map, opened by clicking the infobox map
 }
 
@@ -2105,10 +2131,23 @@ void DrawJournalContent(App &app)
     int sugChapter = 0;
     int sugStoryId = -1;
     bool sugFound = false;
+    bool sugTracked = false;
     std::string sugSeasonId, sugName;
     const std::vector<std::string> &access = AccountData::Get().access;
+    // A pinned release (config.storyTrack, set by the Track button in the episode detail) is scanned FIRST, so
+    // the banner follows the story the player says they are on rather than the earliest unfinished one.
+    std::vector<const Api::V2::StorySeason *> order;
     for (const Api::V2::StorySeason &s : g_jSeasons)
+        if (!app.config.storyTrack.empty() && StoryData::ReleaseForSeason(s.name) == app.config.storyTrack)
+            order.push_back(&s);
+    const size_t trackedCount = order.size();
+    for (const Api::V2::StorySeason &s : g_jSeasons)
+        if (trackedCount == 0 || StoryData::ReleaseForSeason(s.name) != app.config.storyTrack)
+            order.push_back(&s);
+
+    for (size_t si = 0; si < order.size(); ++si)
     {
+        const Api::V2::StorySeason &s = *order[si];
         if (!IsPersonalSeason(s.name) && s.stories.empty())
             continue;
         if (!StoryData::ReleasePlayable(StoryData::ReleaseForSeason(s.name), access))
@@ -2153,7 +2192,10 @@ void DrawJournalContent(App &app)
                 }
         }
         if (sugFound)
+        {
+            sugTracked = (si < trackedCount);
             break;
+        }
     }
 
     // Auto-select the suggested-next episode when nothing is selected yet, so opening the Journal shows that
@@ -2183,7 +2225,8 @@ void DrawJournalContent(App &app)
         {
             if (void *star = Tex::GetTextureFromAssetId(102369))
                 dl->AddImage((ImTextureID)star, ImVec2(bp.x + 9.f, bp.y + (bh - 26.f) * 0.5f), ImVec2(bp.x + 35.f, bp.y + (bh - 26.f) * 0.5f + 26.f));
-            Gw2Ui::LabelIn(ImVec2(bp.x, bp.y + 5.f), ImVec2(bp.x + bw, bp.y + 24.f), "Suggested next",
+            Gw2Ui::LabelIn(ImVec2(bp.x, bp.y + 5.f), ImVec2(bp.x + bw, bp.y + 24.f),
+                           sugTracked ? "Tracking" : "Suggested next",
                            Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, IM_COL32(175, 190, 178, 255), false, nullptr, 16.f);
             Gw2Ui::LabelIn(ImVec2(bp.x, bp.y + 23.f), ImVec2(bp.x + bw, bp.y + bh - 4.f), sugName.c_str(),
                            Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, IM_COL32(150, 225, 165, 255), true, nullptr, 20.f, 0.f, 1.3f);

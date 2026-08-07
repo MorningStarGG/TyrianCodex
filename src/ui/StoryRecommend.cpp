@@ -81,48 +81,72 @@ static int LastDoneIndex(App& app, const std::string& rel, const std::vector<Sto
     return -1;
 }
 
+// The next unfinished episode WITHIN one release, or false when that release is finished / unplayable.
+// `rel` must be an element of StoryData::ReleaseOrder() -- NextStory keeps a pointer to it.
+static bool NextInRelease(App& app, const std::string& rel, const std::vector<std::string>& access,
+                          StoryRecommend::NextStory& ns)
+{
+    const std::vector<StoryEpisode>* eps = app.stories.Episodes(rel);
+    if (!eps || eps->empty()) return false;
+    if (!StoryData::ReleasePlayable(rel, access)) return false;   // not owned (fails open when unknown)
+
+    // The personal story is per-CHARACTER and reconstructed live from /v2/characters/:id/quests -- the manual
+    // "core:Chapter N" marks below can no longer even be written from the Journal once that reconstruction is
+    // up, so the API answer wins whenever it is ready.
+    if (StoryData::PerCharacter(rel))
+    {
+        const PsProgress ps = PersonalStoryProgress(app);
+        if (ps.ready)
+        {
+            if (ps.allDone) return false;
+            ns.release     = &rel;
+            ns.name        = ps.nextName.empty() ? std::string("Personal story") : ps.nextName;
+            ns.description = "Your personal story continues. Play it from the in-game Story Journal.";
+            ns.entryZone   = EntryZone(app, rel);
+            return true;
+        }
+        // not ready (no key / not fetched yet) -> fall through to the manual-mark model below
+    }
+
+    for (int i = LastDoneIndex(app, rel, *eps) + 1; i < (int)eps->size(); ++i)
+    {
+        const StoryEpisode& e = (*eps)[i];
+        if (!app.storyCompletion.EpisodeDone(rel, e))
+        {
+            ns.release     = &rel;        // element of the static ReleaseOrder() vector -> stable address
+            ns.episode     = &e;          // element of app.stories episodes -> app-owned
+            ns.name        = e.name;
+            ns.description = e.description;
+            ns.entryZone   = EntryZone(app, rel);
+            return true;
+        }
+    }
+    return false;
+}
+
 StoryRecommend::NextStory StoryRecommend::Next(App& app)
 {
     NextStory ns;
     const std::vector<std::string>& access = AccountData::Get().access;
-    for (const std::string& rel : StoryData::ReleaseOrder())
+
+    // A PINNED release wins over the chronological walk: plenty of players work through the story out of
+    // release order, and nothing in the API reports which one they picked in-game. Finishing the pinned
+    // release releases the pin rather than leaving the card stuck on a completed story.
+    if (!app.config.storyTrack.empty())
     {
-        const std::vector<StoryEpisode>* eps = app.stories.Episodes(rel);
-        if (!eps || eps->empty()) continue;
-        if (!StoryData::ReleasePlayable(rel, access)) continue;   // not owned (fails open when unknown)
-
-        // The personal story is per-CHARACTER and reconstructed live from /v2/characters/:id/quests -- the
-        // manual "core:Chapter N" marks below can no longer even be written from the Journal once that
-        // reconstruction is up, so the API answer wins whenever it is ready.
-        if (StoryData::PerCharacter(rel))
-        {
-            const PsProgress ps = PersonalStoryProgress(app);
-            if (ps.ready)
+        for (const std::string& rel : StoryData::ReleaseOrder())
+            if (rel == app.config.storyTrack)
             {
-                if (ps.allDone) continue;                          // finished -> fall through to the next release
-                ns.release     = &rel;
-                ns.name        = ps.nextName.empty() ? std::string("Personal story") : ps.nextName;
-                ns.description = "Your personal story continues. Play it from the in-game Story Journal.";
-                ns.entryZone   = EntryZone(app, rel);
-                return ns;
+                if (NextInRelease(app, rel, access, ns)) { ns.tracked = true; return ns; }
+                app.config.storyTrack.clear();
+                app.settingsDirty = true;
+                break;
             }
-            // not ready (no key / not fetched yet) -> fall through to the manual-mark model below
-        }
-
-        for (int i = LastDoneIndex(app, rel, *eps) + 1; i < (int)eps->size(); ++i)
-        {
-            const StoryEpisode& e = (*eps)[i];
-            if (!app.storyCompletion.EpisodeDone(rel, e))
-            {
-                ns.release     = &rel;        // element of the static ReleaseOrder() vector -> stable address
-                ns.episode     = &e;          // element of app.stories episodes -> app-owned
-                ns.name        = e.name;
-                ns.description = e.description;
-                ns.entryZone   = EntryZone(app, rel);
-                return ns;
-            }
-        }
     }
+
+    for (const std::string& rel : StoryData::ReleaseOrder())
+        if (NextInRelease(app, rel, access, ns))
+            return ns;
     return ns;   // every playable episode complete
 }
 
@@ -201,7 +225,7 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
         return;
     }
 
-    Gw2Ui::Label("Next story step", Gw2Ui::kTextDim, false, nullptr, fs - 4.f);
+    Gw2Ui::Label(ns.tracked ? "Next story step (tracking)" : "Next story step", Gw2Ui::kTextDim, false, nullptr, fs - 4.f);
     Gw2Ui::Label(StoryData::ReleaseName(*ns.release).c_str(), Gw2Ui::kGold, false, nullptr, fs - 1.f);
     Gw2Ui::Label(ns.name.c_str(), IM_COL32(235, 230, 215, 255), true, nullptr, fs + 1.f);
 
@@ -230,6 +254,17 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
         char tip[128]; std::snprintf(tip, sizeof(tip), "Travel toward %s", ns.entryZone->Name.c_str());
         if (Gw2Ui::ActionButtonPx("Travel", bw, Gw2Ui::Scaled(26.f), Gw2Ui::ActionButtonVariant::Normal, tip))
             OpenZoneTravelChoice(app, ns.entryZone->MapId);
+    }
+    if (ns.tracked)   // unpin from here too, so the card never traps you on a story you stopped playing
+    {
+        char tip[128];
+        std::snprintf(tip, sizeof(tip), "Stop tracking %s and go back to the suggested order",
+                      StoryData::ReleaseName(*ns.release).c_str());
+        if (Gw2Ui::ActionButtonPx("Stop tracking", cw, Gw2Ui::Scaled(24.f), Gw2Ui::ActionButtonVariant::Normal, tip))
+        {
+            app.config.storyTrack.clear();
+            app.settingsDirty = true;
+        }
     }
     Gw2Ui::EndCard();
 }

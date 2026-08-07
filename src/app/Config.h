@@ -271,6 +271,12 @@ struct Config
     // character via the HUD ConfigProfileFamily (owner Hud), which snapshots this hud* slice + hudButtons.
     bool hudEnabled = true; // show the HUD bar for this profile
     int hudEdge = 0;        // 0 Top, 1 Bottom
+    // The release key the story suggestion is PINNED to ("lws3"), or empty for the automatic chronological
+    // walk. Set from the Journal's episode detail; players don't necessarily play in release order, and the
+    // API cannot tell us which story they picked in-game, so this is the only way to know. Cleared
+    // automatically once that release is finished. Internal, not a Setting row.
+    std::string storyTrack;
+
     // Bar position as resolution-independent screen FRACTIONS (0..1) of the bar's anchor point; -1 = "default
     // seat" (horizontally centred / the standard gap from the docked edge). Written by DRAGGING the bar and
     // clamped at that moment, so a stored value is always a legal on-screen position. No settings slider --

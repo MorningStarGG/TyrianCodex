@@ -29,6 +29,7 @@ namespace StoryRecommend
         const Zone*         entryZone = nullptr;   // null when the release has no bundled open-world zone
         std::string         name;
         std::string         description;
+        bool                tracked = false;   // came from the pinned release (config.storyTrack), not the walk
     };
     NextStory Next(App& app);
 

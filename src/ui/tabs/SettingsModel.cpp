@@ -876,6 +876,7 @@ void SaveSettings(App &app)
     }
     j["arrowPosX"] = app.config.arrowPosX; // internal (not a table setting): saved arrow drag position
     j["arrowPosY"] = app.config.arrowPosY;
+    j["storyTrack"] = app.config.storyTrack; // internal: the release the story suggestion is pinned to ("" = auto)
     j["viewerW"] = app.config.viewerW; // internal: saved guide-panel size (the Step view is user-resizable)
     j["viewerH"] = app.config.viewerH;
     j["settingsWindowW"] = app.config.settingsWindowW; // internal: saved main shell size (resizable, aspect-locked)
@@ -983,6 +984,8 @@ void LoadSettings(App &app)
         app.config.arrowPosX = it->get<float>();
     if (auto it = j.find("arrowPosY"); it != j.end() && it->is_number())
         app.config.arrowPosY = it->get<float>();
+    if (auto it = j.find("storyTrack"); it != j.end() && it->is_string())
+        app.config.storyTrack = it->get<std::string>();
     if (auto it = j.find("viewerW"); it != j.end() && it->is_number())
         app.config.viewerW = it->get<float>();
     if (auto it = j.find("viewerH"); it != j.end() && it->is_number())
