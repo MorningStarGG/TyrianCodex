@@ -41,7 +41,8 @@ namespace
 
 void Notify::Init(const Config* cfg) { g_cfg = cfg; }
 
-uint64_t Notify::Push(Kind kind, std::string title, std::string body, uint32_t icon, Action action)
+uint64_t Notify::Push(Kind kind, std::string title, std::string body, uint32_t icon, Action action,
+                      std::string payload)
 {
     if (!g_cfg || !g_cfg->notifyEnabled) return 0;
     const int ki = (int)kind;
@@ -59,6 +60,7 @@ uint64_t Notify::Push(Kind kind, std::string title, std::string body, uint32_t i
             (now - last.created) < 1.2)
         {
             last.created = now; last.expires = now + ttl; last.icon = icon; last.action = action;
+            last.payload = std::move(payload);
             ++g_unread; ++g_ver; return last.id;
         }
     }
@@ -74,7 +76,7 @@ uint64_t Notify::Push(Kind kind, std::string title, std::string body, uint32_t i
                 Item live = *it;
                 g_items.erase(std::next(it).base());     // remove from its position
                 live.title = std::move(title); live.body = std::move(body); live.icon = icon;
-                live.action = action;
+                live.action = action; live.payload = std::move(payload);
                 live.created = now; live.expires = now + ttl; live.dismissed = false;
                 g_items.push_back(std::move(live));       // becomes the newest
                 ++g_unread; ++g_ver;
@@ -85,7 +87,7 @@ uint64_t Notify::Push(Kind kind, std::string title, std::string body, uint32_t i
 
     Item n;
     n.id = g_nextId++; n.kind = kind; n.title = std::move(title); n.body = std::move(body);
-    n.icon = icon; n.created = now; n.expires = now + ttl; n.action = action;
+    n.icon = icon; n.created = now; n.expires = now + ttl; n.action = action; n.payload = std::move(payload);
     g_items.push_back(std::move(n));
     Compact(now);
     ++g_unread; ++g_ver;

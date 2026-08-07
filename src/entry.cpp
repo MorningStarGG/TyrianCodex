@@ -47,6 +47,8 @@
 #include "app/StaticData.h"
 #include "app/SessionTracker.h" // per-frame Session Tracker lifecycle (wallet/currency earnings)
 #include "app/AccountLevels.h"  // account-wide lifetime level total (seeded from the character roster)
+#include "app/EventFavorites.h" // account-wide event favorites + reminder flags
+#include "app/EventWatch.h"     // staged "starts in N" reminders for belled events
 #include "app/CharRegistry.h"   // name->created-id registry (rename detector for per-character data)
 #include "app/SectorData.h"
 #include "app/ItemCatalog.h"
@@ -835,6 +837,7 @@ static void Render()
                 UpdateCurrentChar(g_app->state); // keep state.currentChar fresh (formerly in UpdateSessionStats)
             SessionTracker::Update(*g_app, seInGame, seInGame ? CurrentCharName() : std::string());
         }
+        EventWatch::Tick(*g_app); // event reminders; self-throttled, and NOT gated on the Timers tab being open
         // Apply queued loadouts/profile bindings before route selection and drawing. Route preferences live in the
         // General profile; doing this after SwitchZone can leave the active route on the previous profile.
         Loadouts::ProcessPending(*g_app);
@@ -1379,6 +1382,7 @@ void LoadAllData(App &app, const std::string &base)
         if (g_app->stories.Load(base + "\\data\\stories.json"))
             APIDefs->Log(LOGL_INFO, "Tyrian Codex", ("Loaded story spine: " + std::to_string(g_app->stories.ByRelease().size()) + " releases.").c_str());
         g_app->storyStore.Load(base + "\\story-account.json", base + "\\story-characters.json");
+        EventFavorites::Load();   // account-wide event favorites + reminder flags (event-favorites.json)
         g_app->storyCompletion.RecomputeCompletedReleases();
 
         LoadJournalCache(base + "\\journal-cache.json");

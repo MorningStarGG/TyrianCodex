@@ -202,6 +202,15 @@ struct Config
     bool notifyIcons = true;                                // show the type marker/icon
     int notifyFont = 0;                                     // 0 GW2 (Menomonia), 1 stock
     bool notifyKind[5] = {false, false, true, true, false}; // Zone/Travel/Action/Event/Info (parallel to Notify::Kind)
+    // Event reminders: which lead times fire before a bell'd event starts. Defaults are 10m + 1m because ALL
+    // five firing per event means five toasts each -- with a handful of favorites that is a wall of them.
+    // notifyKind[3] (Event) remains the master switch; these only choose the rungs.
+    bool eventRemind10m = true;
+    bool eventRemind5m = false;
+    bool eventRemind1m = true;
+    bool eventRemind30s = false;
+    bool eventRemind10s = false;
+    bool eventRemindCombine = true; // events sharing a start time get ONE toast instead of one each
 
     // Zone Display -- the bold animated Region/Zone/Sector banner shown on entering a map / crossing a sector
     // (see ui/zonedisplay/ZoneDisplay). Names come from the bundled data/sectors.json (offline; SectorData).

@@ -6,6 +6,7 @@ namespace Render
     enum class Glyph
     {
         Grip,
+        Bell,       // event reminders: filled = reminders on, disabled = event has no schedule
         Trash,
         ArrowUp,
         ArrowDown,

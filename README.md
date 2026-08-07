@@ -44,7 +44,7 @@ The main Tyrian Codex window is organized into user-facing tabs:
 | **Journal** | Story Journal style view plus per-character My Story when API data is available. Completed episodes tick themselves off from your achievements, and **Track** pins which story the guide suggests next if you are not playing in release order. |
 | **Checklist** | Release, region, zone, and objective tree with search and manual completion control. Helps the addon know what waypoints and things you've already completed. |
 | **Instances** | Dungeons, story instances, fractals, raids, strikes, and home content progress. Routes are shown where bundled route data exists. |
-| **Timers** | Global event board with list and timeline views, filters, and click-to-guide behavior. |
+| **Timers** | Global event board with list and timeline views, filters, and click-to-travel behavior. Star an event to pin it to the top and to the Favorites filter, or ring its bell to be reminded before it starts. |
 | **Sessions** | Current session tracker, currency changes, level/objective gains, saved session history, and simple earnings graphs. |
 | **Options** | Searchable settings for every major feature and overlay surface. |
 | **About** | Data sources, credits, and third-party notices. |
@@ -168,6 +168,7 @@ Important saved files include:
 - `progress.json`: per-character manual/objective completion.
 - `confirmed.json`: waypoints physically reached by each character, used for travel decisions.
 - `story-account.json` and `story-characters.json`: manual story completion marks.
+- `event-favorites.json`: account-wide starred events and which ones you want reminders for.
 - `session-history.json`: saved per-character session history.
 - `charlevels.json`: cached character levels for faster recommendations.
 - `cache/`: downloaded images, API cache, wiki cache, and other runtime cache files.

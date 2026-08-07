@@ -1,5 +1,7 @@
 #include "model/EventTimers.h"
 
+#include <chrono>
+#include <ctime>
 #include <fstream>
 #include <nlohmann/json.hpp>
 
@@ -212,5 +214,46 @@ std::vector<const EventChain*> EventTimerData::ChainsForMap(uint32_t mapId) cons
     out.reserve(it->second.size());
     for (size_t index : it->second)
         if (index < chains_.size()) out.push_back(&chains_[index]);
+    return out;
+}
+
+// ---- EventSchedule ----------------------------------------------------------------------------------
+namespace
+{
+    constexpr int kSecPerDay = 24 * 60 * 60;
+}
+
+int EventSchedule::UtcSecondOfDay()
+{
+    const std::time_t t = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+    std::tm utc{};
+    gmtime_s(&utc, &t);
+    return utc.tm_hour * 3600 + utc.tm_min * 60 + utc.tm_sec;
+}
+
+EventSchedule::Occurrence EventSchedule::Next(const EventTimer& ev, int nowSec)
+{
+    Occurrence out;
+    int best = kSecPerDay;
+    int bestStart = -1;
+    for (int startMin : ev.ScheduleMinutes)
+    {
+        const int s = (((startMin * 60) % kSecPerDay) + kSecPerDay) % kSecPerDay;
+        const int elapsed = (nowSec - s + kSecPerDay) % kSecPerDay;
+        if (ev.DurationMinutes > 0 && elapsed < ev.DurationMinutes * 60)
+        {
+            out.active = true;
+            out.secondsUntil = 0;
+            out.secondsRemaining = ev.DurationMinutes * 60 - elapsed;
+            out.startSecOfDay = s;
+            return out;   // running now wins outright -- there is nothing to count down to
+        }
+        const int until = (s - nowSec + kSecPerDay) % kSecPerDay;
+        if (until < best) { best = until; bestStart = s; }
+    }
+    if (bestStart < 0)
+        return out;       // no schedule -> unschedulable (startSecOfDay stays -1)
+    out.secondsUntil = best;
+    out.startSecOfDay = bestStart;
     return out;
 }

@@ -319,6 +319,13 @@ std::vector<Setting> Settings(App &app)
         SBool(SEC_NOTIFY, "notifyKindEvent", "Type: Event", "notify toast type event meta boss timer", &app.config.notifyKind[3], NotifyTypesId, NotifyTypesName),
         SBool(SEC_NOTIFY, "notifyKindInfo", "Type: Info", "notify toast type info system general", &app.config.notifyKind[4], NotifyTypesId, NotifyTypesName),
 
+        SBool(SEC_NOTIFY, "eventRemind10m", "Remind 10 minutes before", "event reminder remind 10 minutes before boss meta timer bell lead warning", &app.config.eventRemind10m, NotifyEventRemindId, NotifyEventRemindName),
+        SBool(SEC_NOTIFY, "eventRemind5m", "Remind 5 minutes before", "event reminder remind 5 minutes before boss meta timer bell lead warning", &app.config.eventRemind5m, NotifyEventRemindId, NotifyEventRemindName),
+        SBool(SEC_NOTIFY, "eventRemind1m", "Remind 1 minute before", "event reminder remind 1 minute before boss meta timer bell lead warning", &app.config.eventRemind1m, NotifyEventRemindId, NotifyEventRemindName),
+        SBool(SEC_NOTIFY, "eventRemind30s", "Remind 30 seconds before", "event reminder remind 30 seconds before boss meta timer bell lead warning", &app.config.eventRemind30s, NotifyEventRemindId, NotifyEventRemindName),
+        SBool(SEC_NOTIFY, "eventRemind10s", "Remind 10 seconds before", "event reminder remind 10 seconds before boss meta timer bell lead warning", &app.config.eventRemind10s, NotifyEventRemindId, NotifyEventRemindName),
+        SBool(SEC_NOTIFY, "eventRemindCombine", "Combine events starting together", "event reminder combine merge group same time one toast fewer spam", &app.config.eventRemindCombine, NotifyEventRemindId, NotifyEventRemindName),
+
         // Zone Display -- the animated Region/Zone/Area banner. Four groups: Behaviour (when it shows) /
         // Appearance (how it looks) / Animation (the map-entry banner's motion) / Area (the crossing). Text
         // COLOR (swatch + hex picker, under Appearance) + the live Preview buttons (under Behaviour) are drawn by
@@ -569,6 +576,14 @@ static const char *SettingDesc(const char *key)
         {"notifyKindAction", "Show action confirmations (e.g. 'Copied waypoint link', 'Target set')."},
         {"notifyKindEvent", "Show event notifications (meta / boss timers)."},
         {"notifyKindInfo", "Show general info / system notifications."},
+        {"eventRemind10m", "Remind you 10 minutes before an event you have belled starts. Bell an event with the "
+                           "bell icon on its row in the Timers tab."},
+        {"eventRemind5m", "Remind you 5 minutes before a belled event starts."},
+        {"eventRemind1m", "Remind you 1 minute before a belled event starts."},
+        {"eventRemind30s", "Remind you 30 seconds before a belled event starts."},
+        {"eventRemind10s", "Remind you 10 seconds before a belled event starts - the last call to be standing there."},
+        {"eventRemindCombine", "When several belled events start at the same time, show ONE notification listing "
+                               "them instead of one per event. Turn off to get a separate toast for each."},
         {"zdEnabled", "Master switch for the animated Region / Zone / Area banner shown when you enter a map or cross into a new area."},
         {"zdOnMapChange", "Announce the big three-tier banner (region, zone name, area) when you enter a new map."},
         {"zdOnAreaChange", "Announce when you cross into a new named area within a map."},

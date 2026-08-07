@@ -2,6 +2,7 @@
 #include "Notify.h"
 #include "app/App.h"
 #include "ui/ApiReminder.h"
+#include "ui/NotifyActions.h"   // one dispatcher for a clicked notification
 #include "ui/Gw2Ui.h"
 #include <imgui.h>
 #include <algorithm>
@@ -123,7 +124,7 @@ void Toast::Render(App& app)
             ImGui::SetMouseCursor(ImGuiMouseCursor_Hand);
             if (ImGui::IsMouseClicked(ImGuiMouseButton_Left))
             {
-                if (it.action == Notify::Action::OpenApiSettings) ApiReminder::OpenApiSettings(app);
+                NotifyActions::Dispatch(app, it.action, it.payload);
                 Notify::Dismiss(it.id);
             }
         }

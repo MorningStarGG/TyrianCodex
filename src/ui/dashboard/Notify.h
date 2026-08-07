@@ -22,7 +22,9 @@ namespace Notify
 
     // Optional click-through. A notification with a non-None action is clickable (in the toast AND the dashboard
     // log): the UI layer dispatches it (it owns App&). Extend as more click targets are wanted.
-    enum class Action { None, OpenApiSettings };
+    // ShowEvent/OpenTimers carry the event in `Item::payload` (the EventTimer::Key) -- a bare enum cannot say
+    // WHICH event a reminder was about, and a reminder you cannot act on is half a feature.
+    enum class Action { None, OpenApiSettings, ShowEvent, OpenTimers };
 
     struct Item
     {
@@ -35,6 +37,7 @@ namespace Notify
         double      expires = 0.0;      // created + ttl; the toast is live until then (hover extends it)
         bool        dismissed = false;
         Action      action  = Action::None;   // click target (None = not clickable)
+        std::string payload;                  // action argument (e.g. the event key for ShowEvent)
     };
 
     // Per-kind metadata: display name, accent colour (ImU32), default icon (gw2dat id), and whether the kind
@@ -46,7 +49,7 @@ namespace Notify
     // Push a notification. Suppressed (returns 0) when the master toggle or this kind's toggle is off.
     // Coalescing kinds replace their live lane item; others stack (identical title+body within ~1.2s deduped).
     uint64_t Push(Kind kind, std::string title, std::string body = std::string(), uint32_t icon = 0,
-                  Action action = Action::None);
+                  Action action = Action::None, std::string payload = std::string());
 
     const std::vector<Item>& History();              // newest-last capped ring (the log widget reverses it)
     std::vector<const Item*> Live(double now);       // unexpired + undismissed, oldest-first (the toast stack)

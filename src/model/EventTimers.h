@@ -88,3 +88,28 @@ private:
     std::map<uint32_t, std::vector<size_t>> eventsByMap_;
     std::map<uint32_t, std::vector<size_t>> chainsByMap_;
 };
+
+// -----------------------------------------------------------------------------------------------------
+// EventSchedule: when does this event next start? Kept in SECONDS, not minutes -- the reminder ticker
+// fires rungs at 30s and 10s, which a minute-resolution answer cannot express, and a per-minute countdown
+// otherwise sits on "1m" for a full minute. Display code derives minutes from these.
+//
+// Lives here rather than in the Timers UI because the reminder ticker has to answer this every tick
+// whether or not the tab is open.
+// -----------------------------------------------------------------------------------------------------
+namespace EventSchedule
+{
+    struct Occurrence
+    {
+        bool active = false;         // the event is running right now
+        int  secondsUntil = 0;       // until the next start (0 while active)
+        int  secondsRemaining = -1;  // left of the running window (only while active)
+        int  startSecOfDay = -1;     // UTC second-of-day of the occurrence this describes; -1 when unschedulable.
+                                     // The reminder latch keys on this: it identifies WHICH run we already fired for.
+    };
+
+    int UtcSecondOfDay();
+
+    // Next start for `ev` at `nowSec` (UTC second-of-day). ScheduleMinutes is minutes past UTC midnight.
+    Occurrence Next(const EventTimer& ev, int nowSec);
+}

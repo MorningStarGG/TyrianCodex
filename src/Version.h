@@ -29,4 +29,4 @@
 // *.pack) changes -- it is INDEPENDENT of TC_VER_* so a DLL-only patch never forces a re-download: it is written
 // to data/.coreversion + data/.assetsversion, and a mismatch against that on-disk marker is what triggers the
 // redownload, not the release tag name.
-#define TC_DATA_VERSION "1.0.2"   // 1.0.2: stories.json rebuilt per EPISODE (storyId + true journal order)
+#define TC_DATA_VERSION "1.0.3"   // 1.0.3: event_timers.json coords validated against their own map rect

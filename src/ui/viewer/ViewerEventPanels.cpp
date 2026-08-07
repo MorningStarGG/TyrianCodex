@@ -3,6 +3,8 @@
 #include "ui/Gw2Ui.h"
 #include "ui/viewer/ViewerLayout.h"        // ViewerScale (uniform layout-px zoom)
 #include "ui/viewer/ViewerComponents.h"   // WithAlpha
+#include "app/EventFavorites.h"            // per-event favorite + reminder flags (account-wide)
+#include "render/glyphs/Glyphs.h"          // Render::DrawGlyph (the row's favorite star + reminder bell)
 #include "model/EventAreas.h"
 #include "model/EventTimers.h"
 #include "util/Coords.h"                   // ContinentToWorldXZ (player-relative area distance)
@@ -31,39 +33,22 @@ struct UpcomingEvent
 {
     const EventTimer* Event = nullptr;
     int              UntilMinutes = 0;
+    int              UntilSeconds = 0;   // exact; the sub-minute countdown reads this
     bool             Active = false;
     int              EndsInMinutes = -1;
 };
 
-static int UtcMinuteOfDay()
+// Countdown for one event, from the shared seconds-resolution schedule (EventSchedule::Next). Minutes are
+// ROUNDED UP so a row never reads "0m" while there is still time on the clock.
+static UpcomingEvent NextOccurrence(const EventTimer& ev, int nowSec)
 {
-    const auto now = std::chrono::system_clock::now();
-    const std::time_t t = std::chrono::system_clock::to_time_t(now);
-    std::tm utc{};
-    gmtime_s(&utc, &t);
-    return utc.tm_hour * 60 + utc.tm_min;
-}
-
-static UpcomingEvent NextOccurrence(const EventTimer& ev, int nowMinute)
-{
+    const EventSchedule::Occurrence o = EventSchedule::Next(ev, nowSec);
     UpcomingEvent out;
     out.Event = &ev;
-    int best = 1440;
-    for (int start : ev.ScheduleMinutes)
-    {
-        const int s = ((start % 1440) + 1440) % 1440;
-        const int until = (s - nowMinute + 1440) % 1440;
-        const int elapsed = (nowMinute - s + 1440) % 1440;
-        if (ev.DurationMinutes > 0 && elapsed < ev.DurationMinutes)
-        {
-            out.Active = true;
-            out.UntilMinutes = 0;
-            out.EndsInMinutes = ev.DurationMinutes - elapsed;
-            return out;
-        }
-        best = std::min(best, until);
-    }
-    out.UntilMinutes = best == 1440 ? 0 : best;
+    out.Active = o.active;
+    out.UntilSeconds = o.secondsUntil;
+    out.UntilMinutes = o.active ? 0 : (o.secondsUntil + 59) / 60;
+    out.EndsInMinutes = o.active ? (o.secondsRemaining + 59) / 60 : -1;
     return out;
 }
 
@@ -74,6 +59,11 @@ static std::string FormatTimerCountdown(const UpcomingEvent& up)
     {
         if (up.EndsInMinutes > 0) std::snprintf(buf, sizeof(buf), "now %dm", up.EndsInMinutes);
         else                      std::snprintf(buf, sizeof(buf), "now");
+        return buf;
+    }
+    if (up.UntilSeconds < 60)   // the last minute ticks in seconds instead of sitting on "1m"
+    {
+        std::snprintf(buf, sizeof(buf), "%ds", std::max(0, up.UntilSeconds));
         return buf;
     }
     const int minutes = std::max(0, up.UntilMinutes);
@@ -206,7 +196,14 @@ static std::string EventAreaInfo(const EventArea& a)
 static void GuideToEvent(App& app, const std::string& name, const std::string& info, bool hasCoord,
                          float cx, float cy, const std::vector<uint32_t>& mapIds, const std::string& waypoint)
 {
-    if (hasCoord) { app.travel.SetPersonalTarget(cx, cy, name, info); return; }   // guide to the spot, labelled with the event
+    (void)info;
+    // TravelToLocation sets the personal target (the arrow retargets) AND raises the Travel / Show target /
+    // Not now card, so clicking a row and clicking a reminder toast do exactly the same thing.
+    if (hasCoord)
+    {
+        TravelToLocation(app, "waypoint", mapIds.empty() ? 0u : mapIds.front(), cx, cy, name, waypoint);
+        return;
+    }
     const uint32_t cur = CurrentMapId();
     for (uint32_t m : mapIds)
         if (m != cur && app.zones.count(m)) { app.travel.StartTravel(m); return; }   // no point -> route into the zone
@@ -233,24 +230,34 @@ struct EventRow
     bool        active = false;  // timed-event "now" highlight (row tint + pill fill)
     const char* id = "##eventrow";
     int         row = 0;
+    // Favorite / reminder controls. Set favKey (the EventTimer::Key) to draw them; canNotify false renders the
+    // bell disabled, for entries with no schedule to count down to (event chains).
+    const char* favKey = nullptr;
+    bool        canNotify = true;
 };
-struct EventRowHit { bool clicked = false; bool hovered = false; };
+struct EventRowHit { bool clicked = false; bool hovered = false; bool favClicked = false; bool notifyClicked = false; };
 
 static EventRowHit DrawSharedEventRow(const EventRow& e)
 {
     const float availW = Gw2Ui::ContentWidth();     // card-aware: keep the row + right pill inside the card border
                                                     // (== GetContentRegionAvail outside a card)
     const float pillW = e.pill.empty() ? 0.f : std::max(54.f, Gw2Ui::MeasureWidth(e.pill.c_str(), e.pillFs) + 18.f);
+    const float ctrlSz = 18.f;
+    const float ctrlW = e.favKey ? (ctrlSz * 2.f + 10.f) : 0.f;   // star + bell, left of the countdown pill
     const float textXOff = 9.f + e.iconSize + 10.f;
-    const float textW = std::max(46.f, availW - textXOff - (pillW > 0.f ? pillW + 10.f : 10.f));
+    const float textW = std::max(46.f, availW - textXOff - ctrlW - (pillW > 0.f ? pillW + 10.f : 10.f));
     const float lineH = std::max(e.titleFs + 3.f, Gw2Ui::MeasureWrappedHeight("Ag", e.titleFs, textW));
     const float titleH = std::min(Gw2Ui::MeasureWrappedHeight(e.name.c_str(), e.titleFs, textW), lineH * 2.05f);
     const float metaH = e.meta.empty() ? 0.f : std::max(e.metaFs + 3.f, Gw2Ui::MeasureWrappedHeight(e.meta.c_str(), e.metaFs, textW));
     const float rowH = std::max(46.f, 6.f + titleH + (metaH > 0.f ? metaH + 1.f : 0.f) + 6.f);
 
     ImGui::PushID(e.row);
-    const Gw2Ui::RowHotspot row = Gw2Ui::Row(e.id, e.row, rowH, availW);
+    // allowOverlap lets the star / bell hotspots sit on top of the row, exactly as the search rows do.
+    const Gw2Ui::RowHotspot row = Gw2Ui::Row(e.id, e.row, rowH, availW, /*allowOverlap*/ e.favKey != nullptr);
     ImGui::PopID();
+    // Row() has advanced the cursor past this row. The star/bell hotspots below reposition it, so remember where
+    // the next row belongs and put the cursor back afterwards -- otherwise every row stacks on the previous one.
+    const ImVec2 afterRow = ImGui::GetCursorScreenPos();
     const ImVec2 p = row.min;
     EventRowHit hit;
     hit.clicked = row.clicked;
@@ -281,6 +288,52 @@ static EventRowHit DrawSharedEventRow(const EventRow& e)
         dl->AddRect(ba, bb, WithAlpha(e.accent, 168), 11.f);
         Gw2Ui::LabelIn(ba, bb, e.pill.c_str(), Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle,
                        IM_COL32(255, 232, 178, 255), true, nullptr, e.pillFs);
+    }
+
+    // Favorite star + reminder bell, right-aligned just inside the countdown pill. Submitted AFTER the row so
+    // their hit-tests win over it -- clicking a control must not also fire the row's travel action.
+    if (e.favKey)
+    {
+        const std::string key(e.favKey);
+        const float cy = p.y + rowH * 0.5f;
+        float rightX = p.x + availW - 5.f - (pillW > 0.f ? pillW + 10.f : 0.f);
+
+        const bool notifyOn = EventFavorites::IsNotify(key);
+        ImGui::SetCursorScreenPos(ImVec2(rightX - ctrlSz, cy - ctrlSz * 0.5f));
+        const bool bellHit = ImGui::InvisibleButton("##evbell", ImVec2(ctrlSz, ctrlSz));
+        const bool bellHov = ImGui::IsItemHovered();
+        Render::GlyphStyle bellStyle;
+        bellStyle.filled = notifyOn;
+        bellStyle.disabled = !e.canNotify;
+        bellStyle.shadow = false;
+        Render::DrawGlyph(dl, ImVec2(rightX - ctrlSz * 0.5f, cy), ctrlSz,
+                          Render::Glyph::Bell,
+                          !e.canNotify ? IM_COL32(120, 112, 96, 135)
+                                       : bellHov ? Gw2Ui::kGold
+                                                 : notifyOn ? IM_COL32(224, 184, 86, 245) : Gw2Ui::kTextDim,
+                          bellStyle);
+        if (bellHov)
+            Gw2Ui::Tooltip(!e.canNotify ? "This one has no schedule to remind you about"
+                                        : notifyOn ? "Stop reminding me before this starts"
+                                                   : "Remind me before this starts");
+        hit.notifyClicked = bellHit && e.canNotify;
+        rightX -= ctrlSz + 4.f;
+
+        const bool favOn = EventFavorites::IsFavorite(key);
+        ImGui::SetCursorScreenPos(ImVec2(rightX - ctrlSz, cy - ctrlSz * 0.5f));
+        const bool starHit = ImGui::InvisibleButton("##evfav", ImVec2(ctrlSz, ctrlSz));
+        const bool starHov = ImGui::IsItemHovered();
+        Render::GlyphStyle starStyle;
+        starStyle.filled = favOn;
+        starStyle.shadow = false;
+        Render::DrawGlyph(dl, ImVec2(rightX - ctrlSz * 0.5f, cy), ctrlSz, Render::Glyph::Star,
+                          starHov ? Gw2Ui::kGold : favOn ? IM_COL32(224, 184, 86, 245) : Gw2Ui::kTextDim,
+                          starStyle);
+        if (starHov) Gw2Ui::Tooltip(favOn ? "Remove favorite" : "Add favorite");
+        hit.favClicked = starHit;
+
+        if (hit.favClicked || hit.notifyClicked) hit.clicked = false;   // a control click is not a row click
+        ImGui::SetCursorScreenPos(afterRow);                            // hand the next row a clean cursor
     }
     return hit;
 }
@@ -319,7 +372,11 @@ static void DrawEventTimerRow(App& app, const UpcomingEvent& up, float fs, int r
     e.metaFs   = std::max(12.f, fs - 6.f);
     e.pill     = FormatTimerCountdown(up);   e.pillFs = std::max(12.f, fs - 4.f); e.active = up.Active;
     e.id = "##eventtimer"; e.row = row;
+    e.favKey = ev.Key.empty() ? nullptr : ev.Key.c_str();
+    e.canNotify = !ev.ScheduleMinutes.empty();
     const EventRowHit hit = DrawSharedEventRow(e);
+    if (hit.favClicked) EventFavorites::ToggleFavorite(ev.Key);
+    if (hit.notifyClicked) EventFavorites::ToggleNotify(ev.Key);
 
     char mid[48]; std::snprintf(mid, sizeof(mid), "##evmenu_%p", (const void*)&ev);
     EventMenu(mid, hit.hovered && ImGui::IsMouseClicked(ImGuiMouseButton_Right), displayName, ev.Waypoint, ev.WikiTitle);
@@ -375,8 +432,21 @@ static void DrawEventChainRow(App& app, const EventChain& chain, float fs, int r
 // =========================================================================================================
 namespace
 {
+    // Chip scopes, in row order. Favorites is a SCOPE rather than a category, so it sits between All and the
+    // real categories; the category chips map onto TimerCatGroup's 1..4 via kTimerCatBosses.
+    enum
+    {
+        kTimerCatAll = 0,
+        kTimerCatFavorites,
+        kTimerCatBosses,        // TimerCatGroup 1
+        kTimerCatMetas,         // ... 2
+        kTimerCatFestival,      // ... 3
+        kTimerCatOther,         // ... 4
+        kTimerCatCycles
+    };
+
     int  g_tView   = 0;     // 0 = List, 1 = Timeline
-    int  g_tCat    = 0;     // 0 All, 1 Boss, 2 Meta, 3 Festival, 4 Other, 5 Cycles
+    int  g_tCat    = kTimerCatAll;
     int  g_tWindow = 12;     // timeline horizon, hours (2 / 4 / 6 / 8 / 12); fills the panel width
     char g_tSearch[96] = "";
 
@@ -405,7 +475,8 @@ namespace
     bool TimerMatches(const EventTimer& ev)
     {
         const std::string cat = ev.SuggestedCategory.empty() ? ev.Category : ev.SuggestedCategory;
-        if (g_tCat != 0 && TimerCatGroup(cat) != g_tCat) return false;
+        // All and Favorites do not filter by category (Favorites narrows by the star, handled by the caller).
+        if (g_tCat >= kTimerCatBosses && TimerCatGroup(cat) != (g_tCat - kTimerCatBosses + 1)) return false;
         return TimerSearchMatch(ev.Name, ev.Subtitle, ev.WikiTitle);   // match name / subtitle / wiki title
     }
 
@@ -639,28 +710,41 @@ void ViewerEvents::DrawTimersTab(App& app)
         ImGui::SameLine(0.f, topGap);
         if (Gw2Ui::ChipFlow("twin", winChips, 5, &winSel, 32.f, 16.f, 4.f)) g_tWindow = hrs[winSel];
     }
-    // Row 2: the six category chips, scaled to fill the row.
-    const Gw2Ui::ChipItem catChips[6] = {
-        { "All" }, { "Bosses" }, { "Metas" }, { "Festival" }, { "Other" }, { "Cycles" } };
-    Gw2Ui::ChipRow("tcat", catChips, 6, &g_tCat, 30.f, 16.f, 5.f, 56.f);
+    // Row 2: the category chips, scaled to fill the row. "Favorites" is a scope like the rest, so the board can
+    // be narrowed to the handful of events the player actually runs.
+    const Gw2Ui::ChipItem catChips[7] = {
+        { "All" }, { "Favorites" }, { "Bosses" }, { "Metas" }, { "Festival" }, { "Other" }, { "Cycles" } };
+    Gw2Ui::ChipRow("tcat", catChips, 7, &g_tCat, 30.f, 16.f, 5.f, 56.f);
     Gw2Ui::Divider(0.f);
 
-    const int now = UtcMinuteOfDay();
-    if (g_tCat == 5) { DrawTimersCycles(app, now); return; }   // Cycles scope -- world clocks + PvP, grouped (no travel)
+    const int nowSec = EventSchedule::UtcSecondOfDay();
+    const int now = nowSec / 60;   // the cycles scope + timeline still lay out per minute
+    if (g_tCat == kTimerCatCycles) { DrawTimersCycles(app, now); return; }   // Cycles -- world clocks + PvP, grouped (no travel)
+    const bool favOnly = (g_tCat == kTimerCatFavorites);
     std::vector<UpcomingEvent> up;
     up.reserve(256);
     for (const EventTimer& ev : app.eventTimers.Events())
     {
         if (ev.ScheduleMinutes.empty() || !TimerMatches(ev)) continue;
-        up.push_back(NextOccurrence(ev, now));
+        if (favOnly && !EventFavorites::IsFavorite(ev.Key)) continue;
+        up.push_back(NextOccurrence(ev, nowSec));
     }
+    // Favorites float to the top of every scope -- otherwise starring an event would change nothing you can see.
     std::sort(up.begin(), up.end(), [](const UpcomingEvent& a, const UpcomingEvent& b) {
+        const bool fa = EventFavorites::IsFavorite(a.Event->Key), fb = EventFavorites::IsFavorite(b.Event->Key);
+        if (fa != fb) return fa > fb;
         if (a.Active != b.Active) return a.Active > b.Active;               // active first
         if (a.Active) return a.EndsInMinutes < b.EndsInMinutes;            // active: soonest-ending first (not A-Z)
-        if (a.UntilMinutes != b.UntilMinutes) return a.UntilMinutes < b.UntilMinutes;   // upcoming: soonest first
+        if (a.UntilSeconds != b.UntilSeconds) return a.UntilSeconds < b.UntilSeconds;   // upcoming: soonest first
         return a.Event->Name < b.Event->Name;
     });
-    if (up.empty()) { Gw2Ui::Label("No events match the filters.", Gw2Ui::kTextDim, false, nullptr, 16.f); return; }
+    if (up.empty())
+    {
+        Gw2Ui::Label(favOnly ? "No favorites yet - click the star on an event to pin it here."
+                             : "No events match the filters.",
+                     Gw2Ui::kTextDim, false, nullptr, 16.f);
+        return;
+    }
 
     if (g_tView == 0) DrawTimersList(app, up);
     else              DrawTimersTimeline(app, up, now);
@@ -670,16 +754,16 @@ int ViewerEvents::DrawTimers(App& app, float fs)
 {
     if (!app.eventTimers.Loaded() || !app.state.zone.Loaded) return 0;
 
-    const int now = UtcMinuteOfDay();
+    const int nowSec = EventSchedule::UtcSecondOfDay();
     std::vector<UpcomingEvent> upcoming;
     for (const EventTimer* ev : app.eventTimers.EventsForMap(app.state.zone.MapId))
     {
         if (!ev || ev->ScheduleMinutes.empty()) continue;
-        upcoming.push_back(NextOccurrence(*ev, now));
+        upcoming.push_back(NextOccurrence(*ev, nowSec));
     }
     std::sort(upcoming.begin(), upcoming.end(), [](const UpcomingEvent& a, const UpcomingEvent& b) {
         if (a.Active != b.Active) return a.Active > b.Active;
-        if (a.UntilMinutes != b.UntilMinutes) return a.UntilMinutes < b.UntilMinutes;
+        if (a.UntilSeconds != b.UntilSeconds) return a.UntilSeconds < b.UntilSeconds;
         return a.Event->Name < b.Event->Name;
     });
 

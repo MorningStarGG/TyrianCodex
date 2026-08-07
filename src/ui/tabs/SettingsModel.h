@@ -135,6 +135,8 @@ namespace SettingGroups
     inline constexpr const char *NotifyDisplayName = "Display";
     inline constexpr const char *NotifyTypesId = "notify_types";
     inline constexpr const char *NotifyTypesName = "Types";
+    inline constexpr const char *NotifyEventRemindId = "notify_event_reminders";
+    inline constexpr const char *NotifyEventRemindName = "Event reminders";
 
     // Zone Display (the animated Region/Zone/Sector banner)
     inline constexpr const char *ZdBehaviorId = "zd_behavior";

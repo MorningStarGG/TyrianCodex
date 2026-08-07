@@ -243,6 +243,32 @@ namespace
         dl->AddPolyline(pts, 10, col, true, 1.35f);
     }
 
+    // Reminder bell: a domed body on a splayed skirt, with a clapper below. `filled` = reminders ON (the body
+    // fills in, matching how the favorite star reads), `disabled` = nothing to remind about (no schedule).
+    void DrawBell(ImDrawList* dl, ImVec2 c, float size, ImU32 col, const Render::GlyphStyle& style)
+    {
+        const float s = size * 0.5f;
+        const float top = c.y - s * 0.78f, lip = c.y + s * 0.34f;
+        const float halfW = s * 0.62f, neck = s * 0.30f;
+
+        // Body: shoulders curving out from the crown down to the lip.
+        ImVec2 body[7] = {
+            ImVec2(c.x - neck, top),
+            ImVec2(c.x - halfW * 0.86f, top + s * 0.44f),
+            ImVec2(c.x - halfW, lip),
+            ImVec2(c.x + halfW, lip),
+            ImVec2(c.x + halfW * 0.86f, top + s * 0.44f),
+            ImVec2(c.x + neck, top),
+            ImVec2(c.x, top - s * 0.14f),
+        };
+        if (style.filled)
+            dl->AddConvexPolyFilled(body, 7, Alpha(col, style.disabled ? 105 : 215));
+        dl->AddPolyline(body, 7, col, true, 1.35f);
+
+        // Clapper.
+        dl->AddCircleFilled(ImVec2(c.x, lip + s * 0.26f), s * 0.17f, col, 10);
+    }
+
     void DrawRefresh(ImDrawList* dl, ImVec2 c, float size, ImU32 col, bool shadow)
     {
         const float s = size / 22.f;
@@ -475,6 +501,9 @@ void Render::DrawGlyph(ImDrawList* dl, ImVec2 center, float size, Glyph glyph, I
             break;
         case Glyph::Star:
             DrawStar(dl, center, size, color, style);
+            break;
+        case Glyph::Bell:
+            DrawBell(dl, center, size, color, style);
             break;
         case Glyph::Refresh:
             DrawRefresh(dl, center, size, color, style.shadow);

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-25T14:53:43+00:00",
+  "generatedAt": "2026-08-07T19:06:55+00:00",
   "sources": {
     "eventtable_events.json": "https://files.estreya.de/blish-hud/event-table/v1/events.json",
     "gw2timer_chains.js": "https://raw.githubusercontent.com/Drant/GW2Timer/gh-pages/data/chains.js",
@@ -2052,11 +2052,7 @@
           "Lornar's Pass: Kill the Bloodstone-Crazed Arctodus.",
           "Gendarran Fields: Kill the Bloodstone-Crazed Arctodus."
         ]
-      },
-      "continent": [
-        51209,
-        30480
-      ]
+      }
     },
     {
       "key": "moa bloodstone crazed|31|meta",
@@ -8905,11 +8901,7 @@
         "titles": [],
         "aliases": [],
         "eventNames": []
-      },
-      "continent": [
-        55804,
-        29098
-      ]
+      }
     },
     {
       "key": "blackout|1438|meta",
@@ -9617,11 +9609,7 @@
         "titles": [],
         "aliases": [],
         "eventNames": []
-      },
-      "continent": [
-        24103,
-        22231
-      ]
+      }
     },
     {
       "key": "defense of amnytas|1517|meta",
@@ -10160,11 +10148,7 @@
         "titles": [],
         "aliases": [],
         "eventNames": []
-      },
-      "continent": [
-        7618,
-        58836
-      ]
+      }
     }
   ],
   "cycles": [

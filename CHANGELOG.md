@@ -4,12 +4,18 @@
 
 ### Added
 
+- Added a **favorite** star and a **reminder** bell to every row in the Timers tab. The star pins an event to the top of the list and to a new **Favorites** filter; the bell asks to be told before it starts. Both are saved for the whole account, so an event you care about stays marked on every character.
+- Added staged event reminders at **10 minutes, 5 minutes, 1 minute, 30 seconds and 10 seconds** before a belled event starts, each one switchable on its own under **Options -> Notifications -> Event reminders**. 10 minutes and 1 minute are on to begin with.
+- Added a **Combine events starting together** option, so a busy slot where several belled events begin at once produces one notification listing them instead of one per event.
+- Added a click action to event reminders: clicking the notification sets it as your target and opens the usual Travel / Show target / Not now prompt. A combined reminder opens the Timers tab instead, since there is no single place to send you.
 - Added a **Track** button to each Story Journal episode that pins the "next story" suggestion to that release, for players working through the story out of release order. The guide viewer's card shows what it is tracking and offers **Stop tracking**, and the pin releases itself once that release is finished.
 - Added a **Hide in WvW** setting to the HUD bar, covering the match maps (Eternal Battlegrounds, the borderlands, Obsidian Sanctum, Edge of the Mists). The WvW Lounge is not affected.
 - Added a **Reset position** button to the HUD settings, which returns the bar to its docked edge.
 
 ### Changed
 
+- Changed event countdowns to tick in seconds during the last minute instead of sitting on "1m" for a full minute.
+- Changed clicking an event in the Timers tab to open the Travel / Show target / Not now prompt as well as pointing the guide arrow at it, so a row click and a reminder click do the same thing. It previously retargeted the arrow silently.
 - Changed story completion to be detected per episode instead of per expansion act, so 123 of 143 story episodes now tick themselves off from your achievements where only 27 did before. Heart of Thorns, Path of Fire, End of Dragons, Secrets of the Obscure, Janthir Wilds, and Visions of Eternity previously had no automatic detection at all.
 - Changed marking a story episode complete to also mark the earlier episodes of that season, matching how the personal story chapters already behaved.
 - Changed the story suggestion to skip releases your account cannot play, so it no longer sends you to an expansion you do not own. It never hides anything when expansion ownership is unknown.
@@ -23,6 +29,8 @@
 - Fixed Living World Season 1's "The Tower of Nightmares" being missing from the story list entirely.
 - Fixed **Travel** and **Show on map** driving the world map into its top-left corner, and suggesting waypoints from the wrong side of the world, for any zone not already visited that session.
 - Fixed a cross-zone **Show on map** from the Atlas stalling partway to its destination, often out in open water, instead of reaching the location.
+- Fixed **Show on map** for a distant target giving up before it arrived and leaving the world map floating in empty ocean. How far the map is allowed to scroll now depends on how far it has to go, and it tells you when it genuinely cannot reach somewhere instead of stopping silently.
+- Fixed four events whose waypoint had been matched to a location on a completely different map, which sent **Travel** somewhere unrelated. Events are now checked against their own map, and one with no trustworthy location falls back to routing you to the zone.
 - Fixed the HUD bar becoming unresponsive to dragging after being dragged past a screen edge, where it would ignore movement until the same distance had been dragged back.
 - Fixed the HUD bar being strandable off screen with no way to recover it, which could happen by dragging it wide and then hiding the clock.
 

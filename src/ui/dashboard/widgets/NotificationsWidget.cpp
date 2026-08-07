@@ -2,6 +2,7 @@
 #include "ui/dashboard/Notify.h"
 #include "app/App.h"
 #include "ui/ApiReminder.h"
+#include "ui/NotifyActions.h"   // one dispatcher for a clicked notification
 #include "ui/Gw2Ui.h"
 #include <imgui.h>
 #include <algorithm>
@@ -82,9 +83,15 @@ void DashW::Notifications(App& app, float w)
         ImGui::PushID((int)it.id);
         ImGui::InvisibleButton("##row", ImVec2(w, rowH));
         ImGui::SetItemAllowOverlap();
-        if (actionable && ImGui::IsItemHovered()) { ImGui::SetMouseCursor(ImGuiMouseCursor_Hand); Gw2Ui::Tooltip("Open API settings"); }
-        if (actionable && ImGui::IsItemClicked() && it.action == Notify::Action::OpenApiSettings)
-            ApiReminder::OpenApiSettings(app);
+        if (actionable && ImGui::IsItemHovered())
+        {
+            ImGui::SetMouseCursor(ImGuiMouseCursor_Hand);
+            Gw2Ui::Tooltip(it.action == Notify::Action::OpenApiSettings ? "Open API settings"
+                           : it.action == Notify::Action::ShowEvent    ? "Travel to this event"
+                                                                       : "Open the Timers tab");
+        }
+        if (actionable && ImGui::IsItemClicked())
+            NotifyActions::Dispatch(app, it.action, it.payload);
         ImGui::PopID();
         ImVec2 after = ImGui::GetCursorScreenPos();
 

@@ -169,6 +169,9 @@ set(SOURCES
     src/app/SessionHistory.cpp
     src/app/SessionTracker.cpp
     src/app/AccountLevels.cpp
+    src/app/EventFavorites.cpp
+    src/app/EventWatch.cpp
+    src/ui/NotifyActions.cpp
     src/app/CharRegistry.cpp
     src/app/CharData.cpp
     src/app/FishData.cpp
