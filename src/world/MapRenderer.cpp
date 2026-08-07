@@ -94,19 +94,6 @@ namespace
         return std::sqrt(v.x * v.x + v.y * v.y);
     }
 
-    static bool MapCenterNearZone(const Zone &zone, float cx, float cy)
-    {
-        if (!zone.Loaded || !zone.HasRects)
-            return true;
-        const float minX = std::min(zone.ContRect[0], zone.ContRect[2]);
-        const float maxX = std::max(zone.ContRect[0], zone.ContRect[2]);
-        const float minY = std::min(zone.ContRect[1], zone.ContRect[3]);
-        const float maxY = std::max(zone.ContRect[1], zone.ContRect[3]);
-        const float padX = std::max(1200.f, (maxX - minX) * 0.45f);
-        const float padY = std::max(1200.f, (maxY - minY) * 0.45f);
-        return cx >= minX - padX && cx <= maxX + padX && cy >= minY - padY && cy <= maxY + padY;
-    }
-
     static void UpdateMeasuredPanGain(float requested, float actual, float &gain, bool &calibrated)
     {
         if (std::fabs(requested) < 24.f || std::fabs(actual) < 2.f || requested * actual <= 0.f)
@@ -1056,15 +1043,27 @@ void MapRenderer::UpdateAssist(const Config &cfg, GuideState &st, ProgressStore 
         }
         UpdateMeasuredPanGain(st.mapAssist.lastRequestedX, movedX, st.mapAssist.panGainX, st.mapAssist.panCalX);
         UpdateMeasuredPanGain(st.mapAssist.lastRequestedY, movedY, st.mapAssist.panGainY, st.mapAssist.panCalY);
+
+        // Are we still closing on the target? Tracked per READBACK (not per frame -- the map does not move
+        // between attempts, so a per-frame test would call a healthy pan diverging within three frames).
+        const float errLen = Length(ImVec2(st.mapAssist.cx - ctx.MapCenterX, st.mapAssist.cy - ctx.MapCenterY));
+        if (st.mapAssist.lastErrorLen < 0.f || errLen < st.mapAssist.lastErrorLen - 8.f)
+            st.mapAssist.divergeReadbacks = 0;
+        else
+            ++st.mapAssist.divergeReadbacks;
+        st.mapAssist.lastErrorLen = errLen;
         st.mapAssist.waitingForReadback = false;
     }
 
-    if (!st.mapAssist.relaxZoneBounds && !MapCenterNearZone(st.zone, ctx.MapCenterX, ctx.MapCenterY))
+    // Runaway guard: the pan has stopped closing on its target. Leaving the active zone's rect used to end the
+    // pan here, but that is what EVERY cross-zone pan does -- it stalled them in open water partway to the
+    // target -- and it says nothing about whether the pan is working. Failing to converge does.
+    if (st.mapAssist.divergeReadbacks >= 3)
     {
         st.mapAssist.panRequested = false;
         st.mapAssist.waitingForReadback = false;
         st.mapAssist.centerConfirmWaiting = false;
-        st.mapAssist.panStatus = "outside zone";
+        st.mapAssist.panStatus = "lost target";
     }
 
     const ImVec2 center(mapProj_.bMin.x + mapProj_.bSize.x * 0.5f, mapProj_.bMin.y + mapProj_.bSize.y * 0.5f);

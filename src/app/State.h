@@ -72,7 +72,6 @@ struct MapAssistTarget
     bool waypointKnown = false;
     bool panRequested = false;
     bool panDone = false;
-    bool relaxZoneBounds = false; // ShowOnly cross-zone target: allow panning beyond the active zone's rect
     int panAttempts = 0;
     int fineAttempts = 0;
     double nextPanTime = 0.0;
@@ -92,6 +91,11 @@ struct MapAssistTarget
     int sendInputDragAttempts = 0;
     int zeroMoveReadbacks = 0;
     int consecutiveZeroMoveReadbacks = 0;
+    // Runaway detection, measured against the TARGET: distance to it at the previous readback, and how many
+    // readbacks in a row have failed to close that distance. Leaving the active zone is normal for a
+    // cross-zone pan; genuinely losing the target is not.
+    float lastErrorLen = -1.f;
+    int divergeReadbacks = 0;
     intptr_t lastWndProcResult = 0;
     uintptr_t lastWndProcHwnd = 0;
     bool lastGameFocus = false;

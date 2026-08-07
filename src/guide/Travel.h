@@ -57,6 +57,8 @@ namespace Travel
         bool GetAnchor(float &cx, float &cy, uint32_t &mapId) const; // the goal point + its zone
         bool HasPersonalAt(float &cx, float &cy) const;              // for pin-hit-to-clear
         uint32_t DestinationMapId() const { return _destValid ? _destMapId : 0u; }
+        // The map a PERSONAL target sits on (resolved from its continent coords by SetPersonalTarget).
+        uint32_t PersonalMapId() const { return _personalActive ? _ptMapId : 0u; }
         const WpRef &Final() const { return _finalWp; }
         const WpRef &Known() const { return _knownWp; }
         bool FinalKnown() const { return _finalKnown; }

@@ -904,7 +904,10 @@ static bool BuildKnownTravelOffer(App &app, WaypointTravelOffer &out)
         return false;
 
     out.targetKind = app.travel.IsPersonal() ? TravelOfferTargetKind::Personal : TravelOfferTargetKind::ZoneTravel;
-    out.targetMapId = app.travel.IsPersonal() ? 0u : app.travel.DestinationMapId();
+    // Report the personal target's own map rather than 0. Zeroing it made every consumer read the target as
+    // "same map as us", so a cross-zone Atlas location (vista/POI/waypoint) never counted as cross-zone and
+    // its map pan was refused the moment it left the current zone's rect.
+    out.targetMapId = app.travel.IsPersonal() ? app.travel.PersonalMapId() : app.travel.DestinationMapId();
     out.targetName = app.travel.GoalZoneName();
     out.targetCx = gcx;
     out.targetCy = gcy;
@@ -1006,11 +1009,8 @@ static bool TravelDestinationPoint(App &app, float &cx, float &cy, uint32_t &map
 static void ShowDestinationPointOnMap(App &app, float cx, float cy, uint32_t destMapId, const std::string &label)
 {
     const uint32_t curMap = app.state.zone.MapId;
-    const bool crossZone = destMapId != 0 && curMap != 0 && destMapId != curMap;
     StartMapAssistPoint(app, curMap != 0 ? curMap : destMapId, cx, cy, label, MapAssistMode::ShowOnly,
                         false, false, std::string(), std::string(), false, false);
-    if (crossZone)
-        app.state.mapAssist.relaxZoneBounds = true;
 }
 
 static void ShowActiveTravelTargetOnly(App &app)
@@ -1428,7 +1428,7 @@ static void AcceptWaypointTravelOffer(App &app)
         // Pan + click the resolved hop. A closer-OBJECTIVE (Step) offer keeps its waypoint AND target in the
         // active zone -> the step assist. Otherwise (TRAVEL: zone or personal) the hop may be in ANOTHER zone;
         // the open world map is one continent, so pan with the CURRENT map id (satisfies the map-assist same-map
-        // guard) and relax the zone bound when the waypoint lives elsewhere. The player still confirms in-game.
+        // guard) and let the assist run to wherever the waypoint is. The player still confirms in-game.
         const Step *inActive = FindStepById(app.state.zone, offer.waypointStepId);
         const Step *tgtStep = offer.targetKind == TravelOfferTargetKind::Step ? FindStepById(app.state.zone, offer.targetStepId) : nullptr;
         if (inActive && tgtStep)
@@ -1441,8 +1441,6 @@ static void AcceptWaypointTravelOffer(App &app)
             StartMapAssistPoint(app, guardMap, cx, cy,
                                 offer.waypointName.empty() ? offer.targetName : offer.waypointName,
                                 MapAssistMode::Travel, true, true, offer.waypointStepId, offer.waypointLink, true, false);
-            if (offer.waypointMapId != 0 && offer.waypointMapId != app.state.zone.MapId)
-                app.state.mapAssist.relaxZoneBounds = true;
         }
     }
     offer.active = false;
