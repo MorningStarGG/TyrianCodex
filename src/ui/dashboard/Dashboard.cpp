@@ -792,6 +792,46 @@ void Dashboard::Render(App& app)
                 }
             }
             g_bodyH = ImGui::GetCursorPosY();
+
+            // Edge auto-scroll while a widget is held: reaching for a drop spot that is scrolled out of view is
+            // otherwise impossible, because the drop target is hit-tested against g_rows -- the rows currently
+            // LAID OUT -- so anything off-screen simply cannot be dropped onto. Must live inside the child:
+            // SetScrollY applies to the current window, and the drag-reorder block below runs after ImGui::End().
+            if (!g_dragKey.empty())
+            {
+                const float maxScroll = ImGui::GetScrollMaxY();
+                if (maxScroll > 0.f)
+                {
+                    const ImVec2 cMin = ImGui::GetWindowPos();
+                    const ImVec2 cSize = ImGui::GetWindowSize();
+                    const float zone = 40.f * Gw2Ui::GlobalScale();      // grab band at each edge
+                    const float maxPxPerSec = 900.f * Gw2Ui::GlobalScale();
+                    // Only while the cursor is over this column, but ABOVE/BELOW the edge counts too -- you
+                    // naturally overshoot past the top when reaching for the first slot.
+                    if (io.MousePos.x >= cMin.x && io.MousePos.x <= cMin.x + cSize.x)
+                    {
+                        // How deep into the band we are, 0..1, so it eases in instead of jumping to full speed.
+                        float dir = 0.f, depth = 0.f;
+                        if (io.MousePos.y < cMin.y + zone)
+                        {
+                            dir = -1.f;
+                            depth = (cMin.y + zone - io.MousePos.y) / zone;
+                        }
+                        else if (io.MousePos.y > cMin.y + cSize.y - zone)
+                        {
+                            dir = 1.f;
+                            depth = (io.MousePos.y - (cMin.y + cSize.y - zone)) / zone;
+                        }
+                        if (dir != 0.f)
+                        {
+                            depth = std::min(depth, 1.f);
+                            // DeltaTime-scaled: a fixed per-frame step would fly on a high-refresh display.
+                            const float step = dir * depth * maxPxPerSec * ImGui::GetIO().DeltaTime;
+                            ImGui::SetScrollY(std::min(std::max(ImGui::GetScrollY() + step, 0.f), maxScroll));
+                        }
+                    }
+                }
+            }
         }
         ImGui::EndChild();
         Gw2Ui::PopTextScale();
