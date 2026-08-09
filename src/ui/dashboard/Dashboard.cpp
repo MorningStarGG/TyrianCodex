@@ -594,12 +594,19 @@ void Dashboard::Render(App& app)
         }
         if (ImGui::IsItemDeactivated())
         {
-            if (!g_hDragged) Toggle();
+            // When Auto-open on hover is on, the panel is already open (the hover opened it), so a press-release
+            // on the handle shouldn't re-close it -- closing is driven by the Auto-hide options / X / click-outside.
+            if (!g_hDragged && !app.config.dashAutoOpenHover) Toggle();
             g_hDown = false; g_hDragged = false;
         }
 
         ImDrawList* dl = ImGui::GetWindowDrawList();
         const bool hov = ImGui::IsItemHovered() || g_hDown;
+        // Auto-open on hover: the inverse of Auto-hide. While the panel is closed, entering the handle opens it
+        // (the cursor is already heading toward the panel, so it slides out under the pointer). Closing is then
+        // left to the existing Auto-hide options, or the X / click-outside.
+        if (app.config.dashAutoOpenHover && hov && !g_open && g_anim <= 0.001f)
+            g_open = true;
         const ImU32 bg  = hov ? IM_COL32(46, 38, 24, 245) : IM_COL32(28, 23, 15, 230);
         const ImU32 brd = IM_COL32(150, 124, 70, 220);
         dl->AddRectFilled(hMin, hMax, bg, 5.f * ui);

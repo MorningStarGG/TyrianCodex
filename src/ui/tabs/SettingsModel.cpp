@@ -402,6 +402,7 @@ std::vector<Setting> Settings(App &app)
         SBool(SEC_DASHBOARD, "dashLocked", "Lock position & size", "dashboard lock handle position move drag resize size locked fixed", &app.config.dashLocked, DashboardPanelId, DashboardPanelName),
         SBool(SEC_DASHBOARD, "dashAutoHideHoverOff", "Auto-hide when cursor leaves", "dashboard auto hide collapse close cursor mouse leave hover off", &app.config.dashAutoHideHoverOff, DashboardPanelId, DashboardPanelName),
         SBool(SEC_DASHBOARD, "dashAutoHideClickOff", "Auto-hide on click outside", "dashboard auto hide collapse close click outside off elsewhere", &app.config.dashAutoHideClickOff, DashboardPanelId, DashboardPanelName),
+        SBool(SEC_DASHBOARD, "dashAutoOpenHover", "Auto-open on hover", "dashboard auto open hover handle show cursor mouse over", &app.config.dashAutoOpenHover, DashboardPanelId, DashboardPanelName),
 
         // HUD launcher bar -- config-backed scalars (owned per-character by the HUD ConfigProfileFamily). The
         // button LAYOUT (which/order/side) is structured and edited in HUD::DrawSettings, below these rows.
@@ -615,6 +616,7 @@ static const char *SettingDesc(const char *key)
         {"dashLocked", "Lock the dashboard handle's position and the panel size -- the handle still opens/closes it, but you can't drag it to move or resize the panel by its corner. Unlock to reposition or resize."},
         {"dashAutoHideHoverOff", "Collapse the open dashboard a moment after the cursor moves off it (it reopens when you click the handle)."},
         {"dashAutoHideClickOff", "Collapse the open dashboard when you click anywhere outside it."},
+        {"dashAutoOpenHover", "Open the dashboard when the cursor hovers its edge handle -- the inverse of 'Auto-hide when cursor leaves'. Pair the two for a peek-on-hover panel that opens as you mouse over the handle and closes once you mouse away."},
         {"stepHoverStyle", "What the VIEWER shows when you hover an objective: Details (wiki summary + tasks) only, or Details & Map (also a small zone map with the objective circled). Affects the guide viewer only -- Atlas/Checklist always show the map, and each dashboard widget has its own toggle in the Widgets section."},
         {"wMapTipCurrent", "Add the zone map (objective circled) to the Current Objective widget's hover tooltip."},
         {"wMapTipZoneWp", "Add the zone map (waypoint circled) to the Zone Waypoints widget's hover tooltips."},
