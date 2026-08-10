@@ -490,7 +490,7 @@ namespace
         const Guide::ZoneCounts c = Guide::ZoneCompletion(app.progress, app.state.currentChar, z);
         char b[24]; std::snprintf(b, sizeof(b), "%d/%d", c.kindDone[0], c.kindTotal[0]); s.value = b; return s; }  // kind 0 = waypoints (done = reached/unlocked)
     HudSeg SegFavWps(App& app, const HudOpts&)  { HudSeg s; s.label = "Favorites";
-        s.value = std::to_string((int)WaypointFavorites::List(app.state.currentChar).size()); return s; }
+        s.value = std::to_string((int)WaypointFavorites::List().size()); return s; }
     // The popup lists reuse the dashboard widgets but render LARGER than the compact dashboard: push a text scale
     // (the widgets scale their rows + fonts by Gw2Ui::TextScale()) inside a wider child so names/pills have room.
     void PopupZoneWaypoints(App& app, const HudOpts&)

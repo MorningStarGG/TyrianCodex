@@ -349,23 +349,29 @@ bool Search::DrawResultRow(App& app, const Entry& e, const RowStyle& style)
     {
         const float fw = 18.f * sc;
         const bool confirmed = app.progress.IsConfirmed(app.state.currentChar, e.stepId);
-        favoriteWasSet = WaypointFavorites::Contains(app.state.currentChar, e.stepId);
+        favoriteWasSet = WaypointFavorites::Contains(e.stepId);
         ImGui::SetCursorScreenPos(Gw2Ui::RowRight(row, fw, fw, (p.x + rw) - rightX));
         const bool click = ImGui::InvisibleButton("##fav", ImVec2(fw, fw));
         const bool hov = ImGui::IsItemHovered();
         favoritePressed = click;
-        favoriteClicked = click && confirmed;
-        const ImU32 starCol = !confirmed ? IM_COL32(120, 112, 96, 135)
+        // ADDING still needs this character to have reached the waypoint; REMOVING never does. Favorites are
+        // account-wide, so an entry starred on one character would otherwise be untouchable on an alt that
+        // has not been there -- gating both directions would trap it in the list.
+        const bool canToggle = confirmed || favoriteWasSet;
+        favoriteClicked = click && canToggle;
+        const ImU32 starCol = !canToggle ? IM_COL32(120, 112, 96, 135)
                             : hov       ? Gw2Ui::kGold
                             : favoriteWasSet ? IM_COL32(224, 184, 86, 245)
                                              : Gw2Ui::kTextDim;
         Render::GlyphStyle starStyle;
         starStyle.filled = favoriteWasSet;
-        starStyle.disabled = !confirmed;
+        starStyle.disabled = !canToggle;
         starStyle.shadow = false;
         Render::DrawGlyph(dl, ImVec2(rightX - fw * 0.5f, p.y + rh * 0.5f), fw,
                           Render::Glyph::Star, starCol, starStyle);
-        if (hov) Gw2Ui::Tooltip(confirmed ? (favoriteWasSet ? "Remove favorite" : "Add favorite") : "Reach this waypoint before favoriting");
+        if (hov) Gw2Ui::Tooltip(favoriteWasSet ? "Remove favorite"
+                                : confirmed    ? "Add favorite"
+                                               : "Reach this waypoint before favoriting");
         rightX -= fw + 6.f;
     }
 
@@ -472,7 +478,7 @@ bool Search::DrawResultRow(App& app, const Entry& e, const RowStyle& style)
         fav.continentId = e.continentId;
         fav.cx = e.cx;
         fav.cy = e.cy;
-        WaypointFavorites::Toggle(app.state.currentChar, fav);
+        WaypointFavorites::Toggle(fav);
         ViewerAlert(favoriteWasSet ? "Removed favorite waypoint." : "Added favorite waypoint.");
     }
     else if (favoritePressed)

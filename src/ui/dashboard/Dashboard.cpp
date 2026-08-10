@@ -8,6 +8,7 @@
 #include "ui/tabs/SettingsCommon.h"   // SettingsText scale + SettingsParagraph (this file draws the Dashboard settings)
 #include "ui/profiles/ProfileBar.h"      // Profiles::DrawProfileBar + IProfileHost (in-panel profile chip/menu)
 #include "ui/profiles/ConfigProfiles.h"  // ConfigProfiles::Host / RegisterLayout / Owner (per-character profiles)
+#include "ui/dashboard/widgets/WidgetUtil.h"   // DashUtil::ContentDragActive (a drag INSIDE a widget)
 #include "ui/LayoutOrder.h"           // shared ordered add/remove/reorder model (Dashboard/Info Panel/HUD)
 #include "ui/LayoutOrderJson.h"          // UiLayout::OrderedToJson / OrderedFromJson (dashLayout persistence)
 #include "ui/LayoutTypes.h"              // DashSlot (also via Config.h/App.h, but explicit)
@@ -797,7 +798,7 @@ void Dashboard::Render(App& app)
             // otherwise impossible, because the drop target is hit-tested against g_rows -- the rows currently
             // LAID OUT -- so anything off-screen simply cannot be dropped onto. Must live inside the child:
             // SetScrollY applies to the current window, and the drag-reorder block below runs after ImGui::End().
-            if (!g_dragKey.empty())
+            if (!g_dragKey.empty() || DashUtil::ContentDragActive())
             {
                 const float maxScroll = ImGui::GetScrollMaxY();
                 if (maxScroll > 0.f)

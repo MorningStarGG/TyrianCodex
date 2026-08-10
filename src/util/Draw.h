@@ -33,6 +33,8 @@ inline const char* const kQuickNotesEditorModeNames[] = { "Auto", "Popup only" }
 inline const char* const kZhPillsNames[]    = { "Side-by-side", "Stacked" };
 inline const char* const kZhBarNames[]      = { "Off", "Integrated", "Below banner" };
 inline const char* const kZhBarTextNames[]  = { "On bar", "Above bar", "Below bar", "None" };
+inline const char* const kFavWpSortNames[] = { "Manual", "Name (A-Z)", "Zone", "Nearest first" };
+inline constexpr int     kFavWpSortCount = 4;
 inline constexpr int     kZhPillsCount = 2, kZhBarCount = 3, kZhBarTextCount = 4;
 inline constexpr int     kNotifyCornerCount = 7;
 inline const char* const kZdAreaStyleNames[]   = { "One line", "Big banner" };

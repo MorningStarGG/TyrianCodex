@@ -23,6 +23,17 @@ namespace DashUtil
         return i ? KindIndex(i->Kind) : -1;
     }
 
+    // A drag happening INSIDE a widget (re-ordering favorite waypoints, say) rather than a drag of the whole
+    // widget by its grip. The dashboard body reads this so its edge auto-scroll serves both -- reaching a drop
+    // spot that is scrolled out of view is the same problem either way.
+    inline bool& ContentDragFlag()
+    {
+        static bool v = false;
+        return v;
+    }
+    inline void SetContentDrag(bool on) { ContentDragFlag() = on; }
+    inline bool ContentDragActive() { return ContentDragFlag(); }
+
     // Player position in CONTINENT coords (from raw MumbleLink world XZ via the active zone's rects).
     // Returns false when not in a rect-mapped zone or the link is unavailable.
     inline bool PlayerContinent(const Zone& z, float& cx, float& cy)

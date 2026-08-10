@@ -165,6 +165,8 @@ namespace SettingGroups
     inline constexpr const char *WidgetZoneHeaderName = "Zone Header";
     inline constexpr const char *WidgetRouteArrowId = "widget_route_arrow";
     inline constexpr const char *WidgetRouteArrowName = "Route Arrow";
+    inline constexpr const char *WidgetFavWpId = "widget_fav_waypoints";
+    inline constexpr const char *WidgetFavWpName = "Favorite Waypoints";
     inline constexpr const char *WidgetWvwId = "widget_wvw";
     inline constexpr const char *WidgetWvwName = "WvW Map Control";
 

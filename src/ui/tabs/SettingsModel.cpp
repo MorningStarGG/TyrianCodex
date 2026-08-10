@@ -364,6 +364,9 @@ std::vector<Setting> Settings(App &app)
         SEnum(SEC_WIDGETS, "zhWidgetBar", "Zone Header: bar", "widget zone header banner completion progress bar off integrated below", &app.config.zhWidgetBar, kZhBarNames, kZhBarCount, WidgetZoneHeaderId, WidgetZoneHeaderName),
         SEnum(SEC_WIDGETS, "zhWidgetBarText", "Zone Header: bar text", "widget zone header banner below bar text percent on above below none", &app.config.zhWidgetBarText, kZhBarTextNames, kZhBarTextCount, WidgetZoneHeaderId, WidgetZoneHeaderName),
         SBool(SEC_WIDGETS, "wRouteArrowDirect", "Direct-objective glow", "widget route arrow hybrid direct objective glow indicator independent", &app.config.wRouteArrowDirect, WidgetRouteArrowId, WidgetRouteArrowName),
+        SEnum(SEC_WIDGETS, "favWpSort", "Favorite Waypoints: sort", "widget favorite waypoints sort order manual name alphabetical zone nearest distance arrange", &app.config.favWpSort, kFavWpSortNames, kFavWpSortCount, WidgetFavWpId, WidgetFavWpName),
+        SBool(SEC_WIDGETS, "favWpHideLocked", "Favorite Waypoints: hide locked", "widget favorite waypoints hide locked unlocked unreached character only actionable filter", &app.config.favWpHideLocked, WidgetFavWpId, WidgetFavWpName),
+        SBool(SEC_WIDGETS, "favWpGroupByZone", "Favorite Waypoints: group by zone", "widget favorite waypoints group zone region header collapse organise organize", &app.config.favWpGroupByZone, WidgetFavWpId, WidgetFavWpName),
         SBool(SEC_WIDGETS, "wRouteArrowIcon", "Show objective type icon", "widget route arrow type icon heart poi vista hero material show before title", &app.config.wRouteArrowIcon, WidgetRouteArrowId, WidgetRouteArrowName),
         SBool(SEC_WIDGETS, "wRouteArrowChevron", "Glow: chevron tip", "widget route arrow hybrid direct glow chevron tip marker", &app.config.wRouteArrowChevron, WidgetRouteArrowId, WidgetRouteArrowName),
         SBool(SEC_WIDGETS, "wRouteArrowPing", "Glow: ping instead of constant", "widget route arrow hybrid direct glow ping flash periodic constant", &app.config.wRouteArrowPing, WidgetRouteArrowId, WidgetRouteArrowName),
@@ -496,6 +499,13 @@ static const char *SettingDesc(const char *key)
         {"directIndicatorEverySecs", "Ping cadence: the full on+off cycle length, in seconds. Only when 'ping instead of constant' is on."},
         {"directIndicatorShowSecs", "How long each ping stays visible within the cycle, in seconds. Only when 'ping instead of constant' is on."},
         {"wRouteArrowDirect", "On the dashboard Route Arrow widget, show the Hybrid direct-objective glow (independent of the in-world arrow). It has its own chevron / ping / timing below."},
+        {"favWpSort", "How the Favorite Waypoints widget orders its list. Manual is the order you arranged by "
+                      "dragging rows or using the arrows below; the other modes only change how it is DISPLAYED "
+                      "and never overwrite that arrangement."},
+        {"favWpHideLocked", "Leave out favorites the character you are playing has not reached yet. They are "
+                            "normally shown greyed out and sink to the bottom of the list instead, so you can "
+                            "still see what is left to unlock."},
+        {"favWpGroupByZone", "Group the Favorite Waypoints widget under a heading per zone."},
         {"wRouteArrowIcon", "On the dashboard Route Arrow widget, show the objective's type icon (heart / POI / material) before the title."},
         {"wRouteArrowChevron", "Add a chevron on the Route Arrow widget's direct-objective glow, pointing at the objective."},
         {"wRouteArrowPing", "Flash the Route Arrow widget's glow periodically instead of constantly."},

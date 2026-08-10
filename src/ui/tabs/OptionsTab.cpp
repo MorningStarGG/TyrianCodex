@@ -12,6 +12,7 @@
 #include "ui/Gw2Ui.h"
 #include "ui/ApiScopes.h"
 #include "ui/dashboard/Dashboard.h"
+#include "ui/WaypointFavorites.h"   // the favorite-waypoint order list
 #include "ui/hud/Hud.h"
 #include "ui/infopanel/InfoPanel.h"
 #include "ui/infopanel/InfoData.h"
@@ -233,6 +234,58 @@ namespace
         flush();
         if (!any)
             Gw2Ui::Label("No settings in this subsection.", IM_COL32(180, 170, 150, 255), false, nullptr, SettingsText::Body);
+    }
+
+    // Favorite waypoints: the manual order, with up/down arrows and a trash to un-star. This list ALWAYS shows
+    // the stored order -- the widget's sort/grouping are only a view, so arranging here stays meaningful even
+    // when the widget is displaying A-Z or grouped by zone (where its own drag is disabled for that reason).
+    void DrawFavoriteWaypointOrder(App &app)
+    {
+        Gw2Ui::SectionHeader("Order", nullptr, SettingsText::Header, Gw2Ui::kGold, /*banded*/ false);
+        const std::vector<WaypointFavorites::Favorite> &favs = WaypointFavorites::List();
+        if (favs.empty())
+        {
+            SettingsParagraph("No favorite waypoints yet. Star a waypoint in Atlas or Search to add one; they are "
+                              "shared by every character on the account.",
+                              IM_COL32(168, 158, 136, 255));
+            return;
+        }
+
+        Gw2Ui::BeginCard("favwp-order");
+        SettingsParagraph("Drag rows in the dashboard widget, or use these arrows. This is the Manual order -- the "
+                          "widget's sort modes only change how it is displayed.",
+                          IM_COL32(168, 158, 136, 255));
+        ImGui::Spacing();
+        const float availW = Gw2Ui::CardInnerWidth();
+        const float startX = ImGui::GetCursorScreenPos().x;
+        const float rh = 28.f;
+
+        int moveFrom = -1, moveTo = -1;
+        std::string removeId;
+        for (int i = 0; i < (int)favs.size(); ++i)
+        {
+            const WaypointFavorites::Favorite &f = favs[i];
+            Gw2Ui::ReorderRowDesc rd;
+            rd.label = f.name.empty() ? "(waypoint)" : f.name.c_str();
+            rd.note = f.zoneName.empty() ? nullptr : f.zoneName.c_str();
+            rd.canUp = (i > 0);
+            rd.canDown = (i + 1 < (int)favs.size());
+            rd.fontSize = SettingsText::Hint;
+            rd.disableIcon = Gw2Ui::IconBtn::Trash;
+            rd.disableTip = "Remove favorite";
+            char rid[24];
+            std::snprintf(rid, sizeof(rid), "fw%d", i);
+            const Gw2Ui::ReorderResult rr = Gw2Ui::ReorderRow(rid, startX, availW, rh, rd);
+            if (rr.act == Gw2Ui::ReorderResult::Disable) removeId = f.stepId;
+            else if (rr.act == Gw2Ui::ReorderResult::Up) { moveFrom = i; moveTo = i - 1; }
+            else if (rr.act == Gw2Ui::ReorderResult::Down) { moveFrom = i; moveTo = i + 1; }
+        }
+        ImGui::Dummy(ImVec2(availW, 2.f));
+        Gw2Ui::EndCard();
+
+        // One mutation per frame -- a click can only trigger one, and both paths invalidate `favs`.
+        if (moveFrom >= 0) WaypointFavorites::Move(moveFrom, moveTo);
+        else if (!removeId.empty()) WaypointFavorites::Remove(removeId);
     }
 
     // Zone Display: the text-color block (preset swatches + a hex/RGB picker) -- custom UI the scalar settings
@@ -680,6 +733,17 @@ void DrawOptionsContent(App &app)
     else if (g_optSection == SEC_LOADOUTS)
     {
         Loadouts::DrawSettings(app); // loadout bar + per-family active-profile pickers
+    }
+    else if (g_optSection == SEC_WIDGETS)
+    {
+        // Auto rows, then the favorite-waypoint order list under its own group. The list is an EDITOR, not a
+        // model row, so it has to be drawn here (same shape as Zone Display's colour block below).
+        DrawSettingsForSection(app, settings, SEC_WIDGETS, g_optGroup.empty() ? nullptr : g_optGroup.c_str());
+        if (g_optGroup.empty() || g_optGroup == SettingGroups::WidgetFavWpId)
+        {
+            ImGui::Dummy(ImVec2(0.f, 6.f));
+            DrawFavoriteWaypointOrder(app);
+        }
     }
     else if (g_optSection == SEC_ZONEDISPLAY)
     {

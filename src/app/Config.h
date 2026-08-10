@@ -78,6 +78,11 @@ struct Config
     bool wRouteArrowPing = false;
     int wRouteArrowEverySecs = 5;
     int wRouteArrowShowSecs = 2;
+    // Favorite Waypoints widget. The stored favorites list IS the manual order, so sorting is a VIEW only --
+    // picking A-Z/Zone/Nearest never rewrites what the player arranged, and Manual restores it exactly.
+    int favWpSort = 0;              // 0 Manual, 1 A-Z, 2 Zone, 3 Nearest
+    bool favWpGroupByZone = false;  // collapse the list under a header per zone
+    bool favWpHideLocked = false;   // omit waypoints the CURRENT character has not reached
     // WvW Map Control widgets. Data fields (shared by both): owned counts / PPT / per-type breakdown.
     bool wvwShowCounts = true; // per-color owned counts (R:n B:n G:n)
     bool wvwShowPpt = true;    // PPT contributed per color (this map)
