@@ -111,7 +111,10 @@ namespace
 void Search::DrawFilterBar(App& app, Filters& f, bool compact)
 {
     Search::EnsureIndex(app);
-    const float availW = ImGui::GetContentRegionAvail().x;
+    // ContentWidth, NOT GetContentRegionAvail: a Gw2Ui card is a GROUP, so the raw content region over-extends
+    // to the window edge and overruns the card's right padding (the dashboard Search widget draws inside one).
+    // ContentWidth resolves to CardInnerWidth inside a card and to the content region everywhere else.
+    const float availW = Gw2Ui::ContentWidth();
     Gw2Ui::SearchBox("##atlassearch", f.text, sizeof(f.text), availW,
                      compact ? "Search..." : "Search waypoints, POIs, hearts, zones...");
     ImGui::Spacing();

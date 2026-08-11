@@ -562,9 +562,11 @@ static bool HandleLocalKeybind(UINT uMsg, WPARAM wParam, LPARAM lParam)
     if (!g_app || (uMsg != WM_KEYDOWN && uMsg != WM_SYSKEYDOWN) || (lParam & (1 << 30)) || Gw2Ui::KeybindCaptureActive())
         return false;
 
-    const bool ctrl = (GetKeyState(VK_CONTROL) & 0x8000) != 0;
-    const bool alt = (GetKeyState(VK_MENU) & 0x8000) != 0;
-    if (!ctrl && !alt && ImGui::GetCurrentContext() && ImGui::GetIO().WantTextInput)
+    // A focused text field owns the keyboard, UNCONDITIONALLY. This used to exempt Ctrl/Alt combos, so every
+    // Ctrl bind stayed live while you were typing -- Ctrl+A/C/V/X in any of our text fields ran an addon action
+    // and CONSUMED the key (return 0 below) instead of selecting/copying/pasting. WantTextInput is exactly the
+    // "someone is typing" signal; there is no combo worth stealing from an active field.
+    if (ImGui::GetCurrentContext() && ImGui::GetIO().WantTextInput)
         return false;
 
     char combo[64] = {};
