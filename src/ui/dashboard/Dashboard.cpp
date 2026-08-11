@@ -63,6 +63,12 @@ namespace
     bool        g_profPromptReq = false;       // open the name prompt this frame
 
     std::map<std::string, float> g_hoverAnim;   // per-widget hover-chrome reveal (0..1), drives the inline strip
+    // Hover-chrome bands are REAL layout space (the header slides the body down, it never overlays it), so the
+    // body grows while one is open. The panel must NOT breathe with it -- g_bodyH is measured band-FREE (minus
+    // g_bandTotal) and the panel instead carries one fixed band of slack at its BOTTOM (g_bandReserve), which
+    // reads as padding under the last card. Both are reset each frame before the widget loop.
+    float  g_bandTotal   = 0.f;       // sum of the bands open this frame (subtracted from the body measure)
+    float  g_bandReserve = 0.f;       // one bandH while ANY widget uses hover chrome, else 0
 
     bool   g_open  = false;
     float  g_anim  = 0.f;             // 0 closed .. 1 open
@@ -318,7 +324,9 @@ namespace
     // dashboard adds NO frame -> never nests a channel-split); normal widgets get the dashboard card frame.
     // The strip is pinned (bar mode) or hidden until hover (hoverChrome). Group flow is left to ImGui so the
     // half-pair SameLine + inter-widget spacing keep working.
-    void DrawCard(App& app, const DashWidget& wdef, float width)
+    // Returns the hover band this widget added to its own height, so the caller can fold it into g_bandTotal
+    // PER ROW -- two half-width widgets share a row, so that row grows by the TALLER band, not by both.
+    float DrawCard(App& app, const DashWidget& wdef, float width)
     {
         DashSlot* sl = SlotFor(app, wdef.key);
         const bool hover = sl && sl->hoverChrome;
@@ -326,12 +334,22 @@ namespace
         const float bandH = std::max(24.f * sc, Gw2Ui::MeasureWrappedHeight("Ag", 18.f, 0.f) + 6.f * sc);
         const ImGuiIO& io = ImGui::GetIO();
 
-        // Hover overlay (no window): if it was revealed last frame, submit its INPUT at the band BEFORE the body
-        // (so its buttons win the click), then paint its VISUAL on top AFTER. Everything is drawn inline in the
-        // body child -> clipped to the panel, never a focus-stealing top-level window.
-        const bool  inputThisFrame = hover && g_hoverAnim[wdef.key] > 0.01f;
+        // Hover reveal (no window): the band is REAL space, animated from zero by the same g_hoverAnim that
+        // paints it -- band height and content offset are the SAME value, so the strip can never sit on top of
+        // the body at any point of the slide (it used to, and its grip/trash hotspots ate clicks meant for a
+        // widget's first element -- the Search box). At rest band == 0, so nothing is reserved and the widget
+        // stays exactly as compact as before. a0 is last frame's value (`a` below advances after layout);
+        // everything here -- layout, input gate, paint -- must use that ONE value or they drift apart.
+        const float a0   = hover ? g_hoverAnim[wdef.key] : 0.f;
+        const float band = bandH * a0;
+        // Input only once the reveal has SETTLED: while sliding the strip is paint-only, so a fast click can
+        // never land on the drag grip or Disable -- it reaches the body or inert band. At a0 == 1 the band is
+        // full-height dedicated space, so the buttons and the body no longer share a pixel.
+        const bool  inputThisFrame = hover && a0 >= 0.999f;
         StripHover  hv;
         ImVec2      bandPos{}; float bandW = 0.f;
+
+        if (hover) g_bandReserve = std::max(g_bandReserve, bandH);
 
         ImGui::BeginGroup();
         if (wdef.selfFramed)
@@ -343,10 +361,10 @@ namespace
                 DrawControlStrip(app, wdef, sl, top, width, bandH, false);   // pinned bar (Both)
                 ImGui::SetCursorScreenPos(ImVec2(top.x, top.y + bandH + 2.f * sc));
             }
-            else if (inputThisFrame)
+            else if (band > 0.01f)
             {
-                DrawControlStrip(app, wdef, sl, top, width, bandH, true, StripPhase::Input, &hv);
-                ImGui::SetCursorScreenPos(top);
+                if (inputThisFrame) DrawControlStrip(app, wdef, sl, top, width, bandH, true, StripPhase::Input, &hv);
+                ImGui::SetCursorScreenPos(ImVec2(top.x, top.y + band));   // body starts BELOW the revealed band
             }
             wdef.draw(app, width);
         }
@@ -361,10 +379,10 @@ namespace
                 ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + bandH));
                 Gw2Ui::Divider(inner);
             }
-            else if (inputThisFrame)
+            else if (band > 0.01f)
             {
-                DrawControlStrip(app, wdef, sl, hp, inner, bandH, true, StripPhase::Input, &hv);
-                ImGui::SetCursorScreenPos(hp);
+                if (inputThisFrame) DrawControlStrip(app, wdef, sl, hp, inner, bandH, true, StripPhase::Input, &hv);
+                ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + band));      // body starts BELOW the revealed band
             }
             wdef.draw(app, inner);
             Gw2Ui::EndCard();
@@ -389,11 +407,20 @@ namespace
             float& a = g_hoverAnim[wdef.key];
             a += (keepOpen ? 1.f : -1.f) * (io.DeltaTime > 0.f ? io.DeltaTime : 0.016f) * 8.f;
             a = std::min(std::max(a, 0.f), 1.f);
-            if (a > 0.01f && visible)
-                DrawControlStrip(app, wdef, sl, bandPos, bandW, bandH, true, StripPhase::Visual, &hv);
+            // Paint with the band the LAYOUT used (`a` has already advanced past it), bottom-anchored to the
+            // revealed edge and clipped to it -- so the strip slides out from under the widget's top edge as the
+            // body slides down, instead of popping in at full height.
+            if (band > 0.01f && visible)
+            {
+                ImGui::PushClipRect(bandPos, ImVec2(bandPos.x + bandW, bandPos.y + band), true);
+                DrawControlStrip(app, wdef, sl, ImVec2(bandPos.x, bandPos.y + band - bandH), bandW, bandH,
+                                 true, StripPhase::Visual, &hv);
+                ImGui::PopClipRect();
+            }
         }
 
         g_rows.push_back(Row{ wdef.key, mn.x, mn.y, mx.x, mx.y });
+        return band;
     }
 
     // Quick-add: a searchable card listing the widgets you don't have enabled. Opened from the header "+" or
@@ -642,7 +669,10 @@ void Dashboard::Render(App& app)
     const float panelWLocal = std::min(std::max(app.config.dashWidth, 300.f), 600.f);
     const float panelW = panelWLocal * ui;
     const float headerH = 30.f * ui;
-    float panelH = headerH + g_bodyH + 28.f * ui;
+    // + g_bandReserve: one hover-header's worth of slack under the last card, so revealing a header consumes it
+    // instead of growing the panel (or popping a body scrollbar, which would reflow every widget's width). It is
+    // 0 unless some widget actually uses hover chrome. Measured inside the body -- bandH scales with dashTextScale.
+    float panelH = headerH + g_bodyH + g_bandReserve + 28.f * ui;
     panelH = std::min(std::max(panelH, 160.f * ui), 0.80f * H);
 
     const float hCenterY = (hMin.y + hMax.y) * 0.5f;
@@ -759,6 +789,7 @@ void Dashboard::Render(App& app)
             // stacks (its draw() renders compact, since the width drops below DashUtil::kNarrowWidth) and no
             // lone-half "+ Add" placeholder shows. The slot's span stays 2, so widening the panel re-pairs automatically.
             const bool allowHalf = ((bodyW - gap) * 0.5f) >= 190.f * Gw2Ui::TextScale();   // kHalfMin (tunable)
+            g_bandTotal = 0.f; g_bandReserve = 0.f;   // re-accumulated by DrawCard below (see the panel measure)
             // gather shown widgets in layout order (app.config.dashLayout.items are all shown -- no holes)
             std::vector<std::pair<const DashSlot*, const DashWidget*>> show;
             for (const DashSlot& s : app.config.dashLayout.items)
@@ -775,24 +806,28 @@ void Dashboard::Render(App& app)
                 if (pairNext)
                 {
                     const float halfW = (bodyW - gap) * 0.5f;
-                    DrawCard(app, *wd, halfW);
+                    const float bandA = DrawCard(app, *wd, halfW);
                     ImGui::SameLine(0.f, gap);
-                    DrawCard(app, *show[i + 1].second, halfW);
+                    const float bandB = DrawCard(app, *show[i + 1].second, halfW);
+                    g_bandTotal += std::max(bandA, bandB);   // ONE row -> it grows by the taller band, not both
                     ++i;
                 }
                 else if (half)   // lone half -> render at half width with a "+ Add" partner slot beside it
                 {
                     const float halfW = (bodyW - gap) * 0.5f;
-                    DrawCard(app, *wd, halfW);
+                    g_bandTotal += DrawCard(app, *wd, halfW);
                     ImGui::SameLine(0.f, gap);
                     DrawAddPlaceholder(halfW, s->key);
                 }
                 else
                 {
-                    DrawCard(app, *wd, bodyW);
+                    g_bandTotal += DrawCard(app, *wd, bodyW);
                 }
             }
-            g_bodyH = ImGui::GetCursorPosY();
+            // Band-FREE height: the panel sizes as if no hover header were open, so it never breathes as you
+            // sweep the cursor down a column. The open band is absorbed by g_bandReserve (added to the panel
+            // height below), which is why it also can't push content past the body and pop a scrollbar.
+            g_bodyH = ImGui::GetCursorPosY() - g_bandTotal;
 
             // Edge auto-scroll while a widget is held: reaching for a drop spot that is scrolled out of view is
             // otherwise impossible, because the drop target is hit-tested against g_rows -- the rows currently

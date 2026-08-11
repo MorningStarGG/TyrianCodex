@@ -500,8 +500,7 @@ static const char *SettingDesc(const char *key)
         {"directIndicatorShowSecs", "How long each ping stays visible within the cycle, in seconds. Only when 'ping instead of constant' is on."},
         {"wRouteArrowDirect", "On the dashboard Route Arrow widget, show the Hybrid direct-objective glow (independent of the in-world arrow). It has its own chevron / ping / timing below."},
         {"favWpSort", "How the Favorite Waypoints widget orders its list. Manual is the order you arranged by "
-                      "dragging rows or using the arrows below; the other modes only change how it is DISPLAYED "
-                      "and never overwrite that arrangement."},
+                      "dragging rows or using the arrows below."},
         {"favWpHideLocked", "Leave out favorites the character you are playing has not reached yet. They are "
                             "normally shown greyed out and sink to the bottom of the list instead, so you can "
                             "still see what is left to unlock."},
