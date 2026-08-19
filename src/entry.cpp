@@ -49,6 +49,7 @@
 #include "app/AccountLevels.h"  // account-wide lifetime level total (seeded from the character roster)
 #include "app/EventFavorites.h" // account-wide event favorites + reminder flags
 #include "app/EventWatch.h"     // staged "starts in N" reminders for belled events
+#include "ui/InputProbe.h"      // opt-in keyboard/window diagnostic (readout in the Diagnostics section)
 #include "app/CharRegistry.h"   // name->created-id registry (rename detector for per-character data)
 #include "app/SectorData.h"
 #include "app/ItemCatalog.h"
@@ -259,6 +260,8 @@ static void DoToggleTrail()
 // pass it on. Acts on the initial press only (skips auto-repeat) but consumes repeats too so no menu sneaks in.
 static UINT OnWndProc(HWND /*hWnd*/, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
+    if (g_app && g_app->config.inputProbe)
+        InputProbe::NoteMessage(uMsg); // BEFORE we consume anything, so the count is what ARRIVED
     if (HandleLocalKeybind(uMsg, wParam, lParam))
         return 0;
     if ((uMsg == WM_KEYDOWN || uMsg == WM_SYSKEYDOWN) && wParam == VK_ESCAPE && Gw2Ui::WindowEatsEscape())
@@ -790,6 +793,9 @@ static void Render()
         return;
     try
     {
+        InputProbe::SetEnabled(g_app->config.inputProbe); // one gate: Gw2Ui's text boxes check this before reporting
+        if (g_app->config.inputProbe)
+            InputProbe::SampleFrame(); // FIRST: ImGui's character queue is drained by whichever InputText consumes it
         Gw2Ui::NewFrameEscReset();                                                                                // clear the per-frame "a Gw2Ui window is focused" flag; BeginWindow re-sets it
         Gw2Ui::SetGlobalScale(g_app->config.uiScale);                                                             // one addon-wide screen UI multiplier; local panel/text scales stack on top
         Gw2Ui::SetTooltipFontSize(kFontSizePx[std::clamp(g_app->config.tooltipFontSize, 0, kFontSizeCount - 1)]); // push the user's tooltip text size into the framework

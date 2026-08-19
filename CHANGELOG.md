@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.1.0.4
+
+### Added
+
+- Added **sorting** to the Favorite Waypoints widget, with **Manual**, **A-Z**, **Zone** and **Nearest** modes. Manual is the default and is the order you arrange yourself; the other modes are a view over it, so switching back to Manual restores your arrangement exactly as you left it.
+- Added **manual re-ordering** of favorite waypoints, either by dragging a row in the widget or with the up/down arrows in the new Favorite Waypoints list under **Options -> Widgets**. The list there also lets you un-star an entry without going back to the map.
+- Added an optional **Group by zone** for favorite waypoints, which puts a small heading above each zone's entries.
+- Added an option to **hide favorites the current character has not reached**, for accounts where a long shared list would otherwise show a lot of entries a new character cannot travel to yet. The widget notes how many it is hiding.
+- Added an **Input probe** under **Options -> Diagnostics** (off by default) for tracking down typing or click problems. It follows a keystroke from the raw Windows message through to ImGui's text queue, lists every text box on screen with the one holding focus marked, and shows each on-screen panel's input rectangle with a flag when one overlaps the dashboard.
+
+### Changed
+
+- Changed favorite waypoints to be stored **for the whole account** rather than per character, so a waypoint you star is starred everywhere. Existing per-character lists are merged automatically on first run, keeping one copy of each waypoint. Whether a waypoint is unlocked is still judged per character, so entries the character you are playing has not reached are shown dimmed rather than dropped.
+- Changed dashboard widgets with a hidden header so that hovering **slides the widget down** to reveal its header in real space, instead of overlaying it on top of the widget's own content. At rest nothing is reserved, so widgets stay exactly as compact as before, and the panel no longer resizes as you sweep across it.
+
+### Fixed
+
+- Fixed dragging a dashboard widget not scrolling the panel when you reached its top or bottom edge, which made it impossible to drop a widget anywhere that was scrolled out of view.
+- Fixed a widget's hidden-header controls stealing clicks meant for the widget underneath. The drag grip and the disable button sat on top of whatever the widget drew first, which made the dashboard **Search** box in particular refuse clicks depending on how long you had hovered. A click during the reveal animation can no longer land on those buttons either.
+- Fixed keyboard shortcuts firing while you were typing in a text field. Any shortcut bound with **Ctrl** or **Alt** ran its action and swallowed the keystroke, so **Ctrl+A**, **Ctrl+C** and **Ctrl+V** did not work in any of the addon's text boxes for players who use modifier shortcuts.
+- Fixed search boxes drawn inside a card overrunning the card's right-hand padding, which pushed the clear button under the card edge.
+
 ## 1.1.0.3
 
 ### Added

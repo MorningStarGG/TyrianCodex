@@ -13,7 +13,7 @@
 #define TC_VER_MAJOR    1
 #define TC_VER_MINOR    1
 #define TC_VER_BUILD    0
-#define TC_VER_REVISION 3
+#define TC_VER_REVISION 4
 
 // "0.1.0.0" -- used as the cache-version marker (ImageCache).
 #define TC_STRINGIZE2(x) #x
@@ -29,4 +29,4 @@
 // *.pack) changes -- it is INDEPENDENT of TC_VER_* so a DLL-only patch never forces a re-download: it is written
 // to data/.coreversion + data/.assetsversion, and a mismatch against that on-disk marker is what triggers the
 // redownload, not the release tag name.
-#define TC_DATA_VERSION "1.0.3"   // 1.0.3: event_timers.json coords validated against their own map rect
+#define TC_DATA_VERSION "1.0.3"

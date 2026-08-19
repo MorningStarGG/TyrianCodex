@@ -146,6 +146,7 @@ struct Config
     bool mapAssistFocusProbe = false;   // diagnostic: invoke native map focus-player once before waypoint pan
     bool mapAssistDebug = true;         // show map-assist probe/readback overlay while the map is open
     bool mapCenterProbe = false;        // diagnostic: log map-open center-vs-player distance + settle timing (chat-link waypoint detection R&D)
+    bool inputProbe = false;            // diagnostic: keyboard/window probe -- where keystrokes stop, and what overlaps our panels
     bool mapAssistClickWaypoint = true; // Routing: after the map pans to a confirmed waypoint, click it to open GW2's teleport confirmation (default on)
     // Auto travel: per-source, skip TC's travel-offer card and go straight to open-map + pan (+ click when
     // mapAssistClickWaypoint is on). The in-game teleport confirmation is UNAFFECTED -- the player still confirms.

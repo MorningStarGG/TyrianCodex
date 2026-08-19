@@ -242,6 +242,7 @@ std::vector<Setting> Settings(App &app)
         SBool(SEC_DIAG, "mapAssistFocusProbe", "Map recenter probe", "debug map assist focus player recenter native waypoint pan", &app.config.mapAssistFocusProbe, DiagTogglesId, DiagTogglesName),
         SBool(SEC_DIAG, "mapAssistDebug", "Map assist debug overlay", "debug map assist overlay focus player recenter waypoint pan readback", &app.config.mapAssistDebug, DiagTogglesId, DiagTogglesName),
         SBool(SEC_DIAG, "mapCenterProbe", "Map-center probe (chat-link)", "debug map center player distance chat link waypoint settle timing", &app.config.mapCenterProbe, DiagTogglesId, DiagTogglesName),
+        SBool(SEC_DIAG, "inputProbe", "Input probe (keyboard / overlap)", "debug input probe keyboard typing text field focus wm_char keystroke window overlap conflict addon", &app.config.inputProbe, DiagTogglesId, DiagTogglesName),
 
         // Route Trail (in-world).
         SBool(SEC_TRAIL, "showTrail", "Show route trail", "trail show route in-world ground ribbon", &app.config.showTrail, TrailAppearanceId, TrailAppearanceName),
@@ -547,6 +548,7 @@ static const char *SettingDesc(const char *key)
         {"mapAssistFocusProbe", "Diagnostic: invoke GW2's native focus-player once before a waypoint pan and record the result."},
         {"mapAssistDebug", "Show the map-assist pan / readback / focus overlay while the map is open."},
         {"mapCenterProbe", "Log map-open center-vs-player distance + settle timing (R&D for detecting a clicked chat-link waypoint)."},
+        {"inputProbe", "Show a keyboard + window probe in Diagnostics: where a keystroke stops (our hook / ImGui), and whether another panel overlaps the one you are clicking. For tracking down typing or click problems."},
         {"showTrail", "Draw the route as a ribbon on the ground in the world."},
         {"trailColor", "Colour of the in-world route trail."},
         {"trailWidth", "Width of the trail ribbon, in metres."},

@@ -1,6 +1,7 @@
 // Gw2Ui :: GW2-skinned controls -- checkbox, buttons, textboxes, dropdown, context menus, sliders.
 #include "ui/Gw2Ui.h"
 #include "ui/gw2ui/Gw2UiInternal.h"
+#include "ui/InputProbe.h"   // opt-in keyboard diagnostic; text boxes report their queue/ActiveId state
 #include "Shared.h"
 #include "render/glyphs/Glyphs.h"
 #include "util/Textures.h"
@@ -135,6 +136,33 @@ namespace
         m.boxH = m.requestedPx + 10.f * sc;
         return m;
     }
+
+    // Diagnostics hook (Options > Diagnostics > "Input probe"; no-ops when off). ImGui's InputText DRAINS
+    // io.InputQueueCharacters when it holds ActiveId, so the pending count has to be sampled BEFORE the call --
+    // afterwards it always reads zero. Recording it per box, in submission order, shows which box actually got
+    // the characters and which one found the queue already emptied.
+    struct ProbedInputText
+    {
+        const char *label = nullptr;
+        ImGuiID     id = 0;
+        bool        active = false;
+        int         queue = 0;
+
+        explicit ProbedInputText(const char *l) : label(l)
+        {
+            if (!InputProbe::Enabled())
+                return;
+            id = ImGui::GetID(l);   // same ID stack the InputText below will hash against
+            const ImGuiContext *g = ImGui::GetCurrentContext();
+            active = g && g->ActiveId == id;
+            queue = ImGui::GetIO().InputQueueCharacters.Size;
+        }
+        void Done(bool changed) const
+        {
+            if (InputProbe::Enabled())
+                InputProbe::NoteTextBox(label, (unsigned)id, active, queue, changed);
+        }
+    };
 
     struct ScopedInputFont
     {
@@ -352,7 +380,9 @@ bool Gw2Ui::TextBox(const char *id, char *buf, size_t bufSize, float width)
         ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
         ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
         ImGui::SetNextItemWidth(width);
+        const ProbedInputText probe(id);
         changed = ImGui::InputText(id, buf, bufSize);
+        probe.Done(changed);
         ImGui::PopStyleVar();
         ImGui::PopStyleColor(3);
     }
@@ -445,7 +475,9 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
         ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
         ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8.f * sc, (h - im.requestedPx) * 0.5f));
         ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
+        const ProbedInputText probe(id);
         changed = ImGui::InputText(id, buf, bufSize);
+        probe.Done(changed);
         ImGui::PopStyleVar();
         ImGui::PopStyleColor(3);
     }
