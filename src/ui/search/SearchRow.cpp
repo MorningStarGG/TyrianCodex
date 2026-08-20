@@ -449,16 +449,24 @@ bool Search::DrawResultRow(App& app, const Entry& e, const RowStyle& style)
     {
         const float measured = Gw2Ui::MeasureWidth(e.name.c_str(), baseFs);
         if (measured > availName && measured > 1.f) nameFs = std::max(11.f, baseFs * (availName / measured));
-        Gw2Ui::LabelIn(ImVec2(textX, p.y), ImVec2(rightX - 4.f, p.y + rh), e.name.c_str(),
+        // The shrink is CLAMPED at 11px, so a name long enough to need less than that still overruns its column
+        // at 11px -- and LabelIn does not clip, so it ran under the level / distance pills (long heart names).
+        // Ellipsize as the backstop, at the size we settled on; it returns the name unchanged when it fits.
+        const std::string shown = Gw2Ui::Ellipsize(e.name, nameFs, availName);
+        Gw2Ui::LabelIn(ImVec2(textX, p.y), ImVec2(rightX - 4.f, p.y + rh), shown.c_str(),
                        Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, nameCol, false, nullptr, nameFs);
     }
     else
     {
-        Gw2Ui::LabelIn(ImVec2(textX, p.y + 3.f), ImVec2(rightX - 4.f, p.y + rh * 0.5f + 3.f), e.name.c_str(),
+        // Full rows never shrink the name, so both lines need the same clip as the compact row above -- a long
+        // name or a long "zone - region" sub-line would otherwise run under the pill cluster.
+        const std::string shownName = Gw2Ui::Ellipsize(e.name, nameFs, availName);
+        Gw2Ui::LabelIn(ImVec2(textX, p.y + 3.f), ImVec2(rightX - 4.f, p.y + rh * 0.5f + 3.f), shownName.c_str(),
                        Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Bottom, nameCol, false, nullptr, nameFs);
         const std::string sub = (e.type == "zone") ? e.regionLabel
                                                     : (e.zoneName + (e.regionLabel.empty() ? "" : ("   -   " + e.regionLabel)));
-        Gw2Ui::LabelIn(ImVec2(textX, p.y + rh * 0.5f + 1.f), ImVec2(rightX - 4.f, p.y + rh - 2.f), sub.c_str(),
+        const std::string shownSub = Gw2Ui::Ellipsize(sub, 16.f, availName);
+        Gw2Ui::LabelIn(ImVec2(textX, p.y + rh * 0.5f + 1.f), ImVec2(rightX - 4.f, p.y + rh - 2.f), shownSub.c_str(),
                        Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Top, IM_COL32(180, 172, 148, 255), false, nullptr, 16.f);
     }
 
