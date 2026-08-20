@@ -50,9 +50,10 @@ namespace StoryRecommend
 
     // The "next story step" detail card (its own gold accent card): release name + episode name + wrapped
     // description + an Open Journal button + (when there is an entry zone) a Travel button. It draws ONE card,
-    // so only call it where there is NO surrounding Gw2Ui card -- the viewer recommend body (a BeginChild) and
-    // the dashboard Recommended-Zones widget (which is selfFramed, so the dashboard adds no frame). Nesting it
-    // inside another card corrupts the ChannelsSplit merge (the historical "blank-above-Events" bug).
+    // so call it where there is NO surrounding Gw2Ui card -- the viewer recommend body (a BeginChild) and the
+    // dashboard Recommended-Zones widget (which is selfFramed, so the dashboard adds no frame) -- else it reads
+    // as a frame inside a frame. Nesting is SAFE (Gw2Ui cards own a splitter per depth); it used to corrupt the
+    // merge and blank everything drawn above, the historical "blank-above-Events" bug.
     void DrawNextStoryCard(App& app, float w, bool compact);
 
     // A release group header that fits its width: one line ("<Release>   Story d/t - Maps d/t") when it fits,

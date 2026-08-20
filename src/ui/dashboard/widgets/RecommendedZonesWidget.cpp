@@ -16,15 +16,15 @@
 // click-travels via the distance-gated card. The "Recommended" pill is hidden here (every row is a
 // recommendation, so it'd be redundant -- the level pill is the useful bit).
 //
-// This widget is selfFramed: it draws its OWN card(s) so the dashboard adds no outer frame. That is REQUIRED
-// at level 80 -- the story view's accent card would otherwise nest inside the dashboard card and corrupt the
-// ChannelsSplit merge (blanking every widget above it; the historical "blank-above-Events" bug). So every
-// branch below opens its own card.
+// This widget is selfFramed: it draws its OWN card(s) so the dashboard adds no outer frame -- otherwise the
+// story view's accent card would sit inside the dashboard card and read as a frame within a frame. So every
+// branch below opens its own card. (Nesting is SAFE since Gw2Ui cards took a splitter per depth; it used to
+// corrupt the merge and blank every widget above -- the historical "blank-above-Events" bug.)
 void DashW::RecommendedZones(App& app, float w)
 {
     // Max level: the level band is meaningless (every map is in-band), so recommend by STORY -- a "next story
     // step" accent card, then areas grouped by release in Journal/release order in their own card (union model;
-    // mapped zones kept, marked). Two SEQUENTIAL cards (never nested) -> no merge corruption.
+    // mapped zones kept, marked). Two SEQUENTIAL cards, so neither sits inside the other.
     if (app.state.charLevel >= 80)
     {
         StoryRecommend::DrawNextStoryCard(app, w, /*compact*/ true);

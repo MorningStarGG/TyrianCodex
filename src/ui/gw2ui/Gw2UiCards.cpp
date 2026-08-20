@@ -12,6 +12,7 @@
 #include <cfloat>
 #include <cmath>
 #include <cstdio>
+#include <memory>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -117,6 +118,13 @@ void Gw2Ui::EndPanel()
 // GW2 bordered "card" that auto-sizes to its content. We can't know the height before drawing the content
 // (ImGui 1.80 has no auto-resize child), so we draw the content on a SECOND draw-list channel (a group
 // measures its extent), then draw the bg/border on the FIRST channel once the height is known, and merge.
+// Cards NEST SAFELY: each stack depth owns its splitter. ImDrawList::ChannelsSplit uses the draw list's ONE
+// shared _Splitter, so two cards open at once on the same list would corrupt the merge and silently drop every
+// draw made before the inner split -- ImGui says so itself, but only via an IM_ASSERT that is compiled out in
+// Release ("Nested channel splitting is not supported. Please use separate instances of ImDrawListSplitter.").
+// That is the historical "blank-above-Events" bug. Owning a splitter per depth makes the whole class of bug
+// impossible instead of relying on every caller knowing not to nest. It also keeps cards clear of ImGui's own
+// use of the list splitter (Columns / Tables).
 namespace
 {
     struct GwCard
@@ -124,8 +132,13 @@ namespace
         ImVec2 p;
         float w;
         ImU32 bg, border, accent;
+        ImDrawList *dl = nullptr;   // the list this card split -- EndCard must merge THAT one
+        int depth = 0;              // index into s_cardSplitters
     };
     static std::vector<GwCard> s_cardStack;
+    // Pooled + reused across frames (no per-frame allocation). unique_ptr so growing the pool never relocates a
+    // splitter that is mid-split; real nesting depth is 2-3, so this stays tiny.
+    static std::vector<std::unique_ptr<ImDrawListSplitter>> s_cardSplitters;
 }
 
 bool Gw2Ui::BeginCard(const char *id, float width, ImU32 bg, ImU32 border)
@@ -146,9 +159,12 @@ bool Gw2Ui::BeginAccentCard(const char *id, float width, ImU32 accent, ImU32 bg,
         border = IM_COL32(120, 110, 88, 110);
 
     ImDrawList *dl = ImGui::GetWindowDrawList();
-    dl->ChannelsSplit(2);
-    dl->ChannelsSetCurrent(1); // content draws on the foreground channel
-    s_cardStack.push_back({p, W, bg, border, accent});
+    const int depth = (int)s_cardStack.size();
+    while ((int)s_cardSplitters.size() <= depth)
+        s_cardSplitters.push_back(std::make_unique<ImDrawListSplitter>());
+    s_cardSplitters[depth]->Split(dl, 2);
+    s_cardSplitters[depth]->SetCurrentChannel(dl, 1); // content draws on the foreground channel
+    s_cardStack.push_back({p, W, bg, border, accent, dl, depth});
 
     ImGui::PushID(id);
     ImGui::SetCursorScreenPos(ImVec2(p.x + PAD + (accent ? 8.f * sc : 0.f), p.y + PAD));
@@ -168,8 +184,11 @@ void Gw2Ui::EndCard()
     const float H = (ImGui::GetItemRectMax().y - c.p.y) + PAD; // group bottom + the bottom padding
     const ImVec2 b(c.p.x + c.w, c.p.y + H);
 
-    ImDrawList *dl = ImGui::GetWindowDrawList();
-    dl->ChannelsSetCurrent(0); // background channel (behind the content)
+    // Merge on the list this card SPLIT (c.dl), not whatever list is current now -- a child window opened and
+    // closed inside the card would otherwise leave us merging the wrong one.
+    ImDrawList *dl = c.dl ? c.dl : ImGui::GetWindowDrawList();
+    ImDrawListSplitter &splitter = *s_cardSplitters[c.depth];
+    splitter.SetCurrentChannel(dl, 0); // background channel (behind the content)
     dl->AddRectFilled(c.p, b, c.bg, 3.f * sc);
     dl->AddRect(c.p, b, c.border, 3.f * sc);
     if (c.accent)
@@ -179,7 +198,7 @@ void Gw2Ui::EndCard()
         dl->AddLine(ImVec2(c.p.x + 10.f * sc, c.p.y + 4.f * sc), ImVec2(c.p.x + 10.f * sc, b.y - 4.f * sc),
                     accentSoft, sc);
     }
-    dl->ChannelsMerge();
+    splitter.Merge(dl);
 
     ImGui::SetCursorScreenPos(c.p);
     ImGui::Dummy(ImVec2(c.w, H)); // re-register the full card as one item (clean flow + scroll extent)

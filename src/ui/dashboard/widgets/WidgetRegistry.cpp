@@ -16,10 +16,10 @@ const std::vector<DashWidget>& DashWidgets()
         { "objectiveList",      "Objectives",             0, true,   true, 1, 3, &DashW::ObjectiveList },
         { "modeSwitch",         "Objectives / Farming",   0, true,   true, 1, 2, &DashW::ModeSwitch },
         { "zoneProgress",       "Zone Progress",          0, true,   true, 1, 8,  &DashW::ZoneProgress },
-        { "events",             "Events",                 0, true,   true, 1, 6,  &DashW::Events, /*selfFramed*/ true },  // ViewerEvents draws its own cards -> must not be wrapped (no nested card)
+        { "events",             "Events",                 0, true,   true, 1, 6,  &DashW::Events, /*selfFramed*/ true },  // ViewerEvents draws its own cards -> don't wrap (a frame inside a frame)
         { "resetTimers",        "Resets & Clock",         0, true,   false, 1, 0,  &DashW::ResetTimers },
         { "travelTarget",       "Travel Target",          0, true,   false, 1, 0, &DashW::TravelTarget },
-        { "recommendedZones",   "Recommended Zones",      0, true,   true, 1, 9, &DashW::RecommendedZones, /*selfFramed*/ true },  // draws its own card(s); at 80 the story card would nest inside the dashboard frame otherwise
+        { "recommendedZones",   "Recommended Zones",      0, true,   true, 1, 9, &DashW::RecommendedZones, /*selfFramed*/ true },  // draws its own card(s); at 80 the story card would sit inside a second frame otherwise
         { "character",          "Character",              0, true,   false, 1, 0, &DashW::Character },
         { "sessionStats",       "Session Stats",          0, true,   false, 1, 0, &DashW::SessionStats },
         { "sessionEarnings",    "Session Earnings",       0, true,   false, 1, 0, &DashW::SessionEarnings },
