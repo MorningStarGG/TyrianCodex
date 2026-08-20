@@ -400,6 +400,9 @@ namespace Gw2Ui
     // FULL-WIDTH content inside a card: a card is a group, so GetContentRegionAvail() over-extends to the
     // window edge and would overrun the card's right border (and ignore its auto right margin).
     float CardInnerWidth();
+    // Monotonic count of cards opened this session. Lets a container detect whether the content it just drew
+    // supplied its OWN frame (compare across the call) instead of relying on a hand-maintained flag to say so.
+    unsigned CardsOpened();
     // Universal width resolver for row/layout helpers. Pass an explicit width for dashboard/table/custom-frame
     // contexts. Pass 0 inside normal content/cards: inside a card this returns CardInnerWidth(), otherwise the
     // current content region width. This keeps scrollbar/card-padding policy centralized in BeginCard.

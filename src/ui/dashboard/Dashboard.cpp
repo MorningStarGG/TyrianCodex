@@ -2,6 +2,7 @@
 #include "widgets/Widget.h"
 #include "Notify.h"
 #include "app/App.h"
+#include "Shared.h"                   // APIDefs->Log (the selfFramed / body mismatch warning)
 #include "ui/Gw2Ui.h"
 #include "ui/SettingsWindow.h"        // OpenSettingsTab (the header "Open Hub" button)
 #include "render/glyphs/Glyphs.h"     // Render::DrawGlyph (profile-chip caret)
@@ -314,10 +315,27 @@ namespace
             const float titleAvail = titleRight - (at.x + 22.f * sc);
             const float titleMeasured = Gw2Ui::MeasureWidth(wdef.title, titleFs);
             if (titleMeasured > titleAvail && titleMeasured > 1.f)
-                titleFs = std::max(11.f, titleFs * (titleAvail / titleMeasured));
+                titleFs = std::max(12.f, titleFs * (titleAvail / titleMeasured));   // 12 = smallest baked size
             Gw2Ui::LabelDL(dl, titleAt, ImVec2(titleRight, at.y + bandH), wdef.title,
                            Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, Gw2Ui::kGold, false, nullptr, titleFs, 0.f, 1.3f);
         }
+    }
+
+    // `selfFramed` lives in the registry but the truth lives in the widget's body -- often several calls deep
+    // in a shared viewer panel. Change the panel, forget the table, and the widget silently gets a frame inside
+    // a frame. So verify it against what the body actually did and say so ONCE per widget per session.
+    // Only this direction is checked: it is unambiguous (a card the dashboard also wrapped = double border) and
+    // currently never fires. The reverse -- marked selfFramed but drawing no card -- is a legitimate state for a
+    // banner widget like Zone Header, and a MISSING frame is obvious on screen anyway.
+    void ReportFrameMismatch(const DashWidget& wdef)
+    {
+        static std::map<std::string, bool> s_told;
+        if (!APIDefs || !s_told.emplace(wdef.key, true).second) return;
+        char msg[224];
+        std::snprintf(msg, sizeof(msg),
+                      "Dashboard widget \"%s\" draws its own card but is not marked selfFramed -- it renders "
+                      "inside a second frame. Set selfFramed in WidgetRegistry.cpp.", wdef.key);
+        APIDefs->Log(LOGL_WARNING, "Tyrian Codex", msg);
     }
 
     // One widget = an optional control strip + the body. selfFramed widgets draw their OWN card(s) (the
@@ -351,42 +369,36 @@ namespace
 
         if (hover) g_bandReserve = std::max(g_bandReserve, bandH);
 
+        // ONE body for both framings -- selfFramed only decides whether WE supply the card. (It used to decide
+        // correctness too, because a card inside a card corrupted the draw list; cards nest safely now, so the
+        // two paths no longer need to be separate code.)
+        const bool card = !wdef.selfFramed;
         ImGui::BeginGroup();
-        if (wdef.selfFramed)
+        if (card) Gw2Ui::BeginCard(wdef.key, width);
         {
-            const ImVec2 top = ImGui::GetCursorScreenPos();
-            bandPos = top; bandW = width;
-            if (!hover)
-            {
-                DrawControlStrip(app, wdef, sl, top, width, bandH, false);   // pinned bar (Both)
-                ImGui::SetCursorScreenPos(ImVec2(top.x, top.y + bandH + 2.f * sc));
-            }
-            else if (band > 0.01f)
-            {
-                if (inputThisFrame) DrawControlStrip(app, wdef, sl, top, width, bandH, true, StripPhase::Input, &hv);
-                ImGui::SetCursorScreenPos(ImVec2(top.x, top.y + band));   // body starts BELOW the revealed band
-            }
-            wdef.draw(app, width);
-        }
-        else if (Gw2Ui::BeginCard(wdef.key, width))
-        {
-            const float inner = Gw2Ui::CardInnerWidth();
+            const float  inner = card ? Gw2Ui::CardInnerWidth() : width;
             const ImVec2 hp = ImGui::GetCursorScreenPos();
             bandPos = hp; bandW = inner;
             if (!hover)
             {
-                DrawControlStrip(app, wdef, sl, hp, inner, bandH, false);
-                ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + bandH));
-                Gw2Ui::Divider(inner);
+                DrawControlStrip(app, wdef, sl, hp, inner, bandH, false);   // pinned bar (Both)
+                // Carded: a divider rules off the header. Self-framed: a small gap instead -- the widget's own
+                // card border already supplies that edge, so a divider would double it up.
+                ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + bandH + (card ? 0.f : 2.f * sc)));
+                if (card) Gw2Ui::Divider(inner);
             }
             else if (band > 0.01f)
             {
                 if (inputThisFrame) DrawControlStrip(app, wdef, sl, hp, inner, bandH, true, StripPhase::Input, &hv);
-                ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + band));      // body starts BELOW the revealed band
+                ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + band));   // body starts BELOW the revealed band
             }
+            // Whether the body opens a card of its own is the ground truth `selfFramed` is supposed to mirror;
+            // count across the call so a drifted flag reports itself instead of silently double-framing.
+            const unsigned cardsBefore = Gw2Ui::CardsOpened();
             wdef.draw(app, inner);
-            Gw2Ui::EndCard();
+            if (card && Gw2Ui::CardsOpened() > cardsBefore) ReportFrameMismatch(wdef);
         }
+        if (card) Gw2Ui::EndCard();
         ImGui::EndGroup();
         const ImVec2 mn = ImGui::GetItemRectMin(), mx = ImGui::GetItemRectMax();
 
@@ -748,7 +760,7 @@ void Dashboard::Render(App& app)
             float fs = 14.f;
             const float avail = (caretX - 2.f * ui) - (chipMin.x + chipPad);
             const float meas  = Gw2Ui::MeasureWidth(profName, fs);
-            if (meas > avail && meas > 1.f) fs = std::max(9.f, fs * (avail / meas));
+            if (meas > avail && meas > 1.f) fs = std::max(12.f, fs * (avail / meas));   // 12 = smallest baked size
             Gw2Ui::LabelDL(hdl, ImVec2(chipMin.x + chipPad, chipMin.y), ImVec2(caretX - 2.f * ui, chipMax.y), profName,
                            Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, pHov ? Gw2Ui::kGold : IM_COL32(220, 206, 170, 255), false, nullptr, fs);
         }

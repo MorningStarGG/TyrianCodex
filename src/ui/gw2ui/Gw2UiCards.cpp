@@ -139,7 +139,10 @@ namespace
     // Pooled + reused across frames (no per-frame allocation). unique_ptr so growing the pool never relocates a
     // splitter that is mid-split; real nesting depth is 2-3, so this stays tiny.
     static std::vector<std::unique_ptr<ImDrawListSplitter>> s_cardSplitters;
+    static unsigned s_cardsOpened = 0;   // monotonic; see Gw2Ui::CardsOpened
 }
+
+unsigned Gw2Ui::CardsOpened() { return s_cardsOpened; }
 
 bool Gw2Ui::BeginCard(const char *id, float width, ImU32 bg, ImU32 border)
 {

@@ -14,6 +14,7 @@
 
 - Changed favorite waypoints to be stored **for the whole account** rather than per character, so a waypoint you star is starred everywhere. Existing per-character lists are merged automatically on first run, keeping one copy of each waypoint. Whether a waypoint is unlocked is still judged per character, so entries the character you are playing has not reached are shown dimmed rather than dropped.
 - Changed dashboard widgets with a hidden header so that hovering **slides the widget down** to reveal its header in real space, instead of overlaying it on top of the widget's own content. At rest nothing is reserved, so widgets stay exactly as compact as before, and the panel no longer resizes as you sweep across it.
+- Changed every piece of text in the addon to render at a size the font was actually built at, so it stays sharp instead of being stretched a few percent to fit. This is most obvious on the **dashboard**, whose text-size slider previously knocked every label slightly off, and anywhere you run the UI scale above or below 100%. Two new sizes were added for the ends of the range, so the smallest text and the largest **Text size** setting are now genuinely sharp rather than scaled copies of a neighbouring size.
 
 ### Fixed
 
@@ -21,6 +22,7 @@
 - Fixed a widget's hidden-header controls stealing clicks meant for the widget underneath. The drag grip and the disable button sat on top of whatever the widget drew first, which made the dashboard **Search** box in particular refuse clicks depending on how long you had hovered. A click during the reveal animation can no longer land on those buttons either.
 - Fixed keyboard shortcuts firing while you were typing in a text field. Any shortcut bound with **Ctrl** or **Alt** ran its action and swallowed the keystroke, so **Ctrl+A**, **Ctrl+C** and **Ctrl+V** did not work in any of the addon's text boxes for players who use modifier shortcuts.
 - Fixed search boxes drawn inside a card overrunning the card's right-hand padding, which pushed the clear button under the card edge.
+- Fixed long names in search results running underneath the level and distance pills instead of being cut short with an ellipsis. Hearts, whose names are full sentences, were the worst affected. This applies to the dashboard **Search** widget and the **Atlas** tab, where a long name could also overlap its zone and region line.
 
 ## 1.1.0.3
 
