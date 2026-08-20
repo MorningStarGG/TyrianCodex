@@ -66,7 +66,7 @@ bool DrawZoneRow(App& app, const Zone* z, const ZoneRowStyle& style)
     const float nameAvail = nameRightOff - nameLeftOff;
     float nameFs = style.nameFs;
     const float measured = Gw2Ui::MeasureWidth(z->Name.c_str(), nameFs);
-    if (measured > nameAvail && measured > 1.f) nameFs = std::max(10.f, nameFs * (nameAvail / measured));
+    if (measured > nameAvail && measured > 1.f) nameFs = std::max(12.f, nameFs * (nameAvail / measured));   // 12 = smallest baked size
     Gw2Ui::RowLabel(dl, row, nameLeftOff, std::max(0.f, rw - nameRightOff), z->Name.c_str(),
                     Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle,
                     IM_COL32(235, 230, 215, 255), false, nullptr, nameFs);

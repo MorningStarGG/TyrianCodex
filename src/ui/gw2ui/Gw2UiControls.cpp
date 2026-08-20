@@ -117,7 +117,10 @@ namespace
         ImFont *base = UiFont(nullptr);
         const float basePx = base ? base->FontSize : ImGui::GetFontSize();
         InputFontMetrics m;
-        m.requestedPx = basePx * sc;
+        // Snapped to a baked rung like every other Gw2Ui text size, so ImGui::InputText renders its face at
+        // scale 1.0. Unsnapped, any uiScale / PushTextScale other than 1.0 left typed text a few percent off
+        // its bake -- the same aliasing as labels, in the one place you stare at individual glyphs.
+        m.requestedPx = SnapPx(basePx * sc);
         m.font = ResolveFace(base, m.requestedPx);
         if (!m.font)
             m.font = base ? base : ImGui::GetFont();

@@ -198,7 +198,7 @@ void DashW::FavoriteWaypoints(App& app, float w)
         {
             lastZone = f.zoneName;
             Gw2Ui::Label(f.zoneName.empty() ? "Elsewhere" : f.zoneName.c_str(),
-                         IM_COL32(186, 172, 138, 255), false, nullptr, 13.f * sc);
+                         IM_COL32(186, 172, 138, 255), false, nullptr, 14.f * sc);
         }
 
         const bool unlocked = !f.stepId.empty() && app.progress.IsConfirmed(app.state.currentChar, f.stepId);

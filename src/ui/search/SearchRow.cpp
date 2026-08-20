@@ -448,7 +448,7 @@ bool Search::DrawResultRow(App& app, const Entry& e, const RowStyle& style)
     else if (style.compact)
     {
         const float measured = Gw2Ui::MeasureWidth(e.name.c_str(), baseFs);
-        if (measured > availName && measured > 1.f) nameFs = std::max(11.f, baseFs * (availName / measured));
+        if (measured > availName && measured > 1.f) nameFs = std::max(12.f, baseFs * (availName / measured));   // 12 = smallest baked size
         // The shrink is CLAMPED at 11px, so a name long enough to need less than that still overruns its column
         // at 11px -- and LabelIn does not clip, so it ran under the level / distance pills (long heart names).
         // Ellipsize as the backstop, at the size we settled on; it returns the name unchanged when it fits.

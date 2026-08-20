@@ -81,8 +81,12 @@ public:
         ImFont *regular = nullptr;
         ImFont *italic = nullptr;
     };
-    static constexpr int kMenoLadderN = 9; // 14..30 by 2: covers body/UI (14-24) + big display titles (26-30)
-    MenoBake menoLadder[kMenoLadderN] = {{14.f}, {16.f}, {18.f}, {20.f}, {22.f}, {24.f}, {26.f}, {28.f}, {30.f}};
+    // 12..32 by 2. Every size Gw2Ui can ask for SNAPS to one of these (see Gw2UiInternal::SnapPx), so the
+    // ladder must span the whole range the UI uses: 12 is the floor for shrunk-to-fit text, and 32 is the
+    // largest entry in the kFontSizePx dropdown (without it, the biggest text setting magnified the 30 bake).
+    static constexpr int kMenoLadderN = 11;
+    MenoBake menoLadder[kMenoLadderN] = {{12.f}, {14.f}, {16.f}, {18.f}, {20.f}, {22.f},
+                                         {24.f}, {26.f}, {28.f}, {30.f}, {32.f}};
     ImFont *menoFont = nullptr;        // == the 24px rung regular (back-compat + Zone-Display fallback denominator)
     ImFont *menoItalic = nullptr;      // == the 24px rung italic (Story-tab sub-headers)
     ImFont *zdFont = nullptr;          // Menomonia baked large (96px) for the Zone Display banner (crisp when scaled big)

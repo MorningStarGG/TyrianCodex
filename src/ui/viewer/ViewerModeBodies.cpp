@@ -186,7 +186,7 @@ bool DrawRecommendList(App& app, uint32_t excludeMapId)
         const float availW = ImGui::GetContentRegionAvail().x;
         float hfs = lfs;
         const float hm = Gw2Ui::MeasureWidth(hdr, hfs);
-        if (hm > availW && hm > 1.f) hfs = std::max(11.f, hfs * (availW / hm));
+        if (hm > availW && hm > 1.f) hfs = std::max(12.f, hfs * (availW / hm));   // 12 = smallest baked size
         Gw2Ui::Label(hdr, Gw2Ui::kTextSelected, false, nullptr, hfs);
         for (const Zone* z : *g)
         {

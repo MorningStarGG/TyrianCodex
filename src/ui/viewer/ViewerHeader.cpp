@@ -225,7 +225,7 @@ void DrawRichHeroHeaderArt(App& app, uint32_t mapId, const char* title, const ch
     const float tw = std::max(40.f * vs, pillsLeftX - tx - 8.f * vs);
     float titleFs = (availW >= 680.f) ? fs + 8.f : fs + 3.f;
     const float titleW0 = Gw2Ui::MeasureWidth(title ? title : "", titleFs);
-    if (titleW0 > tw && titleW0 > 1.f) titleFs = std::max(13.f, titleFs * (tw / titleW0));   // shrink a long name to fit
+    if (titleW0 > tw && titleW0 > 1.f) titleFs = std::max(12.f, titleFs * (tw / titleW0));   // shrink a long name to fit (12 = smallest baked size)
     const bool  hasRegion = regionText && *regionText;
     const float regFs = fs - 3.f;
     // Line heights are LAYOUT px: scale the fs component (text renders at fs*vs via PushTextScale) + the literal,

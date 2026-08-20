@@ -466,7 +466,7 @@ namespace
             char b[112]; std::snprintf(b, sizeof(b), "%s   %s   (VP %d)",
                 sd.worldName.empty() ? (c == 0 ? "Red" : c == 1 ? "Blue" : "Green") : sd.worldName.c_str(),
                 WvwAbbrev(sd.score).c_str(), sd.victoryPoints);
-            Gw2Ui::Label(b, WvwColor(c + 1), c + 1 == m.wvwMyColor, nullptr, 15.f);
+            Gw2Ui::Label(b, WvwColor(c + 1), c + 1 == m.wvwMyColor, nullptr, 16.f);
         }
         Gw2Ui::TooltipEnd();
     }
@@ -478,7 +478,7 @@ namespace
         if (!m.haveWvwMatch) { Gw2Ui::TooltipMuted("Loading match..."); Gw2Ui::TooltipEnd(); return; }
         char b[64]; std::snprintf(b, sizeof(b), "Skirmish #%d", m.wvwSkirmishIndex);
         Gw2Ui::TooltipText(b);
-        for (int c = 0; c < 3; ++c) { char l[48]; std::snprintf(l, sizeof(l), "%d", m.wvwSides[c].skirmishScore); Gw2Ui::Label(l, WvwColor(c + 1), false, nullptr, 15.f); }
+        for (int c = 0; c < 3; ++c) { char l[48]; std::snprintf(l, sizeof(l), "%d", m.wvwSides[c].skirmishScore); Gw2Ui::Label(l, WvwColor(c + 1), false, nullptr, 16.f); }
         const double left = m.wvwSkirmishEndsAt - ImGui::GetTime();
         if (left > 0) { Gw2Ui::TooltipText(("Next in " + HudShared::DurShort((long long)left)).c_str()); }
         Gw2Ui::TooltipEnd();

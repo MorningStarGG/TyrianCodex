@@ -46,7 +46,7 @@ namespace
             dl->AddRectFilled(origin, ImVec2(origin.x + size.x, origin.y + size.y), IM_COL32(12, 14, 18, 255), 3.f);
             dl->AddRect(origin, ImVec2(origin.x + size.x, origin.y + size.y), IM_COL32(120, 100, 64, 110), 3.f);
             Gw2Ui::LabelDL(dl, origin, ImVec2(origin.x + size.x, origin.y + size.y), "Loading map...",
-                           Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, Gw2Ui::kTextDim, false, nullptr, 13.f);
+                           Gw2Ui::HAlign::Center, Gw2Ui::VAlign::Middle, Gw2Ui::kTextDim, false, nullptr, 14.f);
             return;
         }
         DrawMapThumbnailRect(contId, rect[0], rect[1], rect[2], rect[3], origin, size, nullptr, 0, -1, /*backing*/ true);
@@ -198,7 +198,7 @@ namespace
         dl->AddRect(p, q, here ? IM_COL32(196, 176, 128, 150) : IM_COL32(120, 100, 64, 90), 3.f, 0, 1.f);
         const ImU32 accent = mapType == 1 ? WvwColor(1) : mapType == 2 ? WvwColor(2) : mapType == 3 ? WvwColor(3) : Gw2Ui::kGold;
         dl->AddRectFilled(p, ImVec2(p.x + 3.f, p.y + h), accent, 0.f);
-        Gw2Ui::LabelDL(dl, ImVec2(p.x + 10.f, p.y), ImVec2(q.x - 6.f, q.y), name, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, here ? Gw2Ui::kGold : Gw2Ui::kTextSelected, true, nullptr, 15.f);
+        Gw2Ui::LabelDL(dl, ImVec2(p.x + 10.f, p.y), ImVec2(q.x - 6.f, q.y), name, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, here ? Gw2Ui::kGold : Gw2Ui::kTextSelected, true, nullptr, 16.f);
     }
 
     const char* WvwMapLabel(int mapType)
@@ -258,10 +258,10 @@ void DashW::WvwMatchup(App& app, float w)
             const ImVec2 p = ImGui::GetCursorScreenPos();
             ImGui::Dummy(ImVec2(w, 34.f));
             const std::string name = s.worldName.empty() ? std::string(c == 0 ? "Red" : c == 1 ? "Blue" : "Green") : s.worldName;
-            Gw2Ui::LabelDL(dl, p, ImVec2(p.x + w, p.y + 17.f), name.c_str(), Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, WvwColor(c + 1), c + 1 == m.wvwMyColor, nullptr, 15.f);
+            Gw2Ui::LabelDL(dl, p, ImVec2(p.x + w, p.y + 17.f), name.c_str(), Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, WvwColor(c + 1), c + 1 == m.wvwMyColor, nullptr, 16.f);
             const double kd = s.kdDeaths > 0 ? (double)s.kdKills / (double)s.kdDeaths : (double)s.kdKills;
             char meta[112]; std::snprintf(meta, sizeof(meta), "%s   VP %d   +%lld   K/D %.2f", WvwAbbrev(s.score).c_str(), s.victoryPoints, s.ppt, kd);
-            Gw2Ui::LabelDL(dl, ImVec2(p.x, p.y + 17.f), ImVec2(p.x + w, p.y + 34.f), meta, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, Gw2Ui::kTextSub, false, nullptr, 13.f);
+            Gw2Ui::LabelDL(dl, ImVec2(p.x, p.y + 17.f), ImVec2(p.x + w, p.y + 34.f), meta, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, Gw2Ui::kTextSub, false, nullptr, 14.f);
         }
         DashApi::Freshness(m.wvwMatchAt);
         return;

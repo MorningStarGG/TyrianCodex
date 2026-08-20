@@ -112,8 +112,8 @@ void Gw2Ui::Tooltip(const char* text)
 float Gw2Ui::MeasureWrappedHeight(const char* text, float fontSize, float wrapWidth, ImFont* font)
 {
     if (!text || !*text) return 0.f;
-    const float fs = ((fontSize > 0.f) ? fontSize : (g_gw2Regular ? g_gw2Regular->FontSize : UiFont(font)->FontSize)) * CurTextScale();
-    ImFont* f = ResolveFace(font, fs);   // SAME rung the draw path picks -> measure==draw (wrap count cannot drift)
+    const float fs = RequestedPx(fontSize, font);   // SAME snapped size + rung the draw path uses
+    ImFont* f = ResolveFace(font, fs);              // -> measure==draw (wrap count cannot drift)
     if (!f) return 0.f;
     return f->CalcTextSizeA(fs, FLT_MAX, wrapWidth, text).y;
 }
@@ -121,8 +121,8 @@ float Gw2Ui::MeasureWrappedHeight(const char* text, float fontSize, float wrapWi
 float Gw2Ui::MeasureWidth(const char* text, float fontSize, ImFont* font)
 {
     if (!text || !*text) return 0.f;
-    const float fs = ((fontSize > 0.f) ? fontSize : (g_gw2Regular ? g_gw2Regular->FontSize : UiFont(font)->FontSize)) * CurTextScale();
-    ImFont* f = ResolveFace(font, fs);   // SAME rung the draw path picks -> measure==draw
+    const float fs = RequestedPx(fontSize, font);   // SAME snapped size + rung the draw path uses
+    ImFont* f = ResolveFace(font, fs);              // -> measure==draw
     if (!f) return 0.f;
     return f->CalcTextSizeA(fs, FLT_MAX, 0.f, text).x;
 }
@@ -146,10 +146,10 @@ std::string Gw2Ui::Ellipsize(const std::string& text, float fontSize, float maxW
 
 void Gw2Ui::Label(const char* text, ImU32 color, bool stroke, ImFont* font, float fontSize, float weight, TextShadow shadowMode, float shadowStrength)
 {
-    // Measure + reserve at the SCALED size with the SAME rung DrawLabelCore will draw with (we pass `font`
-    // through; DrawLabelCore re-resolves it identically) -- so the flowed box matches the glyphs under a
-    // PushTextScale and measure==draw. Otherwise the reserved Dummy is wrong and the text/tooltips clip.
-    const float fs = ((fontSize > 0.f) ? fontSize : (g_gw2Regular ? g_gw2Regular->FontSize : UiFont(font)->FontSize)) * CurTextScale();
+    // Measure + reserve at the SAME snapped size + rung DrawLabelCore will draw with (we pass `font` through;
+    // DrawLabelCore re-resolves it identically) -- so the flowed box matches the glyphs under a PushTextScale
+    // and measure==draw. Otherwise the reserved Dummy is wrong and the text/tooltips clip.
+    const float fs = RequestedPx(fontSize, font);
     ImFont* f = ResolveFace(font, fs);
     if (!f) return;
     const ImVec2 ts = f->CalcTextSizeA(fs, FLT_MAX, 0.f, text ? text : "");

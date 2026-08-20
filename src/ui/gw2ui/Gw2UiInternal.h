@@ -42,7 +42,18 @@ namespace detail
 
     // Pick the ladder bake NEAREST a requested px (exact-match wins; else min |log(px/rung)|). Returns the
     // italic slot when italic (falling back to that rung's regular). null when the ladder is empty.
-    ImFont* FontForSizePx(float px, bool italic);
+    const Gw2Ui::FontBake* LadderBakeFor(float px, bool italic);   // the bake itself (px + faces)
+    ImFont* FontForSizePx(float px, bool italic);                  // just its face
+
+    // ---- The ONE place a text size is decided --------------------------------------------------------
+    // RequestedPx resolves the caller's size (0 = the default face size), applies CurTextScale(), then SNAPS
+    // the result to a baked rung. Snapping is what keeps text crisp: the scale multipliers (uiScale x
+    // PushTextScale) otherwise land almost every size BETWEEN two bakes, and the leftover few-percent stretch
+    // is the per-glyph aliasing that reads as "wavy". Because measure and draw both call this, the snapped
+    // size is shared and wrap/clip cannot drift. NOTE this snaps the FONT px only -- Gw2Ui::TextScale() is
+    // also used to scale icons, row heights and padding, and that geometry keeps the smooth continuous scale.
+    float   SnapPx(float px);                          // nearest baked px (unchanged when the ladder is empty)
+    float   RequestedPx(float fontSize, ImFont* font); // caller size -> scaled -> snapped
     // The SINGLE resolver used by BOTH measure and draw so they never diverge: our font sentinels
     // (g_gw2Regular / g_gw2Italic) -> nearest rung (regular/italic); any other non-null caller font -> verbatim;
     // null -> nearest regular rung; ladder empty -> Nexus/ImGui fallback.

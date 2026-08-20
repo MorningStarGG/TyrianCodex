@@ -75,7 +75,7 @@ namespace Gw2Ui
 
         std::vector<Gw2Ui::FontBake> g_fontLadder; // native-size ladder; EMPTY = no GW2 font (Nexus fallback)
 
-        ImFont *FontForSizePx(float px, bool italic)
+        const Gw2Ui::FontBake *LadderBakeFor(float px, bool italic)
         {
             if (g_fontLadder.empty() || px <= 0.f)
                 return nullptr;
@@ -88,7 +88,7 @@ namespace Gw2Ui
                 if (!face)
                     continue; // rung not (yet) loaded -- skip
                 if ((int)(fb.px + 0.5f) == want)
-                    return face;                                 // EXACT px -> scale 1.0, sharpest
+                    return &fb;                                  // EXACT px -> scale 1.0, sharpest
                 const float d = std::fabs(std::log(px / fb.px)); // log-ratio: treats up/down symmetrically
                 if (d <= bestD)
                 {
@@ -96,9 +96,35 @@ namespace Gw2Ui
                     best = &fb;
                 } // <= so a near-tie picks the LARGER rung (minify > magnify)
             }
-            if (!best)
+            return best;
+        }
+
+        ImFont *FontForSizePx(float px, bool italic)
+        {
+            const Gw2Ui::FontBake *fb = LadderBakeFor(px, italic);
+            if (!fb)
                 return nullptr;
-            return italic ? (best->italic ? best->italic : best->regular) : best->regular;
+            return italic ? (fb->italic ? fb->italic : fb->regular) : fb->regular;
+        }
+
+        // The requested px SNAPPED to a baked rung, so the face below renders at scale 1.0 instead of being
+        // stretched a few percent (that residual is the per-glyph aliasing that reads as "wavy" text). Falls
+        // through unchanged when the ladder is empty -- Nexus font, or our bakes not loaded yet: nothing to
+        // snap to, and behaviour must stay exactly as before during the async font load.
+        // Italic-independent on purpose: a rung is eligible whenever its REGULAR face exists (the italic slot
+        // falls back to regular), so LadderBakeFor picks the same bake either way -- the snapped size can never
+        // disagree with the face ResolveFace goes on to pick for italic runs.
+        float SnapPx(float px)
+        {
+            const Gw2Ui::FontBake *fb = LadderBakeFor(px, false);
+            return fb ? fb->px : px;
+        }
+
+        float RequestedPx(float fontSize, ImFont *font)
+        {
+            const float base = (fontSize > 0.f) ? fontSize
+                                                : (g_gw2Regular ? g_gw2Regular->FontSize : UiFont(font)->FontSize);
+            return SnapPx(base * CurTextScale());
         }
 
         ImFont *ResolveFace(ImFont *callerFont, float requestedPx)
@@ -125,12 +151,9 @@ namespace Gw2Ui
         {
             if (!text || !*text)
                 return;
-            // Compute the requested px FIRST (independent of any bake), THEN pick the nearest native rung for it, so
-            // the measure (CalcTextSizeA) and every AddText pass below share ONE face at residual scale ~1.0. fs is
-            // the EXACT requested px (never snapped) -> layout/wrapping unchanged; only WHICH atlas we sample changes.
-            const float fs = ((fontSize > 0.f) ? fontSize
-                                               : (g_gw2Regular ? g_gw2Regular->FontSize : UiFont(font)->FontSize)) *
-                             CurTextScale();
+            // Scaled AND snapped to a baked rung (see RequestedPx), so the measure (CalcTextSizeA) and every
+            // AddText pass below share ONE face at scale EXACTLY 1.0 -- no residual stretch, no aliasing.
+            const float fs = RequestedPx(fontSize, font);
             ImFont *f = ResolveFace(font, fs);
             if (!f)
                 return;
