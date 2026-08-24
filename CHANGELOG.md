@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0.5
+
+### Fixed
+
+- Fixed the **Zone Display** banner rendering at the wrong size, with broken letter spacing and placement that jumped part-way through the animation. It affected the Decode / Krytan Reveal, Slide / Sweep In and Twist / Krytan Swipe entrances and the Dissolve, Crumble, Burn and Slide exits, and was worst across the Krytan-to-English transition. Introduced in 1.1.0.4 by the text-sharpening change, which was also being applied to the banner's own large font instead of only to the standard UI text. Thanks to jattazo on GitHub for the detailed bug report!
+
 ## 1.1.0.4
 
 ### Added

@@ -117,14 +117,30 @@ namespace Gw2Ui
         float SnapPx(float px)
         {
             const Gw2Ui::FontBake *fb = LadderBakeFor(px, false);
-            return fb ? fb->px : px;
+            if (!fb)
+                return px;
+            // Snap only to a rung that is genuinely NEAR: rounding 19.2 -> 20 is the point, clamping 54 -> 32
+            // (the top rung) is a resize and would wreck any caller drawing large display text. Inside the
+            // ladder the nearest rung is always within half its 2px spacing, so every normal UI size still
+            // snaps; outside it nothing moves and the face is scaled exactly as it was before snapping existed.
+            // This also rides out the async font load: with the 12px rung not yet arrived, a 12px request finds
+            // 14 (delta 2) and is left alone rather than visibly resizing for a few frames.
+            constexpr float kSnapTolerancePx = 1.0f;
+            return (std::fabs(fb->px - px) <= kSnapTolerancePx) ? fb->px : px;
         }
 
         float RequestedPx(float fontSize, ImFont *font)
         {
             const float base = (fontSize > 0.f) ? fontSize
                                                 : (g_gw2Regular ? g_gw2Regular->FontSize : UiFont(font)->FontSize);
-            return SnapPx(base * CurTextScale());
+            const float px = base * CurTextScale();
+            // Snapping is a LADDER concept -- it exists so OUR bakes render at scale 1.0. A caller that pinned
+            // some other face (the Zone Display's 96px banner/Krytan bakes) owns its own sizing and does its own
+            // `fs / font->FontSize` maths, and we have no idea what sizes that face was baked at, so honor the
+            // size verbatim exactly as ResolveFace honors the face. Snapping it silently resized their text AND
+            // desynced Gw2Ui measurement from their hand-drawn glyphs (issue #4).
+            const bool ourFace = (!font || font == g_gw2Regular || font == g_gw2Italic);
+            return ourFace ? SnapPx(px) : px;
         }
 
         ImFont *ResolveFace(ImFont *callerFont, float requestedPx)

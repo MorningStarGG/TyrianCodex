@@ -52,8 +52,16 @@ namespace detail
     // is the per-glyph aliasing that reads as "wavy". Because measure and draw both call this, the snapped
     // size is shared and wrap/clip cannot drift. NOTE this snaps the FONT px only -- Gw2Ui::TextScale() is
     // also used to scale icons, row heights and padding, and that geometry keeps the smooth continuous scale.
-    float   SnapPx(float px);                          // nearest baked px (unchanged when the ladder is empty)
-    float   RequestedPx(float fontSize, ImFont* font); // caller size -> scaled -> snapped
+    //
+    // Snapping applies to OUR ladder faces at sizes NEAR a rung. Two things pass through untouched:
+    //   * a PINNED face (any caller font that is not our sentinel) -- we do not know its bakes, and it owns
+    //     its own sizing, so the size is honored verbatim just as ResolveFace honors the face;
+    //   * a size with no rung within half the ladder's spacing -- rounding 19.2 -> 20 is snapping, clamping
+    //     54 -> 32 would be a resize.
+    // Both matter: the Zone Display draws 54px hero text with its own 96px bake AND measures through Gw2Ui
+    // while drawing glyphs itself, so snapping either one desynced its layout from its glyphs (issue #4).
+    float   SnapPx(float px);                          // nearest baked px when one is near, else px unchanged
+    float   RequestedPx(float fontSize, ImFont* font); // caller size -> scaled -> snapped (ladder faces only)
     // The SINGLE resolver used by BOTH measure and draw so they never diverge: our font sentinels
     // (g_gw2Regular / g_gw2Italic) -> nearest rung (regular/italic); any other non-null caller font -> verbatim;
     // null -> nearest regular rung; ladder empty -> Nexus/ImGui fallback.
