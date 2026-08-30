@@ -2,6 +2,7 @@
 #include "api/Client.h"
 #include "api/v2/Account.h"
 #include "api/v2/Characters.h"
+#include "util/Json.h"   // Json::WriteAtomic (the ONE cache/settings writer)
 
 #include <algorithm>
 #include <ctime>
@@ -81,18 +82,7 @@ namespace
         j["account"] = sortedVec(g_account);
         j["chars"] = std::move(chars);
 
-        const std::string tmp = g_cacheFile + ".tmp";
-        try
-        {
-            {
-                std::ofstream f(tmp, std::ios::binary | std::ios::trunc);
-                if (!f) return;
-                f << j.dump();
-            }
-            std::error_code ec;
-            std::filesystem::copy_file(tmp, g_cacheFile, std::filesystem::copy_options::overwrite_existing, ec);
-            std::filesystem::remove(tmp, ec);
-        }
+        try { Json::WriteAtomic(g_cacheFile, j.dump()); }
         catch (...) { /* best effort; keep any stale cache already on disk */ }
     }
 

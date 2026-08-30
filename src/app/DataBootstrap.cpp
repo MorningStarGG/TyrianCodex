@@ -3,6 +3,7 @@
 #include "Shared.h"           // APIDefs->Log (diagnostic for a source override)
 #include "api/core/Http.h"    // Api::Http::Get/Abort/Resume (worker-thread transport)
 #include "util/TexPack.h"     // TexPack::ForEach (parse the core tcpk archive -- ONE parser, no drift)
+#include "util/Json.h"        // Json::WriteAtomic (the ONE cache/settings writer)
 #include "util/ImageCache.h"  // ImageCache::Pack / PackFileName / IsPackOpen / OpenPack / kPackCount
 
 #include <atomic>
@@ -71,15 +72,8 @@ namespace DataBootstrap
             if (!f) return {};
             return std::string((std::istreambuf_iterator<char>(f)), std::istreambuf_iterator<char>());
         }
-        void WriteAtomic(const std::string& path, const std::string& bytes)
-        {
-            std::error_code ec;
-            fs::create_directories(fs::path(path).parent_path(), ec);
-            const std::string tmp = path + ".tmp";
-            { std::ofstream f(tmp, std::ios::binary | std::ios::trunc); f.write(bytes.data(), (std::streamsize)bytes.size()); }
-            fs::rename(tmp, path, ec);
-            if (ec) { fs::copy_file(tmp, path, fs::copy_options::overwrite_existing, ec); fs::remove(tmp, ec); }
-        }
+        // Delegate to the shared util/Json atomic writer (single implementation -> no drift).
+        void WriteAtomic(const std::string& path, const std::string& bytes) { Json::WriteAtomic(path, bytes); }
 
         bool AbortableSleep(int ms)   // returns false if we were asked to stop
         {

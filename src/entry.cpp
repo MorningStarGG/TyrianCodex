@@ -1307,10 +1307,9 @@ static void ExtractResourceToFile(int resId, const std::string &path)
     const DWORD n = SizeofResource(Self, hr);
     if (!p || !n)
         return;
-    std::filesystem::create_directories(std::filesystem::path(path).parent_path(), ec);
-    std::ofstream f(path, std::ios::binary | std::ios::trunc);
-    if (f)
-        f.write(static_cast<const char *>(p), static_cast<std::streamsize>(n));
+    // Through the ONE writer like every other file we produce: a half-written tray icon would be loaded (and
+    // then cached by Nexus for the whole session) rather than simply re-extracted next launch.
+    Json::WriteAtomic(path, std::string(static_cast<const char *>(p), n));
 }
 
 // Every load that reads the bundled data/ folder (or a data/-seeded catalog). Runs ONCE, from Render on the

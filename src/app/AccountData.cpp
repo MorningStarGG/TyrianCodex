@@ -5,6 +5,7 @@
 #include "api/Client.h"
 #include "guide/CurrentChar.h"
 #include "util/ImageCache.h"
+#include "util/Json.h"         // Json::WriteAtomic (the ONE cache/settings writer)
 #include "Shared.h"            // MumbleIdent (WvW home-world / team fallback)
 #include <imgui.h>
 #include <nlohmann/json.hpp>
@@ -1065,7 +1066,7 @@ namespace
         j["worldBosses"] = g_m.worldBosses; j["mapChests"] = g_m.mapChests; j["dailyCrafting"] = g_m.dailyCrafting; j["haveDailyDone"] = g_m.haveDailyDone;
         { nlohmann::json inv = nlohmann::json::object(); for (auto& kv : g_m.inv) if (kv.second.have) inv[kv.first] = { {"used", kv.second.usedSlots}, {"total", kv.second.totalSlots} }; j["inv"] = inv; }
         { nlohmann::json eq = nlohmann::json::object(); for (auto& kv : g_m.equip) if (kv.second.have) { nlohmann::json arr = nlohmann::json::array(); for (const Api::V2::ItemSlot& s : kv.second.pieces) arr.push_back(SlotToJson(s)); eq[kv.first] = arr; } j["equip"] = eq; }
-        try { std::ofstream(g_cacheFile) << j.dump(2); } catch (...) {}
+        try { Json::WriteAtomic(g_cacheFile, j.dump(2)); } catch (...) {}
     }
 
     // Legendary Armory has its OWN cache file (legendary-armory.json), like inventory-cache.json -- the catalog
@@ -1080,7 +1081,7 @@ namespace
         j["haveLegendary"] = g_m.haveLegendary;
         { nlohmann::json mx = nlohmann::json::object(); for (auto& kv : g_m.legendaryMax)   mx[std::to_string(kv.first)] = kv.second; j["max"]   = mx; }
         { nlohmann::json ow = nlohmann::json::object(); for (auto& kv : g_m.legendaryOwned) ow[std::to_string(kv.first)] = kv.second; j["owned"] = ow; }
-        try { std::ofstream(g_legendaryCacheFile) << j.dump(0); } catch (...) {}
+        try { Json::WriteAtomic(g_legendaryCacheFile, j.dump(0)); } catch (...) {}
     }
 
     void LoadLegendaryCache()
@@ -1115,7 +1116,7 @@ namespace
         j["savedAt"] = Now();
         j["skins"] = std::vector<int>(g_m.skinsUnlocked.begin(), g_m.skinsUnlocked.end());
         j["dyes"]  = std::vector<int>(g_m.dyesUnlocked.begin(),  g_m.dyesUnlocked.end());
-        try { std::ofstream(g_wardrobeCacheFile) << j.dump(0); } catch (...) {}
+        try { Json::WriteAtomic(g_wardrobeCacheFile, j.dump(0)); } catch (...) {}
     }
 
     void LoadWardrobeCache()
@@ -1154,7 +1155,7 @@ namespace
         j["glyphs"] = std::vector<std::string>(g_m.glyphsOwned.begin(), g_m.glyphsOwned.end());
         j["cats"]   = std::vector<int>(g_m.catsOwned.begin(),  g_m.catsOwned.end());
         j["nodes"]  = std::vector<std::string>(g_m.nodesOwned.begin(), g_m.nodesOwned.end());
-        try { std::ofstream(g_homesteadCacheFile) << j.dump(0); } catch (...) {}
+        try { Json::WriteAtomic(g_homesteadCacheFile, j.dump(0)); } catch (...) {}
     }
 
     void LoadHomesteadCache()
@@ -1204,7 +1205,7 @@ namespace
         j["titles"]        = std::vector<int>(g_m.titlesUnlocked.begin(),        g_m.titlesUnlocked.end());
         j["emotes"]        = std::vector<int>(g_m.emotesUnlocked.begin(),        g_m.emotesUnlocked.end());
         j["recipes"]       = std::vector<int>(g_m.recipesUnlocked.begin(),       g_m.recipesUnlocked.end());
-        try { std::ofstream(g_cosmeticsCacheFile) << j.dump(0); } catch (...) {}
+        try { Json::WriteAtomic(g_cosmeticsCacheFile, j.dump(0)); } catch (...) {}
     }
 
     void LoadCosmeticsCache()
@@ -1299,7 +1300,7 @@ namespace
                 items[std::to_string(kv.first)] = ItemMetaToJson(kv.second);
         j["items"] = items;
 
-        try { std::ofstream(g_inventoryCacheFile) << j.dump(2); } catch (...) {}
+        try { Json::WriteAtomic(g_inventoryCacheFile, j.dump(2)); } catch (...) {}
     }
 
     void LoadInventoryCache()

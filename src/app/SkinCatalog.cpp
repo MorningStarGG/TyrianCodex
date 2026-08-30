@@ -1,6 +1,7 @@
 #include "app/SkinCatalog.h"
 #include "api/Client.h"
 #include "api/v2/Skins.h"
+#include "util/Json.h"   // Json::WriteAtomic (the ONE cache/settings writer)
 
 #include <algorithm>
 #include <cctype>
@@ -205,20 +206,7 @@ namespace
         j["fetchedUtc"] = g_fetchedUtc;
         j["count"] = (int)arr.size();
         j["skins"] = std::move(arr);
-        const std::string tmp = g_deltaFile + ".tmp";
-        try
-        {
-            {
-                std::ofstream f(tmp, std::ios::binary | std::ios::trunc);
-                if (!f)
-                    return;
-                const std::string text = j.dump();
-                f.write(text.data(), (std::streamsize)text.size());
-            }
-            std::error_code ec;
-            fs::copy_file(tmp, g_deltaFile, fs::copy_options::overwrite_existing, ec);
-            fs::remove(tmp, ec);
-        }
+        try { Json::WriteAtomic(g_deltaFile, j.dump()); }
         catch (...)
         { /* best effort */
         }

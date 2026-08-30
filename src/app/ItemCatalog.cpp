@@ -4,6 +4,7 @@
 #include "api/Client.h"
 #include "api/v2/Build.h"
 #include "api/v2/Items.h"
+#include "util/Json.h"             // Json::WriteAtomic (the ONE cache/settings writer)
 #include "ui/items/ItemScore.h"   // ItemUI::Lower / QueryTerms / TokenFieldScore
 
 #include <algorithm>
@@ -102,11 +103,7 @@ namespace
         }
         j["count"] = (int)arr.size();
         j["items"] = std::move(arr);
-        try
-        {
-            const std::string text = j.dump();
-            std::ofstream(g_deltaFile, std::ios::binary).write(text.data(), (std::streamsize)text.size());
-        }
+        try { Json::WriteAtomic(g_deltaFile, j.dump()); }
         catch (...) { /* best effort */ }
     }
 
@@ -348,7 +345,7 @@ void ItemCatalog::Init(Api::Client* api, const std::string& dataDir, const std::
         if (cur != TC_VERSION_STRING)
         {
             std::error_code e2; std::filesystem::remove(g_deltaFile, e2);
-            std::ofstream(marker, std::ios::binary) << TC_VERSION_STRING;
+            Json::WriteAtomic(marker, TC_VERSION_STRING);
         }
     }
     StartAsyncLoad();   // parse off the load thread so AddonLoad doesn't block; the ring shows until it lands

@@ -3,6 +3,7 @@
 #include "api/v2/Maps.h"
 #include "api/v2/Continents.h"
 #include "api/core/Json.h"
+#include "util/Json.h"   // Json::WriteAtomic (the ONE cache/settings writer)
 #include "util/Coords.h"
 #include "util/Geometry.h"
 
@@ -151,7 +152,7 @@ namespace
             auto it = g_maps.find(mid);
             if (it != g_maps.end()) j["maps"][std::to_string(mid)] = DumpMap(it->second);
         }
-        try { std::ofstream(g_cacheFile) << j.dump(); } catch (...) { /* best effort */ }
+        try { Json::WriteAtomic(g_cacheFile, j.dump()); } catch (...) { /* best effort */ }
     }
 }
 

@@ -1,5 +1,6 @@
 #include "app/PriceHistory.h"
 #include "api/core/Http.h"
+#include "util/Json.h"   // Json::WriteAtomic (the ONE cache/settings writer)
 
 #include <algorithm>
 #include <condition_variable>
@@ -193,20 +194,7 @@ namespace
         j["id"] = id;
         j["fetchedUtc"] = (long long)std::time(nullptr);
         j["points"] = SeriesToJson(s);
-        const std::string path = DiskPath(id), tmp = path + ".tmp";
-        try
-        {
-            const std::string text = j.dump();
-            {
-                std::ofstream f(tmp, std::ios::binary | std::ios::trunc);
-                if (!f)
-                    return;
-                f.write(text.data(), (std::streamsize)text.size());
-            }
-            std::error_code ec;
-            fs::copy_file(tmp, path, fs::copy_options::overwrite_existing, ec);
-            fs::remove(tmp, ec);
-        }
+        try { Json::WriteAtomic(DiskPath(id), j.dump()); }
         catch (...)
         { /* best effort; stale cache remains valid */
         }
@@ -387,20 +375,7 @@ namespace
         j["schema"] = 1;
         j["fetchedUtc"] = (long long)std::time(nullptr);
         j["points"] = MarketToJson(s);
-        const std::string path = MarketDiskPath(), tmp = path + ".tmp";
-        try
-        {
-            const std::string text = j.dump();
-            {
-                std::ofstream f(tmp, std::ios::binary | std::ios::trunc);
-                if (!f)
-                    return;
-                f.write(text.data(), (std::streamsize)text.size());
-            }
-            std::error_code ec;
-            fs::copy_file(tmp, path, fs::copy_options::overwrite_existing, ec);
-            fs::remove(tmp, ec);
-        }
+        try { Json::WriteAtomic(MarketDiskPath(), j.dump()); }
         catch (...)
         { /* best effort */
         }

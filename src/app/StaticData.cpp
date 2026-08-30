@@ -4,6 +4,7 @@
 #include "api/v2/ItemStats.h"
 #include "api/v2/Maps.h"
 #include "api/v2/Materials.h"
+#include "util/Json.h"   // Json::WriteAtomic (the ONE cache/settings writer)
 #include "api/v2/Specializations.h"
 #include "api/v2/Worlds.h"     // WvW: world/team names
 #include "api/v2/Wvw.h"        // WvW: objective metadata (name/type/map/coord)
@@ -100,7 +101,7 @@ namespace
         for (const auto& kv : g_wvwMapRects)
             if (kv.second.have)
                 j["wvwrect"][std::to_string(kv.first)] = { {"l", kv.second.rect[0]}, {"t", kv.second.rect[1]}, {"r", kv.second.rect[2]}, {"b", kv.second.rect[3]}, {"c", kv.second.contId} };
-        try { std::ofstream(g_cacheFile) << j.dump(); } catch (...) { /* best effort */ }
+        try { Json::WriteAtomic(g_cacheFile, j.dump()); } catch (...) { /* best effort */ }
     }
 }
 

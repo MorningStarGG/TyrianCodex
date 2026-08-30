@@ -750,7 +750,7 @@ static void SavePersonalStoryCache()
     }
     try
     {
-        std::ofstream(g_psCachePath) << j.dump();
+        Json::WriteAtomic(g_psCachePath, j.dump());
     }
     catch (...)
     {
@@ -1042,7 +1042,7 @@ static void SaveJournalCache()
         j["stories"].push_back(kv.second.raw);
     try
     {
-        std::ofstream(g_journalCachePath) << j.dump();
+        Json::WriteAtomic(g_journalCachePath, j.dump());
     }
     catch (...)
     { /* best effort */

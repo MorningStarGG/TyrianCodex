@@ -1,6 +1,7 @@
 #include "app/MarketData.h"
 #include "api/core/Http.h"
 #include "api/core/Json.h"   // Api::Json null-safe readers
+#include "util/Json.h"       // Json::WriteAtomic (the ONE cache/settings writer)
 
 #include <algorithm>
 #include <chrono>
@@ -148,18 +149,7 @@ namespace
         j["count"] = (int)sorted.size();
         j["items"] = std::move(arr);
 
-        const std::string tmp = g_cacheFile + ".tmp";
-        try
-        {
-            {
-                std::ofstream f(tmp, std::ios::binary | std::ios::trunc);
-                if (!f) return;
-                f << j.dump();
-            }
-            std::error_code ec;
-            fs::copy_file(tmp, g_cacheFile, fs::copy_options::overwrite_existing, ec);
-            fs::remove(tmp, ec);
-        }
+        try { Json::WriteAtomic(g_cacheFile, j.dump()); }
         catch (...) { /* best effort; stale cache remains valid */ }
     }
 
