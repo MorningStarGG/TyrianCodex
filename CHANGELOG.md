@@ -4,7 +4,7 @@
 
 ### Added
 
-- Added a **right-click menu to every text field** in the addon, with **Cut**, **Copy**, **Paste** and **Select all**. ImGui's only built-in paste shortcut is Ctrl+V, and some platforms never deliver it -- macOS intercepts Cmd and letter combinations as menu shortcuts before the game ever sees them -- which left affected players with no way to paste at all. A menu works whatever the keyboard shortcut is. The API key field deliberately offers only Paste and Select all, since its contents are masked.
+- Added a **right-click menu to every text field** in the addon, with **Cut**, **Copy**, **Paste** and **Select all**. ImGui's only built-in paste shortcut is CTRL+V, and some platforms never deliver it, macOS intercepts CMD and letter combinations as menu shortcuts before the game ever sees them -- which left affected players seemingly without a way to paste (CTRL+V works even on macOS). The API key field deliberately offers only Paste and Select all, since its contents are masked.
 - Added a **Paste** button to the API key field, beside the show/hide eye, so a long key can be pasted in one click. The Welcome window's separate paste button is now this same one rather than its own copy.
 
 ### Fixed
