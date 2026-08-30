@@ -167,6 +167,117 @@ namespace
         }
     };
 
+    // ---- Text-field editing affordances (ONE implementation for every Gw2Ui text control) ----------------
+    // ImGui 1.80's InputText has no context menu of its own, and its only paste is Ctrl+V. That leaves anyone
+    // who expects a right-click menu without one (we give one on every OTHER surface), and it strands players
+    // whose platform uses a different chord -- on macOS under Wine the Cmd+letter is eaten as a menu shortcut,
+    // so Ctrl+V is the only chord that reaches ImGui at all. A menu works whatever the chord is.
+
+    // The clipboard, inserted into the field that currently holds focus. Goes through ImGui's character queue so
+    // the active InputText inserts it AT THE CURSOR (replacing any selection) exactly as if typed -- writing the
+    // caller's buffer directly would be silently discarded, since an active InputText owns its own copy.
+    bool PasteIntoField(ImGuiID fieldId, char *buf, size_t bufSize)
+    {
+        const char *clip = ImGui::GetClipboardText();
+        if (!clip || !*clip)
+            return false;
+        ImGuiContext *g = ImGui::GetCurrentContext();
+        if (g && g->ActiveId == fieldId)
+        {
+            ImGui::GetIO().AddInputCharactersUTF8(clip);
+            return false; // the insert lands next frame; InputText reports the change itself
+        }
+        std::snprintf(buf, bufSize, "%s", clip); // not focused -> the buffer is ours to set
+        return true;
+    }
+
+    // The field's selection as UTF-8, or the whole buffer when nothing is selected (these are short single-line
+    // fields, so "copy with no selection" meaning "copy the value" is what people expect).
+    std::string FieldTextForCopy(ImGuiID fieldId, const char *buf)
+    {
+        ImGuiContext *g = ImGui::GetCurrentContext();
+        if (g && g->ActiveId == fieldId)
+        {
+            const ImGuiInputTextState &st = g->InputTextState;
+            if (st.ID == fieldId && st.CurLenW > 0)
+            {
+                int a = st.Stb.select_start, b = st.Stb.select_end;
+                if (a > b) std::swap(a, b);
+                a = std::clamp(a, 0, st.CurLenW);
+                b = std::clamp(b, 0, st.CurLenW);
+                if (a < b)
+                {
+                    const ImWchar *from = st.TextW.Data + a, *to = st.TextW.Data + b;
+                    const int bytes = ImTextCountUtf8BytesFromStr(from, to);
+                    std::vector<char> tmp((size_t)bytes + 1, '\0');
+                    ImTextStrToUtf8(tmp.data(), (int)tmp.size(), from, to);
+                    return std::string(tmp.data());
+                }
+            }
+        }
+        return buf ? std::string(buf) : std::string();
+    }
+
+    // Right-click menu, drawn through the SAME Gw2Ui::ContextMenuTree every other surface uses. `secret` drops
+    // Cut and Copy: ImGui refuses both for password fields on purpose, and this must not become a way around it.
+    // Returns true when `buf` was changed directly (the caller reports it as an edit).
+    bool TextFieldMenu(const char *id, char *buf, size_t bufSize, bool secret, bool openNow)
+    {
+        char menuId[96];
+        std::snprintf(menuId, sizeof(menuId), "%s_ctx", id);
+        const ImGuiID fieldId = ImGui::GetID(id);
+
+        enum { kCut = 1, kCopy, kPaste, kSelectAll };
+        std::vector<Gw2Ui::MenuNode> nodes;
+        if (!secret)
+        {
+            nodes.push_back({ "Cut", kCut });
+            nodes.push_back({ "Copy", kCopy });
+        }
+        nodes.push_back({ "Paste", kPaste });
+        nodes.push_back({ "Select all", kSelectAll });
+
+        switch (Gw2Ui::ContextMenuTree(menuId, nodes, openNow))
+        {
+        case kCopy:
+            if (const std::string t = FieldTextForCopy(fieldId, buf); !t.empty())
+                ImGui::SetClipboardText(t.c_str());
+            return false;
+        case kCut:
+        {
+            const std::string t = FieldTextForCopy(fieldId, buf);
+            if (!t.empty())
+                ImGui::SetClipboardText(t.c_str());
+            // Hand the buffer back before editing it: an ACTIVE InputText owns its own copy and would overwrite
+            // whatever we wrote. Dropping focus first makes the write stick (the field re-reads buf next frame).
+            ImGui::ClearActiveID();
+            if (buf && bufSize) buf[0] = '\0';
+            return true;
+        }
+        case kPaste:
+            return PasteIntoField(fieldId, buf, bufSize);
+        case kSelectAll:
+        {
+            ImGuiContext *g = ImGui::GetCurrentContext();
+            if (g && g->ActiveId == fieldId && g->InputTextState.ID == fieldId)
+            {
+                g->InputTextState.SelectAll();
+                g->InputTextState.CursorFollow = true;
+            }
+            return false;
+        }
+        default: return false;
+        }
+    }
+
+    // Everything a Gw2Ui text control needs after its InputText. Call immediately after ImGui::InputText, while
+    // the item and the ID scope are still current.
+    bool TextFieldExtras(const char *id, char *buf, size_t bufSize, bool secret = false)
+    {
+        const bool openNow = ImGui::IsItemHovered() && ImGui::IsMouseClicked(ImGuiMouseButton_Right);
+        return TextFieldMenu(id, buf, bufSize, secret, openNow);
+    }
+
     struct ScopedInputFont
     {
         float previousWindowScale = 1.f;
@@ -386,6 +497,7 @@ bool Gw2Ui::TextBox(const char *id, char *buf, size_t bufSize, float width)
         const ProbedInputText probe(id);
         changed = ImGui::InputText(id, buf, bufSize);
         probe.Done(changed);
+        changed |= TextFieldExtras(id, buf, bufSize);
         ImGui::PopStyleVar();
         ImGui::PopStyleColor(3);
     }
@@ -402,7 +514,7 @@ bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width
     const ImVec2 p = ImGui::GetCursorScreenPos();
     const InputFontMetrics im = InputMetrics(sc);
     const float h = im.boxH;
-    const float iconW = h; // right-hand eye-toggle column
+    const float iconW = h; // right-hand icon columns: paste, then the eye toggle
     const bool reveal = revealed && *revealed;
 
     if (const T ib = File("data\\textures\\ui\\input-box.png"); ib.srv)
@@ -415,10 +527,38 @@ bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width
         ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, IM_COL32(0, 0, 0, 0));
         ImGui::PushStyleColor(ImGuiCol_FrameBgActive, IM_COL32(0, 0, 0, 0));
         ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(6.f * sc, (h - im.requestedPx) * 0.5f));
-        ImGui::SetNextItemWidth(std::max(1.f, width - iconW));
+        ImGui::SetNextItemWidth(std::max(1.f, width - iconW * 2.f));
+        const ProbedInputText probe(id);
         changed = ImGui::InputText(id, buf, bufSize, reveal ? 0 : ImGuiInputTextFlags_Password);
+        probe.Done(changed);
+        changed |= TextFieldExtras(id, buf, bufSize, /*secret*/ true);
         ImGui::PopStyleVar();
         ImGui::PopStyleColor(3);
+    }
+
+    // Paste button. A secret field is the one place a failed paste is INVISIBLE (the text is masked) and the
+    // value -- a 72-character API key -- is not something anyone retypes. So it gets an explicit button that
+    // works whatever the platform's paste chord is. Lives here so every secret field has it (the Welcome
+    // window used to carry its own copy of this button; the settings field never did).
+    {
+        char pid[80];
+        std::snprintf(pid, sizeof(pid), "%s_paste", id);
+        ImGui::SetCursorScreenPos(ImVec2(p.x + width - iconW * 2.f, p.y));
+        const bool pclick = ImGui::InvisibleButton(pid, ImVec2(iconW, h));
+        const bool phov = ImGui::IsItemHovered();
+        if (phov)
+        {
+            ImGui::SetMouseCursor(ImGuiMouseCursor_Hand);
+            Tooltip("Paste from clipboard");
+        }
+        Render::DrawGlyph(dl, ImVec2(p.x + width - iconW * 1.5f, p.y + h * 0.5f), 16.f * sc,
+                          Render::Glyph::Copy, phov ? Gw2Ui::kGold : IM_COL32(190, 178, 150, 220), {false, false, false});
+        if (pclick)
+            if (const char *clip = ImGui::GetClipboardText(); clip && *clip)
+            {
+                std::snprintf(buf, bufSize, "%s", clip);
+                changed = true;
+            }
     }
 
     // eye toggle: an outline eye + pupil, with a slash when hidden. Click flips *revealed.
@@ -481,6 +621,7 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
         const ProbedInputText probe(id);
         changed = ImGui::InputText(id, buf, bufSize);
         probe.Done(changed);
+        changed |= TextFieldExtras(id, buf, bufSize);
         ImGui::PopStyleVar();
         ImGui::PopStyleColor(3);
     }

@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0.6
+
+### Added
+
+- Added a **right-click menu to every text field** in the addon, with **Cut**, **Copy**, **Paste** and **Select all**. ImGui's only built-in paste shortcut is Ctrl+V, and some platforms never deliver it -- macOS intercepts Cmd and letter combinations as menu shortcuts before the game ever sees them -- which left affected players with no way to paste at all. A menu works whatever the keyboard shortcut is. The API key field deliberately offers only Paste and Select all, since its contents are masked.
+- Added a **Paste** button to the API key field, beside the show/hide eye, so a long key can be pasted in one click. The Welcome window's separate paste button is now this same one rather than its own copy.
+
+### Fixed
+
+- Fixed a crash that could take Guild Wars 2 down for players running it through Wine on macOS. It happened while the addon was saving one of its cached files.
+- Fixed every cache and data file the addon writes being vulnerable to corruption if the game crashed or was force-quit partway through a save. Around nineteen of them -- account data, the item and skin catalogues, price history, the market snapshot, the story journal cache and more -- were written straight over the live file with no protection, so an interruption could leave a truncated file that failed to load afterwards. Every write now goes through one shared path that writes to a temporary file first and swaps it into place only once it is complete, so an interrupted save leaves the previous file intact.
+
 ## 1.1.0.5
 
 ### Fixed

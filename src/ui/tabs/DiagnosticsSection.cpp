@@ -248,6 +248,19 @@ void DrawDiagnosticsSection(App& app)
         kv("Last character", b, g_probeLastAt > 0.0 ? kVal : kBad, lwP);
 
         ImGui::Spacing();
+        // Live modifiers. ImGui's copy/paste needs io.KeyMods to be EXACTLY Ctrl, so a field that will not
+        // paste is usually a modifier question -- hold one and read which flag lights up.
+        std::snprintf(b, sizeof(b), "%s%s%s%s%s",
+                      io.KeyCtrl ? "Ctrl " : "", io.KeyShift ? "Shift " : "", io.KeyAlt ? "Alt " : "",
+                      io.KeySuper ? "Super(Cmd/Win) " : "",
+                      (!io.KeyCtrl && !io.KeyShift && !io.KeyAlt && !io.KeySuper) ? "none" : "");
+        kv("Modifiers held", b, (io.KeyCtrl || io.KeyShift || io.KeyAlt || io.KeySuper) ? kOk : kDim, lwP);
+        std::snprintf(b, sizeof(b), "0x%02X   %s", (unsigned)io.KeyMods,
+                      io.KeyMods == ImGuiKeyModFlags_Ctrl ? "== Ctrl (ImGui paste works)"
+                                                          : "!= Ctrl (ImGui paste will NOT fire)");
+        kv("ImGui KeyMods", b, io.KeyMods == ImGuiKeyModFlags_Ctrl ? kOk : kDim, lwP);
+
+        ImGui::Spacing();
         // Live ImGui state: proves the field really is focused (a blinking caret alone does not).
         kv("Text field focused", io.WantTextInput ? "yes (WantTextInput)" : "no", io.WantTextInput ? kOk : kDim, lwP);
         kv("Keyboard captured", io.WantCaptureKeyboard ? "yes" : "no", io.WantCaptureKeyboard ? kOk : kDim, lwP);

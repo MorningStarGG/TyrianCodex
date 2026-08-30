@@ -63,15 +63,9 @@ void Welcome::Draw(App& app)
 
         ImGui::Dummy(ImVec2(0.f, 8.f));
         Gw2Ui::Label("API key", IM_COL32(220, 210, 185, 255), false, nullptr, 18.f);
-        const float pasteW = 70.f, gap = 8.f;
-        if (Gw2Ui::TextBoxSecret("##wkey", app.config.apiKey, sizeof(app.config.apiKey), kInnerW - pasteW - gap, &g_reveal))
+        // TextBoxSecret carries its own paste button (and right-click menu) now, so there is no separate one here.
+        if (Gw2Ui::TextBoxSecret("##wkey", app.config.apiKey, sizeof(app.config.apiKey), kInnerW, &g_reveal))
             app.settingsDirty = true;   // applied on commit (field deselected) by entry.cpp's watcher
-        ImGui::SameLine(0.f, gap);
-        if (Gw2Ui::Button("Paste", pasteW))
-        {
-            if (const char* clip = ImGui::GetClipboardText())
-            { std::snprintf(app.config.apiKey, sizeof(app.config.apiKey), "%s", clip); app.settingsDirty = true; }
-        }
 
         // Live status (the entry.cpp watcher applies the key as it changes; this just reflects the result).
         const bool hasKey = app.api.HasKey();
