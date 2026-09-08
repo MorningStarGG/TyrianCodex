@@ -123,7 +123,7 @@ namespace ConfigProfiles
     {
         // A few settings are GLOBAL (same for every profile) despite living in profiled sections.
         static const std::set<std::string> kGlobal = {
-            "dashEnabled", "dashLocked", "dashAutoHideHoverOff", "dashAutoHideClickOff", "uiScale" };
+            "dashEnabled", "dashLocked", "dashAutoHideHoverOff", "dashAutoHideClickOff", "dashAutoOpenHover", "uiScale" };
         if (s.key && kGlobal.count(s.key)) return Owner::Global;
         return OwnerOf(s.section);
     }
