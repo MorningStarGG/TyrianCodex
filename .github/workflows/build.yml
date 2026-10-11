@@ -32,10 +32,16 @@ jobs:
 
       # FetchContent pulls Nexus headers, ImGui v1.80, nlohmann/json + litehtml on configure (the runner has network).
       - name: Configure (CMake)
-        run: cmake -S . -B build -A x64
+        run: cmake -S . -B build -A x64 -DTC_BUILD_TESTS=ON
 
       - name: Build (Release)
         run: cmake --build build --config Release
+
+      - name: Test runtime and release validation
+        run: |
+          ctest --test-dir build -C Release --output-on-failure
+          python -B -m unittest discover -s tests -v
+          python validate_bundle.py data --manifest --current-content
 
       - name: Upload DLL artifact
         uses: actions/upload-artifact@v4
@@ -55,7 +61,7 @@ jobs:
           python build_release.py release
 
       # Nexus' GitHub auto-updater pulls the DLL asset (by the AddonDef version); the DLL then fetches tc-core.tcpk
-      # + the packs from this same release (tagged v<TC_DATA_VERSION>).
+      # + the packs from the latest release. TC_DATA_VERSION controls the installed-data refresh.
       - name: Release (on tag)
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2

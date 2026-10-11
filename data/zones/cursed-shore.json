@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 62,
     "name": "Cursed Shore",
@@ -44,6 +44,42 @@
       43904,
       43648
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 46,
+          "skill_challenges": 17,
+          "sectors": 19
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 47,
+          "skill_challenges": 17,
+          "sectors": 19
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 47,
+          "skill_challenges": 17,
+          "sectors": 19
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 46,
+          "skill_challenges": 17,
+          "sectors": 19
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,8 +104,14 @@
       ],
       "chatLink": "[&BBcDAAA=]",
       "waypointChatLink": "[&BBcDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 10,
-      "wikiText": "Pursuit Pass is the opening area of the Cursed Shore."
+      "wikiText": "Pursuit Pass is the opening area of the Cursed Shore, located in the northernmost part of the zone. It connects to Karst Plains in Malchor's Leap via a portal."
     },
     {
       "stepId": "62:poi:764",
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 122,
       "wikiText": "Bitter Mountain is a small mountain swarming with Risen.",
@@ -111,8 +159,14 @@
       ],
       "chatLink": "[&BCEDAAA=]",
       "waypointChatLink": "[&BCEDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 178,
-      "wikiText": "Pursuit Pass is the opening area of the Cursed Shore."
+      "wikiText": "Pursuit Pass is the opening area of the Cursed Shore, located in the northernmost part of the zone. It connects to Karst Plains in Malchor's Leap via a portal."
     },
     {
       "stepId": "62:hero:0-181",
@@ -130,6 +184,12 @@
       "order": 3,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 192,
       "wikiText": "Explorer Brothmirr Rockslide is a member of the Durmand Priory willing to duel nearby adventurers.",
@@ -152,6 +212,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 302,
       "wikiText": "Get out of the gate and turn left. Walk along the encampment wall until you get to purple mushrooms.",
       "waypointChatLink": "[&BCEDAAA=]"
@@ -172,6 +238,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 307,
       "wikiText": "Caer Shadowfain is one of the few Pact settlements within the Cursed Shore. Located in Pursuit Pass, it is the first settlement that players comes across when entering the area.",
@@ -196,6 +268,12 @@
       ],
       "chatLink": "[&BBkDAAA=]",
       "waypointChatLink": "[&BBkDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 362,
       "wikiText": "Fields of Gold is an area within northern Cursed Shore. A decayed Orrian gladiator pit is found in the northern section."
     },
@@ -215,6 +293,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 379,
       "wikiText": "Village Sayix is an Orrian village in ruins overrun with Risen.",
@@ -237,6 +321,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 490,
       "wikiText": "Winterknell Isle is a large islet located right next to Orr's west coast.",
       "waypointChatLink": "[&BBkDAAA=]"
@@ -258,8 +348,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 508,
-      "wikiText": "Winterknell Labyrinth is a maze found in Winterknell Isle. It has two entrances - one to the north and one to the south. The maze contains many Risen of Veteran rank, along with Risen Fish turrets that spit poison.",
+      "wikiText": "Winterknell Labyrinth is a point of interest in Winterknell Isle, in Cursed Shore. It is a large Orrian maze that takes up a significant portion of the area, entered via a gate at its north end.",
       "waypointChatLink": "[&BBkDAAA=]"
     },
     {
@@ -281,6 +377,12 @@
       ],
       "chatLink": "[&BBgDAAA=]",
       "waypointChatLink": "[&BBgDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 611,
       "wikiText": "Winterknell Shore is an area in the western end of the Cursed Shore. It holds a sizeable Pact camp which is used to bring reinforcements in from the sea."
     },
@@ -300,6 +402,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 615,
       "wikiText": "Cachistic R&D is a Pact camp that doubles as a small lab on Winterknell Shore, mostly inhabited by asura of the Durmand Priory. The lab is sometimes besieged by Tar Elementals. They specialize in developing anti-Risen weaponry.",
@@ -322,6 +430,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 667,
       "wikiText": "Statues of Balthazar can be found throughout Tyria, dedicated to the god Balthazar. The hounds seen on the circular statue of Balthazar are Temar and Tegon.",
       "waypointChatLink": "[&BBgDAAA=]"
@@ -343,6 +457,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 712,
       "wikiText": "Seachange Tidepools is a sandy area used as a nesting ground by Risen Drakes.",
       "waypointChatLink": "[&BBgDAAA=]"
@@ -363,6 +483,12 @@
       "order": 14,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 745,
       "wikiText": "Strange Ring Structures lie embedded in the northern coast of the Cursed Shore.",
@@ -387,6 +513,12 @@
       ],
       "chatLink": "[&BBoDAAA=]",
       "waypointChatLink": "[&BBoDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 795,
       "wikiText": "Winterknell Shore is an area in the western end of the Cursed Shore. It holds a sizeable Pact camp which is used to bring reinforcements in from the sea."
     },
@@ -406,6 +538,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 825,
       "wikiText": "Start inside the camp and climb a wooden tower next to the scout. Jump on one of the purple mushrooms and climb up.",
@@ -428,6 +566,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 834,
       "wikiText": "Gavbeorn's Landing is a Pact camp used to secure the nearby waters.",
       "waypointChatLink": "[&BBoDAAA=]"
@@ -448,6 +592,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 928,
       "wikiText": "Bakkir Sarayi is an Orrian ruin overrun with Risen Spiders.",
@@ -472,6 +622,12 @@
       ],
       "chatLink": "[&BBsDAAA=]",
       "waypointChatLink": "[&BBsDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 996,
       "wikiText": "The Cathedral of Verdance is the main Temple of Melandru in the Ruins of Orr. There is an underwater cavern entrance leading to The Artesian Waters in the northeast portion of the area."
     },
@@ -492,8 +648,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1016,
-      "wikiText": "Altar of the Withered Heart is the altar of Melandru's main temple of Orr, the Cathedral of Verdance.",
+      "wikiText": "The Altar of the Withered Heart is a point of interest in the Cathedral of Verdance, within the Cursed Shore. It is the altar of Melandru's temple, guarded by her Risen high priest.",
       "waypointChatLink": "[&BBsDAAA=]"
     },
     {
@@ -512,6 +674,12 @@
       "order": 21,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1017,
       "wikiText": "Statues of Melandru can be found throughout Tyria, dedicated to the goddess Melandru.",
@@ -534,8 +702,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1124,
-      "wikiText": "Shelter's Gate is one of the few Pact settlements found in the Cursed Shore, along Noose Road and just outside of Penitent Path. It is the sister camp to Penitent Camp and is under constant siege of Risen.",
+      "wikiText": "Shelter's Gate is one of the few Pact settlements found in the Cursed Shore, along Noose Road and just outside of Penitent Path. It is the sister camp to Penitent Camp, and is under constant siege by the Risen.",
       "waypointChatLink": "[&BBwDAAA=]"
     },
     {
@@ -557,6 +731,12 @@
       ],
       "chatLink": "[&BBwDAAA=]",
       "waypointChatLink": "[&BBwDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1127,
       "wikiText": "Noose Road is an area within the Cursed Shore. It is part of the main road leading from Malchor's Leap to the Promenade of the Gods."
     },
@@ -577,8 +757,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1169,
-      "wikiText": "Gallow's Hang was a place of public execution before Orr was sunk. It is now home to a powerful Risen.",
+      "wikiText": "Gallow's Hang is a point of interest in Noose Road, within the Cursed Shore. Before Orr sank in the Cataclysm, it was a gathering place for practitioners of the arts.",
       "waypointChatLink": "[&BBwDAAA=]"
     },
     {
@@ -598,8 +784,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1172,
-      "wikiText": "Gallow's Hang was a place of public execution before Orr was sunk. It is now home to a powerful Risen.",
+      "wikiText": "Gallow's Hang is a point of interest in Noose Road, within the Cursed Shore. Before Orr sank in the Cataclysm, it was a gathering place for practitioners of the arts.",
       "waypointChatLink": "[&BBwDAAA=]"
     },
     {
@@ -621,8 +813,39 @@
       ],
       "chatLink": "[&BB0DAAA=]",
       "waypointChatLink": "[&BB0DAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1223,
-      "wikiText": "Craven Blight is an area within the Cursed Shore."
+      "wikiText": "Craven Blight is an area within the Cursed Shore. Its eastern half contains Jofast's Camp and the corrupted remains of what was once a gorilla-inhabited jungle; the west half borders the Harrowed Sea and contains the Village of Ewan."
+    },
+    {
+      "stepId": "62:poi:1260",
+      "mapId": 62,
+      "zoneName": "Cursed Shore",
+      "type": "poi",
+      "objectiveId": "1260",
+      "coord": [
+        44332,
+        43410
+      ],
+      "recommendedLevel": null,
+      "name": "Jofast's Camp",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        2
+      ],
+      "trailIndex": 1225,
+      "wikiText": "Jofast's Camp is a Pact camp used to strike the Risen found at the Cathedral of Verdance.",
+      "waypointChatLink": "[&BB0DAAA=]"
     },
     {
       "stepId": "62:poi:774",
@@ -637,12 +860,18 @@
       "recommendedLevel": null,
       "name": "Village of Ewan",
       "prereqs": [],
-      "order": 27,
+      "order": 28,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1286,
-      "wikiText": "The Village of Ewan is an Orrian village in ruins.",
+      "wikiText": "The Village of Ewan is a point of interest in Craven Blight, in central Cursed Shore. It is a ruined Orrian village that, prior to the Cataclysm, was surrounded by lush farmland.",
       "waypointChatLink": "[&BB4DAAA=]"
     },
     {
@@ -658,9 +887,15 @@
       "recommendedLevel": null,
       "name": "Plaque of Ewan",
       "prereqs": [],
-      "order": 28,
+      "order": 29,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1292,
       "wikiText": "The Plaque of Ewan lies in the center of Village of Ewan, commemorating the village.",
@@ -679,9 +914,15 @@
       "recommendedLevel": null,
       "name": "Thorn Dock",
       "prereqs": [],
-      "order": 29,
+      "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1317,
       "wikiText": "Thorn Dock is an Orrian dock in ruins found on the shores of the Harrowed Sea.",
@@ -700,9 +941,15 @@
       "recommendedLevel": null,
       "name": "Captain's Log",
       "prereqs": [],
-      "order": 30,
+      "order": 31,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1327,
       "wikiText": "The Captain's Log is a hero challenge found submerged within The Wreck of the Golden Vanity in the depths of the Harrowed Sea. Reading it gives a hero point.",
@@ -721,12 +968,18 @@
       "recommendedLevel": null,
       "name": "The Wreck of the Golden Vanity",
       "prereqs": [],
-      "order": 31,
+      "order": 32,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1328,
-      "wikiText": "The Wreck of the Golden Vanity is a wrecked ship within the Harrowed Sea. It was off the shore of Orr during The Cataclysm, when it sunk.",
+      "wikiText": "The Wreck of the Golden Vanity is a wrecked ship within the Harrowed Sea. It was off the shore of Orr during The Cataclysm, when it sunk. It contains a mysterious Orrian Power Orb.",
       "waypointChatLink": "[&BBoDAAA=]"
     },
     {
@@ -742,9 +995,15 @@
       "recommendedLevel": null,
       "name": "Harbinger Torch",
       "prereqs": [],
-      "order": 32,
+      "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1370,
       "wikiText": "The Harbinger Torch is an ancient lighthouse in Graven Cay.",
@@ -763,9 +1022,15 @@
       "recommendedLevel": null,
       "name": "Harbinger Torch",
       "prereqs": [],
-      "order": 33,
+      "order": 34,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1370,
       "wikiText": "The Harbinger Torch is an ancient lighthouse in Graven Cay.",
@@ -784,9 +1049,15 @@
       "recommendedLevel": null,
       "name": "Statue of Melandru (2)",
       "prereqs": [],
-      "order": 34,
+      "order": 35,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1393,
       "wikiText": "Statues of Melandru can be found throughout Tyria, dedicated to the goddess Melandru.",
@@ -805,9 +1076,15 @@
       "recommendedLevel": null,
       "name": "Death's Gaze Torch",
       "prereqs": [],
-      "order": 35,
+      "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1437,
       "wikiText": "Death's Gaze Torch is an Orrian beacon once used to guide sailors away from the rocky cliffs and shores of Orr before The Cataclysm. Nowadays, it is used by the Risen to guide and send orders to their Dead Ships.",
@@ -826,9 +1103,15 @@
       "recommendedLevel": null,
       "name": "Pristine Chest",
       "prereqs": [],
-      "order": 36,
+      "order": 37,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1494,
       "wikiText": "The Pristine Chest is found in the depths of The Shipyard. It contains Sunken Rations. Consuming these gives a hero point.",
@@ -847,9 +1130,15 @@
       "recommendedLevel": null,
       "name": "Augur's Torch",
       "prereqs": [],
-      "order": 37,
+      "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1534,
       "wikiText": "Augur's Torch is an Orrian beacon once used to guide sailors away from the rocky cliffs and shores of Orr before The Cataclysm. Nowadays, it is used by the Risen to guide and send orders to their Dead Ships.",
@@ -868,12 +1157,18 @@
       "recommendedLevel": null,
       "name": "Shank Anchorage",
       "prereqs": [],
-      "order": 38,
+      "order": 39,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1566,
-      "wikiText": "Shank Anchorage is a Pact camp near the Gates of Arah.",
+      "wikiText": "Shank Anchorage is a point of interest in Compass Plaza, within the Cursed Shore. It is an Orrian ruin that is located directly across from the Promenade of the Gods. It is inhabited by Risen nobles, servants, and wizards.",
       "waypointChatLink": "[&BB8DAAA=]"
     },
     {
@@ -889,9 +1184,15 @@
       "recommendedLevel": null,
       "name": "Compass Plaza",
       "prereqs": [],
-      "order": 39,
+      "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1566,
       "wikiText": "Compass Plaza is an area in Cursed Shore. This coastal road leads to the Gates of Arah.",
@@ -910,12 +1211,18 @@
       "recommendedLevel": null,
       "name": "Anchorage Waypoint",
       "prereqs": [],
-      "order": 40,
+      "order": 41,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BB8DAAA=]",
       "waypointChatLink": "[&BB8DAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1578,
       "wikiText": "Compass Plaza is an area in Cursed Shore. This coastal road leads to the Gates of Arah."
     },
@@ -932,12 +1239,18 @@
       "recommendedLevel": null,
       "name": "Meddler's Waypoint",
       "prereqs": [],
-      "order": 41,
+      "order": 42,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BB4DAAA=]",
       "waypointChatLink": "[&BB4DAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1663,
       "wikiText": "Compass Plaza is an area in Cursed Shore. This coastal road leads to the Gates of Arah."
     },
@@ -954,9 +1267,15 @@
       "recommendedLevel": null,
       "name": "Meddler's Summit",
       "prereqs": [],
-      "order": 42,
+      "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1665,
       "wikiText": "Meddler's Summit is a camp within the Compass Plaza, headed by Maakel the Immortal.",
@@ -975,9 +1294,15 @@
       "recommendedLevel": null,
       "name": "Fortuna Dirgecaller",
       "prereqs": [],
-      "order": 43,
+      "order": 44,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1669,
       "wikiText": "Fortuna Dirgecaller is a hero challenge found within Meddler's Summit in Compass Plaza.",
@@ -996,12 +1321,18 @@
       "recommendedLevel": null,
       "name": "Azabe Qabar, the Royal Tombs",
       "prereqs": [],
-      "order": 44,
+      "order": 45,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1724,
-      "wikiText": "Azabe Qabar, the Royal Tombs is the crypts of Orrian royalty. Before The Cataclysm, these tombs were held as deeply sacred to the people.",
+      "wikiText": "Azabe Qabar, the Royal Tombs is the crypts of Orrian royalty. Before the Cataclysm, these tombs were held as deeply sacred to the people.",
       "waypointChatLink": "[&BB4DAAA=]"
     },
     {
@@ -1017,9 +1348,15 @@
       "recommendedLevel": null,
       "name": "Reliquary Vault",
       "prereqs": [],
-      "order": 45,
+      "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1769,
       "wikiText": "The Reliquary Vault is a point of interest deep within Azabe Qabar, the Royal Tombs. It is the crypt and resting place of the Inscribed Casket for an ancient unknown Orrian king.",
@@ -1038,9 +1375,15 @@
       "recommendedLevel": null,
       "name": "Inscribed Casket",
       "prereqs": [],
-      "order": 46,
+      "order": 47,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1776,
       "wikiText": "An Inscribed Casket resides within the Orrian royal tombs for one of the ancient heroic kings, though the name of the king is unknown.",
@@ -1059,12 +1402,18 @@
       "recommendedLevel": null,
       "name": "Telmat Knoll",
       "prereqs": [],
-      "order": 47,
+      "order": 48,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1857,
-      "wikiText": "Telmat Knoll is a non-descript area of ruins central to Compass Plaza.",
+      "wikiText": "Telmat Knoll is a point of interest in central Compass Plaza. It is an Orrian ruin nestled in between the Promenade of the Gods and Azabe Qabar, the Royal Tombs.",
       "waypointChatLink": "[&BB4DAAA=]"
     },
     {
@@ -1080,9 +1429,15 @@
       "recommendedLevel": null,
       "name": "Gates of Arah",
       "prereqs": [],
-      "order": 48,
+      "order": 49,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1943,
       "wikiText": "Gates of Arah is a meta event that takes place in Cursed Shore and is needed to unlock access to The Ruined City of Arah dungeon.",
@@ -1101,12 +1456,18 @@
       "recommendedLevel": null,
       "name": "Arah Waypoint",
       "prereqs": [],
-      "order": 49,
+      "order": 50,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BCADAAA=]",
       "waypointChatLink": "[&BCADAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1954,
       "wikiText": "The Narthex is the entryway into the Ruined City of Arah within central Cursed Shore, just past the Promenade of the Gods."
     },
@@ -1123,9 +1484,15 @@
       "recommendedLevel": null,
       "name": "Pixi",
       "prereqs": [],
-      "order": 50,
+      "order": 51,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2080,
       "wikiText": "Pixi is a hero challenge NPC in Cursed Shore, by Sharn's Free Camp.",
@@ -1144,9 +1511,15 @@
       "recommendedLevel": null,
       "name": "Sharn's Free Camp",
       "prereqs": [],
-      "order": 51,
+      "order": 52,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2081,
       "wikiText": "Sharn's Free Camp is a small pirate camp in Desmina's Hallows, Cursed Shore.",
@@ -1165,9 +1538,15 @@
       "recommendedLevel": null,
       "name": "Death's Anthem",
       "prereqs": [],
-      "order": 52,
+      "order": 53,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2150,
       "wikiText": "Death's Anthem is a wrecked and grounded ship stuck on a small ledge of land in the southern part of Cursed Shore, on the coast of the Mausollus Sea.",
@@ -1186,9 +1565,15 @@
       "recommendedLevel": null,
       "name": "Orrian Spectral Hammer",
       "prereqs": [],
-      "order": 53,
+      "order": 54,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2165,
       "wikiText": "The Orrian Spectral Hammer is an Orrian hammer found in an old beached and rotting ship within Desmina's Hallows that must be defeated as part of the Engage the Orrian Spectral Hammer hero challenge (triggered by interacting with the...",
@@ -1207,9 +1592,15 @@
       "recommendedLevel": null,
       "name": "The Wreck of the Saehrimnir",
       "prereqs": [],
-      "order": 54,
+      "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2212,
       "wikiText": "The Wreck of the Saehrimnir is the 100 year-old wrecked ship of Captain Romke. It lies twisted in ruins against the sheer cliffs, having been shipwrecked during the Rising of Orr.",
@@ -1228,12 +1619,18 @@
       "recommendedLevel": null,
       "name": "Shipwreck Rock Waypoint",
       "prereqs": [],
-      "order": 55,
+      "order": 56,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BOQGAAA=]",
       "waypointChatLink": "[&BOQGAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2240,
       "wikiText": "The Mausollus Sea is an area of Cursed Shore, named after Mausollus."
     },
@@ -1250,9 +1647,15 @@
       "recommendedLevel": null,
       "name": "Mysterious Egg",
       "prereqs": [],
-      "order": 56,
+      "order": 57,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2246,
       "wikiText": "The Mysterious Egg is a hero challenge at the southernmost edge of the Mausollus Sea, Cursed Shore.",
@@ -1271,9 +1674,15 @@
       "recommendedLevel": null,
       "name": "Mausollus Sea",
       "prereqs": [],
-      "order": 57,
+      "order": 58,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2348,
       "wikiText": "The Mausollus Sea is an area of Cursed Shore, named after Mausollus.",
@@ -1292,9 +1701,15 @@
       "recommendedLevel": null,
       "name": "Buried Archives",
       "prereqs": [],
-      "order": 58,
+      "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2448,
       "wikiText": "Buried Archives is a jumping puzzle located on the eastern exterior of the Cathedral of Silence in Cursed Shore.",
@@ -1313,12 +1728,18 @@
       "recommendedLevel": null,
       "name": "Murdered Dreams Waypoint",
       "prereqs": [],
-      "order": 59,
+      "order": 60,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BCIDAAA=]",
       "waypointChatLink": "[&BCIDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2482,
       "wikiText": "The Cathedral of Silence, also known as the Shrine of the Reapers, is the first temple of Grenth ever built. Of all temples in Orr, it is the most structurally stable after the Cataclysm, due to the crypts built into it."
     },
@@ -1335,12 +1756,18 @@
       "recommendedLevel": null,
       "name": "Altar of Murdered Dreams",
       "prereqs": [],
-      "order": 60,
+      "order": 61,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2488,
-      "wikiText": "The Altar of Murdered Dreams is an altar dedicated to Grenth within the Cathedral of Silence.",
+      "wikiText": "The Altar of Murdered Dreams, sometimes called the Altar of Grenth, is a point of interest at the heart of the Cathedral of Silence, in southwest Cursed Shore.",
       "waypointChatLink": "[&BCIDAAA=]"
     },
     {
@@ -1356,9 +1783,15 @@
       "recommendedLevel": null,
       "name": "Statue of Grenth",
       "prereqs": [],
-      "order": 61,
+      "order": 62,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2498,
       "wikiText": "Statues of Grenth can be found throughout Tyria, dedicated to the god Grenth.",

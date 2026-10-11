@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1248,
     "name": "Domain of Vabbi",
@@ -44,6 +44,26 @@
       66016,
       53702
     ],
+    "floorCollection": {
+      "available": [
+        49
+      ],
+      "conflicts": [],
+      "counts": {
+        "49": {
+          "tasks": 8,
+          "points_of_interest": 49,
+          "skill_challenges": 3,
+          "sectors": 23
+        }
+      },
+      "unavailable": [
+        1,
+        3,
+        2,
+        0
+      ]
+    },
     "release": "pof"
   },
   "primaryKind": "foot",
@@ -68,6 +88,9 @@
       ],
       "chatLink": "[&BKUKAAA=]",
       "waypointChatLink": "[&BKUKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 8,
       "wikiText": "Cragged Vale is a small area in the northwestern corner of the Domain of Vabbi."
     },
@@ -87,6 +110,9 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 112,
       "wikiText": "Accessible only with the help of a jackal and a sand portal since the vista is located inside a tower.",
@@ -109,6 +135,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 195,
       "wikiText": "The Lair of Zommoros is a djinn vault in the Purling Deep within Domain of Vabbi. It was the original home of Zommoros before the djinn left Elona for Central Tyria and made his new home in Mythwright Gambit.",
       "waypointChatLink": "[&BKUKAAA=]"
@@ -129,6 +158,9 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 257,
       "wikiText": "The Promenade is a point of interest within the Garden of Seborhin. Many of the nobles and royals gather there to mingle and watch mime showdowns.",
@@ -165,6 +197,9 @@
           53200
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 261,
       "wikiText": "Dance with lonely wallflowers, or obtain an Affinity Analyzer to play matchmaker for lonely nobles, or deal with discontent djinn lurking in the area.",
       "waypointChatLink": "[&BNAKAAA=]"
@@ -185,6 +220,9 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 288,
       "wikiText": "Merchant's Row is a point of interest within the Garden of Seborhin.",
@@ -207,6 +245,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 332,
       "wikiText": "Spa is a point of interest within the Garden of Seborhin. It is used by the Vabbian nobles and royalty of the Garden of Seborhin.",
       "waypointChatLink": "[&BNAKAAA=]"
@@ -228,6 +269,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 362,
       "wikiText": "Seborhin Circle is a point of interest within the Garden of Seborhin. The Seborhin tree can be seen floating high above the plaza.",
       "waypointChatLink": "[&BNAKAAA=]"
@@ -248,6 +292,9 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 390,
       "wikiText": "Lyssan Fools Theater is a point of interest within the Garden of Seborhin.",
@@ -316,6 +363,9 @@
           53580
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 397,
       "wikiText": "Receive scripts from the director and persuade troupe members to join his new play production, provide actors critiques on line deliveries, and help them rehearse scenes.",
       "waypointChatLink": "[&BNAKAAA=]"
@@ -339,6 +389,9 @@
       ],
       "chatLink": "[&BNAKAAA=]",
       "waypointChatLink": "[&BNAKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 409,
       "wikiText": "The Garden of Seborhin is a large garden, occupied by Elonian nobles, inside the Domain of Vabbi. The eastern wing of the garden has been abandoned due to the encroachment of the Brand."
     },
@@ -358,6 +411,9 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 473,
       "wikiText": "Tihark Orchard is a point of interest in Forum Highlands.",
@@ -382,6 +438,9 @@
       ],
       "chatLink": "[&BEoKAAA=]",
       "waypointChatLink": "[&BEoKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 522,
       "wikiText": "The Necropolis is an area in the Domain of Vabbi. The Necropolis is a place of great reverence and mourning. The dead are interred here, with Vabbians appealing for their loved ones to become Awakened."
     },
@@ -401,6 +460,9 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 617,
       "wikiText": "Ruins of Jennur's Horde once was a mining camp used by the workers of Vehjin Mines before Palawa Joko conquered Vabbi.",
@@ -425,6 +487,9 @@
       ],
       "chatLink": "[&BO0KAAA=]",
       "waypointChatLink": "[&BO0KAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 679,
       "wikiText": "Vehjin Palace is an area in the Domain of Vabbi. The palace has suffered numerous Forged raids, and the nobility have been forced to fend for themselves in lieu of Awakened servants."
     },
@@ -447,29 +512,32 @@
       ],
       "bounds": [
         [
+          64044,
+          53095
+        ],
+        [
           63953,
           53132
-        ],
-        [
-          63672,
-          53255
-        ],
-        [
-          63656,
-          53371
-        ],
-        [
-          63680,
-          53588
         ],
         [
           63768,
           53551
         ],
         [
-          63953,
-          53132
+          63783,
+          53574
+        ],
+        [
+          63991,
+          53628
+        ],
+        [
+          64044,
+          53095
         ]
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 735,
       "wikiText": "Protect the royals, show them how to care for themselves, clean up their messes, and clear out vermin.",
@@ -492,6 +560,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 758,
       "wikiText": "On the roof of the palace, use your springer.",
       "waypointChatLink": "[&BO0KAAA=]"
@@ -512,6 +583,9 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 759,
       "wikiText": "Vehjin Royal Rotunda is a point of interest in Vehjin Palace.",
@@ -536,41 +610,48 @@
       ],
       "bounds": [
         [
-          64214,
-          53997
-        ],
-        [
-          64264,
-          53974
-        ],
-        [
-          64303,
-          53830
-        ],
-        [
-          64187,
-          53711
-        ],
-        [
           64120,
           53750
+        ],
+        [
+          64222,
+          53531
+        ],
+        [
+          63835,
+          53524
+        ],
+        [
+          63673,
+          53608
+        ],
+        [
+          63655,
+          53776
+        ],
+        [
+          63714,
+          53917
+        ],
+        [
+          63770,
+          54023
+        ],
+        [
+          63801,
+          54061
         ],
         [
           63877,
           54089
         ],
         [
-          63908,
-          54096
-        ],
-        [
-          63930,
-          54092
-        ],
-        [
-          64214,
-          53997
+          64120,
+          53750
         ]
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 787,
       "wikiText": "Recover and return lost family heirlooms from Awakened corpses, secure and deposit unrefined ore, and cull Forged from the area.",
@@ -593,6 +674,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 795,
       "wikiText": "Excavation Site is an Awakened mine that has been overtaken by The Forged.",
       "waypointChatLink": "[&BO0KAAA=]"
@@ -613,6 +697,9 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 857,
       "wikiText": "The Hearth is a large furnace used by the Forged as a base of operations within the Foundry. Its entrance is slightly to the southwest of the Disrupt the Forged occupying the Foundry renown heart.",
@@ -697,6 +784,9 @@
           54262
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 895,
       "wikiText": "Cull Forged from the foundry, destroy Forged cannons, break steam valves, and rescue Elonian workers.",
       "waypointChatLink": "[&BO0KAAA=]"
@@ -717,6 +807,9 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 933,
       "wikiText": "Troopmarshal's Encampment is an allied Awakened encampment.",
@@ -739,6 +832,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 949,
       "wikiText": "Within The Foundry, upright.",
       "waypointChatLink": "[&BEoKAAA=]"
@@ -759,6 +855,9 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1043,
       "wikiText": "The Boneyard is a point of interest near The Necropolis in the Domain of Vabbi.",
@@ -843,6 +942,9 @@
           55218
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1134,
       "wikiText": "Speak with Supreme Training Specialist Tozan and guide newly Awakened trainees in combat and patrol formations.",
       "waypointChatLink": "[&BEoKAAA=]"
@@ -864,6 +966,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1165,
       "wikiText": "The Crypts is a point of interest in The Necropolis in the Domain of Vabbi.",
       "waypointChatLink": "[&BEoKAAA=]"
@@ -884,6 +989,9 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1210,
       "wikiText": "The Court of the Dead is a point of interest in the Necropolis in the Domain of Vabbi.",
@@ -984,6 +1092,9 @@
           54693
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1229,
       "wikiText": "Comfort mourners, honor the dead, prepare bodies for judgment, and defend the Necropolis from threats.",
       "waypointChatLink": "[&BEoKAAA=]"
@@ -1004,6 +1115,9 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1300,
       "wikiText": "On a side arch of the giant main building, reach it with your springer.",
@@ -1026,6 +1140,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1309,
       "wikiText": "Prepare the family's Awakened for their court appearance with a practice fight is a level 80 hero challenge event that occurs in The Necropolis.",
       "waypointChatLink": "[&BEoKAAA=]"
@@ -1046,6 +1163,9 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1356,
       "wikiText": "Beastmarshal's Encampment is a point of interest within the Kaluun Ravine. It is the staging ground of Beastmarshal Oluwa Eranko where her cavalry's raptors rest with Ulug commanding the outpost when the Beastmarshal is away.",
@@ -1068,6 +1188,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1398,
       "wikiText": "Junundu Nests is a point of interest within the Kaluun Ravine.",
       "waypointChatLink": "[&BA8KAAA=]"
@@ -1088,6 +1211,9 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1517,
       "wikiText": "The Vehtendi Vineyard is a point of interest within Vehtendi Academy.",
@@ -1110,6 +1236,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1563,
       "wikiText": "House Ventura Dormitory is the home of the Ventura house of students.",
       "waypointChatLink": "[&BA8KAAA=]"
@@ -1130,6 +1259,9 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1573,
       "wikiText": "House Ingene Dormitory is the home of the Ingene house of students.",
@@ -1152,6 +1284,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1583,
       "wikiText": "House Rolic Dormitory is the home point of interest of the Rolic house of students.",
       "waypointChatLink": "[&BA8KAAA=]"
@@ -1173,6 +1308,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1638,
       "wikiText": "The Warehouse is a point of interest in Vehtendi Academy, located in the basement of the school. It can be accessed via the Headmaster's Office.",
       "waypointChatLink": "[&BA8KAAA=]"
@@ -1193,6 +1331,9 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1660,
       "wikiText": "Headmaster's Office is a point of interest within the Vehtendi Academy. Through a \"secret\" door, The Warehouse is accessible.",
@@ -1261,6 +1402,9 @@
           54779
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1685,
       "wikiText": "Teach cadets in the classroom by answering their questions, help them study, and assist them in their various endeavors.",
       "waypointChatLink": "[&BA8KAAA=]"
@@ -1282,6 +1426,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1728,
       "wikiText": "Near the giant Palawa Joko Statue, climb the wooden platforms with your springer.",
       "waypointChatLink": "[&BA8KAAA=]"
@@ -1302,6 +1449,9 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1729,
       "wikiText": "The Great Palawa Joko Monument a large monument dedicated to Palawa Joko.",
@@ -1326,6 +1476,9 @@
       ],
       "chatLink": "[&BA8KAAA=]",
       "waypointChatLink": "[&BA8KAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1745,
       "wikiText": "Vehtendi Academy is an area in the Domain of Vabbi. It is here that students are indoctrinated from a young age to worship Palawa Joko. They are taught a heavily revised and exaggerated history that portrays Joko as a divine being."
     },
@@ -1345,6 +1498,9 @@
       "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1768,
       "wikiText": "Tournament Battlegrounds is a point of interest within the Vehtendi Arena.",
@@ -1367,6 +1523,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1768,
       "wikiText": "Defeat the masters of the academy houses is a level 80 hero challenge event that occurs inside Vehtendi Arena in the lowest level of the Tournament Battlegrounds.",
       "waypointChatLink": "[&BA8KAAA=]"
@@ -1387,6 +1546,9 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1841,
       "wikiText": "Market Ruins is a point of interest within the Kodash Bazaar.",
@@ -1411,6 +1573,9 @@
       ],
       "chatLink": "[&BHQKAAA=]",
       "waypointChatLink": "[&BHQKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1940,
       "wikiText": "Kodash Bazaar is a branded area in the Domain of Vabbi. Previously the main centre of trade and the seat of power of the entire Vabbi, the Bazaar is now largely in ruins and overrun with Branded."
     },
@@ -1430,6 +1595,9 @@
       "order": 47,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1961,
       "wikiText": "King Joko's Sky Garden is the roof of the largest structure within the Kodash Bazaar. It has been corrupted by the Elder Dragon Kralkatorrik's passage into Vabbi.",
@@ -1452,6 +1620,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2016,
       "wikiText": "Within the ruins of the destroyed branded bazaar, use your raptor.",
       "waypointChatLink": "[&BHQKAAA=]"
@@ -1472,6 +1643,9 @@
       "order": 49,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2057,
       "wikiText": "The Menagerie is a point of interest within the Garden of Seborhin. It used to host fantastic creatures but was rampaged by the branded. Only the fierce \"bear\" survived.",
@@ -1494,6 +1668,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2188,
       "wikiText": "The Ruins of Mihanu Township is a point of interest within the Dehwan Expanse. It was once a small community of literate farmers, but now the area is guarded by High Elder Yoonam the Intrepid.",
       "waypointChatLink": "[&BNAKAAA=]"
@@ -1514,6 +1691,9 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2255,
       "wikiText": "A more complicated vista, you need to make a detour through the branded Dzasha Uplands, also beware of branded storms' lighting bolts.",
@@ -1536,6 +1716,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2273,
       "wikiText": "The Ruins of the Mirror of Lyss is a point of interest within the Grand Court of Sebelkeh. This former shrine to Lyssa has been corrupted by Kralkatorrik, although the architecture remains intact.",
       "waypointChatLink": "[&BHQKAAA=]"
@@ -1556,6 +1739,9 @@
       "order": 53,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2331,
       "wikiText": "Hunter Glorg is an ogre seeking adventurers' aid. His pet Malletgob has fallen afoul of the Branded corruption and needs to be put out of her misery.",
@@ -1578,6 +1764,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2392,
       "wikiText": "Zagonur Cliffs is an area in the Domain of Vabbi. It is named after the currently inaccessible Dzagonur Bastion which once guarded a grand citadel of one of the Vabbian princes in the east.",
       "waypointChatLink": "[&BHQKAAA=]"
@@ -1598,6 +1787,9 @@
       "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2432,
       "wikiText": "Not far from the giant branded stone wheel, not hard to reach with the help of the skimmer.",
@@ -1620,6 +1812,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2446,
       "wikiText": "The Hanging Gardens is a palace that is now surrounded by the Dragonbrand in Zagonur Cliffs. Home to a number of djinn, it has avoided being Branded by Grandmaster Elder Djinn Emine's powers and is enclosed within a protective barrier.",
       "waypointChatLink": "[&BHQKAAA=]"
@@ -1641,6 +1836,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2499,
       "wikiText": "Spearmarshal's Lament is a point of interest in western Yahnur Plateau. A group of seekers have set up camp in the protective shield of a djinn.",
       "waypointChatLink": "[&BHQKAAA=]"
@@ -1661,6 +1859,9 @@
       "order": 58,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2499,
       "wikiText": "Very hard to reach not far from the griffons nest, use the sand portals, your springer or your glider to get up there.",

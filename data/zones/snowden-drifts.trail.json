@@ -97220,7 +97220,7 @@
           "sourceBranch": "legs.map.core.snowden.barefoot",
           "sourceType": "legs.map.core.snowden.barefoot.wp",
           "sourceFile": "Map_Completion_A_Core_Barefoot.xml",
-          "message": "Highpass Haven Waypoint",
+          "message": "Skradden Waypoint",
           "mapId": 31,
           "x": -1144.0,
           "y": 54.6,
@@ -97231,8 +97231,8 @@
           ],
           "links": [
             {
-              "label": "Highpass Haven Waypoint",
-              "chatLink": "[&BLUAAAA=]"
+              "label": "Skradden Waypoint",
+              "chatLink": "[&BLMAAAA=]"
             }
           ],
           "trailIndex": 5602,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 218,
     "name": "Black Citadel",
@@ -44,6 +44,42 @@
       57088,
       30460
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 34,
+          "skill_challenges": 0,
+          "sectors": 18
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 34,
+          "skill_challenges": 0,
+          "sectors": 18
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 34,
+          "skill_challenges": 0,
+          "sectors": 18
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 34,
+          "skill_challenges": 0,
+          "sectors": 18
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -65,6 +101,12 @@
       "order": 0,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 0,
       "wikiText": "The Ashford Gate is the main exit into the Plains of Ashford from the Black Citadel. It is guarded by four Iron Legion Marksmen.",
@@ -89,6 +131,12 @@
       ],
       "chatLink": "[&BKUDAAA=]",
       "waypointChatLink": "[&BKUDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 10,
       "wikiText": "The Mustering Ground is the main road in the Black Citadel leading to the Plains of Ashford."
     },
@@ -111,6 +159,12 @@
       ],
       "chatLink": "[&BKsDAAA=]",
       "waypointChatLink": "[&BKsDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 73,
       "wikiText": "The Perimeter Loop is an area within the Black Citadel."
     },
@@ -133,6 +187,12 @@
       ],
       "chatLink": "[&BKYDAAA=]",
       "waypointChatLink": "[&BKYDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 119,
       "wikiText": "The Perimeter Loop is an area within the Black Citadel."
     },
@@ -152,6 +212,12 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 137,
       "wikiText": "Canton Factorium houses the crafting area within the Black Citadel.",
@@ -173,6 +239,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 157,
       "wikiText": "The Serrated Blade Tavern is one of the few bars in the Black Citadel. Its roof is used by the Order of Whispers as a base of operations within the city.",
@@ -197,6 +269,12 @@
       ],
       "chatLink": "[&BKcDAAA=]",
       "waypointChatLink": "[&BKcDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 183,
       "wikiText": "Canton Factorium houses the crafting area within the Black Citadel."
     },
@@ -216,6 +294,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 208,
       "wikiText": "The Durmand Scriptorium is a base for the Durmand Priory within the Black Citadel.",
@@ -240,6 +324,12 @@
       ],
       "chatLink": "[&BKgDAAA=]",
       "waypointChatLink": "[&BKgDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 281,
       "wikiText": "The Memorial Quadrant is a section of the Black Citadel dedicated to fallen charr war heroes and warbands."
     },
@@ -259,6 +349,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 318,
       "wikiText": "The Plaza of Remembrance contains a large memorial of warband names that have fallen in the line of duty. Warband names are used, as the charr rarely honor individual soldiers.",
@@ -283,6 +379,12 @@
       ],
       "chatLink": "[&BKkDAAA=]",
       "waypointChatLink": "[&BKkDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 384,
       "wikiText": "Ligacus Aquilo is the northern smaller of two lakes in the Black Citadel. Over this lake is a bridge wired with charr explosives and the only asura gate in the city."
     },
@@ -305,6 +407,12 @@
       ],
       "chatLink": "[&BKoDAAA=]",
       "waypointChatLink": "[&BKoDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 439,
       "wikiText": "The Bane is a large arena situated at the base of the Black Citadel. It is known for being used to settle disputes through fighting, as well as provide entertainment matches."
     },
@@ -324,6 +432,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 442,
       "wikiText": "The Ash Tribune Quarters is an instance and point of interest inside of Imperator's Core, and is the personal office of Tribune Torga Desertgrave.",
@@ -348,6 +462,12 @@
       ],
       "chatLink": "[&BCkHAAA=]",
       "waypointChatLink": "[&BCkHAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 497,
       "wikiText": "Ligacus Aquilo is the northern smaller of two lakes in the Black Citadel. Over this lake is a bridge wired with charr explosives and the only asura gate in the city."
     },
@@ -367,6 +487,12 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 560,
       "wikiText": "Ligacus Notos is the larger southern of two lakes within the Black Citadel. There are various Durmand Priory scholars researching around this lake, as well as scavengers for human artifacts.",
@@ -389,6 +515,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 652,
       "wikiText": "The Abandoned Caverns (Access Prohibited) is a secret Flame Legion base near the Black Citadel. It was Clement Forktail's old workshop where he and Shaman Mergath Flarekin devised new magical attacks.",
       "waypointChatLink": "[&BKwDAAA=]"
@@ -409,6 +541,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 738,
       "wikiText": "The Ruins of Rin is an area in the Black Citadel. The human capital of Ascalon after the fall of Drascir, the ruins of Rin are of interest to the Durmand Priory, who have established a presence in the area.",
@@ -433,6 +571,12 @@
       ],
       "chatLink": "[&BKwDAAA=]",
       "waypointChatLink": "[&BKwDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 770,
       "wikiText": "The Ruins of Rin is an area in the Black Citadel. The human capital of Ascalon after the fall of Drascir, the ruins of Rin are of interest to the Durmand Priory, who have established a presence in the area."
     },
@@ -452,6 +596,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 805,
       "wikiText": "Gladium Canton, also known as The Gallows or The Shallows, is a run-down grotto at the base of the Black Citadel.",
@@ -476,6 +626,12 @@
       ],
       "chatLink": "[&BKQDAAA=]",
       "waypointChatLink": "[&BKQDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 842,
       "wikiText": "Gladium Canton, also known as The Gallows or The Shallows, is a run-down grotto at the base of the Black Citadel."
     },
@@ -495,6 +651,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 927,
       "wikiText": "The Great Imperial Smelter is the smelter used to melt down metal gathered at Junker's Scrapyard.",
@@ -519,6 +681,12 @@
       ],
       "chatLink": "[&BDcEAAA=]",
       "waypointChatLink": "[&BDcEAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 991,
       "wikiText": "The Perimeter Loop is an area within the Black Citadel."
     },
@@ -538,6 +706,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1014,
       "wikiText": "The Storm Caller Triumph is a stand displaying the shattered remains of the Stormcaller horn.",
@@ -560,6 +734,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1059,
       "wikiText": "The Vigil Chapterhouse is the Vigil's establishment within the Black Citadel. It is located in the Iron Legion Arsenal and is under construction.",
       "waypointChatLink": "[&BKsDAAA=]"
@@ -581,6 +761,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1120,
       "wikiText": "The War Council is the personal office of Imperator Smodur the Unflinching.",
       "waypointChatLink": "[&BK0DAAA=]"
@@ -601,6 +787,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1156,
       "wikiText": "The Iron Tribune Quarters are located in the same instance as the War Council in the The Command Core.",
@@ -625,6 +817,12 @@
       ],
       "chatLink": "[&BK0DAAA=]",
       "waypointChatLink": "[&BK0DAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1172,
       "wikiText": "The Imperator's Core is a large spherical structure that resides in the center of the Black Citadel."
     },
@@ -644,6 +842,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1202,
       "wikiText": "The Citadel Stockade is an instance and a point of interest found underneath the Imperator's Core in the Black Citadel that is used as a prison and holds furnaces.",
@@ -666,6 +870,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1241,
       "wikiText": "Ash Checkpoint 13 is the Ash Legion's camp within the Black Citadel.",
       "waypointChatLink": "[&BKUDAAA=]"
@@ -686,6 +896,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1298,
       "wikiText": "The Fahrar of Young Heroes is the Black Citadel's main-and purportedly best-fahrar.",
@@ -708,6 +924,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1320,
       "wikiText": "The 12th Iron Maniple is the Iron Legion's camp within the Black Citadel.",
       "waypointChatLink": "[&BKcDAAA=]"
@@ -728,6 +950,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1355,
       "wikiText": "The 20th Blood Cohort is the Blood Legion's camp within the Black Citadel.",
@@ -750,6 +978,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1385,
       "wikiText": "The Hero's Forum is one of two large buildings in the Hero's Canton. It contains a cantina-like area and a barracks area.",
       "waypointChatLink": "[&BKsDAAA=]"
@@ -770,6 +1004,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1440,
       "wikiText": "The Blood Tribune Quarters is the personal office of Tribune Rytlock Brimstone.",

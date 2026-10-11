@@ -5931,8 +5931,8 @@
     "complete": true,
     "coverage": 1.0,
     "objectiveCoverage": 1.0,
-    "orderedObjectives": 35,
-    "totalObjectives": 35,
+    "orderedObjectives": 40,
+    "totalObjectives": 40,
     "sourceBranch": "tw_mc_trails",
     "sourceBranchDisplay": "Routes - Griffon Edition",
     "trail": [
@@ -10371,33 +10371,53 @@
         "order": 27,
         "trailIndex": 615
       },
-      "18:vista:1399": {
+      "18:poi:265": {
         "order": 28,
+        "trailIndex": 627
+      },
+      "18:poi:270": {
+        "order": 29,
+        "trailIndex": 643
+      },
+      "18:vista:1399": {
+        "order": 30,
         "trailIndex": 656
       },
       "18:waypoint:809": {
-        "order": 29,
+        "order": 31,
         "trailIndex": 669
       },
+      "18:poi:253": {
+        "order": 32,
+        "trailIndex": 705
+      },
       "18:poi:262": {
-        "order": 30,
+        "order": 33,
         "trailIndex": 714
       },
       "18:poi:266": {
-        "order": 31,
+        "order": 34,
         "trailIndex": 743
       },
       "18:poi:261": {
-        "order": 32,
+        "order": 35,
         "trailIndex": 776
       },
       "18:poi:268": {
-        "order": 33,
+        "order": 36,
         "trailIndex": 803
       },
       "18:poi:267": {
-        "order": 34,
+        "order": 37,
         "trailIndex": 824
+      },
+      "18:poi:254": {
+        "order": 38,
+        "trailIndex": 842
+      },
+      "18:poi:255": {
+        "order": 39,
+        "trailIndex": 856
       }
     }
   },
@@ -10411,8 +10431,8 @@
       "complete": true,
       "coverage": 1.0,
       "objectiveCoverage": 1.0,
-      "orderedObjectives": 35,
-      "totalObjectives": 35,
+      "orderedObjectives": 40,
+      "totalObjectives": 40,
       "sourceBranch": "tw_mc_trails2",
       "sourceBranchDisplay": "Routes - Barefoot Edition",
       "routeKeys": [
@@ -16469,33 +16489,53 @@
           "order": 27,
           "trailIndex": 894
         },
-        "18:vista:1399": {
+        "18:poi:265": {
           "order": 28,
+          "trailIndex": 909
+        },
+        "18:poi:270": {
+          "order": 29,
+          "trailIndex": 930
+        },
+        "18:vista:1399": {
+          "order": 30,
           "trailIndex": 967
         },
         "18:waypoint:809": {
-          "order": 29,
+          "order": 31,
           "trailIndex": 989
         },
+        "18:poi:253": {
+          "order": 32,
+          "trailIndex": 1025
+        },
         "18:poi:262": {
-          "order": 30,
+          "order": 33,
           "trailIndex": 1034
         },
         "18:poi:266": {
-          "order": 31,
+          "order": 34,
           "trailIndex": 1063
         },
         "18:poi:261": {
-          "order": 32,
+          "order": 35,
           "trailIndex": 1096
         },
         "18:poi:268": {
-          "order": 33,
+          "order": 36,
           "trailIndex": 1123
         },
         "18:poi:267": {
-          "order": 34,
+          "order": 37,
           "trailIndex": 1144
+        },
+        "18:poi:254": {
+          "order": 38,
+          "trailIndex": 1162
+        },
+        "18:poi:255": {
+          "order": 39,
+          "trailIndex": 1176
         }
       }
     },
@@ -16508,8 +16548,8 @@
       "complete": true,
       "coverage": 1.0,
       "objectiveCoverage": 1.0,
-      "orderedObjectives": 35,
-      "totalObjectives": 35,
+      "orderedObjectives": 40,
+      "totalObjectives": 40,
       "sourceBranch": "legs.map.core.divinity.barefoot",
       "sourceBranchDisplay": "barefoot",
       "routeKeys": [
@@ -34308,140 +34348,160 @@
           "order": 0,
           "trailIndex": 128
         },
-        "18:waypoint:809": {
+        "18:poi:254": {
           "order": 1,
+          "trailIndex": 240
+        },
+        "18:poi:255": {
+          "order": 2,
+          "trailIndex": 277
+        },
+        "18:poi:253": {
+          "order": 3,
+          "trailIndex": 336
+        },
+        "18:waypoint:809": {
+          "order": 4,
           "trailIndex": 337
         },
+        "18:poi:270": {
+          "order": 5,
+          "trailIndex": 421
+        },
+        "18:poi:265": {
+          "order": 6,
+          "trailIndex": 521
+        },
         "18:waypoint:803": {
-          "order": 2,
+          "order": 7,
           "trailIndex": 568
         },
         "18:waypoint:1278": {
-          "order": 3,
+          "order": 8,
           "trailIndex": 569
         },
         "18:poi:256": {
-          "order": 4,
+          "order": 9,
           "trailIndex": 700
         },
         "18:poi:843": {
-          "order": 5,
+          "order": 10,
           "trailIndex": 768
         },
         "18:waypoint:810": {
-          "order": 6,
+          "order": 11,
           "trailIndex": 769
         },
         "18:poi:260": {
-          "order": 7,
+          "order": 12,
           "trailIndex": 823
         },
         "18:vista:1403": {
-          "order": 8,
+          "order": 13,
           "trailIndex": 979
         },
         "18:poi:269": {
-          "order": 9,
+          "order": 14,
           "trailIndex": 1019
         },
         "18:waypoint:807": {
-          "order": 10,
+          "order": 15,
           "trailIndex": 1020
         },
         "18:vista:1401": {
-          "order": 11,
+          "order": 16,
           "trailIndex": 1100
         },
         "18:waypoint:808": {
-          "order": 12,
+          "order": 17,
           "trailIndex": 1403
         },
         "18:waypoint:812": {
-          "order": 13,
+          "order": 18,
           "trailIndex": 1404
         },
         "18:poi:817": {
-          "order": 14,
+          "order": 19,
           "trailIndex": 1569
         },
         "18:vista:1400": {
-          "order": 15,
+          "order": 20,
           "trailIndex": 1769
         },
         "18:waypoint:813": {
-          "order": 16,
+          "order": 21,
           "trailIndex": 1793
         },
         "18:poi:263": {
-          "order": 17,
+          "order": 22,
           "trailIndex": 1862
         },
         "18:waypoint:804": {
-          "order": 18,
+          "order": 23,
           "trailIndex": 2024
         },
         "18:vista:1402": {
-          "order": 19,
+          "order": 24,
           "trailIndex": 2103
         },
         "18:poi:261": {
-          "order": 20,
+          "order": 25,
           "trailIndex": 2289
         },
         "18:poi:266": {
-          "order": 21,
+          "order": 26,
           "trailIndex": 2478
         },
         "18:poi:262": {
-          "order": 22,
+          "order": 27,
           "trailIndex": 2522
         },
         "18:poi:267": {
-          "order": 23,
+          "order": 28,
           "trailIndex": 2540
         },
         "18:poi:268": {
-          "order": 24,
+          "order": 29,
           "trailIndex": 2627
         },
         "18:vista:1404": {
-          "order": 25,
+          "order": 30,
           "trailIndex": 2853
         },
         "18:waypoint:806": {
-          "order": 26,
+          "order": 31,
           "trailIndex": 2917
         },
         "18:waypoint:814": {
-          "order": 27,
+          "order": 32,
           "trailIndex": 2918
         },
         "18:poi:257": {
-          "order": 28,
+          "order": 33,
           "trailIndex": 3049
         },
         "18:waypoint:805": {
-          "order": 29,
+          "order": 34,
           "trailIndex": 3116
         },
         "18:poi:259": {
-          "order": 30,
+          "order": 35,
           "trailIndex": 3174
         },
         "18:poi:1805": {
-          "order": 31,
+          "order": 36,
           "trailIndex": 3257
         },
         "18:waypoint:811": {
-          "order": 32,
+          "order": 37,
           "trailIndex": 3258
         },
         "18:poi:264": {
-          "order": 33,
+          "order": 38,
           "trailIndex": 3354
         },
         "18:poi:258": {
-          "order": 34,
+          "order": 39,
           "trailIndex": 3428
         }
       },
@@ -34632,8 +34692,8 @@
       "complete": true,
       "coverage": 1.0,
       "objectiveCoverage": 1.0,
-      "orderedObjectives": 35,
-      "totalObjectives": 35,
+      "orderedObjectives": 40,
+      "totalObjectives": 40,
       "sourceBranch": "tw_mc_trails",
       "sourceBranchDisplay": "Routes - Griffon Edition",
       "routeKeys": [
@@ -39090,33 +39150,53 @@
           "order": 27,
           "trailIndex": 615
         },
-        "18:vista:1399": {
+        "18:poi:265": {
           "order": 28,
+          "trailIndex": 627
+        },
+        "18:poi:270": {
+          "order": 29,
+          "trailIndex": 643
+        },
+        "18:vista:1399": {
+          "order": 30,
           "trailIndex": 656
         },
         "18:waypoint:809": {
-          "order": 29,
+          "order": 31,
           "trailIndex": 669
         },
+        "18:poi:253": {
+          "order": 32,
+          "trailIndex": 705
+        },
         "18:poi:262": {
-          "order": 30,
+          "order": 33,
           "trailIndex": 714
         },
         "18:poi:266": {
-          "order": 31,
+          "order": 34,
           "trailIndex": 743
         },
         "18:poi:261": {
-          "order": 32,
+          "order": 35,
           "trailIndex": 776
         },
         "18:poi:268": {
-          "order": 33,
+          "order": 36,
           "trailIndex": 803
         },
         "18:poi:267": {
-          "order": 34,
+          "order": 37,
           "trailIndex": 824
+        },
+        "18:poi:254": {
+          "order": 38,
+          "trailIndex": 842
+        },
+        "18:poi:255": {
+          "order": 39,
+          "trailIndex": 856
         }
       }
     }

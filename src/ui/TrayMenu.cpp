@@ -112,7 +112,7 @@ void DrawTrayMenu(App& app)
     // (no scopes) open directly. Keep the kXxxScopes label arrays in sync with each tab's scope-chip rail.
     static const char* const kAtlasScopes[] = { "All", "Open World", "Zones", "Cities", "Lounges", "WvW",
         "Dungeons", "Fractals", "Raids", "Strikes", "Story", "Festival", "Home", "Guild Halls", "Tutorials",
-        "PvP", "Farming" };
+        "PvP", "Farming", "Convergences" };
     static const char* const kCollScopes[]  = { "Wardrobe", "Homestead", "Fishing", "Mounts", "Gliders",
         "Jade Bots", "Skiffs", "Novelties", "Finishers", "Mail Carriers", "Minis", "Mist Champions", "Titles",
         "Emotes", "Recipes" };

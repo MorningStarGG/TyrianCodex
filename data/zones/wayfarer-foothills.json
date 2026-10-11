@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 28,
     "name": "Wayfarer Foothills",
@@ -44,6 +44,49 @@
       55424,
       29952
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 15,
+          "points_of_interest": 47,
+          "skill_challenges": 8,
+          "sectors": 27
+        },
+        "3": {
+          "tasks": 15,
+          "points_of_interest": 47,
+          "skill_challenges": 8,
+          "sectors": 27
+        },
+        "58": {
+          "tasks": 15,
+          "points_of_interest": 27,
+          "skill_challenges": 8,
+          "sectors": 0
+        },
+        "2": {
+          "tasks": 15,
+          "points_of_interest": 47,
+          "skill_challenges": 8,
+          "sectors": 27
+        },
+        "0": {
+          "tasks": 15,
+          "points_of_interest": 47,
+          "skill_challenges": 8,
+          "sectors": 27
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +111,13 @@
       ],
       "chatLink": "[&BHQBAAA=]",
       "waypointChatLink": "[&BHQBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 15,
       "wikiText": "Snowlord's Gate is an area in the southern half of the Wayfarer Foothills. It is where the Great Hunt is celebrated."
     },
@@ -87,6 +137,13 @@
       "order": 1,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 61,
       "wikiText": "Issormir's Body rests in the snowy arena of Hangrammr Climb, still attesting to the mighty clash that felled it. Commune with this place of power to complete its hero challenge.",
@@ -108,6 +165,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 90,
       "wikiText": "Heart of the Raven is a point of interest within Snowlord's Gate. This altar dedicated to Raven, one of the Spirits of the Wild, is one of the norn's sacred places.",
@@ -200,6 +263,13 @@
           31073
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 106,
       "wikiText": "Find hidden raven eggs and return them to roosts. Defeat skelk and destroy their nests.",
       "waypointChatLink": "[&BHMBAAA=]"
@@ -220,6 +290,13 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 139,
       "wikiText": "Snowlord's Gate is an area in the southern half of the Wayfarer Foothills. It is where the Great Hunt is celebrated.",
@@ -244,6 +321,13 @@
       ],
       "chatLink": "[&BHMBAAA=]",
       "waypointChatLink": "[&BHMBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 169,
       "wikiText": "Borealis Forest is an area within the Wayfarer Foothills. It holds shrines to the four major Spirits of the Wild."
     },
@@ -263,6 +347,13 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 218,
       "wikiText": "Borealis Forest is an area within the Wayfarer Foothills. It holds shrines to the four major Spirits of the Wild.",
@@ -339,6 +430,13 @@
           31328
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 231,
       "wikiText": "Disarm bear traps, hunt Svanir trappers, remove Svanir tags, feed bear cubs, and challenge acolytes.",
       "waypointChatLink": "[&BMMDAAA=]"
@@ -359,6 +457,12 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 237,
       "wikiText": "Heart of the Bear is a point of interest within Borealis Forest. This shrine dedicated to Bear, one of the Spirits of the Wild, is one of the norn's sacred places. It is located inside a small cave on the shore of the lake.",
@@ -381,6 +485,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 265,
       "wikiText": "Hostra's Refuge is a point of interest within Kresdor Kenning. In a cavern on the shore of this underground lake is an altar to Bear.",
       "waypointChatLink": "[&BMMDAAA=]"
@@ -401,6 +511,13 @@
       "order": 10,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 269,
       "wikiText": "Bear Shaman Marga is enjoying the simple life in a cave over in Kresdor Kenning. To find her cave, start from the Grawlenfjord Waypoint - and follow the river north. The river will then branch to the east into a cave.",
@@ -449,6 +566,13 @@
           31288
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 290,
       "wikiText": "Fight the grawl by erasing cave paintings, destroying effigies, and smashing sacrificial offerings.",
       "waypointChatLink": "[&BMMDAAA=]"
@@ -472,6 +596,13 @@
       ],
       "chatLink": "[&BMMDAAA=]",
       "waypointChatLink": "[&BMMDAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 310,
       "wikiText": "Grawlenfjord is the territory of two tribes of grawl located in the southeast corner of Wayfarer Foothills."
     },
@@ -491,6 +622,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 363,
       "wikiText": "Drakkerjorg Pit is a point of interest in The Grekvelnn Burrows. This tunnel located near a grawl settlement is populated by ice elementals.",
@@ -579,6 +716,13 @@
           32030
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 450,
       "wikiText": "Commune with sacred wolves to start a pack hunt, defeat Sons of Svanir, wreck Svanir camps and banners, and free wolf pups.",
       "waypointChatLink": "[&BHIBAAA=]"
@@ -599,6 +743,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 452,
       "wikiText": "Heart of the Wolf is a point of interest within Outcast's Cleft. This altar dedicated to Wolf, one of the Spirits of the Wild, is one of the norn's sacred places. It is located at the foot of a cliff face in a small gully.",
@@ -621,6 +771,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 475,
       "wikiText": "Hirbadd's Camp is a point of interest in Outcast's Cleft. The Sons of Svanir found there often harasses the shrine of the Heart of the Wolf and its inhabitants.",
       "waypointChatLink": "[&BHIBAAA=]"
@@ -641,6 +797,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 523,
       "wikiText": "Alpenzure Cave is a point of interest within Outcast's Cleft. It is small cave due south from Outcasts Waypoint. The entrance is located in the back of a Sons of Svanir encampment.",
@@ -665,6 +827,13 @@
       ],
       "chatLink": "[&BHIBAAA=]",
       "waypointChatLink": "[&BHIBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 570,
       "wikiText": "Outcast's Cleft is an area within the Wayfarer Foothills. It holds a Sons of Svanir camp used to launch raids on the nearby shrines dedicated to the Spirits of the Wild."
     },
@@ -684,6 +853,13 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 652,
       "wikiText": "Molensk is a large dredge mine in the southwest corner of the Wayfarer Foothills.",
@@ -744,6 +920,13 @@
           31547
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 779,
       "wikiText": "Speak to Shaman Sigarr to transform into a snow leopard, then hunt prey and play with cubs.",
       "waypointChatLink": "[&BHIBAAA=]"
@@ -764,6 +947,12 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 782,
       "wikiText": "Heart of the Snow Leopard is a point of interest within Borealis Forest. This altar dedicated to Snow Leopard, one of the Spirits of the Wild, is one of the norn's sacred places. This shrine is located at the top of a small rise.",
@@ -816,6 +1005,13 @@
           30338
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 916,
       "wikiText": "Find hidden rabbit food and bring it to Bjarni. Scare hungry bunnies away from anyone carrying food.",
       "waypointChatLink": "[&BAEEAAA=]"
@@ -836,6 +1032,12 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 951,
       "wikiText": "Frostcreek Steading is a large building located in the south of Icevine Dale in Wayfarer Foothills. It is home to a norn hunter, Crag Wilcrucks, and his wolf companion Shastar.",
@@ -860,6 +1062,13 @@
       ],
       "chatLink": "[&BHYBAAA=]",
       "waypointChatLink": "[&BHYBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 979,
       "wikiText": "Taigan Groves is an area in the Wayfarer Foothills. It holds a norn settlement that often experiences trouble due to the nefarious activities performed by the kids residing there."
     },
@@ -882,6 +1091,13 @@
       ],
       "chatLink": "[&BHUBAAA=]",
       "waypointChatLink": "[&BHUBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1036,
       "wikiText": "Darkriven Bluffs is an area in the east of Wayfarer Foothills. It holds a small Sons of Svanir camp."
     },
@@ -901,6 +1117,13 @@
       "order": 26,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 1095,
       "wikiText": "Blane the Insane represents the Sons of Svanir of Hermit's Watch. Players must defeat him to earn a hero point.",
@@ -923,6 +1146,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1098,
       "wikiText": "Hermit's Watch is a Sons of Svanir encampment located on the northern edge of Darkriven Bluffs.",
       "waypointChatLink": "[&BHUBAAA=]"
@@ -944,6 +1173,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1114,
       "wikiText": "Darkriven Bluffs is an area in the east of Wayfarer Foothills. It holds a small Sons of Svanir camp.",
       "waypointChatLink": "[&BHUBAAA=]"
@@ -964,6 +1200,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1182,
       "wikiText": "Victor's Point is a point of interest and a small norn settlement within Taigan Groves.",
@@ -1052,6 +1294,13 @@
           30063
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1186,
       "wikiText": "Throw snowballs at children and dodge snowballs thrown at you. Fight off any hostile creatures when the children make someone angry.",
       "waypointChatLink": "[&BHYBAAA=]"
@@ -1075,6 +1324,13 @@
       ],
       "chatLink": "[&BH0BAAA=]",
       "waypointChatLink": "[&BH0BAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1248,
       "wikiText": "The Icesteppes is an area in the central section of the Wayfarer Foothills. It contains Twinspur Haven a sizeable Lionguard haven."
     },
@@ -1141,6 +1397,13 @@
           29225
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1264,
       "wikiText": "Patrol the road to Crossroads Haven, keeping the path clear and eliminating any enemies along the way. Destroy Sons of Svanir camps hidden around the Icesteppes.",
       "waypointChatLink": "[&BH0BAAA=]"
@@ -1161,6 +1424,13 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 1299,
       "wikiText": "The Icesteppes is an area in the central section of the Wayfarer Foothills. It contains Twinspur Haven a sizeable Lionguard haven.",
@@ -1185,6 +1455,13 @@
       ],
       "chatLink": "[&BH4BAAA=]",
       "waypointChatLink": "[&BH4BAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1335,
       "wikiText": "Frusenfell Creek is an area in the Wayfarer Foothills. This frozen river is inhabited by wurms. There is also a norn lodge whose owners often go and raid the nearby grawl."
     },
@@ -1204,6 +1481,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1365,
       "wikiText": "The Heart of Corruption is a point of interest in Frusenfell Creek, within the Wayfarer Foothills. It is a frozen body of water at the southeastern end of Hunter's Lake.",
@@ -1228,6 +1511,13 @@
       ],
       "chatLink": "[&BMIDAAA=]",
       "waypointChatLink": "[&BMIDAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1389,
       "wikiText": "Hunter's Lake is an area in the Wayfarer Foothills. An underground wurm nest is located in the middle of the lake."
     },
@@ -1290,6 +1580,13 @@
           29395
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1399,
       "wikiText": "Destroy any signs of the dragon's corruption, including his worshippers.",
       "waypointChatLink": "[&BMIDAAA=]"
@@ -1310,6 +1607,13 @@
       "order": 38,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 1449,
       "wikiText": "The Corrupted Spike juts out from the ground at a Sons of Svanir encampment near Hunter's Lake. Unleashing its frozen wrath summons forth a Veteran Elder Icebrood Troll and two Icebrood Minions.",
@@ -1332,6 +1636,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1455,
       "wikiText": "The Frozen Maw is a meta event that takes place in Hunter's Lake and Frusenfell Creek in Wayfarer Foothills, and involves helping Scholar Brogun investigate the cause of the grawl in the area becoming unusually aggressive.",
       "waypointChatLink": "[&BMIDAAA=]"
@@ -1352,6 +1662,12 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1502,
       "wikiText": "Kevach's Homestead is a busy Norn lodge operated by Lodge Keeper Kevach and his cook Chef Aldis. It is well known for its fine ale and food.",
@@ -1420,6 +1736,13 @@
           28892
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1504,
       "wikiText": "Retrieve frozen kegs from the ice cave and bring them to Volden. Help Hodir catch frozen kegs, and waken drunken patrons passed out in the snow.",
       "waypointChatLink": "[&BMEDAAA=]"
@@ -1440,6 +1763,13 @@
       "order": 42,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 1548,
       "wikiText": "Some Aging Ale Barrels are maturing in the Lostvyrm Cave, which is located halfway between Dolyak Pass and Hunter's Lake. Fight past the many wurms to sneak a swig and the challenge, though perhaps not the taste, may be rewarding.",
@@ -1464,6 +1794,13 @@
       ],
       "chatLink": "[&BMEDAAA=]",
       "waypointChatLink": "[&BMEDAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1590,
       "wikiText": "Dolyak Pass is an area in the northeast of the Wayfarer Foothills. Like the name suggests, many dolyak families live in the snowy hills."
     },
@@ -1538,6 +1875,13 @@
           28308
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1645,
       "wikiText": "Interact with a dolyak calf to capture it. Defend captured calves from predators.",
       "waypointChatLink": "[&BHsBAAA=]"
@@ -1561,6 +1905,13 @@
       ],
       "chatLink": "[&BHsBAAA=]",
       "waypointChatLink": "[&BHsBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1652,
       "wikiText": "Dolyak Pass is an area in the northeast of the Wayfarer Foothills. Like the name suggests, many dolyak families live in the snowy hills."
     },
@@ -1580,6 +1931,12 @@
       "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1706,
       "wikiText": "Rugnar's Steading is a norn steading located in Cragstead.",
@@ -1602,6 +1959,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1720,
       "wikiText": "Warmspring Grotto is a cavern occupied by cave spiders located in Cragstead and accessed from an entrance, outside of Cragstead, in Solitude Vale within Wayfarer Foothills.",
       "waypointChatLink": "[&BHwBAAA=]"
@@ -1622,6 +1985,13 @@
       "order": 48,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 1734,
       "wikiText": "An Ancient Cave Spring flows forth in the depths of Warmspring Grotto in Solitude Vale. The path leading to its soothing waters is guarded by several Veteran Cave Spiders that would hinder your progress.",
@@ -1646,6 +2016,13 @@
       ],
       "chatLink": "[&BHwBAAA=]",
       "waypointChatLink": "[&BHwBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1797,
       "wikiText": "Solitude Vale is an area in the Wayfarer Foothills. A large herd of dolyak as well as Cave Spider-riddled hot springs is found there."
     },
@@ -1712,6 +2089,13 @@
           28028
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1822,
       "wikiText": "Raid the territory controlled by the Sons of Svanir and destroy all signs of Jormag's corruption.",
       "waypointChatLink": "[&BHwBAAA=]"
@@ -1732,6 +2116,13 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 1855,
       "wikiText": "Svanir's Dome is a corrupted area located in the northern parts of the Wayfarer Foothills. It's one of the largest Sons of Svanir bases found throughout the Shiverpeak Mountains.",
@@ -1754,6 +2145,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1903,
       "wikiText": "Dragonblest Hold is a point of interest within Svanir's Dome. This large norn building is home to this area's Sons of Svanir leader and is covered with corrupted ice.",
       "waypointChatLink": "[&BHwBAAA=]"
@@ -1774,6 +2171,13 @@
       "order": 53,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 1924,
       "wikiText": "Bjord's Banner stands at the end of a small path atop Svanir's Dome. Triggering the banner will start Defeat Bjord and his crew.",
@@ -1798,6 +2202,13 @@
       ],
       "chatLink": "[&BHoBAAA=]",
       "waypointChatLink": "[&BHoBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 1988,
       "wikiText": "Dawnrise Pass is an area within the Wayfarer Foothills."
     },
@@ -1820,6 +2231,13 @@
       ],
       "chatLink": "[&BHkBAAA=]",
       "waypointChatLink": "[&BHkBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 2041,
       "wikiText": "Halvaunt Snowfield is an area in Wayfarer Foothills. It holds the Lionguard outpost Crossroads Haven, which has become a meeting place amongst merchants traveling between Hoelbrak and the Ascalonian territories."
     },
@@ -1898,6 +2316,13 @@
           28993
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 2052,
       "wikiText": "Fight Sons of Svanir and other dangers around the haven.",
       "waypointChatLink": "[&BHkBAAA=]"
@@ -1918,6 +2343,13 @@
       "order": 57,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 2098,
       "wikiText": "Wurmhowl Spikes is an area within the Wayfarer Foothills. This small pit holds a Sons of Svanir camp who often tries to desecrate the neaby statue of Jora.",
@@ -1942,6 +2374,13 @@
       ],
       "chatLink": "[&BHgBAAA=]",
       "waypointChatLink": "[&BHgBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 2127,
       "wikiText": "Halvaunt Snowfield is an area in Wayfarer Foothills. It holds the Lionguard outpost Crossroads Haven, which has become a meeting place amongst merchants traveling between Hoelbrak and the Ascalonian territories."
     },
@@ -1961,6 +2400,12 @@
       "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2145,
       "wikiText": "Edenvar's Homestead is a Point of Interest located in Halvaunt Snowfield. This lodge is home to a few crafters and two protectors of a statue of Jora found nearby.",
@@ -2077,6 +2522,13 @@
           29455
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 2181,
       "wikiText": "Kill dredge, destroy their machines, and free any prisoners you find.",
       "waypointChatLink": "[&BHgBAAA=]"
@@ -2140,6 +2592,13 @@
           29638
         ]
       ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 2233,
       "wikiText": "Slay rock dogs, or trade jotun objects from surrounding areas in exchange for jotun runestones; give runestones to Albin.",
       "waypointChatLink": "[&BH0BAAA=]"
@@ -2160,6 +2619,13 @@
       "order": 62,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 2287,
       "wikiText": "The Shadowhorns is an area found within Wayfarer Foothills. It holds several hot springs that are used by travelers to relax.",
@@ -2184,6 +2650,13 @@
       ],
       "chatLink": "[&BHcBAAA=]",
       "waypointChatLink": "[&BHcBAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 2294,
       "wikiText": "The Shadowhorns is an area found within Wayfarer Foothills. It holds several hot springs that are used by travelers to relax."
     },
@@ -2203,6 +2676,13 @@
       "order": 64,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 2312,
       "wikiText": "Burrisson the Blue is half-naked norn at The Shadowhorns. Characters must speak to him, then defeat him in combat, to earn a hero point.",
@@ -2225,6 +2705,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2383,
       "wikiText": "Haivoissen Kenning is an ancient jotun citadel located within The Osenfold Shear.",
       "waypointChatLink": "[&BAEEAAA=]"
@@ -2245,6 +2731,13 @@
       "order": 66,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 2420,
       "wikiText": "The Osenfold Shear is an area within the Wayfarer Foothills. It contains the fading remains of a still-inhabited jotun citadel. Outside the citadel are various ancient structures, including a magical monument.",
@@ -2269,6 +2762,13 @@
       ],
       "chatLink": "[&BAEEAAA=]",
       "waypointChatLink": "[&BAEEAAA=]",
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
+      ],
       "trailIndex": 2456,
       "wikiText": "The Osenfold Shear is an area within the Wayfarer Foothills. It contains the fading remains of a still-inhabited jotun citadel. Outside the citadel are various ancient structures, including a magical monument."
     },
@@ -2288,6 +2788,13 @@
       "order": 68,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        58,
+        2,
+        0
       ],
       "trailIndex": 2489,
       "wikiText": "Breakneck Pass is an area within the Wayfarer Foothills. This narrow canyon leading to Hoelbrak is defended by a few Lionguards.",
@@ -2309,6 +2816,12 @@
       "order": 69,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "Gaerta's Summit is a small area with various crystals, overlooking Breakneck Pass from Hangrammr Climb. It is named after Gaerta Whitebear.",

@@ -1,4 +1,5 @@
 #include "ui/viewer/ViewerTaskChips.h"
+#include "ui/HeartTaskDetails.h"
 #include "ui/viewer/ViewerComponents.h"
 #include "ui/viewer/ViewerLayout.h"
 #include "ui/viewer/ViewerModel.h"
@@ -220,7 +221,7 @@ static void DrawTaskChipTooltip(const TaskChip& chip)
     Gw2Ui::TooltipEnd();
 }
 
-void DrawHeartTaskChips(const App& app, const Step& s, float fs, ImU32 fallbackAccent, bool compact)
+void DrawHeartTaskChips(App& app, const Step& s, float fs, ImU32 fallbackAccent, bool compact)
 {
     if (s.Type != "heart" || s.TaskChips.empty()) return;
 
@@ -260,6 +261,7 @@ void DrawHeartTaskChips(const App& app, const Step& s, float fs, ImU32 fallbackA
         ImGui::PopID();
         lineW += itemW;
     }
+    if (s.HeartTasks) DrawHeartTaskDetails(*s.HeartTasks, app.state.heartGuideDetails, s.StepId);
     ImGui::Spacing();
 }
 
@@ -302,5 +304,8 @@ float EstimateTaskChipsHeight(const App& app, const Step& s, float fs, float con
     rowsH += currentRowH;
 
     const float labelH = Gw2Ui::MeasureWrappedHeight("Tasks", fs - 3.f, availW);
-    return labelH + 4.f * vs + rowsH + 7.f * vs;
+    float detailsH = 0.f;
+    if (s.HeartTasks && !s.HeartTasks->Details.empty())
+        detailsH = (app.state.heartGuideDetails.Owner == s.StepId && app.state.heartGuideDetails.Expanded) ? 285.f : 30.f;
+    return labelH + 4.f * vs + rowsH + 7.f * vs + detailsH;
 }

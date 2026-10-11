@@ -1,6 +1,18 @@
 {
   "farming": [
     {
+      "slug": "map-1558",
+      "mapId": 1558,
+      "name": "Map 1558",
+      "regionName": "",
+      "routeCount": 0,
+      "nodeCount": 3,
+      "byCategory": {
+        "ore": 3
+      },
+      "bundledZone": false
+    },
+    {
       "slug": "map-536",
       "mapId": 536,
       "name": "Map 536",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 32,
     "name": "Diessa Plateau",
@@ -44,6 +44,42 @@
       58048,
       28760
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 15,
+          "points_of_interest": 46,
+          "skill_challenges": 8,
+          "sectors": 28
+        },
+        "3": {
+          "tasks": 15,
+          "points_of_interest": 46,
+          "skill_challenges": 8,
+          "sectors": 28
+        },
+        "2": {
+          "tasks": 15,
+          "points_of_interest": 46,
+          "skill_challenges": 8,
+          "sectors": 28
+        },
+        "0": {
+          "tasks": 15,
+          "points_of_interest": 46,
+          "skill_challenges": 8,
+          "sectors": 28
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BN4AAAA=]",
       "waypointChatLink": "[&BN4AAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 15,
       "wikiText": "The Town of Nolan is an area within the Diessa Plateau. A group of Iron Legion charr have established this settlement situated where the ruined city of Nolani once was."
     },
@@ -138,6 +180,12 @@
           29698
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 19,
       "wikiText": "Disarm mines, gather scrap metal, and defeat Separatists along the road.",
       "waypointChatLink": "[&BN4AAAA=]"
@@ -159,6 +207,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 81,
       "wikiText": "The North Nolan Hatchery is a point of interest and a mostly instanced area within the Town of Nolan. This training facility is operated by the Blood Legion. Here they raise and train devourers for combat and as pets.",
       "waypointChatLink": "[&BN4AAAA=]"
@@ -179,6 +233,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 108,
       "wikiText": "Pretty safe and easy to get to in the scrapyard part of the Town of Nolan.",
@@ -227,6 +287,12 @@
           29516
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 169,
       "wikiText": "Help soldiers cull ghosts, light torches, and revive fallen allies.",
       "waypointChatLink": "[&BN4AAAA=]"
@@ -247,6 +313,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 200,
       "wikiText": "The Caravan Wreckage is a point of interest within the Oldgate Clearing. Here on the road from the Black Citadel is the burnt wreckage of a caravan. Separatists still linger in the area to waylay any unwary travelers.",
@@ -269,6 +341,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 234,
       "wikiText": "Phasma Castrum is a point of interest within the Oldgate Clearing. Through a hidden cleft and up a small rise lies this Flame Legion encampment.",
       "waypointChatLink": "[&BN4AAAA=]"
@@ -289,6 +367,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 272,
       "wikiText": "Dunrock Gulch is a point of interest within Oldgate Clearing. At the end of this canyon is a large Separatists camp. Situated near a troop of Flame Legion they hold an uneasy truce, preferring to raid travelers than attack their neighbors.",
@@ -348,6 +432,12 @@
           57387,
           29951
         ]
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 305,
       "wikiText": "Defeat Separatists, destroy their camp, and rescue captured charr.",
@@ -424,6 +514,12 @@
           29842
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 353,
       "wikiText": "Repel grub larva from plants, stop chickens from feeding, remove damaged plants.",
       "waypointChatLink": "[&BN0AAAA=]"
@@ -444,6 +540,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 382,
       "wikiText": "Start climbing to the South East of the vista, where the cliff becomes concave.",
@@ -468,6 +570,12 @@
       ],
       "chatLink": "[&BN0AAAA=]",
       "waypointChatLink": "[&BN0AAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 398,
       "wikiText": "The Town of Nageling is an area within the Diessa Plateau. This large walled settlement is occupied mostly by charr soldiers. One Blood Legion soldier in the town describes it as being in the \"Middle of cattle territory."
     },
@@ -487,6 +595,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 457,
       "wikiText": "This one is a bit tricky. You'll have to run southeast of the actual tower, there is a charr testing out a Cow Cannon. Wait until he is done testing cows, then go up and click cannon. Select get inside, it will shoot you onto the tower.",
@@ -509,6 +623,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 466,
       "wikiText": "The Moorwatch Tower is a point of interest within The Blasted Moors. This tall watchtower appears to be unscalable.",
       "waypointChatLink": "[&BNoAAAA=]"
@@ -529,6 +649,12 @@
       "order": 14,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 478,
       "wikiText": "Roj the Rowdy Butcher resides in the The Blasted Moors. Defeat him in combat to complete his challenge.",
@@ -641,6 +767,12 @@
           28835
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 493,
       "wikiText": "Motivate Blood Legion troops and destroy the ghost trebuchets and cannons in Grendich Ruins.",
       "waypointChatLink": "[&BNoAAAA=]"
@@ -664,6 +796,12 @@
       ],
       "chatLink": "[&BNoAAAA=]",
       "waypointChatLink": "[&BNoAAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 506,
       "wikiText": "The Blasted Moors is an area in the central section of the Diessa Plateau. Soldiers from the Blood Legion and Ascalonian ghosts are engaged in fierce combat here."
     },
@@ -683,6 +821,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 520,
       "wikiText": "The Old Grendich Aqueduct is a point of interest in The Blasted Moors. The abandoned sewer system lies deep under the ruins of the ancient city of Grendich. Great blood-borne energies from the surrounding area collect down here.",
@@ -705,6 +849,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 525,
       "wikiText": "Ascalonian Aqueduct is a hero challenge in The Blasted Moors. The blood-borne energies reside within the Old Grendich Aqueduct, beneath the Grendich Ruins.",
       "waypointChatLink": "[&BNoAAAA=]"
@@ -726,6 +876,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 578,
       "wikiText": "The Grendich Ruins is a point of interest located in The Blasted Moors. The one-time seat of judicial power in the Grendich village, the formerly grand courthouse is now in shambles.",
       "waypointChatLink": "[&BNoAAAA=]"
@@ -746,6 +902,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 663,
       "wikiText": "The Bovarin Estate is a point of interest within the Freewain Pastures. Located southeast of the Village of Butcher's Block is this cattle ranch. They raise cows primarily for consumption at Meatoberfest.",
@@ -770,6 +932,12 @@
       ],
       "chatLink": "[&BGABAAA=]",
       "waypointChatLink": "[&BGABAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 709,
       "wikiText": "Wodron Glens is a fertile plain lined with forested slopes whose trees team with game within the Diessa Plateau. It is also the location of the Charradis Estate, a large cattle ranch run by charr ranchers."
     },
@@ -828,6 +996,12 @@
           29284
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 733,
       "wikiText": "Catch bugs to feed to cattle, and appease stinky or moody cows.",
       "waypointChatLink": "[&BGABAAA=]"
@@ -851,6 +1025,12 @@
       ],
       "chatLink": "[&BF4BAAA=]",
       "waypointChatLink": "[&BF4BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 781,
       "wikiText": "The Ruins of Oldgate is an area within the Diessa Plateau. This dark forested plain is filled with the ancient ruins of a lost military outpost who once stood before The Searing."
     },
@@ -870,6 +1050,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 841,
       "wikiText": "Silex Castrum is a point of interest within Arcovian Foothills. The Flame Legion established this hidden camp here in order to conduct secretive rituals away from prying eyes.",
@@ -942,6 +1128,12 @@
           28680
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 946,
       "wikiText": "Take food and ale to soldiers, but keep the inebriated ones in check. Boost the spirits of dejected soldiers, and dispatch anyone who tries to hinder the celebration.",
       "waypointChatLink": "[&BF8BAAA=]"
@@ -963,6 +1155,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 983,
       "wikiText": "Climb up the ridge line in the northwest corner inside the Village and jump onto the wall. You'll land on a ledge under the top. Walk around to the Vista.",
       "waypointChatLink": "[&BF8BAAA=]"
@@ -983,6 +1181,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1003,
       "wikiText": "The Butcher's Yard is a point of interest within Halrunting Plains. It is an arena where people from all across Tyria go to test their strength in combat.",
@@ -1007,6 +1211,12 @@
       ],
       "chatLink": "[&BNkAAAA=]",
       "waypointChatLink": "[&BNkAAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1039,
       "wikiText": "Halrunting Plains is an area within the Diessa Plateau. It contains the entrance to the Wayfarer Foothills which is overlooked by the Lionguard haven, Charrgate Haven."
     },
@@ -1026,6 +1236,12 @@
       "order": 29,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1053,
       "wikiText": "Shaman Purda is a norn shaman of the Snow Leopard. She can be found in Charrgate Haven in the Halrunting Plains and defeating her earns the player a hero point.",
@@ -1078,6 +1294,12 @@
           28312
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1115,
       "wikiText": "Eliminate the dredge and their machinery. Revive fallen allies.",
       "waypointChatLink": "[&BNkAAAA=]"
@@ -1101,6 +1323,12 @@
       ],
       "chatLink": "[&BF8BAAA=]",
       "waypointChatLink": "[&BF8BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1158,
       "wikiText": "The Village of Butcher's Block is an area within the Diessa Plateau. It is currently celebrating Meatoberfest for the charr, which causes it to be a target by both dredge and separatists."
     },
@@ -1120,6 +1348,12 @@
       "order": 32,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1216,
       "wikiText": "Sharptail's Nest is found high in the devourer-filled Gram Hills. Disturbing the nest will summon Veteran Sharptail and two of her brood to attack. Defeat them to rise to the challenge.",
@@ -1144,6 +1378,12 @@
       ],
       "chatLink": "[&BMQDAAA=]",
       "waypointChatLink": "[&BMQDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1255,
       "wikiText": "Gram Hills is an area within the Diessa Plateau. This pleasant hillside is lined with trees along the road spanning its length. There is a small Iron Legion tower on the western edge."
     },
@@ -1198,6 +1438,12 @@
           28149
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1300,
       "wikiText": "Repair drilling machines, detonate rock piles, slay dredges, and collapse dredge holes.",
       "waypointChatLink": "[&BMQDAAA=]"
@@ -1219,6 +1465,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1329,
       "wikiText": "A simple yet safe access vista.",
       "waypointChatLink": "[&BMkDAAA=]"
@@ -1239,6 +1491,12 @@
       "order": 36,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1397,
       "wikiText": "Veruta Beefhawker is a strange charr hiding in an isolated cave who offers players her Tasty Meat which, upon consuming the item, will grant a hero point.",
@@ -1263,6 +1521,12 @@
       ],
       "chatLink": "[&BMkDAAA=]",
       "waypointChatLink": "[&BMkDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1461,
       "wikiText": "The Manbane's Outcrop is a cliff inhabited by black bears overlooking Blackblade Lake."
     },
@@ -1282,6 +1546,12 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1482,
       "wikiText": "Ritual Isle is a point of interest within Blackblade Lake. This small rocky isle sits in the southwestern corner of the lake.",
@@ -1303,6 +1573,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1504,
       "wikiText": "The Ebonshore Plant is a point of interest within the Rancher's Wash. This water treatment facility is a very important place for the charr in Ascalon.",
@@ -1367,6 +1643,12 @@
           28699
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1513,
       "wikiText": "Cull skale, retrieve water samples from test kits, and repair chemical dispensers in Blackblade Lake.",
       "waypointChatLink": "[&BJoDAAA=]"
@@ -1387,6 +1669,12 @@
       "order": 41,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1568,
       "wikiText": "Rancher-in-Training Poisonswill is a charr cub and rancher in training. He has an apple-loving pet bull of which he might be over-confident of in its abilities.",
@@ -1411,6 +1699,12 @@
       ],
       "chatLink": "[&BJoDAAA=]",
       "waypointChatLink": "[&BJoDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1579,
       "wikiText": "The Rancher's Wash is an area in the Diessa Plateau. It also contains two main farms who serves as suppliers of meat for the Black Citadel."
     },
@@ -1430,6 +1724,12 @@
       "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1631,
       "wikiText": "The Stonefall Estate is a point of interest within the Rancher's Wash. This farm raises mainly cattle but also tends to a few chickens. Charr farmers here must occasionally defend their herds from Separatists raids.",
@@ -1498,6 +1798,12 @@
           29690
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1653,
       "wikiText": "Protect livestock from Separatists, return chickens to Stonefall Estate, feed hungry cows, and fill empty water troughs.",
       "waypointChatLink": "[&BGEBAAA=]"
@@ -1518,6 +1824,12 @@
       "order": 45,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1780,
       "wikiText": "The Remains of the Northern Wall are part of the Northern Wall which once stood in defense of Ascalon from the charr horde.",
@@ -1540,6 +1852,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1784,
       "wikiText": "One of the hardest vistas to get to quickly. Bringing a friend to help in combat is highly advisable. Complex route starts SW of waypoint with stairs up.",
       "waypointChatLink": "[&BGEBAAA=]"
@@ -1560,6 +1878,12 @@
       "order": 47,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1803,
       "wikiText": "Camp Althea is a point of interest within The Breached Wall. Secluded in the ruined structure of the shattered Great Northern Wall, a small band of Separatists have pitched their campsite.",
@@ -1584,6 +1908,12 @@
       ],
       "chatLink": "[&BGEBAAA=]",
       "waypointChatLink": "[&BGEBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1821,
       "wikiText": "The Breached Wall is an area within the Diessa Plateau consisting of a section of the shattered Great Northern Wall of Ascalon."
     },
@@ -1634,6 +1964,12 @@
           29361
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1887,
       "wikiText": "Stop Separatists from sabotaging mill equipment, pick them off with sniper rifles, and disarm their bombs. Also, motivate lazy workers.",
       "waypointChatLink": "[&BMYDAAA=]"
@@ -1657,6 +1993,12 @@
       ],
       "chatLink": "[&BMYDAAA=]",
       "waypointChatLink": "[&BMYDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1899,
       "wikiText": "Reaper's Corridor is an area populated by Separatists forces preying on the Redreave Mill."
     },
@@ -1676,6 +2018,12 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1929,
       "wikiText": "Easy to access from the village.",
@@ -1728,6 +2076,12 @@
           29434
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1962,
       "wikiText": "Help train young skelk, order trained skelk to assist around the mill, and take out hostile skelk around the mill.",
       "waypointChatLink": "[&BMYDAAA=]"
@@ -1748,6 +2102,12 @@
       "order": 53,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1970,
       "wikiText": "The Raintimber Mill is a point of interest in Diessa Plateau. From this location much of the wood used by the Charr is processed. Many workers can be found here working at the mill and training skelk to cut wood.",
@@ -1772,6 +2132,12 @@
       ],
       "chatLink": "[&BGQBAAA=]",
       "waypointChatLink": "[&BGQBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2007,
       "wikiText": "Breachwater Lake is a sizeable lake located in the southeast of the Diessa Plateau. It is mostly inhabited by drakes and skale."
     },
@@ -1791,6 +2157,12 @@
       "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2042,
       "wikiText": "Burntfur's Pool is a point of interest within Breachwater Lake. This cave and its shores are the breeding ground for drakes.",
@@ -1812,6 +2184,12 @@
       "order": 56,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2098,
       "wikiText": "Nemus Groves is an area surrounding the lumbermill Raintimber Mill in the southeast of the Diessa Plateau. This forest is the source of wood for the three woodmill found in the area.",
@@ -1836,6 +2214,12 @@
       ],
       "chatLink": "[&BGMBAAA=]",
       "waypointChatLink": "[&BGMBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2127,
       "wikiText": "Nemus Groves is an area surrounding the lumbermill Raintimber Mill in the southeast of the Diessa Plateau. This forest is the source of wood for the three woodmill found in the area."
     },
@@ -1858,6 +2242,12 @@
       ],
       "chatLink": "[&BMUDAAA=]",
       "waypointChatLink": "[&BMUDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2183,
       "wikiText": "Sanctum Way is an area within the Diessa Plateau. This plain is heavily populated by hyenas who are preying on travelers and wildlife alike."
     },
@@ -1877,6 +2267,12 @@
       "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2209,
       "wikiText": "The Old Holtimm Abbey is a point of interest within the Sanctum Way. This ancient ruined church is haunted by Ascalonian ghosts.",
@@ -1977,6 +2373,12 @@
           28699
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2226,
       "wikiText": "Use mill explosives to clear tree stumps and wasp nests. Cut down Bloodsaw Mill tree saplings, and dispose of the wood at a fire pit.",
       "waypointChatLink": "[&BNsAAAA=]"
@@ -2000,6 +2402,12 @@
       ],
       "chatLink": "[&BNsAAAA=]",
       "waypointChatLink": "[&BNsAAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2248,
       "wikiText": "Bulliyak Arsenal is an outpost serving as a warehouse for the forces attacking the Flame Legion stronghold Incendio Templum."
     },
@@ -2022,6 +2430,12 @@
       ],
       "chatLink": "[&BEIEAAA=]",
       "waypointChatLink": "[&BEIEAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2291,
       "wikiText": "Blackblade Lake is a large narrow lake in the northeast of the Diessa Plateau. Two small islands can be found on the lake and the lake itself is mostly inhabited by skale."
     },
@@ -2041,6 +2455,12 @@
       "order": 63,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2302,
       "wikiText": "A Warning: Bogfang the Skale sign can be found on the larger of two small islands in northern Blackblade Lake. Interacting with it will spawn Bogfang.",
@@ -2062,6 +2482,12 @@
       "order": 64,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2368,
       "wikiText": "This vista is located towards the north end of the zone map. Simple to get to. Hint: jump from the smaller stone on to the larger one by the wall.",
@@ -2086,6 +2512,12 @@
       ],
       "chatLink": "[&BNwAAAA=]",
       "waypointChatLink": "[&BNwAAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2384,
       "wikiText": "The Flame Temple Tombs is an area and the location of a Mini-dungeon in the Diessa Plateau and are the actual crypts of the Font of Rhand."
     },
@@ -2132,6 +2564,12 @@
           28172
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2427,
       "wikiText": "Infiltrate and sabotage the Flame Legion headquarters.",
       "waypointChatLink": "[&BGIBAAA=]"
@@ -2155,6 +2593,12 @@
       ],
       "chatLink": "[&BGIBAAA=]",
       "waypointChatLink": "[&BGIBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2441,
       "wikiText": "Incendio Templum is a small area in the northeast of the Diessa Plateau. Its the main base of operation for the Flame Legion in the local region."
     },
@@ -2174,6 +2618,12 @@
       "order": 68,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "An easy access vista once you have fought your way into the area.",

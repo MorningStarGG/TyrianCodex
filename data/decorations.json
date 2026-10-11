@@ -22537,6 +22537,38 @@
         }
       ]
     },
+    "851": {
+      "name": "Roller Beetle Boost Pad",
+      "desc": "",
+      "icon": "https://render.guildwars2.com/file/016C9BC096F609BA4AC2FD3FB401D35656183A59/3805870.png",
+      "categories": [
+        13
+      ],
+      "max": 250,
+      "source": "",
+      "wiki": "Roller Beetle Boost Pad (Handiwork)",
+      "handiwork": 400,
+      "recipeId": 15726,
+      "sheet": "Recipe: Roller Beetle Boost Pad",
+      "recipe": [
+        {
+          "count": 1,
+          "name": "Charged Core"
+        },
+        {
+          "count": 1,
+          "name": "Glob of Ectoplasm"
+        },
+        {
+          "count": 15,
+          "name": "Charged Titan Ore"
+        },
+        {
+          "count": 5,
+          "name": "Racing Medallion"
+        }
+      ]
+    },
     "852": {
       "name": "Jade Tech Microwave",
       "desc": "Crafted with Homesteading Mastery.",
@@ -24817,7 +24849,7 @@
       "wiki": "Wind Aspect Crystal (Handiwork)",
       "handiwork": 300,
       "recipeId": 15164,
-      "sheet": "Recipe: Wind Aspect Crystal",
+      "sheet": "Homestead Recipe Book: Four Winds, Volume 8; Recipe: Wind Aspect Crystal",
       "recipe": [
         {
           "count": 20,
@@ -24846,7 +24878,7 @@
       "wiki": "Sun Aspect Crystal (Handiwork)",
       "handiwork": 300,
       "recipeId": 15165,
-      "sheet": "Recipe: Sun Aspect Crystal",
+      "sheet": "Homestead Recipe Book: Four Winds, Volume 8; Recipe: Sun Aspect Crystal",
       "recipe": [
         {
           "count": 20,
@@ -24875,7 +24907,7 @@
       "wiki": "Zephyrite Display Stand (Handiwork)",
       "handiwork": 300,
       "recipeId": 15173,
-      "sheet": "Recipe: Zephyrite Display Stand",
+      "sheet": "Homestead Recipe Book: Four Winds, Volume 8; Recipe: Zephyrite Display Stand",
       "recipe": [
         {
           "count": 20,
@@ -24937,7 +24969,7 @@
       "wiki": "Siege Turtle Rental Post (Handiwork)",
       "handiwork": 225,
       "recipeId": 15169,
-      "sheet": "Recipe: Siege Turtle Rental Post",
+      "sheet": "Homestead Recipe Book: Four Winds, Volume 8; Recipe: Siege Turtle Rental Post",
       "recipe": [
         {
           "count": 35,
@@ -24999,7 +25031,7 @@
       "wiki": "Lightning Aspect Crystal (Handiwork)",
       "handiwork": 300,
       "recipeId": 15171,
-      "sheet": "Recipe: Lightning Aspect Crystal",
+      "sheet": "Homestead Recipe Book: Four Winds, Volume 8; Recipe: Lightning Aspect Crystal",
       "recipe": [
         {
           "count": 20,
@@ -26207,7 +26239,19 @@
       ],
       "max": 250,
       "source": "Homesteading (Handiwork)",
-      "wiki": "Burlap Sack Pile (Handiwork)"
+      "wiki": "Burlap Sack Pile (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15292,
+      "recipe": [
+        {
+          "count": 15,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 15,
+          "name": "Bolt of Jute"
+        }
+      ]
     },
     "999": {
       "name": "Wooden Beam (16 x 120 x 16)",
@@ -26594,6 +26638,35 @@
         {
           "count": 5,
           "name": "Elder Wood Plank"
+        }
+      ]
+    },
+    "1021": {
+      "name": "Replica Castoran Mirror",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/5D4E90A6F72050AA3190FE030B02B81D91EF07E9/3805875.png",
+      "categories": [
+        4,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Replica Castoran Mirror (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15360,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 20,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 20,
+          "name": "Gold Ingot"
+        },
+        {
+          "count": 5,
+          "name": "Sapphire Orb"
         }
       ]
     },
@@ -27190,6 +27263,34 @@
         {
           "count": 6,
           "name": "Elder Wood Plank"
+        }
+      ]
+    },
+    "1047": {
+      "name": "Island Fern (Wide)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/13ACF0B4EE9A775E790DCA167E602ABB24E0DDE8/3805862.png",
+      "categories": [
+        20,
+        7
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Island Fern (Wide) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15192,
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 15,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 2,
+          "name": "Evergreen Lodestone"
         }
       ]
     },
@@ -28429,6 +28530,55 @@
         }
       ]
     },
+    "1105": {
+      "name": "Seer Relic (Map)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/22B8A4F1A2E4CD54BE0C999F1407BDCA1B7A3E1F/3805874.png",
+      "categories": [
+        14,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Relic (Map) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15582,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 10,
+          "name": "Gold Ingot"
+        }
+      ]
+    },
+    "1106": {
+      "name": "Windowed Wall 120 x 240",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/0B3740A235CF10B70E03D39E974A49D06A3E09F8/3805884.png",
+      "categories": [
+        1,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Windowed Wall 120 x 240 (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15442,
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 5,
+          "name": "Elder Wood Plank"
+        }
+      ]
+    },
     "1109": {
       "name": "Wall Gable 360 x 200 Mirror",
       "desc": "Crafted with Homesteading Mastery.",
@@ -28446,6 +28596,30 @@
         {
           "count": 10,
           "name": "Refined Homestead Wood"
+        }
+      ]
+    },
+    "1110": {
+      "name": "Extended Stairs (Clockwise Corner)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/062B0FD6B309117A6EBE150D052524ABA9A6A10A/3805866.png",
+      "categories": [
+        1,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Extended Stairs (Clockwise Corner) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15495,
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 4,
+          "name": "Elder Wood Plank"
         }
       ]
     },
@@ -28515,6 +28689,30 @@
         {
           "count": 5,
           "name": "Refined Homestead Metal"
+        }
+      ]
+    },
+    "1114": {
+      "name": "Ship Rib",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/A707397D4A35059B5CFEDB23FDD03FEFCF7867C6/3805881.png",
+      "categories": [
+        1,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Ship Rib (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15535,
+      "recipe": [
+        {
+          "count": 25,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 20,
+          "name": "Elder Wood Plank"
         }
       ]
     },
@@ -28931,6 +29129,35 @@
         }
       ]
     },
+    "1136": {
+      "name": "Seer Chest (Small)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/264278E8716151D9EE9260ABD362A13CD7E3A92C/3805872.png",
+      "categories": [
+        4,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Chest (Small) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15480,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 20,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 10,
+          "name": "Gold Ingot"
+        },
+        {
+          "count": 15,
+          "name": "Raw Enchanting Stone"
+        }
+      ]
+    },
     "1137": {
       "name": "Mimosa Tree",
       "desc": "Crafted with Homesteading Mastery.",
@@ -29053,6 +29280,31 @@
         }
       ]
     },
+    "1144": {
+      "name": "Seer Tablet (Astro)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/E713053D9102F47DA3C4FE2A6015DB714E745DB8/3805877.png",
+      "categories": [
+        4,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Tablet (Astro) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15472,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 10,
+          "name": "Onyx Core"
+        }
+      ]
+    },
     "1148": {
       "name": "Aetherblade Hideout Banner",
       "desc": "Crafted with Homesteading Mastery.",
@@ -29119,6 +29371,30 @@
         {
           "count": 15,
           "name": "Refined Homestead Wood"
+        }
+      ]
+    },
+    "1154": {
+      "name": "Ship Bowsprit",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/62FE273AD3F0A4E34E96774FF97EF3FD6F5E5CB7/3805882.png",
+      "categories": [
+        1,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Ship Bowsprit (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15501,
+      "recipe": [
+        {
+          "count": 25,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 15,
+          "name": "Elder Wood Plank"
         }
       ]
     },
@@ -29767,7 +30043,8 @@
           "count": 10,
           "name": "Refined Homestead Wood"
         }
-      ]
+      ],
+      "premium": true
     },
     "1189": {
       "name": "Super Rapids Pillar",
@@ -30697,7 +30974,21 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Water Jet (Straight)",
+      "recipeId": 15707,
+      "sheet": "Black Lion Poolside Party Water Jet (Straight) Recipe",
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        }
+      ],
+      "premium": true
     },
     "1224": {
       "name": "Poolside Party Pool",
@@ -30707,7 +30998,21 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Pool",
+      "recipeId": 15703,
+      "sheet": "Black Lion Poolside Party Pool Recipe",
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        }
+      ],
+      "premium": true
     },
     "1225": {
       "name": "Poolside Party Crab Floaty",
@@ -30717,7 +31022,21 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Crab Floaty",
+      "recipeId": 15704,
+      "sheet": "Black Lion Poolside Party Crab Floaty Recipe",
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        }
+      ],
+      "premium": true
     },
     "1226": {
       "name": "Poolside Party Umbrella",
@@ -30727,7 +31046,21 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Umbrella",
+      "recipeId": 15708,
+      "sheet": "Black Lion Poolside Party Umbrella Recipe",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        }
+      ],
+      "premium": true
     },
     "1227": {
       "name": "Poolside Party Drink Stand",
@@ -30737,7 +31070,21 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Drink Stand",
+      "recipeId": 15702,
+      "sheet": "Black Lion Poolside Party Drink Stand Recipe",
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        }
+      ],
+      "premium": true
     },
     "1228": {
       "name": "Poolside Party Water Jet (Fan)",
@@ -30747,7 +31094,21 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Water Jet (Fan)",
+      "recipeId": 15705,
+      "sheet": "Black Lion Poolside Party Water Jet (Fan) Recipe",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        }
+      ],
+      "premium": true
     },
     "1229": {
       "name": "Poolside Party Floor",
@@ -30757,7 +31118,21 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Floor",
+      "recipeId": 15706,
+      "sheet": "Black Lion Poolside Party Floor Recipe",
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        }
+      ],
+      "premium": true
     },
     "1230": {
       "name": "Poolside Party Table",
@@ -30767,7 +31142,575 @@
         27
       ],
       "max": 250,
-      "source": ""
+      "source": "",
+      "wiki": "Poolside Party Table",
+      "recipeId": 15709,
+      "sheet": "Black Lion Poolside Party Table Recipe",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        }
+      ],
+      "premium": true
+    },
+    "1231": {
+      "name": "Plush Kralky",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/B079FA2867144F509A7F03B79C5495C015ACDE12/3795955.png",
+      "categories": [
+        1,
+        24
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Plush Kralky (Handiwork)",
+      "handiwork": 400,
+      "recipeId": 15710,
+      "sheet": "Recipe: Plush Kralky",
+      "recipe": [
+        {
+          "count": 35,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Crystal Core"
+        },
+        {
+          "count": 10,
+          "name": "Charged Quartz Crystal"
+        }
+      ]
+    },
+    "1232": {
+      "name": "Canthan Merchant Stall (Open-Backed)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/6842DAA04562442BFD16EF7806BCBC09246B66D2/3795954.png",
+      "categories": [
+        1,
+        24
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Canthan Merchant Stall (Open-Backed) (Handiwork)",
+      "handiwork": 300,
+      "recipeId": 15716,
+      "sheet": "Recipe: Canthan Merchant Stall (Open-Backed)",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 5,
+          "name": "Hard Wood Plank"
+        },
+        {
+          "count": 10,
+          "name": "Quartz Crystal"
+        }
+      ]
+    },
+    "1233": {
+      "name": "Canthan Merchant Stall",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/79BE54A297014DE37163BDCA690150F4F932924E/3795952.png",
+      "categories": [
+        1,
+        24
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Canthan Merchant Stall (Handiwork)",
+      "handiwork": 300,
+      "recipeId": 15711,
+      "sheet": "Recipe: Canthan Merchant Stall",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 5,
+          "name": "Hard Wood Plank"
+        },
+        {
+          "count": 10,
+          "name": "Quartz Crystal"
+        }
+      ]
+    },
+    "1234": {
+      "name": "Canthan Trader Cart",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/E548C7924EE6ACE1C52C30B79599C4BA5F386917/3795951.png",
+      "categories": [
+        1,
+        24
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Canthan Trader Cart (Handiwork)",
+      "handiwork": 300,
+      "recipeId": 15717,
+      "sheet": "Recipe: Canthan Trader Cart",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 5,
+          "name": "Bolt of Linen"
+        },
+        {
+          "count": 10,
+          "name": "Quartz Crystal"
+        }
+      ]
+    },
+    "1235": {
+      "name": "Canthan Merchant Canopy",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/A712E335BFBF28AB064D753AB3BFA6BF09DA3EDA/3795953.png",
+      "categories": [
+        1,
+        24
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Canthan Merchant Canopy (Handiwork)",
+      "handiwork": 300,
+      "recipeId": 15720,
+      "sheet": "Recipe: Canthan Merchant Canopy",
+      "recipe": [
+        {
+          "count": 12,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 3,
+          "name": "Hard Wood Plank"
+        },
+        {
+          "count": 10,
+          "name": "Quartz Crystal"
+        }
+      ]
+    },
+    "1236": {
+      "name": "Bird's Nest",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/F91A09C202AF044A48A9785BBB5741B938D817FB/3805861.png",
+      "categories": [
+        20,
+        7
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Bird's Nest (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15765,
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 25,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 3,
+          "name": "Evergreen Lodestone"
+        }
+      ]
+    },
+    "1237": {
+      "name": "Seer Ruins Rubble",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/49B76DD0B9B9FA2E154161787D069C1AFC06C60A/3805876.png",
+      "categories": [
+        1,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Ruins Rubble (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15727,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 30,
+          "name": "Onyx Core"
+        }
+      ]
+    },
+    "1238": {
+      "name": "Seer Oculus",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/E372443AFE0218B6673E05A5E34CAA93EAC573E9/3805873.png",
+      "categories": [
+        4,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Oculus (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15724,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 10,
+          "name": "Gold Ingot"
+        }
+      ]
+    },
+    "1239": {
+      "name": "Norn Tent (Wide)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/F24F52D9CD3ACF7711975831E80EB994A758D6BD/3805864.png",
+      "categories": [
+        20,
+        4
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Norn Tent (Wide) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15748,
+      "recipe": [
+        {
+          "count": 60,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 20,
+          "name": "Thick Leather Section"
+        },
+        {
+          "count": 20,
+          "name": "Bolt of Jute"
+        }
+      ]
+    },
+    "1240": {
+      "name": "Saurian Egg",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/F4EF014043C265EBD817F66AC527DE3EF0E929DF/3805865.png",
+      "categories": [
+        20,
+        7
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Saurian Egg (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15721,
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 50,
+          "name": "Leaf Fossil"
+        },
+        {
+          "count": 1,
+          "name": "Egg"
+        }
+      ]
+    },
+    "1241": {
+      "name": "Iron Column 16 x 240 x 30",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/984EB3C7E5F64C3E4A1DEE7B053448BE79A40F0E/3805867.png",
+      "categories": [
+        1,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Iron Column 16 x 240 x 30 (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15722,
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 10,
+          "name": "Iron Ingot"
+        }
+      ]
+    },
+    "1242": {
+      "name": "Arcane Eye Banner",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/AA1ED9399EF8C448A06BC7E452B722C64EDD9471/3805860.png",
+      "categories": [
+        4,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Arcane Eye Banner (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15732,
+      "sheet": "Recipe: Arcane Eye Banner",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 5,
+          "name": "Bolt of Cotton"
+        },
+        {
+          "count": 1,
+          "name": "Pouch of Blue Pigment"
+        },
+        {
+          "count": 1,
+          "name": "Pouch of Red Pigment"
+        }
+      ]
+    },
+    "1243": {
+      "name": "Jungle Tree Branch",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/A30CEBEC0DED7BADB8616905C25FD97127CB6BAD/3805869.png",
+      "categories": [
+        20,
+        7
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Jungle Tree Branch (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15769,
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 10,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Elder Wood Plank"
+        }
+      ]
+    },
+    "1244": {
+      "name": "Seer Tome (Closed)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/6B79CD9C56DF29DED8A11FE922186EDE93021543/3805879.png",
+      "categories": [
+        4,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Tome (Closed) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15760,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 1,
+          "name": "Sheet of Premium Paper"
+        }
+      ]
+    },
+    "1245": {
+      "name": "Seer Tome (Open)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/914667D6BC5672096B229C6B7CBD3B29BC6E3648/3805880.png",
+      "categories": [
+        4,
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Tome (Open) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15762,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 1,
+          "name": "Sheet of Premium Paper"
+        }
+      ]
+    },
+    "1246": {
+      "name": "Seer Casket",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/140ADB17F52F66D96DC0C6F80C14290438182573/3805871.png",
+      "categories": [
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Casket (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15730,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 20,
+          "name": "Onyx Core"
+        }
+      ]
+    },
+    "1247": {
+      "name": "Norn Tent (Narrow)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/F76A0E579C3806C8CD789FF4EDA902D24AC5E060/3805863.png",
+      "categories": [
+        20,
+        4
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Norn Tent (Narrow) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15729,
+      "recipe": [
+        {
+          "count": 30,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Thick Leather Section"
+        },
+        {
+          "count": 10,
+          "name": "Bolt of Jute"
+        }
+      ]
+    },
+    "1248": {
+      "name": "Seer Terminal",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/16DC0198CD09D828066BE40792062A1B58534470/3805878.png",
+      "categories": [
+        20
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Seer Terminal (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15734,
+      "sheet": "Homestead Recipe Book: Seer Catalogue Volume 2",
+      "recipe": [
+        {
+          "count": 20,
+          "name": "Refined Homestead Metal"
+        },
+        {
+          "count": 10,
+          "name": "Gold Ingot"
+        },
+        {
+          "count": 5,
+          "name": "Sapphire Orb"
+        },
+        {
+          "count": 25,
+          "name": "Raw Enchanting Stone"
+        }
+      ]
+    },
+    "1249": {
+      "name": "Withered Ivy",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/6AE4FE34D1ACEA2B62D3D7CCD05F4B1FC9D01A93/3805885.png",
+      "categories": [
+        20,
+        7
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Withered Ivy (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15766,
+      "recipe": [
+        {
+          "count": 10,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 25,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 3,
+          "name": "Evergreen Lodestone"
+        }
+      ]
+    },
+    "1250": {
+      "name": "Jungle Tree Branch (Broken)",
+      "desc": "Crafted with Homesteading Mastery.",
+      "icon": "https://render.guildwars2.com/file/A87252BC5A9E5077E8310946E09F01050D66B92D/3805868.png",
+      "categories": [
+        20,
+        7
+      ],
+      "max": 250,
+      "source": "Homesteading (Handiwork)",
+      "wiki": "Jungle Tree Branch (Broken) (Handiwork)",
+      "handiwork": 1,
+      "recipeId": 15758,
+      "recipe": [
+        {
+          "count": 5,
+          "name": "Refined Homestead Wood"
+        },
+        {
+          "count": 10,
+          "name": "Refined Homestead Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Elder Wood Plank"
+        }
+      ]
     }
   },
   "glyphs": {

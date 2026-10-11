@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1575,
     "name": "Mistburned Barrens",
@@ -44,6 +44,42 @@
       34921,
       11721
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 1,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "3": {
+          "tasks": 1,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "2": {
+          "tasks": 1,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "0": {
+          "tasks": 1,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 12
+        }
+      },
+      "unavailable": []
+    },
     "release": "jw"
   },
   "primaryKind": "mount",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BFAPAAA=]",
       "waypointChatLink": "[&BFAPAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2,
       "wikiText": "The Alliance Staging Ground is an area in west Mistburned Barrens. It is an ancient mursaat structure that has been converted by the Tyrian Alliance into a base camp for sending scouting missions into the zone."
     },
@@ -88,8 +130,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 15,
-      "wikiText": "The Obsidian Rise is a point of interest in the Alliance Staging Ground, within Mistburned Barrens.",
+      "wikiText": "The Obsidian Rise is a point of interest in the Alliance Staging Ground.",
       "waypointChatLink": "[&BFAPAAA=]"
     },
     {
@@ -171,6 +219,12 @@
           11633
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 20,
       "wikiText": "Assist the kodan by undertaking surveys, keeping the camp running, and helping with whatever other odds and ends they might need.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -191,6 +245,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 61,
       "wikiText": "Ruin Outpost is a point of interest in the Nexus of Moonlight, within Mistburned Barrens.",
@@ -213,6 +273,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 93,
       "wikiText": "Construct Graveyard is a point of interest in the Valley of Agony within Mistburned Barrens. It contains the remains of multiple jade constructs.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -233,6 +299,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 148,
       "wikiText": "Valravn's Vigil is a point of interest in the Valley of Agony, within Mistburned Barrens.",
@@ -255,6 +327,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 195,
       "wikiText": "Saul's Vision is a point of interest in the Hidden Sacrarium, within Mistburned Barrens.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -275,6 +353,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 237,
       "wikiText": "The Hidden Sacrarium is a hidden area in northwest Mistburned Barrens. It is an area that went untamed by the mursaat, now infested with Mistburned and titanspawn.",
@@ -297,6 +381,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 367,
       "wikiText": "Collapsed Arch is a point of interest in the Seer's March, within Mistburned Barrens.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -317,6 +407,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 372,
       "wikiText": "Yagon's Gift is a point of interest in the Seer's March, within Mistburned Barrens. It is named after the lingering effects of Spectral Agony, created by Yagon during the lengthy mursaat-Seer war.",
@@ -339,6 +435,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 496,
       "wikiText": "The Gilded Approach is a point of interest in the Grand Athenaeum, within Mistburned Barrens.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -359,6 +461,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 530,
       "wikiText": "The Veiled Library is a point of interest in the Grand Athenaeum, within Mistburned Barrens. It is a mursaat library that has been overrun with Mistburned. Peaceful and hostile mursaat ghosts also haunt the premises.",
@@ -381,6 +489,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 575,
       "wikiText": "Tarn of True Sight is a point of interest in the Grand Athenaeum, within Mistburned Barrens.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -402,8 +516,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 680,
-      "wikiText": "The Obsidian Scar is a point of interest in the Nexus of Moonlight, within Mistburned Barrens.",
+      "wikiText": "The Obsidian Scar is a point of interest above the entrance to the mursaat ruins in Nexus of Moonlight.",
       "waypointChatLink": "[&BFAPAAA=]"
     },
     {
@@ -422,6 +542,12 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 690,
       "wikiText": "Nexus of Moonlight is an area in the center of Mistburned Barrens.",
@@ -444,6 +570,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 737,
       "wikiText": "Altar of the Accursed is a point of interest in the South Barrens, within Mistburned Barrens.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -464,6 +596,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 827,
       "wikiText": "The Unseen Passage is a point of interest in the Grand Athenaeum, within Mistburned Barrens.",
@@ -486,6 +624,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 944,
       "wikiText": "The Garden of the Unseen is an area in Mistburned Barrens.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -506,6 +650,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 964,
       "wikiText": "Celsa's Orchard is a point of interest in the Garden of the Unseen, within Mistburned Barrens. It is presumably named after Yagon's mate, Arch Steward Celsa.",
@@ -528,6 +678,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1040,
       "wikiText": "Forge of the Blood Phenom is a point of interest in the Laboratory, within Mistburned Barrens. Manikaz, the Blood Phenom, carried out many of his cruel bloodstone experiments in this location.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -548,6 +704,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1125,
       "wikiText": "The Channeling Chamber is a point of interest in the Whispering Caverns, within Mistburned Barrens.",
@@ -570,6 +732,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1202,
       "wikiText": "Lakeside Watch is a point of interest in the The Golden Lake, within Mistburned Barrens.",
       "waypointChatLink": "[&BFAPAAA=]"
@@ -590,6 +758,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1249,
       "wikiText": "The Hall of Passing is a point of interest in the southeast of the Golden Lake, in Mistburned Barrens.",

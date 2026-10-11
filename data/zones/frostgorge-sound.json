@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 30,
     "name": "Frostgorge Sound",
@@ -44,6 +44,42 @@
       55040,
       25984
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 11,
+          "points_of_interest": 45,
+          "skill_challenges": 7,
+          "sectors": 24
+        },
+        "3": {
+          "tasks": 11,
+          "points_of_interest": 45,
+          "skill_challenges": 7,
+          "sectors": 24
+        },
+        "2": {
+          "tasks": 11,
+          "points_of_interest": 45,
+          "skill_challenges": 7,
+          "sectors": 24
+        },
+        "0": {
+          "tasks": 11,
+          "points_of_interest": 45,
+          "skill_challenges": 7,
+          "sectors": 24
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BHoCAAA=]",
       "waypointChatLink": "[&BHoCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 23,
       "wikiText": "Earthshake Basin is an area located in eastern side of Frostgorge Sound. A large camp was established here by the Pact in order to face off against the Claws of Jormag, fearsome champions of the Elder Dragon Jormag."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 43,
       "wikiText": "Elder's Vale is the primary Pact encampment in Frostgorge Sound that acts as the first line of defense against the icebrood.",
@@ -108,6 +156,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 85,
       "wikiText": "Start at the north-east corner of the rock with the vist and walk/jump your way to the vista in a straight line.",
@@ -156,6 +210,12 @@
           24965
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 185,
       "wikiText": "Destroy icebrood, free refugees, light the way, and protect the kodan.",
       "waypointChatLink": "[&BHsCAAA=]"
@@ -179,6 +239,12 @@
       ],
       "chatLink": "[&BHsCAAA=]",
       "waypointChatLink": "[&BHsCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 189,
       "wikiText": "Snow Climb is an area in the northeast of Frostgorge Sound. A camp was established here by kodan from the fallen sanctuary Honor of the Waves that went scouting for a new place to stay."
     },
@@ -198,6 +264,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 406,
       "wikiText": "From the waypoint go to the small camp west of the Elder's Vale vista, then south to Trionic lattice mountain.",
@@ -219,6 +291,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 432,
       "wikiText": "Sacred Trust is a camp of kodan refugees in Yakkington's Toil. It started as a scout camp for the Honor of the Waves. Now the scouts have nowhere to go, as icebrood have assaulted their Sanctuary.",
@@ -275,6 +353,12 @@
           26508
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 493,
       "wikiText": "Scholar Inka needs summoning stones to conduct experiments, repaired equipment to monitor imps, and imps cleared from the cave to transport supplies.",
       "waypointChatLink": "[&BIMCAAA=]"
@@ -295,6 +379,12 @@
       "order": 8,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 539,
       "wikiText": "Eulda Soulseer is a hero challenge NPC found in Yakkington's Toil.",
@@ -319,6 +409,12 @@
       ],
       "chatLink": "[&BIQCAAA=]",
       "waypointChatLink": "[&BIQCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 555,
       "wikiText": "Yakkington's Toil is an area in southeast of Frostgorge Sound. A large group of independent norn has taken control of the long-abandoned dwarven camp of Yak's Bend. They often do trading with the nearby kodan refugees found in Sacred Trust."
     },
@@ -338,6 +434,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 584,
       "wikiText": "Start east of the mountain to the north of the vista, and work your way south and just walk your way up to the vista.",
@@ -359,6 +461,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 649,
       "wikiText": "The Offering Stone is a point of interest in Arundon Vale. A large group of fanatic grawls can be found there worshipping their god, the Claw of Jormag.",
@@ -419,6 +527,12 @@
           27120
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 679,
       "wikiText": "Destroy effigies, light supplies on fire, ignite stolen explosives, burn paintings, and fight the Dragon Tribe grawl.",
       "waypointChatLink": "[&BHgCAAA=]"
@@ -439,6 +553,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 685,
       "wikiText": "Safewatch Vale is a Pact camp in Arundon Vale. The Pact established the camp to help monitor the nearby Sons of Svanir.",
@@ -463,6 +583,12 @@
       ],
       "chatLink": "[&BHgCAAA=]",
       "waypointChatLink": "[&BHgCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 745,
       "wikiText": "Arundon Vale is the southeasternmost area in Frostgorge Sound. It holds a Vigil camp as well as the encampment of the Dragon Tribe grawl."
     },
@@ -482,6 +608,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 812,
       "wikiText": "Coiled Watch is a corrupted watch post on the top of a peak in the Highpeaks. There is a constant struggle between the icebrood and the Vigil for the control of this tower.",
@@ -506,6 +638,12 @@
       ],
       "chatLink": "[&BIICAAA=]",
       "waypointChatLink": "[&BIICAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 844,
       "wikiText": "Highpeaks is an area in the south of Frostgorge Sound. The Vigil and the Sons of Svanir, with help from Icebrood minions, battle over control of this area."
     },
@@ -556,6 +694,12 @@
           27551
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 877,
       "wikiText": "Smash corrupted ice, tear down Dragon banners, open cages, destroy defenses, and kill Sons of Svanir.",
       "waypointChatLink": "[&BIICAAA=]"
@@ -577,6 +721,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 922,
       "wikiText": "The Barrowstead is a point of interest in Highpeaks. It is the second largest Sons of Svanir base, guarded by watchtowers, notably Claw Watch at its north gate, and Coiled Watch further out to the east.",
       "waypointChatLink": "[&BIICAAA=]"
@@ -597,6 +747,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 944,
       "wikiText": "Claw Watch is a watch-tower, inhabited by the Sons of Svanir, north of The Barrowstead in the southern part of Frostgorge Sound.",
@@ -621,6 +777,12 @@
       ],
       "chatLink": "[&BIECAAA=]",
       "waypointChatLink": "[&BIECAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1042,
       "wikiText": "Leopard's Tail Valley is an area in the southwest of Frostgorge Sound. The Pact has established a camp to negotiate with the kodan of Blue Ice Shining. The name of the area likely comes from the high number Snow Leopard found there."
     },
@@ -640,6 +802,12 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1106,
       "wikiText": "Zone to Skyheaight Steading Waypoint and start climbing the hill just a bit south-west of the waypoint (in the village) and you can just walk along the edge of the cliff west to the vista.",
@@ -744,6 +912,12 @@
           27079
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1195,
       "wikiText": "Find and revive wounded kodan, recover stolen food to empower them, and reclaim kodan flagstands to boost morale.",
       "waypointChatLink": "[&BIECAAA=]"
@@ -765,6 +939,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1200,
       "wikiText": "Blue Ice Station is a kodan-controlled camp within dredge territory in Groznev Delve.",
       "waypointChatLink": "[&BIECAAA=]"
@@ -785,6 +965,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1263,
       "wikiText": "Krok's Ruin is a point of interest directly east of the Groznev Waypoint in Groznev Delve, Frostgorge Sound. Dredge are currently excavating this tomb in search of dwarven artifacts to destroy them to tarnished their last remaining legacy.",
@@ -849,6 +1035,12 @@
           27597
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1289,
       "wikiText": "Acquire a mining suit from rebel Isaak, and follow Isaak's instructions to inspire local dredge rebels.",
       "waypointChatLink": "[&BHkCAAA=]"
@@ -872,6 +1064,12 @@
       ],
       "chatLink": "[&BHkCAAA=]",
       "waypointChatLink": "[&BHkCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1300,
       "wikiText": "Groznev Delve is an underground area in Frostgorge Sound. Both kodan and dredge fight for control of the territory."
     },
@@ -891,6 +1089,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1343,
       "wikiText": "Forgepits is a point of interest in Bore Lynch. Many dredge mining armor can be found at the bottom. To get there, go underwater east of the vista in Bore Lynch.",
@@ -913,6 +1117,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1393,
       "wikiText": "Miner Voss is a dredge eager to learn the ways of fighting of the other races. He is found slightly north of the Groznev Waypoint, after walking down the ramp from the, turning west, and heading through the tunnel.",
       "waypointChatLink": "[&BHkCAAA=]"
@@ -933,6 +1143,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1466,
       "wikiText": "The Sonic Furnace is a point of interest in Bore Lynch. This machine is used by the dredge to smelt the ore they are constantly digging up.",
@@ -955,6 +1171,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1520,
       "wikiText": "Climb the spiral around the high tower north of the vista. At the top, walk the path to the vista. On the way, kill the dredge.",
       "waypointChatLink": "[&BHkCAAA=]"
@@ -975,6 +1197,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1597,
       "wikiText": "Climb the hill to the vista south of the pit, behind the mortars.",
@@ -999,6 +1227,12 @@
       ],
       "chatLink": "[&BIUCAAA=]",
       "waypointChatLink": "[&BIUCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1663,
       "wikiText": "Talabaroop Waves is an area in Frostgorge Sound. It contains the kodan sanctuary of Blue Ice Shining which was one of the first to arrive from the Far Shiverpeaks in the wake of Jormag's attack."
     },
@@ -1073,6 +1307,12 @@
           26426
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1691,
       "wikiText": "Speak with kodan about nature's balance, learn from scattered journals about what brought the kodan south, and pay homage at shrines of Koda.",
       "waypointChatLink": "[&BIUCAAA=]"
@@ -1093,6 +1333,12 @@
       "order": 34,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1737,
       "wikiText": "Flowing Ice is a kodan found in Talabaroop Waves, on the east side of the track that rings the ship, up a staircase. Defeat him in order to earn a Hero point.",
@@ -1117,6 +1363,12 @@
       ],
       "chatLink": "[&BIACAAA=]",
       "waypointChatLink": "[&BIACAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1768,
       "wikiText": "Talabaroop Waves is an area in Frostgorge Sound. It contains the kodan sanctuary of Blue Ice Shining which was one of the first to arrive from the Far Shiverpeaks in the wake of Jormag's attack."
     },
@@ -1137,8 +1389,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1771,
-      "wikiText": "Talooboo is a quaggan in Talabaroop Waves that is confident in the strength of the shark he has trained. Talk to Talooboo to fight the shark and earn a hero point, .",
+      "wikiText": "Talooboo is a quaggan in Talabaroop Waves that is confident in the strength of the shark she has trained. Talk to Talooboo to fight the shark and earn a hero point.",
       "waypointChatLink": "[&BIACAAA=]"
     },
     {
@@ -1157,6 +1415,12 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1772,
       "wikiText": "Zuckermaloo is the arena where the Quaggan Games take place.",
@@ -1179,8 +1443,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1773,
-      "wikiText": "Peloopoo Needle is a point of interest in Dimotiki Waters. This underwater ravine is home to many wurms and skelks.",
+      "wikiText": "Peloopoo Needle is a point of interest in Dimotiki Waters. This underwater ravine is home to many wurms and skelk.",
       "waypointChatLink": "[&BH8CAAA=]"
     },
     {
@@ -1199,6 +1469,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1775,
       "wikiText": "Just dive down at the right place until you see the vista in an arch.",
@@ -1220,6 +1496,12 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1777,
       "wikiText": "Orsippus is a quaggan village and a point of interest in Dimotiki Waters. According to Qualdup, Orsippus was founded by quaggans from many different villages whose homes have been destroyed by Jormag, so that no quaggan would be alone.",
@@ -1275,6 +1557,12 @@
           53566,
           25554
         ]
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1779,
       "wikiText": "Help Qualdup train Orsippus trainess for the Quaggan Games.",
@@ -1347,6 +1635,12 @@
           24858
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1782,
       "wikiText": "Help Worthy Burden defeat icebrood in Drakkar Spurs.",
       "waypointChatLink": "[&BH8CAAA=]"
@@ -1367,6 +1661,12 @@
       "order": 43,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1822,
       "wikiText": "A Frost Portal used by icebrood can be found in Drakkar Spurs. Similar portals are used by the icebrood elsewhere.",
@@ -1391,6 +1691,12 @@
       ],
       "chatLink": "[&BIYCAAA=]",
       "waypointChatLink": "[&BIYCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1849,
       "wikiText": "Drakkar Spurs is an area in the northwestern corner of Frostgorge Sound. It is swarming with icebrood and is full of Jormag's corrupted ice."
     },
@@ -1413,6 +1719,12 @@
       ],
       "chatLink": "[&BH8CAAA=]",
       "waypointChatLink": "[&BH8CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1938,
       "wikiText": "Dimotiki Waters is an area in the west of Frostgorge Sound. It contains the quaggan village of Orsippus, one of the two quaggan villages to participate in the Quaggan Games."
     },
@@ -1479,6 +1791,12 @@
           25305
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1973,
       "wikiText": "Repair cracks, remove barnacles, motivate ice shapers, feed guards, and keep the sanctuary safe.",
       "waypointChatLink": "[&BH8CAAA=]"
@@ -1500,6 +1818,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1988,
       "wikiText": "Deep and Troubled Waters is a point of interest in the Sea of Lamentation, in the northern reaches of Frostgorge Sound. It is a kodan sanctuary with Deep Song and Cresting Wave as its Voice and Claw.",
       "waypointChatLink": "[&BH4CAAA=]"
@@ -1520,6 +1844,12 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2020,
       "wikiText": "Cross the ramp behind Bladed Softness (heart) then turn south-east and walk to the vista.",
@@ -1544,6 +1874,12 @@
       ],
       "chatLink": "[&BH4CAAA=]",
       "waypointChatLink": "[&BH4CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2023,
       "wikiText": "Shattered Ice Floe is an area in Frostgorge Sound."
     },
@@ -1563,6 +1899,12 @@
       "order": 50,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2092,
       "wikiText": "Iron Horse Mines is a deep underwater cavern submerged within Grimstone Mol. Lying in ruins, its great machinery silently rusts away making foundations of coral growths.",
@@ -1584,6 +1926,12 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2185,
       "wikiText": "Ridgepost Sentry is a Pact watchtower in Wayward Climb. It's used to help monitor the nearby Sons of Svanir.",
@@ -1640,6 +1988,12 @@
           27032
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2187,
       "wikiText": "Defend Pact patrols from Sons of Svanir, destroy corrupted ice crystals, and repair damaged flag stands.",
       "waypointChatLink": "[&BIMCAAA=]"
@@ -1663,6 +2017,12 @@
       ],
       "chatLink": "[&BIMCAAA=]",
       "waypointChatLink": "[&BIMCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2229,
       "wikiText": "Wayward Climb is an area in the center of Frostgorge Sound. The Pact base, Ridgerock Camp, is located here. There is also a dwarven ruin which is currently excavated by the Durmand Priory."
     },
@@ -1682,6 +2042,12 @@
       "order": 54,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2252,
       "wikiText": "Arkor's Tomb is a point of interest in Wayward Climb. To get there, head north-northeast from the Ridgerock Camp Waypoint. A member of the Durmand Priory is currently excavating the ruins, to no avail.",
@@ -1704,6 +2070,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2332,
       "wikiText": "Firesnake's Tail is a point of interest in Despond Precipice. This large ravine is home to a large tribe of hostile grawls who covered the walls with red paintings, hence the name.",
       "waypointChatLink": "[&BHwCAAA=]"
@@ -1724,6 +2096,12 @@
       "order": 56,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2338,
       "wikiText": "Shaman Okamuk starts the Defeat Okamuk hero challenge in Despond Precipice.",
@@ -1748,6 +2126,12 @@
       ],
       "chatLink": "[&BHwCAAA=]",
       "waypointChatLink": "[&BHwCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2437,
       "wikiText": "Frostwalk Tundra is an area in the northeast of Frostgorge Sound. A camp built by the kodan cast-aways from the Honor of the Waves sanctuary can be found here."
     },
@@ -1770,6 +2154,12 @@
       ],
       "chatLink": "[&BEMFAAA=]",
       "waypointChatLink": "[&BEMFAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2481,
       "wikiText": "Watchful Fjord is an area in the north of Frostgorge Sound. The wrecked kodan sanctuary Honor of the Waves can be found here."
     },
@@ -1789,6 +2179,12 @@
       "order": 59,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2490,
       "wikiText": "Commune with the Glacial Trench is a hero challenge located in a cavern in Watchful Fjord. Simply swim to the bottom of the ocean floor to reach this hero point.",
@@ -1810,6 +2206,12 @@
       "order": 60,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2494,
       "wikiText": "Moshpoipoi is a Quaggan village and point of interest within Watchful Fjord. They are not happy with the new arrival of the kodan since they brought the icebrood along with them and they now try to destroy their village.",
@@ -1834,6 +2236,12 @@
       ],
       "chatLink": "[&BH0CAAA=]",
       "waypointChatLink": "[&BH0CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2499,
       "wikiText": "Watchful Fjord is an area in the north of Frostgorge Sound. The wrecked kodan sanctuary Honor of the Waves can be found here."
     }

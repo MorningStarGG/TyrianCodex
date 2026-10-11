@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1310,
     "name": "Thunderhead Peaks",
@@ -44,6 +44,42 @@
       57820,
       36936
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 4,
+          "points_of_interest": 38,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "3": {
+          "tasks": 4,
+          "points_of_interest": 38,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "2": {
+          "tasks": 4,
+          "points_of_interest": 38,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "0": {
+          "tasks": 4,
+          "points_of_interest": 38,
+          "skill_challenges": 0,
+          "sectors": 12
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws4"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BLkLAAA=]",
       "waypointChatLink": "[&BLkLAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 0,
       "wikiText": "The Forge is an area within Thunderhead Peaks. In the past, Glint and Frodak Steelstar used it to forge the first Dragonsblood Spear."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 13,
       "wikiText": "The Heart of the Forge is a large device found in the middle of The Forge. It was once used to create the first Dragonsblood Spear and can now be used further to craft other Dragonsblood-style weaponry.",
@@ -109,6 +157,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 23,
       "wikiText": "Walk to the west of the vista. Either walk up or use a Springer or Skyscale to get up the platform. Then walk to the vista.",
       "waypointChatLink": "[&BLkLAAA=]"
@@ -129,6 +183,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 74,
       "wikiText": "The Barracks is the living areas for the Pact and allied forces found in The Grotto. They are preparing for the assault against Kralkatorrik. A friendly tournament between Pact troops is being hosted here.",
@@ -177,6 +237,12 @@
           35636
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 81,
       "wikiText": "Help rally despondent troops, recover supplies, construct med kits, and make some bets on the tournament.",
       "waypointChatLink": "[&BLkLAAA=]"
@@ -197,6 +263,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 124,
       "wikiText": "The Deldrimor Cellars is a spacious room found within The Grotto area of Thunderhead Peaks. It is used to store supplies of the Pact and their allied forces.",
@@ -219,6 +291,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 184,
       "wikiText": "Walk to the Vista and use a Springer or a skyscale to get up to the vista.",
       "waypointChatLink": "[&BLsLAAA=]"
@@ -239,6 +317,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 208,
       "wikiText": "The Path of the Exalted is large stone corridor found within The Grotto leading to one-way portal linked to Glint's lair. This area has special music which is not heard elsewhere in the map.",
@@ -261,6 +345,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 259,
       "wikiText": "The Grand Lyceum is a room within The Grotto used by the Pact and their allied forces for combat training and friendly sparring.",
       "waypointChatLink": "[&BLsLAAA=]"
@@ -281,6 +371,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 414,
       "wikiText": "Ironhammer Crossing is an underground crossroads found within Thunderhead Keep. The road east leads deep into the Dwarven Catacombs. The road north leads towards the keep.",
@@ -303,6 +399,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 531,
       "wikiText": "The Hammer's Hoard is the treasury of King Jalis Ironhammer, the last known king of the Deldrimor dwarves, found within the Dwarven Catacombs. It contains many of his riches as well as his throne.",
       "waypointChatLink": "[&BLsLAAA=]"
@@ -324,6 +426,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 550,
       "wikiText": "The Consul's Tomb is the final resting place of Consular Frodak Steelstar, which is found within the Dwarven Catacombs.",
       "waypointChatLink": "[&BLsLAAA=]"
@@ -344,6 +452,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 726,
       "wikiText": "Brechnar's Gauntlet is large series of rooms located in the upper levels of the Dwarven Catacombs, in Thunderhead Peaks.",
@@ -368,6 +482,12 @@
       ],
       "chatLink": "[&BLsLAAA=]",
       "waypointChatLink": "[&BLsLAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 850,
       "wikiText": "The Deldrimor Ruins is the remains of the old capital of the Deldrimor dwarves, the city portion of Thunderhead Keep."
     },
@@ -387,6 +507,12 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1003,
       "wikiText": "Walk to the vista. This is easier during the meta.",
@@ -408,6 +534,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1038,
       "wikiText": "Stonefall is an ancient dwarf structure found in the middle of Thunderhead Keep's courtyard.",
@@ -508,6 +640,12 @@
           36476
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1176,
       "wikiText": "Dig up and categorize artifacts, nudge skritt, and clear out ice wurms to help the Priory.",
       "waypointChatLink": "[&BLsLAAA=]"
@@ -528,6 +666,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1206,
       "wikiText": "The Deldrimor Garrison is an ancient and now ruined Deldrimor dwarves structure found in the Deldrimor Ruins.",
@@ -550,8 +694,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1259,
-      "wikiText": "The Slag Pit is pit found in the Deldrimor Ruins. It was supposedly used as a dumping ground long ago, judging by the rusted pipes surrounding it. Now, it is inhabited by elementals formed by the refuse.",
+      "wikiText": "The Slag Pit is a point of interest in the Deldrimor Ruins, in Thunderhead Peaks. Based on the pipes and oil filling it, it appears to have been used as a dumping ground. It is now inhabited by elementals formed from the refuse.",
       "waypointChatLink": "[&BLsLAAA=]"
     },
     {
@@ -570,6 +720,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1284,
       "wikiText": "The Stonebridge is one of two bridges crossing the deep gap separating the Deldrimor Ruins and Hundar Pike.",
@@ -592,6 +748,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1331,
       "wikiText": "Walk to the vista from the waypoint",
       "waypointChatLink": "[&BLoLAAA=]"
@@ -612,6 +774,12 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1349,
       "wikiText": "The Ironbridge is one of two bridges crossing the deep gap separating the Deldrimor Ruins and Hundar Pike.",
@@ -634,6 +802,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1371,
       "wikiText": "The Forgotten Falls is a point of interest located within Hundar Pike.",
       "waypointChatLink": "[&BLoLAAA=]"
@@ -654,6 +828,12 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1483,
       "wikiText": "The Sorrow's Cave is an underground cave containing ancient ruins found within Hundar Pike.",
@@ -676,6 +856,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1568,
       "wikiText": "The Weeping Sisters are a pair of frozen waterfalls within Hundar Pike.",
       "waypointChatLink": "[&BKYLAAA=]"
@@ -696,6 +882,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1646,
       "wikiText": "Walk to the vista. Use the Springer or the Skyscale to jump up plateaus until you reach the vista.",
@@ -718,6 +910,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1701,
       "wikiText": "Fling fire in a claw-shaped spread at your foe. - In-game description",
       "waypointChatLink": "[&BKYLAAA=]"
@@ -739,6 +937,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1832,
       "wikiText": "Melody's Rest is an old gravesite found in Symphony's Haven that was used to bury both human Zephyrites and Forgotten alike when they were still active on Tyria.",
       "waypointChatLink": "[&BLoLAAA=]"
@@ -759,6 +963,12 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1848,
       "wikiText": "Walk to the east of vista and jump up using Springer or a Skyscale.",
@@ -783,6 +993,12 @@
       ],
       "chatLink": "[&BLoLAAA=]",
       "waypointChatLink": "[&BLoLAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1897,
       "wikiText": "Symphony's Haven is an area within Thunderhead Peaks. One of Sayida the Sly's airships was shot down to earth once she arrived and she was forced to land along with the rest of her crew and the escorted Zephyrites."
     },
@@ -929,6 +1145,12 @@
           36945
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1904,
       "wikiText": "Help Zephyrites prepare for a supply run to the Forge by gathering supplies, breaking up arguments, and practicing the Forge ritual.",
       "waypointChatLink": "[&BLoLAAA=]"
@@ -949,6 +1171,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1929,
       "wikiText": "The Scorchrazor III was an airship under Sayida the Sly's command. It was shot down by Branded while on its way into Thunderhead Peaks. Its destruction forced the other airships and their crews to land and recuperate.",
@@ -971,6 +1199,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1981,
       "wikiText": "Corsair's Stand is a makeshift camp set up by Sayida the Sly and her crew in Symphony's Haven after they were forced to land. They have set up a barricade to hold off the constant stream of Branded from the south.",
       "waypointChatLink": "[&BLoLAAA=]"
@@ -991,6 +1225,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2174,
       "wikiText": "Maiden's Veil is an extremely tall frozen waterfall found in the Dredgeways.",
@@ -1015,6 +1255,12 @@
       ],
       "chatLink": "[&BKYLAAA=]",
       "waypointChatLink": "[&BKYLAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2185,
       "wikiText": "The Dredgeways is an area within Thunderhead Peaks. Refiner's Joy, a dredge mining settlement, can be found here. Their operations in the nearby Ice Floe were shut down when Kralkatorrik unleashed the Dragonbrand over it."
     },
@@ -1034,6 +1280,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2211,
       "wikiText": "Refiner's Joy is a dredge oil drilling settlement found in the Dredgeways. It is facing hard times after a large number of its population as well as most of the machinery was Branded over by the Elder Dragon Kralkatorrik.",
@@ -1094,6 +1346,12 @@
           37826
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2221,
       "wikiText": "Destroy Branded dredge and Brand crystals, catch fish, and improve dredge morale.",
       "waypointChatLink": "[&BKYLAAA=]"
@@ -1114,6 +1372,12 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2322,
       "wikiText": "The Shattered Bay is a body of water found in the Ice Floe, containing many icy glacier shards.",
@@ -1136,6 +1400,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2336,
       "wikiText": "The Labyrinthine Mountains is a mountain range separating the Labyrinthine Cliffs from Thunderhead Peaks.",
       "waypointChatLink": "[&BKYLAAA=]"
@@ -1156,6 +1426,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2412,
       "wikiText": "Walk to the Vista. Use a Springer or Skyscale to get up the platform.",
@@ -1178,6 +1454,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2465,
       "wikiText": "Freedom's Catchment is basin located in the Ice Floe that was used by dredge to store harvested oil for future use.",
       "waypointChatLink": "[&BKYLAAA=]"
@@ -1198,6 +1480,12 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "The Silent Falls is a set of frozen waterfalls found in the Ice Floe.",

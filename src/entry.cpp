@@ -50,6 +50,7 @@
 #include "app/EventFavorites.h" // account-wide event favorites + reminder flags
 #include "app/EventWatch.h"     // staged "starts in N" reminders for belled events
 #include "ui/InputProbe.h"      // opt-in keyboard/window diagnostic (readout in the Diagnostics section)
+#include "world/HeartHints.h"
 #include "app/CharRegistry.h"   // name->created-id registry (rename detector for per-character data)
 #include "app/SectorData.h"
 #include "app/ItemCatalog.h"
@@ -201,7 +202,7 @@ static void DoTogglePanel()
 
 static void DoMarkDone()
 {
-    if (!g_app || !g_app->state.zone.Loaded || g_app->state.curStep < 0 || g_app->state.curStep >= (int)g_app->state.zone.Steps.size())
+    if (!g_app || !g_app->state.CanGuide() || g_app->state.curStep < 0 || g_app->state.curStep >= (int)g_app->state.zone.Steps.size())
         return;
     CompleteStep(g_app->progress, g_app->state, g_app->state.zone.Steps[g_app->state.curStep].StepId);
     g_app->state.manualTarget.clear();
@@ -657,7 +658,7 @@ static ViewerMode ComputeViewerMode()
     if (!MumbleLink || !NexusLink || !NexusLink->IsGameplay || CurrentMapId() == 0)
         return ViewerMode::Message;
     UpdateCurrentChar(g_app->state);
-    if (g_app->state.inDungeon && g_app->state.inst)
+    if (g_app->state.inDungeon && g_app->state.inst && g_app->state.CanGuide())
         return ViewerMode::Dungeon;
     if (g_app->travel.Active())
         return ViewerMode::Travel;
@@ -690,7 +691,7 @@ static ViewerMode ComputeViewerMode()
         if (s_allDone)
             return ViewerMode::Complete;
     }
-    return ViewerMode::Step;
+    return g_app->state.CanGuide() ? ViewerMode::Step : ViewerMode::Checklist;
 }
 
 // Toast when the Trading Post delivery box GAINS coins/items (a sale completed or a buy order filled). Diffs the
@@ -998,7 +999,7 @@ static void Render()
         // screen -- panel, arrow, trail AND markers -- not just the panel + arrow.
         // Also hidden while the fullscreen map is OPEN (IsGameplay stays true then -- the map is an overlay --
         // so these world-projected overlays would otherwise draw over the map; the flat MapRenderer::Draw shows there).
-        if (g_app->config.showGuide && !IsMapOpen() && g_app->state.zone.Loaded && MumbleLink && MumbleIdent && NexusLink && NexusLink->IsGameplay && CurrentMapId() == g_app->state.zone.MapId && g_app->state.zone.Trail.size() >= 2)
+        if (g_app->config.showGuide && !IsMapOpen() && g_app->state.CanGuide() && MumbleLink && MumbleIdent && NexusLink && NexusLink->IsGameplay && CurrentMapId() == g_app->state.zone.MapId && g_app->state.zone.Trail.size() >= 2)
         {
             const float W = ImGui::GetIO().DisplaySize.x, H = ImGui::GetIO().DisplaySize.y;
             if (W >= 1.f && H >= 1.f)
@@ -1132,8 +1133,12 @@ static void Render()
         // Farming node overlay + active RUN (in-world): INDEPENDENT of the guide route -- runs on ANY map with
         // gather data whenever the overlay master is on OR a farming run is active (no zone.Loaded / showGuide
         // requirement). Builds its own frame camera. Hidden while the fullscreen map is open.
+        const bool heartHintsVisible = HeartHints::Enabled(g_app->config) && !IsMapOpen() &&
+                                       MumbleLink && MumbleIdent && NexusLink && NexusLink->IsGameplay;
+        if (!heartHintsVisible) g_app->state.heartWorldDetails = HeartDetailView{};
         if ((g_app->config.gatherShow || FarmingGuidance::Active(*g_app) ||
-             g_app->config.fishShow || FishingGuidance::Active(*g_app)) &&
+             g_app->config.fishShow || FishingGuidance::Active(*g_app) ||
+             heartHintsVisible) &&
             !IsMapOpen() &&
             MumbleLink && MumbleIdent && NexusLink && NexusLink->IsGameplay)
         {
@@ -1153,6 +1158,7 @@ static void Render()
                 fc.inCombat = IsInCombat();
                 fc.vp = Math::BuildViewProj(camPos, camFwd, camTop, fov, W, H);
                 fc.pxScale = (H * 0.5f) / std::tan(fov * 0.5f);
+                HeartHints::Draw(*g_app, fc, CurrentMapId());
                 if (g_app->config.gatherShow && !g_app->state.activeGather.empty())
                     CategoryMarkers::DrawWorld(fc, g_app->config, g_app->state); // independent toggle (a run drives only the arrow)
                 if (FarmingGuidance::Active(*g_app))
@@ -1169,7 +1175,7 @@ static void Render()
         // advance + re-order as you tick things off. Recompute JUST the current step here (camera-free; uses the
         // avatar position) - else curStep freezes and the list reverts to authored order until the map closes (e.g.
         // Hybrid Nearest visibly snapping to trail order while the map is up, then re-sorting on close).
-        if (g_app->config.showGuide && IsMapOpen() && g_app->state.zone.Loaded && MumbleLink && NexusLink && NexusLink->IsGameplay && CurrentMapId() == g_app->state.zone.MapId && g_app->state.viewerMode != ViewerMode::Travel && !g_app->state.inDungeon)
+        if (g_app->config.showGuide && IsMapOpen() && g_app->state.CanGuide() && MumbleLink && NexusLink && NexusLink->IsGameplay && CurrentMapId() == g_app->state.zone.MapId && g_app->state.viewerMode != ViewerMode::Travel && !g_app->state.inDungeon)
         {
             const Follow::Vec2 playerXz{MumbleLink->AvatarPosition.X, MumbleLink->AvatarPosition.Z};
             g_app->guidance.PickCurrentStep(playerXz, g_app->config, g_app->state, g_app->progress);
@@ -1365,7 +1371,10 @@ void LoadAllData(App &app, const std::string &base)
 
         const int nm = LoadMapIndex(base + "\\data\\maps\\index.json", g_app->mapIndex);
         for (MapInfo &mi : g_app->mapIndex)
-            mi.HasGuide = g_app->zones.count(mi.MapId) || g_app->instances.count(mi.MapId);
+        {
+            const auto zone = g_app->zones.find(mi.MapId);
+            mi.HasGuide = (zone != g_app->zones.end() && zone->second.CanGuide()) || g_app->instances.count(mi.MapId);
+        }
         APIDefs->Log(LOGL_INFO, "Tyrian Codex", ("Loaded " + std::to_string(nm) + " indexed maps.").c_str());
 
         g_app->fish.Load(base + "\\data\\fish.json");

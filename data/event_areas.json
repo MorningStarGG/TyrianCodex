@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-08T08:09:28+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "source": "https://api.guildwars2.com/v1/event_details.json?lang=en",
   "events": [
     {
@@ -6000,6 +6000,28 @@
       "description": ""
     },
     {
+      "eventId": "4F5204A3-F40B-4AC1-9545-F2228B7188D5",
+      "name": "Stabilize the Rift",
+      "mapId": 218,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -240.646,
+        374.145
+      ],
+      "continent": [
+        56693.24,
+        30362.246
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
+    },
+    {
       "eventId": "D39FEB19-37EC-4EF8-AD81-F231354BF497",
       "name": "Collect griffon claws for Quartermaster Thell.",
       "mapId": 20,
@@ -7627,7 +7649,7 @@
       "radiusMeters": 135.7,
       "wikiTitle": "Collect siege weapon pieces for Crusader Blackhorn",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Collect_siege_weapon_pieces_for_Crusader_Blackhorn",
-      "description": "Collect siege weapon pieces for Crusader Blackhorn is a level 47 event that occurs in Blazeridge Steppes, near the Guardian Stone Waypoint."
+      "description": "Collect siege weapon pieces for Crusader Blackhorn is a level 47 event that occurs in Heretic Plain and Shattered Palisades, east of Guardian Stone Waypoint. It is one of two pre-events required to draw out the Shatterer during the Kralkatorrik's Legacy meta event in Blazeridge Steppes."
     },
     {
       "eventId": "899CF6FF-DCEF-4F0D-95CF-0218408F6C17",
@@ -8091,7 +8113,7 @@
       "radiusMeters": 49.9,
       "wikiTitle": "Escort the Sentinel squad to the Vigil camp in Lowland Burns",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Escort_the_Sentinel_squad_to_the_Vigil_camp_in_Lowland_Burns",
-      "description": "Escort the Sentinel squad to the Vigil camp in Lowland Burns is a level 49 event that starts in Relliatus Canyon and ends in Lowland Burns."
+      "description": "Escort the Sentinel squad to the Vigil camp in Lowland Burns is a level 49 event that starts in Relliatus Canyon, progresses through the ruins of the Northern Wall in Monument Grounds, and ends at the camp in Lowland Burns."
     },
     {
       "eventId": "0B8149E7-36D7-4B59-82E8-500795882862",
@@ -14211,7 +14233,7 @@
       "radiusMeters": 161.3,
       "wikiTitle": "Collect data cores from tracking devices for Apprentice Vee",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Collect_data_cores_from_tracking_devices_for_Apprentice_Vee",
-      "description": "Collect data cores from tracking devices for Apprentice Vee is a level 12 dynamic event that occurs in Ruins of the Unseen. Data Cores can be collected by killing Skritt or interacting with Shiny Tracking Devices."
+      "description": "Collect data cores from tracking devices for Apprentice Vee is a level 12 dynamic event that occurs in Ruins of the Unseen. Data Cores can be collected by killing skritt or interacting with Shiny Tracking Devices."
     },
     {
       "eventId": "9D75373E-CB80-4225-B087-CBE55023D12F",
@@ -17975,7 +17997,7 @@
       "radiusMeters": 101.6,
       "wikiTitle": "Collect scrap metal to help Ballistician Dexa build her siege weapon",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Collect_scrap_metal_to_help_Ballistician_Dexa_build_her_siege_weapon",
-      "description": "Collect scrap metal to help Ballistician Dexa build her siege weapon is a level 80 event that occurs in Compass Plaza. Upon success of the event, a Pact Heavy Cannon will be built outside the walls of anchorage."
+      "description": "Collect scrap metal to help Ballistician Dexa build her siege weapon is a level 80 event that occurs in Compass Plaza. Upon success of the event, a Pact Heavy Cannon will be built outside the walls of Shank Anchorage."
     },
     {
       "eventId": "99254BA6-F5AE-4B07-91F1-61A9E7C51A51",
@@ -18021,7 +18043,7 @@
       "radiusMeters": 127.0,
       "wikiTitle": "Crush the veteran Risen spider and free Scholar Zeez",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Crush_the_veteran_Risen_spider_and_free_Scholar_Zeez",
-      "description": "Crush the veteran Risen spider and free Scholar Zeez is a level 80 event that occurs in Winterknell Isle."
+      "description": "Crush the veteran Risen spider and free Scholar Zeez is a level 80 event that occurs in Winterknell Isle. It starts when a player enters the building at the center of Bakkir Sarayi."
     },
     {
       "eventId": "3B4F83B4-41A1-4A5E-97A6-1247C00D20E1",
@@ -18139,7 +18161,7 @@
       "radiusMeters": 127.0,
       "wikiTitle": "Defeat the Risen pirate Captain Rotbeard",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defeat_the_Risen_pirate_Captain_Rotbeard",
-      "description": "Defeat the Risen pirate Captain Rotbeard is a level 80 event that occurs in Desmina's Hallows."
+      "description": "Defeat the Risen pirate Captain Rotbeard is a level 80 event that occurs in Desmina's Hallows. It starts when the Mysterious Treasure Chest is interacted with."
     },
     {
       "eventId": "8311B47B-74C2-4865-9C81-6A7682389DC2",
@@ -18183,7 +18205,7 @@
       "radiusMeters": 86.2,
       "wikiTitle": "Defeat the ancient Risen warriors in Balthazar's arena",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defeat_the_ancient_Risen_warriors_in_Balthazar%27s_arena",
-      "description": "Defeat the ancient Risen warriors in Balthazar's arena is a level 80 event that occurs in Cursed Shore."
+      "description": "Defeat the ancient Risen warriors in Balthazar's arena is a level 80 event that occurs in Fields of Gold."
     },
     {
       "eventId": "778BB086-FDE0-4CC2-A607-C3428D926AE2",
@@ -19195,7 +19217,7 @@
       "radiusMeters": 83.3,
       "wikiTitle": "Help Lightbringer Palfinier reach Meddler's Summit",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Help_Lightbringer_Palfinier_reach_Meddler%27s_Summit",
-      "description": "Help Lightbringer Palfinier reach Meddler's Summit is a level 80 event that occurs in the Craven Blight within Cursed Shore, beginning at Jofast's Camp and ending at Meddler's Summit."
+      "description": "Help Lightbringer Palfinier reach Meddler's Summit is a level 80 event that occurs in Craven Blight within Cursed Shore, beginning at Jofast's Camp and ending at Meddler's Summit."
     },
     {
       "eventId": "C11F0125-0F20-4B8C-AA03-AA4FF799922E",
@@ -24051,6 +24073,172 @@
       "wikiTitle": "Crimson Plateau",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Crimson_Plateau",
       "description": "Crimson Plateau is a jumping puzzle located in the southeast portion of the Diessa Plateau."
+    },
+    {
+      "eventId": "B1BF6DE8-79B8-41D3-981B-8204F25A9026",
+      "name": "A race is starting soon!",
+      "mapId": 18,
+      "category": "race",
+      "flags": [
+        "map_wide"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -228.941,
+        70.443
+      ],
+      "continent": [
+        43528.441,
+        27020.443
+      ],
+      "radiusMeters": 76.2,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "FAAE5F79-7F66-4A42-B897-5ABA2F5FB82B",
+      "name": "A race is starting soon!",
+      "mapId": 18,
+      "category": "race",
+      "flags": [
+        "map_wide"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -211.217,
+        -82.682
+      ],
+      "continent": [
+        43557.516,
+        27271.633
+      ],
+      "radiusMeters": 76.2,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "AD31D52F-C650-473D-8637-5792868828D7",
+      "name": "Aid the poor of Divinity's Reach by donating to Ho-Ho-Tron.",
+      "mapId": 18,
+      "category": "group_event",
+      "flags": [
+        "group_event"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -281.739,
+        -46.608
+      ],
+      "continent": [
+        43441.829,
+        27212.457
+      ],
+      "radiusMeters": 164.2,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "BD551B6D-CD54-421F-8BC8-2A2AF729D81C",
+      "name": "Defend the gift dolyak and Ho-Ho-Tron during their delivery.",
+      "mapId": 18,
+      "category": "group_event",
+      "flags": [
+        "group_event"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -268.135,
+        -52.919
+      ],
+      "continent": [
+        43464.146,
+        27222.809
+      ],
+      "radiusMeters": 210.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "9637E0AD-36D7-4B90-8695-47336CB18067",
+      "name": "Donate Wintersday food for the people of Amnoon.",
+      "mapId": 18,
+      "category": "group_event",
+      "flags": [
+        "group_event"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -202.399,
+        -29.42
+      ],
+      "continent": [
+        43571.981,
+        27184.261
+      ],
+      "radiusMeters": 46.6,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "B9F75966-4634-48AF-9D11-5201BF509247",
+      "name": "Reach the finish line!",
+      "mapId": 18,
+      "category": "race",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -229.495,
+        70.397
+      ],
+      "continent": [
+        43527.531,
+        27020.52
+      ],
+      "radiusMeters": 0.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "F408D20C-9405-48F6-BE8F-267D9E22AA15",
+      "name": "Reach the finish line!",
+      "mapId": 18,
+      "category": "race",
+      "flags": [
+        "map_wide"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -211.217,
+        -82.682
+      ],
+      "continent": [
+        43557.516,
+        27271.633
+      ],
+      "radiusMeters": 0.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "1853317D-A7B2-47CD-93B1-A016D22EC18B",
@@ -34824,7 +35012,7 @@
       "radiusMeters": 7.4,
       "wikiTitle": "Search the area around the fallen dragon for treasure!",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Search_the_area_around_the_fallen_dragon_for_treasure!",
-      "description": "Search the area around the fallen dragon for treasure! is a reset meta event that occurs in Dragon's Stand that unlocks access to additional Noxious Pods and events after successfully defeating the Mouth of Mordremoth in Dragon's Stand."
+      "description": "Search the area around the fallen dragon for treasure! is a meta event that occurs in Dragon's Stand that unlocks access to additional Noxious Pods and events after successfully defeating the Mouth of Mordremoth in Dragon's Stand."
     },
     {
       "eventId": "3E1D66A6-B4C6-4D1B-9A3E-D653EA4E9209",
@@ -35427,7 +35615,7 @@
       "radiusMeters": 45.2,
       "wikiTitle": "Break the Crystal Dragon",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Break_the_Crystal_Dragon",
-      "description": "Break the Crystal Dragon is the final meta event of Dragonfall."
+      "description": "Break the Crystal Dragon is the second and final of the two map-wide meta events in Dragonfall, following The Battle of Dragonfall."
     },
     {
       "eventId": "982B9B01-00EF-498D-AE51-9861A70FDE1D",
@@ -35547,7 +35735,7 @@
       "radiusMeters": 45.2,
       "wikiTitle": "Crystal Bloom Camp Operations",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Crystal_Bloom_Camp_Operations",
-      "description": "Crystal Bloom Camp Operations is a meta event that takes place within the north-western part of Dragonfall."
+      "description": "Crystal Bloom Camp Operations is a meta event that takes place in the Burning Forest, the northwestern part of Dragonfall, and is one of the three meta events that make up the map-wide The Battle of Dragonfall meta event."
     },
     {
       "eventId": "074D0F14-0295-47FA-A88E-A7DA09A512AA",
@@ -36527,7 +36715,7 @@
       "radiusMeters": 45.2,
       "wikiTitle": "Mist Warden Camp Operations",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Mist_Warden_Camp_Operations",
-      "description": "Mist Warden Camp Operations is a meta event that takes place within the south-eastern part of Dragonfall."
+      "description": "Mist Warden Camp Operations is a meta event that takes place in Melandru's Lost Domain, the southeastern area of Dragonfall, and is one of the three meta events that make up the map-wide The Battle of Dragonfall meta event."
     },
     {
       "eventId": "C2A2D6D9-B7A7-4E9D-9A00-6CAF6F9EC41C",
@@ -36575,7 +36763,7 @@
       "radiusMeters": 45.2,
       "wikiTitle": "Olmakhan Camp Operations",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Olmakhan_Camp_Operations",
-      "description": "Olmakhan Camp Operations is a meta event that takes place within the south-western part of Dragonfall."
+      "description": "Olmakhan Camp Operations is a meta event that takes place in the Underworld, the southwestern area of Dragonfall, and is one of the three meta events that make up the map-wide The Battle of Dragonfall meta event."
     },
     {
       "eventId": "01E833DC-F068-46E2-9F54-D177C0B4364D",
@@ -37021,7 +37209,7 @@
       "radiusMeters": 45.2,
       "wikiTitle": "The Battle of Dragonfall",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/The_Battle_of_Dragonfall",
-      "description": "The Battle of Dragonfall is the map-wide meta event of Dragonfall, consisting of readiness of the three camps, that accumulate into Break the Crystal Dragon meta event."
+      "description": "The Battle of Dragonfall is the first of the two map-wide meta events in Dragonfall, consisting of readiness of the three camps, that accumulate into the second meta event Break the Crystal Dragon."
     },
     {
       "eventId": "A5F47650-4457-46E3-A948-2A18941EC4E6",
@@ -44900,7 +45088,7 @@
       "radiusMeters": 76.2,
       "wikiTitle": "Free Emara and the other prisoners. Defeat Warden Jabari",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Free_Emara_and_the_other_prisoners._Defeat_Warden_Jabari",
-      "description": "Free Emara and the other prisoners. Defeat Warden Jabari is a level 80 group event that occurs at The Sepulcher in The Deadhouse prison. After escorting Field Foreman Erran to storm the prison, save his wife Emara and the other prisoners and defeat Warden Jabari before he awakens them."
+      "description": "Free Emara and the other prisoners. Defeat Warden Jabari is a level 80 group event that occurs at the Sepulcher of the Deadhouse prison. After escorting Field Foreman Erran to storm the prison, save his wife Emara and the other prisoners and defeat Warden Jabari before he awakens them."
     },
     {
       "eventId": "BCB58B71-1052-4BCF-AF90-C12F770CF9E6",
@@ -45650,7 +45838,7 @@
       "radiusMeters": 50.8,
       "wikiTitle": "Help Erran storm the Deadhouse to save his wife, Emara",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Help_Erran_storm_the_Deadhouse_to_save_his_wife,_Emara",
-      "description": "Help Erran storm the Deadhouse to save his wife, Emara is a level 80 group event that starts in Arid Gladefields, progresses through Shoals of Sovereignty and leads to The Deadhouse. It respawns 18 minutes after failing the next event in the chain."
+      "description": "Help Erran storm the Deadhouse to save his wife, Emara is a level 80 group event that starts near Palawa's Grace in Arid Gladefields, moves through Shoals of Sovereignty, and ends outside the Sepulcher of the Deadhouse prison. It respawns 18 minutes after failing the next event in the chain."
     },
     {
       "eventId": "F331D8B7-B153-409F-B885-C5183044BD43",
@@ -46755,6 +46943,31 @@
       "wikiTitle": "",
       "wikiUrl": "",
       "description": ""
+    },
+    {
+      "eventId": "8B736D1B-4F20-423E-870B-9E43B6F104A5",
+      "name": "Dragonstorm",
+      "mapId": 1370,
+      "category": "meta_event",
+      "flags": [
+        "map_wide",
+        "meta_event"
+      ],
+      "level": 80,
+      "viewerEligible": true,
+      "locationType": "sphere",
+      "world": [
+        -80.335,
+        74.05
+      ],
+      "continent": [
+        57852.216,
+        21766.527
+      ],
+      "radiusMeters": 103.5,
+      "wikiTitle": "Dragonstorm",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Dragonstorm",
+      "description": "Dragonstorm is a public instance world boss version of the story chapter of the same name. It requires the expansion Guild Wars 2: Path of Fire to enter."
     },
     {
       "eventId": "578E15AB-7D38-4FFD-8DBE-BBB982A4E32B",
@@ -52662,7 +52875,7 @@
       "radiusMeters": 1.3,
       "wikiTitle": "Breaking the Ice",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Breaking_the_Ice",
-      "description": "Breaking the Ice is a meta event that takes place in Frostgorge Sound. Information about this meta events can be obtained from Kaolin in Safewatch Vale. The event chain restarts about 12 minutes after it ends."
+      "description": "Breaking the Ice is a meta event that takes place in Frostgorge Sound. Information about the event can be obtained from Kaolin in Safewatch Vale. The event chain restarts about 12 minutes after it ends."
     },
     {
       "eventId": "B70A929A-5193-42CC-AF11-D29F200CAC6A",
@@ -54706,7 +54919,7 @@
       "radiusMeters": 76.2,
       "wikiTitle": "Destroy the dragon crystal at Elder's Vale",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Destroy_the_dragon_crystal_at_Elder%27s_Vale",
-      "description": "Destroy the dragon crystal at Elder's Vale is a level 80 event that occurs in Earthshake Basin."
+      "description": "Destroy the dragon crystal at Elder's Vale is a level 80 group event that occurs in Earthshake Basin, and is one of the four starting pre-events for the Breaking the Claw of Jormag meta event in Frostgorge Sound, alongside Destroy the dragon crystal at the Pact flak cannons, near the Pact siege..."
     },
     {
       "eventId": "429D6F3E-079C-4DE0-8F9D-8F75A222DB36",
@@ -54730,7 +54943,7 @@
       "radiusMeters": 76.2,
       "wikiTitle": "Destroy the dragon crystal at the Pact flak cannons",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Destroy_the_dragon_crystal_at_the_Pact_flak_cannons",
-      "description": "Destroy the dragon crystal at the Pact flak cannons is a level 80 event that occurs in Frostwalk Tundra."
+      "description": "Destroy the dragon crystal at the Pact flak cannons is a level 80 group event that occurs in Frostwalk Tundra, and is one of the four starting pre-events for the Breaking the Claw of Jormag meta event in Frostgorge Sound, alongside Destroy the dragon crystal at Elder's Vale, near the Pact siege..."
     },
     {
       "eventId": "C957AD99-25E1-4DB0-9938-F54D9F23587B",
@@ -54754,7 +54967,7 @@
       "radiusMeters": 76.2,
       "wikiTitle": "Destroy the dragon crystal near the Pact siege wall",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Destroy_the_dragon_crystal_near_the_Pact_siege_wall",
-      "description": "Destroy the dragon crystal near the Pact siege wall is a level 80 event that occurs in Frostwalk Tundra."
+      "description": "Destroy the dragon crystal near the Pact siege wall is a level 80 group event that occurs in Snow Climb, and is one of the four starting pre-events for the Breaking the Claw of Jormag meta event in Frostgorge Sound, alongside Destroy the dragon crystal at Elder's Vale, at the Pact flak cannons, and..."
     },
     {
       "eventId": "0CA3A7E3-5F66-4651-B0CB-C45D3F0CAD95",
@@ -54778,7 +54991,7 @@
       "radiusMeters": 76.2,
       "wikiTitle": "Destroy the dragon crystal on the road to Slough of Despond",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Destroy_the_dragon_crystal_on_the_road_to_Slough_of_Despond",
-      "description": "Destroy the dragon crystal on the road to Slough of Despond is a level 80 event that occurs in Frostwalk Tundra."
+      "description": "Destroy the dragon crystal on the road to Slough of Despond is a level 80 group event that occurs in Frostwalk Tundra, and is one of the four starting pre-events for the Breaking the Claw of Jormag meta event in Frostgorge Sound, alongside Destroy the dragon crystal at Elder's Vale, at the Pact..."
     },
     {
       "eventId": "4C455146-7FCD-4BE2-A64F-78C5B3B555DF",
@@ -60215,6 +60428,188 @@
       "description": "Fawcett's Bounty is a jumping puzzle located in the northern part of the Harathi Hinterlands, west of Arcallion Waypoint — ."
     },
     {
+      "eventId": "9FBFB80B-6746-407B-BF58-7801CA744AEB",
+      "name": "A race is starting soon!",
+      "mapId": 326,
+      "category": "race",
+      "flags": [
+        "map_wide"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        144.946,
+        -63.591
+      ],
+      "continent": [
+        53613.772,
+        30696.317
+      ],
+      "radiusMeters": 76.2,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "AB146F28-60AE-47E7-B90C-A715085987FE",
+      "name": "Cheer on the racing moas!",
+      "mapId": 326,
+      "category": "map_wide",
+      "flags": [
+        "map_wide"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        565.501,
+        26.795
+      ],
+      "continent": [
+        54303.658,
+        30548.045
+      ],
+      "radiusMeters": 0.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "03CFBEE1-FDF4-4698-9ED8-3BDCE69C716D",
+      "name": "Reach the finish line!",
+      "mapId": 326,
+      "category": "race",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        135.512,
+        -95.925
+      ],
+      "continent": [
+        53598.296,
+        30749.357
+      ],
+      "radiusMeters": 0.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "0B0C7F0D-7AFE-4787-9DF4-B07DA2555C4C",
+      "name": "Stabilize the Rift",
+      "mapId": 326,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        357.297,
+        461.193
+      ],
+      "continent": [
+        53962.117,
+        29835.45
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
+    },
+    {
+      "eventId": "429295C8-F905-46E0-8453-9A39D99A25F1",
+      "name": "Stabilize the Rift",
+      "mapId": 326,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        533.875,
+        -317.619
+      ],
+      "continent": [
+        54251.779,
+        31113.029
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
+    },
+    {
+      "eventId": "63A1AA74-4A47-47F2-9E70-D352FDE1C71C",
+      "name": "Stabilize the Rift",
+      "mapId": 326,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        297.736,
+        108.65
+      ],
+      "continent": [
+        53864.412,
+        30413.769
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
+    },
+    {
+      "eventId": "9B7F30AC-1764-45C4-9072-4FD371E3A134",
+      "name": "Stabilize the Rift",
+      "mapId": 326,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -407.688,
+        37.062
+      ],
+      "continent": [
+        52707.221,
+        30531.202
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
+    },
+    {
+      "eventId": "2BB1F751-FA2B-4557-AB45-961F7D7DF48D",
+      "name": "The moa race begins soon. Place your bets with Tigg now.",
+      "mapId": 326,
+      "category": "race",
+      "flags": [
+        "map_wide"
+      ],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        564.952,
+        28.576
+      ],
+      "continent": [
+        54302.758,
+        30545.123
+      ],
+      "radiusMeters": 76.2,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
       "eventId": "1CC93400-6704-4E1A-B3CD-E37CECEE7F71",
       "name": "Subdue and capture Prisoner 1141.",
       "mapId": 25,
@@ -65092,7 +65487,7 @@
       "radiusMeters": 114.3,
       "wikiTitle": "Defend Shadowheart Site from the Risen",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defend_Shadowheart_Site_from_the_Risen",
-      "description": "Defend Shadowheart Site from the Risen is a level 22 event in Lychcroft Mere."
+      "description": "Defend Shadowheart Site from the Risen is a level 22 event in Lychcroft Mere. While the event is active, Shadowheart Site Waypoint will be contested."
     },
     {
       "eventId": "1FC62950-C77A-43ED-9462-5F7C28B4F93D",
@@ -67013,6 +67408,160 @@
       "description": ""
     },
     {
+      "eventId": "2F1CBE7B-D2DB-4318-8EF9-96615AA99B99",
+      "name": "Donate to the scientist to help unlock Mystic Forge secrets.",
+      "mapId": 50,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -88.22,
+        364.421
+      ],
+      "continent": [
+        49007.282,
+        30890.196
+      ],
+      "radiusMeters": 11.4,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "9C16B785-D1DD-43BA-B261-FD95B607931A",
+      "name": "Stabilize the Rift",
+      "mapId": 50,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -87.742,
+        83.295
+      ],
+      "continent": [
+        49008.067,
+        31351.36
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
+    },
+    {
+      "eventId": "5D16829D-740C-4E77-87B9-D3A856814C41",
+      "name": "Bring master crafters upgrade materials to unlock new recipes.",
+      "mapId": 50,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 80,
+      "viewerEligible": true,
+      "locationType": "cylinder",
+      "world": [
+        -200.823,
+        301.701
+      ],
+      "continent": [
+        48822.566,
+        30993.083
+      ],
+      "radiusMeters": 115.4,
+      "wikiTitle": "Bring master crafters upgrade materials to unlock new recipes",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Bring_master_crafters_upgrade_materials_to_unlock_new_recipes",
+      "description": "Bring master crafters upgrade materials to unlock new recipes was a dynamic event that occured at the Trader's Forum of Lion's Arch. It started on July 30, 2019 and ran until August 2, 2019."
+    },
+    {
+      "eventId": "975F5A92-FF96-4011-875E-F6703F4DED61",
+      "name": "Mad King Says Daily Reward",
+      "mapId": 50,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 80,
+      "viewerEligible": true,
+      "locationType": "sphere",
+      "world": [
+        -29.729,
+        163.384
+      ],
+      "continent": [
+        49103.232,
+        31219.982
+      ],
+      "radiusMeters": 0.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "FBEC3E98-7396-4F30-9ABF-8E5D3D992D40",
+      "name": "Mad King Says Daily Reward",
+      "mapId": 50,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 80,
+      "viewerEligible": true,
+      "locationType": "sphere",
+      "world": [
+        -29.729,
+        163.384
+      ],
+      "continent": [
+        49103.232,
+        31219.982
+      ],
+      "radiusMeters": 0.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "FC5E2204-4E2D-4557-BC95-65D948981550",
+      "name": "Mad King Says Daily Reward",
+      "mapId": 50,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 80,
+      "viewerEligible": true,
+      "locationType": "sphere",
+      "world": [
+        -29.729,
+        163.384
+      ],
+      "continent": [
+        49103.232,
+        31219.982
+      ],
+      "radiusMeters": 0.0,
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
+    },
+    {
+      "eventId": "D92AF44A-647E-41CE-8E92-3E0CEE3AA38D",
+      "name": "Your Mad King says...",
+      "mapId": 50,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 80,
+      "viewerEligible": true,
+      "locationType": "sphere",
+      "world": [
+        -42.292,
+        160.832
+      ],
+      "continent": [
+        49082.623,
+        31224.168
+      ],
+      "radiusMeters": 86.1,
+      "wikiTitle": "Your Mad King says...",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Your_Mad_King_says...",
+      "description": "Your Mad King says... is a level 80 event that occurs at the Lion's Court in the Grand Piazza every 2 hours on the hour (starting at 00:00)."
+    },
+    {
       "eventId": "0300EC4C-6584-4B26-B4A2-3C2DDB21BD28",
       "name": "Defeat the holograms!",
       "mapId": 27,
@@ -68457,9 +69006,9 @@
         30954.125
       ],
       "radiusMeters": 127.0,
-      "wikiTitle": "Force the ancient creature back into its prison",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Force_the_ancient_creature_back_into_its_prison",
-      "description": "Force the ancient creature back into its prison is a level 31 group event that takes place in Frostgate Falls. It is triggered by giving Arcanist Dremus a Gear Crank, which is a random drop in Lornar's Pass."
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "3471BA41-2BE6-4295-82D3-64F77E174045",
@@ -69949,7 +70498,7 @@
       "radiusMeters": 55.6,
       "wikiTitle": "Defend the Pact soldiers at Hope Falls",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defend_the_Pact_soldiers_at_Hope_Falls",
-      "description": "Defend the Pact soldiers at Hope Falls is a level 76 dynamic event that occurs in Malchor's Leap. The event determines if the Pact maintains control of the camp near Hope Falls. It will temporarily contest the Valley of Lyss Waypoint. If successful, the Waypoint is cleared and the camp remains."
+      "description": "Defend the Pact soldiers at Hope Falls is a level 76 dynamic event that occurs in Malchor's Leap. The event determines if the Pact maintains control of the camp near Hope Falls. It will temporarily contest the Valley of Lyss Waypoint."
     },
     {
       "eventId": "4449ECE2-5192-4CA7-902C-DC0FCD5C7C1D",
@@ -70311,9 +70860,9 @@
         40565.668
       ],
       "radiusMeters": 88.9,
-      "wikiTitle": "",
-      "wikiUrl": "",
-      "description": ""
+      "wikiTitle": "Defend the seal until the Pact cannon is back online",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Defend_the_seal_until_the_Pact_cannon_is_back_online",
+      "description": "Defend the seal until the Pact cannon is back online is a level 78 event that occurs in Crusted Shoals. If unsuccessful, the seal at Altar of Lies will be restored, and an event to repair and calibrate the cannon will follow."
     },
     {
       "eventId": "35997B10-179B-4E39-AD7F-54E131ECDD57",
@@ -71027,7 +71576,7 @@
       "radiusMeters": 46.4,
       "wikiTitle": "Escort Historian Vermoth to the Altar of Tempests",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Escort_Historian_Vermoth_to_the_Altar_of_Tempests",
-      "description": "Escort Historian Vermoth to the Altar of Tempests is a level 79 group event that begins in north-east Karst Plains and leads to the Cathedral of Zephyrs."
+      "description": "Escort Historian Vermoth to the Altar of Tempests is a level 79 group event that begins in northeast Karst Plains and leads to the Cathedral of Zephyrs."
     },
     {
       "eventId": "7D824CDD-9F89-4DB6-A3E8-D43B78FCAB6E",
@@ -71071,9 +71620,9 @@
         41253.379
       ],
       "radiusMeters": 42.3,
-      "wikiTitle": "Fight the Inquest Ornithologist",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Fight_the_Inquest_Ornithologist",
-      "description": "Fight the Inquest Ornithologist is a level 79 event that occurs in Karst Plains."
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "87861210-3F7C-4CC0-8042-6D52B68B3616",
@@ -72777,9 +73326,9 @@
         34375.946
       ],
       "radiusMeters": 111.0,
-      "wikiTitle": "",
-      "wikiUrl": "",
-      "description": ""
+      "wikiTitle": "Drive off the Inquest at Survivor's Encampment",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Drive_off_the_Inquest_at_Survivor%27s_Encampment",
+      "description": "Drive off the Inquest at Survivor's Encampment is a level 12 dynamic event that occurs in Greyfern Expanses."
     },
     {
       "eventId": "791C72EE-273F-460A-BB7D-86D74A3363D8",
@@ -73587,7 +74136,7 @@
       "radiusMeters": 19.6,
       "wikiTitle": "Defeat the misplaced steam ogre",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defeat_the_misplaced_steam_ogre",
-      "description": "Defeat the misplaced steam ogre is a level 18 group event that occurs in Thaumanova Reactor. Players must find the Matrix Cube Key located randomly in the Thaumanova Reactor and infuse it with all four elements located within the reactor."
+      "description": "Defeat the misplaced steam ogre is a level 18 group event that occurs upon a floating platform above the Thaumanova Reactor. Players must find the Matrix Cube Key located randomly in the Thaumanova Reactor and infuse it with all four elements located within the reactor."
     },
     {
       "eventId": "FD059B62-2309-40A9-B1CA-0FD419BB7352",
@@ -73675,9 +74224,9 @@
         38185.467
       ],
       "radiusMeters": 97.5,
-      "wikiTitle": "Disguise yourself and gather special roots for Drysdan's medicine",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Disguise_yourself_and_gather_special_roots_for_Drysdan%27s_medicine",
-      "description": "Disguise yourself and gather special roots for Drysdan's medicine is a level 61 event that occurs in Bard's Valley."
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "673AE757-7F80-4BFD-914E-F0723C856970",
@@ -75427,7 +75976,7 @@
       "radiusMeters": 115.5,
       "wikiTitle": "Defeat the Inquest's golem Mark II",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defeat_the_Inquest%27s_golem_Mark_II",
-      "description": "Defeat the Inquest's golem Mark II is a level 68 event that occurs in Whitland Flats at Mount Maelstrom."
+      "description": "Defeat the Inquest's golem Mark II is a level 68 group event that occurs at the Observation Platform XKV in Whitland Flats. After successfully disabling the Inquest's nearby Matter Containers, the Inquest Golem Mark II world boss will be deployed upon the platform."
     },
     {
       "eventId": "831DC6FB-5F63-4B0C-96A5-FE2037EBEE7F",
@@ -75541,7 +76090,7 @@
       "radiusMeters": 269.2,
       "wikiTitle": "Disable the containers before they release their toxins",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Disable_the_containers_before_they_release_their_toxins",
-      "description": "Disable the containers before they release their toxins is a level 68 dynamic event that occurs in Whitland Flats."
+      "description": "Disable the containers before they release their toxins is a level 68 event that occurs around Observation Platform XKV in Whitland Flats, and is the pre-event to the Inquest Golem Mark II world boss event."
     },
     {
       "eventId": "DD411A2F-2421-4652-AA96-01BC9C14347C",
@@ -79842,6 +80391,28 @@
       "description": ""
     },
     {
+      "eventId": "CBA91D97-8A09-44CE-8B9B-093A00B38374",
+      "name": "Stabilize the Rift",
+      "mapId": 139,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        -14.266,
+        233.049
+      ],
+      "continent": [
+        38632.597,
+        36991.702
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
+    },
+    {
       "eventId": "081C67E8-0F71-4585-84C3-032684C7AA1D",
       "name": "Ambush! Defend yourselves against the Awakened!",
       "mapId": 1271,
@@ -82665,9 +83236,9 @@
         42422.117
       ],
       "radiusMeters": 296.3,
-      "wikiTitle": "",
-      "wikiUrl": "",
-      "description": ""
+      "wikiTitle": "Gather floating artifacts to aid Hiffa in her research",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Gather_floating_artifacts_to_aid_Hiffa_in_her_research",
+      "description": "Gather floating artifacts to aid Hiffa in her research is a level 80 event that occurs in Dwayna's Reliquary. Players use their gliders and the updrafts in the area to collect an Artifact of Dwayna and hand it off to Explorer Hiffa."
     },
     {
       "eventId": "AFF6CFE5-5C25-4953-9EFC-9817A73B0274",
@@ -83958,7 +84529,7 @@
       "radiusMeters": 75.4,
       "wikiTitle": "Give alpine lilies to the militia captain before illness overtakes his soldiers",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Give_alpine_lilies_to_the_militia_captain_before_illness_overtakes_his_soldiers",
-      "description": "Give alpine lilies to the militia captain before illness overtakes his soldiers is a level 15 event in Hunter's Pitfalls and Tromigar Valley."
+      "description": "Give alpine lilies to the militia captain before illness overtakes his soldiers is a level 15 event that occurs in Hunter's Pitfalls and Tromigar Valley, just southwest of Highpass Haven."
     },
     {
       "eventId": "7792C374-0D45-4124-ABCB-FC5743FA2445",
@@ -84004,7 +84575,7 @@
       "radiusMeters": 36.2,
       "wikiTitle": "Help the militia soldiers fight off the icebrood",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Help_the_militia_soldiers_fight_off_the_icebrood",
-      "description": "Help the militia soldiers fight off the icebrood is a level 16 event in Hunter's Pitfalls and Tromigar Valley."
+      "description": "Help the militia soldiers fight off the icebrood is a level 16 event that occurs in Hunter's Pitfalls and Tromigar Valley, just southwest of Highpass Haven."
     },
     {
       "eventId": "B417256A-A592-4DC3-B559-F955DAF042E7",
@@ -84672,7 +85243,7 @@
       "radiusMeters": 53.7,
       "wikiTitle": "Defeat the largos before it kills Silent Snowfall",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defeat_the_largos_before_it_kills_Silent_Snowfall",
-      "description": "Defeat the largos before it kills Silent Snowfall is a level 20 event that occurs in Song of Final Exile. It is part of the Kodan Claw meta event and only occurs if Silent Snowfall became the Claw of Koda. The alternative to this event is: Defeat the largos before it kills Ice Raking (20)"
+      "description": "Defeat the largos before it kills Silent Snowfall is a level 20 event that occurs in Song of Final Exile. It is part of the Kodan Claw meta event and only occurs if Silent Snowfall became the Claw of Koda."
     },
     {
       "eventId": "1E8EA05D-5AD3-4A5C-A7E3-DD2554FE2A27",
@@ -84714,9 +85285,9 @@
         28640.951
       ],
       "radiusMeters": 44.6,
-      "wikiTitle": "Escort the supply dolyak to Snowdrift Haven",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Escort_the_supply_dolyak_to_Snowdrift_Haven",
-      "description": "Escort the supply dolyak to Snowdrift Haven is a level 20 event that starts in Vitpeln Hills leading in Hrothgar's Pass."
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "BA721CB7-46C1-4CFE-82BE-21F408BFD602",
@@ -85494,9 +86065,9 @@
         28460.583
       ],
       "radiusMeters": 28.9,
-      "wikiTitle": "",
-      "wikiUrl": "",
-      "description": ""
+      "wikiTitle": "Destroy the icebrood shaman",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Destroy_the_icebrood_shaman",
+      "description": "Destroy the icebrood shaman is a level 25 group event in Snowden Drifts. The Champion Icebrood Shaman travels from Jormabakke Stead to Snowdrift Waypoint, killing all in its path."
     },
     {
       "eventId": "56E0F4A8-1E0B-4DFE-AFDF-E6DC5989D576",
@@ -88596,7 +89167,7 @@
       "radiusMeters": 76.2,
       "wikiTitle": "Defend the supply of energy from krait",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defend_the_supply_of_energy_from_krait",
-      "description": "Defend the supply of energy from krait is a level 65 event that occurs in Chokevine Gorge. This event starts 12 minutes after its last completion (whether successful or not)."
+      "description": "Defend the supply of energy from krait is a level 65 event that occurs at the United Arcanist Lab in Chokevine Gorge during the Danger at Fabled Djannor meta event in Sparkfly Fen. This event starts 12 minutes after its last completion (whether successful or not)."
     },
     {
       "eventId": "2698C024-6DD4-4492-B35B-D7C644E4019B",
@@ -89348,9 +89919,9 @@
         38981.15
       ],
       "radiusMeters": 74.9,
-      "wikiTitle": "Destroy the Risen krait nimross and free the trapped Pact crew",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Destroy_the_Risen_krait_nimross_and_free_the_trapped_Pact_crew",
-      "description": "Destroy the Risen krait nimross and free the trapped Pact crew is a level 73 event that takes place near the sea floor in the Strait of Malediction."
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "2428CB21-0CA5-413B-9342-DD4C2BEC9865",
@@ -92212,12 +92783,12 @@
       "eventId": "97EA0B45-C109-4E2B-B881-649B9AE8D92E",
       "name": "Kill the Mordrem champion.",
       "mapId": 1045,
-      "category": "group_event",
+      "category": "hero_challenge",
       "flags": [
         "group_event"
       ],
       "level": 80,
-      "viewerEligible": true,
+      "viewerEligible": false,
       "locationType": "sphere",
       "world": [
         -824.923,
@@ -92228,9 +92799,9 @@
         35698.042
       ],
       "radiusMeters": 76.2,
-      "wikiTitle": "",
-      "wikiUrl": "",
-      "description": ""
+      "wikiTitle": "Kill the Mordrem champion",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Kill_the_Mordrem_champion",
+      "description": "Kill the Mordrem champion is a hero challenge event in Dragon's Passage."
     },
     {
       "eventId": "70A3F3E8-4BF0-4D0E-8C26-70A70DBBD9CA",
@@ -95968,9 +96539,9 @@
         51000.069
       ],
       "radiusMeters": 88.5,
-      "wikiTitle": "Help Kyrisah and Meymo locate the lost key",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Help_Kyrisah_and_Meymo_locate_the_lost_key",
-      "description": "Help Kyrisah and Meymo locate the lost key is a level 80 escort event that starts in Lair of the Forgotten."
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "9EE43AD9-E7D7-4E5D-A38A-53C3D3B2B8EB",
@@ -96629,6 +97200,28 @@
       "wikiTitle": "",
       "wikiUrl": "",
       "description": ""
+    },
+    {
+      "eventId": "A302316E-F9E8-4508-BE23-E9E6494A4789",
+      "name": "Stabilize the Rift",
+      "mapId": 91,
+      "category": "dynamic_event",
+      "flags": [],
+      "level": 0,
+      "viewerEligible": false,
+      "locationType": "sphere",
+      "world": [
+        111.329,
+        22.902
+      ],
+      "continent": [
+        43318.626,
+        37466.431
+      ],
+      "radiusMeters": 50.8,
+      "wikiTitle": "Stabilize the Rift",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Stabilize_the_Rift",
+      "description": "Stabilize the Rift is an event that occurs randomly around Tyria, most commonly in Fields of Ruin. If you use a Class I Rift Stabilizer or a Class II Rift Stabilizer and use the skill Activate Stabilizer near the event, the event becomes active."
     },
     {
       "eventId": "11CD6499-8009-44F0-88F4-E2578E30E97A",
@@ -98856,7 +99449,7 @@
       "radiusMeters": 228.6,
       "wikiTitle": "Defend the Deldrimor Ruins from the mist rift attack",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defend_the_Deldrimor_Ruins_from_the_mist_rift_attack",
-      "description": "Defend the Deldrimor Ruins from the mist rift attack is a level 80 group event that occurs over the whole Deldrimor Ruins in Thunderhead Peaks. It takes place around xx:00 (± 10 minutes) of each hour."
+      "description": "Defend the Deldrimor Ruins from the mist rift attack[sic] is a level 80 group event that occurs over the whole Deldrimor Ruins in Thunderhead Peaks. It takes place around xx:00 (± 10 minutes) of each hour."
     },
     {
       "eventId": "668D77E9-9580-4FF8-BFBD-D85559D1BC68",
@@ -99404,7 +99997,7 @@
       "radiusMeters": 63.5,
       "wikiTitle": "Defeat the giant Destroyer troll",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defeat_the_giant_Destroyer_troll",
-      "description": "Defeat the giant Destroyer troll is a level 52 Group event that occurs at the end of the Only Zuhl jumping puzzle."
+      "description": "Defeat the giant Destroyer troll[sic] is a level 52 Group event that occurs at the end of the Only Zuhl jumping puzzle."
     },
     {
       "eventId": "9D585BD8-F091-4242-B3C1-EEA968FBCBFF",
@@ -100256,9 +100849,9 @@
         36009.778
       ],
       "radiusMeters": 84.4,
-      "wikiTitle": "",
-      "wikiUrl": "",
-      "description": ""
+      "wikiTitle": "Escort Krattz to destroy mystery skritt device",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Escort_Krattz_to_destroy_mystery_skritt_device",
+      "description": "Escort Krattz to destroy mystery skritt device is a level 55 event that starts in Fisher's Eye Bridges and ends in Fionnghuala Scratch."
     },
     {
       "eventId": "160061DF-1E87-442D-9CBF-5CC1C936920E",
@@ -102688,9 +103281,9 @@
         31746.476
       ],
       "radiusMeters": 52.0,
-      "wikiTitle": "Defend Tactician Quickweld as he builds a defensive tower",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Defend_Tactician_Quickweld_as_he_builds_a_defensive_tower",
-      "description": "Defend Tactician Quickweld as he builds a defensive tower is a level 80 event that occurs in Verdant Brink during daytime."
+      "wikiTitle": "",
+      "wikiUrl": "",
+      "description": ""
     },
     {
       "eventId": "096EE496-8D80-4B65-9A70-117A8723BC2C",
@@ -103486,9 +104079,9 @@
         31098.167
       ],
       "radiusMeters": 76.2,
-      "wikiTitle": "",
-      "wikiUrl": "",
-      "description": ""
+      "wikiTitle": "Fill the Itzel villagers' food baskets with insect larvae",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Fill_the_Itzel_villagers%27_food_baskets_with_insect_larvae",
+      "description": "Fill the Itzel villagers' food baskets with insect larvae is a level 80 event that occurs in Jaka Itzel during daytime as part of the Outpost: Jaka Itzel event chain."
     },
     {
       "eventId": "5869C555-53AF-4701-876B-02BFB5F0AD7A",

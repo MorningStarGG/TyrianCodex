@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 20,
     "name": "Blazeridge Steppes",
@@ -44,6 +44,42 @@
       62998,
       30464
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 15,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 29
+        },
+        "3": {
+          "tasks": 15,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 29
+        },
+        "2": {
+          "tasks": 15,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 29
+        },
+        "0": {
+          "tasks": 15,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 29
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BPwBAAA=]",
       "waypointChatLink": "[&BPwBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 10,
       "wikiText": "The Twin Sisters Crossing is an area located in the southeast portion of Blazeridge Steppes. It holds Foewatch Encampment, the Ebon Vanguard's forward outpost in the zone."
     },
@@ -166,6 +208,12 @@
           32405
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 26,
       "wikiText": "Destroy ogre supplies and flag stands, prevent brawls between charr and humans, help patrols combat ogres, and revive fallen allies.",
       "waypointChatLink": "[&BPwBAAA=]"
@@ -186,6 +234,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 47,
       "wikiText": "The Foewatch Encampment is an encampment of the Ebon Vanguard within Twin Sisters Crossing. It is constantly under attack from ogres which occasionally requires it be recaptured.",
@@ -208,6 +262,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 62,
       "wikiText": "A very simple and safe to get to Vista.",
       "waypointChatLink": "[&BPwBAAA=]"
@@ -229,6 +289,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 170,
       "wikiText": "The Griffonclaw Peak is a point of interest within Splinter Hills. This cliff side is the nesting grounds of a flock of Hawkeye Griffon.",
       "waypointChatLink": "[&BP0BAAA=]"
@@ -249,6 +315,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 185,
       "wikiText": "Splinter Hills is an area located in far southern section of Blazeridge Steppes.",
@@ -273,6 +345,12 @@
       ],
       "chatLink": "[&BFEDAAA=]",
       "waypointChatLink": "[&BFEDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 269,
       "wikiText": "Splinter Hills is an area located in far southern section of Blazeridge Steppes."
     },
@@ -375,6 +453,12 @@
           32462
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 337,
       "wikiText": "Lure salamander drakes into fishing nets with tasty fishes, repair small fishing nets, and search the village for Separatists.",
       "waypointChatLink": "[&BFEDAAA=]"
@@ -395,6 +479,12 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 347,
       "wikiText": "Ferrusatos Village is a point of interest within Splinter Hills in Blazeridge Steppes. This area is home to a small charr fishing village.",
@@ -471,6 +561,12 @@
           32303
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 395,
       "wikiText": "Destroy Separatist siege weapons and weapon plans, steal their siege weapon ammo, and rescue charr captives.",
       "waypointChatLink": "[&BFEDAAA=]"
@@ -491,6 +587,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 452,
       "wikiText": "Drake Hollow is a point of interest within Tumok's Last Stand. A large force of Separatists have established a heavily fortified encampment inside this circular canyon.",
@@ -515,6 +617,12 @@
       ],
       "chatLink": "[&BPsBAAA=]",
       "waypointChatLink": "[&BPsBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 557,
       "wikiText": "Tumok's Last Stand is an area located in the southern portion of Blazeridge Steppes. It holds Drake Hollow, a prominent Separatist camp."
     },
@@ -585,6 +693,12 @@
           32227
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 611,
       "wikiText": "Use old Ascalonian weapons to send ghostly aggression towards the Branded. Use Branded crystal shards to lure Branded aggression towards Ascalonian ghosts.",
       "waypointChatLink": "[&BPsBAAA=]"
@@ -608,6 +722,12 @@
       ],
       "chatLink": "[&BPkBAAA=]",
       "waypointChatLink": "[&BPkBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 766,
       "wikiText": "Dragonwatch is a lightly wooded grove on the western side of Blazeridge Steppes. There is a road here leading from the Plains of Ashford portal to the bridge at Steeleye Span."
     },
@@ -630,6 +750,12 @@
       ],
       "chatLink": "[&BPoBAAA=]",
       "waypointChatLink": "[&BPoBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 834,
       "wikiText": "The Steeleye Span is a charr stronghold and the only \"safe\" bridge across the Dragonbrand. Its cannons defend the line against the Branded in the center of the Dragonbrand."
     },
@@ -680,6 +806,12 @@
           31819
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 864,
       "wikiText": "Fight branded creatures, use Iron Legion cannons, pick up unexploded mortar shells, activate lightning rods and destroy Branded devourer nests.",
       "waypointChatLink": "[&BPoBAAA=]"
@@ -703,6 +835,12 @@
       ],
       "chatLink": "[&BFIDAAA=]",
       "waypointChatLink": "[&BFIDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 899,
       "wikiText": "The Soot Road is an area in Blazeridge Steppes. This roadway passes through a large forest at this point. There is a large ogre krall in the northeastern corner of this area."
     },
@@ -722,6 +860,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 969,
       "wikiText": "The Sootpan Kraal is a point of interest within Soot Road. This location is home to a large ogre kraal.",
@@ -746,6 +890,12 @@
       ],
       "chatLink": "[&BP0BAAA=]",
       "waypointChatLink": "[&BP0BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 994,
       "wikiText": "The Behem Gauntlet is in the southeastern section of Blazeridge Steppes. This grove of trees guards the entrance to a spider filled box canyon which leads to a secluded grotto."
     },
@@ -828,6 +978,12 @@
           31714
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1002,
       "wikiText": "Eliminate ogres and ogre pets. Destroy ogre housing, gates, supplies, and weapon racks.",
       "waypointChatLink": "[&BP0BAAA=]"
@@ -848,6 +1004,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1075,
       "wikiText": "The Behemian Grand Kraal is an ogre fortress and point of interest in Gastor Gullet.",
@@ -872,6 +1034,12 @@
       ],
       "chatLink": "[&BE8DAAA=]",
       "waypointChatLink": "[&BE8DAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1133,
       "wikiText": "Gastor Gullet is an area in Blazeridge Steppes. Ogre forces have established a large kraal in the center of this canyon."
     },
@@ -891,6 +1059,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1213,
       "wikiText": "The Tail of the Star God is a point of interest within Pockmark Roughs. It is one of the few remaining crystals from the Searing that ravaged Ascalon.",
@@ -913,6 +1087,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1218,
       "wikiText": "A large Searing Crystal, worshiped by nearby grawl as the Tail of the Star God remains as a testament to the Searing.",
       "waypointChatLink": "[&BE8DAAA=]"
@@ -933,6 +1113,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1256,
       "wikiText": "Provided you are sneaky enough, you should be able to get to this point with no problem.",
@@ -989,6 +1175,12 @@
           30672
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1285,
       "wikiText": "Use Olenn's raven illusion to lure ravens and eliminate grawl, earth elementals, and grawl supplies.",
       "waypointChatLink": "[&BAUCAAA=]"
@@ -1012,6 +1204,12 @@
       ],
       "chatLink": "[&BAUCAAA=]",
       "waypointChatLink": "[&BAUCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1315,
       "wikiText": "Deserter Flats is an area of the Dragonbrand located within Blazeridge Steppes. It contains the ruins of the Serenity Temple and the Durmand Priory camp of Refuge Sanctum who are currently excavaging it for artifacts."
     },
@@ -1062,6 +1260,12 @@
           30853
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1330,
       "wikiText": "Investigate the mysterious stones and remove ghostly threats so the Priory can safely investigate the ruins.",
       "waypointChatLink": "[&BAUCAAA=]"
@@ -1083,6 +1287,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1353,
       "wikiText": "In the center of the Wreckage of Serenity stand the ruins of Serenity Temple. Though destroyed hundreds of years ago in the Searing, the intrepid adventurer can channel the hallowed legacy and complete this hero challenge.",
       "waypointChatLink": "[&BFADAAA=]"
@@ -1103,6 +1313,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1361,
       "wikiText": "The Wreckage of Serenity is a point of interest in Deserter Flats within Blazeridge Steppes. It is the remains of the Serenity Temple that lay destroyed in the scar left by the flight path of the Elder Dragon Kralkatorrik.",
@@ -1127,6 +1343,12 @@
       ],
       "chatLink": "[&BFADAAA=]",
       "waypointChatLink": "[&BFADAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1418,
       "wikiText": "The Ratcatcher Knoll is an area within Blazeridge Steppes. The name of the area may have been given by the charr posted at Kinar Fort whose supplies are often being raided by the nearby skritt."
     },
@@ -1172,6 +1394,12 @@
           62110,
           30278
         ]
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1440,
       "wikiText": "Remove the skritt from Tongue Rock and the skritt encroaching on Kinar Fort. Knockover skritt shiny-things. Disable skritt traps. Return stolen weapons to the Sentinels.",
@@ -1224,6 +1452,12 @@
           29727
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1500,
       "wikiText": "Infiltrate the InGenium Research Facility. Eliminate Inquest. Destroy their lab equipment and research data.",
       "waypointChatLink": "[&BAQCAAA=]"
@@ -1247,6 +1481,12 @@
       ],
       "chatLink": "[&BAQCAAA=]",
       "waypointChatLink": "[&BAQCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1546,
       "wikiText": "Relliatus Canyon is an area within Blazeridge Steppes, to the west of the Dragonbrand. It is home to a large breeding colony of drakes. A group of Sentinels have established a small camp here."
     },
@@ -1266,6 +1506,12 @@
       "order": 34,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1554,
       "wikiText": "Fane Skinchisel is a charr sentinel stationed at the sentinel camp near Brandview Waypoint in the Blazeridge Mountains. Players who don't back down from a sparring bout and prove their worth will complete her hero challenge.",
@@ -1287,6 +1533,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1626,
       "wikiText": "Facing the vista from the ground, there is a set of stairs slightly to the left.",
@@ -1311,6 +1563,12 @@
       ],
       "chatLink": "[&BE4DAAA=]",
       "waypointChatLink": "[&BE4DAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1686,
       "wikiText": "Lowland Burns is an area in Blazeridge Steppes that contains the northernmost section of the Dragonbrand within the zone, infested with Branded."
     },
@@ -1330,6 +1588,12 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1763,
       "wikiText": "Skara Braevus is a point of interest within Kindling Bridge in Blazeridge Steppes. This fortress is home to a small contingent of Sentinels, who guard this area from branded forces from the Dragonbrand.",
@@ -1354,6 +1618,12 @@
       ],
       "chatLink": "[&BAMCAAA=]",
       "waypointChatLink": "[&BAMCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1787,
       "wikiText": "Kindling Bridge is an area in northwestern Blazeridge Steppes. This tree lined roadway is defended by a group of Sentinels at Skara Braevus."
     },
@@ -1373,6 +1643,12 @@
       "order": 39,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1828,
       "wikiText": "Tucked into a small cave, the Birthplace of the Vigil marks the location of Almorra's Massacre. Contemplate over the defining event to complete this hero challenge.",
@@ -1397,6 +1673,12 @@
       ],
       "chatLink": "[&BAICAAA=]",
       "waypointChatLink": "[&BAICAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1919,
       "wikiText": "Terra Combusta is an area in Blazeridge Steppes. A contingent of Blood Legion soldiers at Brokentooth Maw have been cut out by the Brand, and due to a lack of supply, they rely on the large group of Plains Wurms to the north for food."
     },
@@ -1479,6 +1761,12 @@
           28933
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1943,
       "wikiText": "Help Sentinel and Vigil forces slay Branded creatures. Join Sentinel patrols and revive fallen allies. Destroy Branded crystals and noxious Branded plants.",
       "waypointChatLink": "[&BAICAAA=]"
@@ -1499,6 +1787,12 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1955,
       "wikiText": "An easy to access vista point. On the westmost edge of the Terra Combusta region.",
@@ -1559,6 +1853,12 @@
           29683
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1996,
       "wikiText": "Recover harpy feathers and give them to Wode. Use Wode's Experimental Essence Extractor to obtain \"essence\" from harpies. Destroy harpy roosts.",
       "waypointChatLink": "[&BAICAAA=]"
@@ -1582,6 +1882,12 @@
       ],
       "chatLink": "[&BP8BAAA=]",
       "waypointChatLink": "[&BP8BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2077,
       "wikiText": "Heretic Plain is an arid plain located in Blazeridge Steppes that separates two heavily defended forces. To the west is Guardian Stone stonghold manned by charr of the Vigil, to the east is a large group of ogres at Lunk Kraal."
     },
@@ -1636,6 +1942,12 @@
           29828
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2181,
       "wikiText": "Duel unskilled ogres and train their pets to help make the tougher. Build houses for the ogres pets. Return chickens to their cages. Replace spoiled food from their food supply.",
       "waypointChatLink": "[&BP4BAAA=]"
@@ -1659,6 +1971,12 @@
       ],
       "chatLink": "[&BP4BAAA=]",
       "waypointChatLink": "[&BP4BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2189,
       "wikiText": "The Unbroken Expanse is an area within Blazeridge Steppes. It is to the east of the Dragonbrand. The pond in the middle is the main source of water for the local ogres as well as local wildlife."
     },
@@ -1678,6 +1996,12 @@
       "order": 47,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2266,
       "wikiText": "Campfires are interactive objects that give torches as bundles.",
@@ -1702,6 +2026,12 @@
       ],
       "chatLink": "[&BAACAAA=]",
       "waypointChatLink": "[&BAACAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2307,
       "wikiText": "Heretic Plain is an arid plain located in Blazeridge Steppes that separates two heavily defended forces. To the west is Guardian Stone stonghold manned by charr of the Vigil, to the east is a large group of ogres at Lunk Kraal."
     },
@@ -1760,6 +2090,12 @@
           29304
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2400,
       "wikiText": "Speak with Fina Duskmaker about stealth operations. Complete them without being spotted by Ash Legion seekers.",
       "waypointChatLink": "[&BAECAAA=]"
@@ -1783,6 +2119,12 @@
       ],
       "chatLink": "[&BAECAAA=]",
       "waypointChatLink": "[&BAECAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2451,
       "wikiText": "Terra Carorunda is an area in northeast Blazeridge Steppes. There is a Separatist camp situated in the nearby cave system."
     },
@@ -1845,6 +2187,12 @@
           29062
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2474,
       "wikiText": "Dispatch Separatists, destroy their supplies, and steal explosive powder to give to Jahr Duskrend.",
       "waypointChatLink": "[&BAECAAA=]"
@@ -1865,6 +2213,12 @@
       "order": 52,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "Craze's Folly is a jumping puzzle located in Terra Carorunda, within Blazeridge Steppes.",

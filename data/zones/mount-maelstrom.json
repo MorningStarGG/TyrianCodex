@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 39,
     "name": "Mount Maelstrom",
@@ -44,6 +44,42 @@
       52480,
       38912
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 11,
+          "points_of_interest": 57,
+          "skill_challenges": 7,
+          "sectors": 25
+        },
+        "3": {
+          "tasks": 11,
+          "points_of_interest": 57,
+          "skill_challenges": 7,
+          "sectors": 25
+        },
+        "2": {
+          "tasks": 11,
+          "points_of_interest": 57,
+          "skill_challenges": 7,
+          "sectors": 25
+        },
+        "0": {
+          "tasks": 11,
+          "points_of_interest": 57,
+          "skill_challenges": 7,
+          "sectors": 25
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BMgCAAA=]",
       "waypointChatLink": "[&BMgCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5,
       "wikiText": "Govoran Terraces is an area in the northwestern section of Mount Maelstrom. A Nightmare Court camp is located here, where they often raid the skritt settlement of New Skrittstead."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 58,
       "wikiText": "Evisomancer's Resort is a point of interest in Govoran Terraces. This small secluded grove of trees is home to a force of Nightmare Court. They often raid the nearby skritt settlement of New Skrittstead.",
@@ -111,6 +159,12 @@
       ],
       "chatLink": "[&BMkCAAA=]",
       "waypointChatLink": "[&BMkCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 101,
       "wikiText": "Criterion Canyon is an area in western Mount Maelstrom. A large asuran ruin is currently being studied by a group of Durmand Priory members."
     },
@@ -130,6 +184,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 132,
       "wikiText": "From the south part of the ruins, cross the bridge and straight ahead till the edge of the cliff. Look down for a plateau with a fallen tree leading to the other side.",
@@ -310,6 +370,12 @@
           38537
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 162,
       "wikiText": "Use the Priory artifact-scanning gun to find excavation sites in the ruins, then mark the spots for Priory workers.",
       "waypointChatLink": "[&BMkCAAA=]"
@@ -331,6 +397,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 197,
       "wikiText": "Rata Pten (Asuran: ) is a ruined asuran settlement on the surface of the Steamspur Mountains. It holds relics dating back to when Orr was a thriving nation. In addition, there are relics which have writing similar to dwarven.",
       "waypointChatLink": "[&BMkCAAA=]"
@@ -351,6 +423,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 294,
       "wikiText": "Take the south exit in the village and go to the south end of the cliff. Walk up along the edge, and jump the green plateaus sticking out of the cliff wall to the vista.",
@@ -375,6 +453,12 @@
       ],
       "chatLink": "[&BMoCAAA=]",
       "waypointChatLink": "[&BMoCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 301,
       "wikiText": "Sootberme is an area in western Mount Maelstrom. The Pact has established a camp in the area to contain the large number of Risen grouping up in the Murkvale."
     },
@@ -441,6 +525,12 @@
           39265
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 312,
       "wikiText": "Clear caravan routes, unite dissenters, assist short-handed patrols, and reduce Risen numbers.",
       "waypointChatLink": "[&BMoCAAA=]"
@@ -464,6 +554,12 @@
       ],
       "chatLink": "[&BMsCAAA=]",
       "waypointChatLink": "[&BMsCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 365,
       "wikiText": "The Dysphoric Rim is an area in south western Mount Maelstrom. This road borders the Risen-filled swamp of the Murkvale. A small asuran krewe under the protection of the Pact found here are doing research on Risen body parts."
     },
@@ -538,6 +634,12 @@
           39309
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 415,
       "wikiText": "Cleanse fertile soil to create plant turrets, test Pixtor's weapons on Risen, activate Risen activity monitors, and cull Risen forces.",
       "waypointChatLink": "[&BMsCAAA=]"
@@ -558,6 +660,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 447,
       "wikiText": "Aliyana's Haunt is a point of interest in Murkvale. It is a small campsite that consists of Crusader Aliyana's ghost.",
@@ -582,6 +690,12 @@
       ],
       "chatLink": "[&BMcCAAA=]",
       "waypointChatLink": "[&BMcCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 478,
       "wikiText": "Murkvale is an area in Mount Maelstrom. This Risen-filled swamp is dangerous to travel, and the Pact has established a choke-point to prevent them from going towards Fort Trinity."
     },
@@ -601,6 +715,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 496,
       "wikiText": "The Gloomirk Outpost is a point of interest within the Murkvale. The Pact have established a fortified guardpost here to prevent further Risen from reaching Fort Trinity.",
@@ -622,6 +742,12 @@
       "order": 14,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 517,
       "wikiText": "Scribbles in the Dirt can be found in the southwest corner of Mount Maelstrom, at Murkvale. Interacting with it will begin the hero challenge Defeat Venomspinner and her devourer brood.",
@@ -646,6 +772,12 @@
       ],
       "chatLink": "[&BNYCAAA=]",
       "waypointChatLink": "[&BNYCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 645,
       "wikiText": "Mon Maelstrom is an area in Mount Maelstrom. The southern part of the volcano houses a camp used by an asuran krewe who are currently studying the volcano."
     },
@@ -704,6 +836,12 @@
           39872
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 652,
       "wikiText": "Collect earth elemental cores to power and repair golems, stop Inquest golems from opening fissures, and kill destroyers.",
       "waypointChatLink": "[&BNYCAAA=]"
@@ -725,6 +863,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 697,
       "wikiText": "Hellmouth Falls is a series of lava falls on the south face of Mon Maelstrom.",
       "waypointChatLink": "[&BM0CAAA=]"
@@ -745,6 +889,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 737,
       "wikiText": "The Theurgic Volute is a point of interest in Mon Maelstrom. This magic staircase was created by Geitt to quickly move across the above and underground parts of the volcano.",
@@ -769,6 +919,12 @@
       ],
       "chatLink": "[&BM0CAAA=]",
       "waypointChatLink": "[&BM0CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 816,
       "wikiText": "Maelstrom's Bile is the center of the volcano Mount Maelstrom. It can be accessed through passages originating near either Sootberme or Mon Maelstrom."
     },
@@ -788,6 +944,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 826,
       "wikiText": "Maelstrom's Core is deep within the underground caverns of the volcano that give this area its name.",
@@ -810,6 +972,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 863,
       "wikiText": "Heart of the Volcano can refer to one of these: Heart of the Volcano (object), a hero challenge which is also an object used for the Bolt III: Zap collection. Heart of the Volcano (story), a Living World Season 3 story part.",
       "waypointChatLink": "[&BM0CAAA=]"
@@ -830,6 +998,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1005,
       "wikiText": "Herot's Ascent is a point of interest in Avernan Volatile serving as a large underground Inquest stronghold. Passage through this area leads into the heart of the volcano.",
@@ -854,6 +1028,12 @@
       ],
       "chatLink": "[&BM8CAAA=]",
       "waypointChatLink": "[&BM8CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1054,
       "wikiText": "Avernan Volatile is an area in south central Mount Maelstrom. It features a vast arid plain with a large underground Inquest stronghold. An asuran krewe is also running experiments on the large number of Wind Riders located in the area."
     },
@@ -873,6 +1053,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1090,
       "wikiText": "The Felsic Plains is a point of interest in the Avernan Volatile. This barren wasteland is completely devoid of all plant life; however, there is a colony of Breeze Riders here.",
@@ -895,6 +1081,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1157,
       "wikiText": "Urrahn The Hunter is a powerful largos hunter who dwells in an underwater volcanic cave beneath an island in Mount Maelstrom. He is very secretive beyond wanting to test the player's skills. He has a hero challenge Defeat Urrahn the Hunter.",
       "waypointChatLink": "[&BNICAAA=]"
@@ -915,6 +1107,12 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1161,
       "wikiText": "Treacherous Vents is a point of interest within the Treacherous Depths. It is a underwater magma flow. Many largos are grouped up there, planning their next hunts.",
@@ -1103,6 +1301,12 @@
           39502
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1171,
       "wikiText": "While disguised as a Risen, free slaves, attack krait, and destroy their defenses.",
       "waypointChatLink": "[&BNECAAA=]"
@@ -1126,6 +1330,12 @@
       ],
       "chatLink": "[&BNECAAA=]",
       "waypointChatLink": "[&BNECAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1183,
       "wikiText": "The Mire Sea is a large body of water located within Mount Maelstrom. The waters are infested with both krait and their Risen counterparts."
     },
@@ -1145,6 +1355,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1194,
       "wikiText": "Restless Deeps is a point of interest within The Mire Sea. It is deep underwater and guarded by krait.",
@@ -1167,6 +1383,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1241,
       "wikiText": "A straight climb up the rope walkway starting from the Western edge of the shipwrecks, then a shorter climb up the mast to the vista. Be wary of the veterans, but they can be taken away from support.",
       "waypointChatLink": "[&BNICAAA=]"
@@ -1187,6 +1409,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1248,
       "wikiText": "Clandest Basecamp is an Order of Whispers outpost on Irwin Isle within Treacherous Depths.",
@@ -1211,6 +1439,12 @@
       ],
       "chatLink": "[&BNICAAA=]",
       "waypointChatLink": "[&BNICAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1260,
       "wikiText": "The Treacherous Depths is a large water filled area with two islands in Mount Maelstrom. One island has a hidden Order of Whispers outpost, the other an Artichoke Node farm."
     },
@@ -1230,6 +1464,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1289,
       "wikiText": "The Malxa Pyronetics is a point of interest within The Stychs. It is home to Inquest research base where they carry out weapon experiments against nearby hylek.",
@@ -1282,6 +1522,12 @@
           40217
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1313,
       "wikiText": "Falsify Inquest data, free captured Order agents, steal access keys, and reduce Inquest numbers.",
       "waypointChatLink": "[&BNICAAA=]"
@@ -1302,6 +1548,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1351,
       "wikiText": "Go south past the east side of the Malxa Pyronetics. At the end of the cliff and your left hand turn north and north-east up the cliff past the vista till you can turn south-west again to the vista.",
@@ -1324,6 +1576,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1378,
       "wikiText": "The Tzanopl Grounds is a point of interest within The Stychs that is the home to the tribe of Tzanopl hylek. The Inquest nearby are testing their mega-weapon on their village, much to their displeasure.",
       "waypointChatLink": "[&BNICAAA=]"
@@ -1344,6 +1602,12 @@
       "order": 37,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1381,
       "wikiText": "Petil is one of the fiercest warrior of the Tzanopl Grounds.",
@@ -1368,6 +1632,12 @@
       ],
       "chatLink": "[&BNUCAAA=]",
       "waypointChatLink": "[&BNUCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1417,
       "wikiText": "Judgment Rock is an area within Mount Maelstrom. This beach holds a camp set up by a small sylvari contingent, called the Tyrian Protectors. Judgment Rock is also a religious and pilgrimage site for various hylek tribes."
     },
@@ -1438,6 +1708,12 @@
           39692
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1437,
       "wikiText": "Clean up pollution, destroy turrets and recording devices, and kill Inquest.",
       "waypointChatLink": "[&BNUCAAA=]"
@@ -1458,6 +1734,12 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1440,
       "wikiText": "The Aquabase Terror Seven is a large underwater Inquest installation. Due to the pollution their experiments cause, a small group of ecologist sylvari are taking the fight to them to make them stop.",
@@ -1480,6 +1762,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1483,
       "wikiText": "Start at the north point of the island and just walk / jump your way more or less straight to the vista.",
       "waypointChatLink": "[&BNQCAAA=]"
@@ -1500,6 +1788,12 @@
       "order": 42,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1505,
       "wikiText": "Tarkkakt is a skritt on the shore of the the Mire Sea.",
@@ -1524,6 +1818,12 @@
       ],
       "chatLink": "[&BNQCAAA=]",
       "waypointChatLink": "[&BNQCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1518,
       "wikiText": "Whitland Flats is an area within Mount Maelstrom. It has been heavily polluted by Inquest activities. A camp of Wyld Hunt Valiants has been established to fight them and restore the land."
     },
@@ -1590,6 +1890,12 @@
           38686
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1532,
       "wikiText": "Clean golem pollution, cleanse infected wildlife, and fight off the Inquest.",
       "waypointChatLink": "[&BNQCAAA=]"
@@ -1610,6 +1916,12 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1581,
       "wikiText": "Lonatl Grounds is a point of interest within Whitland Flats that is the home to a tribe of Lonatl hylek. Many of the tribe's members became insane and lost due to the pollution unleashed because of the Inquest's foul experiments.",
@@ -1632,6 +1944,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1620,
       "wikiText": "Observation Platform XKV is an Inquest testing platform overseen by the Champion Platform Master found within Whitland Flats. It sets the stage for the event Defeat the Inquest's golem Mark II.",
       "waypointChatLink": "[&BNQCAAA=]"
@@ -1652,6 +1970,12 @@
       "order": 47,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1649,
       "wikiText": "Droknah's Relic is a communion hero point located at the Sunken Droknah.",
@@ -1674,6 +1998,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1655,
       "wikiText": "The Forge Foundations are a point of interest within the Sunken Droknah. The sunken foundations of Droknar's Forge can still be seen at this location.",
       "waypointChatLink": "[&BNECAAA=]"
@@ -1694,6 +2024,12 @@
       "order": 49,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1706,
       "wikiText": "The Mosstide Walfts are a point of interest within the Gauntlet Gulch. It is a rise overlooking a small pond.",
@@ -1716,6 +2052,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1755,
       "wikiText": "South of the vista there are a couple of broken pillars. Up the little hill west of the lowest pillar, then jump the 3 pillars that are together. From the highest one, jump on the narrow wall.",
       "waypointChatLink": "[&BNMCAAA=]"
@@ -1737,6 +2079,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1794,
       "wikiText": "Found to the southwest, Zone Black is one of the six corners of the Infinite Coil Reactor. Risen are kept here.",
       "waypointChatLink": "[&BEIFAAA=]"
@@ -1757,6 +2105,12 @@
       "order": 52,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1811,
       "wikiText": "Zone Blue (Under Construction) is an empty corner of the Infinite Coil Reactor.",
@@ -1781,6 +2135,12 @@
       ],
       "chatLink": "[&BEIFAAA=]",
       "waypointChatLink": "[&BEIFAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1824,
       "wikiText": "The Infinite Coil Reactor is a major Inquest lab located in Mount Maelstrom. This reactor was built as a replacement for the Thaumanova Reactor which exploded due to Inquest experimentation."
     },
@@ -1800,6 +2160,12 @@
       "order": 54,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1833,
       "wikiText": "Zone Violet is a point of interest within the Infinite Coil Reactor. There are branded minions for experiment and study.",
@@ -1822,6 +2188,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1855,
       "wikiText": "Zone White is a point of interest in the northeastern corner of the Infinite Coil Reactor. Icebrood are kept here for study and experimentation. It is the part of the Infinity Coil Reactor dedicated to the Elder Dragon of Ice, Jormag.",
       "waypointChatLink": "[&BEIFAAA=]"
@@ -1842,6 +2214,12 @@
       "order": 56,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1876,
       "wikiText": "Zone Green is a point of interest in the Infinite Coil Reactor. It holds a nature theme to it. It is meant to hold minions of the Elder Jungle Dragon Mordremoth.",
@@ -1864,6 +2242,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1877,
       "wikiText": "IQ1800 LX is a semi-transparent, malfunctioning holographic golem found in the Zone Green of the Infinite Coil Reactor area of Mount Maelstrom, which rewards a hero point for defeating it.",
       "waypointChatLink": "[&BEIFAAA=]"
@@ -1885,6 +2269,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1899,
       "wikiText": "Zone Red is a point of interest within the northwestern corner of the Infinite Coil Reactor. Destroyers are kept here for study and experimentation.",
       "waypointChatLink": "[&BEIFAAA=]"
@@ -1905,6 +2295,12 @@
       "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1964,
       "wikiText": "Gallant's Folly is a large Pact camp within the Gauntlet Gulch. The Pact use this as their primary base of operations for their assaults against the Inquest in the Infinite Coil Reactor.",
@@ -1929,6 +2325,12 @@
       ],
       "chatLink": "[&BNMCAAA=]",
       "waypointChatLink": "[&BNMCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1966,
       "wikiText": "Gauntlet Gulch is an area in north central Mount Maelstrom. The Pact has established a large stronghold at Gallant's Folly from which they base their assault on the Inquest of the Infinite Coil Reactor."
     },
@@ -2015,6 +2417,12 @@
           38138
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1970,
       "wikiText": "Eliminate Inquest spies, ensure supplies get to Gallant's Folly, and spar with Pact brawlers.",
       "waypointChatLink": "[&BNMCAAA=]"
@@ -2038,6 +2446,12 @@
       ],
       "chatLink": "[&BNACAAA=]",
       "waypointChatLink": "[&BNACAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2042,
       "wikiText": "Broken Arrow River is an area within Mount Maelstrom. A shallow river stretches halfway through the Risen-infested area. A large number of Jungle Trolls are found there, hiding among the tall grass and trees."
     },
@@ -2192,6 +2606,12 @@
           38243
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2057,
       "wikiText": "Destroy Risen ambushes, rotmouths, and turrets.",
       "waypointChatLink": "[&BNACAAA=]"
@@ -2212,6 +2632,12 @@
       "order": 64,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2060,
       "wikiText": "Moonlight Rill is a point of interest within Broken Arrow River. It is a large waterfall inhabited by frogs.",
@@ -2234,6 +2660,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2095,
       "wikiText": "The Valley of Gwaun is a point of interest in the Bard's Valley. It is a large underground waterfall that is well defended by ghosts.",
       "waypointChatLink": "[&BMwCAAA=]"
@@ -2254,6 +2686,12 @@
       "order": 66,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2196,
       "wikiText": "New Skrittstead is a point of interest within Quandry Scratch. It is home to a warren of skritt. They are currently caught between two deadly forces-the Nightmare Court to the west and the Risen to the east.",
@@ -2478,6 +2916,12 @@
           37972
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2207,
       "wikiText": "Assist the admiral with training, the brewmaster with beer making, and Roc'loaka with repairs.",
       "waypointChatLink": "[&BMwCAAA=]"
@@ -2501,6 +2945,12 @@
       ],
       "chatLink": "[&BMwCAAA=]",
       "waypointChatLink": "[&BMwCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2246,
       "wikiText": "Bard's Valley is an area in Mount Maelstrom. A valiant camp is located there, their goal being clearing the road for the Pact so they can safely travel to Orr."
     },
@@ -2520,6 +2970,12 @@
       "order": 69,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2275,
       "wikiText": "Breth Ayahusasca is a point of interest in the Bard's Valley. It is home to a large group of sylvari Wyld Hunt valiants, of which some have noticed the area radiates with an unknown energy that has drawn them to the location.",
@@ -2544,6 +3000,12 @@
       ],
       "chatLink": "[&BM4CAAA=]",
       "waypointChatLink": "[&BM4CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2328,
       "wikiText": "Ashen Waste is an area in central Mount Maelstrom. It's host to two rival camps, one held by sylvari valiants and one held by the Nightmare Court."
     },
@@ -2563,6 +3025,12 @@
       "order": 71,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2366,
       "wikiText": "Gorlois Spine is an oasis of growth that is the home to a small group of sylvari valiants in the Ashen Waste. It is also serves as the location for Stop the rampaging Inquest golem.",
@@ -2585,6 +3053,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2422,
       "wikiText": "Venomblight is a small, twisted grove that is home to a force of Nightmare Court in the Ashen Waste. Here, courtiers subdue and convert Wyld Hunt Valiant sylvari patrolling the area.",
       "waypointChatLink": "[&BM4CAAA=]"
@@ -2605,6 +3079,12 @@
       "order": 73,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "Start just in the middle between the Venomblight and the Gorlois Spine points of interest. Then just walk uphill south to the vista.",

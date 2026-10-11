@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1343,
     "name": "Bjora Marches",
@@ -44,6 +44,42 @@
       57191,
       18009
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 39,
+          "skill_challenges": 0,
+          "sectors": 23
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 39,
+          "skill_challenges": 0,
+          "sectors": 23
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 39,
+          "skill_challenges": 0,
+          "sectors": 23
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 39,
+          "skill_challenges": 0,
+          "sectors": 23
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws5"
   },
   "primaryKind": "foot",
@@ -65,6 +101,12 @@
       "order": 0,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5,
       "wikiText": "Vigil Gate is a point of interest within Jora's Keep in Bjora Marches. This massive gate marks the entrance to Jora's Keep. There is a large statue of Raven on top of the gate, showing whether or not the Keep is currently blessed by Raven.",
@@ -89,6 +131,12 @@
       ],
       "chatLink": "[&BCcMAAA=]",
       "waypointChatLink": "[&BCcMAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 11,
       "wikiText": "Jora's Keep is the local Vigil stronghold in Bjora Marches. It stands where the homestead of Jora herself once was."
     },
@@ -108,6 +156,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 27,
       "wikiText": "General's Quarters is a point of interest within Jora's Keep, where the current leader of the Vigil's presence in Bjora Marches works and sleeps.",
@@ -130,6 +184,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 69,
       "wikiText": "On the mountainside to the South of Jora's Keep",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -150,6 +210,12 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 215,
       "wikiText": "Aberrant Den is a point of interest within the Ravenfrost Caverns in Bjora Marches. It contains many Aberrant enemies, and is home to the Champion Aberrant Murellow.",
@@ -172,6 +238,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 309,
       "wikiText": "The Ruined Hut is a dilapidated hut within the Aberrant Forest in Bjora Marches. A starving kodan, Bright Shore, can be found huddled inside.",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -192,6 +264,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 350,
       "wikiText": "From Raven's Gate POI, follow the road South into the Aberrant Forest region. The vista is located to the right above the Fallen Ruins.",
@@ -214,6 +292,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 395,
       "wikiText": "Boneskinner Den is a point of interest within the Aberrant Forest in Bjora Marches. This is likely where the Champion Boneskinner makes its home, but usually the area is full of smaller Aberrant enemies.",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -234,6 +318,12 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 485,
       "wikiText": "Raven's Gate is a point of interest in Bjora Marches which straddles the border between Frozen Pass and the Raven Sanctum, marking the entrance to the latter. The gate opens for characters that have completed The Invitation story step.",
@@ -256,6 +346,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 545,
       "wikiText": "Gates of Svanir is a point of interest within Asgeir's Legacy in Bjora Marches. These huge shards of ice entirely prevent access to Asgeir's Legacy unless the Storms of Winter has been cleared.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -276,6 +372,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 555,
       "wikiText": "The Frozen Pass is the central area within Bjora Marches.",
@@ -298,6 +400,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 607,
       "wikiText": "Northwest Svanir Camp is a point of interest within the Svanir Plateau in Bjora Marches.",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -318,6 +426,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 649,
       "wikiText": "Darkrime Ruins is a point of interest within the Darkrime Delves in Bjora Marches. This cave-in marks what would have been the entrance to the snow jotun caves of old.",
@@ -340,6 +454,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 703,
       "wikiText": "Mystery of the Labyrinth is a point of interest and light puzzle hidden in Fallen Mountains, accessible through a Raven Gate under a rock shelter north of the Northeast Svanir Camp.",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -360,6 +480,12 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 732,
       "wikiText": "Northeast Svanir Camp is a point of interest within the Svanir Plateau in Bjora Marches. This Sons of Svanir camp is one of four in the eastern half of the Bjora Marches, and one of two which holds prisoners of the forces from Jora's Keep.",
@@ -382,6 +508,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 792,
       "wikiText": "The Bear Shrine is an ancient, now abandoned, shrine to Bear, within Bjora Marches. The Fallen patrol the ruins and attack any trespasser they come across.",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -402,6 +534,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 817,
       "wikiText": "To the North of Jora's Keep and south of the Bear Shrine POI-- high up on the mountaintop",
@@ -424,6 +562,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 840,
       "wikiText": "Southeast Svanir Camp is one of the four camps in the Svanir Plateau in Bjora Marches.",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -444,6 +588,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 886,
       "wikiText": "Claw's Perch is a watchtower and point of interest within Bjora Marches. The structure has been overrun with Sons of Svanir, and at the top is a Raven Light Shrine which may be used to begin the Lighting the Frozen Pass puzzle.",
@@ -466,6 +616,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 935,
       "wikiText": "Southwest Svanir Camp is a point of interest within the Svanir Plateau in Bjora Marches. This Sons of Svanir camp is one of four in the eastern half of the Bjora Marches, and one of two which holds prisoners of the forces from Jora's Keep.",
       "waypointChatLink": "[&BCcMAAA=]"
@@ -486,6 +642,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1059,
       "wikiText": "Raven Pass is a point of interest within the Raven Sanctum in Bjora Marches. It leads to the entrance of the Sanctum Arena instance where the three raid encounters take place.",
@@ -508,6 +670,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1297,
       "wikiText": "Mystery of the Hidden Tower marks the beginning of the light puzzle in Eaglewatch Rise.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -528,6 +696,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1322,
       "wikiText": "The Shrine of the Vigilant Eagle is a point of interest within Eaglewatch Rise in Bjora Marches. The shrine is regularly corrupted, requiring purification rituals.",
@@ -550,6 +724,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1359,
       "wikiText": "Atop the ridgeline separating the Rime Glen and Eaglewatch Rise regions above the Whisperwind Grotto POI",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -570,6 +750,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1433,
       "wikiText": "The Whisperwind Grotto is a point of interest within Rime Glen in Bjora Marches. A Strange Kodan can sometimes be seen near the waterfall, manipulated by the whispers in the area.",
@@ -592,6 +778,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1576,
       "wikiText": "The Cavern of Lost Sons is a point of interest within Frigid Dunes in Bjora Marches. The entrance is on the west side of the Frigid Dunes.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -612,6 +804,12 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1597,
       "wikiText": "The Den of Whispers is a point of interest within Whispering Depths in Bjora Marches, where Jhavi Jorasdottir faces off against Drakkar in the second phase of their battle.",
@@ -634,6 +832,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1725,
       "wikiText": "Kodan's Leap is a point of interest within Frigid Dunes in Bjora Marches. A Strange Kodan can sometimes be seen at the top of the cliff, jumping off to his death.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -655,6 +859,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1804,
       "wikiText": "Koda's Tears is a waterfall within Boreal Pass in the western part of Bjora Marches, near the Kodan Shipwreck.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -675,6 +885,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1848,
       "wikiText": "The Kodan Shipwreck is the remains of the kodan ship that was used to flee south when Jormag rose.",
@@ -699,6 +915,12 @@
       ],
       "chatLink": "[&BDkMAAA=]",
       "waypointChatLink": "[&BDkMAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1876,
       "wikiText": "Spirits' Refuge is an area in Bjora Marches, hosting a small kodan village."
     },
@@ -718,6 +940,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1880,
       "wikiText": "Still Waters Speaking is a kodan settlement off the shores of Drakkar Lake in Bjora Marches. The settlement is named after Drakkar Lake itself, and the whispers that come from the icy waters.",
@@ -740,6 +968,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1892,
       "wikiText": "On the cliffside just to the Northeast of the waypoint.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -760,6 +994,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1986,
       "wikiText": "The Shrine of the Resilient Ox is a point of interest within Frostborn Cascades in Bjora Marches. The shrine is regularly corrupted, requiring purification rituals. When corrupted, several salt block offerings appear nearby.",
@@ -782,6 +1022,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2031,
       "wikiText": "On the cliffside to the northeast of the Shrine of the Resilient Ox POI.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -802,6 +1048,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2122,
       "wikiText": "On the promontory overlooking the Forest of a Thousand Voices region, northeast of the Shrine of the Valorous Wolverine POI",
@@ -824,6 +1076,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2154,
       "wikiText": "Mystery of the Raven Gate Ruins marks the beginning of the light puzzle in Raven Ruins.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -845,6 +1103,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2210,
       "wikiText": "Shrine of the Valorous Wolverine is a point of interest within the Ice Spire Peaks in Bjora Marches. The shrine is regularly corrupted, requiring purification rituals.",
       "waypointChatLink": "[&BDkMAAA=]"
@@ -865,6 +1129,12 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2413,
       "wikiText": "Sifhalla Ruins are norn and dwarven structures found beneath the ice of the flooded and refrozen Drakkar Lake. They were once the homestead of the famous norn, Sif Shadowhunter. There is a Wolf shrine nearby.",

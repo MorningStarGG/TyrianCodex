@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 23,
     "name": "Kessex Hills",
@@ -44,6 +44,49 @@
       44224,
       31509
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 14,
+          "points_of_interest": 45,
+          "skill_challenges": 5,
+          "sectors": 25
+        },
+        "57": {
+          "tasks": 14,
+          "points_of_interest": 25,
+          "skill_challenges": 5,
+          "sectors": 0
+        },
+        "3": {
+          "tasks": 14,
+          "points_of_interest": 45,
+          "skill_challenges": 5,
+          "sectors": 25
+        },
+        "2": {
+          "tasks": 14,
+          "points_of_interest": 45,
+          "skill_challenges": 5,
+          "sectors": 25
+        },
+        "0": {
+          "tasks": 14,
+          "points_of_interest": 45,
+          "skill_challenges": 5,
+          "sectors": 25
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +111,13 @@
       ],
       "chatLink": "[&BAcAAAA=]",
       "waypointChatLink": "[&BAcAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 17,
       "wikiText": "Sojourner's Way is an area in the northeast of the Kessex Hills. This road, often used by travelers, is dangerous due to the group of bandits found nearby who captures and ransom them for money."
     },
@@ -118,6 +168,13 @@
           30469
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 39,
       "wikiText": "Kill bandits, steal bandit supplies, and destroy bandit cannons.",
       "waypointChatLink": "[&BAcAAAA=]"
@@ -139,6 +196,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 54,
       "wikiText": "Jannaj's Bandits is a bandit hideout in northeast Kessex Hills. They often kidnap travelers on the road for ransom. Discovered by the Shining Blade to be a White Mantle cell.",
       "waypointChatLink": "[&BAcAAAA=]"
@@ -159,6 +222,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 85,
       "wikiText": "Uzolan's Hideout is the secret refuge of Uzolan, located in northeast Kessex Hills.",
@@ -183,8 +252,15 @@
       ],
       "chatLink": "[&BLkDAAA=]",
       "waypointChatLink": "[&BLkDAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 157,
-      "wikiText": "The Earthworks Bluff is a major Harathi centaur encampment within Kessex Hills, second to the Overlord's Greatcamp."
+      "wikiText": "Earthworks Bluff is a major Harathi centaur encampment within Kessex Hills, second to the Overlord's Greatcamp."
     },
     {
       "stepId": "23:vista:1504",
@@ -202,6 +278,13 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 233,
       "wikiText": "View of Kessex Haven. To get to the vista, come out of the waypoint heading for a cave entrance directly south of the vista. Keep to the west wall of the cave and when you come out on the other side, turn left.",
@@ -226,6 +309,13 @@
       ],
       "chatLink": "[&BBQAAAA=]",
       "waypointChatLink": "[&BBQAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 260,
       "wikiText": "Triskellion Vale is an area in Kessex Hills. This green valley is home to three settlements, Kessex Haven, Quarryside and Triskell Quay."
     },
@@ -245,6 +335,13 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 314,
       "wikiText": "View of Earthworks Bluff. To get to the vista, use the log piles just north of the vista.",
@@ -325,6 +422,13 @@
           30506
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 350,
       "wikiText": "Help the Seraph assault centaur camps, destroy centaur weapons and supplies, ensure the safe delivery of supplies to the mine, and defeat centaurs.",
       "waypointChatLink": "[&BBUAAAA=]"
@@ -345,6 +449,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 351,
       "wikiText": "Barnaby's Watch is a small Seraph camp in northeast Kessex Hills. Guard Barnaby uses it as his base for attacks on the centaurs in Earthworks Bluff.",
@@ -369,6 +479,13 @@
       ],
       "chatLink": "[&BBUAAAA=]",
       "waypointChatLink": "[&BBUAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 393,
       "wikiText": "Earthlord's Gap is an area on the central-north border of Kessex Hills. Two main caves housing a group of bandits and a camp of Tamini centaurs can be found there."
     },
@@ -388,6 +505,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 473,
       "wikiText": "Goff's Bandits is a point of interest within Earthlord's Gap. This dark cave is a bandit hideout located in the northern part of the Kessex Hills, directly north of Gap Waypoint. It is also the stage for the personal story step Liberation.",
@@ -412,6 +535,13 @@
       ],
       "chatLink": "[&BLoDAAA=]",
       "waypointChatLink": "[&BLoDAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 507,
       "wikiText": "Earthlord's Gap is an area on the central-north border of Kessex Hills. Two main caves housing a group of bandits and a camp of Tamini centaurs can be found there."
     },
@@ -446,6 +576,13 @@
           31253
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 565,
       "wikiText": "Help Engineer Gilli by protecting the perimeter from centaurs, clearing vermin from the mine and fields, and motivating the workers.",
       "waypointChatLink": "[&BBQAAAA=]"
@@ -467,6 +604,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 588,
       "wikiText": "Quarryside is a mining settlement in central Kessex Hills.",
       "waypointChatLink": "[&BLoDAAA=]"
@@ -487,6 +630,13 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 613,
       "wikiText": "View of the Quarry. To get to the vista go around the quarry using the scaffolds on the southeast.",
@@ -535,6 +685,13 @@
           32145
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 699,
       "wikiText": "Head to the water and clear the lake of toxic sludge and creatures, fend off sharks, and check the fishermen's shrimp traps.",
       "waypointChatLink": "[&BBQAAAA=]"
@@ -555,6 +712,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 708,
       "wikiText": "Triskell Quay is a fishing village along Viathan's Arm in the Kessex Hills, and the last fishing village in the area remaining.",
@@ -579,6 +742,13 @@
       ],
       "chatLink": "[&BBAAAAA=]",
       "waypointChatLink": "[&BBAAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 731,
       "wikiText": "Viathan Lake, so-called for the leviathans that are supposed to have once lived there, is a large lake in Kessex Hills. Various races have made the lake their home, such as the Togatl hylek and the quaggans of Moogooloo."
     },
@@ -598,6 +768,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 735,
       "wikiText": "Auld Red Wharf was a Krytan fishing village on the northern shores of Viathan Lake. During the events of Living World Season 1, it was assaulted and burned down by krait while most of the Seraph assigned there were out on patrol.",
@@ -619,6 +795,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 769,
       "wikiText": "Kenna's Bandits is a major bandit encampment in central Kessex Hills. These bandits have forged an alliance with the centaurs to hold this camp.",
@@ -643,6 +825,13 @@
       ],
       "chatLink": "[&BBYAAAA=]",
       "waypointChatLink": "[&BBYAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 843,
       "wikiText": "Greyhoof Meadows is an area in the northern section of Kessex Hills where a centaur camp can be located."
     },
@@ -709,6 +898,13 @@
           31108
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 880,
       "wikiText": "Clean immature toxic stalks, dissipate clouds of deadly gas, recover the badges of fallen Seraph, and defeat Toxic Alliance, centaurs and bandits.",
       "waypointChatLink": "[&BBYAAAA=]"
@@ -732,6 +928,13 @@
       ],
       "chatLink": "[&BAMAAAA=]",
       "waypointChatLink": "[&BAMAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 948,
       "wikiText": "Named after Queen Salma, Fort Salma is the southernmost fort of Kryta, placed within Kessex Hills. It is constantly attacked by the Harathi centaurs, preventing them from pushing into Queensdale and threatening Claypool."
     },
@@ -751,6 +954,13 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 963,
       "wikiText": "Named after Queen Salma, Fort Salma is the southernmost fort of Kryta, placed within Kessex Hills. It is constantly attacked by the Harathi centaurs, preventing them from pushing into Queensdale and threatening Claypool.",
@@ -803,6 +1013,13 @@
           31213
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 990,
       "wikiText": "Help battle the centaurs, disarm their traps, and repair the damage from their assaults.",
       "waypointChatLink": "[&BAMAAAA=]"
@@ -826,6 +1043,13 @@
       ],
       "chatLink": "[&BAYAAAA=]",
       "waypointChatLink": "[&BAYAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1032,
       "wikiText": "Halacon Cataracts is an area in Kessex Hills. It runs along the creek between Fort Salma and Thunder Ridge."
     },
@@ -845,6 +1069,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1058,
       "wikiText": "Wallwatcher Camp is a fortified camp in northwest Kessex Hills. Seraph and centaur forces battle for control of this strategic point.",
@@ -866,6 +1096,12 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1111,
       "wikiText": "Thunder Ridge Camp is a point of interest within Thunder Ridge. The camp served as a base of operation for investigating the Toxic Alliance and its activity in and around Viathan Lake.",
@@ -970,6 +1206,13 @@
           32072
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1140,
       "wikiText": "Clear tower debris to rescue quaggans, kill quaggans' predators, and collect tasty crabmeat for Doolsileep.",
       "waypointChatLink": "[&BBAAAAA=]"
@@ -990,6 +1233,13 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1143,
       "wikiText": "View of the krait cave. Swim south of the waypoint and you can't miss the vista.",
@@ -1012,6 +1262,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1143,
       "wikiText": "The Tower of Nightmares was a large tower built by the Toxic Alliance over the Lair of the Seawitch in Viathan Lake. It housed a gigantic toxic plant, the seed of which was given to the Toxic Alliance by Scarlet Briar to plant and protect.",
       "waypointChatLink": "[&BBAAAAA=]"
@@ -1033,8 +1289,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1145,
-      "wikiText": "The Lair of the Seawitch is an underwater cave and krait hatchery in Viathan Lake. It houses many krait cages for sacrifices. The cave's entrance is to the northwest. It is home to the krait spiritual leader.",
+      "wikiText": "The Lair of the Seawitch is an underwater cave and krait hatchery in Viathan Lake. It houses many krait cages for sacrifices. The cave's entrance is to the northwest-it is directly south of the vista in the middle of the lake.",
       "waypointChatLink": "[&BAoAAAA=]"
     },
     {
@@ -1053,6 +1315,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1160,
       "wikiText": "Mudbay Digs is a bandit-controlled excavation site on the western shore of Viathan Lake in central Kessex Hills.",
@@ -1121,6 +1389,13 @@
           32124
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1196,
       "wikiText": "Defeat bandits, destroy bandit turrets and food supplies, and set off mining explosives.",
       "waypointChatLink": "[&BAQAAAA=]"
@@ -1144,6 +1419,13 @@
       ],
       "chatLink": "[&BAQAAAA=]",
       "waypointChatLink": "[&BAQAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1243,
       "wikiText": "The Overlord's Greatcamp is an area in Kessex Hills. It is one of the biggest centaur camps in the zone."
     },
@@ -1214,6 +1496,13 @@
           31763
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1257,
       "wikiText": "Destroy the siege engines, defeat centaur guards, and then assault the camp, destroying anything possible.",
       "waypointChatLink": "[&BAQAAAA=]"
@@ -1234,6 +1523,13 @@
       "order": 37,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1326,
       "wikiText": "The Centaur Gathering Site is embedded in the heart of Meremoot Hill. Its energies are guarded by hostile centaurs; only after they are defeated can someone tap into its power.",
@@ -1282,6 +1578,13 @@
           32091
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1438,
       "wikiText": "Fill gourds at the fountain to cure sick sylvari, stop the spread of corrupted fungus, and defeat the undead corrupting the swamp.",
       "waypointChatLink": "[&BAwAAAA=]"
@@ -1305,6 +1608,13 @@
       ],
       "chatLink": "[&BAwAAAA=]",
       "waypointChatLink": "[&BAwAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1450,
       "wikiText": "Lychcroft Mere is a swamp located in southwest Kessex Hills that is filled with Risen. A small sylvari garrison called Shadowheart Site is located there."
     },
@@ -1324,6 +1634,13 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1488,
       "wikiText": "View of Shadowheart Site. The vista is on a tree, climb the tree, by jumping on the mushrooms. Halfway up, use the rock wall to continue before going back to the tree and mushrooms.",
@@ -1348,6 +1665,13 @@
       ],
       "chatLink": "[&BAoAAAA=]",
       "waypointChatLink": "[&BAoAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1514,
       "wikiText": "Viathan Lake, so-called for the leviathans that are supposed to have once lived there, is a large lake in Kessex Hills. Various races have made the lake their home, such as the Togatl hylek and the quaggans of Moogooloo."
     },
@@ -1367,6 +1691,12 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1531,
       "wikiText": "The Togatl Grounds is point of interest located within a hylek village inside a cavern within the Viathan's Arm area of Kessex Hills. Due to the ettin blocking their food supplies, they are all starving.",
@@ -1459,6 +1789,13 @@
           32243
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1539,
       "wikiText": "Speak to Matlal to begin truffle hunting for her. Also, clear burrows, or kill hostile ettins.",
       "waypointChatLink": "[&BAoAAAA=]"
@@ -1480,6 +1817,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1569,
       "wikiText": "Tocatl awaits on Viathan's Arm above the Eukaryan Caves, to give Ol' Stinky a test run.",
       "waypointChatLink": "[&BAoAAAA=]"
@@ -1500,6 +1844,12 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1585,
       "wikiText": "Krait's Larder is a krait structure in Viathan's Arm. Following the destruction of the Tower of Nightmares, the krait abandoned the deep, leaving only toxic fish behind as proof of their influence.",
@@ -1524,6 +1874,13 @@
       ],
       "chatLink": "[&BBMAAAA=]",
       "waypointChatLink": "[&BBMAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1641,
       "wikiText": "Giant's Passage is an area in Kessex Hills, south-west of Earthworks Bluff. Due to the ettin tribe living nearby who often collapse the tunnel and thus block the Lion Road, the Lionguards of Overlake Haven are tasked to protect it."
     },
@@ -1589,6 +1946,13 @@
           44932,
           31610
         ]
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1674,
       "wikiText": "Help recover supplies, eliminate ettins, and attract rabbits to make the ettins less aggressive.",
@@ -1725,6 +2089,13 @@
           32393
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1725,
       "wikiText": "Collect volcanic rocks, investigate suspicious mounds, and destroy fissures.",
       "waypointChatLink": "[&BBIAAAA=]"
@@ -1745,6 +2116,12 @@
       "order": 49,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1785,
       "wikiText": "The Mafic Core is a fissure beneath the Cereboth Canyon that was created by destroyers.",
@@ -1769,6 +2146,13 @@
       ],
       "chatLink": "[&BBIAAAA=]",
       "waypointChatLink": "[&BBIAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1902,
       "wikiText": "Cereboth Canyon, located in the southeast corner of Kessex Hills, is a long river canyon with an impressive waterfall, and an extensive series of caves under the waterfall filled with oozes and cave trolls."
     },
@@ -1788,6 +2172,13 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1926,
       "wikiText": "View of Cereboth Falls. The vista is accessible just north of the waypoint. You will have to jump down to get to the vista point.",
@@ -1810,6 +2201,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2008,
       "wikiText": "Isgarren's View is a cliff located in Wizard's Fief, overlooking the Sea of Sorrows and Garenhoff. The Wizard's Tower can be seen from it to the southeast.",
       "waypointChatLink": "[&BBIAAAA=]"
@@ -1830,6 +2227,13 @@
       "order": 53,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2031,
       "wikiText": "View of Wizards Fief. To get to the vista, head southeast from the waypoint. You will come to a cliff with a lot of strawberry gathering nodes. You will need to drop to the ledge where the vista is.",
@@ -1852,6 +2256,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2088,
       "wikiText": "Master Elementalist Dylane starts the Hero challenge Defeat Merkessa the Fire Elemental.",
       "waypointChatLink": "[&BBEAAAA=]"
@@ -1872,6 +2283,12 @@
       "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2110,
       "wikiText": "Garenhoff is a small port town located in the south east of Kessex Hills in Wizard's Fief. The village is heavily populated with tamed Earth and Ice Elementals, which protect the town and perform a variety of labor.",
@@ -1896,6 +2313,13 @@
       ],
       "chatLink": "[&BBEAAAA=]",
       "waypointChatLink": "[&BBEAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2167,
       "wikiText": "Darkwound Defile is an area in Kessex Hills. Two deserted farms are located there and behind one of them is a cave containing gravestones."
     },
@@ -1915,6 +2339,12 @@
       "order": 57,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2213,
       "wikiText": "Gort's Pit is a cave in Kessex Hills that serves as the home of the giant Gort. Ettins in the nearby mountains often come down to harass him.",
@@ -1937,6 +2367,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2322,
       "wikiText": "The Enchanted Meat Rack is set in the back of Draithor's Demesnes. Its strange contents are guarded by a Veteran Draithor's Wurm; killing the wurm will allow the character to obtain Draithor's Lab's Powerfully Weird Meat off the rack.",
       "waypointChatLink": "[&BAgAAAA=]"
@@ -1957,6 +2394,13 @@
       "order": 59,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2389,
       "wikiText": "The Eternal Portal is a hero challenge found in Blackroot Cut. The portal to the Underworld gapes large in the narrow eastern alcove of the swamp, and listening to its whispers will spawn an Aatxe and a pair of Shades to defeat.",
@@ -1981,6 +2425,13 @@
       ],
       "chatLink": "[&BAgAAAA=]",
       "waypointChatLink": "[&BAgAAAA=]",
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2441,
       "wikiText": "The Delanian Foothills is an area in the east of Kessex Hills, notable as the location of the Lionguard outpost of Black Haven."
     },
@@ -2063,6 +2514,13 @@
           31244
         ]
       ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2456,
       "wikiText": "Check bushes for bandits, clear mud wallows, and cull hostile creatures from the area.",
       "waypointChatLink": "[&BAgAAAA=]"
@@ -2084,6 +2542,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2465,
       "wikiText": "Black Haven is one of the three Lionguard havens in the Kessex Hills which protects trade routes between Lion's Arch and western towns and cities.",
       "waypointChatLink": "[&BAgAAAA=]"
@@ -2104,6 +2568,13 @@
       "order": 63,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        57,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "View of Delanian Castle. To get to the vista, climb the tower. For the final leg of the climb you will have to use the wood scaffolding on the outside of the tower that starts on the west side.",

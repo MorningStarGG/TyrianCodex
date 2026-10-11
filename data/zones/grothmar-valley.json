@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1330,
     "name": "Grothmar Valley",
@@ -44,6 +44,42 @@
       60992,
       18784
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 44,
+          "skill_challenges": 0,
+          "sectors": 25
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 44,
+          "skill_challenges": 0,
+          "sectors": 25
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 44,
+          "skill_challenges": 0,
+          "sectors": 25
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 44,
+          "skill_challenges": 0,
+          "sectors": 25
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws5"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BBsMAAA=]",
       "waypointChatLink": "[&BBsMAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2,
       "wikiText": "Lower Blood Keep constitutes the walled courtyard of Blood Keep within Grothmar Valley. Here, one can find workshops, the kitchen, and-most importantly-the pub."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 26,
       "wikiText": "The Warden's Office is the office of Warden Strongdoom, located on the second floor of The Brig within Grothmar Valley.",
@@ -109,6 +157,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 38,
       "wikiText": "The Stockade is the yard attached to The Brig within Grothmar Valley.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -129,6 +183,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 78,
       "wikiText": "Blood Dam is a dam built by the Blood Legion. It is located in Longeye's Landslide, on the south-running river that flows through western Grothmar Valley.",
@@ -151,6 +211,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 102,
       "wikiText": "Soul's Hearth is a home of Erasmus Fangstorm in the small village in Rusty Meadows. Adjacent to the house is a pen with 6 chickens. Players cannot enter the house.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -171,6 +237,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 153,
       "wikiText": "Get on top using the nearby building with either the springer or skyscale.",
@@ -193,6 +265,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 196,
       "wikiText": "Fangstorm's Farmhouse is a farmhouse owned and operated by Erasmus Fangstorm within the Rusty Meadows in northern Grothmar Valley.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -213,6 +291,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 285,
       "wikiText": "Unity's Beacon is the name given to the charr effigy which is ceremoniously burned every night in Grothmar Valley, symbolically cleansing Flame Legion's past in the name of all-legion unity.",
@@ -235,6 +319,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 304,
       "wikiText": "Get on top of the plateau by jumping on the nearby rocks with the springer or use the skyscale.",
       "waypointChatLink": "[&BA4MAAA=]"
@@ -255,6 +345,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 358,
       "wikiText": "Use the springer or skyscale to get on top of the rock formation. Alternatively you can complete the jumping puzzle and walk slightly further.",
@@ -277,6 +373,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 365,
       "wikiText": "The Eternal Cauldron is a large, flaming cauldron within Flame Legion Camp in Grothmar Valley.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -297,6 +399,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 393,
       "wikiText": "The All-Legion Commons is a point of interest within the Festival Promenade in Grothmar Valley.",
@@ -319,6 +427,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 429,
       "wikiText": "Rally Pavilion is a point of interest within the Festival Promenade in Grothmar Valley. This tent serves as a sort of operations headquarters, led by Crecia Stoneglow, who can usually be found here.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -339,6 +453,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 495,
       "wikiText": "Ash Legion Camp is a point of interest within Grothmar Valley. Constituting three meager tents, it marks the apparent base camp of the Ash Legion charr during the All-Legion Rally.",
@@ -361,6 +481,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 502,
       "wikiText": "Recon Cove is a point of interest marking a secret cave inside the Shattered Steppes.",
       "waypointChatLink": "[&BA4MAAA=]"
@@ -381,6 +507,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 550,
       "wikiText": "Use a springer or a skyscale to get on the arm of the construct.",
@@ -403,6 +535,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 552,
       "wikiText": "Band's Bivouac is where Metal Legion can be found relaxing between concerts, along with the Blood Legion Minister of Morale, who has tasked herself with micromanaging the band's presence at the All-Legion Rally.",
       "waypointChatLink": "[&BPgLAAA=]"
@@ -423,6 +561,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 643,
       "wikiText": "Use the springer or skyscale to get on top of the pipe.",
@@ -445,6 +589,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 649,
       "wikiText": "Santia's Forge is a forge headed by Forgekeeper Santia Fiercehammer within the Iron Legion Camp in Grothmar Valley.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -465,6 +615,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 730,
       "wikiText": "Auris's Workshop is a corner of Lower Blood Keep where Auris Weirdbringer can be found working.",
@@ -487,6 +643,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 753,
       "wikiText": "Get on top of the wall near the vista and use the springer or skyscale.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -507,6 +669,12 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 767,
       "wikiText": "Rank 'n' File Pub is the Blood Keep's bar, where Blood Legion soliders and All-Legion Rally visitors alike flock to quench their thirst.",
@@ -529,6 +697,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 793,
       "wikiText": "Keep Kitchen is, as the name suggests, the Blood Keep's kitchen, well-equipped with work stations and a large grill, in addition to a variety of exotic ingredients.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -549,6 +723,12 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 812,
       "wikiText": "Great Hall is the mess hall within the Blood Keep.",
@@ -571,6 +751,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 838,
       "wikiText": "The War Room is an upgrade and location within Guild halls, run and maintained by a War Room Proprietor.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -591,6 +777,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 845,
       "wikiText": "Imperator Ruinbringer's Office is the office of Bangar Ruinbringer. It is located within the Blood Keep, the entrance for which is accessed at the west of the point of interest through a giant door, only opened during the story steps.",
@@ -613,6 +805,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 869,
       "wikiText": "Blood Legion Fahrar is the fahrar within Blood Keep, featuring a classroom, dormitory, and a training area. Primus Sparbreaker has been responsible for raising Blood Legion cubs here for several generations.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -633,6 +831,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 900,
       "wikiText": "Blood Keep Main Gate is the southern entryway into Lower Blood Keep in Grothmar Valley.",
@@ -655,6 +859,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 944,
       "wikiText": "Sniper's Square is a shooting range within the Training Grounds in southwestern Grothmar Valley. Here, Sniper Specialist Hawkspar teaches Fahrar Cubs to use rifles by shooting at targets on a range.",
       "waypointChatLink": "[&BBsMAAA=]"
@@ -675,6 +885,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 977,
       "wikiText": "Shiver Gate is a point of interest within the Training Grounds in southwestern Grothmar Valley.",
@@ -697,6 +913,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1177,
       "wikiText": "Ascend to the tribunes of the pit. Start left of the vista by walking on the rope. Jump on the steps to the vista.",
       "waypointChatLink": "[&BPgLAAA=]"
@@ -717,6 +939,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1209,
       "wikiText": "Contender's Colosseum is a large colosseum built atop the infamous Ooze Pit within Grothmar Valley. It is split into three sections, corresponding to Blood, Iron, and Ash Legions (respectively, from left to right).",
@@ -741,6 +969,12 @@
       ],
       "chatLink": "[&BPgLAAA=]",
       "waypointChatLink": "[&BPgLAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1227,
       "wikiText": "The Wardowns is an area within southern Grothmar Valley. The layout of the area hasn't changed in the 250 years since travellers in the original Guild Wars set foot here."
     },
@@ -760,6 +994,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1276,
       "wikiText": "Blood Lagoon is, despite the unnerving name, a picturesque lagoon located at the south end of Sacnoth Stream.",
@@ -782,6 +1022,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1382,
       "wikiText": "The Blood Stand Stage is where Metal Legion perform their concert during the All-Legion Rally.",
       "waypointChatLink": "[&BPgLAAA=]"
@@ -802,6 +1048,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1394,
       "wikiText": "Aurene's Grace is a large chunk of Aurene's unique Brand, which purified Kralkatorrik's Brand. A strange, rift-like disturbance radiating snowy particles can be found here.",
@@ -824,6 +1076,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1415,
       "wikiText": "Walk from the waypoint to the vista and jump on the crystal at the end.",
       "waypointChatLink": "[&BA4MAAA=]"
@@ -844,6 +1102,12 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1429,
       "wikiText": "Priory Research Station is a research station headed by Researcher Grunn that rests atop The Overlook in Grothmar Valley.",
@@ -868,6 +1132,12 @@
       ],
       "chatLink": "[&BA4MAAA=]",
       "waypointChatLink": "[&BA4MAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1618,
       "wikiText": "Dalada Forest is an area within northeastern Grothmar Valley."
     },
@@ -887,6 +1157,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1699,
       "wikiText": "Walk towards the vista from the waypoint and jump on the rocks.",
@@ -909,6 +1185,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1728,
       "wikiText": "Doomlore Shrine is a point of interest within the Doomlore Ruins in Grothmar Valley. Now being resided by ghosts only, it previously served as an entrance into the charr Cathedral of Flames.",
       "waypointChatLink": "[&BA4MAAA=]"
@@ -929,6 +1211,12 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1743,
       "wikiText": "Cathedral of Flames Gate leads to a sprawling underground complex called the Cathedral of Flames. The origins of these structures remain unclear, though they were once used by the shaman caste as a place of worship, torture, and execution.",
@@ -951,6 +1239,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1877,
       "wikiText": "The Vault of the Khan-Ur is a point of interest in the Cavern of the Khan-Ur. The vault contains the Chest of the Khan-Ur beneath a statue of the Khan-Ur, surrounded by piles of treasure and five Grothmar Valley Chests.",
       "waypointChatLink": "[&BA4MAAA=]"
@@ -971,6 +1265,12 @@
       "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1955,
       "wikiText": "Complete the first part of the jumping puzzle. Skip the second part. In the third part, keep taking the stairs, jump over a gap and take more stairs up until you reach the vista.",

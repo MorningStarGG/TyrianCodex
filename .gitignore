@@ -1,8 +1,10 @@
 # CMake build tree (out-of-source; also holds FetchContent's _deps: nexus-api, imgui, json)
 /build/
+/release/
 
 # Private data-generation pipeline -- its own (private) repository, not part of this one
 /builder/
+.staging/
 
 # Local-only browsable archive of the pre-split git history (see history/README.md)
 /history/

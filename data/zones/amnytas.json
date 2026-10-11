@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1517,
     "name": "Amnytas",
@@ -44,6 +44,42 @@
       24085,
       20568
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 64,
+          "skill_challenges": 0,
+          "sectors": 7
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 64,
+          "skill_challenges": 0,
+          "sectors": 7
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 64,
+          "skill_challenges": 0,
+          "sectors": 7
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 64,
+          "skill_challenges": 0,
+          "sectors": 7
+        }
+      },
+      "unavailable": []
+    },
     "release": "soto"
   },
   "primaryKind": "foot",
@@ -65,6 +101,12 @@
       "order": 0,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 172,
       "wikiText": "Concocter's Lab is a point of interest in the Bastion of the Natural, at the southern end of Amnytas. It is a laboratory where the Astral Ward member Zizel brews potions and concoctions using a wide variety of ingredients.",
@@ -89,6 +131,12 @@
       ],
       "chatLink": "[&BDQOAAA=]",
       "waypointChatLink": "[&BDQOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 173
     },
     {
@@ -107,6 +155,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 299,
       "wikiText": "The Overmere Meditation Circle is a point of interest within the Bastion of the Natural. Some characters can be found inside meditating, even the player character can enter and join in the meditation.",
@@ -129,6 +183,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 350,
       "wikiText": "The Bastionmere is a lagoon located within the Bastion of the Natural.",
       "waypointChatLink": "[&BDQOAAA=]"
@@ -150,6 +210,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 558,
       "waypointChatLink": "[&BDQOAAA=]"
     },
@@ -170,6 +236,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 697,
       "waypointChatLink": "[&BEcOAAA=]"
     },
@@ -189,6 +261,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 713,
       "wikiText": "The Underways is a point of interest located in Bastion of the Natural.",
@@ -211,6 +289,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 766,
       "waypointChatLink": "[&BDQOAAA=]"
     },
@@ -230,6 +314,12 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 855,
       "wikiText": "The Infirmary is a Point of Interest located in Bastion of the Natural. It is where members of the Astral Ward are recovering.",
@@ -252,6 +342,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 966,
       "waypointChatLink": "[&BDQOAAA=]"
     },
@@ -271,6 +367,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1092,
       "wikiText": "Creature Corral is a point of interest located in the Bastion of the Natural, inhabited by Forro and his companion Coconut as care-takers for several animals that occasionally tend to break loose from their pens.",
@@ -293,6 +395,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1185,
       "waypointChatLink": "[&BEIOAAA=]"
     },
@@ -312,6 +420,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1210,
       "wikiText": "Bastion of the Natural is an area within southern Amnytas. It hosts the Natural school of thought of Amnytas originally led by Vass of the Wizard's Court millennia ago, with the spot currently vacant.",
@@ -333,6 +447,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1213,
       "wikiText": "The Botanical Skygarden is Narcisse's garden in the Bastion of the Natural. It houses a variety of plant life from across Tyria, both sentient and not.",
@@ -357,6 +477,12 @@
       ],
       "chatLink": "[&BEIOAAA=]",
       "waypointChatLink": "[&BEIOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1496,
       "wikiText": "Bastion of Knowledge is an area within southeastern Amnytas. It hosts the Knowledge school of thought of Amnytas led by Isgarren of the Wizard's Court."
     },
@@ -376,6 +502,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1543,
       "wikiText": "The Grand Library of Amnytas is a point of interest in the Bastion of Knowledge, in east Amnytas. It is a massive library, ran by the kodan Head Archivist Wavering Heart.",
@@ -398,6 +530,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1769,
       "waypointChatLink": "[&BEIOAAA=]"
     },
@@ -417,6 +555,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1881,
       "wikiText": "Isgarren's Tower is a point of interest found in the Bastion of Knowledge in Amnytas. It is a tower belonging to Isgarren, the Wizard of Balance.",
@@ -439,6 +583,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2158,
       "wikiText": "Museum of Curiosities: Hall of Giants is a point of interest in the Bastion of Knowledge area of Amnytas. Combined with Museum of Curiosities: Main Gallery it forms a museum that displays a number of statues with explanatory plaques.",
       "waypointChatLink": "[&BNMNAAA=]"
@@ -460,6 +610,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2268,
       "wikiText": "Museum of Curiosities: Main Gallery is a point of interest in the Bastion of Knowledge area of Amnytas. Combined with Museum of Curiosities: Hall of Giants it forms a museum that displays a number of statues with explanatory plaques.",
       "waypointChatLink": "[&BEIOAAA=]"
@@ -480,6 +636,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2276,
       "wikiText": "Bastion of Knowledge is an area within southeastern Amnytas. It hosts the Knowledge school of thought of Amnytas led by Isgarren of the Wizard's Court.",
@@ -504,6 +666,12 @@
       ],
       "chatLink": "[&BNMNAAA=]",
       "waypointChatLink": "[&BNMNAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2416,
       "wikiText": "Bastion of Strength is an area within northeastern Amnytas. It hosts the Strength school of thought of Amnytas led by Mabon of the Wizard's Court."
     },
@@ -523,6 +691,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2439,
       "waypointChatLink": "[&BNMNAAA=]"
@@ -544,6 +718,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2466,
       "waypointChatLink": "[&BNMNAAA=]"
     },
@@ -564,6 +744,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2542,
       "waypointChatLink": "[&BAoOAAA=]"
     },
@@ -583,6 +769,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2582,
       "wikiText": "Bastion of Strength is an area within northeastern Amnytas. It hosts the Strength school of thought of Amnytas led by Mabon of the Wizard's Court.",
@@ -605,6 +797,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2593,
       "wikiText": "Spellcrafting Workshop is a point of interest in the Bastion of Strength where Galrath the Undying oversees the preparation of spells for The Defense of Amnytas and to fight against the Kryptis.",
       "waypointChatLink": "[&BAoOAAA=]"
@@ -626,6 +824,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2678,
       "waypointChatLink": "[&BNMNAAA=]"
     },
@@ -646,6 +850,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2757,
       "waypointChatLink": "[&BAoOAAA=]"
     },
@@ -665,6 +875,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2883,
       "wikiText": "Bastion of Strength is an area within northeastern Amnytas. It hosts the Strength school of thought of Amnytas led by Mabon of the Wizard's Court.",
@@ -687,6 +903,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2959,
       "waypointChatLink": "[&BNMNAAA=]"
     },
@@ -707,6 +929,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3285,
       "waypointChatLink": "[&BNMNAAA=]"
     },
@@ -726,6 +954,12 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3523,
       "wikiText": "The Circle of Rituals is the name of a point of interest in Amnytas. The Circle can be found at the cliffs in the northwest of the Bastion of Strength and is used by Vanak Faithwalker to work on spells.",
@@ -748,6 +982,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3684,
       "wikiText": "Thaumaturgy Park is a small clearing in the woods on the southeast side of the Bastion of Balance island.",
       "waypointChatLink": "[&BAoOAAA=]"
@@ -768,6 +1008,12 @@
       "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4215,
       "wikiText": "Harmony Green is a point of interest within Bastion of Balance.",
@@ -790,6 +1036,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4450,
       "wikiText": "The Dubious Islet is a small floating island between the Bastion of Balance and the Bastion of the Obscure, home to a small group of sky-chak.",
       "waypointChatLink": "[&BD0OAAA=]"
@@ -810,6 +1062,12 @@
       "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4805,
       "wikiText": "The Great Debate Hall is a building located in the Bastion of Balance floating island.",
@@ -832,6 +1090,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4885,
       "wikiText": "Lyhr's Tower sits atop the Bastion of Balance's Great Debate Hall. As the leader of the Basion of Balance, Lyhr's Tower forms a central part of the Bastion's architecture.",
       "waypointChatLink": "[&BD0OAAA=]"
@@ -852,6 +1116,12 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4997,
       "wikiText": "Equilibrium Glade is a clearing south of the main Bastion of Balance buildings.",
@@ -874,6 +1144,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5413,
       "waypointChatLink": "[&BEcOAAA=]"
     },
@@ -893,6 +1169,12 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5489,
       "wikiText": "Bastion of the Obscure is an area within western Amnytas. It hosts the Obscure school of thought of Amnytas originally led by Akeem of the Wizard's Court millennia ago, with the spot currently vacant.",
@@ -915,6 +1197,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5651,
       "wikiText": "The Relic Repository is a large shipping dock on the north side of the Bastion of the Obscure, where the Bastion receives artifacts from the Bastion of Knowledge and other sources.",
       "waypointChatLink": "[&BEcOAAA=]"
@@ -935,6 +1223,12 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5980,
       "wikiText": "The Riftworks is a large hall in the Bastion of the Obscure where the Astral Ward like Researcher Lezzi study rifts.",
@@ -957,6 +1251,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6033,
       "wikiText": "Natatorium Obscurus is a large pool on top of the Bastion of the Obscure. Several of the Astral Ward fish in it.",
       "waypointChatLink": "[&BEcOAAA=]"
@@ -978,6 +1278,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6183,
       "wikiText": "The Contretemps are a series of magically dark passageways within the Bastion of the Obscure. Strange things lurk inside.",
       "waypointChatLink": "[&BEcOAAA=]"
@@ -998,6 +1304,12 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6193,
       "wikiText": "Akeem's Tower is a point of interest within the Bastion of the Obscure. It's named after Akeem of the Wizard's Court, the previous leader of the Bastion.",
@@ -1022,6 +1334,12 @@
       ],
       "chatLink": "[&BEcOAAA=]",
       "waypointChatLink": "[&BEcOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6194,
       "wikiText": "Bastion of the Obscure is an area within western Amnytas. It hosts the Obscure school of thought of Amnytas originally led by Akeem of the Wizard's Court millennia ago, with the spot currently vacant."
     },
@@ -1041,6 +1359,12 @@
       "order": 47,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6487,
       "wikiText": "Cartography Chamber is a point of interest within the Bastion of the Obscure, housing many maps and scrolls.",
@@ -1063,6 +1387,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6570,
       "waypointChatLink": "[&BAoOAAA=]"
     },
@@ -1082,6 +1412,12 @@
       "order": 49,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6719,
       "wikiText": "Bastion of the Celestial is a central area within Amnytas. It hosts the Celestial school of thought of Amnytas led by Dagda of the Wizard's Court, who was initially against leading it.",
@@ -1104,6 +1440,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6817,
       "wikiText": "The Celestial Control Ring is a point of interest in the Bastion of the Celestial, in central Amnytas. It is the bastion's southern platform.",
       "waypointChatLink": "[&BDQOAAA=]"
@@ -1124,6 +1466,12 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7186,
       "waypointChatLink": "[&BAoOAAA=]"
@@ -1147,6 +1495,12 @@
       ],
       "chatLink": "[&BAoOAAA=]",
       "waypointChatLink": "[&BAoOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7571,
       "wikiText": "Bastion of the Celestial is a central area within Amnytas. It hosts the Celestial school of thought of Amnytas led by Dagda of the Wizard's Court, who was initially against leading it."
     },
@@ -1167,6 +1521,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7584,
       "waypointChatLink": "[&BAoOAAA=]"
     },
@@ -1186,6 +1546,12 @@
       "order": 54,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7699,
       "wikiText": "The Spire's Heart is a point of interest within the World Spire. It houses a huge Shadowstone, created by Isgarren to help protect the world of Tyria from threats in the Mists.",
@@ -1208,6 +1574,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7870,
       "wikiText": "Bastion of the Celestial is a central area within Amnytas. It hosts the Celestial school of thought of Amnytas led by Dagda of the Wizard's Court, who was initially against leading it.",
       "waypointChatLink": "[&BAoOAAA=]"
@@ -1229,6 +1601,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7876,
       "waypointChatLink": "[&BAoOAAA=]"
     },
@@ -1248,6 +1626,12 @@
       "order": 57,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 8070,
       "waypointChatLink": "[&BDQOAAA=]"
@@ -1269,6 +1653,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8430,
       "waypointChatLink": "[&BDQOAAA=]"
     },
@@ -1288,6 +1678,12 @@
       "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 8624,
       "wikiText": "Cellar of Arcana, also called the Hall of Secrets, is a point of interest within Bastion of Knowledge. It contains many extremely powerful artifacts collected by Isgarren over the years as leader of the Astral Ward.",
@@ -1309,6 +1705,12 @@
       "order": 60,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 8980,
       "wikiText": "The Erudition Arcade is a point of interest located in the lower section of Bastion of Knowledge, northwest of the Bastion of Knowledge Waypoint - .",
@@ -1333,6 +1735,12 @@
       ],
       "chatLink": "[&BD0OAAA=]",
       "waypointChatLink": "[&BD0OAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 9512,
       "wikiText": "Bastion of Balance is an area within northwestern Amnytas. It hosts the Balance school of thought of Amnytas led by Lyhr of the Wizard's Court. A place to debate, question, and evaluate, it represents the natural balance between all magic."
     },
@@ -1352,6 +1760,12 @@
       "order": 62,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 9704,
       "wikiText": "The Vass Memorial Medical Plaza is a large plaza in the Bastion of Balance. Presumably this was named for the Wizard Vass after her passing.",
@@ -1373,6 +1787,12 @@
       "order": 63,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 10095,
       "wikiText": "Bastion of Balance is an area within northwestern Amnytas. It hosts the Balance school of thought of Amnytas led by Lyhr of the Wizard's Court. A place to debate, question, and evaluate, it represents the natural balance between all magic.",

@@ -2,6 +2,7 @@
 #include "app/App.h"
 #include "render/glyphs/Glyphs.h"
 #include "ui/Gw2Ui.h"
+#include "ui/UiStrings.h"
 #include "ui/GuideViewer.h"                    // TravelToLocation, OpenZoneTravelChoice, SetClipboard, ViewerAlert
 #include "ui/WaypointFavorites.h"
 #include "ui/wiki/WikiReader.h"                 // Wiki::OpenWiki ("Open in Wiki" right-click action)
@@ -70,7 +71,7 @@ namespace
         { "Dungeons", "Dungeon", 0 }, { "Fractals", "Fractal", 0 }, { "Raids", "Raid", 0 }, { "Strikes", "Strike", 0 },
         { "Story", "Story", 0 }, { "Festival", "Festival", 0 }, { "Home", "Home", 0 },
         { "Guild Halls", "GuildHall", 0 }, { "Tutorials", "Tutorial", 0 }, { "PvP", "PvP", 0 },
-        { "Farming", "", 7 },
+        { "Farming", "", 7 }, { "Convergences", "Convergence", 0 },
     };
     void DrawKindChips(App& app, Search::Filters& f)
     {
@@ -501,7 +502,7 @@ bool Search::DrawResultRow(App& app, const Entry& e, const RowStyle& style)
     else if (rowClicked)
     {
         if (e.type == "zone" && e.chatLink.empty()) OpenZoneTravelChoice(app, e.mapId);   // a real travelable zone
-        else if (e.type == "zone")                  TravelToLocation(app, "waypoint", e.mapId, e.cx, e.cy, e.name, e.chatLink);   // instanced (fractal/raid): travel to its entrance WP
+        else if (e.type == "zone")                  TravelToLocation(app, "waypoint", e.travelMapId ? e.travelMapId : e.mapId, e.cx, e.cy, e.name, e.chatLink);
         else                                        TravelToLocation(app, e.type, e.mapId, e.cx, e.cy, e.name, e.chatLink);
     }
 
@@ -510,6 +511,7 @@ bool Search::DrawResultRow(App& app, const Entry& e, const RowStyle& style)
     if (rowHovered)
     {
         std::string footer;
+        if (e.encounterTrackingUnavailable) footer = UiStr::EncounterTrackingUnavailable;
         if (narrowCompact)
         {
             if (distBuf[0]) AppendFooterPart(footer, std::string("Distance: ") + distBuf);

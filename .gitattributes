@@ -1,4 +1,5 @@
-data/items.json -text
+# Generated bundle hashes describe exact bytes; checkout must not translate line endings.
+data/** -text
 
 # Bundled texture packs (TCPK; verbatim image bytes from builder/build_texpacks.py). These are release assets
 # and some exceed GitHub's normal blob limit, so they are tracked through Git LFS.

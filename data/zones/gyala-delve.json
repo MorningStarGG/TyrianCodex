@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1490,
     "name": "Gyala Delve",
@@ -44,6 +44,49 @@
       37749,
       102240
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 31,
+          "skill_challenges": 0,
+          "sectors": 8
+        },
+        "69": {
+          "tasks": 0,
+          "points_of_interest": 31,
+          "skill_challenges": 0,
+          "sectors": 8
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 31,
+          "skill_challenges": 0,
+          "sectors": 8
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 31,
+          "skill_challenges": 0,
+          "sectors": 8
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 31,
+          "skill_challenges": 0,
+          "sectors": 8
+        }
+      },
+      "unavailable": []
+    },
     "release": "eod"
   },
   "primaryKind": "mount",
@@ -66,6 +109,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 59,
       "wikiText": "The Park Quarry is the Excavation Yard where the miners of the Jade Brotherhood extract the jade.",
       "waypointChatLink": "[&BKoNAAA=]"
@@ -86,6 +136,13 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 123,
       "wikiText": "The Park Mining Ops it is a large building that belongs to the Jade Brotherhood and the mines from which jade is extracted operate from here. In the place there is an elevator that leads to a platform at the top.",
@@ -110,6 +167,13 @@
       ],
       "chatLink": "[&BKoNAAA=]",
       "waypointChatLink": "[&BKoNAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 141,
       "wikiText": "The Excavation Yard is a Jade Brotherhood outpost at the entrance to Gyala Delve's mines."
     },
@@ -129,6 +193,13 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 160,
       "wikiText": "The Turtle Pen is an animal pen belonging to the Jade Brotherhood. It houses two Canthan raptors, two siege turtle, and three Wallows.",
@@ -151,6 +222,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 200,
       "wikiText": "Tailings Pond is a shallow pool of water inhabited by a group of kappa.",
       "waypointChatLink": "[&BKoNAAA=]"
@@ -172,6 +250,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 311,
       "wikiText": "Crestfallen Trench it is another excavation where the miners of the Jade Brotherhood extract the jade.",
       "waypointChatLink": "[&BKoNAAA=]"
@@ -192,6 +277,13 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 349,
       "wikiText": "Shipwreck Excavation is another extraction point where you can see a ship stranded in the petrified jade",
@@ -216,6 +308,13 @@
       ],
       "chatLink": "[&BKQNAAA=]",
       "waypointChatLink": "[&BKQNAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 460,
       "wikiText": "The Hollow is an open-air area of Gyala Delve's mines."
     },
@@ -235,6 +334,13 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 468,
       "wikiText": "Jadepillar Point Base it is one of the bases of the Jade Brotherhood where the mine operates, however the place has been taken over by the mist, corrupting the miners who are in the place.",
@@ -257,6 +363,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 481,
       "wikiText": "The Hollow is an open-air area of Gyala Delve's mines.",
       "waypointChatLink": "[&BKQNAAA=]"
@@ -277,6 +390,13 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 552,
       "wikiText": "Fossilized Overlook it is an area where you can see the corpse of a leviathan trapped in the petrified jade at the top of the mine.",
@@ -299,6 +419,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 609,
       "wikiText": "Shell-Side Excavation it is one of the mines of the Jade Brotherhood in which a type of fossil snail can be seen.",
       "waypointChatLink": "[&BJkNAAA=]"
@@ -319,6 +446,13 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 686,
       "wikiText": "Prospector's Landing it is another of the Jade Brotherhood mines, where the mist has corrupted some miners.",
@@ -341,6 +475,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 744,
       "wikiText": "Howling Caves is an area of the Gyala Delve that lies beneath the Jade Sea, it can be seen that there are several mines where miners from the Jade Brotherhood extract the dragonjade.",
       "waypointChatLink": "[&BJkNAAA=]"
@@ -361,6 +502,13 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 750,
       "wikiText": "Behemoth's Drop it is a sunken area in which you can see a giant machine which was destroyed after the sinking.",
@@ -385,6 +533,13 @@
       ],
       "chatLink": "[&BJINAAA=]",
       "waypointChatLink": "[&BJINAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 879
     },
     {
@@ -403,6 +558,13 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 888,
       "wikiText": "Behemoth's Gap Base is another of the Jade Brotherhood bases where they operate the mine where jade is extracted. However, the place is sometimes controlled by the mist that corrupts the miners found here.",
@@ -424,6 +586,13 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1053,
       "wikiText": "Crystal Cavern is a cave containing several giant crystal spires mixed in with abundant vegetation. A group of twisted skelk have taken up residence within.",
@@ -448,6 +617,13 @@
       ],
       "chatLink": "[&BJkNAAA=]",
       "waypointChatLink": "[&BJkNAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1115,
       "wikiText": "The Jade Pools are an underground area of Gyala Delve where the jade making up the Jade Sea has begun to melt and take its watery form again. Some vegetation can be found around the area."
     },
@@ -467,6 +643,13 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1161,
       "wikiText": "Stalagmite Islet is a small island in a jade river within the Jade Pools. Several corrupted skelk are found on it.",
@@ -489,6 +672,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1205,
       "wikiText": "Melting Pools it is a site within the Jade Pools, where you can see how the jade melts and takes on a watery form.",
       "waypointChatLink": "[&BJkNAAA=]"
@@ -509,6 +699,13 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1257,
       "wikiText": "The Mycelium Colony is a cave within the Jade Pools inhabited by Maguuma-harvested fungi smuggled into Canthan borders by unscrupulous traders due to their status as a delicacy in the Empire of the Dragon.",
@@ -531,6 +728,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1361,
       "wikiText": "Luxon Terminus Fort it is a base that formerly belonged to the Luxons and is now where the Jade Brotherhood operates the mines that lie deep within the site.",
       "waypointChatLink": "[&BJkNAAA=]"
@@ -551,6 +755,13 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1515,
       "wikiText": "The Deep is a cave once trapped by the petrified Jade Sea, south of Gyala Delve's mines. It was the lair of the demon Kanaxai.",
@@ -573,6 +784,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1678,
       "wikiText": "Ley-Line Islet it is an island surrounded by a circular ley line river.",
       "waypointChatLink": "[&BJkNAAA=]"
@@ -593,6 +811,13 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1757,
       "wikiText": "Littoral Cave is a hidden cave within The Deep where you can see that vegetation has grown on this site. To access it, you must go to the Celestial Pool, head southeast, and go into the water to find an underwater tunnel.",
@@ -615,6 +840,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1774,
       "wikiText": "The Celestial Pool is a small lake within the Deep containing a small island inhabited by a powerful twisted skelk. An underwater passage in the pool connects to the Littoral Cave.",
       "waypointChatLink": "[&BJkNAAA=]"
@@ -635,6 +867,13 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1860,
       "wikiText": "Ley-Line Nexus is a ley-line hub located within The Deep. It is the lair of an oni feeding off the ley energy.",
@@ -657,6 +896,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1941,
       "wikiText": "Fortune's Collapse is a point of interest in Gyala Delve. It is a small pond of melting jade.",
       "waypointChatLink": "[&BJkNAAA=]"
@@ -678,6 +924,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2062,
       "wikiText": "The Serpent's Folly is a point of interest in Gyala Delve with a large cliff.",
       "waypointChatLink": "[&BJINAAA=]"
@@ -698,6 +951,13 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2159,
       "wikiText": "The Excavation Point 7-G is a point of interest in Gyala Delve. It is an excavation site with a massive drilling machine.",

@@ -143,6 +143,7 @@ namespace
 }
 
 unsigned Gw2Ui::CardsOpened() { return s_cardsOpened; }
+float Gw2Ui::CardPadding() { return 8.f * TextScale(); }
 
 bool Gw2Ui::BeginCard(const char *id, float width, ImU32 bg, ImU32 border)
 {
@@ -152,7 +153,7 @@ bool Gw2Ui::BeginCard(const char *id, float width, ImU32 bg, ImU32 border)
 bool Gw2Ui::BeginAccentCard(const char *id, float width, ImU32 accent, ImU32 bg, ImU32 border)
 {
     const float sc = Gw2Ui::TextScale();
-    const float PAD = 8.f * sc;
+    const float PAD = CardPadding();
     const ImVec2 p = ImGui::GetCursorScreenPos();
     // Auto-width cards leave a small right margin so they never butt against the panel edge / scrollbar.
     const float W = (width > 0.f) ? width : std::max(40.f, ImGui::GetContentRegionAvail().x - 6.f);
@@ -178,7 +179,7 @@ bool Gw2Ui::BeginAccentCard(const char *id, float width, ImU32 accent, ImU32 bg,
 void Gw2Ui::EndCard()
 {
     const float sc = Gw2Ui::TextScale();
-    const float PAD = 8.f * sc;
+    const float PAD = CardPadding();
     ImGui::EndGroup();
     ImGui::PopID();
 
@@ -192,14 +193,14 @@ void Gw2Ui::EndCard()
     ImDrawList *dl = c.dl ? c.dl : ImGui::GetWindowDrawList();
     ImDrawListSplitter &splitter = *s_cardSplitters[c.depth];
     splitter.SetCurrentChannel(dl, 0); // background channel (behind the content)
-    dl->AddRectFilled(c.p, b, c.bg, 3.f * sc);
-    dl->AddRect(c.p, b, c.border, 3.f * sc);
+    dl->AddRectFilled(c.p, b, StyleColor(c.bg), 3.f * sc);
+    dl->AddRect(c.p, b, StyleColor(c.border), 3.f * sc);
     if (c.accent)
     {
         const ImU32 accentSoft = (c.accent & 0x00FFFFFFu) | ((ImU32)90u << 24);
-        dl->AddRectFilled(ImVec2(c.p.x + 4.f * sc, c.p.y + 6.f * sc), ImVec2(c.p.x + 7.f * sc, b.y - 6.f * sc), c.accent, 2.f * sc);
+        dl->AddRectFilled(ImVec2(c.p.x + 4.f * sc, c.p.y + 6.f * sc), ImVec2(c.p.x + 7.f * sc, b.y - 6.f * sc), StyleColor(c.accent), 2.f * sc);
         dl->AddLine(ImVec2(c.p.x + 10.f * sc, c.p.y + 4.f * sc), ImVec2(c.p.x + 10.f * sc, b.y - 4.f * sc),
-                    accentSoft, sc);
+                    StyleColor(accentSoft), sc);
     }
     splitter.Merge(dl);
 
@@ -213,7 +214,7 @@ float Gw2Ui::CardInnerWidth()
         return ImGui::GetContentRegionAvail().x;
     const GwCard &c = s_cardStack.back();
     const float sc = Gw2Ui::TextScale();
-    return c.w - 16.f * sc - (c.accent ? 8.f * sc : 0.f); // minus 2*PAD(8) (+ accent inset)
+    return c.w - 2.f * CardPadding() - (c.accent ? 8.f * sc : 0.f);
 }
 
 float Gw2Ui::ContentWidth(float explicitWidth)

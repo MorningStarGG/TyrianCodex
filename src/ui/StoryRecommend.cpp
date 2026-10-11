@@ -27,7 +27,7 @@ namespace
         for (const auto& kv : app.zones)
         {
             const Zone& z = kv.second;
-            if (z.Release != rel) continue;
+            if (z.Release != rel || !z.CanGuide()) continue;
             if (!best || z.MinLevel < best->MinLevel || (z.MinLevel == best->MinLevel && z.Name < best->Name))
                 best = &z;
         }

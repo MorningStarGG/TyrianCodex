@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 91,
     "name": "The Grove",
@@ -44,6 +44,42 @@
       43200,
       37384
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 15,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 20,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 16,
+          "skill_challenges": 0,
+          "sectors": 12
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 18,
+          "skill_challenges": 0,
+          "sectors": 12
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BBIEAAA=]",
       "waypointChatLink": "[&BBIEAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6,
       "wikiText": "Caledon Path is the primary entrance into the Grove, leading into Caledon Forest which it was named after, and directly to the Village of Astorea and a small patch where Newborn sylvari come into the world."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 45,
       "wikiText": "Head east from the waypoint to a building near merchants, there are fungi stairs starting inside and lead up to the roof for the vista.",
@@ -109,6 +157,10 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        2
+      ],
       "trailIndex": 76,
       "wikiText": "The Warden's Watchgate is a point of interest in the Marshaling Field. This arched gateway crosses the path from the heart of The Grove to the outer parts of Tyria.",
       "waypointChatLink": "[&BBIEAAA=]"
@@ -130,8 +182,37 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        2,
+        0
+      ],
       "trailIndex": 125,
       "wikiText": "The Maker's Path is a point of interest in the Maker's Terrace. This path connects the upper and middle part of The Grove together.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1143",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1143",
+      "coord": [
+        43297,
+        37359
+      ],
+      "recommendedLevel": null,
+      "name": "The House of Riannoc",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 134,
+      "wikiText": "The House of Riannoc was the home of firstborn Riannoc.",
       "waypointChatLink": "[&BLwEAAA=]"
     },
     {
@@ -147,9 +228,15 @@
       "recommendedLevel": null,
       "name": "Marshaling Field (1)",
       "prereqs": [],
-      "order": 4,
+      "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 157,
       "wikiText": "The Marshaling Field is an area with The Grove. It contains an asura gate that connects to Lion's Arch.",
@@ -168,9 +255,15 @@
       "recommendedLevel": null,
       "name": "Starbower Nursery",
       "prereqs": [],
-      "order": 5,
+      "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 209,
       "wikiText": "Head east from the waypoint then take the southern fork, there is a spiked roof coming up from a lower level over the edge to the SW. Drop down on that and you can easily access the vista.",
@@ -189,9 +282,12 @@
       "recommendedLevel": null,
       "name": "Pale Tree's Circle",
       "prereqs": [],
-      "order": 6,
+      "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1
       ],
       "trailIndex": 244,
       "wikiText": "The Pale Tree's Circle is a point of interest in the Upper Commons. This commom place is used by the sylvari as a meeting point.",
@@ -210,14 +306,93 @@
       "recommendedLevel": null,
       "name": "Upper Commons Waypoint",
       "prereqs": [],
-      "order": 7,
+      "order": 8,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BLoEAAA=]",
       "waypointChatLink": "[&BLoEAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 250,
       "wikiText": "The Upper Commons is the central section of The Grove's highest level, containing access to the Omphalos Chamber."
+    },
+    {
+      "stepId": "91:poi:1149",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1149",
+      "coord": [
+        42974,
+        37366
+      ],
+      "recommendedLevel": null,
+      "name": "Durmand Posting",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 292,
+      "wikiText": "The Durmand Posting is a point of interest in the Order's Terrace. It serves as the local headquarters for the Durmand Priory in The Grove.",
+      "waypointChatLink": "[&BLsEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1147",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1147",
+      "coord": [
+        42992,
+        37441
+      ],
+      "recommendedLevel": null,
+      "name": "The Hidden Shelter",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        0
+      ],
+      "trailIndex": 303,
+      "wikiText": "The Hidden Shelter is a point of interest in the Order's Terrace. It serves as the local headquarters for the Order of Whispers in The Grove.",
+      "waypointChatLink": "[&BLoEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1150",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1150",
+      "coord": [
+        43035,
+        37542
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil Shelter",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 324,
+      "wikiText": "The Vigil Shelter is the local headquarters of the Vigil in The Grove.",
+      "waypointChatLink": "[&BLoEAAA=]"
     },
     {
       "stepId": "91:waypoint:1211",
@@ -232,14 +407,44 @@
       "recommendedLevel": null,
       "name": "Reckoner's Waypoint",
       "prereqs": [],
-      "order": 8,
+      "order": 12,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BLsEAAA=]",
       "waypointChatLink": "[&BLsEAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 347,
       "wikiText": "The Reckoner's Terrace is the central area of the terrace level of The Grove and leads into the Maker's Terrace, the Great Helix, the Scholar's Terrace, the Order's Terrace, and the Tender's Terrace"
+    },
+    {
+      "stepId": "91:poi:1148",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1148",
+      "coord": [
+        43236,
+        37629
+      ],
+      "recommendedLevel": null,
+      "name": "Starbower Nursery",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 376,
+      "wikiText": "The Starbower Nursery is a point of interest in the Constellation Shelter. Many sylvari gather here around a table to talk amongst themselves.",
+      "waypointChatLink": "[&BLoEAAA=]"
     },
     {
       "stepId": "91:vista:1469",
@@ -254,12 +459,43 @@
       "recommendedLevel": null,
       "name": "The Song Bower",
       "prereqs": [],
-      "order": 9,
+      "order": 14,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 394,
       "wikiText": "The Song Bower is an area on the top level of the Grove.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1153",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1153",
+      "coord": [
+        43352,
+        37642
+      ],
+      "recommendedLevel": null,
+      "name": "Backroot Tunnel",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        0
+      ],
+      "trailIndex": 436,
+      "wikiText": "The Backroot Tunnel is a point of interest in the Scholar's Terrace. It is one of the two tunnel leading to the lowest floor of The Grove.",
       "waypointChatLink": "[&BLwEAAA=]"
     },
     {
@@ -275,12 +511,40 @@
       "recommendedLevel": null,
       "name": "The Envoy's Shelter",
       "prereqs": [],
-      "order": 10,
+      "order": 16,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        2
+      ],
       "trailIndex": 474,
       "wikiText": "The Envoy's Shelter is a point of interest in the The Quester's Terrace where a few sylvari are currently practicing their combat.",
+      "waypointChatLink": "[&BLwEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1146",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1146",
+      "coord": [
+        43375,
+        37431
+      ],
+      "recommendedLevel": null,
+      "name": "The House of Niamh",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 486,
+      "wikiText": "The House of Niamh is home of Cycle of Noon's Luminary Niamh.",
       "waypointChatLink": "[&BLwEAAA=]"
     },
     {
@@ -296,14 +560,69 @@
       "recommendedLevel": null,
       "name": "Ronan's Waypoint",
       "prereqs": [],
-      "order": 11,
+      "order": 18,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BLwEAAA=]",
       "waypointChatLink": "[&BLwEAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 518,
       "wikiText": "Ronan's Bower is an area in the depth level of the The Grove."
+    },
+    {
+      "stepId": "91:poi:1151",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1151",
+      "coord": [
+        43189,
+        37482
+      ],
+      "recommendedLevel": null,
+      "name": "The Soul of the Pale Tree",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 526,
+      "wikiText": "The Soul of the Pale Tree is a point of interest in the Omphalos Chamber.",
+      "waypointChatLink": "[&BLoEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1154",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1154",
+      "coord": [
+        43144,
+        37564
+      ],
+      "recommendedLevel": null,
+      "name": "The Centaur's Path",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        0
+      ],
+      "trailIndex": 542,
+      "wikiText": "The Centaur's Path is a point of interest in the Scholar's Terrace. This path connects the middle and lower part of The Grove together.",
+      "waypointChatLink": "[&BLoEAAA=]"
     },
     {
       "stepId": "91:vista:1472",
@@ -318,12 +637,90 @@
       "recommendedLevel": null,
       "name": "Envoy's Shelter",
       "prereqs": [],
-      "order": 12,
+      "order": 21,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 562,
       "wikiText": "Head east from waypoint to building with merchants and crafters, around the north side of the building there are mushrooms you can jump up to reach the roof.",
+      "waypointChatLink": "[&BLoEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1142",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1142",
+      "coord": [
+        43192,
+        37622
+      ],
+      "recommendedLevel": null,
+      "name": "The House of Kahedins",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 583,
+      "wikiText": "The House of Kahedins is home of Cycle of Dusk's Luminary Kahedins.",
+      "waypointChatLink": "[&BLoEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1144",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1144",
+      "coord": [
+        43011,
+        37591
+      ],
+      "recommendedLevel": null,
+      "name": "The House of Caithe",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 597,
+      "wikiText": "The House of Caithe is on the bottom floor of The Grove within the Garden of Night and is where Caithe lives. Caithe can be found blending poisons for her blades at the table.",
+      "waypointChatLink": "[&BLoEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1145",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1145",
+      "coord": [
+        42980,
+        37472
+      ],
+      "recommendedLevel": null,
+      "name": "The House of Malomedies",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 623,
+      "wikiText": "The House of Malomedies is home of Cycle of Night's Luminary Malomedies.",
       "waypointChatLink": "[&BLoEAAA=]"
     },
     {
@@ -339,9 +736,15 @@
       "recommendedLevel": null,
       "name": "Gardenroot Tunnel",
       "prereqs": [],
-      "order": 13,
+      "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 676,
       "wikiText": "The Gardenroot Tunnel is a tunnel in the Grove which connects the lowest and second-lowest levels. There is a deadend to the north of the tunnel.",
@@ -360,13 +763,67 @@
       "recommendedLevel": null,
       "name": "Marshaling Field (2)",
       "prereqs": [],
-      "order": 14,
+      "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 710,
       "wikiText": "The Marshaling Field is an area with The Grove. It contains an asura gate that connects to Lion's Arch.",
       "waypointChatLink": "[&BBIEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1141",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1141",
+      "coord": [
+        43170,
+        37247
+      ],
+      "recommendedLevel": null,
+      "name": "The House of Aife",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 735,
+      "wikiText": "The House of Aife is home of Cycle of Dawn's Luminary Aife.",
+      "waypointChatLink": "[&BLsEAAA=]"
+    },
+    {
+      "stepId": "91:poi:1159",
+      "mapId": 91,
+      "zoneName": "The Grove",
+      "type": "poi",
+      "objectiveId": "1159",
+      "coord": [
+        43184,
+        37404
+      ],
+      "recommendedLevel": null,
+      "name": "Ventari's Tablet",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 783,
+      "wikiText": "Ventari's Tablet was inscribed by the centaur Ventari. It holds seven tenets that speak of the peaceful centaur's morals and ethics.",
+      "waypointChatLink": "[&BLsEAAA=]"
     }
   ],
   "hasTrail": true

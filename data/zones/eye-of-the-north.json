@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1370,
     "name": "Eye of the North",
@@ -44,6 +44,42 @@
       57984,
       21504
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 3,
+          "skill_challenges": 0,
+          "sectors": 1
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 3,
+          "skill_challenges": 0,
+          "sectors": 1
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 3,
+          "skill_challenges": 0,
+          "sectors": 1
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 3,
+          "skill_challenges": 0,
+          "sectors": 1
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BAkMAAA=]",
       "waypointChatLink": "[&BAkMAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "wikiText": "The Hall of Monuments is an area in the Eye of the North, located within the Far Shiverpeaks."
     },
     {
@@ -86,6 +128,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "wikiText": "The Scrying Pool is a large pool of mystical water in the Eye of the North's Hall of Monuments with as-of-yet unexplained psychic properties.",
       "waypointChatLink": "[&BAkMAAA=]"

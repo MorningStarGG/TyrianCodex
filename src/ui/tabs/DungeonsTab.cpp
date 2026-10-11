@@ -11,6 +11,7 @@
 #include "guide/RouteMode.h"
 #include "guide/Regions.h"
 #include "ui/Gw2Ui.h"
+#include "ui/UiStrings.h"
 #include "ui/viewer/ViewerLayout.h"
 #include "ui/ZoneRow.h"
 #include "ui/Effect.h"
@@ -589,15 +590,18 @@ namespace
                 {
                     ImGui::SetMouseCursor(ImGuiMouseCursor_Hand);
                     const bool withMap = mi.HasRect || !mi.StaticMap.empty();
+                    std::string footer = mi.RegionName;
+                    if (mi.HasUnavailableEncounterTracking())
+                        footer += (footer.empty() ? "" : "\n") + std::string(UiStr::EncounterTrackingUnavailable);
                     GroupTooltip(mi.Name.c_str(), mi.MinLevel, mi.MaxLevel, 0, 0, mi.ContinentId, mi.ContRect, nullptr, 0,
-                                 withMap, mi.RegionName.empty() ? nullptr : mi.RegionName.c_str(), mi.TileMaxZoom,
+                                 withMap, footer.empty() ? nullptr : footer.c_str(), mi.TileMaxZoom,
                                  mi.StaticMap.empty() ? nullptr : mi.StaticMap.c_str());
                     if (ImGui::IsMouseClicked(ImGuiMouseButton_Left))
                     {
                         if (mi.ChatLink.empty())
                             OpenZoneTravelChoice(app, mi.MapId);
                         else
-                            TravelToLocation(app, "waypoint", mi.MapId, mi.Cx, mi.Cy, mi.Name, mi.ChatLink);
+                            TravelToLocation(app, "waypoint", mi.TravelMapId ? mi.TravelMapId : mi.MapId, mi.Cx, mi.Cy, mi.Name, mi.ChatLink);
                     }
                 }
                 ItemUI::DrawCopyMenu("##cntcopy", row.hovered && ImGui::IsMouseClicked(ImGuiMouseButton_Right), mi.Name, mi.ChatLink); // right-click: copy name / waypoint / wiki
@@ -718,6 +722,13 @@ namespace
         int rowIdx = 0;
         for (const ContentData::Raid &raid : app.content.Raids())
         {
+            if (!raid.trackingAvailable)
+            {
+                Gw2Ui::Label(raid.name.c_str(), Gw2Ui::kGold, true);
+                ImGui::TextWrapped("%s", UiStr::EncounterTrackingUnavailable);
+                ImGui::Spacing();
+                continue;
+            }
             int cl = 0, tot = 0;
             for (const ContentData::Wing &w : raid.wings)
                 for (const std::string &b : w.bosses)

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 18,
     "name": "Divinity's Reach",
@@ -44,6 +44,49 @@
       43968,
       27136
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 0,
+          "sectors": 19
+        },
+        "65": {
+          "tasks": 0,
+          "points_of_interest": 19,
+          "skill_challenges": 0,
+          "sectors": 0
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 0,
+          "sectors": 19
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 38,
+          "skill_challenges": 0,
+          "sectors": 20
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 0,
+          "sectors": 19
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +111,13 @@
       ],
       "chatLink": "[&BCMDAAA=]",
       "waypointChatLink": "[&BCMDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3,
       "wikiText": "The Plaza of Dwayna is one of the six plazas within Divinity's Reach. It is connected to the exit to Queensdale."
     },
@@ -87,6 +137,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 35,
       "wikiText": "The Busted Flagon is a tavern within the Western Commons of Divinity's Reach. According to Barmaid Karlena, the Flagon is currently seeking part-time bouncers, previous brawl experience preferred.",
@@ -108,6 +164,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 56,
       "wikiText": "Mina's Target Shooting is a carnival shooting game stall that is within the Western Commons of Divinity's Reach.",
@@ -132,6 +194,13 @@
       ],
       "chatLink": "[&BCoDAAA=]",
       "waypointChatLink": "[&BCoDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 78,
       "wikiText": "The District Promenade is an area in Divinity's Reach that forms a perimeter around The Upper City. It is where the crafters are in the city, and has many Book Carts."
     },
@@ -151,6 +220,11 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        0
       ],
       "trailIndex": 115,
       "wikiText": "The Vigil Hall is the Vigil's establishment within Divinity's Reach. It is located at the north end of the Melandru Low Road.",
@@ -173,6 +247,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 143,
       "wikiText": "The Plaza of Melandru is one of the six plazas located within Divinity's Reach. Its lower levels contain thick overgrown gardens as well as a small menagerie.",
       "waypointChatLink": "[&BCcDAAA=]"
@@ -193,6 +274,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 153,
       "wikiText": "Haidryn's Menagerie is a small zoo of animals from across Tyria located between the Western Commons and the Plaza of Melandru. Haidryn, the owner, is out on an expedition and thus is not present on site.",
@@ -217,6 +304,13 @@
       ],
       "chatLink": "[&BCcDAAA=]",
       "waypointChatLink": "[&BCcDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 190,
       "wikiText": "The Plaza of Melandru is one of the six plazas located within Divinity's Reach. Its lower levels contain thick overgrown gardens as well as a small menagerie."
     },
@@ -236,6 +330,13 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 221,
       "wikiText": "Run partway up the nearby ramp, on the railing, jump to the Upper wall, then to the nearby, posts, and carefully around them to the vista.",
@@ -260,6 +361,13 @@
       ],
       "chatLink": "[&BCwDAAA=]",
       "waypointChatLink": "[&BCwDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 257,
       "wikiText": "The District Promenade is an area in Divinity's Reach that forms a perimeter around The Upper City. It is where the crafters are in the city, and has many Book Carts."
     },
@@ -282,6 +390,13 @@
       ],
       "chatLink": "[&BCgDAAA=]",
       "waypointChatLink": "[&BCgDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 295,
       "wikiText": "The Plaza of Balthazar is one of the six plazas located within Divinity's Reach. On the southern side there are two areas used by the Seraph; a training yard on the lower level, and a sparring arena on the middle level."
     },
@@ -296,14 +411,21 @@
         26893
       ],
       "recommendedLevel": null,
-      "name": "District Promenade",
+      "name": "Ossan Quarter",
       "prereqs": [],
       "order": 11,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 387,
-      "wikiText": "The District Promenade is an area in Divinity's Reach that forms a perimeter around The Upper City. It is where the crafters are in the city, and has many Book Carts.",
+      "wikiText": "Misleading Vista, as you need to access it from the level above.",
       "waypointChatLink": "[&BC0DAAA=]"
     },
     {
@@ -325,6 +447,13 @@
       ],
       "chatLink": "[&BC0DAAA=]",
       "waypointChatLink": "[&BC0DAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 393,
       "wikiText": "The District Promenade is an area in Divinity's Reach that forms a perimeter around The Upper City. It is where the crafters are in the city, and has many Book Carts."
     },
@@ -344,6 +473,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 411,
       "wikiText": "Minister Zamon's Mansion is found on the east side of Ossan Quarter.",
@@ -368,6 +503,13 @@
       ],
       "chatLink": "[&BCQDAAA=]",
       "waypointChatLink": "[&BCQDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 445,
       "wikiText": "The Plaza of Grenth is one of the six plazas located within Divinity's Reach. It is located on the northernmost edge of the city."
     },
@@ -387,6 +529,13 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 475,
       "wikiText": "This Vista requires some clever jumping on the graves, starting in the far back of the building, against the wall. Relatively easy, but one of the jumps is a long one.",
@@ -408,6 +557,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 518,
       "wikiText": "Skull Plaza is a plaza at the southern end of the Grenth Low Road which lies outside the Skull Gate that lead into Divinity's Reach's crypts.",
@@ -432,6 +587,13 @@
       ],
       "chatLink": "[&BC4DAAA=]",
       "waypointChatLink": "[&BC4DAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 549,
       "wikiText": "The District Promenade is an area in Divinity's Reach that forms a perimeter around The Upper City. It is where the crafters are in the city, and has many Book Carts."
     },
@@ -451,6 +613,13 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 622,
       "wikiText": "Run up the stairwell and jump off to the arches from the stair banister. Use a camera angle looking down to keep from falling.",
@@ -475,6 +644,13 @@
       ],
       "chatLink": "[&BCYDAAA=]",
       "waypointChatLink": "[&BCYDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 646,
       "wikiText": "The Cathedral of Eternal Radiance is the primary temple to Lyssa in Orr. It is circular in shape and is suspended over a body of water, Mirror Bay."
     },
@@ -494,6 +670,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 691,
       "wikiText": "The Maiden's Whisper is the main tavern within Rurikton and one of four main taverns in Divinity's Reach. It, like other taverns in Kryta, has multiple storeys and a basement.",
@@ -515,6 +697,12 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 706,
       "wikiText": "Minister Wi's Mansion is a large manor home owned by Minister Wi and Lady Wi. It is located in the southwest corner of Rurikton in Divinity's Reach.",
@@ -539,6 +727,13 @@
       ],
       "chatLink": "[&BCsDAAA=]",
       "waypointChatLink": "[&BCsDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 736,
       "wikiText": "The District Promenade is an area in Divinity's Reach that forms a perimeter around The Upper City. It is where the crafters are in the city, and has many Book Carts."
     },
@@ -558,6 +753,11 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        0
       ],
       "trailIndex": 761,
       "wikiText": "The Durmand Hall is the Durmand Priory's establishment within Divinity's Reach. It is a library containing books that the Priory deems worthwhile having accessible to the public.",
@@ -582,6 +782,13 @@
       ],
       "chatLink": "[&BCUDAAA=]",
       "waypointChatLink": "[&BCUDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 786,
       "wikiText": "The Plaza of Kormir is one of the six plazas located within Divinity's Reach. It houses Uzolan's Mechanical Orchestra."
     },
@@ -601,6 +808,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 807,
       "wikiText": "Uzolan's Mechanical Orchestra, also referred to as the One-man Band, is an attraction in the northern part of the Eastern Commons district of Divinity's Reach, in the Plaza of Kormir.",
@@ -622,6 +835,12 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 835,
       "wikiText": "The Dead End Bar is a point of interest and instance in Divinity's Reach, an isolated bar with an unmarked entrance, tucked away into the southern wall of the Eastern Commons.",
@@ -646,8 +865,63 @@
       ],
       "chatLink": "[&BP4EAAA=]",
       "waypointChatLink": "[&BP4EAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 894,
       "wikiText": "The Dwayna High Road is a pathway leading from the The Upper City to the Plaza of Dwayna. It separates the Western Commons and Eastern Commons except through passage via the Dwayna Low Road."
+    },
+    {
+      "stepId": "18:poi:265",
+      "mapId": 18,
+      "zoneName": "Divinity's Reach",
+      "type": "poi",
+      "objectiveId": "265",
+      "coord": [
+        44014,
+        27502
+      ],
+      "recommendedLevel": null,
+      "name": "Chamber of Ministers",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 909,
+      "wikiText": "The Chamber of Ministers is where the Krytan Ministry convene in order to make and review legislation for the Kingdom of Kryta.",
+      "waypointChatLink": "[&BP4EAAA=]"
+    },
+    {
+      "stepId": "18:poi:270",
+      "mapId": 18,
+      "zoneName": "Divinity's Reach",
+      "type": "poi",
+      "objectiveId": "270",
+      "coord": [
+        44013,
+        27323
+      ],
+      "recommendedLevel": null,
+      "name": "Central Plaza",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 930,
+      "wikiText": "The Central Plaza is the large garden and orrery found in the direct center of Divinity's Reach, within The Upper City. The garden was designed by the Grand Wizard Garren and built under order of King Roderick around 1265 AE.",
+      "waypointChatLink": "[&BCkDAAA=]"
     },
     {
       "stepId": "18:vista:1399",
@@ -660,14 +934,21 @@
         27320
       ],
       "recommendedLevel": null,
-      "name": "Ossan Quarter",
+      "name": "District Promenade",
       "prereqs": [],
-      "order": 28,
+      "order": 30,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 967,
-      "wikiText": "Misleading Vista, as you need to access it from the level above.",
+      "wikiText": "The District Promenade is an area in Divinity's Reach that forms a perimeter around The Upper City. It is where the crafters are in the city, and has many Book Carts.",
       "waypointChatLink": "[&BCkDAAA=]"
     },
     {
@@ -683,14 +964,45 @@
       "recommendedLevel": null,
       "name": "Palace Waypoint",
       "prereqs": [],
-      "order": 29,
+      "order": 31,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BCkDAAA=]",
       "waypointChatLink": "[&BCkDAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 989,
       "wikiText": "The Upper City is an area within Divinity's Reach located in the center of the city. It lies outside the Royal Palace. The garden of the Upper City was built around 1265 AE by Grand Wizard Garren under King Roderick's order."
+    },
+    {
+      "stepId": "18:poi:253",
+      "mapId": 18,
+      "zoneName": "Divinity's Reach",
+      "type": "poi",
+      "objectiveId": "253",
+      "coord": [
+        43932,
+        27100
+      ],
+      "recommendedLevel": null,
+      "name": "Shrine of the Six",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1025,
+      "wikiText": "The Shrine of the Six is located in The Upper City and lies opposite of the Seraph Headquarters. It contains statues and banners of all Six Human Gods.",
+      "waypointChatLink": "[&BCkDAAA=]"
     },
     {
       "stepId": "18:poi:262",
@@ -705,9 +1017,15 @@
       "recommendedLevel": null,
       "name": "Queen's Heart Orphanage",
       "prereqs": [],
-      "order": 30,
+      "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1034,
       "wikiText": "The Queen's Heart Orphanage is a point of interest in Salma District, the home instance in Divinity's Reach. It is an orphanage located in the southern section of the district, near the gate.",
@@ -726,9 +1044,15 @@
       "recommendedLevel": null,
       "name": "Manor Hill",
       "prereqs": [],
-      "order": 31,
+      "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1063,
       "wikiText": "Manor Hill is a street with manors on either side in western Salma District. It is where the nobles of the district live.",
@@ -747,9 +1071,15 @@
       "recommendedLevel": null,
       "name": "Vanguard Hospital",
       "prereqs": [],
-      "order": 32,
+      "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1096,
       "wikiText": "The Vanguard Hospital is a hospital for wounded soldiers located within the Salma District. It is the location of the personal storyline mission The Hospital in Jeopardy.",
@@ -768,9 +1098,15 @@
       "recommendedLevel": null,
       "name": "Rook's Row",
       "prereqs": [],
-      "order": 33,
+      "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1123,
       "wikiText": "The Rook's Row is an alleyway within the Salma District.",
@@ -789,13 +1125,67 @@
       "recommendedLevel": null,
       "name": "Cottage Bend",
       "prereqs": [],
-      "order": 34,
+      "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1144,
       "wikiText": "Cottage Bend is a street with humble cottages in the Salma District, in Divinity's Reach",
       "waypointChatLink": "[&BC4DAAA=]"
+    },
+    {
+      "stepId": "18:poi:254",
+      "mapId": 18,
+      "zoneName": "Divinity's Reach",
+      "type": "poi",
+      "objectiveId": "254",
+      "coord": [
+        44101,
+        27113
+      ],
+      "recommendedLevel": null,
+      "name": "Seraph Headquarters",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1162,
+      "wikiText": "The Seraph Headquarters is an instance within the Royal Palace. It is the main base of operations for the Seraph in Divinity's Reach and acts as Captain Logan Thackeray's office, though he is rarely in there.",
+      "waypointChatLink": "[&BCkDAAA=]"
+    },
+    {
+      "stepId": "18:poi:255",
+      "mapId": 18,
+      "zoneName": "Divinity's Reach",
+      "type": "poi",
+      "objectiveId": "255",
+      "coord": [
+        44016,
+        27058
+      ],
+      "recommendedLevel": null,
+      "name": "Queen's Throne Room",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1176,
+      "wikiText": "The Queen's Throne Room is an instance within the Royal Palace, accessed from the Upper City of Divinity's Reach. It is where Queen Jennah spends her time, speaking with emissaries from other nations as well as Krytan ministers.",
+      "waypointChatLink": "[&BCkDAAA=]"
     }
   ],
   "hasTrail": true

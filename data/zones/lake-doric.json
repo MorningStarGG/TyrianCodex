@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1185,
     "name": "Lake Doric",
@@ -44,6 +44,42 @@
       45568,
       26884
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 6,
+          "points_of_interest": 28,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "3": {
+          "tasks": 6,
+          "points_of_interest": 28,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "2": {
+          "tasks": 6,
+          "points_of_interest": 28,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "0": {
+          "tasks": 6,
+          "points_of_interest": 28,
+          "skill_challenges": 0,
+          "sectors": 13
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws3"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BK0JAAA=]",
       "waypointChatLink": "[&BK0JAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4,
       "wikiText": "Doric's Landing is the beachfront area of Lake Doric, and connects directly to Divinity's Reach. The Seraph have set up their base of operations against the White Mantle here."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 40,
       "wikiText": "Climb up the tower staircase.",
@@ -109,6 +157,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 53,
       "wikiText": "The Land Bridge is a point of interest in Doric's Landing. It connects the landing to the rest of the lands in western Lake Doric.",
       "waypointChatLink": "[&BK0JAAA=]"
@@ -129,6 +183,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 73,
       "wikiText": "Defense Headquarters is a point of interest in Doric's Landing. It serves as the local operations center for Logan Thackeray and his Seraph during the defense of Lake Doric against the White Mantle.",
@@ -181,6 +241,12 @@
           26760
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 75,
       "wikiText": "Train, discipline, and deliver rations to Seraph militia, receive intelligence from scouts, extinguish fires, and secure rations from the beached ships along the piers.",
       "waypointChatLink": "[&BK0JAAA=]"
@@ -201,6 +267,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 104,
       "wikiText": "Divinity's Waterworks is a point of interest in the Eastern Divinity Reservoir. This large grate lets out the waste water of Divinity's Reach into the reservoir.",
@@ -223,6 +295,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 113,
       "wikiText": "The Fisherman's Ship is a point of interest in New Loamhurst. This boat was left stranded when a major portion of Lake Doric was drained out.",
       "waypointChatLink": "[&BK0JAAA=]"
@@ -244,6 +322,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 122,
       "wikiText": "Climb up along the beached ship's mast.",
       "waypointChatLink": "[&BK0JAAA=]"
@@ -264,6 +348,12 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 151,
       "wikiText": "The Loamhurst Clubhouse is a point of interest in New Loamhurst. It is a small cabin found on the outskirts of the village.",
@@ -340,6 +430,12 @@
           27528
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 165,
       "wikiText": "Plant flowers, decorate, put out fires, collect fish, and defeat any White Mantle hiding in the village.",
       "waypointChatLink": "[&BLQJAAA=]"
@@ -360,6 +456,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 224,
       "wikiText": "The Temple of the Six is a point of interest in the Lakeside Bazaar. This cliffside ruin is used by the residents of the bazaar as a sanctuary and a place of worship to the Six Human Gods.",
@@ -382,6 +484,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 292,
       "wikiText": "From the Temple of the Six, head east through the gap in the cliffs, and follow the stairs up to the top. Use updrafts to ascend to the vista or you can climb up rocks and glide to the rocks of the vista.",
       "waypointChatLink": "[&BLQJAAA=]"
@@ -402,6 +510,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 411,
       "wikiText": "The Lakeview Villa is a point of interest in the Lakeside Bazaar. It is the new residence of Albert the Butler after the events that went down at Caudecus' Manor.",
@@ -426,6 +540,12 @@
       ],
       "chatLink": "[&BLQJAAA=]",
       "waypointChatLink": "[&BLQJAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 426,
       "wikiText": "Lakeside Bazaar is an area of Lake Doric where the eponymous trading post is located, nestled along the eastern cliffs."
     },
@@ -516,6 +636,12 @@
           27027
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 435,
       "wikiText": "Bring fresh food to the starving Seraph soldiers, Kill white Mantle, subdue angry mobs, and bring goods to merchants.",
       "waypointChatLink": "[&BLQJAAA=]"
@@ -536,6 +662,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 497,
       "wikiText": "Jump up the earth bank behind the house between the vista and the waypoint.",
@@ -616,6 +748,12 @@
           26469
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 565,
       "wikiText": "Defeat White Mantle and their sympathizers, disarm enemy traps, and help the residents of the area with repairs and gathering food.",
       "waypointChatLink": "[&BK0JAAA=]"
@@ -636,6 +774,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 592,
       "wikiText": "The SS Pinkeens is a point of interest in Saidra's Haven. It is the ship of Captain Pinkeens. It was left stranded when the White Mantle drained out Lake Doric and is constantly under attack from both White Mantle and Skritt.",
@@ -684,6 +828,12 @@
           26688
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 660,
       "wikiText": "Resue Seraph prisoners, steal battle plans, poison food, and perform other acts of sabotage.",
       "waypointChatLink": "[&BLQJAAA=]"
@@ -705,6 +855,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 693,
       "wikiText": "Fort Evennia is an area of Lake Doric where the eponymous Krytan fortress is located, named after one of the earliest Shining Blade leaders Evennia.",
       "waypointChatLink": "[&BLQJAAA=]"
@@ -725,6 +881,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 778,
       "wikiText": "Bluster Watershed is a point of interest in Fort Evennia. It a mill and shed found on the banks of the river running underneath the fort.",
@@ -749,6 +911,12 @@
       ],
       "chatLink": "[&BK8JAAA=]",
       "waypointChatLink": "[&BK8JAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 898,
       "wikiText": "The Harvest Cascades the northwestern area of Lake Doric. The plentiful trees of this location are the main source of the nearby sawmill at the Doric Lumberyard."
     },
@@ -768,6 +936,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 902,
       "wikiText": "The Red Leaf Retreat is a small camp of the Seraph-Sentinels coalition located in the Harvest Cascades.",
@@ -790,6 +964,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 947,
       "wikiText": "The Mantle's Breach is an area of Lake Doric. This was previously the location of Divinity's Reach's northeastern dam. Due to an attack by the White Mantle, the dam was destroyed, resulting in the drainage of water from Lake Doric.",
       "waypointChatLink": "[&BK8JAAA=]"
@@ -810,6 +990,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1016,
       "wikiText": "Noran's Homestead is the home of Noran located within the Harvest Cascades.",
@@ -906,6 +1092,12 @@
           25876
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1033,
       "wikiText": "Defeat White Mantle, centaurs, and hostile ghosts, set animal traps, put out fires, and clean up around the forest.",
       "waypointChatLink": "[&BK8JAAA=]"
@@ -926,6 +1118,12 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1067,
       "wikiText": "Soren's Rest is a point of interest in the Harvest Cascades. Noran's family was laid to rest here.",
@@ -948,6 +1146,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1172,
       "wikiText": "This vista requires navigation to the Peach Tree.",
       "waypointChatLink": "[&BK8JAAA=]"
@@ -968,6 +1172,12 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1185,
       "wikiText": "The Peach Tree is a large fruit bearing tree in Watcher's Hollow, in the northern part of Lake Doric. Various peaceful ghosts surround the area, and a guardian spirit will gift visitors with a Magic-Imbued Peach once a day.",
@@ -990,6 +1200,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1350,
       "wikiText": "The Fallen Watchtower is a point of interest on the Watchtower Cliffs.",
       "waypointChatLink": "[&BK8JAAA=]"
@@ -1010,6 +1226,12 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1367,
       "wikiText": "This vista is due northwest of the Chieftain's Hollow point of interest, but can only be accessed (without mounts at least) from the Peach Tree area.",
@@ -1032,6 +1254,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1396,
       "wikiText": "This vista is due southwest of the Chieftain's Hollow point of interest. The vista is at ground level and looks back towards the windmill.",
       "waypointChatLink": "[&BK8JAAA=]"
@@ -1053,6 +1281,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1435,
       "wikiText": "This vista is due south of the Chieftain's Hollow point of interest. Approach from the west.",
       "waypointChatLink": "[&BK8JAAA=]"
@@ -1073,6 +1307,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1483,
       "wikiText": "The Chieftain's Hollow is a point of interest in the Watchtower Cliffs. Siegemaster Immelhoof's tent is located here amongst a large horde of centaur forces.",

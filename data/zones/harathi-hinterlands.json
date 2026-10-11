@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 17,
     "name": "Harathi Hinterlands",
@@ -44,6 +44,49 @@
       47808,
       27264
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 11,
+          "points_of_interest": 38,
+          "skill_challenges": 6,
+          "sectors": 24
+        },
+        "65": {
+          "tasks": 11,
+          "points_of_interest": 23,
+          "skill_challenges": 6,
+          "sectors": 0
+        },
+        "3": {
+          "tasks": 11,
+          "points_of_interest": 38,
+          "skill_challenges": 6,
+          "sectors": 24
+        },
+        "2": {
+          "tasks": 11,
+          "points_of_interest": 38,
+          "skill_challenges": 6,
+          "sectors": 24
+        },
+        "0": {
+          "tasks": 11,
+          "points_of_interest": 38,
+          "skill_challenges": 6,
+          "sectors": 24
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +111,13 @@
       ],
       "chatLink": "[&BKYAAAA=]",
       "waypointChatLink": "[&BKYAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8,
       "wikiText": "Shieldbluff Point is an area on the southeast border of the Harathi Hinterlands. A centaur camp is found there which is the target of Broil Cane and his partners."
     },
@@ -158,6 +208,13 @@
           28578
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 51,
       "wikiText": "Kill centaurs, smash their supplies, collect and turn in poison and whetstones, set traps, and use unstable explosives.",
       "waypointChatLink": "[&BKYAAAA=]"
@@ -179,6 +236,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 64,
       "wikiText": "Koofooloo is a point of interest within Guardian Lake. Inside this underwater box canyon a group of Quaggan have built their home. It lies in the far southeastern corner of the lake.",
       "waypointChatLink": "[&BKYAAAA=]"
@@ -199,6 +262,13 @@
       "order": 3,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 95,
       "wikiText": "Dolyak's Rest is an ancient place where Old Dolyaks go to die, leaving carcasses and bones to litter the area around it.",
@@ -251,6 +321,13 @@
           28216
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 129,
       "wikiText": "Test Zirra's ballista and mortars, spar with mercs, use Hawkes' birds to kill vermin, and defeat centaur scouts.",
       "waypointChatLink": "[&BKkAAAA=]"
@@ -274,6 +351,13 @@
       ],
       "chatLink": "[&BKkAAAA=]",
       "waypointChatLink": "[&BKkAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 138,
       "wikiText": "Wildspine Hills is an area in the southeast portion of the Harathi Hinterlands where mercenary group The Company has their headquarters located."
     },
@@ -293,6 +377,13 @@
       "order": 6,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 164,
       "wikiText": "Craig Sensay provides a hero challenge in Wildspine Hills. After talking to him, you must destroy the nearby ballista.",
@@ -315,6 +406,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 225,
       "wikiText": "Overlook Wildspine Hills Camp. The path begins on a trail to the west of the camp's west wall, heading north up the hill.",
       "waypointChatLink": "[&BKkAAAA=]"
@@ -335,6 +433,13 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 316,
       "wikiText": "Overlook the wall separating Hangman's Saddle and Diremane Woods. There is a path up the wall on the west end of the wall",
@@ -359,6 +464,13 @@
       ],
       "chatLink": "[&BK0AAAA=]",
       "waypointChatLink": "[&BK0AAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 356,
       "wikiText": "Hangman's Saddle is an area in the Harathi Hinterlands. It looks like an ancient Seraph base that has been turned into a centaur base."
     },
@@ -421,6 +533,13 @@
           27783
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 393,
       "wikiText": "Free slaves, kill centaurs, and disrupt their camps to weaken the centaur front.",
       "waypointChatLink": "[&BKwAAAA=]"
@@ -444,6 +563,13 @@
       ],
       "chatLink": "[&BKwAAAA=]",
       "waypointChatLink": "[&BKwAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 435,
       "wikiText": "Stoneman's Notch is an area within the Harathi Hinterlands. An Harathi centaurs slave camp is located there."
     },
@@ -463,6 +589,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 500,
       "wikiText": "The Overwatch Camp is a point of interest within the Thunder Rock. In the center of this large ledge overlooking the river leading from Guardian Lake sits a large Harathi centaur encampment.",
@@ -485,6 +617,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 538,
       "wikiText": "Overlook Thunder Rock Camp. The access path is by a thin ledge over the entrance to the Camp cave, on the west face of the hill going up to the northwest.",
       "waypointChatLink": "[&BKwAAAA=]"
@@ -506,6 +645,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 571,
       "wikiText": "Watchlin Armory is a point of interest within the Thunder Rock. This natural rock tunnel connects Guardian Lake to the Overwatch Camp. The Harathi centaurs use this cavern to store weapons and both entrances are well defended.",
       "waypointChatLink": "[&BKwAAAA=]"
@@ -526,6 +671,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 626,
       "wikiText": "Shorebluff Camp is a point of interest within the Shieldbluff Point. Atop this natural rise overlooking Guardian Lake a force of Harathi centaurs have established a fortified encampment.",
@@ -586,6 +737,13 @@
           28458
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 657,
       "wikiText": "Recover supplies from shipwrecks, clear rockslides, check crab traps, and maintain the camp.",
       "waypointChatLink": "[&BKoAAAA=]"
@@ -609,6 +767,13 @@
       ],
       "chatLink": "[&BKoAAAA=]",
       "waypointChatLink": "[&BKoAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 665,
       "wikiText": "Nightguard Beach, sometimes referred to as the \"Best Kept Secret in the Hinterlands,\" is an area in the southwest of the Harathi Hinterlands."
     },
@@ -628,6 +793,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 752,
       "wikiText": "The Confinement Camp is a point of interest within the Splintered Teeth. Within this deep canyon a company of Tamini centaurs have established a prison camp.",
@@ -652,6 +823,13 @@
       ],
       "chatLink": "[&BKUAAAA=]",
       "waypointChatLink": "[&BKUAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 822,
       "wikiText": "Faun's Gap is an area in the southeast of the Harathi Hinterlands. This peaceful plain serve as one of the two entries to the zone."
     },
@@ -671,6 +849,13 @@
       "order": 20,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 875,
       "wikiText": "The Hidden Falls is a communing style hero challenge in Bonerattler Caverns.",
@@ -693,6 +878,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 907,
       "wikiText": "Overlook the waterfall inside the cavern. The path begins next to the Hero point, behind the waterfall.",
       "waypointChatLink": "[&BKUAAAA=]"
@@ -713,6 +905,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1012,
       "wikiText": "Mountainroot Lair is a point of interest within the Bonerattler Caverns. Inside this natural cave is this pleasant small grove. It contains a small cemetery where the friends of the giant Fen are buried.",
@@ -773,6 +971,13 @@
           27961
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1105,
       "wikiText": "Recover relics from the ruined village for Ket, drive off the grave robbers, and put angry spirits to rest.",
       "waypointChatLink": "[&BKsAAAA=]"
@@ -793,6 +998,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1158,
       "wikiText": "The Martyr's Tomb is a point of interest within the Ruins of Holy Demetra. This underground crypt is haunted by the restless spirits of this grave site and the surrounding ruins.",
@@ -817,6 +1028,13 @@
       ],
       "chatLink": "[&BKsAAAA=]",
       "waypointChatLink": "[&BKsAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1193,
       "wikiText": "The Ruins of Holy Demetra is a haunted, ruined settlement in the western Harathi Hinterlands. Demetra is the site where, centuries ago, the White Mantle raised a tomb to Saul D'Alessio after claiming he was killed in battle with the charr."
     },
@@ -836,6 +1054,13 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1277,
       "wikiText": "Overlook Wynchona Rally camp. There is a jump path beginning on the south side of the hill, directly south of the vista.",
@@ -860,6 +1085,13 @@
       ],
       "chatLink": "[&BKgAAAA=]",
       "waypointChatLink": "[&BKgAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1281,
       "wikiText": "Wynchona Woods is an area in the southwest of the Harathi Hinterlands. There, a small Seraph camp can be found near the bandit territory."
     },
@@ -930,6 +1162,13 @@
           27400
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1286,
       "wikiText": "Rescue the captured Seraph, kill bandit patrols and ambushes, and disrupt their activities in the woods.",
       "waypointChatLink": "[&BKgAAAA=]"
@@ -950,6 +1189,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1354,
       "wikiText": "The Restricted Zone XRB is a point of interest within the Splintered Teeth. Inside this dark cave a pair of asuran scientists have established a small campsite. They have selected this secure location to carry out their experiments.",
@@ -974,6 +1219,13 @@
       ],
       "chatLink": "[&BK4AAAA=]",
       "waypointChatLink": "[&BK4AAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1484,
       "wikiText": "Trebuchet Bend is an area on the center of the Harathi Hinterlands. Like the name suggests, the hill is full of centaurs with trebuchets."
     },
@@ -993,6 +1245,13 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1533,
       "wikiText": "Overlook Junction Camp. Accessible from the northeast face of the hill, there is a jump path going up the hill.",
@@ -1017,6 +1276,13 @@
       ],
       "chatLink": "[&BK8AAAA=]",
       "waypointChatLink": "[&BK8AAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1575,
       "wikiText": "The Greenflin Plateau is an area in the northern section of the Harathi Hinterlands. A centaur camp can be found there as well as a tribe of ettins behind it."
     },
@@ -1036,6 +1302,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1616,
       "wikiText": "Drakken's Den is a walled box canyon within the Trebuchet Bend. Inside it, a group of skale have laid claim to this location, foraging in the surrounding areas to provide for their nesting grounds.",
@@ -1058,6 +1330,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1697,
       "wikiText": "The Forward Camp is a point of interest within the Greystone Rise. A top this small rise the Harathi centaurs have established their forward base camp.",
       "waypointChatLink": "[&BKgAAAA=]"
@@ -1078,6 +1356,13 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1791,
       "wikiText": "Overlooks Seraph's Landing. Can be reached by climbing the stairs onto the wall, jumping to the hill and going around the hill to the Vista.",
@@ -1146,6 +1431,13 @@
           26806
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1806,
       "wikiText": "Drive back the centaurs, protect incoming supply ships, defend against raiding bandits, help feed the animals and deliver food to the Seraph sergeant.",
       "waypointChatLink": "[&BKcAAAA=]"
@@ -1169,6 +1461,13 @@
       ],
       "chatLink": "[&BKcAAAA=]",
       "waypointChatLink": "[&BKcAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1814,
       "wikiText": "Greystone Rise is an area on the west side of the Harathi Hinterlands. It contains one of the Seraph advance bases in centaur territory."
     },
@@ -1188,6 +1487,13 @@
       "order": 38,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1853,
       "wikiText": "The Harathi Forward Post lies across the bridge from Seraph's Landing, among ruined buildings. Commune with this place of power to complete its hero challenge.",
@@ -1212,6 +1518,13 @@
       ],
       "chatLink": "[&BLIAAAA=]",
       "waypointChatLink": "[&BLIAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1903,
       "wikiText": "The Feral Dens is the northwesternmost area within the Harathi Hinterlands. Behind a closed doorway inside this cave system lies a large skritt scratch."
     },
@@ -1231,6 +1544,13 @@
       "order": 40,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2000,
       "wikiText": "The Conspicuous Feather Pile is a hero challenge located in Greenflin Plateau, north of the Seraph camp.",
@@ -1303,6 +1623,13 @@
           26275
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2048,
       "wikiText": "Help keep the passages clear, defend the skritt from predators, and aid them in their fight against the harpies.",
       "waypointChatLink": "[&BMMAAAA=]"
@@ -1326,6 +1653,13 @@
       ],
       "chatLink": "[&BMMAAAA=]",
       "waypointChatLink": "[&BMMAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2075,
       "wikiText": "Arcallion Digs is an area on the northern edge of the Harathi Hinterlands just northeast of Greenflin Plateau. The skritt inhabiting the cave have difficulties with the nearby harpies."
     },
@@ -1396,6 +1730,13 @@
           26734
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2102,
       "wikiText": "Fight the centaurs, assault their fortress, and support the Seraph.",
       "waypointChatLink": "[&BMMAAAA=]"
@@ -1419,6 +1760,13 @@
       ],
       "chatLink": "[&BLAAAAA=]",
       "waypointChatLink": "[&BLAAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2160,
       "wikiText": "Cloven Hoof Pass is an area in the north of the Harathi Hinterlands. Multiple camps are located in the area. Control alternates between the Seraph and the Harathi."
     },
@@ -1438,6 +1786,12 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2197,
       "wikiText": "The Northpasture Camp is a point of interest within the Cloven Hoof Pass. At this northern entrance to High Timber Claim the Harathi centaurs have placed a large fortress defending this choke hold from all attackers.",
@@ -1460,6 +1814,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2248,
       "wikiText": "Overlook the south east face of the hill. There is a jump path beginning close to the water west of the vista point.",
       "waypointChatLink": "[&BLAAAAA=]"
@@ -1481,6 +1842,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2269,
       "wikiText": "The Southforge Camp is a point of interest within the Cloven Hoof Pass. At this southern end of the pass the Harathi centaurs have placed a large fortress defending this choke hold from all attackers.",
       "waypointChatLink": "[&BLAAAAA=]"
@@ -1501,6 +1868,12 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2318,
       "wikiText": "The Blackhold Mine Camp is a point of interest within the High Timber Claim. This fortified Harathi centaur mining camp guards a vast underground mine complex.",
@@ -1593,6 +1966,13 @@
           26959
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2354,
       "wikiText": "Search for weapons in the debris. Destroy supply stockpiles, fight centaurs, free slaves, bash mining equipment, set explosives, and light woodpiles on fire.",
       "waypointChatLink": "[&BLEAAAA=]"
@@ -1664,6 +2044,13 @@
           26468
         ]
       ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2391,
       "wikiText": "Collect dog tags, destroy Modniir equipment, kill centaurs, and free prisoners.",
       "waypointChatLink": "[&BLEAAAA=]"
@@ -1684,6 +2071,12 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2413,
       "wikiText": "The Kingsgate Camp is a point of interest within the Modniir Gorge. Stretched across the entrance to the gorge stands a large wall and massive gate house.",
@@ -1708,6 +2101,13 @@
       ],
       "chatLink": "[&BLEAAAA=]",
       "waypointChatLink": "[&BLEAAAA=]",
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2436,
       "wikiText": "Modniir Gorge is the innermost camp of the Modniir in the Harathi Hinterlands and from where the centaurs stage their assault on Kryta."
     },
@@ -1727,6 +2127,12 @@
       "order": 53,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2484,
       "wikiText": "The War King's Greatcamp is a point of interest within the Modniir Gorge. This Modniir stronghold is set in the far western reaches of the Harathi Hinterlands.",
@@ -1748,6 +2154,13 @@
       "order": 54,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        65,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "The Ancient War Stones are magic stones tied to the Warbeasts. Interacting with it triggers a hero challenge.",

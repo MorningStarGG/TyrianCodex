@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 51,
     "name": "Straits of Devastation",
@@ -44,6 +44,42 @@
       48688,
       40192
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 56,
+          "skill_challenges": 12,
+          "sectors": 24
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 56,
+          "skill_challenges": 12,
+          "sectors": 24
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 56,
+          "skill_challenges": 12,
+          "sectors": 24
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 56,
+          "skill_challenges": 12,
+          "sectors": 24
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BOwCAAA=]",
       "waypointChatLink": "[&BOwCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 10,
       "wikiText": "Bramble Pass is the northeasternmost area of Straits of Devastation. It is one of the last locations close to Orr left untouched by the Risen."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 21,
       "wikiText": "The Underbelly is a tunnel within the Bramble Pass used by the Pact to get their wounded to the Oceanside Ordnance without getting noticed by the Risen.",
@@ -108,6 +156,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 76,
       "wikiText": "Oceanside Ordnance is a field hospital used to heal wounded Pact soldiers.",
@@ -132,6 +186,12 @@
       ],
       "chatLink": "[&BO0CAAA=]",
       "waypointChatLink": "[&BO0CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 120,
       "wikiText": "Signal Peak is a northern area of Straits of Devastation. This coastal area is home to two Pact encampments."
     },
@@ -151,6 +211,12 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 145,
       "wikiText": "Stentor Cannonade is a Pact staging area for the northern invasion force.",
@@ -172,6 +238,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 162,
       "wikiText": "The Plaza of Lost Wisdom marks the entrance to Abaddon's lost temple, the Cathedral of Hidden Depths.",
@@ -196,6 +268,12 @@
       ],
       "chatLink": "[&BPMCAAA=]",
       "waypointChatLink": "[&BPMCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 169,
       "wikiText": "Strait of Malediction is a waterway in the Straits of Devastation. Many underwater Orrian ruins can be seen in this area."
     },
@@ -215,6 +293,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 180,
       "wikiText": "The Royal Forum is an underwater Orrian ruin swarming with Risen.",
@@ -237,6 +321,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 191,
       "wikiText": "Statues of Melandru can be found throughout Tyria, dedicated to the goddess Melandru.",
       "waypointChatLink": "[&BPMCAAA=]"
@@ -258,6 +348,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 196,
       "wikiText": "Lost Conservatory is a communing hero challenge in Strait of Sacrilege.",
       "waypointChatLink": "[&BPMCAAA=]"
@@ -278,6 +374,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 201,
       "wikiText": "The Vesper Bell is an underwater Orrian ruin swarming with Risen.",
@@ -302,6 +404,12 @@
       ],
       "chatLink": "[&BPICAAA=]",
       "waypointChatLink": "[&BPICAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 202,
       "wikiText": "Strait of Sacrilege is a waterway in the Straits of Devastation. Many sunken Orrian ruins are found there."
     },
@@ -322,8 +430,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 227,
-      "wikiText": "Stygian Deeps is a krait spire that has been overrun by Risen.",
+      "wikiText": "Stygian Deeps is a point of interest in Terzetto Bay, within the Straits of Devastation. It is a krait deeps that has been overrun by Risen. The spire itself has a vista up high, but no foes.",
       "waypointChatLink": "[&BPICAAA=]"
     },
     {
@@ -342,6 +456,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 232,
       "wikiText": "Terzetto Bay is a body of water in the Straits of Devastation. It originally was home to krait until their deeps was overrun by Risen.",
@@ -366,6 +486,12 @@
       ],
       "chatLink": "[&BFkGAAA=]",
       "waypointChatLink": "[&BFkGAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 249,
       "wikiText": "Half Circle Cove is an area in the northeast of Straits of Devastation."
     },
@@ -388,6 +514,12 @@
       ],
       "chatLink": "[&BFgGAAA=]",
       "waypointChatLink": "[&BFgGAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 297,
       "wikiText": "Plinth Timberland is a densely forested area in Straits of Devastation. The Pact forces at Fort Trinity harvest the wood here to contribute it toward building weapons and camps for the war effort against Zaitan."
     },
@@ -407,6 +539,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 332,
       "wikiText": "Razorslide Bivouac is a point of interest in Plinth Timberland. It is used by the Pact to train new recruits to send to the front lines.",
@@ -428,6 +566,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 403,
       "wikiText": "Armada Harbor is a dock located within Fort Trinity. The Pact are storing their submarines there.",
@@ -452,6 +596,12 @@
       ],
       "chatLink": "[&BO8CAAA=]",
       "waypointChatLink": "[&BO8CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 502,
       "wikiText": "Thorn Pass is an eastern area in the Straits of Devastation."
     },
@@ -471,6 +621,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 559,
       "wikiText": "Alseta Generator is a point of interest in Fort Trinity. This place is used to keep the Blue Orb safe from Risen.",
@@ -492,6 +648,12 @@
       "order": 20,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 573,
       "wikiText": "Priory Magisters are generic members of the Durmand Priory of Magister ranking.",
@@ -516,6 +678,12 @@
       ],
       "chatLink": "[&BO4CAAA=]",
       "waypointChatLink": "[&BO4CAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 584,
       "wikiText": "Fort Trinity is a large fort in the Straits of Devastation and the stronghold for the Pact's assault on Orr."
     },
@@ -535,6 +703,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 671,
       "wikiText": "Terzetto Bay is a body of water in the Straits of Devastation. It originally was home to krait until their deeps was overrun by Risen.",
@@ -556,6 +730,12 @@
       "order": 23,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 680,
       "wikiText": "Sunken Ship is a communing hero challenge in Strait of Sacrilege.",
@@ -580,6 +760,12 @@
       ],
       "chatLink": "[&BPACAAA=]",
       "waypointChatLink": "[&BPACAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 702,
       "wikiText": "The Squall Cusps is an area in the Straits of Devastation. A Pact camp found there is used to push south into Orr."
     },
@@ -599,6 +785,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 719,
       "wikiText": "Thunderhead Battery is home to Siegemaster Denbi and his trebuchets.",
@@ -621,6 +813,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 850,
       "wikiText": "Accessed by climbing roots. Start point is north of vista on map, inside the passage near a lake area. It is clearly marked by a torch near the planks that are lying on the ground.",
       "waypointChatLink": "[&BPACAAA=]"
@@ -641,6 +839,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 929,
       "wikiText": "Cadrigan's Jetty, also known as Lightfoot Dock, is a point of interest in Lightfoot Passage. This small abandoned dock is now home to a group of marsh drakes.",
@@ -663,6 +867,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 949,
       "wikiText": "Compass Bridge is a bridge marking the start of Risen territory in Orr.",
       "waypointChatLink": "[&BPACAAA=]"
@@ -684,6 +894,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 989,
       "wikiText": "Izz-al-Din Sarayi is an Orrian structure on an island in the Shark's Teeth Archipelago between Orr and the Steamspur Mountains.",
       "waypointChatLink": "[&BPECAAA=]"
@@ -704,6 +920,12 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1007,
       "wikiText": "Straightforward Vista. Start at the Izz-al-Din Sarayi Point of Interest and head south. Almost no jumping/climbing required.",
@@ -728,6 +950,12 @@
       ],
       "chatLink": "[&BPECAAA=]",
       "waypointChatLink": "[&BPECAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1014,
       "wikiText": "Shark's Teeth Archipelago is series of islands and bridges in the Straits of Devastation. It contains multiple asura gates that are currently under construction."
     },
@@ -747,6 +975,12 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1020,
       "wikiText": "Broken Spit is an Orrian ruin used by Risen fish to reproduce.",
@@ -769,6 +1003,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1140,
       "wikiText": "The Vizier's Tower is a Point of Interest located in the Shark's Teeth Archipelago.",
       "waypointChatLink": "[&BPcCAAA=]"
@@ -790,6 +1030,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1145,
       "wikiText": "Books are collections of factual, historical, or personal writings. Letters and journals are also considered books.",
       "waypointChatLink": "[&BPcCAAA=]"
@@ -810,6 +1056,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1151,
       "wikiText": "Accessed from the next \"island\" in the chain, southwest of the island the vista is on. Climb the rise at the southern part of that island, and jump across rocks. Jump across rocks, coral shelves and coral to reach top.",
@@ -834,6 +1086,12 @@
       ],
       "chatLink": "[&BPcCAAA=]",
       "waypointChatLink": "[&BPcCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1197,
       "wikiText": "Blighted Battleground is an area in the Straits of Devastation."
     },
@@ -853,6 +1111,12 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1214,
       "wikiText": "Lone Post is a gate leading into a large Risen stronghold.",
@@ -875,6 +1139,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1249,
       "wikiText": "Lasciate Gateway is a point of interest in Xenarius Bayt. Players must slay the Veteran Risen Gatekeeper to open the gateway and proceed.",
       "waypointChatLink": "[&BPcCAAA=]"
@@ -895,6 +1165,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1282,
       "wikiText": "The Conservatory is an Orrian ruin swarming with Risen found in Waywarde Way.",
@@ -919,6 +1195,12 @@
       ],
       "chatLink": "[&BPgCAAA=]",
       "waypointChatLink": "[&BPgCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1385,
       "wikiText": "Waywarde Way is an area in the southern portion of Straits of Devastation. Various Risen and elementals can be seen wandering around in this area."
     },
@@ -938,6 +1220,12 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1514,
       "wikiText": "Altar of Betrayal is an altar dedicated to Balthazar in the Cathedral of Glorious Victory.",
@@ -959,6 +1247,12 @@
       "order": 42,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1515,
       "wikiText": "Statues of Balthazar can be found throughout Tyria, dedicated to the god Balthazar. The hounds seen on the circular statue of Balthazar are Temar and Tegon.",
@@ -983,6 +1277,12 @@
       ],
       "chatLink": "[&BPoCAAA=]",
       "waypointChatLink": "[&BPoCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1533,
       "wikiText": "The Cathedral of Glorious Victory is an area in the Straits of Devastation. It is a temple dedicated to Balthazar, one of the Six Human Gods."
     },
@@ -1002,6 +1302,12 @@
       "order": 44,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1573,
       "wikiText": "Ancient Sentry of Balthazar Statue is a hero challenge veteran battle in Triumph Plaza.",
@@ -1023,6 +1329,12 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1639,
       "wikiText": "Walk south from the waypoint, and jump up the cliff to the vista. You can safely ignore the Risen in the area.",
@@ -1047,6 +1359,12 @@
       ],
       "chatLink": "[&BPkCAAA=]",
       "waypointChatLink": "[&BPkCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1719,
       "wikiText": "Xenarius Bayt is an area in the Straits of Devastation. A Pact helicopter crashed there and its team is struggling to defend itself against the swarms of Risen prowling nearby."
     },
@@ -1066,6 +1384,12 @@
       "order": 47,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1752,
       "wikiText": "There are two Statues of Dwayna that function as hero challenges, both of which are found within the Ruins of Orr: Within the Straits of Devastation: Statue of Dwayna (Triumph Plaza) Within Malchor's Leap: Statue of Dwayna (Karst Plains)",
@@ -1088,6 +1412,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1802,
       "wikiText": "Pact Rally Point is a hidden Pact camp used to strike the Risen found at the Cathedral of Glorious Victory.",
       "waypointChatLink": "[&BNIEAAA=]"
@@ -1108,6 +1438,12 @@
       "order": 49,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1819,
       "wikiText": "Vigil Tacticians are Vigil soldiers found across Tyria.",
@@ -1132,6 +1468,12 @@
       ],
       "chatLink": "[&BNIEAAA=]",
       "waypointChatLink": "[&BNIEAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1831,
       "wikiText": "Triumph Plaza is an area in the Straits of Devastation. This large battleground houses a small Pact camp used to capture the Cathedral of Glorious Victory."
     },
@@ -1151,6 +1493,12 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1868,
       "wikiText": "Snipe Hill is a hill littered with Risen trebuchets.",
@@ -1172,6 +1520,12 @@
       "order": 52,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1912,
       "wikiText": "Conquest Marina is an Orrian dock that is now used by Risen to store their Dead Ships.",
@@ -1196,6 +1550,12 @@
       ],
       "chatLink": "[&BPYCAAA=]",
       "waypointChatLink": "[&BPYCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1929,
       "wikiText": "Hunter's Table is an area in the Straits of Devastation. This coastal area is used by the Risen to build trebuchets."
     },
@@ -1218,6 +1578,12 @@
       ],
       "chatLink": "[&BPQCAAA=]",
       "waypointChatLink": "[&BPQCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1997,
       "wikiText": "Crippled Bridges is an area in Straits of Devastation. This former dock is now decayed and overrun by Risen."
     },
@@ -1237,6 +1603,12 @@
       "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2019,
       "wikiText": "Brassclaw Landing is an Orrian ruins used by Risen to protect the Brassburn Torch.",
@@ -1258,6 +1630,12 @@
       "order": 56,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2053,
       "wikiText": "Brassburn Torch is an Orrian beacon once used to guide sailors away from the rocky cliffs and shores of Orr before The Cataclysm. Nowadays, it is used by the Risen to guide and send orders to their Dead Ships.",
@@ -1282,6 +1660,12 @@
       ],
       "chatLink": "[&BOUGAAA=]",
       "waypointChatLink": "[&BOUGAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2063,
       "wikiText": "Strait of Malediction is a waterway in the Straits of Devastation. Many underwater Orrian ruins can be seen in this area."
     },
@@ -1301,6 +1685,12 @@
       "order": 58,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2125,
       "wikiText": "Statues of Lyssa can be found throughout Tyria dedicated to the human goddess, Lyssa.",
@@ -1322,6 +1712,12 @@
       "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2182,
       "wikiText": "The Monastery of Tughra is an Orrian ruin inhabited by Risen. Nothing is known about the monastery's history.",
@@ -1346,6 +1742,12 @@
       ],
       "chatLink": "[&BPUCAAA=]",
       "waypointChatLink": "[&BPUCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2270,
       "wikiText": "The Bloodtrough is an area in the Straits of Devastation. These rotted swamplands are heavily populated by Risen Drakes."
     },
@@ -1365,6 +1767,12 @@
       "order": 61,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2273,
       "wikiText": "Zaishen Antheneum is a large Orrian ruin that once belonged to the Zaishen Order found on Orr.",
@@ -1387,6 +1795,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2287,
       "wikiText": "Grenth's Graveyard is a communing hero challenge in The Bloodtrough. Approaching it from the west provides a smaller number of enemies to defeat before being able to commune.",
       "waypointChatLink": "[&BPUCAAA=]"
@@ -1407,6 +1821,12 @@
       "order": 63,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2349,
       "wikiText": "Chapel of Lady Glaive is a small structure on the western edge of Triumph Plaza, north of Sentry Waypoint. Within the chapel is a single coffin and several Risen, including a female Champion Risen Captain.",
@@ -1431,6 +1851,12 @@
       ],
       "chatLink": "[&BPsCAAA=]",
       "waypointChatLink": "[&BPsCAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2382,
       "wikiText": "Sentry Steppes is a western area in the Straits of Devastation that connects to Malchor's Leap."
     },
@@ -1451,8 +1877,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2394,
-      "wikiText": "Din al-Jindi is an Orrian gate leading to Malchor's Leap.",
+      "wikiText": "Din al-Jindi is a point of interest in Sentry Steppes, at the west end of the Straits of Devastation. It is a destroyed Orrian gate leading to Malchor's Leap.",
       "waypointChatLink": "[&BPsCAAA=]"
     },
     {
@@ -1471,6 +1903,12 @@
       "order": 66,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2486,
       "wikiText": "The Veteran Risen Spectral Guard starts a hero challenge in the Cathedral of Glorious Victory.",
@@ -1492,6 +1930,12 @@
       "order": 67,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2493,
       "wikiText": "Caer Aval is Trahearne's office located in the southwest portion of Fort Trinity. To enter the instance, approach the large safe-like door on the south side of the central Fort Trinity hub.",

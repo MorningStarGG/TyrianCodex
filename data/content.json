@@ -6,7 +6,8 @@
     "hall_of_chains",
     "mythwright_gambit",
     "the_key_of_ahdashim",
-    "mount_balrior"
+    "mount_balrior",
+    "nexus_of_eternity"
   ],
   "raids": {
     "forsaken_thicket": {
@@ -35,7 +36,9 @@
             "xera"
           ]
         }
-      ]
+      ],
+      "tracking": "api",
+      "apiId": "forsaken_thicket"
     },
     "bastion_of_the_penitent": {
       "wings": [
@@ -48,7 +51,9 @@
             "deimos"
           ]
         }
-      ]
+      ],
+      "tracking": "api",
+      "apiId": "bastion_of_the_penitent"
     },
     "hall_of_chains": {
       "wings": [
@@ -61,7 +66,9 @@
             "voice_in_the_void"
           ]
         }
-      ]
+      ],
+      "tracking": "api",
+      "apiId": "hall_of_chains"
     },
     "mythwright_gambit": {
       "wings": [
@@ -73,7 +80,9 @@
             "qadim"
           ]
         }
-      ]
+      ],
+      "tracking": "api",
+      "apiId": "mythwright_gambit"
     },
     "the_key_of_ahdashim": {
       "wings": [
@@ -85,7 +94,9 @@
             "qadim_the_peerless"
           ]
         }
-      ]
+      ],
+      "tracking": "api",
+      "apiId": "the_key_of_ahdashim"
     },
     "mount_balrior": {
       "wings": [
@@ -97,7 +108,15 @@
             "ura"
           ]
         }
-      ]
+      ],
+      "tracking": "api",
+      "apiId": "mount_balrior"
+    },
+    "nexus_of_eternity": {
+      "name": "Nexus of Eternity",
+      "wings": [],
+      "tracking": "unavailable",
+      "apiId": null
     }
   },
   "dungeonOrder": [

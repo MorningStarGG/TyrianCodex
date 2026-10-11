@@ -7,6 +7,7 @@
 // so the wording stays identical everywhere and a reword is a one-line change.
 namespace UiStr
 {
+    inline constexpr const char* EncounterTrackingUnavailable = "Automatic completion tracking is unavailable from the Guild Wars 2 API.";
     // Internal: a small ring of static buffers so several composed strings can be live at once within a frame
     // (immediate-mode safe -- ImGui copies the glyphs at draw time; we just need the buffer intact until then).
     // inline => one shared instance across TUs; ImGui is single-threaded so no locking is needed.

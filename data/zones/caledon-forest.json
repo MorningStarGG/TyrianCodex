@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 34,
     "name": "Caledon Forest",
@@ -44,6 +44,42 @@
       43072,
       34432
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 19,
+          "points_of_interest": 47,
+          "skill_challenges": 7,
+          "sectors": 21
+        },
+        "3": {
+          "tasks": 19,
+          "points_of_interest": 47,
+          "skill_challenges": 7,
+          "sectors": 21
+        },
+        "2": {
+          "tasks": 19,
+          "points_of_interest": 47,
+          "skill_challenges": 7,
+          "sectors": 21
+        },
+        "0": {
+          "tasks": 19,
+          "points_of_interest": 47,
+          "skill_challenges": 7,
+          "sectors": 21
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -66,8 +102,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 31,
-      "wikiText": "Solitaire Island is a point of interest within the Village of Astorea. In the center of this grassy island grows the wardenlight tree. It is the symbol of the Wardens who use parts of it to fashion special weapons and armor.",
+      "wikiText": "Solitaire Island is a point of interest within the Village of Astorea. This location also known as the tranquil solitude of the Wardenlight trees, the symbol of the Wardens who use parts of the trees in special weapons and armor.",
       "waypointChatLink": "[&BDQBAAA=]"
     },
     {
@@ -89,6 +131,12 @@
       ],
       "chatLink": "[&BDQBAAA=]",
       "waypointChatLink": "[&BDQBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 55,
       "wikiText": "The Village of Astorea is a sylvari settlement located in the southwest corner of Caledon Forest, just outside The Grove. It is where new sylvari characters awaken from the Dream of Dreams after the tutorial, Fighting the Nightmare."
     },
@@ -109,8 +157,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 72,
-      "wikiText": "Rime's Garden is a point of interest within the Village of Astorea. The sylvari farmers use this irrigated field just north of The Grove to provide their fellow countrymen with food.",
+      "wikiText": "Rime's Garden is a point of interest within the Village of Astorea. Sylvari farmers use this irrigated field just north of The Grove to provide their countryfolk with food. They always welcome help around the farm with any pest problems.",
       "waypointChatLink": "[&BDQBAAA=]"
     },
     {
@@ -176,6 +230,12 @@
           36334
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 78,
       "wikiText": "Kill termites, uproot termite larvae, and feed prickly fruit to hungry moas.",
       "waypointChatLink": "[&BDQBAAA=]"
@@ -235,6 +295,12 @@
           35581
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 126,
       "wikiText": "Repel the Nightmare Court, clear spider webs, and activate mortar pods.",
       "waypointChatLink": "[&BDYBAAA=]"
@@ -258,6 +324,12 @@
       ],
       "chatLink": "[&BDYBAAA=]",
       "waypointChatLink": "[&BDYBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 148,
       "wikiText": "The Ogham Wilds is west of the Village of Astorea extending north to Sandycove Beach. A treant sanctuary is found south of the area."
     },
@@ -312,6 +384,12 @@
           35967
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 212,
       "wikiText": "Speak to Arias to become a mossheart. Clear strangle thorn and grubs, heal the wilting garden, and open incubation pods.",
       "waypointChatLink": "[&BDYBAAA=]"
@@ -332,6 +410,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 270,
       "wikiText": "Head slightly south of west to the road seen curving from SW to NW - it crosses a bridge just south of the bend.",
@@ -354,6 +438,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 288,
       "wikiText": "This Waterfall in Ogham Wilds is a place of importance to the sylvari, being similar to a place in the Dream of Dreams.",
       "waypointChatLink": "[&BDYBAAA=]"
@@ -374,6 +464,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 334,
       "wikiText": "Dolorous Vale is an point of interest within Sandycove Beach. Deep inside this narrow canyon lies an outpost of the Nightmare Court. This is where they train their various pets.",
@@ -398,6 +494,12 @@
       ],
       "chatLink": "[&BDcBAAA=]",
       "waypointChatLink": "[&BDcBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 381,
       "wikiText": "The Ogham Wilds is west of the Village of Astorea extending north to Sandycove Beach. A treant sanctuary is found south of the area."
     },
@@ -472,6 +574,12 @@
           35388
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 393,
       "wikiText": "Help gather lavender, search sand piles, build scarecrows, return escaped siamoths, and protect harvesters from nearby threats.",
       "waypointChatLink": "[&BDcBAAA=]"
@@ -492,6 +600,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 434,
       "wikiText": "The Golotl Grounds is a point of interest within Sandycove Beach. Inside this sunken valley a small tribe of hylek have established a settlement.",
@@ -516,6 +630,12 @@
       ],
       "chatLink": "[&BDgBAAA=]",
       "waypointChatLink": "[&BDgBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 500,
       "wikiText": "The Glencarn Sperrins lies on the eastern edge of Caledon Forest between Ventry Bay to the north and the Dreamdark Enclave to the south. Theses wildlands are home to a variety of creature ranging from mosquitoes to earth elementals."
     },
@@ -535,6 +655,12 @@
       "order": 14,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 528,
       "wikiText": "The Mysterious Patch of Ground is in Glencarn Sperrins, north-east of Brigid's Overlook Waypoint. It is the trigger for Defeat the Veteran Ancient Maguuma Wurm and Its Hatchlings hero challenge.",
@@ -557,6 +683,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 599,
       "wikiText": "Bay Haven is a point of interest within Sandycove Beach. It is one of the Lionguard outposts in Caledon Forest.",
       "waypointChatLink": "[&BDcBAAA=]"
@@ -577,6 +709,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 610,
       "wikiText": "Head west from Brigid's Overlook Waypoint to Bay Haven. Enter Bay Haven and head up the ramp on your right. Jump on the rocks at the top of the ramp and then jump on the beam. Walk to the end and view the vista.",
@@ -637,6 +775,12 @@
           34885
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 643,
       "wikiText": "Repair fishing nets and traps, cull the wave rider population, help divers, and fend off Nightmare Court raids.",
       "waypointChatLink": "[&BDoBAAA=]"
@@ -657,6 +801,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 648,
       "wikiText": "The Weeping Isle is a point of interest within Ventry Bay. This tropical island is the home of a group of sylvari who have cut themselves off from the Dream of Dreams known as the Soundless.",
@@ -679,6 +829,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 674,
       "wikiText": "The Naulshead Refuge is a point of interest within Ventry Bay. This sheltered village was once the home of the Soundless until they were forced out by the Nightmare Court. It is now the abode of a single asuran hermit.",
       "waypointChatLink": "[&BDoBAAA=]"
@@ -699,6 +855,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 734,
       "wikiText": "Hemlock Coil is an overgrown narrow canyon that is home to a large force of the Nightmare Court within the Trader's Green.",
@@ -755,6 +917,12 @@
           34518
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 766,
       "wikiText": "Kill courtiers and their pets, free prisoners, destroy turrets, and generally wreak havoc in Hemlock Coil.",
       "waypointChatLink": "[&BDoBAAA=]"
@@ -778,6 +946,12 @@
       ],
       "chatLink": "[&BDoBAAA=]",
       "waypointChatLink": "[&BDoBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 811,
       "wikiText": "Mabon Market is a small crafting hub located close to the center of Caledon Forest. This location also serves as a home to Researcher Widd, an Asura who starts an event in the area."
     },
@@ -836,6 +1010,12 @@
           34077
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 851,
       "wikiText": "Help Zippti's golems with their experiments, fight the skritt, knock over their shinies, and activate tracking devices to monitor their response.",
       "waypointChatLink": "[&BDoBAAA=]"
@@ -856,6 +1036,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 892,
       "wikiText": "Head north east of the vista until you see a camp of skritt and boxes with wooden planks. Jump from the boxes onto the planks and proceed the path until it reaches an end.",
@@ -880,6 +1066,12 @@
       ],
       "chatLink": "[&BDsBAAA=]",
       "waypointChatLink": "[&BDsBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 948,
       "wikiText": "Trader's Green is an area within Caledon Forest located between Willowalk Groves to the north and the Ruins of the Unseen to the south."
     },
@@ -902,6 +1094,12 @@
       ],
       "chatLink": "[&BDwBAAA=]",
       "waypointChatLink": "[&BDwBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 997,
       "wikiText": "Trader's Green is an area within Caledon Forest located between Willowalk Groves to the north and the Ruins of the Unseen to the south."
     },
@@ -921,6 +1119,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1033,
       "wikiText": "Go up to Hanto Trading Post and go up the rocks to the left of the entrance. You can then follow the path down to the vista.",
@@ -942,6 +1146,12 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1096,
       "wikiText": "The Dengatl Grounds is a point of interest within the Wychmire Swamp. In the southern corner of the swamp overlooking a small pond a group of hylek have constructed a village.",
@@ -966,6 +1176,12 @@
       ],
       "chatLink": "[&BD4BAAA=]",
       "waypointChatLink": "[&BD4BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1132,
       "wikiText": "The Wychmire Swamp is a large area in the northwest portion of Caledon Forest. According to some of the Wardens stationed in this area, this swamp holds a very dark and powerful power that must stay contained."
     },
@@ -1028,6 +1244,12 @@
           33139
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1154,
       "wikiText": "Destroy corrupted plants, husks, and thorns; fight the Nightmare Court and their minions; and free prisoners.",
       "waypointChatLink": "[&BD4BAAA=]"
@@ -1051,6 +1273,12 @@
       ],
       "chatLink": "[&BEEFAAA=]",
       "waypointChatLink": "[&BEEFAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1200,
       "wikiText": "The Wychmire Swamp is a large area in the northwest portion of Caledon Forest. According to some of the Wardens stationed in this area, this swamp holds a very dark and powerful power that must stay contained."
     },
@@ -1070,6 +1298,12 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1222,
       "wikiText": "The Banshee's Keen is a point of interest within the Wychmire Swamp. The Nightmare Court has established a base deep inside this twisted swamp, where they keep their prisoners captive and guard the entrance to the Twilight Arbor.",
@@ -1091,6 +1325,12 @@
       "order": 33,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1243,
       "wikiText": "A Powerful Darkness can be found near Banshee's Keen hiding some Nightmare Courtiers in Wychmire Swamp. It triggers Defeat the Knight of Sorrows and Her Attendants.",
@@ -1115,6 +1355,12 @@
       ],
       "chatLink": "[&BEEBAAA=]",
       "waypointChatLink": "[&BEEBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1278,
       "wikiText": "The Wychmire Swamp is a large area in the northwest portion of Caledon Forest. According to some of the Wardens stationed in this area, this swamp holds a very dark and powerful power that must stay contained."
     },
@@ -1161,6 +1407,12 @@
           32547
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1345,
       "wikiText": "Repair signs, light torches, and keep the road free of dangers. Destroy troll trophy spikes, poison troll food, and drive the trolls away.",
       "waypointChatLink": "[&BEwDAAA=]"
@@ -1184,6 +1436,12 @@
       ],
       "chatLink": "[&BEwDAAA=]",
       "waypointChatLink": "[&BEwDAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1399,
       "wikiText": "The Wychmire Swamp is a large area in the northwest portion of Caledon Forest. According to some of the Wardens stationed in this area, this swamp holds a very dark and powerful power that must stay contained."
     },
@@ -1206,6 +1464,12 @@
       ],
       "chatLink": "[&BD8BAAA=]",
       "waypointChatLink": "[&BD8BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1464,
       "wikiText": "Willowalk Groves is an area in the northern section of Caledon Forest. A large group of treants protected by two wardens is found there, but they are often attacked by Fire Imps."
     },
@@ -1228,6 +1492,12 @@
       ],
       "chatLink": "[&BEABAAA=]",
       "waypointChatLink": "[&BEABAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1511,
       "wikiText": "Treemarch Estuary is an area in the northeast corner of Caledon Forest, consisting of a river flowing south out of Kessex Hills and east into Quetzal Bay, and contains Kraitbane Haven, a Lionguard outpost."
     },
@@ -1247,6 +1517,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1567,
       "wikiText": "Accessed from the upper level of Kraitbane Haven. Follow the wooden platforms as they spiral around the tower to reach the top.",
@@ -1343,6 +1619,12 @@
           33130
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1589,
       "wikiText": "Defeat krait, rescue slaves, and put slave remains to rest.",
       "waypointChatLink": "[&BEABAAA=]"
@@ -1363,6 +1645,12 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1591,
       "wikiText": "Slaver's Deeps is a point of interest in northern Quetzal Bay, just east of Kraitbane Haven.",
@@ -1385,6 +1673,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1593,
       "wikiText": "A Krait Altar hero challenge can be found underwater beneath Slaver's Deeps in northern Quetzal Bay, where the krait sacrifice slaves as a ritual to their prophets.",
       "waypointChatLink": "[&BEABAAA=]"
@@ -1405,6 +1699,12 @@
       "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1612,
       "wikiText": "The Morgatl Grounds is a point of interest within Quetzal Bay. This sandy delta is home to a tribe of hylek.",
@@ -1427,6 +1727,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1744,
       "wikiText": "The Hanto Trading Post is a point of interest within Trader's Green. On the side of this small rocky hill a small group of Tengu have opened a trading post. They share this location with an asuran researcher and his dissatisfied assistant.",
       "waypointChatLink": "[&BDwBAAA=]"
@@ -1447,6 +1753,12 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1774,
       "wikiText": "Titan's Staircase is an area located in central Caledon Forest just west of Quetzal Bay. It is primarily inhabited by jungle wildlife.",
@@ -1469,6 +1781,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1796,
       "wikiText": "The Hazupl Grounds is a point of interest within Quetzal Bay. On the shores of a sheltered bay a tribe of hylek have constructed a village. Patrols circle this hamlet protecting their elders from unwanted interruptions.",
       "waypointChatLink": "[&BD0BAAA=]"
@@ -1489,6 +1807,12 @@
       "order": 47,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1815,
       "wikiText": "Soggorsort is a point of interest within Quetzal Bay. Deep under the waters in the center of the bay lives a small group of quaggan in their peaceful fishing village.",
@@ -1540,6 +1864,12 @@
           43576,
           33693
         ]
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1816,
       "wikiText": "Light fishing lanterns, check quaggan traps, destroy krait blood idols, and defend quaggan villagers from marauding krait.",
@@ -1600,6 +1930,12 @@
           33728
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1819,
       "wikiText": "Defeat krait, bring her Hylek Armor, and rescue hylek slaves.",
       "waypointChatLink": "[&BD0BAAA=]"
@@ -1623,6 +1959,12 @@
       ],
       "chatLink": "[&BD0BAAA=]",
       "waypointChatLink": "[&BD0BAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1840,
       "wikiText": "Titan's Staircase is an area located in central Caledon Forest just west of Quetzal Bay. It is primarily inhabited by jungle wildlife."
     },
@@ -1642,6 +1984,12 @@
       "order": 51,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1880,
       "wikiText": "Swift Arrow is a tengu looking to pass on his knowledge of battle to travelers passing by the door to the Dominion of Winds in Caledon Forest. Defeat him to gain in his knowledge, and complete the hero challenge.",
@@ -1664,6 +2012,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1902,
       "wikiText": "Stormwreck Deeps is a point of interest within Ventry Bay. This underwater derrick is occupied by a group of krait.",
       "waypointChatLink": "[&BD0BAAA=]"
@@ -1684,6 +2038,12 @@
       "order": 53,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1934,
       "wikiText": "Head to the east of the hill and you will see a rock with some wooden planks. Jump on this rock and onto the planks. Walk to the end of the plank and jump on the wooden support beam (careful not to fall).",
@@ -1752,6 +2112,12 @@
           34734
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1941,
       "wikiText": "Assist the Atzintli by battling the krait, rescuing captive hylek, and repairing territory markers.",
       "waypointChatLink": "[&BDkBAAA=]"
@@ -1772,6 +2138,12 @@
       "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1957,
       "wikiText": "The Zopatl Grounds is a small hylek settlement found along the shoreline of Ventry Bay, within Glencarn Sperrins. The hylek tribe here defend their hunting grounds from attack from krait based at Stormwreck Deeps.",
@@ -1796,6 +2168,12 @@
       ],
       "chatLink": "[&BDkBAAA=]",
       "waypointChatLink": "[&BDkBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1998,
       "wikiText": "The Glencarn Sperrins lies on the eastern edge of Caledon Forest between Ventry Bay to the north and the Dreamdark Enclave to the south. Theses wildlands are home to a variety of creature ranging from mosquitoes to earth elementals."
     },
@@ -1818,6 +2196,12 @@
       ],
       "chatLink": "[&BDUBAAA=]",
       "waypointChatLink": "[&BDUBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2088,
       "wikiText": "Morgan's Spiral is an area in the southeast of Caledon Forest. Its name may come either from the pattern of the sand or from the spiraling plant that grows in the center of the area."
     },
@@ -1876,6 +2260,12 @@
           35421
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2137,
       "wikiText": "Kill hiding spiders, gather redcap mushrooms, and destroy spider webs and toxic mushrooms.",
       "waypointChatLink": "[&BEIBAAA=]"
@@ -1899,6 +2289,12 @@
       ],
       "chatLink": "[&BEIBAAA=]",
       "waypointChatLink": "[&BEIBAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2176,
       "wikiText": "The Verdence is an area located in the south of Caledon Forest. Two sylvari settlements are found in the area."
     },
@@ -1964,6 +2360,12 @@
           42956,
           35615
         ]
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2182,
       "wikiText": "Defeat undead, revive territory markers, rebuild fortifications, and spar with local Wardens.",
@@ -2032,6 +2434,12 @@
           36025
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2238,
       "wikiText": "Help lost hounds, play with pups, and kill pests.",
       "waypointChatLink": "[&BP4FAAA=]"
@@ -2053,6 +2461,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2245,
       "wikiText": "Danador's Kennel is a point of interest within The Verdence. This fenced in enclosure is the main training facility for sylvan hounds in Caledon Forest.",
       "waypointChatLink": "[&BP4FAAA=]"
@@ -2073,6 +2487,12 @@
       "order": 63,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2284,
       "wikiText": "Overlooks Sleive's Inlet. Can be reached via a path on the south-west side of the hill.",
@@ -2129,6 +2549,12 @@
           36173
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2331,
       "wikiText": "Burn undead corpses, smash noxious plants, protect Wardens, and battle the Risen in Sleive's Inlet.",
       "waypointChatLink": "[&BP4FAAA=]"
@@ -2149,6 +2575,12 @@
       "order": 65,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2334,
       "wikiText": "Caer Verdant is a point of interest within Sleive's Inlet. Upon this natural rise the sylvari have grown a large watch tree. The wardens are ever vigilant to the threat of undead forces arising from the swamps to the west.",
@@ -2173,6 +2605,12 @@
       ],
       "chatLink": "[&BP4FAAA=]",
       "waypointChatLink": "[&BP4FAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2346,
       "wikiText": "Sleive's Inlet is an area located in the southeast corner of Caledon Forest. The swamps are full of scaled drakes and jungle trolls."
     },
@@ -2235,6 +2673,12 @@
           35594
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2382,
       "wikiText": "Defeat Risen, burn their corpses, and stomp on corrupted grub holes.",
       "waypointChatLink": "[&BDUBAAA=]"
@@ -2255,6 +2699,12 @@
       "order": 68,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2402,
       "wikiText": "Morgan's Orchid is an unusual plant found in Morgan's Spiral with beautiful blossoms used to obtain a hero point.",
@@ -2315,6 +2765,12 @@
           35227
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2461,
       "wikiText": "Speak to Alarin to enter Briarthorn Den. Inside, defeat nightmare[sic] duelists, reassure hounds, clear thorn barriers, and help captives.",
       "waypointChatLink": "[&BDUBAAA=]"
@@ -2336,6 +2792,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2479,
       "wikiText": "The Briarthorn Den is a point of interest within Morgan's Spiral. This fenced off canyon is home to a large Nightmare Court outpost. Here they train their hounds and indoctrinate their new recruits.",
       "waypointChatLink": "[&BDkBAAA=]"
@@ -2356,6 +2818,12 @@
       "order": 71,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "A Dark Thorn Patch can be found inside the Briarthorn Den of Morgan's Spiral. Interacting with it triggers the Defeat the Thorn Wolf Scariel and Its Pack hero challenge.",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1165,
     "name": "Bloodstone Fen",
@@ -33,10 +33,10 @@
     "sectorRect": [
       [
         34762.8,
-        30222.9
+        30219.3
       ],
       [
-        36512.5,
+        36514.7,
         31096.2
       ]
     ],
@@ -44,6 +44,56 @@
       35582,
       30688
     ],
+    "floorCollection": {
+      "available": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
+      ],
+      "conflicts": [],
+      "counts": {
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 9,
+          "skill_challenges": 0,
+          "sectors": 2
+        },
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 12,
+          "skill_challenges": 0,
+          "sectors": 2
+        },
+        "47": {
+          "tasks": 0,
+          "points_of_interest": 8,
+          "skill_challenges": 0,
+          "sectors": 2
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 8,
+          "skill_challenges": 0,
+          "sectors": 2
+        },
+        "48": {
+          "tasks": 0,
+          "points_of_interest": 12,
+          "skill_challenges": 0,
+          "sectors": 2
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 11,
+          "skill_challenges": 0,
+          "sectors": 2
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws3"
   },
   "primaryKind": "foot",
@@ -68,8 +118,41 @@
       ],
       "chatLink": "[&BEsJAAA=]",
       "waypointChatLink": "[&BEsJAAA=]",
+      "floors": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2,
       "wikiText": "The Pride of the Pact is an area of Bloodstone Fen that is composed of General Almorra Soulkeeper's personal airship, the Soul's Vendetta."
+    },
+    {
+      "stepId": "1165:poi:2374",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "poi",
+      "objectiveId": "2374",
+      "coord": [
+        35491,
+        30821
+      ],
+      "recommendedLevel": null,
+      "name": "Colosseum of the Faithful",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        48
+      ],
+      "trailIndex": 20,
+      "wikiText": "The Colosseum of the Faithful is a large White Mantle ruin nestled in the skies of the Bloodstone Fen. Many spirits that were sacrificed to the Bloodstone long ago roams there freely, attacking anything on sight.",
+      "waypointChatLink": "[&BE4JAAA=]"
     },
     {
       "stepId": "1165:vista:2368",
@@ -84,12 +167,20 @@
       "recommendedLevel": null,
       "name": "Fragmented Wastes (1)",
       "prereqs": [],
-      "order": 1,
+      "order": 2,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 48,
-      "wikiText": "The Fragmented Wastes are an area of the Bloodstone Fen. It consists of the sky portion of the map, as the only way to travel is to go across the small islands floating in the air.",
+      "wikiText": "Use the bouncing mushroom to climb to the edge of the crater and walk to the vista.",
       "waypointChatLink": "[&BE4JAAA=]"
     },
     {
@@ -105,12 +196,20 @@
       "recommendedLevel": null,
       "name": "Zealot's Overlook Waypoint",
       "prereqs": [],
-      "order": 2,
+      "order": 3,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BE4JAAA=]",
       "waypointChatLink": "[&BE4JAAA=]",
+      "floors": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 114,
       "wikiText": "The Fragmented Wastes are an area of the Bloodstone Fen. It consists of the sky portion of the map, as the only way to travel is to go across the small islands floating in the air."
     },
@@ -127,9 +226,12 @@
       "recommendedLevel": null,
       "name": "Temple of Sacrifice",
       "prereqs": [],
-      "order": 3,
+      "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        2
       ],
       "trailIndex": 395,
       "wikiText": "The Temple of Sacrifice is a point of interest in the Fragmented Wastes of Bloodstone Fen. It is a White Mantle ruin nestled high in the skies.",
@@ -148,13 +250,121 @@
       "recommendedLevel": null,
       "name": "Fragmented Wastes (2)",
       "prereqs": [],
-      "order": 4,
+      "order": 5,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 401,
-      "wikiText": "Use the bouncing mushroom to climb to the edge of the crater and walk to the vista.",
+      "wikiText": "The Fragmented Wastes are an area of the Bloodstone Fen. It consists of the sky portion of the map, as the only way to travel is to go across the small islands floating in the air.",
       "waypointChatLink": "[&BEEJAAA=]"
+    },
+    {
+      "stepId": "1165:poi:2385",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "poi",
+      "objectiveId": "2385",
+      "coord": [
+        35709,
+        30646
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodstone's Shell",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        48
+      ],
+      "trailIndex": 412,
+      "wikiText": "The Bloodstone's Shell is what remains of the Maguuma Bloodstone after its devastating explosion.",
+      "waypointChatLink": "[&BEEJAAA=]"
+    },
+    {
+      "stepId": "1165:poi:2384",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "poi",
+      "objectiveId": "2384",
+      "coord": [
+        35593,
+        30639
+      ],
+      "recommendedLevel": null,
+      "name": "Crater's Precipice",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 422,
+      "wikiText": "The Crater's Precipice is a rocky cliff overlooking the gaping hole where the Maguuma Jungle Bloodstone once stood.",
+      "waypointChatLink": "[&BD8JAAA=]"
+    },
+    {
+      "stepId": "1165:poi:2377",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "poi",
+      "objectiveId": "2377",
+      "coord": [
+        35211,
+        30446
+      ],
+      "recommendedLevel": null,
+      "name": "Tomb of the Confessors",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        48
+      ],
+      "trailIndex": 483,
+      "wikiText": "The Tomb of the Confessors is a point of interest in the Haunted Canyons. This White Mantle ruin is the resting place of many of their confessors. A small Pact camp is set up right at the entrance.",
+      "waypointChatLink": "[&BEsJAAA=]"
+    },
+    {
+      "stepId": "1165:poi:2380",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "poi",
+      "objectiveId": "2380",
+      "coord": [
+        34960,
+        30901
+      ],
+      "recommendedLevel": null,
+      "name": "Salvation Springs",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        48,
+        3
+      ],
+      "trailIndex": 583,
+      "wikiText": "The Salvation Springs are a point of interest located in the Haunted Canyons. Despite the chaos of the Bloodstone Fen, this quiet waterfall continues to prosper.",
+      "waypointChatLink": "[&BEsJAAA=]"
     },
     {
       "stepId": "1165:waypoint:2369",
@@ -169,12 +379,20 @@
       "recommendedLevel": null,
       "name": "Ground Zero Waypoint",
       "prereqs": [],
-      "order": 5,
+      "order": 10,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BEEJAAA=]",
       "waypointChatLink": "[&BEEJAAA=]",
+      "floors": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 765,
       "wikiText": "The Bloodstone Maw is an area containing the east half of Bloodstone Fen's surface and depths layers. It is a giant crater where the Bloodstone once was before it exploded."
     },
@@ -191,12 +409,20 @@
       "recommendedLevel": null,
       "name": "Depths of the Maw Waypoint",
       "prereqs": [],
-      "order": 6,
+      "order": 11,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BD8JAAA=]",
       "waypointChatLink": "[&BD8JAAA=]",
+      "floors": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 783,
       "wikiText": "The Cavern of Unseen Lights is an underground area of the Bloodstone Fen. It is where a ley line that flowed beneath the Bloodstone channeled through."
     },
@@ -213,13 +439,45 @@
       "recommendedLevel": null,
       "name": "Colosseum of the Faithful",
       "prereqs": [],
-      "order": 7,
+      "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        2,
+        1,
+        47,
+        0,
+        48,
+        3
       ],
       "trailIndex": 801,
       "wikiText": "Make your way from the waypoint and carefully drop down on the branches. Walk towards the vista.",
       "waypointChatLink": "[&BE4JAAA=]"
+    },
+    {
+      "stepId": "1165:poi:2373",
+      "mapId": 1165,
+      "zoneName": "Bloodstone Fen",
+      "type": "poi",
+      "objectiveId": "2373",
+      "coord": [
+        35202,
+        30736
+      ],
+      "recommendedLevel": null,
+      "name": "Temple of Renewal",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 803,
+      "wikiText": "The Temple of Renewal is a White Mantle ruin found floating inside the Cavern of Unseen Lights.",
+      "waypointChatLink": "[&BEsJAAA=]"
     }
   ],
   "hasTrail": true

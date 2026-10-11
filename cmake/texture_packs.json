@@ -1,0 +1,12 @@
+{
+  "items": {"sourceDir": "items", "filenameKeys": true},
+  "tiles": {"sourceDir": "tiles", "filenameKeys": true},
+  "maps": {"sourceDir": "maps", "filenameKeys": false},
+  "portraits": {"sourceDir": "portraits", "filenameKeys": false},
+  "decorations": {"sourceDir": "decorations", "filenameKeys": false},
+  "cats": {"sourceDir": "cats", "filenameKeys": false},
+  "skins": {"sourceDir": "skins", "filenameKeys": false},
+  "cosmetic_icons": {"sourceDir": "cosmetic_icons", "filenameKeys": true},
+  "cosmetic_renders": {"sourceDir": "cosmetic_renders", "filenameKeys": false},
+  "loadingscreens": {"sourceDir": "loading", "filenameKeys": true}
+}

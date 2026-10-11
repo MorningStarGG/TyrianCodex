@@ -240,6 +240,8 @@ void Search::EnsureIndex(App& app)
         e.name = mi.Name; e.zoneName = mi.Name;
         e.regionLabel = regionLabel;
         e.regionId = mi.RegionId; e.continentId = mi.ContinentId; e.mapId = mi.MapId;
+        e.travelMapId = mi.TravelMapId;
+        e.encounterTrackingUnavailable = mi.HasUnavailableEncounterTracking();
         e.level = mi.MinLevel; e.levelMax = mi.MaxLevel; e.zone = nullptr; e.hasRects = mi.HasRect;
         for (int i = 0; i < 4; ++i) e.contRect[i] = mi.ContRect[i];   // hover thumbnail: non-zone places carry the rect
         e.tileMaxZoom = mi.TileMaxZoom; e.staticMap = mi.StaticMap;   // live tiles (maxZoom) vs a bundled static image

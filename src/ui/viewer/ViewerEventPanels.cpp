@@ -677,6 +677,8 @@ namespace
 void ViewerEvents::DrawTimersTab(App& app)
 {
     if (!app.eventTimers.Loaded()) { Gw2Ui::Label("Loading event timers...", Gw2Ui::kTextSub, false, nullptr, 18.f); return; }
+    for (const auto& title : app.eventTimers.UnresolvedSchedules())
+        ImGui::TextWrapped("Schedule awaiting verification: %s", title.c_str());
 
     // Row 1: the search box fills the left; the List/Timeline toggle (and, in Timeline view, the 5 timeline-range chips (2/4/6/8/12h))
     // ride the right of the SAME row. (The search box used to share the category-chip row, but the 6th "Cycles"

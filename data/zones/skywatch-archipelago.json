@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1510,
     "name": "Skywatch Archipelago",
@@ -44,6 +44,42 @@
       25415,
       23679
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 65,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 65,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 65,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 65,
+          "skill_challenges": 0,
+          "sectors": 11
+        }
+      },
+      "unavailable": []
+    },
     "release": "soto"
   },
   "primaryKind": "foot",
@@ -66,6 +102,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 24,
       "wikiText": "The Wizard's Ascent is a far northwestern edge of Maguuma surounded by several small islands in the southeast portion of the Skywatch Archipelago and the first part of the Horn of Maguuma region visited by the Pact Commander.",
       "waypointChatLink": "[&BCsOAAA=]"
@@ -86,6 +128,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 34,
       "wikiText": "The Monument to the Order it is a point of interest within the Wizard's Ascent. It is a statue in which there are members of the Astral Ward paying homage.",
@@ -108,6 +156,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 127,
       "wikiText": "Briella's Kitchen is a point of interest in Skywatch Archipelago. It is named after the asura who runs it, Alchemist Briella. The kitchen contains some strange ingredients such as Demonic essence, Bloodstone dust, Cauldron of Blood, etc.",
       "waypointChatLink": "[&BCsOAAA=]"
@@ -128,6 +182,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 258,
       "wikiText": "The Astral Ward Dining Hall is a point of interest within the Wizard's Ascent. It is a place where several tables are found and where the Astral Ward meets to eat.",
@@ -150,6 +210,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 391,
       "wikiText": "Beacon of Ages Command Center is a point of interest in Wizard's Ascent.",
       "waypointChatLink": "[&BCsOAAA=]"
@@ -171,6 +237,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 519,
       "wikiText": "Skywatch Lookout is a point of interest in Wizard's Ascent. It is a floating platform.",
       "waypointChatLink": "[&BCsOAAA=]"
@@ -191,6 +263,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 588,
       "waypointChatLink": "[&BCsOAAA=]"
@@ -214,6 +292,12 @@
       ],
       "chatLink": "[&BCsOAAA=]",
       "waypointChatLink": "[&BCsOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 589,
       "wikiText": "The Wizard's Ascent is a far northwestern edge of Maguuma surounded by several small islands in the southeast portion of the Skywatch Archipelago and the first part of the Horn of Maguuma region visited by the Pact Commander."
     },
@@ -236,6 +320,12 @@
       ],
       "chatLink": "[&BBUOAAA=]",
       "waypointChatLink": "[&BBUOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 721,
       "wikiText": "Devastated Garenhoff is an area within eastern Skywatch Archipelago. It was the first fractal created to test what would happen if the Wizard's Tower in Garenhoff was destroyed."
     },
@@ -255,6 +345,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 726,
       "wikiText": "The Garenhoff Refugee Camp is a camp populated by mostly human refugees running away from Devastated Garenhoff. It is protected by a small group of Rift Hunters.",
@@ -277,8 +373,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 752,
-      "wikiText": "Fragmented Passage is a cave full of spiders and used as a passageway to access the Cosmic Observatory, it is located within the Stargaze Ridge.",
+      "wikiText": "Fragmented Passage is a point of interest in Stargaze Ridge, at the east end of Skywatch Archipelago. It is a spider-infested cave that leads to Dagda's Cosmic Observatory.",
       "waypointChatLink": "[&BBUOAAA=]"
     },
     {
@@ -298,8 +400,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 827,
-      "wikiText": "The Dagda's Perception is located within the Cosmic Observatory, on the Stargaze Ridge.",
+      "wikiText": "Dagda's Perception is a point of interest located within the Cosmic Observatory, on Stargaze Ridge.",
       "waypointChatLink": "[&BBUOAAA=]"
     },
     {
@@ -318,6 +426,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 946,
       "wikiText": "The center of the Chak Hatchery is full of ley-energy that fosters the newborn Chak. To enter, use the Nuhoch Wallow at the end of the Nuhoch Lane or swim through the underwater tunnels, exiting in the northwest.",
@@ -340,6 +454,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1095,
       "wikiText": "The Eastern Ward is a section of Lion's Arch. It contains Coriolis Plaza, the newly built asura gate hub to the five racial capitals, as well as The Vaults, the new Black Lion Trading Company Headquarters.",
       "waypointChatLink": "[&BBUOAAA=]"
@@ -360,6 +480,12 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1183,
       "wikiText": "The Sailor's Lament is a point of interest within Devastated Garenhoff. It is a ship that is stranded on the coast.",
@@ -382,6 +508,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1211,
       "wikiText": "The Fractured Tower is a point of interest within Devastated Garenhoff. This tower is located at the northern edge of the town, and was broken into several floating fragments following the destruction of the Wizard's Tower.",
       "waypointChatLink": "[&BBUOAAA=]"
@@ -402,6 +534,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1224,
       "wikiText": "Devastated Garenhoff is an area within eastern Skywatch Archipelago. It was the first fractal created to test what would happen if the Wizard's Tower in Garenhoff was destroyed.",
@@ -424,6 +562,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1455,
       "wikiText": "The Lyhr's Design is a point of interest within Wizard's Ascent. It is a tower named after dwarf Lyhr.",
       "waypointChatLink": "[&BA4OAAA=]"
@@ -444,6 +588,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1893,
       "wikiText": "Vass's Compassion is a point of interest within Jade Mech Habitation Zone 03. It is named after the Forgotten Vass of the Wizard's Court.",
@@ -466,6 +616,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2057,
       "wikiText": "Kestrel's Vow is a point of interest within Jade Mech Habitation Zone 03, within the Skywatch Archipelago. It is a section of the Echovald Forest bordering New Kaineng which the Kestrels are using as a base of operations.",
       "waypointChatLink": "[&BD8OAAA=]"
@@ -487,6 +643,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2212,
       "waypointChatLink": "[&BD8OAAA=]"
     },
@@ -507,6 +669,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2324,
       "waypointChatLink": "[&BA4OAAA=]"
     },
@@ -526,6 +694,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2569,
       "wikiText": "The Abandoned Lab is a point of interest within Devastated Garenhoff. Amidst the ruins of Garenhoff can be found this odd bit of incongruous asuran architecture.",
@@ -550,6 +724,12 @@
       ],
       "chatLink": "[&BA4OAAA=]",
       "waypointChatLink": "[&BA4OAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2570,
       "wikiText": "Skyward Marches is a southwestern area within Skywatch Archipelago and shows an Elonian fractal where The Commander never returned to save Elona and Balthazar rules over the lands."
     },
@@ -569,6 +749,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2951,
       "wikiText": "Farisan Village is a point of interest in the Skyward Marches, within the Skywatch Archipelago. It is an Elonian village which Zaishen deserters have begun to flock to.",
@@ -591,6 +777,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3062,
       "waypointChatLink": "[&BA4OAAA=]"
     },
@@ -611,6 +803,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3160,
       "waypointChatLink": "[&BD8OAAA=]"
     },
@@ -630,6 +828,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3191,
       "wikiText": "Skyward Marches is a southwestern area within Skywatch Archipelago and shows an Elonian fractal where The Commander never returned to save Elona and Balthazar rules over the lands.",
@@ -652,6 +856,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3267,
       "waypointChatLink": "[&BL4NAAA=]"
     },
@@ -671,6 +881,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3371,
       "wikiText": "The Burning Fortress is a point of interest of the Skyward Marches fractal. It is the fortress where Balthazar rules these lands with his army of Forged.",
@@ -692,6 +908,12 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3489,
       "waypointChatLink": "[&BD8OAAA=]"
@@ -715,6 +937,12 @@
       ],
       "chatLink": "[&BD8OAAA=]",
       "waypointChatLink": "[&BD8OAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3490,
       "wikiText": "Jade Mech Habitation Zone 03 is an area in central Skywatch Archipelago. Kaineng City Fractal Research is a book chronicling the Wizards research into what may happen if Kaineng City's jade mechs gained sentience."
     },
@@ -734,6 +962,12 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3525,
       "waypointChatLink": "[&BD8OAAA=]"
@@ -755,6 +989,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3611,
       "waypointChatLink": "[&BL4NAAA=]"
     },
@@ -774,6 +1014,12 @@
       "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3826,
       "wikiText": "Mabon's Resolve is a large tower found on top of the Shattered Atoll. The tower belongs to Mabon, a mursaat of the Wizard's Court.",
@@ -796,6 +1042,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4006,
       "waypointChatLink": "[&BL4NAAA=]"
     },
@@ -815,6 +1067,12 @@
       "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4202,
       "waypointChatLink": "[&BL4NAAA=]"
@@ -836,6 +1094,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4293,
       "waypointChatLink": "[&BL4NAAA=]"
     },
@@ -856,6 +1120,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4496,
       "waypointChatLink": "[&BL4NAAA=]"
     },
@@ -875,6 +1145,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4709,
       "wikiText": "Droknar's Forge is a point of interest in Droknar's Light fractal mimicking the original that was lost in Sunken Droknah.",
@@ -897,6 +1173,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5132,
       "waypointChatLink": "[&BL4NAAA=]"
     },
@@ -917,6 +1199,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5238,
       "waypointChatLink": "[&BL4NAAA=]"
     },
@@ -936,6 +1224,12 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5340,
       "wikiText": "Jade Mech Habitation Zone 03 is an area in central Skywatch Archipelago. Kaineng City Fractal Research is a book chronicling the Wizards research into what may happen if Kaineng City's jade mechs gained sentience.",
@@ -958,6 +1252,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5389,
       "waypointChatLink": "[&BD8OAAA=]"
     },
@@ -977,6 +1277,12 @@
       "order": 44,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5493,
       "waypointChatLink": "[&BD8OAAA=]"
@@ -998,6 +1304,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5638,
       "waypointChatLink": "[&BEYOAAA=]"
     },
@@ -1017,6 +1329,12 @@
       "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5674,
       "wikiText": "Primal Maguuma is an area in the northern potion of Skywatch Archipelago.",
@@ -1039,6 +1357,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5694,
       "waypointChatLink": "[&BEYOAAA=]"
     },
@@ -1058,6 +1382,12 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5776,
       "wikiText": "The Hidden Falls is a communing style hero challenge in Bonerattler Caverns.",
@@ -1079,6 +1409,12 @@
       "order": 49,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5883,
       "wikiText": "The Crash of the Storm's Daughter is a point of interest in the Primal Maguuma fractal in Skywatch Archipelago. It is the wreckage of an airship that crashed into north Cloudview Lake and subsequently became overgrown.",
@@ -1103,6 +1439,12 @@
       ],
       "chatLink": "[&BEYOAAA=]",
       "waypointChatLink": "[&BEYOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5990,
       "wikiText": "Primal Maguuma is an area in the northern potion of Skywatch Archipelago."
     },
@@ -1122,6 +1464,12 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6163,
       "waypointChatLink": "[&BEYOAAA=]"
@@ -1143,6 +1491,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6235,
       "waypointChatLink": "[&BEYOAAA=]"
     },
@@ -1162,6 +1516,12 @@
       "order": 53,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6266,
       "wikiText": "The Bridge between Worlds is a point of interest in Primal Maguuma, within Skywatch Archipelago. It is a vine bridge connecting Primal Maguuma to the Rata Novus Promenade.",
@@ -1184,6 +1544,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6381,
       "wikiText": "Rata Novus Promenade is an area within northeastern Skywatch Archipelago.",
       "waypointChatLink": "[&BOANAAA=]"
@@ -1204,6 +1570,12 @@
       "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6474,
       "wikiText": "The Light Crystal is a point of interest within the Rata Novus Promenade.",
@@ -1228,6 +1600,12 @@
       ],
       "chatLink": "[&BOANAAA=]",
       "waypointChatLink": "[&BOANAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6525,
       "wikiText": "Rata Novus Promenade is an area within northeastern Skywatch Archipelago."
     },
@@ -1247,6 +1625,12 @@
       "order": 57,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6737,
       "wikiText": "Gate Research Lab is a point of interest in Rata Novus Promenade.",
@@ -1271,6 +1655,12 @@
       ],
       "chatLink": "[&BL4NAAA=]",
       "waypointChatLink": "[&BL4NAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6773,
       "wikiText": "Droknar's Light is an area within the western Skywatch Archipelago and shows a fractal from a timeline where the Deldrimor lost to the Stone Summit."
     },
@@ -1290,6 +1680,12 @@
       "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6797,
       "wikiText": "The Monument to King Jalis Ironhammer is a point of interest within Droknar's Light, in Skywatch Archipelago. It is a statue of the dwarven king, Jalis Ironhammer. Its associated Starlight Lantern can be found between the statue's legs.",
@@ -1312,6 +1708,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6812,
       "wikiText": "Droknar's Light is an area within the western Skywatch Archipelago and shows a fractal from a timeline where the Deldrimor lost to the Stone Summit.",
       "waypointChatLink": "[&BL4NAAA=]"
@@ -1332,6 +1734,12 @@
       "order": 61,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6930,
       "wikiText": "Droknar's Light is an area within the western Skywatch Archipelago and shows a fractal from a timeline where the Deldrimor lost to the Stone Summit.",
@@ -1354,6 +1762,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7066,
       "wikiText": "The Wizard's Tower South Gate is the entrance to Wizard's Tower which is accessed from the Southern Wizard's Tower part.",
       "waypointChatLink": "[&BL4NAAA=]"
@@ -1375,6 +1789,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 10043,
       "wikiText": "Akeem's Sacrifice is a point of interest in the far northeastern corner of Skywatch Archipelago.",
       "waypointChatLink": "[&BOANAAA=]"
@@ -1395,6 +1815,12 @@
       "order": 64,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 10049,
       "wikiText": "Western Research Facilities is a point of interest in Rata Novus Promenade. Access is via a teleport from Gate Research Lab.",

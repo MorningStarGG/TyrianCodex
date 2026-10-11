@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 5,
+  "generatedAt": "2026-10-11T17:54:21+00:00",
+  "zone": {
+    "mapId": 1155,
+    "name": "Lion's Arch Aerodrome",
+    "continentId": 1,
+    "regionId": 4,
+    "regionName": "Kryta",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -27648,
+        -18432
+      ],
+      [
+        30720,
+        18432
+      ]
+    ],
+    "continentRect": [
+      [
+        47964,
+        30806
+      ],
+      [
+        50396,
+        32342
+      ]
+    ],
+    "sectorRect": [
+      [
+        49079.4,
+        31895.6
+      ],
+      [
+        49617.4,
+        32330.7
+      ]
+    ],
+    "labelCoord": [
+      49216,
+      31488
+    ],
+    "floorCollection": {
+      "available": [
+        1
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 2,
+          "skill_challenges": 0,
+          "sectors": 1
+        }
+      },
+      "unavailable": []
+    },
+    "release": "core"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": false,
+  "steps": [
+    {
+      "stepId": "1155:waypoint:2336",
+      "mapId": 1155,
+      "zoneName": "Lion's Arch Aerodrome",
+      "type": "waypoint",
+      "objectiveId": "2336",
+      "coord": [
+        49331,
+        32137
+      ],
+      "recommendedLevel": null,
+      "name": "Aerodrome Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BCAJAAA=]",
+      "waypointChatLink": "[&BCAJAAA=]",
+      "floors": [
+        1
+      ],
+      "wikiText": "The Lion's Arch Aerodrome also known as the Raid Lobby is an area located south of Lion's Arch. Portals to all available raids are located inside, along with special services to make preparations easier."
+    }
+  ],
+  "hasTrail": false
+}

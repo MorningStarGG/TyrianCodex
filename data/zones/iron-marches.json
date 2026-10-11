@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 25,
     "name": "Iron Marches",
@@ -44,6 +44,49 @@
       60928,
       27904
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 13,
+          "points_of_interest": 36,
+          "skill_challenges": 6,
+          "sectors": 26
+        },
+        "67": {
+          "tasks": 13,
+          "points_of_interest": 22,
+          "skill_challenges": 6,
+          "sectors": 0
+        },
+        "3": {
+          "tasks": 13,
+          "points_of_interest": 36,
+          "skill_challenges": 6,
+          "sectors": 26
+        },
+        "2": {
+          "tasks": 13,
+          "points_of_interest": 36,
+          "skill_challenges": 6,
+          "sectors": 26
+        },
+        "0": {
+          "tasks": 13,
+          "points_of_interest": 36,
+          "skill_challenges": 6,
+          "sectors": 26
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +111,13 @@
       ],
       "chatLink": "[&BOYBAAA=]",
       "waypointChatLink": "[&BOYBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 9,
       "wikiText": "The Hellion Forest is an explorable area within the Iron Marches. Many charr lumberjack ghosts can be found in theses woods due to the activity of the nearby necromancer, Bria, who is operating from her house in the area."
     },
@@ -154,6 +204,13 @@
           28972
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 29,
       "wikiText": "Kill the ghostly spiders and shadow fiends attacking the loggers. Help lost spirits return to their bodies.",
       "waypointChatLink": "[&BOYBAAA=]"
@@ -174,6 +231,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 64,
       "wikiText": "Kilnn's Rest is a point of interest within the Hellion Forest. These ruins are all that are left of the Testibrie family mausoleum. All that remains standing is the arch at the entrance.",
@@ -198,6 +261,13 @@
       ],
       "chatLink": "[&BOUBAAA=]",
       "waypointChatLink": "[&BOUBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 107,
       "wikiText": "Harvester's Glade is an area whose main feature is Warhound Village and its residents. True to its name, loggers can be found on the northeast side cutting down lumber to smelt iron ore and send it off to the legions."
     },
@@ -324,6 +394,13 @@
           29021
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 153,
       "wikiText": "Release warhounds from kennels to help you find and destroy hiding Separatists, traps and supply caches.",
       "waypointChatLink": "[&BOUBAAA=]"
@@ -345,6 +422,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 228,
       "wikiText": "Bria's Manor is a point of interest within Hellion Forest. Secluded deep inside this dark forest is a house owned by the ghost of the necromancer Bria. Charr cubs occasionally play in the courtyard.",
       "waypointChatLink": "[&BOYBAAA=]"
@@ -365,6 +448,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 301,
       "wikiText": "The Herdsman's Bastion is a point of interest within Bloodfin Lake This tree lined grove is bordered to the southeast by a piece of Northern Wall.",
@@ -421,6 +510,13 @@
           29512
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 324,
       "wikiText": "Fire cannons at the wall to break it apart and throw the broken pieces into water. Destroy any ghosts rebuilding the wall.",
       "waypointChatLink": "[&BOMBAAA=]"
@@ -444,6 +540,13 @@
       ],
       "chatLink": "[&BOMBAAA=]",
       "waypointChatLink": "[&BOMBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 330,
       "wikiText": "Bloodfin Lake is an area located in the southeastern section of the Iron Marches, on the border of Plains of Ashford and the Great Northern Wall."
     },
@@ -463,6 +566,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 427,
       "wikiText": "The Cauldron of Searing is a point of interest within Ironhead Lake. This location is the resting place of the massive iron cauldron that the charr used to ignite the Searing in 1070 AE.",
@@ -484,6 +593,13 @@
       "order": 10,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 431,
       "wikiText": "The Searing Cauldrons were the tools used by the charr led by Flame Legion to bring forth the Searing in 1070 AE.",
@@ -508,6 +624,13 @@
       ],
       "chatLink": "[&BOIBAAA=]",
       "waypointChatLink": "[&BOIBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 460,
       "wikiText": "Stonesheath Overlook is an area within the Iron Marches. It holds the fishing village of Dewclaw Village."
     },
@@ -527,6 +650,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 496,
       "wikiText": "Dewclaw Village is a point of interest within Stonesheath Overlook. It is a Charr fishing village that is still under construction.",
@@ -548,6 +677,13 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 541,
       "wikiText": "A very easy hike to the overlook",
@@ -616,6 +752,13 @@
           29889
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 597,
       "wikiText": "Bring mortar rounds to engineers and join assault squads on raids. Speak to Legionnaires to start assaults.",
       "waypointChatLink": "[&BOQBAAA=]"
@@ -636,6 +779,13 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 646,
       "wikiText": "Starting from waypoint, go west to the ramp and climb up the rocks, staying as close to the cliffs as possible.",
@@ -660,6 +810,13 @@
       ],
       "chatLink": "[&BOQBAAA=]",
       "waypointChatLink": "[&BOQBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 721,
       "wikiText": "Champion's Shield is an area within the Iron Marches. The ruins of Piken Square are located there, where the Durmand Priory are conducting research on Ascalonian relics."
     },
@@ -717,6 +874,13 @@
           60207,
           29229
         ]
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 741,
       "wikiText": "Find and return any looted artifacts to the proper tombs, slay any Flame Legion or ghosts who interfere.",
@@ -841,6 +1005,13 @@
           28759
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 800,
       "wikiText": "Feed devourer queens. Defend them and their nests from hungry Flame Legion. Collect extra eggs and bring them to Hazen or Braxa.",
       "waypointChatLink": "[&BOcBAAA=]"
@@ -861,6 +1032,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 834,
       "wikiText": "The Vermin's Folly is a point of interest within the Monger's Sink. Inside this hollow mesa, forces of the Flame Legion have established a small outpost.",
@@ -885,6 +1062,13 @@
       ],
       "chatLink": "[&BOcBAAA=]",
       "waypointChatLink": "[&BOcBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 892,
       "wikiText": "Monger's Sink is an area within the Iron Marches. This is where the charr train their devourers in this region."
     },
@@ -935,6 +1119,13 @@
           28595
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 965,
       "wikiText": "Motivate prisoners to work faster, throw scourgejaw ore into furnaces to make iron, and give the iron to the guards.",
       "waypointChatLink": "[&BOgBAAA=]"
@@ -958,6 +1149,13 @@
       ],
       "chatLink": "[&BOgBAAA=]",
       "waypointChatLink": "[&BOgBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1016,
       "wikiText": "Soldier Mesa is an area within the Iron Marches. This crossroad is often a target of the Flame Legion and thus a contingent of Iron Legion soldiers has been sent at Sleekfur Encampment to defend it."
     },
@@ -1056,6 +1254,13 @@
           28191
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1024,
       "wikiText": "Defend machine guns emplacements along the road and kill shamans in the forest. Destroy shrines to provoke the shamans out of hiding.",
       "waypointChatLink": "[&BOgBAAA=]"
@@ -1076,6 +1281,13 @@
       "order": 24,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1090,
       "wikiText": "The Imp Power Essence is a stone that is tied to Emberclaw.",
@@ -1100,6 +1312,13 @@
       ],
       "chatLink": "[&BOsBAAA=]",
       "waypointChatLink": "[&BOsBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1155,
       "wikiText": "Glory's Steps is an area in the Iron Marches. An Iron Legion outpost called the Town of Cowlfang's Star can be found there which is used as the legion's HQ in the region in their campaign against the Flame Legion."
     },
@@ -1119,6 +1338,13 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1180,
       "wikiText": "Lake Carnifex is an area within the Iron Marches. This body of water is inhabited by different types of fish who fight for territory.",
@@ -1303,6 +1529,13 @@
           27166
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1197,
       "wikiText": "Kill Flame Legion, disarm land mines, set up turrets and Iron Legion war banners.",
       "waypointChatLink": "[&BOsBAAA=]"
@@ -1326,6 +1559,13 @@
       ],
       "chatLink": "[&BO0BAAA=]",
       "waypointChatLink": "[&BO0BAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1230,
       "wikiText": "Gladefall Run is an area in the northwest of the Iron Marches. Ogres are trying to establish a Kraal there but are constantly attacked by the Flame Legion."
     },
@@ -1345,6 +1585,13 @@
       "order": 29,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1253,
       "wikiText": "Sharky Longears is a golemancer who starts the hero challenge Defeat Sharky Longears and Thundernation P70X near Lake Carnifex.",
@@ -1369,6 +1616,13 @@
       ],
       "chatLink": "[&BOwBAAA=]",
       "waypointChatLink": "[&BOwBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1273,
       "wikiText": "The Western Bulwark is an area within the Iron Marches. This peaceful road leads to the Fireheart Rise."
     },
@@ -1388,6 +1642,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1352,
       "wikiText": "Invictus Castrum is a point of interest within the Victium Moors and is the southern half of the large Flame Legion encampment in the northwest of the Iron Marches. It features stone hands holding giant braziers.",
@@ -1464,6 +1724,13 @@
           25855
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1400,
       "wikiText": "Eliminate Flame Legion. Destroy braziers, turrets and equipment. Uncover intel.",
       "waypointChatLink": "[&BO4BAAA=]"
@@ -1484,6 +1751,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1424,
       "wikiText": "Newglade Kraal is an ogre kraal located in the Gladefall Run. It is established by Gortho, Son of Malik and a few other ogres from Grostogg's Kraal in order to settle in a place situated further away from Kralkatorrik's Brand.",
@@ -1506,6 +1779,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1506,
       "wikiText": "The Blasted Hearth is a point of interest within the Scorchlands. In the far northern section of this areas huge Flame Legion encampment is this large raised plateau. The head shaman Drakin Cinderspire carries out his evil rituals here.",
       "waypointChatLink": "[&BO4BAAA=]"
@@ -1526,6 +1805,13 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1526,
       "wikiText": "If you try to walk through the Flame Legion basecamp, plan on a BIG fight just to get near this vista.",
@@ -1548,6 +1834,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1605,
       "wikiText": "This is a partial jumping route. Start from the waypoint, and head for the Renown Heart on the LEFT BANK. Hug the bank until you reach the cliff, where the jumps along the cliff face bring you to the bridge above the falls.",
       "waypointChatLink": "[&BO4BAAA=]"
@@ -1568,6 +1861,12 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1625,
       "wikiText": "Fellmyst Falls is a pair of waterfalls in Gladefall Run that flow from deep in the mountains north of the Iron Marches.",
@@ -1592,6 +1891,13 @@
       ],
       "chatLink": "[&BO4BAAA=]",
       "waypointChatLink": "[&BO4BAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1677,
       "wikiText": "Gladefall Run is an area in the northwest of the Iron Marches. Ogres are trying to establish a Kraal there but are constantly attacked by the Flame Legion."
     },
@@ -1611,6 +1917,12 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1735,
       "wikiText": "Grundallion's Lair is a point of interest within The Infestation. It is inaccessible through the main caverns and must be accessed from above, to the west. In the bottom of this dead end canyon lies a huge Branded Devourer nest.",
@@ -1703,6 +2015,13 @@
           25924
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1873,
       "wikiText": "Release ogre traps and motivate weary ogres. Slay Branded creatures, nests and eggs.",
       "waypointChatLink": "[&BO8BAAA=]"
@@ -1726,6 +2045,13 @@
       ],
       "chatLink": "[&BO8BAAA=]",
       "waypointChatLink": "[&BO8BAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1895,
       "wikiText": "Ebbing Heart Run is an area in the northeast of the Iron Marches. The ogres there are in search of a new location to establish a kraal, away from the Dragonbrand."
     },
@@ -1745,6 +2071,13 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1923,
       "wikiText": "Ebbing Heart Run is an area in the northeast of the Iron Marches. The ogres there are in search of a new location to establish a kraal, away from the Dragonbrand.",
@@ -1766,6 +2099,12 @@
       "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1977,
       "wikiText": "The Heartsond Falls are a point of interest within the Ebbing Heart Run. Here at the far northern reaches of the Iron Marches is the headwater of one of the main rivers of Ascalon.",
@@ -1790,6 +2129,13 @@
       ],
       "chatLink": "[&BOoBAAA=]",
       "waypointChatLink": "[&BOoBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2100,
       "wikiText": "The Granite Front is an area within the Iron Marches. Iron Legion patrols are often ambushed by Flame Legion assassins in this area."
     },
@@ -1888,6 +2234,13 @@
           27170
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2105,
       "wikiText": "Activate beacons to lure out Branded, destroy Branded crystals, and cull Branded creatures.",
       "waypointChatLink": "[&BOoBAAA=]"
@@ -1908,6 +2261,13 @@
       "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2151,
       "wikiText": "The access to this vista starts on the \"spiked tail\" south of the waypoint. Walk up the gully on the left side, then jump up the tail and shift to the grassy rocks on the right. The vista itself is higher on the tail.",
@@ -1930,6 +2290,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2207,
       "wikiText": "The Wreckage of Day's Labor is a Branded encampment in the Iron Marches. Sentinels are constantly battling with enemies there.",
       "waypointChatLink": "[&BOoBAAA=]"
@@ -1950,6 +2316,13 @@
       "order": 48,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2274,
       "wikiText": "A Branded Waterfall resides to the north of Lake Desolann, feeding the lake with corrupted water.",
@@ -1972,6 +2345,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2303,
       "wikiText": "The Spentlung Depth is a point of interest within Lake Desolann. This deep underwater cave is filled with many types of plant life. It is inhabited by Branded Fish and Sentinels who are constantly fighting each other.",
       "waypointChatLink": "[&BOkBAAA=]"
@@ -1992,6 +2371,13 @@
       "order": 50,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2366,
       "wikiText": "Crusader Arevir Soulhammer is a member of the Vigil that quizzes people about General Almorra Soulkeeper. Answer her correctly to earn a hero point.",
@@ -2016,6 +2402,13 @@
       ],
       "chatLink": "[&BOkBAAA=]",
       "waypointChatLink": "[&BOkBAAA=]",
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2393,
       "wikiText": "The Viper's Run is an area within the Iron Marches. Trained devourers are sent to Brandwatch Encampment."
     },
@@ -2078,6 +2471,13 @@
           27170
         ]
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2412,
       "wikiText": "Destroy Branded creatures, fish for Branded fish, set traps in the lake, and aid Sentinels in combat.",
       "waypointChatLink": "[&BOkBAAA=]"
@@ -2099,6 +2499,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2432,
       "wikiText": "The Southshore Wastes is an area within the Iron Marches. This plain was once habited by Earth Elementals but a large portion of them has been corrupted by the Brand.",
       "waypointChatLink": "[&BOkBAAA=]"
@@ -2119,6 +2526,13 @@
       "order": 54,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        67,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "Zzzig is an ogre found in Lamprey Grottoes that, as a means of staying awake, challenges the player to a duel. Defeat him to earn a hero point.",

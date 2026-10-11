@@ -1,0 +1,887 @@
+{
+  "schemaVersion": 5,
+  "generatedAt": "2026-10-11T17:54:21+00:00",
+  "zone": {
+    "mapId": 1483,
+    "name": "Memory of Old Lion's Arch",
+    "continentId": 1,
+    "regionId": 4,
+    "regionName": "Kryta",
+    "floor": 32,
+    "minLevel": 0,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -27648,
+        -18432
+      ],
+      [
+        30720,
+        18432
+      ]
+    ],
+    "continentRect": [
+      [
+        15232,
+        14336
+      ],
+      [
+        17664,
+        15872
+      ]
+    ],
+    "sectorRect": [
+      [
+        15255.2,
+        14322.3
+      ],
+      [
+        17646,
+        15849.6
+      ]
+    ],
+    "labelCoord": [
+      16450,
+      15071
+    ],
+    "floorCollection": {
+      "available": [
+        32
+      ],
+      "conflicts": [],
+      "counts": {
+        "32": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 0,
+          "sectors": 14
+        }
+      },
+      "unavailable": []
+    },
+    "release": "lws1"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": false,
+  "steps": [
+    {
+      "stepId": "1483:waypoint:3472",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3472",
+      "coord": [
+        16306,
+        15079
+      ],
+      "recommendedLevel": null,
+      "name": "Gate Hub Plaza Waypoint",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJANAAA=]",
+      "waypointChatLink": "[&BJANAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Eastern Ward is a section of Lion's Arch. It contains Coriolis Plaza, the newly built asura gate hub to the five racial capitals, as well as The Vaults, the new Black Lion Trading Company Headquarters."
+    },
+    {
+      "stepId": "1483:poi:1190",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1190",
+      "coord": [
+        16388,
+        15270
+      ],
+      "recommendedLevel": null,
+      "name": "Moorookoo Village",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Moorookoo Village is an underwater Quaggan village in the Sanctum Harbor area of Lion's Arch. It was once a seaweed harvesting operation led by a leader more concerned with profitability than with worker safety.",
+      "waypointChatLink": "[&BJANAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3470",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3470",
+      "coord": [
+        16616,
+        15300
+      ],
+      "recommendedLevel": null,
+      "name": "Fort Marriner Waypoint",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI4NAAA=]",
+      "waypointChatLink": "[&BI4NAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "Fort Marriner is a fortified compound in Lion's Arch. It was named after Cobiah Marriner, the founder of new Lion's Arch, and serves as the headquarters for the Lionguard, their prison, and as the Lion's Arch base for the Vigil."
+    },
+    {
+      "stepId": "1483:poi:1061",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1061",
+      "coord": [
+        16608,
+        15164
+      ],
+      "recommendedLevel": null,
+      "name": "Captain Theo Ashford Memorial Bridge",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Captain Theo Ashford Memorial Bridge is a bridge named in honor of Captain Theo Ashford connecting the northern and southern part of Lion's Arch.",
+      "waypointChatLink": "[&BI4NAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1053",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1053",
+      "coord": [
+        16631,
+        15439
+      ],
+      "recommendedLevel": null,
+      "name": "Mist Portals",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Mist Portals are a series of asura gates found in Fort Marriner leading to various parts of The Mists.",
+      "waypointChatLink": "[&BI4NAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1067",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1067",
+      "coord": [
+        16746,
+        15577
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil Centerhouse",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Vigil Centerhouse is a Vigil base in Lion's Arch.",
+      "waypointChatLink": "[&BIQNAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3460",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3460",
+      "coord": [
+        16845,
+        15661
+      ],
+      "recommendedLevel": null,
+      "name": "Bloodcoast Ward Waypoint",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIQNAAA=]",
+      "waypointChatLink": "[&BIQNAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "Bloodcoast Ward is an area in the south of Lion's Arch, facing its namesake, Bloodtide Coast, to the south."
+    },
+    {
+      "stepId": "1483:poi:1060",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1060",
+      "coord": [
+        17206,
+        15458
+      ],
+      "recommendedLevel": null,
+      "name": "Tokk's Mill",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Tokk's Mill is run by the asura Tokk. Hidden behind the mill is the entrance to the Sharkmaw Caverns. Tokk presumably fled Lion's Arch when Scarlet attacked it, but has not yet returned with the other citizens of the city.",
+      "waypointChatLink": "[&BIUNAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3461",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3461",
+      "coord": [
+        17189,
+        15306
+      ],
+      "recommendedLevel": null,
+      "name": "Farshore Waypoint",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIUNAAA=]",
+      "waypointChatLink": "[&BIUNAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Farshore Ward is the southeastern most section of Lion's Arch. Overlooking the harbor is a mill that was once run by the asura Tokk, who did not return after Scarlet destroyed the mill in her attack on the city."
+    },
+    {
+      "stepId": "1483:poi:1058",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1058",
+      "coord": [
+        17074,
+        15111
+      ],
+      "recommendedLevel": null,
+      "name": "Deverol Gardens",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Deverol Gardens is a botanic garden that was installed over the island formerly known as Deverol Island.",
+      "waypointChatLink": "[&BIUNAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3464",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3464",
+      "coord": [
+        17218,
+        14831
+      ],
+      "recommendedLevel": null,
+      "name": "Cavern Waypoint",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIgNAAA=]",
+      "waypointChatLink": "[&BIgNAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Farshore Ward is the southeastern most section of Lion's Arch. Overlooking the harbor is a mill that was once run by the asura Tokk, who did not return after Scarlet destroyed the mill in her attack on the city."
+    },
+    {
+      "stepId": "1483:waypoint:3468",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3468",
+      "coord": [
+        16999,
+        14566
+      ],
+      "recommendedLevel": null,
+      "name": "Guild Bluff Waypoint",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIwNAAA=]",
+      "waypointChatLink": "[&BIwNAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Postern Ward is the easternmost area of Lion's Arch, lying across the Inner Harbor."
+    },
+    {
+      "stepId": "1483:waypoint:3463",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3463",
+      "coord": [
+        16800,
+        14850
+      ],
+      "recommendedLevel": null,
+      "name": "Eastern Ward Waypoint",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIcNAAA=]",
+      "waypointChatLink": "[&BIcNAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Postern Ward is the easternmost area of Lion's Arch, lying across the Inner Harbor."
+    },
+    {
+      "stepId": "1483:poi:1056",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1056",
+      "coord": [
+        16632,
+        14754
+      ],
+      "recommendedLevel": null,
+      "name": "Coriolis Plaza",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Coriolis Plaza is an asura gate hub in Lion's Arch, with gates leading to the five racial capitals, Southsun Cove, Arborstone, The Wizard's Tower and Shipwreck Strand.",
+      "waypointChatLink": "[&BIcNAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1062",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1062",
+      "coord": [
+        16508,
+        14582
+      ],
+      "recommendedLevel": null,
+      "name": "The Vaults",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Vaults, also known as the Black Lion Vaults, are the personal vaults of the Black Lion Trading Company.",
+      "waypointChatLink": "[&BIINAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3458",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3458",
+      "coord": [
+        16308,
+        14648
+      ],
+      "recommendedLevel": null,
+      "name": "Trader's Forum Waypoint",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIINAAA=]",
+      "waypointChatLink": "[&BIINAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "Trader's Forum is a section of Lion's Arch with the Mystic Forge and contains (like the name suggest) many trade services. While these services were spread around the city after its destruction, they have returned here after its rebuilt."
+    },
+    {
+      "stepId": "1483:poi:1057",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1057",
+      "coord": [
+        16219,
+        14601
+      ],
+      "recommendedLevel": null,
+      "name": "Mystic Plaza",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Mystic Plaza is a square located between the bank and the crafting stations in Trader's Forum. The Mystic Forge is located in northeast of the Mystic Plaza.",
+      "waypointChatLink": "[&BIINAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1068",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1068",
+      "coord": [
+        16113,
+        14659
+      ],
+      "recommendedLevel": null,
+      "name": "Frog Pond",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Frog Pond can be found southwest of the Mystic Plaza, in the Trader's Forum.",
+      "waypointChatLink": "[&BIINAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1459",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1459",
+      "coord": [
+        16105,
+        14793
+      ],
+      "recommendedLevel": null,
+      "name": "Black Lion Trading Company HQ",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Famed throughout Tyria, the Black Lion Trading Company HQ is the main headquarters of the Black Lion Trading Company in Lion's Arch.",
+      "waypointChatLink": "[&BIINAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1055",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1055",
+      "coord": [
+        15909,
+        14781
+      ],
+      "recommendedLevel": null,
+      "name": "Crow's Nest Tavern (Captain's Council)",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Built in 1231 AE, the Crow's Nest Tavern was one of the oldest structures in Lion's Arch. It served as the meeting place for the first Ship's Council.",
+      "waypointChatLink": "[&BI8NAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1284",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1284",
+      "coord": [
+        15767,
+        14736
+      ],
+      "recommendedLevel": null,
+      "name": "The Free Market",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Free Market is the relocated headquarters of the local pirate gang that once operated in The Undermarket.",
+      "waypointChatLink": "[&BI8NAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1759",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1759",
+      "coord": [
+        15834,
+        14629
+      ],
+      "recommendedLevel": null,
+      "name": "Order of Whispers Headquarters",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Order of Whispers Headquarters is the local HQ of the Order of Whispers in Lion's Arch. It is disguised as a small tavern in the Commodore's Quarter.",
+      "waypointChatLink": "[&BI8NAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3471",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3471",
+      "coord": [
+        15631,
+        14757
+      ],
+      "recommendedLevel": null,
+      "name": "Western Ward Waypoint",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI8NAAA=]",
+      "waypointChatLink": "[&BI8NAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Western Ward is one of the residential districts of Lion's Arch. After the attack on the city, the Mystic Forge was moved from there, along with all the crafting stations, to Trader's Forum."
+    },
+    {
+      "stepId": "1483:poi:1189",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1189",
+      "coord": [
+        15453,
+        14882
+      ],
+      "recommendedLevel": null,
+      "name": "Field of the Fallen",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Field of the Fallen is a memorial built to remember those who lost their lives defending Lion's Arch.",
+      "waypointChatLink": "[&BI8NAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1063",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1063",
+      "coord": [
+        15520,
+        15162
+      ],
+      "recommendedLevel": null,
+      "name": "Durmand Priory Research Site",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Durmand Priory Research Site is a Durmand Priory encampment overlooking the submerged ruins of the old Lion's Arch and the Wreckage of the Breachmaker.",
+      "waypointChatLink": "[&BIMNAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1066",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1066",
+      "coord": [
+        15430,
+        15297
+      ],
+      "recommendedLevel": null,
+      "name": "Shuttered Gate",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Shuttered Gate is an inaccessible gate in the southwest corner of Lion's Arch. It is said to lead to the Dominion of Winds.",
+      "waypointChatLink": "[&BIMNAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3459",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3459",
+      "coord": [
+        15612,
+        15324
+      ],
+      "recommendedLevel": null,
+      "name": "Diverse Ledges Waypoint",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIMNAAA=]",
+      "waypointChatLink": "[&BIMNAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "White Crane Terrace is the western most part of Lion's Arch. It is a raising path that leads to the Shuttered Gate, beyond which lies the Dominion of Winds."
+    },
+    {
+      "stepId": "1483:poi:1054",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1054",
+      "coord": [
+        15869,
+        15107
+      ],
+      "recommendedLevel": null,
+      "name": "Moran Memorial",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Moran Memorial is a tall marker stone placed on the beach just past the docks. It is carved in the shape of a lighthouse, and on the northwest side, the pillar has been inscribed with Osh Moran's name in shining gold.",
+      "waypointChatLink": "[&BIsNAAA=]"
+    },
+    {
+      "stepId": "1483:poi:1758",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1758",
+      "coord": [
+        16001,
+        15131
+      ],
+      "recommendedLevel": null,
+      "name": "Macha's Landing",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Macha's Landing is a point of interest within the Sanctum Harbor area of Lion's Arch. The docks are a hub of sea commerce.",
+      "waypointChatLink": "[&BIsNAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3467",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3467",
+      "coord": [
+        16006,
+        15096
+      ],
+      "recommendedLevel": null,
+      "name": "Sanctum Harbor Waypoint",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BIsNAAA=]",
+      "waypointChatLink": "[&BIsNAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Western Ward is one of the residential districts of Lion's Arch. After the attack on the city, the Mystic Forge was moved from there, along with all the crafting stations, to Trader's Forum."
+    },
+    {
+      "stepId": "1483:poi:1065",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1065",
+      "coord": [
+        16331,
+        14822
+      ],
+      "recommendedLevel": null,
+      "name": "Lion's Court",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Lion's Court is a large glass-domed area in the Grand Piazza.",
+      "waypointChatLink": "[&BIINAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3469",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3469",
+      "coord": [
+        16146,
+        14426
+      ],
+      "recommendedLevel": null,
+      "name": "Commodore's Quarter Waypoint",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BI0NAAA=]",
+      "waypointChatLink": "[&BI0NAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "The Commodore's Quarter is an area in the northwest section of Lion's Arch. It is mainly a residential part of the city."
+    },
+    {
+      "stepId": "1483:poi:1064",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1064",
+      "coord": [
+        15382,
+        14426
+      ],
+      "recommendedLevel": null,
+      "name": "The Undermarket",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "The Undermarket is a pirate trading post located in the Hooligan's Route. It was originally run by pirates led by Naima Ice-veined and Bort the Bloodless, but was taken over by skritt following the Battle for Lion's Arch.",
+      "waypointChatLink": "[&BI8NAAA=]"
+    },
+    {
+      "stepId": "1483:waypoint:3473",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "waypoint",
+      "objectiveId": "3473",
+      "coord": [
+        16229,
+        15469
+      ],
+      "recommendedLevel": null,
+      "name": "Claw Island Portage Waypoint",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BJENAAA=]",
+      "waypointChatLink": "[&BJENAAA=]",
+      "floors": [
+        32
+      ],
+      "wikiText": "Fort Marriner is a fortified compound in Lion's Arch. It was named after Cobiah Marriner, the founder of new Lion's Arch, and serves as the headquarters for the Lionguard, their prison, and as the Lion's Arch base for the Vigil."
+    },
+    {
+      "stepId": "1483:poi:1059",
+      "mapId": 1483,
+      "zoneName": "Memory of Old Lion's Arch",
+      "type": "poi",
+      "objectiveId": "1059",
+      "coord": [
+        15946,
+        15692
+      ],
+      "recommendedLevel": null,
+      "name": "Phoenix Roost",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        32
+      ],
+      "wikiText": "Phoenix Roost (formerly Lion's Gate) is the newly rebuilt lighthouse of Lion's Arch. A diving board with Diving Goggles may be found at the top of the lighthouse.",
+      "waypointChatLink": "[&BJENAAA=]"
+    }
+  ],
+  "hasTrail": false
+}

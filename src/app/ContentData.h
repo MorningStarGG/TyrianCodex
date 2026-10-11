@@ -2,6 +2,9 @@
 #include <map>
 #include <string>
 #include <vector>
+#include <ctime>
+
+namespace ContentSchedule { int DayOfYearIndex(std::time_t now); }
 
 // -----------------------------------------------------------------------------------------------------
 // ContentData: the bundled STATIC structure + deterministic rotations for the Content/Instances tab trackers.
@@ -17,7 +20,7 @@ class ContentData
 {
 public:
     struct Wing        { std::string id; std::vector<std::string> bosses; };
-    struct Raid        { std::string id; std::vector<Wing> wings; };
+    struct Raid        { std::string id, name; bool trackingAvailable = true; std::vector<Wing> wings; };
     struct DungeonPath { std::string id; std::string type; };   // type: "Story" / "Explorable"
     struct Dungeon     { std::string id; std::vector<DungeonPath> paths; };
     struct RecFractal  { std::string name; int scale = 0; };    // name empty when the scale->name map lacks it

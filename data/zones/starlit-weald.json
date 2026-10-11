@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1593,
     "name": "Starlit Weald",
@@ -32,7 +32,7 @@
     ],
     "sectorRect": [
       [
-        6446.67,
+        6328.67,
         57488.8
       ],
       [
@@ -44,6 +44,42 @@
       7850,
       58600
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 3,
+          "points_of_interest": 51,
+          "skill_challenges": 15,
+          "sectors": 11
+        },
+        "3": {
+          "tasks": 3,
+          "points_of_interest": 51,
+          "skill_challenges": 15,
+          "sectors": 11
+        },
+        "2": {
+          "tasks": 3,
+          "points_of_interest": 51,
+          "skill_challenges": 15,
+          "sectors": 11
+        },
+        "0": {
+          "tasks": 3,
+          "points_of_interest": 51,
+          "skill_challenges": 15,
+          "sectors": 11
+        }
+      },
+      "unavailable": []
+    },
     "release": "voe"
   },
   "primaryKind": "foot",
@@ -66,6 +102,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 130,
       "wikiText": "The Lost Grotto was a hidden base of operations for the Order of Whispers in Eastern Ward, Lion's Arch. It was abandoned in early 1327 AE after Scarlet's attack on the city, though has since been reclaimed.",
       "waypointChatLink": "[&BMAPAAA=]"
@@ -87,6 +129,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 306,
       "wikiText": "The Cave Overlook is a place of power-a communing type hero challenge in Shimmering Basin, east of the Foothold Bivouac Waypoint.",
       "waypointChatLink": "[&BMAPAAA=]"
@@ -107,6 +155,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 397,
       "waypointChatLink": "[&BMAPAAA=]"
@@ -130,6 +184,12 @@
       ],
       "chatLink": "[&BMAPAAA=]",
       "waypointChatLink": "[&BMAPAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 449,
       "wikiText": "Shimmering Basin is an area in southern Starlit Weald."
     },
@@ -196,6 +256,12 @@
           59077
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 478,
       "wikiText": "Help around camp by healing injured allies with a skimmer, gathering skimmer food, sketching newly discovered wildlife, and defeating enemies.",
       "waypointChatLink": "[&BMAPAAA=]"
@@ -216,6 +282,12 @@
       "order": 5,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 549,
       "wikiText": "Makaela is standing by the river north-west of the Foothold Bivouac Waypoint. Speak with the fox to begin a challenge to earn a hero point.",
@@ -238,6 +310,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 769,
       "wikiText": "Skyshroud Canopy is an area in southwestern Starlit Weald.",
       "waypointChatLink": "[&BMAPAAA=]"
@@ -259,6 +337,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 909,
       "waypointChatLink": "[&BMAPAAA=]"
     },
@@ -279,6 +363,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1010,
       "waypointChatLink": "[&BMAPAAA=]"
     },
@@ -298,6 +388,12 @@
       "order": 9,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1026,
       "wikiText": "The Serene Lily Pad is a place of power-a communing type hero challenge in Skyshroud Canopy, it is located to the west of the Lake of Lillies Point of Interest. It sits on top of a large lily pad on the lake.",
@@ -320,6 +416,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1034,
       "waypointChatLink": "[&BMAPAAA=]"
     },
@@ -339,6 +441,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1084,
       "wikiText": "The Tranquil Falls are a point of interest in Tranquil Glen, located at the heart of Starlit Weald. Here, a waterfall cascades down from Crumbling Precipice into a river along the glen's western edge.",
@@ -361,6 +469,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1115,
       "waypointChatLink": "[&BMAPAAA=]"
     },
@@ -380,6 +494,12 @@
       "order": 13,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1119,
       "wikiText": "The Gnarled Roots are large tree roots towering over a large crevasse located in the Tangled Descent.",
@@ -402,6 +522,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1726,
       "wikiText": "The Raging Waterfall is a place of power-a communing type hero challenge in The Winding Passage, hidden behind a waterfall.",
       "waypointChatLink": "[&BMAPAAA=]"
@@ -422,6 +548,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1840,
       "wikiText": "The Choya Conclave is a point of interest in the Enchanting Grottoes, at the east end of Starlit Weald. It is a village of Castoran choya, constructed in an open cave with vegetation growing along its walls.",
@@ -444,6 +576,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1955,
       "wikiText": "This Strange Pineapple Plant is a place of power-a communing type hero challenge, it can be found in Enchanting Grottoes near The Great Choya Race adventure.",
       "waypointChatLink": "[&BMAPAAA=]"
@@ -464,6 +602,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2371,
       "wikiText": "The Opening Salvo is a point of interest at the north-east of Starlit Weald. It is a desolated area equipped with Charr canons. it is implied in event assaulting Inquest Command Complex involving Castoreans peoples.",
@@ -486,6 +630,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2464,
       "wikiText": "Sparkling Sanctum is a point of interest at the north-east of Starlit Weald. Still untouched by Inquest, this is a magic and ley line energy filled grotto.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -506,6 +656,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2802,
       "wikiText": "Priority Specimen Containment is a point of interest at the north-west of Starlit Weald. The location is constituted one big holographic pen with captive wildlife inside it undergoing experiment.",
@@ -528,6 +684,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2834,
       "wikiText": "Hidden Aquifer is a point of interest at the north-east of Starlit Weald. The Inquest main Command Complex pump water from it to keep its systems cooled down.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -548,6 +710,12 @@
       "order": 21,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2948,
       "wikiText": "The Scout's Overlook is a place of power-a communing type hero challenge in Command Complex, it is located at the east of Priority Specimen Containment from Inquest Command Complex. It overlooks the Inquest complex.",
@@ -570,6 +738,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2983,
       "wikiText": "Command Complex is the northeastern area of Starlit Weald mostly occupied by the Inquest.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -590,6 +764,12 @@
       "order": 23,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3072,
       "wikiText": "The Inquest Testing Room is a place of power-a communing type hero challenge in Command Complex, it is located within Inquest Command Complex. It is a room filled with tiny various experiments.",
@@ -612,6 +792,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3100,
       "wikiText": "Core Processor is a point of interest at the Command Complex, in northeast Starlit Weald. This is the central processor of the Inquest base. It is located under the complex, accessible by stairs.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -632,6 +818,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3211,
       "wikiText": "The Motor Pool is a point of interest in the Command Complex area in northeast Starlit Weald. It is a riverside harbor where Inquest operatives park their watercraft.",
@@ -654,6 +846,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3348,
       "wikiText": "Specimen Containment is a point of interest at the north-west of Starlit Weald. The location is constituted of red holographic pens that keep captive wildlife inn view of future experiments on them. The area is guarded by laser canons.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -674,6 +872,12 @@
       "order": 27,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3678,
       "wikiText": "The Damaged Inquest Surveillance Device is a hero challenge that can be found in Untamed Crags eastmost, next to the Secret Spring point of interest.",
@@ -697,6 +901,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3697,
       "waypointChatLink": "[&BIoPAAA=]"
     },
@@ -716,6 +926,12 @@
       "order": 29,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3763,
       "wikiText": "The Stunning Peak is a place of power-a communing type hero challenge in Untamed Crags.",
@@ -784,6 +1000,12 @@
           57577
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3821,
       "wikiText": "Help the hunting camp by finding and bringing back food, bringing hay to insulate nests, saving wildlife from being captured by the Inquest, and completing events in the area.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -804,6 +1026,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3865,
       "wikiText": "Untamed Crags is the center-north area of Starlit Weald. Less densely forested than the rest of the zone, this area contains large rock formations and a waterfall-sourced river.",
@@ -826,6 +1054,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4195,
       "waypointChatLink": "[&BIoPAAA=]"
     },
@@ -845,6 +1079,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4287,
       "wikiText": "Grotto of Spirits is a hidden Point of Interest in Lost Basilica.",
@@ -869,6 +1109,12 @@
       ],
       "chatLink": "[&BIoPAAA=]",
       "waypointChatLink": "[&BIoPAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4288,
       "wikiText": "Untamed Crags is the center-north area of Starlit Weald. Less densely forested than the rest of the zone, this area contains large rock formations and a waterfall-sourced river."
     },
@@ -888,6 +1134,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4485,
       "waypointChatLink": "[&BIoPAAA=]"
@@ -909,6 +1161,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4663,
       "waypointChatLink": "[&BIoPAAA=]"
     },
@@ -928,6 +1186,12 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4802,
       "wikiText": "Lost Basilica is an area in northwest Starlit Weald. It is a seer ruin protected by the seers' defense systems. Most of the points of interest are inaccessible until The Basilica Vaults meta event is active.",
@@ -950,6 +1214,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4826,
       "wikiText": "Forward Base Bravo is a point of interest within Lost Basilica.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -970,6 +1240,12 @@
       "order": 39,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4879,
       "wikiText": "The Starry Moat is a place of power-a communing type hero challenge in Lost Basilica, it is located in the water under Threshold of Heaven - .",
@@ -992,6 +1268,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4880,
       "wikiText": "The Threshold of Heaven is a point of interest within the Lost Basilica in Starlit Weald. This is the bridge leading to the basilica proper, guarded by an elemental creation of the seers.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -1013,6 +1295,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5004,
       "waypointChatLink": "[&BIoPAAA=]"
     },
@@ -1032,6 +1320,12 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5319,
       "wikiText": "Sylvan Cradle is a point of interest in the Cloister of Stars. It is the home of Gwyllian, Seneschal of the Forest, and many small gwyldell.",
@@ -1054,6 +1348,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5664,
       "wikiText": "The Great Cascades is a point of interest in the Overgrown Thicket. These waterfalls are brimming with wild ley magic.",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1074,6 +1374,12 @@
       "order": 44,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5825,
       "wikiText": "Starlight Bayou is a point of interest in the south of Cloister of Stars, within Starlit Weald. It is a starry body of water with orbs of magic floating above it, some of which are entwined in vegetation.",
@@ -1096,6 +1402,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5995,
       "wikiText": "The Balance of Souls is a point of interest in Starlit Weald. It is a preserved ruin of an alcove sheltering a Seer statue. The statue is holding weapons which seem to resemble the Seer-Enchanted weapons carved from stone.",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1116,6 +1428,12 @@
       "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6014,
       "wikiText": "Consecrated Piazza is a point of interest in Starlit Weald and also the location where [Group Event] Subdue Gwyllian, Seneschal of the Forest (80) event takes place.",
@@ -1138,6 +1456,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6253,
       "wikiText": "The Glider's Ledge is a place of power-a communing type hero challenge in Cloister of Stars. It is located on a ledge west of the Priory Expedition Waypoint and can easiest be accessed by jumping on the nearby bouncing mushroom.",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1158,6 +1482,12 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6315,
       "wikiText": "The Fallen Gate is a point of interest in Starlit Weald. It is presumably a ruined part of a larger Seer structure.",
@@ -1180,6 +1510,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6317,
       "wikiText": "This strange rock appears to be humming with magic. - In-game description",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1201,6 +1537,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6428,
       "wikiText": "Winding Haven is a point of interest in Crumbling Precipice, in central Starlit Weald. It is located next to the river to the north of the Durmand Priory campsite.",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1221,6 +1563,12 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6489,
       "wikiText": "Dig Site Gamma is a point of interest in the center of Starlit Weald.",
@@ -1245,6 +1593,12 @@
       ],
       "chatLink": "[&BJ4PAAA=]",
       "waypointChatLink": "[&BJ4PAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6553,
       "wikiText": "Crumbling Precipice is the center-west area of Starlit Weald, containing a seer archaeological site and a Durmand Priory encampment."
     },
@@ -1311,6 +1665,12 @@
           58600
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6570,
       "wikiText": "Help the Priory by cleansing warded artifacts, using skimmers to clear debris and detect Inquest spies and relics, and by completing nearby events.",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1332,6 +1692,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6823,
       "waypointChatLink": "[&BJ4PAAA=]"
     },
@@ -1351,6 +1717,12 @@
       "order": 55,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6982,
       "wikiText": "Splintered Pillars is a point of interest in Overgrown Thicket. The pillars are remains of seer architecture, as suggested by the Starlit Tourist achievement.",
@@ -1373,6 +1745,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7279,
       "wikiText": "Well of Stars is a point of interest in the Overgrown Thicket. This small pool is brimming with celestial magic.",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1393,6 +1771,12 @@
       "order": 57,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7369,
       "wikiText": "Ley-Rich Roots is a place of power-a communing type hero challenge in Overgrown Thicket. It is nestled in between above-ground tree roots entwined around huge magic orbs.",
@@ -1415,6 +1799,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7399,
       "wikiText": "Overgrown Thicket is an area in the far southwest corner of Starlit Weald.",
       "waypointChatLink": "[&BJ4PAAA=]"
@@ -1435,6 +1825,12 @@
       "order": 59,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7431,
       "wikiText": "The Fountain of Blessings is a point of interest located in the Overgrown Thicket.",
@@ -1457,8 +1853,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7482,
-      "wikiText": "Archway of the Worthy is a point of interest located in the Overgrown Thicket. It is big gate-like structure built at the foot of a nearby cliff and connects with the Eternity's Garden.",
+      "wikiText": "The Archway of the Worthy is a point of interest located in the Overgrown Thicket. It is a massive gate-like structure built at the foot of a cliff. A portal in it leads to Eternity's Garden.",
       "waypointChatLink": "[&BJ4PAAA=]"
     },
     {
@@ -1477,6 +1879,12 @@
       "order": 61,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7503,
       "waypointChatLink": "[&BIoPAAA=]"
@@ -1497,6 +1905,12 @@
       "order": 62,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7518,
       "wikiText": "The Ruined Nave is a point of interest located inside the Lost Basilica. It serves as the main hall of the basilica, with several rooms that branch off from its ground floor.",
@@ -1519,6 +1933,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7540,
       "wikiText": "The Forbidden Vault is a secret chamber in which Palawa Joko keeps his harem of women, men, ogres, harpies, and choya. Some of the concubines are volunteers, but many were offered as a sacrifice by their villages to secure protection.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -1539,6 +1959,12 @@
       "order": 64,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7575,
       "wikiText": "Reclaimed Lyceum is a point of interest deep within the Lost Basilica. It connects to both The Last Vault and the Abandoned Antechamber, and first opens during the event Defeat the champion enchanted weapon.",
@@ -1561,6 +1987,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7619,
       "wikiText": "Font of Truth is a hidden Point of Interest in Lost Basilica.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -1581,6 +2013,12 @@
       "order": 66,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7644,
       "wikiText": "Hallowed Archive is a dusty, disused scroll room and point of interest within a deeper part of the Lost Basilica. It connects both to the Font of Truth and Abandoned Antechamber rooms.",
@@ -1603,6 +2041,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7740,
       "wikiText": "The Abandoned Antechamber is the penultimate room of The Basilica Vaults, zealously guarded by a Champion Enchanted Staff.",
       "waypointChatLink": "[&BIoPAAA=]"
@@ -1623,6 +2067,12 @@
       "order": 68,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7797,
       "wikiText": "The Last Vault is a point of interest and the deepest room inside the Lost Basilica. It is filled with many precious items (and a few preserved memories) from the time of the Seers.",

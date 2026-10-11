@@ -159,6 +159,18 @@ void Gw2Ui::Label(const char* text, ImU32 color, bool stroke, ImFont* font, floa
     ImGui::Dummy(ImVec2(ts.x, ts.y));   // reserve the text box so ImGui layout flows like ::Text
 }
 
+void Gw2Ui::LabelWrapped(const char* text, ImU32 color, bool stroke, ImFont* font, float fontSize,
+                         float width, float weight, TextShadow shadowMode, float shadowStrength)
+{
+    if (!text || !*text) return;
+    width = std::max(1.f, width > 0.f ? width : std::min(ContentWidth(), ImGui::GetContentRegionAvail().x));
+    const float height = MeasureWrappedHeight(text, fontSize, width, font);
+    const ImVec2 p = ImGui::GetCursorScreenPos();
+    LabelIn(p, ImVec2(p.x + width, p.y + height), text, HAlign::Left, VAlign::Top,
+            color, stroke, font, fontSize, width, weight, shadowMode, shadowStrength);
+    ImGui::Dummy(ImVec2(width, height));
+}
+
 void Gw2Ui::SetGw2Font(ImFont* regular, ImFont* italic)
 {
     if (g_gw2Regular != regular || g_gw2Italic != italic) ++g_fontRevision;

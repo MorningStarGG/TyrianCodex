@@ -3,6 +3,7 @@
 #include <vector>
 #include <map>
 #include <cstdint>
+#include <memory>
 #include "util/Projection.h"
 
 struct TaskChip
@@ -12,6 +13,38 @@ struct TaskChip
     int Count = 0;
     std::vector<std::string> Examples;
     std::vector<std::string> Progress;
+};
+
+struct HeartTaskAction
+{
+    std::string Id, Text, ShortText;
+    TaskChip Chip;
+    bool IsNote = false;
+    std::vector<std::string> TargetIds;
+};
+
+struct HeartTaskDetail
+{
+    std::string Id, Title;
+    std::vector<std::string> Headers;
+    std::vector<std::vector<std::string>> Rows;
+};
+
+struct HeartHintAnchor
+{
+    std::string Id, ActionId, TargetId;
+    Math::Vec3 Position;
+    bool Overview = false, HeightEstimated = false;
+    std::vector<std::string> DetailIds;
+    std::vector<std::string> ActionIds;
+};
+
+struct HeartTaskData
+{
+    std::vector<TaskChip> Chips;
+    std::vector<HeartTaskAction> Actions;
+    std::vector<HeartTaskDetail> Details;
+    std::vector<HeartHintAnchor> Anchors;
 };
 
 // A 2D continent-coordinate point (renown-heart area polygon vertex). Continent space, like Step::CX/CY.
@@ -36,6 +69,7 @@ struct Step
     std::string ChatLink;            // this objective's chat link [&...] (waypoints) - travel: copy to clipboard
     std::string WaypointChatLink;    // nearest waypoint's chat link (on non-waypoint steps) - travel onward
     std::vector<TaskChip> TaskChips; // bundled wiki-derived heart task chips (offline, generated)
+    std::shared_ptr<const HeartTaskData> HeartTasks; // shared across route overlays, schema 1/2
     std::vector<Pt2> Bounds;         // renown-heart area polygon (continent coords); empty for non-hearts / no data
 };
 
@@ -109,6 +143,7 @@ struct RouteOverlay
 struct Zone
 {
     bool Loaded = false;
+    bool HasAuthoredRoute = false;
     bool GeomLoaded = false; // the <slug>.trail.json (trail + legacy altRoute + routeVariants) has been lazy-loaded
     std::string Slug;        // key for the lazy trail side-file (data/zones/<slug>.trail.json)
     uint32_t MapId = 0;
@@ -158,9 +193,10 @@ struct Zone
     // Make the requested route preference active. The saved preference is not mutated; unavailable routes
     // fall back at runtime to another route variant for this map.
     void Activate(int routePreference);
+    bool CanGuide() const { return Loaded && HasAuthoredRoute && (!GeomLoaded || Trail.size() >= 2); }
 };
 
-// Parse data/zones/<slug>.json into `out`. Returns true if a trail loaded.
+// Parse zone metadata into `out`. Route availability is a separate capability.
 bool LoadZone(const std::string &path, Zone &out);
 
 // Load every zone listed in <zonesDir>/index.json into `out`, keyed by mapId. Returns the count loaded.
@@ -284,13 +320,17 @@ struct MapInfo
     uint32_t MapId = 0;
     std::string Name;
     std::string Kind;
+    std::string TrackingAvailability; // explicit API encounter tracking support
+    bool HasUnavailableEncounterTracking() const
+    { return (Kind == "Raid" || Kind == "Convergence") && TrackingAvailability == "unavailable"; }
+    uint32_t TravelMapId = 0;      // entrance waypoint's map; zero uses this map
     int ContinentId = 0;
     int RegionId = 0;
     std::string RegionName;
     int MinLevel = 0, MaxLevel = 0;
     float ContRect[4] = {0.f, 0.f, 0.f, 0.f}; // continent rect [left, top, right, bottom]
     bool HasRect = false;
-    bool HasGuide = false;         // a zone/instance dataset exists (set at runtime)
+    bool HasGuide = false;         // authored route is available (set at runtime)
     bool Lounge = false;           // tagged a lounge (incl. zones/WvW that double as a lounge)
     std::string Access;            // lounge access: "premium" / "earned" / "free" / "" (none)
     std::vector<std::string> Tags; // extra kind chips this map also lists under (City+PvP, ...)

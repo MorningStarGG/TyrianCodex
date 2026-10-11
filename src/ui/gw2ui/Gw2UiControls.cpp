@@ -112,10 +112,10 @@ namespace
         float boxH = 0.f;
     };
 
-    static InputFontMetrics InputMetrics(float sc)
+    static InputFontMetrics InputMetrics(float sc, float fontSize = 0.f)
     {
         ImFont *base = UiFont(nullptr);
-        const float basePx = base ? base->FontSize : ImGui::GetFontSize();
+        const float basePx = fontSize > 0.f ? fontSize : (base ? base->FontSize : ImGui::GetFontSize());
         InputFontMetrics m;
         // Snapped to a baked rung like every other Gw2Ui text size, so ImGui::InputText renders its face at
         // scale 1.0. Unsnapped, any uiScale / PushTextScale other than 1.0 left typed text a few percent off
@@ -132,7 +132,8 @@ namespace
         const float facePx = std::max(0.001f, m.font ? m.font->FontSize : basePx);
         const float faceScale = std::max(0.001f, m.font ? m.font->Scale : 1.f);
         float parentWindowScale = 1.f;
-        if (ImGuiWindow *w = ImGui::GetCurrentWindow())
+        // Measuring an input before Begin() must not activate ImGui's fallback window.
+        if (ImGuiWindow *w = ImGui::GetCurrentWindowRead())
             if (w->ParentWindow)
                 parentWindowScale = std::max(0.001f, w->ParentWindow->FontWindowScale);
         m.windowScale = m.requestedPx / std::max(0.001f, ioScale * facePx * faceScale * parentWindowScale);
@@ -326,12 +327,16 @@ bool Gw2Ui::Checkbox(const char *label, bool *v)
 
 namespace
 {
+constexpr float kActionLabelSize = 16.f;
+constexpr float kActionPadding = 8.f;
+constexpr float kActionHeight = 26.f;
+
 Gw2Ui::ActionButtonResult ActionButtonFrameImpl(const char *id, ImVec2 size, Gw2Ui::ActionButtonVariant variant,
                                                 bool disabled, const char *tooltip, ControlSizeMode sizeMode)
 {
     const float sc = Gw2Ui::GlobalScale();
     size.x = ResolveControlWidth(size.x, sc, sizeMode);
-    size.y = ResolveControlHeight(size.y, sc, 26.f, sizeMode);
+    size.y = ResolveControlHeight(size.y, sc, kActionHeight, sizeMode);
 
     const ImVec2 p = ImGui::GetCursorScreenPos();
     const bool rawClicked = ImGui::InvisibleButton(id, size);
@@ -346,19 +351,19 @@ Gw2Ui::ActionButtonResult ActionButtonFrameImpl(const char *id, ImVec2 size, Gw2
     const ImU32 br = disabled ? IM_COL32(86, 76, 58, 105) : (lit ? pal.borderHover : pal.borderIdle);
     const float rounding = 3.f * sc;
 
-    dl->AddRectFilled(p, b, bg, rounding);
+    dl->AddRectFilled(p, b, StyleColor(bg), rounding);
 
     if (!disabled)
     {
         const float topH = std::max(7.f, size.y * 0.48f);
         dl->AddRectFilledMultiColor(p, ImVec2(b.x, p.y + topH),
-                                    pal.sheen, pal.sheen,
+                                    StyleColor(pal.sheen), StyleColor(pal.sheen),
                                     IM_COL32(255, 255, 255, 0), IM_COL32(255, 255, 255, 0));
     }
 
-    dl->AddRect(p, b, br, rounding, 0, held ? 1.55f : (hovered && !disabled ? 1.35f : 1.f));
+    dl->AddRect(p, b, StyleColor(br), rounding, 0, held ? 1.55f : (hovered && !disabled ? 1.35f : 1.f));
     dl->AddRect(ImVec2(p.x + sc, p.y + sc), ImVec2(b.x - sc, b.y - sc),
-                disabled ? IM_COL32(255, 230, 170, 7) : pal.inner, std::max(0.f, rounding - sc), 0, sc);
+                StyleColor(disabled ? IM_COL32(255, 230, 170, 7) : pal.inner), std::max(0.f, rounding - sc), 0, sc);
 
     if (hovered && tooltip && *tooltip)
         Gw2Ui::Tooltip(tooltip);
@@ -389,8 +394,8 @@ bool Gw2Ui::ActionButton(const char *label, float width, float height, ActionBut
     const ImU32 col = disabled ? pal.textDisabled : ((r.hovered || r.held) ? pal.textHover : pal.textIdle);
 
     PushTextScale(1.f); // action button labels have a stable control size, even inside scaled dashboard text
-    LabelIn(ImVec2(r.min.x + 8.f * GlobalScale(), r.min.y), ImVec2(r.max.x - 8.f * GlobalScale(), r.max.y), label,
-            HAlign::Center, VAlign::Middle, col, true, nullptr, 16.f);
+    LabelIn(ImVec2(r.min.x + kActionPadding * GlobalScale(), r.min.y), ImVec2(r.max.x - kActionPadding * GlobalScale(), r.max.y), label,
+            HAlign::Center, VAlign::Middle, col, true, nullptr, kActionLabelSize);
     PopTextScale();
     return r.clicked;
 }
@@ -403,10 +408,18 @@ bool Gw2Ui::ActionButtonPx(const char *label, float widthPx, float heightPx, Act
     const ImU32 col = disabled ? pal.textDisabled : ((r.hovered || r.held) ? pal.textHover : pal.textIdle);
 
     PushTextScale(1.f);
-    LabelIn(ImVec2(r.min.x + 8.f * GlobalScale(), r.min.y), ImVec2(r.max.x - 8.f * GlobalScale(), r.max.y), label,
-            HAlign::Center, VAlign::Middle, col, true, nullptr, 16.f);
+    LabelIn(ImVec2(r.min.x + kActionPadding * GlobalScale(), r.min.y), ImVec2(r.max.x - kActionPadding * GlobalScale(), r.max.y), label,
+            HAlign::Center, VAlign::Middle, col, true, nullptr, kActionLabelSize);
     PopTextScale();
     return r.clicked;
+}
+
+ImVec2 Gw2Ui::ActionButtonSize(const char *label)
+{
+    PushTextScale(1.f);
+    const float width = MeasureWidth(label, kActionLabelSize) + 2.f * kActionPadding * GlobalScale();
+    PopTextScale();
+    return ImVec2(width, kActionHeight * GlobalScale());
 }
 
 // GW2 StandardButton: animated 9-frame button-states atlas + 4-edge button-border + black text.
@@ -504,7 +517,7 @@ bool Gw2Ui::TextBox(const char *id, char *buf, size_t bufSize, float width)
     return changed;
 }
 
-float Gw2Ui::InputBoxHeight() { return InputMetrics(TextScale()).boxH; } // matches TextBox/SearchBox box height
+float Gw2Ui::InputBoxHeight(float fontSize) { return InputMetrics(TextScale(), fontSize).boxH; }
 
 bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width, bool *revealed)
 {
@@ -585,13 +598,13 @@ bool Gw2Ui::TextBoxSecret(const char *id, char *buf, size_t bufSize, float width
 // GW2 SearchBox: a TextBox with placeholder/hint text + a right-hand icon column - a magnifier when empty, a
 // clickable X (clears the field) when there's text. ONE reusable filter widget so every search box (settings /
 // journal / checklist / dye picker / ...) looks + behaves the same. Returns true when the text changed (incl. a clear).
-bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, const char *hint)
+bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, const char *hint, float fontSize)
 {
     const float sc = TextScale();
     width = LayoutControlWidth(width);
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    const InputFontMetrics im = InputMetrics(sc);
+    const InputFontMetrics im = InputMetrics(sc, fontSize);
     const float h = im.boxH;
     const float iconW = h; // right-hand icon column (magnifier when empty / X when filled)
 
@@ -606,7 +619,7 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
         dl->PushClipRect(ImVec2(p.x + padX, p.y), ImVec2(textRight, p.y + h), true);
         LabelDL(dl, ImVec2(p.x + padX, p.y), ImVec2(textRight, p.y + h), placeholder,
                 HAlign::Left, VAlign::Middle, IM_COL32(150, 142, 122, 190), false, nullptr,
-                UiFont(nullptr) ? UiFont(nullptr)->FontSize : ImGui::GetFontSize());
+                fontSize > 0.f ? fontSize : (UiFont(nullptr) ? UiFont(nullptr)->FontSize : ImGui::GetFontSize()));
         dl->PopClipRect();
     }
 
@@ -633,7 +646,7 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
         std::snprintf(xid, sizeof(xid), "%s_clr", id);
         ImGui::SetCursorScreenPos(ImVec2(p.x + width - iconW, p.y));
         const bool xc = ImGui::InvisibleButton(xid, ImVec2(iconW, h));
-        const ImU32 col = ImGui::IsItemHovered() ? Gw2Ui::kTextSelected : IM_COL32(200, 190, 170, 220);
+        const ImU32 col = StyleColor(ImGui::IsItemHovered() ? Gw2Ui::kTextSelected : IM_COL32(200, 190, 170, 220));
         const float r = 4.f * sc;
         dl->AddLine(ImVec2(c.x - r, c.y - r), ImVec2(c.x + r, c.y + r), col, 1.8f * sc);
         dl->AddLine(ImVec2(c.x - r, c.y + r), ImVec2(c.x + r, c.y - r), col, 1.8f * sc);
@@ -645,7 +658,7 @@ bool Gw2Ui::SearchBox(const char *id, char *buf, size_t bufSize, float width, co
     }
     else // magnifier affordance
     {
-        const ImU32 col = IM_COL32(160, 150, 130, 150);
+        const ImU32 col = StyleColor(IM_COL32(160, 150, 130, 150));
         dl->AddCircle(ImVec2(c.x - 1.5f * sc, c.y - 1.5f * sc), 3.6f * sc, col, 0, 1.6f * sc);
         dl->AddLine(ImVec2(c.x + 1.0f * sc, c.y + 1.0f * sc), ImVec2(c.x + 4.6f * sc, c.y + 4.6f * sc), col, 1.8f * sc);
     }

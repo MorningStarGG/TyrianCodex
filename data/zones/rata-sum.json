@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T14:03:00.049701+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 139,
     "name": "Rata Sum",
@@ -44,6 +44,49 @@
       38848,
       36928
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 17,
+          "skill_challenges": 0,
+          "sectors": 16
+        },
+        "55": {
+          "tasks": 0,
+          "points_of_interest": 14,
+          "skill_challenges": 0,
+          "sectors": 0
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 23,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 26,
+          "skill_challenges": 0,
+          "sectors": 13
+        }
+      },
+      "unavailable": []
+    },
     "release": "core"
   },
   "primaryKind": "foot",
@@ -68,6 +111,13 @@
       ],
       "chatLink": "[&BBMEAAA=]",
       "waypointChatLink": "[&BBMEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 13,
       "wikiText": "The Creator's Commons is the entry area of Rata Sum, located near the top of the city. The layout is triangular, with a waypoint and asura gates in each corner. The center of the area provides access to the Arcane Council instance."
     },
@@ -90,6 +140,13 @@
       ],
       "chatLink": "[&BLUEAAA=]",
       "waypointChatLink": "[&BLUEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 43,
       "wikiText": "The Idea Incubation Lab is an area within Rata Sum. Access to the area can be found in the Rata Sum southeastern set of asura gates. A Flax Compound Gate Guard prevents unauthorized access into the lab proper."
     },
@@ -109,6 +166,11 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        2,
+        0
       ],
       "trailIndex": 55,
       "wikiText": "The Usability Station is found in the South-West of Idea Incubation Lab. It is owned by Councillor Flax, as part of his compound.",
@@ -131,6 +193,11 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        2,
+        0
+      ],
       "trailIndex": 78,
       "wikiText": "The Dawnside Quay is the easternmost of the two landing docks located at the Rata Sum Port Authority.",
       "waypointChatLink": "[&BAcFAAA=]"
@@ -152,6 +219,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 110,
       "wikiText": "The Rata Sum Port Authority is the two-part docks of Rata Sum, connected to the floating city via two asura gates. It also appears to have an Inquest base of some sort.",
       "waypointChatLink": "[&BAcFAAA=]"
@@ -172,6 +246,11 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        2,
+        0
       ],
       "trailIndex": 118,
       "wikiText": "The Antidawn Anchorage is the westernmost of the two docks located at the Rata Sum Port Authority.",
@@ -196,6 +275,13 @@
       ],
       "chatLink": "[&BAcFAAA=]",
       "waypointChatLink": "[&BAcFAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 123,
       "wikiText": "The Rata Sum Port Authority is the two-part docks of Rata Sum, connected to the floating city via two asura gates. It also appears to have an Inquest base of some sort."
     },
@@ -218,6 +304,13 @@
       ],
       "chatLink": "[&BLQEAAA=]",
       "waypointChatLink": "[&BLQEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 164,
       "wikiText": "The Creator's Commons is the entry area of Rata Sum, located near the top of the city. The layout is triangular, with a waypoint and asura gates in each corner. The center of the area provides access to the Arcane Council instance."
     },
@@ -238,8 +331,36 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        2
+      ],
       "trailIndex": 167,
       "wikiText": "The PR-1000 Prototype Golem is an asura creation located in the College of Dynamics.",
+      "waypointChatLink": "[&BLgEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1184",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1184",
+      "coord": [
+        38598,
+        36999
+      ],
+      "recommendedLevel": null,
+      "name": "Artisan Hall",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 167,
+      "wikiText": "The Artisan Hall is room used by the asuras of Rata Sum to craft diverse items.",
       "waypointChatLink": "[&BLgEAAA=]"
     },
     {
@@ -255,12 +376,19 @@
       "recommendedLevel": null,
       "name": "Magustan Court Waypoint",
       "prereqs": [],
-      "order": 9,
+      "order": 10,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BBQEAAA=]",
       "waypointChatLink": "[&BBQEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 170,
       "wikiText": "The Creator's Commons is the entry area of Rata Sum, located near the top of the city. The layout is triangular, with a waypoint and asura gates in each corner. The center of the area provides access to the Arcane Council instance."
     },
@@ -277,9 +405,16 @@
       "recommendedLevel": null,
       "name": "Creator's Commons (1)",
       "prereqs": [],
-      "order": 10,
+      "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
       ],
       "trailIndex": 193,
       "wikiText": "The Creator's Commons is the entry area of Rata Sum, located near the top of the city. The layout is triangular, with a waypoint and asura gates in each corner. The center of the area provides access to the Arcane Council instance.",
@@ -298,12 +433,88 @@
       "recommendedLevel": null,
       "name": "Thamaturgic Calculus",
       "prereqs": [],
-      "order": 11,
+      "order": 12,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        2
+      ],
       "trailIndex": 209,
       "wikiText": "The Thamaturgic Calculus is a large device located inside the College of Synergetics.",
+      "waypointChatLink": "[&BLkEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1178",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1178",
+      "coord": [
+        38694,
+        37270
+      ],
+      "recommendedLevel": null,
+      "name": "Skinner Hall",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 209,
+      "wikiText": "The Skinner Hall is where the asuran of Rata Sum practice their leatherworking.",
+      "waypointChatLink": "[&BLkEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1168",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1168",
+      "coord": [
+        38627,
+        37293
+      ],
+      "recommendedLevel": null,
+      "name": "Dept. Of Arcane Eye",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 218,
+      "wikiText": "The Dept. Of Arcane Eye is the phantom location adjacent to the Synergetics Union in Rata Sum. The name implies this is the headquarters of the Arcane Eye, however there is no trace of them at this location.",
+      "waypointChatLink": "[&BLkEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1174",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1174",
+      "coord": [
+        38750,
+        37322
+      ],
+      "recommendedLevel": null,
+      "name": "Priory Recruiting Station",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 233,
+      "wikiText": "The Priory Recruiting Station is the Durmand Priory compound located inside Rata Sum.",
       "waypointChatLink": "[&BLkEAAA=]"
     },
     {
@@ -319,13 +530,44 @@
       "recommendedLevel": null,
       "name": "College of Synergetics",
       "prereqs": [],
-      "order": 12,
+      "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
       ],
       "trailIndex": 253,
       "wikiText": "The College of Synergetics is an asuran scholarly society. The members of this college study magical metaphysics, cybernetic systems, and the theory of abstract structures.",
       "waypointChatLink": "[&BLkEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1176",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1176",
+      "coord": [
+        38879,
+        37050
+      ],
+      "recommendedLevel": null,
+      "name": "Forge Hall",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 272,
+      "wikiText": "The Forge Hall is where the asura of Rata Sum crafts their weapons and armor.",
+      "waypointChatLink": "[&BLcEAAA=]"
     },
     {
       "stepId": "139:poi:1175",
@@ -340,13 +582,41 @@
       "recommendedLevel": null,
       "name": "The Magihedron",
       "prereqs": [],
-      "order": 13,
+      "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        2
       ],
       "trailIndex": 273,
       "wikiText": "The Magihedron is a point of interest within the College of Statics. Plenty of Statics students and experts can be found in this area.",
       "waypointChatLink": "[&BLcEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1179",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1179",
+      "coord": [
+        38892,
+        36975
+      ],
+      "recommendedLevel": null,
+      "name": "Vigil Recruiting Station",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 294,
+      "wikiText": "The Vigil Recruiting Station is a Vigil compound located inside Rata Sum.",
+      "waypointChatLink": "[&BBQEAAA=]"
     },
     {
       "stepId": "139:waypoint:1206",
@@ -361,14 +631,69 @@
       "recommendedLevel": null,
       "name": "Accountancy Waypoint",
       "prereqs": [],
-      "order": 14,
+      "order": 20,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BLYEAAA=]",
       "waypointChatLink": "[&BLYEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 311,
       "wikiText": "The Interdisciplinary Accessium is the central atrium of Rata Sum. The Dynamics, Statics and Synergetics unions can be accessed from here."
+    },
+    {
+      "stepId": "139:poi:1170",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1170",
+      "coord": [
+        38714,
+        37092
+      ],
+      "recommendedLevel": null,
+      "name": "Arcane Council",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 314,
+      "wikiText": "The Arcane Council (Asuran: ) is the main governing body for the asura. They reside within the Council Level of Rata Sum where they hold their meetings, and are currently led by High Councillor Flax.",
+      "waypointChatLink": "[&BLYEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1173",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1173",
+      "coord": [
+        38532,
+        36949
+      ],
+      "recommendedLevel": null,
+      "name": "Peacemakers Headquarters",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 343,
+      "wikiText": "The Peacemakers Headquarters is the local HQ of the Peacemakers inside Rata Sum. The holding cells are also located there.",
+      "waypointChatLink": "[&BLgEAAA=]"
     },
     {
       "stepId": "139:waypoint:1208",
@@ -383,14 +708,45 @@
       "recommendedLevel": null,
       "name": "Research Waypoint",
       "prereqs": [],
-      "order": 15,
+      "order": 23,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BLgEAAA=]",
       "waypointChatLink": "[&BLgEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 351,
       "wikiText": "The Lower Research Stacks is an area in Rata Sum. Located within it is the headquarters of the Peacemakers, including cells which contain troublesome inmates."
+    },
+    {
+      "stepId": "139:poi:1172",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1172",
+      "coord": [
+        38684,
+        37355
+      ],
+      "recommendedLevel": null,
+      "name": "Inquest Recruiting Station",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 371,
+      "wikiText": "The Inquest Recruiting Station is the headquarters of the Inquest within Rata Sum.",
+      "waypointChatLink": "[&BLkEAAA=]"
     },
     {
       "stepId": "139:waypoint:1209",
@@ -405,14 +761,69 @@
       "recommendedLevel": null,
       "name": "Auxiliary Waypoint",
       "prereqs": [],
-      "order": 16,
+      "order": 25,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BLkEAAA=]",
       "waypointChatLink": "[&BLkEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 375,
       "wikiText": "The Auxiliary Study Rooms is an area in Rata Sum located south on the lowest level."
+    },
+    {
+      "stepId": "139:poi:1169",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1169",
+      "coord": [
+        38937,
+        37099
+      ],
+      "recommendedLevel": null,
+      "name": "Polymock Atrium",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        0
+      ],
+      "trailIndex": 385,
+      "wikiText": "The Polymock Atrium is an asura gate currently being constructed which will lead to the Polymock Arenas.",
+      "waypointChatLink": "[&BLcEAAA=]"
+    },
+    {
+      "stepId": "139:poi:1180",
+      "mapId": 139,
+      "zoneName": "Rata Sum",
+      "type": "poi",
+      "objectiveId": "1180",
+      "coord": [
+        38910,
+        37042
+      ],
+      "recommendedLevel": null,
+      "name": "The Aquatarium",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3
+      ],
+      "trailIndex": 387,
+      "wikiText": "The Aquatarium is a large water tank used by the apprentices of Rata Sum to study underwater creatures.",
+      "waypointChatLink": "[&BLcEAAA=]"
     },
     {
       "stepId": "139:vista:1482",
@@ -427,9 +838,16 @@
       "recommendedLevel": null,
       "name": "College of Statics",
       "prereqs": [],
-      "order": 17,
+      "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
       ],
       "trailIndex": 392,
       "wikiText": "The College of Statics is an asuran scholarly society within Rata Sum. Members of this college are analytical and cautious, preferring to do the work right the first time and build things that last.",
@@ -448,12 +866,19 @@
       "recommendedLevel": null,
       "name": "Apprentice Waypoint",
       "prereqs": [],
-      "order": 18,
+      "order": 29,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BLcEAAA=]",
       "waypointChatLink": "[&BLcEAAA=]",
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
+      ],
       "trailIndex": 397,
       "wikiText": "The Apprentice Carrels is an area in Rata Sum"
     },
@@ -470,9 +895,16 @@
       "recommendedLevel": null,
       "name": "Creator's Commons (2)",
       "prereqs": [],
-      "order": 19,
+      "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        55,
+        2,
+        0
       ],
       "trailIndex": 416,
       "wikiText": "The Creator's Commons is the entry area of Rata Sum, located near the top of the city. The layout is triangular, with a waypoint and asura gates in each corner. The center of the area provides access to the Arcane Council instance.",
@@ -491,9 +923,14 @@
       "recommendedLevel": null,
       "name": "Engaged Demo Station",
       "prereqs": [],
-      "order": 20,
+      "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        2,
+        0
       ],
       "trailIndex": 448,
       "wikiText": "The Engaged Demo Station is an asuran research station located within the Applied Development Lab.",
@@ -512,9 +949,14 @@
       "recommendedLevel": null,
       "name": "Zojja's Workstation (Don't Touch!)",
       "prereqs": [],
-      "order": 21,
+      "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        2,
+        0
       ],
       "trailIndex": 492,
       "wikiText": "Zojja's Workstation is Zojja's lab located inside Snaff's compound.",

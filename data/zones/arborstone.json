@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1428,
     "name": "Arborstone",
@@ -44,6 +44,49 @@
       29750,
       101210
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 17,
+          "skill_challenges": 1,
+          "sectors": 2
+        },
+        "69": {
+          "tasks": 0,
+          "points_of_interest": 17,
+          "skill_challenges": 1,
+          "sectors": 2
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 17,
+          "skill_challenges": 1,
+          "sectors": 2
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 17,
+          "skill_challenges": 1,
+          "sectors": 2
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 17,
+          "skill_challenges": 1,
+          "sectors": 2
+        }
+      },
+      "unavailable": []
+    },
     "release": "eod"
   },
   "primaryKind": "foot",
@@ -65,6 +108,13 @@
       "order": 0,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 153,
       "wikiText": "Danika's Respite is a pond near Arborstone's northern entrance.",
@@ -89,6 +139,13 @@
       ],
       "chatLink": "[&BHoNAAA=]",
       "waypointChatLink": "[&BHoNAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 175,
       "wikiText": "Arborstone or the Cathedral zu Heltzer (named after Count zu Heltzer) is a zone in Cantha, serving as an upgradable lobby for the End of Dragons Strike Missions and various collection achievements."
     },
@@ -108,6 +165,13 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 177,
       "wikiText": "Quartermaster's Row is an area within Arborstone. Unlocking the Crafting Center mastery of the Arborstone Revitalization will grant access to armor and weapon crafters.",
@@ -130,6 +194,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 177,
       "wikiText": "The Sanctuary of the Five is a temple dedicated to the Five Human Gods before the ascension of Kormir in Arborstone.",
       "waypointChatLink": "[&BHoNAAA=]"
@@ -151,6 +222,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 178,
       "wikiText": "Club Canach is a social club located just outside of the main Arborstone structure.",
       "waypointChatLink": "[&BHoNAAA=]"
@@ -171,6 +249,13 @@
       "order": 5,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 179,
       "wikiText": "Arborstone or the Cathedral zu Heltzer (named after Count zu Heltzer) is a zone in Cantha, serving as an upgradable lobby for the End of Dragons Strike Missions and various collection achievements.",
@@ -195,6 +280,13 @@
       ],
       "chatLink": "[&BGMNAAA=]",
       "waypointChatLink": "[&BGMNAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 180,
       "wikiText": "Arborstone or the Cathedral zu Heltzer (named after Count zu Heltzer) is a zone in Cantha, serving as an upgradable lobby for the End of Dragons Strike Missions and various collection achievements."
     },
@@ -214,6 +306,13 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 180,
       "wikiText": "The Hall of Remembrance in Arborstone serves as a place to voluntarily anchor the spirits of great heroes so that they can visit and commune with the living, therefore described as New Tahnnakai by the Curator.",
@@ -236,6 +335,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 180,
       "wikiText": "The Ready Room is an area in the south corner of Arborstone's ground floor where End of Dragons Strike Missions can be accessed, as well as related services.",
       "waypointChatLink": "[&BGMNAAA=]"
@@ -256,6 +362,13 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 180,
       "wikiText": "The Roost is a Point of Interest located on the second floor of the Arborstone. The Kestrels use it as a canteen.",
@@ -278,6 +391,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 180,
       "wikiText": "Longfeather Plaza is the central square of Arborstone and is surrounded by large pillars covered in vegetation. It is named after the founder of the Kestrels, Xiri Longfeather.",
       "waypointChatLink": "[&BGMNAAA=]"
@@ -298,6 +418,13 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 180,
       "wikiText": "Located above the third level of Arborstone. Location of Singer's Fountain. It is easiest to get to with a skyscale, but it is possible to do with only a springer, going up the branches to the higher ledges.",
@@ -320,6 +447,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 180,
       "wikiText": "Arborstone Inn is an establishment within Arborstone, providing Resting bonuses to everyone on the map with the Arborstone Revitalization mastery.",
       "waypointChatLink": "[&BGMNAAA=]"
@@ -341,6 +475,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 180,
       "waypointChatLink": "[&BGMNAAA=]"
     },
@@ -360,6 +501,13 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 180,
       "wikiText": "Kestrel Archives is a library within Arborstone.",
@@ -381,6 +529,13 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 180,
       "waypointChatLink": "[&BGMNAAA=]"

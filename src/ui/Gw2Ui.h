@@ -104,6 +104,11 @@ namespace Gw2Ui
     void Label(const char *text, ImU32 color = IM_COL32(255, 255, 255, 255), bool stroke = false,
                ImFont *font = nullptr, float fontSize = 0.f, float weight = -1.f,
                TextShadow shadowMode = TextShadow::Outline, float shadowStrength = 1.f);
+    // Flowing, wrapped text. Width 0 respects the available content/card/cell bounds; measure and draw use
+    // the same resolved font, then reserve exactly that height in ImGui's layout.
+    void LabelWrapped(const char *text, ImU32 color = IM_COL32(255, 255, 255, 255), bool stroke = false,
+                      ImFont *font = nullptr, float fontSize = 0.f, float width = 0.f, float weight = -1.f,
+                      TextShadow shadowMode = TextShadow::Outline, float shadowStrength = 1.f);
     // wrapWidth > 0 wraps the text at that pixel width (the caller sizes its rect/row to fit via
     // MeasureWrappedHeight). 0 = single line (clips at the rect).
     void LabelIn(ImVec2 a, ImVec2 b, const char *text, HAlign h = HAlign::Left, VAlign v = VAlign::Middle,
@@ -396,6 +401,8 @@ namespace Gw2Ui
     bool BeginCard(const char *id, float width = 0.f, ImU32 bg = 0, ImU32 border = 0);
     bool BeginAccentCard(const char *id, float width = 0.f, ImU32 accent = 0, ImU32 bg = 0, ImU32 border = 0);
     void EndCard();
+    // Scaled inset used by cards, for containers that need to reserve their full outer height.
+    float CardPadding();
     // Inner content width of the CURRENT card (card width minus padding + accent inset). Use this for any
     // FULL-WIDTH content inside a card: a card is a group, so GetContentRegionAvail() over-extends to the
     // window edge and would overrun the card's right border (and ignore its auto right margin).
@@ -546,6 +553,8 @@ namespace Gw2Ui
                                          bool disabled = false, const char *tooltip = nullptr);
     ActionButtonResult ActionButtonFramePx(const char *id, ImVec2 sizePx, ActionButtonVariant variant = ActionButtonVariant::Normal,
                                            bool disabled = false, const char *tooltip = nullptr);
+    // Measured standard label, padding and height in screen pixels. Useful for a compact control's hit area.
+    ImVec2 ActionButtonSize(const char *label);
     bool ActionButton(const char *label, float width = 128.f, float height = 26.f,
                       ActionButtonVariant variant = ActionButtonVariant::Normal,
                       const char *tooltip = nullptr, bool disabled = false);
@@ -562,13 +571,14 @@ namespace Gw2Ui
     // selection / keyboard) in the GW2 font. Returns true while the text changes. `buf` is edited in place.
     bool TextBox(const char *id, char *buf, size_t bufSize, float width);
     // The height of a TextBox / SearchBox (font size + padding) -- so a Dropdown / button on the same row can match.
-    float InputBoxHeight();
+    float InputBoxHeight(float fontSize = 0.f);
     // A TextBox for SECRETS (e.g. the API key): masks the text as password dots unless *revealed, with an eye
     // toggle in a right-hand column that flips *revealed. Default-hidden so a key never shows on stream.
     bool TextBoxSecret(const char *id, char *buf, size_t bufSize, float width, bool *revealed);
     // A TextBox for FILTER fields: placeholder/hint text + a magnifier (empty) / clickable X (clears) icon.
     // The one reusable search widget - use it for every search/filter box. Returns true when the text changed.
-    bool SearchBox(const char *id, char *buf, size_t bufSize, float width, const char *hint = "Search...");
+    // fontSize 0 uses the native face; an explicit size follows TextScale for both placeholder and typed text.
+    bool SearchBox(const char *id, char *buf, size_t bufSize, float width, const char *hint = "Search...", float fontSize = 0.f);
 
     // GW2 Dropdown: the input-box box + dd-arrow chevron + selected text, and a popup list with
     // solid-black background, a dark-brown (45,37,25) fill on the hovered row, and
@@ -686,6 +696,13 @@ namespace Gw2Ui
         std::function<void(int rowIndex, const RowHotspot &row, const TableRowCols &cols)> drawRow;
     };
     bool DataTable(const DataTableDesc &d);
+
+    // Plain text tables with automatic columns and variable-height wrapped rows. The framework owns
+    // inner/outer cell padding, header/row colors, text measurement and scaling. Unlike DataTable, these
+    // do not expose row actions, sorting or persisted column widths. Call EndTextTable only if Begin succeeds.
+    bool BeginTextTable(const char *id, const std::vector<std::string>& headers, float fontSize = 18.f, float width = 0.f);
+    void TextTableRow(const std::vector<std::string>& cells);
+    void EndTextTable();
 
     // Return the top-left for a right-aligned row element. If itemHeight > 0 it is vertically centered in row.
     ImVec2 RowRight(const RowHotspot &row, float itemWidth, float itemHeight = 0.f, float rightInset = 0.f);

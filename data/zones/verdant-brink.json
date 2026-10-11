@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1052,
     "name": "Verdant Brink",
@@ -33,17 +33,67 @@
     "sectorRect": [
       [
         33572.2,
-        30961.6
+        30961.5
       ],
       [
         36712.2,
-        32628.8
+        32629.1
       ]
     ],
     "labelCoord": [
       35072,
       31744
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "47": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 19,
+          "skill_challenges": 11,
+          "sectors": 5
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "48": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 19,
+          "skill_challenges": 11,
+          "sectors": 5
+        }
+      },
+      "unavailable": []
+    },
     "release": "hot"
   },
   "primaryKind": "foot",
@@ -68,6 +118,14 @@
       ],
       "chatLink": "[&BN4HAAA=]",
       "waypointChatLink": "[&BN4HAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 6,
       "wikiText": "The Maguuma's Breach is the opening area of Verdant Brink."
     },
@@ -87,6 +145,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 71,
       "wikiText": "The Wreck of the Lethal Vantage is wreckage of a Pact airship found at the Snarled Frontier.",
@@ -109,6 +173,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 103,
       "wikiText": "Use the series of nearby updrafts to reach the vista.",
       "waypointChatLink": "[&BN4HAAA=]"
@@ -129,6 +201,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 174,
       "wikiText": "The Batrach Falls are a set of waterfalls located near Jaka Itzel.",
@@ -153,6 +231,14 @@
       ],
       "chatLink": "[&BOAHAAA=]",
       "waypointChatLink": "[&BOAHAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 264,
       "wikiText": "Jaka Itzel is an area in Verdant Brink. It is the home of the Itzel hylek tribe."
     },
@@ -172,6 +258,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 275,
       "wikiText": "The Dwelling of the Kaanas is the home of Kaana Miatli and High Priest Copuul, the joint leaders of Jaka Itzel.",
@@ -194,6 +286,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 276,
       "wikiText": "Simply walk to it from the waypoint.",
       "waypointChatLink": "[&BOAHAAA=]"
@@ -214,6 +314,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 298,
       "wikiText": "The Fumerol Caves are a cave system infested with fungus.",
@@ -236,6 +342,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
+      ],
       "trailIndex": 352,
       "wikiText": "The Temple of Ameyalli is a shrine to the hylek goddess Ameyalli.",
       "waypointChatLink": "[&BOAHAAA=]"
@@ -256,6 +368,14 @@
       "order": 9,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 475,
       "wikiText": "Wyvern Nesting Grounds is a commune hero challenge in Wyvern Cliffs.",
@@ -278,8 +398,39 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
+      ],
       "trailIndex": 491,
       "wikiText": "The Brooding Gulch is a canyon used by wyverns to lay eggs.",
+      "waypointChatLink": "[&BOAHAAA=]"
+    },
+    {
+      "stepId": "1052:poi:2025",
+      "mapId": 1052,
+      "zoneName": "Verdant Brink",
+      "type": "poi",
+      "objectiveId": "2025",
+      "coord": [
+        35582,
+        31392
+      ],
+      "recommendedLevel": null,
+      "name": "Last Leap",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2,
+        3
+      ],
+      "trailIndex": 506,
+      "wikiText": "The Last Leap is a large lump of earth located in the Canopy over Jaka Itzel. Two corrupted Champion hylek, Cotoni and Huetzi, can be found here during the event \"Kill Cotoni and Huetzi\".",
       "waypointChatLink": "[&BOAHAAA=]"
     },
     {
@@ -295,9 +446,17 @@
       "recommendedLevel": null,
       "name": "Nuhoch Alchemical Energy",
       "prereqs": [],
-      "order": 11,
+      "order": 12,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 528,
       "wikiText": "On a small ledge carved into the cliff's face is a small Nuhoch outpost filled with Nuhoch Alchemical Energy. This place of power awaits any experienced adventurers to commune with it to earn 10 hero points.",
@@ -316,9 +475,15 @@
       "recommendedLevel": null,
       "name": "The Corpse Grove",
       "prereqs": [],
-      "order": 12,
+      "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 623,
       "wikiText": "The Corpse Grove is a desolate land teeming with dangerous Mordrem. Pustules can be seen growing on the trees and vines.",
@@ -337,12 +502,20 @@
       "recommendedLevel": null,
       "name": "Mellaggan's Valor Waypoint",
       "prereqs": [],
-      "order": 13,
+      "order": 14,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BNUHAAA=]",
       "waypointChatLink": "[&BNUHAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 681,
       "wikiText": "The Broken Bluffs is an area of Verdant Brink."
     },
@@ -359,9 +532,15 @@
       "recommendedLevel": null,
       "name": "Uprooted Paradise",
       "prereqs": [],
-      "order": 14,
+      "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 733,
       "wikiText": "Uprooted Paradise is a landmass that has been pushed skyward, and is being supported by large twisting vines underneath. The Flying Circus Adventure can be found here.",
@@ -380,9 +559,17 @@
       "recommendedLevel": null,
       "name": "Uprooted Paradise",
       "prereqs": [],
-      "order": 15,
+      "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 765,
       "wikiText": "Use the Bouncing Mushroom northwest of the waypoint to ascend to the Uprooted Paradise floating island. Work your way past the various Itzel and Beetles until you are just below the vista. Jump up the vines at the foot of the vista.",
@@ -401,9 +588,15 @@
       "recommendedLevel": null,
       "name": "Wreck of the Mellaggan's Valor",
       "prereqs": [],
-      "order": 16,
+      "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 811,
       "wikiText": "The Wreck of the Mellaggan's Valor is a Pact airship that crashed when the Pact launched their attack on Mordremoth. The airship was named after the quaggan goddess Mellaggan.",
@@ -422,13 +615,46 @@
       "recommendedLevel": null,
       "name": "Broken Bluffs",
       "prereqs": [],
-      "order": 17,
+      "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 866,
       "wikiText": "The Broken Bluffs is an area of Verdant Brink.",
       "waypointChatLink": "[&BNUHAAA=]"
+    },
+    {
+      "stepId": "1052:poi:2046",
+      "mapId": 1052,
+      "zoneName": "Verdant Brink",
+      "type": "poi",
+      "objectiveId": "2046",
+      "coord": [
+        34152,
+        32001
+      ],
+      "recommendedLevel": null,
+      "name": "Ascendant's Ring",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2,
+        3
+      ],
+      "trailIndex": 891,
+      "wikiText": "The Ascendant's Ring is a piece of land that was raised into the sky by Mordremoth's vines.",
+      "waypointChatLink": "[&BO8HAAA=]"
     },
     {
       "stepId": "1052:hero:1-8",
@@ -443,9 +669,17 @@
       "recommendedLevel": null,
       "name": "Security Console",
       "prereqs": [],
-      "order": 18,
+      "order": 20,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 901,
       "wikiText": "The Security Console is in the Canopy over Ordnance Corps, northwest of Faren's Flyer Waypoint. It is the trigger for Defeat the Mark I Golem hero challenge.",
@@ -464,12 +698,20 @@
       "recommendedLevel": null,
       "name": "Faren's Flyer Waypoint",
       "prereqs": [],
-      "order": 19,
+      "order": 21,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BO8HAAA=]",
       "waypointChatLink": "[&BO8HAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 921,
       "wikiText": "The Noble Ledges is an area of Verdant Brink. Lord Faren and his entourage wound up here when the Pact fleet was destroyed and have set up camp as a result."
     },
@@ -486,9 +728,15 @@
       "recommendedLevel": null,
       "name": "Wreck of the Thunderbreaker",
       "prereqs": [],
-      "order": 20,
+      "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 939,
       "wikiText": "The Wreck of the Thunderbreaker is a crashed Pact airship in the Noble Ledges.",
@@ -507,13 +755,96 @@
       "recommendedLevel": null,
       "name": "Pact Airship Wreckage",
       "prereqs": [],
-      "order": 21,
+      "order": 23,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 979,
       "wikiText": "Pact Airship Wreckage can be found scattered in the Canopy over Noble Crash Site.",
       "waypointChatLink": "[&BO8HAAA=]"
+    },
+    {
+      "stepId": "1052:poi:2073",
+      "mapId": 1052,
+      "zoneName": "Verdant Brink",
+      "type": "poi",
+      "objectiveId": "2073",
+      "coord": [
+        34769,
+        31692
+      ],
+      "recommendedLevel": null,
+      "name": "Silent Woods",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2,
+        3
+      ],
+      "trailIndex": 1014,
+      "wikiText": "The Silent Woods is the lair of Champion Axemaster Gwyllion, a powerful Mordrem Guard, and his pack of smokescales.",
+      "waypointChatLink": "[&BNUHAAA=]"
+    },
+    {
+      "stepId": "1052:poi:1986",
+      "mapId": 1052,
+      "zoneName": "Verdant Brink",
+      "type": "poi",
+      "objectiveId": "1986",
+      "coord": [
+        35230,
+        31802
+      ],
+      "recommendedLevel": null,
+      "name": "Matriarch's Perch",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2,
+        3
+      ],
+      "trailIndex": 1031,
+      "wikiText": "The Matriarch's Perch is a point of interest in the Canopy over Pact Encampment, a piece of an airship debris suspended by giant vines.",
+      "waypointChatLink": "[&BAgIAAA=]"
+    },
+    {
+      "stepId": "1052:poi:2072",
+      "mapId": 1052,
+      "zoneName": "Verdant Brink",
+      "type": "poi",
+      "objectiveId": "2072",
+      "coord": [
+        35632,
+        31951
+      ],
+      "recommendedLevel": null,
+      "name": "Precarious Perch",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2,
+        3
+      ],
+      "trailIndex": 1095,
+      "wikiText": "The Precarious Perch is a point of interest, a ruin piece suspended in the Canopy over Pale Reaver Rally by giant vines. It is the location of Kill the Wyvern Patriarch event during Night and the Enemy meta event in Verdant Brink.",
+      "waypointChatLink": "[&BAEIAAA=]"
     },
     {
       "stepId": "1052:hero:1-9",
@@ -528,9 +859,17 @@
       "recommendedLevel": null,
       "name": "Pile of Guano",
       "prereqs": [],
-      "order": 22,
+      "order": 27,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1111,
       "wikiText": "The Pile of Guano is a large pile of bat guano found in the Canopy over Pact Encampment, west of Last Leap Point of Interest. It is the trigger for Defeat the vampire beasts hero challenge.",
@@ -549,9 +888,15 @@
       "recommendedLevel": null,
       "name": "Glory's Fall",
       "prereqs": [],
-      "order": 23,
+      "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1118,
       "wikiText": "The Glory's Fall is a point of interest located in the Canopy over Pact Encampment. It is the location of the wreck of The Glory of Tyria, the flagship of the Pact air fleet.",
@@ -570,12 +915,20 @@
       "recommendedLevel": null,
       "name": "Pact Encampment Waypoint",
       "prereqs": [],
-      "order": 24,
+      "order": 29,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BAgIAAA=]",
       "waypointChatLink": "[&BAgIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1133,
       "wikiText": "Stonetwist Paths is an area in Verdant Brink. A Pact camp made up of mostly Vigil members is located there."
     },
@@ -592,9 +945,15 @@
       "recommendedLevel": null,
       "name": "Shaded Spring",
       "prereqs": [],
-      "order": 25,
+      "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1138,
       "wikiText": "The Shaded Spring is a Pact camp made up of predominately Vigil members located in the Stonetwist Paths.",
@@ -613,9 +972,17 @@
       "recommendedLevel": null,
       "name": "Stonetwist Paths",
       "prereqs": [],
-      "order": 26,
+      "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1171,
       "wikiText": "Simply walk up to it.",
@@ -634,9 +1001,17 @@
       "recommendedLevel": null,
       "name": "Abyssal Depths",
       "prereqs": [],
-      "order": 27,
+      "order": 32,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1183,
       "wikiText": "On a small ledge at the very bottom of the map in Thistlevine Ravine, this Abyssal Depths is a gathering of Mordremoth's energy simply waiting to be used. Commune with this place of power to complete the hero challenge.",
@@ -655,9 +1030,17 @@
       "recommendedLevel": null,
       "name": "Nightthistle Blossom",
       "prereqs": [],
-      "order": 28,
+      "order": 33,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1315,
       "wikiText": "At the bottom of the Creeping Crevasse, this Nightthistle Blossom awaits any challengers. Upon triggering the Hero Challenge, a Group Event will spawn one veteran Mordrem and four normal Mordrem.",
@@ -676,9 +1059,15 @@
       "recommendedLevel": null,
       "name": "The Tangle",
       "prereqs": [],
-      "order": 29,
+      "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1327,
       "wikiText": "The Tangle is a large mass of vines found in the Creeping Crevasse.",
@@ -697,9 +1086,15 @@
       "recommendedLevel": null,
       "name": "The Waking Tomb",
       "prereqs": [],
-      "order": 30,
+      "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1416,
       "wikiText": "The Waking Tomb is large pit filled with jungle tendrils located in the Shrouded Ruins. The adventure Salvage Pit takes place inside the tomb.",
@@ -718,9 +1113,17 @@
       "recommendedLevel": null,
       "name": "Ancient Fighting Pit",
       "prereqs": [],
-      "order": 31,
+      "order": 36,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1423,
       "wikiText": "The Ancient Fighting Pit Hero Challenge is perched high above The Waking Tomb.",
@@ -739,9 +1142,17 @@
       "recommendedLevel": null,
       "name": "Shrouded Ruins",
       "prereqs": [],
-      "order": 32,
+      "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1479,
       "wikiText": "Climb the stairs by the the Salvage Pit to a bridge where the vista is located. There is usually a decent number of Mordrem on the way so you will have to either fight or cloak your way through to get to it.",
@@ -760,12 +1171,20 @@
       "recommendedLevel": null,
       "name": "Shrouded Ruins Waypoint",
       "prereqs": [],
-      "order": 33,
+      "order": 38,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BAEIAAA=]",
       "waypointChatLink": "[&BAEIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1509,
       "wikiText": "The Shrouded Ruins is an area of the Verdant Brink."
     },
@@ -782,9 +1201,15 @@
       "recommendedLevel": null,
       "name": "Dust Dancer Plateau",
       "prereqs": [],
-      "order": 34,
+      "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1563,
       "wikiText": "The Dust Dancer Plateau is a rock formation found in the Thistlevine Ravine. Dust Mites can be found in large number there.",
@@ -803,9 +1228,15 @@
       "recommendedLevel": null,
       "name": "Creaking Caverns",
       "prereqs": [],
-      "order": 35,
+      "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1617,
       "wikiText": "The Creaking Caverns are a cave system home to dangerous subterranean foes.",
@@ -824,9 +1255,15 @@
       "recommendedLevel": null,
       "name": "Bongo's Bungalow",
       "prereqs": [],
-      "order": 36,
+      "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1685,
       "wikiText": "Bongo's Bungalow is the camp of Bongo the One-Eyed and Pact soldiers under his command.",
@@ -845,9 +1282,15 @@
       "recommendedLevel": null,
       "name": "Coztic Itzel",
       "prereqs": [],
-      "order": 37,
+      "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1753,
       "wikiText": "Coztic Itzel is a hylek village in Coztic Grounds. It is populated by members of the hostile Coztic tribe who attack any trespassers on sight.",
@@ -866,9 +1309,17 @@
       "recommendedLevel": null,
       "name": "Coztic Itzel Belongings",
       "prereqs": [],
-      "order": 38,
+      "order": 43,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1826,
       "wikiText": "The Coztic Itzel Belongings is near the portal to Auric Basin from Verdant Brink, North-East of Treacherous Paths Waypoint. It is the trigger for Defeat the Coztic Itzel homesteaders hero challenge.",
@@ -887,12 +1338,20 @@
       "recommendedLevel": null,
       "name": "Treacherous Path Waypoint",
       "prereqs": [],
-      "order": 39,
+      "order": 44,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BBwIAAA=]",
       "waypointChatLink": "[&BBwIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1865,
       "wikiText": "The Noble Ledges is an area of Verdant Brink. Lord Faren and his entourage wound up here when the Pact fleet was destroyed and have set up camp as a result."
     },
@@ -909,9 +1368,15 @@
       "recommendedLevel": null,
       "name": "Golden Boughs",
       "prereqs": [],
-      "order": 40,
+      "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 1904,
       "wikiText": "The Golden Boughs are a dense forested area with winding paths. When the daylight strikes the foliage, golden highlights can be seen.",
@@ -930,9 +1395,17 @@
       "recommendedLevel": null,
       "name": "Ancient Tree",
       "prereqs": [],
-      "order": 41,
+      "order": 46,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1984,
       "wikiText": "An Ancient Tree is slowly being torn apart by the ravages of the Elder Dragon, the core rotting and falling apart.",
@@ -951,9 +1424,15 @@
       "recommendedLevel": null,
       "name": "Holdfast Hollow",
       "prereqs": [],
-      "order": 42,
+      "order": 47,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 2075,
       "wikiText": "Holdfast Hollow is a small cave located in the Broken Bluffs where a small group of Pact members have regrouped upon the destruction of their airship.",
@@ -972,9 +1451,17 @@
       "recommendedLevel": null,
       "name": "Cliffside Ruins",
       "prereqs": [],
-      "order": 43,
+      "order": 48,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2144,
       "wikiText": "The Cliffside Ruins Hero Challenge in Broken Bluffs offers a view of the Precarious Ruin in The Doomteeth.",
@@ -993,9 +1480,15 @@
       "recommendedLevel": null,
       "name": "Precarious Ruin",
       "prereqs": [],
-      "order": 44,
+      "order": 49,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        0,
+        48
       ],
       "trailIndex": 2151,
       "wikiText": "The Precarious Ruin is a ruin leading to the Lost Precipice, one of the two guild halls located in the Heart of Maguuma.",

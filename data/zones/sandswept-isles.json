@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1271,
     "name": "Sandswept Isles",
@@ -44,6 +44,26 @@
       53768,
       57384
     ],
+    "floorCollection": {
+      "available": [
+        49
+      ],
+      "conflicts": [],
+      "counts": {
+        "49": {
+          "tasks": 4,
+          "points_of_interest": 36,
+          "skill_challenges": 0,
+          "sectors": 16
+        }
+      },
+      "unavailable": [
+        1,
+        3,
+        2,
+        0
+      ]
+    },
     "release": "lws4"
   },
   "primaryKind": "foot",
@@ -68,6 +88,9 @@
       ],
       "chatLink": "[&BEMLAAA=]",
       "waypointChatLink": "[&BEMLAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1,
       "wikiText": "Atholma is home to the Olmakhan charr tribe and the giant Kaarg the Gentle on Sandswept Isles."
     },
@@ -87,6 +110,9 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 22,
       "wikiText": "Malor's Ranch is a point of interest within the The Ruined Paths in the northern Sandswept Isles. The ranch is only a short walk east from the Atholma Waypoint.",
@@ -147,6 +173,9 @@
           56264
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 28,
       "wikiText": "Gather honey and hawk eggs, stomp beetle burrows with your mount, and rid the farms of pests",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -167,6 +196,9 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 72,
       "wikiText": "Driftwood Jetty is a point of interest in the middle of the northern shore of the Strait of Panube, southwest of the The Ruined Paths in Sandswept Isles. It is a spot used occasionally for spearfishing.",
@@ -189,6 +221,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 156,
       "wikiText": "The Iron Whale is a point of interest within the village of Atholma on the Sandswept Isles. It is the remnants of a giant, metal airship, and it has been refashioned as council hall for the Olmakhan elders.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -209,6 +244,9 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 184,
       "wikiText": "The Jemandi Market is a point of interest within the village of Atholma on the Sandswept Isles. It is located right next to the Atholma Waypoint.",
@@ -231,6 +269,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 193,
       "wikiText": "The Ritual Grounds is a point of interest located on a small island southwest in the village of Atholma.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -251,6 +292,9 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 227,
       "wikiText": "The Atholma Docks is a point of interest within the village of Atholma on the Sandswept Isles. It is located on a triangular platform above the water, west of the village.",
@@ -273,6 +317,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 255,
       "wikiText": "At the top of a mountain to the west of Atholma, within the Atholma Docks. You can access it easily via the springer or by gliding from the top of the nearby mountains.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -293,6 +340,9 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 325,
       "wikiText": "Olma's Legacy is a point of interest in the Sandswept Isles. The area is dominated by a large statue of Olma, the presumed original leader of the Olmakhan. She is said to be the first Sandshifter.",
@@ -365,6 +415,9 @@
           55619
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 385,
       "wikiText": "The Hunting Grounds is an area used by the Olmakhan tribe for hunting.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -385,6 +438,9 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 412,
       "wikiText": "Ewyn's Retreat is a point of interest up on the mountain in the center of the Hunting Grounds in the northern Sandswept Isles. Here, the Olmakhan Ewyn's hut can be found, as well as burial mounds of his deceased friends.",
@@ -407,6 +463,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 511,
       "wikiText": "The Greytear Falls is a point of interest at the eastern coast of the northern Sandswept Isles.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -427,6 +486,9 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 523,
       "wikiText": "Skycavern Burial Grounds is a point of interest within The Hunting Grounds of the Sandswept Isles. The area consists of an open decorated cavern with several burial mounds where the Olmakhan come to mourn their dead.",
@@ -449,6 +511,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 568,
       "wikiText": "Extremely east of the area, near a cliff. Can be found close to a tree, easily accessible by following the path or using a springer at the beach.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -470,6 +535,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 657,
       "wikiText": "Lab Sigma-05 is a point of interest in Calon Islet, on the eastern side of the Sandswept Isles. It can only be accessed via the Transport Facility Sigma-05, a hidden Inquest facility located in the Desert Highlands.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -490,6 +558,9 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 684,
       "wikiText": "Anniogel Landing is a point of interest at the Reserve Generator Site in the southern Sandswept Isles. It is a small Olmakhan encampment with a a Repair Anvil and a Bounty Board.",
@@ -514,6 +585,9 @@
       ],
       "chatLink": "[&BCULAAA=]",
       "waypointChatLink": "[&BCULAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 686,
       "wikiText": "Reserve Generator Site is an area in the eastern region of Sandswept Isles and provides power to Rata Primus. An Olmakhan scouting party has set camp nearby in their effort to hamper the Inquest."
     },
@@ -556,6 +630,9 @@
           57923
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 726,
       "wikiText": "Vandalize Inquest golems and technology, disable their defenses, and preserve local flora.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -576,6 +653,9 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 758,
       "wikiText": "Tunnel Access Gamma is a point of interest in the Eastern Complex area in the southern Sandswept Isles. It connects the exterior part of the Eastern Complex with a tunnel that leads inside the base below Rata Primus.",
@@ -598,6 +678,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 771,
       "wikiText": "The Magistorm Gallery is a point of interest in the Eastern Complex area in the southern Sandswept Isles. It is a large open structure outside the Inquest main base, the upper levels supported by several sloped stone beams.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -618,6 +701,9 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 828,
       "wikiText": "On the side of the generator site. Just climb one of its edges or use a springer.",
@@ -640,6 +726,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 829,
       "wikiText": "The Reserve Power Core is a point of interest at the Reserve Generator Site in the southern Sandswept Isles.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -661,6 +750,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 852,
       "wikiText": "The Necrobrand Emulation Lab is a point of interest in the Eastern Complex area in the southern Sandswept Isles.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -681,6 +773,9 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 902,
       "wikiText": "The Portalforge Lab is an Inquest lab inside the Invariant Enclave on the southernmost Sandswept Isle. As its name implies, this lab is used to experiment with non-asura gate portal technologies.",
@@ -729,6 +824,9 @@
           59051
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 926,
       "wikiText": "Grab a magneton hammer out of a nearby receptacle and use it to siphon energy from any glowing magneton capacitors floating high in the air. Then launch electromagnetic pulses to wreck the lab's defenses.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -749,6 +847,9 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 937,
       "wikiText": "The Magnetics Lab is a point of interest within Invariant Enclave.",
@@ -771,6 +872,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1030,
       "wikiText": "The Leyfinder Research Facility is a point of interest on Damos Isle-one of the southern Sandswept Isles. It is a large Inquest structure with a shield cannon on top.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -791,6 +895,9 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1058,
       "wikiText": "The Effluent Outflow Network is a point of interest near Damos Isle-one of the southern Sandswept Isles. It is a narrow canyon filled with several pipes that has to be traversed during the Skimmer race around Rata Primus.",
@@ -813,6 +920,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1077,
       "wikiText": "The Rata Primus Canal is a point of interest at the southern end of Rata Primus. It serves as an entrance to the Inquest base from the southern Sandswept Isles.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -833,6 +943,9 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1089,
       "wikiText": "The Deepwater Cooling Sink is a point of interest right below the floating Rata Primus in the southern Sandswept Isles.",
@@ -855,6 +968,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1096,
       "wikiText": "Tunnel Access Beta is a point of interest below the floating Rata Primus in the southern Sandswept Isles. It connects the central area of the Inquest base with the Western Complex.",
       "waypointChatLink": "[&BCULAAA=]"
@@ -875,6 +991,9 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1109,
       "wikiText": "Tunnel Access Alpha is a point of interest below the floating Rata Primus in the southern Sandswept Isles. The tunnel leads from the center of the Inquest base north towards the Eastern Complex.",
@@ -897,6 +1016,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1144,
       "wikiText": "Tunnel Access Delta is a point of interest at the northern end of the southern Sandswept Isle. This gate here leads into the Western Complex of Rata Primus.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -917,6 +1039,9 @@
       "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1177,
       "wikiText": "Specimen Chamber is a sealed chamber deep within Western Complex. It houses six powerful dragon minions, one pertaining to each Elder Dragon near Central Tyria, and one that holds the energy of multiple Elder Dragons.",
@@ -939,6 +1064,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1228,
       "wikiText": "Communications Control is a point of interest within Rata Primus's Western Complex. This control center is visited during the story mission the Road to Rata Primus in order to access the top of the comm tower via the portal inside.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -959,6 +1087,9 @@
       "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1277,
       "wikiText": "Tunnel Access Epsilon is a point of interest in the Western Complex area in the southern Sandswept Isles. It serves as an entrance to the Western Complex from the Griffonstone Buttresses.",
@@ -981,6 +1112,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1293,
       "wikiText": "The Cerberus Watchtowers is a point of interest on a floating Inquest platform high above the Griffonstone Buttresses. This location is most notable for being the arena for the Dominus Crystallum fight.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -1002,6 +1136,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1296,
       "wikiText": "On a little stone arch near the giant parable. Simply jump from stone pillar to stone pillar, or use a springer.",
       "waypointChatLink": "[&BEMLAAA=]"
@@ -1022,6 +1159,9 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1305,
       "wikiText": "The Communications Array is a large Inquest tower on top of the Western Complex in the southern Sandswept Isles.",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1228,
     "name": "Elon Riverlands",
@@ -44,6 +44,26 @@
       59868,
       46284
     ],
+    "floorCollection": {
+      "available": [
+        49
+      ],
+      "conflicts": [],
+      "counts": {
+        "49": {
+          "tasks": 6,
+          "points_of_interest": 44,
+          "skill_challenges": 8,
+          "sectors": 20
+        }
+      },
+      "unavailable": [
+        1,
+        3,
+        2,
+        0
+      ]
+    },
     "release": "pof"
   },
   "primaryKind": "foot",
@@ -100,6 +120,9 @@
           45149
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 29,
       "wikiText": "Wrestle air djinn loose from Forgotten pillars to obtain their glyphs, secure Forgotten reliquaries from sand sharks, and awaken inquisitive djinn from their urns and correctly answer their questions.",
       "waypointChatLink": "[&BFMKAAA=]"
@@ -120,6 +143,9 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 48,
       "wikiText": "The Scattered Remnants is a point of interest in the Skyward Reach.",
@@ -142,6 +168,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 79,
       "wikiText": "Threefold Waylay is a Point of Interest in the Skyward Reach. This Forgotten ruin was Branded over when the Elder Dragon Kralkatorrik flew above it while making its way towards Vabbi.",
       "waypointChatLink": "[&BFMKAAA=]"
@@ -162,6 +191,9 @@
       "order": 3,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 85,
       "wikiText": "Forgotten Shrine is a communing hero challenge in Skyward Reach in Elon Riverlands.",
@@ -186,6 +218,9 @@
       ],
       "chatLink": "[&BFMKAAA=]",
       "waypointChatLink": "[&BFMKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 131,
       "wikiText": "Skyward Reach is a series of hills and canyons that encircle Augury Rock, and is named after the tall mesa. Most Followers of Ascension can be found here, either at their camps or out accomplishing various tasks."
     },
@@ -205,6 +240,9 @@
       "order": 5,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 224,
       "wikiText": "The Branded Relic is the statue of a Forgotten enclosed in a branded crystal in the northeastern corner of the Ustulate Barrens in the Elon Riverlands. Examining it summons a Veteran Branded Forgotten Priest to fight.",
@@ -269,6 +307,9 @@
           46078
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 294,
       "wikiText": "Defeat migrating Branded, including the infamous Hydras, reveal veteran devourers by culling minions, and destroy battleshards to mine slivers.",
       "waypointChatLink": "[&BFMKAAA=]"
@@ -290,6 +331,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 334,
       "wikiText": "Decimation Bend is a point of interest in the Ustulate Barrens, which is located in the northeast corner of the Elon Riverlands.",
       "waypointChatLink": "[&BFMKAAA=]"
@@ -310,6 +354,9 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 402,
       "wikiText": "Dragoon Hearth is a large cave area within the Whispering Grottos.",
@@ -365,6 +412,9 @@
           60568,
           46459
         ]
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 498,
       "wikiText": "Protect fieldworkers, distribute supplies to carts for collection, convince restless exiles to defect north, and defend exiles from Awakened collectors and other threats.",
@@ -429,6 +479,9 @@
           46120
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 545,
       "wikiText": "Recover cairn stones from eel nests to repair trail markers, conceal supply caches from Awakened patrols, recover scavenged supplies, and clear desert threats.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -452,6 +505,9 @@
       ],
       "chatLink": "[&BCgKAAA=]",
       "waypointChatLink": "[&BCgKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 577,
       "wikiText": "The Arid Gladefields is an area in the Elon Riverlands that contains villages of exiles and is the starting point for many defectors making their way north to Amnoon."
     },
@@ -471,6 +527,9 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 625,
       "wikiText": "Palawa's Grace is the prison village where exiles from Elona are sentenced to live as they work the farms along the Elon River's gladefields.",
@@ -493,6 +552,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 656,
       "wikiText": "At the summit of the stone structure, use the springer.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -513,6 +575,9 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 735,
       "wikiText": "Southwest, easy to access by following the path, top of a small hill.",
@@ -535,6 +600,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 752,
       "wikiText": "Fallen Giant is a communing hero challenge in Arid Gladefields. This is the remains of the Lonely Vigil which had fallen 250 years ago. The statue's feet rest in Elon Flow, and its head, chest, and arms rest in Arid Gladefields",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -555,6 +623,9 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 762,
       "wikiText": "Lonely Vigil is a giant fallen statue within the Elon Flow. It was once one of the tallest of such statues, and had fallen 250 years ago. The pieces of the statue almost form a bridge between two mesas.",
@@ -577,6 +648,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 812,
       "wikiText": "Elon Falls is a large waterfall in the eastern part of Elon Flow.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -597,6 +671,9 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 848,
       "wikiText": "Stoneyard Rest is an area with fallen statues located in Elon Flow. There is also a defector camp nearby waiting to help guide Defectors.",
@@ -619,6 +696,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 945,
       "wikiText": "The Triumph of Palawa Joko is a large statue of Palawa Joko.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -639,6 +719,9 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 950,
       "wikiText": "Top of the stone pillar structure, use the springer.",
@@ -661,6 +744,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 979,
       "wikiText": "The Sepulcher is the inner area within The Deadhouse prison in Elon Riverlands. The prison is guarded by the Awakened.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -681,6 +767,9 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1041,
       "wikiText": "The Joko Gate is a large bone gate separating Elon Riverlands and The Desolation. It is guarded by multiple Awakened forces.",
@@ -703,6 +792,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1214,
       "wikiText": "Throne of Pellentia is a point of interest, a ruined throne built by Turai Ossa to attract the attention of the Gods.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -723,6 +815,9 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1220,
       "wikiText": "Throne of Pellentia is a point of interest, a ruined throne built by Turai Ossa to attract the attention of the Gods.",
@@ -745,6 +840,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1242,
       "wikiText": "Easy to access again, climb by yourself by jumping on the debris and ruins.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -765,6 +863,9 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1265,
       "wikiText": "Bahdaj Vigil is a point of interest in the Shallows of Despair, located in the southwest corner of the Elon Riverlands.",
@@ -787,6 +888,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1376,
       "wikiText": "Pillars of Supremacy is a tall mesa occupied by the Forged in the Skimshallow Cove.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -807,6 +911,9 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1446,
       "wikiText": "Easy to access, under a palm tree.",
@@ -829,6 +936,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1447,
       "wikiText": "Pilgrims' Folly is a ruin in the Elon Riverbank area of the Elon Riverlands.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -849,6 +959,9 @@
       "order": 30,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1479,
       "wikiText": "Lohrashi the Mournful is a human ghost found southeast of the Skimmer Ranch.",
@@ -871,6 +984,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1506,
       "wikiText": "Garden of the Chosen is a Point of Interest on top of a mesa in Vulture Drifts.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -892,6 +1008,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1561,
       "wikiText": "Exile's Rest is a graveyard that is the resting area of dead exiles fleeing Palawa Joko.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -912,6 +1031,9 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1604,
       "wikiText": "Fallback Fissure is a cave located in Champion's Gap in the Elon Riverlands.",
@@ -1008,6 +1130,9 @@
           46285
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1638,
       "wikiText": "Help the ranch by returning lost skimmers to their pens, stopping Forged raids, delivering rations to lookouts, and healing injured villagers with a skimmer's Barrel Roll.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -1031,6 +1156,9 @@
       ],
       "chatLink": "[&BGcKAAA=]",
       "waypointChatLink": "[&BGcKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1648,
       "wikiText": "Skimmer Ranch is an area in the Elon Riverlands where players can acquire the skimmer mount."
     },
@@ -1050,6 +1178,9 @@
       "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1737,
       "wikiText": "Skritt's Audience is a Point of Interest within The Scavengelands. There are several pieces of large statues in the area, with scaffolding around them.",
@@ -1072,6 +1203,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1763,
       "wikiText": "Sandwallow Retreat is a point of interest located in Champion's Gap in the Elon Riverlands. A skimmer is needed to access it.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -1092,6 +1226,9 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1801,
       "wikiText": "Near the ruin of a Palawa Joko statue.",
@@ -1114,6 +1251,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1865,
       "wikiText": "Fresh Meat is a combat hero challenge in Deadlock Sweep. Attempting to take the meat will cause the player to be attacked by sand lions",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -1134,6 +1274,9 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1906,
       "wikiText": "Ossa's Defeat is a point of interest located in the very northwest of Deadlock Sweep in Elon Riverlands.",
@@ -1156,6 +1299,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1949,
       "wikiText": "At the south, top of the hill. Get up with the springer.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -1176,6 +1322,9 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1975,
       "wikiText": "Syrtic Impasse is a point of interest surrounded by quicksand in Deadlock Sweep, Elon Riverlands.",
@@ -1198,6 +1347,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2015,
       "wikiText": "Giant's Rise is a Point of Interest within Prophet's Path area.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -1218,6 +1370,9 @@
       "order": 44,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2044,
       "wikiText": "Godslost Sandfalls is a lake of quicksand found in the Skyward Reach. Beneath the lake lies the Cave of the Lost, which is full of statues of the Six Gods, and likely the origin of Godslost Sandfalls' name.",
@@ -1240,6 +1395,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2075,
       "wikiText": "Heroes' Overlook is a haunted outpost located in the Skyward Reach. This place was once used as the gateway to Augury Rock and the Hall of Ascension.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -1260,6 +1418,9 @@
       "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2099,
       "wikiText": "Climb the different stone pillars, use the springer to get up and then, use the raptor to jump from a stone pillar to another.",
@@ -1282,6 +1443,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2152,
       "wikiText": "Veteran Trunt is a giant found in an isolated camp in the Elon Riverlands.",
       "waypointChatLink": "[&BGcKAAA=]"
@@ -1302,6 +1466,9 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2204,
       "wikiText": "Leviathan's Gullet is a small underground cave in The Quickmire, entered through a leviathan skeleton. The cave is occupied and guarded by the Awakened.",
@@ -1324,6 +1491,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2234,
       "wikiText": "The General's Grave is a combat hero challenge in The Quickmire. Like most graves in the Crystal Desert, the inhabitant is still available to greet you with a trial by combat.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -1344,6 +1514,9 @@
       "order": 50,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2257,
       "wikiText": "Summit of the ruins, can be climbed like a jumping puzzle or by using the springer.",
@@ -1366,6 +1539,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2296,
       "wikiText": "Sandbound Towers is a Point of Interest located in the The Quickmire. The ruins of structures are standing in a large lake of quicksand. Human bodies are also scattered along the edges of the quicksand.",
       "waypointChatLink": "[&BCgKAAA=]"
@@ -1386,6 +1562,9 @@
       "order": 52,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2364,
       "wikiText": "The Second Camp is a point of interest in the Skyward Reach. It is a Followers of Ascension camp located near Branded lands.",
@@ -1408,6 +1587,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2394,
       "wikiText": "First Camp is a point of interest in Skyward Reach. This is the first camp of the Followers of Ascension, a group of people looking to ascend at Augury Rock like the heroes of old.",
       "waypointChatLink": "[&BFMKAAA=]"
@@ -1428,6 +1610,9 @@
       "order": 54,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2420,
       "wikiText": "At the south of the Augury Rock, climb inside or outside with the help of the springer.",
@@ -1484,6 +1669,9 @@
           45566
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2477,
       "wikiText": "Defeat Branded Forgotten, and destroy the crystals and seeds that protect them. Gather the lights of the Forgotten from the prophecy verses inside Augury Rock.",
       "waypointChatLink": "[&BFMKAAA=]"
@@ -1504,6 +1692,9 @@
       "order": 56,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2499,
       "wikiText": "The Hall of Ascension can be found inside the mesa at Augury Rock in Elon Riverlands. It was where the final test of Ascension, defeating a Doppelganger, happened.",

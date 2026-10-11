@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1195,
     "name": "Draconis Mons",
@@ -33,17 +33,53 @@
     "sectorRect": [
       [
         35466,
-        40449.8
+        40401.4
       ],
       [
-        37775,
-        42959.4
+        38006.2,
+        43039.3
       ]
     ],
     "labelCoord": [
       36518,
       41584
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 4,
+          "points_of_interest": 15,
+          "skill_challenges": 0,
+          "sectors": 4
+        },
+        "3": {
+          "tasks": 4,
+          "points_of_interest": 12,
+          "skill_challenges": 0,
+          "sectors": 5
+        },
+        "2": {
+          "tasks": 4,
+          "points_of_interest": 19,
+          "skill_challenges": 0,
+          "sectors": 6
+        },
+        "0": {
+          "tasks": 4,
+          "points_of_interest": 12,
+          "skill_challenges": 0,
+          "sectors": 5
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws3"
   },
   "primaryKind": "foot",
@@ -68,8 +104,39 @@
       ],
       "chatLink": "[&BL0JAAA=]",
       "waypointChatLink": "[&BL0JAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3,
       "wikiText": "Mariner Landing is an area of Draconis Mons. It is the entry point to the zone, first reached after boarding a Pact submarine during the events of Arrival and Survival."
+    },
+    {
+      "stepId": "1195:poi:2499",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2499",
+      "coord": [
+        36062,
+        41935
+      ],
+      "recommendedLevel": null,
+      "name": "Sub Landing",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        0
+      ],
+      "trailIndex": 8,
+      "wikiText": "The Sub Landing is a point of interest in Mariner Landing. It is the spot that marks where the Pact submarine that was boarded in Rata Sum first arrived in Draconis Mons.",
+      "waypointChatLink": "[&BL0JAAA=]"
     },
     {
       "stepId": "1195:vista:2496",
@@ -84,9 +151,15 @@
       "recommendedLevel": null,
       "name": "Wind Rider Ledge (1)",
       "prereqs": [],
-      "order": 1,
+      "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 31,
       "wikiText": "The Wind Rider Ledge is an area in Draconis Mons. As the name suggests, the area is mostly populated by wind riders.",
@@ -105,9 +178,12 @@
       "recommendedLevel": null,
       "name": "Scout's Clearing",
       "prereqs": [],
-      "order": 2,
+      "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1
       ],
       "trailIndex": 451,
       "wikiText": "The Scout's Clearing is a point of interest in the Savage Rise. Vigil forces are attempting to rescue members of their scouting party from the dangers of Draconis Mons.",
@@ -126,7 +202,7 @@
       "recommendedLevel": 80,
       "name": "Help the scouting party.",
       "prereqs": [],
-      "order": 3,
+      "order": 4,
       "source": [
         "gw2api:tasks"
       ],
@@ -156,6 +232,12 @@
           42124
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 455,
       "wikiText": "Rescue scouts from entangling vines. Secure the perimeter by investigating suspicious bushes or by hunting local predators.",
       "waypointChatLink": "[&BL0JAAA=]"
@@ -173,12 +255,43 @@
       "recommendedLevel": null,
       "name": "Savage Rise",
       "prereqs": [],
-      "order": 4,
+      "order": 5,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 495,
       "wikiText": "Head south from Mariner's and up the hill into Savage Rise, vista is on a spike of rock near some cliffs. Oakheart essence can launch you to a nearby cliff and glide down to the vista.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2490",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2490",
+      "coord": [
+        36863,
+        42436
+      ],
+      "recommendedLevel": null,
+      "name": "Zeta Vault",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        0
+      ],
+      "trailIndex": 498,
+      "wikiText": "Zeta Vault is an area in lower Draconis Mons. It is one of the four vaults built on and around the volcano by the asura that escaped from Rata Novus.",
       "waypointChatLink": "[&BM0JAAA=]"
     },
     {
@@ -194,9 +307,12 @@
       "recommendedLevel": null,
       "name": "Viraddi's Salvation",
       "prereqs": [],
-      "order": 5,
+      "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1
       ],
       "trailIndex": 663,
       "wikiText": "Viraddi's Salvation is a point of interest in the Savage Rise area of Draconis Mons. This small crevice is used by Scientist Viraddi as a place to hide from the dangerous creatures roaming the area.",
@@ -215,12 +331,39 @@
       "recommendedLevel": null,
       "name": "Eternal Pool",
       "prereqs": [],
-      "order": 6,
+      "order": 8,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1
+      ],
       "trailIndex": 763,
       "wikiText": "The Eternal Pool is a point of interest in the Savage Rise. This shallow underground pool ringed with ancient, broken stone pillars is guarded by angered nature spirits.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2513",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2513",
+      "coord": [
+        36027,
+        42111
+      ],
+      "recommendedLevel": null,
+      "name": "Burial Chamber",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 879,
+      "wikiText": "The Burial Chamber is a point of interest in the Golemancer's Tomb. It is the resting place of Zinn, renown asuran golemancer who founded both Rata Novus and Rata Arcanum.",
       "waypointChatLink": "[&BL0JAAA=]"
     },
     {
@@ -236,12 +379,42 @@
       "recommendedLevel": null,
       "name": "Wind Rider Ledge (2)",
       "prereqs": [],
-      "order": 7,
+      "order": 10,
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1090,
       "wikiText": "The Wind Rider Ledge is an area in Draconis Mons. As the name suggests, the area is mostly populated by wind riders.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2492",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2492",
+      "coord": [
+        35888,
+        41807
+      ],
+      "recommendedLevel": null,
+      "name": "Asura Gate",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1115,
+      "wikiText": "Asura Gate can refer to one of these: Asura gate, an overview of the method of transportation. Ancient Gate, the gate found in Eye of the North, used to teleport to various places including Strike Missions and Dragon Response Missions.",
       "waypointChatLink": "[&BL0JAAA=]"
     },
     {
@@ -257,7 +430,7 @@
       "recommendedLevel": 80,
       "name": "Infiltrate the Inquest.",
       "prereqs": [],
-      "order": 8,
+      "order": 12,
       "source": [
         "gw2api:tasks"
       ],
@@ -299,9 +472,87 @@
           42014
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1159,
       "wikiText": "Defeat Inquest, collect datamagic cameras, and use keypads to sabotage Inquest devices.",
       "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2516",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2516",
+      "coord": [
+        36048,
+        41515
+      ],
+      "recommendedLevel": null,
+      "name": "Inquest Field Lab",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1170,
+      "wikiText": "The Inquest Field Lab is a point of interest in Rata Arcanum. It a large camp that has been established by the Inquest to further study and excavate the ruined colony.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2515",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2515",
+      "coord": [
+        36250,
+        41352
+      ],
+      "recommendedLevel": null,
+      "name": "Nu II Vault",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1209,
+      "wikiText": "Nu II Vault is a point of interest in Rata Arcanum. It is one of four vaults in and around Draconis Mons built years ago by asura who fled Rata Novus.",
+      "waypointChatLink": "[&BNUJAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2500",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2500",
+      "coord": [
+        36556,
+        41257
+      ],
+      "recommendedLevel": null,
+      "name": "Sandstone Archway",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1246,
+      "wikiText": "The Sandstone Archway is a point of interest in the Scalding Gorge. This natural rock formation towers above everything else in the gorge.",
+      "waypointChatLink": "[&BNUJAAA=]"
     },
     {
       "stepId": "1195:poi:2518",
@@ -316,9 +567,12 @@
       "recommendedLevel": null,
       "name": "Nu Vault",
       "prereqs": [],
-      "order": 9,
+      "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1
       ],
       "trailIndex": 1254,
       "wikiText": "Nu Vault is a point of interest in the Ancient Hollow. It is one of four vaults in and around Draconis Mons built years ago by Asura who fled Rata Novus.",
@@ -337,7 +591,7 @@
       "recommendedLevel": 80,
       "name": "Assist the ancient golems.",
       "prereqs": [],
-      "order": 10,
+      "order": 17,
       "source": [
         "gw2api:tasks"
       ],
@@ -371,6 +625,12 @@
           40874
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1265,
       "wikiText": "Search for parts to repair broken golems. Investigate uncanny mushrooms, and eliminate spiders nesting in the area.",
       "waypointChatLink": "[&BNUJAAA=]"
@@ -388,9 +648,15 @@
       "recommendedLevel": null,
       "name": "Ancient Hollow (1)",
       "prereqs": [],
-      "order": 11,
+      "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1278,
       "wikiText": "The Ancient Hollow is an area of Draconis Mons. A large colony of jungle spiders inhabit this damp cave. Multiple golem remains can be found here, scattered about the place.",
@@ -409,9 +675,12 @@
       "recommendedLevel": null,
       "name": "Golem Graveyard",
       "prereqs": [],
-      "order": 12,
+      "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1
       ],
       "trailIndex": 1282,
       "wikiText": "The Golem Graveyard is a point of interest in the Ancient Hollow. Remains from golems that were left to fend for themselves on Draconis Mons when their creators, the Asura from Rata Arcanum, including Zinn, died can be found here.",
@@ -430,14 +699,44 @@
       "recommendedLevel": null,
       "name": "Ancient Hollow Waypoint",
       "prereqs": [],
-      "order": 13,
+      "order": 20,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BNUJAAA=]",
       "waypointChatLink": "[&BNUJAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1305,
       "wikiText": "The Ancient Hollow is an area of Draconis Mons. A large colony of jungle spiders inhabit this damp cave. Multiple golem remains can be found here, scattered about the place."
+    },
+    {
+      "stepId": "1195:poi:2514",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2514",
+      "coord": [
+        37036,
+        41084
+      ],
+      "recommendedLevel": null,
+      "name": "Iota Vault",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1365,
+      "wikiText": "Iota Vault is a point of interest in the Heathen's Hold. It is one of four vaults in and around Draconis Mons built years ago by Asura who fled Rata Novus.",
+      "waypointChatLink": "[&BNUJAAA=]"
     },
     {
       "stepId": "1195:poi:2505",
@@ -452,9 +751,12 @@
       "recommendedLevel": null,
       "name": "Peace Grounds",
       "prereqs": [],
-      "order": 14,
+      "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1
       ],
       "trailIndex": 1515,
       "wikiText": "The Peace Grounds is a point of interest in the Savage Rise.",
@@ -473,9 +775,12 @@
       "recommendedLevel": null,
       "name": "Druid's Grotto",
       "prereqs": [],
-      "order": 15,
+      "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1
       ],
       "trailIndex": 1815,
       "wikiText": "Druid's Grotto is a point of interest in the Savage Rise. It is an underground grotto kept lush and verdant by the druids who protect Draconis Mons. The druid Kodama can be found inside.",
@@ -494,12 +799,18 @@
       "recommendedLevel": null,
       "name": "Heathen's Hold Waypoint",
       "prereqs": [],
-      "order": 16,
+      "order": 24,
       "source": [
         "gw2api:poi"
       ],
       "chatLink": "[&BM0JAAA=]",
       "waypointChatLink": "[&BM0JAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1845,
       "wikiText": "The Heathen's Hold is an area in Draconis Mons. A stronghold has been established here by Balthazar's Mercenaries in order to defend the approach to the Gate of Fire."
     },
@@ -516,7 +827,7 @@
       "recommendedLevel": 80,
       "name": "Help the Prisoners",
       "prereqs": [],
-      "order": 17,
+      "order": 25,
       "source": [
         "gw2api:tasks"
       ],
@@ -554,6 +865,12 @@
           41506
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1851,
       "wikiText": "Free prisoners, defeat mercenaries, and light fires by using oil drums to make a trail from flammable material to lava.",
       "waypointChatLink": "[&BM0JAAA=]"
@@ -571,13 +888,189 @@
       "recommendedLevel": null,
       "name": "Ancient Hollow (2)",
       "prereqs": [],
-      "order": 18,
+      "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1950,
       "wikiText": "Bouncing mushrooms at the base of a giant root, to NW of waypoint, bounce two mushrooms and then climb up some rocks to the east and walk across the giant stone arch.",
       "waypointChatLink": "[&BNUJAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2508",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2508",
+      "coord": [
+        37145,
+        41194
+      ],
+      "recommendedLevel": null,
+      "name": "Mercenary Encampment",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1954,
+      "wikiText": "The Mercenary Encampment is a point of interest in the Heathen's Hold. It is a camp established by Balthazar's Mercenaries to guard access to the Gate of Fire.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2507",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2507",
+      "coord": [
+        37042,
+        41340
+      ],
+      "recommendedLevel": null,
+      "name": "Wurm's Furnace",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1962,
+      "wikiText": "The Wurm's Furnace is a point of interest in the Heathen's Hold. This lava pool is inhabited by a wurm that has been captured and forcefully empowered via the feeding of Bloodstone shards by Balthazar's Mercenaries.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2503",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2503",
+      "coord": [
+        37177,
+        41401
+      ],
+      "recommendedLevel": null,
+      "name": "Prisoner's Perch",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 1973,
+      "wikiText": "The Prisoner's Perch is a point of interest in the Heathen's Hold. It is a holding area for prisoners at the Mercenary Encampment.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2519",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2519",
+      "coord": [
+        36812,
+        41696
+      ],
+      "recommendedLevel": null,
+      "name": "Gate of Fire",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 2011,
+      "wikiText": "The Gate of Fire is a point of interest in Titan's Throat. It stands in the entrance to the heart of the volcano inside Draconis Mons.",
+      "waypointChatLink": "[&BM0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2511",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2511",
+      "coord": [
+        36582,
+        41657
+      ],
+      "recommendedLevel": null,
+      "name": "Searing Ascent",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        2
+      ],
+      "trailIndex": 2036,
+      "wikiText": "Searing Ascent is a jumping puzzle in Draconis Mons, starting at the Searing Ascent point of interest.",
+      "waypointChatLink": "[&BL0JAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2504",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2504",
+      "coord": [
+        35962,
+        41176
+      ],
+      "recommendedLevel": null,
+      "name": "Seething Pillar",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        0
+      ],
+      "trailIndex": 2041,
+      "wikiText": "The Seething Pillar is a point of interest in the Western Boiling Sea. It is a seemingly natural, flat-topped pillar rising out of the water.",
+      "waypointChatLink": "[&BNUJAAA=]"
+    },
+    {
+      "stepId": "1195:poi:2497",
+      "mapId": 1195,
+      "zoneName": "Draconis Mons",
+      "type": "poi",
+      "objectiveId": "2497",
+      "coord": [
+        37212,
+        41455
+      ],
+      "recommendedLevel": null,
+      "name": "Frothing Pedestal",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        3,
+        0
+      ],
+      "trailIndex": 2052,
+      "wikiText": "The Frothing Pedestal is a point of interest in the Eastern Boiling Sea. It is a seemingly natural, flat-topped pillar rising out of the water.",
+      "waypointChatLink": "[&BM0JAAA=]"
     }
   ],
   "hasTrail": true

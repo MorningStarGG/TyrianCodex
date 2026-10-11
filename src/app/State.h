@@ -20,7 +20,8 @@ enum class ViewerMode
     Dungeon,
     Travel,
     Complete,
-    Step
+    Step,
+    Checklist // objectives and details are available; no authored navigation route
 };
 
 // The content type driving the active route guidance. OpenWorld = the leveling guide; Dungeon = an instance
@@ -271,10 +272,19 @@ struct GuidanceSnapshot
 // owns them and hands each subsystem the narrow ref it needs.) Moved verbatim from entry.cpp's runtime
 // globals; field names are the old g_ names minus the prefix (g_Zone -> zone to avoid shadowing the type).
 // -----------------------------------------------------------------------------------------------------
+struct HeartDetailView
+{
+    std::string Owner;
+    char Search[160] = {};
+    bool Expanded = false;
+};
+
 struct GuideState
 {
     // Active open-world zone
     Zone zone;                // currently ACTIVE zone (copied from App::zones on each map change)
+    bool CanGuide() const { return zone.CanGuide(); }
+    HeartDetailView heartGuideDetails, heartWorldDetails;
     uint32_t activeMapId = 0; // map id `zone` currently reflects (0 = none/off-route)
 
     // Dungeon / instance runtime (spot-to-spot). When the current map is a dungeon we run instance guidance

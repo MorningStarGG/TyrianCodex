@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1263,
     "name": "Domain of Istan",
@@ -44,6 +44,42 @@
       57168,
       61884
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 3,
+          "points_of_interest": 36,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "3": {
+          "tasks": 3,
+          "points_of_interest": 36,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "2": {
+          "tasks": 3,
+          "points_of_interest": 36,
+          "skill_challenges": 0,
+          "sectors": 13
+        },
+        "0": {
+          "tasks": 3,
+          "points_of_interest": 36,
+          "skill_challenges": 0,
+          "sectors": 13
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws4"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BAkLAAA=]",
       "waypointChatLink": "[&BAkLAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1,
       "wikiText": "Chalon Docks is an area in the Domain of Istan. It serves as an entry point for access to the zone from the Crystal Desert."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 95,
       "wikiText": "Skylight Vault is a point of interest located in the Modri Caverns, very close to the Skyclad Mushrooms required as part of the story step Convincing the Corsair.",
@@ -109,6 +157,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 171,
       "wikiText": "The Skimming Stone is a Corsair ship docking in the Corsair Flotilla. She is crewed by the Stonefist Crew and helmed by Captain Randa.",
       "waypointChatLink": "[&BAkLAAA=]"
@@ -129,6 +183,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 209,
       "wikiText": "The Dark Leviathan is a corsair ship commanded by Captain Sayida the Sly of the Sly Crew.",
@@ -151,6 +211,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 243,
       "wikiText": "Inside a wooden clocktower, easy to reach via the wooden stairs and/or mounts.",
       "waypointChatLink": "[&BPoKAAA=]"
@@ -171,6 +237,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 254,
       "wikiText": "Freetrader Haven is located at the heart of the Corsair Flotilla in the Domain of Istan. It is where various corsair crews meet to socialize, trade, repair ships and resupply under the rules of parley.",
@@ -247,6 +319,12 @@
           60856
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 255,
       "wikiText": "Break up fights, salvage shipwrecked goods, return pillaged supplies, test Mehdi's grog, rouse sleeping corsairs, and catch bombs with water buckets.",
       "waypointChatLink": "[&BPoKAAA=]"
@@ -267,6 +345,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 273,
       "wikiText": "The Wobbling Skies is a Corsair airship docking in the Corsair Flotilla. She is crewed by the Alehound Crew and captained by Brewmaster Asef. The Alehounds captured this airship after a drunken raid.",
@@ -289,6 +373,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 371,
       "wikiText": "Warden's Quarters is a Point of Interest located in the Mordant Crescent Great Hall.",
       "waypointChatLink": "[&BAkLAAA=]"
@@ -309,6 +399,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 388,
       "wikiText": "Plaza of Resurgence is a Point of Interest located in the Mordant Crescent Great Hall. It is protected by several Awakened forces.",
@@ -331,6 +427,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 445,
       "wikiText": "The Lahdok Craterlands are a series of tar-filled craters in the Plains of Jarin. Tar Elementals infest these pits.",
       "waypointChatLink": "[&BBoLAAA=]"
@@ -352,6 +454,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 539,
       "wikiText": "Mirror of the Moon is one of the four mirrors surrounding The Astralarium in the Domain of Istan.",
       "waypointChatLink": "[&BPoKAAA=]"
@@ -372,6 +480,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 598,
       "wikiText": "The Broken Observation Tower is a badly damaged tower found to the northern side of The Astralarium in the Domain of Istan.",
@@ -408,6 +522,12 @@
           60799
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 623,
       "wikiText": "Realign and repair telescopes and mirrors, record star readings, clean obelisk engravings, and reshelve lost books.",
       "waypointChatLink": "[&BPoKAAA=]"
@@ -428,6 +548,12 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 645,
       "wikiText": "Found at the summit of the Astralarium, at the highest tower; use the stairs or your mounts to climb the top.",
@@ -452,6 +578,12 @@
       ],
       "chatLink": "[&BPoKAAA=]",
       "waypointChatLink": "[&BPoKAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 651,
       "wikiText": "The Astralarium is a large observatory situated in the north-west of the Domain of Istan. It is a home to many astronomers and scholars, and people from all around Elona visited here to learn."
     },
@@ -471,6 +603,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 669,
       "wikiText": "Mirror of the Earth is one of the four mirrors surrounding The Astralarium in the Domain of Istan.",
@@ -493,6 +631,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 697,
       "wikiText": "Mirror of the Sun is one of the four mirrors surrounding The Astralarium in the Domain of Istan.",
       "waypointChatLink": "[&BPoKAAA=]"
@@ -513,6 +657,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 697,
       "wikiText": "Mirror of the Stars is one of the four mirrors surrounding The Astralarium in the Domain of Istan.",
@@ -535,6 +685,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 731,
       "wikiText": "Jakumba's Legacy is a massive windmill in the Zehlon Breach.",
       "waypointChatLink": "[&BBoLAAA=]"
@@ -556,6 +712,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 776,
       "wikiText": "The Zehlon Waterworks is a large watermill at a waterfall in the Zehlon Breach.",
       "waypointChatLink": "[&BBoLAAA=]"
@@ -576,6 +738,12 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 808,
       "wikiText": "Top of the little mountain to the southwest of the waypoint, near an giant Elonian tent.",
@@ -600,6 +768,12 @@
       ],
       "chatLink": "[&BBoLAAA=]",
       "waypointChatLink": "[&BBoLAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 814,
       "wikiText": "Champion's Dawn is a town in Istan that had recently been liberated by the Istani Sunspears during Balthazar's war in the Crystal Desert, resulting in it being a place of contention between the Sunspears and Awakened."
     },
@@ -619,6 +793,12 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 875,
       "wikiText": "Field of the Hopeful is a point of interest in Champion's Dawn.",
@@ -707,6 +887,12 @@
           62357
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 909,
       "wikiText": "Feed the hungry, free prisoners, remove propaganda posters, and defeat Awakened forces.",
       "waypointChatLink": "[&BBoLAAA=]"
@@ -727,6 +913,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 976,
       "wikiText": "Grotto of the Defeated is a point of interest in Champion's Dawn, home to the Awakened Koss Dejarin. There are multiple Mordant Crescent Notices pinned to the walls as you enter the Grotto, reproduced below in order of appearance.",
@@ -749,6 +941,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 997,
       "wikiText": "Mehtani's Blade is a Corsair ship docked in Issnur Bay. It is inhabited by the Accursed Crew under captain Simoom the Accursed.",
       "waypointChatLink": "[&BBoLAAA=]"
@@ -769,6 +967,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1000,
       "wikiText": "Ancient Royal Docks are located in Churrhir Cliffs and act as a concealed entrance to Fahranur, the First City.",
@@ -791,6 +995,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1072,
       "wikiText": "Use sand portals and your springer to climb the whole rock structure, south of Palawadan, near a tar river.",
       "waypointChatLink": "[&BBoLAAA=]"
@@ -811,6 +1021,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1082,
       "wikiText": "Chahbek Thrust is a ruined village in Churrhir Cliffs. It used to be the training ground of new Sunspears.",
@@ -833,6 +1049,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1129,
       "wikiText": "The Temple of Joko is a point of interest in Palawadan, Jewel of Istan in the Domain of Istan.",
       "waypointChatLink": "[&BAkLAAA=]"
@@ -853,6 +1075,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1131,
       "wikiText": "Atop of the main pyramid, simply climb onto the sides to the summit.",
@@ -875,6 +1103,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1142,
       "wikiText": "Clanmarshal's Promenade is a point of interest in Palawadan, Jewel of Istan in the Domain of Istan.",
       "waypointChatLink": "[&BAkLAAA=]"
@@ -895,6 +1129,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1196,
       "wikiText": "The Stage of Sacrifice is a point of interest in Palawadan, Jewel of Istan in the Domain of Istan. This stage is situated directly opposite of the Palawadan Dormitories.",
@@ -917,6 +1157,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1211,
       "wikiText": "Palawadan Dormitories is a point of interest in Palawadan, Jewel of Istan in the Domain of Istan. The interior has many bunk beds arranged radially against the walls.",
       "waypointChatLink": "[&BAkLAAA=]"
@@ -937,6 +1183,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1227,
       "wikiText": "Hall of Judgment (Domain of Istan) Hall of Judgment (Hall of Chains)",
@@ -959,6 +1211,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1249,
       "wikiText": "The Sun Docks is a point of interest in Palawadan, Jewel of Istan in the Domain of Istan.",
       "waypointChatLink": "[&BAkLAAA=]"
@@ -980,6 +1238,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1275,
       "wikiText": "Crucible of the Apostate is a point of interest within Heretic's Arena.",
       "waypointChatLink": "[&BAkLAAA=]"
@@ -1000,6 +1264,12 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1317,
       "wikiText": "Near a giant Palawa Joko statue, climb the wooden platforms with your springer.",

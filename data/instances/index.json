@@ -910,6 +910,23 @@
       ]
     },
     {
+      "slug": "deeper-revelations-leyspring-hollows",
+      "mapId": 1640,
+      "name": "Deeper Revelations: Leyspring Hollows",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Castora",
+      "release": "voe",
+      "routes": [
+        {
+          "name": "Torchbearer",
+          "points": 590,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
       "slug": "deepest-secrets-yong-reactor",
       "mapId": 1416,
       "name": "Deepest Secrets: Yong Reactor",
@@ -2622,6 +2639,23 @@
         {
           "name": "Walkthrough",
           "points": 2067,
+          "markers": 0,
+          "instructions": 0
+        }
+      ]
+    },
+    {
+      "slug": "the-burden-of-seeing-doyen-s-adytum",
+      "mapId": 1630,
+      "name": "The Burden of Seeing: Doyen's Adytum",
+      "mode": "story",
+      "family": "story",
+      "regionName": "Castora",
+      "release": "voe",
+      "routes": [
+        {
+          "name": "The Burden of Seeing - Runes",
+          "points": 13,
           "markers": 0,
           "instructions": 0
         }

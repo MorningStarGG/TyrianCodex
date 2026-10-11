@@ -291,6 +291,8 @@ std::vector<Setting> Settings(App &app)
         SBool(SEC_MARKERS, "markerVista", "Vistas", "vista viewpoint marker", &app.config.kindEnabled[2], MarkersVisibilityId, MarkersVisibilityName),
         SBool(SEC_MARKERS, "markerHero", "Hero Points", "hero point skill challenge marker", &app.config.kindEnabled[3], MarkersVisibilityId, MarkersVisibilityName),
         SBool(SEC_MARKERS, "markerHeart", "Hearts", "heart renown task karma marker", &app.config.kindEnabled[4], MarkersVisibilityId, MarkersVisibilityName),
+        SBool(SEC_MARKERS, "worldHeartHints", "Heart task hints", "heart task hint world sign action", &app.config.worldHeartHints, MarkersVisibilityId, MarkersVisibilityName),
+        SBool(SEC_MARKERS, "worldHeartAnswers", "Nearby heart answers", "heart answer puzzle world panel", &app.config.worldHeartAnswers, MarkersVisibilityId, MarkersVisibilityName),
         SBool(SEC_MARKERS, "markerDungeon", "Dungeon markers", "dungeon marker instruction spot stack interact", &app.config.markerDungeon, MarkersVisibilityId, MarkersVisibilityName),
         SBool(SEC_MARKERS, "markerPersonal", "Personal target", "personal target marker waypoint alt click destination in-world", &app.config.showPersonalMarker, MarkersVisibilityId, MarkersVisibilityName),
         SBool(SEC_MARKERS, "gatherShow", "Gathering nodes", "gathering farming nodes overlay ore wood plant material in-world billboards", &app.config.gatherShow, MarkersVisibilityId, MarkersVisibilityName),

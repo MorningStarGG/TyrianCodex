@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1045,
     "name": "Tangled Depths",
@@ -44,6 +44,56 @@
       37004,
       34748
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "47": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "48": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 11,
+          "sectors": 18
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 11,
+          "sectors": 18
+        }
+      },
+      "unavailable": []
+    },
     "release": "hot"
   },
   "primaryKind": "foot",
@@ -68,6 +118,14 @@
       ],
       "chatLink": "[&BA4IAAA=]",
       "waypointChatLink": "[&BA4IAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 17,
       "wikiText": "Tangled Descent is the opening area of Tangled Depths."
     },
@@ -87,6 +145,14 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 21,
       "wikiText": "The Order of Whispers Camp can be found at the entrance of Tangled Depths. It serves as a mini-hub for the Order of Whispers members located there.",
@@ -109,6 +175,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 96,
       "wikiText": "High in the cliffs of Tangled Depths, a beautiful waterfall fuels the jungle's waters below. At its top is a commune point that will complete the Gilded River hero challenge upon interaction.",
       "waypointChatLink": "[&BMwHAAA=]"
@@ -129,6 +203,14 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 101,
       "wikiText": "Arboreal Overlook is a point of interest atop The Great Tree in Tangled Depths. It is a ledge overlooking Tangled Descent.",
@@ -151,6 +233,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 111,
       "wikiText": "From the waypoint, travel the same route as for the Gilded River hero point. The vista is to the left and slightly above this site. You will need to utilize additional updrafts to reach it.",
       "waypointChatLink": "[&BA4IAAA=]"
@@ -171,6 +261,14 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 163,
       "wikiText": "The Gnarled Roots are large tree roots towering over a large crevasse located in the Tangled Descent.",
@@ -193,6 +291,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 176,
       "wikiText": "Cave Trolls, Chak, and fungi await players who journey to this hero challenge, deep in the labyrinth of caves beneath the surface of Tangled Depths.",
       "waypointChatLink": "[&BA4IAAA=]"
@@ -213,6 +319,14 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 236,
       "wikiText": "The Order of Whispers Outpost is a base used by the order to monitor the Nuhoch Lane and the Ogre Lane.",
@@ -235,6 +349,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 311,
       "wikiText": "The center of the Chak Hatchery is full of ley-energy that fosters the newborn Chak. To enter, use the Nuhoch Wallow at the end of the Nuhoch Lane or swim through the underwater tunnels, exiting in the northwest.",
       "waypointChatLink": "[&BA4IAAA=]"
@@ -255,6 +377,14 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 353,
       "wikiText": "The Chak Staging Area is a point of interest just inside the Chak Stronghold, north of the Nuhoch Wallow entry point.",
@@ -279,6 +409,14 @@
       ],
       "chatLink": "[&BAwIAAA=]",
       "waypointChatLink": "[&BAwIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 567,
       "wikiText": "Teku Nuhoch is an area of Tangled Depths and is the capital of the Nuhoch hylek. The area around the waypoint provides Nuhoch Wallows to the Northern Confluence Tunnel, the Nuhoch Lane and the Undergrowth Connector."
     },
@@ -298,6 +436,14 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 620,
       "wikiText": "This Subterranean Lake located beneath Teku Nuhoch is home to a large group of dangerous skelk.",
@@ -320,8 +466,16 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 625,
-      "wikiText": "The Kaana's Terrace is where Kaana Pahua adresses her people.",
+      "wikiText": "The Kaana's Terrace is where Kaana Pahua addresses his people.",
       "waypointChatLink": "[&BAwIAAA=]"
     },
     {
@@ -340,6 +494,14 @@
       "order": 13,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 660,
       "wikiText": "The Inquisitor's Campsite can be found up a small ramp north of the Teku Nuhoch outpost, in an aggressive Zintl hylek camp.",
@@ -362,6 +524,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 826,
       "wikiText": "Hidden away in a cave guarded by many aggressive mushroom named foes stand a proud couple of royalty, a Veteran Mushroom King and a Veteran Mushroom Queen who seem to guard this spore cloud.",
       "waypointChatLink": "[&BAMIAAA=]"
@@ -382,6 +552,14 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 934,
       "wikiText": "From the big tree in Teku Nuhoch head west along the road that goes under ground, before going under ground head south along the cliff.",
@@ -404,6 +582,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 975,
       "wikiText": "The Ley Flow is a river of ley-line energy coursing through the Nuhoch Lane.",
       "waypointChatLink": "[&BMwHAAA=]"
@@ -425,6 +611,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1106,
       "wikiText": "The Terraced Hive is large chak hive located in the SCAR Lane.",
       "waypointChatLink": "[&BAAIAAA=]"
@@ -445,6 +639,14 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1158,
       "wikiText": "The Sheltered Clearing is a small Vigil camp located in the SCAR Bivouac.",
@@ -469,6 +671,14 @@
       ],
       "chatLink": "[&BAAIAAA=]",
       "waypointChatLink": "[&BAAIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1162,
       "wikiText": "The SCAR Bivouac is an area in Tangled Depths. Special Combat Airborne Recon, a Vigil team of mostly charr, has made camp here."
     },
@@ -488,6 +698,14 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1224,
       "wikiText": "Several Vine Walls protect the pathways leading to the Mordrem Vinewrath and its champions. The last wall in a lane will be reinforced so that it cannot be destroyed until it's the lane turn in the meta event Mordrem Vinewrath.",
@@ -510,6 +728,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1266,
       "wikiText": "Head towards the Drone Race and walk up the twisting hill nearby. This is best done after Protect the cannon until the Mordrem migration is stopped event as the area is filled with powerful Mordrem until this event is completed.",
       "waypointChatLink": "[&BAAIAAA=]"
@@ -530,6 +756,14 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1390,
       "wikiText": "Climb the mushrooms by where the Climb up to the chopper wreckage and toss scrap metal down for Terrill Tinkerclaw event was until you reach an ledge that has a spook-able bird flock.",
@@ -552,6 +786,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1393,
       "wikiText": "The Cascade Descent is a large waterfall falling into the SCAR Lane.",
       "waypointChatLink": "[&BAAIAAA=]"
@@ -573,6 +815,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1509,
       "wikiText": "A Decrepit Chak Nest can be found inside the Decayed Hive. Since the chak left it, a group of spiders took up residence inside.",
       "waypointChatLink": "[&BAMIAAA=]"
@@ -593,6 +843,14 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1588,
       "wikiText": "From the waypoint run north into the Decayed Hive following the path and taking the sharp curve in the road. Go directly straight after this curve hugging the right hand wall. Look for a ramp on the left side, reversing your direction.",
@@ -617,6 +875,14 @@
       ],
       "chatLink": "[&BAMIAAA=]",
       "waypointChatLink": "[&BAMIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1593,
       "wikiText": "Rata Novus, referred to by asura as the lost city, is an old asuran city founded by Zinn whose inhabitants were conducting research on how to defeat the Elder Dragons-with a heavy focus on Primordus."
     },
@@ -636,6 +902,14 @@
       "order": 27,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1658,
       "wikiText": "The Ancient Power Core is the base of a large machine found in the abandoned lab from the personal story. The lab can be accessed by swimming from Rata Novus Waypoint. Exalted Markings is required to make it through the underwater tunnel.",
@@ -658,6 +932,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1730,
       "wikiText": "The Rata Novus Command Center is the central lab of Rata Novus. The Order of Whispers has established a foothold inside.",
       "waypointChatLink": "[&BAMIAAA=]"
@@ -679,6 +961,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1757,
       "wikiText": "In the mushroom cave of Rata Novus, in a small rocky cave are a cluster of Newborn Mushrooms.",
       "waypointChatLink": "[&BAMIAAA=]"
@@ -699,6 +989,14 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1769,
       "wikiText": "The Rata Novus Orchards are a large cavern filled with mushroom flora and fungi found beneath Rata Novus.",
@@ -723,6 +1021,14 @@
       ],
       "chatLink": "[&BPUHAAA=]",
       "waypointChatLink": "[&BPUHAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1991,
       "wikiText": "The Ley-Line Confluence is the hub of the four lanes involved in the meta-event of Tangled Depths."
     },
@@ -742,6 +1048,14 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2153,
       "wikiText": "The Ogre Crash Site is the spot where the airship Lagula and her tribe were aboard crashed. They hastely built a kraal not far from it after having left the Pact.",
@@ -766,6 +1080,14 @@
       ],
       "chatLink": "[&BMwHAAA=]",
       "waypointChatLink": "[&BMwHAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2167,
       "wikiText": "The Ogre Camp is an area in Tangled Depths. It is a small kraal established by the remnants of Lagula's tribe after their airship crashed."
     },
@@ -785,6 +1107,14 @@
       "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2214,
       "wikiText": "Head west from the waypoint and walk along the stream. There are a few chak lurking that you can either fight or avoid. The vista is directly ahead.",
@@ -807,6 +1137,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2228,
       "wikiText": "Deep in the murky, water-filled tunnels underneath Tangled Depths await many aggressive fish and creatures for unwary adventurers.",
       "waypointChatLink": "[&BIgIAAA=]"
@@ -827,6 +1165,14 @@
       "order": 36,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2234,
       "wikiText": "Guano-Incubated Spider Eggs can be found high in the darkness of the Deeproot Sink caves. Unbeknownst to adventurers, a dark alliance has been formed between the Cave Spiders and Vampire Beasts of the cave.",
@@ -849,6 +1195,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2249,
       "wikiText": "The Tranquil Refuge is safe haven amidst all the hostile creatures living in the Deeproot Sink.",
       "waypointChatLink": "[&BMwHAAA=]"
@@ -869,6 +1223,14 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2278,
       "wikiText": "The Ley Line Node is a stream of powerful energy that courses through the Ogre Lane.",
@@ -891,6 +1253,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2287,
       "wikiText": "Feeding off the ley energy in the Ogre Lane, a small Egg Clutch waits for travelers to disturb it.",
       "waypointChatLink": "[&BIgIAAA=]"
@@ -911,6 +1281,14 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2324,
       "wikiText": "The Twisting Viaduct is a long series of rock bridges filled with Mordrem found in the Dragon's Passage.",
@@ -935,6 +1313,14 @@
       ],
       "chatLink": "[&BIgIAAA=]",
       "waypointChatLink": "[&BIgIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2396,
       "wikiText": "Dragon's Passage is the southwestern corner of Tangled Depths. Filled with various thin, narrow passageways, a portal leading into Dragon's Stand is located here."
     },
@@ -954,6 +1340,14 @@
       "order": 42,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2410,
       "wikiText": "Within the caves of Tangled Depths grows a small Nightthistle Bloom which awaits challengers. Interaction with the bloom will trigger the group event Kill the Mordrem champion (80).",
@@ -975,6 +1369,14 @@
       "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2428,
       "wikiText": "The Rata Novus Perimeter is the central area of Rata Novus.",

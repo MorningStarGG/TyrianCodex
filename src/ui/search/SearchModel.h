@@ -34,6 +34,8 @@ namespace Search
         std::string access;      // lounge access tag: "premium" / "earned" / "free" / "" (non-lounge)
         std::vector<std::string> tags;      // extra kind chips this place also lists under (Heart of the Mists: City + PvP)
         uint32_t    mapId       = 0;
+        uint32_t    travelMapId = 0; // entrance map for instanced content
+        bool        encounterTrackingUnavailable = false;
         float       cx = 0.f, cy = 0.f;     // continent coords (zone center for a Zone entry)
         int         level       = -1;       // objective recommended level / a zone's MIN level
         int         levelMax    = -1;       // a zone's MAX level (== level for objectives) -> "Lv x-y" pill

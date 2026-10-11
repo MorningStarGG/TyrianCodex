@@ -443,7 +443,7 @@ void DrawZoneObjectiveList(App &app, bool fillStep, float maxHeightOverride, flo
             ++remaining;
     if (remaining == 0 && !app.config.viewerShowCompleted)
         return; // all done -> show the completed list if toggled, else nothing
-    const bool modernStep = app.state.viewerMode == ViewerMode::Step || app.state.viewerMode == ViewerMode::Travel;
+    const bool modernStep = app.state.viewerMode == ViewerMode::Step || app.state.viewerMode == ViewerMode::Checklist || app.state.viewerMode == ViewerMode::Travel;
     const float blockTopY = ImGui::GetCursorScreenPos().y;
 
     if (modernStep)

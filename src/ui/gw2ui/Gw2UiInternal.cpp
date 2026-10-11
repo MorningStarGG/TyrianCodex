@@ -33,7 +33,7 @@ namespace Gw2Ui
                  ImVec2 uv0, ImVec2 uv1, ImU32 col)
         {
             if (t.srv)
-                dl->AddImage((ImTextureID)t.srv, a, b, uv0, uv1, col);
+                dl->AddImage((ImTextureID)t.srv, a, b, uv0, uv1, StyleColor(col));
         }
 
         // Horizontal 3-slice: fixed-width left/right caps (so a textured box keeps its side borders at native
@@ -48,6 +48,7 @@ namespace Gw2Ui
                 cap = maxCap;
             const float u = capPx / t.w;
             const ImTextureID id = (ImTextureID)t.srv;
+            col = StyleColor(col);
             dl->AddImage(id, a, ImVec2(a.x + cap, b.y), ImVec2(0.f, 0.f), ImVec2(u, 1.f), col);
             dl->AddImage(id, ImVec2(a.x + cap, a.y), ImVec2(b.x - cap, b.y), ImVec2(u, 0.f), ImVec2(1.f - u, 1.f), col);
             dl->AddImage(id, ImVec2(b.x - cap, a.y), b, ImVec2(1.f - u, 0.f), ImVec2(1.f, 1.f), col);
@@ -167,6 +168,7 @@ namespace Gw2Ui
         {
             if (!text || !*text)
                 return;
+            color = StyleColor(color);
             // Scaled AND snapped to a baked rung (see RequestedPx), so the measure (CalcTextSizeA) and every
             // AddText pass below share ONE face at scale EXACTLY 1.0 -- no residual stretch, no aliasing.
             const float fs = RequestedPx(fontSize, font);

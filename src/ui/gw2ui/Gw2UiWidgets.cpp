@@ -791,6 +791,65 @@ void Gw2Ui::TypeMedallion(uint32_t iconAssetId, ImU32 accent, float size)
     ImGui::Dummy(ImVec2(size, size));
 }
 
+namespace
+{
+    struct TextTableState
+    {
+        int Columns;
+        float FontSize;
+    };
+    std::vector<TextTableState> s_textTables;
+}
+
+bool Gw2Ui::BeginTextTable(const char *id, const std::vector<std::string>& headers, float fontSize, float width)
+{
+    const int columns = std::max(1, (int)headers.size());
+    width = std::max(1.f, width > 0.f ? width : std::min(ContentWidth(), ImGui::GetContentRegionAvail().x));
+    ImGui::PushStyleVar(ImGuiStyleVar_CellPadding, ImVec2(CardPadding(), 2.f * TextScale()));
+    ImGui::PushStyleColor(ImGuiCol_TableHeaderBg, IM_COL32(45, 37, 25, 230));
+    ImGui::PushStyleColor(ImGuiCol_TableRowBg, IM_COL32(0, 0, 0, 0));
+    ImGui::PushStyleColor(ImGuiCol_TableRowBgAlt, IM_COL32(255, 255, 255, 12));
+    ImGui::PushStyleColor(ImGuiCol_TableBorderLight, IM_COL32(120, 110, 88, 110));
+    if (!ImGui::BeginTable(id, columns, ImGuiTableFlags_RowBg | ImGuiTableFlags_BordersInnerH | ImGuiTableFlags_PadOuterX,
+                           ImVec2(width, 0.f)))
+    {
+        ImGui::PopStyleColor(4);
+        ImGui::PopStyleVar();
+        return false;
+    }
+    s_textTables.push_back({columns, fontSize});
+    for (const auto& header : headers) ImGui::TableSetupColumn(header.c_str());
+    if (!headers.empty())
+    {
+        ImGui::TableNextRow(ImGuiTableRowFlags_Headers);
+        for (const auto& header : headers)
+        {
+            ImGui::TableNextColumn();
+            LabelWrapped(header.c_str(), kGold, false, nullptr, fontSize);
+        }
+    }
+    return true;
+}
+
+void Gw2Ui::TextTableRow(const std::vector<std::string>& cells)
+{
+    const TextTableState state = s_textTables.back();
+    ImGui::TableNextRow();
+    for (int column = 0; column < state.Columns; ++column)
+    {
+        ImGui::TableNextColumn();
+        if (column < (int)cells.size()) LabelWrapped(cells[column].c_str(), kTextSub, false, nullptr, state.FontSize);
+    }
+}
+
+void Gw2Ui::EndTextTable()
+{
+    ImGui::EndTable();
+    s_textTables.pop_back();
+    ImGui::PopStyleColor(4);
+    ImGui::PopStyleVar();
+}
+
 bool Gw2Ui::DataTable(const DataTableDesc &d)
 {
     if (d.colCount <= 0 || d.colCount > 32)

@@ -1,11 +1,517 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T19:06:55+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "sources": {
     "eventtable_events.json": "https://files.estreya.de/blish-hud/event-table/v1/events.json",
     "gw2timer_chains.js": "https://raw.githubusercontent.com/Drant/GW2Timer/gh-pages/data/chains.js",
     "gw2timer_chains_add.js": "https://raw.githubusercontent.com/Drant/GW2Timer/gh-pages/data/chains-add.js",
     "gw2timer_general.js": "https://raw.githubusercontent.com/Drant/GW2Timer/gh-pages/data/general.js"
+  },
+  "scheduleCoverage": {
+    "source": "Widget:Event timer/data.json",
+    "revision": 3198874,
+    "verified": [
+      {
+        "title": "Kill Admiral Taidha Covington",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3119650
+      },
+      {
+        "title": "Kill the Svanir shaman chief to break his control over the ice elemental",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3119651
+      },
+      {
+        "title": "Kill the megadestroyer before it blows everyone up",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3003165
+      },
+      {
+        "title": "Destroy the fire elemental created from chaotic energy fusing with the C.L.E.A.N. 5000's energy core",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3175959
+      },
+      {
+        "title": "Slay the Shatterer",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3203298
+      },
+      {
+        "title": "Defeat the great jungle wurm",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3198917
+      },
+      {
+        "title": "Defeat Ulgoth the Modniir and his minions",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3087406
+      },
+      {
+        "title": "Defeat the shadow behemoth",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3006237
+      },
+      {
+        "title": "Defeat the Claw of Jormag",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3175242
+      },
+      {
+        "title": "Defeat the Inquest's golem Mark II",
+        "mapId": null,
+        "row": "core-wb",
+        "revision": 3200172
+      },
+      {
+        "title": "Triple Trouble",
+        "mapId": null,
+        "row": "core-hwb",
+        "revision": 3190829
+      },
+      {
+        "title": "Defeat the Karka Queen threatening the settlements",
+        "mapId": null,
+        "row": "core-hwb",
+        "revision": 3137931
+      },
+      {
+        "title": "Defeat Tequatl the Sunless",
+        "mapId": null,
+        "row": "core-hwb",
+        "revision": 3160912
+      },
+      {
+        "title": "Defeat the Ley-Line Anomaly to disperse its destructive energy before it overloads",
+        "mapId": null,
+        "row": "core-la",
+        "revision": 3137356
+      },
+      {
+        "title": "Defeat the Ley-Line Anomaly to disperse its destructive energy before it overloads",
+        "mapId": null,
+        "row": "core-la",
+        "revision": 3137356
+      },
+      {
+        "title": "Defeat the Ley-Line Anomaly to disperse its destructive energy before it overloads",
+        "mapId": null,
+        "row": "core-la",
+        "revision": 3137356
+      },
+      {
+        "title": "Defeat the invading Awakened",
+        "mapId": null,
+        "row": "core-in",
+        "revision": 3179731
+      },
+      {
+        "title": "Sandstorm!",
+        "mapId": 988,
+        "row": "lws2-dt",
+        "revision": 3120062
+      },
+      {
+        "title": "Night and the Enemy",
+        "mapId": 1052,
+        "row": "hot-vb",
+        "revision": 3066917
+      },
+      {
+        "title": "Night and the Enemy",
+        "mapId": 1052,
+        "row": "hot-vb",
+        "revision": 3066917
+      },
+      {
+        "title": "Battle in Tarir",
+        "mapId": 1043,
+        "row": "hot-ab",
+        "revision": 3144995
+      },
+      {
+        "title": "Battle in Tarir",
+        "mapId": 1043,
+        "row": "hot-ab",
+        "revision": 3144995
+      },
+      {
+        "title": "King of the Jungle",
+        "mapId": 1045,
+        "row": "hot-td",
+        "revision": 3208196
+      },
+      {
+        "title": "King of the Jungle",
+        "mapId": 1045,
+        "row": "hot-td",
+        "revision": 3208196
+      },
+      {
+        "title": "Advancing on the Blighting Towers",
+        "mapId": 1041,
+        "row": "hot-ds",
+        "revision": 3066822
+      },
+      {
+        "title": "White Mantle Control: Saidra's Haven",
+        "mapId": 1185,
+        "row": "lws3-ld",
+        "revision": 3066816
+      },
+      {
+        "title": "White Mantle Control: New Loamhurst",
+        "mapId": 1185,
+        "row": "lws3-ld",
+        "revision": 3066814
+      },
+      {
+        "title": "White Mantle Control: Noran's Homestead",
+        "mapId": 1185,
+        "row": "lws3-ld",
+        "revision": 3130055
+      },
+      {
+        "title": "Casino Blitz",
+        "mapId": 1210,
+        "row": "pof-co",
+        "revision": 3066785
+      },
+      {
+        "title": "Casino Blitz",
+        "mapId": 1210,
+        "row": "pof-co",
+        "revision": 3066785
+      },
+      {
+        "title": "The Search for Buried Treasure",
+        "mapId": 1211,
+        "row": "pof-dh",
+        "revision": 3066800
+      },
+      {
+        "title": "The Path to Ascension",
+        "mapId": 1228,
+        "row": "pof-er",
+        "revision": 3066838
+      },
+      {
+        "title": "The Path to Ascension",
+        "mapId": 1228,
+        "row": "pof-er",
+        "revision": 3066838
+      },
+      {
+        "title": "Maws of Torment",
+        "mapId": 1226,
+        "row": "pof-td",
+        "revision": 3070347
+      },
+      {
+        "title": "Junundu Rising",
+        "mapId": 1226,
+        "row": "pof-td",
+        "revision": 3074204
+      },
+      {
+        "title": "Serpents' Ire",
+        "mapId": 1248,
+        "row": "pof-dv",
+        "revision": 3187821
+      },
+      {
+        "title": "Forged with Fire",
+        "mapId": 1248,
+        "row": "pof-dv",
+        "revision": 3119657
+      },
+      {
+        "title": "Palawadan, Jewel of Istan (meta event)",
+        "mapId": 1263,
+        "row": "lws4-di",
+        "revision": 3087509
+      },
+      {
+        "title": "Dangerous Prey",
+        "mapId": 1301,
+        "row": "lws4-jb",
+        "revision": 3203295
+      },
+      {
+        "title": "Destroy the Death-Branded Shatterer",
+        "mapId": 1301,
+        "row": "lws4-jb",
+        "revision": 3203292
+      },
+      {
+        "title": "Thunderhead Keep (meta event)",
+        "mapId": 1310,
+        "row": "lws4-tp",
+        "revision": 3175199
+      },
+      {
+        "title": "The Oil Floes",
+        "mapId": 1310,
+        "row": "lws4-tp",
+        "revision": 3066913
+      },
+      {
+        "title": "Ceremony of the Sacred Flame",
+        "mapId": 1330,
+        "row": "lws5-gv",
+        "revision": 3168622
+      },
+      {
+        "title": "The Haunting of Doomlore Shrine",
+        "mapId": 1330,
+        "row": "lws5-gv",
+        "revision": 3066848
+      },
+      {
+        "title": "The Ooze Pit Trials",
+        "mapId": 1330,
+        "row": "lws5-gv",
+        "revision": 3066845
+      },
+      {
+        "title": "A Concert for the Ages",
+        "mapId": 1330,
+        "row": "lws5-gv",
+        "revision": 3152839
+      },
+      {
+        "title": "Champion of the Ice Dragon",
+        "mapId": 1343,
+        "row": "lws5-bm",
+        "revision": 3181481
+      },
+      {
+        "title": "Storms of Winter",
+        "mapId": 1343,
+        "row": "lws5-bm",
+        "revision": 3106565
+      },
+      {
+        "title": "Storms of Winter",
+        "mapId": 1343,
+        "row": "lws5-bm",
+        "revision": 3106565
+      },
+      {
+        "title": "Storms of Winter",
+        "mapId": 1343,
+        "row": "lws5-bm",
+        "revision": 3106565
+      },
+      {
+        "title": "Aetherblade Assault",
+        "mapId": 1442,
+        "row": "eod-sp",
+        "revision": 3066905
+      },
+      {
+        "title": "Kaineng Blackout",
+        "mapId": 1438,
+        "row": "eod-nkc",
+        "revision": 3140144
+      },
+      {
+        "title": "The Gang War of Echovald",
+        "mapId": 1452,
+        "row": "eod-ew",
+        "revision": 3106374
+      },
+      {
+        "title": "Use the siege turtles to destroy the shield generators as you fight through the fort",
+        "mapId": 1452,
+        "row": "eod-ew",
+        "revision": 3189797
+      },
+      {
+        "title": "Preparations",
+        "mapId": 1422,
+        "row": "eod-de",
+        "revision": 3066819
+      },
+      {
+        "title": "Defeat the Void-corrupted Jade Maw",
+        "mapId": 1422,
+        "row": "eod-de",
+        "revision": 3157478
+      },
+      {
+        "title": "The Battle for the Jade Sea",
+        "mapId": 1422,
+        "row": "eod-de",
+        "revision": 3116320
+      },
+      {
+        "title": "Unlocking the Wizard's Tower",
+        "mapId": 1510,
+        "row": "soto-sa",
+        "revision": 3066900
+      },
+      {
+        "title": "Skyscale Target Practice in the Wizard's Tower",
+        "mapId": null,
+        "row": "soto-wt",
+        "revision": 3178514
+      },
+      {
+        "title": "Wizard's Tower: Fly by Night",
+        "mapId": null,
+        "row": "soto-wt",
+        "revision": 3066925
+      },
+      {
+        "title": "The Defense of Amnytas",
+        "mapId": 1517,
+        "row": "soto-am",
+        "revision": 3174838
+      },
+      {
+        "title": "Of Mists and Monsters",
+        "mapId": 1554,
+        "row": "jw-js",
+        "revision": 3210976
+      },
+      {
+        "title": "A Titanic Voyage",
+        "mapId": 1574,
+        "row": "jw-bn",
+        "revision": 3158862
+      },
+      {
+        "title": "Hammerhart Rumble!",
+        "mapId": 1595,
+        "row": "voe-ss",
+        "revision": 3194758
+      },
+      {
+        "title": "Secrets of the Weald",
+        "mapId": 1593,
+        "row": "voe-sw",
+        "revision": 3120751
+      },
+      {
+        "title": "Depths of Cruelty",
+        "mapId": 1633,
+        "row": "voe-lh",
+        "revision": 3211725
+      },
+      {
+        "title": "The Twisted Marionette",
+        "mapId": 1370,
+        "row": "public-eotn",
+        "revision": 3199215
+      },
+      {
+        "title": "The Battle For Lion's Arch",
+        "mapId": 1370,
+        "row": "public-eotn",
+        "revision": 3190461
+      },
+      {
+        "title": "Dragonstorm",
+        "mapId": 1370,
+        "row": "public-eotn",
+        "revision": 3208861
+      },
+      {
+        "title": "The Tower of Nightmares (meta event)",
+        "mapId": 1370,
+        "row": "public-eotn",
+        "revision": 3067177
+      },
+      {
+        "title": "Convergence: Mount Balrior",
+        "mapId": null,
+        "row": "public-con",
+        "revision": 3182390
+      },
+      {
+        "title": "Convergence: Nexus of Eternity",
+        "mapId": 1627,
+        "row": "public-con",
+        "revision": 3210923
+      },
+      {
+        "title": "Labyrinthine Skiffs: A race is starting soon!",
+        "mapId": null,
+        "row": "festival-lc",
+        "revision": 3188572
+      },
+      {
+        "title": "Participate in the treasure hunt!",
+        "mapId": null,
+        "row": "festival-lc",
+        "revision": 3188565
+      },
+      {
+        "title": "Skimmer Slalom: Reach the finish line!",
+        "mapId": null,
+        "row": "festival-lc",
+        "revision": 3189865
+      },
+      {
+        "title": "Fishing Tournament Sign-Up",
+        "mapId": null,
+        "row": "festival-lc",
+        "revision": 3066885
+      },
+      {
+        "title": "Flying Dolyak: Reach the finish line!",
+        "mapId": null,
+        "row": "festival-lc",
+        "revision": 3189859
+      },
+      {
+        "title": "Dragon Bash Hologram Stampede!",
+        "mapId": null,
+        "row": "festival-db",
+        "revision": 3066793
+      },
+      {
+        "title": "Dragon Bash Hologram Stampede!",
+        "mapId": null,
+        "row": "festival-db",
+        "revision": 3066793
+      },
+      {
+        "title": "Dragon Bash Hologram Stampede!",
+        "mapId": null,
+        "row": "festival-db",
+        "revision": 3066793
+      },
+      {
+        "title": "Dragon Bash Hologram Stampede!",
+        "mapId": null,
+        "row": "festival-db",
+        "revision": 3066793
+      },
+      {
+        "title": "Your Mad King says...",
+        "mapId": null,
+        "row": "festival-ha",
+        "revision": 3121769
+      }
+    ],
+    "unresolved": [
+      {
+        "title": "Shackles of the Ancients",
+        "mapId": 1622,
+        "reason": "Wiki marks the current schedule incorrect after the game update",
+        "revision": 3209318
+      }
+    ]
   },
   "includePolicy": {
     "statuses": [
@@ -22,8 +528,8 @@
     "notes": "Weak and low-confidence wiki matches stay in reports/event_timer_review.json until reviewed."
   },
   "totals": {
-    "timedEvents": 111,
-    "mapTimedEvents": 111,
+    "timedEvents": 113,
+    "mapTimedEvents": 113,
     "globalTimers": 0,
     "cycles": 10,
     "pvp": 4,
@@ -250,6 +756,12 @@
     "1595": [
       "hammerhart rumble|1595|meta",
       "weald|1595|meta"
+    ],
+    "1627": [
+      "wiki:public-con:3"
+    ],
+    "1633": [
+      "wiki:voe-lh:1"
     ]
   },
   "chainsByMapId": {
@@ -354,14 +866,56 @@
       "waypoint": "[&BEUDAAA=]",
       "waypointSource": "map_central",
       "scheduleMinutes": [
+        30,
+        90,
+        150,
         210,
+        270,
+        330,
+        390,
+        450,
+        510,
+        570,
         630,
-        1050
+        690,
+        750,
+        810,
+        870,
+        930,
+        990,
+        1050,
+        1110,
+        1170,
+        1230,
+        1290,
+        1350,
+        1410
       ],
       "schedule": [
+        "00:30",
+        "01:30",
+        "02:30",
         "03:30",
+        "04:30",
+        "05:30",
+        "06:30",
+        "07:30",
+        "08:30",
+        "09:30",
         "10:30",
-        "17:30"
+        "11:30",
+        "12:30",
+        "13:30",
+        "14:30",
+        "15:30",
+        "16:30",
+        "17:30",
+        "18:30",
+        "19:30",
+        "20:30",
+        "21:30",
+        "22:30",
+        "23:30"
       ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
@@ -372,7 +926,7 @@
       "description": "Defeat the invading Awakened is a group event that occurs every hour at xx:30 in one of seven predefined zones across Tyria.",
       "sections": {
         "Objectives": "Awakened remnants have appeared in the area! Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants press their attack. Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants swarm the area! Awakened Forces Awakened Champion Time limit: x:xx (On success) The Awakened remnants have been eradicated! (On failure) The Awakened remnants have dispersed after wreaking havoc in the area. === Historical version === Palawa Joko's Awakened are invading the area! Awakened Forces swords Awakened Champion boss Time limit: x:xx Joko will not tolerate failure! Awakened forces press their attack. Awakened Forces swords Awakened Champion boss Time limit: x:xx The Scourge...",
-        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, although any surviving veterans will still need to be dealt with. If all invasion events..."
+        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran Awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, and any surviving veterans will have Agony (Awakened) applied to them, quickly killing them. If..."
       },
       "sources": [
         "eventtable"
@@ -382,6 +936,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         44145,
         29194
@@ -480,7 +1036,9 @@
       "continent": [
         44959,
         30336
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|17|90,270,450,630,810,990,1170,1350",
@@ -569,7 +1127,9 @@
       "continent": [
         48032,
         26414
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "plains of ashford|19|meta",
@@ -602,14 +1162,56 @@
       "waypoint": "[&BJkDAAA=]",
       "waypointSource": "map_central",
       "scheduleMinutes": [
+        30,
+        90,
+        150,
+        210,
+        270,
         330,
+        390,
+        450,
+        510,
+        570,
+        630,
+        690,
         750,
-        1170
+        810,
+        870,
+        930,
+        990,
+        1050,
+        1110,
+        1170,
+        1230,
+        1290,
+        1350,
+        1410
       ],
       "schedule": [
+        "00:30",
+        "01:30",
+        "02:30",
+        "03:30",
+        "04:30",
         "05:30",
+        "06:30",
+        "07:30",
+        "08:30",
+        "09:30",
+        "10:30",
+        "11:30",
         "12:30",
-        "19:30"
+        "13:30",
+        "14:30",
+        "15:30",
+        "16:30",
+        "17:30",
+        "18:30",
+        "19:30",
+        "20:30",
+        "21:30",
+        "22:30",
+        "23:30"
       ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
@@ -620,7 +1222,7 @@
       "description": "Defeat the invading Awakened is a group event that occurs every hour at xx:30 in one of seven predefined zones across Tyria.",
       "sections": {
         "Objectives": "Awakened remnants have appeared in the area! Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants press their attack. Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants swarm the area! Awakened Forces Awakened Champion Time limit: x:xx (On success) The Awakened remnants have been eradicated! (On failure) The Awakened remnants have dispersed after wreaking havoc in the area. === Historical version === Palawa Joko's Awakened are invading the area! Awakened Forces swords Awakened Champion boss Time limit: x:xx Joko will not tolerate failure! Awakened forces press their attack. Awakened Forces swords Awakened Champion boss Time limit: x:xx The Scourge...",
-        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, although any surviving veterans will still need to be dealt with. If all invasion events..."
+        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran Awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, and any surviving veterans will have Agony (Awakened) applied to them, quickly killing them. If..."
       },
       "sources": [
         "eventtable"
@@ -630,6 +1232,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         59896,
         30719
@@ -694,7 +1298,7 @@
       "description": "Slay the Shatterer is a group event that occurs in the Lowland Burns in Blazeridge Steppes. It occurs as the final part of the meta event Kralkatorrik's Legacy.",
       "sections": {
         "Objectives": "The Shatterer swords Time limit: 15:00",
-        "Event schedule": "The Shatterer",
+        "Event schedule": "Kralkatorrik's Legacy#Event schedule The Shatterer",
         "Walkthrough": "The Shatterer will land north of Lowland Burns Waypoint after the two pre-events have been completed and the NPCs make their way back to the base situated at the waypoint. Lowland Burns Waypoint will remain uncontested while the Shatterer is spawned, unlike most other waypoints next to world boss spawns. During the whole fight, players have access to the turrets, mortars, and launchpads. The turret gives you two abilities: Bombard (Shatterer turret), a single target bomb attack that knocks back; and Shrapnel Shell, a AoE bleed and cripple bomb attack. The impact damage of the two attacks is identical; the main difference is that the first skill inflicts instant breakbar damage while the..."
       },
       "sources": [
@@ -718,7 +1322,9 @@
       "continent": [
         62591,
         29268
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "kessex hills|23|meta",
@@ -814,14 +1420,56 @@
       "waypoint": "[&BOIAAAA=]",
       "waypointSource": "map_central",
       "scheduleMinutes": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330,
         390,
+        450,
+        510,
+        570,
+        630,
+        690,
+        750,
         810,
-        1230
+        870,
+        930,
+        990,
+        1050,
+        1110,
+        1170,
+        1230,
+        1290,
+        1350,
+        1410
       ],
       "schedule": [
+        "00:30",
+        "01:30",
+        "02:30",
+        "03:30",
+        "04:30",
+        "05:30",
         "06:30",
+        "07:30",
+        "08:30",
+        "09:30",
+        "10:30",
+        "11:30",
+        "12:30",
         "13:30",
-        "20:30"
+        "14:30",
+        "15:30",
+        "16:30",
+        "17:30",
+        "18:30",
+        "19:30",
+        "20:30",
+        "21:30",
+        "22:30",
+        "23:30"
       ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
@@ -832,7 +1480,7 @@
       "description": "Defeat the invading Awakened is a group event that occurs every hour at xx:30 in one of seven predefined zones across Tyria.",
       "sections": {
         "Objectives": "Awakened remnants have appeared in the area! Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants press their attack. Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants swarm the area! Awakened Forces Awakened Champion Time limit: x:xx (On success) The Awakened remnants have been eradicated! (On failure) The Awakened remnants have dispersed after wreaking havoc in the area. === Historical version === Palawa Joko's Awakened are invading the area! Awakened Forces swords Awakened Champion boss Time limit: x:xx Joko will not tolerate failure! Awakened forces press their attack. Awakened Forces swords Awakened Champion boss Time limit: x:xx The Scourge...",
-        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, although any surviving veterans will still need to be dealt with. If all invasion events..."
+        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran Awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, and any surviving veterans will have Agony (Awakened) applied to them, quickly killing them. If..."
       },
       "sources": [
         "eventtable"
@@ -842,6 +1490,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         48089,
         29884
@@ -1000,7 +1650,9 @@
       "continent": [
         48552,
         28867
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|25|140,500,860,1220",
@@ -1033,16 +1685,16 @@
       "waypoint": "[&BOYBAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        140,
-        500,
-        860,
-        1220
+        260,
+        620,
+        980,
+        1340
       ],
       "schedule": [
-        "02:20",
-        "08:20",
-        "14:20",
-        "20:20"
+        "04:20",
+        "10:20",
+        "16:20",
+        "22:20"
       ],
       "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_Ley-Line_Anomaly_to_disperse_its_destructive_energy_before_it_overloads#Walkthrough",
@@ -1077,7 +1729,9 @@
       "continent": [
         61816,
         28807
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "dredgehaunt cliffs|26|festival",
@@ -1110,56 +1764,56 @@
       "waypoint": "[&BGMCAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        15,
-        75,
-        135,
-        195,
-        255,
-        315,
-        375,
-        435,
-        495,
-        555,
-        615,
-        675,
-        735,
-        795,
-        855,
-        915,
-        975,
-        1035,
-        1095,
-        1155,
-        1215,
-        1275,
-        1335,
-        1395
+        45,
+        105,
+        165,
+        225,
+        285,
+        345,
+        405,
+        465,
+        525,
+        585,
+        645,
+        705,
+        765,
+        825,
+        885,
+        945,
+        1005,
+        1065,
+        1125,
+        1185,
+        1245,
+        1305,
+        1365,
+        1425
       ],
       "schedule": [
-        "00:15",
-        "01:15",
-        "02:15",
-        "03:15",
-        "04:15",
-        "05:15",
-        "06:15",
-        "07:15",
-        "08:15",
-        "09:15",
-        "10:15",
-        "11:15",
-        "12:15",
-        "13:15",
-        "14:15",
-        "15:15",
-        "16:15",
-        "17:15",
-        "18:15",
-        "19:15",
-        "20:15",
-        "21:15",
-        "22:15",
-        "23:15"
+        "00:45",
+        "01:45",
+        "02:45",
+        "03:45",
+        "04:45",
+        "05:45",
+        "06:45",
+        "07:45",
+        "08:45",
+        "09:45",
+        "10:45",
+        "11:45",
+        "12:45",
+        "13:45",
+        "14:45",
+        "15:45",
+        "16:45",
+        "17:45",
+        "18:45",
+        "19:45",
+        "20:45",
+        "21:45",
+        "22:45",
+        "23:45"
       ],
       "durationMinutes": 5,
       "wiki": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
@@ -1184,7 +1838,9 @@
       "continent": [
         53272,
         31898
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "lornar s pass|27|festival",
@@ -1216,6 +1872,224 @@
       },
       "waypoint": "[&BJkBAAA=]",
       "waypointSource": "source",
+      "scheduleMinutes": [
+        45,
+        105,
+        165,
+        225,
+        285,
+        345,
+        405,
+        465,
+        525,
+        585,
+        645,
+        705,
+        765,
+        825,
+        885,
+        945,
+        1005,
+        1065,
+        1125,
+        1185,
+        1245,
+        1305,
+        1365,
+        1425
+      ],
+      "schedule": [
+        "00:45",
+        "01:45",
+        "02:45",
+        "03:45",
+        "04:45",
+        "05:45",
+        "06:45",
+        "07:45",
+        "08:45",
+        "09:45",
+        "10:45",
+        "11:45",
+        "12:45",
+        "13:45",
+        "14:45",
+        "15:45",
+        "16:45",
+        "17:45",
+        "18:45",
+        "19:45",
+        "20:45",
+        "21:45",
+        "22:45",
+        "23:45"
+      ],
+      "durationMinutes": 5,
+      "wiki": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
+      "wikiTitle": "Dragon Bash Hologram Stampede!",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
+      "wikiClassification": "dynamic_event",
+      "wikiConfidence": "high",
+      "description": "Dragon Bash Hologram Stampede! is a seasonal event that occurs during Dragon Bash.",
+      "sections": {
+        "Objectives": "Time remaining: 5:00 Wave x: Activate Hologram Devices and Beat the Holograms Total devices cleared: x",
+        "Walkthrough": "The event cycles between four zones every 15 minutes. The schedule is as follows: xx:00 - Wayfarer Foothills xx:15 - Dredgehaunt Cliffs xx:30 - Lornar's Pass xx:45 - Snowden Drifts At the start of the event, Dragon Holograms will be marked on the map. After activating a hologram, Defeat the holograms! event will start and five Holograms will spawn, consisting of four normal foes, and one Veteran Hologram with increased health. A device is considered cleared once all five holograms have been defeated. The number of devices needed for the event to succeed increases with each stage, as follows: Stage 1 — 5 devices Stage 2 — 15 devices Stage 3 — 30 devices It is recommended that players use...",
+        "Event schedule": "festival-db"
+      },
+      "sources": [
+        "eventtable"
+      ],
+      "sourceHints": {
+        "titles": [],
+        "aliases": [],
+        "eventNames": []
+      },
+      "continent": [
+        51209,
+        30480
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
+    },
+    {
+      "key": "wayfarer foothills|28|festival",
+      "name": "Dragon Bash Hologram Stampede!",
+      "subtitle": "",
+      "category": "festival",
+      "suggestedCategory": "dynamic_event",
+      "mapIds": [
+        28
+      ],
+      "mapNames": [
+        "Wayfarer Foothills"
+      ],
+      "tyrianCodexZones": [
+        "Wayfarer Foothills"
+      ],
+      "level": null,
+      "effectiveLevel": {
+        "source": "tyriancodex_map",
+        "min": 1,
+        "max": 15,
+        "label": "1-15",
+        "bucket": "1-15"
+      },
+      "wikiLevel": {
+        "min": 0,
+        "max": 0,
+        "label": "0"
+      },
+      "waypoint": "[&BH0BAAA=]",
+      "waypointSource": "source",
+      "scheduleMinutes": [
+        45,
+        105,
+        165,
+        225,
+        285,
+        345,
+        405,
+        465,
+        525,
+        585,
+        645,
+        705,
+        765,
+        825,
+        885,
+        945,
+        1005,
+        1065,
+        1125,
+        1185,
+        1245,
+        1305,
+        1365,
+        1425
+      ],
+      "schedule": [
+        "00:45",
+        "01:45",
+        "02:45",
+        "03:45",
+        "04:45",
+        "05:45",
+        "06:45",
+        "07:45",
+        "08:45",
+        "09:45",
+        "10:45",
+        "11:45",
+        "12:45",
+        "13:45",
+        "14:45",
+        "15:45",
+        "16:45",
+        "17:45",
+        "18:45",
+        "19:45",
+        "20:45",
+        "21:45",
+        "22:45",
+        "23:45"
+      ],
+      "durationMinutes": 5,
+      "wiki": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
+      "wikiTitle": "Dragon Bash Hologram Stampede!",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
+      "wikiClassification": "dynamic_event",
+      "wikiConfidence": "high",
+      "description": "Dragon Bash Hologram Stampede! is a seasonal event that occurs during Dragon Bash.",
+      "sections": {
+        "Objectives": "Time remaining: 5:00 Wave x: Activate Hologram Devices and Beat the Holograms Total devices cleared: x",
+        "Walkthrough": "The event cycles between four zones every 15 minutes. The schedule is as follows: xx:00 - Wayfarer Foothills xx:15 - Dredgehaunt Cliffs xx:30 - Lornar's Pass xx:45 - Snowden Drifts At the start of the event, Dragon Holograms will be marked on the map. After activating a hologram, Defeat the holograms! event will start and five Holograms will spawn, consisting of four normal foes, and one Veteran Hologram with increased health. A device is considered cleared once all five holograms have been defeated. The number of devices needed for the event to succeed increases with each stage, as follows: Stage 1 — 5 devices Stage 2 — 15 devices Stage 3 — 30 devices It is recommended that players use...",
+        "Event schedule": "festival-db"
+      },
+      "sources": [
+        "eventtable"
+      ],
+      "sourceHints": {
+        "titles": [],
+        "aliases": [],
+        "eventNames": []
+      },
+      "continent": [
+        55448,
+        29751
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
+    },
+    {
+      "key": "wayfarer foothills|28|meta",
+      "name": "Defeat the invading Awakened",
+      "subtitle": "",
+      "category": "meta",
+      "suggestedCategory": "dynamic_event",
+      "mapIds": [
+        28
+      ],
+      "mapNames": [
+        "Wayfarer Foothills"
+      ],
+      "tyrianCodexZones": [
+        "Wayfarer Foothills"
+      ],
+      "level": null,
+      "effectiveLevel": {
+        "source": "tyriancodex_map",
+        "min": 1,
+        "max": 15,
+        "label": "1-15",
+        "bucket": "1-15"
+      },
+      "wikiLevel": {
+        "min": 6,
+        "max": 30,
+        "label": "6-30"
+      },
+      "waypoint": "[&BH0BAAA=]",
+      "waypointSource": "map_central",
       "scheduleMinutes": [
         30,
         90,
@@ -1268,178 +2142,6 @@
         "22:30",
         "23:30"
       ],
-      "durationMinutes": 5,
-      "wiki": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
-      "wikiTitle": "Dragon Bash Hologram Stampede!",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
-      "wikiClassification": "dynamic_event",
-      "wikiConfidence": "high",
-      "description": "Dragon Bash Hologram Stampede! is a seasonal event that occurs during Dragon Bash.",
-      "sections": {
-        "Objectives": "Time remaining: 5:00 Wave x: Activate Hologram Devices and Beat the Holograms Total devices cleared: x",
-        "Walkthrough": "The event cycles between four zones every 15 minutes. The schedule is as follows: xx:00 - Wayfarer Foothills xx:15 - Dredgehaunt Cliffs xx:30 - Lornar's Pass xx:45 - Snowden Drifts At the start of the event, Dragon Holograms will be marked on the map. After activating a hologram, Defeat the holograms! event will start and five Holograms will spawn, consisting of four normal foes, and one Veteran Hologram with increased health. A device is considered cleared once all five holograms have been defeated. The number of devices needed for the event to succeed increases with each stage, as follows: Stage 1 — 5 devices Stage 2 — 15 devices Stage 3 — 30 devices It is recommended that players use...",
-        "Event schedule": "festival-db"
-      },
-      "sources": [
-        "eventtable"
-      ],
-      "sourceHints": {
-        "titles": [],
-        "aliases": [],
-        "eventNames": []
-      },
-      "continent": [
-        51209,
-        30480
-      ]
-    },
-    {
-      "key": "wayfarer foothills|28|festival",
-      "name": "Dragon Bash Hologram Stampede!",
-      "subtitle": "",
-      "category": "festival",
-      "suggestedCategory": "dynamic_event",
-      "mapIds": [
-        28
-      ],
-      "mapNames": [
-        "Wayfarer Foothills"
-      ],
-      "tyrianCodexZones": [
-        "Wayfarer Foothills"
-      ],
-      "level": null,
-      "effectiveLevel": {
-        "source": "tyriancodex_map",
-        "min": 1,
-        "max": 15,
-        "label": "1-15",
-        "bucket": "1-15"
-      },
-      "wikiLevel": {
-        "min": 0,
-        "max": 0,
-        "label": "0"
-      },
-      "waypoint": "[&BH0BAAA=]",
-      "waypointSource": "source",
-      "scheduleMinutes": [
-        0,
-        60,
-        120,
-        180,
-        240,
-        300,
-        360,
-        420,
-        480,
-        540,
-        600,
-        660,
-        720,
-        780,
-        840,
-        900,
-        960,
-        1020,
-        1080,
-        1140,
-        1200,
-        1260,
-        1320,
-        1380
-      ],
-      "schedule": [
-        "00:00",
-        "01:00",
-        "02:00",
-        "03:00",
-        "04:00",
-        "05:00",
-        "06:00",
-        "07:00",
-        "08:00",
-        "09:00",
-        "10:00",
-        "11:00",
-        "12:00",
-        "13:00",
-        "14:00",
-        "15:00",
-        "16:00",
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00",
-        "22:00",
-        "23:00"
-      ],
-      "durationMinutes": 5,
-      "wiki": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
-      "wikiTitle": "Dragon Bash Hologram Stampede!",
-      "wikiUrl": "https://wiki.guildwars2.com/wiki/Dragon_Bash_Hologram_Stampede!",
-      "wikiClassification": "dynamic_event",
-      "wikiConfidence": "high",
-      "description": "Dragon Bash Hologram Stampede! is a seasonal event that occurs during Dragon Bash.",
-      "sections": {
-        "Objectives": "Time remaining: 5:00 Wave x: Activate Hologram Devices and Beat the Holograms Total devices cleared: x",
-        "Walkthrough": "The event cycles between four zones every 15 minutes. The schedule is as follows: xx:00 - Wayfarer Foothills xx:15 - Dredgehaunt Cliffs xx:30 - Lornar's Pass xx:45 - Snowden Drifts At the start of the event, Dragon Holograms will be marked on the map. After activating a hologram, Defeat the holograms! event will start and five Holograms will spawn, consisting of four normal foes, and one Veteran Hologram with increased health. A device is considered cleared once all five holograms have been defeated. The number of devices needed for the event to succeed increases with each stage, as follows: Stage 1 — 5 devices Stage 2 — 15 devices Stage 3 — 30 devices It is recommended that players use...",
-        "Event schedule": "festival-db"
-      },
-      "sources": [
-        "eventtable"
-      ],
-      "sourceHints": {
-        "titles": [],
-        "aliases": [],
-        "eventNames": []
-      },
-      "continent": [
-        55448,
-        29751
-      ]
-    },
-    {
-      "key": "wayfarer foothills|28|meta",
-      "name": "Defeat the invading Awakened",
-      "subtitle": "",
-      "category": "meta",
-      "suggestedCategory": "dynamic_event",
-      "mapIds": [
-        28
-      ],
-      "mapNames": [
-        "Wayfarer Foothills"
-      ],
-      "tyrianCodexZones": [
-        "Wayfarer Foothills"
-      ],
-      "level": null,
-      "effectiveLevel": {
-        "source": "tyriancodex_map",
-        "min": 1,
-        "max": 15,
-        "label": "1-15",
-        "bucket": "1-15"
-      },
-      "wikiLevel": {
-        "min": 6,
-        "max": 30,
-        "label": "6-30"
-      },
-      "waypoint": "[&BH0BAAA=]",
-      "waypointSource": "map_central",
-      "scheduleMinutes": [
-        270,
-        690,
-        1110
-      ],
-      "schedule": [
-        "04:30",
-        "11:30",
-        "18:30"
-      ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
       "wikiTitle": "Defeat the invading Awakened",
@@ -1449,7 +2151,7 @@
       "description": "Defeat the invading Awakened is a group event that occurs every hour at xx:30 in one of seven predefined zones across Tyria.",
       "sections": {
         "Objectives": "Awakened remnants have appeared in the area! Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants press their attack. Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants swarm the area! Awakened Forces Awakened Champion Time limit: x:xx (On success) The Awakened remnants have been eradicated! (On failure) The Awakened remnants have dispersed after wreaking havoc in the area. === Historical version === Palawa Joko's Awakened are invading the area! Awakened Forces swords Awakened Champion boss Time limit: x:xx Joko will not tolerate failure! Awakened forces press their attack. Awakened Forces swords Awakened Champion boss Time limit: x:xx The Scourge...",
-        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, although any surviving veterans will still need to be dealt with. If all invasion events..."
+        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran Awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, and any surviving veterans will have Agony (Awakened) applied to them, quickly killing them. If..."
       },
       "sources": [
         "eventtable"
@@ -1459,6 +2161,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         55448,
         29751
@@ -1559,7 +2263,9 @@
       "continent": [
         55804,
         29098
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|29|20,380,740,1100",
@@ -1592,16 +2298,16 @@
       "waypoint": "[&BEwCAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        20,
-        380,
-        740,
-        1100
+        260,
+        620,
+        980,
+        1340
       ],
       "schedule": [
-        "00:20",
-        "06:20",
-        "12:20",
-        "18:20"
+        "04:20",
+        "10:20",
+        "16:20",
+        "22:20"
       ],
       "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_Ley-Line_Anomaly_to_disperse_its_destructive_energy_before_it_overloads#Walkthrough",
@@ -1636,7 +2342,9 @@
       "continent": [
         52162,
         35949
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|30|150,330,510,690,870,1050,1230,1410",
@@ -1724,7 +2432,9 @@
       "continent": [
         56298,
         25884
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "snowden drifts|31|festival",
@@ -1831,7 +2541,9 @@
       "continent": [
         53004,
         28147
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "snowden drifts|31|meta",
@@ -2303,15 +3015,55 @@
       "waypoint": "[&BDoBAAA=]",
       "waypointSource": "map_central",
       "scheduleMinutes": [
+        30,
+        90,
         150,
+        210,
+        270,
+        330,
+        390,
+        450,
+        510,
         570,
+        630,
+        690,
+        750,
+        810,
+        870,
+        930,
         990,
+        1050,
+        1110,
+        1170,
+        1230,
+        1290,
+        1350,
         1410
       ],
       "schedule": [
+        "00:30",
+        "01:30",
         "02:30",
+        "03:30",
+        "04:30",
+        "05:30",
+        "06:30",
+        "07:30",
+        "08:30",
         "09:30",
+        "10:30",
+        "11:30",
+        "12:30",
+        "13:30",
+        "14:30",
+        "15:30",
         "16:30",
+        "17:30",
+        "18:30",
+        "19:30",
+        "20:30",
+        "21:30",
+        "22:30",
         "23:30"
       ],
       "durationMinutes": 15,
@@ -2323,7 +3075,7 @@
       "description": "Defeat the invading Awakened is a group event that occurs every hour at xx:30 in one of seven predefined zones across Tyria.",
       "sections": {
         "Objectives": "Awakened remnants have appeared in the area! Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants press their attack. Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants swarm the area! Awakened Forces Awakened Champion Time limit: x:xx (On success) The Awakened remnants have been eradicated! (On failure) The Awakened remnants have dispersed after wreaking havoc in the area. === Historical version === Palawa Joko's Awakened are invading the area! Awakened Forces swords Awakened Champion boss Time limit: x:xx Joko will not tolerate failure! Awakened forces press their attack. Awakened Forces swords Awakened Champion boss Time limit: x:xx The Scourge...",
-        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, although any surviving veterans will still need to be dealt with. If all invasion events..."
+        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran Awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, and any surviving veterans will have Agony (Awakened) applied to them, quickly killing them. If..."
       },
       "sources": [
         "eventtable"
@@ -2333,6 +3085,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         42869,
         34533
@@ -2429,7 +3183,9 @@
       "continent": [
         42351,
         32965
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "metrica province|35|meta",
@@ -2462,16 +3218,56 @@
       "waypoint": "[&BEMAAAA=]",
       "waypointSource": "map_central",
       "scheduleMinutes": [
+        30,
         90,
+        150,
+        210,
+        270,
+        330,
+        390,
+        450,
         510,
+        570,
+        630,
+        690,
+        750,
+        810,
+        870,
         930,
-        1350
+        990,
+        1050,
+        1110,
+        1170,
+        1230,
+        1290,
+        1350,
+        1410
       ],
       "schedule": [
+        "00:30",
         "01:30",
+        "02:30",
+        "03:30",
+        "04:30",
+        "05:30",
+        "06:30",
+        "07:30",
         "08:30",
+        "09:30",
+        "10:30",
+        "11:30",
+        "12:30",
+        "13:30",
+        "14:30",
         "15:30",
-        "22:30"
+        "16:30",
+        "17:30",
+        "18:30",
+        "19:30",
+        "20:30",
+        "21:30",
+        "22:30",
+        "23:30"
       ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
@@ -2482,7 +3278,7 @@
       "description": "Defeat the invading Awakened is a group event that occurs every hour at xx:30 in one of seven predefined zones across Tyria.",
       "sections": {
         "Objectives": "Awakened remnants have appeared in the area! Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants press their attack. Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants swarm the area! Awakened Forces Awakened Champion Time limit: x:xx (On success) The Awakened remnants have been eradicated! (On failure) The Awakened remnants have dispersed after wreaking havoc in the area. === Historical version === Palawa Joko's Awakened are invading the area! Awakened Forces swords Awakened Champion boss Time limit: x:xx Joko will not tolerate failure! Awakened forces press their attack. Awakened Forces swords Awakened Champion boss Time limit: x:xx The Scourge...",
-        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, although any surviving veterans will still need to be dealt with. If all invasion events..."
+        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran Awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, and any surviving veterans will have Agony (Awakened) applied to them, quickly killing them. If..."
       },
       "sources": [
         "eventtable"
@@ -2492,6 +3288,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         40758,
         35413
@@ -2590,7 +3388,9 @@
       "continent": [
         40841,
         33722
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "shark bloodstone crazed|39|meta",
@@ -2811,9 +3611,10 @@
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Defeat_the_Inquest's_golem_Mark_II",
       "wikiClassification": "group_event",
       "wikiConfidence": "high",
-      "description": "Defeat the Inquest's golem Mark II is a level 68 event that occurs in Whitland Flats at Mount Maelstrom.",
+      "description": "Defeat the Inquest's golem Mark II is a level 68 group event that occurs at the Observation Platform XKV in Whitland Flats. After successfully disabling the Inquest's nearby Matter Containers, the Inquest Golem Mark II world boss will be deployed upon the platform.",
       "sections": {
-        "Objectives": "Inquest Golem Mark II boss Time limit: 15:00"
+        "Objectives": "Inquest Golem Mark II Time limit: 15:00",
+        "Event schedule": "Event timers Unlike other world bosses, this event is not tied to a meta event, instead the required pre-event Disable the containers before they release their toxins will occur at the following scheduled times. Golem Mark II"
       },
       "sources": [
         "eventtable",
@@ -2836,7 +3637,9 @@
       "continent": [
         53918,
         39300
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|39|30,210,390,570,750,930,1110,1290",
@@ -2927,7 +3730,9 @@
       "continent": [
         51987,
         39515
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "mad king says|50|festival",
@@ -2961,57 +3766,33 @@
       "waypointSource": "source",
       "scheduleMinutes": [
         0,
-        2,
         120,
-        122,
         240,
-        242,
         360,
-        362,
         480,
-        482,
         600,
-        602,
         720,
-        722,
         840,
-        842,
         960,
-        962,
         1080,
-        1082,
         1200,
-        1202,
-        1320,
-        1322
+        1320
       ],
       "schedule": [
         "00:00",
-        "00:02",
         "02:00",
-        "02:02",
         "04:00",
-        "04:02",
         "06:00",
-        "06:02",
         "08:00",
-        "08:02",
         "10:00",
-        "10:02",
         "12:00",
-        "12:02",
         "14:00",
-        "14:02",
         "16:00",
-        "16:02",
         "18:00",
-        "18:02",
         "20:00",
-        "20:02",
-        "22:00",
-        "22:02"
+        "22:00"
       ],
-      "durationMinutes": 900,
+      "durationMinutes": 10,
       "wiki": "https://wiki.guildwars2.com/wiki/Your_Mad_King_says...",
       "wikiTitle": "Your Mad King says...",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Your_Mad_King_says...",
@@ -3041,7 +3822,9 @@
       "continent": [
         49309,
         31223
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|53|0,180,420,690,960,1140",
@@ -3124,7 +3907,9 @@
       "continent": [
         48648,
         38361
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "brisban wildlands|54|meta",
@@ -3270,7 +4055,9 @@
       "continent": [
         49401,
         34072
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|73|0,180,360,540,720,900,1080,1260",
@@ -3355,7 +4142,9 @@
       "continent": [
         48916,
         33772
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "dragonstorm|807|meta",
@@ -3428,7 +4217,9 @@
       "continent": [
         57865,
         21795
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "battle for lion s arch|807|meta",
@@ -3482,7 +4273,7 @@
         "20:30",
         "22:30"
       ],
-      "durationMinutes": 20,
+      "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/The_Battle_For_Lion's_Arch",
       "wikiTitle": "The Battle For Lion's Arch",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/The_Battle_For_Lion's_Arch",
@@ -3501,7 +4292,9 @@
       "continent": [
         57865,
         21795
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "tower of nightmares|807|meta",
@@ -3559,7 +4352,7 @@
         "21:30",
         "23:30"
       ],
-      "durationMinutes": 20,
+      "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/The_Tower_of_Nightmares_(meta_event)",
       "wikiTitle": "The Tower of Nightmares (meta event)",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/The_Tower_of_Nightmares_(meta_event)",
@@ -3580,7 +4373,9 @@
       "continent": [
         57865,
         21795
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|873|120,360,630,900,1080,1380",
@@ -3666,7 +4461,9 @@
       "continent": [
         46589,
         36792
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "southsun cove|873|meta",
@@ -3700,15 +4497,55 @@
       "waypointSource": "map_central",
       "scheduleMinutes": [
         30,
+        90,
+        150,
+        210,
+        270,
+        330,
+        390,
         450,
+        510,
+        570,
+        630,
+        690,
+        750,
+        810,
         870,
-        1290
+        930,
+        990,
+        1050,
+        1110,
+        1170,
+        1230,
+        1290,
+        1350,
+        1410
       ],
       "schedule": [
         "00:30",
+        "01:30",
+        "02:30",
+        "03:30",
+        "04:30",
+        "05:30",
+        "06:30",
         "07:30",
+        "08:30",
+        "09:30",
+        "10:30",
+        "11:30",
+        "12:30",
+        "13:30",
         "14:30",
-        "21:30"
+        "15:30",
+        "16:30",
+        "17:30",
+        "18:30",
+        "19:30",
+        "20:30",
+        "21:30",
+        "22:30",
+        "23:30"
       ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
@@ -3719,7 +4556,7 @@
       "description": "Defeat the invading Awakened is a group event that occurs every hour at xx:30 in one of seven predefined zones across Tyria.",
       "sections": {
         "Objectives": "Awakened remnants have appeared in the area! Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants press their attack. Awakened Forces Awakened Champion Time limit: x:xx The Awakened remnants swarm the area! Awakened Forces Awakened Champion Time limit: x:xx (On success) The Awakened remnants have been eradicated! (On failure) The Awakened remnants have dispersed after wreaking havoc in the area. === Historical version === Palawa Joko's Awakened are invading the area! Awakened Forces swords Awakened Champion boss Time limit: x:xx Joko will not tolerate failure! Awakened forces press their attack. Awakened Forces swords Awakened Champion boss Time limit: x:xx The Scourge...",
-        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, although any surviving veterans will still need to be dealt with. If all invasion events..."
+        "Walkthrough": "Joko's invasion consists of three phases. Each phase consists of an increasing number of invasion events. The events are marked with a swarm of red sword icons and a red boss icon once the champion appears. Check the world map or mini map for locations. During each invasion event, there will be two to three waves of between four and seven veteran Awakened. After they are defeated, the champion will spawn (the champions are random). While the champion lives, a group of veteran Awakened will spawn to replace those that are completely destroyed. Defeating the champion scores a success for the event, and any surviving veterans will have Agony (Awakened) applied to them, quickly killing them. If..."
       },
       "sources": [
         "eventtable"
@@ -3729,6 +4566,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         46364,
         36070
@@ -3812,7 +4651,9 @@
       "continent": [
         55718,
         39109
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "dolyak race|922|festival",
@@ -3836,9 +4677,9 @@
         "bucket": "unknown"
       },
       "wikiLevel": {
-        "min": 80,
-        "max": 80,
-        "label": "80"
+        "min": 0,
+        "max": 0,
+        "label": "0"
       },
       "waypoint": "[&BBwHAAA=]",
       "waypointSource": "source",
@@ -3876,10 +4717,10 @@
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Flying_Dolyak:_Reach_the_finish_line!",
       "wikiClassification": "dynamic_event",
       "wikiConfidence": "high",
-      "description": "Flying Dolyak: Reach the finish line! is a race event that occurs around the Bazaar Docks.",
+      "description": "Flying Dolyak: Reach the finish line! is a event that occurs around the Bazaar Docks. It is the race equivalent of Time Trial: Flying Dolyak.",
       "sections": {
         "Objectives": "Total racers finished: x The race will end in: 5:00",
-        "Walkthrough": "To participate you have to talk to Trader Marcus to transform into a dolyak calf when the event starts and, using the aspect skills, make your way up the Bazaar to the finish line just before the Sky Docks Waypoint. You will be transformed into a dolyak calf at the start of the event. Do NOT use the Endless Dolyak Calf Tonic, before the race as that will actually prevent players from registering at the first checkpoint. To get credit for this event, you need to complete the obstacle course and pass all the checkpoints as a dolyak calf. When the event begins Trader Marcus can be found on the lowest level of the Bazaar right next to the ship. Talk to him to transform into the calf. All of..."
+        "Walkthrough": "The goal is to effectively use aspect skills and make your way up the Bazaar to the finish line at the Sky Docks. You will be transformed into a dolyak calf at the start of the event. Your skills will be gone, and you will not be able to jump or mount. All checkpoints must be crossed while under this transformation. Walk over the Sun Crystal next to the Sun Guide to acquire Light Dash; use it to pass through the waterfalls. Missing the angle or traveling too far may cause you to fall off into an unrecoverable position. Once you have passed the waterfalls, work your way through the cave. Walk over the Wind Crystal near the Wind Guide and use Assisted Leap to jump onto the platforms. Walk..."
       },
       "sources": [
         "eventtable"
@@ -3892,7 +4733,9 @@
       "continent": [
         55718,
         39109
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "skiff race|922|festival",
@@ -3916,9 +4759,9 @@
         "bucket": "unknown"
       },
       "wikiLevel": {
-        "min": 80,
-        "max": 80,
-        "label": "80"
+        "min": 0,
+        "max": 0,
+        "label": "0"
       },
       "waypoint": "[&BBwHAAA=]",
       "waypointSource": "source",
@@ -3958,7 +4801,7 @@
       "wikiConfidence": "high",
       "description": "Labyrinthine Skiffs: A race is starting soon! is a preparation phase for the skiff race event that starts in the southeast corner of Labyrinthine Cliffs",
       "sections": {
-        "Objectives": "Speak with the race organizer to participate in the upcoming race. Make sure to be in the starting area when the race begins to prevent being disqualified. The race will begin in: 1:30.",
+        "Objectives": "Speak with the race organizer to participate in the upcoming race. Make sure to be in the starting area when the race begins to prevent being disqualified. The race will begin in: 2:00",
         "Walkthrough": "Labyrinthine Skiffs: Reach the finish line!#Walkthrough",
         "Event schedule": "This event occurs every even hour at xx:00 (server time). festival-lc"
       },
@@ -3973,7 +4816,9 @@
       "continent": [
         55718,
         39109
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "treasure hunt|922|festival",
@@ -4039,7 +4884,7 @@
       "wikiConfidence": "high",
       "description": "Participate in the treasure hunt! is a meta event that takes place around the Labyrinthine Cliffs.",
       "sections": {
-        "Dynamic events": "Preparations are underway for a celebratory competition in the Labyrinthine Cliffs. Treasure hunt begins in: 1:00 The Captain's Council is sponsoring a celebratory treasure hunt as part of the festival! Find all the loot you can! Treasure hunt ends in: 20:00 Collect as much loot as possible before time runs out! Round 1 Collect as much loot as possible before time runs out! Round 2 Collect as much loot as possible before time runs out! Round 3 All rounds of the treasure hunt have been completed! A special bonus event will begin shortly near the Sky Docks Waypoint! A special bonus event will begin in: 1:00 All rounds of the treasure hunt have been completed! A celebratory flame effigy has...",
+        "Dynamic events": "Preparations are underway for a celebratory competition in the Labyrinthine Cliffs. Treasure hunt begins in: 1:00 The Captain's Council is sponsoring a celebratory treasure hunt as part of the festival! Find all the loot you can! Treasure hunt ends in: 20:00 [Round 1] Collect as much loot as possible before time runs out! [Round 2] Collect as much loot as possible before time runs out! [Round 3] Collect as much loot as possible before time runs out! All rounds of the treasure hunt have been completed! A special bonus event will begin shortly near the Sky Docks Waypoint! A special bonus event will begin in: 1:00 All rounds of the treasure hunt have been completed! A celebratory flame effigy...",
         "Event schedule": "festival-lc"
       },
       "sources": [
@@ -4053,7 +4898,9 @@
       "continent": [
         55718,
         39109
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "skimmer race|922|festival",
@@ -4077,9 +4924,9 @@
         "bucket": "unknown"
       },
       "wikiLevel": {
-        "min": 80,
-        "max": 80,
-        "label": "80"
+        "min": 0,
+        "max": 0,
+        "label": "0"
       },
       "waypoint": "[&BBwHAAA=]",
       "waypointSource": "source",
@@ -4133,7 +4980,9 @@
       "continent": [
         55718,
         39109
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "dry top q1|nomap|meta",
@@ -4494,108 +5343,56 @@
       "waypoint": "[&BIAHAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        0,
         40,
-        45,
-        60,
         100,
-        105,
         160,
-        165,
         220,
-        225,
         280,
-        285,
         340,
-        345,
         400,
-        405,
         460,
-        465,
         520,
-        525,
         580,
-        585,
         640,
-        645,
         700,
-        705,
         760,
-        765,
         820,
-        825,
         880,
-        885,
         940,
-        945,
         1000,
-        1005,
         1060,
-        1065,
         1120,
-        1125,
         1180,
-        1185,
         1240,
-        1245,
         1300,
-        1305,
         1360,
-        1365,
-        1420,
-        1425
+        1420
       ],
       "schedule": [
-        "00:00",
         "00:40",
-        "00:45",
-        "01:00",
         "01:40",
-        "01:45",
         "02:40",
-        "02:45",
         "03:40",
-        "03:45",
         "04:40",
-        "04:45",
         "05:40",
-        "05:45",
         "06:40",
-        "06:45",
         "07:40",
-        "07:45",
         "08:40",
-        "08:45",
         "09:40",
-        "09:45",
         "10:40",
-        "10:45",
         "11:40",
-        "11:45",
         "12:40",
-        "12:45",
         "13:40",
-        "13:45",
         "14:40",
-        "14:45",
         "15:40",
-        "15:45",
         "16:40",
-        "16:45",
         "17:40",
-        "17:45",
         "18:40",
-        "18:45",
         "19:40",
-        "19:45",
         "20:40",
-        "20:45",
         "21:40",
-        "21:45",
         "22:40",
-        "22:45",
-        "23:40",
-        "23:45"
+        "23:40"
       ],
       "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Sandstorm!",
@@ -4622,7 +5419,9 @@
       "continent": [
         38299,
         33089
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "devourer bloodstone crazed|988|meta",
@@ -4934,7 +5733,7 @@
         "21:30",
         "23:30"
       ],
-      "durationMinutes": 90,
+      "durationMinutes": 120,
       "wiki": "https://wiki.guildwars2.com/wiki/Advancing_on_the_Blighting_Towers",
       "wikiTitle": "Advancing on the Blighting Towers",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Advancing_on_the_Blighting_Towers",
@@ -4958,7 +5757,9 @@
       "continent": [
         36649,
         36232
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "assault|1041|meta",
@@ -4991,12 +5792,34 @@
       "waypoint": "[&BC4IAAA=]",
       "waypointSource": "map_central",
       "scheduleMinutes": [
-        90
+        90,
+        210,
+        330,
+        450,
+        570,
+        690,
+        810,
+        930,
+        1050,
+        1170,
+        1290,
+        1410
       ],
       "schedule": [
-        "01:30"
+        "01:30",
+        "03:30",
+        "05:30",
+        "07:30",
+        "09:30",
+        "11:30",
+        "13:30",
+        "15:30",
+        "17:30",
+        "19:30",
+        "21:30",
+        "23:30"
       ],
-      "durationMinutes": 15,
+      "durationMinutes": 30,
       "wiki": "https://wiki.guildwars2.com/wiki/Aetherblade_Assault",
       "wikiTitle": "Aetherblade Assault",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Aetherblade_Assault",
@@ -5015,6 +5838,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         36205,
         36974
@@ -5050,57 +5875,33 @@
       "waypointSource": "source",
       "scheduleMinutes": [
         10,
-        105,
         130,
-        225,
         250,
-        345,
         370,
-        465,
         490,
-        585,
         610,
-        705,
         730,
-        825,
         850,
-        945,
         970,
-        1065,
         1090,
-        1185,
         1210,
-        1305,
-        1330,
-        1425
+        1330
       ],
       "schedule": [
         "00:10",
-        "01:45",
         "02:10",
-        "03:45",
         "04:10",
-        "05:45",
         "06:10",
-        "07:45",
         "08:10",
-        "09:45",
         "10:10",
-        "11:45",
         "12:10",
-        "13:45",
         "14:10",
-        "15:45",
         "16:10",
-        "17:45",
         "18:10",
-        "19:45",
         "20:10",
-        "21:45",
-        "22:10",
-        "23:45"
+        "22:10"
       ],
-      "durationMinutes": 25,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Night_and_the_Enemy",
       "wikiTitle": "Night and the Enemy",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Night_and_the_Enemy",
@@ -5123,7 +5924,9 @@
       "continent": [
         35166,
         31785
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "securing verdant brink|1042|meta",
@@ -5235,34 +6038,34 @@
       "waypoint": "[&BMYHAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        45,
-        165,
-        285,
-        405,
-        525,
-        645,
-        765,
-        885,
-        1005,
-        1125,
-        1245,
-        1365
+        60,
+        180,
+        300,
+        420,
+        540,
+        660,
+        780,
+        900,
+        1020,
+        1140,
+        1260,
+        1380
       ],
       "schedule": [
-        "00:45",
-        "02:45",
-        "04:45",
-        "06:45",
-        "08:45",
-        "10:45",
-        "12:45",
-        "14:45",
-        "16:45",
-        "18:45",
-        "20:45",
-        "22:45"
+        "01:00",
+        "03:00",
+        "05:00",
+        "07:00",
+        "09:00",
+        "11:00",
+        "13:00",
+        "15:00",
+        "17:00",
+        "19:00",
+        "21:00",
+        "23:00"
       ],
-      "durationMinutes": 1200,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Battle_in_Tarir",
       "wikiTitle": "Battle in Tarir",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Battle_in_Tarir",
@@ -5295,7 +6098,9 @@
       "continent": [
         34318,
         33966
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "battle in tarir|1043|meta",
@@ -5377,7 +6182,9 @@
       "continent": [
         34228,
         34591
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "defending tarir|1043|meta",
@@ -5668,7 +6475,7 @@
         "20:30",
         "22:30"
       ],
-      "durationMinutes": 900,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/King_of_the_Jungle",
       "wikiTitle": "King of the Jungle",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/King_of_the_Jungle",
@@ -5701,7 +6508,9 @@
       "continent": [
         37246,
         35516
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "chak gerent|1045|meta",
@@ -5734,6 +6543,7 @@
       "waypoint": "[&BPUHAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
+        30,
         150,
         270,
         390,
@@ -5747,6 +6557,7 @@
         1350
       ],
       "schedule": [
+        "00:30",
         "02:30",
         "04:30",
         "06:30",
@@ -5759,7 +6570,7 @@
         "20:30",
         "22:30"
       ],
-      "durationMinutes": 16,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Against_the_Chak_Gerent",
       "wikiTitle": "King of the Jungle",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/King_of_the_Jungle",
@@ -5781,7 +6592,9 @@
       "continent": [
         37246,
         35516
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "world_boss|1052|105,225,345,465,585,705,825,945,1065,1185,1305,1425",
@@ -5814,34 +6627,34 @@
       "waypoint": "[&BAgIAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        105,
-        225,
-        345,
-        465,
-        585,
-        705,
-        825,
-        945,
-        1065,
-        1185,
-        1305,
-        1425
+        10,
+        130,
+        250,
+        370,
+        490,
+        610,
+        730,
+        850,
+        970,
+        1090,
+        1210,
+        1330
       ],
       "schedule": [
-        "01:45",
-        "03:45",
-        "05:45",
-        "07:45",
-        "09:45",
-        "11:45",
-        "13:45",
-        "15:45",
-        "17:45",
-        "19:45",
-        "21:45",
-        "23:45"
+        "00:10",
+        "02:10",
+        "04:10",
+        "06:10",
+        "08:10",
+        "10:10",
+        "12:10",
+        "14:10",
+        "16:10",
+        "18:10",
+        "20:10",
+        "22:10"
       ],
-      "durationMinutes": 1200,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Night_and_the_Enemy",
       "wikiTitle": "Night and the Enemy",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Night_and_the_Enemy",
@@ -5876,7 +6689,9 @@
       "continent": [
         35166,
         31785
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "wyvern bloodstone crazed|1052|meta",
@@ -6058,18 +6873,34 @@
       "waypoint": "[&BO8HAAA=]",
       "waypointSource": "wiki_name",
       "scheduleMinutes": [
-        0,
         10,
-        30,
-        105
+        130,
+        250,
+        370,
+        490,
+        610,
+        730,
+        850,
+        970,
+        1090,
+        1210,
+        1330
       ],
       "schedule": [
-        "00:00",
         "00:10",
-        "00:30",
-        "01:45"
+        "02:10",
+        "04:10",
+        "06:10",
+        "08:10",
+        "10:10",
+        "12:10",
+        "14:10",
+        "16:10",
+        "18:10",
+        "20:10",
+        "22:10"
       ],
-      "durationMinutes": 10,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Night_and_the_Enemy",
       "wikiTitle": "Night and the Enemy",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Night_and_the_Enemy",
@@ -6092,7 +6923,9 @@
       "continent": [
         34083,
         32201
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "new loamhurst|1185|meta",
@@ -6174,7 +7007,9 @@
       "continent": [
         46062,
         27238
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "saidra s haven|1185|meta",
@@ -6256,7 +7091,9 @@
       "continent": [
         45005,
         27002
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "lake doric loamhurst queenslayer|1185|meta",
@@ -6469,58 +7306,34 @@
       "waypoint": "[&BKsJAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        25,
         30,
-        145,
         150,
-        265,
         270,
-        385,
         390,
-        505,
         510,
-        625,
         630,
-        745,
         750,
-        865,
         870,
-        985,
         990,
-        1105,
         1110,
-        1225,
         1230,
-        1345,
         1350
       ],
       "schedule": [
-        "00:25",
         "00:30",
-        "02:25",
         "02:30",
-        "04:25",
         "04:30",
-        "06:25",
         "06:30",
-        "08:25",
         "08:30",
-        "10:25",
         "10:30",
-        "12:25",
         "12:30",
-        "14:25",
         "14:30",
-        "16:25",
         "16:30",
-        "18:25",
         "18:30",
-        "20:25",
         "20:30",
-        "22:25",
         "22:30"
       ],
-      "durationMinutes": 1800,
+      "durationMinutes": 30,
       "wiki": "https://wiki.guildwars2.com/wiki/White_Mantle_Control:_Noran's_Homestead",
       "wikiTitle": "White Mantle Control: Noran's Homestead",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/White_Mantle_Control:_Noran's_Homestead",
@@ -6552,7 +7365,9 @@
       "continent": [
         45302,
         25711
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "choya pinata|1210|meta",
@@ -6664,34 +7479,34 @@
       "waypoint": "[&BLsKAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        5,
-        125,
-        245,
-        365,
-        485,
-        605,
-        725,
-        845,
-        965,
-        1085,
-        1205,
-        1325
+        21,
+        141,
+        261,
+        381,
+        501,
+        621,
+        741,
+        861,
+        981,
+        1101,
+        1221,
+        1341
       ],
       "schedule": [
-        "00:05",
-        "02:05",
-        "04:05",
-        "06:05",
-        "08:05",
-        "10:05",
-        "12:05",
-        "14:05",
-        "16:05",
-        "18:05",
-        "20:05",
-        "22:05"
+        "00:21",
+        "02:21",
+        "04:21",
+        "06:21",
+        "08:21",
+        "10:21",
+        "12:21",
+        "14:21",
+        "16:21",
+        "18:21",
+        "20:21",
+        "22:21"
       ],
-      "durationMinutes": 20,
+      "durationMinutes": 9,
       "wiki": "https://wiki.guildwars2.com/wiki/Casino_Blitz",
       "wikiTitle": "Casino Blitz",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Casino_Blitz",
@@ -6715,7 +7530,9 @@
       "continent": [
         58615,
         43743
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "buried treasure|1211|meta",
@@ -6775,7 +7592,7 @@
         "21:00",
         "23:00"
       ],
-      "durationMinutes": 1200,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/The_Search_for_Buried_Treasure",
       "wikiTitle": "The Search for Buried Treasure",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/The_Search_for_Buried_Treasure",
@@ -6805,7 +7622,9 @@
       "continent": [
         60676,
         42149
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "junundu rising|1226|meta",
@@ -6911,7 +7730,9 @@
       "continent": [
         61423,
         51140
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "maws of torment|1226|meta",
@@ -6993,7 +7814,9 @@
       "continent": [
         59187,
         50521
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "junundu|1226|meta",
@@ -7087,57 +7910,31 @@
       "waypoint": "[&BFMKAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        0,
-        90,
         115,
-        210,
         235,
-        330,
         355,
-        450,
         475,
-        570,
         595,
-        690,
         715,
-        810,
         835,
-        930,
         955,
-        1050,
         1075,
-        1170,
         1195,
-        1290,
         1315,
-        1410,
         1435
       ],
       "schedule": [
-        "00:00",
-        "01:30",
         "01:55",
-        "03:30",
         "03:55",
-        "05:30",
         "05:55",
-        "07:30",
         "07:55",
-        "09:30",
         "09:55",
-        "11:30",
         "11:55",
-        "13:30",
         "13:55",
-        "15:30",
         "15:55",
-        "17:30",
         "17:55",
-        "19:30",
         "19:55",
-        "21:30",
         "21:55",
-        "23:30",
         "23:55"
       ],
       "durationMinutes": 20,
@@ -7163,7 +7960,9 @@
       "continent": [
         61075,
         45581
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "serpents ire|1248|meta",
@@ -7255,7 +8054,9 @@
       "continent": [
         67376,
         53931
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "forged|1248|meta",
@@ -7289,7 +8090,6 @@
       "waypointSource": "source",
       "scheduleMinutes": [
         0,
-        30,
         60,
         120,
         180,
@@ -7316,7 +8116,6 @@
       ],
       "schedule": [
         "00:00",
-        "00:30",
         "01:00",
         "02:00",
         "03:00",
@@ -7341,7 +8140,7 @@
         "22:00",
         "23:00"
       ],
-      "durationMinutes": 20,
+      "durationMinutes": 30,
       "wiki": "https://wiki.guildwars2.com/wiki/Forged_with_Fire",
       "wikiTitle": "Forged with Fire",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Forged_with_Fire",
@@ -7364,7 +8163,9 @@
       "continent": [
         65112,
         54720
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "istan palawadan|1263|meta",
@@ -7397,7 +8198,6 @@
       "waypoint": "[&BPcKAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        0,
         105,
         225,
         345,
@@ -7412,7 +8212,6 @@
         1425
       ],
       "schedule": [
-        "00:00",
         "01:45",
         "03:45",
         "05:45",
@@ -7426,7 +8225,7 @@
         "21:45",
         "23:45"
       ],
-      "durationMinutes": 1200,
+      "durationMinutes": 30,
       "wiki": "https://wiki.guildwars2.com/wiki/Palawadan,_Jewel_of_Istan_(meta_event)",
       "wikiTitle": "Palawadan, Jewel of Istan (meta event)",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Palawadan,_Jewel_of_Istan_(meta_event)",
@@ -7456,7 +8255,9 @@
       "continent": [
         57756,
         61963
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "dangerous prey|1301|meta",
@@ -7538,7 +8339,9 @@
       "continent": [
         64762,
         59142
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "death branded shatterer|1301|meta",
@@ -7621,7 +8424,9 @@
       "continent": [
         63986,
         57861
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "shatterer|1301|meta",
@@ -7655,11 +8460,23 @@
       "waypointSource": "map_central",
       "scheduleMinutes": [
         60,
-        75
+        240,
+        420,
+        600,
+        780,
+        960,
+        1140,
+        1320
       ],
       "schedule": [
         "01:00",
-        "01:15"
+        "04:00",
+        "07:00",
+        "10:00",
+        "13:00",
+        "16:00",
+        "19:00",
+        "22:00"
       ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/The_Shatterer",
@@ -7677,6 +8494,8 @@
         "aliases": [],
         "eventNames": []
       },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874,
       "continent": [
         64762,
         59142
@@ -7762,7 +8581,9 @@
       "continent": [
         56733,
         37408
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "thunderhead keep|1310|meta",
@@ -7844,7 +8665,9 @@
       "continent": [
         58328,
         35778
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "a concert for the ages|1330|meta",
@@ -7927,7 +8750,9 @@
       "continent": [
         61288,
         19612
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "ceremony of the sacred flame|1330|meta",
@@ -7961,9 +8786,6 @@
       "waypointSource": "source",
       "scheduleMinutes": [
         10,
-        40,
-        65,
-        100,
         130,
         250,
         370,
@@ -7978,9 +8800,6 @@
       ],
       "schedule": [
         "00:10",
-        "00:40",
-        "01:05",
-        "01:40",
         "02:10",
         "04:10",
         "06:10",
@@ -8002,7 +8821,7 @@
       "description": "Ceremony of the Sacred Flame is a level 80 meta event that occurs in Grothmar Valley and rewards a Flame Legion Key. The goal is to light a large effigy which represents the past problems of the Flame Legion. By burning it away, they have cleared away their issues and can move on towards peace and...",
       "sections": {
         "Event schedule": "The event chain starts at 2:00 Tyrian Time (25 minutes into nighttime) at the Eternal Cauldron in Flame Legion Camp. lws5-gv",
-        "Events": "The Burning Effigy Ceremony will start after midnight. Flame Legion is subduing the Sacred Flame. Ignite the effigy before sunrise: 10:00 Damage the elementals to help Flame Legion siphon their power! Flame Legion is carrying the Sacred Flame to the upper brazier. Pass the flame from torch to torch to transport it to the upper brazier Flame Legion is igniting the effigy! Ignite the effigy with the Sacred Flame! The burning ceremony was completed. (meta success) The ceremony was unsuccessful. (meta failure)",
+        "Events": "The Burning Effigy Ceremony will start after midnight. Flame Legion is subduing the Sacred Flame. Ignite the effigy before sunrise: 10:00 Damage the elementals to help Flame Legion siphon their power! Flame Legion is carrying the Sacred Flame to the upper brazier. Pass the flame from torch to torch to transport it to the upper brazier Flame Legion is igniting the effigy! Ignite the effigy with the Sacred Flame! The burning ceremony was completed. (meta success) The ceremony was unsuccessful. (meta failure) On some instances, for unknown reasons, the meta will remain stuck on \"The ceremony was unsuccessful.\" and never reset at the scheduled time, and the first event Damage the elementals to...",
         "Walkthrough": "Flame Legion is subduing the Sacred Flame During the first part of this meta event, the goal is to damage the Champion Fire Elemental. Generally, this isn't too difficult. Before the start of the fight, you can mount up onto the Springer and then use the dismount skill to deal a large amount of CC at the start of the fight. Flame Legion is carrying the Sacred Flame to the upper brazier During the second part of this meta event, the goal is to light the upper brazier in front of the effigy. This is greatly helped by lighting the lower brazier first (the optional objective). First, pick up a torch from around the lit brazier. Then, light the torch with the sacred flame by getting close to the..."
       },
       "sources": [
@@ -8017,7 +8836,9 @@
       "continent": [
         60427,
         18848
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "the haunting of doomlore shrine|1330|meta",
@@ -8050,34 +8871,34 @@
       "waypoint": "[&BA4MAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        40,
-        160,
-        280,
-        400,
-        520,
-        640,
-        760,
-        880,
-        1000,
-        1120,
-        1240,
-        1360
+        38,
+        158,
+        278,
+        398,
+        518,
+        638,
+        758,
+        878,
+        998,
+        1118,
+        1238,
+        1358
       ],
       "schedule": [
-        "00:40",
-        "02:40",
-        "04:40",
-        "06:40",
-        "08:40",
-        "10:40",
-        "12:40",
-        "14:40",
-        "16:40",
-        "18:40",
-        "20:40",
-        "22:40"
+        "00:38",
+        "02:38",
+        "04:38",
+        "06:38",
+        "08:38",
+        "10:38",
+        "12:38",
+        "14:38",
+        "16:38",
+        "18:38",
+        "20:38",
+        "22:38"
       ],
-      "durationMinutes": 20,
+      "durationMinutes": 22,
       "wiki": "https://wiki.guildwars2.com/wiki/The_Haunting_of_Doomlore_Shrine",
       "wikiTitle": "The Haunting of Doomlore Shrine",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/The_Haunting_of_Doomlore_Shrine",
@@ -8099,7 +8920,9 @@
       "continent": [
         61726,
         18513
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "the ooze pit trials|1330|meta",
@@ -8182,7 +9005,9 @@
       "continent": [
         61288,
         19612
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "drakkar the ice dragon s champion|1343|meta",
@@ -8264,7 +9089,9 @@
       "continent": [
         56616,
         17815
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "defend jora s keep|1343|meta",
@@ -8297,76 +9124,32 @@
       "waypoint": "[&BCcMAAA=]",
       "waypointSource": "source",
       "scheduleMinutes": [
-        105,
-        120,
+        5,
         125,
-        225,
-        240,
         245,
-        345,
-        360,
         365,
-        465,
-        480,
         485,
-        585,
-        600,
         605,
-        705,
-        720,
         725,
-        825,
-        840,
         845,
-        945,
-        960,
         965,
-        1065,
-        1080,
         1085,
-        1185,
-        1200,
         1205,
-        1305,
-        1320,
-        1325,
-        1425
+        1325
       ],
       "schedule": [
-        "01:45",
-        "02:00",
+        "00:05",
         "02:05",
-        "03:45",
-        "04:00",
         "04:05",
-        "05:45",
-        "06:00",
         "06:05",
-        "07:45",
-        "08:00",
         "08:05",
-        "09:45",
-        "10:00",
         "10:05",
-        "11:45",
-        "12:00",
         "12:05",
-        "13:45",
-        "14:00",
         "14:05",
-        "15:45",
-        "16:00",
         "16:05",
-        "17:45",
-        "18:00",
         "18:05",
-        "19:45",
-        "20:00",
         "20:05",
-        "21:45",
-        "22:00",
-        "22:05",
-        "23:45"
+        "22:05"
       ],
       "durationMinutes": 15,
       "wiki": "https://wiki.guildwars2.com/wiki/Storms_of_Winter",
@@ -8391,7 +9174,9 @@
       "continent": [
         58937,
         18319
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "the twisted marionette|807|meta",
@@ -8466,7 +9251,9 @@
       "continent": [
         57865,
         21795
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "twisted marionette|27|meta",
@@ -8522,7 +9309,7 @@
         "20:00",
         "22:00"
       ],
-      "durationMinutes": 1200,
+      "durationMinutes": 20,
       "wiki": "https://wiki.guildwars2.com/wiki/Twisted_Marionette",
       "wikiTitle": "Twisted Marionette",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Twisted_Marionette",
@@ -8547,7 +9334,9 @@
       "continent": [
         57865,
         21795
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "jade maw|1422|meta",
@@ -8653,7 +9442,9 @@
       "continent": [
         33826,
         102383
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "preparations|1422|meta",
@@ -8688,56 +9479,80 @@
       "scheduleMinutes": [
         0,
         13,
+        53,
         120,
         133,
+        173,
         240,
         253,
+        293,
         360,
         373,
+        413,
         480,
         493,
+        533,
         600,
         613,
+        653,
         720,
         733,
+        773,
         840,
         853,
+        893,
         960,
         973,
+        1013,
         1080,
         1093,
+        1133,
         1200,
         1213,
+        1253,
         1320,
-        1333
+        1333,
+        1373
       ],
       "schedule": [
         "00:00",
         "00:13",
+        "00:53",
         "02:00",
         "02:13",
+        "02:53",
         "04:00",
         "04:13",
+        "04:53",
         "06:00",
         "06:13",
+        "06:53",
         "08:00",
         "08:13",
+        "08:53",
         "10:00",
         "10:13",
+        "10:53",
         "12:00",
         "12:13",
+        "12:53",
         "14:00",
         "14:13",
+        "14:53",
         "16:00",
         "16:13",
+        "16:53",
         "18:00",
         "18:13",
+        "18:53",
         "20:00",
         "20:13",
+        "20:53",
         "22:00",
-        "22:13"
+        "22:13",
+        "22:53"
       ],
-      "durationMinutes": 5,
+      "durationMinutes": 32,
       "wiki": "https://wiki.guildwars2.com/wiki/Preparations",
       "wikiTitle": "Preparations",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Preparations",
@@ -8758,7 +9573,9 @@
       "continent": [
         33826,
         102383
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "the battle for the jade sea|1422|meta",
@@ -8841,7 +9658,9 @@
       "continent": [
         33826,
         102383
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "maw|1422|meta",
@@ -8961,7 +9780,7 @@
         "20:00",
         "22:00"
       ],
-      "durationMinutes": 30,
+      "durationMinutes": 40,
       "wiki": "https://wiki.guildwars2.com/wiki/Kaineng_Blackout",
       "wikiTitle": "Kaineng Blackout",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Kaineng_Blackout",
@@ -8984,7 +9803,9 @@
       "continent": [
         26674,
         99438
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "aetherblade|1442|meta",
@@ -9067,7 +9888,9 @@
       "continent": [
         23191,
         101452
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "aspenwood|1452|meta",
@@ -9149,7 +9972,9 @@
       "continent": [
         32768,
         102107
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "gang|1452|meta",
@@ -9183,7 +10008,6 @@
       "waypointSource": "source",
       "scheduleMinutes": [
         30,
-        100,
         150,
         270,
         390,
@@ -9198,7 +10022,6 @@
       ],
       "schedule": [
         "00:30",
-        "01:40",
         "02:30",
         "04:30",
         "06:30",
@@ -9235,7 +10058,9 @@
       "continent": [
         30312,
         102714
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "target practice|1509|meta",
@@ -9265,55 +10090,31 @@
       "waypointSource": "source",
       "scheduleMinutes": [
         60,
-        100,
         180,
-        220,
         300,
-        340,
         420,
-        460,
         540,
-        580,
         660,
-        700,
         780,
-        820,
         900,
-        940,
         1020,
-        1060,
         1140,
-        1180,
         1260,
-        1300,
-        1380,
-        1420
+        1380
       ],
       "schedule": [
         "01:00",
-        "01:40",
         "03:00",
-        "03:40",
         "05:00",
-        "05:40",
         "07:00",
-        "07:40",
         "09:00",
-        "09:40",
         "11:00",
-        "11:40",
         "13:00",
-        "13:40",
         "15:00",
-        "15:40",
         "17:00",
-        "17:40",
         "19:00",
-        "19:40",
         "21:00",
-        "21:40",
-        "23:00",
-        "23:40"
+        "23:00"
       ],
       "durationMinutes": 40,
       "wiki": "https://wiki.guildwars2.com/wiki/Skyscale_Target_Practice_in_the_Wizard's_Tower",
@@ -9334,7 +10135,9 @@
       "continent": [
         24103,
         22231
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "fly by night|1509|meta",
@@ -9409,7 +10212,9 @@
       "continent": [
         24103,
         22231
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "unlocking the wizard s tower|1510|meta",
@@ -9491,7 +10296,9 @@
       "continent": [
         24327,
         23533
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "amnytas|1510|meta",
@@ -9691,7 +10498,9 @@
       "continent": [
         23898,
         21159
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "of mists and monsters|1554|meta",
@@ -9774,7 +10583,9 @@
       "continent": [
         40128,
         14659
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "convergence|1564|meta",
@@ -9839,7 +10650,9 @@
       "continent": [
         42924,
         22730
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "a titanic voyage|1574|meta",
@@ -9921,7 +10734,9 @@
       "continent": [
         36051,
         11654
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "secrets of the weald|1593|meta",
@@ -10004,7 +10819,9 @@
       "continent": [
         7618,
         58836
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "hammerhart rumble|1595|meta",
@@ -10073,8 +10890,8 @@
       "description": "Hammerhart Rumble! is a level 80 world boss meta event that takes place in Shipwreck Strand, at Twisting Hollows.",
       "sections": {
         "Dynamic events": "Before event starts Twisting Hollows has grown quiet. Two minutes before the event starts Something strange is happening in Twisting Hollows.Gather in: 2:00 During the event Defeat Jessica and Jimmy Hammerhart before they overclock the machine. Hammerhart Rumble! (event) Success Twisting Hollows has grown quiet.Charged teleporters deactivate in 5:00 Failure The machine will explode in",
-        "Event schedule": "voe-ss",
-        "Walkthrough": "The goal of the meta is to defeat the twin bosses, Jessica and Jimmy. The bosses share one health bar. When the event starts, they will spawn a protective dome around The Machine. At first, they are fought separately in their respective arenas accessed by teleports that are on the round platform by The Machine. Each player will gain either Magnetic Signature: Positive (player), used to fight Jessica Hammerhart or Magnetic Signature: Negative (player), used to fight Jimmy Hammerhart. The teleporters are clearly marked with either plus or minus symbol. Fighting a boss while having the wrong Magnetic Signature will cause the player to deal no damage to the boss. Player's Magnetic Signature..."
+        "Event schedule": "The event starts every 2 hours. voe-ss",
+        "Walkthrough": "While in the area, you are affected by No Mount Use, use one of the Rescue Ropes to get up to the platform if you fall in the water. The goal of the meta is to defeat the twin bosses, Jessica and Jimmy. The bosses share one health bar. When the event starts, they will spawn a protective dome around The Machine. At first, they are fought separately in their respective arenas accessed by teleports that are on the round platform by The Machine. Each player will gain either Magnetic Signature: Positive (player), used to fight Jessica Hammerhart or Magnetic Signature: Negative (player), used to fight Jimmy Hammerhart. The teleporters are clearly marked with either plus or minus symbol. Fighting..."
       },
       "sources": [
         "eventtable"
@@ -10087,7 +10904,9 @@
       "continent": [
         11173,
         59803
-      ]
+      ],
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     },
     {
       "key": "weald|1595|meta",
@@ -10120,16 +10939,34 @@
       "waypoint": "[&BJ4PAAA=]",
       "waypointSource": "wiki_name_global",
       "scheduleMinutes": [
-        0,
-        40,
-        100
+        100,
+        220,
+        340,
+        460,
+        580,
+        700,
+        820,
+        940,
+        1060,
+        1180,
+        1300,
+        1420
       ],
       "schedule": [
-        "00:00",
-        "00:40",
-        "01:40"
+        "01:40",
+        "03:40",
+        "05:40",
+        "07:40",
+        "09:40",
+        "11:40",
+        "13:40",
+        "15:40",
+        "17:40",
+        "19:40",
+        "21:40",
+        "23:40"
       ],
-      "durationMinutes": 15,
+      "durationMinutes": 35,
       "wiki": "https://wiki.guildwars2.com/wiki/Secrets_of_the_Weald",
       "wikiTitle": "Secrets of the Weald",
       "wikiUrl": "https://wiki.guildwars2.com/wiki/Secrets_of_the_Weald",
@@ -10148,7 +10985,93 @@
         "titles": [],
         "aliases": [],
         "eventNames": []
-      }
+      },
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
+    },
+    {
+      "key": "wiki:public-con:3",
+      "name": "Convergence: Nexus of Eternity",
+      "category": "meta",
+      "mapIds": [
+        1627
+      ],
+      "mapNames": [
+        "Convergence"
+      ],
+      "wikiTitle": "Convergence: Nexus of Eternity",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Convergence%3A_Nexus_of_Eternity",
+      "waypoint": "[&BDYQAAA=]",
+      "sources": [
+        "gw2wiki"
+      ],
+      "wikiConfidence": "high",
+      "wikiClassification": "meta_event",
+      "scheduleMinutes": [
+        60,
+        240,
+        420,
+        600,
+        780,
+        960,
+        1140,
+        1320
+      ],
+      "schedule": [
+        "01:00",
+        "04:00",
+        "07:00",
+        "10:00",
+        "13:00",
+        "16:00",
+        "19:00",
+        "22:00"
+      ],
+      "durationMinutes": 10,
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
+    },
+    {
+      "key": "wiki:voe-lh:1",
+      "name": "Depths of Cruelty",
+      "category": "meta",
+      "mapIds": [
+        1633
+      ],
+      "mapNames": [
+        "Leyspring Hollows"
+      ],
+      "wikiTitle": "Depths of Cruelty",
+      "wikiUrl": "https://wiki.guildwars2.com/wiki/Depths_of_Cruelty",
+      "waypoint": "[&BDYQAAA=]",
+      "sources": [
+        "gw2wiki"
+      ],
+      "wikiConfidence": "high",
+      "wikiClassification": "meta_event",
+      "scheduleMinutes": [
+        120,
+        300,
+        480,
+        660,
+        840,
+        1020,
+        1200,
+        1380
+      ],
+      "schedule": [
+        "02:00",
+        "05:00",
+        "08:00",
+        "11:00",
+        "14:00",
+        "17:00",
+        "20:00",
+        "23:00"
+      ],
+      "durationMinutes": 30,
+      "scheduleSource": "gw2wiki",
+      "scheduleRevision": 3198874
     }
   ],
   "cycles": [

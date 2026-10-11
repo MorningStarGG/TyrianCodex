@@ -71,6 +71,16 @@
       "maxLevel": 80
     },
     {
+      "slug": "memory-of-old-lion-s-arch",
+      "mapId": 1483,
+      "name": "Memory of Old Lion's Arch",
+      "release": "lws1",
+      "regionId": 4,
+      "regionName": "Kryta",
+      "minLevel": 0,
+      "maxLevel": 80
+    },
+    {
       "slug": "queensdale",
       "mapId": 15,
       "name": "Queensdale",
@@ -387,6 +397,16 @@
       "release": "hot",
       "regionId": 10,
       "regionName": "Heart of Maguuma",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "lion-s-arch-aerodrome",
+      "mapId": 1155,
+      "name": "Lion's Arch Aerodrome",
+      "release": "core",
+      "regionId": 4,
+      "regionName": "Kryta",
       "minLevel": 80,
       "maxLevel": 80
     },
@@ -754,6 +774,16 @@
       "slug": "eternity-s-garden",
       "mapId": 1622,
       "name": "Eternity's Garden",
+      "release": "voe",
+      "regionId": 58,
+      "regionName": "Castora",
+      "minLevel": 80,
+      "maxLevel": 80
+    },
+    {
+      "slug": "leyspring-hollows",
+      "mapId": 1633,
+      "name": "Leyspring Hollows",
       "release": "voe",
       "regionId": 58,
       "regionName": "Castora",

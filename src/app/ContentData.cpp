@@ -40,6 +40,8 @@ void ContentData::Load(const std::string& contentPath, const std::string& rotati
                         auto rit = raids->find(id);
                         if (rit == raids->end() || !rit->is_object()) continue;
                         Raid r; r.id = id;
+                        r.name = rit->value("name", std::string());
+                        r.trackingAvailable = rit->value("tracking", std::string("api")) == "api";
                         auto wings = rit->find("wings");
                         if (wings != rit->end() && wings->is_array())
                             for (const auto& w : *wings)
@@ -142,9 +144,8 @@ void ContentData::Load(const std::string& contentPath, const std::string& rotati
 
 // The wiki {{day of year index}}: {{#time:z}} (UTC day-of-year, 0-based) with a leap-year adjustment that skips
 // index 59 (the Feb-29 slot) in non-leap years, so dates from Mar 1 align across leap/non-leap years.
-int ContentData::DayOfYearIndex()
+int ContentSchedule::DayOfYearIndex(std::time_t t)
 {
-    std::time_t t = std::time(nullptr);
     std::tm g{};
 #if defined(_WIN32)
     gmtime_s(&g, &t);
@@ -156,6 +157,11 @@ int ContentData::DayOfYearIndex()
     const bool leap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
     if (!leap && doy >= 59) doy += 1;     // skip the missing Feb-29 slot -> matches the wiki selector exactly
     return doy;
+}
+
+int ContentData::DayOfYearIndex()
+{
+    return ContentSchedule::DayOfYearIndex(std::time(nullptr));
 }
 
 std::vector<std::string> ContentData::TodaysDailyFractals() const

@@ -17,13 +17,13 @@ bool ViewerHasDetailCard(App& app, int dispStep)
 {
     if (app.travel.Active()) return true;                              // travel target card
     if (app.state.viewerMode == ViewerMode::Dungeon) return true;     // "Do this" instruction card
-    if (app.state.viewerMode == ViewerMode::Step && dispStep >= 0) return true;   // current-objective card
+    if ((app.state.viewerMode == ViewerMode::Step || app.state.viewerMode == ViewerMode::Checklist) && dispStep >= 0) return true;
     return false;                                                     // Complete / Recommend -> header conveys it
 }
 
 bool ShouldHideGuidePanel(App& app)
 {
-    if (!app.state.zone.Loaded || !app.config.hideWhenComplete || !app.state.manualTarget.empty() ||
+    if (!app.state.CanGuide() || !app.config.hideWhenComplete || !app.state.manualTarget.empty() ||
         app.travel.Active() || app.state.zone.Steps.empty())
         return false;
 
@@ -44,7 +44,11 @@ int CountCompletedObjectives(App& app)
 
 int DisplayStepIndex(App& app, int total)
 {
-    int dispStep = (app.state.curStep >= 0 && app.state.curStep < total &&
+    if (!app.state.zone.Loaded) return -1;
+    if (!app.state.CanGuide() && !app.state.manualTarget.empty())
+        for (int i = 0; i < total; ++i)
+            if (app.state.zone.Steps[i].StepId == app.state.manualTarget && !StepIsDone(app.progress, app.state.currentChar, app.state.zone.Steps[i])) return i;
+    int dispStep = (app.state.CanGuide() && app.state.curStep >= 0 && app.state.curStep < total &&
                     !StepIsDone(app.progress, app.state.currentChar, app.state.zone.Steps[app.state.curStep])) ? app.state.curStep : -1;
     if (dispStep < 0)
         for (int i = 0; i < total; ++i)

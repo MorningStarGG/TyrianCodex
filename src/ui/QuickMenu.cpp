@@ -99,11 +99,11 @@ bool QuickMenu::ArrowDispatch(App& app, int id)
     {
         case IdClear:    ClearTargetOverride(app, CurrentTargetOverride(app)); return true;
         case IdMarkDone:
-            if (app.state.zone.Loaded && app.state.curStep >= 0 && app.state.curStep < (int)app.state.zone.Steps.size())
+            if (app.state.CanGuide() && app.state.curStep >= 0 && app.state.curStep < (int)app.state.zone.Steps.size())
             { CompleteStep(app.progress, app.state, app.state.zone.Steps[app.state.curStep].StepId); app.state.manualTarget.clear(); }
             return true;
         case IdUndo:     if (!app.state.undoStack.empty()) { app.progress.SetComplete(app.state.currentChar, app.state.undoStack.back(), false); app.state.undoStack.pop_back(); } return true;
-        case IdCopy:     if (app.state.zone.Loaded && app.state.curStep >= 0) CopyCurrentWaypoint(app); return true;
+        case IdCopy:     if (app.state.CanGuide() && app.state.curStep >= 0) CopyCurrentWaypoint(app); return true;
         case IdLockArrow:  app.config.arrowLocked = !app.config.arrowLocked; app.settingsDirty = true; return true;
         case IdResetArrow: app.config.arrowPosX = -1.f; app.config.arrowPosY = -1.f; app.settingsDirty = true; return true;
         case IdSettings: OpenSettingsTab(app, SettingsTabOptions); return true;

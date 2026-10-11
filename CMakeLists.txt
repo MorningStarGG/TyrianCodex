@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(TyrianCodex VERSION 0.1.0 LANGUAGES CXX C)
 
+option(TC_BUILD_TESTS "Build content/runtime regression tests" OFF)
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -27,6 +29,27 @@ FetchContent_Declare(nlohmann_json
     GIT_SHALLOW    TRUE)
 FetchContent_MakeAvailable(nlohmann_json)
 
+if(TC_BUILD_TESTS)
+    enable_testing()
+    add_executable(tc_content_test tests/content_runtime_test.cpp src/model/Dataset.cpp src/model/EventTimers.cpp src/app/ContentData.cpp src/guide/Progress.cpp src/util/Json.cpp)
+    target_include_directories(tc_content_test PRIVATE src)
+    target_link_libraries(tc_content_test PRIVATE nlohmann_json::nlohmann_json)
+    add_test(NAME content_runtime COMMAND tc_content_test)
+    add_test(NAME content_bundle_runtime COMMAND tc_content_test "${CMAKE_CURRENT_SOURCE_DIR}/data")
+    add_executable(tc_heart_ui_test tests/heart_answers_ui_test.cpp src/ui/HeartTaskDetails.cpp
+        src/ui/gw2ui/Gw2UiInternal.cpp src/ui/gw2ui/Gw2UiText.cpp
+        src/ui/gw2ui/Gw2UiControls.cpp src/ui/gw2ui/Gw2UiCards.cpp src/ui/gw2ui/Gw2UiWidgets.cpp src/ui/gw2ui/Gw2UiWindow.cpp
+        src/render/glyphs/Glyphs.cpp
+        ${imgui_SOURCE_DIR}/imgui.cpp ${imgui_SOURCE_DIR}/imgui_draw.cpp
+        ${imgui_SOURCE_DIR}/imgui_tables.cpp ${imgui_SOURCE_DIR}/imgui_widgets.cpp)
+    target_include_directories(tc_heart_ui_test PRIVATE src ${imgui_SOURCE_DIR} ${nexus_api_SOURCE_DIR})
+    if(MSVC)
+        target_compile_options(tc_heart_ui_test PRIVATE /Gy)
+        target_link_options(tc_heart_ui_test PRIVATE /OPT:REF)
+    endif()
+    add_test(NAME heart_answers_input COMMAND tc_heart_ui_test "${CMAKE_CURRENT_SOURCE_DIR}/data/fonts/menomonia.ttf")
+endif()
+
 # -- litehtml -- native HTML/CSS cascade + layout for the in-addon wiki reader.
 # litehtml bundles gumbo (Apache-2.0) for HTML5 parsing; Tyrian Codex provides the ImGui draw container.
 FetchContent_Declare(litehtml
@@ -40,6 +63,8 @@ set(SOURCES
     src/entry.cpp
     src/resources/TyrianCodex.rc
     src/model/Dataset.cpp
+    src/ui/HeartTaskDetails.cpp
+    src/world/HeartHints.cpp
     src/model/EventAreas.cpp
     src/model/EventTimers.cpp
     src/model/LoadingScreens.cpp
@@ -280,11 +305,7 @@ set_target_properties(TyrianCodex PROPERTIES
     PREFIX ""           # output is TyrianCodex.dll (= target name; no lib prefix, explicit .dll suffix)
     SUFFIX ".dll")
 
-# -- Bundled-asset refresh on a version bump ----------------------------------
-# Keyed to src/Version.h: when you bump the addon version, this re-runs cmake/refresh_bundle.cmake, which
-# ETag-checks the bundled map tiles and re-pulls only the ones that changed -- but ONLY on a machine that
-# has the private builder/. A public checkout / CI runner has no builder/, so it is a clean no-op (the build
-# uses the committed data/). A normal build (Version.h unchanged) never runs it: the stamp stays up to date.
+# -- Committed bundle reminder on a version bump (no generation during compile) --
 set(_bundle_stamp "${CMAKE_BINARY_DIR}/bundle_refresh.stamp")
 add_custom_command(
     OUTPUT  "${_bundle_stamp}"

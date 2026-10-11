@@ -8,5 +8,5 @@
 // Defined in ui/viewer/ViewerTaskChips.cpp.
 // `compact` selects the chip sizing explicitly (compact viewer + dashboard true; rich viewer false) so these
 // never read the global viewer style.
-void DrawHeartTaskChips(const App& app, const Step& s, float fs, ImU32 fallbackAccent, bool compact);
+void DrawHeartTaskChips(App& app, const Step& s, float fs, ImU32 fallbackAccent, bool compact);
 float EstimateTaskChipsHeight(const App& app, const Step& s, float fs, float contentW, bool compact);

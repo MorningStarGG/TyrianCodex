@@ -849,14 +849,14 @@ namespace
     const Step* CurZoneStep(App& app)
     {
         const GuideState& st = app.state;
-        if (st.inDungeon || app.travel.Active() || !st.zone.Loaded) return nullptr;
+        if (st.inDungeon || app.travel.Active() || !st.CanGuide()) return nullptr;
         const int total = (int)st.zone.Steps.size();
         const int disp  = DisplayStepIndex(app, total);
         return (disp >= 0 && disp < total) ? &st.zone.Steps[disp] : nullptr;
     }
     const Step* FirstUpcomingStep(App& app)
     {
-        if (app.state.inDungeon || app.travel.Active() || !app.state.zone.Loaded) return nullptr;
+        if (app.state.inDungeon || app.travel.Active() || !app.state.CanGuide()) return nullptr;
         const std::vector<int> up = UpcomingObjectiveSteps(app, 1);
         return up.empty() ? nullptr : &app.state.zone.Steps[up[0]];
     }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1043,
     "name": "Auric Basin",
@@ -44,6 +44,56 @@
       34304,
       33792
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 17
+        },
+        "47": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 17
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 17
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 17
+        },
+        "48": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 17
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 35,
+          "skill_challenges": 11,
+          "sectors": 17
+        }
+      },
+      "unavailable": []
+    },
     "release": "hot"
   },
   "primaryKind": "foot",
@@ -68,6 +118,14 @@
       ],
       "chatLink": "[&BNYHAAA=]",
       "waypointChatLink": "[&BNYHAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 26,
       "wikiText": "The Tarnished Treetop is an elevated area in the northwest of Auric Basin. It is the first area accessed in Auric Basin when coming from the direction of Verdant Brink."
     },
@@ -87,6 +145,14 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 52,
       "wikiText": "The Capitzel Grounds is a hylek village located in the Tarnished Treetop, and home to members of both the Coztic and Xocotl tribes.",
@@ -109,6 +175,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 112,
       "wikiText": "The Bramble Plateau is a rock formation overlooking the Northwatch Descent. One of the pylons powering the Northwatch tower is located there.",
       "waypointChatLink": "[&BN0HAAA=]"
@@ -129,6 +203,14 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 151,
       "wikiText": "The Quazupl Grounds are home to a group of Coztic and Xocotl hylek.",
@@ -151,6 +233,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 266,
       "wikiText": "Burnisher Quarry is the north eastern portion of Auric Basin. This enclosed canyon is home to both hostile hylek and tengu who use it as a hideout from the invading Mordrem.",
       "waypointChatLink": "[&BN0HAAA=]"
@@ -171,6 +261,14 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 281,
       "wikiText": "Head to the Burnisher Quarry Hero Point. The vista is behind it.",
@@ -193,6 +291,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 335,
       "wikiText": "At the jungle's floor in Tarnished Treetop, a group of Young Mushrooms lays out in the open, waiting for so much as a poke from adventurers.",
       "waypointChatLink": "[&BNYHAAA=]"
@@ -213,6 +319,14 @@
       "order": 7,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 366,
       "wikiText": "The Toxin-Cured Hog is an object found in a cave west of Westwatch Patch. If Westwatch has not yet been powered up, then vines will block the path towards the cave from the south.",
@@ -236,6 +350,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 392,
       "wikiText": "Climb the tree and plants behind the vista until you are high enough to glide down to it.",
       "waypointChatLink": "[&BAYIAAA=]"
@@ -257,6 +379,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 398,
       "wikiText": "New Skrittington is a scratch located near the tower of Westwatch Patch. It was built by skritt who survived the attack on the Pact fleet.",
       "waypointChatLink": "[&BAYIAAA=]"
@@ -277,6 +407,14 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 461,
       "wikiText": "The Northgate is the northern entry of Tarir.",
@@ -301,6 +439,14 @@
       ],
       "chatLink": "[&BN0HAAA=]",
       "waypointChatLink": "[&BN0HAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 511,
       "wikiText": "The Northwatch Descent is an area of the Auric Basin. One of the three watchposts defending Tarir, the Forgotten City is located there, as well as a Priory camp."
     },
@@ -320,6 +466,14 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 525,
       "wikiText": "The Northwatch Priory Camp is a Durmand Priory camp located near the tower located in the Northwatch Descent.",
@@ -342,6 +496,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 541,
       "wikiText": "On the ground floor of the jungle in the heart of the Arrowhead Vale is a Suspicious Orichalcum Node. Interacting with it allows you to start the event Defeat the champion arrowhead.",
       "waypointChatLink": "[&BN0HAAA=]"
@@ -362,6 +524,14 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 640,
       "wikiText": "The Vinetooth Den is a large cave home to a group of Mordrem vinetooths as well as the leader of their pack, the Legendary Vinetooth Prime.",
@@ -384,6 +554,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 733,
       "wikiText": "The Notice to Trespassers is located in a small Quetzal village above the jungle floor that can be accessed by heading north from Eastwatch Waypoint and jumping up the mushroom-cliff path.",
       "waypointChatLink": "[&BGwIAAA=]"
@@ -404,6 +582,14 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 772,
       "wikiText": "The Eastwatch Ruins are what's left of the Eastwatch, the eastern watchpost of Tarir, the Forgotten City.",
@@ -428,6 +614,14 @@
       ],
       "chatLink": "[&BGwIAAA=]",
       "waypointChatLink": "[&BGwIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 791,
       "wikiText": "Eastwatch Bluff is an area of Auric Basin where one of the four main towers powering Tarir, the Forgotten City is located."
     },
@@ -447,6 +641,14 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 822,
       "wikiText": "Go up all the stairs in Eastgate to the top where the vista is and walk over to it.",
@@ -469,6 +671,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 831,
       "wikiText": "The Eastgate is the eastern entry of Tarir.",
       "waypointChatLink": "[&BGwIAAA=]"
@@ -489,6 +699,14 @@
       "order": 20,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 955,
       "wikiText": "Up in the cliff's face, in a small cave, a Mordrem Flower rests among a small group of Mordrem Bombers. Interaction with the flower will trigger the group event Defeat the vinetooth.",
@@ -511,8 +729,16 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 996,
-      "wikiText": "Start from the area where the Weeping Glade point of interest is and climb your way up the waterfall. Head south and then west towards the vista. Alternatively, head to the \"Obsidian Triumph\" Strongbox and then glide down to the vista.",
+      "wikiText": "Start from the area where the Weeping Glade point of interest is and climb your way up the waterfall. Head south and then west towards the vista.",
       "waypointChatLink": "[&BGwIAAA=]"
     },
     {
@@ -531,6 +757,14 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1003,
       "wikiText": "The Weeping Glade is a grove home to a group of Bristlebacks. It's a set of 2 shallow ponds formed by waterfalls flowing down a slope, with tree roots above each forming shapes resembling eyes, giving the area its name.",
@@ -553,6 +787,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1050,
       "wikiText": "The Endurance Crash Site is the remnant of the Endurance, an airship that was part of the Pact fleet that went into the Heart of Maguuma.",
       "waypointChatLink": "[&BEkIAAA=]"
@@ -573,6 +815,14 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1089,
       "wikiText": "The Jawatl Grounds were once the home of a group of Nuhoch hylek. The village was overrun by Mordrem and almost everyone were slain.",
@@ -597,6 +847,14 @@
       ],
       "chatLink": "[&BEkIAAA=]",
       "waypointChatLink": "[&BEkIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1104,
       "wikiText": "Chak Hollow is an area of Auric Basin that leads into Tangled Depths, and is the only part of it inhabited by chak. An ancient Rata Novus data station built with Exalted and asuran magitech is located here."
     },
@@ -616,6 +874,14 @@
       "order": 26,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1158,
       "wikiText": "Away in a cave, this Egg Clutch rests, waiting for any unwary adventurers to try and grab them.",
@@ -638,6 +904,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1244,
       "wikiText": "The Thornwatch is a vine barrier preventing access to the pylon located in Morwood Wilds.",
       "waypointChatLink": "[&BEkIAAA=]"
@@ -658,6 +932,14 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1343,
       "wikiText": "The Southgate is the southern entry of Tarir.",
@@ -682,6 +964,14 @@
       ],
       "chatLink": "[&BAIIAAA=]",
       "waypointChatLink": "[&BAIIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1371,
       "wikiText": "The Southwatch Creep is an area in the Auric Basin. One of the three watchposts defending Tarir, the Forgotten City is located there."
     },
@@ -701,6 +991,14 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1419,
       "wikiText": "The Overseer's Cave is the home of Overseer Rannik, a powerful Mordrem Guard prowling over the pylon located in Southwatch Creep. It first becomes accessible during the Defeat Overseer Rannik and rescue Adanich event.",
@@ -723,6 +1021,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1558,
       "wikiText": "Balthazar's Statue is an overgrown statue of Balthazar located in the long-abandoned temple known as Balthazar's Rest.",
       "waypointChatLink": "[&BAIIAAA=]"
@@ -743,6 +1049,14 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1686,
       "wikiText": "The Fahautl Grounds is the home of the Itzel hylek living in and around The Falls in Auric Basin.",
@@ -765,6 +1079,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 1687,
       "wikiText": "Starting from the Waypoint, take the path south until you end up just to the right of the Fahautl Grounds POI.",
       "waypointChatLink": "[&BAIIAAA=]"
@@ -785,6 +1107,14 @@
       "order": 34,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 1903,
       "wikiText": "An Ancient Golem Part rests high in the cliffs of Auric Basin awaiting unwary explorers. Interaction with the part triggers the group event: Defeat the ancient golem recovery squad.",
@@ -809,6 +1139,14 @@
       ],
       "chatLink": "[&BAYIAAA=]",
       "waypointChatLink": "[&BAYIAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2027,
       "wikiText": "Westwatch Patch is an area of Auric Basin. One of the three watchposts defending Tarir, the Forgotten City is located there."
     },
@@ -828,6 +1166,14 @@
       "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2070,
       "wikiText": "The Westgate is the western entry of Tarir.",
@@ -850,6 +1196,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2101,
       "wikiText": "The Luminate's Throne is a room overlooking Tarir, the Forgotten City. From there, the Luminate, the leader of the Exalted, can see everything that is going on in the city.",
       "waypointChatLink": "[&BMYHAAA=]"
@@ -871,6 +1225,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2118,
       "wikiText": "The Exalted Overlook is a hero challenge in Auric Basin. You can reach it by gliding down from the Northgate of Tarir, the Forgotten City.",
       "waypointChatLink": "[&BMYHAAA=]"
@@ -891,6 +1253,14 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2170,
       "wikiText": "Masks of the Fallen is where the Exalted take the masks belonging to killed Exalted to rest. It is the closest thing to a cemetery they have.",
@@ -915,6 +1285,14 @@
       ],
       "chatLink": "[&BMYHAAA=]",
       "waypointChatLink": "[&BMYHAAA=]",
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2235,
       "wikiText": "Tarir, the Forgotten City, is the golden city of the Exalted. It was established by the Forgotten around two hundred years ago as part of Glint's legacy and plan to protect the world from the Elder Dragons."
     },
@@ -934,6 +1312,14 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2240,
       "wikiText": "The Legacy Pillars serves as the main plaza of Tarir, the Forgotten City.",
@@ -956,6 +1342,14 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2271,
       "wikiText": "The Champion Tarnished Sage is found at the beginning of the trial rooms beneath Tarir, the Forgotten City, opposite the Tarnished Traitor. To reach him, hop down into the hole by the Forgotten City Waypoint.",
       "waypointChatLink": "[&BMYHAAA=]"
@@ -976,6 +1370,14 @@
       "order": 43,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2311,
       "wikiText": "The Sealed Passageway is a hidden tunnel located beneath Tarir, the Forgotten City. It leads to the Gilded Hollow, one of the two guild halls located in the Heart of Maguuma.",
@@ -998,6 +1400,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
+      ],
       "trailIndex": 2445,
       "wikiText": "Use the Exalted Portal to enter the Inner Chamber. Climb up the tree near the Sanctum Scramble Adventure and follow the Egg Bearer jumping puzzle until you reach the platform just before the vista and glide over to it.",
       "waypointChatLink": "[&BMYHAAA=]"
@@ -1018,6 +1428,14 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        47,
+        2,
+        0,
+        48,
+        3
       ],
       "trailIndex": 2490,
       "wikiText": "The Inner Chamber of Tarir, the Forgotten City is where Glint's egg is kept stored by the Exalted. It is also the location of the Egg Bearer Jumping Puzzle around the outside of the chamber.",

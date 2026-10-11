@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1422,
     "name": "Dragon's End",
@@ -44,6 +44,49 @@
       34175,
       103437
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 58,
+          "skill_challenges": 6,
+          "sectors": 15
+        },
+        "69": {
+          "tasks": 0,
+          "points_of_interest": 58,
+          "skill_challenges": 6,
+          "sectors": 15
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 58,
+          "skill_challenges": 6,
+          "sectors": 15
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 58,
+          "skill_challenges": 6,
+          "sectors": 15
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 58,
+          "skill_challenges": 6,
+          "sectors": 15
+        }
+      },
+      "unavailable": []
+    },
     "release": "eod"
   },
   "primaryKind": "foot",
@@ -66,6 +109,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 50,
       "wikiText": "Logistics District is a point of interest in Xunlai Jade Quarry, Dragon's End.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -87,6 +137,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 105,
       "wikiText": "Quarry Overlook is a communing hero point located on a balcony overlooking Residential District of the Xunlai Jade Quarry.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -107,6 +164,13 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 111,
       "wikiText": "Residential District is a point of interest in Xunlai Jade Quarry, Dragon's End.",
@@ -131,6 +195,13 @@
       ],
       "chatLink": "[&BKIMAAA=]",
       "waypointChatLink": "[&BKIMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 129,
       "wikiText": "The Xunlai Jade Quarry is the main Xunlai Jade quarry and mining operations in the Jade Sea after the quarry was purchased by Yu Joon and Park Chul-Moo."
     },
@@ -150,6 +221,13 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 177,
       "wikiText": "Xiko Refugee Camp is a refugee camp that was established to house those that were displaced when Soo-Won arrived and spread the Void in Dragon's End.",
@@ -172,6 +250,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 212,
       "wikiText": "The Green Grotto is a small bar run by Glennon, located beneath the Roaring Waterfall in the Archipelagos Rim.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -192,6 +277,13 @@
       "order": 6,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 218,
       "wikiText": "Roaring Waterfall is a communing hero challenge above The Green Grotto in Archipelagos Rim.",
@@ -214,6 +306,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 238,
       "wikiText": "Needs description.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -234,6 +333,13 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 304,
       "wikiText": "Shrine of the Serpent is a small abandoned shrine on the Archipelagos Rim, on top of a hill. The name Serpent may refer to the Serpent Clan of the Luxons.",
@@ -256,6 +362,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 344,
       "wikiText": "Alua Falls are waterfalls named after one of the Three Queens that the Luxons worshipped.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -276,6 +389,13 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 395,
       "wikiText": "Speakers Encampment is the base camp of the allied Speakers in Dragon's End.",
@@ -298,6 +418,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 416,
       "wikiText": "Shrine to Hanuku is a point of interest in Reaver's Ridge, Dragon's End. It is named after Zhu Hanuku, an ancient kraken who was slain once a year as part of a Luxon celebration of Convocation.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -318,6 +445,13 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 488,
       "wikiText": "The Great Jade Wall is a large wall made of tall cubed mined dragonjade.",
@@ -340,6 +474,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 501,
       "wikiText": "Mine Site JS-36 is a quarry where Xunlai Jade miners extract dragonjade.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -360,6 +501,13 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 539,
       "wikiText": "Chantry of the Crab is a point of interest within the Seafarer's Enclave. The name of the temple may refer to the Crab Clan of the Luxons.",
@@ -382,6 +530,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 602,
       "wikiText": "Temple of the Turtle is a small abandoned temple. The name may refer to the Turtle Clan of the Luxons.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -402,6 +557,13 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 649,
       "wikiText": "Seaguard's Crossing is a bridge located in Flooded Basin that connects with Outer Terrace. It is used as a path to transport Dragonjade from the mines.",
@@ -424,6 +586,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 676,
       "wikiText": "Miner's Folly is one of many dragonjade mines in Dragon's End. The Void-Corrupted Jade Maw is buried under the jade piles here and sometimes emerges to the surface, where it must be repelled.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -444,6 +613,13 @@
       "order": 18,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 696,
       "wikiText": "Quarry Platform is a communing hero point located near Miner's Folly in the Flooded Basin.",
@@ -466,6 +642,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 799,
       "wikiText": "Kaolai Tower is a Point of Interest in the Flooded Basin, Dragon's End.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -486,6 +669,13 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 809,
       "wikiText": "Flooded Basin is a large flowing body of water in the top half of Dragon's End. The water courses down and under hard jade, giving way to deep grottoes underneath.",
@@ -508,6 +698,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 820,
       "wikiText": "Tanasen Pier is a pier that is located within the Flooded Basin.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -528,6 +725,13 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 884,
       "wikiText": "Quarry Passage serves as an entrance and exit from the Outer Terrace, leading to the Seaguard's Crossing.",
@@ -550,6 +754,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 927,
       "wikiText": "Warehouse District is the storage area used by Xunlai Jade to safely keep dragonjade extracted from the nearby Xunlai Jade Quarry and quarries deeper in Dragon's End.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -570,6 +781,13 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 950,
       "wikiText": "Brotherhood's Watch is the base camp of the allied Jade Brotherhood in Dragon's End.",
@@ -592,6 +810,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 979,
       "wikiText": "Needs description.",
       "waypointChatLink": "[&BKIMAAA=]"
@@ -612,6 +837,13 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 982,
       "wikiText": "Argo Crawler is a Point of Interest in the Flooded Basin, Dragon's End.",
@@ -634,6 +866,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 988,
       "wikiText": "Saltspray Roost is a tall rock spire located in the Jade Promenade. Albax appears at the top once the The Battle for the Jade Sea has been completed successfully.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -654,6 +893,13 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1031,
       "wikiText": "Guardian's Perch is a shrine and the residence of the Shrine Guardian within the Temple of the Fallen.",
@@ -676,6 +922,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1079,
       "wikiText": "Rhea's Landing is a Point of Interest in Western Vale, Dragon's End.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -696,6 +949,13 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1092,
       "wikiText": "Mine Site JS-02 is a dragonjade mining shaft that has sunken underwater, where naga quickly moved in.",
@@ -718,6 +978,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1099,
       "wikiText": "Temple of the Fallen is an area north of Hero's Lodge and it contains one of the five Green Borderlands ruins.",
       "waypointChatLink": "[&BBENAAA=]"
@@ -738,6 +1005,13 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1110,
       "wikiText": "The Great Melt is a complex of flooded caves under the petrified, but slowly melting, Jade Sea.",
@@ -760,6 +1034,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1141,
       "wikiText": "Archemorus's Solitude is an area containing a dragon statue shrine above a teleporter. It is located below the petrified jade on the surface, at the end of a large complex of grottoes.",
       "waypointChatLink": "[&BPEMAAA=]"
@@ -780,6 +1061,13 @@
       "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1148,
       "wikiText": "Sanctuary of Ione is a complex containing hidden tunnels below. It is found in Silent Surf. It is named after Ione, one of the three legendary demi-goddesses known as the Three Queens whom the Luxons worshipped.",
@@ -802,6 +1090,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1190,
       "wikiText": "The Jade Expanse is a large expanse of petrified jade which offers a good view of the greater Jade Sea further in the horizon.",
       "waypointChatLink": "[&BDsNAAA=]"
@@ -822,6 +1117,13 @@
       "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1259,
       "wikiText": "Emerald Bluff is a point of interest in the Silent Surf, in southeast Dragon's End. It is a small settlement on the shore of the Jade Sea that possibly predates the Jade Wind.",
@@ -844,6 +1146,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1315,
       "wikiText": "Risen's Havoc is an area corrupted by Zhaitan's magic due to the presence of Soo-Won nearby at the Harvest Temple.",
       "waypointChatLink": "[&BDsNAAA=]"
@@ -864,6 +1173,13 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1365,
       "wikiText": "Speakers Outpost was formerly a Luxon outpost leading to the Harvest Temple. It has been reused by the Speakers in their assault on Soo-Won.",
@@ -888,6 +1204,13 @@
       ],
       "chatLink": "[&BDsNAAA=]",
       "waypointChatLink": "[&BDsNAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1388,
       "wikiText": "Seafarer's Enclave is an area in Dragon's End."
     },
@@ -907,6 +1230,13 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1413,
       "wikiText": "Icebrood's Desolation is a cluster of Jormag magic that appeared as a result of Soo-Won's presence in the Harvest Temple.",
@@ -929,6 +1259,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1451,
       "wikiText": "Elora's Beach is a relatively peaceful beach in Dragon's End named after one of the Three Queens worshipped by the Luxons.",
       "waypointChatLink": "[&BDsNAAA=]"
@@ -949,6 +1286,13 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1487,
       "wikiText": "Needs description.",
@@ -971,6 +1315,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1498,
       "wikiText": "Juno Hatchery is a Luxons-ran sanctuary where turtles are raised to become Siege Turtles, which serve the Dragon Empire.",
       "waypointChatLink": "[&BDsNAAA=]"
@@ -991,6 +1342,13 @@
       "order": 44,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1498,
       "wikiText": "Hatchery Play Pond is a communing hero point located in the Juno Hatchery.",
@@ -1013,6 +1371,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1576,
       "wikiText": "Harvest Complex Pavilion is a communing hero point located near the Harvest Temple.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -1033,6 +1398,13 @@
       "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1601,
       "wikiText": "Harvest Bridge is a destroyed bridge that used to connect the Harvest Complex with the Harvest Temple.",
@@ -1055,6 +1427,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1625,
       "wikiText": "Harvest Temple Main Entrance is a communing hero point located near the Harvest Temple.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -1075,6 +1454,13 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1660,
       "wikiText": "Branded Rise is a section of the Harvest Complex that has been ravaged by Kralkatorrik's energy, through Soo-Won's presence in the Harvest Temple.",
@@ -1099,6 +1485,13 @@
       ],
       "chatLink": "[&BKAMAAA=]",
       "waypointChatLink": "[&BKAMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1676,
       "wikiText": "Harvest Complex is an area in Dragon's End which leads up towards the Harvest Temple. Due to Soo-Won's presence atop the temple, her Void corruption is especially intense in the complex."
     },
@@ -1118,6 +1511,13 @@
       "order": 50,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1681,
       "wikiText": "Harvest Temple Observatory is a Point of Interest in the Jade Promenade, Dragon's End.",
@@ -1140,6 +1540,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1691,
       "wikiText": "Kuan Jun Pavilion is a point of interest in Harvest Complex, Dragon's End.",
       "waypointChatLink": "[&BKAMAAA=]"
@@ -1160,6 +1567,13 @@
       "order": 52,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1717,
       "wikiText": "Xunlai Jade Museum is a Point of Interest in the Harvest Complex, Dragon's End.",
@@ -1182,8 +1596,15 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1722,
-      "wikiText": "Harvest Temple is the fourth Canthan raid encounter for the Guild Wars 2: End of Dragons expansion, taking place atop the Harvest Temple. It contains story details from The Only One story step.",
+      "wikiText": "Harvest Temple is the fourth Canthan raid encounter for the Guild Wars 2: End of Dragons expansion, taking place atop the Harvest Temple. It contains story details from the story step The Only One.",
       "waypointChatLink": "[&BKAMAAA=]"
     },
     {
@@ -1202,6 +1623,13 @@
       "order": 54,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1807,
       "wikiText": "Wasteland of the Destroyer is an area corrupted by Primordus' magic due to Soo-Won's presence nearby at the Harvest Temple.",
@@ -1226,6 +1654,13 @@
       ],
       "chatLink": "[&BBENAAA=]",
       "waypointChatLink": "[&BBENAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1830,
       "wikiText": "Echovald Fringe is an area near the Echovald Forest within Dragon's End. The location contains a Jade Brotherhood outpost, which is under attack by invading Void creatures."
     },
@@ -1245,6 +1680,13 @@
       "order": 56,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1852,
       "wikiText": "Jade Brotherhood Outpost is an allied Jade Brotherhood base used in the build-up to the confrontation with Soo-Won and the Void.",
@@ -1267,6 +1709,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1912,
       "wikiText": "Mordrem's Blight is an area corrupted by Mordremoth's magic due to Soo-Won's presence nearby at the Harvest Temple.",
       "waypointChatLink": "[&BBENAAA=]"
@@ -1287,6 +1736,13 @@
       "order": 58,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1998,
       "wikiText": "Xinrae's Wharf is a point of interest in Dragon's End. The ruins of a wharf and ships can be found here, stuck in the jade.",
@@ -1309,6 +1765,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2031,
       "wikiText": "Font of Elders is a shrine located within the Southern Bluff. A portal can be found to access the Harvest Temple raid encounter.",
       "waypointChatLink": "[&BPEMAAA=]"
@@ -1330,6 +1793,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2087,
       "wikiText": "Needs description.",
       "waypointChatLink": "[&BPEMAAA=]"
@@ -1350,6 +1820,13 @@
       "order": 61,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2090,
       "wikiText": "Frozen Sea Monastery is a secluded monastery hidden into the cliffs in the Southern Bluff.",
@@ -1374,6 +1851,13 @@
       ],
       "chatLink": "[&BPEMAAA=]",
       "waypointChatLink": "[&BPEMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2096,
       "wikiText": "Southern Bluff is an area in the southern end of Dragon's End, which contains a peaceful monastery encased in the surrounding cliffs and petrified jade."
     },
@@ -1393,6 +1877,13 @@
       "order": 63,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2148,
       "wikiText": "Jade Wind's Respite is a point of interest in Mother's Lament, Dragon's End.",

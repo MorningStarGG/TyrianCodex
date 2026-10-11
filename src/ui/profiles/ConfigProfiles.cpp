@@ -83,7 +83,7 @@ namespace
             if (NormalizeKeybinds(app))
                 app.settingsDirty = true;
             ApplyFontChoice(app);
-            if (oldPathType != app.config.pathType && app.state.zone.Loaded && !app.state.inDungeon)
+            if (oldPathType != app.config.pathType && app.state.CanGuide() && !app.state.inDungeon)
                 app.zoneManager.ApplyPathType();
         }
     }

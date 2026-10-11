@@ -120,6 +120,7 @@ namespace
 bool EventTimerData::Load(const std::string& path)
 {
     loaded_ = false;
+    unresolvedSchedules_.clear();
     events_.clear();
     chains_.clear();
     cycles_.clear();
@@ -137,6 +138,10 @@ bool EventTimerData::Load(const std::string& path)
 
     try
     {
+        if (j.contains("scheduleCoverage") && j["scheduleCoverage"].is_object())
+            for (const auto& issue : j["scheduleCoverage"].value("unresolved", json::array()))
+                if (issue.is_object() && !JStr(issue, "title").empty())
+                    unresolvedSchedules_.push_back(JStr(issue, "title"));
         if (j.contains("events") && j["events"].is_array())
         {
             events_.reserve(j["events"].size());

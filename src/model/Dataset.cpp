@@ -183,9 +183,9 @@ namespace
         return slash == std::string::npos ? std::string() : path.substr(0, slash);
     }
 
-    std::map<std::string, std::vector<TaskChip>> LoadHeartTaskChips(const std::string &path)
+    std::map<std::string, std::shared_ptr<const HeartTaskData>> LoadHeartTaskChips(const std::string &path)
     {
-        std::map<std::string, std::vector<TaskChip>> out;
+        std::map<std::string, std::shared_ptr<const HeartTaskData>> out;
         std::ifstream f(path);
         if (!f)
             return out;
@@ -208,7 +208,7 @@ namespace
                 const auto &entry = it.value();
                 if (!entry.is_object() || !entry.contains("chips") || !entry["chips"].is_array())
                     continue;
-                std::vector<TaskChip> chips;
+                auto tasks = std::make_shared<HeartTaskData>();
                 for (const auto &c : entry["chips"])
                 {
                     if (!c.is_object())
@@ -220,10 +220,50 @@ namespace
                     chip.Examples = JStringArray(c, "examples");
                     chip.Progress = JStringArray(c, "progress");
                     if (!chip.Label.empty())
-                        chips.push_back(std::move(chip));
+                        tasks->Chips.push_back(std::move(chip));
                 }
-                if (!chips.empty())
-                    out[it.key()] = std::move(chips);
+                if (entry.contains("actions") && entry["actions"].is_array())
+                    for (const auto& a : entry["actions"])
+                    {
+                        HeartTaskAction action;
+                        action.Id = JStr(a, "id"); action.Text = JStr(a, "text");
+                        action.ShortText = JStr(a, "shortText");
+                        action.Chip.Label = JStr(a, "label"); action.Chip.Category = JStr(a, "category");
+                        action.Chip.Count = 1; action.Chip.Examples.push_back(action.Text);
+                        const std::string progress = JStr(a, "progress");
+                        if (!progress.empty()) action.Chip.Progress.push_back(progress);
+                        action.IsNote = JBool(a, "isNote", false) || JBool(a, "isGroup", false);
+                        action.TargetIds = JStringArray(a, "targetIds");
+                        tasks->Actions.push_back(std::move(action));
+                    }
+                if (entry.contains("details") && entry["details"].is_array())
+                    for (const auto& d : entry["details"])
+                    {
+                        HeartTaskDetail detail;
+                        detail.Id = JStr(d, "id"); detail.Title = JStr(d, "title");
+                        detail.Headers = JStringArray(d, "headers");
+                        if (d.contains("rows") && d["rows"].is_array())
+                            for (const auto& row : d["rows"])
+                            {
+                                std::vector<std::string> cells;
+                                if (row.is_array()) for (const auto& cell : row) if (cell.is_string()) cells.push_back(cell.get<std::string>());
+                                if (!cells.empty()) detail.Rows.push_back(std::move(cells));
+                            }
+                        tasks->Details.push_back(std::move(detail));
+                    }
+                if (entry.contains("anchors") && entry["anchors"].is_array())
+                    for (const auto& a : entry["anchors"])
+                    {
+                        if (!a.contains("worldPos") || !a["worldPos"].is_array() || a["worldPos"].size() != 3) continue;
+                        HeartHintAnchor anchor;
+                        anchor.Id = JStr(a, "id"); anchor.ActionId = JStr(a, "actionId"); anchor.TargetId = JStr(a, "targetId");
+                        anchor.Position = {a["worldPos"][0].get<float>(), a["worldPos"][1].get<float>(), a["worldPos"][2].get<float>()};
+                        anchor.Overview = JBool(a, "overview", false); anchor.HeightEstimated = JBool(a, "heightEstimated", false);
+                        anchor.DetailIds = JStringArray(a, "detailIds");
+                        anchor.ActionIds = JStringArray(a, "actionIds");
+                        tasks->Anchors.push_back(std::move(anchor));
+                    }
+                if (!tasks->Chips.empty()) out[it.key()] = std::move(tasks);
             }
         }
         catch (...)
@@ -524,12 +564,11 @@ bool LoadZone(const std::string &path, Zone &out)
         out.ActiveComplete = out.PrimaryComplete;
         ReadZoneGeom(j, out); // trail + altRoute IF an un-split file still has them inline (else stays empty -> lazy)
 
-        // `hasTrail` (builder flag) tells us a route trail exists WITHOUT reading the side-file: a zone is added to the
-        // active-guide map only if it has a trail (a hub/lounge with objectives but no route stays out, as before the
-        // split). GeomLoaded is true only when the trail is actually in hand (a legacy inline file); else it's lazy.
+        // Metadata is usable independently. Authored route availability is checked centrally by CanGuide().
         const bool hasTrail = JBool(j, "hasTrail", !out.Trail.empty());
         out.GeomLoaded = !out.Trail.empty();
-        out.Loaded = out.MapId != 0 && hasTrail;
+        out.HasAuthoredRoute = hasTrail;
+        out.Loaded = out.MapId != 0;
     }
     catch (...)
     {
@@ -544,7 +583,7 @@ bool LoadZone(const std::string &path, Zone &out)
 bool LoadZoneTrail(const std::string &zonesDir, Zone &z)
 {
     if (z.GeomLoaded)
-        return true; // already have it (or a legacy inline file provided it)
+        return z.Trail.size() >= 2;
     if (z.Slug.empty())
     {
         z.GeomLoaded = true;
@@ -564,7 +603,7 @@ bool LoadZoneTrail(const std::string &zonesDir, Zone &z)
         }
     }
     z.GeomLoaded = true; // mark attempted so we never re-read (even if the file is absent)
-    return !z.Trail.empty();
+    return z.Trail.size() >= 2;
 }
 
 int LoadAllZones(const std::string &zonesDir, std::map<uint32_t, Zone> &out)
@@ -607,7 +646,10 @@ int LoadAllZones(const std::string &zonesDir, std::map<uint32_t, Zone> &out)
             {
                 auto hit = heartTasks.find(s.StepId);
                 if (hit != heartTasks.end())
-                    s.TaskChips = hit->second;
+                {
+                    s.HeartTasks = hit->second;
+                    s.TaskChips = hit->second->Chips;
+                }
             }
     return n;
 }
@@ -1052,6 +1094,8 @@ int LoadMapIndex(const std::string &path, std::vector<MapInfo> &out)
             continue;
         MapInfo mi;
         mi.MapId = (uint32_t)JInt(e, "mapId", 0);
+        mi.TravelMapId = (uint32_t)JInt(e, "travelMapId", mi.MapId);
+        mi.TrackingAvailability = JStr(e, "trackingAvailability");
         mi.Lounge = JBool(e, "lounge", false);
         mi.Access = JStr(e, "access");
         mi.ChatLink = JStr(e, "chatLink");

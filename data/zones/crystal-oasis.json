@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1210,
     "name": "Crystal Oasis",
@@ -44,6 +44,26 @@
       59968,
       43534
     ],
+    "floorCollection": {
+      "available": [
+        49
+      ],
+      "conflicts": [],
+      "counts": {
+        "49": {
+          "tasks": 4,
+          "points_of_interest": 44,
+          "skill_challenges": 5,
+          "sectors": 17
+        }
+      },
+      "unavailable": [
+        1,
+        3,
+        2,
+        0
+      ]
+    },
     "release": "pof"
   },
   "primaryKind": "foot",
@@ -68,6 +88,9 @@
       ],
       "chatLink": "[&BLsKAAA=]",
       "waypointChatLink": "[&BLsKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 2,
       "wikiText": "The Free City of Amnoon is a port town that was once called The Amnoon Oasis."
     },
@@ -87,6 +110,9 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 17,
       "wikiText": "The Amnoon Cavalier Station is a point of interest within the Free City of Amnoon in the Crystal Oasis. It serves as the local headquarters for the Cavaliers, as well as a prison for any criminals.",
@@ -109,6 +135,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 45,
       "wikiText": "The Amnoon Bazaar is a point of interest located at the Amnoon Farms in the Crystal Oasis.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -129,6 +158,9 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 105,
       "wikiText": "The Marifa Refugee Camp is a point of interest within the Amnoon Farms in the Crystal Oasis. Refugees fleeing Palawa Joko's tyrannical reign are looked after here by the priesthood of the Church of Kormir and Cavaliers from Amnoon.",
@@ -193,6 +225,9 @@
           43887
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 106,
       "wikiText": "Help the followers of Kormir distribute aid to refugees, clear out infested tents, drive away Zaishen harassers, and defend farmworkers from Forged raids.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -213,6 +248,9 @@
       "order": 5,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 171,
       "wikiText": "Veteran Confessor Opeyemi is an Awakened found at the Amnoon Southern Outskirts.",
@@ -235,6 +273,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 217,
       "wikiText": "The Amnoon Water Authority is a point of interest within the Amnoon Southern Outskirts in the Crystal Oasis. It is a water plant providing the Free City of Amnoon with fresh water.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -255,6 +296,9 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 296,
       "wikiText": "Top of the wooden structure, south of the harbor.",
@@ -277,6 +321,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 328,
       "wikiText": "The Grand Sahil Casino is a point of interest within the Free City of Amnoon in the Crystal Oasis. The establishment is owned and operated by the rich and influential businessman Zalambur.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -297,6 +344,9 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 361,
       "wikiText": "The Altar of the Six Gods is a point of interest within the Free City of Amnoon. It is a place dedicated to the worship of the six Human Gods.",
@@ -319,6 +369,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 376,
       "wikiText": "On a pipe, not far from the casino, use the springer.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -339,6 +392,9 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 414,
       "wikiText": "The Amnoon Emporium is a point of interest within the Free City of Amnoon in the Crystal Oasis. This squared plaza houses a crier who advertises local events, as well as various services such as the local bank and Black Lion trading post.",
@@ -361,6 +417,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 429,
       "wikiText": "The Amnoon Civic Center is a point of interest within the Free City of Amnoon in the Crystal Oasis. Civilians come here and wait in line in order to have an audience with the city council.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -381,6 +440,9 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 442,
       "wikiText": "The Amnoon Harbor is a point of interest within the Free City of Amnoon in the Crystal Oasis. Multiple commercial and fishing boats are found docked here.",
@@ -403,6 +465,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 485,
       "wikiText": "Old Amnoon is an underwater point of interest within the Bay of Elon in the Crystal Oasis. Ruins of the original foundations of Amnoon Oasis can be found here.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -423,6 +488,9 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 496,
       "wikiText": "Tawla Rock is a point of interest within the Bay of Elon. It is a flat rock formation standing in the water just off the nearby shoreline.",
@@ -445,6 +513,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 550,
       "wikiText": "The Tomb of the Abandoned is a point of interest within the The Sinking Ruins area in the Crystal Oasis. This ruined pyramid has been claimed by dangerous sand-dwelling animals.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -466,6 +537,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 616,
       "wikiText": "The Empty Quarter is a point of interest within the Free City of Amnoon. This section used to be the noble district of the city before it was hit by a vicious sandstorm and engulfed in sand.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -486,6 +560,9 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 639,
       "wikiText": "Simply travel to the north of Amnoon, it is near the cliff.",
@@ -546,6 +623,9 @@
           43120
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 653,
       "wikiText": "Gather crab of cave beast meat to feed raptors, engage enemies while mounted, and hunt fireflies on your raptor.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -566,6 +646,9 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 659,
       "wikiText": "Seeker's Village a point of interest within the Sinking Ruins area in the Crystal Oasis. It is a small mining town associated with Talatat Quarry east of it.",
@@ -588,6 +671,9 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 749,
       "wikiText": "Abandoned Forged Ore is a hero challenge in The Sinking Ruins. It summons a Veteran Forged Vanguard to fight.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -608,6 +694,9 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 822,
       "wikiText": "Talatat Quarry is a point of interest within the Mekele Bluffs in the Crystal Oasis. This quarry is being excavated to provide the nearby city of Amnoon and other settlements with building materials.",
@@ -630,6 +719,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 877,
       "wikiText": "Just follow the path and use the raptor to avoid holes.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -650,6 +742,9 @@
       "order": 24,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 918,
       "wikiText": "A Wind-Worn Bottle lies dormant in the Sifuri Sand Sea in the Crystal Oasis, beside a lone tree. Upon activation, it summons a strong magic-muddled djinn to fight.",
@@ -672,6 +767,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 940,
       "wikiText": "The Shattered Templar is a point of interest within the Sifuri Sand Sea in the Crystal Oasis. It consists of a large statue that has toppled over and buried in sand over time.",
       "waypointChatLink": "[&BLsKAAA=]"
@@ -692,6 +790,9 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1072,
       "wikiText": "The Retreat of the Resolute is a point of interest within the Omiramba Sand Sea in the Crystal Oasis. This small and narrow box canyon is home to a large population of wind riders.",
@@ -714,6 +815,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1094,
       "wikiText": "Near the retreat point of interest, near the cliff.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -734,6 +838,9 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1155,
       "wikiText": "Top of a house, easy to access by jumping or using the springer.",
@@ -756,6 +863,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1165,
       "wikiText": "The Northern Way Station is a point of interest in Omiramba Sand Sea. The location consists of a small outpost next to an oasis and lies along the path of the eastern region of the Crystal Oasis.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -776,6 +886,9 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1223,
       "wikiText": "Follow the wooden platforms near the temple of Kormir then, use the springer.",
@@ -798,6 +911,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1380,
       "wikiText": "The Altar of Silence is a point of interest within the Hatari Tablelands in the Crystal Oasis. This ancient structure is heavily protected by various elementals.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -818,6 +934,9 @@
       "order": 32,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1383,
       "wikiText": "Unearthed Ruins is a communing hero challenge in Hatari Tablelands.",
@@ -840,6 +959,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1461,
       "wikiText": "The Temple of Atar is a small temple in the high cliffs of the Hatari Tablelands that is occupied and guarded by many djinn.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -861,6 +983,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1580,
       "wikiText": "Top of the mountain, simply follow the path.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -881,6 +1006,9 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1653,
       "wikiText": "The Village of Kweli is a point of interest in Elona Reach.",
@@ -905,6 +1033,9 @@
       ],
       "chatLink": "[&BEAKAAA=]",
       "waypointChatLink": "[&BEAKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1665,
       "wikiText": "Elona Reach is an area within the Crystal Oasis. Previously, it was one of the three trials toward the Ascension. Nowadays, a small village and a temple devoted to Kormir can be found here."
     },
@@ -924,6 +1055,9 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1676,
       "wikiText": "The Temple of Kormir is a point of interest located in Elona Reach in the Crystal Oasis. It is a temple devoted to worshipping Kormir, the goddess of truth.",
@@ -976,6 +1110,9 @@
           43571
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1680,
       "wikiText": "Mend the refugee's injuries in the prescribed order, wipe Zaishen graffiti off temple walls, and cheer up disheartened refugees.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -996,6 +1133,9 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1742,
       "wikiText": "The Crucible of Consecration is a point of interest within the Forged Foothold area in the Crystal Oasis. It is used by Forged High Mages to create new Forged by fusing ghosts with magical armors for Balthazar's army.",
@@ -1018,6 +1158,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1885,
       "wikiText": "On a stone ruin, use the raptor to reach it.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -1039,8 +1182,11 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1951,
-      "wikiText": "The Teratohedron is a large pyramid in eastern Crystal Oasis which was corrupted when the Elder Dragon Kralkatorrik flew over it on his way towards Vabbi.",
+      "wikiText": "The Teratohedron is a large pyramid within the Maculate Fringe area in the northeastern corner of Crystal Oasis, which was corrupted when the Elder Dragon Kralkatorrik flew over it on his way towards Vabbi.",
       "waypointChatLink": "[&BEAKAAA=]"
     },
     {
@@ -1059,6 +1205,9 @@
       "order": 42,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1969,
       "wikiText": "The Branded Pyramid is a communing hero challenge within the Maculate Fringe area in the Crystal Oasis.",
@@ -1081,6 +1230,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2054,
       "wikiText": "Squaross Kraal is a point of interest within Destiny's Ascent in the Crystal Oasis. This kraal has been established by ogres that were previously living in the Blazeridge Mountains.",
       "waypointChatLink": "[&BJMKAAA=]"
@@ -1102,6 +1254,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2083,
       "wikiText": "Fortunate Strike is a point of interest within Glint's Legacy in the Crystal Oasis. This crystal-rich mine was originally discovered by the Zephyrites when they still inhabited the desert.",
       "waypointChatLink": "[&BJMKAAA=]"
@@ -1122,6 +1277,9 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2130,
       "wikiText": "On top of the Zephyrite house, use the springer.",
@@ -1146,6 +1304,9 @@
       ],
       "chatLink": "[&BJMKAAA=]",
       "waypointChatLink": "[&BJMKAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 2157,
       "wikiText": "Destiny's Gorge is an area in the southeastern Crystal Oasis. An abandoned village belonging to the Zephyrites, now inhabited by refugees, can be found here."
     },
@@ -1180,6 +1341,9 @@
           44060
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2167,
       "wikiText": "Defends Zephyr's Trace from threats, revive villagers, clean up Forged cannonballs, fashion makeshift weapons to arm defenders, and resupply weapon crates.",
       "waypointChatLink": "[&BJMKAAA=]"
@@ -1200,6 +1364,9 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2176,
       "wikiText": "Zephyr's Trace is part of the former village belonging to the Zephyrites within Destiny's Gorge. Now it is inhabited by refugees displaced by Balthazar and defectors from Elona.",
@@ -1222,6 +1389,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2301,
       "wikiText": "The Southern Way Station is a point of interest within the Kusini Crossing area in the Crystal Oasis.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -1243,6 +1413,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2315,
       "wikiText": "The Kusini Water Hole is a point of interest within the Kusini Crossing area in the Crystal Oasis. It is a small lake with a friendly shark, just south of the Southern Way Station.",
       "waypointChatLink": "[&BEAKAAA=]"
@@ -1263,6 +1436,9 @@
       "order": 51,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2499,
       "wikiText": "The Sanctum of Nabkha is a djinn sanctum within the Crystal Oasis. It contains a portal-based mini-dungeon that can only be completed with the Jackal's Shifting Sands mastery.",

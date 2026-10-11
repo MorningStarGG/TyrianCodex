@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1317,
     "name": "Dragonfall",
@@ -44,6 +44,26 @@
       45638,
       49589
     ],
+    "floorCollection": {
+      "available": [
+        49
+      ],
+      "conflicts": [],
+      "counts": {
+        "49": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 0,
+          "sectors": 20
+        }
+      },
+      "unavailable": [
+        1,
+        3,
+        2,
+        0
+      ]
+    },
     "release": "lws4"
   },
   "primaryKind": "foot",
@@ -68,6 +88,9 @@
       ],
       "chatLink": "[&BN4LAAA=]",
       "waypointChatLink": "[&BN4LAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 0,
       "wikiText": "The Pact Command is an area in the northeast of Dragonfall. It is the main staging area for the Pact, Olmakhan, Mist Wardens and Order of the Crystal Bloom forces."
     },
@@ -87,6 +110,9 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 15,
       "wikiText": "The Airdrome Port is where airships can dock at Pact Command in Dragonfall.",
@@ -109,6 +135,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 30,
       "wikiText": "Pact Outpost is a point of interest within Pact Command, hosting the Pact and other allied forces.",
       "waypointChatLink": "[&BN4LAAA=]"
@@ -129,6 +158,9 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 57,
       "wikiText": "The Verdant Gate is a gate at Pact Command that leads to the Melandru's Lost Domain via a bridge that leads into The Skein.",
@@ -151,6 +183,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 86,
       "wikiText": "Use the springer to jump on iron gate right of the vista and then to the rocks rights of the vista. Jump over to the left and jump again with the springer to reach the vista.",
       "waypointChatLink": "[&BN4LAAA=]"
@@ -171,6 +206,9 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 103,
       "wikiText": "The Charnel Gate is a gate at Pact Command that leads to the Olmakhan Camp in the southwest of Dragonfall.",
@@ -193,6 +231,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 168,
       "wikiText": "Ember Gate is an area within Dragonfall to the northwest.",
       "waypointChatLink": "[&BN4LAAA=]"
@@ -213,6 +254,9 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 196,
       "wikiText": "The Crystal Cudgel is Kralkatorrik's tail. It occasionally moves, slamming the ground and sending out Branded lines of spikes when it lands. At the end of the meta when Kralkatorrik creates a carapace, the tail is also covered in crystal.",
@@ -235,6 +279,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 282,
       "wikiText": "Walk from the waypoint to the bottom of the cliff. Use the springer and jump on the statue to reach the vista.",
       "waypointChatLink": "[&BN4LAAA=]"
@@ -255,6 +302,9 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 300,
       "wikiText": "The Trail of Cinder is the easiest trail into the Burning Forest among the high cliff faces that face the Dragon's Causeway and Pact Command.",
@@ -277,6 +327,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 420,
       "wikiText": "On the top of the mesa northeast of the Ashen Steppes POI.",
       "waypointChatLink": "[&BOYLAAA=]"
@@ -298,6 +351,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 453,
       "wikiText": "The Ashen Steppes are a series of tall cliffs layered over one another, creating a small steppe structure in the Burning Forest.",
       "waypointChatLink": "[&BOYLAAA=]"
@@ -318,6 +374,9 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 507,
       "wikiText": "Crystal Bloom Outpost is a point of interest within Crystal Bloom Camp.",
@@ -342,6 +401,9 @@
       ],
       "chatLink": "[&BOYLAAA=]",
       "waypointChatLink": "[&BOYLAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 515,
       "wikiText": "Crystal Bloom Camp is an area on Dragonfall and serves as the base of operations for the Order of the Crystal Bloom in the battle against the Elder Dragon Kralkatorrik."
     },
@@ -361,6 +423,9 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 552,
       "wikiText": "Balthazar's Folly is a point of interest within Crystal Bloom Camp which marks a fallen statue of Balthazar on the edge of the Burning Forest landmass.",
@@ -383,6 +448,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 661,
       "wikiText": "The Fire God's Precipice is the edge of the Burning Forest landmass that faces the Underworld landmass at Ember Gate.",
       "waypointChatLink": "[&BOYLAAA=]"
@@ -403,6 +471,9 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 710,
       "wikiText": "using a Skyscale or a Griffon fly Northwest from the waypoint towards Ember Gate. The viewpoint is on the mesa just south of the bridge to Ember Gate.",
@@ -425,6 +496,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 748,
       "wikiText": "The Wailing Basin marks the location of several lower areas (basins) which emit ethereal blue smoke and an otherworldy wailing noise.",
       "waypointChatLink": "[&BNELAAA=]"
@@ -446,6 +520,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 812,
       "wikiText": "The Chaos Gate marks the southwest entrance to the cave that goes between the Olmakhan Camp and Pact Command. The ground near this area is Branded, possibly due to being beneath Kralkatorrik's wing.",
       "waypointChatLink": "[&BNELAAA=]"
@@ -466,6 +543,9 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 896,
       "wikiText": "Shackled Grasp is a point of interest within Dragon's Snare. It marks a weak spot on Kralkatorrik near one of his claws. In the story step Bleed in War Eternal, this point is used to test a True Dragonsblood Spear on Kralkatorrik.",
@@ -490,6 +570,9 @@
       ],
       "chatLink": "[&BNELAAA=]",
       "waypointChatLink": "[&BNELAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 957,
       "wikiText": "Olmakhan Camp is an area in the Underworld part of Dragonfall, hosting the Olmakhan forces."
     },
@@ -509,6 +592,9 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 969,
       "wikiText": "Olmakhan Outpost is a point of interest within Olmakhan Camp.",
@@ -531,6 +617,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1024,
       "wikiText": "Walk from the waypoint to the vista. Go through the nearby tunnel and use the springer to get on the cliffs. Walk to the vista, while dodging the enemies and their attacks.",
       "waypointChatLink": "[&BNELAAA=]"
@@ -551,6 +640,9 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1088,
       "wikiText": "The Loathsome Pulpit features a statue of Grenth surrounded by pillars, almost like a classroom.",
@@ -573,6 +665,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1197,
       "wikiText": "The Skyscale Eyrie is small cave, where you first meet Skyscales during the story. It's located south of The Underworld Waypoint - .",
       "waypointChatLink": "[&BNELAAA=]"
@@ -593,6 +688,9 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1260,
       "wikiText": "Grenth's Respite marks a large statue of Grenth near the bridge spanning the area between the Underworld and Melandru's Lost Domain.",
@@ -615,6 +713,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1355,
       "wikiText": "Walk towards the vista from the waypoint, until you find a branch with a bouncing mushroom on top. Use the springer and the bouncing mushroom to gain height. Fall down carefully from the last plateau to the vista",
       "waypointChatLink": "[&BNILAAA=]"
@@ -635,6 +736,9 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1595,
       "wikiText": "Walk from the waypoint northhwest towards the vista, until you find a stairway of cliffs. Use the springer to get up and jump further north until you see a big branch heading towards the vista plateau.",
@@ -657,6 +761,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1779,
       "wikiText": "Walk from the path north of the vista.",
       "waypointChatLink": "[&BNILAAA=]"
@@ -677,6 +784,9 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1802,
       "wikiText": "Verdance Falls is a point of interest in Melandru's Chalice. It is a large waterfall that feeds the chalice.",
@@ -699,6 +809,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1827,
       "wikiText": "Tower of the Third is a point of interest, marking an ancient tree in the basin of Melandru's Chalice.",
       "waypointChatLink": "[&BNILAAA=]"
@@ -719,6 +832,9 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1938,
       "wikiText": "Mist Warden Outpost is a point of interest within Mist Warden Camp, hosting the Mist Warden forces.",
@@ -743,6 +859,9 @@
       ],
       "chatLink": "[&BNILAAA=]",
       "waypointChatLink": "[&BNILAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1946,
       "wikiText": "Mist Warden Camp is an area in the Melandru's Lost Domain part of Dragonfall, hosting the Mist Wardens forces."
     }

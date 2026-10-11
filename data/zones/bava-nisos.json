@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1574,
     "name": "Bava Nisos",
@@ -44,6 +44,42 @@
       37128,
       11549
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 15,
+          "skill_challenges": 0,
+          "sectors": 9
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 15,
+          "skill_challenges": 0,
+          "sectors": 9
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 15,
+          "skill_challenges": 0,
+          "sectors": 9
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 15,
+          "skill_challenges": 0,
+          "sectors": 9
+        }
+      },
+      "unavailable": []
+    },
     "release": "jw"
   },
   "primaryKind": "mount",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BGEPAAA=]",
       "waypointChatLink": "[&BGEPAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4,
       "wikiText": "Mantle's Arrival is the westernmost area of Bava Nisos. Currently, it serves as a staging ground for the Tyrian Alliance's forces and a pathway to Titan's Vestibule and Bava Nisos proper."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 12,
       "wikiText": "Alliance Camp is a point of interest located within Mantle's Arrival in Bava Nisos. It is the Tyrian Alliance's staging ground for operations taking place within the titan Saevus Saxum.",
@@ -109,6 +157,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 104,
       "wikiText": "Southern Hollow is an area in southwestern Bava Nisos",
       "waypointChatLink": "[&BG0PAAA=]"
@@ -129,6 +183,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 163,
       "wikiText": "The Gilded Road is a point of interest located within the Southern Hollow in Bava Nisos.",
@@ -151,6 +211,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 212,
       "wikiText": "Gullet's Beginning is a point of interest located within the Titan's Vestibule in Bava Nisos.",
       "waypointChatLink": "[&BGEPAAA=]"
@@ -171,6 +237,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 270,
       "wikiText": "Mirror Nexus is a point of interest located within the Northern Hollow in Bava Nisos.",
@@ -193,6 +265,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 368,
       "wikiText": "Gilded Forum is a point of interest located within the Northern Bronchial Well in Bava Nisos.",
       "waypointChatLink": "[&BG0PAAA=]"
@@ -213,6 +291,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 471,
       "wikiText": "Northern Bronchial Well is an area in northern Bava Nisos.",
@@ -235,6 +319,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 518,
       "wikiText": "Gullet's End is a point of interest located within the Central Gullet in Bava Nisos.",
       "waypointChatLink": "[&BG0PAAA=]"
@@ -255,6 +345,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 603,
       "wikiText": "The Trodden Forum is a point of interest located within the Southern Bronchial Well in Bava Nisos.",
@@ -279,6 +375,12 @@
       ],
       "chatLink": "[&BG0PAAA=]",
       "waypointChatLink": "[&BG0PAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 627,
       "wikiText": "The Southern Bronchial Well is an area in southeast Bava Nisos, containing the titan Saevus Saxum's south lung. It is infested with titanspawn of all varieties, and contains many ghosts of the city's former mursaat inhabitants."
     },
@@ -298,6 +400,12 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 645,
       "wikiText": "Southern Organ Chamber is a point of interest located within the Southern Bronchial Well in Bava Nisos. This POI is only accessible during the \"A Titanic Voyage\" meta event.",
@@ -320,6 +428,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 750,
       "wikiText": "The Mists Gate is a point of interest located within the Pericardial Nexus in Bava Nisos. It is a portal that leads to the Foundry of Failed Creations.",
       "waypointChatLink": "[&BG0PAAA=]"
@@ -341,6 +455,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 806,
       "wikiText": "The Pericardial Nexus is the central-eastern area of Bava Nisos, containing the heart of the titan Saevus Saxum. It can only be explored safely during and after the meta event A Titanic Voyage.",
       "waypointChatLink": "[&BG0PAAA=]"
@@ -361,6 +481,12 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 869,
       "wikiText": "Northern Organ Chamber is a point of interest located within the Northern Bronchial Well in Bava Nisos.",

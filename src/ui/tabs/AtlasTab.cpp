@@ -207,7 +207,7 @@ void OpenAtlasScope(App& app, int index)
     static const struct { const char* kind; int typeSel; } kScopes[] = {
         { "", 0 }, { "OpenWorld", 0 }, { "OpenWorld", 6 }, { "City", 0 }, { "Lounge", 0 }, { "WvW", 0 },
         { "Dungeon", 0 }, { "Fractal", 0 }, { "Raid", 0 }, { "Strike", 0 }, { "Story", 0 }, { "Festival", 0 },
-        { "Home", 0 }, { "GuildHall", 0 }, { "Tutorial", 0 }, { "PvP", 0 }, { "", 7 },
+        { "Home", 0 }, { "GuildHall", 0 }, { "Tutorial", 0 }, { "PvP", 0 }, { "", 7 }, { "Convergence", 0 },
     };
     const int n = (int)(sizeof(kScopes) / sizeof(kScopes[0]));
     if (index < 0 || index >= n) index = 0;

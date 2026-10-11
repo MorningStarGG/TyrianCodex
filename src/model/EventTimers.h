@@ -75,12 +75,14 @@ public:
     const std::vector<EventChain>& Chains() const { return chains_; }
     const std::vector<CycleTimer>& Cycles() const { return cycles_; }
     const std::vector<CycleTimer>& Pvp() const { return pvp_; }
+    const std::vector<std::string>& UnresolvedSchedules() const { return unresolvedSchedules_; }
 
     std::vector<const EventTimer*> EventsForMap(uint32_t mapId) const;
     std::vector<const EventChain*> ChainsForMap(uint32_t mapId) const;
 
 private:
     bool loaded_ = false;
+    std::vector<std::string> unresolvedSchedules_;
     std::vector<EventTimer> events_;
     std::vector<EventChain> chains_;
     std::vector<CycleTimer> cycles_;

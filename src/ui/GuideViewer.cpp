@@ -463,7 +463,7 @@ void CopyWaypointForStep(App &app, const Step &step)
 // to it) to the clipboard - paste in chat to travel. The travel system's copy-nearest-waypoint action.
 void CopyCurrentWaypoint(App &app)
 {
-    if (!app.state.zone.Loaded || app.state.curStep < 0 || app.state.curStep >= (int)app.state.zone.Steps.size())
+    if (!app.state.CanGuide() || app.state.curStep < 0 || app.state.curStep >= (int)app.state.zone.Steps.size())
         return;
     CopyWaypointForStep(app, app.state.zone.Steps[app.state.curStep]);
 }
@@ -558,7 +558,7 @@ static float RouteModeDistance(App &app, Follow::Vec2 startXz, const Step &targe
 
 static bool TravelOfferRouteInputsReady(App &app, const Step &targetStep)
 {
-    if (!MumbleLink || !app.state.zone.Loaded || !app.state.zone.HasRects)
+    if (!MumbleLink || !app.state.CanGuide() || !app.state.zone.HasRects)
         return false;
     if (ModeIsDirect(app.config.routeMode) || targetStep.TrailIndex < 0)
         return true;
@@ -1311,7 +1311,7 @@ static void UpdateWaypointTravelOffer(App &app)
         SetTravelOfferDebug(offer, "waiting: viewer mode is not Step");
         return;
     }
-    if (!app.state.zone.Loaded || app.state.curStep < 0 || app.state.curStep >= (int)app.state.zone.Steps.size())
+    if (!app.state.CanGuide() || app.state.curStep < 0 || app.state.curStep >= (int)app.state.zone.Steps.size())
     {
         ClearAutomaticWaypointTravelOffer(offer);
         offer.eligibleSince = 0.0;

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1452,
     "name": "The Echovald Wilds",
@@ -44,6 +44,49 @@
       31100,
       102360
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 3,
+          "points_of_interest": 56,
+          "skill_challenges": 6,
+          "sectors": 12
+        },
+        "69": {
+          "tasks": 3,
+          "points_of_interest": 56,
+          "skill_challenges": 6,
+          "sectors": 12
+        },
+        "3": {
+          "tasks": 3,
+          "points_of_interest": 56,
+          "skill_challenges": 6,
+          "sectors": 12
+        },
+        "2": {
+          "tasks": 3,
+          "points_of_interest": 56,
+          "skill_challenges": 6,
+          "sectors": 12
+        },
+        "0": {
+          "tasks": 3,
+          "points_of_interest": 56,
+          "skill_challenges": 6,
+          "sectors": 12
+        }
+      },
+      "unavailable": []
+    },
     "release": "eod"
   },
   "primaryKind": "foot",
@@ -68,6 +111,13 @@
       ],
       "chatLink": "[&BIsMAAA=]",
       "waypointChatLink": "[&BIsMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2,
       "wikiText": "Brotherhood Woodlands is an area north of the Echovald Wilds, which contains the main base of the Jade Brotherhood."
     },
@@ -87,6 +137,13 @@
       "order": 1,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 75,
       "wikiText": "Gravestone of Lord Archek Brauer is a communing hero challenge in Zu Heltzer Historical Site. It's located in the back of the graveyard and does not require a mount to reach.",
@@ -109,6 +166,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 86,
       "wikiText": "The Memorial zu Heltzer is a large cemetary housing the graves of many generations of zu Heltzers, including the Final Leader of the House zu Heltzer, Countess Danika zu Heltzer.",
       "waypointChatLink": "[&BIsMAAA=]"
@@ -129,6 +193,13 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 97,
       "wikiText": "Needs description.",
@@ -151,6 +222,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 119,
       "wikiText": "Caretaker's Camp is the small camp of the Memorial zu Heltzer's Cemetery Caretaker, consisting of just a tent, a campfire, and a Ministry of Security Guard right outside the towering walls of the Memorial zu Heltzer cemetery.",
       "waypointChatLink": "[&BIsMAAA=]"
@@ -171,6 +249,13 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 226,
       "wikiText": "The Altrumm Mines are amber mines which have supplied Kurzick amber for many generations. The current mining operation has created a very small town with the members of the mining crew.",
@@ -193,6 +278,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 274,
       "wikiText": "Skygazer Cathedral is a point of interest in the Saint's Vale area of The Echovald Wilds map. Behind one of the Kestrel Watchkeepers is a hole in the wall with Will-o-the-Wisps inside.",
       "waypointChatLink": "[&BMoMAAA=]"
@@ -213,6 +305,13 @@
       "order": 7,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 308,
       "wikiText": "The House zu Heltzer was once the seat of one of the oldest and largest Kurzick families in the Echovald Forest dedicated to the worship of the goddess Dwayna, but is now reduced to ruins being excavated by Canthan archaeologists after...",
@@ -237,6 +336,13 @@
       ],
       "chatLink": "[&BMoMAAA=]",
       "waypointChatLink": "[&BMoMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 318,
       "wikiText": "Zu Heltzer Historical Site is an area in the Echovald Wilds. Full of Kurzick history, their former capital now mostly serves as a reminder of both past and present and as an archaeological site."
     },
@@ -256,6 +362,13 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 323,
       "wikiText": "The House zu Heltzer was once the seat of one of the oldest and largest Kurzick families in the Echovald Forest dedicated to the worship of the goddess Dwayna, but is now reduced to ruins being excavated by Canthan archaeologists after...",
@@ -278,6 +391,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 386,
       "wikiText": "Saprophyte's Pond is a Point of Interest in Saint's Vale, within The Echovald Wilds.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -298,6 +418,13 @@
       "order": 11,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 428,
       "wikiText": "Kropa Village is a village containing descendants of the Kurzicks that is located within Speaker territory.",
@@ -322,6 +449,13 @@
       ],
       "chatLink": "[&BMwMAAA=]",
       "waypointChatLink": "[&BMwMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 430,
       "wikiText": "Saint's Vale is an area in the Echovald Wilds which contains Kropa Village, Cylow Outpost, and the Skygazer Cathedral."
     },
@@ -341,6 +475,13 @@
       "order": 13,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 503,
       "wikiText": "Speaker Headquarters is a communing hero challenge in Warden's Folly.",
@@ -405,6 +546,13 @@
           102715
         ]
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 518,
       "wikiText": "Sabotage the Speakers' plans by destroying supplies, freeing spirits, discouraging recruits, and planting confiscated jade tech on guards.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -425,6 +573,13 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 597,
       "wikiText": "From Speaker's Sanctum POI, head north to find a ramp on the left, follow the ramp up and around to a bridge. Cross the arch bridge and climb across a series of branches up to another ledge.",
@@ -447,6 +602,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 610,
       "wikiText": "Speaker's Sanctum is the main base of the Speakers and their high council, led by the Warden Tetra Earthcall, which is located within the Warden's Folly.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -467,6 +629,13 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 626,
       "wikiText": "The Chamber of the Spirits is an alcove off of the south side of the Speaker's Sanctum, the Speakers base. The area is most likely named for the Speaker Spirit Keeper Kestrel spy and stone pylon by the point of interest.",
@@ -489,6 +658,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 692,
       "wikiText": "Erys Oasis is a lake with waterfalls within the Warden's Folly in the Echovald Wilds.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -509,6 +685,13 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 764,
       "wikiText": "The Temple of the Dredge is a temple that is located in Ferndale. Despite its name, it was not built by the dredge, and likely of unknown Kurzick origin.",
@@ -531,6 +714,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 812,
       "wikiText": "Yarrow's Perch is a Kestrel watchpost where Kestrel Yarrow's squad resides, located in the branches of Warden's Folly.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -551,6 +741,13 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 856,
       "wikiText": "Saint Anjeka's Shrine is a point of interest found inside Warden's Folly, southeast of Yarrow's Perch.",
@@ -573,6 +770,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 964,
       "wikiText": "The Forever Tree is a tree sacred to the Kurzicks, and likely the last of its kind. The Mysterious Warden is bound to the tree, and it is Doireann's Wyld Hunt to help it flourish.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -593,6 +797,13 @@
       "order": 23,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1083,
       "wikiText": "Xunlai Jade Junkyard Overlook is a communing hero challenge above the Xunlai Jade Junkyard. It is guarded by an Elite Brotherhood Scrapper, Elite Brotherhood Sharpshooter, Elite Brotherhood Pistoleer or Elite Brotherhood Junker.",
@@ -615,6 +826,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1093,
       "wikiText": "Cylow Outpost is a point of interest in the Saint's Vale area of The Echovald Wilds map. It is a small village near the Xunlai Jade Junkyard, which is a divisive point between the inhabitants.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -636,8 +854,15 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1114,
-      "wikiText": "Aetherblade Hideout is the first Canthan raid encounter for the Guild Wars 2: End of Dragons expansion. It contains story details from the Can't Trust a Pirate story step.",
+      "wikiText": "Aetherblade Hideout is the first Canthan raid encounter for the Guild Wars 2: End of Dragons expansion. It contains story details from the story step Can't Trust a Pirate.",
       "waypointChatLink": "[&BMoMAAA=]"
     },
     {
@@ -656,6 +881,13 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1139,
       "wikiText": "The Dump Site 3 is one of the garbage dumps within the Xunlai Jade Junkyard in Echovald Wilds, where Xunlai Jade disposes of junk such as Jade Mechs and other obsolete technology.",
@@ -678,6 +910,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1160,
       "wikiText": "The Dump Site 2 is one of the garbage dumps within the Xunlai Jade Junkyard in the Echovald Wilds, where Xunlai Jade disposes of junk such as Jade Mechs and other obsolete technology.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -698,6 +937,13 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1182,
       "wikiText": "The Dump Site 1 is one of the garbage dumps within the Xunlai Jade Junkyard in the Echovald Wilds, where Xunlai Jade disposes of junk such as Jade Mechs and other obsolete technology.",
@@ -720,6 +966,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1201,
       "wikiText": "Xunlai Jade Junkyard Outpost E-1 is an outpost belonging to the Xunlai Jade, which is located within the Xunlai Jade Junkyard in the Echovald Wilds.",
       "waypointChatLink": "[&BMoMAAA=]"
@@ -741,6 +994,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1295,
       "wikiText": "Wrightstone Chantry is a point of interest at ground level near Xunlai Jade Junkyard in the Echovald Wilds. The teleporter to access the point of interest can be found to the north of the map icon.",
       "waypointChatLink": "[&BMoMAAA=]"
@@ -761,6 +1021,13 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1363,
       "wikiText": "Kage's Perch is a small Kestrels watchpost where Kage's squad resides, overlooking the Jade Brotherhood's headquarters.",
@@ -821,6 +1088,13 @@
           101461
         ]
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1371,
       "wikiText": "Disrupt the Jade Brotherhood's operations by hacking machines, causing chaos, setting listening devices, collecting hazardous samples, and beating up anyone who challenges you.",
       "waypointChatLink": "[&BIsMAAA=]"
@@ -841,6 +1115,13 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1394,
       "wikiText": "Ingenuity Square is the main headquarters of the Jade Brotherhood in Cantha.",
@@ -863,6 +1144,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1410,
       "wikiText": "Mi-Shen's Lab is the laboratory of Mi Shen, which is hidden in the Brotherhood Woodlands in the Echovald Wilds.",
       "waypointChatLink": "[&BIsMAAA=]"
@@ -883,6 +1171,13 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1454,
       "wikiText": "Needs description.",
@@ -905,6 +1200,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1526,
       "wikiText": "Dreslav's Garden is a secluded garden tended by Dreslav, a wisp who was once a spirit of the forest. It is a shelter for forest creatures and visitors.",
       "waypointChatLink": "[&BIsMAAA=]"
@@ -925,6 +1227,13 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1611,
       "wikiText": "Aoi's Perch is a small Kestrel watchpost where Kestrel Aoi's squad resides, overlooking the Jade Brotherhood's operations in the Aspenwood Research Facility.",
@@ -947,6 +1256,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1669,
       "wikiText": "Qinkaishi Falls is a point of interest within Qinkaishi Basin in The Echovald Wilds.",
       "waypointChatLink": "[&BNQMAAA=]"
@@ -967,6 +1283,13 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1680,
       "wikiText": "Qinkai Village it is a fishing village located in the Qinkaishi Basin, where both tengu and humans live side by side.",
@@ -991,8 +1314,15 @@
       ],
       "chatLink": "[&BNQMAAA=]",
       "waypointChatLink": "[&BNQMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1693,
-      "wikiText": "Qinkaishi Basin it's an area northeast of the Echovald Wilds and connecting to the Qinkaishi Mountains that lie in the north of the region. Inside is Qinkai Village."
+      "wikiText": "Qinkaishi Basin is the northeastern area of the Echovald Wilds. It takes its name from the Qinkaishi Mountains, which lie to the north of it. Qinkai Village, a fishing village that is home to both humans and tengu, can be found here."
     },
     {
       "stepId": "1452:vista:3335",
@@ -1010,6 +1340,13 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1757,
       "wikiText": "From the waypoint - take the trail heading south that leads upwards (the one on the right). At the intersection near an arched building, turn left and head east across branches towards the mastery point.",
@@ -1031,6 +1368,13 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1784,
       "wikiText": "Qinkai Stream is a point of interest in Quarry Forelands, The Echovald Wilds.",
@@ -1055,6 +1399,13 @@
       ],
       "chatLink": "[&BPkMAAA=]",
       "waypointChatLink": "[&BPkMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1793,
       "wikiText": "Quarry Forelands is an area in The Echovald Wilds where the Jade Gate, which provides access to the Jade Sea, is guarded by two guards from the Ministry of Security."
     },
@@ -1074,6 +1425,13 @@
       "order": 44,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1830,
       "wikiText": "Karstadt Village is a point of interest in Melandru's Hope in the Echovald Wilds.",
@@ -1095,6 +1453,13 @@
       "order": 45,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1903,
       "wikiText": "Valdhertz Crypts is a point of interest within Quarry Forelands in the Echovald Wilds, found inside the Valdhertz Crypts mini-dungeon.",
@@ -1147,6 +1512,13 @@
           103339
         ]
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1973,
       "wikiText": "Protect the village from outside threats, help merchants craft their wares, and establish diplomatic relationships by learning about tengu culture.",
       "waypointChatLink": "[&BMcMAAA=]"
@@ -1170,6 +1542,13 @@
       ],
       "chatLink": "[&BMcMAAA=]",
       "waypointChatLink": "[&BMcMAAA=]",
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1984,
       "wikiText": "Mori Village is a Angchu tengu village in The Echovald Wilds. It is the largest tengu settlement in the Echovald Forest."
     },
@@ -1189,6 +1568,13 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1995,
       "wikiText": "Mori Plaza is a market for the Angchu tengu within Mori Village.",
@@ -1211,6 +1597,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2007,
       "wikiText": "Village Overlook can refer to one of these Hero challenges: Seitung Province Village Overlook (Shing Jea Monastery) Village Overlook (Eastern Wilds) The Echovald Wilds Village Overlook (Mori Village)",
       "waypointChatLink": "[&BMcMAAA=]"
@@ -1231,6 +1624,13 @@
       "order": 50,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2037,
       "wikiText": "Elder's Roost is a point of interest within Lake Lutgardis in The Echovald Wilds.",
@@ -1253,6 +1653,13 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2067,
       "wikiText": "Submerged Cathedral is a communing hero challenge in Lake Lutgardis.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -1273,6 +1680,13 @@
       "order": 52,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2082,
       "wikiText": "Lutgardis Ruins formerly known as the Lutgardis Conservatory was a large cathedral in the House Lutgardis, where music-related classes were held, now lies in ruins. It is located in Lake Lutgardis in the Echovald Wilds.",
@@ -1295,6 +1709,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2124,
       "wikiText": "Needs description.",
       "waypointChatLink": "[&BMcMAAA=]"
@@ -1315,6 +1736,13 @@
       "order": 54,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2127,
       "wikiText": "Hermit's Dock is a point of interest in Lake Lutgardis in the Echovald Wilds.",
@@ -1337,6 +1765,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2167,
       "wikiText": "Vasburg Armory is a point of interest within Aspenwood Gulch in the Echovald Wilds. It is found by entering the eponymous mini-dungeon.",
       "waypointChatLink": "[&BPkMAAA=]"
@@ -1357,6 +1792,13 @@
       "order": 56,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2220,
       "wikiText": "Secret Cavern is a point of interest within Melandru's Hope in the Echovald Wilds.",
@@ -1379,6 +1821,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2247,
       "wikiText": "Teleri Village is a village in Melandru's Hope in the Echovald Wilds.",
       "waypointChatLink": "[&BMcMAAA=]"
@@ -1399,6 +1848,13 @@
       "order": 58,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2285,
       "wikiText": "Ancient Archives is a point of interest within Melandru's Hope in The Echovald Wilds. It's a cathedral like building with a Jade Tech Teleporter entrance, guarded by an Elite Canthan Spirit Tahkayun.",
@@ -1421,6 +1877,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2311,
       "wikiText": "Court of Song is a point of interest within Ferndale.",
       "waypointChatLink": "[&BMwMAAA=]"
@@ -1441,6 +1904,13 @@
       "order": 60,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2362,
       "wikiText": "Arianna's Perch is a small Kestrel watchpost overlooking the Court of Song.",
@@ -1463,6 +1933,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2414,
       "wikiText": "Goa Village is a small village that belongs to the Dragon Empire and is located in the Xunlai Jade Junkyard in the Echovald Wilds.",
       "waypointChatLink": "[&BPkMAAA=]"
@@ -1483,6 +1960,13 @@
       "order": 62,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2482,
       "wikiText": "Tangled Altar is a point of interest within the Xunlai Jade Junkyard.",
@@ -1505,6 +1989,13 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2499,
       "wikiText": "Aspenwood Sublevel B1 is a point of interest in the lower level of the Aspenwood Research Facility within Aspenwood Gulch.",
       "waypointChatLink": "[&BPkMAAA=]"
@@ -1525,6 +2016,13 @@
       "order": 64,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        69,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2499,
       "wikiText": "The Aspenwood Research Facility is a point of interest in the Aspenwood Gulch area of the Echovald Wilds.",

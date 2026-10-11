@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1301,
     "name": "Jahai Bluffs",
@@ -44,6 +44,26 @@
       65151,
       58087
     ],
+    "floorCollection": {
+      "available": [
+        49
+      ],
+      "conflicts": [],
+      "counts": {
+        "49": {
+          "tasks": 3,
+          "points_of_interest": 39,
+          "skill_challenges": 0,
+          "sectors": 22
+        }
+      },
+      "unavailable": [
+        1,
+        3,
+        2,
+        0
+      ]
+    },
     "release": "lws4"
   },
   "primaryKind": "foot",
@@ -68,6 +88,9 @@
       ],
       "chatLink": "[&BJkLAAA=]",
       "waypointChatLink": "[&BJkLAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 0,
       "wikiText": "The Reclaimed Chantry is an ancient Order of Whispers base in Jahai Bluffs, and is the entry point to Jahai from the Domain of Vabbi."
     },
@@ -154,6 +177,9 @@
           56939
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 67,
       "wikiText": "Fight Branded, deter troublemakers, make meaningful introductions, and repair ramshackle turrets.",
       "waypointChatLink": "[&BJkLAAA=]"
@@ -174,6 +200,9 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 68,
       "wikiText": "The Gaze of the Ancients is a point of interest located in the center of the Reclaimed Chantry. Five statues of the Six Human Gods can be seen gazing at this central point.",
@@ -196,6 +225,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 92,
       "wikiText": "Kormir's Reverence is a statue of Kormir located in the southwestern area of the Reclaimed Chantry. This statue sits apart from the other statues of the Six Human Gods, and can be knelt at to summon Nenah.",
       "waypointChatLink": "[&BJkLAAA=]"
@@ -216,6 +248,9 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 148,
       "wikiText": "Walk from the waypoint past the vista to small pillar east of the vista. Use Springer or Skyscale to get up the pillars to the vista.",
@@ -238,6 +273,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 224,
       "wikiText": "Riyid's Post is a point of interest within Rilohn River in Jahai Bluffs.",
       "waypointChatLink": "[&BJkLAAA=]"
@@ -258,6 +296,9 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 363,
       "wikiText": "Archon's Retreat is a point of interest in the Fortress of Jahai.",
@@ -280,6 +321,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 407,
       "wikiText": "Jahai Great Hall is a point of interest in the Fortress of Jahai.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -300,6 +344,9 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 416,
       "wikiText": "Ring of Judgment is a point of interest in the Fortress of Jahai.",
@@ -322,6 +369,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 459,
       "wikiText": "Walk from the waypoint to the vista. Use Springer or Skyscale to get to the vista.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -342,6 +392,9 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 604,
       "wikiText": "Crescent's Town Hall is a point of interest within Crescent's Prosperity.",
@@ -364,6 +417,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 681,
       "wikiText": "Wyvern Roost is a point of interest in the Jungle Anomaly.",
       "waypointChatLink": "[&BJkLAAA=]"
@@ -384,6 +440,9 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 694,
       "wikiText": "Walk from the waypoint to the Jungle Anomaly. Gain height using either the Springer, the Skyscale or the Bouncing Mushrooms in the area. Travel to the west of the vista, while staying high up.",
@@ -406,6 +465,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 833,
       "wikiText": "Displaced Vizier's Tower is a copy of The Vizier's Tower as it was during the Human-charr conflict in 1071 AE, shortly before The Cataclysm.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -426,6 +488,9 @@
       "order": 14,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 838,
       "wikiText": "Walk to the middle tower and use it to gain height with either the Springer or the Skyscale. Glide or fly over the left tower and make the final jump.",
@@ -448,6 +513,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 858,
       "wikiText": "Monument to the Return of Palawa Joko is a point of interest in the Central Brand Scar.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -468,6 +536,9 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 999,
       "wikiText": "Sleepless Beacon is a point of interest within Prosperity's Approach. It was a beacon marking the way to Crescent's Prosperity village.",
@@ -490,6 +561,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1060,
       "wikiText": "Noble's Walk is a point of interest in the Fortress of Jahai.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -510,6 +584,9 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1144,
       "wikiText": "The Fortress Courtyard is a point of interest in the Jahai Keep.",
@@ -532,6 +609,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1198,
       "wikiText": "Walk to the vista and use either the Springer or the Skyscale to get to it.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -552,6 +632,9 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1234,
       "wikiText": "Claw Den is a point of interest within Shattered Cliffs. It is located high above the valley floor and is infested with branded foes.",
@@ -604,6 +687,9 @@
           58324
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1293,
       "wikiText": "Help gather, grow, and distribute food; make the town safer from drakes; destroy Branded and clear Brand Accumulation.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -624,6 +710,9 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1307,
       "wikiText": "Rilohn Falls is a point of interest in the Fortress of Jahai.",
@@ -648,6 +737,9 @@
       ],
       "chatLink": "[&BH4LAAA=]",
       "waypointChatLink": "[&BH4LAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1340,
       "wikiText": "Yatendi Village is an area in the southeast of the Jahai Bluffs."
     },
@@ -667,6 +759,9 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1364,
       "wikiText": "The now-Branded Yatendi Farm is a point of interest within Eastern Brand Scar.",
@@ -689,6 +784,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1452,
       "wikiText": "Confluence of the Elements is a point of interest in Kodonur Temple.",
       "waypointChatLink": "[&BH4LAAA=]"
@@ -709,6 +807,9 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1571,
       "wikiText": "Wurmmarshal's Encampment is a point of interest in Wurmhaven.",
@@ -731,6 +832,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1621,
       "wikiText": "Garrison Command is a point of interest in the Argon Garrison.",
       "waypointChatLink": "[&BIMLAAA=]"
@@ -751,6 +855,9 @@
       "order": 28,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1625,
       "wikiText": "Walk to the vista and use the stairs in Garrison Command to gain height. Use the Springer or the Skyscale to make the final jump.",
@@ -773,6 +880,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1631,
       "wikiText": "Garrison Relay Tower is a point of interest in the Argon Garrison.",
       "waypointChatLink": "[&BIMLAAA=]"
@@ -793,6 +903,9 @@
       "order": 30,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1696,
       "wikiText": "Garrison Access Tower is a point of interest in the Argon Garrison.",
@@ -817,6 +930,9 @@
       ],
       "chatLink": "[&BIMLAAA=]",
       "waypointChatLink": "[&BIMLAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 1783,
       "wikiText": "Pact Vanguard is an area in the southwest of the Jahai Bluffs where the Pact have setup a temporary camp in the shell of their crashed airship."
     },
@@ -836,6 +952,9 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 1794,
       "wikiText": "Vanguard Ordinance is a point of interest in Pact Vanguard.",
@@ -896,6 +1015,9 @@
           58749
         ]
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1830,
       "wikiText": "Repair DERVs, collect airship debris while mounted, test weaponized Brand shards, and protect the camp perimeter from Branded.",
       "waypointChatLink": "[&BIMLAAA=]"
@@ -917,6 +1039,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 1843,
       "wikiText": "Vanguard Salvage Yard is a point of interest in Pact Vanguard.",
       "waypointChatLink": "[&BIMLAAA=]"
@@ -937,6 +1062,9 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2026,
       "wikiText": "Crystal Cavern is a point of interest in Central Brand Scar.",
@@ -961,6 +1089,9 @@
       ],
       "chatLink": "[&BJMLAAA=]",
       "waypointChatLink": "[&BJMLAAA=]",
+      "floors": [
+        49
+      ],
       "trailIndex": 2205,
       "wikiText": "The Venta Pass is an area in the western Jahai Bluffs."
     },
@@ -980,6 +1111,9 @@
       "order": 37,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2232,
       "wikiText": "Mirza's Rest is a point of interest in Venta Pass.",
@@ -1002,6 +1136,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2316,
       "wikiText": "Walk to the vista and gain height using either the Springer or the Skyscale. Repeat until you have reached the vista.",
       "waypointChatLink": "[&BJMLAAA=]"
@@ -1022,6 +1159,9 @@
       "order": 39,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2337,
       "wikiText": "Ancestor Tree was a sacred tree to the Veldrunner centaurs. Some scholars believed that the fruit of these trees was considered divine and as a way to pass on spiritual wisdom from one generation to the next.",
@@ -1044,6 +1184,9 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        49
+      ],
       "trailIndex": 2424,
       "wikiText": "Battleground Ramparts is a point of interest within Almorra's Stand in Jahai Bluffs. It is where the Death-Branded Shatterer spawns during Destroy the Death-Branded Shatterer.",
       "waypointChatLink": "[&BJMLAAA=]"
@@ -1064,6 +1207,9 @@
       "order": 41,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        49
       ],
       "trailIndex": 2477,
       "wikiText": "Staging Platform is a point of interest within Almorra's Stand in Jahai Bluffs. It is where General Almorra Soulkeeper assembles a team to Destroy the Death-Branded Shatterer.",

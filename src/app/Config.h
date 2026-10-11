@@ -336,6 +336,8 @@ struct Config
     bool fadeBetweenCamChar = false; // dim markers that sit between the camera and your character (declutter)
     float maxMarkerOpacity = 1.0f;   // global ceiling on marker opacity (1 = off)
     bool worldAboveBelow = true;     // up/down chevron on a marker whose objective is on a different floor
+    bool worldHeartHints = true;
+    bool worldHeartAnswers = true;
 
     // Farming / gathering node overlay (independent visibility toggles, like showMarkers / showMapPins -- a farming
     // RUN does NOT force them; they're left on/off by preference). Listed in Markers > Visibility (in-world) +

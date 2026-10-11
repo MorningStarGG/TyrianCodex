@@ -1,0 +1,1543 @@
+{
+  "schemaVersion": 5,
+  "generatedAt": "2026-10-11T17:54:21+00:00",
+  "zone": {
+    "mapId": 1633,
+    "name": "Leyspring Hollows",
+    "continentId": 1,
+    "regionId": 58,
+    "regionName": "Castora",
+    "floor": 1,
+    "minLevel": 80,
+    "maxLevel": 80,
+    "mapRect": [
+      [
+        -36864,
+        -30720
+      ],
+      [
+        39936,
+        30720
+      ]
+    ],
+    "continentRect": [
+      [
+        3130,
+        57385
+      ],
+      [
+        6330,
+        59945
+      ]
+    ],
+    "sectorRect": [
+      [
+        3287.79,
+        57551.8
+      ],
+      [
+        6186.5,
+        59808.7
+      ]
+    ],
+    "labelCoord": [
+      4700,
+      58600
+    ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 2,
+          "points_of_interest": 49,
+          "skill_challenges": 0,
+          "sectors": 9
+        },
+        "3": {
+          "tasks": 2,
+          "points_of_interest": 49,
+          "skill_challenges": 0,
+          "sectors": 9
+        },
+        "2": {
+          "tasks": 2,
+          "points_of_interest": 49,
+          "skill_challenges": 0,
+          "sectors": 9
+        },
+        "0": {
+          "tasks": 2,
+          "points_of_interest": 49,
+          "skill_challenges": 0,
+          "sectors": 9
+        }
+      },
+      "unavailable": []
+    },
+    "release": "voe"
+  },
+  "primaryKind": "foot",
+  "primaryComplete": true,
+  "steps": [
+    {
+      "stepId": "1633:poi:4111",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4111",
+      "coord": [
+        5853,
+        59597
+      ],
+      "recommendedLevel": null,
+      "name": "Spirit's Descent",
+      "prereqs": [],
+      "order": 0,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 0,
+      "wikiText": "Spirit's Descent is a point of interest in Sealed Vestibule.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:waypoint:4118",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "waypoint",
+      "objectiveId": "4118",
+      "coord": [
+        5820,
+        59557
+      ],
+      "recommendedLevel": null,
+      "name": "Sealed Vestibule Waypoint",
+      "prereqs": [],
+      "order": 1,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BBYQAAA=]",
+      "waypointChatLink": "[&BBYQAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 0
+    },
+    {
+      "stepId": "1633:poi:4135",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4135",
+      "coord": [
+        5501,
+        59455
+      ],
+      "recommendedLevel": null,
+      "name": "Flowstone Moor",
+      "prereqs": [],
+      "order": 2,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 204,
+      "wikiText": "Flowstone Moor is a point of interest in Sealed Vestibule.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4123",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4123",
+      "coord": [
+        5606,
+        59340
+      ],
+      "recommendedLevel": null,
+      "name": "The Elder's Fruition",
+      "prereqs": [],
+      "order": 3,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 236,
+      "wikiText": "The Elder's Fruition is a point of interest in Sealed Vestibule.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:vista:4145",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "vista",
+      "objectiveId": "4145",
+      "coord": [
+        5827,
+        59238
+      ],
+      "recommendedLevel": null,
+      "name": "Sealed Vestibule",
+      "prereqs": [],
+      "order": 4,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 308,
+      "wikiText": "Sealed Vestibule is an area within southeastern Leyspring Hollows.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4146",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4146",
+      "coord": [
+        5857,
+        59088
+      ],
+      "recommendedLevel": null,
+      "name": "Ley Barbican",
+      "prereqs": [],
+      "order": 5,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 335,
+      "wikiText": "Ley Barbican is a point of interest in Sealed Vestibule.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4109",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4109",
+      "coord": [
+        6130,
+        59082
+      ],
+      "recommendedLevel": null,
+      "name": "Ley Altar",
+      "prereqs": [],
+      "order": 6,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 375,
+      "wikiText": "Ley Altar is a point of interest in Sealed Vestibule.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4107",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4107",
+      "coord": [
+        5843,
+        58430
+      ],
+      "recommendedLevel": null,
+      "name": "Chak Hive",
+      "prereqs": [],
+      "order": 7,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 802,
+      "wikiText": "Chak Hive is a point of interest in Infested Sluiceways.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:vista:4112",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "vista",
+      "objectiveId": "4112",
+      "coord": [
+        5812,
+        58466
+      ],
+      "recommendedLevel": null,
+      "name": "Infested Sluiceways",
+      "prereqs": [],
+      "order": 8,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 804,
+      "wikiText": "Infested Sluiceways is an area within northeastern Leyspring Hollows.",
+      "waypointChatLink": "[&BBYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4139",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4139",
+      "coord": [
+        5424,
+        58331
+      ],
+      "recommendedLevel": null,
+      "name": "Skittering Corridor",
+      "prereqs": [],
+      "order": 9,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 1105,
+      "wikiText": "Skittering Corridor is a point of interest in Infested Sluiceways.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4124",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4124",
+      "coord": [
+        5258,
+        58476
+      ],
+      "recommendedLevel": null,
+      "name": "Primus Minor Research Annex",
+      "prereqs": [],
+      "order": 10,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 1249,
+      "wikiText": "Primus Minor Research Annex is a point of interest in Ley Distributary.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4132",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4132",
+      "coord": [
+        5254,
+        58835
+      ],
+      "recommendedLevel": null,
+      "name": "Attuning Chamber",
+      "prereqs": [],
+      "order": 11,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 1498,
+      "wikiText": "Attuning Chamber is a point of interest in Ley Distributary.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4142",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4142",
+      "coord": [
+        5293,
+        59290
+      ],
+      "recommendedLevel": null,
+      "name": "Path of the Uncloaked",
+      "prereqs": [],
+      "order": 12,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 1910,
+      "wikiText": "Path of the Uncloaked is a point of interest in Hall of Assemblage.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:heart:466",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "heart",
+      "objectiveId": "466",
+      "coord": [
+        5118,
+        59288
+      ],
+      "recommendedLevel": 80,
+      "name": "Train with alliance forces and assist around camp to prepare yourself for the fight ahead.",
+      "prereqs": [],
+      "order": 13,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          4711,
+          59566
+        ],
+        [
+          4795,
+          59797
+        ],
+        [
+          5206,
+          59771
+        ],
+        [
+          5280,
+          59589
+        ],
+        [
+          5176,
+          59182
+        ],
+        [
+          5049,
+          59142
+        ],
+        [
+          4918,
+          59142
+        ],
+        [
+          4886,
+          59114
+        ],
+        [
+          4778,
+          59102
+        ],
+        [
+          4656,
+          59139
+        ],
+        [
+          4691,
+          59271
+        ],
+        [
+          4711,
+          59566
+        ]
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2011,
+      "wikiText": "Participate in nearby events, train with members of the Astral Ward, chase chak out of the camp, neutralize unstable ley shoots, and teach stewards about Tyrian history.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4149",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4149",
+      "coord": [
+        4803,
+        59113
+      ],
+      "recommendedLevel": null,
+      "name": "Subterranean Corridor",
+      "prereqs": [],
+      "order": 14,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2116,
+      "wikiText": "Subterranean Corridor is a point of interest in Hall of Assemblage.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4114",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4114",
+      "coord": [
+        4707,
+        59587
+      ],
+      "recommendedLevel": null,
+      "name": "Proving Grounds",
+      "prereqs": [],
+      "order": 15,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2301,
+      "wikiText": "Proving Grounds is a point of interest in Hall of Assemblage.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:vista:4153",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "vista",
+      "objectiveId": "4153",
+      "coord": [
+        4823,
+        59672
+      ],
+      "recommendedLevel": null,
+      "name": "Hall of Assemblage",
+      "prereqs": [],
+      "order": 16,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2357,
+      "wikiText": "The Hall of Assemblage is an area within southern Leyspring Hollows.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4130",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4130",
+      "coord": [
+        4284,
+        59435
+      ],
+      "recommendedLevel": null,
+      "name": "Leyspring Bore",
+      "prereqs": [],
+      "order": 17,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2586,
+      "wikiText": "Leyspring Bore is a point of interest in Hall of Assemblage.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4134",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4134",
+      "coord": [
+        4544,
+        59215
+      ],
+      "recommendedLevel": null,
+      "name": "Ethereal Cascade",
+      "prereqs": [],
+      "order": 18,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2646,
+      "wikiText": "Ethereal Cascade is a point of interest in The Auguratorium.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4110",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4110",
+      "coord": [
+        4255,
+        59174
+      ],
+      "recommendedLevel": null,
+      "name": "Tactician's Chantry",
+      "prereqs": [],
+      "order": 19,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2795,
+      "wikiText": "Tactician's Chantry is a point of interest in The Auguratorium.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4128",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4128",
+      "coord": [
+        4285,
+        58946
+      ],
+      "recommendedLevel": null,
+      "name": "Sequen Cromatica",
+      "prereqs": [],
+      "order": 20,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2852,
+      "wikiText": "Sequen Cromatica is a point of interest in The Auguratorium. It is the second room of the From Ruins to Riches minidungeon.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4136",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4136",
+      "coord": [
+        4662,
+        58636
+      ],
+      "recommendedLevel": null,
+      "name": "Specimen Stage Alpha",
+      "prereqs": [],
+      "order": 21,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2867,
+      "wikiText": "Specimen Stage Alpha is a point of interest in Navarium Core. It is only accessible during the Depths of Cruelty meta event, and is the location of [Group Event] Destroy the Mark III Golem! (80) after the portals have been captured.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4106",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4106",
+      "coord": [
+        4546,
+        58494
+      ],
+      "recommendedLevel": null,
+      "name": "Specimen Stage Beta",
+      "prereqs": [],
+      "order": 22,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2874,
+      "wikiText": "Specimen Stage Beta is a point of interest in Navarium Core. It is only accessible during the Depths of Cruelty meta event, and is the location of Project 5388 during the penultimate event.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4126",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4126",
+      "coord": [
+        4285,
+        58769
+      ],
+      "recommendedLevel": null,
+      "name": "Arbor of Lamentation",
+      "prereqs": [],
+      "order": 23,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2884,
+      "wikiText": "Arbor of Lamentation is a point of interest in The Auguratorium.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4131",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4131",
+      "coord": [
+        4289,
+        58730
+      ],
+      "recommendedLevel": null,
+      "name": "The Illuminated Path",
+      "prereqs": [],
+      "order": 24,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2886,
+      "wikiText": "The Illuminated Path is a point of interest in The Auguratorium. It is the first room of the From Ruins to Riches minidungeon.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4113",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4113",
+      "coord": [
+        4152,
+        58939
+      ],
+      "recommendedLevel": null,
+      "name": "The Dueling Halls",
+      "prereqs": [],
+      "order": 25,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2889,
+      "wikiText": "The Dueling Halls is a point of interest in The Auguratorium. It is the third room of the From Ruins to Riches minidungeon.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4108",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4108",
+      "coord": [
+        4164,
+        58754
+      ],
+      "recommendedLevel": null,
+      "name": "Fool's Maze",
+      "prereqs": [],
+      "order": 26,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 2895,
+      "wikiText": "Fool's Maze is a point of interest in The Auguratorium. It is the fourth room of the From Ruins to Riches minidungeon.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4117",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4117",
+      "coord": [
+        3746,
+        58924
+      ],
+      "recommendedLevel": null,
+      "name": "Dreaming Chambers",
+      "prereqs": [],
+      "order": 27,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3164,
+      "wikiText": "Dreaming Chambers is a point of interest in Ordnance Depot.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:vista:4125",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "vista",
+      "objectiveId": "4125",
+      "coord": [
+        3816,
+        59095
+      ],
+      "recommendedLevel": null,
+      "name": "Ordnance Depot",
+      "prereqs": [],
+      "order": 28,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3190,
+      "wikiText": "Ordnance Depot is an area within southwest Leyspring Hollows.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4148",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4148",
+      "coord": [
+        3867,
+        59168
+      ],
+      "recommendedLevel": null,
+      "name": "Gloamlit Courtyard",
+      "prereqs": [],
+      "order": 29,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3233,
+      "wikiText": "Gloamlit Courtyard is a point of interest in Ordnance Depot.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4133",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4133",
+      "coord": [
+        3614,
+        59411
+      ],
+      "recommendedLevel": null,
+      "name": "Storage Cellar",
+      "prereqs": [],
+      "order": 30,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3380,
+      "wikiText": "Storage Cellar is a point of interest in Ordnance Depot. While disguised, go down the spiral staircase to find the POI",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:heart:465",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "heart",
+      "objectiveId": "465",
+      "coord": [
+        3587,
+        59447
+      ],
+      "recommendedLevel": 80,
+      "name": "Assist Astral Ward Agent Snarlcrow and his associates in sabotaging the Inquest base of operations in Leyspring Hollows.",
+      "prereqs": [],
+      "order": 31,
+      "source": [
+        "gw2api:tasks"
+      ],
+      "bounds": [
+        [
+          3615,
+          59519
+        ],
+        [
+          3767,
+          59306
+        ],
+        [
+          3666,
+          59049
+        ],
+        [
+          3257,
+          59310
+        ],
+        [
+          3397,
+          59483
+        ],
+        [
+          3615,
+          59519
+        ]
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3389,
+      "wikiText": "Help Astral Ward Agent Snarlcrow sabotage Inquest operations by infiltrating their base and spread unrest, sabotaging equipment requests, or destroying equipment.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4140",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4140",
+      "coord": [
+        3551,
+        59346
+      ],
+      "recommendedLevel": null,
+      "name": "Primus Minor",
+      "prereqs": [],
+      "order": 32,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3435,
+      "wikiText": "Primus Minor is a point of interest in Ordnance Depot.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4144",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4144",
+      "coord": [
+        3413,
+        59362
+      ],
+      "recommendedLevel": null,
+      "name": "Seat of the Director",
+      "prereqs": [],
+      "order": 33,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3477,
+      "wikiText": "Seat of the Director is a point of interest in Ordnance Depot.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4129",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4129",
+      "coord": [
+        3513,
+        59047
+      ],
+      "recommendedLevel": null,
+      "name": "Crystalline Crest",
+      "prereqs": [],
+      "order": 34,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3696,
+      "wikiText": "Crystalline Crest is a point of interest in Ordnance Depot.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4119",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4119",
+      "coord": [
+        3613,
+        58578
+      ],
+      "recommendedLevel": null,
+      "name": "Crystalline Nidus",
+      "prereqs": [],
+      "order": 35,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 3963,
+      "wikiText": "Crystalline Nidus is a point of interest in Doyen's Adytum.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4141",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4141",
+      "coord": [
+        3806,
+        58626
+      ],
+      "recommendedLevel": null,
+      "name": "Natural Arch",
+      "prereqs": [],
+      "order": 36,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4021,
+      "wikiText": "Natural Arch is a point of interest in Doyen's Adytum.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:vista:4120",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "vista",
+      "objectiveId": "4120",
+      "coord": [
+        3828,
+        58640
+      ],
+      "recommendedLevel": null,
+      "name": "Doyen's Adytum",
+      "prereqs": [],
+      "order": 37,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4026,
+      "wikiText": "Doyen's Adytum is an area within northwestern Leyspring Hollows.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4138",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4138",
+      "coord": [
+        4233,
+        58525
+      ],
+      "recommendedLevel": null,
+      "name": "Sealed Vault",
+      "prereqs": [],
+      "order": 38,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4146,
+      "wikiText": "Sealed Vault is a point of interest in Navarium Core. It is the entrance to the From Ruins to Riches minidungeon.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4147",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4147",
+      "coord": [
+        3994,
+        58271
+      ],
+      "recommendedLevel": null,
+      "name": "Hidden Burrow",
+      "prereqs": [],
+      "order": 39,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4260,
+      "wikiText": "Hidden Burrow is a point of interest in Doyen's Adytum.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4122",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4122",
+      "coord": [
+        3759,
+        58182
+      ],
+      "recommendedLevel": null,
+      "name": "Wailer's Pulpit",
+      "prereqs": [],
+      "order": 40,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4458,
+      "wikiText": "Wailer's Pulpit is a point of interest in Doyen's Adytum.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4137",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4137",
+      "coord": [
+        3955,
+        58078
+      ],
+      "recommendedLevel": null,
+      "name": "Augmented Atelier",
+      "prereqs": [],
+      "order": 41,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4591,
+      "wikiText": "Augmented Atelier is a point of interest in Doyen's Adytum.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:waypoint:4127",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "waypoint",
+      "objectiveId": "4127",
+      "coord": [
+        3658,
+        58081
+      ],
+      "recommendedLevel": null,
+      "name": "Doyen's Adytum Waypoint",
+      "prereqs": [],
+      "order": 42,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BB8QAAA=]",
+      "waypointChatLink": "[&BB8QAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4803
+    },
+    {
+      "stepId": "1633:poi:4115",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4115",
+      "coord": [
+        3537,
+        58157
+      ],
+      "recommendedLevel": null,
+      "name": "Alliance Listening Post",
+      "prereqs": [],
+      "order": 43,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 4915,
+      "wikiText": "Alliance Listening Post is a point of interest in Doyen's Adytum.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4143",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4143",
+      "coord": [
+        3686,
+        57935
+      ],
+      "recommendedLevel": null,
+      "name": "The Scriptorium",
+      "prereqs": [],
+      "order": 44,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 5028,
+      "wikiText": "The Scriptorium is a point of interest in Doyen's Adytum.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:vista:4152",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "vista",
+      "objectiveId": "4152",
+      "coord": [
+        4671,
+        57729
+      ],
+      "recommendedLevel": null,
+      "name": "Rooted Sanctuary",
+      "prereqs": [],
+      "order": 45,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 5789,
+      "wikiText": "Rooted Sanctuary is an area within northern Leyspring Hollows.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4116",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4116",
+      "coord": [
+        4649,
+        57849
+      ],
+      "recommendedLevel": null,
+      "name": "Exposed Ley Root",
+      "prereqs": [],
+      "order": 46,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 5805,
+      "wikiText": "Exposed Ley Root is a point of interest in Rooted Sanctuary.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4121",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4121",
+      "coord": [
+        4647,
+        58006
+      ],
+      "recommendedLevel": null,
+      "name": "The Cannulae",
+      "prereqs": [],
+      "order": 47,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 5831,
+      "wikiText": "The Cannulae is a point of interest in Rooted Sanctuary.",
+      "waypointChatLink": "[&BB8QAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4151",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4151",
+      "coord": [
+        4761,
+        58493
+      ],
+      "recommendedLevel": null,
+      "name": "Specimen Stage Gamma",
+      "prereqs": [],
+      "order": 48,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 5831,
+      "wikiText": "Specimen Stage Gamma is a point of interest in Navarium Core. It is only accessible during the Depths of Cruelty meta event, and is the location of Subject Gamma during the penultimate event.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:poi:4154",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "poi",
+      "objectiveId": "4154",
+      "coord": [
+        4657,
+        58367
+      ],
+      "recommendedLevel": null,
+      "name": "Specimen Stage Delta",
+      "prereqs": [],
+      "order": 49,
+      "source": [
+        "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 5831,
+      "wikiText": "Specimen Stage Delta is a point of interest in Navarium Core. It is only accessible during the Depths of Cruelty meta event, and is the final platform of the event.",
+      "waypointChatLink": "[&BDYQAAA=]"
+    },
+    {
+      "stepId": "1633:waypoint:4150",
+      "mapId": 1633,
+      "zoneName": "Leyspring Hollows",
+      "type": "waypoint",
+      "objectiveId": "4150",
+      "coord": [
+        4953,
+        59330
+      ],
+      "recommendedLevel": null,
+      "name": "Hall of Assemblage Waypoint",
+      "prereqs": [],
+      "order": 50,
+      "source": [
+        "gw2api:poi"
+      ],
+      "chatLink": "[&BDYQAAA=]",
+      "waypointChatLink": "[&BDYQAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "trailIndex": 5832
+    }
+  ],
+  "hasTrail": true
+}

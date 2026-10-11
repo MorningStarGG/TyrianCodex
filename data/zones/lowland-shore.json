@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1550,
     "name": "Lowland Shore",
@@ -44,6 +44,42 @@
       41954,
       22890
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 3,
+          "points_of_interest": 70,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "3": {
+          "tasks": 3,
+          "points_of_interest": 70,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "2": {
+          "tasks": 3,
+          "points_of_interest": 70,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "0": {
+          "tasks": 3,
+          "points_of_interest": 70,
+          "skill_challenges": 0,
+          "sectors": 11
+        }
+      },
+      "unavailable": []
+    },
     "release": "jw"
   },
   "primaryKind": "foot",
@@ -66,6 +102,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 272,
       "wikiText": "Loch Lucent is a point of interest in Lowland Shore, north of Autumn's Vale.",
       "waypointChatLink": "[&BC4PAAA=]"
@@ -87,6 +129,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 388,
       "waypointChatLink": "[&BC4PAAA=]"
     },
@@ -106,6 +154,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 630,
       "wikiText": "Salmon's Fluttering is a point of interest in Lowland Shore.",
@@ -127,6 +181,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 748,
       "wikiText": "Vale Gazebo is a point of interest in Autumn's Vale. The gazebo has a scenic view of the waterfall and is often visited by the lowland kodan villagers. It also features an updraft.",
@@ -151,6 +211,12 @@
       ],
       "chatLink": "[&BC4PAAA=]",
       "waypointChatLink": "[&BC4PAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 798,
       "wikiText": "Autumn's Vale is a fishing village in Lowland Shore north of Exorheic Falls located within the Janthir region."
     },
@@ -221,6 +287,12 @@
           22032
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 806,
       "wikiText": "Participate in nearby events, repair fishing nets, set valravn traps, turn in Lowland Shore fish, and drive off hostile creatures.",
       "waypointChatLink": "[&BC4PAAA=]"
@@ -241,6 +313,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 858,
       "wikiText": "Fishing Village Aquarium is a point of interest located in the basement of the fishing village in Autumn's Vale.",
@@ -263,6 +341,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1157,
       "wikiText": "Deft Lahar's Abode is a point of interest located in Autumn's Vale. It is the homestead of Deft Lahar and Patient Willow.",
       "waypointChatLink": "[&BC4PAAA=]"
@@ -283,6 +367,12 @@
       "order": 8,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1461,
       "wikiText": "Autumn's Vale is a fishing village in Lowland Shore north of Exorheic Falls located within the Janthir region.",
@@ -305,6 +395,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1557,
       "wikiText": "Queen's Confidence is a point of interest located in Lowland Shore. It is a large beehive inside a cave. The Queen's Confidence jumping puzzle occurs here.",
       "waypointChatLink": "[&BC4PAAA=]"
@@ -325,6 +421,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1692,
       "wikiText": "Amphibian's Knot is a point of interest in Cragged Upland, on the border between it and the Exorheic Falls. It is inhabited by frogs.",
@@ -347,6 +449,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2138,
       "wikiText": "Runoff Taint is a point of interest in Lowland Shore. It is a set of shallow pools next to the northern river feeding the fishing village in Autumn's Vale.",
       "waypointChatLink": "[&BC4PAAA=]"
@@ -368,7 +476,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2227,
+      "wikiText": "Valravn's Perch is a point of interest within Exorheic Falls in Lowland Shore.",
       "waypointChatLink": "[&BC4PAAA=]"
     },
     {
@@ -387,6 +502,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2406,
       "wikiText": "The Delta Bifurcation is a point of interest atop the Exorheic Falls. It is a rushing river flowing from Divinity's Falls falling into three massive waterfalls that lead into the rivers of Haar Mire, Autumn's Vale, and Harvest Den.",
@@ -409,6 +530,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2470,
       "wikiText": "Lamplighter's Perch is a point of interest within Exorheic Falls.",
       "waypointChatLink": "[&BC4PAAA=]"
@@ -430,6 +557,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2632,
       "wikiText": "Tundra Steppe is a point of interest in Cragged Upland in Lowland Shore. It is a relatively-flat, grassy stretch of land, with yellowing grass and few trees.",
       "waypointChatLink": "[&BMkOAAA=]"
@@ -450,6 +583,12 @@
       "order": 16,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 2975,
       "wikiText": "Hunter's Mesa is a point of interest in Cragged Upland. It is a raised plateau with several trees on it, inhabited by a feral journeykin, moose, and rotling titanspawn.",
@@ -474,6 +613,12 @@
       ],
       "chatLink": "[&BMkOAAA=]",
       "waypointChatLink": "[&BMkOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3105,
       "wikiText": "Cragged Upland is an area in Lowland Shore. Transitioning between the verdant Woodland Cascades to the barren region west of them, its eastern half is relatively green, whereas the grass of the west is more orange."
     },
@@ -493,6 +638,12 @@
       "order": 18,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3151,
       "wikiText": "Lowland Hot Springs is a point of interest located in the east side of Cragged Upland. It is a set of hot springs owned by the lowland kodan Foggy Air, who sometimes requests assistance in helping the guests relax.",
@@ -515,6 +666,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3251,
       "wikiText": "Scalding Geyser is a point of interest in Cragged Upland in Lowland Shore. It is a large geyser spewing steam into the sky that inflicts Fire to anything standing on it.",
       "waypointChatLink": "[&BMkOAAA=]"
@@ -535,6 +692,12 @@
       "order": 20,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3593,
       "wikiText": "Troll's Tailgate is a point of interest in south Coursing Upland in Lowland Shore. It is a large bonfire near the troll den of Bagoo Cave.",
@@ -557,6 +720,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 3677,
       "wikiText": "Bagoo Cave is a point of interest in Lowland Shore, against the southern cliffs of the Coursing Upland. It is a cave troll den with a scale of Glint at its center, branches growing around it.",
       "waypointChatLink": "[&BMkOAAA=]"
@@ -577,6 +746,12 @@
       "order": 22,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 3894,
       "wikiText": "Derby Grounds is a point of interest located in Coursing Upland. It serves as a training site where journeykin riders hone their mount combat skills, organized by Charging Ram and Derby Coordinator.",
@@ -599,6 +774,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4088,
       "wikiText": "Coursing Upland is an area in Lowland Shore. Home to the Journeykin Outpost and the Derby Grounds, it has a large population of feral journeykin. Hot springs and geysers can be found on the border between it and Cragged Upland.",
       "waypointChatLink": "[&BPsOAAA=]"
@@ -619,6 +800,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4130,
       "wikiText": "Coursing Upland is an area in Lowland Shore. Home to the Journeykin Outpost and the Derby Grounds, it has a large population of feral journeykin. Hot springs and geysers can be found on the border between it and Cragged Upland.",
@@ -715,6 +902,12 @@
           23012
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4296,
       "wikiText": "Help the kodan hunters with hunting events, warclaw care, and hidden titanspawn.",
       "waypointChatLink": "[&BPsOAAA=]"
@@ -736,6 +929,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4349,
       "wikiText": "Vast Caldera's Room is a point of interest in Coursing Upland.",
       "waypointChatLink": "[&BPsOAAA=]"
@@ -756,6 +955,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4395,
       "wikiText": "Journeykin Outpost is a point of interest located in Coursing Upland. It is a ranch where journeykin are raised.",
@@ -780,6 +985,12 @@
       ],
       "chatLink": "[&BPsOAAA=]",
       "waypointChatLink": "[&BPsOAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4435,
       "wikiText": "Coursing Upland is an area in Lowland Shore. Home to the Journeykin Outpost and the Derby Grounds, it has a large population of feral journeykin. Hot springs and geysers can be found on the border between it and Cragged Upland."
     },
@@ -799,6 +1010,12 @@
       "order": 29,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 4847,
       "wikiText": "Springer's Peak is a point of interest in Lowland Shore. It is home to wild springers.",
@@ -821,6 +1038,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 4942,
       "wikiText": "Springer's Base is a point of interest in Lowland Shore. Rock formations along the cliff face here can be climbed with a springer or a flying mount, leading the player southeast to Springer's Peak.",
       "waypointChatLink": "[&BPsOAAA=]"
@@ -842,6 +1065,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5168,
       "waypointChatLink": "[&BC4PAAA=]"
     },
@@ -861,6 +1090,12 @@
       "order": 32,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5668,
       "wikiText": "Maul Boneyards is a point of interest in Lowland Shore, northwest of Autumn's Vale. They are a graveyard for the lowland kodan. The Lowland Shore Insight: \"Battle of Ice\" Memorial is located there.",
@@ -883,6 +1118,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 5836,
       "wikiText": "Cragged Steps is a point of interest located in Autumn's Vale. High up in the mountains, it features bouncing mushrooms and is home to eagles.",
       "waypointChatLink": "[&BC4PAAA=]"
@@ -903,6 +1144,12 @@
       "order": 34,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 5996,
       "wikiText": "The Haar Mire is a large bog in northwest Lowland Shore. It is infested with bog bodies created by the Bog Queen.",
@@ -925,6 +1172,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6075,
       "waypointChatLink": "[&BPsOAAA=]"
     },
@@ -944,6 +1197,12 @@
       "order": 36,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6271,
       "wikiText": "The Rotting Tides are a point of interest in Haar Mire, in northwest Lowland Shore. They are a set of pools near the coast that are suffering from an infestation of undead bog bodies reanimated by the Bog Queen.",
@@ -966,6 +1225,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 6613,
       "waypointChatLink": "[&BC4PAAA=]"
     },
@@ -985,6 +1250,12 @@
       "order": 38,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 6783,
       "waypointChatLink": "[&BC4PAAA=]"
@@ -1006,6 +1277,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7061,
       "waypointChatLink": "[&BN8OAAA=]"
     },
@@ -1025,6 +1302,12 @@
       "order": 40,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7178,
       "wikiText": "Harvest Shore is a northeastern area within Lowland Shore.",
@@ -1047,6 +1330,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7270,
       "waypointChatLink": "[&BN8OAAA=]"
     },
@@ -1066,6 +1355,12 @@
       "order": 42,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7498,
       "wikiText": "Torpor Tavern is a point of interest in northern Harvest Den. Players can serve food and drink to the patrons in order to gain credit from Gentle Heron for the nearby renown heart.",
@@ -1088,6 +1383,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7581,
       "wikiText": "Wry Lichen's House is a point of interest within Harvest Den. It belongs to Wry Lichen.",
       "waypointChatLink": "[&BK4OAAA=]"
@@ -1108,6 +1409,12 @@
       "order": 44,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7710,
       "wikiText": "Harvest Den is a lowland kodan village in Lowland Shore, east of Autumn's Vale.",
@@ -1130,6 +1437,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7729,
       "wikiText": "Hibernation Grotto is a point of interest in Harvest Den. It is a cave behind the large right waterfall leading to Harvest Shore, containing several lowland kodan houses built into the rock.",
       "waypointChatLink": "[&BK4OAAA=]"
@@ -1150,6 +1463,12 @@
       "order": 46,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7828,
       "wikiText": "Harvest Den is a lowland kodan village in Lowland Shore, east of Autumn's Vale.",
@@ -1172,6 +1491,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 7854,
       "waypointChatLink": "[&BK4OAAA=]"
     },
@@ -1191,6 +1516,12 @@
       "order": 48,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 7918,
       "wikiText": "The Bearpaw Fields are a point of interest within Harvest Den in Lowland Shore, used for farming by the local lowland kodan. Their name comes from the bear-paw shapes of the fields.",
@@ -1213,6 +1544,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8067,
       "waypointChatLink": "[&BK4OAAA=]"
     },
@@ -1232,6 +1569,12 @@
       "order": 50,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 8234,
       "wikiText": "Fading Aurora's House is a point of interest located in the Harvest Den. And this site is the home of the Fading Aurora known as Waiting Sorrow.",
@@ -1254,8 +1597,14 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8405,
-      "wikiText": "The Bonfire Lodge is a point of interest located in the Harvest Den.",
+      "wikiText": "The Bonfire Lodge is a point of interest located in Harvest Den.",
       "waypointChatLink": "[&BK4OAAA=]"
     },
     {
@@ -1277,6 +1626,12 @@
       ],
       "chatLink": "[&BK4OAAA=]",
       "waypointChatLink": "[&BK4OAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8423,
       "wikiText": "Harvest Den is a lowland kodan village in Lowland Shore, east of Autumn's Vale."
     },
@@ -1296,6 +1651,12 @@
       "order": 53,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 8513,
       "wikiText": "Stoic Alder's House is a point of interest located in the Harvest Den. And it is the home of the Claw Stoic Alder.",
@@ -1424,6 +1785,12 @@
           22248
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8547,
       "wikiText": "Help the local kodan by completing events, farming, smithing, sparring and cooking.",
       "waypointChatLink": "[&BK4OAAA=]"
@@ -1445,6 +1812,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8618,
       "wikiText": "The Journeykin Pens is a point of interest located in the Harvest Den. It is a pen where Journeykins are found.",
       "waypointChatLink": "[&BK4OAAA=]"
@@ -1465,6 +1838,12 @@
       "order": 56,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 9299,
       "wikiText": "The Astral Ward Moon Camp is a point of interest in Lowland Shore, in Moon Camp Covert. It is an Astral Ward camp that has been magically translocated to the Woodland Cascades.",
@@ -1489,6 +1868,12 @@
       ],
       "chatLink": "[&BCcPAAA=]",
       "waypointChatLink": "[&BCcPAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 9307,
       "wikiText": "Moon Camp Covert is an area in south Lowland Shore. It contains the Astral Ward Moon Camp and some surrounding forest, along with Divinity's Falls that fuel the zone's fast-flowing rivers."
     },
@@ -1508,6 +1893,12 @@
       "order": 58,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 9359,
       "wikiText": "Moon Camp Covert is an area in south Lowland Shore. It contains the Astral Ward Moon Camp and some surrounding forest, along with Divinity's Falls that fuel the zone's fast-flowing rivers.",
@@ -1530,6 +1921,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 9465,
       "wikiText": "Timber Cave is a point of interest in Lowland Shore's Moon Camp Covert, southwest of the Astral Ward Moon Camp. It is a wolf den inside a cave, home to a pack of aggressive timber wolves led by a powerful wolf, and the pack's friendly pups.",
       "waypointChatLink": "[&BCcPAAA=]"
@@ -1550,6 +1947,12 @@
       "order": 60,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 9633,
       "wikiText": "Divinity's Falls are a massive waterfall behind Moon Camp Covert in south Lowland Shore. They are the source of the water cascading down into Exorheic Falls, flowing into the ocean.",
@@ -1572,6 +1975,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 9821,
       "wikiText": "The Iboga Burrows are a point of interest in Bjorn Thicket in southeast Lowland Shore. The burrows themselves, two mounds of dirt, are situated on a ridge up against a cliff, and are surrounded by a population of invasive ibogas.",
       "waypointChatLink": "[&BCcPAAA=]"
@@ -1592,6 +2001,12 @@
       "order": 62,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 10122,
       "wikiText": "Fungal Woodland is a point of interest in Bjorn Thicket, where mushrooms and fungi cover the forest floor, it is one of the lowland kodan's food sources a mushroom.",
@@ -1614,6 +2029,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 10393,
       "wikiText": "Apiary Holt is a point of interest within Bjorn Thicket. Home to old, giant trees, and many Janthiri bees, it is one of the lowland kodan's main sources of honey. The Treetop Beehive jumping puzzle is located here.",
       "waypointChatLink": "[&BK4OAAA=]"
@@ -1635,6 +2056,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 10525,
       "waypointChatLink": "[&BK4OAAA=]"
     },
@@ -1654,6 +2081,12 @@
       "order": 65,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 10768,
       "waypointChatLink": "[&BK4OAAA=]"
@@ -1675,6 +2108,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 11136,
       "waypointChatLink": "[&BN8OAAA=]"
     },
@@ -1694,6 +2133,12 @@
       "order": 67,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 11369,
       "wikiText": "Sleuth Brawlfields is a level 80 meta event that occurs in Lowland Shore.",
@@ -1716,6 +2161,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 11540,
       "wikiText": "Barbed Vale's House is a point of interest located in Harvest Den. It is the home of Barbed Vale.",
       "waypointChatLink": "[&BK4OAAA=]"
@@ -1737,6 +2188,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 11625,
       "waypointChatLink": "[&BK4OAAA=]"
     },
@@ -1756,6 +2213,12 @@
       "order": 70,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 12139,
       "wikiText": "The Boathouse is a point of interest in Harvest Shore, within Lowland Shore. It is a cave in which the lowlanders dock their boats.",
@@ -1780,6 +2243,12 @@
       ],
       "chatLink": "[&BN8OAAA=]",
       "waypointChatLink": "[&BN8OAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 12358,
       "wikiText": "Harvest Shore is a northeastern area within Lowland Shore."
     },
@@ -1799,6 +2268,12 @@
       "order": 72,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 12399,
       "waypointChatLink": "[&BN8OAAA=]"

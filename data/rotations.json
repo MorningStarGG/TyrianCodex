@@ -26,7 +26,7 @@
       ],
       [
         "Nightmare",
-        "Snowblind",
+        "Solitary Throne",
         "Solid Ocean"
       ],
       [
@@ -106,7 +106,7 @@
         74
       ],
       [
-        19,
+        1,
         50,
         70
       ],
@@ -180,7 +180,7 @@
       "16": "Twilight Oasis",
       "17": "Kinfall",
       "18": "Captain Mai Trin Boss",
-      "19": "Volcanic",
+      "19": "Solitary Throne",
       "20": "Solid Ocean",
       "21": "Silent Surf",
       "22": "Nightmare",
@@ -205,7 +205,7 @@
       "41": "Twilight Oasis",
       "42": "Captain Mai Trin Boss",
       "43": "Silent Surf",
-      "44": "Solid Ocean",
+      "44": "Solitary Throne",
       "45": "Aetherblade",
       "46": "Cliffside",
       "47": "Nightmare",
@@ -225,7 +225,7 @@
       "61": "Aquatic Ruins",
       "62": "Uncategorized",
       "63": "Chaos",
-      "64": "Thaumanova Reactor",
+      "64": "Solitary Throne",
       "65": "Aetherblade",
       "66": "Silent Surf",
       "67": "Deepstone",
@@ -250,12 +250,12 @@
       "86": "Snowblind",
       "87": "Twilight Oasis",
       "88": "Chaos",
-      "89": "Swampland",
-      "90": "Molten Boss",
-      "91": "Captain Mai Trin Boss",
-      "92": "Volcanic",
-      "93": "Aetherblade",
-      "94": "Cliffside",
+      "89": "Molten Boss",
+      "90": "Captain Mai Trin Boss",
+      "91": "Volcanic",
+      "92": "Aetherblade",
+      "93": "Cliffside",
+      "94": "Solitary Throne",
       "95": "Kinfall",
       "96": "Nightmare",
       "97": "Shattered Observatory",

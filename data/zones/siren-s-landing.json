@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 1203,
     "name": "Siren's Landing",
@@ -44,6 +44,42 @@
       48688,
       42184
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 5,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "3": {
+          "tasks": 5,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "2": {
+          "tasks": 5,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 11
+        },
+        "0": {
+          "tasks": 5,
+          "points_of_interest": 22,
+          "skill_challenges": 0,
+          "sectors": 11
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws3"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BO8JAAA=]",
       "waypointChatLink": "[&BO8JAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 2,
       "wikiText": "The Risen Lowlands is an area in Siren's Landing. Various group intending to reclaim this region from Zhaitan's waning corruption have established camps in the ruins located near the shore."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 32,
       "wikiText": "Camp Winfred is a point of interest in the Risen Lowlands. Wrangler Winfred has set up this hunting camp on the beach and can be found there unless he is out catching creatures.",
@@ -108,6 +156,12 @@
       "order": 2,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 240,
       "wikiText": "The Secret Garden is a point of interest within Lyssa's Reliquary. It is a small garden, currently maintained by sylvari botanists. Getting to it requires the use of the portals that appear randomly in the area, as well as gliding.",
@@ -188,6 +242,12 @@
           42072
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 264,
       "wikiText": "Destroy horrid illusions, use ley-line magic to reclaim corrupted pools, and channel ley-line energy into Lyssa's reliquary.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -208,6 +268,12 @@
       "order": 4,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 316,
       "wikiText": "The Arm of Abaddon is a spire of rock, shells and shipwrecks towering out of the surrounding sea.",
@@ -230,6 +296,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 329,
       "wikiText": "The Arm of Abaddon is a spire of rock, shells and shipwrecks towering out of the surrounding sea.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -250,6 +322,12 @@
       "order": 6,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 340,
       "wikiText": "The Buoyant Bough is a point of interest in the Bloated Beach.",
@@ -272,6 +350,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 344,
       "wikiText": "The Wreck of the Yesteryear is a point of interest found within the Bloated Beach. A ship, The Yesteryear, has been dashed upon the rocks and split in two.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -293,6 +377,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 431,
       "waypointChatLink": "[&BO8JAAA=]"
     },
@@ -312,6 +402,12 @@
       "order": 9,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 442,
       "wikiText": "Camp Reclamation is a point of interest in the Risen Lowlands. The group intent on cleansing this land from Zhaitan's waning corruption has established this camp as their headquarters.",
@@ -334,6 +430,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 568,
       "wikiText": "The Watchman's Roost is a point of interest within the Merciless Shore. This ruined tower stands on the edge of Melandru's Reliquary, looking down onto the murky shore below.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -355,6 +457,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 573,
       "waypointChatLink": "[&BO8JAAA=]"
     },
@@ -374,6 +482,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 586,
       "wikiText": "The Thoroughfare Ruins are a point of interest in Melandru's Reliquary. It consists of a small series of buildings on the outskirts of the reliquary which are swarming with Risen.",
@@ -395,6 +509,12 @@
       "order": 13,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 613,
       "wikiText": "The Ancient Greenhouse is a point of interest in Melandru's Reliquary. This now ruined domed structure houses the central section of Melandru's reliquary in the Siren's Landing.",
@@ -471,6 +591,12 @@
           42554
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 627,
       "wikiText": "Kill undead, use ley-line magic to reclaim their corpses, and channel ley-line energy into Melandru's reliquary.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -491,6 +617,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 722,
       "wikiText": "The Forgotten Plaza is a point of interest within Lyssa's Reliquary.",
@@ -513,6 +645,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 754,
       "wikiText": "The Hidden Reliquary is a point of interest within Abaddon's Reliquary. It serves as the location of the daily reward for cleansing the five other gods' reliquaries in Siren's Landing.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -533,6 +671,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 779,
       "wikiText": "The Tears of Orr is a point of interest in Grenth's Reliquary. This tall waterfall veils one of the eastern entrances to the reliquary.",
@@ -597,6 +741,12 @@
           42464
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 812,
       "wikiText": "Kill unchained wraiths, use ley-line magic to reclaim their corpses, and channel magic to Grenth's reliquary.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -617,6 +767,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 873,
       "wikiText": "Hiffa's Camp is a point of interest in Abaddon's Reliquary. Explorer Hiffa has chosen this place to establish her base as she conducts her studies in Dwayna's Reliquary.",
@@ -639,6 +795,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 949,
       "wikiText": "The Overgrown Gazebo is a point of interest in Abaddon's Reliquary. It overlooks the Hidden Reliquary.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -659,6 +821,12 @@
       "order": 21,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1016,
       "wikiText": "Balthazar's Vein is a point of interest found in Balthazar's Reliquary. This lava-filled tunnel links the eastern entrance of the reliquary with the ruins themselves.",
@@ -775,6 +943,12 @@
           41892
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1058,
       "wikiText": "Kill enemies, knock them into Balthazar's lava, and channel ley-line magic into Balthazar's reliquary.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -796,6 +970,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1089,
       "wikiText": "Balthazar's Heart is a point of interest found in Balthazar's Reliquary. This central section is crawling with Balthazar's Mercenaries as well as some of his priests.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -816,6 +996,12 @@
       "order": 24,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1155,
       "wikiText": "The Wyvern's Den is a point of interest found within Dwayna's Reliquary. This cliff is occasionally inhabited by a vicious Unchained Wyvern.",
@@ -892,6 +1078,12 @@
           42471
         ]
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1158,
       "wikiText": "Kill creatures, channel ley-line energy into shrines of Dwayna, and use artifacts of Dwayna, and use artifacts of Dwayna to clean the pollution.",
       "waypointChatLink": "[&BO8JAAA=]"
@@ -912,6 +1104,12 @@
       "order": 26,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1166,
       "waypointChatLink": "[&BO8JAAA=]"

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-07-20T00:39:02.358971+00:00",
+  "generatedAt": "2026-10-11T17:54:21+00:00",
   "zone": {
     "mapId": 988,
     "name": "Dry Top",
@@ -44,6 +44,42 @@
       37840,
       32926
     ],
+    "floorCollection": {
+      "available": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "conflicts": [],
+      "counts": {
+        "1": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 6
+        },
+        "3": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 6
+        },
+        "2": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 6
+        },
+        "0": {
+          "tasks": 0,
+          "points_of_interest": 33,
+          "skill_challenges": 5,
+          "sectors": 6
+        }
+      },
+      "unavailable": []
+    },
     "release": "lws2"
   },
   "primaryKind": "foot",
@@ -68,6 +104,12 @@
       ],
       "chatLink": "[&BIAHAAA=]",
       "waypointChatLink": "[&BIAHAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 8,
       "wikiText": "Prospect Valley is the opening area of Dry Top. It is where the Zephyr Sanctum fell down to earth after being sabotaged in 1327 AE."
     },
@@ -87,6 +129,12 @@
       "order": 1,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 46,
       "wikiText": "Choke Canyon is a point of interest in the Prospect Valley. This canyon is home to many arid devourers.",
@@ -109,6 +157,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 111,
       "wikiText": "Crash Site 1 is a point of interest in Prospect Valley. It is one of the locations where sections of the Zephyrite airship, the Zephyr Sanctum, crash-landed after it was sabotaged. Many Inquest members can be found around the wreckage.",
       "waypointChatLink": "[&BIAHAAA=]"
@@ -129,6 +183,12 @@
       "order": 3,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 160,
       "wikiText": "Ship's Fall is a point of interest in the Prospect Valley. Situated high on the cliffs of the Prospect Valley, more ruins of Zephyrite ships can be found surrounded by the Inquest.",
@@ -151,6 +211,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 181,
       "wikiText": "The Wreckage of Zephyrite Crystal Garden is a hero challenge located in the Prospect Valley area of Dry Top.",
       "waypointChatLink": "[&BHoHAAA=]"
@@ -171,6 +237,12 @@
       "order": 5,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 211,
       "wikiText": "Head to the Prospect Valley Crash Site jumping puzzle. The vista is slightly south of the start of the puzzle by a Quartz Crystal node.",
@@ -193,6 +265,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 302,
       "wikiText": "Lair of the Beast is a point of interest in the Prospect Valley. This cave is home to the Colocal Queen and her flock.",
       "waypointChatLink": "[&BIAHAAA=]"
@@ -213,6 +291,12 @@
       "order": 7,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 365,
       "wikiText": "Spurbend Canyon is a point of interest in the Prospect Valley. This canyon is the stampeding ground of Three-Toed Tootsie.",
@@ -235,6 +319,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 436,
       "wikiText": "This vista is on the way to the Sparring Rock point of interest. Simply use the Wind Crystal nearby to reach it.",
       "waypointChatLink": "[&BIgHAAA=]"
@@ -256,6 +346,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 448,
       "wikiText": "Sparring Rock is a point of interest in the Prospect Valley. This lone rock is the training ground of the hermit hylek Nochtli.",
       "waypointChatLink": "[&BIgHAAA=]"
@@ -276,6 +372,12 @@
       "order": 10,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 478,
       "wikiText": "Salamander's Rise is a point of interest in the Prospect Valley. This plateau is home to a Salamander Drake Broodmother and her flock.",
@@ -300,6 +402,12 @@
       ],
       "chatLink": "[&BHoHAAA=]",
       "waypointChatLink": "[&BHoHAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 508,
       "wikiText": "Prospect Valley is the opening area of Dry Top. It is where the Zephyr Sanctum fell down to earth after being sabotaged in 1327 AE."
     },
@@ -319,6 +427,12 @@
       "order": 12,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 528,
       "wikiText": "Flatland Wastes is a point of interest in the Prospect Valley. This huge sand plain separates the Crash Site from the Town of Prosperity.",
@@ -341,6 +455,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 576,
       "wikiText": "The Abandoned Mine is a point of interest in Prospect Valley. It is the more southern of the two adjacent mines in the valley, the other being Prosperity Mine.",
       "waypointChatLink": "[&BIAHAAA=]"
@@ -362,6 +482,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 647,
       "wikiText": "Prosperity Mine is a point of interest in the Prospect Valley, next to the Town of Prosperity. It is the more northern of the two adjacent mines in the valley, the other being the Abandoned Mine. The mine was primarily used for its copper.",
       "waypointChatLink": "[&BHoHAAA=]"
@@ -382,6 +508,12 @@
       "order": 15,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 696,
       "wikiText": "Town of Prosperity is a point of interest in Dry Top in the Prospect Valley as well as a small mining town located in the northwest of Prospect Valley.",
@@ -406,6 +538,12 @@
       ],
       "chatLink": "[&BIgHAAA=]",
       "waypointChatLink": "[&BIgHAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 783,
       "wikiText": "Treadrock Uplands is an area located in Dry Top. This dangerous canyon leads the way to the Uplands Oasis. Many Maguuma centaurs protect the entrance from the dangerous wildlife."
     },
@@ -425,6 +563,12 @@
       "order": 17,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 819,
       "wikiText": "Restoration Refuge is a point of interest located in Treadrock Uplands in Dry Top. This village is inhabited by the Maguuma centaur tribe.",
@@ -447,6 +591,12 @@
       "source": [
         "gw2api:skill_challenges"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 894,
       "wikiText": "Hruugar Ironhaunch is a centaur meditating in a cave near Restoration Refuge. Talking to him in his grove will begin a hero challenge.",
       "waypointChatLink": "[&BIgHAAA=]"
@@ -467,6 +617,12 @@
       "order": 19,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 981,
       "wikiText": "Raptor Prowl is a point of interest located in Treadrock Uplands. Like the name suggests, this canyon is heavily populated by Vulture Raptors.",
@@ -489,6 +645,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1016,
       "wikiText": "Use the series of Wind Crystals to jump up the ledges slightly southwest of the vista.",
       "waypointChatLink": "[&BIgHAAA=]"
@@ -509,6 +671,12 @@
       "order": 21,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1089,
       "wikiText": "The Mending Waters is a hero challenge located in the Uplands Oasis area in Dry Top, at the top of the waterfall. The Mending Waters effect is present at the bottom of the waterfall, healing players who take fall damage.",
@@ -531,6 +699,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1136,
       "wikiText": "Oasis is a point of interest in Uplands Oasis. The centaurs of the Maguuma tribe are trying their best to keep this place under constant rain.",
       "waypointChatLink": "[&BIYHAAA=]"
@@ -551,6 +725,12 @@
       "order": 23,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1204,
       "wikiText": "Azarr's Arbor is a point of interest in Uplands Oasis. This pit is used by Azarr Softhoof to plant his vine bridges.",
@@ -575,6 +755,12 @@
       ],
       "chatLink": "[&BJcHAAA=]",
       "waypointChatLink": "[&BJcHAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1236,
       "wikiText": "Challenger Cliffs is an area located in the southwest portion of Dry Top. The sandy area includes another crashed Zephyrite airship, along with its survivors, and asuran researchers."
     },
@@ -594,6 +780,12 @@
       "order": 25,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1245,
       "wikiText": "Repair Station is an encampment to the far western edge of Dry Top, housing more survivors from the crash of the Zephyrites. It is accessible from Uplands Oasis by a second vine bridge south of Azarr's Arbor.",
@@ -616,6 +808,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1293,
       "wikiText": "An Inquest Base serves as a point of interest in Challenger Cliffs. The Inquest has set up camp there to study the Zephyrites' aspects for their golem prototypes.",
       "waypointChatLink": "[&BJcHAAA=]"
@@ -636,6 +834,12 @@
       "order": 27,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1384,
       "wikiText": "Head southwest from the waypoint and climb along the adjacent ledges. Alternatively, head south from the waypoint and drop down onto the vista.",
@@ -658,6 +862,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1434,
       "wikiText": "Crash Site 3 is the location of a third Zephyrite airship wreck in Dry Top.",
       "waypointChatLink": "[&BIYHAAA=]"
@@ -678,6 +888,12 @@
       "order": 29,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1466,
       "wikiText": "Cliff Peak is a hero challenge located on the eastern edge of Challenger Cliffs. Players must make use of an air Aspect crystal in order to reach it.",
@@ -702,6 +918,12 @@
       ],
       "chatLink": "[&BIYHAAA=]",
       "waypointChatLink": "[&BIYHAAA=]",
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1519,
       "wikiText": "Uplands Oasis is an area located in Dry Top. This lush stretch of land is being tended by Azarr Softhoof and a Maguuma centaur shaman where they grow vine bridge seeds."
     },
@@ -721,6 +943,12 @@
       "order": 31,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1597,
       "wikiText": "Head east from the waypoint. The vista is on the side of the skritt hill and can be walked to.",
@@ -743,6 +971,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1626,
       "wikiText": "Crash Site 2 is the location of a second Zephyrite airship wreck in Dry Top.",
       "waypointChatLink": "[&BIgHAAA=]"
@@ -763,6 +997,12 @@
       "order": 33,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1683,
       "wikiText": "Cragrock Palace is a skritt stronghold in Unswept Uplands. Queen Chrii'kkt IV and her royal subjects reside here.",
@@ -785,6 +1025,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1736,
       "wikiText": "Ley Line Hub is a massive cave within Dry Top where many Ley lines intersect. Headmaster Omadd made this area his refuge, building his machine where miners stumbled across the hub.",
       "waypointChatLink": "[&BIYHAAA=]"
@@ -805,6 +1051,12 @@
       "order": 35,
       "source": [
         "gw2api:poi"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1796,
       "wikiText": "Omadd's Machine is a point of interest at the west end of the Cavern of the Shining Lights. This particular area holds a greater concentration of ley line activity.",
@@ -827,6 +1079,12 @@
       "source": [
         "gw2api:poi"
       ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
+      ],
       "trailIndex": 1870,
       "wikiText": "Reach the cavern by heading south through the Unswept Uplands (map). This vista is at ground level after reaching the cavern.",
       "waypointChatLink": "[&BIgHAAA=]"
@@ -847,6 +1105,12 @@
       "order": 37,
       "source": [
         "gw2api:skill_challenges"
+      ],
+      "floors": [
+        1,
+        3,
+        2,
+        0
       ],
       "trailIndex": 1908,
       "wikiText": "Ley Line Hub is a massive cave within Dry Top where many Ley lines intersect. Headmaster Omadd made this area his refuge, building his machine where miners stumbled across the hub.",

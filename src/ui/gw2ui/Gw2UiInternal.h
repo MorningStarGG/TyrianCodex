@@ -17,6 +17,12 @@ namespace Gw2Ui
 {
 namespace detail
 {
+    // Custom draw-list primitives obey the same scoped opacity as ImGui widgets.
+    inline ImU32 StyleColor(ImU32 color)
+    {
+        return Gw2Ui::Alpha(color, (int)(((color >> IM_COL32_A_SHIFT) & 0xFFu) * ImGui::GetStyle().Alpha));
+    }
+
     // --- texture helper (srv + native pixel size) -- the one local-first GW2/CDN image loader ----------
     struct T { void* srv = nullptr; float w = 0.f, h = 0.f; };
     T    Asset(uint32_t id);              // local-first gw2dat asset (bundled under data/textures/ui/dat, else CDN)

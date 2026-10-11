@@ -101,7 +101,7 @@ void ZoneManager::RebuildActiveTrail()
 
 void ZoneManager::ApplyPathType()
 {
-    if (!st_->zone.Loaded) return;
+    if (!st_->CanGuide()) return;
     st_->zone.Activate(cfg_->pathType);
     RebuildActiveTrail();
     gpsArrow_->ResetEase();
@@ -114,6 +114,8 @@ void ZoneManager::SwitchZone(uint32_t mapId)
     st_->manualTarget.clear();
     gpsArrow_->ResetEase();
     st_->inDungeon = false; st_->inst = nullptr;            // an open-world map, not a dungeon
+    st_->heartWorldDetails = HeartDetailView{};
+    st_->heartGuideDetails = HeartDetailView{};
     st_->instTrailSections.clear();
     st_->instTrailReacquireFrames = 0;
 
@@ -126,7 +128,7 @@ void ZoneManager::SwitchZone(uint32_t mapId)
         follower_->Reset();
         return;
     }
-    if (!it->second.GeomLoaded) LoadZoneTrail(zonesDir_, it->second);   // lazy: pull the trail side-file in on entry
+    if (it->second.HasAuthoredRoute && !it->second.GeomLoaded) LoadZoneTrail(zonesDir_, it->second);
     st_->zone = it->second;                              // activate this zone
     st_->zone.Activate(cfg_->pathType);                  // pick the requested route variant before building
     RebuildActiveTrail();                             // follower (x,z) poly + continent poly for the map
@@ -136,7 +138,7 @@ void ZoneManager::SwitchZone(uint32_t mapId)
     {
         char lvl[48];
         std::snprintf(lvl, sizeof(lvl), "Level %d-%d", st_->zone.MinLevel, st_->zone.MaxLevel);
-        Notify::Push(Notify::Kind::Zone, "Now guiding: " + st_->zone.Name, lvl);
+        Notify::Push(Notify::Kind::Zone, (st_->CanGuide() ? "Now guiding: " : "Entered: ") + st_->zone.Name, lvl);
     }
 }
 
@@ -160,6 +162,8 @@ void ZoneManager::ActivateInstanceRoute(int idx)
     // Load the route trail into st_->zone (world coords; HasRects=false -> no continent transform / map trail).
     st_->zone = Zone{};
     st_->zone.Loaded   = true;
+    st_->zone.HasAuthoredRoute = true;
+    st_->zone.GeomLoaded = true;
     st_->zone.MapId    = st_->inst->MapId;
     st_->zone.Name     = st_->inst->Name;
     st_->zone.HasRects = false;
@@ -183,6 +187,8 @@ void ZoneManager::SwitchInstance(uint32_t mapId)
     if (mapId == st_->activeMapId) return;
     st_->activeMapId = mapId;
     st_->manualTarget.clear();
+    st_->heartWorldDetails = HeartDetailView{};
+    st_->heartGuideDetails = HeartDetailView{};
     st_->inDungeon = true;
     auto it = instances_->find(mapId);
     if (it != instances_->end() && !it->second.GeomLoaded)
@@ -207,7 +213,7 @@ const std::vector<const Zone*>& ZoneManager::RecommendZones(int level) const
         for (const auto& kv : (*zones_))
             // In-band only: your level sits WITHIN the zone's range (level-appropriate). level<=0 (no character
             // level yet) -> all zones, lowest-first. Completion is filtered by callers (ZoneComplete).
-            if (level <= 0 || (kv.second.MinLevel <= level && level <= kv.second.MaxLevel)) recCache_.push_back(&kv.second);
+            if (kv.second.CanGuide() && (level <= 0 || (kv.second.MinLevel <= level && level <= kv.second.MaxLevel))) recCache_.push_back(&kv.second);
 
     if (level <= 0)
         std::sort(recCache_.begin(), recCache_.end(), [](const Zone* a, const Zone* b) {

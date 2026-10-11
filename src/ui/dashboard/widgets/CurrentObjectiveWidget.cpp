@@ -45,7 +45,7 @@ void DashW::CurrentObjective(App& app, float w)
     const int disp  = DisplayStepIndex(app, total);
     if (disp < 0 || disp >= total)
     {
-        Gw2Ui::Label(st.zone.Loaded ? "All objectives complete here." : "No active objective.",
+        Gw2Ui::Label(st.CanGuide() ? "All objectives complete here." : "No active objective.",
                      Gw2Ui::kTextDim, false, nullptr, 16.f);
         return;
     }
