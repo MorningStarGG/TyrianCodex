@@ -1,6 +1,7 @@
 #pragma once
 #include <cstdint>
 #include <functional>
+#include <set>
 #include <string>
 #include <vector>
 #include "imgui.h" // ImVec2 / ImGuiID for the reusable row primitive
@@ -209,10 +210,9 @@ namespace Gw2Ui
     // + SameLine(0, gap); for Dropdown the returned width acts as a MAX cap (it auto-fits + shrinks to fit).
     float FillWidth(float availW, int count, float gap = 6.f, float minW = 0.f);
     float FillWidth(float availW, int count, float fixedTail, float gap, float minW);
-    // Advance the cursor so a fixed-width right cluster of width `clusterW` ends at the content's right edge --
-    // but ONLY if it fits (avail > clusterW + gap); otherwise leave the cursor put (the caller should have moved
-    // the cluster to its own row). The guarded replacement for the buggy `SetCursorPosX(start + max(0, avail-W))`
-    // idiom, which stops left-overlap but lets the cluster slide off the RIGHT edge when the window is narrow.
+    // Place a fixed-width cluster at the right edge of the current card/window, beside the previous item.
+    // Wrap to its own row when it cannot fit beside that item. Width/gap are pixels; callers constrain
+    // clusterW to the available content width. Card padding and child-window bounds are respected centrally.
     void SameLineRightCluster(float clusterW, float gap = 6.f);
 
     // A GW2-style section divider: a thin horizontal rule brightest in the middle and fading to transparent at
@@ -579,6 +579,10 @@ namespace Gw2Ui
     // The one reusable search widget - use it for every search/filter box. Returns true when the text changed.
     // fontSize 0 uses the native face; an explicit size follows TextScale for both placeholder and typed text.
     bool SearchBox(const char *id, char *buf, size_t bufSize, float width, const char *hint = "Search...", float fontSize = 0.f);
+    // Full-width search above optional filter/actions. Owns the breathing room between search,
+    // controls and list; record-specific controls use the same toolbar on every surface.
+    bool SearchToolbar(const char* id, char* buf, size_t bufSize, const char* hint = "Search...",
+                       const std::function<void()>& drawControls = {}, float width = 0.f);
 
     // GW2 Dropdown: the input-box box + dd-arrow chevron + selected text, and a popup list with
     // solid-black background, a dark-brown (45,37,25) fill on the hovered row, and
@@ -739,6 +743,64 @@ namespace Gw2Ui
     // 0 = empty, 1 = checked, 2 = partial (some-but-not-all descendants done -> a gold dash). For group
     // "check-all" boxes + tree leaves whose click is routed by the row.
     void PaintCheckbox(ImVec2 topLeft, float size, int state, bool hovered = false);
+
+    // Checklist chrome and behavior are independent of the records being tracked.
+    // Callers own completion, travel, icons and tooltips; this component owns the
+    // hierarchy, expansion, search/filter visibility, checkbox hits and counts.
+    enum class ChecklistFilter { All, Unmarked, Marked };
+    struct ChecklistNode
+    {
+        std::string Id, Label, ItemId, Context, SearchText;
+        std::vector<ChecklistNode> Children;
+        int Done = 0, Total = 0;
+        bool Visible = true, Bold = false;
+        float Height = 38.f;
+        bool Leaf() const { return !ItemId.empty(); }
+    };
+    struct ChecklistState
+    {
+        std::set<std::string> Expanded;
+        std::string ScrollTo;
+        char Search[128] = "";
+        ChecklistFilter Filter = ChecklistFilter::All;
+    };
+    struct ChecklistCallbacks
+    {
+        std::function<void(const ChecklistNode&, int depth, int rowIndex)> DrawLeaf;
+        std::function<void(const ChecklistNode&, bool marked)> MarkGroup;
+        std::function<void(const ChecklistNode&)> HoverGroup;
+        bool CanMark = true;
+    };
+    enum class ChecklistDetailStyle { Text, Pill };
+    struct ChecklistItemSpec
+    {
+        const char* Id = "";
+        const char* Label = "";
+        const char* Detail = "";
+        const char* Subtitle = "";
+        float FontSize = 20.f, SubtitleFontSize = 16.f, DetailFontSize = 18.f;
+        // Pills reserve their measured width and move below the label when the row is narrow.
+        ChecklistDetailStyle DetailStyle = ChecklistDetailStyle::Text;
+        ImU32 DetailBorder = kPillBorder;
+        bool Marked = false, Selected = false, CanMark = true;
+        const char* DisabledTip = "Enter the game on a character to mark events";
+        ImU32 Color = IM_COL32(255, 255, 255, 255);
+        std::function<void(ImDrawList*, ImVec2 center, float size)> DrawIcon;
+        float TrailingWidth = 0.f;
+    };
+    struct ChecklistItemResult
+    {
+        TreeRowResult Row;
+        bool CheckboxClicked = false, BodyClicked = false;
+    };
+    bool MatchesTextFilter(const std::string& text, const char* search);
+    void UpdateChecklist(std::vector<ChecklistNode>& roots, const ChecklistState& state,
+                         const std::function<bool(const std::string&)>& marked);
+    void VisitChecklistItems(const ChecklistNode& node, const std::function<void(const ChecklistNode&)>& visit);
+    bool ExpandChecklistTo(std::vector<ChecklistNode>& roots, ChecklistState& state, const std::string& id);
+    int DrawChecklist(const std::vector<ChecklistNode>& roots, ChecklistState& state, const ChecklistCallbacks& callbacks);
+    ChecklistItemResult ChecklistItem(const ChecklistItemSpec& spec, int depth, int rowIndex);
+    bool ShowCompletedChip(const char* id, bool& show, ImVec2 size, const char* tooltip);
 
     // Pre-load a bundled (local-first) gw2dat UI asset by id at addon start, so the window's tab icons
     // and chrome are ready before its first open instead of popping in after a CDN fetch.

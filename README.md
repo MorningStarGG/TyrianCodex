@@ -42,7 +42,7 @@ The main Tyrian Codex window is organized into user-facing tabs:
 | **Collections** | Wardrobe, Homestead, Fishing, mounts, gliders, skiffs, jade bots, novelties, finishers, mail carriers, minis, titles, emotes, and recipes. |
 | **Trading Post** | Delivery box, open orders, flip finder, crafting cart, and price-history charts. |
 | **Journal** | Story Journal style view plus per-character My Story when API data is available. Completed episodes tick themselves off from your achievements, and **Track** pins which story the guide suggests next if you are not playing in release order. |
-| **Checklist** | Release, region, zone, and objective tree with search and manual completion control. Helps the addon know what waypoints and things you've already completed. |
+| **Checklist** | Map completion and Events sections share a release, region and zone tree, search, completion filters and counts. Manually track objectives and the map events each character has experienced. |
 | **Instances** | Dungeons, story instances, fractals, raids, strikes, and home content progress. Routes are shown where bundled route data exists. |
 | **Timers** | Global event board with list and timeline views, filters, and click-to-travel behavior. Star an event to pin it to the top and to the Favorites filter, or ring its bell to be reminded before it starts. |
 | **Sessions** | Current session tracker, currency changes, level/objective gains, saved session history, and simple earnings graphs. |
@@ -59,6 +59,14 @@ The guide is built around the current map, your character, and the selected rout
 - **Map and minimap trails** draw the route and pins on the in-game map and compass.
 - **World markers** can show waypoints, POIs, vistas, hero points, hearts, dungeon markers, gathering nodes, fishing holes, and personal targets.
 - **Auto-complete on arrival** can mark most objectives complete when you get close enough. You can also mark done, undo, reset, and manually manage checklist progress.
+
+The guide's **Events -> Nearby Events** list has per-character checkboxes for events you
+have seen or completed. Marked events stay hidden until you enable **Show completed**;
+untick one or use its right-click menu to clear the mark. **Event checklist** opens
+the current zone under **Checklist -> Events**, where you can search all listed events
+and filter All, Unmarked or Marked. These marks survive restarts and map completion
+resets, and work without an API key. Counts cover the bundled event list; event
+coverage varies by map. Event completion is marked manually.
 
 Route modes:
 
@@ -169,6 +177,7 @@ Important saved files include:
 - `confirmed.json`: waypoints physically reached by each character, used for travel decisions.
 - `story-account.json` and `story-characters.json`: manual story completion marks.
 - `event-favorites.json`: account-wide starred events and which ones you want reminders for.
+- `event-progress.json`: per-character manual marks for map events you have experienced.
 - `session-history.json`: saved per-character session history.
 - `charlevels.json`: cached character levels for faster recommendations.
 - `cache/`: downloaded images, API cache, wiki cache, and other runtime cache files.

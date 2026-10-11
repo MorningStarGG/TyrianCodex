@@ -1,4 +1,5 @@
 #pragma once
+#include "app/CharacterMarks.h"
 #include <map>
 #include <set>
 #include <string>
@@ -23,6 +24,7 @@ public:
     bool IsComplete(const std::string &character, const std::string &stepId) const;
     void MarkComplete(const std::string &character, const std::string &stepId);
     void SetComplete(const std::string &character, const std::string &stepId, bool on);
+    void SetMany(const std::string& character, const std::vector<std::string>& stepIds, bool on);
     void ResetMany(const std::string &character, const std::vector<std::string> &stepIds);
     int CompletedCount(const std::string &character, const std::vector<std::string> &stepIds) const;
     // The character's completed-id list (empty if none) - for building a fast lookup set when counting many
@@ -35,11 +37,12 @@ public:
 
     // A monotonically-increasing change counter (bumped on every real mutation of either set). Lets a UI cache
     // derived state (e.g. the Checklist tree's counts) and recompute only when progress actually changed.
-    uint64_t Version() const { return _ver; }
+    uint64_t Version() const { return completed_.Version() + confirmed_.Version(); }
 
     // -- confirmed (physically-reached waypoints; travel) --
     bool IsConfirmed(const std::string &character, const std::string &stepId) const;
     void SetConfirmed(const std::string &character, const std::string &stepId, bool on);
+    void SetConfirmedMany(const std::string& character, const std::vector<std::string>& stepIds, bool on);
     // The character's confirmed-waypoint id list (empty if none) - lets the checklist treat reached/locked
     // waypoints as "done" (faded) on load from saved data, without an IsConfirmed scan per row.
     const std::vector<std::string> &ConfirmedIds(const std::string &character) const;
@@ -53,12 +56,6 @@ public:
     void CollectCharNames(std::set<std::string> &out) const;         // every character with stored progress
 
 private:
-    void Save() const;
-    void SaveConfirmed() const;
-
-    std::string _path;
-    std::string _confirmedPath;
-    std::map<std::string, std::vector<std::string>> _byChar;          // character -> completed stepIds
-    std::map<std::string, std::vector<std::string>> _confirmedByChar; // character -> confirmed waypoint stepIds
-    mutable uint64_t _ver = 0;                                        // bumped by Save()/SaveConfirmed() (the real-mutation paths) - see Version()
+    CharacterMarks completed_;
+    CharacterMarks confirmed_;
 };

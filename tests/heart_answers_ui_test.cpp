@@ -4,6 +4,7 @@
 #include "Shared.h"
 #include "ui/InputProbe.h"
 #include "ui/Effect.h"
+#include "guide/EventProgress.h"
 #include "util/Textures.h"
 #include <imgui_internal.h>
 #include <cmath>
@@ -365,6 +366,229 @@ namespace
             ImGui::Render();
         }
     }
+
+    void CheckChecklistControls()
+    {
+        Harness ui;
+        EventProgressStore history;
+        Gw2Ui::ChecklistState state;
+        std::vector<Gw2Ui::ChecklistNode> roots(1);
+        auto& root = roots.front();
+        root.Id = "region"; root.Label = "Kryta";
+        Gw2Ui::ChecklistNode zone;
+        zone.Id = "zone"; zone.Label = "Queensdale";
+        for (const char* id : {"event-a", "event-b"})
+        {
+            Gw2Ui::ChecklistNode leaf;
+            leaf.Id = leaf.ItemId = id;
+            leaf.Label = "Two separate events sharing this name";
+            leaf.Context = "Queensdale Kryta";
+            zone.Children.push_back(leaf);
+        }
+        root.Children.push_back(zone);
+        Check(Gw2Ui::ExpandChecklistTo(roots,state,"zone") && state.Expanded.count("region"),
+              "Current zone must expand the full ancestor path");
+        bool show = false, enabled = true;
+        int bodyClicks = 0, visible = 0;
+        ImVec2 checkbox, body, chip, groupCheckbox;
+        const auto frame = [&](ImVec2 mouse, bool down) {
+            ImGuiIO& io = ImGui::GetIO(); io.MousePos = mouse; io.MouseDown[0] = down;
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(30.f,30.f)); ImGui::SetNextWindowSize(ImVec2(640.f,540.f));
+            ImGui::Begin("Checklist control tests",nullptr,ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            chip = ImGui::GetCursorScreenPos(); chip.x += 19.f; chip.y += 15.f;
+            Gw2Ui::ShowCompletedChip("##completed",show,ImVec2(38.f,30.f),"Show completed events");
+            groupCheckbox = ImGui::GetCursorScreenPos(); groupCheckbox.x += 43.f; groupCheckbox.y += 19.f;
+            Gw2Ui::UpdateChecklist(roots,state,[&](const auto& id){return history.IsComplete("Alice",id);});
+            Gw2Ui::ChecklistCallbacks callbacks;
+            callbacks.CanMark = enabled;
+            callbacks.DrawLeaf = [&](const auto& node,int depth,int row) {
+                Gw2Ui::ChecklistItemSpec spec;
+                spec.Id = node.Id.c_str(); spec.Label = node.Label.c_str(); spec.Marked = node.Done != 0; spec.CanMark = enabled;
+                spec.Detail = "24m"; spec.DetailStyle = Gw2Ui::ChecklistDetailStyle::Pill;
+                const auto hit = Gw2Ui::ChecklistItem(spec,depth,row);
+                if (node.ItemId == "event-a")
+                {
+                    checkbox = ImVec2(hit.Row.contentMin.x+15.f,(hit.Row.rowMin.y+hit.Row.rowMax.y)/2.f);
+                    body = ImVec2(hit.Row.contentMin.x+100.f,checkbox.y);
+                }
+                if (hit.CheckboxClicked) history.SetComplete("Alice",node.ItemId,!spec.Marked);
+                if (hit.BodyClicked) ++bodyClicks;
+            };
+            callbacks.MarkGroup = [&](const auto& group,bool marked) {
+                std::vector<std::string> ids;
+                Gw2Ui::VisitChecklistItems(group,[&](const auto& item){ids.push_back(item.ItemId);});
+                history.SetMany("Alice",ids,marked);
+            };
+            visible = Gw2Ui::DrawChecklist(roots,state,callbacks);
+            ImGui::End(); ImGui::Render();
+            const auto* debug = ImGui::FindWindowByName("Debug##Default");
+            Check(!debug || !debug->Active,"Checklist controls must not open a fallback Debug window");
+        };
+        const ImVec2 outside(760.f,590.f);
+        for (int i=0;i<3;++i) frame(outside,false);
+        frame(checkbox,false); frame(checkbox,true);
+        Check(!history.IsComplete("Alice","event-a"),"Event checkbox waits for a normal release");
+        frame(checkbox,false);
+        Check(history.IsComplete("Alice","event-a") && !history.IsComplete("Alice","event-b") && bodyClicks==0,
+              "A checkbox changes only its own event and never fires travel");
+        frame(outside,false);
+        Check(root.Done==1 && root.Total==2,"Shared counts must reflect marked IDs rather than duplicate labels");
+        frame(body,false); frame(body,true); frame(body,false);
+        Check(bodyClicks==1,"Clicking the row body must remain separate from its checkbox");
+        frame(chip,false); frame(chip,true); frame(chip,false);
+        Check(show,"Shared Show completed chip must toggle on release");
+        frame(checkbox,false); frame(checkbox,true); frame(checkbox,false);
+        Check(!history.IsComplete("Alice","event-a"),"A shown completed event must be uncheckable");
+        enabled=false;
+        frame(checkbox,false); frame(checkbox,true); frame(checkbox,false);
+        Check(!history.IsComplete("Alice","event-a"),"Disabled/pre-login event checkboxes cannot mutate history");
+        enabled=true;
+        history.SetComplete("Alice","event-a",true);
+        state.Filter=Gw2Ui::ChecklistFilter::Unmarked;
+        frame(outside,false);
+        Check(!root.Children.front().Children.front().Visible && root.Children.front().Children.back().Visible && root.Total==2,
+              "Filtering marked events must retain full counts and other identical-name events");
+        state.Filter=Gw2Ui::ChecklistFilter::Marked;
+        std::strcpy(state.Search,"QUEENSDALE");
+        frame(outside,false);
+        Check(visible==1,"Search must find map context case-insensitively and honor marked/unmarked filters");
+        history.SetComplete("Alice","event-a",false);
+        frame(outside,false);
+        Check(visible==0,"A filtered view must update immediately when another surface clears its mark");
+        state.Filter=Gw2Ui::ChecklistFilter::All;
+        state.Search[0]='\0';
+        history.SetMany("Alice",{"event-a","event-b"},true);
+        frame(outside,false);
+        const auto before=history.Version();
+        frame(groupCheckbox,false); frame(groupCheckbox,true); frame(groupCheckbox,false);
+        Check(history.CompletedIds("Alice").empty() && history.Version()==before+1 && bodyClicks==1,
+              "Group checkboxes must clear their descendants with one shared persistence mutation");
+    }
+
+    void CheckChecklistLayout()
+    {
+        Harness ui;
+        for (float scale : {0.75f,1.f,1.5f,2.f})
+        {
+            Gw2Ui::SetGlobalScale(scale);
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(20.f,20.f)); ImGui::SetNextWindowSize(ImVec2(700.f,550.f));
+            ImGui::Begin("Checklist layout tests",nullptr,ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            Gw2Ui::BeginCard("checklist-card");
+            const float cardLeft = ImGui::GetCursorScreenPos().x;
+            Gw2Ui::ChecklistItemSpec item;
+            item.Id="short"; item.Label="Short name"; item.Detail="25m";
+            const auto shortRow=Gw2Ui::ChecklistItem(item,0,0);
+            item.Id="long";
+            item.Label="A much longer event instruction containing many words that must wrap cleanly without covering the next event row or its checkbox and must remain readable at every supported scale.";
+            item.Subtitle="Group event  -  Lv 80  -  A location with a longer name";
+            const auto longRow=Gw2Ui::ChecklistItem(item,1,1);
+            Check(longRow.Row.rowMax.y-longRow.Row.rowMin.y > shortRow.Row.rowMax.y-shortRow.Row.rowMin.y,
+                  "Long event text and metadata must grow the shared row");
+            Check(longRow.Row.rowMin.y>=shortRow.Row.rowMax.y && longRow.Row.rowMax.x<=cardLeft+Gw2Ui::CardInnerWidth()+0.1f,
+                  "Checklist rows must stay inside card padding and cannot overlap");
+            Gw2Ui::EndCard(); ImGui::End(); ImGui::Render();
+        }
+    }
+
+    void CheckRightClusterLayout()
+    {
+        Harness ui;
+        for (float scale : {0.75f,1.f,1.5f,2.f})
+        for (float width : {220.f,580.f})
+        {
+            Gw2Ui::SetGlobalScale(scale);
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(20.f,20.f)); ImGui::SetNextWindowSize(ImVec2(width,550.f));
+            ImGui::Begin("Checklist toolbar tests",nullptr,ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            Gw2Ui::BeginAccentCard("toolbar",0.f,IM_COL32_WHITE);
+            const auto left = ImGui::GetCursorScreenPos();
+            const float cardRight = left.x + Gw2Ui::CardInnerWidth();
+            const float searchBottom = left.y + Gw2Ui::InputBoxHeight();
+            bool shown=false;
+            char search[32]="";
+            ImVec2 controlsEnd;
+            Gw2Ui::SearchToolbar("##search",search,sizeof(search),"Search events...",[&] {
+                const auto controlsLeft = ImGui::GetCursorScreenPos();
+                Check(controlsLeft.y>searchBottom,"Shared search toolbars must leave a gap before controls");
+                Gw2Ui::ShowCompletedChip("##shown",shown,ImVec2(38.f*scale,30.f*scale),"Show completed");
+                const auto chipEnd = ImGui::GetItemRectMax();
+                const float buttonWidth = std::min(Gw2Ui::ContentWidth(), std::max(132.f*scale,Gw2Ui::ActionButtonSize("Event checklist").x));
+                Gw2Ui::SameLineRightCluster(buttonWidth,6.f*scale);
+                Gw2Ui::ActionButtonPx("Event checklist",buttonWidth,30.f*scale);
+                const auto buttonMin=ImGui::GetItemRectMin(), buttonMax=ImGui::GetItemRectMax();
+                controlsEnd = ImVec2(buttonMax.x,std::max(chipEnd.y,buttonMax.y));
+                Check(std::fabs(buttonMax.x-cardRight)<0.1f,"Right clusters must respect the card's right padding");
+                const bool fits = cardRight-chipEnd.x >= buttonWidth+6.f*scale;
+                Check(fits ? std::fabs(buttonMin.y-controlsLeft.y)<0.1f && buttonMin.x>=chipEnd.x+6.f*scale-0.1f
+                           : buttonMin.y>=chipEnd.y,
+                      "Toolbar actions must share a row when they fit and wrap without overlapping at narrow widths");
+            });
+            Check(ImGui::GetCursorScreenPos().y>controlsEnd.y,"Shared toolbars must leave a gap before list content");
+            Gw2Ui::EndCard(); ImGui::End(); ImGui::Render();
+        }
+    }
+
+    void CheckChecklistDistancePills()
+    {
+        Harness ui;
+        ImGui::GetIO().DisplaySize = ImVec2(900.f,1400.f);
+        constexpr ImU32 border = IM_COL32(91,47,231,255), title = IM_COL32(31,173,121,255);
+        for (float scale : {0.75f,1.f,1.5f,2.f})
+        for (float localScale : {1.f,1.25f})
+        for (float width : {300.f,620.f})
+        for (const char* distance : {"near","24m","1.2km"})
+        {
+            Gw2Ui::SetGlobalScale(scale);
+            Gw2Ui::PushTextScale(localScale);
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(20.f,20.f)); ImGui::SetNextWindowSize(ImVec2(width,1320.f));
+            ImGui::Begin("Distance pill tests",nullptr,ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            Gw2Ui::BeginAccentCard("distances",0.f,IM_COL32_WHITE);
+            Gw2Ui::ChecklistItemSpec item;
+            item.Id="event"; item.Label="Help scholars defend their camp against invading enemies.";
+            item.Subtitle="Event - Lv 65";
+            item.Color=title; item.Detail=distance; item.DetailFontSize=16.f;
+            item.DetailStyle=Gw2Ui::ChecklistDetailStyle::Pill; item.DetailBorder=border;
+            item.DrawIcon=[](auto*,auto,float) {}; // Reserve the production event icon column.
+            ImGui::PushStyleVar(ImGuiStyleVar_Alpha,0.5f);
+            const auto row=Gw2Ui::ChecklistItem(item,0,0);
+            ImGui::PopStyleVar();
+            const auto* list=ImGui::GetWindowDrawList();
+            ImVec2 badgeMin(1.e9f,1.e9f),badgeMax(-1.e9f,-1.e9f),textMax(-1.e9f,-1.e9f);
+            int badgeVertices=0, textVertices=0;
+            for (const auto& vertex : list->VtxBuffer)
+            {
+                const auto rgb=vertex.col & 0x00ffffffu;
+                if (!(vertex.col >> IM_COL32_A_SHIFT)) continue;
+                if (rgb==(border & 0x00ffffffu))
+                {
+                    ++badgeVertices;
+                    badgeMin.x=std::min(badgeMin.x,vertex.pos.x); badgeMin.y=std::min(badgeMin.y,vertex.pos.y);
+                    badgeMax.x=std::max(badgeMax.x,vertex.pos.x); badgeMax.y=std::max(badgeMax.y,vertex.pos.y);
+                    Check((vertex.col >> IM_COL32_A_SHIFT)<=128,"Shared pill borders must obey scoped opacity");
+                }
+                else if (rgb==(title & 0x00ffffffu) || rgb==(Gw2Ui::kTextSub & 0x00ffffffu))
+                {
+                    ++textVertices;
+                    textMax.x=std::max(textMax.x,vertex.pos.x); textMax.y=std::max(textMax.y,vertex.pos.y);
+                }
+            }
+            Check(badgeVertices>0 && textVertices>0,"Near/metre/kilometre distance pills and event text must remain visible at narrow widths and every scale");
+            Check(badgeMin.x>=row.Row.rowMin.x && badgeMin.y>=row.Row.rowMin.y && badgeMax.y<=row.Row.rowMax.y &&
+                  std::fabs(badgeMax.x-(row.Row.rowMax.x-8.f*Gw2Ui::TextScale()))<1.1f,
+                  "Distance pills must stay within their row and align with its right padding");
+            Check(textMax.x<badgeMin.x || textMax.y<badgeMin.y,"Wrapped event text must never overlap the distance pill");
+            Check(ImGui::GetCursorScreenPos().y>=row.Row.rowMax.y,"A stacked distance pill must reserve space before the next event");
+            item.Id="next"; item.Label="Next event"; item.Subtitle=""; item.Detail="";
+            const auto next=Gw2Ui::ChecklistItem(item,0,1);
+            if (next.Row.rowMax.x>next.Row.rowMin.x) // Offscreen rows reserve space without a hit target.
+                Check(next.Row.rowMin.y>=row.Row.rowMax.y,"Visible event rows must never overlap");
+            Gw2Ui::EndCard(); ImGui::End(); ImGui::Render();
+            Gw2Ui::PopTextScale();
+        }
+    }
 }
 
 int main(int argc, char** argv)
@@ -380,7 +604,11 @@ int main(int argc, char** argv)
         CheckStableButtonAndPanel();
         CheckWrappedWorldInstructions();
         CheckFrameworkTextTables();
-        std::cout << "Nearby heart answer input checks passed\n";
+        CheckChecklistControls();
+        CheckChecklistLayout();
+        CheckRightClusterLayout();
+        CheckChecklistDistancePills();
+        std::cout << "Heart answer and shared checklist UI checks passed\n";
         return 0;
     }
     catch (const std::exception& error)

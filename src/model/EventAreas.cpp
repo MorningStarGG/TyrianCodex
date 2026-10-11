@@ -1,6 +1,10 @@
 #include "model/EventAreas.h"
 
 #include <fstream>
+#include <algorithm>
+#include <cmath>
+#include <tuple>
+#include <stdexcept>
 #include <nlohmann/json.hpp>
 
 using nlohmann::json;
@@ -48,7 +52,7 @@ namespace
         if (!(*it)[0].is_number() || !(*it)[1].is_number()) return false;
         x = (*it)[0].get<float>();
         y = (*it)[1].get<float>();
-        return true;
+        return std::isfinite(x) && std::isfinite(y);
     }
 
     EventArea ParseArea(const json& e)
@@ -66,8 +70,8 @@ namespace
         out.WikiTitle      = JStr(e, "wikiTitle");
         out.WikiUrl        = JStr(e, "wikiUrl");
         out.Description    = JStr(e, "description");
-        ReadPoint2(e, "world", out.WorldX, out.WorldZ);
-        ReadPoint2(e, "continent", out.ContinentX, out.ContinentY);
+        out.HasWorldCoord = ReadPoint2(e, "world", out.WorldX, out.WorldZ);
+        out.HasContinentCoord = ReadPoint2(e, "continent", out.ContinentX, out.ContinentY);
         return out;
     }
 }
@@ -75,8 +79,10 @@ namespace
 bool EventAreaData::Load(const std::string& path)
 {
     loaded_ = false;
+    ++version_;
     areas_.clear();
     areasByMap_.clear();
+    areasById_.clear();
 
     std::ifstream f(path);
     if (!f) return false;
@@ -98,6 +104,8 @@ bool EventAreaData::Load(const std::string& path)
                 EventArea area = ParseArea(e);
                 if (area.EventId.empty() || area.Name.empty() || area.MapId == 0) continue;
                 const size_t index = areas_.size();
+                if (!areasById_.emplace(area.EventId, index).second)
+                    throw std::runtime_error("Duplicate event identity in catalog");
                 areas_.push_back(std::move(area));
                 areasByMap_[areas_.back().MapId].push_back(index);
             }
@@ -107,11 +115,48 @@ bool EventAreaData::Load(const std::string& path)
     {
         areas_.clear();
         areasByMap_.clear();
+        areasById_.clear();
         return false;
     }
 
     loaded_ = !areas_.empty();
     return loaded_;
+}
+
+std::vector<const EventArea*> EventAreaData::EventsForMap(uint32_t mapId) const
+{
+    auto events = AreasForMap(mapId);
+    events.erase(std::remove_if(events.begin(), events.end(), [](const auto* event) { return !event->ViewerEligible; }), events.end());
+    return events;
+}
+
+const EventArea* EventAreaData::ById(const std::string& id) const
+{
+    const auto found = areasById_.find(id);
+    return found == areasById_.end() ? nullptr : &areas_[found->second];
+}
+
+std::vector<NearbyEventArea> EventAreaData::NearbyForMap(uint32_t mapId, float x, float z, int minLevel, int maxLevel) const
+{
+    std::vector<NearbyEventArea> nearby;
+    for (const auto* event : EventsForMap(mapId))
+    {
+        if (!event->HasWorldCoord || event->Level <= 0 || (minLevel > 0 && event->Level + 5 < minLevel) ||
+            (maxLevel > 0 && maxLevel < 80 && event->Level > maxLevel + 10)) continue;
+        const float distance = std::hypot(event->WorldX - x, event->WorldZ - z);
+        const float edge = event->RadiusMeters > 0.f ? std::max(0.f, distance - event->RadiusMeters) : distance;
+        nearby.push_back({event, distance, edge});
+    }
+    const auto priority = [](const auto& category) {
+        if (category == "meta_event" || category == "map_wide") return 0;
+        if (category == "group_event") return 1;
+        return category == "defend" || category == "escort" ? 2 : 3;
+    };
+    std::sort(nearby.begin(), nearby.end(), [&](const auto& a, const auto& b) {
+        return std::make_tuple(a.EdgeDistanceMeters, priority(a.Area->Category), a.Area->Name, a.Area->EventId) <
+               std::make_tuple(b.EdgeDistanceMeters, priority(b.Area->Category), b.Area->Name, b.Area->EventId);
+    });
+    return nearby;
 }
 
 std::vector<const EventArea*> EventAreaData::AreasForMap(uint32_t mapId) const

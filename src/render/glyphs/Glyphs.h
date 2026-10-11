@@ -42,6 +42,7 @@ namespace Render
         CaretDown,  // expanded
         ResizeGrip, // window corner resize affordance (parallel diagonal hatches); mirrorX for the left corner
         Clock,      // event timers: a clock face + two hands
+        Event,      // dynamic map event: the circular event emblem
         Coins,      // trading post: two overlapping coins
         Cart,       // crafting cart: a shopping cart / basket
         ExternalLink, // open-in-browser: a window frame + an arrow leaving to the top-right

@@ -1,5 +1,8 @@
 #include "ui/viewer/ViewerEventPanels.h"
 #include "app/App.h"
+#include "ui/EventUi.h"
+#include "ui/tabs/ChecklistTab.h"
+#include "guide/EventList.h"
 #include "ui/Gw2Ui.h"
 #include "ui/viewer/ViewerLayout.h"        // ViewerScale (uniform layout-px zoom)
 #include "ui/viewer/ViewerComponents.h"   // WithAlpha
@@ -74,38 +77,6 @@ static std::string FormatTimerCountdown(const UpcomingEvent& up)
     return buf;
 }
 
-static std::string EventCategoryLabel(const std::string& category)
-{
-    if (category == "world_boss" || category == "hard_world_boss") return "Boss";
-    if (category == "meta" || category == "map_meta" || category == "meta_event") return "Meta";
-    if (category == "festival" || category == "seasonal") return "Festival";
-    if (category == "dynamic_event" || category == "event_page") return "Event";
-    if (category == "group_event") return "Group";
-    if (category == "dry_top") return "Dry Top";
-    if (category == "timeline") return "Timer";
-    if (category == "public_instance") return "Instance";
-    if (category.empty()) return "Event";
-    std::string out = category;
-    std::replace(out.begin(), out.end(), '_', ' ');
-    if (!out.empty()) out[0] = (char)std::toupper((unsigned char)out[0]);
-    return out;
-}
-
-static ImU32 EventCategoryColor(const std::string& category)
-{
-    if (category == "world_boss" || category == "hard_world_boss" || category == "group_event") return IM_COL32(229, 112, 76, 235);
-    if (category == "festival" || category == "seasonal") return IM_COL32(186, 132, 238, 235);
-    if (category == "dynamic_event" || category == "event_page") return IM_COL32(120, 210, 150, 235);
-    if (category == "defend" || category == "escort") return IM_COL32(235, 207, 105, 235);
-    if (category == "combat") return IM_COL32(226, 100, 64, 235);
-    if (category == "collect") return IM_COL32(222, 176, 82, 235);
-    if (category == "interact" || category == "repair") return IM_COL32(115, 174, 224, 235);
-    if (category == "map_wide" || category == "meta_event") return IM_COL32(255, 198, 82, 235);
-    if (category == "dry_top") return IM_COL32(218, 174, 86, 235);
-    if (category == "timeline" || category == "timer_page") return IM_COL32(122, 180, 224, 235);
-    return IM_COL32(255, 205, 102, 235);
-}
-
 static std::string EventLevelText(int minLevel, int maxLevel, const std::string& label)
 {
     // "Lv" is glued to the number with a NON-breaking space (U+00A0, UTF-8 C2 A0) so the level stays whole when
@@ -122,16 +93,6 @@ static std::string EventLevelText(int minLevel, int maxLevel, const std::string&
         return buf;
     }
     return "";
-}
-
-static void DrawEventGlyph(ImDrawList* dl, ImVec2 c, float size, ImU32 accent)
-{
-    const float r = size * 0.5f;
-    dl->AddCircleFilled(c, r, IM_COL32(4, 6, 7, 210), 24);
-    dl->AddCircle(c, r - 0.8f, WithAlpha(accent, 245), 24, 1.4f);
-    dl->AddTriangleFilled(ImVec2(c.x, c.y - r * 0.48f), ImVec2(c.x + r * 0.47f, c.y + r * 0.30f),
-                          ImVec2(c.x - r * 0.47f, c.y + r * 0.30f), WithAlpha(accent, 140));
-    dl->AddCircleFilled(c, r * 0.18f, IM_COL32(255, 232, 175, 245), 16);
 }
 
 static std::string EventDisplayName(const EventTimer& ev, const std::string& /*currentZoneName*/)
@@ -268,7 +229,8 @@ static EventRowHit DrawSharedEventRow(const EventRow& e)
     // Active events get a LEFT-EDGE accent bar (+ the filled "now" pill below) rather than a persistent full-row
     // highlight, so the hover highlight stays clearly visible even when many rows are active (the global board).
     if (e.active) dl->AddRectFilled(ImVec2(p.x, p.y + 3.f), ImVec2(p.x + 3.5f, p.y + rowH - 3.f), WithAlpha(e.accent, 235), 1.5f);
-    DrawEventGlyph(dl, ImVec2(p.x + 9.f + e.iconSize * 0.5f, p.y + rowH * 0.5f), e.iconSize, e.accent);
+    Render::DrawGlyph(dl, ImVec2(p.x + 9.f + e.iconSize * 0.5f, p.y + rowH * 0.5f), e.iconSize,
+                      Render::Glyph::Event, e.accent, {false, false, false});
 
     const float textX = p.x + textXOff;
     const float titleY = p.y + 6.f;
@@ -363,11 +325,11 @@ static void DrawEventTimerRow(App& app, const UpcomingEvent& up, float fs, int r
     const float vs = ViewerScale(app);
 
     EventRow e;
-    e.accent   = EventCategoryColor(category);
+    e.accent   = EventUi::CategoryColor(category);
     e.iconSize = 28.f * vs;
     e.name     = displayName;               e.titleFs = std::max(12.f, fs - 2.f); e.nameBold = true;
     e.meta     = (ev.Subtitle.empty() ? std::string() : ev.Subtitle + "  -  ") +
-                 (EventIsMapSlotTimer(ev, currentZoneName) ? currentZoneName : EventCategoryLabel(category)) +
+                 (EventIsMapSlotTimer(ev, currentZoneName) ? currentZoneName : EventUi::CategoryLabel(category)) +
                  (level.empty() ? std::string() : "  -  " + level);
     e.metaFs   = std::max(12.f, fs - 6.f);
     e.pill     = FormatTimerCountdown(up);   e.pillFs = std::max(12.f, fs - 4.f); e.active = up.Active;
@@ -403,10 +365,10 @@ static void DrawEventChainRow(App& app, const EventChain& chain, float fs, int r
     const float vs = ViewerScale(app);
 
     EventRow e;
-    e.accent   = EventCategoryColor(category);
+    e.accent   = EventUi::CategoryColor(category);
     e.iconSize = 24.f * vs;
     e.name     = chain.Name;   e.titleFs = std::max(12.f, fs - 3.f); e.nameBold = false;
-    e.meta     = EventCategoryLabel(category) + (level.empty() ? std::string() : "  -  " + level);
+    e.meta     = EventUi::CategoryLabel(category) + (level.empty() ? std::string() : "  -  " + level);
     e.metaFs   = std::max(10.f, fs - 8.f);
     e.pill     = "";           // event chains have no countdown
     e.id = "##eventchain"; e.row = row;
@@ -538,7 +500,7 @@ namespace
         {
             const EventTimer& ev = *u.Event;
             const std::string cat = ev.SuggestedCategory.empty() ? ev.Category : ev.SuggestedCategory;
-            const ImU32 col = EventCategoryColor(cat);
+            const ImU32 col = EventUi::CategoryColor(cat);
             if ((int)((y - origin.y) / rowH) % 2 == 0)   // faint zebra
                 dl->AddRectFilled(ImVec2(origin.x, y), ImVec2(origin.x + gutter + timeW, y + rowH), IM_COL32(255, 255, 255, 8));
 
@@ -818,141 +780,96 @@ int ViewerEvents::DrawTimers(App& app, float fs)
     return rowsDrawn;
 }
 
-struct NearbyEventArea
+namespace
 {
-    const EventArea* Area = nullptr;
-    float DistanceMeters = 0.f;
-    float EdgeDistanceMeters = 0.f;
-};
-
-static bool EventAreaLevelFitsZone(const EventArea& area, const Zone& zone)
-{
-    if (area.Level <= 0) return false;
-    if (zone.MinLevel > 0 && area.Level + 5 < zone.MinLevel) return false;
-    if (zone.MaxLevel > 0 && area.Level > zone.MaxLevel + 10 && zone.MaxLevel < 80) return false;
-    return true;
+    char eventSearch_[96] = "";
 }
 
-static std::string EventAreaDistanceText(float edgeDistanceMeters)
+static std::string EventAreaDistanceText(float distance)
 {
-    if (edgeDistanceMeters <= 8.f) return "near";
-    char buf[32];
-    if (edgeDistanceMeters < 1000.f)
-        std::snprintf(buf, sizeof(buf), "%.0fm", edgeDistanceMeters);
-    else
-        std::snprintf(buf, sizeof(buf), "%.1fkm", edgeDistanceMeters / 1000.f);
-    return buf;
+    if (distance <= 8.f) return "near";
+    char text[32];
+    if (distance < 1000.f) std::snprintf(text, sizeof(text), "%.0fm", distance);
+    else std::snprintf(text, sizeof(text), "%.1fkm", distance / 1000.f);
+    return text;
 }
 
-static int EventAreaCategoryPriority(const std::string& category)
+static void DrawEventAreaRow(App& app, const NearbyEventArea& nearby, float fs, int row, bool completed)
 {
-    if (category == "meta_event" || category == "map_wide") return 0;
-    if (category == "group_event") return 1;
-    if (category == "defend" || category == "escort") return 2;
-    return 3;
-}
-
-static std::string EventAreaMetaText(const EventArea& area)
-{
-    const std::string level = area.Level > 0 ? EventLevelText(area.Level, area.Level, "") : std::string();
-    return EventCategoryLabel(area.Category) + (level.empty() ? std::string() : "  -  " + level);
-}
-
-static void DrawEventAreaRow(App& app, const NearbyEventArea& nearby, float fs, int row)
-{
-    const EventArea& area = *nearby.Area;
-    const float vs = ViewerScale(app);
-
-    EventRow e;
-    e.accent   = EventCategoryColor(area.Category);
-    e.iconSize = 25.f * vs;
-    e.name     = area.Name;   e.titleFs = std::max(12.f, fs - 3.f); e.nameBold = false;
-    e.meta     = EventAreaMetaText(area);
-    e.metaFs   = std::max(10.f, fs - 8.f);
-    e.pill     = EventAreaDistanceText(nearby.EdgeDistanceMeters); e.pillFs = std::max(11.f, fs - 7.f);
-    e.id = "##eventarea"; e.row = row;
-    const EventRowHit hit = DrawSharedEventRow(e);
-
-    if (hit.clicked) app.travel.SetPersonalTarget(area.ContinentX, area.ContinentY, area.Name, EventAreaInfo(area));   // guide to the event area
-    if (hit.hovered)
-    {
-        Gw2Ui::TooltipBegin();
-        const std::string title = area.WikiTitle.empty() ? area.Name : area.WikiTitle;
-        Gw2Ui::TooltipTitle(title.c_str());
-        Gw2Ui::TooltipMuted("Static event area. Active state is not available from the public API.");
-        if (!area.Description.empty())
-            Gw2Ui::TooltipText(area.Description.c_str());
-        if (area.RadiusMeters > 0.f)
-        {
-            char rb[32]; std::snprintf(rb, sizeof(rb), "Area radius: %.0f m", area.RadiusMeters);
-            Gw2Ui::TooltipMuted(rb);
-        }
-        Gw2Ui::TooltipEnd();
-    }
+    const auto& area = *nearby.Area;
+    ImGui::PushID(area.EventId.c_str());
+    auto meta = EventUi::CategoryLabel(area.Category) + (area.Level > 0 ? "  -  Lv " + std::to_string(area.Level) : "");
+    const auto location = EventUi::LocationText(area);
+    if (!location.empty()) meta += "  -  " + location;
+    const auto distance = EventAreaDistanceText(nearby.EdgeDistanceMeters);
+    Gw2Ui::ChecklistItemSpec spec;
+    spec.Id = "##eventarea";
+    spec.Label = area.Name.c_str();
+    spec.Subtitle = meta.c_str();
+    spec.Detail = distance.c_str();
+    spec.DetailStyle = Gw2Ui::ChecklistDetailStyle::Pill;
+    spec.DetailBorder = Gw2Ui::Alpha(EventUi::CategoryColor(area.Category), 168);
+    spec.FontSize = std::max(12.f, fs - 2.f);
+    spec.SubtitleFontSize = std::max(12.f, fs - 6.f);
+    spec.DetailFontSize = std::max(12.f, fs - 4.f);
+    spec.Color = EventUi::CategoryColor(area.Category);
+    spec.Marked = completed;
+    spec.CanMark = EventProgressStore::CanMark(app.state.currentChar);
+    spec.DrawIcon = [&area, completed](auto* list, auto center, auto size) {
+        Render::DrawGlyph(list, center, size, Render::Glyph::Event,
+                          completed ? Gw2Ui::kTextDim : EventUi::CategoryColor(area.Category), {false,false,false});
+    };
+    const auto hit = Gw2Ui::ChecklistItem(spec, 0, row);
+    if (hit.CheckboxClicked) app.eventProgress.SetComplete(app.state.currentChar, area.EventId, !completed);
+    if (hit.BodyClicked) EventUi::Travel(app, area);
+    if (hit.Row.hovered) EventUi::Tooltip(area);
+    EventUi::Menu(app, area, hit.Row.hovered);
+    ImGui::PopID();
 }
 
 int ViewerEvents::DrawAreas(App& app, int currentIndex, float fs, int maxRows)
 {
-    if (!app.eventAreas.Loaded() || !app.state.zone.Loaded ||
-        currentIndex < 0 || currentIndex >= (int)app.state.zone.Steps.size() || maxRows <= 0)
-        return 0;
-
-    // Rank by distance from the PLAYER's live world position (the same MumbleLink avatar source the arrow +
-    // hybrid-nearest routing use), NOT the current objective -- "Nearby" should mean near YOU, matching what you
-    // see in-game. Falls back to the current objective's position only when MumbleLink isn't available.
-    float originX, originZ;
-    if (MumbleLink) { originX = MumbleLink->AvatarPosition.X; originZ = MumbleLink->AvatarPosition.Z; }
-    else { const Step& cur = app.state.zone.Steps[currentIndex];
-           Coords::ContinentToWorldXZ(cur.CX, cur.CY, app.state.zone.ContRect, app.state.zone.MapRect, originX, originZ); }
-
-    std::vector<NearbyEventArea> ranked;
-    for (const EventArea* area : app.eventAreas.AreasForMap(app.state.zone.MapId))
+    if (!app.eventAreas.Loaded() || !app.state.zone.Loaded || maxRows <= 0) return 0;
+    const auto& zone = app.state.zone;
+    if (app.eventAreas.EventsForMap(zone.MapId).empty()) return 0;
+    float x, z;
+    if (MumbleLink) { x = MumbleLink->AvatarPosition.X; z = MumbleLink->AvatarPosition.Z; }
+    else if (currentIndex >= 0 && currentIndex < (int)zone.Steps.size())
     {
-        if (!area || !area->ViewerEligible) continue;
-        if (area->WorldX == 0.f && area->WorldZ == 0.f) continue;   // missing world coords -> can't rank
-        if (!EventAreaLevelFitsZone(*area, app.state.zone)) continue;
-        const float dist = std::hypot(area->WorldX - originX, area->WorldZ - originZ);
-        const float edge = (area->RadiusMeters > 0.f) ? std::max(0.f, dist - area->RadiusMeters) : dist;
-        ranked.push_back({ area, dist, edge });
+        const auto& step = zone.Steps[currentIndex];
+        Coords::ContinentToWorldXZ(step.CX, step.CY, zone.ContRect, zone.MapRect, x, z);
     }
-    if (ranked.empty()) return 0;
-
-    std::sort(ranked.begin(), ranked.end(), [](const NearbyEventArea& a, const NearbyEventArea& b) {
-        if (std::fabs(a.EdgeDistanceMeters - b.EdgeDistanceMeters) > 0.01f)
-            return a.EdgeDistanceMeters < b.EdgeDistanceMeters;
-        const int ap = EventAreaCategoryPriority(a.Area->Category);
-        const int bp = EventAreaCategoryPriority(b.Area->Category);
-        if (ap != bp) return ap < bp;
-        return a.Area->Name < b.Area->Name;
-    });
-
-    std::vector<NearbyEventArea> deduped;
-    std::set<std::string> seenNames;
-    for (const NearbyEventArea& area : ranked)
-    {
-        if (!seenNames.insert(area.Area->Name).second) continue;
-        deduped.push_back(area);
-        if ((int)deduped.size() >= maxRows) break;
-    }
-    if (deduped.empty()) return 0;
-
+    else if (zone.HasRects)
+        Coords::ContinentToWorldXZ((zone.ContRect[0] + zone.ContRect[2]) * 0.5f,
+                                   (zone.ContRect[1] + zone.ContRect[3]) * 0.5f, zone.ContRect, zone.MapRect, x, z);
+    else return 0;
+    const auto nearby = app.eventAreas.NearbyForMap(zone.MapId, x, z, zone.MinLevel, zone.MaxLevel);
     ImGui::Spacing();
-    Gw2Ui::BeginAccentCard("event-areas", 0.f, IM_COL32(120, 210, 150, 220),
-                           IM_COL32(3, 5, 5, 126), IM_COL32(98, 142, 84, 128));
-    char right[32];
-    std::snprintf(right, sizeof(right), "%d near", (int)deduped.size());
-    // the long parenthetical doesn't fit a narrow / half-width card -> short title there (full title stays on the wide viewer panel)
-    const float headW = ImGui::GetContentRegionAvail().x;
-    Gw2Ui::SectionHeader(headW < 360.f ? "Nearby Events" : "Nearby Events (might not actually be active)", right, fs - 3.f);
-
-    int rowsDrawn = 0;
-    for (const NearbyEventArea& area : deduped)
+    Gw2Ui::BeginAccentCard("event-areas", 0.f, IM_COL32(120,210,150,220), IM_COL32(3,5,5,126), IM_COL32(98,142,84,128));
+    Gw2Ui::SectionHeader("Nearby Events", nullptr, std::max(12.f, fs - 2.f));
+    Gw2Ui::SearchToolbar("##eventsearch", eventSearch_, sizeof(eventSearch_), "Search events...", [&] {
+        const float scale = Gw2Ui::TextScale();
+        if (Gw2Ui::ShowCompletedChip("##eventshowdone", app.config.viewerShowCompletedEvents, ImVec2(38.f * scale, 30.f * scale),
+                                    "Show completed events -- untick or right-click to mark incomplete"))
+            app.settingsDirty = true;
+        const float checklistWidth = std::min(Gw2Ui::ContentWidth(),
+            std::max(132.f * Gw2Ui::GlobalScale(), Gw2Ui::ActionButtonSize("Event checklist").x));
+        Gw2Ui::SameLineRightCluster(checklistWidth, 6.f * scale);
+        if (Gw2Ui::ActionButtonPx("Event checklist", checklistWidth, 30.f * scale, Gw2Ui::ActionButtonVariant::Normal,
+                                 "Open the full event checklist for this zone"))
+            OpenEventChecklist(app, zone.MapId);
+    });
+    const auto events = BuildEventList(nearby, app.eventProgress, app.state.currentChar, maxRows, app.config.viewerShowCompletedEvents,
+        [](const auto& event) { return Gw2Ui::MatchesTextFilter(event.Name + " " + EventUi::CategoryLabel(event.Category), eventSearch_); });
+    int drawn = 0;
+    for (const auto& event : events.Remaining) DrawEventAreaRow(app, event, fs, drawn++, false);
+    if (!events.Completed.empty())
     {
-        ImGui::PushID(area.Area->EventId.c_str());
-        DrawEventAreaRow(app, area, fs, rowsDrawn);
-        ImGui::PopID();
-        ++rowsDrawn;
+        Gw2Ui::SectionHeader("Completed", nullptr, std::max(12.f, fs - 2.f));
+        for (const auto& event : events.Completed) DrawEventAreaRow(app, event, fs, drawn++, true);
     }
+    if (!drawn)
+        Gw2Ui::Label("No remaining events match this view. Open the checklist to browse the full zone.", Gw2Ui::kTextSub, false, nullptr, std::max(12.f, fs - 4.f));
     Gw2Ui::EndCard();
-    return rowsDrawn;
+    return std::max(1, drawn); // The filter/checklist controls remain available when every event is marked.
 }

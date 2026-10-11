@@ -28,6 +28,7 @@ namespace Objective
     {
         const char *Type;
         const char *GroupName;
+        const char *Name;
         uint8_t R, G, B; // tracker accent colour (alpha supplied at draw time)
         MarkerKind Kind;
         uint32_t IconAssetId; // gw2dat asset id
@@ -38,11 +39,11 @@ namespace Objective
     inline const Info *Get(const std::string &type)
     {
         static const Info kTable[] = {
-            {"waypoint", "Waypoints", 130, 230, 150, MarkerKind::Waypoint, 157353, true},
-            {"poi", "Points of Interest", 190, 220, 255, MarkerKind::Poi, 97461, true},
-            {"vista", "Vistas", 140, 205, 255, MarkerKind::Vista, 358415, false},
-            {"hero", "Hero Points", 190, 150, 255, MarkerKind::HeroPoint, 156626, false},
-            {"heart", "Hearts", 255, 207, 110, MarkerKind::Heart, 102439, false},
+            {"waypoint", "Waypoints", "Waypoint", 130, 230, 150, MarkerKind::Waypoint, 157353, true},
+            {"poi", "Points of Interest", "POI", 190, 220, 255, MarkerKind::Poi, 97461, true},
+            {"vista", "Vistas", "Vista", 140, 205, 255, MarkerKind::Vista, 358415, false},
+            {"hero", "Hero Points", "Hero Point", 190, 150, 255, MarkerKind::HeroPoint, 156626, false},
+            {"heart", "Hearts", "Heart", 255, 207, 110, MarkerKind::Heart, 102439, false},
         };
         for (const Info &i : kTable)
             if (type == i.Type)

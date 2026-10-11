@@ -6,6 +6,7 @@
 #include "model/EventTimers.h"
 #include "model/LoadingScreens.h"
 #include "guide/Progress.h"
+#include "guide/EventProgress.h"
 #include "app/SessionHistory.h"
 #include "guide/Travel.h"
 #include "guide/TrailFollower.h"
@@ -62,6 +63,7 @@ public:
 
     // Long-lived controllers
     ProgressStore progress;             // per-character completed stepIds (progress.json)
+    EventProgressStore eventProgress;   // permanent dynamic-event marks (event-progress.json)
     SessionHistoryStore sessionHistory; // per-character past-session earnings log (session-history.json)
     Travel::Controller travel;          // smart-travel state machine (Alt+click / "Travel here")
     Follow::TrailFollower follower;     // pure-pursuit follower over the (x,z) trail polyline

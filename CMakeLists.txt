@@ -31,18 +31,23 @@ FetchContent_MakeAvailable(nlohmann_json)
 
 if(TC_BUILD_TESTS)
     enable_testing()
-    add_executable(tc_content_test tests/content_runtime_test.cpp src/model/Dataset.cpp src/model/EventTimers.cpp src/app/ContentData.cpp src/guide/Progress.cpp src/util/Json.cpp)
+    add_executable(tc_content_test tests/content_runtime_test.cpp src/model/Dataset.cpp src/model/EventTimers.cpp src/app/ContentData.cpp src/guide/Progress.cpp src/app/CharacterMarks.cpp src/util/Json.cpp)
     target_include_directories(tc_content_test PRIVATE src)
     target_link_libraries(tc_content_test PRIVATE nlohmann_json::nlohmann_json)
     add_test(NAME content_runtime COMMAND tc_content_test)
     add_test(NAME content_bundle_runtime COMMAND tc_content_test "${CMAKE_CURRENT_SOURCE_DIR}/data")
-    add_executable(tc_heart_ui_test tests/heart_answers_ui_test.cpp src/ui/HeartTaskDetails.cpp
+    add_executable(tc_event_test tests/event_progress_test.cpp src/model/EventAreas.cpp src/guide/EventList.cpp src/guide/Progress.cpp src/app/CharacterMarks.cpp src/util/Json.cpp)
+    target_include_directories(tc_event_test PRIVATE src)
+    target_link_libraries(tc_event_test PRIVATE nlohmann_json::nlohmann_json)
+    add_test(NAME event_progress COMMAND tc_event_test "${CMAKE_CURRENT_SOURCE_DIR}/data")
+    add_executable(tc_heart_ui_test tests/heart_answers_ui_test.cpp src/ui/HeartTaskDetails.cpp src/app/CharacterMarks.cpp src/util/Json.cpp
         src/ui/gw2ui/Gw2UiInternal.cpp src/ui/gw2ui/Gw2UiText.cpp
-        src/ui/gw2ui/Gw2UiControls.cpp src/ui/gw2ui/Gw2UiCards.cpp src/ui/gw2ui/Gw2UiWidgets.cpp src/ui/gw2ui/Gw2UiWindow.cpp
+        src/ui/gw2ui/Gw2UiControls.cpp src/ui/gw2ui/Gw2UiCards.cpp src/ui/gw2ui/Gw2UiWidgets.cpp src/ui/gw2ui/Gw2UiWindow.cpp src/ui/gw2ui/Gw2UiChecklist.cpp
         src/render/glyphs/Glyphs.cpp
         ${imgui_SOURCE_DIR}/imgui.cpp ${imgui_SOURCE_DIR}/imgui_draw.cpp
         ${imgui_SOURCE_DIR}/imgui_tables.cpp ${imgui_SOURCE_DIR}/imgui_widgets.cpp)
     target_include_directories(tc_heart_ui_test PRIVATE src ${imgui_SOURCE_DIR} ${nexus_api_SOURCE_DIR})
+    target_link_libraries(tc_heart_ui_test PRIVATE nlohmann_json::nlohmann_json)
     if(MSVC)
         target_compile_options(tc_heart_ui_test PRIVATE /Gy)
         target_link_options(tc_heart_ui_test PRIVATE /OPT:REF)
@@ -88,6 +93,8 @@ set(SOURCES
     src/ui/gw2ui/Gw2UiControls.cpp
     src/ui/gw2ui/Gw2UiText.cpp
     src/ui/gw2ui/Gw2UiWidgets.cpp
+    src/ui/gw2ui/Gw2UiChecklist.cpp
+    src/ui/EventUi.cpp
     src/ui/gw2ui/Gw2UiChart.cpp
     src/ui/gw2ui/Gw2UiGalleryRail.cpp
     src/ui/gw2ui/Gw2UiGallery.cpp
@@ -192,6 +199,8 @@ set(SOURCES
     src/app/AchievementPoints.cpp
     src/app/ItemAttributes.cpp
     src/app/SessionHistory.cpp
+    src/app/CharacterMarks.cpp
+    src/guide/EventList.cpp
     src/app/SessionTracker.cpp
     src/app/AccountLevels.cpp
     src/app/EventFavorites.cpp

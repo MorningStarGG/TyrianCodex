@@ -12,6 +12,7 @@ void CharData::OnCharRename(App& app, const std::string& fromName, const std::st
 
     // Accumulated data -> UNION (each store dedups + persists itself).
     app.progress.RenameChar(fromName, toName);
+    app.eventProgress.RenameChar(fromName, toName);
     app.sessionHistory.RenameChar(fromName, toName);
     app.storyStore.RenameChar(fromName, toName);
     app.characterLevel.RenameChar(fromName, toName);
@@ -43,6 +44,7 @@ void CharData::PurgeCharacter(App& app, const std::string& name, bool alsoLevels
     if (name == app.state.currentChar) return;   // never wipe the active character (the UI also disables this)
 
     app.progress.PurgeChar(name);
+    app.eventProgress.PurgeChar(name);
     app.sessionHistory.PurgeChar(name);
     app.storyStore.PurgeChar(name);
     app.characterLevel.PurgeChar(name);
@@ -63,6 +65,7 @@ std::vector<std::string> CharData::AllCharacterNames(App& app)
 {
     std::set<std::string> s;
     app.progress.CollectCharNames(s);
+    app.eventProgress.CollectCharNames(s);
     app.sessionHistory.CollectCharNames(s);
     app.storyStore.CollectCharNames(s);
     app.characterLevel.CollectCharNames(s);

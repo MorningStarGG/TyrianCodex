@@ -218,6 +218,8 @@ std::vector<Setting> Settings(App &app)
         SEnum(SEC_PANEL, "viewerFontSize", "Panel text size", "panel text font size viewer current objective description", &app.config.viewerFontSize, kFontSizeNames, kFontSizeCount, PanelTextId, PanelTextName),
         SEnum(SEC_PANEL, "listFontSize", "Step list text size", "step list checklist objectives text font size", &app.config.listFontSize, kFontSizeNames, kFontSizeCount, PanelTextId, PanelTextName),
         SBool(SEC_PANEL, "boldText", "Bold guide text", "bold panel text weight", &app.config.boldText, PanelTextId, PanelTextName),
+        SBool(SEC_PANEL, "viewerShowCompleted", "Show completed objectives", "viewer objectives completed hidden uncheck", &app.config.viewerShowCompleted, PanelObjectiveId, PanelObjectiveName),
+        SBool(SEC_PANEL, "viewerShowCompletedEvents", "Show completed events", "viewer events experienced completed hidden uncheck", &app.config.viewerShowCompletedEvents, PanelObjectiveId, PanelObjectiveName),
         SInt(SEC_PANEL, "panelOpacity", "Background opacity (%)", "panel opacity background darkness alpha viewer transparency transparent see through", &app.config.panelOpacity, 0, 90, PanelTextId, PanelTextName),
         SEnum(SEC_PANEL, "stepHoverStyle", "Step hover style", "viewer step objective hover tooltip details map thumbnail show", &app.config.stepHoverStyle, kStepHoverStyleNames, kStepHoverStyleCount, PanelHoverTravelId, PanelHoverTravelName),
         SEnum(SEC_PANEL, "showUpcoming", "Show upcoming-steps list", "upcoming steps list open world dungeon", &app.config.showUpcoming, kUpcomingNames, 4, PanelHoverTravelId, PanelHoverTravelName),

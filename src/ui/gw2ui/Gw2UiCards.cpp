@@ -222,6 +222,28 @@ float Gw2Ui::ContentWidth(float explicitWidth)
     return (explicitWidth > 0.f) ? explicitWidth : CardInnerWidth();
 }
 
+void Gw2Ui::SameLineRightCluster(float clusterW, float gap)
+{
+    const auto rightEdge = [] {
+        float right = ImGui::GetCursorScreenPos().x + ImGui::GetContentRegionAvail().x;
+        if (!s_cardStack.empty() && s_cardStack.back().dl == ImGui::GetWindowDrawList())
+        {
+            const auto& card = s_cardStack.back();
+            right = std::min(right, card.p.x + card.w - CardPadding());
+        }
+        return right;
+    };
+    ImGui::SameLine(0.f, gap);
+    float right = rightEdge();
+    if (right - ImGui::GetCursorScreenPos().x < clusterW)
+    {
+        ImGui::NewLine();
+        right = rightEdge();
+    }
+    const auto cursor = ImGui::GetCursorScreenPos();
+    ImGui::SetCursorScreenPos(ImVec2(std::max(cursor.x, right - clusterW), cursor.y));
+}
+
 void Gw2Ui::FiligreeHeading(const char *title, float width)
 {
     const float w = ContentWidth(width);

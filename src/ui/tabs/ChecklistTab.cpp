@@ -1,590 +1,378 @@
 #include "ui/tabs/ChecklistTab.h"
 #include "ui/SettingsWindow.h"
-#include "ui/UiCommon.h"
-#include "app/App.h"
-#include "app/Glue.h"
-#include "Shared.h"
-#include "util/Draw.h"
-#include "util/Json.h"
-#include "guide/Completion.h"
-#include "guide/CurrentChar.h"
-#include "guide/RouteMode.h"
-#include "guide/Regions.h"
 #include "ui/Gw2Ui.h"
+#include "ui/GuideViewer.h"
+#include "ui/EventUi.h"
 #include "ui/ApiReminder.h"
-#include "ui/viewer/ViewerLayout.h"
-#include "ui/ZoneRow.h"
-#include "ui/Effect.h"
-#include "util/Textures.h"
-#include "render/LockIcon.h" // Render::DrawLock (shared travel padlock)
-#include "util/ImageCache.h"
-#include "util/Dyes.h"
-#include "util/Coords.h"
+#include "ui/tabs/MapThumbnail.h"
+#include "app/App.h"
+#include "guide/CurrentChar.h"
+#include "guide/Regions.h"
 #include "model/ObjectiveTypes.h"
-#include <imgui.h>
-#include <nlohmann/json.hpp>
-#include <windows.h>
+#include "render/LockIcon.h"
+#include "render/glyphs/Glyphs.h"
+#include "util/Textures.h"
+#include "Shared.h"
 #include <algorithm>
-#include <cmath>
+#include <array>
 #include <cstring>
-#include <cstdio>
-#include <cctype>
-#include <fstream>
-#include <chrono>
 #include <map>
 #include <set>
-#include <string>
-#include <vector>
-#include "ui/tabs/MapThumbnail.h"
 
-// Checklist tab. A hierarchical Release > Region > Zone > Type > objective tree, built fresh from app.zones each frame on the
-// reusable Gw2Ui tree primitives (expand state persists in g_chkExpanded). Every GROUP row shows a
-// (done/total) count + a tri-state check-all box (clicking marks/clears every descendant); LEAF rows show a
-// done box, the GW2 type icon, the name, a dim type word, and - for WAYPOINTS - a travel LOCK. Ticking or
-// locking a waypoint confirms it for travel (gold lock); a confirmed waypoint can't be unchecked until its
-// lock is clicked open.
-static std::set<std::string> g_chkExpanded; // open node paths
-
-static char g_chkSearch[64] = "";
-
-// "Current zone" button: the zone node path queued to scroll to (DrawChkNode fires SetScrollHereY once the row
-// is laid out, then clears this). Empty = nothing queued.
-static std::string g_chkScrollToZone;
-
-static const char *ChkTypeWord(const std::string &t)
+namespace
 {
-    if (t == "waypoint")
-        return "Waypoint";
-    if (t == "poi")
-        return "POI";
-    if (t == "vista")
-        return "Vista";
-    if (t == "heart")
-        return "Heart";
-    if (t == "hero")
-        return "Hero Point";
-    return "";
-}
-
-// The per-row travel padlock now lives centrally (Render::DrawLock) so the Info Panel + anywhere else showing a
-// waypoint's locked state reuses the same textures/tints instead of a private copy.
-static void PaintLock(ImVec2 p, float s, bool closed) { Render::DrawLock(ImGui::GetWindowDrawList(), p, s, closed); }
-
-// ---- Cached checklist hierarchy. The structure (Release > Region > Zone > Type > objective) is STATIC - it
-// only changes when the bundled zone set changes - so it is built ONCE, not rebuilt every frame. Per frame we
-// only recompute each node's (done/total) from the progress store (a cheap O(steps) pass) and render. ----
-struct ChkNode
-{
-    std::string path, title; // path = expand-state key + the row's ImGui id
-    float height = 30.f;
-    bool bold = false, leaf = false;
-    std::string stepId, name, type; // leaf only (copied so it never dangles on a route Activate())
-    // Map-thumbnail hover tooltip (zone nodes = that zone's rect; region nodes = the UNION rect of their zones).
-    bool hasMap = false;
-    int mapCont = 1, mapFloor = 1, lvlLo = 0, lvlHi = 0;
-    float mapRect[4] = {};       // continent left, top, right, bottom
-    std::vector<MapMark> objPts; // every objective under this node (continent coord + type icon) -> hover pins all
-    std::vector<ChkNode> kids;
-    int done = 0, total = 0; // recomputed per frame
-};
-
-static std::vector<ChkNode> g_chkRoots;
-
-static size_t g_chkBuiltFor = (size_t)-1;
-
-struct ChkHit
-{
-    std::string stepId, name, type, zone;
-};
-
-static std::vector<ChkHit> g_chkHits;
-
-static std::string g_chkHitsFor = "\x01"; // sentinel so the first search build always runs
-
-// Fold a zone's continent rect into a node's map crop: a single call for a zone node, or once per zone for a
-// region node (the union rect). Continent-1 only (the only continent the tile thumbnail supports).
-static void ChkAccumMap(ChkNode &n, const Zone *z, bool wantPts = true)
-{
-    if (!z->HasRects || z->ContinentId != 1)
-        return;
-    // ZONE node: crop to the playable area (sectorRect); REGION node (wantPts=false): union of full continent rects.
-    float zr[4];
-    if (wantPts)
-        ZoneMapCrop(z, zr);
-    else
+    enum Scope { Objectives, Events };
+    int scope_ = Objectives;
+    using Node = Gw2Ui::ChecklistNode;
+    struct MapPreview
     {
-        zr[0] = z->ContRect[0];
-        zr[1] = z->ContRect[1];
-        zr[2] = z->ContRect[2];
-        zr[3] = z->ContRect[3];
+        bool Available = false;
+        int Continent = 1, MinLevel = 0, MaxLevel = 0;
+        float Rect[4] = {};
+        std::vector<MapMark> Pins;
+    };
+    struct ChecklistView
+    {
+        Gw2Ui::ChecklistState State;
+        std::vector<Node> Roots;
+        std::map<std::string, MapPreview> Previews;
+        size_t ZoneCount = (size_t)-1;
+        uint64_t CatalogVersion = (uint64_t)-1, ProgressVersion = (uint64_t)-1;
+        std::string Character, Search;
+        Gw2Ui::ChecklistFilter Filter = Gw2Ui::ChecklistFilter::All;
+    };
+    std::array<ChecklistView, 2> views_;
+
+    std::string ZoneKey(const Zone& zone)
+    {
+        return "rel|" + (zone.Release.empty() ? std::string("core") : zone.Release) +
+               "|reg|" + std::to_string(zone.RegionId) + "|z|" + std::to_string(zone.MapId);
     }
-    if (!n.hasMap)
+
+    void AccumulateMap(MapPreview& preview, const Zone& zone, bool crop)
     {
-        n.hasMap = true;
-        n.mapCont = z->ContinentId;
-        n.mapFloor = z->Floor;
-        n.mapRect[0] = zr[0];
-        n.mapRect[1] = zr[1];
-        n.mapRect[2] = zr[2];
-        n.mapRect[3] = zr[3];
-        n.lvlLo = z->MinLevel;
-        n.lvlHi = z->MaxLevel;
-    }
-    else
-    {
-        n.mapRect[0] = std::min(n.mapRect[0], zr[0]);
-        n.mapRect[1] = std::min(n.mapRect[1], zr[1]);
-        n.mapRect[2] = std::max(n.mapRect[2], zr[2]);
-        n.mapRect[3] = std::max(n.mapRect[3], zr[3]);
-        n.lvlLo = std::min(n.lvlLo, z->MinLevel);
-        n.lvlHi = std::max(n.lvlHi, z->MaxLevel);
-    }
-    if (!wantPts)
-        return;                                          // region nodes show the map only -- too many objectives to pin
-    n.objPts.reserve(n.objPts.size() + z->Steps.size()); // ZONE nodes pin every objective (with its type icon)
-    for (const Step &s : z->Steps)
-    {
-        uint32_t iid = 0;
-        Objective::TryIconAssetId(s.Type, iid);
-        n.objPts.push_back(MapMark{s.CX, s.CY, iid});
-    }
-}
-
-static void BuildChecklistTree(App &app)
-{
-    g_chkRoots.clear();
-
-    // A region's hover map = its FULL geographic extent (ALL zones with that regionId, across every release),
-    // so a header named "Kryta" always shows the whole Kryta region. Without this, the LWS1 "Kryta" subgroup -
-    // which contains only Southsun Cove (an API-Kryta zone from a later release) - would show just Southsun's
-    // map under the "Kryta" name. Built once here, keyed by regionId.
-    std::map<int, ChkNode> regionFull;
-    for (const auto &kv : app.zones)
-        if (!kv.second.Steps.empty())
-            ChkAccumMap(regionFull[kv.second.RegionId], &kv.second, /*wantPts*/ false); // region = map only, no pins
-
-    std::map<std::string, std::vector<const Zone *>> byRel;
-    for (const auto &kv : app.zones)
-        if (!kv.second.Steps.empty())
-            byRel[kv.second.Release.empty() ? std::string("core") : kv.second.Release].push_back(&kv.second);
-    std::vector<std::string> relOrder = StoryData::ReleaseOrder();
-    for (const auto &kv : byRel)
-        if (std::find(relOrder.begin(), relOrder.end(), kv.first) == relOrder.end())
-            relOrder.push_back(kv.first);
-    static const char *kTypeOrder[] = {"heart", "vista", "poi", "hero", "waypoint"};
-
-    for (const std::string &rel : relOrder)
-    {
-        auto rit = byRel.find(rel);
-        if (rit == byRel.end())
-            continue;
-        ChkNode relN;
-        relN.path = "rel|" + rel;
-        relN.title = StoryData::ReleaseName(rel);
-        relN.height = 42.f;
-        relN.bold = true;
-
-        std::map<int, std::vector<const Zone *>> byReg;
-        for (const Zone *z : rit->second)
-            byReg[z->RegionId].push_back(z);
-        std::vector<std::pair<int, std::vector<const Zone *>>> regs(byReg.begin(), byReg.end());
-        std::sort(regs.begin(), regs.end(), [&](const auto &a, const auto &b)
-                  { const int am = Regions::MinLevel(a.second), bm = Regions::MinLevel(b.second); return am != bm ? am < bm : Regions::Label(a.second) < Regions::Label(b.second); });
-
-        for (auto &reg : regs)
+        if (!zone.HasRects || zone.ContinentId != 1) return;
+        float rect[4];
+        if (crop) ZoneMapCrop(&zone, rect);
+        else std::copy(zone.ContRect, zone.ContRect + 4, rect);
+        if (!preview.Available)
         {
-            ChkNode regN;
-            regN.path = relN.path + "|reg|" + std::to_string(reg.first);
-            regN.title = Regions::Label(reg.second);
-            regN.height = 38.f;
-            { // region map = the FULL region (all releases), so "Kryta" always shows Kryta - not just this group's zones
-                const ChkNode &rf = regionFull[reg.first];
-                regN.hasMap = rf.hasMap;
-                regN.mapCont = rf.mapCont;
-                regN.mapFloor = rf.mapFloor;
-                regN.lvlLo = rf.lvlLo;
-                regN.lvlHi = rf.lvlHi;
-                for (int i = 0; i < 4; ++i)
-                    regN.mapRect[i] = rf.mapRect[i]; // region node: map only (regN.objPts stays empty -> no pins)
-            }
-            std::vector<const Zone *> zs = reg.second;
-            std::sort(zs.begin(), zs.end(), [](const Zone *a, const Zone *b)
-                      { return a->MinLevel != b->MinLevel ? a->MinLevel < b->MinLevel : a->Name < b->Name; });
-            for (const Zone *z : zs)
+            preview.Available = true;
+            preview.Continent = zone.ContinentId;
+            preview.MinLevel = zone.MinLevel;
+            preview.MaxLevel = zone.MaxLevel;
+            std::copy(rect, rect + 4, preview.Rect);
+        }
+        else
+        {
+            preview.Rect[0] = std::min(preview.Rect[0], rect[0]);
+            preview.Rect[1] = std::min(preview.Rect[1], rect[1]);
+            preview.Rect[2] = std::max(preview.Rect[2], rect[2]);
+            preview.Rect[3] = std::max(preview.Rect[3], rect[3]);
+            preview.MinLevel = std::min(preview.MinLevel, zone.MinLevel);
+            preview.MaxLevel = std::max(preview.MaxLevel, zone.MaxLevel);
+        }
+    }
+
+    std::vector<Node> ItemsForMap(App& app, const Zone& zone, Scope scope, MapPreview& preview)
+    {
+        std::vector<Node> nodes;
+        const auto context = zone.Name + "  -  " + Regions::Label(zone);
+        if (scope == Events)
+        {
+            auto events = app.eventAreas.EventsForMap(zone.MapId);
+            std::sort(events.begin(), events.end(), [](const auto* a, const auto* b) {
+                return a->Name != b->Name ? a->Name < b->Name : a->EventId < b->EventId;
+            });
+            std::map<std::string, int> names;
+            for (const auto* event : events) ++names[event->Name];
+            for (const auto* event : events)
             {
-                ChkNode zN;
-                zN.path = regN.path + "|z|" + std::to_string(z->MapId);
-                zN.title = z->Name;
-                zN.height = 38.f;
-                ChkAccumMap(zN, z);
-                for (const char *ty : kTypeOrder)
-                {
-                    std::vector<const Step *> leaves;
-                    for (const Step &s : z->Steps)
-                        if (s.Type == ty)
-                            leaves.push_back(&s);
-                    if (leaves.empty())
-                        continue;
-                    std::sort(leaves.begin(), leaves.end(), [](const Step *a, const Step *b)
-                              { return a->Order < b->Order; });
-                    const Objective::Info *oi = Objective::Get(ty);
-                    ChkNode tN;
-                    tN.path = zN.path + "|t|" + ty;
-                    tN.title = oi ? oi->GroupName : ty;
-                    tN.height = 36.f;
-                    for (const Step *s : leaves)
-                    {
-                        ChkNode ln;
-                        ln.leaf = true;
-                        ln.height = 28.f;
-                        ln.path = s->StepId;
-                        ln.stepId = s->StepId;
-                        ln.name = s->Name.empty() ? s->Type : s->Name;
-                        ln.type = s->Type;
-                        tN.kids.push_back(std::move(ln));
-                    }
-                    zN.kids.push_back(std::move(tN));
-                }
-                if (!zN.kids.empty())
-                    regN.kids.push_back(std::move(zN));
+                Node leaf;
+                leaf.Id = "event|" + event->EventId;
+                leaf.ItemId = event->EventId;
+                leaf.Label = event->Name;
+                const auto location = EventUi::LocationText(*event);
+                if (names[event->Name] > 1 && !location.empty()) leaf.Label += "  -  " + location;
+                leaf.Context = zone.Name;
+                leaf.SearchText = context + " " + location + " " + EventUi::CategoryLabel(event->Category);
+                nodes.push_back(std::move(leaf));
+                if (event->HasContinentCoord) preview.Pins.push_back({event->ContinentX, event->ContinentY, 0});
             }
-            if (!regN.kids.empty())
-                relN.kids.push_back(std::move(regN));
+            return nodes;
         }
-        if (!relN.kids.empty())
-            g_chkRoots.push_back(std::move(relN));
-    }
-    g_chkBuiltFor = app.zones.size();
-}
-
-// One O(steps) bottom-up pass: fill each node's (done/total) from the completed-id set.
-static void ComputeChkCounts(ChkNode &n, const std::set<std::string> &done)
-{
-    if (n.leaf)
-    {
-        n.total = 1;
-        n.done = done.count(n.stepId) ? 1 : 0;
-        return;
-    }
-    n.done = 0;
-    n.total = 0;
-    for (ChkNode &k : n.kids)
-    {
-        ComputeChkCounts(k, done);
-        n.done += k.done;
-        n.total += k.total;
-    }
-}
-
-// Group "check all" (on click only): mark/clear every descendant leaf; clearing skips confirmed waypoints.
-static void ChkApply(App &app, const ChkNode &n, bool on, const std::string &ch)
-{
-    if (n.leaf)
-    {
-        if (on)
+        for (const char* type : {"heart", "vista", "poi", "hero", "waypoint"})
         {
-            app.progress.SetComplete(ch, n.stepId, true);
-            if (n.type == "waypoint")
-                app.progress.SetConfirmed(ch, n.stepId, true);
-        }
-        else if (!(n.type == "waypoint" && app.progress.IsConfirmed(ch, n.stepId)))
-            app.progress.SetComplete(ch, n.stepId, false);
-        return;
-    }
-    for (const ChkNode &k : n.kids)
-        ChkApply(app, k, on, ch);
-}
-
-// One leaf objective row (a tree leaf or a search hit).
-static void DrawChkLeaf(App &app, const std::string &stepId, const std::string &name, const std::string &type, int depth,
-                        int &rowIdx, const std::string &ch, const std::set<std::string> &done, const std::string &caption)
-{
-    const float h = 38.f;
-    const float availW = ImGui::GetContentRegionAvail().x;
-    if (!ImGui::IsRectVisible(ImVec2(availW, h))) // off-screen row: reserve its height, skip the (shader+label) draw
-    {
-        ImGui::Dummy(ImVec2(availW, h));
-        ++rowIdx;
-        return;
-    }
-    const bool comp = done.count(stepId) != 0;
-    const bool isWp = (type == "waypoint");
-    const bool conf = isWp && app.progress.IsConfirmed(ch, stepId);
-    Gw2Ui::TreeRowResult r = Gw2Ui::TreeRow(stepId.c_str(), depth, h, -1, stepId == app.state.manualTarget, rowIdx++);
-    const float cb = 30.f;
-    Gw2Ui::PaintCheckbox(ImVec2(r.contentMin.x, r.rowMin.y + (h - cb) * 0.5f), cb, comp ? 1 : 0, false);
-    float x = r.contentMin.x + cb + 8.f;
-    if (uint32_t iid; Objective::TryIconAssetId(type, iid))
-        if (const Texture_t *t = Tex::GetAssetTex(iid); t && t->Resource)
-        {
-            const float is = 28.f;
-            ImGui::GetWindowDrawList()->AddImage((ImTextureID)t->Resource, ImVec2(x, r.rowMin.y + (h - is) * 0.5f), ImVec2(x + is, r.rowMin.y + (h + is) * 0.5f));
-        }
-    x += 38.f;
-    const float lockW = isWp ? 32.f : 6.f, typeW = 100.f;
-    const float typeX = r.rowMax.x - lockW - typeW;
-    std::string disp = name;
-    if (!caption.empty())
-        disp += "   -   " + caption;
-    Gw2Ui::LabelIn(ImVec2(x, r.rowMin.y), ImVec2(typeX - 6.f, r.rowMax.y), disp.c_str(), Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle,
-                   comp ? IM_COL32(140, 140, 130, 255) : Objective::ColorOf(type, 255), true, nullptr, 20.f);
-    Gw2Ui::LabelIn(ImVec2(typeX, r.rowMin.y), ImVec2(typeX + typeW, r.rowMax.y), ChkTypeWord(type), Gw2Ui::HAlign::Right, Gw2Ui::VAlign::Middle,
-                   IM_COL32(175, 175, 175, 255), true, nullptr, 18.f);
-    if (isWp)
-        PaintLock(ImVec2(r.rowMax.x - 30.f, r.rowMin.y + (h - 24.f) * 0.5f), 24.f, conf);
-    if (r.hovered) // checklist always shows details + the zone map with this objective circled
-    {
-        const Zone *z = nullptr;
-        if (const Step *st = FindStepById(app, stepId, &z))
-            ObjectiveTooltip(name.c_str(), type.c_str(), st, z, st->CX, st->CY, /*withMap*/ true);
-    }
-    if (r.clicked)
-    {
-        const float cbX = r.contentMin.x - r.rowMin.x;
-        const float lkX = (r.rowMax.x - 32.f) - r.rowMin.x;
-        if (r.clickX >= cbX && r.clickX <= cbX + cb)
-        {
-            if (!comp)
+            std::vector<const Step*> steps;
+            for (const auto& step : zone.Steps) if (step.Type == type) steps.push_back(&step);
+            if (steps.empty()) continue;
+            std::sort(steps.begin(), steps.end(), [](const auto* a, const auto* b) { return a->Order < b->Order; });
+            const auto* info = Objective::Get(type);
+            Node group;
+            group.Id = ZoneKey(zone) + "|t|" + type;
+            group.Label = info ? info->GroupName : type;
+            group.Height = 36.f;
+            for (const auto* step : steps)
             {
-                app.progress.SetComplete(ch, stepId, true);
-                if (isWp)
-                    app.progress.SetConfirmed(ch, stepId, true);
+                Node leaf;
+                leaf.Id = leaf.ItemId = step->StepId;
+                leaf.Label = step->Name.empty() ? step->Type : step->Name;
+                leaf.Context = zone.Name;
+                leaf.SearchText = context + " " + (info ? info->Name : type);
+                group.Children.push_back(std::move(leaf));
+                uint32_t asset = 0;
+                Objective::TryIconAssetId(type, asset);
+                preview.Pins.push_back({step->CX, step->CY, asset});
             }
-            else if (!conf)
-                app.progress.SetComplete(ch, stepId, false); // a confirmed waypoint is protected
+            nodes.push_back(std::move(group));
         }
-        else if (isWp && r.clickX >= lkX)
-            app.progress.SetConfirmed(ch, stepId, !conf);
-        else if (!comp)
-            app.state.manualTarget = stepId;
+        return nodes;
     }
-}
 
-// Draw a group node + recurse its children when expanded.
-static void DrawChkNode(App &app, ChkNode &n, int depth, int &rowIdx, const std::string &ch, const std::set<std::string> &done)
-{
-    if (n.leaf)
+    void BuildTree(App& app, Scope scope)
     {
-        DrawChkLeaf(app, n.stepId, n.name, n.type, depth, rowIdx, ch, done, std::string());
-        return;
-    }
-    const bool open = g_chkExpanded.count(n.path) != 0;
-    const float availW = ImGui::GetContentRegionAvail().x;
-    if (!ImGui::IsRectVisible(ImVec2(availW, n.height))) // off-screen row: reserve its height, skip the draw...
-    {
-        ImGui::Dummy(ImVec2(availW, n.height));
-        ++rowIdx;
-    }
-    else
-    {
-        const int state = (n.total > 0 && n.done == n.total) ? 1 : (n.done > 0 ? 2 : 0);
-        Gw2Ui::TreeRowResult r = Gw2Ui::TreeRow(n.path.c_str(), depth, n.height, open ? 1 : 0, false, rowIdx++);
-        const float cb = 30.f;
-        Gw2Ui::PaintCheckbox(ImVec2(r.contentMin.x, r.rowMin.y + (n.height - cb) * 0.5f), cb, state, false);
-        char cnt[24];
-        std::snprintf(cnt, sizeof(cnt), "(%d/%d)", n.done, n.total);
-        const float countW = 104.f;
-        Gw2Ui::LabelIn(ImVec2(r.contentMin.x + cb + 8.f, r.rowMin.y), ImVec2(r.rowMax.x - countW - 8.f, r.rowMax.y), n.title.c_str(),
-                       Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, IM_COL32(255, 255, 255, 255), true, nullptr, n.bold ? 24.f : 21.f, 0.f, n.bold ? 1.5f : -1.f);
-        Gw2Ui::LabelIn(ImVec2(r.rowMax.x - countW - 8.f, r.rowMin.y), ImVec2(r.rowMax.x - 8.f, r.rowMax.y), cnt,
-                       Gw2Ui::HAlign::Right, Gw2Ui::VAlign::Middle, IM_COL32(195, 195, 195, 255), true, nullptr, 20.f);
-        if (r.clicked)
+        auto& view = views_[scope];
+        if (view.ZoneCount == app.zones.size() && view.CatalogVersion == app.eventAreas.Version()) return;
+        view.Roots.clear();
+        view.Previews.clear();
+        std::map<int, MapPreview> regions;
+        std::map<std::string, std::vector<const Zone*>> releases;
+        for (const auto& entry : app.zones)
         {
-            const float cbX = r.contentMin.x - r.rowMin.x;
-            if (r.clickX >= cbX && r.clickX <= cbX + cb)
-                ChkApply(app, n, state != 1, ch);
-            else if (open)
-                g_chkExpanded.erase(n.path);
-            else
-                g_chkExpanded.insert(n.path);
+            const auto& zone = entry.second;
+            AccumulateMap(regions[zone.RegionId], zone, false);
+            if (scope == Events ? !app.eventAreas.EventsForMap(zone.MapId).empty() : !zone.Steps.empty())
+                releases[zone.Release.empty() ? "core" : zone.Release].push_back(&zone);
         }
-        // Region + zone rows show a map on hover: the zone's map, or a region's whole-area map (union of its zones).
-        if (n.hasMap && r.hovered)
-            GroupTooltip(n.title.c_str(), n.lvlLo, n.lvlHi, n.done, n.total, n.mapCont, n.mapRect,
-                         n.objPts.data(), (int)n.objPts.size(), /*withMap*/ true);
-    }
-    // "Current zone" jump: when this is the queued zone row (its ancestors were just expanded), scroll it into
-    // view. Works whether the row drew for real or was culled to a height-only Dummy -- both submit an item, so
-    // SetScrollHereY has a valid rect. Fire once.
-    if (!g_chkScrollToZone.empty() && n.path == g_chkScrollToZone)
-    {
-        ImGui::SetScrollHereY(0.2f);
-        g_chkScrollToZone.clear();
-    }
-    // ...but always recurse: a node can be scrolled off-screen while its children are on-screen.
-    if (open)
-        for (ChkNode &k : n.kids)
-            DrawChkNode(app, k, depth + 1, rowIdx, ch, done);
-}
-
-// Warm the on-disk tile cache for every map the Checklist can show on hover. REGIONS first: a region row's
-// map is the union of its zones' rects, which ComputeTiles resolves at a lower zoom (whole region in <=16
-// tiles) -> a DIFFERENT tile grid than any single zone, so the Zones-tab per-zone prefetch never covers it.
-// Then the zone rows (so checklist hovers are instant even if the Zones tab was never opened). Tree shape is
-// release > region > zone; release nodes carry no map. Idempotent (ImageCache::PrefetchTile dedupes known tiles).
-static void PrefetchChkMaps()
-{
-    for (const ChkNode &rel : g_chkRoots) // pass 1: regions (the cold case)
-        for (const ChkNode &reg : rel.kids)
-            if (reg.hasMap)
-                PrefetchRectTiles(reg.mapCont, reg.mapRect[0], reg.mapRect[1], reg.mapRect[2], reg.mapRect[3]);
-    for (const ChkNode &rel : g_chkRoots) // pass 2: zones
-        for (const ChkNode &reg : rel.kids)
-            for (const ChkNode &z : reg.kids)
-                if (z.hasMap)
-                    PrefetchRectTiles(z.mapCont, z.mapRect[0], z.mapRect[1], z.mapRect[2], z.mapRect[3]);
-}
-
-// Find the guided zone for `mapId` in the built tree (release > region > zone) and return its ancestor path
-// chain. Returns false when the map has no guided zone (a city / story instance / dungeon) -- the caller then
-// disables the "Current zone" jump. Cheap: the tree is small and this runs only while the tab is open.
-static bool ChkFindZonePaths(uint32_t mapId, std::string &relPath, std::string &regPath, std::string &zonePath)
-{
-    if (!mapId)
-        return false;
-    const std::string suffix = "|z|" + std::to_string(mapId);
-    for (const ChkNode &rel : g_chkRoots)
-        for (const ChkNode &reg : rel.kids)
-            for (const ChkNode &z : reg.kids)
-                if (z.path.size() >= suffix.size() &&
-                    z.path.compare(z.path.size() - suffix.size(), suffix.size(), suffix) == 0)
+        auto order = StoryData::ReleaseOrder();
+        for (const auto& entry : releases)
+            if (std::find(order.begin(), order.end(), entry.first) == order.end()) order.push_back(entry.first);
+        for (const auto& release : order)
+        {
+            auto found = releases.find(release);
+            if (found == releases.end()) continue;
+            Node root;
+            root.Id = "rel|" + release;
+            root.Label = StoryData::ReleaseName(release);
+            root.Bold = true;
+            root.Height = 42.f;
+            std::map<int, std::vector<const Zone*>> byRegion;
+            for (const auto* zone : found->second) byRegion[zone->RegionId].push_back(zone);
+            std::vector<std::pair<int, std::vector<const Zone*>>> sorted(byRegion.begin(), byRegion.end());
+            std::sort(sorted.begin(), sorted.end(), [](const auto& a, const auto& b) {
+                const int aLevel = Regions::MinLevel(a.second), bLevel = Regions::MinLevel(b.second);
+                return aLevel != bLevel ? aLevel < bLevel : Regions::Label(a.second) < Regions::Label(b.second);
+            });
+            for (auto& region : sorted)
+            {
+                Node regionNode;
+                regionNode.Id = root.Id + "|reg|" + std::to_string(region.first);
+                regionNode.Label = Regions::Label(region.second);
+                view.Previews[regionNode.Id] = regions[region.first];
+                std::sort(region.second.begin(), region.second.end(), [](const auto* a, const auto* b) {
+                    return a->MinLevel != b->MinLevel ? a->MinLevel < b->MinLevel : a->Name < b->Name;
+                });
+                for (const auto* zone : region.second)
                 {
-                    relPath = rel.path;
-                    regPath = reg.path;
-                    zonePath = z.path;
-                    return true;
+                    Node zoneNode;
+                    zoneNode.Id = ZoneKey(*zone);
+                    zoneNode.Label = zone->Name;
+                    auto& preview = view.Previews[zoneNode.Id];
+                    AccumulateMap(preview, *zone, true);
+                    zoneNode.Children = ItemsForMap(app, *zone, scope, preview);
+                    if (!zoneNode.Children.empty()) regionNode.Children.push_back(std::move(zoneNode));
                 }
-    return false;
+                if (!regionNode.Children.empty()) root.Children.push_back(std::move(regionNode));
+            }
+            if (!root.Children.empty()) view.Roots.push_back(std::move(root));
+        }
+        view.ZoneCount = app.zones.size();
+        view.CatalogVersion = app.eventAreas.Version();
+        view.ProgressVersion = (uint64_t)-1;
+    }
+
+    void RefreshCounts(App& app, Scope scope)
+    {
+        auto& view = views_[scope];
+        const auto version = scope == Events ? app.eventProgress.Version() : app.progress.Version();
+        if (view.ProgressVersion == version && view.Character == app.state.currentChar &&
+            view.Search == view.State.Search && view.Filter == view.State.Filter) return;
+        const auto& stored = scope == Events ? app.eventProgress.CompletedIds(app.state.currentChar) : app.progress.CompletedIds(app.state.currentChar);
+        std::set<std::string> marked(stored.begin(), stored.end());
+        if (scope == Objectives)
+        {
+            const auto& confirmed = app.progress.ConfirmedIds(app.state.currentChar);
+            marked.insert(confirmed.begin(), confirmed.end());
+        }
+        Gw2Ui::UpdateChecklist(view.Roots, view.State, [&](const auto& id) { return marked.count(id) != 0; });
+        view.ProgressVersion = version;
+        view.Character = app.state.currentChar;
+        view.Search = view.State.Search;
+        view.Filter = view.State.Filter;
+    }
+
+    void ApplyGroup(App& app, Scope scope, const Node& group, bool on)
+    {
+        std::vector<std::string> ids;
+        Gw2Ui::VisitChecklistItems(group, [&](const auto& leaf) { ids.push_back(leaf.ItemId); });
+        if (scope == Events) { app.eventProgress.SetMany(app.state.currentChar, ids, on); return; }
+        std::vector<std::string> objectives, waypoints;
+        for (const auto& id : ids)
+        {
+            const auto* step = FindStepById(app, id);
+            if (!step) continue;
+            if (on)
+            {
+                objectives.push_back(id);
+                if (step->Type == "waypoint") waypoints.push_back(id);
+            }
+            else if (!app.progress.IsConfirmed(app.state.currentChar, id)) objectives.push_back(id);
+        }
+        app.progress.SetMany(app.state.currentChar, objectives, on);
+        if (on) app.progress.SetConfirmedMany(app.state.currentChar, waypoints, true);
+    }
+
+    void DrawItem(App& app, Scope scope, const Node& node, int depth, int row)
+    {
+        ImGui::PushID(node.Id.c_str());
+        auto& view = views_[scope];
+        const auto label = node.Label + (view.State.Search[0] ? "  -  " + node.Context : "");
+        Gw2Ui::ChecklistItemSpec spec;
+        spec.Id = "##item";
+        spec.Label = label.c_str();
+        spec.Marked = node.Done != 0;
+        if (scope == Events)
+        {
+            const auto* event = app.eventAreas.ById(node.ItemId);
+            if (!event) { ImGui::PopID(); return; }
+            const auto kind = EventUi::CategoryLabel(event->Category);
+            spec.Detail = kind.c_str();
+            spec.Color = EventUi::CategoryColor(event->Category);
+            spec.CanMark = EventProgressStore::CanMark(app.state.currentChar);
+            spec.DrawIcon = [event, marked = spec.Marked](auto* list, auto center, auto size) {
+                Render::DrawGlyph(list, center, size, Render::Glyph::Event, marked ? Gw2Ui::kTextDim : EventUi::CategoryColor(event->Category), {false,false,false});
+            };
+            const auto hit = Gw2Ui::ChecklistItem(spec, depth, row);
+            if (hit.CheckboxClicked) app.eventProgress.SetComplete(app.state.currentChar, event->EventId, !spec.Marked);
+            if (hit.BodyClicked) EventUi::Travel(app, *event);
+            if (hit.Row.hovered) EventUi::Tooltip(*event);
+            EventUi::Menu(app, *event, hit.Row.hovered);
+        }
+        else
+        {
+            const Zone* zone = nullptr;
+            const auto* step = FindStepById(app, node.ItemId, &zone);
+            if (!step) { ImGui::PopID(); return; }
+            const bool waypoint = step->Type == "waypoint";
+            const bool confirmed = waypoint && app.progress.IsConfirmed(app.state.currentChar, step->StepId);
+            const auto* info = Objective::Get(step->Type);
+            spec.Detail = info ? info->Name : "";
+            spec.Color = Objective::ColorOf(step->Type, 255);
+            spec.CanMark = !confirmed;
+            spec.DisabledTip = "Unlock this waypoint before clearing it";
+            spec.Selected = step->StepId == app.state.manualTarget;
+            spec.TrailingWidth = waypoint ? 32.f * Gw2Ui::TextScale() : 0.f;
+            spec.DrawIcon = [step](auto* list, auto center, auto size) {
+                uint32_t asset = 0;
+                if (Objective::TryIconAssetId(step->Type, asset))
+                    if (const auto* texture = Tex::GetAssetTex(asset); texture && texture->Resource)
+                        list->AddImage((ImTextureID)texture->Resource, ImVec2(center.x-size/2,center.y-size/2), ImVec2(center.x+size/2,center.y+size/2));
+            };
+            const auto hit = Gw2Ui::ChecklistItem(spec, depth, row);
+            if (waypoint && hit.Row.rowMax.x > hit.Row.rowMin.x)
+                Render::DrawLock(ImGui::GetWindowDrawList(), ImVec2(hit.Row.rowMax.x - 30.f * Gw2Ui::TextScale(),
+                                  (hit.Row.rowMin.y + hit.Row.rowMax.y - 24.f * Gw2Ui::TextScale()) / 2.f), 24.f * Gw2Ui::TextScale(), confirmed);
+            if (hit.CheckboxClicked)
+            {
+                app.progress.SetComplete(app.state.currentChar, step->StepId, !spec.Marked);
+                if (!spec.Marked && waypoint) app.progress.SetConfirmed(app.state.currentChar, step->StepId, true);
+            }
+            else if (hit.BodyClicked)
+            {
+                if (waypoint && ImGui::GetIO().MousePos.x >= hit.Row.rowMax.x - spec.TrailingWidth)
+                    app.progress.SetConfirmed(app.state.currentChar, step->StepId, !confirmed);
+                else if (!spec.Marked) app.state.manualTarget = step->StepId;
+            }
+            if (hit.Row.hovered) ObjectiveTooltip(step->Name.c_str(), step->Type.c_str(), step, zone, step->CX, step->CY, true);
+        }
+        ImGui::PopID();
+    }
+
+    void JumpTo(App& app, Scope scope, uint32_t mapId)
+    {
+        const auto found = app.zones.find(mapId);
+        if (found == app.zones.end()) return;
+        auto& view = views_[scope];
+        view.State.Search[0] = '\0';
+        view.State.Filter = Gw2Ui::ChecklistFilter::All;
+        Gw2Ui::ExpandChecklistTo(view.Roots, view.State, ZoneKey(found->second));
+    }
 }
 
-void DrawChecklistContent(App &app)
+void DrawChecklistContent(App& app)
 {
     UpdateCurrentChar(app.state);
-    const std::string ch = app.state.currentChar;
-
-    // No key -> objectives still show, but level-aware zone recommendations are off; nudge (dismissible).
-    if (!app.api.HasKey())
-        ApiReminder::Card(app, "checklist", "level-based zone recommendations", /*gated*/ false);
-
-    // The hierarchy is STATIC (built once). The completed-id set + every node's (done/total) are cached and
-    // recomputed ONLY when progress actually changes (ProgressStore::Version) or the character / zone set
-    // changes - so an idle open tab does no per-frame grouping, sorting, or counting, only drawing.
-    static std::set<std::string> s_chkDone;
-    static uint64_t s_chkDoneVer = (uint64_t)-1;
-    static std::string s_chkDoneChar;
-    if (g_chkBuiltFor != app.zones.size())
+    static const Gw2Ui::ChipItem scopes[] = {{"Map completion"}, {"Events"}};
+    Gw2Ui::ChipRow("##checklist_scope", scopes, 2, &scope_, 32.f, 18.f);
+    Gw2Ui::Divider();
+    const auto scope = (Scope)scope_;
+    auto& view = views_[scope];
+    BuildTree(app, scope);
+    if (scope == Objectives && !app.api.HasKey())
+        ApiReminder::Card(app, "checklist", "level-based zone recommendations", false);
+    const auto help = scope == Events ?
+        "Tick events you have seen or completed on this character. Marks are permanent until you clear them. Counts cover listed events; some maps have incomplete event coverage." :
+        "Tick off what you have already done to sync the guide. Ticking a waypoint unlocks it for travel; click its gold lock before clearing it.";
+    Gw2Ui::LabelWrapped(help, Gw2Ui::kTextSub, false, nullptr, 16.f);
+    if (scope == Events)
     {
-        BuildChecklistTree(app);
-        s_chkDoneVer = (uint64_t)-1;
+        const auto character = "Character: " + (EventProgressStore::CanMark(app.state.currentChar) ? app.state.currentChar : std::string("enter the game to mark events"));
+        Gw2Ui::Label(character.c_str(), Gw2Ui::kTextSub, false, nullptr, 16.f);
     }
-    // (Region + zone thumbnail tiles are warmed centrally in WarmCaches at login, not per-tab.)
-    if (s_chkDoneVer != app.progress.Version() || s_chkDoneChar != ch)
-    {
-        s_chkDone.clear();
-        const std::vector<std::string> &v = app.progress.CompletedIds(ch);
-        s_chkDone.insert(v.begin(), v.end());
-        // Confirmed (physically-reached / locked) waypoints count as DONE too - so saved-data waypoints show
-        // faded + ticked on load, not green until you unlock/uncheck/recheck them.
-        const std::vector<std::string> &cf = app.progress.ConfirmedIds(ch);
-        s_chkDone.insert(cf.begin(), cf.end());
-        for (ChkNode &n : g_chkRoots)
-            ComputeChkCounts(n, s_chkDone);
-        s_chkDoneVer = app.progress.Version();
-        s_chkDoneChar = ch;
-    }
-
-    // Help paragraph + search box.
-    const float fullW = ImGui::GetContentRegionAvail().x;
-    const char *help = "Tick off what you've already done to sync the guide. Reaching (or ticking) a waypoint "
-                       "locks it in for travel - a locked waypoint can't be unchecked or cleared; click its gold "
-                       "lock to release it.";
-    {
-        const ImVec2 hp = ImGui::GetCursorScreenPos();
-        const float hh = Gw2Ui::MeasureWrappedHeight(help, 16.f, fullW);
-        Gw2Ui::LabelIn(hp, ImVec2(hp.x + fullW, hp.y + hh), help, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Top,
-                       Gw2Ui::kTextSub, false, nullptr, 16.f, fullW);
-        ImGui::Dummy(ImVec2(fullW, hh + 4.f));
-    }
-    // Search box + a "Current zone" jump: expand to & scroll the tree to the guided zone you're standing in.
-    // Disabled off-coverage (a city / story instance / dungeon has no zone node to jump to). SearchBox leaves the
-    // cursor BELOW its box (not after it), so the button is positioned absolutely on the row, not via SameLine.
-    {
-        std::string relP, regP, zoneP;
-        const bool haveZone = ChkFindZonePaths(CurrentMapId(), relP, regP, zoneP);
-        const ImVec2 rowP = ImGui::GetCursorScreenPos();
-        const float ui = Gw2Ui::GlobalScale();
-        const float btnW = 132.f * ui, gap = 8.f * ui, rh = Gw2Ui::InputBoxHeight();
-        const bool inlineRow = fullW >= 120.f * ui + gap + btnW;
-        const float searchW = inlineRow ? std::max(120.f * ui, fullW - btnW - gap) : fullW;
-        Gw2Ui::SearchBox("##chksearch", g_chkSearch, sizeof(g_chkSearch), searchW, "Search objectives...");
-        if (inlineRow)
-            ImGui::SetCursorScreenPos(ImVec2(rowP.x + searchW + gap, rowP.y));
-        else
-            ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + rh + 4.f * ui));
-        const bool jump = Gw2Ui::ActionButtonPx("Current zone", inlineRow ? btnW : fullW, rh, Gw2Ui::ActionButtonVariant::Normal,
-                                                haveZone ? "Expand and scroll to the zone you're in" : "Enter a guided zone first",
-                                                /*disabled*/ !haveZone);
-        ImGui::SetCursorScreenPos(ImVec2(rowP.x, rowP.y + rh + (inlineRow ? 0.f : rh + 4.f * ui))); // next element starts below the whole row
-        if (jump && haveZone)
-        {
-            g_chkSearch[0] = '\0';
-            g_chkHitsFor = "\x01"; // leave search mode so the tree renders
-            g_chkExpanded.insert(relP);
-            g_chkExpanded.insert(regP);
-            g_chkExpanded.insert(zoneP);
-            g_chkScrollToZone = zoneP; // DrawChkNode scrolls to it once it is laid out
-        }
-    }
-    ImGui::Spacing();
-
-    ImGui::BeginChild("##checklist", ImVec2(0.f, 0.f), false);
-    int rowIdx = 0;
-
-    if (g_chkSearch[0])
-    {
-        // Flat match list (name / zone / region), rebuilt ONLY when the query changes - not every frame.
-        if (g_chkHitsFor != g_chkSearch)
-        {
-            g_chkHits.clear();
-            auto lower = [](std::string s)
-            { for (char& c : s) if (c >= 'A' && c <= 'Z') c = (char)(c + 32); return s; };
-            const std::string ql = lower(g_chkSearch);
-            for (const auto &kv : app.zones)
-            {
-                if (g_chkHits.size() >= 150)
-                    break;
-                for (const Step &s : kv.second.Steps)
-                {
-                    const std::string nm = s.Name.empty() ? s.Type : s.Name;
-                    if (lower(nm).find(ql) == std::string::npos && lower(kv.second.Name).find(ql) == std::string::npos && lower(kv.second.RegionName).find(ql) == std::string::npos)
-                        continue;
-                    if (g_chkHits.size() >= 150)
-                        break;
-                    g_chkHits.push_back({s.StepId, nm, s.Type, kv.second.Name});
-                }
-            }
-            g_chkHitsFor = g_chkSearch;
-        }
-        for (const ChkHit &hit : g_chkHits)
-            DrawChkLeaf(app, hit.stepId, hit.name, hit.type, 0, rowIdx, ch, s_chkDone, hit.zone);
-        if (g_chkHits.empty())
-            Gw2Ui::EmptyState("No matches.", "Try a different search.");
-        ImGui::EndChild();
-        return;
-    }
-
-    // Tree mode: render the cached structure (counts were refreshed above only if progress changed).
-    for (ChkNode &n : g_chkRoots)
-        DrawChkNode(app, n, 0, rowIdx, ch, s_chkDone);
+    Gw2Ui::SearchToolbar("##checklist_search", view.State.Search, sizeof(view.State.Search),
+        scope == Events ? "Search events, zones or regions..." : "Search objectives...", [&] {
+            static const Gw2Ui::ChipItem filters[] = {{"All"}, {"Unmarked"}, {"Marked"}};
+            int filter = (int)view.State.Filter;
+            Gw2Ui::ChipRow("##checklist_filter", filters, 3, &filter, 28.f, 16.f);
+            view.State.Filter = (Gw2Ui::ChecklistFilter)filter;
+            const auto found = app.zones.find(CurrentMapId());
+            const bool haveZone = found != app.zones.end() && (scope == Events ? !app.eventAreas.EventsForMap(found->first).empty() : !found->second.Steps.empty());
+            if (Gw2Ui::ActionButton("Current zone", 132.f, 26.f, Gw2Ui::ActionButtonVariant::Normal,
+                                    haveZone ? "Expand and scroll to the current zone" : "No listed entries for the current zone", !haveZone))
+                JumpTo(app, scope, CurrentMapId());
+        });
+    RefreshCounts(app, scope);
+    Gw2Ui::ChecklistCallbacks callbacks;
+    callbacks.CanMark = scope == Objectives || EventProgressStore::CanMark(app.state.currentChar);
+    callbacks.DrawLeaf = [&](const auto& leaf, int depth, int row) { DrawItem(app, scope, leaf, depth, row); };
+    callbacks.MarkGroup = [&](const auto& group, bool marked) { ApplyGroup(app, scope, group, marked); };
+    callbacks.HoverGroup = [&](const auto& group) {
+        const auto preview = view.Previews.find(group.Id);
+        if (preview == view.Previews.end() || !preview->second.Available) return;
+        const auto& map = preview->second;
+        GroupTooltip(group.Label.c_str(), map.MinLevel, map.MaxLevel, group.Done, group.Total, map.Continent, map.Rect,
+                     map.Pins.data(), (int)map.Pins.size(), true);
+    };
+    ImGui::BeginChild("##checklist_body", ImVec2(0.f, 0.f), false);
+    if (!Gw2Ui::DrawChecklist(view.Roots, view.State, callbacks))
+        Gw2Ui::EmptyState("No matching entries.", scope == Events ? "Try another filter or zone. Event coverage varies by map." : "Try another search or filter.");
     ImGui::EndChild();
 }
 
-// Login warm: build the STATIC checklist tree once + disk-prefetch every zone + region-union map (shared by
-// the Zones tab and Checklist). Wraps the formerly-inline WarmCaches body so the shell stays agnostic of the
-// checklist's private statics.
-void WarmChecklist(App &app)
+void OpenEventChecklist(App& app, unsigned mapId)
 {
-    if (g_chkBuiltFor != app.zones.size())
-        BuildChecklistTree(app);
-    PrefetchChkMaps();
+    scope_ = Events;
+    BuildTree(app, Events);
+    JumpTo(app, Events, mapId);
+    OpenSettingsTab(app, SettingsTabChecklist);
+}
+
+void WarmChecklist(App& app)
+{
+    BuildTree(app, Objectives);
+    for (const auto& preview : views_[Objectives].Previews)
+    {
+        const auto& map = preview.second;
+        if (map.Available) PrefetchRectTiles(map.Continent, map.Rect[0], map.Rect[1], map.Rect[2], map.Rect[3]);
+    }
 }

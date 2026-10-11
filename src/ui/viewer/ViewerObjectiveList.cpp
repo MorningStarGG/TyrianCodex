@@ -32,28 +32,6 @@
 static char s_objSearch[96] = "";
 static int s_objFilter = 0; // 0=all, then Objective::Info order used by Rich viewer filters
 
-static bool ContainsInsensitive(const std::string &haystack, const char *needle)
-{
-    if (!needle || !needle[0])
-        return true;
-    const unsigned char first = (unsigned char)needle[0];
-    for (size_t i = 0; i < haystack.size(); ++i)
-    {
-        if (std::tolower((unsigned char)haystack[i]) != std::tolower(first))
-            continue;
-        size_t h = i, n = 0;
-        while (h < haystack.size() && needle[n] &&
-               std::tolower((unsigned char)haystack[h]) == std::tolower((unsigned char)needle[n]))
-        {
-            ++h;
-            ++n;
-        }
-        if (!needle[n])
-            return true;
-    }
-    return false;
-}
-
 static const char *ObjectiveFilterType(int filter)
 {
     switch (filter)
@@ -87,20 +65,16 @@ bool ObjectiveMatchesRichFilter(const Step &s)
         for (const std::string &ex : chip.Examples)
             hay += " " + ex;
     }
-    return ContainsInsensitive(hay, s_objSearch);
+    return Gw2Ui::MatchesTextFilter(hay, s_objSearch);
 }
 
 // Lets the Recommend / Dungeon list bodies filter against the same search box without touching the state.
-bool MatchesObjectiveSearch(const std::string &text) { return ContainsInsensitive(text, s_objSearch); }
+bool MatchesObjectiveSearch(const std::string &text) { return Gw2Ui::MatchesTextFilter(text, s_objSearch); }
 
-void DrawRichObjectiveTools(App &app, bool showChips)
+static void DrawObjectiveFilterChips(App &app)
 {
     const float vs = ViewerScale(app);
     const float availW = ImGui::GetContentRegionAvail().x;
-    Gw2Ui::SearchBox("##objsearch", s_objSearch, sizeof(s_objSearch), availW, "Search...");
-    ImGui::Spacing();
-    if (!showChips)
-        return; // type chips only make sense for the objective checklist
 
     const float gap = 4.f * vs;
     const float allW = std::min(58.f * vs, std::max(48.f * vs, availW * 0.19f));
@@ -144,23 +118,19 @@ void DrawRichObjectiveTools(App &app, bool showChips)
     // objectives so they can be unticked / right-clicked -> Mark incomplete. Stays on the chip line when there's
     // room, else wraps to its own line below (narrow widget). A chip, NOT a checkbox above the row.
     {
-        const bool sc = app.config.viewerShowCompleted;
         const float chipsW = allW + iconW * 5.f + gap * 5.f; // the type-chip row's single-line width
         if (availW - chipsW >= iconW + gap + 4.f * vs)
             ImGui::SameLine(0.f, gap + 4.f * vs);
-        auto drawDone = [sc](ImDrawList *dl, ImVec2 c, float is)
-        {
-            Render::DrawGlyph(dl, c, is * 0.9f, Render::Glyph::Check,
-                              sc ? IM_COL32(150, 220, 140, 255) : IM_COL32(152, 146, 128, 255));
-        };
-        if (Gw2Ui::SelectableChip("##showdone", sc, ImVec2(iconW, h), nullptr, 16.f,
-                                  "Show completed objectives -- untick or right-click to mark incomplete", drawDone))
-        {
-            app.config.viewerShowCompleted = !sc;
+        if (Gw2Ui::ShowCompletedChip("##showdone", app.config.viewerShowCompleted, ImVec2(iconW, h),
+                                    "Show completed objectives -- untick or right-click to mark incomplete"))
             app.settingsDirty = true;
-        }
     }
-    ImGui::Spacing();
+}
+
+void DrawRichObjectiveTools(App &app, bool showChips)
+{
+    Gw2Ui::SearchToolbar("##objsearch", s_objSearch, sizeof(s_objSearch), "Search...",
+        showChips ? std::function<void()>([&] { DrawObjectiveFilterChips(app); }) : std::function<void()>());
 }
 
 // The active zone's remaining-objective list (tick = complete, click = target). Shared by the normal Step

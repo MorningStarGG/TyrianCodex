@@ -1443,6 +1443,7 @@ static void AddonLoad(AddonAPI_t *aApi)
     try
     {
         g_app->progress.Load(base + "\\progress.json");
+        g_app->eventProgress.Load(base + "\\event-progress.json");
         g_app->sessionHistory.Load(base + "\\session-history.json"); // per-character past-session earnings log (survives cache clear)
         AccountLevels::Init(base + "\\account-levels.json");         // account-wide lifetime level total (per-character ledger)
         g_app->characterLevel.Load(base + "\\charlevels.json");      // last-known per-character levels -> instant stale recommendations

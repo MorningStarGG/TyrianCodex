@@ -526,6 +526,19 @@ void Render::DrawGlyph(ImDrawList* dl, ImVec2 center, float size, Glyph glyph, I
         case Glyph::Cog:
             DrawCog(dl, center, size, color, style.shadow);
             break;
+        case Glyph::Event:
+        {
+            const auto c = center;
+            const auto col = color;
+            const float radius = size * 0.5f;
+            const int opacity = (int)(col >> 24);
+            dl->AddCircleFilled(c, radius, IM_COL32(4, 6, 7, opacity * 210 / 255), 24);
+            dl->AddCircle(c, radius - 0.8f, col, 24, std::max(1.f, size / 20.f));
+            dl->AddTriangleFilled(ImVec2(c.x, c.y - radius * 0.48f), ImVec2(c.x + radius * 0.47f, c.y + radius * 0.30f),
+                                  ImVec2(c.x - radius * 0.47f, c.y + radius * 0.30f), Alpha(col, opacity * 140 / 255));
+            dl->AddCircleFilled(c, radius * 0.18f, IM_COL32(255, 232, 175, opacity), 16);
+            break;
+        }
         case Glyph::Clock:
             DrawClock(dl, center, size, color, style.shadow);
             break;

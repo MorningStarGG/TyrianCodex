@@ -105,6 +105,7 @@ struct Config
     int viewerFontSize = 5;           // index into kFontSizePx (24 px) - current objective + description
     int listFontSize = 5;             // index into kFontSizePx (24 px) - the objectives step list
     bool viewerShowCompleted = false; // viewer/widget objective lists: reveal + uncheck completed objectives
+    bool viewerShowCompletedEvents = false; // independent dynamic-event history filter
     int stepHoverStyle = 1;           // VIEWER step-hover tooltip: 0 Details, 1 Details & Map (gates the viewer ONLY)
     bool boldText = true;
     int panelOpacity = 40; // %

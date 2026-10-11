@@ -109,12 +109,13 @@ void Gw2Ui::TextValueRow(const char *label, const char *value, float width, floa
 Gw2Ui::TreeRowResult Gw2Ui::TreeRow(const char *id, int depth, float height, int arrowState, bool selected, int rowIndex)
 {
     TreeRowResult r;
-    const float w = ImGui::GetContentRegionAvail().x;
+    const float w = std::min(ContentWidth(), ImGui::GetContentRegionAvail().x);
     const ImVec2 p = ImGui::GetCursorScreenPos();
     r.rowMin = p;
     r.rowMax = ImVec2(p.x + w, p.y + height);
-    const float indent = 6.f + depth * 14.f;
-    r.contentMin = ImVec2(p.x + indent + (arrowState >= 0 ? 22.f : 8.f), p.y);
+    const float scale = TextScale();
+    const float indent = (6.f + depth * 14.f) * scale;
+    r.contentMin = ImVec2(p.x + indent + (arrowState >= 0 ? 22.f : 8.f) * scale, p.y);
 
     r.clicked = ImGui::InvisibleButton(id, ImVec2(w, height));
     r.hovered = ImGui::IsItemHovered();
@@ -125,9 +126,9 @@ Gw2Ui::TreeRowResult Gw2Ui::TreeRow(const char *id, int depth, float height, int
     if (arrowState >= 0)
     {
         ImDrawList *dl = ImGui::GetWindowDrawList();
-        const ImVec2 c(p.x + indent + 9.f, p.y + height * 0.5f);
+        const ImVec2 c(p.x + indent + 9.f * scale, p.y + height * 0.5f);
         const ImU32 col = IM_COL32(235, 230, 215, 255);
-        Render::DrawGlyph(dl, c, 17.f, arrowState == 1 ? Render::Glyph::CaretDown : Render::Glyph::CaretRight, col, {false, false, false});
+        Render::DrawGlyph(dl, c, 17.f * scale, arrowState == 1 ? Render::Glyph::CaretDown : Render::Glyph::CaretRight, col, {false, false, false});
     }
     return r;
 }
@@ -239,12 +240,19 @@ float Gw2Ui::FillWidth(float availW, int count, float fixedTail, float gap, floa
     return FillWidth((std::max)(0.f, availW - fixedTail), count, gap, minW);
 }
 
-void Gw2Ui::SameLineRightCluster(float clusterW, float gap)
+bool Gw2Ui::SearchToolbar(const char* id, char* buf, size_t bufSize, const char* hint,
+                          const std::function<void()>& drawControls, float width)
 {
-    ImGui::SameLine();
-    const float avail = ImGui::GetContentRegionAvail().x;
-    if (avail > clusterW + gap)
-        ImGui::SetCursorPosX(ImGui::GetCursorPosX() + (avail - clusterW));
+    const bool changed = SearchBox(id, buf, bufSize, std::min(ContentWidth(width), ImGui::GetContentRegionAvail().x), hint);
+    ImGui::Spacing();
+    if (drawControls)
+    {
+        ImGui::BeginGroup();
+        drawControls();
+        ImGui::EndGroup();
+        ImGui::Spacing();
+    }
+    return changed;
 }
 
 void Gw2Ui::Divider(float width, ImU32 color)
@@ -490,8 +498,8 @@ void Gw2Ui::PillAt(ImDrawList *dl, ImVec2 topLeft, const char *text, float fontS
     const float h = PillHeight(fontSize, padY, minH);
     const ImVec2 b(topLeft.x + PillWidth(text, fontSize, padX), topLeft.y + h);
     const float r = h * 0.5f;
-    dl->AddRectFilled(topLeft, b, fill, r);
-    dl->AddRect(topLeft, b, border, r);
+    dl->AddRectFilled(topLeft, b, StyleColor(fill), r);
+    dl->AddRect(topLeft, b, StyleColor(border), r);
     LabelDL(dl, topLeft, b, text, HAlign::Center, VAlign::Middle, textCol, false, nullptr, fontSize);
 }
 
