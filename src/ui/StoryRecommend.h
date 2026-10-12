@@ -1,4 +1,5 @@
 #pragma once
+#include "ui/Gw2Ui.h"
 #include <string>
 #include <vector>
 
@@ -48,13 +49,10 @@ namespace StoryRecommend
     // beyond the small filtered vector).
     const std::vector<ReleaseGroup>& Groups(App& app);
 
-    // The "next story step" detail card (its own gold accent card): release name + episode name + wrapped
-    // description + an Open Journal button + (when there is an entry zone) a Travel button. It draws ONE card,
-    // so call it where there is NO surrounding Gw2Ui card -- the viewer recommend body (a BeginChild) and the
-    // dashboard Recommended-Zones widget (which is selfFramed, so the dashboard adds no frame) -- else it reads
-    // as a frame inside a frame. Nesting is SAFE (Gw2Ui cards own a splitter per depth); it used to corrupt the
-    // merge and blank everything drawn above, the historical "blank-above-Events" bug.
-    void DrawNextStoryCard(App& app, float w, bool compact);
+    // Next story step: release/episode, description, Journal and Travel actions. The viewer uses a standalone
+    // card; the dashboard hosts the same content inline, retaining its gold accent within the widget frame.
+    void DrawNextStoryCard(App& app, float w, bool compact,
+                          Gw2Ui::SectionPresentation presentation = Gw2Ui::SectionPresentation::Card);
 
     // A release group header that fits its width: one line ("<Release>   Story d/t - Maps d/t") when it fits,
     // else the release name (wrapped) over a smaller counts sub-line -- so it never clips at half width. Used by

@@ -22,11 +22,9 @@ struct DashWidget
     int         defaultOrder; // order among default-on widgets (0 = unspecified / not-default)
     void      (*draw)(App&, float width);   // body ONLY (the Dashboard supplies the control strip; for normal
                                             // widgets it also supplies the card frame)
-    bool        selfFramed = false;  // widget draws its OWN card(s)/banner (e.g. reuses a viewer panel that
-                                     // BeginCards), so the Dashboard adds only the control strip and no card of
-                                     // its own -- otherwise you'd see a frame inside a frame. COSMETIC: Gw2Ui
-                                     // cards nest safely (own splitter per depth, see Gw2UiCards.cpp), so
-                                     // getting this wrong is now a double border, not a corrupt draw list.
+    bool        selfFramed = false;  // intentional custom surface (e.g. Zone Header's textured banner).
+                                     // Ordinary widgets reuse panels via SectionPresentation::Inline/InlineAccent
+                                     // so the Dashboard owns their one frame, including the control strip.
     bool        defaultHoverChrome = false;  // default chrome mode for a NEW widget: false = pinned header bar,
                                              // true = controls hidden until hover (e.g. the Zone Header banner)
 };

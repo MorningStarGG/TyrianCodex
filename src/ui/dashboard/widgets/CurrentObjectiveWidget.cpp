@@ -9,16 +9,18 @@
 #include "ui/tabs/MapThumbnail.h"        // ObjectiveTooltip (opt-in per-widget map-in-tooltip)
 #include "guide/FarmingGuidance.h"       // NearestNodes
 #include <imgui.h>
+#include <algorithm>
 
 // The active objective shown as the SAME detail card the viewer uses -- and chosen the SAME way, so the two
 // never disagree: a personal/cross-zone/chat-link target shows the travel card (not a blank), and the current
-// step uses DisplayStepIndex (handles curStep == -1 in Travel mode / a done curStep). selfFramed: every branch
-// draws its own card, so the dashboard doesn't wrap it. No duplicated detail-card logic -- it calls the viewer's.
+// step uses DisplayStepIndex (handles curStep == -1 in Travel mode / a done curStep). The dashboard supplies
+// one frame in every state; the shared viewer panels keep their accent without drawing another surface.
 void DashW::CurrentObjective(App& app, float w)
 {
     const GuideState& st = app.state;
     constexpr float fs = 16.f;
     const ImU32 sub = IM_COL32(190, 182, 156, 255);
+    constexpr auto presentation = Gw2Ui::SectionPresentation::InlineAccent;
 
     // A gathering run takes over: show the nearest enabled node as the current objective.
     if (FarmingRunActive(app))
@@ -26,9 +28,11 @@ void DashW::CurrentObjective(App& app, float w)
         const std::vector<const FarmNode*> v = FarmingGuidance::NearestNodes(app, 1);
         if (v.empty())
         {
-            Gw2Ui::Label("All nodes gathered for this run.", IM_COL32(150, 235, 150, 255), true, nullptr, 16.f);
-            Gw2Ui::Label("They respawn over time.", Gw2Ui::kTextSub, false, nullptr, 14.f);
-            if (ImGui::Button("Reset run", ImVec2(120.f, 0.f))) app.state.farmGathered.clear();
+            Gw2Ui::LabelWrapped("All nodes gathered for this run.", IM_COL32(150, 235, 150, 255), true, nullptr, 16.f);
+            Gw2Ui::LabelWrapped("They respawn over time.", Gw2Ui::kTextSub, false, nullptr, 14.f);
+            if (Gw2Ui::ActionButtonPx("Reset run", std::min(120.f * Gw2Ui::TextScale(), Gw2Ui::ContentWidth()),
+                                     Gw2Ui::Scaled(26.f)))
+                app.state.farmGathered.clear();
         }
         else DashFarm::DrawNodeRow(app, v[0], w, /*big*/ true);
         return;
@@ -36,22 +40,22 @@ void DashW::CurrentObjective(App& app, float w)
 
     // The dashboard ALWAYS renders these elements in compact form (compact=true), independent of the viewer's
     // style setting -- so a Rich viewer (or None) never changes the dashboard's look.
-    if (st.inDungeon) { DrawDungeonDetail(app, fs, /*compact*/ true); return; }
+    if (st.inDungeon) { DrawDungeonDetail(app, fs, /*compact*/ true, presentation); return; }
 
     // Personal target / "Travel here" / waypoint chat-link target -> the viewer's travel card (was vanishing).
-    if (app.travel.Active()) { DrawTravelTargetPanel(app, fs, sub, /*compact*/ true); return; }
+    if (app.travel.Active()) { DrawTravelTargetPanel(app, fs, sub, /*compact*/ true, presentation); return; }
 
     const int total = (int)st.zone.Steps.size();
     const int disp  = DisplayStepIndex(app, total);
     if (disp < 0 || disp >= total)
     {
-        Gw2Ui::Label(st.CanGuide() ? "All objectives complete here." : "No active objective.",
+        Gw2Ui::LabelWrapped(st.CanGuide() ? "All objectives complete here." : "No active objective.",
                      Gw2Ui::kTextDim, false, nullptr, 16.f);
         return;
     }
     const Step& s = st.zone.Steps[disp];
     const ImVec2 p0 = ImGui::GetCursorScreenPos();
-    DrawCurrentObjectivePanel(app, s, fs, sub, /*compact*/ true);
+    DrawCurrentObjectivePanel(app, s, fs, sub, /*compact*/ true, presentation);
     // Opt-in (default off): hovering the card shows the zone map with this objective circled.
     if (app.config.wMapTipCurrent && ImGui::IsMouseHoveringRect(p0, ImVec2(p0.x + w, ImGui::GetCursorScreenPos().y)))
         ObjectiveTooltip(s.Name.c_str(), s.Type.c_str(), &s, &st.zone, s.CX, s.CY, /*withMap*/ true);

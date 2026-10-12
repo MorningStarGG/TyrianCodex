@@ -1,5 +1,4 @@
-// Gw2Ui shared internal core -- definitions for ui/gw2ui/Gw2UiInternal.h. Carved verbatim from the former
-// monolithic Gw2Ui.cpp (no behaviour change); the per-area module .cpp files call into these.
+// Gw2Ui shared internal core -- definitions for ui/gw2ui/Gw2UiInternal.h used by the per-area modules.
 #include "ui/gw2ui/Gw2UiInternal.h"
 #include "Shared.h"
 #include "util/Textures.h"
@@ -164,9 +163,9 @@ namespace Gw2Ui
 
         void DrawLabelCore(ImDrawList *dl, ImVec2 a, ImVec2 b, const char *text, ImFont *font,
                            ImU32 color, bool stroke, Gw2Ui::HAlign h, Gw2Ui::VAlign v, float fontSize,
-                           float wrap, float weight, Gw2Ui::TextShadow shadowMode, float shadowStrength)
+                           float wrap, float weight, Gw2Ui::TextShadow shadowMode, float shadowStrength, bool clipToRect)
         {
-            if (!text || !*text)
+            if (!text || !*text || (clipToRect && (b.x <= a.x || b.y <= a.y)))
                 return;
             color = StyleColor(color);
             // Scaled AND snapped to a baked rung (see RequestedPx), so the measure (CalcTextSizeA) and every
@@ -178,6 +177,11 @@ namespace Gw2Ui
             const ImVec2 ts = f->CalcTextSizeA(fs, FLT_MAX, wrap, text); // wrap > 0 -> measure wrapped (widest x, total y)
 
             const float w = b.x - a.x, hgt = b.y - a.y;
+            // Explicit-rectangle labels own their ink bounds, including every shadow and faux-bold pass.
+            // AddText intersects this fine clip with its draw-list clip without changing the caller's state.
+            // Flowing Label() keeps its natural glyph overhang and relies on the enclosing content clip.
+            const ImVec4 clip(a.x, a.y, b.x, b.y);
+            const ImVec4* fineClip = clipToRect ? &clip : nullptr;
             // ImGui renders the Menomonia TTF noticeably thinner so GW2 text reads light.
             // Sub-pixel extra passes restore the in-game weight (faux-bold). Default
             // ~0.8 a larger weight (~1.6) draws a 3rd mid pass for genuinely BOLD headers.
@@ -201,7 +205,7 @@ namespace Gw2Ui
                         const int sa = (int)(Af * 255.f * strength + 0.5f);
                         const ImU32 scol = IM_COL32(0, 0, 0, sa);
                         const float d = 2.f;
-                        dl->AddText(f, fs, ImVec2(x + d, y + d), scol, s, e, runWrap);
+                        dl->AddText(f, fs, ImVec2(x + d, y + d), scol, s, e, runWrap, fineClip);
                     }
                     else   // Outline: the original 8-direction ring. strength=1 reproduces the exact legacy formula.
                     {
@@ -210,15 +214,15 @@ namespace Gw2Ui
                         const float d = 1.f;
                         const ImVec2 off[8] = {{0, -d}, {d, -d}, {d, 0}, {d, d}, {0, d}, {-d, d}, {-d, 0}, {-d, -d}};
                         for (const ImVec2 &o : off)
-                            dl->AddText(f, fs, ImVec2(x + o.x, y + o.y), scol, s, e, runWrap);
+                            dl->AddText(f, fs, ImVec2(x + o.x, y + o.y), scol, s, e, runWrap, fineClip);
                     }
                 }
-                dl->AddText(f, fs, ImVec2(x, y), color, s, e, runWrap);
+                dl->AddText(f, fs, ImVec2(x, y), color, s, e, runWrap, fineClip);
                 if (bw > 0.f)
                 {
                     if (bw >= 1.2f)
-                        dl->AddText(f, fs, ImVec2(x + bw * 0.5f, y), color, s, e, runWrap);
-                    dl->AddText(f, fs, ImVec2(x + bw, y), color, s, e, runWrap);
+                        dl->AddText(f, fs, ImVec2(x + bw * 0.5f, y), color, s, e, runWrap, fineClip);
+                    dl->AddText(f, fs, ImVec2(x + bw, y), color, s, e, runWrap, fineClip);
                 }
             };
 

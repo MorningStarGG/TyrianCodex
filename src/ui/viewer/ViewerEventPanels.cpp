@@ -200,8 +200,7 @@ struct EventRowHit { bool clicked = false; bool hovered = false; bool favClicked
 
 static EventRowHit DrawSharedEventRow(const EventRow& e)
 {
-    const float availW = Gw2Ui::ContentWidth();     // card-aware: keep the row + right pill inside the card border
-                                                    // (== GetContentRegionAvail outside a card)
+    const float availW = Gw2Ui::ContentWidth();
     const float pillW = e.pill.empty() ? 0.f : std::max(54.f, Gw2Ui::MeasureWidth(e.pill.c_str(), e.pillFs) + 18.f);
     const float ctrlSz = 18.f;
     const float ctrlW = e.favKey ? (ctrlSz * 2.f + 10.f) : 0.f;   // star + bell, left of the countdown pill
@@ -714,7 +713,7 @@ void ViewerEvents::DrawTimersTab(App& app)
     else              DrawTimersTimeline(app, up, now);
 }
 
-int ViewerEvents::DrawTimers(App& app, float fs)
+int ViewerEvents::DrawTimers(App& app, float fs, Gw2Ui::SectionPresentation presentation)
 {
     if (!app.eventTimers.Loaded() || !app.state.zone.Loaded) return 0;
 
@@ -735,8 +734,8 @@ int ViewerEvents::DrawTimers(App& app, float fs)
     if (upcoming.empty() && chains.empty()) return 0;
 
     ImGui::Spacing();
-    Gw2Ui::BeginAccentCard("event-timers", 0.f, IM_COL32(255, 198, 82, 220),
-                           IM_COL32(3, 5, 5, 126), IM_COL32(150, 118, 64, 128));
+    Gw2Ui::BeginSection("event-timers", presentation, IM_COL32(255, 198, 82, 220),
+                       IM_COL32(3, 5, 5, 126), IM_COL32(150, 118, 64, 128));
     char right[32];
     std::snprintf(right, sizeof(right), upcoming.empty() ? "%d chains" : "next %d", upcoming.empty() ? (int)chains.size() : (int)upcoming.size());
     Gw2Ui::SectionHeader(upcoming.empty() ? "Event Chains" : "Timed Events", right, fs - 3.f);
@@ -776,7 +775,7 @@ int ViewerEvents::DrawTimers(App& app, float fs)
         }
     }
 
-    Gw2Ui::EndCard();
+    Gw2Ui::EndSection();
     return rowsDrawn;
 }
 
@@ -827,7 +826,7 @@ static void DrawEventAreaRow(App& app, const NearbyEventArea& nearby, float fs, 
     ImGui::PopID();
 }
 
-int ViewerEvents::DrawAreas(App& app, int currentIndex, float fs, int maxRows)
+int ViewerEvents::DrawAreas(App& app, int currentIndex, float fs, int maxRows, Gw2Ui::SectionPresentation presentation)
 {
     if (!app.eventAreas.Loaded() || !app.state.zone.Loaded || maxRows <= 0) return 0;
     const auto& zone = app.state.zone;
@@ -845,7 +844,7 @@ int ViewerEvents::DrawAreas(App& app, int currentIndex, float fs, int maxRows)
     else return 0;
     const auto nearby = app.eventAreas.NearbyForMap(zone.MapId, x, z, zone.MinLevel, zone.MaxLevel);
     ImGui::Spacing();
-    Gw2Ui::BeginAccentCard("event-areas", 0.f, IM_COL32(120,210,150,220), IM_COL32(3,5,5,126), IM_COL32(98,142,84,128));
+    Gw2Ui::BeginSection("event-areas", presentation, IM_COL32(120,210,150,220), IM_COL32(3,5,5,126), IM_COL32(98,142,84,128));
     Gw2Ui::SectionHeader("Nearby Events", nullptr, std::max(12.f, fs - 2.f));
     Gw2Ui::SearchToolbar("##eventsearch", eventSearch_, sizeof(eventSearch_), "Search events...", [&] {
         const float scale = Gw2Ui::TextScale();
@@ -869,7 +868,7 @@ int ViewerEvents::DrawAreas(App& app, int currentIndex, float fs, int maxRows)
         for (const auto& event : events.Completed) DrawEventAreaRow(app, event, fs, drawn++, true);
     }
     if (!drawn)
-        Gw2Ui::Label("No remaining events match this view. Open the checklist to browse the full zone.", Gw2Ui::kTextSub, false, nullptr, std::max(12.f, fs - 4.f));
-    Gw2Ui::EndCard();
+        Gw2Ui::LabelWrapped("No remaining events match this view. Open the checklist to browse the full zone.", Gw2Ui::kTextSub, false, nullptr, std::max(12.f, fs - 4.f));
+    Gw2Ui::EndSection();
     return std::max(1, drawn); // The filter/checklist controls remain available when every event is marked.
 }

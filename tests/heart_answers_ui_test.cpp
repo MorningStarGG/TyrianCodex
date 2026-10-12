@@ -336,6 +336,7 @@ namespace
             ImGui::SetNextWindowSize(ImVec2(480.f, 560.f));
             ImGui::Begin("Framework text table", nullptr, ImGuiWindowFlags_NoSavedSettings);
             Gw2Ui::BeginCard("##table_card", 320.f);
+            const float cardWidth = Gw2Ui::ContentWidth();
             const ImVec2 previousPadding = ImGui::GetStyle().CellPadding;
             const ImVec4 previousHeader = ImGui::GetStyle().Colors[ImGuiCol_TableHeaderBg];
             Check(Gw2Ui::BeginTextTable("##text_table", {"Name / prompt", "Correct response"}, 18.f),
@@ -347,8 +348,10 @@ namespace
                 Check(table->Columns[column].WorkMinX - table->Columns[column].MinX >= Gw2Ui::CardPadding() - 0.01f &&
                       table->Columns[column].MaxX - table->Columns[column].WorkMaxX >= Gw2Ui::CardPadding() - 0.01f,
                       "Every header and body cell must reserve framework padding on both sides");
-            Check(table->OuterRect.GetWidth() <= Gw2Ui::ContentWidth() + 0.01f,
+            Check(table->OuterRect.GetWidth() <= cardWidth + 0.01f,
                   "The framework table must respect its enclosing card's inner width");
+            Check(Gw2Ui::ContentWidth() <= table->Columns[table->CurrentColumn].WorkMaxX - ImGui::GetCursorScreenPos().x + 0.01f,
+                  "Content width inside a table must describe the current cell, not the enclosing card");
             Gw2Ui::TextTableRow({"Merin", "Second line."});
             const float shortStart = table->RowPosY1;
             Gw2Ui::TextTableRow({"A long prompt containing several phrases that must wrap within its column at every scale.",
@@ -575,6 +578,10 @@ namespace
                     textMax.x=std::max(textMax.x,vertex.pos.x); textMax.y=std::max(textMax.y,vertex.pos.y);
                 }
             }
+            if (!(badgeVertices>0 && textVertices>0))
+                std::cerr << "Missing pill/text: scale=" << scale << " local=" << localScale << " width=" << width
+                          << " distance=" << distance << " badges=" << badgeVertices << " text=" << textVertices
+                          << " row=" << row.Row.rowMin.x << ',' << row.Row.rowMin.y << ".." << row.Row.rowMax.x << ',' << row.Row.rowMax.y << '\n';
             Check(badgeVertices>0 && textVertices>0,"Near/metre/kilometre distance pills and event text must remain visible at narrow widths and every scale");
             Check(badgeMin.x>=row.Row.rowMin.x && badgeMin.y>=row.Row.rowMin.y && badgeMax.y<=row.Row.rowMax.y &&
                   std::fabs(badgeMax.x-(row.Row.rowMax.x-8.f*Gw2Ui::TextScale()))<1.1f,
@@ -586,6 +593,390 @@ namespace
             if (next.Row.rowMax.x>next.Row.rowMin.x) // Offscreen rows reserve space without a hit target.
                 Check(next.Row.rowMin.y>=row.Row.rowMax.y,"Visible event rows must never overlap");
             Gw2Ui::EndCard(); ImGui::End(); ImGui::Render();
+            Gw2Ui::PopTextScale();
+        }
+    }
+
+    void CheckCardContentBounds()
+    {
+        Harness ui;
+        ImGui::GetIO().DisplaySize = ImVec2(1400.f, 1600.f);
+        for (float scale : {0.75f, 1.f, 1.5f, 2.f})
+        for (float textScale : {1.f, 1.6f})
+        for (float width : {280.f, 600.f})
+        for (bool accented : {false, true})
+        for (bool explicitWidth : {false, true})
+        for (int frame = 0; frame < 2; ++frame) // The second frame includes the list's real scrollbar.
+        {
+            Gw2Ui::SetGlobalScale(scale);
+            Gw2Ui::PushTextScale(textScale);
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(20.f, 20.f));
+            ImGui::SetNextWindowSize(ImVec2(1200.f, 1500.f));
+            ImGui::Begin("Card bounds tests", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            const float windowWidth = Gw2Ui::ContentWidth();
+            ImGui::BeginGroup();
+            Gw2Ui::PushContentWidth(width);
+            const ImVec2 cardStart = ImGui::GetCursorScreenPos();
+            const float padding = Gw2Ui::CardPadding();
+            Gw2Ui::BeginAccentCard("widget", explicitWidth ? width : 0.f, accented ? IM_COL32_WHITE : 0);
+            const ImVec2 content = ImGui::GetCursorScreenPos();
+            const float innerWidth = Gw2Ui::CardInnerWidth();
+            const float right = content.x + innerWidth;
+            Check(std::fabs(right - (cardStart.x + width - padding)) < 0.01f,
+                  "Automatic and explicit card widths must fill the same slot with identical right padding");
+            Gw2Ui::PushTextScale(1.f); // Objectives neutralizes the dashboard text scale inside its card.
+            Check(std::fabs(Gw2Ui::CardInnerWidth() - innerWidth) < 0.01f &&
+                  std::fabs(Gw2Ui::ContentWidth() - innerWidth) < 0.01f,
+                  "Changing content typography must not change the card's captured insets");
+            Gw2Ui::LabelWrapped("Help Arcanist Vance study dwarven relics at Granite Citadel.", Gw2Ui::kGold, false, nullptr, 24.f);
+            Check(ImGui::GetItemRectMax().x <= right + 0.01f,
+                  "Long objective titles must wrap within the card's content bounds");
+            Gw2Ui::BeginScrollArea("objectives", 180.f);
+            ImGuiWindow* list = ImGui::GetCurrentWindow();
+            Check((list->Flags & ImGuiWindowFlags_NoBackground) && list->Pos.x + list->Size.x <= right + 0.01f,
+                  "Scrollable lists must preserve the enclosing background and leave its right border clear");
+            Check(std::fabs(Gw2Ui::CardInnerWidth() - Gw2Ui::ContentWidth()) < 0.01f &&
+                  ImGui::GetCursorScreenPos().x + Gw2Ui::ContentWidth() <= right + 0.01f,
+                  "Scroll areas must resolve their own content width rather than inherit a parent's card width");
+            for (int row = 0; row < 30; ++row)
+                Gw2Ui::LabelWrapped("An objective with a long description that wraps within this scroll area.", Gw2Ui::kTextSub);
+            if (frame == 1)
+                Check(list->ScrollbarY && Gw2Ui::ContentWidth() < list->Size.x,
+                      "Long bounded lists must remain scrollable and reserve their own scrollbar width");
+            Gw2Ui::EndScrollArea();
+            Check(std::fabs(ImGui::GetCursorScreenPos().x + Gw2Ui::ContentWidth() - right) < 0.01f,
+                  "Closing a scroll area must restore the enclosing card's bounds");
+            ImGui::BeginChild("native-child", ImVec2(0.f, 24.f), false, ImGuiWindowFlags_NoBackground);
+            Check(ImGui::GetWindowPos().x + ImGui::GetWindowSize().x <= right + 0.01f,
+                  "Ordinary auto-width ImGui children must also respect framework card bounds");
+            ImGui::EndChild();
+            const float contentBottom = ImGui::GetCurrentWindow()->DC.CursorMaxPos.y;
+            Gw2Ui::EndCard(); // Intentionally close while the inner text scale is active.
+            Check(std::fabs(ImGui::GetItemRectMax().x - (cardStart.x + width)) < 0.01f,
+                  "Card frames must reach the assigned slot edge without an implicit exterior margin");
+            Check(std::fabs(ImGui::GetItemRectMax().y - (contentBottom + padding)) < 0.01f,
+                  "Card backgrounds must use their captured bottom padding even after a text-scale change");
+            Gw2Ui::PopTextScale();
+            Gw2Ui::PopContentWidth();
+            ImGui::EndGroup();
+            Check(std::fabs(Gw2Ui::ContentWidth() - windowWidth) < 0.01f,
+                  "Ending a widget must restore the available width for following dashboard slots");
+            ImGui::End();
+            ImGui::Render();
+            Gw2Ui::PopTextScale();
+        }
+    }
+
+    void CheckNarrowChecklistInput()
+    {
+        Harness ui;
+        ImGui::GetIO().DisplaySize = ImVec2(1000.f, 1500.f);
+        Gw2Ui::SetGlobalScale(1.5f);
+        bool marked = false;
+        int checkboxClicks = 0, bodyClicks = 0;
+        ImVec2 checkbox, body, pill;
+        const auto frame = [&](ImVec2 mouse, bool down) {
+            ImGui::GetIO().MousePos = mouse; ImGui::GetIO().MouseDown[0] = down;
+            ImGui::NewFrame();
+            Gw2Ui::PushTextScale(1.6f);
+            ImGui::SetNextWindowPos(ImVec2(20.f, 20.f)); ImGui::SetNextWindowSize(ImVec2(300.f, 1400.f));
+            ImGui::Begin("Narrow checklist input", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            Gw2Ui::BeginCard("events");
+            ImVec2 iconCenter;
+            float iconSize = 0.f;
+            Gw2Ui::ChecklistItemSpec item;
+            item.Id = "event"; item.Label = "Defend the scholars at Granite Citadel.";
+            item.Subtitle = "Defend - Lv 47";
+            item.Detail = "24m"; item.DetailStyle = Gw2Ui::ChecklistDetailStyle::Pill;
+            item.Marked = marked;
+            item.DrawIcon = [&](ImDrawList*, ImVec2 center, float size) { iconCenter = center; iconSize = size; };
+            const auto hit = Gw2Ui::ChecklistItem(item, 0, 0);
+            if (hit.CheckboxClicked) { marked = !marked; ++checkboxClicks; }
+            if (hit.BodyClicked) ++bodyClicks;
+            const float scale = Gw2Ui::TextScale();
+            checkbox = ImVec2(hit.Row.contentMin.x + 15.f * scale, iconCenter.y);
+            body = ImVec2(checkbox.x, iconCenter.y + iconSize * 0.5f + 10.f * scale);
+            pill = ImVec2(hit.Row.rowMax.x - 8.f * scale - Gw2Ui::PillWidth(item.Detail, item.DetailFontSize) * 0.5f,
+                          hit.Row.rowMax.y - 4.f * scale - Gw2Ui::PillHeight(item.DetailFontSize) * 0.5f);
+            Check(body.y < pill.y && iconCenter.x + iconSize * 0.5f < hit.Row.rowMax.x,
+                  "Narrow checklist controls, text and distance pill must occupy usable separate regions");
+            Gw2Ui::EndCard(); ImGui::End(); Gw2Ui::PopTextScale(); ImGui::Render();
+        };
+        const ImVec2 outside(900.f, 1450.f);
+        for (int i = 0; i < 3; ++i) frame(outside, false);
+        const auto click = [&](ImVec2 position) { frame(position, false); frame(position, true); frame(position, false); };
+        click(checkbox);
+        Check(marked && checkboxClicks == 1 && bodyClicks == 0,
+              "The checkbox above a narrow event body must mark only that event without firing travel");
+        click(body);
+        click(pill);
+        Check(marked && checkboxClicks == 1 && bodyClicks == 2,
+              "Body and distance clicks below a stacked checkbox must remain body actions, not completion clicks");
+    }
+
+    void CheckIndependentWindowsAndHalfSlots()
+    {
+        Harness ui;
+        ImGui::GetIO().DisplaySize = ImVec2(1400.f, 1200.f);
+        ImGui::NewFrame();
+        ImGui::SetNextWindowPos(ImVec2(20.f, 20.f)); ImGui::SetNextWindowSize(ImVec2(1100.f, 1100.f));
+        ImGui::Begin("Width scope tests", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+        ImGuiWindow* window = ImGui::GetCurrentWindow();
+        const ImRect clip = window->ClipRect;
+        for (int slot = 0; slot < 2; ++slot)
+        {
+            if (slot) ImGui::SameLine(0.f, 12.f);
+            ImGui::PushID(slot);
+            ImGui::BeginGroup();
+            const ImVec2 start = ImGui::GetCursorScreenPos();
+            Gw2Ui::PushContentWidth(280.f);
+            Gw2Ui::BeginCard("half", 280.f);
+            const float inner = Gw2Ui::ContentWidth();
+            ImGui::SetNextWindowPos(ImVec2(400.f, 700.f)); ImGui::SetNextWindowSize(ImVec2(700.f, 160.f));
+            ImGui::Begin("Independent window", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            Check(Gw2Ui::CardInnerWidth() > 600.f,
+                  "Popups and unrelated windows must not inherit another window's active card width");
+            Gw2Ui::LabelWrapped("A popup owns its own width.");
+            ImGui::End();
+            Check(std::fabs(Gw2Ui::ContentWidth() - inner) < 0.01f,
+                  "Returning from another window must retain the widget's bounds");
+            Gw2Ui::BeginCard("nested");
+            Gw2Ui::LabelWrapped("Nested card content remains inside the half-width slot.");
+            Gw2Ui::EndCard();
+            Check(std::fabs(Gw2Ui::ContentWidth() - inner) < 0.01f,
+                  "Nested cards must restore their parent's available width");
+            Gw2Ui::EndCard();
+            Gw2Ui::PopContentWidth();
+            ImGui::EndGroup();
+            Check(ImGui::GetItemRectMax().x <= start.x + 280.f + 0.01f,
+                  "A half-width widget must not occupy its neighbour's slot");
+            Check(window->ClipRect.Min.x == clip.Min.x && window->ClipRect.Max.x == clip.Max.x,
+                  "Closing all content scopes must restore the host's clipping for later widgets");
+            ImGui::PopID();
+        }
+        ImGui::End(); ImGui::Render();
+    }
+
+    void CheckBoundedLabels()
+    {
+        Harness ui;
+        ImGui::GetIO().DisplaySize = ImVec2(1400.f, 1000.f);
+        for (float scale : {0.75f, 1.f, 1.5f, 2.f})
+        for (float textScale : {1.f, 1.5f, 1.6f})
+        {
+            Gw2Ui::SetGlobalScale(scale);
+            Gw2Ui::PushTextScale(textScale);
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(20.f, 20.f)); ImGui::SetNextWindowSize(ImVec2(1300.f, 900.f));
+            ImGui::Begin("Bounded label tests", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            for (bool foreground : {false, true})
+            for (auto align : {Gw2Ui::HAlign::Left, Gw2Ui::HAlign::Center, Gw2Ui::HAlign::Right})
+            for (auto vertical : {Gw2Ui::VAlign::Top, Gw2Ui::VAlign::Middle, Gw2Ui::VAlign::Bottom})
+            for (auto shadow : {Gw2Ui::TextShadow::None, Gw2Ui::TextShadow::Outline, Gw2Ui::TextShadow::Drop})
+            for (float wrap : {0.f, 60.f})
+            for (float width : {-1.f, 0.f, 80.f, 240.f})
+            {
+                ImDrawList* dl = foreground ? ImGui::GetForegroundDrawList() : ImGui::GetWindowDrawList();
+                const ImVec4 parentClip = dl->_CmdHeader.ClipRect;
+                const int clipDepth = dl->_ClipRectStack.Size, firstVertex = dl->VtxBuffer.Size;
+                const ImVec2 a(160.25f, 140.25f), b(a.x + width, a.y + 28.f * scale);
+                const char* title = "Current Objective / Recommended Zones\nAdditional guidance";
+                if (foreground)
+                    Gw2Ui::LabelDL(dl, a, b, title, align, vertical, Gw2Ui::kGold, true, nullptr, 18.f,
+                                   wrap, 1.6f, shadow);
+                else
+                    Gw2Ui::LabelIn(a, b, title, align, vertical, Gw2Ui::kGold, true, nullptr, 18.f,
+                                   wrap, 1.6f, shadow);
+                if (width <= 0.f)
+                    Check(dl->VtxBuffer.Size == firstVertex, "Labels with no usable rectangle must not draw over neighbouring controls");
+                for (int vertex = firstVertex; vertex < dl->VtxBuffer.Size; ++vertex)
+                {
+                    const ImVec2 p = dl->VtxBuffer[vertex].pos;
+                    Check(p.x >= a.x - 0.01f && p.x <= b.x + 0.01f &&
+                          p.y >= a.y - 0.01f && p.y <= b.y + 0.01f,
+                          "Bounded labels must clip every glyph, bold and shadow pass to their own rectangle");
+                }
+                Check(dl->_ClipRectStack.Size == clipDepth && dl->_CmdHeader.ClipRect.x == parentClip.x &&
+                      dl->_CmdHeader.ClipRect.y == parentClip.y && dl->_CmdHeader.ClipRect.z == parentClip.z &&
+                      dl->_CmdHeader.ClipRect.w == parentClip.w,
+                      "Drawing a bounded label must preserve the enclosing draw-list clip for controls that follow");
+            }
+            // Flowing labels intentionally keep their natural overhang/shadow. Only the explicit-rectangle
+            // APIs constrain ink to a supplied box; fixing titles must not trim ordinary outlined text.
+            ImGui::SetCursorScreenPos(ImVec2(100.f, 300.f));
+            ImDrawList* dl = ImGui::GetWindowDrawList();
+            const int firstVertex = dl->VtxBuffer.Size;
+            Gw2Ui::Label("j", Gw2Ui::kGold, true, nullptr, 18.f, 1.6f);
+            const ImVec2 naturalMin = ImGui::GetItemRectMin(), naturalMax = ImGui::GetItemRectMax();
+            bool overhang = false;
+            for (int vertex = firstVertex; vertex < dl->VtxBuffer.Size; ++vertex)
+            {
+                const ImVec2 p = dl->VtxBuffer[vertex].pos;
+                overhang |= p.x < naturalMin.x || p.x > naturalMax.x || p.y < naturalMin.y || p.y > naturalMax.y;
+            }
+            Check(overhang, "Flowing labels must retain their outlined glyph overhang outside the advance-size box");
+            for (const char* title : {"Current Objective", "Objectives / Farming", "Recommended Zones", "Events", u8"Activités / Événements"})
+            for (float width : {0.f, 8.f, 42.f, 80.f, 140.f, 240.f})
+            {
+                const auto fitted = Gw2Ui::Ellipsize(title, 12.f, width);
+                Check(Gw2Ui::MeasureWidth(fitted.c_str(), 12.f) <= width + 0.01f,
+                      "Ellipsized widget names must fit their resolved font and text scale");
+                if (Gw2Ui::MeasureWidth(title, 12.f) <= width && width > 1.f)
+                    Check(fitted == title, "Names that fit must remain unchanged");
+            }
+            ImGui::End(); ImGui::Render();
+            Gw2Ui::PopTextScale();
+        }
+    }
+
+    void CheckColumnLayout()
+    {
+        Harness ui;
+        ImGui::GetIO().DisplaySize = ImVec2(1500.f, 1500.f);
+        for (float scale : {0.75f, 1.f, 1.5f, 2.f})
+        for (float textScale : {1.f, 1.5f, 1.6f})
+        for (float bodyWidth : {280.f, 388.f, 420.f, 560.f})
+        for (bool requestedHalf : {false, true})
+        {
+            Gw2Ui::SetGlobalScale(scale);
+            Gw2Ui::PushTextScale(textScale);
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(20.f, 20.f)); ImGui::SetNextWindowSize(ImVec2(1300.f, 1450.f));
+            ImGui::Begin("Column layout tests", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            const ImVec2 start = ImGui::GetCursorScreenPos();
+            Gw2Ui::PushContentWidth(bodyWidth * scale);
+            const auto columns = Gw2Ui::MeasureColumns(2, 190.f);
+            Check(columns.fits == (bodyWidth >= 388.f) && std::fabs(columns.gap - 8.f * scale) < 0.01f,
+                  "Half-width availability and column spacing must depend on layout scale, not dashboard text zoom");
+            Check(std::fabs(2.f * columns.width + columns.gap - bodyWidth * scale) < 0.01f,
+                  "Equal columns and their gap must occupy the host's assigned width exactly");
+            const int count = requestedHalf && columns.fits ? 2 : 1;
+            const float width = count == 2 ? columns.width : bodyWidth * scale;
+            for (int slot = 0; slot < count; ++slot)
+            {
+                if (slot) ImGui::SameLine(0.f, columns.gap);
+                ImGui::PushID(slot);
+                const ImVec2 cardStart = ImGui::GetCursorScreenPos();
+                Gw2Ui::BeginCard("widget", width);
+                Gw2Ui::LabelWrapped("Objective content wraps inside its assigned column.");
+                Gw2Ui::EndCard();
+                Check(std::fabs(ImGui::GetItemRectMax().x - (cardStart.x + width)) < 0.01f &&
+                      ImGui::GetItemRectMax().x <= start.x + bodyWidth * scale + 1.f,
+                      "Rendered half-width frames must respect their columns and leave their neighbour visible");
+                if (slot)
+                    Check(std::fabs(cardStart.x - (start.x + width + columns.gap)) < 1.f,
+                          "The second half-width widget must share its row, separated only by the layout gap");
+                ImGui::PopID();
+            }
+            Gw2Ui::PopContentWidth();
+            ImGui::End(); ImGui::Render();
+            Gw2Ui::PopTextScale();
+        }
+    }
+
+    void CheckSectionHosting()
+    {
+        Harness ui;
+        ImGui::GetIO().DisplaySize = ImVec2(1400.f, 1500.f);
+        ImGuiID ids[2] = {};
+        for (float scale : {0.75f, 1.f, 1.5f, 2.f})
+        for (float textScale : {1.f, 1.6f})
+        for (float width : {240.f, 600.f})
+        for (bool headerVisible : {false, true})
+        for (auto presentation : {Gw2Ui::SectionPresentation::Inline, Gw2Ui::SectionPresentation::InlineAccent,
+                                  Gw2Ui::SectionPresentation::Card})
+        {
+            Gw2Ui::SetGlobalScale(scale);
+            Gw2Ui::PushTextScale(textScale);
+            ImGui::NewFrame();
+            ImGui::SetNextWindowPos(ImVec2(20.f, 20.f)); ImGui::SetNextWindowSize(ImVec2(1200.f, 1450.f));
+            ImGui::Begin("Section hosting tests", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings);
+            const auto before = Gw2Ui::CardsOpened();
+            const ImVec2 hostStart = ImGui::GetCursorScreenPos();
+            Gw2Ui::BeginCard("host", width);
+            if (headerVisible)
+            {
+                Gw2Ui::LabelWrapped("Widget header", Gw2Ui::kGold, false, nullptr, 18.f);
+                Gw2Ui::Divider();
+            }
+            const float hostRight = ImGui::GetCursorScreenPos().x + Gw2Ui::ContentWidth();
+            const ImU32 sectionBg = IM_COL32(14, 79, 157, 185);
+            const ImU32 accent = IM_COL32(40, 98, 196, 255);
+            for (int section = 0; section < 2; ++section)
+            {
+                const ImVec2 start = ImGui::GetCursorScreenPos();
+                Gw2Ui::BeginSection(section ? "nearby" : "timed", presentation, accent, sectionBg);
+                const auto id = ImGui::GetID("event");
+                if (presentation == Gw2Ui::SectionPresentation::Inline) ids[section] = id;
+                else Check(ids[section] == id, "Shared section controls must keep stable identities in either hosting style");
+                const float contentLeft = ImGui::GetCursorScreenPos().x;
+                const float contentRight = contentLeft + Gw2Ui::ContentWidth();
+                const auto checkRowOrigin = [&] {
+                    // ItemSize pixel-snaps new lines. A sub-pixel difference is legitimate; resetting by the
+                    // section's whole accent inset would clip the first letters/icons on every later row.
+                    Check(std::fabs(ImGui::GetCursorScreenPos().x - contentLeft) < 1.f &&
+                          ImGui::GetCursorScreenPos().x >= ImGui::GetCurrentWindow()->ClipRect.Min.x - 1.f,
+                          "New rows in an accented section must start inside its content clip, preserving leading letters and icons");
+                    Check(std::fabs(ImGui::GetCursorScreenPos().x + Gw2Ui::ContentWidth() - contentRight) < 0.01f,
+                          "Row flow must preserve both edges of the section's content bounds");
+                };
+                if (presentation != Gw2Ui::SectionPresentation::Card)
+                {
+                    const float inset = presentation == Gw2Ui::SectionPresentation::InlineAccent ? 8.f * Gw2Ui::TextScale() : 0.f;
+                    Check(std::fabs(ImGui::GetCursorScreenPos().x - (start.x + inset)) < 0.01f &&
+                          std::fabs(ImGui::GetCursorScreenPos().x + Gw2Ui::ContentWidth() - hostRight) < 0.01f,
+                          "Inline accents must reserve their own inset without changing the host's right edge");
+                }
+                Gw2Ui::SectionHeader(section ? "Nearby Events" : "Timed Events");
+                checkRowOrigin();
+                Gw2Ui::LabelWrapped("Shared event content.");
+                checkRowOrigin();
+                Gw2Ui::Label("Tasks", Gw2Ui::kGold, false, nullptr, 16.f);
+                checkRowOrigin();
+                Gw2Ui::Chip("Use", Gw2Ui::kChipText, Gw2Ui::kGold, 12.f);
+                ImGui::SameLine(0.f, 4.f * Gw2Ui::TextScale());
+                Gw2Ui::Chip("Give", Gw2Ui::kChipText, Gw2Ui::kGold, 12.f);
+                ImGui::NewLine();
+                checkRowOrigin();
+                Gw2Ui::Label("Hearts", Gw2Ui::kGold, false, nullptr, 16.f);
+                checkRowOrigin();
+                Gw2Ui::LabelWrapped("Decipher dwarven headstones, and protect Priory researchers.");
+                checkRowOrigin();
+                DrawHeartTaskDetails(ui.Tasks, ui.View, "section-heart");
+                checkRowOrigin();
+                ImGui::Indent(7.f * Gw2Ui::TextScale());
+                Gw2Ui::Label("Indented notes");
+                ImGui::Unindent(7.f * Gw2Ui::TextScale());
+                checkRowOrigin();
+                Gw2Ui::BeginSection("annotation", Gw2Ui::SectionPresentation::Inline);
+                Gw2Ui::LabelWrapped("Nested content.");
+                Gw2Ui::EndSection();
+                checkRowOrigin();
+                if (Gw2Ui::BeginScrollArea("section-scroll", 50.f)) Gw2Ui::LabelWrapped("Scrollable notes.");
+                Gw2Ui::EndScrollArea();
+                checkRowOrigin();
+                Gw2Ui::EndSection();
+                Check(ImGui::GetItemRectMax().x <= hostRight + 0.01f &&
+                      std::fabs(ImGui::GetCursorScreenPos().x + Gw2Ui::ContentWidth() - hostRight) < 0.01f,
+                      "Closing shared sections must restore the host's bounds for subsequent content");
+            }
+            Gw2Ui::EndCard();
+            Check(std::fabs(ImGui::GetItemRectMax().x - (hostStart.x + width)) < 0.01f,
+                  "Headers and section presentation must not change the widget's outer frame width");
+            Check(Gw2Ui::CardsOpened() - before == (presentation == Gw2Ui::SectionPresentation::Card ? 3u : 1u),
+                  "Inline sections, including accented sections, must share exactly one host frame");
+            bool surfaceDrawn = false, accentDrawn = false;
+            for (const ImDrawVert& vertex : ImGui::GetWindowDrawList()->VtxBuffer)
+            {
+                surfaceDrawn |= vertex.col == sectionBg;
+                accentDrawn |= vertex.col == accent;
+            }
+            Check(surfaceDrawn == (presentation == Gw2Ui::SectionPresentation::Card),
+                  "Inline content must inherit the host surface without painting a second background");
+            Check(accentDrawn == (presentation != Gw2Ui::SectionPresentation::Inline),
+                  "InlineAccent must retain the shared accent decoration without adding a frame");
+            ImGui::End(); ImGui::Render();
             Gw2Ui::PopTextScale();
         }
     }
@@ -608,6 +999,12 @@ int main(int argc, char** argv)
         CheckChecklistLayout();
         CheckRightClusterLayout();
         CheckChecklistDistancePills();
+        CheckCardContentBounds();
+        CheckNarrowChecklistInput();
+        CheckIndependentWindowsAndHalfSlots();
+        CheckBoundedLabels();
+        CheckColumnLayout();
+        CheckSectionHosting();
         std::cout << "Heart answer and shared checklist UI checks passed\n";
         return 0;
     }

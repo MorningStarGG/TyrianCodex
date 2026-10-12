@@ -139,13 +139,13 @@ void DrawDungeonDetailBody(App& app, float fs, bool compact)
 
 // The dungeon DETAIL card, auto-height (rich viewer + dashboard). The compact viewer draws its own fixed-height
 // frame and calls DrawDungeonDetailBody directly (it needs a measured slot, not an auto-sized card).
-void DrawDungeonDetail(App& app, float fs, bool compact)
+void DrawDungeonDetail(App& app, float fs, bool compact, Gw2Ui::SectionPresentation presentation)
 {
     if (!app.state.inst) return;
-    Gw2Ui::BeginAccentCard("dungeon-current", 0.f, IM_COL32(255, 198, 82, compact ? 255 : 220),
-                           kViewerCardBg, kViewerCardBorder);   // accent (stripe) is brighter in compact; card surfaces are the one shared color
+    Gw2Ui::BeginSection("dungeon-current", presentation, IM_COL32(255, 198, 82, compact ? 255 : 220),
+                       kViewerCardBg, kViewerCardBorder);
     DrawDungeonDetailBody(app, fs, compact);
-    Gw2Ui::EndCard();
+    Gw2Ui::EndSection();
 }
 
 // A "head here next" list: the in-band recommended zones for your level (RecommendZones is in-band now -- no

@@ -7,6 +7,7 @@
 #include "ui/Effect.h"
 
 #include <imgui.h>
+#include <imgui_internal.h>
 #include <algorithm>
 #include <cctype>
 #include <cfloat>
@@ -115,6 +116,47 @@ void Gw2Ui::EndPanel()
     ImGui::EndChild();
 }
 
+namespace
+{
+    struct ContentBounds
+    {
+        ImGuiWindow* window;
+        float workRight, contentRight;
+    };
+    std::vector<ContentBounds> s_contentBounds;
+}
+
+void Gw2Ui::PushContentWidth(float width)
+{
+    ImGuiWindow* window = ImGui::GetCurrentWindow();
+    const float right = ImGui::GetCursorScreenPos().x + std::max(1.f, width);
+    s_contentBounds.push_back({window, window->WorkRect.Max.x, window->ContentRegionRect.Max.x});
+    // ImGui 1.80 reads ContentRegionRect normally and WorkRect inside columns/tables. Restrict both so
+    // native wrapping and auto-width children follow the same bounds as framework widgets.
+    window->WorkRect.Max.x = right;
+    window->ContentRegionRect.Max.x = right;
+    ImGui::PushClipRect(ImVec2(ImGui::GetCursorScreenPos().x, window->ClipRect.Min.y),
+                        ImVec2(right, window->ClipRect.Max.y), true);
+}
+
+void Gw2Ui::PopContentWidth()
+{
+    IM_ASSERT(!s_contentBounds.empty());
+    const ContentBounds bounds = s_contentBounds.back();
+    IM_ASSERT(bounds.window == ImGui::GetCurrentWindow());
+    ImGui::PopClipRect();
+    bounds.window->WorkRect.Max.x = bounds.workRight;
+    bounds.window->ContentRegionRect.Max.x = bounds.contentRight;
+    s_contentBounds.pop_back();
+}
+
+bool Gw2Ui::BeginScrollArea(const char* id, float height, float width, ImGuiWindowFlags flags)
+{
+    return ImGui::BeginChild(id, ImVec2(ContentWidth(width), height), false, flags | ImGuiWindowFlags_NoBackground);
+}
+
+void Gw2Ui::EndScrollArea() { ImGui::EndChild(); }
+
 // GW2 bordered "card" that auto-sizes to its content. We can't know the height before drawing the content
 // (ImGui 1.80 has no auto-resize child), so we draw the content on a SECOND draw-list channel (a group
 // measures its extent), then draw the bg/border on the FIRST channel once the height is known, and merge.
@@ -134,16 +176,44 @@ namespace
         ImU32 bg, border, accent;
         ImDrawList *dl = nullptr;   // the list this card split -- EndCard must merge THAT one
         int depth = 0;              // index into s_cardSplitters
+        ImGuiWindow* window = nullptr;
+        float scale = 1.f, padding = 0.f, innerWidth = 0.f;
     };
     static std::vector<GwCard> s_cardStack;
     // Pooled + reused across frames (no per-frame allocation). unique_ptr so growing the pool never relocates a
     // splitter that is mid-split; real nesting depth is 2-3, so this stays tiny.
     static std::vector<std::unique_ptr<ImDrawListSplitter>> s_cardSplitters;
     static unsigned s_cardsOpened = 0;   // monotonic; see Gw2Ui::CardsOpened
+    struct GwSection
+    {
+        Gw2Ui::SectionPresentation presentation;
+        ImGuiWindow* window;
+        ImVec2 p;
+        float width, scale;
+        ImU32 accent;
+    };
+    static std::vector<GwSection> s_sections;
+
+    // Shared accent geometry for a framed card and an unframed section inside a host card.
+    void PaintAccent(ImDrawList* dl, ImVec2 p, float height, ImU32 accent, float scale)
+    {
+        if (!accent || height <= 0.f) return;
+        const ImU32 soft = (accent & 0x00FFFFFFu) | ((ImU32)90u << 24);
+        if (height > 4.f * scale)
+            dl->AddRectFilled(ImVec2(p.x, p.y + 2.f * scale),
+                              ImVec2(p.x + 3.f * scale, p.y + height - 2.f * scale),
+                              StyleColor(accent), 2.f * scale);
+        dl->AddLine(ImVec2(p.x + 6.f * scale, p.y), ImVec2(p.x + 6.f * scale, p.y + height),
+                    StyleColor(soft), scale);
+    }
 }
 
 unsigned Gw2Ui::CardsOpened() { return s_cardsOpened; }
 float Gw2Ui::CardPadding() { return 8.f * TextScale(); }
+float Gw2Ui::CardInnerWidth(float outerWidth, bool accented)
+{
+    return std::max(1.f, outerWidth - 2.f * CardPadding() - (accented ? 8.f * TextScale() : 0.f));
+}
 
 bool Gw2Ui::BeginCard(const char *id, float width, ImU32 bg, ImU32 border)
 {
@@ -155,12 +225,11 @@ bool Gw2Ui::BeginAccentCard(const char *id, float width, ImU32 accent, ImU32 bg,
     const float sc = Gw2Ui::TextScale();
     const float PAD = CardPadding();
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    // Auto-width cards leave a small right margin so they never butt against the panel edge / scrollbar.
-    const float W = (width > 0.f) ? width : std::max(40.f, ImGui::GetContentRegionAvail().x - 6.f);
+    const float W = ContentWidth(width);
     if (bg == 0)
-        bg = IM_COL32(0, 0, 0, 45);
+        bg = kCardBg;
     if (border == 0)
-        border = IM_COL32(120, 110, 88, 110);
+        border = kCardBorder;
 
     ImDrawList *dl = ImGui::GetWindowDrawList();
     const int depth = (int)s_cardStack.size();
@@ -168,22 +237,26 @@ bool Gw2Ui::BeginAccentCard(const char *id, float width, ImU32 accent, ImU32 bg,
         s_cardSplitters.push_back(std::make_unique<ImDrawListSplitter>());
     s_cardSplitters[depth]->Split(dl, 2);
     s_cardSplitters[depth]->SetCurrentChannel(dl, 1); // content draws on the foreground channel
-    s_cardStack.push_back({p, W, bg, border, accent, dl, depth});
+    const float innerWidth = CardInnerWidth(W, accent != 0);
+    s_cardStack.push_back({p, W, bg, border, accent, dl, depth, ImGui::GetCurrentWindow(), sc, PAD, innerWidth});
+    ++s_cardsOpened;
 
     ImGui::PushID(id);
     ImGui::SetCursorScreenPos(ImVec2(p.x + PAD + (accent ? 8.f * sc : 0.f), p.y + PAD));
     ImGui::BeginGroup(); // measures the content extent for auto-height
+    PushContentWidth(innerWidth);
     return true;
 }
 
 void Gw2Ui::EndCard()
 {
-    const float sc = Gw2Ui::TextScale();
-    const float PAD = CardPadding();
+    IM_ASSERT(!s_cardStack.empty());
+    const GwCard c = s_cardStack.back();
+    const float sc = c.scale, PAD = c.padding;
+    PopContentWidth();
     ImGui::EndGroup();
     ImGui::PopID();
 
-    const GwCard c = s_cardStack.back();
     s_cardStack.pop_back();
     const float H = (ImGui::GetItemRectMax().y - c.p.y) + PAD; // group bottom + the bottom padding
     const ImVec2 b(c.p.x + c.w, c.p.y + H);
@@ -195,13 +268,7 @@ void Gw2Ui::EndCard()
     splitter.SetCurrentChannel(dl, 0); // background channel (behind the content)
     dl->AddRectFilled(c.p, b, StyleColor(c.bg), 3.f * sc);
     dl->AddRect(c.p, b, StyleColor(c.border), 3.f * sc);
-    if (c.accent)
-    {
-        const ImU32 accentSoft = (c.accent & 0x00FFFFFFu) | ((ImU32)90u << 24);
-        dl->AddRectFilled(ImVec2(c.p.x + 4.f * sc, c.p.y + 6.f * sc), ImVec2(c.p.x + 7.f * sc, b.y - 6.f * sc), StyleColor(c.accent), 2.f * sc);
-        dl->AddLine(ImVec2(c.p.x + 10.f * sc, c.p.y + 4.f * sc), ImVec2(c.p.x + 10.f * sc, b.y - 4.f * sc),
-                    StyleColor(accentSoft), sc);
-    }
+    PaintAccent(dl, ImVec2(c.p.x + 4.f * sc, c.p.y + 4.f * sc), H - 8.f * sc, c.accent, sc);
     splitter.Merge(dl);
 
     ImGui::SetCursorScreenPos(c.p);
@@ -210,29 +277,29 @@ void Gw2Ui::EndCard()
 
 float Gw2Ui::CardInnerWidth()
 {
-    if (s_cardStack.empty())
-        return ImGui::GetContentRegionAvail().x;
-    const GwCard &c = s_cardStack.back();
-    const float sc = Gw2Ui::TextScale();
-    return c.w - 2.f * CardPadding() - (c.accent ? 8.f * sc : 0.f);
+    if (!s_cardStack.empty() && s_cardStack.back().window == ImGui::GetCurrentWindow())
+        return s_cardStack.back().innerWidth;
+    return ContentWidth();
 }
 
 float Gw2Ui::ContentWidth(float explicitWidth)
 {
-    return (explicitWidth > 0.f) ? explicitWidth : CardInnerWidth();
+    return (explicitWidth > 0.f) ? explicitWidth : std::max(1.f, ImGui::GetContentRegionAvail().x);
+}
+
+Gw2Ui::ColumnLayout Gw2Ui::MeasureColumns(int count, float minimumWidth, float gap, float width)
+{
+    IM_ASSERT(count > 0);
+    const float scale = GlobalScale();
+    const float spacing = std::max(0.f, gap) * scale;
+    const float columnWidth = (ContentWidth(width) - (count - 1) * spacing) / count;
+    return {std::max(0.f, columnWidth), spacing,
+            columnWidth > 0.f && columnWidth >= std::max(0.f, minimumWidth) * scale};
 }
 
 void Gw2Ui::SameLineRightCluster(float clusterW, float gap)
 {
-    const auto rightEdge = [] {
-        float right = ImGui::GetCursorScreenPos().x + ImGui::GetContentRegionAvail().x;
-        if (!s_cardStack.empty() && s_cardStack.back().dl == ImGui::GetWindowDrawList())
-        {
-            const auto& card = s_cardStack.back();
-            right = std::min(right, card.p.x + card.w - CardPadding());
-        }
-        return right;
-    };
+    const auto rightEdge = [] { return ImGui::GetCursorScreenPos().x + ImGui::GetContentRegionAvail().x; };
     ImGui::SameLine(0.f, gap);
     float right = rightEdge();
     if (right - ImGui::GetCursorScreenPos().x < clusterW)
@@ -242,6 +309,47 @@ void Gw2Ui::SameLineRightCluster(float clusterW, float gap)
     }
     const auto cursor = ImGui::GetCursorScreenPos();
     ImGui::SetCursorScreenPos(ImVec2(std::max(cursor.x, right - clusterW), cursor.y));
+}
+
+void Gw2Ui::BeginSection(const char* id, SectionPresentation presentation, ImU32 accent, ImU32 bg, ImU32 border,
+                        float requestedWidth)
+{
+    const ImVec2 p = ImGui::GetCursorScreenPos();
+    const float width = ContentWidth(requestedWidth), scale = TextScale();
+    const ImU32 inlineAccent = presentation == SectionPresentation::InlineAccent ? accent : 0;
+    s_sections.push_back({presentation, ImGui::GetCurrentWindow(), p, width, scale, inlineAccent});
+    if (presentation == SectionPresentation::Card)
+        BeginAccentCard(id, width, accent, bg, border);
+    else
+    {
+        ImGui::PushID(id);
+        const float inset = inlineAccent ? 8.f * scale : 0.f;
+        ImGui::SetCursorScreenPos(ImVec2(p.x + inset, p.y));
+        // BeginGroup captures the new-line origin. Apply the inset first so ItemSize, NewLine and wrapped
+        // controls keep starting inside the same left boundary as the content clip (as BeginAccentCard does).
+        ImGui::BeginGroup();
+        PushContentWidth(std::max(1.f, width - inset));
+    }
+}
+
+void Gw2Ui::EndSection()
+{
+    IM_ASSERT(!s_sections.empty());
+    const GwSection section = s_sections.back();
+    IM_ASSERT(section.window == ImGui::GetCurrentWindow());
+    s_sections.pop_back();
+    if (section.presentation == SectionPresentation::Card)
+        EndCard();
+    else
+    {
+        PopContentWidth();
+        ImGui::EndGroup();
+        ImGui::PopID();
+        const float height = std::max(0.f, ImGui::GetItemRectMax().y - section.p.y);
+        PaintAccent(section.window->DrawList, section.p, height, section.accent, section.scale);
+        ImGui::SetCursorScreenPos(section.p);
+        ImGui::Dummy(ImVec2(section.width, height));
+    }
 }
 
 void Gw2Ui::FiligreeHeading(const char *title, float width)

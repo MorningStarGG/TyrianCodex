@@ -190,7 +190,7 @@ void StoryRecommend::DrawReleaseHeader(const ReleaseGroup& g, float fontSize)
     const std::string rn = StoryData::ReleaseName(g.release);
     char counts[64];
     std::snprintf(counts, sizeof(counts), "Story %d/%d  -  Maps %d/%d", g.storyDone, g.storyTotal, g.mapDone, g.mapTotal);
-    const float cw = Gw2Ui::CardInnerWidth();   // card-aware (== content width when not in a card, e.g. the viewer)
+    const float cw = Gw2Ui::ContentWidth();
 
     char one[160];
     std::snprintf(one, sizeof(one), "%s   %s", rn.c_str(), counts);
@@ -209,19 +209,19 @@ void StoryRecommend::DrawReleaseHeader(const ReleaseGroup& g, float fontSize)
     Gw2Ui::Label(counts, Gw2Ui::kTextDim, false, nullptr, fontSize - 2.f);
 }
 
-void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
+void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact, Gw2Ui::SectionPresentation presentation)
 {
     const NextStory ns = Next(app);
     const float fs = compact ? 15.f : 18.f;
 
-    Gw2Ui::BeginAccentCard("story-next-detail", w, Gw2Ui::kGold,
-                           compact ? IM_COL32(0, 0, 0, 86)     : IM_COL32(3, 5, 5, 188),
-                           compact ? IM_COL32(126, 110, 78, 96) : IM_COL32(150, 116, 58, 128));
+    Gw2Ui::BeginSection("story-next-detail", presentation, Gw2Ui::kGold,
+                       compact ? Gw2Ui::kCardBg : Gw2Ui::kDetailCardBg,
+                       compact ? Gw2Ui::kCardBorder : Gw2Ui::kDetailCardBorder, w);
 
     if (!ns.release)
     {
-        Gw2Ui::Label("All story content complete.", IM_COL32(160, 235, 170, 255), false, nullptr, fs);
-        Gw2Ui::EndCard();
+        Gw2Ui::LabelWrapped("All story content complete.", IM_COL32(160, 235, 170, 255), false, nullptr, fs);
+        Gw2Ui::EndSection();
         return;
     }
 
@@ -232,7 +232,7 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
     if (!ns.description.empty())
     {
         Gw2Ui::Divider(0.f, IM_COL32(178, 144, 84, 62));
-        const float  cw = Gw2Ui::CardInnerWidth();
+        const float  cw = Gw2Ui::ContentWidth();
         const float  h  = Gw2Ui::MeasureWrappedHeight(ns.description.c_str(), fs - 2.f, cw);
         const ImVec2 p  = ImGui::GetCursorScreenPos();
         ImGui::Dummy(ImVec2(cw, h));
@@ -242,7 +242,7 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
     }
 
     Gw2Ui::Divider(0.f, IM_COL32(178, 144, 84, 52));
-    const float cw       = Gw2Ui::CardInnerWidth();
+    const float cw       = Gw2Ui::ContentWidth();
     const bool  hasTravel = ns.entryZone != nullptr;
     const float gap      = Gw2Ui::Scaled(6.f);
     const float bw       = hasTravel ? (cw - gap) * 0.5f : cw;
@@ -266,5 +266,5 @@ void StoryRecommend::DrawNextStoryCard(App& app, float w, bool compact)
             app.settingsDirty = true;
         }
     }
-    Gw2Ui::EndCard();
+    Gw2Ui::EndSection();
 }

@@ -65,8 +65,13 @@ Gw2Ui::ChecklistItemResult Gw2Ui::ChecklistItem(const ChecklistItemSpec& spec, i
 {
     const float scale = TextScale(), checkbox = 30.f * scale, icon = spec.DrawIcon ? 28.f * scale : 0.f;
     const float width = std::min(ContentWidth(), ImGui::GetContentRegionAvail().x);
-    const float left = (14.f + depth * 14.f) * scale + checkbox + 8.f * scale;
-    const float bodyWidth = std::max(1.f, width - left - (icon ? icon + 8.f * scale : 0.f) - spec.TrailingWidth - 12.f * scale);
+    const float indent = (14.f + depth * 14.f) * scale;
+    const float left = indent + checkbox + 8.f * scale;
+    // When scaled controls consume the horizontal space, put them above the body instead of leaving a
+    // one-pixel text column outside the row. Keep the text size, icon and checkbox usable at narrow widths.
+    const bool controlsAbove = width - left - (icon ? icon + 8.f * scale : 0.f) - spec.TrailingWidth - 12.f * scale < 80.f * scale;
+    const float bodyLeft = controlsAbove ? indent : left + (icon ? icon + 8.f * scale : 0.f);
+    const float bodyWidth = std::max(1.f, width - bodyLeft - spec.TrailingWidth - 12.f * scale);
     const bool pill = spec.Detail && spec.Detail[0] && spec.DetailStyle == ChecklistDetailStyle::Pill;
     // A badge must survive narrow layouts. Shorten only text too long to fit the entire row;
     // otherwise let the label use the full body width and put the badge on its own line.
@@ -74,13 +79,14 @@ Gw2Ui::ChecklistItemResult Gw2Ui::ChecklistItem(const ChecklistItemSpec& spec, i
         std::max(0.f, width - spec.TrailingWidth - 40.f * scale)) : std::string();
     const float detailWidth = pill ? PillWidth(detail.c_str(), spec.DetailFontSize) :
         (spec.Detail && spec.Detail[0] && width > 360.f * scale ? 100.f * scale : 0.f);
-    const bool detailBelow = pill && bodyWidth < detailWidth + 8.f * scale + 80.f * scale;
+    const bool detailBelow = pill && (controlsAbove || bodyWidth < detailWidth + 8.f * scale + 80.f * scale);
     const float textWidth = std::max(1.f, bodyWidth - (detailBelow ? 0.f : detailWidth + (pill ? 8.f * scale : 0.f)));
     const float titleHeight = MeasureWrappedHeight(spec.Label, spec.FontSize, textWidth);
     const float subtitleHeight = spec.Subtitle && spec.Subtitle[0] ? MeasureWrappedHeight(spec.Subtitle, spec.SubtitleFontSize, textWidth) + 2.f * scale : 0.f;
     const float detailHeight = detailWidth > 0.f ? (pill ? PillHeight(spec.DetailFontSize) :
         MeasureWrappedHeight(spec.Detail, spec.DetailFontSize, detailWidth)) : 0.f;
-    const float bodyHeight = std::max(30.f * scale, titleHeight + subtitleHeight);
+    const float controlHeight = controlsAbove ? std::max(checkbox, icon) + 4.f * scale : 0.f;
+    const float bodyHeight = std::max(30.f * scale, controlHeight + titleHeight + subtitleHeight);
     const float height = (detailBelow ? bodyHeight + 4.f * scale + detailHeight : std::max(bodyHeight, detailHeight)) + 8.f * scale;
     ChecklistItemResult result;
     if (!ImGui::IsRectVisible(ImVec2(width, height)))
@@ -91,10 +97,12 @@ Gw2Ui::ChecklistItemResult Gw2Ui::ChecklistItem(const ChecklistItemSpec& spec, i
     result.Row = TreeRow(spec.Id, depth, height, -1, spec.Selected, rowIndex);
     const auto& row = result.Row;
     const float bodyCenterY = detailBelow ? row.rowMin.y + 4.f * scale + bodyHeight * 0.5f : row.rowMin.y + height * 0.5f;
+    const float bodyTop = bodyCenterY - bodyHeight * 0.5f;
+    const float controlCenterY = controlsAbove ? bodyTop + std::max(checkbox, icon) * 0.5f : bodyCenterY;
     const auto mouse = ImGui::GetIO().MousePos;
     const bool overCheckbox = mouse.x >= row.contentMin.x && mouse.x < row.contentMin.x + checkbox &&
-        mouse.y >= bodyCenterY - checkbox * 0.5f && mouse.y < bodyCenterY + checkbox * 0.5f;
-    PaintCheckbox(ImVec2(row.contentMin.x, bodyCenterY - checkbox * 0.5f), checkbox,
+        mouse.y >= controlCenterY - checkbox * 0.5f && mouse.y < controlCenterY + checkbox * 0.5f;
+    PaintCheckbox(ImVec2(row.contentMin.x, controlCenterY - checkbox * 0.5f), checkbox,
                   spec.Marked ? 1 : 0, row.hovered && overCheckbox && spec.CanMark);
     const bool clickedCheckbox = row.clicked && overCheckbox;
     result.CheckboxClicked = clickedCheckbox && spec.CanMark;
@@ -103,10 +111,11 @@ Gw2Ui::ChecklistItemResult Gw2Ui::ChecklistItem(const ChecklistItemSpec& spec, i
     float x = row.contentMin.x + checkbox + 8.f * scale;
     if (spec.DrawIcon)
     {
-        spec.DrawIcon(ImGui::GetWindowDrawList(), ImVec2(x + icon * 0.5f, bodyCenterY), icon);
+        spec.DrawIcon(ImGui::GetWindowDrawList(), ImVec2(x + icon * 0.5f, controlCenterY), icon);
         x += icon + 8.f * scale;
     }
-    const float textTop = bodyCenterY - (titleHeight + subtitleHeight) * 0.5f;
+    if (controlsAbove) x = row.contentMin.x;
+    const float textTop = controlsAbove ? bodyTop + controlHeight : bodyCenterY - (titleHeight + subtitleHeight) * 0.5f;
     LabelIn(ImVec2(x, textTop), ImVec2(x + textWidth, textTop + titleHeight), spec.Label, HAlign::Left, VAlign::Top,
             spec.Marked ? kTextDim : spec.Color, true, nullptr, spec.FontSize, textWidth);
     if (subtitleHeight > 0.f)

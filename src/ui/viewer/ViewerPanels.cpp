@@ -49,11 +49,11 @@ static std::string TravelTargetHint(App& app)
 float EstimateTravelTargetPanelHeight(App& app, float fs, float cardW, bool compact)
 {
     const float vs = ViewerScale(app);
-    const float pad = 16.f * vs;
-    const float contentW = std::max(80.f, cardW - 18.f * vs);
+    const float pad = 2.f * Gw2Ui::CardPadding();
+    const float contentW = Gw2Ui::CardInnerWidth(cardW, true);
     const float iconSize = (!compact ? 50.f : 46.f) * vs;
     const std::string title = TravelTargetTitle(app);
-    const float titleW = std::max(40.f, contentW - iconSize - 10.f * vs);
+    const float titleW = std::max(1.f, contentW - iconSize - 10.f * vs);
     float h = pad;
     h += std::max(iconSize, Gw2Ui::MeasureWrappedHeight(title.c_str(), fs, titleW));
     h += std::max(19.f * vs, (fs - 6.f) + 8.f * vs) + 10.f * vs;
@@ -68,10 +68,10 @@ float EstimateCurrentObjectivePanelHeight(App& app, const Step& c, float fs, flo
     const std::string title = c.Name.empty() ? c.Type : c.Name;
     const bool rich = !compact;
     const float vs = ViewerScale(app);
-    const float pad = 16.f * vs; // BeginAccentCard top+bottom padding.
-    const float contentW = std::max(80.f, cardW - 18.f * vs); // BeginAccentCard accent inset plus wrapped-text guard.
+    const float pad = 2.f * Gw2Ui::CardPadding();
+    const float contentW = Gw2Ui::CardInnerWidth(cardW, true);
     const float iconSize = (rich ? 50.f : 46.f) * vs;
-    const float titleW = std::max(40.f, contentW - iconSize - 10.f * vs);
+    const float titleW = std::max(1.f, contentW - iconSize - 10.f * vs);
     float h = pad;
 
     h += std::max(iconSize, Gw2Ui::MeasureWrappedHeight(title.c_str(), fs, titleW));
@@ -110,7 +110,7 @@ float EstimateCurrentObjectivePanelHeight(App& app, const Step& c, float fs, flo
     return h;
 }
 
-void DrawTravelTargetPanel(App& app, float fs, ImU32 subCol, bool compact)
+void DrawTravelTargetPanel(App& app, float fs, ImU32 subCol, bool compact, Gw2Ui::SectionPresentation presentation)
 {
     (void)subCol;
     if (!app.travel.Active()) return;
@@ -119,17 +119,15 @@ void DrawTravelTargetPanel(App& app, float fs, ImU32 subCol, bool compact)
     const bool rich = !compact;
     const std::string title = TravelTargetTitle(app);
     const std::string hint = TravelTargetHint(app);
-    const ImVec2 cardP = ImGui::GetCursorScreenPos();
-    const float cardW = ImGui::GetContentRegionAvail().x;
-
-    Gw2Ui::BeginAccentCard("travel-target-detail", 0.f, accent,
-                           rich ? IM_COL32(3, 5, 5, 188) : IM_COL32(0, 0, 0, 86),
-                           rich ? IM_COL32(150, 116, 58, 128) : IM_COL32(126, 110, 78, 96));
-    DrawTargetClearX(app, CurrentTargetOverride(app), ImVec2(cardP.x + cardW - 8.f * vs, cardP.y + 8.f * vs), 22.f * vs);
+    Gw2Ui::BeginSection("travel-target-detail", presentation, accent,
+                       rich ? Gw2Ui::kDetailCardBg : Gw2Ui::kCardBg,
+                       rich ? Gw2Ui::kDetailCardBorder : Gw2Ui::kCardBorder);
+    const ImVec2 cardContent = ImGui::GetCursorScreenPos();
+    DrawTargetClearX(app, CurrentTargetOverride(app), ImVec2(cardContent.x + Gw2Ui::ContentWidth(), cardContent.y), 22.f * vs);
 
     const float iconSize = (rich ? 50.f : 46.f) * vs;
     const ImVec2 p = ImGui::GetCursorScreenPos();
-    const float titleW = std::max(40.f, ImGui::GetContentRegionAvail().x - iconSize - 10.f * vs);
+    const float titleW = std::max(1.f, Gw2Ui::ContentWidth() - iconSize - 10.f * vs);
     const float titleH = std::max(iconSize, Gw2Ui::MeasureWrappedHeight(title.c_str(), fs, titleW));
     ImDrawList* dl = ImGui::GetWindowDrawList();
     const ImVec2 iconP(p.x, p.y + (titleH - iconSize) * 0.5f);
@@ -155,7 +153,7 @@ void DrawTravelTargetPanel(App& app, float fs, ImU32 subCol, bool compact)
                     Gw2Ui::Gw2Italic() ? Gw2Ui::Gw2Italic() : nullptr);
     Gw2Ui::Divider(0.f, IM_COL32(178, 144, 84, 52));
     DrawTravelActionButtons(app, !rich);
-    Gw2Ui::EndCard();
+    Gw2Ui::EndSection();
 }
 
 void DrawObjectiveChipRow(App& app, const Step& c, float fs, ImU32 typeCol)
@@ -163,8 +161,7 @@ void DrawObjectiveChipRow(App& app, const Step& c, float fs, ImU32 typeCol)
     const float vs        = ViewerScale(app);
     const float chipFs    = fs - 6.f;
     const float rowStartX = ImGui::GetCursorPosX();
-    const float availW    = Gw2Ui::ContentWidth();     // card-aware: GetContentRegionAvail over-extends to the
-                                                       // window edge inside a card, pushing the pill past the border
+    const float availW    = Gw2Ui::ContentWidth();
 
     char dist[32]; FormatDistance(dist, sizeof(dist), app.state.curTravel);
     char eta[40];  std::snprintf(eta, sizeof(eta), "ETA %s", FormatEta(app.state.curTravel, app.guidance.SpeedEma()).c_str());
@@ -181,7 +178,7 @@ void DrawObjectiveChipRow(App& app, const Step& c, float fs, ImU32 typeCol)
     // Marks THIS objective done on click (the guide advances to the next).
     ImGui::SameLine();
     const float afterChipsX = ImGui::GetCursorPosX();
-    const float rightEdge   = rowStartX + availW - 8.f * vs;     // 8px right inset (accent cards inset left only)
+    const float rightEdge   = rowStartX + availW;
     const float textW       = 19.f * vs + Gw2Ui::MeasureWidth("Mark Complete", chipFs) + 8.f * vs;
     const float checkW      = std::max(std::max(19.f * vs, chipFs + 8.f * vs), 24.f * vs);
     const bool  roomForText = (rightEdge - (afterChipsX + 6.f * vs)) >= textW;
@@ -191,7 +188,8 @@ void DrawObjectiveChipRow(App& app, const Step& c, float fs, ImU32 typeCol)
         CompleteStep(app.progress, app.state, c.StepId);    // guide advances next frame
 }
 
-void DrawCurrentObjectivePanel(App& app, const Step& c, float fs, ImU32 subCol, bool compact)
+void DrawCurrentObjectivePanel(App& app, const Step& c, float fs, ImU32 subCol, bool compact,
+                              Gw2Ui::SectionPresentation presentation)
 {
     const float vs = ViewerScale(app);
     const ImU32 typeCol = Objective::ColorOf(c.Type, 255);
@@ -201,7 +199,7 @@ void DrawCurrentObjectivePanel(App& app, const Step& c, float fs, ImU32 subCol, 
     // iconSize arrives already-scaled from the call site; the 10.f inset is layout px.
     auto drawTitleRow = [&](float iconSize, bool medallion) {
         const ImVec2 p = ImGui::GetCursorScreenPos();
-        const float titleW = std::max(40.f, ImGui::GetContentRegionAvail().x - iconSize - 10.f * vs);
+        const float titleW = std::max(1.f, Gw2Ui::ContentWidth() - iconSize - 10.f * vs);
         const float titleH = std::max(iconSize, Gw2Ui::MeasureWrappedHeight(title.c_str(), fs, titleW));
         PaintTypeIconAt(ImGui::GetWindowDrawList(), c.Type, ImVec2(p.x, p.y + (titleH - iconSize) * 0.5f), iconSize, medallion);
         Gw2Ui::LabelIn(ImVec2(p.x + iconSize + 10.f * vs, p.y), ImVec2(p.x + iconSize + 10.f * vs + titleW, p.y + titleH),
@@ -225,12 +223,11 @@ void DrawCurrentObjectivePanel(App& app, const Step& c, float fs, ImU32 subCol, 
         (!app.state.manualTarget.empty() && c.StepId == app.state.manualTarget)
             ? TargetOverrideKind::Manual
             : TargetOverrideKind::None;
-    const ImVec2 cardP = ImGui::GetCursorScreenPos();
-    const float cardW = ImGui::GetContentRegionAvail().x;
-    Gw2Ui::BeginAccentCard("current-objective", 0.f, typeCol,
-                           rich ? IM_COL32(3, 5, 5, 188) : IM_COL32(0, 0, 0, 86),
-                           rich ? IM_COL32(150, 116, 58, 128) : IM_COL32(126, 110, 78, 96));
-    DrawTargetClearX(app, overrideKind, ImVec2(cardP.x + cardW - 8.f * vs, cardP.y + 8.f * vs), 22.f * vs);
+    Gw2Ui::BeginSection("current-objective", presentation, typeCol,
+                       rich ? Gw2Ui::kDetailCardBg : Gw2Ui::kCardBg,
+                       rich ? Gw2Ui::kDetailCardBorder : Gw2Ui::kCardBorder);
+    const ImVec2 cardContent = ImGui::GetCursorScreenPos();
+    DrawTargetClearX(app, overrideKind, ImVec2(cardContent.x + Gw2Ui::ContentWidth(), cardContent.y), 22.f * vs);
     drawTitleRow((rich ? 50.f : 46.f) * vs, true);
     DrawObjectiveChipRow(app, c, fs, typeCol);
     if (rich)
@@ -259,5 +256,5 @@ void DrawCurrentObjectivePanel(App& app, const Step& c, float fs, ImU32 subCol, 
         DrawObjectiveActionButtons(app, c, false);
     }
     else DrawObjectiveActionButtons(app, c, true);
-    Gw2Ui::EndCard();
+    Gw2Ui::EndSection();
 }

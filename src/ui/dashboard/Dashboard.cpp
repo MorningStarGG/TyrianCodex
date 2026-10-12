@@ -227,6 +227,7 @@ namespace
     struct StripHover { bool grip = false, chrome = false, half = false, trash = false; };
 
     void DrawControlStrip(App& app, const DashWidget& wdef, DashSlot* sl, ImVec2 at, float w, float bandH, bool faint,
+                          bool halfAvailable,
                           StripPhase phase = StripPhase::Both, StripHover* sh = nullptr)
     {
         const bool doInput  = (phase != StripPhase::Visual);
@@ -245,6 +246,14 @@ namespace
         const ImVec2 chromeAt(rx, yC);
         const float  titleRight = rx - gp;
         const ImVec2 titleAt(at.x + 22.f * sc, at.y);
+        const float titleAvail = std::max(0.f, titleRight - titleAt.x);
+        float titleFs = 18.f;
+        const float titleMeasured = Gw2Ui::MeasureWidth(wdef.title, titleFs);
+        if (titleMeasured > titleAvail && titleMeasured > 1.f)
+            titleFs = std::max(12.f, titleFs * (titleAvail / titleMeasured));
+        // Re-measure through Gw2Ui's font-aware ellipsis helper after fitting reaches the minimum font size
+        // or snaps to a baked font. Input and paint use this same title rectangle, ending before the controls.
+        const std::string title = Gw2Ui::Ellipsize(wdef.title, titleFs, titleAvail);
 
         StripHover local; StripHover& hv = sh ? *sh : local;
 
@@ -268,7 +277,15 @@ namespace
                 ImGui::SetCursorScreenPos(halfAt);
                 const bool halfClick = ImGui::InvisibleButton("##wh", ImVec2(tsz, tsz));
                 hv.half = ImGui::IsItemHovered();
-                if (hv.half) Gw2Ui::Tooltip((sl && sl->span == 2) ? "Switch to full width" : "Switch to half width (side-by-side)");
+                if (hv.half)
+                {
+                    const bool selectedHalf = sl && sl->span == 2;
+                    Gw2Ui::Tooltip(halfAvailable
+                        ? (selectedHalf ? "Switch to full width" : "Switch to half width (side-by-side)")
+                        : (selectedHalf
+                            ? "Half width selected; stacked while the dashboard is narrow. Widen the panel for side-by-side widgets, or click for full width."
+                            : "Select half width. Widen the dashboard to display widgets side by side."));
+                }
                 if (halfClick && sl) { sl->span = (sl->span == 2) ? 1 : 2; app.settingsDirty = true; }
             }
 
@@ -278,9 +295,13 @@ namespace
             if (hv.chrome) Gw2Ui::Tooltip((sl && sl->hoverChrome) ? "Show header bar" : "Hide header (controls on hover)");
             if (chromeClick && sl) { sl->hoverChrome = !sl->hoverChrome; app.settingsDirty = true; }
 
-            ImGui::SetCursorScreenPos(titleAt);
-            ImGui::InvisibleButton("##hdr", ImVec2(std::max(10.f * sc, titleRight - at.x - 22.f * sc), bandH));
-            if (ImGui::IsItemClicked(ImGuiMouseButton_Right)) ImGui::OpenPopup(ctxId);
+            if (titleAvail > 0.f)
+            {
+                ImGui::SetCursorScreenPos(titleAt);
+                ImGui::InvisibleButton("##hdr", ImVec2(titleAvail, bandH));
+                if (title != wdef.title && ImGui::IsItemHovered()) Gw2Ui::Tooltip(wdef.title);
+                if (ImGui::IsItemClicked(ImGuiMouseButton_Right)) ImGui::OpenPopup(ctxId);
+            }
             ImGui::PopID();
 
             // right-click context menu (chrome -> native text scale so it never overflows its panel)
@@ -310,13 +331,7 @@ namespace
             Gw2Ui::SmallIconGlyph(dl, trashAt, tsz, Gw2Ui::IconBtn::Minus, hv.trash);
             if (hasHalf) Gw2Ui::SmallIconGlyph(dl, halfAt, tsz, (sl && sl->span == 2) ? Gw2Ui::IconBtn::WidthHalf : Gw2Ui::IconBtn::WidthFull, hv.half);
             Gw2Ui::SmallIconGlyph(dl, chromeAt, tsz, (sl && sl->hoverChrome) ? Gw2Ui::IconBtn::ChromeHover : Gw2Ui::IconBtn::ChromeBar, hv.chrome);
-            // Auto-fit the title to the space left of the controls (half-width cards are narrow).
-            float titleFs = 18.f;
-            const float titleAvail = titleRight - (at.x + 22.f * sc);
-            const float titleMeasured = Gw2Ui::MeasureWidth(wdef.title, titleFs);
-            if (titleMeasured > titleAvail && titleMeasured > 1.f)
-                titleFs = std::max(12.f, titleFs * (titleAvail / titleMeasured));   // 12 = smallest baked size
-            Gw2Ui::LabelDL(dl, titleAt, ImVec2(titleRight, at.y + bandH), wdef.title,
+            Gw2Ui::LabelDL(dl, titleAt, ImVec2(titleRight, at.y + bandH), title.c_str(),
                            Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Middle, Gw2Ui::kGold, false, nullptr, titleFs, 0.f, 1.3f);
         }
     }
@@ -324,9 +339,8 @@ namespace
     // `selfFramed` lives in the registry but the truth lives in the widget's body -- often several calls deep
     // in a shared viewer panel. Change the panel, forget the table, and the widget silently gets a frame inside
     // a frame. So verify it against what the body actually did and say so ONCE per widget per session.
-    // Only this direction is checked: it is unambiguous (a card the dashboard also wrapped = double border) and
-    // currently never fires. The reverse -- marked selfFramed but drawing no card -- is a legitimate state for a
-    // banner widget like Zone Header, and a MISSING frame is obvious on screen anyway.
+    // Only this direction is checked: a body opening a card inside the dashboard frame is unambiguous. The
+    // reverse is legitimate for a banner widget like Zone Header, which paints its own textured frame.
     void ReportFrameMismatch(const DashWidget& wdef)
     {
         static std::map<std::string, bool> s_told;
@@ -334,17 +348,17 @@ namespace
         char msg[224];
         std::snprintf(msg, sizeof(msg),
                       "Dashboard widget \"%s\" draws its own card but is not marked selfFramed -- it renders "
-                      "inside a second frame. Set selfFramed in WidgetRegistry.cpp.", wdef.key);
+                      "inside a second frame. Host shared content inline or declare an intentional self-framed widget.", wdef.key);
         APIDefs->Log(LOGL_WARNING, "Tyrian Codex", msg);
     }
 
-    // One widget = an optional control strip + the body. selfFramed widgets draw their OWN card(s) (the
-    // dashboard adds NO frame -> never nests a channel-split); normal widgets get the dashboard card frame.
+    // One widget = an optional control strip + the body inside the shared dashboard card. Only intentional
+    // custom surfaces, such as Zone Header's textured banner, supply their own frame.
     // The strip is pinned (bar mode) or hidden until hover (hoverChrome). Group flow is left to ImGui so the
     // half-pair SameLine + inter-widget spacing keep working.
     // Returns the hover band this widget added to its own height, so the caller can fold it into g_bandTotal
     // PER ROW -- two half-width widgets share a row, so that row grows by the TALLER band, not by both.
-    float DrawCard(App& app, const DashWidget& wdef, float width)
+    float DrawCard(App& app, const DashWidget& wdef, float width, bool halfAvailable)
     {
         DashSlot* sl = SlotFor(app, wdef.key);
         const bool hover = sl && sl->hoverChrome;
@@ -374,6 +388,7 @@ namespace
         // two paths no longer need to be separate code.)
         const bool card = !wdef.selfFramed;
         ImGui::BeginGroup();
+        Gw2Ui::PushContentWidth(width);
         if (card) Gw2Ui::BeginCard(wdef.key, width);
         {
             const float  inner = card ? Gw2Ui::CardInnerWidth() : width;
@@ -381,7 +396,7 @@ namespace
             bandPos = hp; bandW = inner;
             if (!hover)
             {
-                DrawControlStrip(app, wdef, sl, hp, inner, bandH, false);   // pinned bar (Both)
+                DrawControlStrip(app, wdef, sl, hp, inner, bandH, false, halfAvailable);   // pinned bar (Both)
                 // Carded: a divider rules off the header. Self-framed: a small gap instead -- the widget's own
                 // card border already supplies that edge, so a divider would double it up.
                 ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + bandH + (card ? 0.f : 2.f * sc)));
@@ -389,7 +404,7 @@ namespace
             }
             else if (band > 0.01f)
             {
-                if (inputThisFrame) DrawControlStrip(app, wdef, sl, hp, inner, bandH, true, StripPhase::Input, &hv);
+                if (inputThisFrame) DrawControlStrip(app, wdef, sl, hp, inner, bandH, true, halfAvailable, StripPhase::Input, &hv);
                 ImGui::SetCursorScreenPos(ImVec2(hp.x, hp.y + band));   // body starts BELOW the revealed band
             }
             // Whether the body opens a card of its own is the ground truth `selfFramed` is supposed to mirror;
@@ -399,6 +414,7 @@ namespace
             if (card && Gw2Ui::CardsOpened() > cardsBefore) ReportFrameMismatch(wdef);
         }
         if (card) Gw2Ui::EndCard();
+        Gw2Ui::PopContentWidth();
         ImGui::EndGroup();
         const ImVec2 mn = ImGui::GetItemRectMin(), mx = ImGui::GetItemRectMax();
 
@@ -426,7 +442,7 @@ namespace
             {
                 ImGui::PushClipRect(bandPos, ImVec2(bandPos.x + bandW, bandPos.y + band), true);
                 DrawControlStrip(app, wdef, sl, ImVec2(bandPos.x, bandPos.y + band - bandH), bandW, bandH,
-                                 true, StripPhase::Visual, &hv);
+                                 true, halfAvailable, StripPhase::Visual, &hv);
                 ImGui::PopClipRect();
             }
         }
@@ -793,14 +809,16 @@ void Dashboard::Render(App& app)
         // heights scale by the user's "Text size" setting (one knob, applied uniformly).
         g_rows.clear();
         Gw2Ui::PushTextScale(std::min(std::max(app.config.dashTextScale, 1.0f), 1.6f));
-        ImGui::BeginChild("##dashBody", ImVec2(0, 0), false);
+        Gw2Ui::BeginScrollArea("##dashBody");
         {
             const float bodyW = ImGui::GetContentRegionAvail().x;
-            const float gap = 8.f * Gw2Ui::TextScale();
+            const auto columns = Gw2Ui::MeasureColumns(2, 190.f, 8.f, bodyW);
+            const float gap = columns.gap;
             // Too narrow for a usable side-by-side pair -> collapse to ONE full-width column: every widget
             // stacks (its draw() renders compact, since the width drops below DashUtil::kNarrowWidth) and no
             // lone-half "+ Add" placeholder shows. The slot's span stays 2, so widening the panel re-pairs automatically.
-            const bool allowHalf = ((bodyW - gap) * 0.5f) >= 190.f * Gw2Ui::TextScale();   // kHalfMin (tunable)
+            // Column geometry follows layout scale. Text zoom wraps content; it must not silently disable half width.
+            const bool allowHalf = columns.fits;
             g_bandTotal = 0.f; g_bandReserve = 0.f;   // re-accumulated by DrawCard below (see the panel measure)
             // gather shown widgets in layout order (app.config.dashLayout.items are all shown -- no holes)
             std::vector<std::pair<const DashSlot*, const DashWidget*>> show;
@@ -817,23 +835,23 @@ void Dashboard::Render(App& app)
                                       show[i + 1].first->span == 2 && show[i + 1].second->canHalf;
                 if (pairNext)
                 {
-                    const float halfW = (bodyW - gap) * 0.5f;
-                    const float bandA = DrawCard(app, *wd, halfW);
+                    const float halfW = columns.width;
+                    const float bandA = DrawCard(app, *wd, halfW, allowHalf);
                     ImGui::SameLine(0.f, gap);
-                    const float bandB = DrawCard(app, *show[i + 1].second, halfW);
+                    const float bandB = DrawCard(app, *show[i + 1].second, halfW, allowHalf);
                     g_bandTotal += std::max(bandA, bandB);   // ONE row -> it grows by the taller band, not both
                     ++i;
                 }
                 else if (half)   // lone half -> render at half width with a "+ Add" partner slot beside it
                 {
-                    const float halfW = (bodyW - gap) * 0.5f;
-                    g_bandTotal += DrawCard(app, *wd, halfW);
+                    const float halfW = columns.width;
+                    g_bandTotal += DrawCard(app, *wd, halfW, allowHalf);
                     ImGui::SameLine(0.f, gap);
                     DrawAddPlaceholder(halfW, s->key);
                 }
                 else
                 {
-                    g_bandTotal += DrawCard(app, *wd, bodyW);
+                    g_bandTotal += DrawCard(app, *wd, bodyW, allowHalf);
                 }
             }
             // Band-FREE height: the panel sizes as if no hover header were open, so it never breathes as you
@@ -881,7 +899,7 @@ void Dashboard::Render(App& app)
                 }
             }
         }
-        ImGui::EndChild();
+        Gw2Ui::EndScrollArea();
         Gw2Ui::PopTextScale();
 
         // --- resize from the bottom corners: a corner grab handle (diagonal grip lines) in the panel's free

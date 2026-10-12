@@ -275,9 +275,7 @@ void DrawObjectiveRow(App &app, int stepIndex, float lfs, float iconSize, bool c
     }
     ImGui::SameLine(0.f, 4.f * vs);
 
-    // The ACTUAL drawing width here (not Gw2Ui::ContentWidth(), which is card-aware and returns the OUTER card's
-    // width -- wrong inside a widget's nested scroll child, pushing the level pill past the scrollbar/edge).
-    const float rw = ImGui::GetContentRegionAvail().x;
+    const float rw = Gw2Ui::ContentWidth(); // The current scroll area, after its checkbox column and scrollbar.
     const std::string name = s.Name.empty() ? s.Type : s.Name;
     char lvbuf[16] = "";
     // Drop the level pill on narrow (half-width) lists -- it crowds the name; the row stays clean like the old widget.
@@ -357,20 +355,20 @@ void DrawObjectiveListPanel(App &app, float height)
     if (kind != ViewerListKind::Objectives)
     {
         DrawRichObjectiveTools(app, false); // search box only -- no type chips outside the objective checklist
-        ImGui::BeginChild("##objlistpanel", ImVec2(0.f, height), false);
+        Gw2Ui::BeginScrollArea("##objlistpanel", height);
         if (kind == ViewerListKind::DungeonUpNext)
             DrawDungeonUpNextBody(app);
         else
             DrawRecommendBody(app);
-        ImGui::EndChild();
+        Gw2Ui::EndScrollArea();
         Gw2Ui::PopTextScale();
         return;
     }
 
     DrawRichObjectiveTools(app, true);
-    ImGui::BeginChild("##objlistpanel", ImVec2(0.f, height), false);
+    Gw2Ui::BeginScrollArea("##objlistpanel", height);
     DrawObjectiveRowsBody(app, lfs, 26.f, true);
-    ImGui::EndChild();
+    Gw2Ui::EndScrollArea();
     Gw2Ui::PopTextScale();
 }
 
@@ -392,12 +390,12 @@ void DrawZoneObjectiveList(App &app, bool fillStep, float maxHeightOverride, flo
         const float chromeH = ImGui::GetCursorScreenPos().y - blockTopY;
         const float childH = (exactTotalHeight > 0.f) ? std::max(1.f, exactTotalHeight - chromeH)
                                                       : (fillStep ? 0.f : std::min(ImGui::GetIO().DisplaySize.y * 0.45f, 420.f));
-        ImGui::BeginChild("##objlist", ImVec2(0.f, childH), false);
+        Gw2Ui::BeginScrollArea("##objlist", childH);
         if (kind == ViewerListKind::DungeonUpNext)
             DrawDungeonUpNextBody(app);
         else
             DrawRecommendBody(app);
-        ImGui::EndChild();
+        Gw2Ui::EndScrollArea();
         return;
     }
 
@@ -475,9 +473,9 @@ void DrawZoneObjectiveList(App &app, bool fillStep, float maxHeightOverride, flo
         childH = std::max(1.f, exactTotalHeight - chromeH);
     else
         childH = (app.state.viewerMode == ViewerMode::Step && fillStep) ? 0.f : std::min(listH + 2.f * vs, maxListH);
-    ImGui::BeginChild("##objlist", ImVec2(0.f, childH), false);
+    Gw2Ui::BeginScrollArea("##objlist", childH);
     // The shared list body: active rows (ordered the same way the Compact list uses) + a faded "Completed" group
     // when the Show-completed toggle is on. Centralized -> the Rich/Compact viewers + the widget never drift.
     DrawObjectiveRowsBody(app, lfs, iconSize, modernStep);
-    ImGui::EndChild();
+    Gw2Ui::EndScrollArea();
 }

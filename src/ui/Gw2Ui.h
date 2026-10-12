@@ -28,6 +28,12 @@ namespace Gw2Ui
     inline constexpr ImU32 kTextDim = IM_COL32(150, 142, 124, 255);
     inline constexpr ImU32 kTextSelected = IM_COL32(255, 232, 150, 255);
 
+    // Shared card surfaces. Containers own the frame; content sections inherit it when hosted inline.
+    inline constexpr ImU32 kCardBg = IM_COL32(0, 0, 0, 45);
+    inline constexpr ImU32 kCardBorder = IM_COL32(120, 110, 88, 110);
+    inline constexpr ImU32 kDetailCardBg = IM_COL32(3, 5, 5, 148);
+    inline constexpr ImU32 kDetailCardBorder = IM_COL32(136, 118, 82, 126);
+
     // Pill/badge palette -- the small rounded "Lv 20" / "120 m" / status capsules drawn by Pill*(). ONE source
     // so the level/distance badges across the viewer, dashboard, Atlas + zone rows stay identical and recolor in
     // one edit (they had drifted to 105/110 fills, 110/120/130 borders, two text grays). The "Good" trio is the
@@ -111,7 +117,8 @@ namespace Gw2Ui
                       ImFont *font = nullptr, float fontSize = 0.f, float width = 0.f, float weight = -1.f,
                       TextShadow shadowMode = TextShadow::Outline, float shadowStrength = 1.f);
     // wrapWidth > 0 wraps the text at that pixel width (the caller sizes its rect/row to fit via
-    // MeasureWrappedHeight). 0 = single line (clips at the rect).
+    // MeasureWrappedHeight). 0 = single line. All glyph, bold and shadow passes clip to the supplied rectangle;
+    // empty/inverted rectangles draw nothing. Flowing Label() retains its natural overhang and shadow.
     void LabelIn(ImVec2 a, ImVec2 b, const char *text, HAlign h = HAlign::Left, VAlign v = VAlign::Middle,
                  ImU32 color = IM_COL32(255, 255, 255, 255), bool stroke = false, ImFont *font = nullptr,
                  float fontSize = 0.f, float wrapWidth = 0.f, float weight = -1.f,
@@ -392,28 +399,52 @@ namespace Gw2Ui
     bool BeginPanel(const char *idAndTitle, float width, float height, const char *title);
     void EndPanel();
 
+    // Bound the CURRENT window's available width and horizontal clip until PopContentWidth. No extra window
+    // or padding: groups/cards/dashboard slots can host ordinary ImGui controls and auto-width children.
+    // Scopes nest; child and popup windows have their own content bounds. Close children before popping.
+    void PushContentWidth(float width);
+    void PopContentWidth();
+    // A scrollable content area with the parent's background. Width 0 fills the bounded available width;
+    // height 0 fills the available height. Always call EndScrollArea, even when BeginScrollArea returns false.
+    bool BeginScrollArea(const char *id, float height = 0.f, float width = 0.f, ImGuiWindowFlags flags = 0);
+    void EndScrollArea();
+
     // A GW2 bordered "card" that AUTO-SIZES to its content (no height math): a rounded, tinted, bordered box
     // with the content inset by padding. Lighter than BeginPanel (no textured title bar) - for list cards like
     // the Dungeons tab's per-dungeon panels. `width` 0 = fill the available width; `bg`/`border` 0 = the
     // default dark card theme (pass a colour to highlight a card, e.g. the dungeon you're currently in). Draw
-    // widgets between BeginCard/EndCard (wrap long text yourself via LabelIn - the card spans `width`, content
-    // is left-aligned). Do NOT nest cards (one draw-list channel split). EndCard leaves the cursor below it.
+    // widgets between BeginCard/EndCard. Content bounds include the captured padding and constrain wrapping,
+    // children and drawing. Automatic and explicit widths use the same insets; the container owns exterior
+    // spacing. Cards nest safely; EndCard leaves the cursor below the complete frame.
     bool BeginCard(const char *id, float width = 0.f, ImU32 bg = 0, ImU32 border = 0);
     bool BeginAccentCard(const char *id, float width = 0.f, ImU32 accent = 0, ImU32 bg = 0, ImU32 border = 0);
     void EndCard();
     // Scaled inset used by cards, for containers that need to reserve their full outer height.
     float CardPadding();
-    // Inner content width of the CURRENT card (card width minus padding + accent inset). Use this for any
-    // FULL-WIDTH content inside a card: a card is a group, so GetContentRegionAvail() over-extends to the
-    // window edge and would overrun the card's right border (and ignore its auto right margin).
+    // Full inner width captured by the current window's card. In a child/popup without its own card, returns
+    // that window's available width. The overload measures a proposed card using the current scale.
     float CardInnerWidth();
+    float CardInnerWidth(float outerWidth, bool accented);
     // Monotonic count of cards opened this session. Lets a container detect whether the content it just drew
     // supplied its OWN frame (compare across the call) instead of relying on a hand-maintained flag to say so.
     unsigned CardsOpened();
-    // Universal width resolver for row/layout helpers. Pass an explicit width for dashboard/table/custom-frame
-    // contexts. Pass 0 inside normal content/cards: inside a card this returns CardInnerWidth(), otherwise the
-    // current content region width. This keeps scrollbar/card-padding policy centralized in BeginCard.
+    // Remaining width at the cursor, respecting cards, width scopes, scrollbars and table columns.
     float ContentWidth(float explicitWidth = 0.f);
+
+    // Equal columns within the available width (or explicit width in pixels). Minimum width and gap use
+    // layout units scaled by GlobalScale, independently of text zoom. Fits=false means use a stacked layout.
+    struct ColumnLayout { float width, gap; bool fits; };
+    ColumnLayout MeasureColumns(int count, float minimumWidth, float gap = 8.f, float width = 0.f);
+
+    // Shared section content can supply a card or live within a host's frame, keeping the same control IDs.
+    // InlineAccent retains only the accent stripe and its inset; Inline has no decoration or inset. Inline
+    // sections inherit the host surface; bg/border apply only to Card. Insets set both the clip boundary and
+    // new-line origin, including native controls and nested groups/children. The caller owns exterior spacing.
+    // BeginSection/EndSection must be paired.
+    enum class SectionPresentation { Card, Inline, InlineAccent };
+    void BeginSection(const char *id, SectionPresentation presentation = SectionPresentation::Card,
+                      ImU32 accent = 0, ImU32 bg = 0, ImU32 border = 0, float width = 0.f);
+    void EndSection();
 
     // ---- Image cards + grids (the Content tab's fractal / strike / dungeon cards): a framed card with an IMAGE on
     // top (a map render / portrait / loading screen, or a dark placeholder when null), a centered WRAPPING name, an

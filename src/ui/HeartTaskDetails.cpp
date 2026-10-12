@@ -45,7 +45,7 @@ namespace
         Gw2Ui::SearchBox("##answersearch", view.Search, sizeof(view.Search), contentWidth,
                         "Find a question or answer", kAnswerFontSize);
         const std::string search = Fold(view.Search);
-        ImGui::BeginChild("##answers", ImVec2(contentWidth, std::max(1.f, listHeight)), false, ImGuiWindowFlags_NoBackground);
+        Gw2Ui::BeginScrollArea("##answers", std::max(1.f, listHeight));
         for (const auto& detail : tasks.Details)
         {
             if (!ids.empty() && std::find(ids.begin(), ids.end(), detail.Id) == ids.end()) continue;
@@ -63,7 +63,7 @@ namespace
             Gw2Ui::EndTextTable();
             ImGui::PopID();
         }
-        ImGui::EndChild();
+        Gw2Ui::EndScrollArea();
     }
 }
 

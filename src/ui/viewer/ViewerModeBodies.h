@@ -1,5 +1,6 @@
 #pragma once
 #include "app/App.h"
+#include "ui/Gw2Ui.h"
 #include <imgui.h>
 #include <cstdint>
 
@@ -16,7 +17,8 @@ bool DrawRecommendList(App& app, uint32_t excludeMapId);
 // + dashboard true; rich viewer false) so the dashboard never depends on the global viewer style. The compact
 // viewer draws its own fixed-height frame and calls DrawDungeonDetailBody directly (see ViewerStepCompact).
 void DrawDungeonDetailBody(App& app, float fs, bool compact);
-void DrawDungeonDetail(App& app, float fs, bool compact);
+void DrawDungeonDetail(App& app, float fs, bool compact,
+                       Gw2Ui::SectionPresentation presentation = Gw2Ui::SectionPresentation::Card);
 // The Complete/Recommend DETAIL summary card (green "Zone complete" + 100% bar, or "No guide route"), auto-height.
 void DrawSummaryDetailRich(App& app, float fs);
 // The EXACT inner content height of that summary card (icon row + name/map line + the "Complete" bar in Complete

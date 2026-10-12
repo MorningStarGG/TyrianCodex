@@ -1,6 +1,7 @@
 #pragma once
 #include "app/App.h"
 #include "model/Dataset.h"
+#include "ui/Gw2Ui.h"
 #include <imgui.h>
 
 // The viewer's detail-card content panels: the current-objective panel (active step + heart chips + actions)
@@ -9,8 +10,11 @@
 // passes false), so these never read the global viewer style -- the dashboard stays independent of it.
 float EstimateTravelTargetPanelHeight(App& app, float fs, float cardW, bool compact);
 float EstimateCurrentObjectivePanelHeight(App& app, const Step& c, float fs, float cardW, bool compact);
-void DrawCurrentObjectivePanel(App& app, const Step& c, float fs, ImU32 subCol, bool compact);
-void DrawTravelTargetPanel(App& app, float fs, ImU32 subCol, bool compact);
+// The dashboard supplies the frame and requests InlineAccent; viewer callers retain standalone cards.
+void DrawCurrentObjectivePanel(App& app, const Step& c, float fs, ImU32 subCol, bool compact,
+                              Gw2Ui::SectionPresentation presentation = Gw2Ui::SectionPresentation::Card);
+void DrawTravelTargetPanel(App& app, float fs, ImU32 subCol, bool compact,
+                          Gw2Ui::SectionPresentation presentation = Gw2Ui::SectionPresentation::Card);
 
 // Shared current-objective metadata: the dist / ETA / Lv chip row with a right-aligned "Mark Complete" pill on
 // the SAME row. Full text when it fits; a checkmark-only pill when the row is too narrow (never a 2nd line, so

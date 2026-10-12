@@ -33,13 +33,7 @@ ImU32 WithAlpha(ImU32 col, int alpha)
 
 void DrawWrappedText(const char* text, float fs, ImU32 col, bool stroke, ImFont* font)
 {
-    if (!text || !*text) return;
-    const float w = std::max(40.f, ImGui::GetContentRegionAvail().x - 2.f);
-    const float h = Gw2Ui::MeasureWrappedHeight(text, fs, w, font);
-    const ImVec2 p = ImGui::GetCursorScreenPos();
-    Gw2Ui::LabelIn(p, ImVec2(p.x + w, p.y + h), text, Gw2Ui::HAlign::Left, Gw2Ui::VAlign::Top,
-                   col, stroke, font, fs, w);
-    ImGui::Dummy(ImVec2(w, h));
+    Gw2Ui::LabelWrapped(text, col, stroke, font, fs);
 }
 
 void PaintTypeIconAt(ImDrawList* dl, const std::string& type, ImVec2 p, float size, bool medallion)

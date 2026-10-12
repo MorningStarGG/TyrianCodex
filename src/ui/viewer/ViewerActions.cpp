@@ -83,7 +83,7 @@ void DrawObjectiveActionButtons(App& app, const Step& step, bool compact)
 {
     const float vs = ViewerScale(app);
     const ImU32 accent = Objective::ColorOf(step.Type, 245);
-    const float availW = ImGui::GetContentRegionAvail().x - 8.f * vs;   // reserve right padding (accent cards inset left only)
+    const float availW = Gw2Ui::ContentWidth(); // The host already owns the content insets.
     if (compact)
     {
         const float gap = 7.f * vs;
@@ -132,7 +132,7 @@ void DrawTravelActionButtons(App& app, bool compact)
 {
     const float vs = ViewerScale(app);
     const ImU32 accent = app.travel.IsPersonal() ? IM_COL32(255, 150, 40, 245) : IM_COL32(120, 200, 255, 245);
-    const float availW = ImGui::GetContentRegionAvail().x - 8.f * vs;   // reserve right padding (accent cards inset left only)
+    const float availW = Gw2Ui::ContentWidth(); // The host already owns the content insets.
     if (compact)
     {
         const float gap = 7.f * vs;

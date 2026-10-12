@@ -16,20 +16,18 @@
 // click-travels via the distance-gated card. The "Recommended" pill is hidden here (every row is a
 // recommendation, so it'd be redundant -- the level pill is the useful bit).
 //
-// This widget is selfFramed: it draws its OWN card(s) so the dashboard adds no outer frame -- otherwise the
-// story view's accent card would sit inside the dashboard card and read as a frame within a frame. So every
-// branch below opens its own card. (Nesting is SAFE since Gw2Ui cards took a splitter per depth; it used to
-// corrupt the merge and blank every widget above -- the historical "blank-above-Events" bug.)
+// The dashboard owns the shared frame in both level-based and story-based modes. Sections keep their IDs;
+// the shared story content retains its accent without adding another frame or surface.
 void DashW::RecommendedZones(App& app, float w)
 {
     // Max level: the level band is meaningless (every map is in-band), so recommend by STORY -- a "next story
-    // step" accent card, then areas grouped by release in Journal/release order in their own card (union model;
-    // mapped zones kept, marked). Two SEQUENTIAL cards, so neither sits inside the other.
+    // step", then areas grouped by release in Journal/release order (mapped zones kept, marked).
     if (app.state.charLevel >= 80)
     {
-        StoryRecommend::DrawNextStoryCard(app, w, /*compact*/ true);
+        StoryRecommend::DrawNextStoryCard(app, w, /*compact*/ true, Gw2Ui::SectionPresentation::InlineAccent);
+        Gw2Ui::Divider();
         const std::vector<StoryRecommend::ReleaseGroup>& groups = StoryRecommend::Groups(app);
-        if (Gw2Ui::BeginCard("##recZonesGroups", w))
+        Gw2Ui::BeginSection("##recZonesGroups", Gw2Ui::SectionPresentation::Inline);
         {
             bool any = false;
             for (const StoryRecommend::ReleaseGroup& g : groups)
@@ -49,16 +47,16 @@ void DashW::RecommendedZones(App& app, float w)
                     DrawZoneRow(app, z, style);
                 }
             }
-            if (!any) Gw2Ui::Label("All story and map completion done.", Gw2Ui::kTextSub, false, nullptr, 14.f);
-            Gw2Ui::EndCard();
+            if (!any) Gw2Ui::LabelWrapped("All story and map completion done.", Gw2Ui::kTextSub, false, nullptr, 14.f);
         }
+        Gw2Ui::EndSection();
         return;
     }
 
     Search::EnsureIndex(app);
     const std::vector<const Zone*>& rec = app.zoneManager.RecommendZones(app.state.charLevel);
-    if (!Gw2Ui::BeginCard("##recZonesList", w)) return;
-    if (rec.empty()) { Gw2Ui::Label("No recommendations.", Gw2Ui::kTextSub, false, nullptr, 14.f); Gw2Ui::EndCard(); return; }
+    Gw2Ui::BeginSection("##recZonesList", Gw2Ui::SectionPresentation::Inline);
+    if (rec.empty()) { Gw2Ui::LabelWrapped("No recommendations.", Gw2Ui::kTextSub, false, nullptr, 14.f); Gw2Ui::EndSection(); return; }
 
     // All zone entries (slot 3 = this widget's own cache); we render the recommended ones in RecommendZones order.
     const std::vector<int>&           zoneRes = Search::Query(app, /*slot*/ 3, "", (1u << (int)Search::Kind::Zone),
@@ -78,6 +76,6 @@ void DashW::RecommendedZones(App& app, float w)
         Search::DrawResultRow(app, *e, st);
         ++shown;
     }
-    if (shown == 0) Gw2Ui::Label("No incomplete zones at your level.", Gw2Ui::kTextSub, false, nullptr, 14.f);
-    Gw2Ui::EndCard();
+    if (shown == 0) Gw2Ui::LabelWrapped("No incomplete zones at your level.", Gw2Ui::kTextSub, false, nullptr, 14.f);
+    Gw2Ui::EndSection();
 }

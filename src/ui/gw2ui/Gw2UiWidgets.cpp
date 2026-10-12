@@ -755,8 +755,7 @@ bool Gw2Ui::CheckPill(const char *id, const char *text, float fontSize, const ch
 
 void Gw2Ui::SectionHeader(const char *title, const char *rightText, float fontSize, ImU32 titleCol, bool banded)
 {
-    const float w = CardInnerWidth(); // card-aware (== GetContentRegionAvail outside a card) so the right chip
-                                      // + band stay inside a card's border, not at the window edge
+    const float w = ContentWidth();
     const float h = std::max(22.f, fontSize + 7.f);
     const ImVec2 p = ImGui::GetCursorScreenPos();
     ImDrawList *dl = ImGui::GetWindowDrawList();

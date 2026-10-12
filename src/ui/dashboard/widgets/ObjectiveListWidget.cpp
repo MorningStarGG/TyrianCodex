@@ -22,9 +22,9 @@ void DashW::ObjectiveList(App& app, float w)
     if (FarmingRunActive(app))
     {
         Gw2Ui::PushTextScale(1.0f);
-        ImGui::BeginChild("##farmpanel", ImVec2(0.f, 340.f), false);
+        Gw2Ui::BeginScrollArea("##farmpanel", 340.f);
         DrawFarmingTab(app);
-        ImGui::EndChild();
+        Gw2Ui::EndScrollArea();
         Gw2Ui::PopTextScale();
         return;
     }
