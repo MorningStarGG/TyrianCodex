@@ -248,6 +248,7 @@ std::vector<Setting> Settings(App &app)
 
         // Route Trail (in-world).
         SBool(SEC_TRAIL, "showTrail", "Show route trail", "trail show route in-world ground ribbon", &app.config.showTrail, TrailAppearanceId, TrailAppearanceName),
+        SBool(SEC_TRAIL, "hideCompletionTrailWhileFarming", "Hide completion trail while farming", "completion trail world farming gathering hide run", &app.config.hideCompletionTrailWhileFarming, TrailAppearanceId, TrailAppearanceName),
         SBool(SEC_TRAIL, "showTrailWhenComplete", "Show trail when complete", "trail show keep visible in-world after complete done finished all objectives nothing to guide", &app.config.showTrailWhenComplete, TrailAppearanceId, TrailAppearanceName),
         SEnum(SEC_TRAIL, "trailStyle", "Trail style", "trail style footprints arrows chevron dashed line dots texture look", &app.config.trailStyle, kTrailStyleNames, 5, TrailAppearanceId, TrailAppearanceName),
         SEnum(SEC_TRAIL, "trailColor", "Trail color", "trail color gold amber cyan green magenta white", &app.config.trailColor, kTrailColorNames, 6, TrailAppearanceId, TrailAppearanceName),
@@ -264,8 +265,10 @@ std::vector<Setting> Settings(App &app)
 
         // Map Trails (in-game map / minimap).
         SBool(SEC_MAPTRAIL, "showMapTrail", "Show route on map", "map trail fullscreen route", &app.config.showMapTrail, MapTrailLinesId, MapTrailLinesName),
+        SBool(SEC_MAPTRAIL, "hideMapCompletionTrailWhileFarming", "Hide map completion trail while farming", "completion trail map fullscreen farming gathering hide run", &app.config.hideMapCompletionTrailWhileFarming, MapTrailLinesId, MapTrailLinesName),
         SBool(SEC_MAPTRAIL, "showMapTrailWhenComplete", "Show map trail when complete", "map fullscreen trail show keep visible after complete done finished all objectives nothing to guide", &app.config.showMapTrailWhenComplete, MapTrailLinesId, MapTrailLinesName),
         SBool(SEC_MAPTRAIL, "showMiniMapTrail", "Show route on minimap", "minimap compass trail route", &app.config.showMiniMapTrail, MapTrailLinesId, MapTrailLinesName),
+        SBool(SEC_MAPTRAIL, "hideMiniMapCompletionTrailWhileFarming", "Hide minimap completion trail while farming", "completion trail minimap compass farming gathering hide run", &app.config.hideMiniMapCompletionTrailWhileFarming, MapTrailLinesId, MapTrailLinesName),
         SBool(SEC_MAPTRAIL, "showMiniMapTrailWhenComplete", "Show minimap trail when complete", "minimap compass trail show keep visible after complete done finished all objectives nothing to guide", &app.config.showMiniMapTrailWhenComplete, MapTrailLinesId, MapTrailLinesName),
         SBool(SEC_MAPTRAIL, "showMapPins", "Show objective pins on map", "map minimap pins markers objectives guide steps current", &app.config.showMapPins, MapTrailLinesId, MapTrailLinesName),
         SEnum(SEC_MAPTRAIL, "mapTrailWidth", "Map trail width", "map fullscreen trail line width thickness px", &app.config.mapTrailWidth, kMapTrailWidthNames, 6, MapTrailLinesId, MapTrailLinesName),
@@ -554,6 +557,7 @@ static const char *SettingDesc(const char *key)
         {"mapCenterProbe", "Log map-open center-vs-player distance + settle timing (R&D for detecting a clicked chat-link waypoint)."},
         {"inputProbe", "Show a keyboard + window probe in Diagnostics: where a keystroke stops (our hook / ImGui), and whether another panel overlaps the one you are clicking. For tracking down typing or click problems."},
         {"showTrail", "Draw the route as a ribbon on the ground in the world."},
+        {"hideCompletionTrailWhileFarming", "Hide the in-world map-completion trail during an active farming run. It follows your normal trail settings again when farming stops. Farming markers and guidance keep their existing controls."},
         {"trailColor", "Colour of the in-world route trail."},
         {"trailWidth", "Width of the trail ribbon, in metres."},
         {"trailOpacity", "Overall opacity of the trail."},
@@ -562,7 +566,9 @@ static const char *SettingDesc(const char *key)
         {"trailBrighten", "Brighten the trail ahead of you and dim the part you've already passed."},
         {"trailOffRoute", "Recolour the trail as a warning when you stray off the route."},
         {"showMapTrail", "Draw the route on the fullscreen world map."},
+        {"hideMapCompletionTrailWhileFarming", "Hide the map-completion trail on the world map during an active farming run. Normal map-trail settings apply again when farming stops; farming pins keep their existing controls."},
         {"showMiniMapTrail", "Draw the route on the minimap / compass."},
+        {"hideMiniMapCompletionTrailWhileFarming", "Hide the map-completion trail on the minimap during an active farming run. Normal minimap-trail settings apply again when farming stops; farming pins keep their existing controls."},
         {"showMapPins", "Show objective pins on the world map and minimap."},
         {"mapTrailWidth", "Line width (px) of the route drawn on the fullscreen world map."},
         {"miniTrailWidth", "Line width (px) of the route drawn on the minimap / compass."},

@@ -1,4 +1,5 @@
 #pragma once
+#include "app/State.h"
 #include "util/Projection.h"   // Math::Vec3
 #include <vector>
 class App;
@@ -16,6 +17,12 @@ namespace FarmingGuidance
 {
     void Update(App& app, float W, float H, const Math::Vec3& avatar, const Math::Vec3& camFwd);
     bool Active(const App& app);
+    // The effective mode is derived once per frame, including map availability and travel/instance pauses.
+    // Renderers can share this check without depending on App or the viewer's UI helpers.
+    inline bool Active(const GuideState& state)
+    {
+        return state.activeContent == ContentType::Farming && state.farm != nullptr;
+    }
 
     // The nearest enabled, not-yet-gathered nodes in the selected category, nearest-first (up to maxN). Shared by
     // the dashboard widgets -- Current Objective shows [0]; Upcoming shows the rest. Uses the live player pos.

@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.2.0.0
+
+### Added
+
+- Added independent options to **hide map-completion trails while farming** in-world, on the world map, and on the minimap. They are off by default and sit beside each surface's trail controls. When farming stops, trails follow their normal visibility settings again.
+- Added per-character completion marks for map events in the guide's Nearby Events list. Show completed reveals them for unticking, and the Event checklist button opens the current zone in the new Checklist Events section.
+- Added searchable heart answer tables to the guide and optional nearby world panels, using Tyrian Codex's existing task icons and action data. World hints follow the heart and marker toggles, nearby answers expand one panel at a time within 20 metres.
+- Added Code of Creation coverage: Leyspring Hollows objectives and authored routes, six story chapters and their achievement/location associations, Nexus of Eternity raid and Convergence entries, and Solitary Throne fractal rotations.
+
+### Fixed
+
+- Fixed the dashboard's **Events**, **Current Objective** and **Recommended Zones** widgets so they will use a single background for their respective frames, including their header. Current Objective uses the same frame for objectives, travel targets, dungeon instructions and gathering runs.
+- Fixed dashboard scroll lists obscuring their card background, panels using inconsistent widths, and Current Objective text extending beyond its card. Content, wrapping and scrollbars now follow shared Gw2Ui card bounds and padding.
+- Fixed **Current Objective** cutting off the first letters of its Tasks and Hearts headings, task icons and descriptions in both full and half width. Accented sections now keep every new row aligned with their left content boundary.
+- Fixed long widget titles overlapping the header controls in half width. Names now use Gw2Ui's existing ellipsis helper, with the full name available on hover. Bounded text, including bold and shadow passes, stays inside its label rectangle, and the title's click area stays clear of the buttons.
+- Fixed narrow checklist and event rows squeezing text into an unusable column or overlapping their controls. Checkboxes and icons can move above the text, with distance pills below it, while retaining readable font sizes and separate click targets.
+- Fixed map collection reading only one floor. Restored 59 missing POIs across eight maps, including Jofast's Camp, all six reported Bloodstone Fen POIs and all fifteen reported Draconis Mons POIs. Existing objective IDs are preserved so saved completion survives the refresh.
+- Separated map objectives and checklists from authored route availability. Maps can appear in Atlas and search and expose their objectives without enabling route navigation.
+- Refreshed the heart bundle from 395 hearts / 1,709 chips to 399 hearts / 1,735 chips without losing existing heart coverage.
+- Replaced embedded fractal daily sets with wiki-derived schedules and scale mappings. Unverified event schedules are reported explicitly; the stale Shackles of the Ancients countdown is withheld while its current schedule awaits verification.
+- Centralized patch generation around shared source snapshots, build-scoped API caches and a dependency-aware staged workflow. Required failures stop promotion; release packaging checks the completion manifest and file hashes. Verified pack builds remove loose inputs, and successful patch runs clean up their staging files; failed runs retain staging for resuming.
+
 ## 1.1.0.6
 
 ### Added

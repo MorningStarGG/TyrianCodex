@@ -61,11 +61,11 @@ The guide is built around the current map, your character, and the selected rout
 - **Auto-complete on arrival** can mark most objectives complete when you get close enough. You can also mark done, undo, reset, and manually manage checklist progress.
 
 The guide's **Events -> Nearby Events** list has per-character checkboxes for events you
-have seen or completed. Marked events stay hidden until you enable **Show completed**;
+have seen or completed. Marked events stay hidden until you enable **Show completed**,
 untick one or use its right-click menu to clear the mark. **Event checklist** opens
 the current zone under **Checklist -> Events**, where you can search all listed events
 and filter All, Unmarked or Marked. These marks survive restarts and map completion
-resets, and work without an API key. Counts cover the bundled event list; event
+resets, and work without an API key. Counts cover the bundled event list, event
 coverage varies by map. Event completion is marked manually.
 
 Route modes:
@@ -164,7 +164,7 @@ Use **Make global** on a profile or loadout to create a shared copy and switch t
 
 Available keybinds include Tyrian Codex window toggle, guide panel toggle, guide toggle, mark current step done, undo/back, copy waypoint, cycle/apply loadouts, reannounce zone display, toggle markers, and toggle trail.
 
-Tyrian Codex keybinds are configured in **Options -> Keybinds** and start unbound. Click a bind row to assign a key combination, or use **Clear** to unbind it. The addon prevents duplicate Tyrian Codex keybinds; assigning a key combination to one action clears that same combination from the other action. Nexus will still show one internal QuickAccess bridge bind used for tray-icon left-click behavior, but normal Tyrian Codex hotkeys should be managed from Tyrian Codex's own settings.
+Tyrian Codex keybinds are configured in **Options -> Keybinds** and start unbound. Click a bind row to assign a key combination, or use **Clear** to unbind it. The addon prevents duplicate Tyrian Codex keybinds. Assigning a key combination to one action clears that same combination from the other action. Nexus will still show one internal QuickAccess bridge bind used for tray-icon left-click behavior, but normal Tyrian Codex hotkeys should be managed from Tyrian Codex's own settings.
 
 ## Local Data And Saved Files
 

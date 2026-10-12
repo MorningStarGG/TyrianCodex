@@ -10,9 +10,9 @@
 //
 // Keep the format MAJOR.MINOR.BUILD.REVISION (four ints) -- cmake parses these lines with a regex.
 #define TC_VER_MAJOR    1
-#define TC_VER_MINOR    1
+#define TC_VER_MINOR    2
 #define TC_VER_BUILD    0
-#define TC_VER_REVISION 7
+#define TC_VER_REVISION 0
 
 // "0.1.0.0" -- used as the cache-version marker (ImageCache).
 #define TC_STRINGIZE2(x) #x

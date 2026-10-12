@@ -167,6 +167,7 @@ struct Config
     // Route Trail (in-world)
     bool showTrail = true;
     bool showTrailWhenComplete = false; // keep the IN-WORLD trail on after every zone objective is done; off = hide it with the arrow
+    bool hideCompletionTrailWhileFarming = false;
     int trailColor = 0;                 // TrailColorChoice (Gold)
     float trailWidth = 1.0f;            // ribbon width in metres   (RouteTrail.Width)
     float trailOpacity = 0.7f;          // master opacity 0..1       (RouteTrail.Opacity)
@@ -182,8 +183,10 @@ struct Config
     // Map Trails (in-game map / minimap)
     bool showMapTrail = true;
     bool showMapTrailWhenComplete = false; // keep the OPEN-map trail on after every zone objective is done
+    bool hideMapCompletionTrailWhileFarming = false;
     bool showMiniMapTrail = true;
     bool showMiniMapTrailWhenComplete = false; // keep the MINIMAP/compass trail on after every zone objective is done
+    bool hideMiniMapCompletionTrailWhileFarming = false;
     bool showMapPins = true;                   // objective pins on the open-map + minimap (green, vs orange travel pins)
     // Map / minimap multi-level QoL
     int mapTrailWidth = 1;         // OPEN-map trail width: a px DROPDOWN index (kMapTrailWidthNames; px = index+1, default 2)

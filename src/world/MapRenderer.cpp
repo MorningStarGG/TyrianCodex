@@ -1,4 +1,5 @@
 #include "world/MapRenderer.h"
+#include "world/TrailVisibility.h"
 #include "util/Draw.h"   // TrailColorFor, DrawPersonalPin
 #include "util/Coords.h" // ClampToRect (travel entrance marker)
 #include "util/Textures.h"
@@ -708,7 +709,8 @@ void MapRenderer::Draw(const Config &cfg, const GuideState &st, Travel::Controll
     const bool showWhenComplete = mapOpen ? cfg.showMapTrailWhenComplete : cfg.showMiniMapTrailWhenComplete;
     const bool trailHasRoute = travel.Active() || st.inDungeon || showWhenComplete ||
                                !ZoneComplete(progress, st.currentChar, st.zone);
-    const bool wantTrail = st.trailCont.size() >= 2 && (mapOpen ? cfg.showMapTrail : cfg.showMiniMapTrail) && trailHasRoute;
+    const auto trailSurface = mapOpen ? TrailVisibility::Surface::Map : TrailVisibility::Surface::Minimap;
+    const bool wantTrail = st.trailCont.size() >= 2 && TrailVisibility::Visible(cfg, st, trailSurface) && trailHasRoute;
     const bool wantPins = travel.Active();
     const bool wantGuidePins = cfg.showMapPins && st.zone.Loaded && !travel.Active() && !st.inDungeon; // objective pins
     // Objective area circle: surface 0 both / 1 map only / 2 minimap only / 3 off. Only for the ACTIVE

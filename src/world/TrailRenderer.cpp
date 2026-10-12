@@ -1,4 +1,5 @@
 #include "world/TrailRenderer.h"
+#include "world/TrailVisibility.h"
 #include "util/Draw.h"      // TrailColorFor
 #include "util/Textures.h"  // Tex::GetBundledTexture
 #include "ui/Effect.h"      // Fx::DrawTrail3D + Fx::TrailVert (the GPU ribbon pass)
@@ -25,8 +26,8 @@ void TrailRenderer::Draw(const FrameCtx &fc, const Config &cfg, const GuideState
     const std::vector<Math::Vec3> &trail = st.zone.Trail;
     const int n = (int)trail.size();
     onScreen_ = 0;
-    if (n < 2 || !cfg.showTrail)
-        return; // "Show route trail" toggle
+    if (n < 2 || !TrailVisibility::Visible(cfg, st, TrailVisibility::Surface::World))
+        return;
     const std::vector<TrailSectionRange> &sections = st.inDungeon ? st.instTrailSections : st.zone.TrailSections;
     auto segmentAllowed = [&](int seg)
     {

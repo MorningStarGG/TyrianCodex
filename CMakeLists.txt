@@ -40,6 +40,10 @@ if(TC_BUILD_TESTS)
     target_include_directories(tc_event_test PRIVATE src)
     target_link_libraries(tc_event_test PRIVATE nlohmann_json::nlohmann_json)
     add_test(NAME event_progress COMMAND tc_event_test "${CMAKE_CURRENT_SOURCE_DIR}/data")
+    add_executable(tc_trail_visibility_test tests/trail_visibility_test.cpp)
+    target_include_directories(tc_trail_visibility_test PRIVATE src ${imgui_SOURCE_DIR})
+    target_link_libraries(tc_trail_visibility_test PRIVATE nlohmann_json::nlohmann_json)
+    add_test(NAME trail_visibility COMMAND tc_trail_visibility_test)
     add_executable(tc_heart_ui_test tests/heart_answers_ui_test.cpp src/ui/HeartTaskDetails.cpp src/app/CharacterMarks.cpp src/util/Json.cpp
         src/ui/gw2ui/Gw2UiInternal.cpp src/ui/gw2ui/Gw2UiText.cpp
         src/ui/gw2ui/Gw2UiControls.cpp src/ui/gw2ui/Gw2UiCards.cpp src/ui/gw2ui/Gw2UiWidgets.cpp src/ui/gw2ui/Gw2UiWindow.cpp src/ui/gw2ui/Gw2UiChecklist.cpp

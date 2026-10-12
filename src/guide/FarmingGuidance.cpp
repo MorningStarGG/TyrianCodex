@@ -18,7 +18,7 @@ void FarmingGuidance::Update(App& app, float W, float H, const Math::Vec3& avata
     GuideState& st  = app.state;
     Config&     cfg = app.config;
     GuidanceSnapshotUtil::Clear(st);
-    if (st.activeContent != ContentType::Farming || !st.farm) return;
+    if (!Active(st)) return;
 
     const Follow::Vec2 player{ avatar.x, avatar.z };
 
@@ -69,7 +69,7 @@ void FarmingGuidance::Update(App& app, float W, float H, const Math::Vec3& avata
 
 bool FarmingGuidance::Active(const App& app)
 {
-    return app.state.activeContent == ContentType::Farming && app.state.farm != nullptr;
+    return Active(app.state);
 }
 
 std::vector<const FarmNode*> FarmingGuidance::NearestNodes(const App& app, int maxN)
